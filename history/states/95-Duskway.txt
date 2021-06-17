@@ -1,0 +1,37 @@
+state={
+	id=95
+	name="STATE_95"
+	manpower=670580
+	state_category=large_town
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={130 161 243 388 444 3271 3438 3460 3510 6236 6263 6298 6309 6325 6349 7758 9185 9252 9277 9306 9320 9387 9439 9470 9532 11082 11288 11316 11413 11478}
+	resources={}
+	history={
+		owner=HSW
+		add_core_of=HSW
+		#add_claim_by=
+		victory_points={9470 20}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=3
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

@@ -1,0 +1,51 @@
+division_template={
+	name="Orange Clan Militia"
+	regiments={
+		infantry={x=0 y=0}
+		infantry={x=0 y=1}
+	}
+	priority=0
+}
+division_template={
+	name="Hornless Levy"
+	is_locked=yes
+	regiments={
+		infantry={x=0 y=0}
+		infantry={x=0 y=1}
+		infantry={x=0 y=2}
+	}
+	priority=0
+}
+division_template={
+	name="Yeoponies"
+	regiments={
+		infantry={x=0 y=0}	infantry={x=1 y=0}
+		infantry={x=0 y=1}	infantry={x=1 y=1}
+	}
+}
+units={
+	division={		#Trotland
+		name="Trotland Militia"
+		location=11399
+		division_template="Orange Clan Militia"
+		start_experience_factor=0.15
+		start_equipment_factor=0.7
+		force_equipment_variants={melee_equipment_0={owner="HFT" creator="HEB"}}
+	}
+	division={		#Hoofington
+		name="Orange Clan Penal Battalion"
+		location=782
+		division_template="Hornless Levy"
+		start_experience_factor=0.1
+		start_equipment_factor=0.4
+		force_equipment_variants={melee_equipment_0={owner="HFT" creator="HEB"}}
+	}
+	division={		#Ghastly Gorge
+		name="'Hornless Youper' Penal Battalion"
+		location=773
+		division_template="Hornless Levy"
+		start_experience_factor=0
+		start_equipment_factor=0.32
+		force_equipment_variants={melee_equipment_0={owner="HFT" creator="HEB"}}
+	}
+}

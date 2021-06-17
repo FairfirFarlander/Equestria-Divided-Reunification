@@ -1,0 +1,37 @@
+state={
+	id=576
+	name="STATE_576"
+	manpower=375607
+	state_category=rural
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={383 1170 1395 1566 2061 2309 4175 4318 4541 4999 7163 7400 7562 10841 10920 12363 12492}
+	resources={oil=16}
+	history={
+		#owner=VED
+		#add_core_of=VED
+		#add_claim_by=
+		victory_points={1170 3}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=1
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=1
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

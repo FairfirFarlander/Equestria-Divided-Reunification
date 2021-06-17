@@ -1,0 +1,37 @@
+state={
+	id=596
+	name="STATE_596"
+	manpower=187800
+	state_category=rural
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={1508 1960 3165 3181 3828 3877 4033 5084 5221 7159 7919 8052 9152 9997 10426 10429 10851 11108 11903 11918 12478 12741 12744}
+	resources={}
+	history={
+		#owner=GRY
+		#add_core_of=GRY
+		#add_claim_by=
+		victory_points={1960 3}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=1
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

@@ -1,0 +1,39 @@
+state={
+	id=663
+	name="STATE_663"
+	manpower=45678
+	state_category=small_island
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={10398}
+	resources={}
+	history={
+		#owner=BRF
+		#add_core_of=BRF
+		#add_core_of=GRW
+		#add_claim_by=
+		#victory_points={}
+		set_state_flag=brodfeld_city
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=0
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			10398={
+				naval_base=1
+				#bunker=0
+				#coastal_bunker=0
+			}
+		}
+	}
+}

@@ -1,0 +1,37 @@
+state={
+	id=187
+	name="STATE_187"
+	manpower=384371
+	state_category=town
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={790 844 872 939 956 3816 3820 3845 3954 6812 6901 7213 9800 9813 9827 9842 9846 11737 11756 11779 11793 11825}
+	resources={}
+	history={
+		owner=HWG
+		add_core_of=HWG
+		#add_claim_by=
+		victory_points={6812 10}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=3
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=1
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

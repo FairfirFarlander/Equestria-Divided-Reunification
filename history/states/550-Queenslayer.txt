@@ -1,0 +1,39 @@
+state={
+	id=550
+	name="STATE_550"
+	manpower=1771038
+	state_category=city
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={1209 1425 1469 2008 2077 4121 4177 4406 4887 4965 4991 5066 7015 7137 8032 8236 9948 10773 10842 10889 12065 12715 13013 13026}
+	resources={}
+	history={
+		#owner=LCT
+		#add_core_of=LCT
+		#add_claim_by=
+		victory_points={1209 25}
+		victory_points={1425 1}
+		victory_points={10842 4}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=4
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=2
+			industrial_complex=2
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

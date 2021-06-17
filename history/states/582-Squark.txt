@@ -1,0 +1,47 @@
+state={
+	id=582
+	name="STATE_582"
+	manpower=124500
+	state_category=rural
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={996 1832 3498 4042 4105 4838 7014 7120 9140 9669 10034 10076 10101 11982 12052 12076 13142}
+	resources={}
+	history={
+		#owner=FAT
+		#add_core_of=FAT
+		#add_claim_by=
+		victory_points={1832 3}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=0
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=1
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			1832={
+				#naval_base=0
+				bunker=1
+				#coastal_bunker=0
+			}
+			7014={
+				#naval_base=0
+				bunker=1
+				#coastal_bunker=0
+			}
+			9140={
+				#naval_base=0
+				bunker=1
+				#coastal_bunker=0
+			}
+		}
+	}
+}

@@ -1,0 +1,37 @@
+state={
+	id=521
+	name="STATE_521"
+	manpower=124005
+	state_category=pastoral
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={105 1991 2093 3130 6538 7926 8121 9121 10268 10579 10802 11182}
+	resources={chromium=16}
+	history={
+		#owner=FRN
+		#add_core_of=JES
+		#add_claim_by=FRN
+		victory_points={2093 1}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=1
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

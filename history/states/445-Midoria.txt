@@ -1,0 +1,38 @@
+state={
+	id=445
+	name="STATE_445"
+	manpower=1454200
+	state_category=large_city
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={1252 1592 1605 1620 4251 4363 7591 7645 9928 10438 10453 10467 11864 12252 12402 12417 12431 12447 12460 12475}
+	resources={tungsten=12 steel=8}
+	history={
+		#owner=SIC
+		#add_core_of=SIC
+		#add_claim_by=
+		victory_points={7645 30}
+		victory_points={10438 5}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=7
+			air_base=1
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=2
+			industrial_complex=3
+			dockyard=1
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			7645={
+				naval_base=4
+				#bunker=0
+				#coastal_bunker=0
+			}
+		}
+	}
+}

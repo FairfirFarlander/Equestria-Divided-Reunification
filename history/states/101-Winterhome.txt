@@ -1,0 +1,37 @@
+state={
+	id=101
+	name="STATE_101"
+	manpower=148984
+	state_category=pastoral
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={268 293 349 727 969 3258 3312 3340 3689 3728 3776 6257 6334 6390 6606 6661 6761 6793 9388 9425 9584 9668 9685 9687 9704 11219 11587 11689}
+	resources={}
+	history={
+		owner=HSW
+		add_core_of=HSW
+		#add_claim_by=
+		#victory_points={}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=2
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

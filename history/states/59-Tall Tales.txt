@@ -1,0 +1,38 @@
+state={
+	id=59
+	name="STATE_59"
+	manpower=1222000
+	state_category=city
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={721 737 1057 1126 1967 1994 3573 3779 3987 4014 4046 4962 4970 5004 5053 7985 9943 9983 10026 10082 10254 10754 10884 11935 11953 12000 12022 12034 12082 12866 13145}
+	resources={}
+	history={
+		owner=VHT
+		add_core_of=VHT
+		#add_claim_by=
+		victory_points={10754 3}
+		victory_points={13145 20}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=7
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=1
+			industrial_complex=2
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			10754={
+				naval_base=2
+				#bunker=0
+				#coastal_bunker=0
+			}
+		}
+	}
+}

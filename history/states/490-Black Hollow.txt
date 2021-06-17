@@ -1,0 +1,38 @@
+state={
+	id=490
+	name="STATE_490"
+	manpower=256709
+	state_category=rural
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={1362 1390 1464 1507 4339 4613 7075 7218 7356 7516 8045 9961 9988 10330 10356 10384 10456 10496 12332}
+	resources={}
+	history={
+		#owner=BAN
+		#add_core_of=BAN
+		#add_core_of=BOI
+		#add_claim_by=
+		victory_points={1464 5}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=1
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=1
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

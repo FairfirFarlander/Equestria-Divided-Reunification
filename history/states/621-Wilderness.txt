@@ -1,0 +1,37 @@
+state={
+	id=621
+	name="STATE_621"
+	manpower=645678
+	state_category=rural
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={2044 4644 7593 7930 10077 12207 12891}
+	resources={aluminium=7}
+	history={
+		#owner=FRE
+		#add_core_of=FRE
+		#add_claim_by=
+		victory_points={2044 1}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=0
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

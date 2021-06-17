@@ -1,0 +1,37 @@
+state={
+	id=111
+	name="STATE_111"
+	manpower=45110
+	state_category=pastoral
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={402 527 590 648 3589 3594 6613 6786 9593 9625 9710 9748 11593 11716 11794}
+	resources={}
+	history={
+		owner=HFT
+		add_core_of=HFT
+		#add_claim_by=
+		#victory_points={}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=1
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

@@ -1,0 +1,229 @@
+#LOCALE
+capital=75
+oob="HWG_1007"
+if={
+	limit={has_dlc="Man the Guns"}
+	set_naval_oob="HWG_1007_naval"
+	else={set_naval_oob="HWG_1007_naval_legacy"}
+}
+#FOUNTATION
+set_research_slots=2
+set_stability=0.4
+set_war_support=0.29
+add_ideas={
+	outdated_industry
+	lack_of_scientists3
+	poverty5
+	HWG_idea
+}
+#TECHNOLOGY
+set_technology={
+	pony_race=1
+	melee_weapons=1
+	melee_weapons1=1
+	pre_gw_artillery=1
+	tech_pegasi=1
+	tech_support=1
+	tech_unicorn=1
+	early_fighter=1
+	early_bomber=1
+	tech_ironpaws=1
+}
+if={limit={has_dlc="Man the Guns"}
+	set_technology={
+		early_ship_hull_light=1
+		early_ship_hull_cruiser=1
+		basic_battery=1
+		basic_depth_charges=1
+		basic_secondary_battery=1
+		basic_torpedo=1
+		mtg_transport=1
+	}
+}
+if={limit={not={has_dlc="Man the Guns"}}
+	set_technology={
+		early_destroyer=1
+		early_light_cruiser=1
+		transport=1
+	}
+}
+actually_fix_weapon_techs=yes
+#Misc
+set_convoys=11
+set_rule={can_generate_female_aces=yes}
+#DIPLOMACY
+#POLITICS
+set_popularities={
+	fascism=66	communism=12
+	neutrality=13	democratic=9
+}
+set_politics={
+	ruling_party=fascism	last_election="1001.10.10"
+	election_frequency=36	elections_allowed=no
+}
+create_country_leader={
+	name="Mistress Rarity"	#desc=""
+	expire="1965.1.1"	picture="Rarity.tga"
+	ideology=plutocracy	female=yes
+	traits={}
+}
+create_country_leader={
+	name="Fleur de Lis"	#desc=""
+	expire="1965.1.1"	picture="Fleur.tga"
+	ideology=oligarchism	female=yes
+	traits={}
+}
+create_country_leader={
+	name="General Fancy Pants"	#desc=""
+	expire="1965.1.1"	picture="Fancy.tga"
+	ideology=liberalism	#female=yes
+	traits={}
+}
+create_country_leader={
+	name="Shooter Mark"	#desc=""
+	expire="1965.1.1"	#picture=""
+	ideology=anarchist_communism	#female=yes
+	traits={}
+}
+#MILITARY
+create_field_marshal={
+	name="Mistress Rarity"	#id=	desc=""
+	picture="Rarity.tga"	female=yes
+	skill=1	attack_skill=2	defense_skill=2
+	planning_skill=1	logistics_skill=1
+	traits={pony_race_trait politically_connected}
+}
+create_corps_commander={
+	name="Fancy Pants"	#id=	desc=""
+	picture="Fancy.tga"	#female=yes
+	traits={pony_race_trait politically_connected trait_cautious}
+	skill=2	attack_skill=1	defense_skill=3
+	planning_skill=2	logistics_skill=2
+}
+create_corps_commander={
+	name="Fleur de Lis"	#id=	desc=""
+	picture="Fleur.tga"	female=yes
+	skill=2	attack_skill=2	defense_skill=2
+	planning_skill=2	logistics_skill=1
+	traits={pony_race_trait media_personality vigilant_sentinel}
+}
+create_navy_leader={
+	name="Generic Admiral"	#id=	desc=""
+	picture=""	female=yes
+	skill=1	attack_skill=1	defense_skill=1
+	maneuvering_skill=2	coordination_skill=2
+	traits={pony_race_trait aviation_enthusiast}
+}
+#VARIENTS
+if={limit={has_dlc="Man the Guns"}
+	create_equipment_variant={	#Heavy Cruiser AR1-EN1 MG2-SG3
+		name="Belle 1003 Class"	type=ship_hull_cruiser_1
+		parent_version=1	#obsolete=yes
+		modules={
+			fixed_ship_battery_slot=ship_medium_battery_1
+			fixed_ship_anti_air_slot=empty
+			fixed_ship_fire_control_system_slot=empty
+			fixed_ship_radar_slot=empty
+			fixed_ship_engine_slot=cruiser_ship_engine_1
+			fixed_ship_armor_slot=ship_armor_cruiser_1
+			fixed_ship_secondaries_slot=ship_secondaries_1
+			mid_1_custom_slot=ship_secondaries_1
+			mid_2_custom_slot=ship_secondaries_1
+			rear_1_custom_slot=ship_medium_battery_1
+		}
+	}
+	create_equipment_variant={	#Light Cruiser AR1-EN1 LG3
+		name="Auditor 1003 Class"	type=ship_hull_cruiser_1
+		parent_version=0	#obsolete=yes
+		modules={
+			fixed_ship_battery_slot=ship_light_medium_battery_1
+			fixed_ship_anti_air_slot=empty
+			fixed_ship_fire_control_system_slot=empty
+			fixed_ship_radar_slot=empty
+			fixed_ship_engine_slot=cruiser_ship_engine_1
+			fixed_ship_armor_slot=ship_armor_cruiser_1
+			fixed_ship_secondaries_slot=empty
+			mid_1_custom_slot=ship_light_medium_battery_1
+			mid_2_custom_slot=ship_secondaries_1
+			rear_1_custom_slot=ship_light_medium_battery_1
+		}
+	}
+	create_equipment_variant={	#Torpedo Destroyer
+		name="Investor 1005 Class"	type=ship_hull_light_1 
+		parent_version=1	#obsolete=yes
+		modules={
+			fixed_ship_battery_slot=ship_light_battery_1
+			fixed_ship_anti_air_slot=empty
+			fixed_ship_fire_control_system_slot=empty
+			fixed_ship_radar_slot=empty
+			fixed_ship_engine_slot=light_ship_engine_1
+			fixed_ship_torpedo_slot=ship_torpedo_1
+			mid_1_custom_slot=ship_torpedo_1
+			rear_1_custom_slot=empty
+		}
+	}
+	create_equipment_variant={	#Destroyer
+		name="Surveyor 1003 Class"	type=ship_hull_light_1
+		parent_version=0	obsolete=yes
+		modules={
+			fixed_ship_battery_slot=ship_light_battery_1
+			fixed_ship_anti_air_slot=empty
+			fixed_ship_fire_control_system_slot=empty
+			fixed_ship_radar_slot=empty
+			fixed_ship_engine_slot=light_ship_engine_1
+			fixed_ship_torpedo_slot=empty
+			mid_1_custom_slot=empty
+			rear_1_custom_slot=empty
+		}
+	}
+}
+if={limit={not={has_dlc="Man the Guns"}}
+	create_equipment_variant={	#Heavy Cruiser
+		name="Belle 1003 Class"	type=heavy_cruiser_1
+		parent_version=1	#obsolete=yes
+		upgrades={
+			ship_reliability_upgrade=0
+			ship_engine_upgrade=0
+			ship_armor_upgrade=0
+			ship_gun_upgrade=0
+		}
+	}
+	create_equipment_variant={	#Light Cruiser
+		name="Auditor 1003 Class"	type=light_cruiser_1
+		parent_version=0	#obsolete=yes
+		upgrades={
+			ship_reliability_upgrade=1
+			ship_engine_upgrade=0
+			ship_gun_upgrade=1
+			ship_anti_air_upgrade=0
+		}
+	}
+	create_equipment_variant={	#Light-Medium Destroyer
+		name="Investor 1005 Class"	type=destroyer_1
+		parent_version=1	#obsolete=yes
+		upgrades={
+			ship_torpedo_upgrade=1
+			destroyer_engine_upgrade=0
+			ship_ASW_upgrade=0
+			ship_anti_air_upgrade=0
+		}
+	}
+	create_equipment_variant={	#Destroyer
+		name="Surveyor 1003 Class"	type=destroyer_1
+		parent_version=0	obsolete=yes
+		upgrades={
+			ship_torpedo_upgrade=0
+			destroyer_engine_upgrade=0
+			ship_ASW_upgrade=0
+			ship_anti_air_upgrade=0
+		}
+	}
+}
+create_equipment_variant={	#Aircraft
+	name="Chelangel UM06-9"	#Neighchelangelo - Ultramarine 06' V9
+	type=tac_bomber_equipment_1	parent_version=0	#obsolete=yes
+	upgrades={
+		plane_tac_bomb_upgrade=0	plane_range_upgrade=1
+		plane_engine_upgrade=0	plane_reliability_upgrade=0
+	}
+}

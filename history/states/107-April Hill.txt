@@ -1,0 +1,37 @@
+state={
+	id=107
+	name="STATE_107"
+	manpower=205400
+	state_category=rural
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={400 857 884 903 932 942 962 1090 3902 3933 3938 6756 6878 6903 6914 6936 6959 6993 7111 9767 9852 9857 9870 10024 10109 11812 11884}
+	resources={}
+	history={
+		owner=FLY
+		add_core_of=FLY
+		#add_claim_by=
+		#victory_points={6959 2}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=0
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

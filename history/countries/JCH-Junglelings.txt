@@ -1,0 +1,53 @@
+#LOCALE
+capital=26
+oob="JCH_1007"
+#FOUNTATION
+set_research_slots=2
+set_stability=0.76 set_war_support=0.07
+set_rule={can_generate_female_aces=yes}
+add_ideas={
+	limited_exports
+	isolation
+	poor_science_base
+	communal_society
+	lack_of_scientists2
+	poverty4
+}
+#TECHNOLOGY
+set_technology={
+	changeling_race=1
+	melee_weapons=1
+	tech_support=1
+}
+if={limit={has_dlc="Man the Guns"}
+	set_technology={
+		mtg_transport=1
+	}
+}
+if={limit={not={has_dlc="Man the Guns"}}
+	set_technology={
+		transport=1
+	}
+}
+actually_fix_weapon_techs=yes
+#MISC
+set_convoys=2
+set_rule={can_generate_female_aces=yes}
+#POLITICS
+set_popularities={
+	fascism=13	communism=42
+	neutrality=24	democratic=21
+}
+set_politics={
+	ruling_party=communism
+	last_election="1004.11.11"
+	election_frequency=36
+	elections_allowed=no
+}
+create_country_leader={
+	name="Aetanae Krix"	#desc=""
+	expire="1965.1.1"	picture="unknown_bug.tga"
+	ideology=primitive_communism	#female=yes
+	traits={}
+}
+#MILITARY

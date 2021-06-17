@@ -1,0 +1,37 @@
+state={
+	id=24
+	name="STATE_24"
+	manpower=127509
+	state_category=rural
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={247 1958 1989 3314 3512 4022 4920 5046 6286 6287 6622 7979 8038 8111 9281 9335 9363 11264 11533 12857}
+	resources={rubber=20}
+	history={
+		owner=JTL
+		add_core_of=JTL
+		#add_claim_by=
+		victory_points={11264 3}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=1
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			11264={
+				naval_base=1
+				#bunker=0
+				#coastal_bunker=0
+			}
+		}
+	}
+}

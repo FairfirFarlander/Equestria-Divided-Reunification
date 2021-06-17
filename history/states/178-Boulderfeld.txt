@@ -1,0 +1,37 @@
+state={
+	id=178
+	name="STATE_178"
+	manpower=144850
+	state_category=rural
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={849 928 947 3851 6038 6375 6912 7361 9139 9227 9921 11028 11081 11245 11848 11898 13282 13284 13285 13287 13290}
+	resources={}
+	history={
+		owner=HMS
+		add_core_of=HMS
+		#add_claim_by=
+		#victory_points={}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=6
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

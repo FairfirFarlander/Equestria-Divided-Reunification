@@ -1,0 +1,37 @@
+state={
+	id=215
+	name="STATE_215"
+	manpower=330000
+	state_category=rural
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={473 523 3519 3540 6553 6566 9424 9446 9448 9461 9488 9489 9552 9565 11396 11450 11513 13250}
+	resources={}
+	history={
+		#owner=OLE
+		#add_core_of=OLE
+		#add_claim_by=
+		victory_points={9446 3}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=2
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

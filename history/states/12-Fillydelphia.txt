@@ -1,0 +1,37 @@
+state={
+	id=12
+	name="STATE_12"
+	manpower=2537200
+	state_category=large_city
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={950 1178 1192 4065 6832 6896 9828 9891 10063 12038 12081 12083}
+	resources={}
+	history={
+		owner=FLY
+		add_core_of=FLY
+		#add_claim_by=
+		victory_points={950 30}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=7
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=2
+			industrial_complex=3
+			dockyard=1
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			950={
+				naval_base=4
+				#bunker=0
+				#coastal_bunker=0
+			}
+		}
+	}
+}

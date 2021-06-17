@@ -1,0 +1,37 @@
+state={
+	id=603
+	name="STATE_603"
+	manpower=245607
+	state_category=rural
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={143 1642 1783 1844 4576 4714 4849 7737 10674 10691 11908 12007 12590 12737}
+	resources={steel=20}
+	history={
+		#owner=FBK
+		#add_core_of=FBK
+		#add_claim_by=
+		victory_points={7737 5}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=1
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

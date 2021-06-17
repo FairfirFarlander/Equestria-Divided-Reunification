@@ -1,0 +1,37 @@
+state={
+	id=3
+	name="STATE_3"
+	manpower=1235000
+	state_category=large_city
+	buildings_max_level_factor=2
+	impassable=no
+	provinces={156 179 911 1173 3764 3773 3928 6788 6975 9138 9182 9218 9738 11114 13058}
+	resources={steel=28 crystals=12}
+	history={
+		owner=HMS
+		add_core_of=HMS
+		#add_claim_by=EQS
+		victory_points={179 40}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=9
+			air_base=3
+			anti_air_building=2
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=2
+			industrial_complex=4
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			179={
+				#naval_base=0
+				bunker=1
+				#coastal_bunker=0
+			}
+		}
+	}
+}

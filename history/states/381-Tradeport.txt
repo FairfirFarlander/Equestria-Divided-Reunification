@@ -1,0 +1,37 @@
+state={
+	id=381
+	name="STATE_381"
+	manpower=4004005
+	state_category=megalopolis
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={12882}
+	resources={steel=24}
+	history={
+		#owner=TRD
+		#add_core_of=TRD
+		#add_claim_by=
+		victory_points={12882 50}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=10
+			air_base=0
+			anti_air_building=3
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=3
+			industrial_complex=5
+			dockyard=2
+			synthetic_refinery=0
+			fuel_silo=1
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			12882={
+				naval_base=4
+				#bunker=0
+				#coastal_bunker=0
+			}
+		}
+	}
+}

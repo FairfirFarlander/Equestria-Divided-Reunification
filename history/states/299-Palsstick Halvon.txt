@@ -1,0 +1,37 @@
+state={
+	id=299
+	name="STATE_299"
+	manpower=234000
+	state_category=rural
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={1019 1077 1132 1163 4168 4491 6943 7012 7045 7134 7138 7202 7558 9876 10047 10096 10439 10468 10495 11783 11927 12054 12445}
+	resources={oil = 16}
+	history={
+		#owner=OLE
+		#add_core_of=OLE
+		#add_claim_by=
+		victory_points={9876 5}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=1
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=1
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			9876={
+				naval_base=1
+				#bunker=0
+				#coastal_bunker=0
+			}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+state={
+	id=240
+	name="STATE_240"
+	manpower=130550
+	state_category=rural
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={6330 6355 6386 9384}
+	resources={aluminium=4 tungsten=3 steel=5}
+	history={
+		owner=STG
+		add_core_of=STG
+		victory_points={6355 3}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=2
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

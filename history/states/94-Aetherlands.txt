@@ -1,0 +1,37 @@
+state={
+	id=94
+	name="STATE_94"
+	manpower=98800
+	state_category=pastoral
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={375 3367 3645 3694 3696 6441 6679 6682 6697 9456 9640 9656 10194 11481 11644 11659 13010}
+	resources={}
+	history={
+		owner=PIE
+		add_core_of=PIE
+		#add_claim_by=
+		victory_points={3645 2}#Hamsterdam
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=1
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			3645={
+				naval_base=1
+				#bunker=0
+				#coastal_bunker=0
+			}
+		}
+	}
+}

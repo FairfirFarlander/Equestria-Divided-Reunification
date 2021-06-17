@@ -1,0 +1,37 @@
+state={
+	id=634
+	name="STATE_634"
+	manpower=510560
+	state_category=rural
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={1585 1748 2173 2179 3056 4855 5191 7889 8192 8194 8238 8251 10608 10714 12694}
+	resources={}
+	history={
+		#owner=HLQ
+		#add_core_of=HLQ
+		#add_claim_by=
+		victory_points={2179 3}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=1
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=1
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

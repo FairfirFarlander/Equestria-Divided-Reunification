@@ -1,0 +1,37 @@
+state={
+	id=238
+	name="STATE_238"
+	manpower=5937
+	state_category=wasteland
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={1088 1164 1606 3255 3264 3942 4170 6171 6383 7140 9214 9390 9940 10087 12029 12058 13319 13320}
+	resources={crystals=3}
+	history={
+		#owner=GRF
+		#add_core_of=GRF
+		#add_claim_by=
+		#victory_points={}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=0
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

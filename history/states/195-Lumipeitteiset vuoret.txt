@@ -1,0 +1,37 @@
+state={
+	id=195
+	name="STATE_195"
+	manpower=7121
+	state_category=wasteland
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={702 847 862 891 894 3863 6869 6872 9804 9836 11660 11785 11799 13253 13256 13257 13261}
+	resources={aluminium=36 steel=12 chromium=30}
+	history={
+		#owner=OLE
+		#add_core_of=OLE
+		#add_claim_by=
+		#victory_points={}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=1
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

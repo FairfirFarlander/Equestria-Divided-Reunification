@@ -1,0 +1,39 @@
+state={
+	id=412
+	name="STATE_412"
+	manpower=876890
+	state_category=large_town
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={4961 5017 5047 5060 5091 8084 8103 10739 10745 10784 10900 12723 12766 12826 12881}
+	resources={steel=6 crystals=12}
+	history={
+		#owner=OLV
+		#add_core_of=OLV
+		#add_claim_by=
+		victory_points={5091 3}
+		victory_points={10900 10}
+		victory_points={12881 2}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=4
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=2
+			industrial_complex=1
+			dockyard=1
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			10900={
+				naval_base=1
+				#bunker=0
+				#coastal_bunker=0
+			}
+		}
+	}
+}

@@ -1,0 +1,38 @@
+state={
+	id=458
+	name="STATE_458"
+	manpower=727009
+	state_category=large_town
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={710 1603 4368 4519 4547 4607 4736 5092 6932 7019 7301 7406 7418 8072 9159 10159 10305 10422 10591 12408 12713 12765}
+	resources={}
+	history={
+		#owner=STW
+		#add_core_of=STW
+		#add_claim_by=
+		victory_points={1603 3}
+		victory_points={8072 10}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=3
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=1
+			industrial_complex=2
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

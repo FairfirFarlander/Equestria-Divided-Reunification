@@ -1,0 +1,37 @@
+state={
+	id=524
+	name="STATE_524"
+	manpower=326009
+	state_category=rural
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={1640 1805 1878 7097 10572 11988 12483 12495 12531 12608 12668 13143}
+	resources={aluminium=8}
+	history={
+		#owner=JEB
+		#add_core_of=JEB
+		#add_claim_by=
+		victory_points={12483 3}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=2
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=1
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

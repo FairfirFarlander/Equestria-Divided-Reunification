@@ -1,0 +1,24 @@
+ideas={
+	country={
+		HFT_dehorned_population={
+			allowed={always=no}
+			removal_cost=-1
+			#picture=
+			research_bonus={
+				race_tech=0.05
+				pegasi_tech=-0.05
+				unicorn_tech=-0.3
+			}
+		}
+		HFT_dehorned_population1={
+			allowed={always=no}
+			removal_cost=-1
+			#picture=
+			research_bonus={
+				race_tech=0.05
+				pegasi_tech=-0.05
+				unicorn_tech=-0.2
+			}
+		}
+	}
+}

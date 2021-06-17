@@ -1,0 +1,37 @@
+state={
+	id=612
+	name="STATE_612"
+	manpower=167666
+	state_category=pastoral
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={810 3787 3815 3843 5427 6838 6863 6989 9798 10519 11750 12714}
+	resources={}
+	history={
+		#owner=GRY
+		#add_core_of=GRY
+		#add_claim_by=
+		victory_points={6989 1}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=0
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

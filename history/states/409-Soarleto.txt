@@ -1,0 +1,37 @@
+state={
+	id=409
+	name="STATE_409"
+	manpower=370456
+	state_category=town
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={1162 1202 3651 4165 4207 7027 7152 10080 10105 12077 12089 12317}
+	resources={}
+	history={
+		#owner=FAL
+		#add_core_of=FAL
+		#add_claim_by=
+		victory_points={10105 5}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=3
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=2
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

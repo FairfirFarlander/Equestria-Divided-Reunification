@@ -1,0 +1,37 @@
+state={
+	id=262
+	name="STATE_262"
+	manpower=1816691
+	state_category=city
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={1527 6752 7829 10339 10393 10618}
+	resources={}
+	history={
+		#owner=CHN
+		#add_core_of=CHN
+		#add_claim_by=
+		victory_points={6752 20}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=2
+			air_base=1
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=2
+			industrial_complex=3
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

@@ -1,0 +1,39 @@
+state={
+	id=622
+	name="STATE_622"
+	manpower=911101
+	state_category=large_town
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={1609 2843 4162 4616 7078 7124 7565 7662 9935 9993 10035 10389 10416 10443 11929 12050 12338}
+	resources={}
+	history={
+		#owner=NIM
+		#add_core_of=NIM
+		#add_claim_by=
+		victory_points={7078 5}
+		victory_points={9993 15}
+		victory_points={10443 1}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=4
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=2
+			industrial_complex=1
+			dockyard=1
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

@@ -1,0 +1,37 @@
+state={
+	id=586
+	name="STATE_586"
+	manpower=61109
+	state_category=pastoral
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={650 1880 2160 2181 2195 2209 4001 4005 4031 4082 4123 5107 5121 5165 5200 7142 7181 8179 8203 8229 9953 10095 10973 12067 12902 12916 12939 12951 12984 13202 }
+	resources={crystals=10}
+	history={
+		#owner=DEP
+		#add_core_of=DEP
+		#add_claim_by=
+		#victory_points={}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=0
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

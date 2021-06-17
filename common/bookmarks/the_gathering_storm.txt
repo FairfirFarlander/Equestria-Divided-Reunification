@@ -1,0 +1,276 @@
+bookmarks={
+	bookmark={
+		name="GATHERING_STORM_NAME"
+		desc="GATHERING_STORM_DESC"
+		date=1007.1.1.12
+		picture="GFX_select_date_1936"
+		default_country="HMS"
+		default=yes
+		"HMS"={
+			history="HMS_GATHERING_STORM_DESC"
+			ideology=fascism
+			ideas={
+				HMS_idea
+			}
+			focuses={
+			}
+		}
+		"HSW"={
+			history="HSW_GATHERING_STORM_DESC"
+			ideology=fascism
+			ideas={
+				HSW_idea
+			}
+			focuses={
+			}
+		}
+		"HEF"={
+			history="HEF_GATHERING_STORM_DESC"
+			ideology=fascism
+			ideas={
+				HEF_idea
+			}
+			focuses={
+			}
+		}
+		"HEB"={
+			history="HEB_GATHERING_STORM_DESC"
+			ideology=fascism
+			ideas={
+				HEB_idea
+			}
+			focuses={
+			}
+		}
+		"HWG"={
+			history="HWG_GATHERING_STORM_DESC"
+			ideology=fascism
+			ideas={
+				HWG_idea
+			}
+			focuses={
+			}
+		}
+		"CUL"={
+			history="CUL_GATHERING_STORM_DESC"
+			ideology=fascism
+			ideas={
+				CUL_idea
+			}
+			focuses={
+			}
+		}
+		"CRY"={
+			history="CRY_GATHERING_STORM_DESC"
+			ideology=fascism
+			ideas={
+				crystal_heart
+				royal_family
+				sombra_threat
+			}
+			focuses={
+				CRY_oldorder
+				CRY_comrevolution
+				CRY_oldking
+			}
+		}
+		"STG"={
+			history="STG_GATHERING_STORM_DESC"
+			ideology=communism
+			ideas={
+				severe_famine
+				incomplete_industrialization
+			}
+			focuses={
+				vasya_2
+				the_palace
+				manifesto_of_materialism
+			}
+		}
+		#"SOL"={
+		#	history="RANDOM_GATHERING_STORM_DESC"
+		#	ideology=neutrality
+		#}
+		#minors
+		"ALA"={
+			minor=yes
+			history="ALA_GATHERING_STORM_DESC"
+			ideology=neutrality
+			ideas={
+				
+			}
+			focuses={
+				
+			}
+		}
+		"BCK"={
+			minor=yes
+			history="BCK_GATHERING_STORM_DESC"
+			ideology=neutrality
+			ideas={
+				
+			}
+			focuses={
+				
+			}
+		}
+		"CHY"={
+			minor=yes
+			history="CHY_GATHERING_STORM_DESC"
+			ideology=fascism
+			ideas={
+				
+			}
+			focuses={
+				
+			}
+		}
+		"FRT"={
+			minor=yes
+			history="FRT_GATHERING_STORM_DESC"
+			ideology=neutrality
+			ideas={
+				
+			}
+			focuses={
+				
+			}
+		}
+		"FLY"={
+			minor=yes
+			history="FLY_GATHERING_STORM_DESC"
+			ideology=fascism
+			ideas={
+				
+			}
+			focuses={
+				
+			}
+		}
+		"HAY"={
+			minor=yes
+			history="HAY_GATHERING_STORM_DESC"
+			ideology=neutrality
+			ideas={
+				
+			}
+			focuses={
+				
+			}
+		}
+		"HFT"={
+			minor=yes
+			history="HFT_GATHERING_STORM_DESC"
+			ideology=neutrality
+			ideas={
+				
+			}
+			focuses={
+				
+			}
+		}
+		"JCH"={
+			minor=yes
+			history="JCH_GATHERING_STORM_DESC"
+			ideology=communism
+			ideas={
+				
+			}
+			focuses={
+				
+			}
+		}
+		"JTL"={
+			minor=yes
+			history="JTL_GATHERING_STORM_DESC"
+			ideology=neutrality
+			ideas={
+				
+			}
+			focuses={
+				
+			}
+		}
+		"MWC"={
+			minor=yes
+			history="MWC_GATHERING_STORM_DESC"
+			ideology=neutrality
+			ideas={
+				
+			}
+			focuses={
+				
+			}
+		}
+		"PIE"={
+			minor=yes
+			history="PIE_GATHERING_STORM_DESC"
+			ideology=neutrality
+			ideas={
+				
+			}
+			focuses={
+				
+			}
+		}
+		"PLT"={
+			minor=yes
+			history="PLT_GATHERING_STORM_DESC"
+			ideology=democratic
+			ideas={
+				
+			}
+			focuses={
+				
+			}
+		}
+		"SPA"={
+			minor=yes
+			history="SPA_GATHERING_STORM_DESC"
+			ideology=neutrality
+			ideas={
+				
+			}
+			focuses={
+				
+			}
+		}
+		"STB"={
+			minor=yes
+			history="STB_GATHERING_STORM_DESC"
+			ideology=neutrality
+			ideas={
+				
+			}
+			focuses={
+				
+			}
+		}
+		"THA"={
+			minor=yes
+			history="THA_GATHERING_STORM_DESC"
+			ideology=fascism
+			ideas={
+				
+			}
+			focuses={
+				
+			}
+		}
+		"VHT"={
+			minor=yes
+			history="VHT_GATHERING_STORM_DESC"
+			ideology=communism
+			ideas={
+				
+			}
+			focuses={
+				
+			}
+		}
+		effect={
+			randomize_weather=22345 #Obligatory in every bookmark!
+			#123={rain_light=yes}
+		}
+	}
+}

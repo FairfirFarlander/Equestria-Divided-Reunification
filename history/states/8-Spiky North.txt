@@ -1,0 +1,37 @@
+state={
+	id=8
+	name="STATE_8"
+	manpower=43000
+	state_category=pastoral
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={7069 9833 9945 10113}
+	resources={}
+	history={
+		owner=DRG
+		add_core_of=DRG
+		#add_claim_by=
+		#victory_points={}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=0
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			dockyard=1
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			10113={
+				naval_base=1
+				#bunker=0
+				#coastal_bunker=0
+			}
+		}
+	}
+}

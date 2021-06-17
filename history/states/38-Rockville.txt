@@ -1,0 +1,37 @@
+state={
+	id=38
+	name="STATE_38"
+	manpower=807684
+	state_category=large_town
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={65 137 3473 6080 6176 6347 6546 9296 9346 11101 11198 11367 11441 11511}
+	resources={oil=7 aluminium=4}
+	history={
+		owner=PIE
+		add_core_of=PIE
+		#add_claim_by=
+		victory_points={11511 20}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=4
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=2
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

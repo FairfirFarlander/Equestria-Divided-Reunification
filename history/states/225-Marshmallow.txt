@@ -1,0 +1,37 @@
+state={
+	id=225
+	name="STATE_225"
+	manpower=630492
+	state_category=large_town
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={159 200 3150 3373 9284 9405 11055 11136 11267 11334 11382}
+	resources={}
+	history={
+		owner=STG
+		add_core_of=STG
+		victory_points={200 10}
+		victory_points={9405 3}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=3
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=1
+			industrial_complex=1
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

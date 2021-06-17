@@ -1,0 +1,37 @@
+state={
+	id=442
+	name="STATE_442"
+	manpower=1050607
+	state_category=city
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={12740}
+	resources={steel=6}
+	history={
+		#owner=FLO
+		#add_core_of=FLO
+		#add_claim_by=POM
+		victory_points={12740 20}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=5
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=1
+			industrial_complex=4
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

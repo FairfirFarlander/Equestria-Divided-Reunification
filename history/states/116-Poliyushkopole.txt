@@ -1,0 +1,37 @@
+state={
+	id=116
+	name="STATE_116"
+	manpower=311100
+	state_category=rural
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={503 595 3495 3523 3737 3931 6621 6759 6792 9867 11613 11616 11699}
+	resources={}
+	history={
+		owner=BCK
+		add_core_of=BCK
+		#add_claim_by=
+		victory_points={9867 5}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=1
+			air_base=2
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

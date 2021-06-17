@@ -1,0 +1,130 @@
+#LOCALE
+capital=21
+oob="HEB_1007"
+#if={
+#	limit={has_dlc="Man the Guns"}
+#	set_naval_oob="HEB_1007_naval"
+#	else={set_naval_oob="HEB_1007_naval_legacy"}
+#}
+#FOUNTATION
+set_research_slots=3
+set_stability=0.5
+set_war_support=0.12
+add_ideas={
+	HEB_idea
+	HEB_idea_ai
+	HEB_clanandkin04
+	HEB_dehorn
+	limited_conscription
+	big_science_base
+	pre_industrial_society
+	lack_of_scientists3		#Hit 1 ASAP
+	poverty4
+}
+#TECHNOLOGY
+set_technology={
+	pony_race=1
+	melee_weapons=1
+	tech_support=1
+	pre_gw_artillery=1
+	gwtank=1
+	basic_light_tank=1
+}
+if={limit={has_dlc="Man the Guns"}
+	set_technology={
+		early_ship_hull_light=1
+		early_ship_hull_cruiser=1
+		basic_battery=1
+		basic_depth_charges=1
+		basic_secondary_battery=1
+		basic_torpedo=1
+		mtg_transport=1
+	}
+}
+if={limit={not={has_dlc="Man the Guns"}}
+	set_technology={
+		early_destroyer=1
+		early_light_cruiser=1
+		transport=1
+	}
+}
+actually_fix_weapon_techs=yes
+generic_CL_template=yes
+generic_DD_template=yes
+#MISC
+set_convoys=11
+set_rule={can_generate_female_aces=yes}
+#DIPLOMACY
+if={
+	limit={has_dlc="Together for Victory"}
+	set_autonomy={target=BUF autonomy_state=autonomy_integrated_puppet}
+	set_autonomy={target=CHY autonomy_state=autonomy_integrated_puppet}
+	set_autonomy={target=HFT autonomy_state=autonomy_integrated_puppet}
+	set_autonomy={target=PIE autonomy_state=autonomy_integrated_puppet}
+	else={puppet=BUF puppet=CHY puppet=HFT puppet=PIE}
+}
+#POLITICS
+set_popularities={
+	fascism=85	communism=0
+	neutrality=15	democratic=0
+}
+set_politics={
+	ruling_party=fascism	last_election="1000.10.10"
+	election_frequency=36	elections_allowed=no
+}
+create_country_leader={
+	name="Supreme Commander Applejack"	#desc=""
+	expire="1965.1.1"	picture="Applejack.tga"
+	ideology=nazism	female=yes
+	traits={}
+}
+create_country_leader={
+	name="Jack Trader"	#desc=""
+	expire="1965.1.1"	#picture=""
+	ideology=anarchist_communism	#female=yes
+	traits={}
+}
+create_country_leader={
+	name="Magia Saviour"	#desc=""
+	expire="1965.1.1"	#picture=""
+	ideology=despotism	female=yes
+	traits={}
+}
+create_country_leader={
+	name="Raving Cloud"	#desc=""
+	expire="1965.1.1"	#picture=""
+	ideology=liberalism	female=yes
+	traits={}
+}
+#MILITARY
+create_field_marshal={
+	name="Supreme Commander Applejack"	#id=	desc=""
+	picture="Applejack2.tga"	female=yes
+	skill=1
+	traits={pony_race_trait offensive_doctrine}
+}
+create_corps_commander={
+	name="Big Macintosh"	#id=	desc=""
+	picture="Bigmac.tga"	#female=yes
+	skill=1
+	traits={pony_race_trait}
+}
+create_corps_commander={
+	name="Braeburn"	#id=	desc=""
+	picture="Braeburn.tga"	#female=yes
+	skill=1
+	traits={pony_race_trait}
+}
+create_corps_commander={
+	name="Chief Strongheart"	#id=	desc=""
+	picture="Strongheart.tga"	#female=yes
+	skill=1
+	traits={buffalo_race_trait}
+}
+create_corps_commander={
+	name="Lightning Dust"	#id=	desc=""
+	picture="Lightning.tga"	#female=yes
+	skill=1
+	traits={pony_race_trait}
+}
+#VARIENTS

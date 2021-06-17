@@ -1,0 +1,38 @@
+state={
+	id=657
+	name="STATE_657"
+	manpower=106755
+	state_category=small_island
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={1123 4323 4396 10124 11932}
+	resources={}
+	history={
+		#owner=MIT
+		#add_core_of=MIT
+		#add_claim_by=
+		victory_points={1123 1}
+		victory_points={4396 1}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=1
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			4396={
+				naval_base=1
+				#bunker=0
+				#coastal_bunker=0
+			}
+		}
+	}
+}

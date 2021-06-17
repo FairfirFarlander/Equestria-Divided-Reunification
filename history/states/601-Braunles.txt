@@ -1,0 +1,38 @@
+state={
+	id=601
+	name="STATE_601"
+	manpower=57900
+	state_category=pastoral
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={370 1698 1943 2074 3027 3139 3363 4413 4947 5736 7853 10157 10885 10911 12864 12890 13036 13067 13235}
+	resources={aluminium=18 steel=7 crystals=10}
+	history={
+		#owner=SRS
+		#add_core_of=SRS
+		#add_claim_by=NTR
+		#add_claim_by=FAT
+		victory_points={13235 5}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=0
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

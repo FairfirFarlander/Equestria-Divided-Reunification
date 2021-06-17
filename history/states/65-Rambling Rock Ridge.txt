@@ -1,0 +1,37 @@
+state={
+	id=65
+	name="STATE_65"
+	manpower=15600
+	state_category=pastoral
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={651 669 771 3493 3549 3671 3772 3976 6195 6547 6644 6973 9478 9492 9507 11596 11631 11726}
+	resources={}
+	history={
+		owner=BCK
+		add_core_of=HEF
+		#add_claim_by=
+		#victory_points={}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=1
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

@@ -1,0 +1,37 @@
+state={
+	id=151
+	name="STATE_151"
+	manpower=214710
+	state_category=rural
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={317 3137 3260 3305 3374 6047 6393 11366 }
+	resources={}
+	history={
+		owner=CRY
+		add_core_of=CRY
+		#add_claim_by=
+		victory_points={3305 5}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=3
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

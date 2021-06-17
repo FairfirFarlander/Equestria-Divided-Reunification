@@ -1,0 +1,38 @@
+state={
+	id=551
+	name="STATE_551"
+	manpower=640748
+	state_category=rural
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={823 986 2051 3677 3678 6881 7517 7986 9671 12374 12746 12810 13025 13047}
+	resources={}
+	history={
+		#owner=LCT
+		#add_core_of=LCT
+		#add_claim_by=
+		victory_points={7986 3}
+		victory_points={12810 10}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=2
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=1
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

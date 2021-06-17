@@ -1,0 +1,38 @@
+state={
+	id=400
+	name="STATE_400"
+	manpower=567004
+	state_category=rural
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={1504 1697 1837 1971 3695 3753 4782 4842 7802 7863 10735 10866 10898 11629 12523 12792}
+	resources={}
+	history={
+		#owner=EYR
+		#add_core_of=EYR
+		#add_claim_by=
+		victory_points={1697 5}
+		victory_points={3753 4}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=1
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=1
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

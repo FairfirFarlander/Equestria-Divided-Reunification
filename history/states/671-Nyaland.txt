@@ -1,0 +1,40 @@
+state={
+	id=671
+	name="STATE_671"
+	manpower=1573450
+	state_category=large_city
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={4059 7575 7342 12215 12373 12388 1142 10499 12348 7122 7115}
+	resources={}
+	history={
+		#owner=CYA
+		#add_core_of=CYA
+		#add_claim_by=MIT
+		victory_points={1142 10}
+		victory_points={7342 30}
+		victory_points={7575 3}
+		victory_points={12388 3}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=2
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=1
+			industrial_complex=2
+			dockyard=1
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			7342={
+				naval_base=2
+				#bunker=0
+				#coastal_bunker=0
+			}
+		}
+	}
+}

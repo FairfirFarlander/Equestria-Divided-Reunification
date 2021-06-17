@@ -1,0 +1,37 @@
+state={
+	id=242
+	name="STATE_242"
+	manpower=980200
+	state_category=large_town
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={398 2995 2999 3215 3225 3235 3321 3344 6015 6061 6264 6367 9064 9089 9328 9333 9343 11034 13003 13303}
+	resources={}
+	history={
+		#owner=GRF
+		#add_core_of=GRF
+		#add_claim_by=
+		victory_points={6015 15}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=3
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=2
+			industrial_complex=2
+			dockyard=1
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			6015={
+				naval_base=1
+				#bunker=0
+				#coastal_bunker=0
+			}
+		}
+	}
+}

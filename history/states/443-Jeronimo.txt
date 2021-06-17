@@ -1,0 +1,37 @@
+state={
+	id=443
+	name="STATE_443"
+	manpower=340567
+	state_category=rural
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={1006 1166 1612 4009 4053 4158 4203 7167 7580 7596 7609 7625 9934 9959 10057 10112 10446 10462 10474 12030 12057 12426}
+	resources={oil = 8}
+	history={
+		#owner=STW
+		#add_core_of=STW
+		#add_claim_by=
+		victory_points={1166 3}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=2
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

@@ -1,0 +1,43 @@
+state={
+	id=625
+	name="STATE_625"
+	manpower=107666
+	state_category=rural
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={1059 1444 1977 2003 2046 4104 4516 4544 4571 4910 10844 10902 12452 12796 12836}
+	resources={}
+	history={
+		#owner=BAR
+		#add_core_of=BAR
+		#add_claim_by=WIT
+		victory_points={4516 3}
+		victory_points={4910 3}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=1
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=1
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			4516={
+				#naval_base=0
+				bunker=2
+				#coastal_bunker=0
+			}
+			4910={
+				#naval_base=0
+				bunker=2
+				#coastal_bunker=0
+			}
+		}
+	}
+}

@@ -1,0 +1,38 @@
+state={
+	id=78
+	name="STATE_78"
+	manpower=163454
+	state_category=rural
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={555 674 687 3537 3550 3639 3701 3704 6695 6709 8113 9614 9651 9690 11603 11652}
+	resources={oil=35 steel=5}
+	history={
+		owner=HEB
+		add_core_of=HEB
+		add_core_of=BUF
+		#add_claim_by=
+		#victory_points={}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=0
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=1
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

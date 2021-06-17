@@ -1,0 +1,37 @@
+state={
+	id=70
+	name="STATE_70"
+	manpower=1021800
+	state_category=city
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={476 3526 4112 6055 6130 6550 6990 9481 9799 9818 9887 11778}
+	resources={oil=10 steel=5}
+	history={
+		owner=HMS
+		add_core_of=HMS
+		#add_claim_by=
+		victory_points={9887 20}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=6
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=1
+			industrial_complex=3
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

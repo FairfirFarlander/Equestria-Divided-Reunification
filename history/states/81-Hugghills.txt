@@ -1,0 +1,37 @@
+state={
+	id=81
+	name="STATE_81"
+	manpower=144200
+	state_category=rural
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={606 797 817 3609 3939 3984 6970 9599 11572 11741 11858 13009}
+	resources={rubber=5}
+	history={
+		owner=STB
+		add_core_of=STB
+		#add_claim_by=
+		#victory_points={}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=0
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

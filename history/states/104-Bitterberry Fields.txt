@@ -1,0 +1,37 @@
+state={
+	id=104
+	name="STATE_104"
+	manpower=156888
+	state_category=pastoral
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={21 102 3022 3093 3096 3111 3180 3254 3612 6114 6116 6204 6216 9216 11100 13269 13270 13271}
+	resources={}
+	history={
+		owner=HMS
+		add_core_of=HMS
+		#add_claim_by=
+		victory_points={11100 3}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=4
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

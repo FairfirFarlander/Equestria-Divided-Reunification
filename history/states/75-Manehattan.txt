@@ -1,0 +1,39 @@
+state={
+	id=75
+	name="STATE_75"
+	manpower=4734800
+	state_category=megalopolis
+	buildings_max_level_factor=2
+	impassable=no
+	provinces={758 799 970 980 3037 3744 3761 3798 3861 4135 6734 6764 6818 6955 9686 9689 9719 9787 11692 11707 11710 11768 11805}
+	resources={steel=20}
+	history={
+		owner=HWG
+		add_core_of=HWG
+		#add_claim_by=
+		victory_points={758 30}
+		victory_points={6734 2}
+		victory_points={11710 3}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=7
+			air_base=4
+			anti_air_building=1
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=3
+			industrial_complex=6
+			dockyard=1
+			synthetic_refinery=0
+			fuel_silo=1
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			11710={
+				naval_base=5
+				#bunker=0
+				#coastal_bunker=0
+			}
+		}
+	}
+}

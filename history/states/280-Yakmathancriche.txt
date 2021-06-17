@@ -1,0 +1,37 @@
+state={
+	id=280
+	name="STATE_280"
+	manpower=1138
+	state_category=wasteland
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={204 3061 3161 6322 10526 13101}
+	resources={}
+	history={
+		#owner=PLB
+		#add_core_of=PLB
+		#add_claim_by=
+		#victory_points={}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=0
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

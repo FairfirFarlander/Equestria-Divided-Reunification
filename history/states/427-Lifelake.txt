@@ -1,0 +1,37 @@
+state={
+	id=427
+	name="STATE_427"
+	manpower=540677
+	state_category=large_town
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={1133 1671 1891 9299 9985 11225 11348 11377 13168}
+	resources={}
+	history={
+		#owner=HLR
+		#add_core_of=HLR
+		#add_claim_by=
+		#victory_points={}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=2
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=2
+			industrial_complex=2
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

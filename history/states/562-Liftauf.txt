@@ -1,0 +1,37 @@
+state={
+	id=562
+	name="STATE_562"
+	manpower=810300
+	state_category=city
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={31 88 123 146 189 1307 2071 3000 6162 6274 6288 9145 9283 10200 11124 11133 11170 11193 12818 13237 13239}
+	resources={}
+	history={
+		#owner=NTR
+		#add_core_of=NTR
+		#add_claim_by=
+		victory_points={1307 20}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=2
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=1
+			industrial_complex=1
+			dockyard=1
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			1307={
+				naval_base=1
+				#bunker=0
+				#coastal_bunker=0
+			}
+		}
+	}
+}

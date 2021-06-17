@@ -1,0 +1,37 @@
+state={
+	id=637
+	name="STATE_637"
+	manpower=1825219
+	state_category=city
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={1029 1076 1121 1158 7200 9956 11973 12055 13144}
+	resources={tungsten=10 steel=18 chromium=12 crystals=42}
+	history={
+		#owner=DMT
+		#add_core_of=DMT
+		#add_claim_by=
+		victory_points={12055 25}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=5
+			air_base=2
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=2
+			industrial_complex=3
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

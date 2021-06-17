@@ -1,0 +1,37 @@
+state={
+	id=258
+	name="STATE_258"
+	manpower=692118
+	state_category=rural
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={30 86 749 880 3008 3026 3107 3153 6045 6087 6137 6179 9158 9162 9198 9223 11648 11654 11760}
+	resources={oil=4}
+	history={
+		#owner=CHN
+		#add_core_of=CHN
+		#add_claim_by=
+		#victory_points={}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=0
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

@@ -1,0 +1,37 @@
+state={
+	id=379
+	name="STATE_379"
+	manpower=645007
+	state_category=large_town
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={531 1828 7397 9142 10536 10635 12615 12643 12797}
+	resources={steel=8}
+	history={
+		#owner=TRD
+		#add_core_of=TRD
+		#add_claim_by=
+		victory_points={10536 5}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=5
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=2
+			dockyard=2
+			synthetic_refinery=0
+			fuel_silo=1
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

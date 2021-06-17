@@ -1,0 +1,37 @@
+state={
+	id=126
+	name="STATE_126"
+	manpower=189371
+	state_category=rural
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={741 754 893 960 975 3575 6597 6727 6743 6814 6952 9576 9683 9714 11705 11747 11811 11813 11905}
+	resources={}
+	history={
+		owner=HSW
+		add_core_of=HSW
+		#add_claim_by=
+		#victory_points={}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=0
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

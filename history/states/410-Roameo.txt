@@ -1,0 +1,37 @@
+state={
+	id=410
+	name="STATE_410"
+	manpower=256004
+	state_category=rural
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={1047 1131 2076 4023 4152 7039 7044 7067 7135 9248 10050 11777 11981 12630}
+	resources={}
+	history={
+		#owner=FRN
+		#add_core_of=FRN
+		#add_claim_by=
+		victory_points={9248 3}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=1
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

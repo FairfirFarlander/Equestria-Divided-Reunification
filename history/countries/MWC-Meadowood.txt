@@ -1,0 +1,158 @@
+#LOCALE
+capital=48
+oob="MWC_1007"
+if={
+	limit={has_dlc="Man the Guns"}
+	set_naval_oob="MWC_1007_naval"
+	else={set_naval_oob="MWC_1007_naval_legacy"}
+}
+#FOUNTATION
+set_research_slots=2
+set_stability=0.8
+set_war_support=0.19
+add_ideas={
+	better_science_base
+	pre_industrial_society
+	lack_of_scientists2
+	poverty4
+	#MWC_militia
+}
+#TECHNOLOGY
+set_technology={
+	pony_race=1
+	melee_weapons=1
+	melee_weapons1=1
+	tech_support=1
+	pre_gw_artillery=1
+	early_fighter=1
+	tech_pegasi=1
+	tech_unicorn=1
+}
+if={limit={has_dlc="Man the Guns"}
+	set_technology={
+		early_destroyer=1
+		early_light_cruiser=1
+		transport=1
+	}
+}
+if={limit={not={has_dlc="Man the Guns"}}
+	set_technology={
+		early_ship_hull_light=1
+		early_ship_hull_cruiser=1
+		basic_battery=1
+		basic_depth_charges=1
+		basic_secondary_battery=1
+		basic_torpedo=1
+		mtg_transport=1
+	}
+}
+actually_fix_weapon_techs=yes
+#MISC
+set_convoys=17
+set_rule={can_generate_female_aces=yes}
+#DIPLOMACY
+#POLITICS
+set_popularities={
+	fascism=7	communism=9
+	neutrality=65	democratic=19
+}
+set_politics={
+	ruling_party=neutrality
+	last_election="1004.11.11"
+	election_frequency=36
+	elections_allowed=no
+}
+create_country_leader={
+	name="Honey Dew"	#desc=""
+	expire="1965.1.1"	picture=""
+	ideology=centrism	female=yes
+	traits={}
+}
+create_country_leader={
+	name="Maple Leaf"	#desc=""
+	expire="1965.1.1"	#picture="Filthy.tga"
+	ideology=liberalism	#female=yes
+	traits={}
+}
+create_country_leader={
+	name="Mulberry Vine"	#desc=""
+	expire="1965.1.1"	#picture="Fancy.tga"
+	ideology=syndicalism	#female=yes
+	traits={}
+}
+create_country_leader={
+	name="Rose Petal"	#desc=""
+	expire="1965.1.1"	#picture="leader_unknown.dds"
+	ideology=ultranationalism	female=yes
+	traits={}
+}
+#MILITARY
+create_corps_commander={
+	name="Apple Cider"	#id=	desc=""
+	picture=""	female=yes	#Earth pony
+	traits={pony_race_trait harsh_leader trait_engineer}
+	skill=1	attack_skill=2	defense_skill=1
+	planning_skill=1	logistics_skill=2
+}
+create_corps_commander={
+	name="Mist Feather"	#id=	desc=""
+	picture=""	female=yes	#Pegasi pony
+	traits={pony_race_trait ranger hill_fighter}
+	skill=1	attack_skill=1	defense_skill=2
+	planning_skill=1	logistics_skill=2
+}
+#Admiral Anna Taylor
+#VARIENTS
+if={limit={has_dlc="Man the Guns"}
+	create_equipment_variant={	#Light Cruiser
+		name="Meadowood Class"	#name_group=
+		type=ship_hull_cruiser_1	parent_version=0	#obsolete=yes
+		modules={
+			fixed_ship_battery_slot=ship_light_medium_battery_1
+			fixed_ship_anti_air_slot=ship_anti_air_1
+			fixed_ship_fire_control_system_slot=empty
+			fixed_ship_radar_slot=empty
+			fixed_ship_engine_slot=cruiser_ship_engine_1
+			fixed_ship_armor_slot=ship_armor_cruiser_1
+			mid_1_custom_slot=ship_light_medium_battery_1
+			mid_2_custom_slot=empty
+			rear_1_custom_slot=empty
+		}
+	}
+	create_equipment_variant={	#Destroyer
+		name="Hops Class"	#name_group=
+		type=ship_hull_light_1		parent_version=0	#obsolete=yes
+		modules={
+			fixed_ship_battery_slot=ship_light_battery_1
+			fixed_ship_anti_air_slot=ship_anti_air_1
+			fixed_ship_fire_control_system_slot=empty
+			fixed_ship_radar_slot=empty
+			fixed_ship_engine_slot=light_ship_engine_1
+			fixed_ship_torpedo_slot=empty
+			mid_1_custom_slot=empty
+			rear_1_custom_slot=empty
+		}
+	}
+}
+if={limit={not={has_dlc="Man the Guns"}}
+	create_equipment_variant={	#Light Cruiser
+		name="Meadowood Class"	#name_group=
+		type=light_cruiser_1	parent_version=0	#obsolete=yes
+		upgrades={
+			ship_reliability_upgrade=0
+			ship_engine_upgrade=0
+			ship_gun_upgrade=0
+			ship_anti_air_upgrade=1
+		}
+	}
+	create_equipment_variant={	#Destroyer
+		name="Hops Class"	#name_group=
+		type=destroyer_1	parent_version=0	#obsolete=yes
+		upgrades={
+			ship_torpedo_upgrade=0
+			destroyer_engine_upgrade=0
+			ship_ASW_upgrade=0
+			ship_anti_air_upgrade=0
+		}
+	}
+}

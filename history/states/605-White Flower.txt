@@ -1,0 +1,39 @@
+state={
+	id=605
+	name="STATE_605"
+	manpower=345679
+	state_category=rural
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={110 1054 1827 1875 3875 4586 4919 4925 7762 7771 7814 7842 10702 11772 12060 12624}
+	resources={}
+	history={
+		#owner=GRW
+		#add_core_of=GRW
+		#add_core_of=BRF
+		#add_claim_by=
+		victory_points={3875 1}
+		victory_points={7814 5}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=2
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=1
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

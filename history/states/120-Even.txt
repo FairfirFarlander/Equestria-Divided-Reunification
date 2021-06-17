@@ -1,0 +1,37 @@
+state={
+	id=120
+	name="STATE_120"
+	manpower=29900
+	state_category=pastoral
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={536 584 628 3674 3684 3835 6673 6691 6720 9613 11411}
+	resources={}
+	history={
+		owner=CHY
+		add_core_of=CHY
+		#add_claim_by=
+		#victory_points={}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=1
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

@@ -1,0 +1,30 @@
+﻿l_english:
+###Country Name###
+STB_fascism:0 "Stableside Trading Company"
+STB_fascism_DEF:0 "The Trading Company of Stableside"
+STB_fascism_ADJ:0 "Sco'bi"
+STB_communism:0 "Republic of Stableside"
+STB_communism_DEF:0 "The Socialist Republic of Stableside"
+STB_communism_ADJ:0 "Sco'bi"
+STB_neutrality:0 "Stableside Province"
+STB_neutrality_DEF:0 "The Province of Stableside"
+STB_neutrality_ADJ:0 "Sco'bi"
+STB_democratic:0 "Republic of Stableside"
+STB_democratic_DEF:0 "The Republic of Stableside"
+STB_democratic_ADJ:0 "Sco'bi"
+### party ###
+STB_fascism_party:0 "STC"
+STB_fascism_party_long:0 "Shareholders Trading Council"
+STB_communism_party:0 "SPS"
+STB_communism_party_long:0 "Socialist Party of Stableside"
+STB_neutrality_party:0 "CM"
+STB_neutrality_party_long:0 "Council of Mayors"
+STB_democratic_party:0 "HCP"
+STB_democratic_party_long:0 "Harmonist Colonist Party"
+###National Focuses###
+#Storyline Tree
+#STB_:0 ""
+#STB__desc:0 ""
+#Economic Tree
+#STB_:0 ""
+#STB__desc:0 ""

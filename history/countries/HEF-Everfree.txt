@@ -1,0 +1,83 @@
+#LOCALE
+capital=5
+oob="HEF_1007"
+#FOUNTATION
+set_research_slots=3
+set_stability=0.1
+set_war_support=1.0
+add_ideas={
+	HEF_idea
+	HEF_everycreature_fights
+	limited_conscription
+	closed_economy
+	isolation
+	poor_science_base
+	detached_country
+	lack_of_scientists3
+	poverty3
+}
+#TECHNOLOGY
+set_technology={
+	pony_race=1
+	melee_weapons=1
+	dragons_light=1
+	dragons_heavy=1
+	tech_support=1
+	TEM_ursas=1
+}
+actually_fix_weapon_techs=yes
+#MISC
+set_rule={can_generate_female_aces=yes}
+#DIPLOMACY
+#POLITICS
+set_popularities={
+	fascism=25	communism=25
+	neutrality=25	democratic=25
+}
+set_politics={
+	ruling_party=fascism	last_election="1000.10.10"
+	election_frequency=36	elections_allowed=no
+}
+create_country_leader={
+	name="Zecora"	#desc=""
+	expire="1965.1.1"	picture="Zecora.tga"
+	ideology=tribal_council	female=yes
+	traits={}
+}
+create_country_leader={
+	name="Lady Fluttershy"	#desc=""
+	expire="1965.1.1"	picture="Fluttershy.tga"
+	ideology=kratokracy	female=yes
+	traits={}
+}
+create_country_leader={
+	name="Flower Seed"	#desc=""
+	expire="1965.1.1"	#picture=""
+	ideology=liberalism	#female=yes
+	traits={}
+}
+create_country_leader={
+	name="Red Leaves"	#desc=""
+	expire="1965.1.1"	#picture=""
+	ideology=anarchist_communism	#female=yes
+	traits={}
+}
+#MILITARY
+create_field_marshal={
+	name="Lady Fluttershy"	#id=	desc=""
+	picture="Fluttershy.tga"	female=yes
+	skill=1
+	traits={pony_race_trait}
+}
+create_corps_commander={
+	name="Zecora"	#id=	desc=""
+	picture="Zecora.tga"	female=yes
+	skill=1
+	traits={zebra_race_trait}
+}
+create_corps_commander={
+	name="Ahuizotl"	#id=	desc=""
+	picture="Ahuizotl.tga"	#female=yes
+	skill=1
+	traits={unspecified_race_trait offensive_doctrine}
+}

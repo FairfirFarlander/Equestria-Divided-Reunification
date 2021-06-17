@@ -1,0 +1,37 @@
+state={
+	id=13
+	name="STATE_13"
+	manpower=1262300
+	state_category=large_city
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={1346 3546 3560 3629 5291 6529 6537 6545 9505 9638 13011}
+	resources={}
+	history={
+		owner=HWG
+		add_core_of=HAY
+		add_claim_by=HWG
+		victory_points={13011 25}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=5
+			air_base=1
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=1
+			industrial_complex=2
+			dockyard=1
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			13011={
+				naval_base=2
+				#bunker=0
+				#coastal_bunker=0
+			}
+		}
+	}
+}

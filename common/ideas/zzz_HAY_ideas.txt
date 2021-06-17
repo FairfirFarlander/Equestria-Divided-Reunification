@@ -1,0 +1,12 @@
+ideas={
+	country={
+		HAY_works_frenzy={
+			allowed={always=no}
+			#picture=
+			removal_cost=-1
+			modifier={
+				production_speed_industrial_complex_factor=0.2
+			}
+		}
+	}
+}

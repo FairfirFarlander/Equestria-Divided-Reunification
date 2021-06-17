@@ -1,0 +1,37 @@
+state={
+	id=19
+	name="STATE_19"
+	manpower=981500
+	state_category=large_town
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={596 624 653 665 6581 6614 6619 9595 9611 9646 11564 11581 11594 11735 11899}
+	resources={steel=5}
+	history={
+		owner=HEB
+		add_core_of=HEB
+		#add_claim_by=
+		victory_points={11581 15}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=6
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=2
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			624={
+				naval_base=1
+				#bunker=0
+				#coastal_bunker=0
+			}
+		}
+	}
+}

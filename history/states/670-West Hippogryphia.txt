@@ -1,0 +1,37 @@
+state={
+	id=670
+	name="STATE_670"
+	manpower=1947099
+	state_category=city
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={2174 5179 5188 5230 8211 8217 8225 8240 9099 10987 10996 12930 12994 13086}
+	resources={steel=10}
+	history={
+		#owner=NCH
+		#add_core_of=NCH
+		#add_claim_by=
+		victory_points={5188 20}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=3
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=1
+			industrial_complex=2
+			dockyard=2
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			5188={
+				naval_base=2
+				#bunker=0
+				#coastal_bunker=0
+			}
+		}
+	}
+}

@@ -1,0 +1,37 @@
+state={
+	id=468
+	name="STATE_468"
+	manpower=307668
+	state_category=rural
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={4338 5051 7358 8047 8075 8252 10212 12186 12243 1225}
+	resources={}
+	history={
+		#owner=MIT
+		#add_core_of=MIT
+		#add_claim_by=
+		victory_points={8047 5}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=3
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=1
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			8047={
+				naval_base=1
+				#bunker=0
+				#coastal_bunker=0
+			}
+		}
+	}
+}

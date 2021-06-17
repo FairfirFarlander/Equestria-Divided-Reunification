@@ -1,0 +1,37 @@
+state={
+	id=55
+	name="STATE_55"
+	manpower=15
+	state_category=wasteland
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={695 6258 6769 9654 9684 9760 11637 11776 }
+	resources={crystals=50}
+	history={
+		owner=CRY
+		add_core_of=CRY
+		#add_claim_by=
+		#victory_points={}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=0
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

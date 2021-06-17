@@ -1,0 +1,37 @@
+state={
+	id=558
+	name="STATE_558"
+	manpower=176809
+	state_category=rural
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={1984 2040 2098 4918 5054 6008 7925 10116 10910 11012 11978 12462 12862 12892 13137}
+	resources={steel=8}
+	history={
+		#owner=ZES
+		#add_core_of=ZES
+		#add_claim_by=
+		victory_points={10910 2}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=1
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			10910={
+				naval_base=1
+				#bunker=0
+				#coastal_bunker=0
+			}
+		}
+	}
+}

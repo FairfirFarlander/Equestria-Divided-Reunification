@@ -1,0 +1,37 @@
+state={
+	id=415
+	name="STATE_415"
+	manpower=1400000
+	state_category=large_city
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={4351 7438 9528}
+	resources={steel=12 crystals=5}
+	history={
+		#owner=DED
+		#add_core_of=DED
+		#add_claim_by=
+		#victory_points={}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=1
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=2
+			industrial_complex=2
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			4351={
+				naval_base=1
+				bunker=4
+				coastal_bunker=4
+			}
+		}
+	}
+}

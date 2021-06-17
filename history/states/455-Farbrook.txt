@@ -1,0 +1,37 @@
+state={
+	id=455
+	name="STATE_455"
+	manpower=875609
+	state_category=city
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={1024 1063 1113 4000 4118 4122 5031 5100 7169 7595 10512 10651 11930 12056 12327 12352 12421 12493 12732}
+	resources={}
+	history={
+		#owner=FBK
+		#add_core_of=FBK
+		#add_claim_by=
+		victory_points={12421 25}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=3
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=1
+			industrial_complex=2
+			dockyard=1
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			12421={
+				naval_base=1
+				#bunker=0
+				#coastal_bunker=0
+			}
+		}
+	}
+}

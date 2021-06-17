@@ -1,0 +1,38 @@
+state={
+	id=620
+	name="STATE_620"
+	manpower=618079
+	state_category=town
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={1824 1975 2001 5160 6020 7912 8010 10529 10734 10859 10962 11145 12794 12927 12955}
+	resources={aluminium=4 tungsten=3}
+	history={
+		#owner=RCT
+		#add_core_of=RCT
+		#add_claim_by=
+		victory_points={8010 5}
+		victory_points={12927 10}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=2
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=1
+			industrial_complex=1
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

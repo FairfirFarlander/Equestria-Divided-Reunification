@@ -1,0 +1,67 @@
+#LOCALE
+capital=4
+#oob="SPA_1007"
+#if={
+#	limit={has_dlc="Man the Guns"}
+#	set_naval_oob="SPA_1007_naval"
+#	else={set_naval_oob="SPA_1007_naval_legacy"}
+#}
+#FOUNTATION
+set_research_slots=2
+set_stability=0.55
+set_war_support=0.04
+add_ideas={
+	better_science_base
+	outdated_industry
+	lack_of_scientists3
+	poverty5
+}
+#TECHNOLOGY
+set_technology={
+	pony_race=1
+	melee_weapons=1
+	melee_weapons1=1
+	motorised_infantry=1
+	armored_car1=1
+	marines=1
+	pre_gw_artillery=1
+	tech_pegasi=1
+	tech_support=1
+	tech_unicorn=1
+}
+if={limit={has_dlc="Man the Guns"}
+	set_technology={
+		early_ship_hull_light=1
+		basic_battery=1
+		mtg_transport=1
+	}
+}
+if={limit={not={has_dlc="Man the Guns"}}
+	set_technology={
+		early_destroyer=1
+		transport=1
+	}
+}
+actually_fix_weapon_techs=yes
+generic_DD_template=yes
+#Misc
+set_convoys=3
+set_rule={can_generate_female_aces=yes}
+#DIPLOMACY
+#POLITICS
+set_popularities={
+	fascism=11	communism=36
+	neutrality=53	democratic=8
+}
+set_politics={
+	ruling_party=neutrality	last_election="1001.10.10"
+	election_frequency=36	elections_allowed=no
+}
+create_country_leader={
+	name="PLACEHOLDER"	#desc=""
+	expire="1965.1.1"	#picture=""
+	ideology=despotism	#female=yes
+	traits={}
+}
+#MILITARY
+#VARIENTS

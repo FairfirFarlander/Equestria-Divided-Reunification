@@ -1,0 +1,37 @@
+state={
+	id=376
+	name="STATE_376"
+	manpower=1845009
+	state_category=large_city
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={789 864 1108 1933 3564 4550 4939 5007 6935 7184 7470 7765 7911 10383 12442}
+	resources={}
+	history={
+		#owner=JFT
+		#add_core_of=JFT
+		#add_claim_by=
+		victory_points={6935 20}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=6
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=2
+			industrial_complex=2
+			dockyard=3
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			6935={
+				naval_base=3
+				#bunker=0
+				#coastal_bunker=0
+			}
+		}
+	}
+}

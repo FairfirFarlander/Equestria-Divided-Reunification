@@ -1,0 +1,43 @@
+state={
+	id=529
+	name="STATE_529"
+	manpower=967045
+	state_category=large_town
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={675 828 1590 3664 4196 4293 4626 4805 4841 4844 5042 6051 7131 7158 7273 7868 10521 10571 12201 12261 12403 12449 12559}
+	resources={}
+	history={
+		#owner=FAL
+		#add_core_of=FAL
+		#add_claim_by=
+		victory_points={5042 5}
+		victory_points={7868 15}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=5
+			air_base=2
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=1
+			industrial_complex=1
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			828={
+				#naval_base=0
+				bunker=2
+				#coastal_bunker=0
+			}
+			1590={
+				#naval_base=0
+				bunker=2
+				#coastal_bunker=0
+			}
+		}
+	}
+}

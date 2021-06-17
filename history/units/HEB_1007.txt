@@ -1,0 +1,180 @@
+division_template={
+	name="Highland Division"
+
+	regiments={
+		mountaineers={x=0 y=0}
+		mountaineers={x=0 y=1}
+		mountaineers={x=0 y=2}
+	}
+	support={
+		artillery={x=0 y=0}
+		recon={x=0 y=1}
+		engineer={x=0 y=2}
+	}
+}
+division_template={
+	name="Light Tank Division"
+
+	regiments={
+		light_armor={x=0 y=0}
+	}
+	support={
+		artillery={x=0 y=0}
+		recon={x=0 y=1}
+		engineer={x=0 y=2}
+	}
+}
+division_template={
+	name="Onhooves Division"
+
+	regiments={
+		infantry={x=0 y=0}
+		infantry={x=0 y=1}
+		infantry={x=0 y=2}
+		infantry={x=1 y=0}
+		infantry={x=1 y=1}
+		infantry={x=1 y=2}
+	}
+
+	support={
+		artillery={x=0 y=0}
+		recon={x=0 y=1}
+		engineer={x=0 y=2}
+	}
+}
+
+units={
+	division={
+		name="1st Onhooves Division"
+		location=27
+		division_template="Onhooves Division"
+		start_experience_factor=0.3
+		start_equipment_factor=1
+	}
+	division={
+		name="2st Onhooves Division"
+		location=27
+		division_template="Onhooves Division"
+		start_experience_factor=0.3
+		start_equipment_factor=1
+	}
+	division={
+		name="3st Onhooves Division"
+		location=27
+		division_template="Onhooves Division"
+		start_experience_factor=0.3
+		start_equipment_factor=1
+	}
+	division={
+		name="4st Onhooves Division"
+		location=27
+		division_template="Onhooves Division"
+		start_experience_factor=0.3
+		start_equipment_factor=1
+	}
+	division={
+		name="5st Onhooves Division"
+		location=27
+		division_template="Onhooves Division"
+		start_experience_factor=0.3
+		start_equipment_factor=1
+	}
+	division={
+		name="6st Onhooves Division"
+		location=27
+		division_template="Onhooves Division"
+		start_experience_factor=0.3
+		start_equipment_factor=1
+	}
+	division={
+		name="7st Onhooves Division"
+		location=27
+		division_template="Onhooves Division"
+		start_experience_factor=0.3
+		start_equipment_factor=1
+	}
+	division={
+		name="8st Onhooves Division"
+		location=27
+		division_template="Onhooves Division"
+		start_experience_factor=0.3
+		start_equipment_factor=1
+	}
+	division={
+		name="9st Onhooves Division"
+		location=27
+		division_template="Onhooves Division"
+		start_experience_factor=0.3
+		start_equipment_factor=1
+	}
+	division={
+		name="10st Onhooves Division"
+		location=27
+		division_template="Onhooves Division"
+		start_experience_factor=0.3
+		start_equipment_factor=1
+	}
+	division={
+		name="11st Onhooves Division"
+		location=27
+		division_template="Onhooves Division"
+		start_experience_factor=0.3
+		start_equipment_factor=1
+	}
+	division={
+		name="12st Onhooves Division"
+		location=27
+		division_template="Onhooves Division"
+		start_experience_factor=0.3
+		start_equipment_factor=1
+	}
+	division={
+		name="13st Onhooves Division"
+		location=27
+		division_template="Onhooves Division"
+		start_experience_factor=0.3
+		start_equipment_factor=1
+	}
+	division={
+		name="14st Onhooves Division"
+		location=27
+		division_template="Onhooves Division"
+		start_experience_factor=0.3
+		start_equipment_factor=1
+	}
+	division={
+		name="15st Onhooves Division"
+		location=27
+		division_template="Onhooves Division"
+		start_experience_factor=0.3
+		start_equipment_factor=1
+	}
+	division={
+		name="16st Onhooves Division"
+		location=27
+		division_template="Onhooves Division"
+		start_experience_factor=0.3
+		start_equipment_factor=1
+	}
+	division={
+		name="17st Onhooves Division"
+		location=27
+		division_template="Onhooves Division"
+		start_experience_factor=0.3
+		start_equipment_factor=1
+	}
+	division={
+		name="18st Onhooves Division"
+		location=27
+		division_template="Onhooves Division"
+		start_experience_factor=0.3
+		start_equipment_factor=1
+	}
+	division={
+		name="1st Light Tank Division"
+		location=27
+		division_template="Light Tank Division"
+		start_experience_factor=0.3
+		start_equipment_factor=1
+	}
+}

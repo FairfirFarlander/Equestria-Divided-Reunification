@@ -1,0 +1,62 @@
+#LOCALE
+capital=28
+#oob="FLY_1007"
+#if={
+#	limit={has_dlc="Man the Guns"}
+#	set_naval_oob="FLY_1007_naval"
+#	else={set_naval_oob="FLY_1007_naval_legacy"}
+#}
+#FOUNTATION
+set_research_slots=2
+set_stability=0.23
+set_war_support=0.11
+add_ideas={
+	big_science_base
+	pre_industrial_society
+	lack_of_scientists3
+	poverty2
+}
+#TECHNOLOGY
+set_technology={
+	pony_race=1
+	melee_weapons=1
+	pre_gw_artillery=1
+	tech_pegasi=1
+	tech_support=1
+	tech_unicorn=1
+}
+actually_fix_weapon_techs=yes
+if={limit={has_dlc="Man the Guns"}
+	set_technology={
+		early_ship_hull_light=1
+		basic_battery=1
+		mtg_transport=1
+	}
+}
+if={limit={not={has_dlc="Man the Guns"}}
+	set_technology={
+		early_destroyer=1
+		transport=1
+	}
+}
+#Misc
+set_convoys=3
+set_rule={can_generate_female_aces=yes}
+#DIPLOMACY
+#POLITICS
+set_popularities={
+	fascism=49	communism=11
+	neutrality=32	democratic=8
+}
+set_politics={
+	ruling_party=fascism	last_election="1001.10.10"
+	election_frequency=36	elections_allowed=no
+}
+create_country_leader={
+	name="Cherry Jam"	#desc=""
+	expire="1014.6.6"	picture="Ringo.dds"
+	ideology=plutocracy	female=yes
+	traits={}
+}
+#MILITARY
+#VARIENTS

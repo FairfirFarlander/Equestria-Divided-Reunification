@@ -1,0 +1,37 @@
+state={
+	id=387
+	name="STATE_387"
+	manpower=2545600
+	state_category=large_city
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={1398 1702 7381 7913 8079 8175 10279 10307 10730 10732 12249 12712}
+	resources={steel=10}
+	history={
+		#owner=LCT
+		#add_core_of=LCT
+		#add_claim_by=
+		victory_points={8079 30}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=5
+			air_base=2
+			anti_air_building=1
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=2
+			industrial_complex=3
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

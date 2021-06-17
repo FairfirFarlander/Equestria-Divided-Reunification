@@ -1,0 +1,37 @@
+state={
+	id=462
+	name="STATE_462"
+	manpower=1230705
+	state_category=city
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={4980 5008 5115 5214 8024 8080 8107 10823 10849 10934 12959 12987}
+	resources={rubber=19}
+	history={
+		#owner=MIT
+		#add_core_of=MIT
+		#add_claim_by=
+		victory_points={10934 20}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=4
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=1
+			industrial_complex=2
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			10934={
+				naval_base=2
+				#bunker=0
+				#coastal_bunker=0
+			}
+		}
+	}
+}

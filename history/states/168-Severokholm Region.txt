@@ -1,0 +1,37 @@
+state={
+	id=168
+	name="STATE_168"
+	manpower=182550
+	state_category=rural
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={3342 4861 6268 6270 6489 9268 9297 9332 11345 11471}
+	resources={}
+	history={
+		owner=STG
+		add_core_of=STG
+		#add_claim_by=
+		victory_points={9332 3}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=1
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

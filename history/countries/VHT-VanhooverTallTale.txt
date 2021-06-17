@@ -1,0 +1,90 @@
+#LOCALE
+capital=14
+oob="VHT_1007"
+#if={
+#	limit={has_dlc="Man the Guns"}
+#	set_naval_oob="VHT_1007_naval"
+#	else={set_naval_oob="VHT_1007_naval_legacy"}
+#}
+#FOUNTATION
+set_research_slots=2
+set_stability=0.65
+set_war_support=0.36
+add_ideas={
+	outdated_industry
+	better_science_base
+	lack_of_scientists2
+	poverty5
+	#VHT_vanguard_untrained
+}
+#TECHNOLOGY
+set_technology={
+	pony_race=1
+	melee_weapons=1
+	melee_weapons1=1
+	tech_support=1
+	pre_gw_artillery=1
+	early_fighter=1
+	tech_pegasi=1
+}
+actually_fix_weapon_techs=yes
+if={limit={has_dlc="Man the Guns"}
+	set_technology={
+		early_ship_hull_light=1
+		early_ship_hull_cruiser=1
+		basic_battery=1
+		basic_depth_charges=1
+		basic_secondary_battery=1
+		basic_torpedo=1
+		mtg_transport=1
+	}
+}
+if={limit={not={has_dlc="Man the Guns"}}
+	set_technology={
+		early_destroyer=1
+		early_light_cruiser=1
+		early_heavy_cruiser=1
+		transport=1
+	}
+}
+actually_fix_weapon_techs=yes
+generic_CA_template=yes
+generic_CL_template=yes
+generic_DD_template=yes
+#MISC
+set_convoys=64
+set_rule={can_generate_female_aces=yes}
+#DIPLOMACY
+#POLITICS
+set_popularities={
+	fascism=18	communism=67
+	neutrality=6	democratic=9
+}
+set_politics={
+	ruling_party=communism
+	last_election="1005.09.09"
+	election_frequency=48
+	elections_allowed=no
+}
+create_country_leader={	#TEMP
+	name="Strawberry Snowflake"	#desc=""
+	expire="1965.1.1"	picture="Strawberry_Snowflake.tga"
+	ideology=leninism	female=yes
+	traits={rural_populist}
+}
+#MILITARY
+create_corps_commander={
+	name="Indigo Skies"	#id=	desc=""
+	#picture=".tga"	#female=yes	#Batpony
+	skill=1	attack_skill=2	defense_skill=1
+	planning_skill=1	logistics_skill=1
+	traits={thestral_race_trait commissar_general}
+}
+create_corps_commander={
+	name="Crimson Hoof"	#id=	desc=""
+	#picture=".tga"	#female=yes	#Unicornpony
+	skill=1	attack_skill=1	defense_skill=3
+	planning_skill=1	logistics_skill=1
+	traits={pony_race_trait}
+}
+#VARIENTS

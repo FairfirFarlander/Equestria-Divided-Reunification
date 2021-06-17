@@ -1,0 +1,39 @@
+state={
+	id=452
+	name="STATE_452"
+	manpower=767890
+	state_category=rural
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={1159 1909 2038 4062 4204 4245 4989 5039 5070 5077 7220 8015 8065 10771 10814 12710 12747 12834 12858 7972 2100}
+	resources={aluminium=10}
+	history={
+		#owner=NIM
+		#add_core_of=NIM
+		#add_claim_by=
+		victory_points={1159 2}
+		victory_points={5077 1}
+		victory_points={12834 3}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=1
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

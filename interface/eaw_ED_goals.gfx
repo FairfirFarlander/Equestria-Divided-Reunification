@@ -1,0 +1,12 @@
+spriteTypes={
+
+	SpriteType={
+		name="GFX_goal_som_twilight"
+		texturefile="gfx/interface/goals/goal_som_twilight.dds"
+	}
+	SpriteType={
+		name="GFX_goal_som_marry_twilight"
+		texturefile="gfx/interface/goals/goal_som_marry_twilight.dds"
+	}
+}
+

@@ -1,0 +1,37 @@
+state={
+	id=368
+	name="STATE_368"
+	manpower=553711
+	state_category=large_town
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={1312 1800 4581 4638 4852 4979 5076 7243 7354 7392 7486 7600 7657 7894 9639 10275 10353 10452 10508 10567 10638 10696 10887 11624 12005 12177 12257 12329}
+	resources={}
+	history={
+		#owner=TAL
+		#add_core_of=TAL
+		#add_claim_by=
+		victory_points={4979 15}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=4
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=1
+			industrial_complex=1
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

@@ -1,0 +1,43 @@
+state={
+	id=624
+	name="STATE_624"
+	manpower=356789
+	state_category=town
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={1510 1579 4513 4557 7090 7574 7944 9946 10060 10401 10428 10469 11924 12375 12420 12490}
+	resources={steel=4 chromium=8 crystals=16}
+	history={
+		#owner=BAR
+		#add_core_of=BAR
+		#add_claim_by=WIT
+		victory_points={4557 3}
+		victory_points={9946 10}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=1
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=1
+			industrial_complex=1
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			4557={
+				#naval_base=0
+				bunker=2
+				#coastal_bunker=0
+			}
+			9946={
+				#naval_base=0
+				bunker=4
+				#coastal_bunker=0
+			}
+		}
+	}
+}

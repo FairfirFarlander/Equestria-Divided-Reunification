@@ -1,0 +1,37 @@
+state={
+	id=628
+	name="STATE_628"
+	manpower=458848
+	state_category=rural
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={191 2020 5065 5072 8036 10509 10860 11972 12705 12757 12812 12819 12840 12991}
+	resources={}
+	history={
+		#owner=WIT
+		#add_core_of=WIT
+		#add_claim_by=
+		victory_points={12705 5}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=2
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			12705={
+				#naval_base=0
+				bunker=1
+				#coastal_bunker=0
+			}
+		}
+	}
+}

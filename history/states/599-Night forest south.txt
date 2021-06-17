@@ -1,0 +1,37 @@
+state={
+	id=599
+	name="STATE_599"
+	manpower=207960
+	state_category=rural
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={1409 1731 1817 1950 2024 2206 2220 4171 4327 5210 5224 7219 7265 7288 7402 7716 8016 8048 8144 8183 10594 10932 11017 12247 12783}
+	resources={}
+	history={
+		#owner=GRU
+		#add_core_of=GRU
+		#add_claim_by=
+		victory_points={1817 3}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=0
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

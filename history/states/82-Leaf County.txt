@@ -1,0 +1,37 @@
+state={
+	id=82
+	name="STATE_82"
+	manpower=116300
+	state_category=pastoral
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={563 3423 3506 3533 3669 6583 9559 9575 11407 11502 11531 11547}
+	resources={steel=5}
+	history={
+		owner=HAY
+		add_core_of=HAY
+		#add_claim_by=
+		#victory_points={}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=0
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

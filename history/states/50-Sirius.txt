@@ -1,0 +1,37 @@
+state={
+	id=50
+	name="STATE_50"
+	manpower=159900
+	state_category=rural
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={937 953 982 984 3922 3924 6799 6889 6957 9557 9572 11845}
+	resources={aluminium=10}
+	history={
+		owner=STB
+		add_core_of=STB
+		#add_claim_by=
+		victory_points={9572 3}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=2
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			9572={
+				naval_base=1
+				#bunker=0
+				#coastal_bunker=0
+			}
+		}
+	}
+}

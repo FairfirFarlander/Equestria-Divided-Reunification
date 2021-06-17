@@ -1,0 +1,37 @@
+state={
+	id=546
+	name="STATE_546"
+	manpower=426709
+	state_category=rural
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={528 610 1551 1608 1651 1796 4222 4274 4328 4612 4655 4657 4873 7398 7667 10241 10372 11698 11752 12281 12448 12629 13232}
+	resources={steel=7 chromium=6}
+	history={
+		#owner=STW
+		#add_core_of=STW
+		#add_claim_by=
+		victory_points={10372 5}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=2
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=1
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

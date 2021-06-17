@@ -1,0 +1,37 @@
+state={
+	id=680
+	name="STATE_680"
+	manpower=123100
+	state_category=rural
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={1428 4423 11963 11990 12126 12253}
+	resources={}
+	history={
+		#owner=ZES
+		#add_core_of=ZES
+		#add_claim_by=
+		victory_points={11963 5}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=1
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=1
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			11963={
+				naval_base=1
+				#bunker=0
+				#coastal_bunker=0
+			}
+		}
+	}
+}

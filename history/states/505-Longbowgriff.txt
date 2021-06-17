@@ -1,0 +1,38 @@
+state={
+	id=505
+	name="STATE_505"
+	manpower=607890
+	state_category=rural
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={805 2019 4052 4107 4884 5038 7070 7155 7906 10065 10504 10861 11915 12410 12728}
+	resources={steel=12}
+	history={
+		#owner=LNS
+		#add_core_of=LNS
+		#add_claim_by=
+		victory_points={4107 5}
+		victory_points={5038 2}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=0
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

@@ -1,0 +1,37 @@
+state={
+	id=402
+	name="STATE_402"
+	manpower=405679
+	state_category=rural
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={1137 1668 1676 1818 4674 4680 7703 7731 7784 10562 10610 10627 10646 10653 11761 12610 12625 12635 12662 13151}
+	resources={aluminium=2}
+	history={
+		#owner=YAL
+		#add_core_of=YAL
+		#add_claim_by=
+		victory_points={12610 5}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=3
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=1
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

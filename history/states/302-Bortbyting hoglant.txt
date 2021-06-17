@@ -1,0 +1,37 @@
+state={
+	id=302
+	name="STATE_302"
+	manpower=12984
+	state_category=wasteland
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={132 492 638 968 4594 4756 7480 7640 9949 9996 10192 10352 10380 10407 10520 11942 12384 12470 12498 12735 12752}
+	resources={steel=32 chromium=24}
+	history={
+		#owner=OLE
+		#add_core_of=OLE
+		#add_claim_by=
+		#victory_points={}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=0
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

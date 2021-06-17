@@ -1,0 +1,37 @@
+state={
+	id=341
+	name="STATE_341"
+	manpower=290629
+	state_category=rural
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={12 135 325 3004 3167 3282 6372 6403 9172 11075 11134 11255 11263}
+	resources={}
+	history={
+		#owner=JAK
+		#add_core_of=JAK
+		#add_claim_by=
+		victory_points={135 3}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=0
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

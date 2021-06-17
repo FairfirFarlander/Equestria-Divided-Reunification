@@ -1,0 +1,37 @@
+state={
+	id=49
+	name="STATE_49"
+	manpower=1061700
+	state_category=town
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={662 676 1643 6634 6913 6940 6998 7196 9602 9756 9874 11583 11586 11608 11887}
+	resources={oil=6 steel=5 chromium=18}
+	history={
+		owner=FRT
+		add_core_of=FRT
+		#add_claim_by=
+		victory_points={1643 3}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=3
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=1
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			1643={
+				naval_base=1
+				#bunker=0
+				#coastal_bunker=0
+			}
+		}
+	}
+}

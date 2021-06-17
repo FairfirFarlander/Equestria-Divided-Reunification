@@ -1,0 +1,37 @@
+state={
+	id=497
+	name="STATE_497"
+	manpower=240780
+	state_category=rural
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={1762 1855 1859 4096 4766 4835 4837 7676 7736 7751 7816 7870 10528 10658 11239 12507}
+	resources={oil=8 steel=6}
+	history={
+		#owner=FEA
+		#add_core_of=FEA
+		#add_claim_by=
+		victory_points={12507 5}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=2
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=1
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

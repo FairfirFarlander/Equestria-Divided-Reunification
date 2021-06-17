@@ -1,0 +1,38 @@
+state={
+	id=369
+	name="STATE_369"
+	manpower=1970467
+	state_category=large_city
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={155 157 183 1015 1276 1363 4161 4309 6166 7326 7383 9113 10002 10089 11074 11970 11979 12073}
+	resources={aluminium=8 steel=5}
+	history={
+		#owner=WNG
+		#add_core_of=WNG
+		#add_claim_by=
+		victory_points={183 10}
+		victory_points={6166 20}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=6
+			air_base=1
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=2
+			industrial_complex=3
+			dockyard=2
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			6166={
+				naval_base=3
+				#bunker=0
+				#coastal_bunker=0
+			}
+		}
+	}
+}

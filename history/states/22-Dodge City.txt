@@ -1,0 +1,37 @@
+state={
+	id=22
+	name="STATE_22"
+	manpower=833200
+	state_category=large_town
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={491 819 3703 9454 9558 9650 9679 11427 11479 11651 12512}
+	resources={}
+	history={
+		owner=CHY
+		add_core_of=CHY
+		#add_claim_by=
+		victory_points={11427 10}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=5
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=2
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			#={
+				#naval_base=0
+				#bunker=0
+				#coastal_bunker=0
+			#}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+state={
+	id=241
+	name="STATE_241"
+	manpower=10790
+	state_category=enclave
+	buildings_max_level_factor=1
+	impassable=no
+	provinces={3082 6079}
+	resources={}
+	history={
+		#owner=GRF
+		#add_core_of=GRF
+		victory_points={3082 1}
+		buildings={
+		#STATE BUILDINGS
+			infrastructure=1
+			air_base=0
+			anti_air_building=0
+			radar_station=0
+		#SHARED BUILDINGS
+			arms_factory=0
+			industrial_complex=0
+			#dockyard=0
+			synthetic_refinery=0
+			fuel_silo=0
+			rocket_site=0
+			nuclear_reactor=0
+		#PROVINCE BUILDINGS	
+			3082={
+				naval_base=1
+				#bunker=0
+				#coastal_bunker=0
+			}
+		}
+	}
+}
