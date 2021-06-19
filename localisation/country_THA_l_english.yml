@@ -1,0 +1,30 @@
+﻿l_english:
+###Country Name###
+THA_fascism:0 "Thestral Province"
+THA_fascism_DEF:0 "The Province of Thestrals"
+THA_fascism_ADJ:0 "Noctrali"
+THA_communism:0 "Thestral Province"
+THA_communism_DEF:0 "The Province of Thestrals"
+THA_communism_ADJ:0 "Noctrali"
+THA_neutrality:0 "Thestral Province"
+THA_neutrality_DEF:0 "The Province of Thestrals" 
+THA_neutrality_ADJ:0 "Noctrali"
+THA_democratic:0 "Thestral Province"
+THA_democratic_DEF:0 "The Province of Thestrals"
+THA_democratic_ADJ:0 "Noctrali"
+### party ###
+THA_fascism_party:0 "FAC"
+THA_fascism_party_long:0 "FAC"
+THA_communism_party:0 "COM"
+THA_communism_party_long:0 "COM"
+THA_neutrality_party:0 "NEU"
+THA_neutrality_party_long:0 "NEU"
+THA_democratic_party:0 "DEC"
+THA_democratic_party_long:0 "DEC"
+###National Focuses###
+#Storyline Tree
+#THA_:0 ""
+#THA__desc:0 ""
+#Economic Tree
+#THA_:0 ""
+#THA__desc:0 ""

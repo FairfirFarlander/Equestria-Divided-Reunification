@@ -1,10 +1,10 @@
 #LOCALE
 capital=47
-oob="FRT_1007"
+oob="COT_1007"
 #if={
 #	limit={has_dlc="Man the Guns"}
-#	set_naval_oob="FRT_naval"
-#	else={set_naval_oob="FRT_naval_legacy"}
+#	set_naval_oob="COT_naval"
+#	else={set_naval_oob="COT_naval_legacy"}
 #}
 #FOUNTATION
 set_research_slots=2

@@ -5,7 +5,7 @@ ideas={
 			#picture=
 			removal_cost=-1
 			modifier={
-				stability_factor=-0.21
+				stability_factor=-0.13
 				monthly_population=0.17
 				conscription=-0.03
 			}
@@ -34,5 +34,29 @@ ideas={
 				democratic_drift=0.02
 			}
 		}
+		TRT_ragged_flag={	#That Ragged Old Flag
+			allowed={
+				always=no
+			}
+			#picture=
+			removal_cost=-1
+			modifier={
+				stability_factor=0.17
+			}
+		}
+		TRT_scuttled_navy={
+			#Navy Production Debuff
+		}
+		TRT_pineapple_house={	#Shantytown Ships - 
+			#???
+		}
+		TRT_scuttled_navy={	#The Iron Shore - Focus Shanty Reforms
+			#???
+		}
+		TRT_scuttled_navy={	#Coastal Boom
+			#???
+		}
+			#Later Focus Fanned but not Extinguished
+			#IDEA: Have stability bonus go up 1/2 a % per Equestrian Province controlled.
 	}
 }

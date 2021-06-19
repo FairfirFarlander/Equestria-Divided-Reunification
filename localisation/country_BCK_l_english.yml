@@ -1,0 +1,30 @@
+﻿l_english:
+###Country Name###
+BCK_fascism:0 "Buckcastle"
+BCK_fascism_DEF:0 "Buckcastle"
+BCK_fascism_ADJ:0 "Vidonian"
+BCK_communism:0 "Buckcastle"
+BCK_communism_DEF:0 "Buckcastle"
+BCK_communism_ADJ:0 "Vidonian"
+BCK_neutrality:0 "Buckcastle"
+BCK_neutrality_DEF:0 "Buckcastle"
+BCK_neutrality_ADJ:0 "Vidonian"
+BCK_democratic:0 "Buckcastle"
+BCK_democratic_DEF:0 "Buckcastle"
+BCK_democratic_ADJ:0 "Vidonian"
+### party ###
+BCK_fascism_party:0 "FAC"
+BCK_fascism_party_long:0 "FAC"
+BCK_communism_party:0 "COM"
+BCK_communism_party_long:0 "COM"
+BCK_neutrality_party:0 "NEU"
+BCK_neutrality_party_long:0 "NEU"
+BCK_democratic_party:0 "DEC"
+BCK_democratic_party_long:0 "DEC"
+###National Focuses###
+#Storyline Tree
+#BCK_:0 ""
+#BCK__desc:0 ""
+#Economic Tree
+#BCK_:0 ""
+#BCK__desc:0 ""

@@ -24,17 +24,35 @@ set_rule={can_generate_female_aces=yes}
 #DIPLOMACY
 #POLITICS
 set_popularities={
-	fascism=46	communism=23
-	neutrality=15	democratic=16
+	fascism=48	communism=23
+	neutrality=15	democratic=14
 }
 set_politics={
-	ruling_party=fascism	last_election="1000.10.10"
+	ruling_party=fascism	last_election="1006.10.10"
 	election_frequency=36	elections_allowed=no
 }
 create_country_leader={
 	name="Cherry Jubilee"	#desc=""
-	expire="1965.1.1"	#picture=""
-	ideology=corporatocracy	female=yes
+	expire="1020.1.1"	#picture=""
+	ideology=neofeudalism	female=yes
+	traits={}
+}
+create_country_leader={
+	name="Cherry Jubilee"	#desc=""
+	expire="1020.1.1"	#picture=""
+	ideology=stalinism	female=yes
+	traits={}
+}
+create_country_leader={
+	name="Cherry Jubilee"	#desc=""
+	expire="1020.1.1"	#picture=""
+	ideology=despotism	female=yes
+	traits={}
+}
+create_country_leader={
+	name="Cherry Jubilee"	#desc=""
+	expire="1020.1.1"	#picture=""
+	ideology=liberalism	female=yes
 	traits={}
 }
 #MILITARY

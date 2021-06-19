@@ -1,0 +1,30 @@
+﻿l_english:
+###Country Name###
+COT_fascism:0 "Southern Confederation"
+COT_fascism_DEF:0 "The Confederation of Southern States"
+COT_fascism_ADJ:0 "Southron"
+COT_communism:0 "Southern Confederation"
+COT_communism_DEF:0 "The Confederation of Southern States"
+COT_communism_ADJ:0 "Southron"
+COT_neutrality:0 "Southern Confederation"
+COT_neutrality_DEF:0 "The Confederation of Southern States"
+COT_neutrality_ADJ:0 "Southron"
+COT_democratic:0 "Southern Confederation"
+COT_democratic_DEF:0 "The Confederation of Southern States"
+COT_democratic_ADJ:0 "Southron"
+### party ###
+COT_fascism_party:0 "FAC"
+COT_fascism_party_long:0 "FAC"
+COT_communism_party:0 "COM"
+COT_communism_party_long:0 "COM"
+COT_neutrality_party:0 "NEU"
+COT_neutrality_party_long:0 "NEU"
+COT_democratic_party:0 "DEC"
+COT_democratic_party_long:0 "DEC"
+###National Focuses###
+#Storyline Tree
+#COT_:0 ""
+#COT__desc:0 ""
+#Economic Tree
+#COT_:0 ""
+#COT__desc:0 ""

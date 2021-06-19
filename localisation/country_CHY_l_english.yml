@@ -1,0 +1,30 @@
+﻿l_english:
+###Country Name###
+CHY_fascism:0 "Cherry Clan"
+CHY_fascism_DEF:0 "Cherry Clan"
+CHY_fascism_ADJ:0 "Cheari"
+CHY_communism:0 "Cherry Clan"
+CHY_communism_DEF:0 "Cherry Clan"
+CHY_communism_ADJ:0 "Cheari"
+CHY_neutrality:0 "Cherry Clan"
+CHY_neutrality_DEF:0 "Cherry Clan"
+CHY_neutrality_ADJ:0 "Cheari"
+CHY_democratic:0 "Cherry Clan"
+CHY_democratic_DEF:0 "Cherry Clan"
+CHY_democratic_ADJ:0 "Cheari"
+### party ###
+CHY_fascism_party:0 "FAC"
+CHY_fascism_party_long:0 "FAC"
+CHY_communism_party:0 "COM"
+CHY_communism_party_long:0 "COM"
+CHY_neutrality_party:0 "NEU"
+CHY_neutrality_party_long:0 "NEU"
+CHY_democratic_party:0 "DEC"
+CHY_democratic_party_long:0 "DEC"
+###National Focuses###
+#Storyline Tree
+#CHY_:0 ""
+#CHY__desc:0 ""
+#Economic Tree
+#CHY_:0 ""
+#CHY__desc:0 ""

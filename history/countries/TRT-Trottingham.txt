@@ -16,7 +16,8 @@ add_ideas={
 	lack_of_scientists2
 	poverty4
 	extensive_conscription
-	#TRT_refugee_crisis
+	TRT_refugee_crisis
+	TRT_ragged_flag
 }
 #TECHNOLOGY
 set_technology={
@@ -70,16 +71,22 @@ set_politics={
 	elections_allowed=no
 }
 create_country_leader={
-	name="Ms. Harshwhinny"	#desc=""
-	expire="1005.1.1"	picture="Harshwhinny.dds"
-	ideology=despotism	female=yes
-	traits={appeaser hedonist}
-}
-create_country_leader={
 	name="Rapid Fire"	#desc=""
 	expire="1005.1.1"	#picture="leader_unknown.dds"
 	ideology=stratocracy	#female=yes
 	traits={fascist_demagogue}
+}
+create_country_leader={
+	name="Teddy 'Steady' Hoosevelt"	#desc=""
+	expire="1005.1.1"	#picture=""
+	ideology=populism	#female=yes
+	traits={headstrong great_war_hero}
+}
+create_country_leader={
+	name="Ms. Harshwhinny"	#desc=""
+	expire="1005.1.1"	picture="Harshwhinny.dds"
+	ideology=harmonic_libertarianism	female=yes
+	traits={appeaser hedonist}
 }
 #MILITARY
 #VARIENTS

@@ -1,0 +1,30 @@
+﻿l_english:
+###Country Name###
+TRT_fascism:0 "Trottingham Protectorate"
+TRT_fascism_DEF:0 "The Protectorate of Trottingham"
+TRT_fascism_ADJ:0 "Treilish"
+TRT_communism:0 "SRGI"
+TRT_communism_DEF:0 "The Socialist Republic of the Griffish Isles"
+TRT_communism_ADJ:0 "Treilish"
+TRT_neutrality:0 "Trottingham City-State"
+TRT_neutrality_DEF:0 "The City-State of Trottingham" 
+TRT_neutrality_ADJ:0 "Treilish"
+TRT_democratic:0 "Equestrian Republic"
+TRT_democratic_DEF:0 "The Republic of Equestria"
+TRT_democratic_ADJ:0 "Treilish"
+### party ###
+TRT_fascism_party:0 "NSTWP"
+TRT_fascism_party_long:0 "National Socialist Treilish Worker's Party"
+TRT_communism_party:0 "TWP"
+TRT_communism_party_long:0 "Trottingham Workers Party"
+TRT_neutrality_party:0 "CTH"
+TRT_neutrality_party_long:0 "Council of Trottingham"
+TRT_democratic_party:0 "PER"
+TRT_democratic_party_long:0 "Party of Equestrian Restoration"
+###National Focuses###
+#Storyline Tree
+#TRT_:0 ""
+#TRT__desc:0 ""
+#Economic Tree
+#TRT_:0 ""
+#TRT__desc:0 ""
