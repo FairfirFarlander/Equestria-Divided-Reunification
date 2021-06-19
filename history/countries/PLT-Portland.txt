@@ -56,8 +56,14 @@ set_politics={
 create_country_leader={
 	name="Rael 'Filly' Grey"	#desc=""	#Earl Riley
 	expire="1965.1.1"	picture="portrait_pony_generic_navy_14.dds"
-	ideology=oligarchism	female=yes
+	ideology=bandit	female=yes
 	traits={}
+}
+create_country_leader={
+	name="Willie Hoofard Taft"	#desc=""	#William Howard Taft
+	expire="1965.1.1"	#picture=""
+	ideology=republicanism	#female=yes
+	traits={appeaser}	#Add some anti-trust.
 }
 create_country_leader={
 	name="Joeseph 'Seahawk' Barhoof"	#desc=""	#Joseph Carson

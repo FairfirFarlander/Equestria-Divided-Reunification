@@ -1,0 +1,30 @@
+﻿l_english:
+###Country Name###
+JCH_fascism:0 "Jungle Changelings"
+JCH_fascism_DEF:0 "The Changelings of the Jungle"
+JCH_fascism_ADJ:0 "Changelings"
+JCH_communism:0 "Jungle Changelings"
+JCH_communism_DEF:0 "The Changelings of the Jungle"
+JCH_communism_ADJ:0 "Changelings"
+JCH_neutrality:0 "Jungle Changelings"
+JCH_neutrality_DEF:0 "The Changelings of the Jungle"
+JCH_neutrality_ADJ:0 "Changelings"
+JCH_democratic:0 "Jungle Changelings"
+JCH_democratic_DEF:0 "The Changelings of the Jungle"
+JCH_democratic_ADJ:0 "Changelings"
+### party ###
+JCH_fascism_party:0 "FAC"
+JCH_fascism_party_long:0 "FAC"
+JCH_communism_party:0 "COM"
+JCH_communism_party_long:0 "COM"
+JCH_neutrality_party:0 "NEU"
+JCH_neutrality_party_long:0 "NEU"
+JCH_democratic_party:0 "DEC"
+JCH_democratic_party_long:0 "DEC"
+###National Focuses###
+#Storyline Tree
+#JCH_:0 ""
+#JCH__desc:0 ""
+#Economic Tree
+#JCH_:0 ""
+#JCH__desc:0 ""

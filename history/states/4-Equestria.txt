@@ -8,10 +8,9 @@ state={
 	provinces={902 3838 4913 6891 9851 9863 10917 11673 11755 11773 11804 11824}
 	resources={}
 	history={
-		owner=SPA
-		add_core_of=SPA
-		#victory_points={}
-		victory_points={11755 5}
+		owner=VII
+		add_core_of=VII
+		victory_points={11755 3}
 		victory_points={4913 1}
 		buildings={
 		#STATE BUILDINGS
@@ -39,7 +38,7 @@ state={
 				#coastal_bunker=0
 			}
 			11755={
-				naval_base=3
+				naval_base=2
 				#bunker=0
 				#coastal_bunker=0
 			}

@@ -1,0 +1,107 @@
+﻿#LOCALE
+capital=7
+oob="VII_1007"
+#if={
+#	limit={has_dlc="Man the Guns"}
+#	set_naval_oob="VII_naval"
+#	else={set_naval_oob="VII_naval_legacy"}
+#}
+#FOUNTATION
+set_research_slots=2
+set_stability=0.6
+set_war_support=0.22
+add_ideas={
+	#Dragons
+	poor_science_base
+	tribal_society
+	lack_of_scientists2
+	poverty5
+}
+#TECHNOLOGY
+set_technology={
+	dragon_race=1
+	griffon_race=1
+	pony_race=1
+	melee_weapons=1
+	melee_weapons1=1
+	tech_support=1
+	pre_gw_artillery=1
+	dragons_light=1
+	dragons_heavy=1
+	tech_pegasi=1
+}
+if={limit={has_dlc="Man the Guns"}
+	set_technology={
+		early_ship_hull_light=1
+		early_ship_hull_cruiser=1
+		basic_battery=1
+		basic_depth_charges=1
+		basic_secondary_battery=1
+		basic_torpedo=1
+		basic_battery=1
+		mtg_transport=1
+	}
+}
+if={limit={not={has_dlc="Man the Guns"}}
+	set_technology={
+		early_destroyer=1
+		early_light_cruiser=1
+		transport=1
+	}
+}
+actually_fix_weapon_techs=yes
+generic_CL_template=yes
+generic_DD_template=yes
+#Misc
+set_convoys=11
+set_rule={can_generate_female_aces=yes}
+#DIPLOMACY
+#POLITICS
+set_popularities={
+	fascism=26	communism=7
+	neutrality=44	democratic=23
+}
+set_politics={
+	ruling_party=neutrality
+	last_election="1000.10.10"
+	election_frequency=36
+	elections_allowed=no
+}
+create_country_leader={
+	name="Dragon Lord Ember"	#desc=""
+	expire="1965.1.1"	picture="Amber.tga"
+	ideology=despotism	female=yes
+	traits={}
+}
+create_country_leader={
+	name="Dragon Lord Ember"	#desc=""
+	expire="1965.1.1"	picture="Amber.tga"
+	ideology=kratokracy	female=yes
+	traits={}
+}
+create_country_leader={
+	name="Dragon Lord Torch"	#desc=""
+	expire="1965.1.1"	picture="torch.tga"
+	ideology=conservatism	#female=yes
+	traits={}
+}
+create_country_leader={
+	name="Lord Ruby"	#desc=""
+	expire="1965.1.1"	picture="rubydragon.tga"
+	ideology=anarchist_communism	#female=yes
+	traits={}
+}
+create_field_marshal={
+	name="Lord Torch"	#id=	desc=""
+	picture="torch.tga"	#female=yes
+	skill=2	attack_skill=3	defense_skill=1
+	planning_skill=2	logistics_skill=1
+	traits={dragon_race_trait old_guard offensive_doctrine}
+}
+create_corps_commander={
+	name="Ruby"	#id=	desc=""
+	picture="rubydragon.tga"	female=yes
+	skill=1	attack_skill=1	defense_skill=2
+	planning_skill=1	logistics_skill=1
+	traits={promising_general trait_reckless}
+}

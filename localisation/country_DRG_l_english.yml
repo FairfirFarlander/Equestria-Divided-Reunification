@@ -1,0 +1,30 @@
+﻿l_english:
+###Country Name###
+VII_fascism:0 "Dragon Isles"
+VII_fascism_DEF:0 "The Isles of Dragon"
+VII_fascism_ADJ:0 "Dragon"
+VII_communism:0 "Dragon Isles"
+VII_communism_DEF:0 "The Isles of Dragon"
+VII_communism_ADJ:0 "Dragon"
+VII_neutrality:0 "Dragon Isles"
+VII_neutrality_DEF:0 "The Isles of Dragon" 
+VII_neutrality_ADJ:0 "Dragon"
+VII_democratic:0 "Dragon Isles"
+VII_democratic_DEF:0 "The Isles of Dragon"
+VII_democratic_ADJ:0 "Dragon"
+### party ###
+VII_fascism_party:0 "FAC"
+VII_fascism_party_long:0 "FAC"
+VII_communism_party:0 "COM"
+VII_communism_party_long:0 "COM"
+VII_neutrality_party:0 "NEU"
+VII_neutrality_party_long:0 "NEU"
+VII_democratic_party:0 "DEC"
+VII_democratic_party_long:0 "DEC"
+###National Focuses###
+#Storyline Tree
+#VII_:0 ""
+#VII__desc:0 ""
+#Economic Tree
+#VII_:0 ""
+#VII__desc:0 ""

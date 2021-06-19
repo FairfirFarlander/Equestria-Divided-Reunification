@@ -1,0 +1,53 @@
+focus_tree={
+	id=ALA country={factor=0 modifier={add=10 tag=ALA}}
+	continuous_focus_position={x=1750 y=800}
+	default=no
+	focus={		#The Death of an Era
+		id=ALA_no_equestria
+		icon=GFX_goal_eqc_shelter_celestia
+		x=0 y=0 cost=1.43
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus ALA_no_equestria"
+			country_event=ALAintro.1	#The Baltimare Riots - War Related Bonus
+		}
+	}
+	focus={		#The Revolution of 04'
+		id=ALA_revolution04
+		icon=GFX_goal_revolution_pony
+		relative_position_id=ALA_no_equestria
+		x=0 y=1 cost=1.43
+		prerequisite={focus=ALA_no_equestria}
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus ALA_revolution04"
+			country_event=ALAintro.2	#A New Age - Pick Who Takes Charge
+		}
+	}
+	focus={		#Keep Your Freinds Close...
+		id=ALA_allies_and_enemies
+		icon=GFX_goal_generic_pony_unity
+		relative_position_id=ALA_revolution04
+		x=0 y=1 cost=1.43
+		prerequisite={focus=ALA_revolution04}
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus ALA_allies_and_enemies"
+			country_event=ALAintro.3	#...And Your Enemies Closer - Pick an Ally
+		}
+	}
+	focus={		#The Winter Troubles
+		id=ALA_winter_07
+		icon=GFX_goal_water
+		relative_position_id=ALA_allies_and_enemies
+		x=0 y=1 cost=4
+		prerequisite={focus=ALA_allies_and_enemies}
+		ai_will_do={factor=4000}
+		select_effect={
+			set_temp_variable={aaaaa=1}
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus ALA_winter_07"
+		}
+	}
+}

@@ -8,8 +8,8 @@ state={
 	provinces={730 935 949 965 3908 3937 3952 3971 6658 6953 6982 9537 9821 9890 9906 11754 11832 11857 11868}
 	resources={rubber=3 chromium=12}
 	history={
-		owner=FRT
-		add_core_of=FRT
+		owner=COT
+		add_core_of=COT
 		#add_claim_by=
 		victory_points={3937 3}
 		victory_points={11754 3}

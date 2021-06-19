@@ -8,8 +8,8 @@ state={
 	provinces={4199 10013 13071}
 	resources={steel=5 crystals=12}
 	history={
-		owner=DRG
-		add_core_of=DRG
+		owner=VII
+		add_core_of=VII
 		#add_claim_by=
 		victory_points={13071 15}
 		buildings={

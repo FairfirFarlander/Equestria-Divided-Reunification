@@ -21,8 +21,8 @@ set_technology={
 	pony_race=1
 	melee_weapons=1
 	pre_gw_artillery=1
-	tech_pegasi=1
 	tech_support=1
+	tech_pegasi=1
 	tech_unicorn=1
 }
 if={limit={has_dlc="Man the Guns"}
@@ -51,6 +51,36 @@ set_popularities={
 set_politics={
 	ruling_party=neutrality	last_election="1001.10.10"
 	election_frequency=36	elections_allowed=no
+}
+#create_country_leader={
+#	name="Lavender Berry"	desc=BAL_amber_alert
+#	expire="1965.1.1"	picture="larrybarry.tga"
+#	ideology=stalinism	#female=yes
+#	traits={secret_police_chief}
+#}
+#create_country_leader={
+#	name="Cricket Chafer"	desc=BAL_corn_lord
+#	expire="1965.1.1"	picture="Chafer.tga"
+#	ideology=leninism	#female=yes
+#	traits={corn_lord}
+#}
+#create_country_leader={
+#	name="Light Narrative"	#desc=""
+#	expire="1965.1.1"	picture="JUN_batgarrison.tga"
+#	ideology=national_communism	#female=yes
+#	traits={}
+#}
+create_country_leader={
+	name="Golden Delicious"	desc=BAL_delicious_desc_yummy
+	expire="1965.1.1"	picture="Golden Delicious.tga"
+	ideology=syndicalism	#female=yes
+	traits={hero_of_the_revolution}
+}
+create_country_leader={
+	name="Kingfisher"	#desc=""	#Huey Long - New Mareland
+	expire="1014.6.6"	picture="Kingfisher.tga"
+	ideology=populism	#female=yes
+	traits={rural_populist}
 }
 create_country_leader={
 	name="Ringo 'Maestro' Jam"	#desc=""	#Robert Maestri (Drummer Maestro Jam)

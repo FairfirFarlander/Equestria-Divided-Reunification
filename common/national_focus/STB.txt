@@ -1,0 +1,53 @@
+focus_tree={
+	id=STB country={factor=0 modifier={add=10 tag=STB}}
+	continuous_focus_position={x=1750 y=800}
+	default=no
+	focus={		#The Death of an Era
+		id=STB_no_equestria
+		icon=GFX_goal_eqc_shelter_celestia
+		x=0 y=0 cost=1.43
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus STB_no_equestria"
+			country_event=STBintro.1	#The Baltimare Riots - War Related Bonus
+		}
+	}
+	focus={		#The Revolution of 04'
+		id=STB_revolution04
+		icon=GFX_goal_revolution_pony
+		relative_position_id=STB_no_equestria
+		x=0 y=1 cost=1.43
+		prerequisite={focus=STB_no_equestria}
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus STB_revolution04"
+			country_event=STBintro.2	#A New Age - Pick Who Takes Charge
+		}
+	}
+	focus={		#Keep Your Freinds Close...
+		id=STB_allies_and_enemies
+		icon=GFX_goal_generic_pony_unity
+		relative_position_id=STB_revolution04
+		x=0 y=1 cost=1.43
+		prerequisite={focus=STB_revolution04}
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus STB_allies_and_enemies"
+			country_event=STBintro.3	#...And Your Enemies Closer - Pick an Ally
+		}
+	}
+	focus={		#The Winter Troubles
+		id=STB_winter_07
+		icon=GFX_goal_water
+		relative_position_id=STB_allies_and_enemies
+		x=0 y=1 cost=4
+		prerequisite={focus=STB_allies_and_enemies}
+		ai_will_do={factor=4000}
+		select_effect={
+			set_temp_variable={aaaaa=1}
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus STB_winter_07"
+		}
+	}
+}
