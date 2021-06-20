@@ -71,7 +71,7 @@ create_country_leader={
 }
 create_field_marshal={
 	name="Neighson E. Miles"	#id=	desc=""
-	picture="Stewed Apple.tga"	#female=yes
+	picture="StewedApple.tga"	#female=yes
 	skill=2	attack_skill=3	defense_skill=1
 	planning_skill=2	logistics_skill=2
 	traits={pony_race_trait harsh_leader signal_expert_trait}
