@@ -12,45 +12,57 @@ focus_tree={
 			country_event=COTact1.1	#Growing Pains - Pick a Military Doctrine
 		}
 	}
-	focus={		#Secession From Equestria
-		id=COT_leave_equestria
-		icon=GFX_goal_treaty_fails
-		relative_position_id=COT_no_equestria
-		x=0 y=1 cost=1.43
-		prerequisite={focus=COT_no_equestria}
-		ai_will_do={factor=4000}
-		select_effect={
-			country_event=COTact1.2.1	#The Consitutional Convention
-		}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus COT_leave_equestria"
-			country_event=COTact1.2.2	#The Constitution - Pick Who Takes Charge
-		}
-	}
-	focus={		#An Apple A Day...
-		id=COT_earthborn
-		icon=GFX_goal_generic_pony_unity
-		relative_position_id=COT_leave_equestria
-		x=0 y=1 cost=1.43
-		prerequisite={focus=COT_leave_equestria}
-		ai_will_do={factor=4000}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus COT_earthborn"
-			country_event=COTact1.3.1	#...Keeps the Doctor Away - Choose Minor Diplomatic Tie or Delay Earthborne Invasion
-		}
-	}
-	focus={		#The Winter Troubles
-		id=COT_winter_07
-		icon=GFX_goal_water
-		relative_position_id=COT_earthborn
-		x=0 y=1 cost=4
-		prerequisite={focus=COT_earthborn}
-		ai_will_do={factor=4000}
-		select_effect={
-			set_temp_variable={aaaaa=1}
-		}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus COT_winter_07"
-		}
-	}
+	#focus={		#Secession From Equestria
+	#	id=COT_leave_equestria
+	#	icon=GFX_goal_treaty_fails
+	#	relative_position_id=COT_no_equestria
+	#	x=0 y=1 cost=1.43
+	#	prerequisite={focus=COT_no_equestria}
+	#	ai_will_do={factor=4000}
+	#	select_effect={
+	#		country_event=COTact1.2.1	#The Consitutional Convention
+	#	}
+	#	completion_reward={
+	#		log="[GetDateText]: [Root.GetName]: focus COT_leave_equestria"
+	#		country_event=COTact1.2.2	#The Constitution - Pick Who Takes Charge
+	#	}
+	#}
+	#focus={		#An Apple A Day...
+	#	id=COT_delayearth
+	#	icon=GFX_dont_tread_on_me
+	#	relative_position_id=COT_leave_equestria
+	#	x=-1 y=1 cost=1.43
+	#	prerequisite={focus=COT_leave_equestria}
+	#	ai_will_do={factor=4000}
+	#	completion_reward={
+	#		log="[GetDateText]: [Root.GetName]: focus COT_delayearth"
+	#		country_event=COTact1.3.1	#...Keeps the Doctor Away - Delay Earthborne Invasion
+	#	}
+	#}
+	#focus={		#The Enemy of my Enemy
+	#	id=COT_alliesearth
+	#	icon=GFX_focus_generic_diplomatic_treaty_pony_griffon
+	#	relative_position_id=COT_leave_equestria
+	#	x=1 y=1 cost=1.43
+	#	prerequisite={focus=COT_leave_equestria}
+	#	ai_will_do={factor=4000}
+	#	completion_reward={
+	#		log="[GetDateText]: [Root.GetName]: focus COT_alliesearth"
+	#		country_event=COTact1.3.1	#...Keeps the Doctor Away - Choose Minor Diplomatic Tie
+	#	}
+	#}
+	#focus={		#The Winter Troubles
+	#	id=COT_winter_07
+	#	icon=GFX_goal_water
+	#	relative_position_id=COT_leave_equestria
+	#	x=0 y=2 cost=4
+	#	prerequisite={focus=COT_earthborn}
+	#	ai_will_do={factor=4000}
+	#	select_effect={
+	#		set_temp_variable={aaaaa=1}
+	#	}
+	#	completion_reward={
+	#		log="[GetDateText]: [Root.GetName]: focus COT_winter_07"
+	#	}
+	#}
 }
