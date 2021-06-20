@@ -1,0 +1,30 @@
+﻿l_english:
+###Country Name###
+TRT_fascism:0 "The Northern Pegisus Territory"
+TRT_fascism_DEF:0 "The Northern Pegisus Territory"
+TRT_fascism_ADJ:0 "TNorthern Pegusi"
+TRT_communism:0 "The Northern Pegisus Territory"
+TRT_communism_DEF:0 "The Northern Pegisus Territory"
+TRT_communism_ADJ:0 "Northern Pegusi"
+TRT_neutrality:0 "The Northern Pegisus Territory"
+TRT_neutrality_DEF:0 "The Northern Pegisus Territory" 
+TRT_neutrality_ADJ:0 "Northern Pegusi"
+TRT_democratic:0 "The Northern Pegisus Territory"
+TRT_democratic_DEF:0 "The Northern Pegisus Territory"
+TRT_democratic_ADJ:0 "Northern Pegusi"
+### party ###
+TRT_fascism_party:0 "MGs"
+TRT_fascism_party_long:0 "The Military Governors"
+TRT_communism_party:0 "COE"
+TRT_communism_party_long:0 "The Council of Elders"
+TRT_neutrality_party:0 "SWA"
+TRT_neutrality_party_long:0 "The Storm Wing Ambassadors"
+TRT_democratic_party:0 "MIP"
+TRT_democratic_party_long:0 "The Mariposa Independence Party"
+###National Focuses###
+#Storyline Tree
+#TRT_:0 ""
+#TRT__desc:0 ""
+#Economic Tree
+#TRT_:0 ""
+#TRT__desc:0 ""
