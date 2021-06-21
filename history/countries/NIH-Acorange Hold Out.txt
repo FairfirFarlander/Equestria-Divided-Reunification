@@ -11,6 +11,9 @@ set_research_slots=2
 set_stability=0.45
 set_war_support=0.15
 add_ideas={
+	NIH_Night_Guard_Divisions
+	NIH_Last_Of_The_Line
+	NIH_The_Bitter_Cold
 }
 #TECHNOLOGY
 set_technology={
