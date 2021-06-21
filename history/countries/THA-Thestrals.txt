@@ -11,6 +11,8 @@ set_research_slots=2
 set_stability=0.23
 set_war_support=0.11
 add_ideas={
+	THA_Ancestor_Guidance
+	THA_Warrior_Culture_Traditions
 	limited_exports
 	isolation
 	poor_science_base

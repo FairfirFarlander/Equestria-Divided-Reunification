@@ -11,6 +11,8 @@ set_research_slots=2
 set_stability=0.23
 set_war_support=0.11
 add_ideas={
+	HAY_Anarchist_Breeding_Ground
+	HAY_Mass_unrest
 	better_science_base
 	agrarian_society
 	lack_of_scientists2

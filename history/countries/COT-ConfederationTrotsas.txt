@@ -11,6 +11,9 @@ set_research_slots=2
 set_stability=0.49
 set_war_support=0.16
 add_ideas={
+	COT_Do_Not_Tread
+	COT_Wrath_of_the_Clan_Earthbornd
+	COT_Griffonian_Imports
 	outdated_industry
 	big_science_base
 	lack_of_scientists2
