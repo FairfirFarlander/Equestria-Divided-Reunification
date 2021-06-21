@@ -10,19 +10,16 @@ division_template={
 division_template={
 	name="Royal Guard Division"
 	regiments={
-		infantry={x=0 y=0}
-		infantry={x=0 y=1}
+		infantry={x=0 y=0}	infantry={x=1 y=0}
+		infantry={x=0 y=1}	infantry={x=1 y=1}
 		infantry={x=0 y=2}
-		infantry={x=1 y=0}
-		infantry={x=1 y=1}
 	}
 }
 division_template={
 	name="Royal Prince Guard"
 	regiments={
-		infantry={x=1 y=0}
-		infantry={x=1 y=1}
-		pegasi={x=0 y=2}
+		infantry={x=0 y=0}	pegasi={x=1 y=0}
+		infantry={x=0 y=1}
 	}
 	support={
 		recon={x=0 y=0}
@@ -31,13 +28,10 @@ division_template={
 division_template={
 	name="Royal Lunar Guard"
 	regiments={
-		infantry={x=1 y=0}
-		infantry={x=1 y=1}
-		infantry={x=1 y=0}
+		pegasi={x=0 y=0}	infantry={x=1 y=0}
+		pegasi={x=0 y=1}	infantry={x=1 y=1}
+		pegasi={x=0 y=2}	infantry={x=1 y=2}
 		pegasi={x=0 y=3}
-		pegasi={x=1 y=0}
-		pegasi={x=1 y=1}
-		pegasi={x=1 y=2}
 	}
 	support={
 		recon={x=0 y=0}
@@ -46,12 +40,9 @@ division_template={
 #division_template={
 #	name="Griffon Knights"
 #	regiments={
-#		knights={x=0 y=0}
-#		knights={x=1 y=0}
-#		knights={x=0 y=1}
-#		knights={x=1 y=1}
-#		knights={x=0 y=2}
-#		knights={x=1 y=2}
+#		knights={x=0 y=0}	knights={x=1 y=0}
+#		knights={x=0 y=1}	knights={x=1 y=1}
+#		knights={x=0 y=2}	knights={x=1 y=2}
 #	}
 #	support={
 #		recon={x=0 y=0}

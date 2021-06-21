@@ -2,16 +2,114 @@ focus_tree={
 	id=COT country={factor=0 modifier={add=10 tag=COT}}
 	continuous_focus_position={x=1750 y=800}
 	default=no
-	focus={		#The Death of an Era
-		id=COT_no_equestria
-		icon=GFX_goal_eqc_shelter_celestia
-		x=0 y=0 cost=1.43
+	focus={		#Fluff
+		id=COT_fluff1
+		icon=GFX_goal_appleloosa
+		x=0 y=0 cost=2
 		ai_will_do={factor=4000}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus COT_no_equestria"
-			country_event=COTact1.1	#Growing Pains - Pick a Military Doctrine
+			log="[GetDateText]: [Root.GetName]: focus COT_big_apple"
+			#country_event=COTact1.1	#The Inevitable Clash - Set the Stakes
+			add_political_power=30
 		}
 	}
+	focus={		#The Big Apple
+		id=COT_big_apple
+		icon=GFX_goal_appleloosa
+		x=0 y=0 cost=2
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus COT_big_apple"
+			#country_event=COTact1.1	#The Inevitable Clash - Set the Stakes
+			add_political_power=30
+		}
+	}
+	focus={		#The Big Apple
+		id=COT_big_apple
+		icon=GFX_goal_appleloosa
+		x=0 y=0 cost=2
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus COT_big_apple"
+			#country_event=COTact1.3	#The Inevitable Clash - Set the Stakes
+			add_political_power=30
+		}
+	}
+	#Path A - Griffonian Allies
+	focus={		#International Relations
+		id=COT_griffonrelations
+		icon=GFX_goal_improve_relations_pony_griffon
+		relative_position_id=COT_big_apple
+		x=-4 y=1 cost=6
+		prerequisite={focus=COT_big_apple}
+		mutually_exclusive={focus=COT_standalone}
+		mutually_exclusive={focus=COT_ponyrelations}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus COT_griffonrelations"
+			#country_event=COTact1.4A	#Griffonian Envoys
+		}
+	}
+	focus={		#Illicite Wingbardian Aid - Tarantella Napoletana
+		id=COT_wingbardian_aid
+		icon=GFX_focus_wng_flag
+		relative_position_id=COT_griffonrelations
+		x=-3 y=1 cost=6
+		prerequisite={focus=COT_griffonrelations}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus COT_griffonrelations"
+			#country_event=COTact1.5	#Wingbardian Volunteers
+			add_equipment_to_stockpile={type=infantry_equipment_0 amount=500 producer=WNG}
+		}
+	}
+	focus={		#Petition Aquelian Assistance - Légion étrangère
+		id=COT_wingbardian_aid
+		icon=GFX_focus_wng_flag
+		relative_position_id=COT_griffonrelations
+		x=-3 y=1 cost=6
+		prerequisite={focus=COT_griffonrelations}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus COT_griffonrelations"
+			#country_event=COTact1.5	#Wingbardian Volunteers
+		}
+	}
+	
+	
+	
+	focus={		#We Stand Alone
+		id=COT_standalone
+		icon=GFX_goal_nested_fortifications
+		relative_position_id=COT_big_apple
+		x=0 y=1 cost=2
+		prerequisite={focus=COT_big_apple}
+		mutually_exclusive={focus=COT_griffonrelations}
+		mutually_exclusive={focus=COT_ponyrelations}
+		ai_will_do={factor=80}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus COT_standalone"
+			#country_event=COTact1.4B	#Batten the Hatches
+			add_political_power=70
+		}
+	}
+	focus={		#Equestrian Relations
+		id=COT_ponyrelations
+		icon=GFX_goal_improve_relations_pony_pony
+		relative_position_id=COT_big_apple
+		x=4 y=1 cost=4
+		prerequisite={focus=COT_big_apple}
+		mutually_exclusive={focus=COT_griffonrelations}
+		mutually_exclusive={focus=COT_standalone}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus COT_ponyrelations"
+			#country_event=COTact1.4C	#...Keeps the Doctor Away - Delay Earthborne Invasion
+		}
+	}
+	
+	
+	
 	#focus={		#Secession From Equestria
 	#	id=COT_leave_equestria
 	#	icon=GFX_goal_treaty_fails
