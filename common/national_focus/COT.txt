@@ -50,11 +50,12 @@ focus_tree={
 			#country_event=COTact1.4A	#Griffonian Envoys
 		}
 	}
+	#Shouldered Idea = Petition Aquelian Assistance - Légion étrangère
 	focus={		#Illicite Wingbardian Aid - Tarantella Napoletana
 		id=COT_wingbardian_aid
 		icon=GFX_focus_wng_flag
 		relative_position_id=COT_griffonrelations
-		x=-3 y=1 cost=6
+		x=-3 y=1 cost=5
 		prerequisite={focus=COT_griffonrelations}
 		ai_will_do={factor=40}
 		completion_reward={
@@ -63,16 +64,24 @@ focus_tree={
 			add_equipment_to_stockpile={type=infantry_equipment_0 amount=500 producer=WNG}
 		}
 	}
-	focus={		#Petition Aquelian Assistance - Légion étrangère
-		id=COT_wingbardian_aid
+	focus={		#Raise the 23rd - Major General > Brigadier General William B. Taliaferro
+		id=COT_wingbardian_volunteers
 		icon=GFX_focus_wng_flag
-		relative_position_id=COT_griffonrelations
-		x=-3 y=1 cost=6
-		prerequisite={focus=COT_griffonrelations}
+		relative_position_id=COT_wingbardian_aid
+		x=0 y=1 cost=5
+		prerequisite={focus=COT_wingbardian_aid}
 		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus COT_griffonrelations"
 			#country_event=COTact1.5	#Wingbardian Volunteers
+			create_corps_commander={	#TalonSparrow name by Pax
+				name="William Talonsparrow"	#id=	#desc=""
+				picture="Talonferro.dds"	#female=yes
+				traits={harsh_leader bleeding_heart griffon_race_trait}
+				skill=3	attack_skill=3	defense_skill=2
+				planning_skill=2	logistics_skill=1
+			}
+			hidden_effect={load_oob="COT_Taliaferro"}
 		}
 	}
 	
@@ -109,7 +118,7 @@ focus_tree={
 	}
 	
 	
-	
+	#Grapes of Wrath Focus NameIdea
 	#focus={		#Secession From Equestria
 	#	id=COT_leave_equestria
 	#	icon=GFX_goal_treaty_fails
