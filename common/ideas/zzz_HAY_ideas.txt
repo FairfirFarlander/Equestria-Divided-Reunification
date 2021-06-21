@@ -30,4 +30,13 @@ ideas={
 				democratic_drift=0.02
 			}
 		}
+		HAY_works_frenzy={	#Linked to economic focus. Grants building bonus for roughly a year.
+			allowed={always=no}
+			#picture=
+			removal_cost=-1
+			modifier={
+				production_speed_industrial_complex_factor=0.2
+			}
+		}
+	}
 }
