@@ -1,283 +1,162 @@
 bookmarks={
 	bookmark={
-		name="GATHERING_STORM_NAME"
-		desc="GATHERING_STORM_DESC"
-		date=1007.1.1.12
-		picture="GFX_select_date_1936"
-		default_country="HMS"
-		default=yes
-		"HMS"={
+		name="GATHERING_STORM_NAME"	desc="GATHERING_STORM_DESC"
+		date=1007.1.1.12	picture="GFX_select_date_1936"
+		default_country="HMS"	default=yes
+		"HMS"={	#House Moon and Star
 			history="HMS_GATHERING_STORM_DESC"
-			ideology=fascism
-			ideas={
-				HMS_idea
-			}
-			focuses={
-			}
+			ideology=fascism	#minor=yes
+			ideas={HMS_idea}
+			focuses={}
 		}
-		"HSW"={
+		"HSW"={	#House Stormwing
 			history="HSW_GATHERING_STORM_DESC"
-			ideology=fascism
-			ideas={
-				HSW_idea
-			}
-			focuses={
-			}
+			ideology=fascism	#minor=yes
+			ideas={HSW_idea}
+			focuses={}
 		}
-		"HEF"={
+		"HEF"={	#House Everfree
 			history="HEF_GATHERING_STORM_DESC"
-			ideology=fascism
-			ideas={
-				HEF_idea
-			}
-			focuses={
-			}
+			ideology=fascism	#minor=yes
+			ideas={HEF_idea}
+			focuses={}
 		}
-		"HEB"={
+		"HEB"={	#House Earthborn
 			history="HEB_GATHERING_STORM_DESC"
-			ideology=fascism
-			ideas={
-				HEB_idea
-			}
-			focuses={
-			}
+			ideology=fascism	#minor=yes
+			ideas={HEB_idea}
+			focuses={}
 		}
-		"HWG"={
+		"HWG"={	#House Whitegold
 			history="HWG_GATHERING_STORM_DESC"
-			ideology=fascism
-			ideas={
-				HWG_idea
-			}
-			focuses={
-			}
+			ideology=fascism	#minor=yes
+			ideas={HWG_idea}
+			focuses={}
 		}
-		#"CUL"={
+		#"CUL"={	#Cult of Laughter
 		#	history="CUL_GATHERING_STORM_DESC"
-		#	ideology=fascism
-		#	ideas={
-		#		CUL_idea
-		#	}
-		#	focuses={
-		#	}
+		#	ideology=fascism	#minor=yes
+		#	ideas={CUL_idea}
+		#	focuses={}
 		#}
-		"CRY"={
+		"CRY"={	#Crystal Empire
 			history="CRY_GATHERING_STORM_DESC"
-			ideology=fascism
-			ideas={
-				crystal_heart
-				royal_family
-				sombra_threat
-			}
-			focuses={
-				CRY_oldorder
-				CRY_comrevolution
-				CRY_oldking
-			}
+			ideology=fascism	#minor=yes
+			ideas={crystal_heart	royal_family	sombra_threat}
+			focuses={CRY_oldorder	CRY_comrevolution	CRY_oldking}
 		}
-		"STG"={
+		"STG"={	#Stalliongrad Remnants
 			history="STG_GATHERING_STORM_DESC"
-			ideology=communism
-			ideas={
-				severe_famine
-				incomplete_industrialization
-			}
-			focuses={
-				vasya_2
-				the_palace
-				manifesto_of_materialism
-			}
+			ideology=communism	#minor=yes
+			ideas={severe_famine	incomplete_industrialization}
+			focuses={vasya_2	the_palace	manifesto_of_materialism}
 		}
-		"SOL"={
+		"SOL"={	#Random Country
 			history="RANDOM_GATHERING_STORM_DESC"
-			ideology=neutrality
+			ideology=neutrality	#minor=yes
 		}
-		#minors
-		"TRT"={
-			minor=yes
+		#MINORS
+		"TRT"={	#Trottingham Remnants
 			history="TRT_GATHERING_STORM_DESC"
-			ideology=neutrality
-			ideas={
-				
-			}
-			focuses={
-				
-			}
+			ideology=neutrality	minor=yes
+			ideas={}
+			focuses={}
 		}
-		"ALA"={
-			minor=yes
+		"ALA"={	#Alamane Province
 			history="ALA_GATHERING_STORM_DESC"
-			ideology=neutrality
-			ideas={
-				
-			}
-			focuses={
-				
-			}
+			ideology=neutrality	minor=yes
+			ideas={}
+			focuses={}
 		}
-		"BCK"={
-			minor=yes
+		"BCK"={	#Buckcastle Province
 			history="BCK_GATHERING_STORM_DESC"
-			ideology=neutrality
-			ideas={
-				
-			}
-			focuses={
-				
-			}
+			ideology=neutrality	minor=yes
+			ideas={}
+			focuses={}
 		}
-		"COT"={
-			minor=yes
+		"COT"={	#Trotsas Province
 			history="COT_GATHERING_STORM_DESC"
-			ideology=neutrality
-			ideas={
-				
-			}
-			focuses={
-				
-			}
+			ideology=neutrality	minor=yes
+			ideas={}
+			focuses={}
 		}
-		#"CHY"={
-		#	minor=yes
+		#"CHY"={	#Dodge Province
 		#	history="CHY_GATHERING_STORM_DESC"
-		#	ideology=fascism
-		#	ideas={
-		#		
-		#	}
-		#	focuses={
-		#		
-		#	}
+		#	ideology=fascism	minor=yes
+		#	ideas={}
+		#	focuses={}
 		#}
-		"FLY"={
-			minor=yes
+		"DRG"={	#Dragon Isles
+			history="DRG_GATHERING_STORM_DESC"
+			ideology=democratic	minor=yes
+			ideas={}
+			focuses={}
+		}
+		"FLY"={	#Fillydelphia Province
 			history="FLY_GATHERING_STORM_DESC"
-			ideology=fascism
-			ideas={
-				
-			}
-			focuses={
-				
-			}
+			ideology=fascism	minor=yes
+			ideas={}
+			focuses={}
 		}
-		"HAY"={
-			minor=yes
+		"HAY"={	#Hayseed Province
 			history="HAY_GATHERING_STORM_DESC"
-			ideology=neutrality
-			ideas={
-				
-			}
-			focuses={
-				
-			}
+			ideology=neutrality	minor=yes
+			ideas={}
+			focuses={}
 		}
-		"HFT"={
-			minor=yes
+		"HFT"={	#Hoofington Province
 			history="HFT_GATHERING_STORM_DESC"
-			ideology=neutrality
-			ideas={
-				
-			}
-			focuses={
-				
-			}
+			ideology=neutrality	minor=yes
+			ideas={}
+			focuses={}
 		}
-		"JCH"={
-			minor=yes
+		"JCH"={	#Jungle Changelings
 			history="JCH_GATHERING_STORM_DESC"
-			ideology=communism
-			ideas={
-				
-			}
-			focuses={
-				
-			}
+			ideology=communism	minor=yes
+			ideas={}
+			focuses={}
 		}
-		"JTL"={
-			minor=yes
+		"JTL"={	#Jungle League
 			history="JTL_GATHERING_STORM_DESC"
-			ideology=democratic
-			ideas={
-				
-			}
-			focuses={
-				
-			}
+			ideology=democratic	minor=yes
+			ideas={}
+			focuses={}
 		}
-		"MWC"={
-			minor=yes
+		"MWC"={	#Meadowood Province
 			history="MWC_GATHERING_STORM_DESC"
-			ideology=neutrality
-			ideas={
-				
-			}
-			focuses={
-				
-			}
+			ideology=neutrality	minor=yes
+			ideas={}
+			focuses={}
 		}
-		"PIE"={
-			minor=yes
+		"PIE"={	#Rockville Province
 			history="PIE_GATHERING_STORM_DESC"
-			ideology=fascism
-			ideas={
-				
-			}
-			focuses={
-				
-			}
+			ideology=fascism	minor=yes
+			ideas={}
+			focuses={}
 		}
-		"PLT"={
-			minor=yes
+		"PLT"={	#Portland Province
 			history="PLT_GATHERING_STORM_DESC"
-			ideology=democratic
-			ideas={
-				
-			}
-			focuses={
-				
-			}
+			ideology=democratic	minor=yes
+			ideas={}
+			focuses={}
 		}
-		"STB"={
-			minor=yes
+		"STB"={	#Stableside Province
 			history="STB_GATHERING_STORM_DESC"
-			ideology=neutrality
-			ideas={
-				
-			}
-			focuses={
-				
-			}
+			ideology=neutrality	minor=yes
+			ideas={}
+			focuses={}
 		}
-		"THA"={
-			minor=yes
+		"THA"={	#Thestral Province
 			history="THA_GATHERING_STORM_DESC"
-			ideology=neutrality
-			ideas={
-				
-			}
-			focuses={
-				
-			}
+			ideology=neutrality	minor=yes
+			ideas={}
+			focuses={}
 		}
-		"VHT"={
-			minor=yes
+		"VHT"={	#Vanhoover Province
 			history="VHT_GATHERING_STORM_DESC"
-			ideology=communism
-			ideas={
-				
-			}
-			focuses={
-				
-			}
-		}
-		"VII"={
-			minor=yes
-			history="VII_GATHERING_STORM_DESC"
-			ideology=neutrality
-			ideas={
-				
-			}
-			focuses={
-				
-			}
+			ideology=communism	minor=yes
+			ideas={}
+			focuses={}
 		}
 		effect={
 			randomize_weather=22345 #Obligatory in every bookmark!

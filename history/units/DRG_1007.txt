@@ -1,0 +1,53 @@
+division_template={
+	name="Militia"
+	priority=0
+	regiments={
+		infantry={x=0 y=0}
+		infantry={x=0 y=1}
+	}
+}
+division_template={
+	name="Dragon Warband"
+	priority=1	is_locked=yes
+	regiments={
+		light_dragons={x=0 y=0}
+	}
+}
+units={	#DEPLOYMENTS
+	division={	#Port Starswirl
+		name="Militia"
+		location=11755
+		division_template="Militia"
+		start_experience_factor=0.3
+		start_equipment_factor=0.4
+		force_equipment_variants={melee_equipment_1={owner="DRG" creator="EQS"}}
+	}
+	division={	#Dragon's Retreat
+		name="Dragon Warband"
+		location=4913
+		division_template="Dragon Warband"
+		start_experience_factor=0.1
+		start_equipment_factor=1
+		force_equipment_variants={melee_equipment_0={owner="DRG" creator="DRG"}}
+	}
+	division={	The Mountain
+		name="Dragon Warband"
+		location=10113
+		division_template="Dragon Warband"
+		start_experience_factor=0.1
+		start_equipment_factor=1
+		force_equipment_variants={dragon_equipment_0={owner="DRG" creator="DRG"}}
+	}
+}
+#STARTING_PRODUCTION
+instant_effect={
+	add_equipment_production={
+		equipment={type=melee_equipment_0 creator="DRG"}
+		requested_factories=1 progress=0.96 efficiency=20
+	}
+	add_equipment_production={
+		equipment={type=dragon_equipment_0 creator="DRG"}
+		requested_factories=1 progress=0.69 efficiency=15
+	}
+	add_equipment_to_stockpile={type=melee_equipment_0 amount=180 producer=EQS}
+}

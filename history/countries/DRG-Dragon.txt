@@ -1,17 +1,16 @@
 ﻿#LOCALE
 capital=7
-oob="VII_1007"
+oob="DRG_1007"
 #if={
 #	limit={has_dlc="Man the Guns"}
-#	set_naval_oob="VII_naval"
-#	else={set_naval_oob="VII_naval_legacy"}
+#	set_naval_oob="DRG_naval"
+#	else={set_naval_oob="DRG_naval_legacy"}
 #}
 #FOUNTATION
 set_research_slots=2
 set_stability=0.6
 set_war_support=0.22
 add_ideas={
-	#Dragons
 	poor_science_base
 	tribal_society
 	lack_of_scientists2
@@ -21,7 +20,6 @@ add_ideas={
 set_technology={
 	dragon_race=1
 	griffon_race=1
-	pony_race=1
 	melee_weapons=1
 	melee_weapons1=1
 	tech_support=1
@@ -59,19 +57,11 @@ set_rule={can_generate_female_aces=yes}
 #POLITICS
 set_popularities={
 	fascism=26	communism=7
-	neutrality=44	democratic=23
+	neutrality=23	democratic=44
 }
 set_politics={
-	ruling_party=neutrality
-	last_election="1000.10.10"
-	election_frequency=36
-	elections_allowed=no
-}
-create_country_leader={
-	name="Dragon Lord Ember"	#desc=""
-	expire="1965.1.1"	picture="Amber.tga"
-	ideology=despotism	female=yes
-	traits={}
+	ruling_party=democratic	last_election="1016.1.21"
+	election_frequency=36	elections_allowed=no
 }
 create_country_leader={
 	name="Dragon Lord Ember"	#desc=""
@@ -80,28 +70,34 @@ create_country_leader={
 	traits={}
 }
 create_country_leader={
-	name="Dragon Lord Torch"	#desc=""
-	expire="1965.1.1"	picture="torch.tga"
-	ideology=conservatism	#female=yes
-	traits={}
-}
-create_country_leader={
 	name="Lord Ruby"	#desc=""
 	expire="1965.1.1"	picture="rubydragon.tga"
 	ideology=anarchist_communism	#female=yes
 	traits={}
 }
+create_country_leader={
+	name="Dragon Lord Torch"	#desc=""
+	expire="1965.1.1"	picture="torch.tga"
+	ideology=despotism	#female=yes
+	traits={}
+}
+create_country_leader={
+	name="Dragon Lord Ember"	#desc=""
+	expire="1965.1.1"	picture="Amber.tga"
+	ideology=conservatism	female=yes
+	traits={}
+}
 create_field_marshal={
-	name="Lord Torch"	#id=	desc=""
+	name="Lord Torch"	#desc=""	id=
 	picture="torch.tga"	#female=yes
-	skill=2	attack_skill=3	defense_skill=1
+	skill=2	attack_skill=2	defense_skill=2
 	planning_skill=2	logistics_skill=1
-	traits={dragon_race_trait old_guard offensive_doctrine}
+	traits={old_guard dragon_race_trait}
 }
 create_corps_commander={
-	name="Ruby"	#id=	desc=""
+	name="Ruby"	#desc=""	id=
 	picture="rubydragon.tga"	female=yes
-	skill=1	attack_skill=1	defense_skill=2
+	skill=1	attack_skill=1	defense_skill=1
 	planning_skill=1	logistics_skill=1
-	traits={promising_general trait_reckless}
+	traits={dragon_race_trait trait_reckless promising_general}
 }

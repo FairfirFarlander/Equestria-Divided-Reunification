@@ -8,7 +8,7 @@ state={
 	provinces={276 804 3242 6925 9255 11238 11303 11844}
 	resources={oil=5}
 	history={
-		owner=STG
+		owner=SEP
 		add_core_of=STG
 		#add_claim_by=
 		victory_points={6925 5}

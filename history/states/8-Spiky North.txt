@@ -8,13 +8,13 @@ state={
 	provinces={7069 9833 9945 10113}
 	resources={}
 	history={
-		owner=VII
-		add_core_of=VII
+		owner=DRG
+		add_core_of=DRG
 		#add_claim_by=
-		#victory_points={}
+		victory_points={10113 1}
 		buildings={
 		#STATE BUILDINGS
-			infrastructure=0
+			infrastructure=1
 			air_base=0
 			anti_air_building=0
 			radar_station=0

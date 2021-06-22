@@ -1,5 +1,5 @@
 #LOCALE
-capital=153
+capital=225
 oob="STG_1007"
 #if={
 #	limit={has_dlc="Man the Guns"}
@@ -11,22 +11,20 @@ set_research_slots=2
 set_stability=0.3
 set_war_support=0.6
 add_ideas={
+	small_science_base
 	pre_industrial_society
-	severe_famine
-	incomplete_industrialization
+	lack_of_scientists3
+	poverty4
 }
 #TECHNOLOGY
 set_technology={
 	pony_race=1
-	pre_gw_artillery=1
 	melee_weapons=1
 	melee_weapons1=1
 	tech_support=1
 	fuel_silos=1
-	tech_pegasi=1
 	tech_recon=1
-	tech_military_police=1
-	tech_engineers=1
+	pre_gw_artillery=1
 	early_fighter=1
 	early_bomber=1
 	gwtank=1
@@ -64,11 +62,6 @@ if={limit={not={has_dlc="Man the Guns"}}
 		transport=1
 	}
 }
-if={limit={has_dlc="La Resistance"}
-	set_technology={
-		armored_car1=1
-	}
-}
 #MISC
 set_convoys=15
 add_manpower=5000
@@ -84,15 +77,14 @@ add_equipment_to_stockpile={
 	amount=18	producer=EQS
 }
 add_equipment_to_stockpile={
-	type=infantry_equipment_0
+	type=melee_equipment_0
 	amount=600	producer=EQS
 }
 add_equipment_to_stockpile={
-	type=infantry_equipment_0
+	type=melee_equipment_1
 	amount=500	producer=STG
 }
 #DIPLOMACY
-give_guarantee=STL
 #POLITICS
 set_popularities={
 	democratic=5	fascism=3
@@ -100,7 +92,7 @@ set_popularities={
 }
 set_politics={
 	ruling_party=communism	last_election="1003.5.3"
-	election_frequency=36	elections_allowed=yes
+	election_frequency=36	elections_allowed=no
 }
 create_country_leader={
 	name="Tsar Peter IV"	#desc=""
