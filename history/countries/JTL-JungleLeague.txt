@@ -1,5 +1,5 @@
 #LOCALE
-capital=90
+capital=16
 oob="JTL_1007"
 #FOUNTATION
 set_research_slots=2

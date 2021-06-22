@@ -11,7 +11,7 @@ set_research_slots=2
 set_stability=0.3
 set_war_support=0.6
 add_ideas={
-	small_science_base
+	better_science_base
 	pre_industrial_society
 	lack_of_scientists3
 	poverty4

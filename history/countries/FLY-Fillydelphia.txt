@@ -1,5 +1,5 @@
 #LOCALE
-capital=28
+capital=12
 #oob="FLY_1007"
 #if={
 #	limit={has_dlc="Man the Guns"}
