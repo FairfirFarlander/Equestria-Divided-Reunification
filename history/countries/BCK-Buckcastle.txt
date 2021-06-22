@@ -6,6 +6,8 @@ set_research_slots=2
 set_stability=0.6
 set_war_support=0.17
 add_ideas={
+	BCK_Bountiful_Harvests
+	BCK_The_Middle_Ground
 	better_science_base
 	agrarian_society
 	lack_of_scientists3

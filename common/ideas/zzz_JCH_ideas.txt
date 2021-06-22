@@ -1,0 +1,23 @@
+ideas={
+	country={
+		JCH_Chruch_Of_The_First_Queen={	#Heed her teachings
+			allowed={always=no}
+			picture=holy_order
+			removal_cost=-1
+			modifier={
+			stability_factor=0.04
+			compliance_growth_on_our_occupied_states = -0.03
+			}
+		}
+		JCH_Under_Cities={	#diggy diggy hole
+			allowed={always=no}
+			picture=magical_corruption
+			removal_cost=-1
+			modifier={
+				enemy_army_bonus_air_superiority_factor = -0.10
+				army_core_defence_factor = 0.05
+				dig_in_speed = 1
+			}
+		}
+	}
+}

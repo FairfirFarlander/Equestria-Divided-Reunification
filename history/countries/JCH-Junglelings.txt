@@ -6,6 +6,8 @@ set_research_slots=2
 set_stability=0.76 set_war_support=0.07
 set_rule={can_generate_female_aces=yes}
 add_ideas={
+	JCH_Under_Cities
+	JCH_Chruch_Of_The_First_Queen
 	limited_exports
 	isolation
 	poor_science_base

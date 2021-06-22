@@ -1,0 +1,23 @@
+ideas={
+	country={
+		BCK_Bountiful_Harvests={	#IM A INTERNATIONAL HARVESTER
+			allowed={always=no}
+			picture=collectivization_effort
+			removal_cost=-1
+			modifier={
+				stability_factor=0.015
+			}
+		}
+		BCK_The_Middle_Ground={		#Most trade passes through us it seems.
+			allowed={always=no}
+			picture=BUF_equestrian_traders
+			removal_cost=-1
+			modifier={
+				trade_opinion_factor = 0.25
+				opinion_gain_monthly = 3
+				license_purchase_cost_factor = -0.5 
+			
+			}
+		}
+	}
+}
