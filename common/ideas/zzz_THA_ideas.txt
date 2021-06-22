@@ -19,9 +19,7 @@ ideas={
 			}
 		}
 		THA_cultcell={
-			allowed={
-				always=no
-			}
+			allowed={always=no}
 			picture=
 			removal_cost=-1
 			modifier={
@@ -32,4 +30,5 @@ ideas={
 				democratic_drift=0.02
 			}
 		}
+	}
 }
