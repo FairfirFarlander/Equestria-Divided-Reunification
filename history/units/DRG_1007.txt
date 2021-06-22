@@ -30,7 +30,7 @@ units={	#DEPLOYMENTS
 		start_equipment_factor=1
 		force_equipment_variants={melee_equipment_0={owner="DRG" creator="DRG"}}
 	}
-	division={	The Mountain
+	division={	#The Mountain
 		name="Dragon Warband"
 		location=10113
 		division_template="Dragon Warband"

@@ -19,10 +19,8 @@ ideas={
 			}
 		}
 		NIH_cultcell={
-			allowed={
-				always=no
-			}
-			picture=
+			allowed={always=no}
+			#picture=
 			removal_cost=-1
 			modifier={
 				political_power_gain=-0.40
@@ -33,14 +31,12 @@ ideas={
 			}
 		}
 		NIH_The_Bitter_Cold={	#The Bitter Cold
-			allowed={
-				always=no
-			}
+			allowed={always=no}
 			picture=AST_maori
 			removal_cost=-1
 			modifier={
 				stability_factor=-0.09
 			}
 		}
-
+	}
 }

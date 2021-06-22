@@ -1,11 +1,6 @@
 #LOCALE
 capital=136
 oob="NIH_1007"
-#if={
-#	limit={has_dlc="Man the Guns"}
-#	set_naval_oob="#_naval"
-#	else={set_naval_oob="#_naval_legacy"}
-#}
 #FOUNTATION
 set_research_slots=2
 set_stability=0.45
@@ -27,14 +22,6 @@ set_technology={
 	tech_pegasi=1
 }
 actually_fix_weapon_techs=yes
-if={limit={has_dlc="Man the Guns"}
-	set_technology={
-		
-	}
-	else={set_technology={
-		
-	}}
-}
 #MISC
 set_rule={can_generate_female_aces=yes}
 #DIPLOMACY
@@ -54,25 +41,4 @@ set_politics={
 #	traits={}
 #}
 #MILITARY
-create_field_marshal={
-	name=""	#id=	desc=""
-	picture=""	#female=yes
-	skill=#	attack_skill=#	defense_skill=#
-	planning_skill=#	logistics_skill=#
-	traits={}
-}
-create_corps_commander={
-	name=""	#id=	desc=""
-	picture=""	#female=yes
-	skill=#	attack_skill=#	defense_skill=#
-	planning_skill=#	logistics_skill=#
-	traits={}
-}
-create_navy_leader={
-	name=""	#id=	desc=""
-	picture=""	#female=yes
-	skill=#	attack_skill=#	defense_skill=#
-	maneuvering_skill=#	coordination_skill=#
-	traits={}
-}
 #VARIENTS

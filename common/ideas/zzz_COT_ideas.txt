@@ -13,14 +13,12 @@ ideas={
 			picture=partial_economic_mobilisation_red
 			removal_cost=-1
 			modifier={
-			stability_factor=-0.09
+				stability_factor=-0.09
 			}
 		}
 		COT_cultcell={
-			allowed={
-				always=no
-			}
-			picture=
+			allowed={always=no}
+			#picture=
 			removal_cost=-1
 			modifier={
 				political_power_gain=-0.40
@@ -31,14 +29,12 @@ ideas={
 			}
 		}
 		COT_Griffonian_Imports={	#Trading from Southern Griffonia
-			allowed={
-				always=no
-			}
+			allowed={always=no}
 			picture=EQC_griffon_minorities1
 			removal_cost=-1
 			modifier={
 				stability_factor=0.05
 			}
 		}
-
+	}
 }

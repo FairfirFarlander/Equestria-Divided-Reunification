@@ -62,12 +62,12 @@ bookmarks={
 			ideas={}
 			focuses={}
 		}
-		"ALA"={	#Alamane Province
-			history="ALA_GATHERING_STORM_DESC"
-			ideology=neutrality	minor=yes
-			ideas={}
-			focuses={}
-		}
+		#"ALA"={	#Alamane Province
+		#	history="ALA_GATHERING_STORM_DESC"
+		#	ideology=neutrality	minor=yes
+		#	ideas={}
+		#	focuses={}
+		#}
 		"BCK"={	#Buckcastle Province
 			history="BCK_GATHERING_STORM_DESC"
 			ideology=neutrality	minor=yes
@@ -116,9 +116,15 @@ bookmarks={
 			ideas={}
 			focuses={}
 		}
-		"JTL"={	#Jungle League
-			history="JTL_GATHERING_STORM_DESC"
-			ideology=democratic	minor=yes
+		#"JTL"={	#Jungle League
+		#	history="JTL_GATHERING_STORM_DESC"
+		#	ideology=democratic	minor=yes
+		#	ideas={}
+		#	focuses={}
+		#}
+		"LAS"={	#LasAetherius
+			history="LAS_GATHERING_STORM_DESC"
+			ideology=neutrality	minor=yes
 			ideas={}
 			focuses={}
 		}
@@ -128,20 +134,38 @@ bookmarks={
 			ideas={}
 			focuses={}
 		}
-		"PIE"={	#Rockville Province
-			history="PIE_GATHERING_STORM_DESC"
-			ideology=fascism	minor=yes
+		"NIH"={	#Acornage Holdout
+			history="NIH_GATHERING_STORM_DESC"
+			ideology=neutrality	minor=yes
 			ideas={}
 			focuses={}
 		}
+		#"PIE"={	#Rockville Province
+		#	history="PIE_GATHERING_STORM_DESC"
+		#	ideology=fascism	minor=yes
+		#	ideas={}
+		#	focuses={}
+		#}
 		"PLT"={	#Portland Province
 			history="PLT_GATHERING_STORM_DESC"
 			ideology=democratic	minor=yes
 			ideas={}
 			focuses={}
 		}
-		"STB"={	#Stableside Province
-			history="STB_GATHERING_STORM_DESC"
+		#"STB"={	#Stableside Province
+		#	history="STB_GATHERING_STORM_DESC"
+		#	ideology=neutrality	minor=yes
+		#	ideas={}
+		#	focuses={}
+		#}
+		"STP"={	#Petershoof
+			history="STP_GATHERING_STORM_DESC"
+			ideology=neutrality	minor=yes
+			ideas={}
+			focuses={}
+		}
+		"SWT"={	#Stormwing Territories
+			history="SWT_GATHERING_STORM_DESC"
 			ideology=neutrality	minor=yes
 			ideas={}
 			focuses={}

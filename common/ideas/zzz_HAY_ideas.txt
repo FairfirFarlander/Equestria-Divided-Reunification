@@ -13,14 +13,12 @@ ideas={
 			picture=NOR_general_strike
 			removal_cost=-1
 			modifier={
-			stability_factor=-0.09
+				stability_factor=-0.09
 			}
 		}
 		HAY_cultcell={
-			allowed={
-				always=no
-			}
-			picture=
+			allowed={always=no}
+			#picture=
 			removal_cost=-1
 			modifier={
 				political_power_gain=-0.40
