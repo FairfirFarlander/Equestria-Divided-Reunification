@@ -1,6 +1,6 @@
 #LOCALE
 capital=157
-oob="SEP_1007"
+oob="SYV_1007"
 #FOUNTATION
 set_research_slots=2
 set_stability=0.17

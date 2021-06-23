@@ -13,10 +13,9 @@ ideas={
 			picture=BUF_equestrian_traders
 			removal_cost=-1
 			modifier={
-				trade_opinion_factor = 0.25
-				opinion_gain_monthly = 3
-				license_purchase_cost_factor = -0.5 
-			
+				trade_opinion_factor=0.25
+				opinion_gain_monthly=3
+				license_purchase_cost=-0.5
 			}
 		}
 	}

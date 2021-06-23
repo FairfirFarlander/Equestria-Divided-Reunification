@@ -20,7 +20,7 @@ ideas={
 		}
 		THA_cultcell={
 			allowed={always=no}
-			picture=
+			#picture=
 			removal_cost=-1
 			modifier={
 				political_power_gain=-0.40

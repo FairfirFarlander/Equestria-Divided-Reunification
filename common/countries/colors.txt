@@ -38,7 +38,7 @@ PIE={color=rgb{187 227 208}
 	color_ui=rgb{187 227 208}}
 PLT={color=rgb{41 64 109}
 	color_ui=rgb{41 64 109}}
-SEP={color=rgb{252 160 254}
+SYV={color=rgb{252 160 254}
 	color_ui=rgb{252 160 254}}
 STB={color=rgb{166 208 53}
 	color_ui=rgb{166 208 53}}
