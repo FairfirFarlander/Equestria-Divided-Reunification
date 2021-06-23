@@ -161,7 +161,7 @@ bookmarks={
 		"STP"={	#Petershoof
 			history="STP_GATHERING_STORM_DESC"
 			ideology=neutrality	minor=yes
-			ideas={}
+			ideas={STP_romanhoove	STP_return	STP_streltsy}
 			focuses={}
 		}
 		"SWT"={	#Stormwing Territories

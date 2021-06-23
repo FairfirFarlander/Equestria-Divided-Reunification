@@ -6,6 +6,10 @@ if={
 	set_naval_oob="HWG_1007_naval"
 	else={set_naval_oob="HWG_1007_naval_legacy"}
 }
+13={	#Baltimare
+	start_resistance=yes	set_compliance=16
+	set_resistance=26	set_garrison_strength=0.40
+}
 #FOUNTATION
 set_research_slots=2
 set_stability=0.4

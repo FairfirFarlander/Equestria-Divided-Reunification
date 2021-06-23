@@ -1,29 +1,22 @@
-﻿division_template={
-	name="Infantry Division"			#Infantry Division - kek
-	division_names_group=CRY_INF_01
+﻿division_template={	#96000 Troops 96000 Left
+	name="Infantry Division"	#Infantry Division - kek
 	regiments={
-		infantry={x=0 y=0}
-		infantry={x=0 y=1}
-		infantry={x=0 y=2}
-		infantry={x=1 y=0}
-		infantry={x=1 y=1}
-		infantry={x=1 y=2}
+		infantry={x=0 y=0}	infantry={x=1 y=0}
+		infantry={x=0 y=1}	infantry={x=1 y=1}
+		infantry={x=0 y=2}	infantry={x=1 y=2}
 		infantry={x=0 y=3}
 	}
-
 	support={
 		engineer={x=0 y=0}
 	}
 }
 division_template={
 	name="Royal Guards"			#RoyalGuards
-	division_names_group=CRY_GRD_01
 	regiments={
 		infantry={x=0 y=0}
 		infantry={x=0 y=1}
 		infantry={x=0 y=2}
 	}
-
 	support={
 		recon={x=0 y=0}
 		military_police={x=0 y=1}
@@ -32,7 +25,6 @@ division_template={
 }
 division_template={
 	name="Militia Regiment"			#Infantry Division - kek
-	division_names_group=CRY_GAR_01
 	regiments={
 		infantry={x=0 y=0}
 		infantry={x=0 y=1}
@@ -43,7 +35,6 @@ division_template={
 	}
 	priority=0
 }
-
 units={
 	division={
 		name="Sombra's Followers"
@@ -51,7 +42,6 @@ units={
 		division_template="Royal Guards"
 		start_experience_factor=0.4}
 }
-
 air_wings={
 	53={
 		# 1. lmao
@@ -61,7 +51,6 @@ air_wings={
 		}
 	}
 }
-
 ### Starting Production ###
 instant_effect={
 	add_equipment_production={

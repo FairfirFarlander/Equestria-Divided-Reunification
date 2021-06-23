@@ -8,13 +8,17 @@ oob="STP_1007"
 #}
 #FOUNTATION
 set_research_slots=2
-set_stability=0.17
-set_war_support=0.03
+set_stability=0.28
+set_war_support=0.08
 add_ideas={
+	limited_conscription
 	better_science_base
 	pre_industrial_society
 	lack_of_scientists1
 	poverty2
+	STP_romanhoove
+	STP_streltsy
+	STP_return
 }
 #TECHNOLOGY
 set_technology={
@@ -22,6 +26,8 @@ set_technology={
 	melee_weapons=1
 	tech_support=1
 	pre_gw_artillery=1
+	tech_pegasi=1
+	tech_unicorn=1
 }
 actually_fix_weapon_techs=yes
 if={limit={has_dlc="Man the Guns"}

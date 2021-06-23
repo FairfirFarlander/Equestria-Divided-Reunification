@@ -29,7 +29,7 @@ state={
 		#PROVINCE BUILDINGS	
 			7166={
 				naval_base=1
-				#bunker=0
+				bunker=1
 				#coastal_bunker=0
 			}
 		}

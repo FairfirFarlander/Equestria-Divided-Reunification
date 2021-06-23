@@ -1,0 +1,30 @@
+division_template={
+	name="Royal Guard Division"
+	priority=1
+	regiments={
+		infantry={x=0 y=0}	infantry={x=1 y=0}
+		infantry={x=0 y=1}	infantry={x=1 y=1}
+		infantry={x=0 y=2}
+	}
+}
+division_template={
+	name="Royal Prince Guard"
+	priority=2
+	regiments={
+		infantry={x=0 y=0}	pegasi={x=1 y=0}
+		infantry={x=0 y=1}
+	}
+	support={
+		recon={x=0 y=0}
+	}
+}
+units={
+	division={		#Manehattan
+		name="Ivory Tower Praetor Guard"
+		location=758
+		division_template="Praetor Guard"
+		start_experience_factor=1
+		start_equipment_factor=1
+	}
+}
+#STARTING PRODUCTION

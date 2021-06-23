@@ -1,4 +1,4 @@
-#LOCALE
+#LOCALE	#Literally Vietnam
 capital=26
 oob="JCH_1007"
 #FOUNTATION

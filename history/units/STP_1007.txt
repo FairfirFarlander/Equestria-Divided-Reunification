@@ -1,0 +1,131 @@
+division_template={	#TEMPLATES
+	name="Stroi"	#Based on Foreign (organized) Formation Force
+	priority=0
+	regiments={
+		infantry={x=0 y=0}
+		infantry={x=0 y=1}
+	}
+}
+division_template={
+	name="Streletskoye Voysko"	#Pre-Reform Infantry - Landless
+	priority=1	is_locked=yes	#Locked until reforms
+	regiments={
+		infantry={x=0 y=0}	infantry={x=1 y=0}
+		infantry={x=0 y=1}	infantry={x=1 y=1}
+		infantry={x=0 y=2}	infantry={x=1 y=2}
+	}
+}
+division_template={
+	name="Pomestnoe Voysko"	#Pre-Reform Cavalry - Landed
+	priority=1	is_locked=yes	#Locked until reforms
+	regiments={
+		pegasi={x=0 y=0}
+		pegasi={x=0 y=1}
+		pegasi={x=0 y=2}
+	}
+}
+division_template={
+	name="Rynda"	#Tsar's Bodyguard
+	priority=2	is_locked=yes	#Locked until reforms
+	regiments={
+		pegasi={x=0 y=0}	infantry={x=1 y=0}
+	}
+	support={
+		unicorn_company={x=0 y=0}
+	}
+}
+units={	#DEPLOYMENTS
+	division={		#Kreasnoye Serdtse
+		name="Serdtse Stroi"
+		location=3983
+		division_template="Stroi"
+		start_experience_factor=0.02
+		start_equipment_factor=0.8
+	}
+	division={		#Bordo
+		name="Bordo Stroi"
+		location=869
+		division_template="Stroi"
+		start_experience_factor=0.02
+		start_equipment_factor=0.6
+	}
+	division={		#Severokholm
+		name="Severokholm Stroi"
+		location=9332
+		division_template="Stroi"
+		start_experience_factor=0.02
+		start_equipment_factor=0.7
+	}
+	division={		#Petershoof
+		name="Streletskoye Petershoof"
+		location=311
+		division_template="Streletskoye Voysko"
+		start_experience_factor=0.3
+		start_equipment_factor=1
+		force_equipment_variants={melee_equipment_1={owner="STP" creator="GRF"}}
+	}
+	division={		#Severokholm
+		name="Streletskoye Severokholm"
+		location=9332
+		division_template="Streletskoye Voysko"
+		start_experience_factor=0.26
+		start_equipment_factor=0.9
+	}
+	division={		#Redheart
+		name="Streletskoye Serdtse"
+		location=3983
+		division_template="Streletskoye Voysko"
+		start_experience_factor=0.1
+		start_equipment_factor=0.8
+	}
+	division={		#Redheart
+		name="Pomestnoe Serdtse"
+		location=3983
+		division_template="Pomestnoe Voysko"
+		start_experience_factor=0.55
+		start_equipment_factor=1
+	}
+	division={		#Bird Territory
+		name="Pomestnoe Bordo"
+		location=869
+		division_template="Pomestnoe Voysko"
+		start_experience_factor=0.23
+		start_equipment_factor=0.95
+	}
+	division={		#Chillwing
+		name="Pomestnoe Chillwing"
+		location=12756
+		division_template="Pomestnoe Voysko"
+		start_experience_factor=0.3
+		start_equipment_factor=1
+	}
+	division={		#Chillwing
+		name="Tsar Peter IV's Bodyguard"
+		location=311
+		division_template="Rynda"
+		start_experience_factor=0.75
+		start_equipment_factor=1
+		force_equipment_variants={melee_equipment_1={owner="STP" creator="GRI"}}
+	}
+}
+instant_effect={	#STARTING PRODUCTION
+	add_equipment_production={
+		equipment={type=melee_equipment_0 creator="TRT"}
+		requested_factories=2 progress=0.75 efficiency=10
+	}
+	add_equipment_production={
+		equipment={type=melee_equipment_1 creator="TRT"}
+		requested_factories=1 progress=0.75 efficiency=30
+	}
+	add_equipment_production={
+		equipment={type=support_equipment_1	creator="TRT"}
+		requested_factories=1 progress=0.75 efficiency=90
+	}
+	add_equipment_production={
+		equipment={type=artillery_equipment_0 creator="TRT"}
+		requested_factories=1 progress=0.75 efficiency=20
+	}
+}
+#instant_effect={
+#	add_equipment_to_stockpile={type=melee_equipment_0 amount= producer=}
+#}

@@ -1,0 +1,34 @@
+ideas={
+	country={
+		STP_romanhoove={	#Romanhoove Dynasty
+			allowed={always=no}
+			picture=STW_absentee	#Place LIT_crown_4 when STP_return changes
+			removal_cost=-1
+			modifier={
+				stability_factor=-0.13
+				communism_drift=0.04
+				democratic_drift=0.03
+			}
+		}
+		STP_streltsy={	#Streltsy Voysko
+			allowed={always=no}
+			picture=MEX_politicised_army
+			removal_cost=-1
+			modifier={
+				military_leader_cost_factor=1
+				mobilization_speed=-0.21
+				conscription_factor=-0.05
+			}
+			on_add={country_lock_all_division_template=yes}
+			on_remove={country_lock_all_division_template=no}
+		}
+		STP_return={	#Return of the Tsar
+			allowed={always=no}
+			picture=LIT_crown_4	#Placeholder
+			removal_cost=-1
+			modifier={
+				
+			}
+		}
+	}
+}

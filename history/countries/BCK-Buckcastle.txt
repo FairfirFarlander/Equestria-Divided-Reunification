@@ -44,4 +44,5 @@ create_country_leader={
 	ideology=despotism	female=yes
 	traits={}
 }
+#Facism think locus corp.
 #MILITARY
