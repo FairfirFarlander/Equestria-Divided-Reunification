@@ -1,0 +1,22 @@
+division_template={	#TEMPLATES
+	name="Swashbuckler Detachment"
+	priority=1
+	regiments={
+		marine={x=0 y=0}
+		marine={x=0 y=1}
+		marine={x=0 y=2}
+	}
+	support={
+		unicorn_company={x=0 y=0}
+	}
+}
+units={	#DEPLOYMENTS
+	division={		#Petershoof
+		name="Moorhaey's Privateers"
+		location=311
+		division_template="Swashbuckler Detachment"
+		start_experience_factor=0.3
+		start_equipment_factor=1
+		force_equipment_variants={melee_equipment_1={owner="STP" creator="TRT"}}
+	}
+}

@@ -1,0 +1,21 @@
+division_template={	#TEMPLATES
+	name="Celestial Inquisitorial Regiment"
+	priority=1
+	regiments={
+		infantry={x=0 y=0}	infantry={x=1 y=0}
+		infantry={x=0 y=1}	infantry={x=1 y=1}
+	}
+	support={
+		unicorn_company={x=0 y=0}
+	}
+}
+units={	#DEPLOYMENTS
+	division={		#Petershoof
+		name="MoonStar Inquisitorial Detachment"
+		location=311
+		division_template="Celestial Inquisitorial Regiment"
+		start_experience_factor=0.75
+		start_equipment_factor=1
+		force_equipment_variants={melee_equipment_1={owner="STP" creator="HMS"}}
+	}
+}

@@ -126,6 +126,3 @@ instant_effect={	#STARTING PRODUCTION
 		requested_factories=1 progress=0.75 efficiency=20
 	}
 }
-#instant_effect={
-#	add_equipment_to_stockpile={type=melee_equipment_0 amount= producer=}
-#}

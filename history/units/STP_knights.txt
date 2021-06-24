@@ -1,0 +1,22 @@
+division_template={	#TEMPLATES
+	name="Griffonian Knightly Order"
+	priority=2	is_locked=yes
+	regiments={
+		knights={x=0 y=0}	knights={x=1 y=0}
+		knights={x=0 y=1}	knights={x=1 y=1}
+	}
+}
+units={	#DEPLOYMENTS
+	division={		#Petershoof
+		name="Order of the Northwind"
+		location=311
+		division_template="Griffonian Knightly Order"
+		start_experience_factor=0.75
+		start_equipment_factor=1
+		force_equipment_variants={melee_equipment_0={owner="STP" creator="GRI"}}
+	}
+}
+instant_effect={	#STARTING PRODUCTION
+	add_equipment_to_stockpile={type=melee_equipment_0 amount=100 producer=GRI}
+	add_equipment_to_stockpile={type=support_equipment amount=10 producer=GRI}
+}

@@ -2,7 +2,7 @@ ideas={
 	country={
 		moonstar_influence0={	#Moonstar Influence STARTS
 			allowed={always=no}
-			picture=hmsidea
+			picture=HMS_idea
 			removal_cost=-1
 			on_add={
 				ROOT={add_opinion_modifier={target=HMS modifier=moonstar_opinion0}}
@@ -15,7 +15,7 @@ ideas={
 		}
 		moonstar_influence1={
 			allowed={always=no}
-			picture=hmsidea
+			picture=HMS_idea
 			removal_cost=-1
 			on_add={
 				ROOT={add_opinion_modifier={target=HMS modifier=moonstar_opinion1}}
@@ -28,7 +28,7 @@ ideas={
 		}
 		moonstar_influence2={
 			allowed={always=no}
-			picture=hmsidea
+			picture=HMS_idea
 			removal_cost=-1
 			on_add={
 				ROOT={add_opinion_modifier={target=HMS modifier=moonstar_opinion2}}
@@ -41,7 +41,7 @@ ideas={
 		}
 		moonstar_influence3={
 			allowed={always=no}
-			picture=hmsidea
+			picture=HMS_idea
 			removal_cost=-1
 			on_add={
 				ROOT={add_opinion_modifier={target=HMS modifier=moonstar_opinion3}}
@@ -54,7 +54,7 @@ ideas={
 		}
 		moonstar_influence4={
 			allowed={always=no}
-			picture=hmsidea
+			picture=HMS_idea
 			removal_cost=-1
 			on_add={
 				ROOT={add_opinion_modifier={target=HMS modifier=moonstar_opinion4}}
@@ -67,7 +67,7 @@ ideas={
 		}
 		moonstar_influence5={
 			allowed={always=no}
-			picture=hmsidea
+			picture=HMS_idea
 			removal_cost=-1
 			on_add={
 				ROOT={add_opinion_modifier={target=HMS modifier=moonstar_opinion5}}
