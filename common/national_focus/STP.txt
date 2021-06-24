@@ -50,4 +50,120 @@ focus_tree={
 			log="[GetDateText]: [Root.GetName]: focus STP_winter_07"
 		}
 	}
+#Military Tree
+	focus={		#Inspect the Streletskoye
+		id=STP_inspect_streltsy
+		icon=GFX_goal_derpy_conscription
+		relative_position_id=STP_no_equestria
+		x=10 y=0 cost=4
+		#prerequisite={focus=STP_winter_07}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus STP_inspect_streltsy"
+			add_political_power=30
+		}
+	}
+	focus={		#Pilfer Abandoned Stalliongradian Armouries
+		id=STP_stallion_armoury
+		icon=GFX_goal_van_rifles
+		relative_position_id=STP_inspect_streltsy
+		x=-8 y=1 cost=4
+		prerequisite={focus=STP_inspect_streltsy}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus STP_stallion_armoury"
+			add_equipment_to_stockpile={type=melee_equipment_1 amount=400 producer=STG}
+		}
+	}
+	focus={		#Moon and Star Military Attaches
+		id=STP_moonstar_assistance
+		icon=GFX_goal_NLR_sun_and_moon
+		relative_position_id=STP_inspect_streltsy
+		x=-4 y=1 cost=4
+		prerequisite={focus=STP_inspect_streltsy}
+		mutually_exclusive={focus=STP_prussian_assistance}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus STP_moonstar_assistance"
+			increase_HMS_influence=yes
+			army_experience=10
+		}
+	}
+	focus={		#Griffonian Military Attaches
+		id=STP_prussian_assistance
+		icon=GFX_goal_GRI_army_expansion
+		relative_position_id=STP_inspect_streltsy
+		x=0 y=1 cost=4
+		prerequisite={focus=STP_inspect_streltsy}
+		mutually_exclusive={focus=STP_moonstar_assistance}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus STP_prussian_assistance"
+			army_experience=10
+		}
+	}
+	focus={		#Reward the Loyalists
+		id=STP_reward_loyalists
+		icon=GFX_goal_generic_land_reform
+		relative_position_id=STP_inspect_streltsy
+		x=3 y=1 cost=4
+		prerequisite={focus=STP_inspect_streltsy}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus STP_prussian_assistance"
+			effect_tooltip={
+				swap_ideas={remove_idea=STP_streltsy_rowdy add_idea=STP_streltsy_tame}
+			}
+		}
+	}
+	focus={		#Moon and Star Military Attaches
+		id=STP_moonstar_unicorns
+		icon=GFX_goal_generic_magic
+		relative_position_id=STP_moonstar_assistance
+		x=0 y=1 cost=4
+		prerequisite={focus=STP_moonstar_assistance}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus STP_moonstar_assistance"
+			increase_HMS_influence=yes
+			set_technology={tech_unicorn_ms=1}
+		}
+	}
+	focus={		#Inspect the Streltsy
+		id=STP_infantry_weapons
+		icon=GFX_goal_arms_dealing
+		relative_position_id=STP_prussian_assistance
+		x=-2 y=1 cost=4
+		prerequisite={focus=STP_moonstar_assistance focus=STP_prussian_assistance}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus STP_infantry_weapons"
+			army_experience=10
+		}
+	}
+	focus={		#Nova Griffonian Naval Attaches
+		id=STP_novan_navy_attaches
+		icon=GFX_goal_navy_hat_ships
+		relative_position_id=STP_prussian_assistance
+		x=5 y=1 cost=4
+		prerequisite={focus=STP_inspect_navy focus=STP_prussian_assistance}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus STP_novan_navy_attaches"
+			army_experience=10
+		}
+	}
+#Naval Tree
+	focus={		#Inspect the Navy
+		id=STP_inspect_navy
+		icon=GFX_goal_van_rifles
+		relative_position_id=STP_no_equestria
+		x=14 y=0 cost=4
+		#prerequisite={focus=STP_inspect_streltsy}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus STP_inspect_navy"
+			navy_experience=25
+		}
+	}
 }

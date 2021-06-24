@@ -1,0 +1,82 @@
+ideas={
+	country={
+		moonstar_influence0={	#Moonstar Influence STARTS
+			allowed={always=no}
+			picture=hmsidea
+			removal_cost=-1
+			on_add={
+				ROOT={add_opinion_modifier={target=HMS modifier=moonstar_opinion0}}
+				HMS={add_opinion_modifier={target=ROOT modifier=moonstar_opinion0}}
+			}
+			on_remove={
+				ROOT={remove_opinion_modifier={target=HMS modifier=moonstar_opinion0}}
+				HMS={remove_opinion_modifier={target=ROOT modifier=moonstar_opinion0}}
+			}
+		}
+		moonstar_influence1={
+			allowed={always=no}
+			picture=hmsidea
+			removal_cost=-1
+			on_add={
+				ROOT={add_opinion_modifier={target=HMS modifier=moonstar_opinion1}}
+				HMS={add_opinion_modifier={target=ROOT modifier=moonstar_opinion1}}
+			}
+			on_remove={
+				ROOT={remove_opinion_modifier={target=HMS modifier=moonstar_opinion1}}
+				HMS={remove_opinion_modifier={target=ROOT modifier=moonstar_opinion1}}
+			}
+		}
+		moonstar_influence2={
+			allowed={always=no}
+			picture=hmsidea
+			removal_cost=-1
+			on_add={
+				ROOT={add_opinion_modifier={target=HMS modifier=moonstar_opinion2}}
+				HMS={add_opinion_modifier={target=ROOT modifier=moonstar_opinion2}}
+			}
+			on_remove={
+				ROOT={remove_opinion_modifier={target=HMS modifier=moonstar_opinion2}}
+				HMS={remove_opinion_modifier={target=ROOT modifier=moonstar_opinion2}}
+			}
+		}
+		moonstar_influence3={
+			allowed={always=no}
+			picture=hmsidea
+			removal_cost=-1
+			on_add={
+				ROOT={add_opinion_modifier={target=HMS modifier=moonstar_opinion3}}
+				HMS={add_opinion_modifier={target=ROOT modifier=moonstar_opinion3}}
+			}
+			on_remove={
+				ROOT={remove_opinion_modifier={target=HMS modifier=moonstar_opinion3}}
+				HMS={remove_opinion_modifier={target=ROOT modifier=moonstar_opinion3}}
+			}
+		}
+		moonstar_influence4={
+			allowed={always=no}
+			picture=hmsidea
+			removal_cost=-1
+			on_add={
+				ROOT={add_opinion_modifier={target=HMS modifier=moonstar_opinion4}}
+				HMS={add_opinion_modifier={target=ROOT modifier=moonstar_opinion4}}
+			}
+			on_remove={
+				ROOT={remove_opinion_modifier={target=HMS modifier=moonstar_opinion4}}
+				HMS={remove_opinion_modifier={target=ROOT modifier=moonstar_opinion4}}
+			}
+		}
+		moonstar_influence5={
+			allowed={always=no}
+			picture=hmsidea
+			removal_cost=-1
+			on_add={
+				ROOT={add_opinion_modifier={target=HMS modifier=moonstar_opinion5}}
+				HMS={add_opinion_modifier={target=ROOT modifier=moonstar_opinion5}}
+			}
+			on_remove={
+				ROOT={remove_opinion_modifier={target=HMS modifier=moonstar_opinion5}}
+				HMS={remove_opinion_modifier={target=ROOT modifier=moonstar_opinion5}}
+			}
+		}	#Moonstar Influence ENDS
+	}
+}

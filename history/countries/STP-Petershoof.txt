@@ -17,8 +17,9 @@ add_ideas={
 	lack_of_scientists1
 	poverty2
 	STP_romanhoove
-	STP_streltsy
+	STP_streltsy_rowdy
 	STP_return
+	moonstar_influence0
 }
 #TECHNOLOGY
 set_technology={
