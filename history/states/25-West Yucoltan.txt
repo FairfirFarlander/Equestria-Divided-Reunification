@@ -12,7 +12,7 @@ state={
 		add_core_of=JCH
 		add_core_of=PLT
 		#add_claim_by=
-		victory_points={336 3}
+		victory_points={336 1}
 		buildings={
 		#STATE BUILDINGS
 			infrastructure=0
@@ -29,7 +29,7 @@ state={
 			nuclear_reactor=0
 		#PROVINCE BUILDINGS	
 			336={
-				naval_base=1
+				naval_base=0	#1 For Focus JCH
 				#bunker=0
 				#coastal_bunker=0
 			}

@@ -1,0 +1,8 @@
+add_namespace=JCHact1
+	country_event={
+		id=JCHact1.1	is_triggered_only=yes
+		immediate={log="[GetDateText]: [Root.GetName]: event JCHact1.1"}
+		title=JCHact1.1.t	desc=JCHact1.1.d
+		#picture=
+		option={name=JCHact1.1.a}
+	}

@@ -73,12 +73,12 @@ create_country_leader={
 	picture="PeterIV.tga"	expire="1965.1.1"
 	ideology=despotism	#female=yes
 	traits={}
-}
+}	#Catherine
 create_country_leader={
 	name="Ratibor Svetoslavich"	#desc=""
 	expire="1965.1.1"	picture="Ratibor.tga"
 	ideology=fascism_ideology	#female=yes
-	traits={}
+	traits={}	#Add Panin
 }
 create_country_leader={
 	name="Caramelka Sladkaya"	desc="POLITICS_CARAMELKA"

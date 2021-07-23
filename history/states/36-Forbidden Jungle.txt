@@ -1,7 +1,7 @@
 state={
 	id=36
 	name="STATE_36"
-	manpower=40140
+	manpower=90140	#40140
 	state_category=pastoral
 	buildings_max_level_factor=1
 	impassable=no

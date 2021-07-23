@@ -11,7 +11,7 @@ focus_tree={
 			log="[GetDateText]: [Root.GetName]: focus STP_no_equestria"
 			country_event=STPintro.1	#The Baltimare Riots - War Related Bonus
 		}
-	}
+	}	#Secullarize the church
 	focus={		#The Revolution of 04'
 		id=STP_revolution04
 		icon=GFX_goal_revolution_pony

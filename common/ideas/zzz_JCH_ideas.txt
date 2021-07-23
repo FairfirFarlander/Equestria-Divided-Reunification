@@ -19,5 +19,14 @@ ideas={
 				dig_in_speed = 1
 			}
 		}
+		JCH_ember_founded={	#Ember Hive Completed
+			allowed={always=no}
+			#picture=
+			removal_cost=-1
+			modifier={
+				stability_factor=0.05
+				political_power_factor=0.05
+			}
+		}
 	}
 }
