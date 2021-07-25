@@ -15,7 +15,6 @@ add_ideas={
 	HEB_idea_ai
 	HEB_clanandkin04
 	HEB_dehorn
-	limited_conscription
 	big_science_base
 	pre_industrial_society
 	lack_of_scientists3		#Hit 1 ASAP
@@ -28,7 +27,6 @@ set_technology={
 	tech_support=1
 	pre_gw_artillery=1
 	gwtank=1
-	basic_light_tank=1
 }
 if={limit={has_dlc="Man the Guns"}
 	set_technology={

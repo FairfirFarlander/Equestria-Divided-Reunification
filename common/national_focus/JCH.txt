@@ -125,14 +125,18 @@ focus_tree={
 	focus={		#The Underway Awaits!
 		id=JCH_S1
 		#icon=
-		x=0 y=0 cost=1
+		x=0 y=0 cost=8
 		#ai_will_do={factor=40}
+		select_effect={
+			country_event={days=21 id=JCHact1.1a}		#Is There Anyone Left Above?
+			country_event={days=42 id=JCHact1.1b}		#The Finishing Touches
+		}
 		completion_reward={
 			#log="[GetDateText]: [Root.GetName]: focus JCH_S1"
-			country_event=JCHact1.1
+			country_event=JCHact1.1c		#A Nation Born Underground
 		}
 	}
-	focus={		#Is There Anyone Left Above?
+	focus={		#Our Future Underground
 		id=JCH_S2
 		#icon=
 		relative_position_id=JCH_S1
@@ -143,7 +147,7 @@ focus_tree={
 			#log="[GetDateText]: [Root.GetName]: focus JCH_S2"
 		}
 	}
-	focus={		#The Finishing Touches
+	focus={		#A Royal Idea
 		id=JCH_S3
 		#icon=
 		relative_position_id=JCH_S2
@@ -154,7 +158,7 @@ focus_tree={
 			#log="[GetDateText]: [Root.GetName]: focus JCH_S3"
 		}
 	}
-	focus={		#A Nation Born Underground
+	focus={		#A Alchemical Idea
 		id=JCH_S4
 		#icon=
 		relative_position_id=JCH_S3
@@ -165,39 +169,7 @@ focus_tree={
 			#log="[GetDateText]: [Root.GetName]: focus JCH_S4"
 		}
 	}
-	focus={		#Our Future Underground
-		id=JCH_S5
-		#icon=
-		relative_position_id=JCH_S4
-		x=0 y=1 cost=1
-		prerequisite={focus=JCH_S4}
-		#ai_will_do={factor=40}
-		completion_reward={
-			#log="[GetDateText]: [Root.GetName]: focus JCH_S5"
-		}
-	}
-	focus={		#A Royal Idea
-		id=JCH_S6
-		#icon=
-		relative_position_id=JCH_S5
-		x=0 y=1 cost=1
-		prerequisite={focus=JCH_S5}
-		#ai_will_do={factor=40}
-		completion_reward={
-			#log="[GetDateText]: [Root.GetName]: focus JCH_S6"
-		}
-	}
-	focus={		#A Alchemical Idea
-		id=JCH_S7
-		#icon=
-		relative_position_id=JCH_S6
-		x=0 y=1 cost=1
-		prerequisite={focus=JCH_S6}
-		#ai_will_do={factor=40}
-		completion_reward={
-			#log="[GetDateText]: [Root.GetName]: focus JCH_S7"
-		}
-	}
+#Commie Tree (AKA Fuck the Everfree)
 #Diplomacy Tree
 	focus={		#A Hoof on the World Stage
 		id=JCH_D1

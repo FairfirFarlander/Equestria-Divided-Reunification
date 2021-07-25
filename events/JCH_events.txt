@@ -1,8 +1,22 @@
 add_namespace=JCHact1
 	country_event={
-		id=JCHact1.1	is_triggered_only=yes
-		immediate={log="[GetDateText]: [Root.GetName]: event JCHact1.1"}
-		title=JCHact1.1.t	desc=JCHact1.1.d
+		id=JCHact1.1a	is_triggered_only=yes
+		immediate={log="[GetDateText]: [Root.GetName]: event JCHact1.1a"}
+		title=JCHact1.1a.t	desc=JCHact1.1a.d
 		#picture=
-		option={name=JCHact1.1.a}
+		option={name=JCHact1.1a.a}
+	}
+	country_event={
+		id=JCHact1.1b	is_triggered_only=yes
+		immediate={log="[GetDateText]: [Root.GetName]: event JCHact1.1b"}
+		title=JCHact1.1b.t	desc=JCHact1.1b.d
+		#picture=
+		option={name=JCHact1.1b.a}
+	}
+	country_event={
+		id=JCHact1.1c	is_triggered_only=yes
+		immediate={log="[GetDateText]: [Root.GetName]: event JCHact1.1c"}
+		title=JCHact1.1c.t	desc=JCHact1.1c.d
+		#picture=
+		option={name=JCHact1.1c.a}
 	}
