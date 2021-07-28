@@ -19,7 +19,7 @@ state={
 			anti_air_building=0
 			radar_station=0
 		#SHARED BUILDINGS
-			arms_factory=1
+			arms_factory=0
 			industrial_complex=0
 			#dockyard=0
 			synthetic_refinery=0

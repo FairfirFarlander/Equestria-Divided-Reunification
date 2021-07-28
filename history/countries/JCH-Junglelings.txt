@@ -48,6 +48,8 @@ set_politics={
 	election_frequency=36
 	elections_allowed=no
 }
+#Willow as Neutral Leader, becomes queen (Use NewMareland event file line 2890 for name change)
+#Mother Nightshade as Supremecist Leader
 create_country_leader={
 	name="Aetanae Krix"	#desc=""
 	expire="1965.1.1"	picture="unknown_bug.tga"

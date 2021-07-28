@@ -1,7 +1,7 @@
 state={
 	id=67
 	name="STATE_67"
-	manpower=265407	#Origin 188374, 40595 refugees/soldiers?, 29446-BBBC 2523-CLCA 4469-DD From Sailors over 3.5 years.
+	manpower=528969	#OriginEAW 188374 488374(AsOf 07282021) EDR 265407, 40595 refugees/soldiers?, 29446-BBBC 2523-CLCA 4469-DD From Sailors over 3.5 years.
 	state_category=large_town
 	buildings_max_level_factor=2
 	impassable=no

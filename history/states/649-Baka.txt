@@ -2,7 +2,7 @@ state={
 	id=649
 	name="STATE_649"
 	manpower=1678101
-	state_category=city
+	state_category=large_city
 	buildings_max_level_factor=1
 	impassable=no
 	provinces={1784 4379 4817 7696 7738 10137 10309 10592 10703 12517 12574 12602 13233}
@@ -22,7 +22,7 @@ state={
 		#SHARED BUILDINGS
 			arms_factory=1
 			industrial_complex=1
-			dockyard=3
+			dockyard=4
 			synthetic_refinery=0
 			fuel_silo=1
 			rocket_site=0

@@ -11,7 +11,7 @@ state={
 		owner=ALA
 		add_core_of=STG
 		add_claim_by=ALA
-		victory_points={1614 5}
+		victory_points={1614 1}
 		buildings={
 		#STATE BUILDINGS
 			infrastructure=2

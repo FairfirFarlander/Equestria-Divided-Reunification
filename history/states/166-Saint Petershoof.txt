@@ -19,9 +19,9 @@ state={
 			anti_air_building=0
 			radar_station=0
 		#SHARED BUILDINGS
-			arms_factory=3
+			arms_factory=2
 			industrial_complex=4
-			dockyard=2
+			dockyard=3
 			synthetic_refinery=0
 			fuel_silo=1
 			rocket_site=0

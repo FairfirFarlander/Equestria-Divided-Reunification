@@ -24,7 +24,7 @@ state={
 			industrial_complex=2
 			#dockyard=0
 			synthetic_refinery=0
-			fuel_silo=0
+			fuel_silo=1
 			rocket_site=0
 			nuclear_reactor=0
 		#PROVINCE BUILDINGS	

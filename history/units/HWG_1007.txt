@@ -198,14 +198,14 @@ units={
 		start_equipment_factor=1
 		force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
 	}
-	division={		#Upper Albion
-		name="Her Mistress' Dogs of War"
-		location=10351
-		division_template="Highland Company"
-		start_experience_factor=0.35
-		start_equipment_factor=0.75
-		force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
-	}
+	#division={		#Upper Albion
+	#	name="Her Mistress' Dogs of War"
+	#	location=10351
+	#	division_template="Highland Company"
+	#	start_experience_factor=0.35
+	#	start_equipment_factor=0.75
+	#	force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
+	#}
 	division={		#Bronclyn - Manehattan
 		name="Militia of the Undercity"
 		location=11710

@@ -29,11 +29,11 @@ state={
 			rocket_site=0
 			nuclear_reactor=0
 		#PROVINCE BUILDINGS	
-			10398={
-				naval_base=1
+			#10398={	#Removed in Jun 7 Build EAW
+				#naval_base=1
 				#bunker=0
 				#coastal_bunker=0
-			}
+			#}
 		}
 	}
 }
