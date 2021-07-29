@@ -51,35 +51,42 @@ units={	#DEPLOYMENTS
 		name="Rosemarein Militia"
 		location=9606
 		division_template="Provincial Militia"
-		start_experience_factor=0.1
+		start_experience_factor=0.02
 		start_equipment_factor=1
 	}
 	division={
 		name="Pinto Creek Militia"
 		location=11580
 		division_template="Provincial Militia"
-		start_experience_factor=0.1
+		start_experience_factor=0.02
 		start_equipment_factor=1
 	}
 	division={
 		name="Ayundi Division"
 		location=6415
 		division_template="Provincial Militia"
-		start_experience_factor=0.1
+		start_experience_factor=0.02
 		start_equipment_factor=1
 	}
 	division={
 		name="Star Gulf Arms Division"
 		location=624
 		division_template="Provincial Militia"
-		start_experience_factor=0.1
+		start_experience_factor=0.02
+		start_equipment_factor=1
+	}
+	division={
+		name="Palamino Division"
+		location=11622
+		division_template="Ponies-at-Arms Division"
+		start_experience_factor=0.75
 		start_equipment_factor=1
 	}
 	division={
 		name="Palamino Division"
 		location=3630
 		division_template="Ponies-at-Arms Division"
-		start_experience_factor=0.1
+		start_experience_factor=0.3
 		start_equipment_factor=1
 	}
 	division={
@@ -93,14 +100,14 @@ units={	#DEPLOYMENTS
 		name="Silverstar Rangers"
 		location=11037
 		division_template="Appleoosan Ranger Regiment"
-		start_experience_factor=0.1
+		start_experience_factor=0.75
 		start_equipment_factor=1
 	}
 	division={
 		name="Meskwakia Arms Division"
 		location=3550
 		division_template="Pegasi Auxilia"
-		start_experience_factor=0.1
+		start_experience_factor=0.55
 		start_equipment_factor=1
 	}
 	division={

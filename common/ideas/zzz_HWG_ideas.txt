@@ -1,139 +1,44 @@
 ideas={
 	country={
 		HWG_idea={
-			allowed={always=no}
+			allowed={always=no}	removal_cost=-1
 			picture=hwgidea
-			removal_cost=-1
-			modifier={
-			#	ai_focus_aggressive_factor=0.8
-			#	army_core_defence_factor=0.10
-			#	resistance_damage_to_garrison=-0.5
-			#	conscription=0.05
-			#	weekly_manpower=100
-			#	decryption_factor=0.25
-			#	encryption_factor=0.1
-			#	non_core_manpower=0.10
-			#	local_resources_factor=0.15
-			}
-			#equipment_bonus={
-			#	convoy={
-			#		build_cost_ic=-0.10
-			#		instant=yes
-			#	}
-			#	destroyer={
-			#		build_cost_ic=-0.20
-			#		instant=yes
-			#	}
-			#	light_cruiser={
-			#		build_cost_ic=-0.20
-			#		instant=yes
-			#	}
-			#	heavy_cruiser={
-			#		build_cost_ic=-0.30
-			#		instant=yes
-			#	}
-			#	submarine={
-			#		build_cost_ic=-0.20
-			#		instant=yes
-			#	}
-			#	battle_cruiser={
-			#		build_cost_ic=-0.30
-			#		instant=yes
-			#	}
-			#	battleship={
-			#		build_cost_ic=-0.30
-			#		instant=yes
-			#	}
-			#	carrier={
-			#		build_cost_ic=-0.20
-			#		instant=yes
-			#	}
-			#}
 		}
-#Antiquated Tradefleet ([Aircraft -65%MaxSpeed, -50%MaxRange, -30%Agility] [Navalcraft -20%MaxSpeed, -40%MaxRange, -10%Reliability)
-		HWG_tradfleet={
-			allowed={always=no}
-			#picture=
-			removal_cost=-1
+		HWG_tradefleet={
+			allowed={always=no}	removal_cost=-1
+			picture=GRY_navy_man_1
 			modifier={
 				air_agility_factor=-0.30
 				naval_speed_factor=-0.20
 				navy_max_range_factor=-0.40
 			}
-		#Thanks to Euro General (1649Discordnumber) at EAWsubmodding for the insight and example code for fixing the aircraft stats.
-			equipment_bonus={
-				fighter_equipment={
-					maximum_speed=-0.65
-					air_range=-0.50
-					instant=yes
-				}
-				cv_fighter_equipment={
-					maximum_speed=-0.65
-					air_range=-0.50
-					instant=yes
-				}
-				CAS_equipment={
-					maximum_speed=-0.65
-					air_range=-0.50
-					instant=yes
-				}
-				cv_CAS_equipment={
-					maximum_speed=-0.65
-					air_range=-0.50
-					instant=yes
-				}
-				cv_nav_bomber_equipment={
-					maximum_speed=-0.65
-					air_range=-0.50
-					instant=yes
-				}
-				nav_bomber_equipment={
-					maximum_speed=-0.65
-					air_range=-0.50
-					instant=yes
-				}
-				tac_bomber_equipment={
-					maximum_speed=-0.65
-					air_range=-0.50
-					instant=yes
-				}
-				heavy_fighter_equipment={
-					maximum_speed=-0.65
-					air_range=-0.50
-					instant=yes
-				}
-				strat_bomber_equipment={
-					maximum_speed=-0.65
-					air_range=-0.50
-					instant=yes
-				}
-				transport_plane_equipment={
-					maximum_speed=-0.65
-					air_range=-0.50
-					instant=yes
-				}
-				scout_plane_equipment={
-					maximum_speed=-0.65
-					air_range=-0.50
-					instant=yes
-				}
+			equipment_bonus={	#Thanks to Euro General (1649Discordnumber) at EAWsubmodding for the insight and example code for fixing the aircraft stats.
+				fighter_equipment={instant=yes	maximum_speed=-0.65	air_range=-0.50}
+				cv_fighter_equipment={instant=yes	maximum_speed=-0.65	air_range=-0.50}
+				CAS_equipment={instant=yes	maximum_speed=-0.65	air_range=-0.50}
+				cv_CAS_equipment={instant=yes	maximum_speed=-0.65	air_range=-0.50}
+				cv_nav_bomber_equipment={instant=yes	maximum_speed=-0.65	air_range=-0.50}
+				nav_bomber_equipment={instant=yes	maximum_speed=-0.65	air_range=-0.50}
+				tac_bomber_equipment={instant=yes	maximum_speed=-0.65	air_range=-0.50}
+				heavy_fighter_equipment={instant=yes	maximum_speed=-0.65	air_range=-0.50}
+				strat_bomber_equipment={instant=yes	maximum_speed=-0.65	air_range=-0.50}
+				transport_plane_equipment={instant=yes	maximum_speed=-0.65	air_range=-0.50}
+				scout_plane_equipment={instant=yes	maximum_speed=-0.65	air_range=-0.50}
 			}
 		}
-#Underclass Tensions (-.4PPG, -15%Stability, -15%Production, +0.02Communism, +0.02Harmony)
-		HWG_tensions={
-			allowed={always=no}
+		HWG_tensions={	#Underclass Tensions (-0.4PPG, -15%Stability, -15%Production, +0.02Communism, +0.02Harmony)
+			allowed={always=no}	removal_cost=-1
 			#picture=
-			removal_cost=-1
 			modifier={
-				political_power_gain=-0.40
+				political_power_gain=-0.4
 				stability_factor=-0.15
 				industrial_capacity_factory=-0.15
 				communism_drift=0.02
 				democratic_drift=0.02
+				conscription_factor=-0.25
 			}
 		}
-#Society of Canterlot Elites (-20%PP, +5%Stability, 10%Consumer, -10%Production, -5%Research)
-		HWG_society={
+		HWG_society={	#Society of Canterlot Elites (-20%PP, +5%Stability, 10%Consumer, -10%Production, -5%Research)
 			allowed={always=no}
 			#picture=
 			removal_cost=-1
@@ -143,6 +48,7 @@ ideas={
 				consumer_goods_factor=0.1
 				industrial_capacity_factory=-0.10
 				research_speed_factor=-0.05
+				conscription_factor=-0.26
 			}
 		}
 	}
@@ -379,4 +285,14 @@ ideas={
 			traits={air_warfare_theorist}
 		}
 	}
+		#equipment_bonus={	#Antiquated Tradefleet ([Aircraft -65%MaxSpeed, -50%MaxRange, -30%Agility] [Navalcraft -20%MaxSpeed, -40%MaxRange, -10%Reliability)
+		#	convoy={build_cost_ic=-0.10	instant=yes}
+		#	destroyer={build_cost_ic=-0.20	instant=yes}
+		#	light_cruiser={build_cost_ic=-0.20	instant=yes}
+		#	heavy_cruiser={build_cost_ic=-0.30	instant=yes}
+		#	submarine={build_cost_ic=-0.20	instant=yes}
+		#	battle_cruiser={build_cost_ic=-0.30	instant=yes}
+		#	battleship={build_cost_ic=-0.30	instant=yes}
+		#	carrier={build_cost_ic=-0.20	instant=yes}
+		#}
 }

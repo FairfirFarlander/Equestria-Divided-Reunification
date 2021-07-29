@@ -1,11 +1,12 @@
 ideas={
 	country={
 		HSW_idea={
-			allowed={
-				always=no
-			}
-			removal_cost=-1
+			allowed={always=no}	removal_cost=-1
 			picture=hswidea
+		}
+		HSW_agoge={
+			allowed={always=no}	removal_cost=-1
+			picture=nimbusia
 			modifier={
 				mobilization_speed=0.1
 				special_forces_cap=0.2
@@ -18,22 +19,24 @@ ideas={
 				acclimatization_cold_climate_gain_factor=0.1
 			}
 		}
-#		HSW_idea={
-#			allowed={
-#				always=no
-#			}
-#			removal_cost=-1
-#			picture=hswidea
-#			modifier={
-#				ai_focus_aggressive_factor=0.8
-#				supply_consumption_factor=-0.1
-#				army_morale_factor=0.07
-#				consumer_goods_factor=-0.05
-#				army_attack_factor=0.05
-#				army_speed_factor=0.20
-#				resistance_damage_to_garrison=-0.5 
-#				non_core_manpower=0.08
-#			}
-#		}
+		HSW_militarysociety={
+			allowed={always=no}	removal_cost=-1
+			picture=pony_army
+			modifier={
+				stability_factor=0.1
+				political_power_gain=-0.1
+				resistance_target_on_our_occupied_states=0.05
+				consumer_goods_factor=-0.05
+			}
+		}
+		HSW_warriorcode={	#Placeholder for Order 313
+			allowed={always=no}	removal_cost=-1
+			#picture=
+			modifier={
+				#conscription_factor=-0.0
+				war_support_factor=0.1
+			}
+		}
+		#Order 313
 	}
 }

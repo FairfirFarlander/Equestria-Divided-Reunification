@@ -2,13 +2,20 @@
 capital=5
 oob="HEF_1007"
 #FOUNTATION
-set_research_slots=3
+set_research_slots=2
 set_stability=0.1
 set_war_support=1.0
 add_ideas={
 	HEF_idea
 	HEF_everycreature_fights
-	limited_conscription
+	HEF_everfreeway
+	HEF_tribaldiscontent
+	#HEF_wildrose0
+	#HEF_oldoaks0
+	#HEF_beartooth0
+	#HEF_naturesfury0
+	#HEF_herwatchfuleyes0
+	#HEF_childrenoftheforest0
 	closed_economy
 	isolation
 	poor_science_base
@@ -20,8 +27,8 @@ add_ideas={
 set_technology={
 	pony_race=1
 	melee_weapons=1
-	dragons_light=1
-	dragons_heavy=1
+	#dragons_light=1
+	#dragons_heavy=1
 	tech_support=1
 	TEM_ursas=1
 }
@@ -31,8 +38,8 @@ set_rule={can_generate_female_aces=yes}
 #DIPLOMACY
 #POLITICS
 set_popularities={
-	fascism=25	communism=25
-	neutrality=25	democratic=25
+	fascism=35	communism=24
+	neutrality=24	democratic=17
 }
 set_politics={
 	ruling_party=fascism	last_election="1000.10.10"

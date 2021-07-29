@@ -9,16 +9,18 @@ oob="HSW_1007"
 #FOUNTATION
 set_research_slots=2
 set_stability=0.7
-set_war_support=0.65
+set_war_support=0.06
 add_ideas={
-	limited_conscription
+	HSW_idea
+	HSW_agoge
+	HSW_militarysociety
+	HSW_warriorcode
 	limited_exports
 	low_economic_mobilisation
 	better_science_base
 	pre_industrial_society
 	lack_of_scientists3
 	poverty5
-	HSW_idea
 }
 #TECHNOLOGY
 set_technology={
@@ -31,7 +33,7 @@ set_technology={
 	tech_pony_misc_a=1
 	tech_pegasi=1
 	tech_pegasi2=1
-	tech_knights=1
+	#tech_knights=1
 }
 if={limit={has_dlc="Man the Guns"}
 	set_technology={

@@ -446,7 +446,7 @@ focus_tree={
 		icon=GFX_goal_generic_allies_build_infantry
 		relative_position_id=HMS_the_war
 		x=7 y=0 cost=2
-		ai_will_do={factor=5}
+		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HMS_army_effort"
 			add_tech_bonus={
@@ -462,7 +462,7 @@ focus_tree={
 		relative_position_id=HMS_army_effort
 		x=-2 y=1 cost=7
 		prerequisite={focus=HMS_army_effort}
-		ai_will_do={factor=5}
+		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: Focus HMS_equipment_effort"
 			add_tech_bonus={
@@ -479,7 +479,7 @@ focus_tree={
 		relative_position_id=HMS_army_effort
 		x=0 y=1 cost=7
 		prerequisite={focus=HMS_army_effort}
-		ai_will_do={factor=5}
+		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: Focus doctrine_effort"
 			army_experience=5
@@ -497,7 +497,7 @@ focus_tree={
 		x=2 y=1 cost=7
 		prerequisite={focus=HMS_army_effort}
 		bypass={has_tech=motorised_infantry}
-		ai_will_do={factor=5}
+		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: Focus HMS_motorization_effort"
 			add_tech_bonus={
@@ -513,7 +513,7 @@ focus_tree={
 		relative_position_id=HMS_equipment_effort
 		x=0 y=1 cost=7
 		prerequisite={focus=HMS_equipment_effort}
-		ai_will_do={factor=5}
+		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: Focus HMS_equipment_effort_2"
 			add_tech_bonus={
@@ -530,7 +530,7 @@ focus_tree={
 		relative_position_id=HMS_doctrine_effort
 		x=0 y=1 cost=7
 		prerequisite={focus=HMS_doctrine_effort}
-		ai_will_do={factor=5}
+		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: Focus doctrine_effort_2"
 			army_experience=5
@@ -547,7 +547,7 @@ focus_tree={
 		relative_position_id=HMS_motorization_effort
 		x=0 y=1 cost=7
 		prerequisite={focus=HMS_motorization_effort}
-		ai_will_do={factor=5}
+		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: Focus HMS_motorization_effort_2"
 			add_tech_bonus={
@@ -563,7 +563,7 @@ focus_tree={
 		relative_position_id=HMS_equipment_effort_ii
 		x=0 y=1 cost=7
 		prerequisite={focus=HMS_equipment_effort_ii}
-		ai_will_do={factor=5}
+		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: Focus HMS_equipment_effort_3"
 			add_tech_bonus={
@@ -580,7 +580,7 @@ focus_tree={
 		relative_position_id=HMS_doctrine_effort_ii
 		x=0 y=1 cost=7
 		prerequisite={focus=HMS_doctrine_effort_ii}
-		ai_will_do={factor=5}
+		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: Focus doctrine_effort_3"
 			army_experience=5
@@ -597,7 +597,7 @@ focus_tree={
 		relative_position_id=HMS_motorization_effort_ii
 		x=0 y=1 cost=7
 		prerequisite={focus=HMS_motorization_effort_ii}
-		ai_will_do={factor=5}
+		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: Focus HMS_motorization_effort_3"
 			add_tech_bonus={
@@ -617,7 +617,7 @@ focus_tree={
 			focus=HMS_doctrine_effort_iii
 			focus=HMS_motorization_effort_iii
 		}
-		ai_will_do={factor=5}
+		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: Focus HMS_motorization_effort_3"
 			add_tech_bonus={
@@ -632,7 +632,7 @@ focus_tree={
 		icon=GFX_goal_generic_build_airforce
 		relative_position_id=HMS_army_effort
 		x=4 y=0 cost=7
-		ai_will_do={factor=5}
+		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: Focus HMS_aviation_effort"
 			air_experience=85
@@ -650,7 +650,7 @@ focus_tree={
 		relative_position_id=HMS_aviation_effort
 		x=0 y=1 cost=7
 		prerequisite={focus=HMS_aviation_effort}
-		ai_will_do={factor=5}
+		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: Focus HMS_aviation_effort_ii"
 			add_tech_bonus={
@@ -672,7 +672,7 @@ focus_tree={
 		relative_position_id=HMS_aviation_effort_ii
 		x=0 y=1 cost=7
 		prerequisite={focus=HMS_aviation_effort_ii}
-		ai_will_do={factor=5}
+		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: Focus HMS_aviation_effort_iii"
 			air_experience=85
@@ -689,7 +689,7 @@ focus_tree={
 		relative_position_id=HMS_aviation_effort_iii
 		x=0 y=1 cost=7
 		prerequisite={focus=HMS_aviation_effort_iii}
-		ai_will_do={factor=5}
+		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: Focus HMS_rocket_effort"
 			add_tech_bonus={
@@ -706,7 +706,7 @@ focus_tree={
 		relative_position_id=HMS_aviation_effort
 		x=3 y=0 cost=7
 		available={any_controlled_state_is_coastal=yes}
-		ai_will_do={factor=5}
+		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: Focus HMS_naval_focus"
 			two_random_dockyards=yes
@@ -720,7 +720,7 @@ focus_tree={
 		x=0 y=1 cost=7
 		prerequisite={focus=HMS_naval_focus}
 		available={any_controlled_state_is_coastal=yes}
-		ai_will_do={factor=5}
+		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: Focus HMS_naval_focus"
 			add_tech_bonus={
@@ -736,7 +736,7 @@ focus_tree={
 		relative_position_id=HMS_rebuild_the_equestria_navy
 		x=-1 y=1 cost=7
 		prerequisite={focus=HMS_rebuild_the_equestria_navy}
-		ai_will_do={factor=5}
+		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: Focus HMS_submarine_effort"
 			add_tech_bonus={
@@ -752,7 +752,7 @@ focus_tree={
 		relative_position_id=HMS_rebuild_the_equestria_navy
 		x=1 y=1 cost=7
 		prerequisite={focus=HMS_rebuild_the_equestria_navy}
-		ai_will_do={factor=5}
+		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: Focus HMS_cruiser_effort"
 			add_tech_bonus={
@@ -769,7 +769,7 @@ focus_tree={
 		relative_position_id=HMS_submarine_effort
 		x=0 y=1 cost=7
 		prerequisite={focus=HMS_submarine_effort}
-		ai_will_do={factor=5}
+		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: Focus HMS_destroyer_effort"
 			add_tech_bonus={
@@ -785,7 +785,7 @@ focus_tree={
 		relative_position_id=HMS_cruiser_effort
 		x=0 y=1 cost=7
 		prerequisite={focus=HMS_cruiser_effort}
-		ai_will_do={factor=5}
+		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: Focus HMS_battleship_effort"
 			add_tech_bonus={
@@ -802,7 +802,7 @@ focus_tree={
 		icon=GFX_goal_generic_production
 		relative_position_id=HMS_the_war
 		x=-6 y=0 cost=7
-		ai_will_do={factor=5}
+		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HMS_startup_industrial_effort"
 			add_tech_bonus={
@@ -818,7 +818,7 @@ focus_tree={
 		relative_position_id=HMS_startup_industrial_effort
 		x=-1 y=1 cost=7
 		prerequisite={focus=HMS_startup_industrial_effort}
-		ai_will_do={factor=5}
+		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HMS_construction_effort"
 			two_random_industrial_complex=yes
@@ -830,7 +830,7 @@ focus_tree={
 		relative_position_id=HMS_startup_industrial_effort
 		x=1 y=1 cost=7
 		prerequisite={focus=HMS_startup_industrial_effort}
-		ai_will_do={factor=5}
+		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HMS_armament_effort"
 			one_random_arms_factory=yes
@@ -842,7 +842,7 @@ focus_tree={
 		relative_position_id=HMS_construction_effort
 		x=0 y=1 cost=7
 		prerequisite={focus=HMS_construction_effort}
-		ai_will_do={factor=5}
+		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HMS_construction_effort_ii"
 			two_random_industrial_complex=yes
@@ -854,7 +854,7 @@ focus_tree={
 		relative_position_id=HMS_armament_effort
 		x=0 y=1 cost=7
 		prerequisite={focus=HMS_armament_effort}
-		ai_will_do={factor=5}
+		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HMS_construction_effort_ii"
 			two_random_arms_factory=yes
@@ -866,7 +866,7 @@ focus_tree={
 		relative_position_id=HMS_construction_effort_ii
 		x=0 y=1 cost=7
 		prerequisite={focus=HMS_construction_effort_ii}
-		ai_will_do={factor=5}
+		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HMS_construction_effort_iii"
 			three_random_arms_factory=yes
@@ -878,7 +878,7 @@ focus_tree={
 		relative_position_id=HMS_armament_effort_ii
 		x=0 y=1 cost=7
 		prerequisite={focus=HMS_armament_effort_ii}
-		ai_will_do={factor=5}
+		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HMS_armament_effort_iii"
 			three_random_arms_factory=yes
@@ -890,7 +890,7 @@ focus_tree={
 		relative_position_id=HMS_construction_effort_iii
 		x=-2 y=1 cost=7
 		prerequisite={focus=HMS_construction_effort_iii}
-		ai_will_do={factor=5}
+		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HMS_construction_effort_iii"
 			two_random_infrastructure=yes
@@ -903,7 +903,7 @@ focus_tree={
 		relative_position_id=HMS_construction_effort_iii
 		x=0 y=1 cost=7
 		prerequisite={focus=HMS_construction_effort_iii}
-		ai_will_do={factor=5}
+		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HMS_extra_research_slot"
 			add_research_slot=1
@@ -915,7 +915,7 @@ focus_tree={
 		relative_position_id=HMS_construction_effort_iii
 		x=2 y=1 cost=7
 		prerequisite={focus=HMS_construction_effort_iii}
-		ai_will_do={factor=5}
+		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HMS_secret_weapons"
 			add_tech_bonus={
@@ -934,7 +934,7 @@ focus_tree={
 		x=0 y=1 cost=7
 		prerequisite={focus=HMS_extra_research_slot}
 		available={num_of_factories>50}
-		ai_will_do={factor=5}
+		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HMS_extra_research_slot_ii"
 			add_research_slot=1
@@ -946,7 +946,7 @@ focus_tree={
 		relative_position_id=HMS_secret_weapons
 		x=0 y=1 cost=7
 		prerequisite={focus=HMS_secret_weapons}
-		ai_will_do={factor=5}
+		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HMS_nuclear_effort"
 			add_tech_bonus={

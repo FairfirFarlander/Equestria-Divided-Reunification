@@ -1,217 +1,80 @@
-division_template={
-	name="Highland Division"
-
+division_template={	#TEMPLATES
+	name="Everfree Militia"
+	priority=0
 	regiments={
-		mountaineers={x=0 y=0}
-		mountaineers={x=0 y=1}
-		mountaineers={x=0 y=2}
-	}
-	support={
-		unicorn_company={x=0 y=0}
+		infantry={x=0 y=0}
+		infantry={x=0 y=1}
 	}
 }
 division_template={
-	name="Dragon Warband"			
-
-	regiments={
-		light_dragons={x=0 y=0}
-	}
-
-	support={
-	}
-}
-division_template={
-	name="Onhooves Division"
-
+	name="Tribal Warband"
+	priority=1
 	regiments={
 		infantry={x=0 y=0}
 		infantry={x=0 y=1}
 		infantry={x=0 y=2}
-		infantry={x=1 y=0}
-		infantry={x=1 y=1}
-		infantry={x=1 y=2}
+		infantry={x=0 y=3}
 	}
-
+}
+division_template={
+	name="Ursa Handlers"
+	priority=1	is_locked=yes
+	regiments={
+		infantry={x=0 y=0}
+		infantry={x=0 y=1}
+		infantry={x=0 y=2}
+	}
 	support={
-		unicorn_company={x=0 y=0}
 		ursas={x=0 y=1}
 	}
 }
-
-units={
+#division_template={
+#	name="Dragon Warband"
+#	regiments={
+#		light_dragons={x=0 y=0}
+#	}
+#}
+units={	#Dragon Units: Ruby, Sapphire, Emerald, Onyx, and Amethyst Warbands
 	division={
-		name="1st Onhooves Division"
-		location=770
-		division_template="Onhooves Division"
-		start_experience_factor=0.3
+		name="Old Ponyville Militia"
+		location=9741
+		division_template="Everfree Militia"
+		start_experience_factor=0.02
 		start_equipment_factor=1
 	}
 	division={
-		name="2st Onhooves Division"
-		location=770
-		division_template="Onhooves Division"
-		start_experience_factor=0.3
+		name="Children of the Forest Tribe"
+		location=3534
+		division_template="Tribal Warband"
+		start_experience_factor=0.5
 		start_equipment_factor=1
 	}
 	division={
-		name="3st Onhooves Division"
-		location=770
-		division_template="Onhooves Division"
-		start_experience_factor=0.3
+		name="Old Oak Tribe"
+		location=3579
+		division_template="Tribal Warband"
+		start_experience_factor=0.75
 		start_equipment_factor=1
 	}
 	division={
-		name="4st Onhooves Division"
-		location=770
-		division_template="Onhooves Division"
-		start_experience_factor=0.3
+		name="Her Watchful Eyes Tribe"
+		location=11723
+		division_template="Tribal Warband"
+		start_experience_factor=0.75
 		start_equipment_factor=1
 	}
 	division={
-		name="5st Onhooves Division"
-		location=770
-		division_template="Onhooves Division"
-		start_experience_factor=0.3
+		name="Nature's Fury Tribe"
+		location=9629
+		division_template="Tribal Warband"
+		start_experience_factor=1
 		start_equipment_factor=1
 	}
 	division={
-		name="6st Onhooves Division"
-		location=770
-		division_template="Onhooves Division"
-		start_experience_factor=0.3
+		name="Bear Tooth Tribe"
+		location=6599
+		division_template="Ursa Handlers"
+		start_experience_factor=0.75
 		start_equipment_factor=1
-	}
-	division={
-		name="7st Onhooves Division"
-		location=770
-		division_template="Onhooves Division"
-		start_experience_factor=0.3
-		start_equipment_factor=1
-	}
-	division={
-		name="8st Onhooves Division"
-		location=770
-		division_template="Onhooves Division"
-		start_experience_factor=0.3
-		start_equipment_factor=1
-	}
-	division={
-		name="9st Onhooves Division"
-		location=770
-		division_template="Onhooves Division"
-		start_experience_factor=0.3
-		start_equipment_factor=1
-	}
-	division={
-		name="10st Onhooves Division"
-		location=770
-		division_template="Onhooves Division"
-		start_experience_factor=0.3
-		start_equipment_factor=1
-	}
-	division={
-		name="11st Onhooves Division"
-		location=770
-		division_template="Onhooves Division"
-		start_experience_factor=0.3
-		start_equipment_factor=1
-	}
-	division={
-		name="12st Onhooves Division"
-		location=770
-		division_template="Onhooves Division"
-		start_experience_factor=0.3
-		start_equipment_factor=1
-	}
-	division={
-		name="13st Onhooves Division"
-		location=770
-		division_template="Onhooves Division"
-		start_experience_factor=0.3
-		start_equipment_factor=1
-	}
-	division={
-		name="14st Onhooves Division"
-		location=770
-		division_template="Onhooves Division"
-		start_experience_factor=0.3
-		start_equipment_factor=1
-	}
-	division={
-		name="15st Onhooves Division"
-		location=770
-		division_template="Onhooves Division"
-		start_experience_factor=0.3
-		start_equipment_factor=1
-	}
-	division={
-		name="16st Onhooves Division"
-		location=770
-		division_template="Onhooves Division"
-		start_experience_factor=0.3
-		start_equipment_factor=1
-	}
-	division={
-		name="17st Onhooves Division"
-		location=770
-		division_template="Onhooves Division"
-		start_experience_factor=0.3
-		start_equipment_factor=1
-	}
-	division={
-		name="18st Onhooves Division"
-		location=770
-		division_template="Onhooves Division"
-		start_experience_factor=0.3
-		start_equipment_factor=1
-	}
-	division={
-		name="19st Onhooves Division"
-		location=770
-		division_template="Onhooves Division"
-		start_experience_factor=0.3
-		start_equipment_factor=1
-	}
-	division={
-		name="20st Onhooves Division"
-		location=770
-		division_template="Onhooves Division"
-		start_experience_factor=0.3
-		start_equipment_factor=1
-	}
-	division={
-		name="Ruby Warband"
-		location=770
-		division_template="Dragon Warband"
-		start_experience_factor=0.3
-		start_equipment_factor=1 
-       }
-	division={
-		name="Sapphire Warband"
-		location=770
-		division_template="Dragon Warband"
-		start_experience_factor=0.3
-		start_equipment_factor=1 
-       }
-	division={
-		name="Emerald Warband"
-		location=770
-		division_template="Dragon Warband"
-		start_experience_factor=0.3
-		start_equipment_factor=1 
-       }
-	division={
-		name="Onyx Warband"
-		location=770
-		division_template="Dragon Warband"
-		start_experience_factor=0.3
-		start_equipment_factor=1 
-       }
-	division={
-		name="Amethyst Warbad"
-		location=770
-		division_template="Dragon Warband"
-		start_experience_factor=0.3
-		start_equipment_factor=1 
 	}
 }

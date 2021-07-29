@@ -82,35 +82,35 @@ units={
 		start_equipment_factor=1
 		force_equipment_variants={melee_equipment_1={owner="HWG" creator="HWG"}}
 	}
-	division={		#Baltimare
-		name="Ley Shots of Baltimare"
-		location=13011
-		division_template="Arquebus Regiment"
-		start_experience_factor=0.4
-		start_equipment_factor=0.9
-		force_equipment_variants={melee_equipment_1={owner="HWG" creator="HWG"}}
-	}
-	division={		#Albion
-		name="The Muskets of Albion"
-		location=10359
-		division_template="Arquebus Regiment"
-		start_experience_factor=0.35
-		start_equipment_factor=0.8
-	}
-	division={		#Prancing Shores
-		name="Prancing Shores Guard"
-		location=3920
-		division_template="Arquebus Regiment"
-		start_experience_factor=0.1
-		start_equipment_factor=0.7
-	}
-	division={		#Freeside
-		name="Tradesguard of Freeside"
-		location=920
-		division_template="Arquebus Regiment"
-		start_experience_factor=0.08
-		start_equipment_factor=0.6
-	}
+	#division={		#Baltimare
+	#	name="Ley Shots of Baltimare"
+	#	location=13011
+	#	division_template="Arquebus Regiment"
+	#	start_experience_factor=0.4
+	#	start_equipment_factor=0.9
+	#	force_equipment_variants={melee_equipment_1={owner="HWG" creator="HWG"}}
+	#}
+	#division={		#Albion
+	#	name="The Muskets of Albion"
+	#	location=10359
+	#	division_template="Arquebus Regiment"
+	#	start_experience_factor=0.35
+	#	start_equipment_factor=0.8
+	#}
+	#division={		#Prancing Shores
+	#	name="Prancing Shores Guard"
+	#	location=3920
+	#	division_template="Arquebus Regiment"
+	#	start_experience_factor=0.1
+	#	start_equipment_factor=0.7
+	#}
+	#division={		#Freeside
+	#	name="Tradesguard of Freeside"
+	#	location=920
+	#	division_template="Arquebus Regiment"
+	#	start_experience_factor=0.08
+	#	start_equipment_factor=0.6
+	#}
 	division={		#Manehattan
 		name="1st Manehattan 'Foe Hammer' Dragoons"
 		location=970
@@ -119,14 +119,14 @@ units={
 		start_equipment_factor=0.2
 		force_equipment_variants={melee_equipment_1={owner="HWG" creator="HWG"}}
 	}
-	division={		#Baltimare
-		name="Dragoons of Baltimare"
-		location=13011
-		division_template="Winged Dragoons"
-		start_experience_factor=0.1
-		start_equipment_factor=1
-		force_equipment_variants={melee_equipment_1={owner="HWG" creator="HWG"}}
-	}
+	#division={		#Baltimare
+	#	name="Dragoons of Baltimare"
+	#	location=13011
+	#	division_template="Winged Dragoons"
+	#	start_experience_factor=0.1
+	#	start_equipment_factor=1
+	#	force_equipment_variants={melee_equipment_1={owner="HWG" creator="HWG"}}
+	#}
 	division={		#Hayston - Manehattan
 		name="Storm Eye's Deadeyes"
 		location=6734
@@ -142,14 +142,14 @@ units={
 		start_equipment_factor=1
 		force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
 	}
-	division={		#Summerfield - Freeside
-		name="Horns of Summerfield"
-		location=874
-		division_template="Mercenary Company"
-		start_experience_factor=0.55
-		start_equipment_factor=1
-		force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
-	}
+	#division={		#Summerfield - Freeside
+	#	name="Horns of Summerfield"
+	#	location=874
+	#	division_template="Mercenary Company"
+	#	start_experience_factor=0.55
+	#	start_equipment_factor=1
+	#	force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
+	#}
 	division={		#Summerfield - Freeside
 		name="Plain's Runners Company"
 		location=874
@@ -158,22 +158,14 @@ units={
 		start_equipment_factor=1
 		force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
 	}
-	division={		#Bridlepolis - Mareland
-		name="Company of the Riverhorse"
-		location=6812
-		division_template="Mercenary Company"
-		start_experience_factor=0.4
-		start_equipment_factor=0.85
-		force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
-	}
-	division={		#Mirazh - Mirage
-		name="Chillwing Mercenaries Inc."
-		location=1614
-		division_template="Mercenary Company"
-		start_experience_factor=0.3
-		start_equipment_factor=0.75
-		force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
-	}
+	#division={		#Bridlepolis - Mareland
+	#	name="Company of the Riverhorse"
+	#	location=6812
+	#	division_template="Mercenary Company"
+	#	start_experience_factor=0.4
+	#	start_equipment_factor=0.85
+	#	force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
+	#}
 	division={		#Baltimare
 		name="The Adze of Wrath"
 		location=13011
@@ -182,22 +174,22 @@ units={
 		start_equipment_factor=0.7
 		force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
 	}
-	division={		#Upper Poninsula
-		name="The Merry Pones of Poppin"
-		location=7068
-		division_template="Mercenary Company"
-		start_experience_factor=0.25
-		start_equipment_factor=0.6
-		force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
-	}
-	division={		#Outside Balitmare
-		name="We Are Dragonborn"
-		location=9505
-		division_template="Mercenary Company"
-		start_experience_factor=0.75
-		start_equipment_factor=1
-		force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
-	}
+	#division={		#Upper Poninsula
+	#	name="The Merry Pones of Poppin"
+	#	location=7068
+	#	division_template="Mercenary Company"
+	#	start_experience_factor=0.25
+	#	start_equipment_factor=0.6
+	#	force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
+	#}
+	#division={		#Outside Baltimare
+	#	name="We Are Dragonborn"
+	#	location=9505
+	#	division_template="Mercenary Company"
+	#	start_experience_factor=0.75
+	#	start_equipment_factor=1
+	#	force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
+	#}
 	#division={		#Upper Albion
 	#	name="Her Mistress' Dogs of War"
 	#	location=10351
@@ -214,13 +206,6 @@ units={
 		start_equipment_factor=0.75
 		force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
 	}
-	division={		#Albion
-		name="Militia of Albion"
-		location=10359
-		division_template="Whitegold Militia"
-		start_experience_factor=0.25
-		start_equipment_factor=1
-	}
 	division={		#Baltimare
 		name="Milita of Baltimare"
 		location=13011
@@ -228,6 +213,21 @@ units={
 		start_experience_factor=0.20
 		start_equipment_factor=1
 		force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
+	}
+	division={		#Summerfield - Freeside
+		name="Riverwatch of Summerfield"
+		location=874
+		division_template="Whitegold Milita"
+		start_experience_factor=0.3
+		start_equipment_factor=1
+		force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
+	}
+	division={		#Freeside
+		name="Tradesguard of Freeside"
+		location=920
+		division_template="Whitegold Milita"
+		start_experience_factor=0.08
+		start_equipment_factor=0.6
 	}
 	division={		#Canterbury - Algonquin
 		name="Town Watch of Canterbury"
@@ -243,14 +243,6 @@ units={
 		division_template="Whitegold Militia"
 		start_experience_factor=0.1
 		start_equipment_factor=0.5
-		force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
-	}
-	division={		#Somland
-		name="Isle Watch of Somland"
-		location=10395
-		division_template="Whitegold Militia"
-		start_experience_factor=0
-		start_equipment_factor=0.25
 		force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
 	}
 }

@@ -13,12 +13,16 @@ if={
 #FOUNTATION
 set_research_slots=2
 set_stability=0.4
-set_war_support=0.29
+set_war_support=0.08	#0.29
 add_ideas={
+	HWG_idea
+	HWG_tradefleet
+	HWG_tensions
+	HWG_society
+	big_science_base
 	outdated_industry
 	lack_of_scientists3
 	poverty5
-	HWG_idea
 }
 #TECHNOLOGY
 set_technology={

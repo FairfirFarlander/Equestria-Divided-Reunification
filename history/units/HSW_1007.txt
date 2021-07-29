@@ -1,43 +1,38 @@
-division_template={
+division_template={	#TEMPLATES
 	name="Psiloi"
-	regiments={
-		infantry={x=0 y=0}
-		infantry={x=0 y=1}
-		infantry={x=0 y=2}
-	}
 	priority=0
+	regiments={
+		infantry={x=0 y=0}
+		infantry={x=0 y=1}
+	}
 }
-division_template={
-	name="Thureophoroi"
+division_template={	#TEMPLATES
+	name="Merarchía Pezikoú"
+	priority=1
 	regiments={
 		infantry={x=0 y=0}
 		infantry={x=0 y=1}
 		infantry={x=0 y=2}
-		infantry={x=1 y=0}
-		infantry={x=1 y=1}
+		infantry={x=0 y=3}
 	}
 }
 division_template={
-	name="Peltastai"
-	regiments={
-		pegasi={x=0 y=0}
-		pegasi={x=0 y=1}
-		pegasi={x=0 y=2}
-	}
-	support={
-		recon={x=0 y=0}
-	}
-}
-division_template={
-	name="Hoplitai"
+	name="Pígasos Sýntagma"
+	priority=1
 	regiments={
 		pegasi={x=0 y=0}
 		pegasi={x=0 y=1}
 		pegasi={x=0 y=2}
 		pegasi={x=0 y=3}
-		pegasi={x=1 y=0}
-		pegasi={x=1 y=1}
-		pegasi={x=1 y=2}
+	}
+}
+division_template={
+	name="Hoplitai"
+	priority=2	is_locked=yes
+	regiments={
+		pegasi={x=0 y=0}
+		pegasi={x=0 y=1}
+		pegasi={x=0 y=2}
 	}
 	support={
 		recon={x=0 y=0}
@@ -57,139 +52,93 @@ division_template={
 #		recon={x=0 y=0}
 #	}
 #}
-#4100 left
 units={
 	division={
-		name="1st Thureophoroi"
-		location=744
-		division_template="Thureophoroi"
-		start_experience_factor=0.3
+		name="Osdalei Militia"
+		location=11672
+		division_template="Psiloi"
+		start_experience_factor=0.1
 		start_equipment_factor=1
+		force_equipment_variants={melee_equipment_0={owner="HSW" creator="HSW"}}
 	}
 	division={
-		name="2st Thureophoroi"
-		location=744
-		division_template="Thureophoroi"
-		start_experience_factor=0.3
+		name="Hope Hollow Militia"
+		location=907
+		division_template="Psiloi"
+		start_experience_factor=0.1
 		start_equipment_factor=1
+		force_equipment_variants={melee_equipment_0={owner="HSW" creator="HSW"}}
 	}
 	division={
-		name="3st Thureophoroi"
-		location=744
-		division_template="Thureophoroi"
-		start_experience_factor=0.3
+		name="Marechester Militia"
+		location=11686
+		division_template="Psiloi"
+		start_experience_factor=0.1
 		start_equipment_factor=1
+		force_equipment_variants={melee_equipment_0={owner="HSW" creator="HSW"}}
 	}
 	division={
-		name="4st Thureophoroi"
-		location=744
-		division_template="Thureophoroi"
-		start_experience_factor=0.3
+		name="Shire Militia"
+		location=9806
+		division_template="Psiloi"
+		start_experience_factor=0.05
 		start_equipment_factor=1
+		force_equipment_variants={melee_equipment_0={owner="HSW" creator="HSW"}}
 	}
 	division={
-		name="5st Thureophoroi"
-		location=744
-		division_template="Thureophoroi"
+		name="Hilllund Pezikoú"
+		location=6534
+		division_template="Merarchía Pezikoú"
 		start_experience_factor=0.3
 		start_equipment_factor=1
+		force_equipment_variants={melee_equipment_0={owner="HSW" creator="HSW"}}
 	}
 	division={
-		name="6st Thureophoroi"
-		location=744
-		division_template="Thureophoroi"
-		start_experience_factor=0.3
+		name="Goran Pezikoú"
+		location=3340
+		division_template="Merarchía Pezikoú"
+		start_experience_factor=0.1
 		start_equipment_factor=1
+		force_equipment_variants={melee_equipment_0={owner="HSW" creator="HSW"}}
 	}
 	division={
-		name="7st Thureophoroi"
-		location=744
-		division_template="Thureophoroi"
-		start_experience_factor=0.3
+		name="Trotter Pezikoú"
+		location=6793
+		division_template="Merarchía Pezikoú"
+		start_experience_factor=0.25
 		start_equipment_factor=1
+		force_equipment_variants={melee_equipment_0={owner="HSW" creator="HSW"}}
 	}
 	division={
-		name="8st Thureophoroi"
-		location=744
-		division_template="Thureophoroi"
-		start_experience_factor=0.3
+		name="Ironwing Sýntagma"
+		location=6298
+		division_template="Pígasos Sýntagma"
+		start_experience_factor=0.75
 		start_equipment_factor=1
+		force_equipment_variants={melee_equipment_0={owner="HSW" creator="HSW"}}
 	}
 	division={
-		name="9st Thureophoroi"
-		location=744
-		division_template="Thureophoroi"
-		start_experience_factor=0.3
+		name="Moonlighter Sýntagma"
+		location=9068
+		division_template="Pígasos Sýntagma"
+		start_experience_factor=0.55
 		start_equipment_factor=1
+		force_equipment_variants={melee_equipment_0={owner="HSW" creator="HSW"}}
 	}
 	division={
-		name="10st Thureophoroi"
-		location=744
-		division_template="Thureophoroi"
-		start_experience_factor=0.3
+		name="Dale River Sýntagma"
+		location=327211686
+		division_template="Pígasos Sýntagma"
+		start_experience_factor=0.75
 		start_equipment_factor=1
+		force_equipment_variants={melee_equipment_0={owner="HSW" creator="HSW"}}
 	}
 	division={
-		name="11st Thureophoroi"
-		location=744
-		division_template="Thureophoroi"
-		start_experience_factor=0.3
-		start_equipment_factor=1
-	}
-	division={
-		name="12st Thureophoroi"
-		location=744
-		division_template="Thureophoroi"
-		start_experience_factor=0.3
-		start_equipment_factor=1
-	}
-	division={
-		name="13st Thureophoroi"
-		location=744
-		division_template="Thureophoroi"
-		start_experience_factor=0.3
-		start_equipment_factor=1
-	}
-	division={
-		name="1st Peltastai Division"
-		location=744
-		division_template="Peltastai"
-		start_experience_factor=0.3
-		start_equipment_factor=1
-	}
-	division={
-		name="2st Peltastai Division"
-		location=744
-		division_template="Peltastai"
-		start_experience_factor=0.3
-		start_equipment_factor=1
-	}
-	division={
-		name="3st Pegasi Division"
-		location=744
+		name="Stormwing Hoplitai Pigaso"
+		location=9470
 		division_template="Hoplitai"
-		start_experience_factor=0.3
+		start_experience_factor=1
 		start_equipment_factor=1
-	}
-	division={
-		name="4st Pegasi Division"
-		location=744
-		division_template="Hoplitai"
-		start_experience_factor=0.3
-		start_equipment_factor=1
-	}
-	division={
-		name="5st Pegasi Division"
-		location=744
-		division_template="Hoplitai"
-		start_experience_factor=0.3
-		start_equipment_factor=1
-	}
-	division={
-		name="6st Pegasi Division"
-		location=744
-		division_template="Hoplitai"
-		start_experience_factor=0.3
-		start_equipment_factor=1
+		force_equipment_variants={melee_equipment_0={owner="HSW" creator="HSW"}}
 	}
 }
