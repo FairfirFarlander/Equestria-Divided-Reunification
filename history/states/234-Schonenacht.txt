@@ -6,7 +6,7 @@ state={
 	buildings_max_level_factor=1
 	impassable=no
 	provinces={3159 3311 6104 6213 6289 6313 6405}
-	resources={}
+	resources={oil=4}
 	history={
 		owner=STG
 		add_core_of=STG

@@ -11,7 +11,7 @@ state={
 		#owner=PLB
 		#add_core_of=PLB
 		#add_claim_by=
-		victory_points={12312 10}
+		victory_points={1831 10}
 		buildings={
 		#STATE BUILDINGS
 			infrastructure=2
@@ -27,7 +27,7 @@ state={
 			rocket_site=0
 			nuclear_reactor=0
 		#PROVINCE BUILDINGS	
-			12312={
+			1831={
 				naval_base=1
 				#bunker=0
 				#coastal_bunker=0

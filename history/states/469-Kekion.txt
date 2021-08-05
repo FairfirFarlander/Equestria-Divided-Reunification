@@ -6,7 +6,7 @@ state={
 	buildings_max_level_factor=1
 	impassable=no
 	provinces={2222 5226 10201 10325}
-	resources={}
+	resources={oil=3}
 	history={
 		#owner=MIT
 		#add_core_of=MIT

@@ -2,10 +2,9 @@ focus_tree={
 	id=EDRgeneric country={factor=0 modifier={add=10 tag=BCK}}
 	continuous_focus_position={x=1750 y=800}
 	default=no
-	shared_focus=EDR_modernize_infantry
-	shared_focus=EDR_aviation_effort
-	shared_focus=EDR_naval_focus
-	shared_focus=EDR_startup_industrial_effort
+	shared_focus=EDR_modernization
+	shared_focus=EDR_establish_navy
+	shared_focus=EDR_establish_airforce
 }
 	focus={		#The Death of an Era
 		id=BCK_no_equestria

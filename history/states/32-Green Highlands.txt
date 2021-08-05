@@ -6,7 +6,7 @@ state={
 	buildings_max_level_factor=1
 	impassable=no
 	provinces={3868 3943 3974 3985 4154 6942 6983 9586 9922 10731 11816 11872}
-	resources={}
+	resources={rubber=5}
 	history={
 		owner=JCH
 		add_core_of=JCH

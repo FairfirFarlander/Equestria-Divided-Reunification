@@ -6,7 +6,7 @@ state={
 	buildings_max_level_factor=1
 	impassable=no
 	provinces={269 397 1595 3202 3303 3318 3339 3387 6341 7551 11743}
-	resources={aluminium=16}
+	resources={crystals=28}
 	history={
 		#owner=YAK
 		#add_core_of=YAK

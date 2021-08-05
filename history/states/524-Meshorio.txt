@@ -6,7 +6,7 @@ state={
 	buildings_max_level_factor=1
 	impassable=no
 	provinces={1640 1805 1878 7097 10572 11988 12483 12495 12531 12608 12668 13143}
-	resources={aluminium=8}
+	resources={aluminium=8 tungsten=6}
 	history={
 		#owner=JEB
 		#add_core_of=JEB
