@@ -1,4 +1,4 @@
-state={
+state={	#Petrograd?
 	id=166
 	name="STATE_166"
 	manpower=1157738

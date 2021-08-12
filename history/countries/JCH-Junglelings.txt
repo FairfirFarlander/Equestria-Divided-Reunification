@@ -4,7 +4,6 @@ oob="JCH_1007"
 #FOUNTATION
 set_research_slots=2
 set_stability=0.46 set_war_support=0.07
-set_rule={can_generate_female_aces=yes}
 add_ideas={
 	JCH_Under_Cities
 	JCH_Chruch_Of_The_First_Queen
@@ -37,6 +36,7 @@ actually_fix_weapon_techs=yes
 #MISC
 set_convoys=2
 set_rule={can_generate_female_aces=yes}
+#DIPLOMACY
 #POLITICS
 set_popularities={
 	fascism=13	communism=42
@@ -48,12 +48,36 @@ set_politics={
 	election_frequency=36
 	elections_allowed=no
 }
-#Willow as Neutral Leader, becomes queen (Use NewMareland event file line 2890 for name change)
-#Mother Nightshade as Supremecist Leader
 create_country_leader={
-	name="Aetanae Krix"	#desc=""
-	expire="1965.1.1"	picture="unknown_bug.tga"
+	name="Mother Nightshade"	#desc=""
+	expire="1050.1.1"	picture="Mother_Nightshade.dds"
+	ideology=holy_order_f	female=yes
+	traits={}
+}
+create_country_leader={
+	name="Councilor Tyrennadus"	#desc=""
+	expire="1050.1.1"	picture="Tyrennadus.dds"
 	ideology=primitive_communism	#female=yes
 	traits={}
 }
+create_country_leader={
+	name="Queen Narratek"	#desc=""
+	expire="1050.1.1"	picture="Queen_Narratek.dds"
+	ideology=tribal_council	female=yes
+	traits={}
+}
+create_country_leader={		#Willow maybe... (Use NewMareland event file line 2890 for name change)
+	name="Aetanae Krix"	#desc=""
+	expire="1050.1.1"	picture="unknown_bug.tga"
+	ideology=tribal_federation	#female=yes
+	traits={}
+}
 #MILITARY
+create_corps_commander={
+	name="Tyrennadus"	#id=	desc=""
+	picture="unknown_bug.tga"	#female=yes
+	skill=2	attack_skill=2	defense_skill=3
+	planning_skill=3	logistics_skill=1
+	traits={changeling_race_trait old_guard}
+}
+#VARIENTS

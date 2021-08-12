@@ -127,7 +127,7 @@ units={
 	}
 	division={
 		name="Dale River Sýntagma"
-		location=327211686
+		location=3272
 		division_template="Pígasos Sýntagma"
 		start_experience_factor=0.75
 		start_equipment_factor=1

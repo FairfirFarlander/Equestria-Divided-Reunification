@@ -1,631 +1,679 @@
-shared_focus={		#Modernize Infantry Equipment
-	id=EDR_modernization
-	icon=GFX_goal_generic_allies_build_infantry
-	search_filters={FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_RESEARCH}
-	x=0 y=0 cost=7
-	ai_will_do={factor=40}
-	completion_reward={
-		log="[GetDateText]: [Root.GetName]: focus EDR_modernization"
-		if={limit={NOT={has_tech=melee_weapons1}}
-		add_tech_bonus={
-			name=musket_weaponry
-			bonus=0.75	uses=2
-			category=infantry_weapons
+#Army Tree
+	shared_focus={		#Modernize Infantry Equipment
+		id=EDR_modernization
+		icon=GFX_goal_generic_allies_build_infantry
+		search_filters={FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_RESEARCH}
+		x=-8 y=0 cost=7
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_modernization"
+			if={limit={NOT={has_tech=melee_weapons1}}
+				add_tech_bonus={
+					name=musket_weaponry
+					bonus=0.75	uses=2
+					category=infantry_weapons
+				}
+				add_tech_bonus={
+					name=renaissance_artillery
+					bonus=0.75	uses=1
+					category=artillery
+				}
+			}
+			if={limit={AND={has_tech=melee_weapons1 NOT={has_tech=pre_gw_artillery}}}
+				army_experience=5
+				add_tech_bonus={
+					name=rifle_weaponry
+					bonus=0.65	uses=1
+					category=infantry_weapons
+				}
+				add_tech_bonus={
+					name=renaissance_artillery
+					bonus=0.55	uses=1
+					category=artillery
+				}
+			}
+			if={limit={AND={has_tech=melee_weapons1 has_tech=pre_gw_artillery NOT={has_tech=infantry_weapons}}}
+				army_experience=10
+				add_tech_bonus={
+					name=rifle_weaponry
+					bonus=0.55	uses=1
+					category=infantry_weapons
+				}
+			}
+			if={limit={has_tech=infantry_weapons}
+				army_experience=15
+			}
 		}
-		add_tech_bonus={
-			name=renaissance_artillery
-			bonus=0.75	uses=1
-			category=artillery
-		}}
-		if={limit={AND={has_tech=melee_weapons1 NOT={has_tech=pre_gw_artillery}}}
+	}
+	shared_focus={		#Support Equipment Modernization
+		id=EDR_support_equipment
+		icon=GFX_goal_generic_small_arms
+		search_filters={FOCUS_FILTER_RESEARCH}
+		relative_position_id=EDR_modernization
+		x=-2 y=1 cost=7
+		prerequisite={focus=EDR_modernization}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDR_support_equipment"
+			add_tech_bonus={
+				name=recon_engineer_support
+				bonus=0.75	uses=2
+				category=recon_tech
+				category=engineers_tech
+			}
+		}
+	}
+	shared_focus={		#Doctrine Effort
+		id=EDR_doctrine_effort
+		icon=GFX_goal_generic_army_doctrines
+		search_filters={FOCUS_FILTER_RESEARCH}
+		relative_position_id=EDR_army_effort
+		x=0 y=1 cost=7
+		prerequisite={focus=EDR_army_effort}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDR_doctrine_effort"
 			army_experience=5
 			add_tech_bonus={
-			name=rifle_weaponry
-			bonus=0.65	uses=1
-			category=infantry_weapons
+				name=land_doc_bonus
+				bonus=0.66 uses=1
+				category=land_doctrine
 			}
+		}
+	}
+	shared_focus={		#Motorization Effort
+		id=EDR_motorization_effort
+		icon=GFX_goal_generic_army_motorized
+		relative_position_id=EDR_army_effort
+		x=2 y=1 cost=7
+		prerequisite={focus=EDR_army_effort}
+		bypass={has_tech=motorised_infantry}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDR_motorization_effort"
 			add_tech_bonus={
-				name=renaissance_artillery
-				bonus=0.55	uses=1
+				name=motorized_bonus
+				bonus=0.66
+				technology=motorised_infantry
+			}
+		}
+	}
+	shared_focus={		#Equipment Effort II
+		id=EDR_equipment_effort_ii
+		icon=GFX_goal_generic_army_artillery
+		relative_position_id=EDR_equipment_effort
+		x=0 y=1 cost=7
+		prerequisite={focus=EDR_equipment_effort}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDR_equipment_effort_2"
+			add_tech_bonus={
+				name=infantry_artillery_bonus
+				bonus=0.66 uses=1
+				category=infantry_weapons
 				category=artillery
 			}
 		}
-		if={limit={AND={has_tech=melee_weapons1 has_tech=pre_gw_artillery NOT={has_tech=infantry_weapons}}}
-			army_experience=10
+	}
+	shared_focus={		#Doctrine Effort II
+		id=EDR_doctrine_effort_ii
+		icon=GFX_goal_generic_army_doctrines
+		relative_position_id=EDR_doctrine_effort
+		x=0 y=1 cost=7
+		prerequisite={focus=EDR_doctrine_effort}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDR_doctrine_effort_2"
+			army_experience=5
 			add_tech_bonus={
-				name=rifle_weaponry
-				bonus=0.55	uses=1
-				category=infantry_weapons
+				name=land_doc_bonus
+				bonus=1.0 uses=1
+				category=land_doctrine
 			}
 		}
-		if={limit={has_tech=infantry_weapons}
-			army_experience=15
+	}
+	shared_focus={		#Motorization Effort II
+		id=EDR_motorization_effort_ii
+		icon=GFX_goal_generic_build_tank
+		relative_position_id=EDR_motorization_effort
+		x=0 y=1 cost=7
+		prerequisite={focus=EDR_motorization_effort}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDR_motorization_effort_2"
+			add_tech_bonus={
+				name=motorized_bonus
+				ahead_reduction=2 uses=1
+				category=motorized_equipment
+			}
 		}
 	}
-}
-shared_focus={		#Support Equipment Modernization
-	id=EDR_support_equipment
-	icon=GFX_goal_generic_small_arms
-	search_filters={FOCUS_FILTER_RESEARCH}
-	relative_position_id=EDR_modernization
-	x=-2 y=1 cost=7
-	prerequisite={focus=EDR_modernization}
-	ai_will_do={factor=40}
-	completion_reward={
-		log="[GetDateText]: [Root.GetName]: Focus EDR_support_equipment"
-		add_tech_bonus={
-			name=recon_engineer_support
-			bonus=0.75	uses=2
-			category=recon_tech
-			category=engineers_tech
+	shared_focus={		#Equipment Effort III
+		id=EDR_equipment_effort_iii
+		icon=GFX_goal_generic_army_artillery2
+		relative_position_id=EDR_equipment_effort_ii
+		x=0 y=1 cost=7
+		prerequisite={focus=EDR_equipment_effort_ii}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDR_equipment_effort_3"
+			add_tech_bonus={
+				name=infantry_artillery_bonus
+				ahead_reduction=2 uses=1
+				category=infantry_weapons
+				category=artillery
+			}
 		}
 	}
-}
-shared_focus={		#Doctrine Effort
-	id=EDR_doctrine_effort
-	icon=GFX_goal_generic_army_doctrines
-	search_filters={FOCUS_FILTER_RESEARCH}
-	relative_position_id=EDR_army_effort
-	x=0 y=1 cost=7
-	prerequisite={focus=EDR_army_effort}
-	ai_will_do={factor=40}
-	completion_reward={
-		log="[GetDateText]: [Root.GetName]: Focus EDR_doctrine_effort"
-		army_experience=5
-		add_tech_bonus={
-			name=land_doc_bonus
-			bonus=0.66 uses=1
-			category=land_doctrine
+	shared_focus={		#Doctrine Effort II
+		id=EDR_doctrine_effort_iii
+		icon=GFX_goal_generic_army_doctrines
+		relative_position_id=EDR_doctrine_effort_ii
+		x=0 y=1 cost=7
+		prerequisite={focus=EDR_doctrine_effort_ii}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDR_doctrine_effort_3"
+			army_experience=5
+			add_tech_bonus={
+				name=land_doc_bonus
+				bonus=1.0 uses=1
+				category=land_doctrine
+			}
 		}
 	}
-}
-shared_focus={		#Motorization Effort
-	id=EDR_motorization_effort
-	icon=GFX_goal_generic_army_motorized
-	relative_position_id=EDR_army_effort
-	x=2 y=1 cost=7
-	prerequisite={focus=EDR_army_effort}
-	bypass={has_tech=motorised_infantry}
-	ai_will_do={factor=40}
-	completion_reward={
-		log="[GetDateText]: [Root.GetName]: Focus EDR_motorization_effort"
-		add_tech_bonus={
-			name=motorized_bonus
-			bonus=0.66
-			technology=motorised_infantry
+	shared_focus={		#Motorization Effort III
+		id=EDR_motorization_effort_iii
+		icon=GFX_goal_generic_army_tanks
+		relative_position_id=EDR_motorization_effort_ii
+		x=0 y=1 cost=7
+		prerequisite={focus=EDR_motorization_effort_ii}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDR_motorization_effort_3"
+			add_tech_bonus={
+				name=armor_bonus
+				bonus=0.66 uses=2
+				category=armor
+			}
 		}
 	}
-}
-shared_focus={		#Equipment Effort II
-	id=EDR_equipment_effort_ii
-	icon=GFX_goal_generic_army_artillery
-	relative_position_id=EDR_equipment_effort
-	x=0 y=1 cost=7
-	prerequisite={focus=EDR_equipment_effort}
-	ai_will_do={factor=40}
-	completion_reward={
-		log="[GetDateText]: [Root.GetName]: Focus EDR_equipment_effort_2"
-		add_tech_bonus={
-			name=infantry_artillery_bonus
-			bonus=0.66 uses=1
-			category=infantry_weapons
-			category=artillery
+	shared_focus={		#Special Forces
+		id=EDR_special_forces
+		icon=GFX_goal_generic_special_forces
+		relative_position_id=EDR_doctrine_effort_iii
+		x=0 y=1 cost=7
+		prerequisite={
+			focus=EDR_equipment_effort_iii
+			focus=EDR_doctrine_effort_iii
+			focus=EDR_motorization_effort_iii
+		}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDR_motorization_effort_3"
+			add_tech_bonus={
+				name=special_forces_bonus
+				bonus=1 uses=1
+				category=special_forces_tech
+			}
 		}
 	}
-}
-shared_focus={		#Doctrine Effort II
-	id=EDR_doctrine_effort_ii
-	icon=GFX_goal_generic_army_doctrines
-	relative_position_id=EDR_doctrine_effort
-	x=0 y=1 cost=7
-	prerequisite={focus=EDR_doctrine_effort}
-	ai_will_do={factor=40}
-	completion_reward={
-		log="[GetDateText]: [Root.GetName]: Focus EDR_doctrine_effort_2"
-		army_experience=5
-		add_tech_bonus={
-			name=land_doc_bonus
-			bonus=1.0 uses=1
-			category=land_doctrine
+#Navy Tree
+	shared_focus={		#Establish the Navy
+		id=EDR_establish_navy
+		icon=GFX_goal_generic_construct_naval_dockyard
+		x=-20 y=0 cost=7
+		available={any_controlled_state_is_coastal=yes}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDR_establish_navy"
+			navy_experience=25
+			one_random_dockyard=yes
 		}
 	}
-}
-shared_focus={		#Motorization Effort II
-	id=EDR_motorization_effort_ii
-	icon=GFX_goal_generic_build_tank
-	relative_position_id=EDR_motorization_effort
-	x=0 y=1 cost=7
-	prerequisite={focus=EDR_motorization_effort}
-	ai_will_do={factor=40}
-	completion_reward={
-		log="[GetDateText]: [Root.GetName]: Focus EDR_motorization_effort_2"
-		add_tech_bonus={
-			name=motorized_bonus
-			ahead_reduction=2 uses=1
-			category=motorized_equipment
+	shared_focus={		#Naval Warfare
+		id=EDR_naval_warfare
+		icon=GFX_goal_generic_navy_doctrines_tactics
+		allow_branch={has_dlc="Man the Guns"}
+		relative_position_id=EDR_establish_navy
+		x=-3 y=1 cost=7
+		prerequisite={focus=EDR_establish_navy}
+		available={any_controlled_state_is_coastal=yes}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDR_naval_doctrine"
+			add_tech_bonus={
+				name=torp_bonus
+				bonus=1.0	uses=2
+				category=naval_doctrine
+			}
 		}
 	}
-}
-shared_focus={		#Equipment Effort III
-	id=EDR_equipment_effort_iii
-	icon=GFX_goal_generic_army_artillery2
-	relative_position_id=EDR_equipment_effort_ii
-	x=0 y=1 cost=7
-	prerequisite={focus=EDR_equipment_effort_ii}
-	ai_will_do={factor=40}
-	completion_reward={
-		log="[GetDateText]: [Root.GetName]: Focus EDR_equipment_effort_3"
-		add_tech_bonus={
-			name=infantry_artillery_bonus
-			ahead_reduction=2 uses=1
-			category=infantry_weapons
-			category=artillery
+	shared_focus={		#Naval Drill
+		id=EDR_naval_drill
+		icon=GFX_focus_generic_military_academy
+		relative_position_id=EDR_naval_warfare
+		x=2 y=3 cost=7
+		prerequisite={focus=EDR_naval_warfare}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDR_man_the_guns"
+			add_tech_bonus={
+				name=navtrain_bonus
+				bonus=0.75	uses=1
+				category=naval_training
+			}
 		}
 	}
-}
-shared_focus={		#Doctrine Effort II
-	id=EDR_doctrine_effort_iii
-	icon=GFX_goal_generic_army_doctrines
-	relative_position_id=EDR_doctrine_effort_ii
-	x=0 y=1 cost=7
-	prerequisite={focus=EDR_doctrine_effort_ii}
-	ai_will_do={factor=40}
-	completion_reward={
-		log="[GetDateText]: [Root.GetName]: Focus EDR_doctrine_effort_3"
-		army_experience=5
-		add_tech_bonus={
-			name=land_doc_bonus
-			bonus=1.0 uses=1
-			category=land_doctrine
+	shared_focus={		#Man the Guns
+		id=EDR_man_the_guns
+		#icon=GFX_goal_generic_navy_doctrines_tactics
+		relative_position_id=EDR_establish_navy
+		x=3 y=1 cost=7
+		prerequisite={focus=EDR_establish_navy}
+		available={any_controlled_state_is_coastal=yes}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDR_man_the_guns"
+			add_tech_bonus={
+				name=navarty_bonus
+				bonus=0.75	uses=1
+				category=naval_artillery
+			}
+			add_tech_bonus={
+				name=torp_bonus
+				bonus=0.75	uses=1
+				category=torpedo_tech
+			}
 		}
 	}
-}
-shared_focus={		#Motorization Effort III
-	id=EDR_motorization_effort_iii
-	icon=GFX_goal_generic_army_tanks
-	relative_position_id=EDR_motorization_effort_ii
-	x=0 y=1 cost=7
-	prerequisite={focus=EDR_motorization_effort_ii}
-	ai_will_do={factor=40}
-	completion_reward={
-		log="[GetDateText]: [Root.GetName]: Focus EDR_motorization_effort_3"
-		add_tech_bonus={
-			name=armor_bonus
-			bonus=0.66 uses=2
-			category=armor
+	shared_focus={		#Naval Transports
+		id=EDR_transport
+		icon=GFX_goal_NLR_Landing_Craft
+		relative_position_id=EDR_man_the_guns
+		x=-3 y=1 cost=7
+		prerequisite={focus=EDR_man_the_guns}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDR_man_the_guns"
+			add_tech_bonus={
+				name=navtrain_bonus
+				bonus=0.75	uses=1
+				category=tp_tech
+			}
 		}
 	}
-}
-shared_focus={		#Special Forces
-	id=EDR_special_forces
-	icon=GFX_goal_generic_special_forces
-	relative_position_id=EDR_doctrine_effort_iii
-	x=0 y=1 cost=7
-	prerequisite={
-		focus=EDR_equipment_effort_iii
-		focus=EDR_doctrine_effort_iii
-		focus=EDR_motorization_effort_iii
-	}
-	ai_will_do={factor=40}
-	completion_reward={
-		log="[GetDateText]: [Root.GetName]: Focus EDR_motorization_effort_3"
-		add_tech_bonus={
-			name=special_forces_bonus
-			bonus=1 uses=1
-			category=special_forces_tech
+	shared_focus={		#Destroyer Effort
+		id=EDR_destroyer_effort
+		icon=GFX_focus_generic_destroyer
+		relative_position_id=EDR_man_the_guns
+		x=-1 y=1 cost=7
+		prerequisite={focus=EDR_man_the_guns}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDR_man_the_guns"
+			add_tech_bonus={
+				name=dd_bonus
+				bonus=0.75	uses=1
+				category=dd_tech
+			}
 		}
 	}
-}
-shared_focus={		#Establish the Navy
-	id=EDR_establish_navy
-	icon=GFX_goal_generic_construct_naval_dockyard
-	relative_position_id=EDR_modernization
-	x=8 y=0 cost=7
-	available={any_controlled_state_is_coastal=yes}
-	ai_will_do={factor=40}
-	completion_reward={
-		log="[GetDateText]: [Root.GetName]: Focus EDR_establish_navy"
-		navy_experience=25
-		one_random_dockyard=yes
-	}
-}
-shared_focus={		#Naval Warfare
-	id=EDR_naval_warfare
-	icon=GFX_goal_generic_navy_doctrines_tactics
-	allow_branch={has_dlc="Man the Guns"}
-	relative_position_id=EDR_establish_navy
-	x=-3 y=1 cost=7
-	prerequisite={focus=EDR_establish_navy}
-	available={any_controlled_state_is_coastal=yes}
-	ai_will_do={factor=40}
-	completion_reward={
-		log="[GetDateText]: [Root.GetName]: Focus EDR_naval_doctrine"
-		add_tech_bonus={
-			name=torp_bonus
-			bonus=1.0	uses=2
-			category=naval_doctrine
+	shared_focus={		#Cruiser Effort
+		id=EDR_cruiser_effort
+		icon=GFX_focus_generic_cruiser2
+		relative_position_id=EDR_man_the_guns
+		x=1 y=1 cost=7
+		prerequisite={focus=EDR_man_the_guns}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDR_cruiser_effort"
+			add_tech_bonus={
+				name=cr_bonus
+				bonus=0.75	uses=1
+				category=cl_tech
+			}
 		}
 	}
-}
-shared_focus={		#Naval Drill
-	id=EDR_naval_drill
-	icon=GFX_focus_generic_military_academy
-	relative_position_id=EDR_naval_warfare
-	x=2 y=3 cost=7
-	prerequisite={focus=EDR_naval_warfare}
-	ai_will_do={factor=40}
-	completion_reward={
-		log="[GetDateText]: [Root.GetName]: Focus EDR_man_the_guns"
-		add_tech_bonus={
-			name=navtrain_bonus
-			bonus=0.75	uses=1
-			category=naval_training
+	shared_focus={		#Naval Aircraft
+		id=EDR_naval_aircraft
+		icon=GFX_goal_generic_air_naval_bomber
+		relative_position_id=EDR_man_the_guns
+		x=3 y=1 cost=7
+		prerequisite={focus=EDR_man_the_guns}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDR_naval_aircraft"
+			add_tech_bonus={
+				name=cv_bonus
+				bonus=0.75	uses=1
+				category=naval_air
+			}
 		}
 	}
-}
-shared_focus={		#Man the Guns
-	id=EDR_man_the_guns
-	#icon=GFX_goal_generic_navy_doctrines_tactics
-	relative_position_id=EDR_establish_navy
-	x=3 y=1 cost=7
-	prerequisite={focus=EDR_establish_navy}
-	available={any_controlled_state_is_coastal=yes}
-	ai_will_do={factor=40}
-	completion_reward={
-		log="[GetDateText]: [Root.GetName]: Focus EDR_man_the_guns"
-		add_tech_bonus={
-			name=navarty_bonus
-			bonus=0.75	uses=1
-			category=naval_artillery
-		}
-		add_tech_bonus={
-			name=torp_bonus
-			bonus=0.75	uses=1
-			category=torpedo_tech
+	shared_focus={		#Submarine Effort
+		id=EDR_submarine_effort
+		icon=GFX_goal_generic_navy_submarine
+		relative_position_id=EDR_man_the_guns
+		x=-2 y=2 cost=7
+		prerequisite={focus=EDR_man_the_guns}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDR_submarine_effort"
+			add_tech_bonus={
+				name=ss_bonus
+				bonus=0.75	uses=1
+				category=ss_tech
+			}
 		}
 	}
-}
-shared_focus={		#Naval Transports
-	id=EDR_transport
-	icon=GFX_goal_NLR_Landing_Craft
-	relative_position_id=EDR_man_the_guns
-	x=-3 y=1 cost=7
-	prerequisite={focus=EDR_man_the_guns}
-	ai_will_do={factor=40}
-	completion_reward={
-		log="[GetDateText]: [Root.GetName]: Focus EDR_man_the_guns"
-		add_tech_bonus={
-			name=navtrain_bonus
-			bonus=0.75	uses=1
-			category=tp_tech
+	shared_focus={		#Battleship Effort
+		id=EDR_battleship_effort
+		icon=GFX_focus_generic_navy_battleship2
+		relative_position_id=EDR_man_the_guns
+		x=0 y=2 cost=7
+		prerequisite={focus=EDR_man_the_guns}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDR_battleship_effort"
+			add_tech_bonus={
+				name=capital_ships_bonus
+				bonus=0.75	uses=1
+				category=bb_tech
+			}
 		}
 	}
-}
-shared_focus={		#Destroyer Effort
-	id=EDR_destroyer_effort
-	icon=GFX_focus_generic_destroyer
-	relative_position_id=EDR_man_the_guns
-	x=-1 y=1 cost=7
-	prerequisite={focus=EDR_man_the_guns}
-	ai_will_do={factor=40}
-	completion_reward={
-		log="[GetDateText]: [Root.GetName]: Focus EDR_man_the_guns"
-		add_tech_bonus={
-			name=dd_bonus
-			bonus=0.75	uses=1
-			category=dd_tech
+	shared_focus={		#Carrier Effort
+		id=EDR_carrier_effort
+		icon=GFX_goal_generic_navy_carrier
+		relative_position_id=EDR_man_the_guns
+		x=2 y=2 cost=7
+		prerequisite={focus=EDR_naval_aircraft}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDR_carrier_effort"
+			add_tech_bonus={
+				name=cv_bonus
+				bonus=0.75	uses=1
+				category=cv_tech
+			}
 		}
 	}
-}
-shared_focus={		#Cruiser Effort
-	id=EDR_cruiser_effort
-	icon=GFX_focus_generic_cruiser2
-	relative_position_id=EDR_man_the_guns
-	x=1 y=1 cost=7
-	prerequisite={focus=EDR_man_the_guns}
-	ai_will_do={factor=40}
-	completion_reward={
-		log="[GetDateText]: [Root.GetName]: Focus EDR_cruiser_effort"
-		add_tech_bonus={
-			name=cr_bonus
-			bonus=0.75	uses=1
-			category=cl_tech
+#Airforce Tree
+	shared_focus={		#Establish the Airforce
+		id=EDR_establish_airforce
+		icon=GFX_goal_generic_build_airforce
+		x=-28 y=0 cost=7
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDR_aviation_effort"
+			air_experience=50
+			one_airfield=yes
+			add_tech_bonus={
+				name= air_doc_bonus
+				bonus=0.75 uses=1
+				category=air_doctrine
+			}
 		}
 	}
-}
-shared_focus={		#Naval Aircraft
-	id=EDR_naval_aircraft
-	icon=GFX_goal_generic_air_naval_bomber
-	relative_position_id=EDR_man_the_guns
-	x=3 y=1 cost=7
-	prerequisite={focus=EDR_man_the_guns}
-	ai_will_do={factor=40}
-	completion_reward={
-		log="[GetDateText]: [Root.GetName]: Focus EDR_naval_aircraft"
-		add_tech_bonus={
-			name=cv_bonus
-			bonus=0.75	uses=1
-			category=naval_air
+	shared_focus={		#Aviation Effort II
+		id=EDR_aviation_effort_ii
+		icon=GFX_goal_generic_air_fighter
+		relative_position_id=EDR_aviation_effort
+		x=0 y=1 cost=7
+		prerequisite={focus=EDR_aviation_effort}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDR_aviation_effort_ii"
+			add_tech_bonus={
+				name=fighter_bonus
+				bonus=1.0 uses=2
+				technology=early_fighter
+				technology=fighter1
+				technology=fighter2
+				technology=fighter3
+				technology=heavy_fighter1
+				technology=heavy_fighter2
+				technology=heavy_fighter3
+			}
 		}
 	}
-}
-shared_focus={		#Submarine Effort
-	id=EDR_submarine_effort
-	icon=GFX_goal_generic_navy_submarine
-	relative_position_id=EDR_man_the_guns
-	x=-2 y=2 cost=7
-	prerequisite={focus=EDR_man_the_guns}
-	ai_will_do={factor=40}
-	completion_reward={
-		log="[GetDateText]: [Root.GetName]: Focus EDR_submarine_effort"
-		add_tech_bonus={
-			name=ss_bonus
-			bonus=0.75	uses=1
-			category=ss_tech
+	shared_focus={		#Aviation Effort III
+		id=EDR_aviation_effort_iii
+		icon=GFX_goal_generic_air_doctrine
+		relative_position_id=EDR_aviation_effort_ii
+		x=0 y=1 cost=7
+		prerequisite={focus=EDR_aviation_effort_ii}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDR_aviation_effort_iii"
+			air_experience=85
+			add_tech_bonus={
+				name= air_doc_bonus
+				bonus=1.0 uses=1
+				category=air_doctrine
+			}
 		}
 	}
-}
-shared_focus={		#Battleship Effort
-	id=EDR_battleship_effort
-	icon=GFX_focus_generic_navy_battleship2
-	relative_position_id=EDR_man_the_guns
-	x=0 y=2 cost=7
-	prerequisite={focus=EDR_man_the_guns}
-	ai_will_do={factor=40}
-	completion_reward={
-		log="[GetDateText]: [Root.GetName]: Focus EDR_battleship_effort"
-		add_tech_bonus={
-			name=capital_ships_bonus
-			bonus=0.75	uses=1
-			category=bb_tech
+	shared_focus={		#Rocket Effort
+		id=EDR_rocket_effort
+		icon=GFX_focus_rocketry
+		relative_position_id=EDR_aviation_effort_iii
+		x=0 y=1 cost=7
+		prerequisite={focus=EDR_aviation_effort_iii}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDR_rocket_effort"
+			add_tech_bonus={
+				name=jet_rocket_bonus
+				ahead_reduction=1 uses=2
+				category=rocketry
+				category=jet_technology
+			}
 		}
 	}
-}
-shared_focus={		#Carrier Effort
-	id=EDR_carrier_effort
-	icon=GFX_goal_generic_navy_carrier
-	relative_position_id=EDR_man_the_guns
-	x=2 y=2 cost=7
-	prerequisite={focus=EDR_naval_aircraft}
-	ai_will_do={factor=40}
-	completion_reward={
-		log="[GetDateText]: [Root.GetName]: Focus EDR_carrier_effort"
-		add_tech_bonus={
-			name=cv_bonus
-			bonus=0.75	uses=1
-			category=cv_tech
+#Industry Tree
+	shared_focus={		#Startup Industrial Effort
+		id=EDR_startup_industrial_effort
+		icon=GFX_goal_generic_production
+		x=8 y=0 cost=7
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_startup_industrial_effort"
+			add_tech_bonus={
+				name=industrial_bonus
+				bonus=1.0 uses=1
+				category=industry
+			}
 		}
 	}
-}
-shared_focus={		#Establish the Airforce
-	id=EDR_establish_airforce
-	icon=GFX_goal_generic_build_airforce
-	relative_position_id=EDR_army_effort
-	x=17 y=0 cost=7
-	ai_will_do={factor=40}
-	completion_reward={
-		log="[GetDateText]: [Root.GetName]: Focus EDR_aviation_effort"
-		air_experience=50
-		one_airfield=yes
-		add_tech_bonus={
-			name= air_doc_bonus
-			bonus=0.75 uses=1
-			category=air_doctrine
+	shared_focus={		#Construction Effort
+		id=EDR_construction_effort
+		icon=GFX_goal_generic_construct_civ_factory
+		relative_position_id=EDR_startup_industrial_effort
+		x=-1 y=1 cost=7
+		prerequisite={focus=EDR_startup_industrial_effort}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_construction_effort"
+			two_random_industrial_complex=yes
 		}
 	}
-}
-shared_focus={		#Aviation Effort II
-	id=EDR_aviation_effort_ii
-	icon=GFX_goal_generic_air_fighter
-	relative_position_id=EDR_aviation_effort
-	x=0 y=1 cost=7
-	prerequisite={focus=EDR_aviation_effort}
-	ai_will_do={factor=40}
-	completion_reward={
-		log="[GetDateText]: [Root.GetName]: Focus EDR_aviation_effort_ii"
-		add_tech_bonus={
-			name=fighter_bonus
-			bonus=1.0 uses=2
-			technology=early_fighter
-			technology=fighter1
-			technology=fighter2
-			technology=fighter3
-			technology=heavy_fighter1
-			technology=heavy_fighter2
-			technology=heavy_fighter3
+	shared_focus={		#Armament Effort
+		id=EDR_armament_effort
+		icon=GFX_goal_generic_construct_mil_factory
+		relative_position_id=EDR_startup_industrial_effort
+		x=1 y=1 cost=7
+		prerequisite={focus=EDR_startup_industrial_effort}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_armament_effort"
+			one_random_arms_factory=yes
 		}
 	}
-}
-shared_focus={		#Aviation Effort III
-	id=EDR_aviation_effort_iii
-	icon=GFX_goal_generic_air_doctrine
-	relative_position_id=EDR_aviation_effort_ii
-	x=0 y=1 cost=7
-	prerequisite={focus=EDR_aviation_effort_ii}
-	ai_will_do={factor=40}
-	completion_reward={
-		log="[GetDateText]: [Root.GetName]: Focus EDR_aviation_effort_iii"
-		air_experience=85
-		add_tech_bonus={
-			name= air_doc_bonus
-			bonus=1.0 uses=1
-			category=air_doctrine
+	shared_focus={		#Construction Effort II
+		id=EDR_construction_effort_ii
+		icon=GFX_goal_generic_construct_civ_factory
+		relative_position_id=EDR_construction_effort
+		x=0 y=1 cost=7
+		prerequisite={focus=EDR_construction_effort}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_construction_effort_ii"
+			two_random_industrial_complex=yes
 		}
 	}
-}
-shared_focus={		#Rocket Effort
-	id=EDR_rocket_effort
-	icon=GFX_focus_rocketry
-	relative_position_id=EDR_aviation_effort_iii
-	x=0 y=1 cost=7
-	prerequisite={focus=EDR_aviation_effort_iii}
-	ai_will_do={factor=40}
-	completion_reward={
-		log="[GetDateText]: [Root.GetName]: Focus EDR_rocket_effort"
-		add_tech_bonus={
-			name=jet_rocket_bonus
-			ahead_reduction=1 uses=2
-			category=rocketry
-			category=jet_technology
+	shared_focus={		#Armament Effort II
+		id=EDR_armament_effort_ii
+		icon=GFX_goal_generic_construct_mil_factory
+		relative_position_id=EDR_armament_effort
+		x=0 y=1 cost=7
+		prerequisite={focus=EDR_armament_effort}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_construction_effort_ii"
+			two_random_arms_factory=yes
 		}
 	}
-}
-shared_focus={		#Startup Industrial Effort
-	id=EDR_startup_industrial_effort
-	icon=GFX_goal_generic_production
-	relative_position_id=EDR_army_effort
-	x=11 y=0 cost=7
-	ai_will_do={factor=40}
-	completion_reward={
-		log="[GetDateText]: [Root.GetName]: focus EDR_startup_industrial_effort"
-		add_tech_bonus={
-			name=industrial_bonus
-			bonus=1.0 uses=1
-			category=industry
+	shared_focus={		#Construction Effort III
+		id=EDR_construction_effort_iii
+		icon=GFX_goal_generic_construct_civ_factory
+		relative_position_id=EDR_construction_effort_ii
+		x=0 y=1 cost=7
+		prerequisite={focus=EDR_construction_effort_ii}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_construction_effort_iii"
+			three_random_arms_factory=yes
 		}
 	}
-}
-shared_focus={		#Construction Effort
-	id=EDR_construction_effort
-	icon=GFX_goal_generic_construct_civ_factory
-	relative_position_id=EDR_startup_industrial_effort
-	x=-1 y=1 cost=7
-	prerequisite={focus=EDR_startup_industrial_effort}
-	ai_will_do={factor=40}
-	completion_reward={
-		log="[GetDateText]: [Root.GetName]: focus EDR_construction_effort"
-		two_random_industrial_complex=yes
-	}
-}
-shared_focus={		#Armament Effort
-	id=EDR_armament_effort
-	icon=GFX_goal_generic_construct_mil_factory
-	relative_position_id=EDR_startup_industrial_effort
-	x=1 y=1 cost=7
-	prerequisite={focus=EDR_startup_industrial_effort}
-	ai_will_do={factor=40}
-	completion_reward={
-		log="[GetDateText]: [Root.GetName]: focus EDR_armament_effort"
-		one_random_arms_factory=yes
-	}
-}
-shared_focus={		#Construction Effort II
-	id=EDR_construction_effort_ii
-	icon=GFX_goal_generic_construct_civ_factory
-	relative_position_id=EDR_construction_effort
-	x=0 y=1 cost=7
-	prerequisite={focus=EDR_construction_effort}
-	ai_will_do={factor=40}
-	completion_reward={
-		log="[GetDateText]: [Root.GetName]: focus EDR_construction_effort_ii"
-		two_random_industrial_complex=yes
-	}
-}
-shared_focus={		#Armament Effort II
-	id=EDR_armament_effort_ii
-	icon=GFX_goal_generic_construct_mil_factory
-	relative_position_id=EDR_armament_effort
-	x=0 y=1 cost=7
-	prerequisite={focus=EDR_armament_effort}
-	ai_will_do={factor=40}
-	completion_reward={
-		log="[GetDateText]: [Root.GetName]: focus EDR_construction_effort_ii"
-		two_random_arms_factory=yes
-	}
-}
-shared_focus={		#Construction Effort III
-	id=EDR_construction_effort_iii
-	icon=GFX_goal_generic_construct_civ_factory
-	relative_position_id=EDR_construction_effort_ii
-	x=0 y=1 cost=7
-	prerequisite={focus=EDR_construction_effort_ii}
-	ai_will_do={factor=40}
-	completion_reward={
-		log="[GetDateText]: [Root.GetName]: focus EDR_construction_effort_iii"
-		three_random_arms_factory=yes
-	}
-}
-shared_focus={		#Armament Effort III
-	id=EDR_armament_effort_iii
-	icon=GFX_goal_generic_construct_mil_factory
-	relative_position_id=EDR_armament_effort_ii
-	x=0 y=1 cost=7
-	prerequisite={focus=EDR_armament_effort_ii}
-	ai_will_do={factor=40}
-	completion_reward={
-		log="[GetDateText]: [Root.GetName]: focus EDR_armament_effort_iii"
-		three_random_arms_factory=yes
-	}
-}
-shared_focus={		#Infrastructure Effort
-	id=EDR_infrastructure_effort
-	icon=GFX_goal_generic_construct_infrastructure
-	relative_position_id=EDR_construction_effort_iii
-	x=-2 y=1 cost=7
-	prerequisite={focus=EDR_construction_effort_iii}
-	ai_will_do={factor=40}
-	completion_reward={
-		log="[GetDateText]: [Root.GetName]: focus EDR_construction_effort_iii"
-		two_random_infrastructure=yes
-		one_random_infrastructure=yes
-	}
-}
-shared_focus={		#Extra Research Slot
-	id=EDR_extra_research_slot
-	icon=GFX_focus_research
-	relative_position_id=EDR_construction_effort_iii
-	x=0 y=1 cost=7
-	prerequisite={focus=EDR_construction_effort_iii}
-	ai_will_do={factor=40}
-	completion_reward={
-		log="[GetDateText]: [Root.GetName]: focus EDR_extra_research_slot"
-		add_research_slot=1
-	}
-}
-shared_focus={		#Secret Weapons
-	id=EDR_secret_weapons
-	icon=GFX_goal_generic_secret_weapon
-	relative_position_id=EDR_construction_effort_iii
-	x=2 y=1 cost=7
-	prerequisite={focus=EDR_construction_effort_iii}
-	ai_will_do={factor=40}
-	completion_reward={
-		log="[GetDateText]: [Root.GetName]: focus EDR_secret_weapons"
-		add_tech_bonus={
-			name=secret_bonus
-			bonus=1.0 uses=4
-			category=electronics
-			category=nuclear
-			category=rocketry
+	shared_focus={		#Armament Effort III
+		id=EDR_armament_effort_iii
+		icon=GFX_goal_generic_construct_mil_factory
+		relative_position_id=EDR_armament_effort_ii
+		x=0 y=1 cost=7
+		prerequisite={focus=EDR_armament_effort_ii}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_armament_effort_iii"
+			three_random_arms_factory=yes
 		}
 	}
-}
-shared_focus={		#Extra Research Slot II
-	id=EDR_extra_research_slot_ii
-	icon=GFX_focus_research
-	relative_position_id=EDR_extra_research_slot
-	x=0 y=1 cost=7
-	prerequisite={focus=EDR_extra_research_slot}
-	available={num_of_factories>50}
-	ai_will_do={factor=40}
-	completion_reward={
-		log="[GetDateText]: [Root.GetName]: focus EDR_extra_research_slot_ii"
-		add_research_slot=1
-	}
-}
-shared_focus={		#Nuclear Effort
-	id=EDR_nuclear_effort
-	icon=GFX_focus_wonderweapons
-	relative_position_id=EDR_secret_weapons
-	x=0 y=1 cost=7
-	prerequisite={focus=EDR_secret_weapons}
-	ai_will_do={factor=40}
-	completion_reward={
-		log="[GetDateText]: [Root.GetName]: focus EDR_nuclear_effort"
-		add_tech_bonus={
-			name=nuclear_bonus
-			ahead_reduction=1
-			category=nuclear
+	shared_focus={		#Infrastructure Effort
+		id=EDR_infrastructure_effort
+		icon=GFX_goal_generic_construct_infrastructure
+		relative_position_id=EDR_construction_effort_iii
+		x=-2 y=1 cost=7
+		prerequisite={focus=EDR_construction_effort_iii}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_construction_effort_iii"
+			two_random_infrastructure=yes
+			one_random_infrastructure=yes
 		}
 	}
-}
+	shared_focus={		#Extra Research Slot
+		id=EDR_extra_research_slot
+		icon=GFX_focus_research
+		relative_position_id=EDR_construction_effort_iii
+		x=0 y=1 cost=7
+		prerequisite={focus=EDR_construction_effort_iii}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_extra_research_slot"
+			add_research_slot=1
+		}
+	}
+	shared_focus={		#Secret Weapons
+		id=EDR_secret_weapons
+		icon=GFX_goal_generic_secret_weapon
+		relative_position_id=EDR_construction_effort_iii
+		x=2 y=1 cost=7
+		prerequisite={focus=EDR_construction_effort_iii}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_secret_weapons"
+			add_tech_bonus={
+				name=secret_bonus
+				bonus=1.0 uses=4
+				category=electronics
+				category=nuclear
+				category=rocketry
+			}
+		}
+	}
+	shared_focus={		#Extra Research Slot II
+		id=EDR_extra_research_slot_ii
+		icon=GFX_focus_research
+		relative_position_id=EDR_extra_research_slot
+		x=0 y=1 cost=7
+		prerequisite={focus=EDR_extra_research_slot}
+		available={num_of_factories>50}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_extra_research_slot_ii"
+			add_research_slot=1
+		}
+	}
+	shared_focus={		#Nuclear Effort
+		id=EDR_nuclear_effort
+		icon=GFX_focus_wonderweapons
+		relative_position_id=EDR_secret_weapons
+		x=0 y=1 cost=7
+		prerequisite={focus=EDR_secret_weapons}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_nuclear_effort"
+			add_tech_bonus={
+				name=nuclear_bonus
+				ahead_reduction=1
+				category=nuclear
+			}
+		}
+	}
+#Generic Equestrian Seperatist Tree
+	shared_focus={		#The Death of an Era
+		id=EDR_no_equestria
+		icon=GFX_goal_eqc_shelter_celestia
+		x=0 y=0 cost=1.43
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_no_equestria"
+		}
+	}
+	shared_focus={		#Seperation From Equestria
+		id=EDR_seperation
+		icon=GFX_goal_revolution_pony
+		relative_position_id=EDR_no_equestria
+		x=0 y=1 cost=1.43
+		prerequisite={focus=EDR_no_equestria}
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_seperation"
+		}
+	}
+	shared_focus={		#Keep Your Freinds Close...
+		id=EDR_allies_and_enemies
+		icon=GFX_goal_generic_pony_unity
+		relative_position_id=EDR_revolution04
+		x=0 y=1 cost=1.43
+		prerequisite={focus=EDR_revolution04}
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_allies_and_enemies"
+		}
+	}
+	shared_focus={		#The Winter Troubles
+		id=EDR_winter_07
+		icon=GFX_goal_water
+		relative_position_id=EDR_allies_and_enemies
+		x=0 y=1 cost=4
+		prerequisite={focus=EDR_allies_and_enemies}
+		ai_will_do={factor=4000}
+		select_effect={
+			set_temp_variable={aaaaa=1}
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_winter_07"
+		}
+	}

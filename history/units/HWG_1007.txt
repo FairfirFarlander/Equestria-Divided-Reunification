@@ -214,21 +214,21 @@ units={
 		start_equipment_factor=1
 		force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
 	}
-	division={		#Summerfield - Freeside
-		name="Riverwatch of Summerfield"
-		location=874
-		division_template="Whitegold Milita"
-		start_experience_factor=0.3
-		start_equipment_factor=1
-		force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
-	}
-	division={		#Freeside
-		name="Tradesguard of Freeside"
-		location=920
-		division_template="Whitegold Milita"
-		start_experience_factor=0.08
-		start_equipment_factor=0.6
-	}
+	#division={		#Summerfield - Freeside
+	#	name="Riverwatch of Summerfield"
+	#	location=874
+	#	division_template="Whitegold Militia"
+	#	start_experience_factor=0.3
+	#	start_equipment_factor=1
+	#	force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
+	#}
+	#division={		#Freeside
+	#	name="Tradesguard of Freeside"
+	#	location=920
+	#	division_template="Whitegold Militia"
+	#	start_experience_factor=0.08
+	#	start_equipment_factor=0.6
+	#}
 	division={		#Canterbury - Algonquin
 		name="Town Watch of Canterbury"
 		location=6996

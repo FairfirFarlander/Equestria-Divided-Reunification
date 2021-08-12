@@ -1,0 +1,954 @@
+	shared_focus={		#The War
+		id=HMS_the_war
+		icon=GFX_goal_generic_demand_territory
+		x=0 y=0 cost=2
+		ai_will_do={factor=20}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HMS_the_war"
+			add_political_power=250
+		}
+	}
+	shared_focus={		#Fight for the Cause
+		id=HMS_fully_mobolize_our_nation
+		icon=GFX_goal_generic_small_arms
+		relative_position_id=HMS_the_war
+		x=-2 y=1 cost=7
+		prerequisite={focus=HMS_the_war}
+		ai_will_do={factor=20}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HMS_fully_mobolize_our_nation"
+			add_manpower=2000000
+		}
+	}
+	shared_focus={		#Send the Slaves to the Factories
+		id=HMS_more_industry
+		icon=GFX_goal_generic_construct_civ_factory
+		relative_position_id=HMS_the_war
+		x=0 y=1 cost=7
+		prerequisite={focus=HMS_the_war}
+		ai_will_do={factor=20}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HMS_more_industry"
+			three_random_industrial_complex=yes
+			two_random_industrial_complex=yes
+		}
+	}
+	shared_focus={		#Magical Weapon Factories
+		id=HMS_more_weapons
+		icon=GFX_goal_generic_construct_mil_factory
+		relative_position_id=HMS_the_war
+		x=2 y=1 cost=7
+		prerequisite={focus=HMS_the_war}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HMS_more_weapons"
+			three_random_arms_factory=yes
+			two_random_arms_factory=yes
+		}
+	}
+	shared_focus={		#Calm Before The Storm
+		id=HMS_calm_before_the_storm
+		icon=GFX_goal_generic_alliance
+		relative_position_id=HMS_the_war
+		x=0 y=2 cost=7
+		prerequisite={focus=HMS_more_industry}
+		prerequisite={focus=HMS_more_weapons}
+		prerequisite={focus=HMS_fully_mobolize_our_nation}
+		ai_will_do={factor=20}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HMS_calm_before_the_storm"
+			add_war_support=0.25
+		}
+	}
+	shared_focus={		#Purge the Forest
+		id=HMS_war_to_everfree
+		icon=GFX_goal_generic_major_war
+		relative_position_id=HMS_calm_before_the_storm
+		x=-2 y=1 cost=7
+		prerequisite={focus=HMS_calm_before_the_storm}
+		available={any_neighbor_country={tag=HEF}}
+		bypass={
+			HEF={OR={
+				exists=no
+				has_war_with=ROOT
+				is_subject_of=ROOT
+			}}
+			DRG={OR={
+				exists=no
+				has_war_with=ROOT
+				is_subject_of=ROOT
+			}}
+		}
+		ai_will_do={factor=20}
+		will_lead_to_war_with=HEF
+		will_lead_to_war_with=DRG
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HMS_war_to_everfree"
+			every_state={limit={is_core_of=HEF}add_claim_by=HMS}
+			every_state={limit={is_core_of=DRG}add_claim_by=HMS}
+			create_wargoal={type=annex_everything target=HEF}
+			create_wargoal={type=annex_everything target=DRG}
+		}
+	}
+	shared_focus={		#Destroy the "Gem" of Manehattan
+		id=HMS_war_to_manehattan
+		icon=GFX_goal_generic_major_war
+		relative_position_id=HMS_calm_before_the_storm
+		x=0 y=1 cost=7
+		prerequisite={
+			focus=HMS_calm_before_the_storm
+		}
+		available={any_neighbor_country={tag=HWG}}
+		bypass={
+			HWG={OR={
+				exists=no
+				has_war_with=ROOT
+				is_subject_of=ROOT
+			}}
+		}
+		ai_will_do={factor=20}
+		will_lead_to_war_with=HWG
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HMS_war_to_manehattan"
+			every_state={limit={is_core_of=HWG}add_claim_by=HMS}
+			create_wargoal={type=annex_everything target=HWG}
+		}
+	}
+	shared_focus={		#Taking back Stalliongrad
+		id=HMS_war_against_stalliongrad
+		icon=GFX_goal_generic_major_war
+		relative_position_id=HMS_calm_before_the_storm
+		x=2 y=1 cost=7
+		prerequisite={focus=HMS_calm_before_the_storm}
+		available={any_neighbor_country={OR={tag=STL tag=STG}}}
+		bypass={
+			STG={OR={
+				exists=no
+				has_war_with=ROOT
+				is_subject_of=ROOT
+			}}
+			STL={OR={
+				exists=no
+				has_war_with=ROOT
+				is_subject_of=ROOT
+			}}
+		}
+		ai_will_do={factor=20}
+		will_lead_to_war_with=STG
+		will_lead_to_war_with=STL
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HMS_war_against_stalliongrad"
+			every_state={limit={is_core_of=STG}add_claim_by=HMS}every_state={limit={is_core_of=STL}add_claim_by=HMS}
+			create_wargoal={type=annex_everything target=STG}
+			create_wargoal={type=annex_everything target=STL}
+		}
+	}
+	shared_focus={		#Punish New Mareland's heresy
+		id=HMS_retake_new_mareland
+		icon=GFX_goal_generic_major_war
+		relative_position_id=HMS_calm_before_the_storm
+		x=-3 y=2 cost=7
+		prerequisite={
+			focus=HMS_war_to_everfree
+			focus=HMS_war_to_manehattan
+		}
+		available={
+			has_war=no
+			has_completed_focus=HMS_rebuild_the_equestria_navy
+			OR={
+				owns_state=7
+				DRG={OR={
+					exists=no
+					is_subject_of=ROOT
+					is_in_faction_with=ROOT
+				}}
+			}
+		}
+		bypass={
+			EQC={OR={
+				exists=no
+				has_war_with=ROOT
+				is_subject_of=ROOT
+			}}
+		}
+		ai_will_do={factor=20}
+		will_lead_to_war_with=EQC
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HMS_retake_new_mareland"
+			every_state={limit={is_core_of=EQC}add_claim_by=HMS}
+			create_wargoal={type=annex_everything target=EQC}
+		}
+	}
+	shared_focus={		#Destroy Our Most Hated Enemies
+		id=HMS_war_to_appleloosa
+		icon=GFX_goal_generic_major_war
+		relative_position_id=HMS_calm_before_the_storm
+		x=-1 y=2 cost=7
+		prerequisite={
+			focus=HMS_calm_before_the_storm
+			focus=HMS_war_to_everfree
+		}
+		available={any_neighbor_country={tag=HEB}}
+		bypass={tag=HEB}
+		ai_will_do={factor=20}
+		will_lead_to_war_with=HMS
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HMS_war_to_appleloosa"
+			every_state={limit={is_core_of=HEB}add_claim_by=HMS}
+			create_wargoal={type=annex_everything target=HEB}
+		}
+	}
+	shared_focus={		#Cloudsdale will burn
+		id=HMS_war_to_cloudsdale
+		icon=GFX_goal_generic_major_war
+		relative_position_id=HMS_calm_before_the_storm
+		x=1 y=2 cost=7
+		prerequisite={focus=HMS_calm_before_the_storm}
+		available={any_neighbor_country={tag=HSW}}
+		bypass={
+			HSW={OR={
+				exists=no
+				has_war_with=ROOT
+				is_subject_of=ROOT
+			}}
+		}
+		ai_will_do={factor=20}
+		will_lead_to_war_with=HSW
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HMS_war_to_cloudsdale"
+			every_state={limit={is_core_of=HSW}add_claim_by=HMS}
+			create_wargoal={type=annex_everything target=HSW}
+		}
+	}
+	shared_focus={		#War Against the Shadow King
+		id=HMS_war_against_the_crystal_empire
+		icon=GFX_goal_generic_major_war
+		relative_position_id=HMS_calm_before_the_storm
+		x=3 y=2 cost=7
+		prerequisite={
+			focus=HMS_calm_before_the_storm
+			focus=HMS_war_against_stalliongrad
+		}
+		available={any_neighbor_country={tag=CRY}}
+		bypass={
+			CRY={OR={
+				exists=no
+				has_war_with=ROOT
+				is_subject_of=ROOT
+			}}
+		}
+		ai_will_do={factor=20}
+		will_lead_to_war_with=CRY
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HMS_war_against_the_crystal_empire"
+			every_state={limit={is_core_of=CRY}add_claim_by=HMS}
+			create_wargoal={type=annex_everything target=CRY}
+		}
+	}
+	shared_focus={		#Unicorns Eat Corn
+		id=HMS_war_to_canterlot
+		icon=GFX_goal_generic_major_war
+		relative_position_id=HMS_calm_before_the_storm
+		x=-2 y=3 cost=7
+		prerequisite={
+			focus=HMS_war_to_appleloosa
+			focus=HMS_war_to_cloudsdale
+		}
+		available={any_neighbor_country={tag=HMS}}
+		bypass={
+			HMS={OR={
+				exists=no
+				has_war_with=ROOT
+				is_subject_of=ROOT
+			}}
+		}
+		ai_will_do={factor=20}
+		will_lead_to_war_with=HMS
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HMS_war_to_canterlot"
+			#every_state={limit={is_core_of=HMS}add_claim_by=HMS}
+			#create_wargoal={type=annex_everything target=HMS}
+		}
+	}
+	shared_focus={		#Burn These Lunatics at the Stake
+		id=HMS_war_against_laughter
+		icon=GFX_goal_generic_major_war
+		relative_position_id=HMS_calm_before_the_storm
+		x=0 y=3 cost=7
+		prerequisite={focus=HMS_war_to_everfree}
+		prerequisite={focus=HMS_war_to_manehattan}
+		prerequisite={focus=HMS_war_to_appleloosa}
+		prerequisite={focus=HMS_war_to_cloudsdale}
+		available={
+			HSW={exists=no}
+			HMS={exists=no}
+			HEF={exists=no}
+			HWG={exists=no}
+		}
+		bypass={CUL={exists=no}}
+		ai_will_do={factor=20}
+		will_lead_to_war_with=CUL
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HMS_war_against_laughter"
+			every_state={limit={is_core_of=CUL}add_claim_by=HMS}
+			create_wargoal={type=annex_everything target=CUL}
+		}
+	}
+	shared_focus={		#Assert Control Over the Crystal Dominion
+		id=HMS_assert_control_over_the_crystal_dominion
+		icon=GFX_goal_generic_forceful_treaty
+		relative_position_id=HMS_calm_before_the_storm
+		x=2 y=3 cost=7
+		prerequisite={focus=HMS_war_against_the_crystal_empire}
+		available={AND={
+			CRY={OR={
+				exists=no
+				is_subject_of=ROOT
+			}}
+			HSW={exists=no}
+			HEB={exists=no}
+			HWG={exists=no}
+			CUL={exists=no}
+		}}
+		ai_will_do={factor=20}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HMS_assert_control_over_the_crystal_dominion"
+			every_state={limit={is_core_of=CRY}add_claim_by=HMS}
+			create_wargoal={type=annex_everything target=CRY}
+		}
+	}
+	shared_focus={		#Equestria Reunited
+		id=HMS_equestria_reunited
+		icon=GFX_goal_generic_attack_allies
+		relative_position_id=HMS_calm_before_the_storm
+		x=0 y=4 cost=4
+		prerequisite={focus=HMS_war_against_laughter}
+		ai_will_do={factor=20}
+		available={
+			owns_state=3
+			owns_state=5
+			owns_state=21
+			owns_state=75
+			owns_state=68
+			owns_state=70
+			owns_state=344
+			owns_state=153
+			HEF={exists=no}
+			HEB={exists=no}
+			HSW={exists=no}
+			HWG={exists=no}
+			CUL={exists=no}
+			CRY={OR={
+				exists=no
+				is_subject_of=ROOT
+			}}
+			STG={OR={
+				exists=no
+				is_subject_of=ROOT
+			}}
+			STL={OR={
+				exists=no
+				is_subject_of=ROOT
+			}}
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HMS_equestria_reunited"
+			create_faction=Equestrian_Hegemony
+			set_cosmetic_tag=UNICORN
+		}
+	}
+	shared_focus={		#Take Care of the Changeling Threat
+		id=HMS_take_care_of_the_changeling_threat
+		icon=GFX_goal_generic_CAS
+		relative_position_id=HMS_equestria_reunited
+		x=-3 y=1 cost=7
+		prerequisite={focus=HMS_equestria_reunited}
+		mutually_exclusive={focus=HMS_let_them_come}
+		available={any_neighbor_country={tag=CHN}}
+		bypass={
+			CHN={OR={
+				exists=no
+				has_war_with=ROOT
+				is_subject_of=ROOT
+			}}
+		}
+		ai_will_do={factor=10}
+		will_lead_to_war_with=CHN
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HMS_take_care_of_the_changeling_threat"
+			create_wargoal={type=annex_everything target=CHN}
+		}
+	}
+	shared_focus={		#Let Them Come
+		id=HMS_let_them_come
+		icon=GFX_goal_generic_fortify_city
+		relative_position_id=HMS_equestria_reunited
+		x=-1 y=1 cost=7
+		prerequisite={focus=HMS_equestria_reunited}
+		mutually_exclusive={focus=HMS_take_care_of_the_changeling_threat}
+		available={any_neighbor_country={tag=CHN tag=CNN}}
+		bypass={
+			CHN={OR={
+				exists=no
+				is_subject_of=ROOT
+				is_in_faction_with=ROOT
+			}}
+			CCN={OR={
+				exists=no
+				is_subject_of=ROOT
+				is_in_faction_with=ROOT
+			}}
+		}
+		ai_will_do={factor=10}
+		will_lead_to_war_with=CHN
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HMS_let_them_come"
+			add_ideas=deterrence
+		}
+	}
+	shared_focus={		#Focus for Retake control
+		id=HMS_retake_control
+		icon=GFX_focus_hol_the_foundations_of_defense
+		relative_position_id=HMS_equestria_reunited
+		x=3 y=1 cost=7
+		prerequisite={focus=HMS_equestria_reunited}
+		ai_will_do={factor=10}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HMS_retake_control"
+			every_state={limit={is_core_of=HMS} add_core_of=HMS}
+			every_state={limit={is_core_of=HEF} add_core_of=HMS}
+			every_state={limit={is_core_of=HWG} add_core_of=HMS}
+			every_state={limit={is_core_of=HMS} add_core_of=HMS}
+			every_state={limit={is_core_of=HSW} add_core_of=HMS}
+			every_state={limit={is_core_of=CUL} add_core_of=HMS}
+			every_state={limit={is_core_of=STG} add_core_of=HMS}
+			every_state={limit={is_core_of=STL} add_core_of=HMS}
+		}
+	}
+	shared_focus={		#Focus for Transform
+		id=HMS_modern_society
+		icon=GFX_goal_generic_construct_civ_factory
+		relative_position_id=HMS_retake_control		#Temporarily
+		x=0 y=1 cost=1
+		prerequisite={focus=HMS_retake_control}
+		bypass={has_idea=modern_society}
+		available={num_of_factories>40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HMS_modern_society"
+			add_ideas=agrarian_society
+		}
+	}
+	shared_focus={		#Army Effort
+		id=HMS_army_effort
+		icon=GFX_goal_generic_allies_build_infantry
+		relative_position_id=HMS_the_war
+		x=7 y=0 cost=2
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HMS_army_effort"
+			add_tech_bonus={
+				name=land_doc_bonus
+				bonus=1.0 uses=1
+				category=land_doctrine
+			}
+		}
+	}
+	shared_focus={		#Equipment Effort
+		id=HMS_equipment_effort
+		icon=GFX_goal_generic_small_arms
+		relative_position_id=HMS_army_effort
+		x=-2 y=1 cost=7
+		prerequisite={focus=HMS_army_effort}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus HMS_equipment_effort"
+			add_tech_bonus={
+				name=infantry_artillery_bonus
+				bonus=1.0 uses=1
+				category=infantry_weapons
+				category=artillery
+			}
+		}
+	}
+	shared_focus={		#Doctrine Effort
+		id=HMS_doctrine_effort
+		icon=GFX_goal_generic_army_doctrines
+		relative_position_id=HMS_army_effort
+		x=0 y=1 cost=7
+		prerequisite={focus=HMS_army_effort}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus doctrine_effort"
+			army_experience=5
+			add_tech_bonus={
+				name=land_doc_bonus
+				bonus=0.66 uses=1
+				category=land_doctrine
+			}
+		}
+	}
+	shared_focus={		#Motorization Effort
+		id=HMS_motorization_effort
+		icon=GFX_goal_generic_army_motorized
+		relative_position_id=HMS_army_effort
+		x=2 y=1 cost=7
+		prerequisite={focus=HMS_army_effort}
+		bypass={has_tech=motorised_infantry}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus HMS_motorization_effort"
+			add_tech_bonus={
+				name=motorized_bonus
+				bonus=0.66
+				technology=motorised_infantry
+			}
+		}
+	}
+	shared_focus={		#Equipment Effort II
+		id=HMS_equipment_effort_ii
+		icon=GFX_goal_generic_army_artillery
+		relative_position_id=HMS_equipment_effort
+		x=0 y=1 cost=7
+		prerequisite={focus=HMS_equipment_effort}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus HMS_equipment_effort_2"
+			add_tech_bonus={
+				name=infantry_artillery_bonus
+				bonus=0.66 uses=1
+				category=infantry_weapons
+				category=artillery
+			}
+		}
+	}
+	shared_focus={		#Doctrine Effort II
+		id=HMS_doctrine_effort_ii
+		icon=GFX_goal_generic_army_doctrines
+		relative_position_id=HMS_doctrine_effort
+		x=0 y=1 cost=7
+		prerequisite={focus=HMS_doctrine_effort}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus doctrine_effort_2"
+			army_experience=5
+			add_tech_bonus={
+				name=land_doc_bonus
+				bonus=1.0 uses=1
+				category=land_doctrine
+			}
+		}
+	}
+	shared_focus={		#Motorization Effort II
+		id=HMS_motorization_effort_ii
+		icon=GFX_goal_generic_build_tank
+		relative_position_id=HMS_motorization_effort
+		x=0 y=1 cost=7
+		prerequisite={focus=HMS_motorization_effort}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus HMS_motorization_effort_2"
+			add_tech_bonus={
+				name=motorized_bonus
+				ahead_reduction=2 uses=1
+				category=motorized_equipment
+			}
+		}
+	}
+	shared_focus={		#Equipment Effort III
+		id=HMS_equipment_effort_iii
+		icon=GFX_goal_generic_army_artillery2
+		relative_position_id=HMS_equipment_effort_ii
+		x=0 y=1 cost=7
+		prerequisite={focus=HMS_equipment_effort_ii}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus HMS_equipment_effort_3"
+			add_tech_bonus={
+				name=infantry_artillery_bonus
+				ahead_reduction=2 uses=1
+				category=infantry_weapons
+				category=artillery
+			}
+		}
+	}
+	shared_focus={		#Doctrine Effort II
+		id=HMS_doctrine_effort_iii
+		icon=GFX_goal_generic_army_doctrines
+		relative_position_id=HMS_doctrine_effort_ii
+		x=0 y=1 cost=7
+		prerequisite={focus=HMS_doctrine_effort_ii}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus doctrine_effort_3"
+			army_experience=5
+			add_tech_bonus={
+				name=land_doc_bonus
+				bonus=1.0 uses=1
+				category=land_doctrine
+			}
+		}
+	}
+	shared_focus={		#Motorization Effort III
+		id=HMS_motorization_effort_iii
+		icon=GFX_goal_generic_army_tanks
+		relative_position_id=HMS_motorization_effort_ii
+		x=0 y=1 cost=7
+		prerequisite={focus=HMS_motorization_effort_ii}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus HMS_motorization_effort_3"
+			add_tech_bonus={
+				name=armor_bonus
+				bonus=0.66 uses=2
+				category=armor
+			}
+		}
+	}
+	shared_focus={		#Special Forces
+		id=HMS_special_forces
+		icon=GFX_goal_generic_special_forces
+		relative_position_id=HMS_doctrine_effort_iii
+		x=0 y=1 cost=7
+		prerequisite={
+			focus=HMS_equipment_effort_iii
+			focus=HMS_doctrine_effort_iii
+			focus=HMS_motorization_effort_iii
+		}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus HMS_motorization_effort_3"
+			add_tech_bonus={
+				name=special_forces_bonus
+				bonus=1 uses=1
+				category=special_forces_tech
+			}
+		}
+	}
+	shared_focus={		#Aviation Effort
+		id=HMS_aviation_effort
+		icon=GFX_goal_generic_build_airforce
+		relative_position_id=HMS_army_effort
+		x=4 y=0 cost=7
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus HMS_aviation_effort"
+			air_experience=85
+			one_airfield=yes
+			add_tech_bonus={
+				name= air_doc_bonus
+				bonus=1.0 uses=1
+				category=air_doctrine
+			}
+		}
+	}
+	shared_focus={		#Aviation Effort II
+		id=HMS_aviation_effort_ii
+		icon=GFX_goal_generic_air_fighter
+		relative_position_id=HMS_aviation_effort
+		x=0 y=1 cost=7
+		prerequisite={focus=HMS_aviation_effort}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus HMS_aviation_effort_ii"
+			add_tech_bonus={
+				name=fighter_bonus
+				bonus=1.0 uses=2
+				technology=early_fighter
+				technology=fighter1
+				technology=fighter2
+				technology=fighter3
+				technology=heavy_fighter1
+				technology=heavy_fighter2
+				technology=heavy_fighter3
+			}
+		}
+	}
+	shared_focus={		#Aviation Effort III
+		id=HMS_aviation_effort_iii
+		icon=GFX_goal_generic_air_doctrine
+		relative_position_id=HMS_aviation_effort_ii
+		x=0 y=1 cost=7
+		prerequisite={focus=HMS_aviation_effort_ii}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus HMS_aviation_effort_iii"
+			air_experience=85
+			add_tech_bonus={
+				name= air_doc_bonus
+				bonus=1.0 uses=1
+				category=air_doctrine
+			}
+		}
+	}
+	shared_focus={		#Rocket Effort
+		id=HMS_rocket_effort
+		icon=GFX_focus_rocketry
+		relative_position_id=HMS_aviation_effort_iii
+		x=0 y=1 cost=7
+		prerequisite={focus=HMS_aviation_effort_iii}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus HMS_rocket_effort"
+			add_tech_bonus={
+				name=jet_rocket_bonus
+				ahead_reduction=1 uses=2
+				category=rocketry
+				category=jet_technology
+			}
+		}
+	}
+	shared_focus={		#Naval Focus
+		id=HMS_naval_focus
+		icon=GFX_goal_generic_construct_naval_dockyard
+		relative_position_id=HMS_aviation_effort
+		x=3 y=0 cost=7
+		available={any_controlled_state_is_coastal=yes}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus HMS_naval_focus"
+			two_random_dockyards=yes
+			one_random_dockyard=yes
+		}
+	}
+	shared_focus={		#Rebuild the Equestrian Navy
+		id=HMS_rebuild_the_equestria_navy
+		icon=GFX_goal_generic_navy_doctrines_tactics
+		relative_position_id=HMS_naval_focus
+		x=0 y=1 cost=7
+		prerequisite={focus=HMS_naval_focus}
+		available={any_controlled_state_is_coastal=yes}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus HMS_naval_focus"
+			add_tech_bonus={
+				name=fleet_in_being_bonus
+				bonus=1.0 uses=2
+				category=fleet_in_being_tree
+			}
+		}
+	}
+	shared_focus={		#Submarine Effort
+		id=HMS_submarine_effort
+		icon=GFX_goal_generic_navy_submarine
+		relative_position_id=HMS_rebuild_the_equestria_navy
+		x=-1 y=1 cost=7
+		prerequisite={focus=HMS_rebuild_the_equestria_navy}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus HMS_submarine_effort"
+			add_tech_bonus={
+				name=ss_bonus
+				bonus=1.0 ahead_reduction=2 uses=1
+				category=ss_tech
+			}
+		}
+	}
+	shared_focus={		#Cruiser Effort
+		id=HMS_cruiser_effort
+		icon=GFX_goal_generic_navy_cruiser
+		relative_position_id=HMS_rebuild_the_equestria_navy
+		x=1 y=1 cost=7
+		prerequisite={focus=HMS_rebuild_the_equestria_navy}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus HMS_cruiser_effort"
+			add_tech_bonus={
+				name=cr_bonus
+				bonus=1.0 ahead_reduction=2 uses=1
+				category=cl_tech
+				category=ca_tech
+			}
+		}
+	}
+	shared_focus={		#Destroyer Effort
+		id=HMS_destroyer_effort
+		icon=GFX_goal_generic_wolf_pack
+		relative_position_id=HMS_submarine_effort
+		x=0 y=1 cost=7
+		prerequisite={focus=HMS_submarine_effort}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus HMS_destroyer_effort"
+			add_tech_bonus={
+				name=dd_bonus
+				bonus=1.0 ahead_reduction=2 uses=1
+				category=dd_tech
+			}
+		}
+	}
+	shared_focus={		#Battleship Effort
+		id=HMS_battleship_effort
+		icon=GFX_goal_generic_navy_battleship
+		relative_position_id=HMS_cruiser_effort
+		x=0 y=1 cost=7
+		prerequisite={focus=HMS_cruiser_effort}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus HMS_battleship_effort"
+			add_tech_bonus={
+				name=capital_ships_bonus
+				bonus=1.0 ahead_reduction=2 uses=1
+				category=bc_tech
+				category=bb_tech
+				category=cv_tech
+			}
+		}
+	}
+	shared_focus={		#Startup Industrial Effort
+		id=HMS_startup_industrial_effort
+		icon=GFX_goal_generic_production
+		relative_position_id=HMS_the_war
+		x=-6 y=0 cost=7
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HMS_startup_industrial_effort"
+			add_tech_bonus={
+				name=industrial_bonus
+				bonus=1.0 uses=1
+				category=industry
+			}
+		}
+	}
+	shared_focus={		#Construction Effort
+		id=HMS_construction_effort
+		icon=GFX_goal_generic_construct_civ_factory
+		relative_position_id=HMS_startup_industrial_effort
+		x=-1 y=1 cost=7
+		prerequisite={focus=HMS_startup_industrial_effort}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HMS_construction_effort"
+			two_random_industrial_complex=yes
+		}
+	}
+	shared_focus={		#Armament Effort
+		id=HMS_armament_effort
+		icon=GFX_goal_generic_construct_mil_factory
+		relative_position_id=HMS_startup_industrial_effort
+		x=1 y=1 cost=7
+		prerequisite={focus=HMS_startup_industrial_effort}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HMS_armament_effort"
+			one_random_arms_factory=yes
+		}
+	}
+	shared_focus={		#Construction Effort II
+		id=HMS_construction_effort_ii
+		icon=GFX_goal_generic_construct_civ_factory
+		relative_position_id=HMS_construction_effort
+		x=0 y=1 cost=7
+		prerequisite={focus=HMS_construction_effort}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HMS_construction_effort_ii"
+			two_random_industrial_complex=yes
+		}
+	}
+	shared_focus={		#Armament Effort II
+		id=HMS_armament_effort_ii
+		icon=GFX_goal_generic_construct_mil_factory
+		relative_position_id=HMS_armament_effort
+		x=0 y=1 cost=7
+		prerequisite={focus=HMS_armament_effort}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HMS_construction_effort_ii"
+			two_random_arms_factory=yes
+		}
+	}
+	shared_focus={		#Construction Effort III
+		id=HMS_construction_effort_iii
+		icon=GFX_goal_generic_construct_civ_factory
+		relative_position_id=HMS_construction_effort_ii
+		x=0 y=1 cost=7
+		prerequisite={focus=HMS_construction_effort_ii}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HMS_construction_effort_iii"
+			three_random_arms_factory=yes
+		}
+	}
+	shared_focus={		#Armament Effort III
+		id=HMS_armament_effort_iii
+		icon=GFX_goal_generic_construct_mil_factory
+		relative_position_id=HMS_armament_effort_ii
+		x=0 y=1 cost=7
+		prerequisite={focus=HMS_armament_effort_ii}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HMS_armament_effort_iii"
+			three_random_arms_factory=yes
+		}
+	}
+	shared_focus={		#Infrastructure Effort
+		id=HMS_infrastructure_effort
+		icon=GFX_goal_generic_construct_infrastructure
+		relative_position_id=HMS_construction_effort_iii
+		x=-2 y=1 cost=7
+		prerequisite={focus=HMS_construction_effort_iii}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HMS_construction_effort_iii"
+			two_random_infrastructure=yes
+			one_random_infrastructure=yes
+		}
+	}
+	shared_focus={		#Extra Research Slot
+		id=HMS_extra_research_slot
+		icon=GFX_focus_research
+		relative_position_id=HMS_construction_effort_iii
+		x=0 y=1 cost=7
+		prerequisite={focus=HMS_construction_effort_iii}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HMS_extra_research_slot"
+			add_research_slot=1
+		}
+	}
+	shared_focus={		#Secret Weapons
+		id=HMS_secret_weapons
+		icon=GFX_goal_generic_secret_weapon
+		relative_position_id=HMS_construction_effort_iii
+		x=2 y=1 cost=7
+		prerequisite={focus=HMS_construction_effort_iii}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HMS_secret_weapons"
+			add_tech_bonus={
+				name=secret_bonus
+				bonus=1.0 uses=4
+				category=electronics
+				category=nuclear
+				category=rocketry
+			}
+		}
+	}
+	shared_focus={		#Extra Research Slot II
+		id=HMS_extra_research_slot_ii
+		icon=GFX_focus_research
+		relative_position_id=HMS_extra_research_slot
+		x=0 y=1 cost=7
+		prerequisite={focus=HMS_extra_research_slot}
+		available={num_of_factories>50}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HMS_extra_research_slot_ii"
+			add_research_slot=1
+		}
+	}
+	shared_focus={		#Nuclear Effort
+		id=HMS_nuclear_effort
+		icon=GFX_focus_wonderweapons
+		relative_position_id=HMS_secret_weapons
+		x=0 y=1 cost=7
+		prerequisite={focus=HMS_secret_weapons}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HMS_nuclear_effort"
+			add_tech_bonus={
+				name=nuclear_bonus
+				ahead_reduction=1
+				category=nuclear
+			}
+		}
+	}

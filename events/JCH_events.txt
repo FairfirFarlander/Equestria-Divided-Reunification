@@ -1,22 +1,48 @@
 add_namespace=JCHact1
 	country_event={
-		id=JCHact1.1a	is_triggered_only=yes
-		immediate={log="[GetDateText]: [Root.GetName]: event JCHact1.1a"}
-		title=JCHact1.1a.t	desc=JCHact1.1a.d
+		id=JCHact1.01	is_triggered_only=yes
+		immediate={log="[GetDateText]: [Root.GetName]: event JCHact1.01"}
+		title=JCHact1.01.t	desc=JCHact1.01.d
 		#picture=
-		option={name=JCHact1.1a.a}
+		option={name=JCHact01.01.a}
 	}
 	country_event={
-		id=JCHact1.1b	is_triggered_only=yes
-		immediate={log="[GetDateText]: [Root.GetName]: event JCHact1.1b"}
-		title=JCHact1.1b.t	desc=JCHact1.1b.d
+		id=JCHact1.02	is_triggered_only=yes
+		immediate={log="[GetDateText]: [Root.GetName]: event JCHact1.02"}
+		title=JCHact1.02.t	desc=JCHact1.02.d
 		#picture=
-		option={name=JCHact1.1b.a}
+		option={name=JCHact1.02.a}
 	}
 	country_event={
-		id=JCHact1.1c	is_triggered_only=yes
-		immediate={log="[GetDateText]: [Root.GetName]: event JCHact1.1c"}
-		title=JCHact1.1c.t	desc=JCHact1.1c.d
+		id=JCHact1.03	is_triggered_only=yes
+		immediate={log="[GetDateText]: [Root.GetName]: event JCHact1.03"}
+		title=JCHact1.03.t	desc=JCHact1.03.d
 		#picture=
-		option={name=JCHact1.1c.a}
+		option={name=JCHact1.03.a}
+	}
+	country_event={
+		id=JCHact1.04	is_triggered_only=yes
+		immediate={log="[GetDateText]: [Root.GetName]: event JCHact1.04"}
+		title=JCHact1.04.t	desc=JCHact1.04.d
+		#picture=
+		option={name=JCHact1.04.a}
+		option={name=JCHact1.04.b
+			set_country_flag=JCH_early_construction
+			add_stability=-0.06
+			add_political_power=-13
+		}
+	}
+	country_event={
+		id=JCHact1.05	is_triggered_only=yes
+		immediate={log="[GetDateText]: [Root.GetName]: event JCHact1.05"}
+		title=JCHact1.05.t	desc=JCHact1.05.d
+		#picture=
+		option={name=JCHact1.05.a}
+	}
+	country_event={
+		id=JCHact1.06	is_triggered_only=yes
+		immediate={log="[GetDateText]: [Root.GetName]: event JCHact1.06"}
+		title=JCHact1.06.t	desc=JCHact1.06.d
+		#picture=
+		option={name=JCHact1.06.a}
 	}

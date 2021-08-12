@@ -41,7 +41,7 @@ set_politics={
 create_country_leader={
 	name="Rockefeller"	#desc=""
 	expire="1965.1.1"	#picture=""
-	ideology=fascism	#female=yes
+	ideology=corporatocracy	#female=yes
 	traits={}
 }
 create_country_leader={

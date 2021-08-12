@@ -19,7 +19,7 @@ ideas={
 				dig_in_speed = 1
 			}
 		}
-		JCH_ember_founded={	#Ember Hive Completed
+		JCH_ember_expanded={	#The Fruit of Our Embers
 			allowed={always=no}
 			#picture=
 			removal_cost=-1

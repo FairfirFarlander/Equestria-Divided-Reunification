@@ -1,0 +1,19 @@
+focus_tree={
+	id=CUL_generic country={factor=0 modifier={add=10 tag=CUL}}
+	continuous_focus_position={x=1750 y=800}
+	default=no
+	shared_focus=EDR_startup_industrial_effort
+	shared_focus=EDR_modernization
+	shared_focus=EDR_establish_navy
+	shared_focus=EDR_establish_airforce
+}
+focus_tree={
+	id=CUL country={factor=0 modifier={add=10 tag=CUL}}
+	continuous_focus_position={x=1750 y=800}
+	default=no
+	shared_focus=CUL_the_war
+	shared_focus=EDR_startup_industrial_effort
+	shared_focus=EDR_modernization
+	shared_focus=EDR_establish_navy
+	shared_focus=EDR_establish_airforce
+}

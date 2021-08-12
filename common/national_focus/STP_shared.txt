@@ -1,0 +1,265 @@
+#Military Tree
+	shared_focus={		#Inspect the Streletskoye
+		id=STP_inspect_streltsy
+		icon=GFX_goal_derpy_conscription
+		x=-10 y=0 cost=4
+		#prerequisite={focus=STP_winter_07}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus STP_inspect_streltsy"
+			add_political_power=30
+		}
+	}
+	shared_focus={		#Pilfer Abandoned Stalliongradian Armouries
+		id=STP_stallion_armoury
+		icon=GFX_goal_van_rifles
+		relative_position_id=STP_inspect_streltsy
+		x=-7 y=1 cost=4
+		prerequisite={focus=STP_inspect_streltsy}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus STP_stallion_armoury"
+			add_equipment_to_stockpile={type=melee_equipment_1 amount=400 producer=STG}
+		}
+	}
+	shared_focus={		#Moon and Star Military Attaches
+		id=STP_moonstar_assistance
+		icon=GFX_goal_NLR_sun_and_moon
+		relative_position_id=STP_inspect_streltsy
+		x=-4 y=1 cost=4
+		prerequisite={focus=STP_inspect_streltsy}
+		mutually_exclusive={focus=STP_prussian_assistance}
+		mutually_exclusive={focus=STP_coastal_assistance}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus STP_moonstar_assistance"
+			increase_HMS_influence=yes
+			army_experience=10
+		}
+	}
+	shared_focus={		#Griffonian Military Attaches
+		id=STP_prussian_assistance
+		icon=GFX_goal_GRI_army_expansion
+		relative_position_id=STP_inspect_streltsy
+		x=0 y=1 cost=4
+		prerequisite={focus=STP_inspect_streltsy}
+		mutually_exclusive={focus=STP_moonstar_assistance}
+		mutually_exclusive={focus=STP_coastal_assistance}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus STP_prussian_assistance"
+			army_experience=10
+		}
+	}
+	shared_focus={		#Coastal Military Attaches
+		id=STP_coastal_assistance
+		icon=GFX_goal_tfv_strengthen_commonwealth_ties_pony
+		relative_position_id=STP_inspect_streltsy
+		x=4 y=1 cost=4
+		prerequisite={focus=STP_inspect_streltsy}
+		mutually_exclusive={focus=STP_moonstar_assistance}
+		mutually_exclusive={focus=STP_prussian_assistance}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus STP_coastal_assistance"
+			army_experience=10
+		}
+	}
+	shared_focus={		#Reward the Loyalists
+		id=STP_reward_loyalists
+		icon=GFX_goal_generic_land_reform
+		relative_position_id=STP_inspect_streltsy
+		x=7 y=1 cost=4
+		prerequisite={focus=STP_inspect_streltsy}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus STP_prussian_assistance"
+			effect_tooltip={
+				swap_ideas={remove_idea=STP_streltsy_rowdy add_idea=STP_streltsy_tame}
+			}
+		}
+	}
+	shared_focus={		#Moon and Star Shield Training
+		id=STP_moonstar_shield
+		icon=GFX_goal_generic_magic
+		relative_position_id=STP_moonstar_assistance
+		x=-1 y=1 cost=4
+		prerequisite={focus=STP_moonstar_assistance}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus STP_moonstar_shield"
+			increase_HMS_influence=yes
+			set_technology={tech_unicorn_ms=1}
+		}
+	}
+	shared_focus={		#Moon and Star Fire Training
+		id=STP_moonstar_fireball
+		icon=GFX_goal_sunshine
+		relative_position_id=STP_moonstar_assistance
+		x=1 y=1 cost=4
+		prerequisite={focus=STP_moonstar_assistance}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus STP_moonstar_fireball"
+			increase_HMS_influence=yes
+			set_technology={tech_unicorn_ms2=1}
+		}
+	}
+	shared_focus={		#Spread Prussian Nationalism
+		id=STP_prussian_nationalism
+		icon=GFX_goal_finnish_spirit
+		relative_position_id=STP_prussian_assistance
+		x=-1 y=1 cost=4
+		prerequisite={focus=STP_prussian_assistance}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus STP_moonstar_fireball"
+			add_war_support=0.5
+		}
+	}
+	shared_focus={		#Request Expeditionary Forces
+		id=STP_prussian_expeditionaries
+		icon=GFX_goal_griffon_levy
+		relative_position_id=STP_prussian_assistance
+		x=1 y=1 cost=4
+		prerequisite={focus=STP_prussian_assistance}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus STP_prussian_expeditionaries"
+			hidden_effect={load_oob="STP_expeditionaries"}
+		}
+	}
+	shared_focus={		#Poach Local Swashbucklers
+		id=STP_coastal_mariners
+		icon=GFX_goal_generic_amphibious_assault
+		relative_position_id=STP_coastal_assistance
+		x=-1 y=1 cost=4
+		prerequisite={focus=STP_coastal_assistance}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus STP_coastal_mariners"
+			set_technology={marines=1}
+			hidden_effect={load_oob="STP_swashbucklers"}
+		}
+	}
+	shared_focus={		#Import WhiteGold Airships
+		id=STP_coastal_airships
+		icon=GFX_goal_generic_air_fighter2
+		relative_position_id=STP_coastal_assistance
+		x=1 y=1 cost=4
+		prerequisite={focus=STP_coastal_assistance}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus STP_coastal_airships"
+			add_equipment_to_stockpile={type=fighter_equipment_0 amount=4 producer=EQS}
+		}
+	}
+	shared_focus={		#Receive Moon and Star Inquisitors
+		id=STP_moonstar_inquisitors
+		icon=GFX_goal_eqs_magic_horn
+		relative_position_id=STP_moonstar_assistance
+		x=0 y=2 cost=4
+		prerequisite={focus=STP_moonstar_shield}
+		prerequisite={focus=STP_moonstar_fireball}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus STP_moonstar_inquisitors"
+			increase_HMS_influence=yes
+			hidden_effect={load_oob="STP_inquisitorial"}
+		}
+	}
+	shared_focus={		#Buy Infantry Weapons
+		id=STP_infantry_weapons
+		icon=GFX_goal_arms_dealing
+		relative_position_id=STP_inspect_streltsy
+		x=-2 y=3 cost=4
+		prerequisite={focus=STP_moonstar_assistance focus=STP_prussian_assistance}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus STP_infantry_weapons"
+			if={limit={
+				has_completed_focus=STP_moonstar_assistance}
+				add_equipment_to_stockpile={type=melee_equipment_0 amount=800 producer=HMS}
+				increase_HMS_influence=yes}
+			else_if={limit={
+				has_completed_focus=STP_prussian_assistance}
+				add_equipment_to_stockpile={type=melee_equipment_1 amount=200 producer=GRI}
+				decrease_HMS_influence=yes}
+		}
+	}
+	shared_focus={		#When the Winged Hussars Arrived
+		id=STP_prussian_knights
+		icon=GFX_goal_griffon_knights
+		relative_position_id=STP_prussian_assistance
+		x=0 y=2 cost=4
+		prerequisite={focus=STP_prussian_nationalism}
+		prerequisite={focus=STP_prussian_expeditionaries}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus STP_prussian_knights"
+			set_technology={tech_knights=1}
+			hidden_effect={load_oob="STP_knights"}
+		}
+	}
+	shared_focus={		#Buy Artillery Weapons
+		id=STP_artillery_weapons
+		icon=GFX_goal_artillery
+		relative_position_id=STP_inspect_streltsy
+		x=2 y=3 cost=4
+		prerequisite={focus=STP_prussian_assistance focus=STP_coastal_assistance}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus STP_artillery_weapons"
+			if={limit={
+				has_completed_focus=STP_prussian_assistance}
+				add_equipment_to_stockpile={type=artillery_equipment_0 amount=12 producer=GRI}
+				decrease_HMS_influence=yes}
+			else_if={limit={
+				has_completed_focus=STP_coastal_assistance}
+				add_equipment_to_stockpile={type=artillery_equipment_0 amount=36 producer=HWG}
+				decrease_HMS_influence=yes}
+		}
+	}
+	shared_focus={		#The Enigmatic Wanderer
+		id=STP_coastal_alamane
+		icon=GFX_goal_generic_pony_pegasus
+		relative_position_id=STP_coastal_assistance
+		x=0 y=2 cost=4
+		prerequisite={focus=STP_coastal_mariners}
+		prerequisite={focus=STP_coastal_airships}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus STP_artillery_weapons"
+			create_corps_commander={
+				name="Sir Gallop Bray"	#id=	#desc=""
+				female=yes	#picture=""
+				traits={trait_reckless brilliant_strategist pony_race_trait}
+				skill=3	attack_skill=3	defense_skill=2
+				planning_skill=1	logistics_skill=2
+			}
+		}
+	}
+#Naval Tree
+	shared_focus={		#Inspect the Navy
+		id=STP_inspect_navy
+		icon=GFX_goal_generic_build_navy
+		x=-21 y=0 cost=4
+		#prerequisite={focus=STP_inspect_streltsy}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus STP_inspect_navy"
+			navy_experience=25
+		}
+	}
+	shared_focus={		#Nova Griffonian Naval Attaches
+		id=STP_novan_navy_attaches
+		icon=GFX_goal_navy_hat_ships
+		relative_position_id=STP_inspect_navy
+		x=2 y=2 cost=4
+		prerequisite={focus=STP_inspect_navy focus=STP_coastal_assistance}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus STP_novan_navy_attaches"
+			army_experience=10
+		}
+	}
