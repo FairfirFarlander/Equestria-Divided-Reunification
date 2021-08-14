@@ -4,7 +4,7 @@ focus_tree={
 	default=no
 	shared_focus=EDR_startup_industrial_effort
 	shared_focus=EDR_modernization
-	shared_focus=EDR_establish_navy
+	shared_focus=EDR_N01
 	shared_focus=EDR_establish_airforce
 }
 focus_tree={
@@ -14,6 +14,6 @@ focus_tree={
 	shared_focus=HMS_the_war
 	shared_focus=EDR_startup_industrial_effort
 	shared_focus=EDR_modernization
-	shared_focus=EDR_establish_navy
+	shared_focus=EDR_N01
 	shared_focus=EDR_establish_airforce
 }

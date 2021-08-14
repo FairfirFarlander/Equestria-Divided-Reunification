@@ -6,7 +6,7 @@ focus_tree={
 	shared_focus=EDR_startup_industrial_effort
 	shared_focus=EDR_modernization
 	shared_focus=EDR_establish_airforce
-	shared_focus=EDR_establish_navy
+	shared_focus=EDR_N01
 }
 focus_tree={
 	id=JCH_starter country={factor=0 modifier={add=20 tag=JCH}}
@@ -14,6 +14,6 @@ focus_tree={
 	default=no
 	shared_focus=JCH_S01
 	shared_focus=JCH_ember_earthworks
-	shared_focus=JCH_A01
+	shared_focus=JCH_L01
 	shared_focus=JCH_D01
 }

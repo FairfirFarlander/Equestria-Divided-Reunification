@@ -22,14 +22,14 @@ state={
 		#SHARED BUILDINGS
 			arms_factory=0
 			industrial_complex=0
-			#dockyard=0
+			dockyard=1	#Testing only. Set to 0 after testing.
 			synthetic_refinery=0
 			fuel_silo=0
 			rocket_site=0
 			nuclear_reactor=0
 		#PROVINCE BUILDINGS	
 			336={
-				naval_base=0	#1 For Focus JCH
+				naval_base=1	#1 For Focus JCH
 				#bunker=0
 				#coastal_bunker=0
 			}
