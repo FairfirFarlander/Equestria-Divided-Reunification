@@ -1,0 +1,90 @@
+EDR_N01_reward={
+	if={limit={has_dlc="Man the Guns"}
+		custom_effect_tooltip=EDR_N01_tooltipMTG}
+	if={limit={not={has_dlc="Man the Guns"}}
+		custom_effect_tooltip=EDR_N01_tooltipNON-MTG}
+	if={limit={and={not={has_tech=basic_battery}has_dlc="Man the Guns"}}
+		add_tech_bonus={
+			name=battery_bonus
+			bonus=0.75	uses=1
+			technology=basic_battery
+		}
+	}
+	if={limit={and={not={has_tech=mtg_transport}has_dlc="Man the Guns"}}
+		add_tech_bonus={
+			name=transport_bonus
+			bonus=0.75	uses=1
+			technology=mtg_transport
+		}
+	}
+	if={limit={not={has_dlc="Man the Guns" has_tech=transport}}
+		custom_effect_tooltip=EDR_N01_tooltipB
+		add_tech_bonus={
+			name=transport_bonus
+			bonus=0.75	uses=1
+			technology=transport
+		}
+	}
+}
+EDR_N02B_reward={		#Cruiser Tech MTG/Non-MTG
+	if={limit={has_dlc="Man the Guns"}
+		add_tech_bonus={
+			name=cr_bonus
+			bonus=0.75	uses=1
+			category=cl_tech
+		}
+	}
+	else={
+		add_tech_bonus={
+			name=cr_bonus
+			bonus=0.75	uses=1
+			category=cl_tech
+			category=ca_tech
+		}
+	}
+}
+EDR_N03C_reward={
+	if={limit={and={not={has_tech=basic_torpedo}has_dlc="Man the Guns"}}
+		custom_effect_tooltip=EDR_N03C_tooltip
+		add_tech_bonus={
+			name=torp_bonus
+			bonus=0.75	uses=1
+			technology=basic_torpedo
+		}
+	}
+}
+EDR_A01_reward={
+	if={limit={not={or={has_tech=early_fighter has_tech=early_bomber}}}
+		add_tech_bonus={
+			name=early_fighter_bonus
+			bonus=0.75	uses=1
+			category=light_air
+			category=tactical_bomber
+		}
+	}
+}
+EDR_A02D_reward={
+	custom_effect_tooltip=EDR_A02D_techtip
+	hidden_effect={
+		add_tech_bonus={
+			name=cv_bonus
+			bonus=0.75	uses=1
+			technology=cv_early_fighter
+			technology=cv_fighter1
+			technology=cv_fighter2
+			technology=cv_fighter3
+			technology=cv_CAS1
+			technology=cv_CAS2
+			technology=cv_CAS3
+			technology=cv_naval_bomber1
+			technology=cv_naval_bomber2
+			technology=cv_naval_bomber3
+			technology=cv_jet_fighter1
+			technology=cv_jet_fighter2
+			technology=cv_jet_fighter_a
+			technology=cv_jet_strike_craft_a
+			technology=cv_jet_strike_craft_b
+			technology=cv_jet_strike_craft_c
+		}
+	}
+}

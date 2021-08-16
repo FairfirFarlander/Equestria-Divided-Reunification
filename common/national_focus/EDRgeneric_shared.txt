@@ -219,47 +219,59 @@
 	}
 #Navy Tree
 	shared_focus={		#Establish the Navy
-		id=EDR_N01
-		icon=GFX_goal_generic_construct_naval_dockyard
+		id=EDR_N01 icon=GFX_goal_generic_construct_naval_dockyard
 		x=-20 y=0 cost=7 ai_will_do={factor=40}
 		available={any_controlled_state_is_coastal=yes}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: Focus EDR_N01"
 			navy_experience=25
 			one_random_dockyard=yes
+			EDR_N01_reward=yes
 		}
 	}
-	shared_focus={		#Naval Transports
-		id=EDR_transport
-		icon=GFX_goal_NLR_Landing_Craft
-		x=-19 y=1 cost=7
-		available={or={
-			has_completed_focus=EDR_N01
-			has_tech=marines
-		}}
-		ai_will_do={factor=40}
+	shared_focus={		#Destroyer Initiative
+		id=EDR_N02A icon=GFX_focus_generic_destroyer
+		relative_position_id=EDR_N01
+		x=-3 y=1 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_N01}
+		available={
+			if={limit={not={has_dlc="Man the Guns"}}has_tech=infantry_weapons}
+			else={has_tech=pre_gw_artillery}
+		}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDR_man_the_guns"
+			log="[GetDateText]: [Root.GetName]: Focus EDR_N02A"
 			add_tech_bonus={
-				name=navtrain_bonus
+				name=dd_bonus
 				bonus=0.75	uses=1
-				category=tp_tech
+				category=dd_tech
 			}
 		}
 	}
-	shared_focus={		#Naval Warfare
-		id=EDR_naval_warfare
-		icon=GFX_goal_generic_navy_doctrines_tactics
-		allow_branch={has_dlc="Man the Guns"}
+	shared_focus={		#Cruiser Initiative
+		id=EDR_N02B icon=GFX_focus_generic_cruiser2
 		relative_position_id=EDR_N01
-		x=3 y=1 cost=7
+		x=-1 y=1 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_N01}
+		available={
+			if={limit={not={has_dlc="Man the Guns"}}has_tech=infantry_weapons}
+			else={has_tech=pre_gw_artillery}
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDR_N02B"
+			EDR_N02B_reward=yes
+		}
+	}
+	shared_focus={		#Naval Warfare
+		id=EDR_N02C icon=GFX_goal_generic_navy_doctrines_tactics
+		relative_position_id=EDR_N01
+		x=3 y=1 cost=7 ai_will_do={factor=40}
+		allow_branch={has_dlc="Man the Guns"}
 		prerequisite={focus=EDR_N01}
 		available={any_controlled_state_is_coastal=yes}
-		ai_will_do={factor=40}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDR_naval_doctrine"
+			log="[GetDateText]: [Root.GetName]: Focus EDR_N02C"
 			add_tech_bonus={
-				name=torp_bonus
+				name=navy_doc_bonus
 				bonus=1.0	uses=2
 				category=naval_doctrine
 			}
@@ -268,9 +280,9 @@
 	shared_focus={		#Naval Drill
 		id=EDR_naval_drill
 		icon=GFX_focus_generic_military_academy
-		relative_position_id=EDR_naval_warfare
-		x=2 y=3 cost=7
-		prerequisite={focus=EDR_naval_warfare}
+		relative_position_id=EDR_N02D
+		x=1 y=1 cost=7
+		prerequisite={focus=EDR_N02D}
 		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: Focus EDR_man_the_guns"
@@ -278,48 +290,6 @@
 				name=navtrain_bonus
 				bonus=0.75	uses=1
 				category=naval_training
-			}
-		}
-	}
-	shared_focus={		#Destroyer Effort
-		id=EDR_destroyer_effort
-		icon=GFX_focus_generic_destroyer
-		relative_position_id=EDR_N01
-		x=-1 y=1 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=EDR_N01}
-		available={if={limit={not={has_dlc="Man the Guns"}}has_tech=infantry_weapons}}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDR_man_the_guns"
-			add_tech_bonus={
-				name=dd_bonus
-				bonus=0.75	uses=1
-				category=dd_tech
-			}
-		}
-	}
-	shared_focus={		#Cruiser Effort
-		id=EDR_cruiser_effort
-		icon=GFX_focus_generic_cruiser2
-		relative_position_id=EDR_N01
-		x=-3 y=1 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=EDR_N01}
-		available={if={limit={not={has_dlc="Man the Guns"}}has_tech=infantry_weapons}}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDR_cruiser_effort"
-			if={limit={has_dlc="Man the Guns"}
-				add_tech_bonus={
-					name=cr_bonus
-					bonus=0.75	uses=1
-					category=cl_tech
-				}
-			}
-			else={
-				add_tech_bonus={
-					name=cr_bonus
-					bonus=0.75	uses=1
-					category=cl_tech
-					category=ca_tech
-				}
 			}
 		}
 	}
@@ -338,13 +308,7 @@
 				bonus=0.75	uses=1
 				category=ss_tech
 			}
-			if={limit={has_dlc="Man the Guns"}
-				add_tech_bonus={
-					name=torp_bonus
-					bonus=0.75	uses=1
-					category=torpedo_tech
-				}
-			}
+			EDR_N03C_reward=yes
 		}
 	}
 	shared_focus={		#Battleship Effort
@@ -369,7 +333,7 @@
 		icon=GFX_goal_generic_navy_carrier
 		relative_position_id=EDR_N01
 		x=-4 y=2 cost=7
-		prerequisite={focus=EDR_N01 focus=EDR_naval_aircraft}
+		prerequisite={focus=EDR_N01 focus=EDR_A02D}
 		available={has_tech=early_fighter}
 		ai_will_do={factor=40}
 		completion_reward={
@@ -382,33 +346,29 @@
 		}
 	}
 #Airforce Tree
-	shared_focus={		#Establish the Airforce
-		id=EDR_establish_airforce
-		icon=GFX_goal_generic_build_airforce
-		x=-30 y=0 cost=7
+	shared_focus={		#Establish the Army Airforce
+		id=EDR_A01 icon=GFX_goal_generic_build_airforce
+		x=-29 y=0 cost=7 ai_will_do={factor=40}
 		available={has_tech=infantry_weapons}
-		ai_will_do={factor=40}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDR_aviation_effort"
+			log="[GetDateText]: [Root.GetName]: Focus EDR_A01"
 			one_airfield=yes
-			if={limit={NOT={has_tech=early_fighter}}
+			if={limit={not={has_tech=early_fighter}}
 				add_tech_bonus={
-					name=biplane_bonus
+					name=early_fighter_bonus
 					bonus=0.75	uses=1
-					category=light_air
+					technology=early_fighter
 				}
 			}
 		}
 	}
-	shared_focus={		#Lessons of the Sky
-		id=EDR_sky_lessons
-		icon=GFX_goal_generic_air_doctrine
-		relative_position_id=EDR_establish_airforce
-		x=-3 y=1 cost=7
-		prerequisite={focus=EDR_establish_airforce}
-		ai_will_do={factor=40}
+	shared_focus={		#Army Airforce Coordination
+		id=EDR_A02A icon=GFX_goal_generic_air_doctrine
+		relative_position_id=EDR_A01
+		x=-2 y=1 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_A01}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDR_sky_lessons"
+			log="[GetDateText]: [Root.GetName]: Focus EDR_A02A"
 			add_tech_bonus={
 				name= air_doc_bonus
 				bonus=0.75 uses=1
@@ -416,125 +376,189 @@
 			}
 		}
 	}
-	shared_focus={		#Airforce Training Schools
-		id=EDR_airtrain_schools
-		icon=GFX_goal_new_airforce
-		relative_position_id=EDR_sky_lessons
-		x=-1 y=1 cost=7
-		prerequisite={focus=EDR_sky_lessons}
-		ai_will_do={factor=40}
+	shared_focus={		#Aerial Superiority Initiative
+		id=EDR_A02B icon=GFX_goal_generic_air_fighter_new
+		relative_position_id=EDR_A01
+		x=0 y=1 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_A01}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDR_airtrain_schools"
+			log="[GetDateText]: [Root.GetName]: Focus EDR_A02B"
+			add_tech_bonus={
+				name=fighter_bonus
+				bonus=0.75	uses=1
+				category=light_fighter
+				category=cat_heavy_fighter
+			}
+		}
+	}
+	shared_focus={		#Aerial Bombardment Initiative
+		id=EDR_A02C icon=GFX_goal_generic_air_tactical_bomber_new
+		relative_position_id=EDR_A01
+		x=2 y=1 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_A01}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDR_A02C"
+			add_tech_bonus={
+				name=cv_bonus
+				bonus=0.75	uses=1
+				category=tactical_bomber
+				category=cat_strategic_bomber
+			}
+		}
+	}
+	shared_focus={		#Carrier-Based Aircraft Initiative
+		id=EDR_A02D icon=GFX_goal_generic_air_fighter2
+		relative_position_id=EDR_A01
+		x=4 y=1 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_A01}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDR_A02D"
+			EDR_A02D_reward=yes
+		}
+	}
+	shared_focus={		#Aircraft Adaptation Initiative
+		id=EDR_A03A icon=GFX_goal_new_airforce
+		relative_position_id=EDR_A02A
+		x=-2 y=1 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_A02A}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDR_A03A"
 			air_experience=25
 		}
 	}
-	shared_focus={		#Airforce Training Schools
-		id=EDR_airtrain_schools
-		icon=GFX_goal_new_airforce
-		relative_position_id=EDR_establish_airforce
-		x=-1 y=1 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=EDR_establish_airforce}
+	shared_focus={		#Army Airforce Autonomy
+		id=EDR_A03B icon=GFX_goal_generic_air_doctrine
+		relative_position_id=EDR_A02A
+		x=0 y=1 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_A02A}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDR_airtrain_schools"
-			air_experience=25
-		}
-	}
-	shared_focus={		#Light Aircraft
-		id=EDR_light_aircraft
-		icon=GFX_goal_generic_air_fighter_new
-		relative_position_id=EDR_establish_airforce
-		x=1 y=1 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=EDR_establish_airforce}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDR_airtrain_schools"
+			log="[GetDateText]: [Root.GetName]: Focus EDR_A03B"
 			add_tech_bonus={
-				name=cv_bonus
-				bonus=0.75	uses=1
-				category=light_air
+				name= air_doc_bonus
+				bonus=0.75 uses=1
+				category=air_doctrine
 			}
 		}
 	}
-	shared_focus={		#Medium Aircraft
-		id=EDR_medium_aircraft
-		icon=GFX_goal_generic_air_tactical_bomber_new
-		relative_position_id=EDR_establish_airforce
-		x=3 y=1 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=EDR_establish_airforce}
+	shared_focus={		#Battlefield Support Initiative
+		id=EDR_A03C icon=GFX_goal_generic_air_CAS_new
+		relative_position_id=EDR_A01
+		x=1 y=2 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_A02B focus=EDR_A02C}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDR_airtrain_schools"
+			log="[GetDateText]: [Root.GetName]: Focus EDR_A03C"
 			add_tech_bonus={
-				name=cv_bonus
+				name=fighter_bonus
 				bonus=0.75	uses=1
-				category=medium_air
+				category=cas_bomber
+				category=naval_bomber
 			}
 		}
 	}
-	shared_focus={		#Naval Aircraft
-		id=EDR_naval_aircraft
-		icon=GFX_goal_generic_air_fighter2
-		relative_position_id=EDR_establish_airforce
-		x=5 y=1 cost=7
-		prerequisite={focus=EDR_establish_airforce}
-		ai_will_do={factor=40}
+	shared_focus={		#Heavy Aircraft Initiative
+		id=EDR_A03D icon=GFX_goal_generic_air_strategic_bomber_new
+		relative_position_id=EDR_A01
+		x=3 y=2 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_A01}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDR_naval_aircraft"
+			log="[GetDateText]: [Root.GetName]: Focus EDR_A03D"
 			add_tech_bonus={
-				name=cv_bonus
-				bonus=0.75	uses=1
-				category=naval_air
-			}
-		}
-	}
-	shared_focus={		#Heavy Aircraft
-		id=EDR_heavy_aircraft
-		icon=GFX_goal_generic_air_strategic_bomber_new
-		relative_position_id=EDR_establish_airforce
-		x=4 y=2 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=EDR_establish_airforce}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDR_airtrain_schools"
-			add_tech_bonus={
-				name=cv_bonus
+				name=fighter_bonus
 				bonus=0.75	uses=1
 				category=heavy_air
 			}
 		}
 	}
-	shared_focus={		#Aviation Effort III
-		id=EDR_aviation_effort_iii
-		icon=GFX_goal_generic_air_doctrine
-		relative_position_id=EDR_aviation_effort_ii
-		x=0 y=1 cost=7
-		prerequisite={focus=EDR_aviation_effort_ii}
-		ai_will_do={factor=40}
+	shared_focus={		#Aerial Modification Initiative
+		id=EDR_A04A icon=GFX_goal_air_red
+		relative_position_id=EDR_A03A
+		x=0 y=1 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_A03A}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDR_aviation_effort_iii"
-			air_experience=85
+			log="[GetDateText]: [Root.GetName]: Focus EDR_A04A"
+			air_experience=50
+		}
+	}
+	shared_focus={		#Independent Airforce Command
+		id=EDR_A04B icon=GFX_goal_generic_air_doctrine
+		relative_position_id=EDR_A03B
+		x=0 y=1 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_A03B}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDR_A03B"
 			add_tech_bonus={
-				name=fighter_bonus
-				bonus=1.0 uses=2
-				technology=early_fighter
-				technology=fighter1
-				technology=fighter2
-				technology=fighter3
-				technology=heavy_fighter1
-				technology=heavy_fighter2
-				technology=heavy_fighter3
+				name= air_doc_bonus
+				bonus=0.75 uses=1
+				category=air_doctrine
 			}
 		}
 	}
-	shared_focus={		#Rocket Effort
-		id=EDR_rocket_effort
-		icon=GFX_focus_rocketry
-		relative_position_id=EDR_aviation_effort_iii
-		x=0 y=1 cost=7
-		prerequisite={focus=EDR_aviation_effort_iii}
-		ai_will_do={factor=40}
+	shared_focus={		#Light Aircraft Focus
+		id=EDR_A04C icon=GFX_goal_generic_air_fighter2_new
+		relative_position_id=EDR_A03C
+		x=-1 y=1 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_A02B}
+		mutually_exclusive={focus=EDR_A04D}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDR_rocket_effort"
+			log="[GetDateText]: [Root.GetName]: Focus EDR_A04C"
+			add_tech_bonus={
+				name=fighter_bonus
+				bonus=0.75	uses=1
+				category=light_air
+			}
+		}
+	}
+	shared_focus={		#Medium Aircraft Focus
+		id=EDR_A04D icon=GFX_goal_generic_air_bomber_new
+		relative_position_id=EDR_A03C
+		x=1 y=1 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_A02C}
+		mutually_exclusive={focus=EDR_A04C}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDR_A04D"
+			add_tech_bonus={
+				name=fighter_bonus
+				bonus=0.75	uses=1
+				category=medium_air
+			}
+		}
+	}
+	shared_focus={		#Scout Plane Initiative
+		id=EDR_A04E icon=GFX_goal_POL_recon_aircraft
+		relative_position_id=EDR_A01
+		x=4 y=3 cost=7 ai_will_do={factor=40}
+		allow_branch={has_dlc="La Resistance"}
+		available={has_completed_focus=EDR_A01}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDR_A04E"
+			add_tech_bonus={
+				name=strat_bonus
+				bonus=0.75	uses=1
+				category=cat_scout_plane
+			}
+		}
+	}
+	shared_focus={		#Establish the Airforce Academy
+		id=EDR_A05A icon=GFX_goal_air_armada
+		relative_position_id=EDR_A01
+		x=-1 y=4 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_A04B}
+		prerequisite={focus=EDR_A04C focus=EDR_A04D}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDR_A05A"
+			ROOT={add_ideas=EDR_airforce_command}
+		}
+	}
+	shared_focus={		#Rocketry Program
+		id=EDR_A05B icon=GFX_focus_rocketry
+		relative_position_id=EDR_A01
+		x=1 y=4 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_A04C focus=EDR_A04D}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDR_A05B"
 			add_tech_bonus={
 				name=jet_rocket_bonus
-				ahead_reduction=1 uses=2
+				bonus=0.75 uses=1
 				category=rocketry
 				category=jet_technology
 			}

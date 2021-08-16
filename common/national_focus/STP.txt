@@ -5,7 +5,7 @@ focus_tree={
 	shared_focus=EDR_startup_industrial_effort
 	shared_focus=EDR_modernization
 	shared_focus=EDR_N01
-	shared_focus=EDR_establish_airforce
+	shared_focus=EDR_A01
 }
 focus_tree={
 	id=STP_tsar country={factor=0 modifier={add=20 tag=STP}}
