@@ -2,10 +2,10 @@ focus_tree={
 	id=STP_generic country={factor=0 modifier={add=10 tag=STP}}
 	continuous_focus_position={x=1750 y=800}
 	default=no
-	shared_focus=EDR_startup_industrial_effort
-	shared_focus=EDR_modernization
-	shared_focus=EDR_N01
-	shared_focus=EDR_A01
+	shared_focus=EDR_I00
+	shared_focus=EDR_L05
+	shared_focus=EDR_N05
+	shared_focus=EDR_A05
 }
 focus_tree={
 	id=STP_tsar country={factor=0 modifier={add=20 tag=STP}}

@@ -1,8 +1,46 @@
-EDR_N01_reward={
+EDR_L05_reward={
+	if={limit={NOT={has_tech=melee_weapons1}}
+		add_tech_bonus={
+			name=musket_weaponry
+			bonus=0.75	uses=2
+			category=infantry_weapons
+		}
+		add_tech_bonus={
+			name=renaissance_artillery
+			bonus=0.75	uses=1
+			category=artillery
+		}
+	}
+	if={limit={AND={has_tech=melee_weapons1 NOT={has_tech=pre_gw_artillery}}}
+		army_experience=5
+		add_tech_bonus={
+			name=rifle_weaponry
+			bonus=0.65	uses=1
+			category=infantry_weapons
+		}
+		add_tech_bonus={
+			name=renaissance_artillery
+			bonus=0.55	uses=1
+			category=artillery
+		}
+	}
+	if={limit={AND={has_tech=melee_weapons1 has_tech=pre_gw_artillery NOT={has_tech=infantry_weapons}}}
+		army_experience=10
+		add_tech_bonus={
+			name=rifle_weaponry
+			bonus=0.55	uses=1
+			category=infantry_weapons
+		}
+	}
+	if={limit={has_tech=infantry_weapons}
+		army_experience=15
+	}
+}
+EDR_N05_reward={
 	if={limit={has_dlc="Man the Guns"}
-		custom_effect_tooltip=EDR_N01_tooltipMTG}
+		custom_effect_tooltip=EDR_N05_tooltipMTG}
 	if={limit={not={has_dlc="Man the Guns"}}
-		custom_effect_tooltip=EDR_N01_tooltipNON-MTG}
+		custom_effect_tooltip=EDR_N05_tooltipNON-MTG}
 	if={limit={and={not={has_tech=basic_battery}has_dlc="Man the Guns"}}
 		add_tech_bonus={
 			name=battery_bonus
@@ -18,7 +56,7 @@ EDR_N01_reward={
 		}
 	}
 	if={limit={not={has_dlc="Man the Guns" has_tech=transport}}
-		custom_effect_tooltip=EDR_N01_tooltipB
+		custom_effect_tooltip=EDR_N05_tooltipB
 		add_tech_bonus={
 			name=transport_bonus
 			bonus=0.75	uses=1
@@ -26,7 +64,7 @@ EDR_N01_reward={
 		}
 	}
 }
-EDR_N02B_reward={		#Cruiser Tech MTG/Non-MTG
+EDR_N06B_reward={		#Cruiser Tech MTG/Non-MTG
 	if={limit={has_dlc="Man the Guns"}
 		add_tech_bonus={
 			name=cr_bonus
@@ -43,9 +81,9 @@ EDR_N02B_reward={		#Cruiser Tech MTG/Non-MTG
 		}
 	}
 }
-EDR_N03C_reward={
+EDR_N07B_reward={
 	if={limit={and={not={has_tech=basic_torpedo}has_dlc="Man the Guns"}}
-		custom_effect_tooltip=EDR_N03C_tooltip
+		custom_effect_tooltip=EDR_N07C_tooltip
 		add_tech_bonus={
 			name=torp_bonus
 			bonus=0.75	uses=1
@@ -53,7 +91,69 @@ EDR_N03C_reward={
 		}
 	}
 }
-EDR_A01_reward={
+EDR_N08A_reward={
+	if={limit={has_dlc="Man the Guns"}
+		add_tech_bonus={
+			name=cr_bonus
+			bonus=0.75	uses=1
+			category=ss_tech
+			category=dd_tech
+			category=cl_tech
+		}
+	}
+	else={
+		add_tech_bonus={
+			name=cr_bonus
+			bonus=0.75	uses=1
+			category=ss_tech
+			category=dd_tech
+			category=cl_tech
+			category=ca_tech
+		}
+	}
+}
+EDR_N08B_reward={
+	if={limit={has_dlc="Man the Guns"}
+		add_tech_bonus={
+			name=cr_bonus
+			bonus=0.75	uses=1
+			category=ss_tech
+			category=dd_tech
+			category=cl_tech
+		}
+	}
+	else={
+		add_tech_bonus={
+			name=cr_bonus
+			bonus=0.75	uses=1
+			category=ss_tech
+			category=dd_tech
+			category=cl_tech
+			category=ca_tech
+		}
+	}
+}
+EDR_N08C_reward={
+	if={limit={has_dlc="Man the Guns"}
+		add_tech_bonus={
+			name=cr_bonus
+			bonus=0.75	uses=1
+			category=cl_tech
+			category=bb_tech
+		}
+	}
+	else={
+		add_tech_bonus={
+			name=cr_bonus
+			bonus=0.75	uses=1
+			category=cl_tech
+			category=ca_tech
+			category=bc_tech
+			category=bb_tech
+		}
+	}
+}
+EDR_A05_reward={
 	if={limit={not={or={has_tech=early_fighter has_tech=early_bomber}}}
 		add_tech_bonus={
 			name=early_fighter_bonus
@@ -63,8 +163,8 @@ EDR_A01_reward={
 		}
 	}
 }
-EDR_A02D_reward={
-	custom_effect_tooltip=EDR_A02D_techtip
+EDR_A06D_reward={
+	custom_effect_tooltip=EDR_A06D_techtip
 	hidden_effect={
 		add_tech_bonus={
 			name=cv_bonus

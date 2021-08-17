@@ -1,5 +1,29 @@
 ideas={
 	country={
+		EDR_navy_command={
+			allowed={always=no}
+			#picture=
+			removal_cost=-1
+			modifier={
+				experience_gain_navy=0.02
+			}
+			research_bonus={
+				naval_equipment=0.03
+				naval_doctrine=0.07
+			}
+		}
+		EDR_airforce_command={
+			allowed={always=no}
+			#picture=
+			removal_cost=-1
+			modifier={
+				experience_gain_air=0.02
+			}
+			research_bonus={
+				air_equipment=0.03
+				air_doctrine=0.07
+			}
+		}
 		moonstar_influence0={	#Moonstar Influence STARTS
 			allowed={always=no}
 			picture=HMS_idea

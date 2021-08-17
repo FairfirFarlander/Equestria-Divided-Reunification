@@ -3,10 +3,10 @@ focus_tree={
 	continuous_focus_position={x=1750 y=800}
 	default=no
 	shared_focus=JCH_S01
-	shared_focus=EDR_startup_industrial_effort
-	shared_focus=EDR_modernization
-	shared_focus=EDR_A01
-	shared_focus=EDR_N01
+	shared_focus=EDR_I00
+	shared_focus=EDR_L05
+	shared_focus=EDR_A05
+	shared_focus=EDR_N05
 }
 focus_tree={
 	id=JCH_starter country={factor=0 modifier={add=20 tag=JCH}}
