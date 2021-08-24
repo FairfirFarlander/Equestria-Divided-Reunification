@@ -8,7 +8,7 @@ focus_tree={
 	shared_focus=EDR_A05
 }
 focus_tree={
-	id=COT country={factor=0 modifier={add=10 tag=COT}}
+	id=COT country={factor=0 modifier={add=20 tag=COT}}
 	continuous_focus_position={x=1750 y=800}
 	default=no
 	shared_focus=COT_big_apple

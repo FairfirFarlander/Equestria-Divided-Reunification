@@ -2,7 +2,7 @@
 #	shared_focus={		#Focus Tree Credits - Coders and Writers
 #		id=JCH_CW
 #		#icon=
-#		relative_position_id=JCH_S01
+#		relative_position_id=JCH_S00
 #		x=-12 y=0 cost=0
 #		available={has_completed_focus=JCH_CW}
 #		completion_reward={
@@ -13,7 +13,7 @@
 	shared_focus={		#Carving Into the Rocks
 		id=JCH_ember_earthworks
 		icon=GFX_goal_chn_man_secretsociety
-		relative_position_id=JCH_S01
+		relative_position_id=JCH_S00
 		x=8 y=0 cost=5
 		available={OR={
 			has_country_flag=JCH_early_construction
@@ -123,7 +123,7 @@
 	}
 #Story Tree Main
 	shared_focus={		#The Underway Awaits!
-		id=JCH_S01
+		id=JCH_S00
 		icon=GFX_goal_chn_communist_banner
 		x=0 y=0 cost=8
 		#ai_will_do={factor=40}
@@ -133,232 +133,330 @@
 			country_event={id=JCHact1.02 days=42}		#The Finishing Touches
 		}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus JCH_S01"
+			log="[GetDateText]: [Root.GetName]: focus JCH_S00"
 			country_event=JCHact1.03		#A Nation Born Underground
 		}
 	}
 	shared_focus={		#Our Future Underground
-		id=JCH_S02
+		id=JCH_S01
 		icon=GFX_goal_commune_politics
-		relative_position_id=JCH_S01
+		relative_position_id=JCH_S00
 		x=0 y=1 cost=2
-		prerequisite={focus=JCH_S01}
+		prerequisite={focus=JCH_S00}
 		#ai_will_do={factor=40}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus JCH_S02"
+			log="[GetDateText]: [Root.GetName]: focus JCH_S01"
 			country_event=JCHact1.04		#Allied in Advancement
 		}
 	}
 	shared_focus={		#A Royal Idea
-		id=JCH_S03
+		id=JCH_S02
 		icon=GFX_goal_agriculture
-		relative_position_id=JCH_S02
+		relative_position_id=JCH_S01
 		x=0 y=1 cost=6
-		prerequisite={focus=JCH_S02}
+		prerequisite={focus=JCH_S01}
 		#ai_will_do={factor=40}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus JCH_S03"
+			log="[GetDateText]: [Root.GetName]: focus JCH_S02"
 			country_event=JCHact1.05		#The Gardens Are Planted
 			hidden_effect={country_event={days=21 id=JCHact1.06}}		#An Alchemical Idea
 		}
 	}
 	shared_focus={		#The Beginning of Troubles
-		id=JCH_S04A
+		id=JCH_S03A
 		icon=GFX_SIA_jungletraining
-		relative_position_id=JCH_S03
+		relative_position_id=JCH_S02
 		x=-2 y=1 cost=6
-		prerequisite={focus=JCH_S03}
+		prerequisite={focus=JCH_S02}
 		#ai_will_do={factor=40}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus JCH_S04A"
+			log="[GetDateText]: [Root.GetName]: focus JCH_S03A"
 			set_country_flag=JCH_military_unlocked
 			set_country_flag=JCH_diplomacy_unlocked
-			custom_effect_tooltip=JCH_army_and_diplo
+			custom_effect_tooltip=JCH_S03A_tooltip
 		}
 	}
 	shared_focus={		#The Cost of No Sun
-		id=JCH_S04B
+		id=JCH_S03B
 		icon=GFX_goal_sunshine
-		relative_position_id=JCH_S03
+		relative_position_id=JCH_S02
 		x=0 y=1 cost=6
-		prerequisite={focus=JCH_S03}
+		prerequisite={focus=JCH_S02}
 		#ai_will_do={factor=40}
 		completion_reward={
-			#log="[GetDateText]: [Root.GetName]: focus JCH_S04B"
+			#log="[GetDateText]: [Root.GetName]: focus JCH_S03B"
 		}
 	}
 	shared_focus={		#There Is Not Enough Room!
-		id=JCH_S04C
+		id=JCH_S03C
 		icon=GFX_focus_collective_housing
-		relative_position_id=JCH_S03
+		relative_position_id=JCH_S02
 		x=2 y=1 cost=6
-		prerequisite={focus=JCH_S03}
+		prerequisite={focus=JCH_S02}
 		#ai_will_do={factor=40}
 		completion_reward={
-			#log="[GetDateText]: [Root.GetName]: focus JCH_S04C"
+			#log="[GetDateText]: [Root.GetName]: focus JCH_S03C"
 		}
 	}
 	shared_focus={		#Bubble, Bubble, Toil and Trouble
-		id=JCH_S05A
+		id=JCH_S04A
 		icon=GFX_viira_climate
-		relative_position_id=JCH_S03
+		relative_position_id=JCH_S02
 		x=-1 y=2 cost=6
-		prerequisite={focus=JCH_S04A}
-		prerequisite={focus=JCH_S04B}
-		prerequisite={focus=JCH_S04C}
+		prerequisite={focus=JCH_S03A}
+		prerequisite={focus=JCH_S03B}
+		prerequisite={focus=JCH_S03C}
 		#ai_will_do={factor=40}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus JCH_S05A"
+			log="[GetDateText]: [Root.GetName]: focus JCH_S04A"
 			add_stability=-0.05
 			add_popularity={ideology=communism	popularity=-0.10}
 		}
 	}
 	shared_focus={		#We Cannot Keep Up With Demand!
-		id=JCH_S05B
+		id=JCH_S04B
 		icon=GFX_focus_indy_skelly_pony
-		relative_position_id=JCH_S03
+		relative_position_id=JCH_S02
 		x=1 y=2 cost=6
-		prerequisite={focus=JCH_S04A}
-		prerequisite={focus=JCH_S04B}
-		prerequisite={focus=JCH_S04C}
+		prerequisite={focus=JCH_S03A}
+		prerequisite={focus=JCH_S03B}
+		prerequisite={focus=JCH_S03C}
 		#ai_will_do={factor=40}
 		completion_reward={
-			#log="[GetDateText]: [Root.GetName]: focus JCH_S05B"
+			#log="[GetDateText]: [Root.GetName]: focus JCH_S04B"
 		}
 	}
 	shared_focus={		#Unrest in the Underway
-		id=JCH_S06
+		id=JCH_S05
 		icon=GFX_goal_purge_opposition
-		relative_position_id=JCH_S03
+		relative_position_id=JCH_S02
 		x=0 y=3 cost=6
-		prerequisite={focus=JCH_S05A}
-		prerequisite={focus=JCH_S05B}
+		prerequisite={focus=JCH_S04A}
+		prerequisite={focus=JCH_S04B}
 		#ai_will_do={factor=40}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus JCH_S06"
-			custom_effect_tooltip=JCH_revolution1
-			custom_effect_tooltip=JCH_revolution2
+			log="[GetDateText]: [Root.GetName]: focus JCH_S05"
+			custom_effect_tooltip=JCH_S05_tooltip1
+			custom_effect_tooltip=JCH_S05_tooltip2
 		}
 	}
 #Commie Tree (AKA Fuck the Everfree)
+	shared_focus={		#The Underway Awaits!
+		id=JCH_fasdfsdafsda
+		icon=GFX_goal_chn_communist_banner
+		x=0 y=0 cost=8
+		#ai_will_do={factor=40}
+		select_effect={
+			set_temp_variable={aaaaa=1}
+			country_event={id=JCHact1.01 days=21}		#Is There Anyone Left Above?
+			country_event={id=JCHact1.02 days=42}		#The Finishing Touches
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus JCH_S00"
+			country_event=JCHact1.03		#A Nation Born Underground
+		}
+	}
 #Diplomacy Tree
 	shared_focus={		#A Hoof on the World Stage
-		id=JCH_D01
+		id=JCH_D00
 		#icon=
-		relative_position_id=JCH_S01
+		relative_position_id=JCH_S00
 		x=-5 y=0 cost=1
 		available={has_country_flag=JCH_diplomacy_unlocked}
 		#ai_will_do={factor=40}
 		completion_reward={
-			#log="[GetDateText]: [Root.GetName]: focus JCH_D01"
+			#log="[GetDateText]: [Root.GetName]: focus JCH_D00"
 		}
 	}
 	shared_focus={		#Freinds in the Mountain
-		id=JCH_D02A
+		id=JCH_D01A
 		#icon=
-		relative_position_id=JCH_D01
+		relative_position_id=JCH_D00
 		x=-1 y=1 cost=1
-		prerequisite={focus=JCH_D01}
+		prerequisite={focus=JCH_D00}
 		#ai_will_do={factor=40}
 		completion_reward={
 			#log="[GetDateText]: [Root.GetName]: focus JCH_AD2"
 		}
 	}
 	shared_focus={		#What Can We Offer for Trade
-		id=JCH_D02B
+		id=JCH_D01B
 		#icon=
-		relative_position_id=JCH_D01
+		relative_position_id=JCH_D00
 		x=1 y=1 cost=1
-		prerequisite={focus=JCH_D01}
+		prerequisite={focus=JCH_D00}
 		#ai_will_do={factor=40}
 		completion_reward={
-			#log="[GetDateText]: [Root.GetName]: focus JCH_D02A"
+			#log="[GetDateText]: [Root.GetName]: focus JCH_D01A"
+		}
+	}
+	shared_focus={		#What Can We Offer for Trade
+		id=JCH_D02
+		#icon=
+		relative_position_id=JCH_D00
+		x=0 y=2 cost=1
+		prerequisite={focus=JCH_D00}
+		#ai_will_do={factor=40}
+		completion_reward={
+			#log="[GetDateText]: [Root.GetName]: focus JCH_D02"
+		}
+	}
+	shared_focus={		#What Can We Offer for Trade
+		id=JCH_D03
+		#icon=
+		relative_position_id=JCH_D02
+		x=0 y=1 cost=1
+		prerequisite={focus=JCH_D02}
+		#ai_will_do={factor=40}
+		completion_reward={
+			#log="[GetDateText]: [Root.GetName]: focus JCH_D03"
 		}
 	}
 #Army-Diplomacy Tree
 	shared_focus={		#The Moon and Earth
-		id=JCH_LD03
+		id=JCH_LD02
 		#icon=
-		relative_position_id=JCH_D02A
+		relative_position_id=JCH_D01A
 		x=-1 y=1 cost=1
-		prerequisite={focus=JCH_L02C}
-		prerequisite={focus=JCH_D02A}
+		prerequisite={focus=JCH_L01C}
+		prerequisite={focus=JCH_D01A}
 		available={AND={	#Diplomacy must be complete beforehand.
 			has_completed_focus=JCH_D?
 			has_completed_focus=JCH_D?
 		}}
 		#ai_will_do={factor=40}
 		completion_reward={
-			#log="[GetDateText]: [Root.GetName]: focus JCH_LD03"
+			#log="[GetDateText]: [Root.GetName]: focus JCH_LD02"
+		}
+	}
+	shared_focus={		#Moon, Earth, and Fire
+		id=JCH_LD03
+		#icon=
+		relative_position_id=JCH_LD02
+		x=0 y=1 cost=1 ai_will_do={factor=40}
+		prerequisite={focus=JCH_LD02}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus JCH_LD03"
 		}
 	}
 #Military Tree
 	shared_focus={		#A Fortress in the Making
-		id=JCH_L01
+		id=JCH_L00
 		#icon=
-		relative_position_id=JCH_S01
+		relative_position_id=JCH_S00
 		x=-10 y=0 cost=1
 		available={has_country_flag=JCH_military_unlocked}
 		#ai_will_do={factor=40}
 		completion_reward={
-			#log="[GetDateText]: [Root.GetName]: focus JCH_L01"
+			#log="[GetDateText]: [Root.GetName]: focus JCH_L00"
 		}
 	}
 	shared_focus={		#Training With Nature
+		id=JCH_L01A
+		#icon=
+		relative_position_id=JCH_L00
+		x=-2 y=1 cost=1
+		prerequisite={focus=JCH_L00}
+		#ai_will_do={factor=40}
+		completion_reward={
+			#log="[GetDateText]: [Root.GetName]: focus JCH_L01A"
+		}
+	}
+	shared_focus={		#No Stone Not Put to Use 
+		id=JCH_L01B
+		#icon=
+		relative_position_id=JCH_L00
+		x=0 y=1 cost=1
+		prerequisite={focus=JCH_L00}
+		#ai_will_do={factor=40}
+		completion_reward={
+			#log="[GetDateText]: [Root.GetName]: focus JCH_L01B"
+		}
+	}
+	shared_focus={		#Proper Training and Equipment
+		id=JCH_L01C
+		#icon=
+		relative_position_id=JCH_L00
+		x=2 y=1 cost=1
+		prerequisite={focus=JCH_L00}
+		#ai_will_do={factor=40}
+		completion_reward={
+			#log="[GetDateText]: [Root.GetName]: focus JCH_L01C"
+		}
+	}
+	shared_focus={		#Timber Wolf Riders
 		id=JCH_L02A
 		#icon=
-		relative_position_id=JCH_L01
+		relative_position_id=JCH_L01B
 		x=-2 y=1 cost=1
-		prerequisite={focus=JCH_L01}
+		prerequisite={focus=JCH_L01B}
 		#ai_will_do={factor=40}
 		completion_reward={
 			#log="[GetDateText]: [Root.GetName]: focus JCH_L02A"
 		}
 	}
-	shared_focus={		#No Stone Not Put to Use 
+	shared_focus={		#A End to the Raids
 		id=JCH_L02B
 		#icon=
-		relative_position_id=JCH_L01
-		x=0 y=1 cost=1
-		prerequisite={focus=JCH_L01}
+		relative_position_id=JCH_L00
+		x=0 y=2 cost=1
+		prerequisite={focus=JCH_L01A}
+		prerequisite={focus=JCH_L01B}
+		prerequisite={focus=JCH_L01C}
 		#ai_will_do={factor=40}
 		completion_reward={
 			#log="[GetDateText]: [Root.GetName]: focus JCH_L02B"
 		}
 	}
-	shared_focus={		#Proper Training and Equipment
-		id=JCH_L02C
+	shared_focus={		#To Control Our Coast
+		id=JCH_L03
 		#icon=
-		relative_position_id=JCH_L01
-		x=2 y=1 cost=1
-		prerequisite={focus=JCH_L01}
+		relative_position_id=JCH_L00
+		x=1 y=3 cost=1
+		prerequisite={focus=JCH_L00}
 		#ai_will_do={factor=40}
 		completion_reward={
-			#log="[GetDateText]: [Root.GetName]: focus JCH_L02C"
+			#log="[GetDateText]: [Root.GetName]: focus JCH_L03"
 		}
 	}
-	shared_focus={		#Timber Wolf Riders
-		id=JCH_L03A
+	shared_focus={		#Converting Our Largest Fishing Vessels
+		id=JCH_L04
 		#icon=
-		relative_position_id=JCH_L02B
-		x=-2 y=1 cost=1
-		prerequisite={focus=JCH_L02B}
-		#ai_will_do={factor=40}
+		relative_position_id=JCH_L03
+		x=0 y=1 cost=1 ai_will_do={factor=40}
+		prerequisite={focus=JCH_L03}
 		completion_reward={
-			#log="[GetDateText]: [Root.GetName]: focus JCH_L03A"
+			log="[GetDateText]: [Root.GetName]: focus JCH_L04"
 		}
 	}
-	shared_focus={		#A End to the Raids
-		id=JCH_L03B
+	shared_focus={		#More Docks For Our Growing Navy
+		id=JCH_L04
 		#icon=
-		relative_position_id=JCH_L01
-		x=0 y=2 cost=1
-		prerequisite={focus=JCH_L02A}
-		prerequisite={focus=JCH_L02B}
-		prerequisite={focus=JCH_L02C}
-		#ai_will_do={factor=40}
+		relative_position_id=JCH_L03
+		x=0 y=1 cost=1 ai_will_do={factor=40}
+		prerequisite={focus=JCH_L03}
 		completion_reward={
-			#log="[GetDateText]: [Root.GetName]: focus JCH_L03B"
+			log="[GetDateText]: [Root.GetName]: focus JCH_L04"
+		}
+	}
+	shared_focus={		#Birds of Prey
+		id=JCH_L04
+		#icon=
+		relative_position_id=JCH_L03
+		x=0 y=1 cost=1 ai_will_do={factor=40}
+		prerequisite={focus=JCH_L03}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus JCH_L04"
+		}
+	}
+	shared_focus={		#A Discovery That Could Change Everything
+		id=JCH_L04
+		#icon=
+		relative_position_id=JCH_L03
+		x=0 y=1 cost=1 ai_will_do={factor=40}
+		prerequisite={focus=JCH_L03}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus JCH_L04"
 		}
 	}
 #Undernomics

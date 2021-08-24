@@ -753,7 +753,7 @@
 	shared_focus={		#Light Aircraft Focus
 		id=EDR_A08C icon=GFX_goal_generic_air_fighter2_new
 		relative_position_id=EDR_A07C
-		x=1 y=1 cost=7 ai_will_do={factor=40}
+		x=-1 y=1 cost=7 ai_will_do={factor=40}
 		prerequisite={focus=EDR_A06B}
 		mutually_exclusive={focus=EDR_A08D}
 		completion_reward={
@@ -768,7 +768,7 @@
 	shared_focus={		#Medium Aircraft Focus
 		id=EDR_A08D icon=GFX_goal_generic_air_bomber_new
 		relative_position_id=EDR_A07C
-		x=-1 y=1 cost=7 ai_will_do={factor=40}
+		x=1 y=1 cost=7 ai_will_do={factor=40}
 		prerequisite={focus=EDR_A06C}
 		mutually_exclusive={focus=EDR_A08C}
 		completion_reward={

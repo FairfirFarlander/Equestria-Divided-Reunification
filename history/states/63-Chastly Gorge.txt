@@ -12,6 +12,7 @@ state={
 		add_core_of=BCK
 		#add_claim_by=
 		#victory_points={}
+		set_demilitarized_zone=yes
 		buildings={
 		#STATE BUILDINGS
 			infrastructure=0

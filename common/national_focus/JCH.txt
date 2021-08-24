@@ -2,7 +2,7 @@ focus_tree={
 	id=JCH_generic country={factor=0 modifier={add=10 tag=JCH}}
 	continuous_focus_position={x=1750 y=800}
 	default=no
-	shared_focus=JCH_S01
+	shared_focus=JCH_S00
 	shared_focus=EDR_I00
 	shared_focus=EDR_L05
 	shared_focus=EDR_A05
@@ -12,8 +12,26 @@ focus_tree={
 	id=JCH_starter country={factor=0 modifier={add=20 tag=JCH}}
 	continuous_focus_position={x=1750 y=800}
 	default=no
-	shared_focus=JCH_S01
+	shared_focus=JCH_S00
 	shared_focus=JCH_ember_earthworks
-	shared_focus=JCH_L01
-	shared_focus=JCH_D01
+	shared_focus=JCH_L00
+	shared_focus=JCH_D00
+}
+focus_tree={
+	id=JCH_CS country={factor=0 modifier={add=20 tag=JCH}}
+	continuous_focus_position={x=1750 y=800}
+	default=no
+	shared_focus=JCH_CS00
+	shared_focus=JCH_ember_earthworks
+	shared_focus=JCH_L00
+	shared_focus=JCH_D00
+}
+focus_tree={
+	id=JCH_SU country={factor=0 modifier={add=30 tag=JCH}}
+	continuous_focus_position={x=1750 y=800}
+	default=no
+	#shared_focus=JCH_SU00
+	shared_focus=JCH_ember_earthworks
+	shared_focus=JCH_L00
+	shared_focus=JCH_D00
 }
