@@ -67,21 +67,21 @@ set_politics={
 	elections_allowed=no
 }
 create_country_leader={	#TEMP
-	name="Strawberry Snowflake"	#desc=""
+	name="Strawberry Snowflake"	#desc=
 	expire="1965.1.1"	picture="Strawberry_Snowflake.tga"
 	ideology=leninism	female=yes
 	traits={rural_populist}
 }
 #MILITARY
 create_corps_commander={
-	name="Indigo Skies"	#id=	desc=""
+	name="Indigo Skies"	#id=	desc=
 	#picture=".tga"	#female=yes	#Batpony
 	skill=1	attack_skill=2	defense_skill=1
 	planning_skill=1	logistics_skill=1
 	traits={thestral_race_trait commissar_general}
 }
 create_corps_commander={
-	name="Crimson Hoof"	#id=	desc=""
+	name="Crimson Hoof"	#id=	desc=
 	#picture=".tga"	#female=yes	#Unicornpony
 	skill=1	attack_skill=1	defense_skill=3
 	planning_skill=1	logistics_skill=1

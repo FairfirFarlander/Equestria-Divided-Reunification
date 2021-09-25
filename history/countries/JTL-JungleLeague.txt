@@ -34,7 +34,7 @@ set_politics={
 	elections_allowed=no
 }
 create_country_leader={
-	name="Placard"	#desc=""
+	name="Placard"	#desc=
 	expire="1965.1.1"	#picture=""
 	ideology=tribal_federation	#female=yes
 	traits={}

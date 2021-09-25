@@ -63,39 +63,39 @@ set_politics={
 	elections_allowed=no
 }
 create_country_leader={
-	name="Honey Dew"	#desc=""
+	name="Honey Dew"	#desc=
 	expire="1965.1.1"	picture=""
 	ideology=centrism	female=yes
 	traits={}
 }
 create_country_leader={
-	name="Maple Leaf"	#desc=""
+	name="Maple Leaf"	#desc=
 	expire="1965.1.1"	#picture="Filthy.tga"
 	ideology=liberalism	#female=yes
 	traits={}
 }
 create_country_leader={
-	name="Mulberry Vine"	#desc=""
+	name="Mulberry Vine"	#desc=
 	expire="1965.1.1"	#picture="Fancy.tga"
 	ideology=syndicalism	#female=yes
 	traits={}
 }
 create_country_leader={
-	name="Rose Petal"	#desc=""
+	name="Rose Petal"	#desc=
 	expire="1965.1.1"	#picture="leader_unknown.dds"
 	ideology=ultranationalism	female=yes
 	traits={}
 }
 #MILITARY
 create_corps_commander={
-	name="Apple Cider"	#id=	desc=""
+	name="Apple Cider"	#id=	desc=
 	picture=""	female=yes	#Earth pony
 	traits={pony_race_trait harsh_leader trait_engineer}
 	skill=1	attack_skill=2	defense_skill=1
 	planning_skill=1	logistics_skill=2
 }
 create_corps_commander={
-	name="Mist Feather"	#id=	desc=""
+	name="Mist Feather"	#id=	desc=
 	picture=""	female=yes	#Pegasi pony
 	traits={pony_race_trait ranger hill_fighter}
 	skill=1	attack_skill=1	defense_skill=2

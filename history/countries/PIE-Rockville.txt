@@ -1,21 +1,13 @@
 #LOCALE
 capital=38
 #oob="PIE_1007"
-#if={
-	#limit={has_dlc="Man the Guns"}
-	#set_naval_oob="PIE_1007_naval"
-	#else={set_naval_oob="PIE_1007_naval_legacy"}
-#}
 #FOUNTATION
 set_research_slots=2
-set_stability=0.7
-set_war_support=0.06
+set_stability=0.7 set_war_support=0.06
 add_ideas={
-	limited_exports
-	better_science_base
-	agrarian_society
-	lack_of_scientists3
-	poverty4
+	volunteer_only limited_exports civilian_economy
+	better_science_base agrarian_society
+	lack_of_scientists3 poverty4
 }
 #TECHNOLOGY
 set_technology={
@@ -23,44 +15,35 @@ set_technology={
 	melee_weapons=1
 	tech_support=1
 }
-if={limit={has_dlc="Man the Guns"}
-	set_technology={
-		early_ship_hull_light=1
-		early_ship_hull_cruiser=1
-		basic_battery=1
-		basic_depth_charges=1
-		basic_secondary_battery=1
-		basic_torpedo=1
-		mtg_transport=1
-	}
-}
-if={limit={not={has_dlc="Man the Guns"}}
-	set_technology={
-		early_destroyer=1
-		early_light_cruiser=1
-		transport=1
-	}
-}
 actually_fix_weapon_techs=yes
-generic_CL_template=yes
-generic_DD_template=yes
 #MISC
-set_convoys=11
 set_rule={can_generate_female_aces=yes}
 #DIPLOMACY
 #POLITICS
 set_popularities={
-	fascism=76	communism=2
-	neutrality=15	democratic=7
+	fascism=57	communism=5
+	neutrality=31	democratic=7
 }
-set_politics={
+set_politics={	#Mareocrity, Marearchy, Matriarchy (Use this one)
 	ruling_party=fascism	last_election="1000.10.10"
 	election_frequency=36	elections_allowed=no
 }
+create_country_leader={	#Governor -  Matriarch
+	name="Governor Marble Pie"	#desc=
+	expire="1965.1.1"	picture="Marble.tga"
+	ideology=maarite_minion	female=yes #ultranationalism
+	traits={}
+}
 create_country_leader={
-	name="Cloudy Quartz"	#desc=""
+	name="Sapphire Smiles"	#desc=
 	expire="1965.1.1"	#picture=""
-	ideology=ultranationalism	female=yes
+	ideology=democratic_socialism	female=yes
+	traits={}
+}
+create_country_leader={
+	name="Cloudy Quartz"	#desc=
+	expire="1965.1.1"	#picture=""
+	ideology=despotism	female=yes
 	traits={}
 }
 #MILITARY

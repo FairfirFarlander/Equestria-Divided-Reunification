@@ -53,7 +53,7 @@ set_politics={
 	election_frequency=36	elections_allowed=no
 }
 create_country_leader={
-	name="Cherry Jam"	#desc=""
+	name="Cherry Jam"	#desc=
 	expire="1014.6.6"	picture="Ringo.dds"
 	ideology=plutocracy	female=yes
 	traits={}

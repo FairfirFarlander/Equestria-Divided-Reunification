@@ -31,7 +31,7 @@ set_politics={
 	election_frequency=48	elections_allowed=no
 }
 create_country_leader={	#Keep Hoofington Manpower-Lose it and get Spies.
-	name="Madame Orange"	#desc=""
+	name="Madame Orange"	#desc=
 	expire="1965.1.1"	picture="Madame_Orange.dds"
 	ideology=despotism	female=yes
 	traits={}
@@ -46,7 +46,7 @@ create_country_leader={
 }
 #MILITARY
 create_corps_commander={
-	name="Orange Grove"	#id=	desc=""
+	name="Orange Grove"	#id=	desc=
 	#picture=""	#female=yes
 	skill=1	attack_skill=1	defense_skill=1
 	planning_skill=1	logistics_skill=1

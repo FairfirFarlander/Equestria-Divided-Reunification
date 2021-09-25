@@ -1,48 +1,56 @@
-add_namespace=JCHact1
-	country_event={
-		id=JCHact1.01	is_triggered_only=yes
-		immediate={log="[GetDateText]: [Root.GetName]: event JCHact1.01"}
-		title=JCHact1.01.t	desc=JCHact1.01.d
+add_namespace=JCHact01
+	country_event={		#The Great Migration
+		id=JCHact01.01	is_triggered_only=yes
+		immediate={log="[GetDateText]: [Root.GetName]: event JCHact01.01"}
+		title=JCHact01.01.t	desc=JCHact01.01.d
 		#picture=
-		option={name=JCHact01.01.a}
+		option={name=JCHact01.01.a
+			36={
+				add_manpower=2000
+			}
+		}
+	}
+	country_event={		#The Finishing Touches
+		id=JCHact01.02	is_triggered_only=yes
+		immediate={log="[GetDateText]: [Root.GetName]: event JCHact01.02"}
+		title=JCHact01.02.t	desc=JCHact01.02.d
+		#picture=
+		option={name=JCHact01.02.a
+			add_timed_idea={idea=JCH_allbuzz days=84}
+		}
+	}
+	country_event={		#A Nation Born Underground
+		id=JCHact01.03	is_triggered_only=yes
+		immediate={log="[GetDateText]: [Root.GetName]: event JCHact01.03"}
+		title=JCHact01.03.t	desc=JCHact01.03.d
+		#picture=
+		option={name=JCHact01.03.a
+			
+		}
 	}
 	country_event={
-		id=JCHact1.02	is_triggered_only=yes
-		immediate={log="[GetDateText]: [Root.GetName]: event JCHact1.02"}
-		title=JCHact1.02.t	desc=JCHact1.02.d
+		id=JCHact01.04	is_triggered_only=yes
+		immediate={log="[GetDateText]: [Root.GetName]: event JCHact01.04"}
+		title=JCHact01.04.t	desc=JCHact01.04.d
 		#picture=
-		option={name=JCHact1.02.a}
-	}
-	country_event={
-		id=JCHact1.03	is_triggered_only=yes
-		immediate={log="[GetDateText]: [Root.GetName]: event JCHact1.03"}
-		title=JCHact1.03.t	desc=JCHact1.03.d
-		#picture=
-		option={name=JCHact1.03.a}
-	}
-	country_event={
-		id=JCHact1.04	is_triggered_only=yes
-		immediate={log="[GetDateText]: [Root.GetName]: event JCHact1.04"}
-		title=JCHact1.04.t	desc=JCHact1.04.d
-		#picture=
-		option={name=JCHact1.04.a}
-		option={name=JCHact1.04.b
+		option={name=JCHact01.04.a}
+		option={name=JCHact01.04.b
 			set_country_flag=JCH_early_construction
 			add_stability=-0.06
 			add_political_power=-13
 		}
 	}
 	country_event={
-		id=JCHact1.05	is_triggered_only=yes
-		immediate={log="[GetDateText]: [Root.GetName]: event JCHact1.05"}
-		title=JCHact1.05.t	desc=JCHact1.05.d
+		id=JCHact01.05	is_triggered_only=yes
+		immediate={log="[GetDateText]: [Root.GetName]: event JCHact01.05"}
+		title=JCHact01.05.t	desc=JCHact01.05.d
 		#picture=
-		option={name=JCHact1.05.a}
+		option={name=JCHact01.05.a}
 	}
 	country_event={
-		id=JCHact1.06	is_triggered_only=yes
-		immediate={log="[GetDateText]: [Root.GetName]: event JCHact1.06"}
-		title=JCHact1.06.t	desc=JCHact1.06.d
+		id=JCHact01.06	is_triggered_only=yes
+		immediate={log="[GetDateText]: [Root.GetName]: event JCHact01.06"}
+		title=JCHact01.06.t	desc=JCHact01.06.d
 		#picture=
-		option={name=JCHact1.06.a}
+		option={name=JCHact01.06.a}
 	}

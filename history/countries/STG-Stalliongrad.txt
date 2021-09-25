@@ -95,13 +95,13 @@ set_politics={
 	election_frequency=36	elections_allowed=no
 }
 create_country_leader={
-	name="Tsar Peter IV"	#desc=""
+	name="Tsar Peter IV"	#desc=
 	picture="PeterIV.tga"	expire="1965.1.1"
 	ideology=despotism	#female=yes
 	traits={}
 }
 create_country_leader={
-	name="Ratibor Svetoslavich"	#desc=""
+	name="Ratibor Svetoslavich"	#desc=
 	expire="1965.1.1"	picture="Ratibor.tga"
 	ideology=fascism_ideology	#female=yes
 	traits={}
@@ -126,133 +126,133 @@ create_country_leader={
 #}
 #MILITARY
 create_field_marshal={
-	name="Nestor Lunin"	id=1000	#desc=""
+	name="Nestor Lunin"	id=1000	#desc=
 	picture="Nestor.tga"	
 	skill=3	attack_skill=2	defense_skill=3
 	planning_skill=2	logistics_skill=3
 	traits={pony_race_trait trait_nestor_lunin}
 }
 create_corps_commander={
-	name="Ember Flare"	#id=	desc=""
+	name="Ember Flare"	#id=	desc=
 	picture="Ember_Flare.tga"	#female=yes
 	skill=2	attack_skill=1	defense_skill=3
 	planning_skill=2	logistics_skill=2
 	traits={pony_race_trait inflexible_strategist}
 }
 create_corps_commander={
-	name="Veronica"	#id=	desc=""
+	name="Veronica"	#id=	desc=
 	picture="Veronica.tga"	female=yes
 	skill=2	attack_skill=2	defense_skill=2
 	planning_skill=1	logistics_skill=2
 	traits={pony_race_trait panzer_leader}
 }
 create_corps_commander={
-	name="Vinous Kostylev"	id=6970	#desc=""
+	name="Vinous Kostylev"	id=6970	#desc=
 	picture="Vinous.tga"	#female=yes
 	skill=2	attack_skill=3	defense_skill=3
 	planning_skill=2	logistics_skill=1
 	traits={pony_race_trait inspiring_commissar}
 }
 create_corps_commander={
-	name="Alexia Goldgear"	id=6969	#desc=""
+	name="Alexia Goldgear"	id=6969	#desc=
 	picture="Gereval.tga"	#female=yes
 	skill=1	attack_skill=2	defense_skill=2
 	planning_skill=1	logistics_skill=1
 	traits={thestral_race_trait artillery_expert}
 }
 create_corps_commander={
-	name="Cherry Swirl"	id=6968	#desc=""
+	name="Cherry Swirl"	id=6968	#desc=
 	picture="Cherry_Swirl.tga"	#female=yes
 	skill=1	attack_skill=2	defense_skill=1
 	planning_skill=2	logistics_skill=1
 	traits={pony_race_trait}
 }
 create_corps_commander={
-	name="Black Paint"	#id=	desc=""
+	name="Black Paint"	#id=	desc=
 	picture="Black_Paint.tga"	#female=yes
 	skill=1	attack_skill=2	defense_skill=1
 	planning_skill=1	logistics_skill=3
 	traits={pony_race_trait}
 }
 create_corps_commander={
-	name="Comrade Ulman"	#id=	desc=""
+	name="Comrade Ulman"	#id=	desc=
 	picture="Ulman.tga"	#female=yes
 	skill=1	attack_skill=1	defense_skill=3
 	planning_skill=1	logistics_skill=2
 	traits={pony_race_trait}
 }
 create_corps_commander={
-	name="Fiat Coin"	#id=	desc=""
+	name="Fiat Coin"	#id=	desc=
 	picture="Ikapoc.tga"	#female=yes
 	skill=2	attack_skill=3	defense_skill=2
 	planning_skill=2	logistics_skill=1
 	traits={pony_race_trait brilliant_strategist war_hero}
 }
 create_corps_commander={
-	name="Purple Heart"	#id=	desc=""
+	name="Purple Heart"	#id=	desc=
 	picture="PurpleHeart.tga"	female=yes
 	skill=1	attack_skill=1	defense_skill=2
 	planning_skill=1	logistics_skill=1
 	traits={pony_race_trait}
 }
 create_corps_commander={
-	name="Katya Ironstead"	id=6967	#desc=""
+	name="Katya Ironstead"	id=6967	#desc=
 	picture="Katya.tga"	female=yes
 	traits={pony_race_trait winter_specialist}
 	skill=2	attack_skill=1	defense_skill=1
 	planning_skill=1	logistics_skill=2
 }
 create_corps_commander={
-	name="Cogwheel Ponyarchuk"	id=7777	#desc=""
+	name="Cogwheel Ponyarchuk"	id=7777	#desc=
 	picture="Ponyarchuk.tga"	#female=yes
 	skill=2	attack_skill=2	defense_skill=1
 	planning_skill=2	logistics_skill=2
 	traits={pony_race_trait politically_connected}
 }
 create_corps_commander={
-	name="Gemian Smit"	#id=	desc=""
+	name="Gemian Smit"	#id=	desc=
 	picture="Gemian Smit.tga"	#female=yes
 	skill=1	attack_skill=1	defense_skill=1
 	planning_skill=2	logistics_skill=1
 	traits={pony_race_trait career_officer}
 }
 create_corps_commander={
-	name="Whagirl"	#id=	desc=""
+	name="Whagirl"	#id=	desc=
 	picture="Whagirl.tga"	female=yes
 	skill=1	attack_skill=1	defense_skill=1
 	planning_skill=1	logistics_skill=2
 	traits={pony_race_trait}
 }
 create_corps_commander={
-	name="Vampirenok"	#id=	desc=""
+	name="Vampirenok"	#id=	desc=
 	picture="Vampirenok.tga"	female=yes
 	skill=1	attack_skill=2	defense_skill=1
 	planning_skill=1	logistics_skill=1
 	traits={thestral_race_trait infantry_officer}
 }
 create_corps_commander={
-	name="Depuresso"	#id=	desc=""
+	name="Depuresso"	#id=	desc=
 	picture="Depuresso.tga"	female=yes
 	skill=1	attack_skill=1	defense_skill=1
 	planning_skill=2	logistics_skill=2
 	traits={pony_race_trait harsh_leader}
 }
 create_corps_commander={
-	name="Marussia"	#id=	desc=""
+	name="Marussia"	#id=	desc=
 	picture="Marussia.tga"	female=yes
 	skill=1	attack_skill=2	defense_skill=1
 	planning_skill=1	logistics_skill=1
 	traits={pony_race_trait commissar_general}
 }
 create_corps_commander={
-	name="Victor Historia"	#id=	desc=""
+	name="Victor Historia"	#id=	desc=
 	picture="CHG.tga"	#female=yes
 	skill=1	attack_skill=2	defense_skill=2
 	planning_skill=2	logistics_skill=1
 	traits={pony_race_trait bearer_of_artillery}
 }
 create_corps_commander={
-	name="That BT-7"	#id=	desc=""
+	name="That BT-7"	#id=	desc=
 	picture="ThatfuckingBt7.tga"	#female=yes
 	skill=1	attack_skill=1	defense_skill=1
 	planning_skill=1	logistics_skill=1

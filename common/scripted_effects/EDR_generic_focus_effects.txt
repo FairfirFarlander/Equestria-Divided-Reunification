@@ -64,7 +64,7 @@ EDR_N05_reward={
 		}
 	}
 }
-EDR_N06B_reward={		#Cruiser Tech MTG/Non-MTG
+EDR_N06C_reward={		#Cruiser Tech MTG/Non-MTG
 	if={limit={has_dlc="Man the Guns"}
 		add_tech_bonus={
 			name=cr_bonus
@@ -81,7 +81,7 @@ EDR_N06B_reward={		#Cruiser Tech MTG/Non-MTG
 		}
 	}
 }
-EDR_N07B_reward={
+EDR_N07D_reward={
 	if={limit={and={not={has_tech=basic_torpedo}has_dlc="Man the Guns"}}
 		custom_effect_tooltip=EDR_N07C_tooltip
 		add_tech_bonus={
@@ -91,7 +91,7 @@ EDR_N07B_reward={
 		}
 	}
 }
-EDR_N08A_reward={
+EDR_N08E_reward={
 	if={limit={has_dlc="Man the Guns"}
 		add_tech_bonus={
 			name=cr_bonus
@@ -112,7 +112,7 @@ EDR_N08A_reward={
 		}
 	}
 }
-EDR_N08B_reward={
+EDR_N08D_reward={
 	if={limit={has_dlc="Man the Guns"}
 		add_tech_bonus={
 			name=cr_bonus
@@ -163,8 +163,8 @@ EDR_A05_reward={
 		}
 	}
 }
-EDR_A06D_reward={
-	custom_effect_tooltip=EDR_A06D_techtip
+EDR_A06A_reward={
+	custom_effect_tooltip=EDR_A06A_techtip
 	hidden_effect={
 		add_tech_bonus={
 			name=cv_bonus

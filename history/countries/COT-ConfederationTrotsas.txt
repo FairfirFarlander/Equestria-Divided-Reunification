@@ -73,14 +73,14 @@ create_country_leader={
 	traits={}
 }
 create_field_marshal={
-	name="Neighson E. Miles"	#id=	desc=""
+	name="Neighson E. Miles"	#id=	desc=
 	picture="StewedApple.tga"	#female=yes
 	skill=2	attack_skill=3	defense_skill=1
 	planning_skill=2	logistics_skill=2
 	traits={pony_race_trait harsh_leader signal_expert_trait}
 }
 create_corps_commander={
-	name="Apple Ale"	#id=	desc=""
+	name="Apple Ale"	#id=	desc=
 	picture="Apple_Ale.tga"	female=yes
 	skill=2	attack_skill=3	defense_skill=1
 	planning_skill=3	logistics_skill=2
@@ -94,7 +94,7 @@ create_corps_commander={
 	traits={pony_race_trait harsh_leader}
 }
 create_corps_commander={
-	name="Burnside Fervor"	#id=	desc=""
+	name="Burnside Fervor"	#id=	desc=
 	picture="Cuddle_Fervor.tga"	female=yes #?
 	skill=2	attack_skill=2	defense_skill=3
 	planning_skill=1	logistics_skill=2

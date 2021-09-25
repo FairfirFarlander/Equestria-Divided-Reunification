@@ -1,0 +1,10 @@
+#Test Tree
+	shared_focus={		#Inspect the Streletskoye
+		id=PIE_T1
+		icon=GFX_goal_derpy_conscription
+		x=-10 y=0 cost=4 ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus PIE_T1"
+			add_victory_points={province=11511 value=-20}
+		}
+	}

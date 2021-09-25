@@ -7,4 +7,4 @@ tags={
 }
 name="EAW: Equestria Divided Reunification"
 dependencies={"Equestria at War"}
-supported_version="1.10.7"
+supported_version="1.10.8"

@@ -40,69 +40,69 @@ set_politics={
 	elections_allowed=no
 }
 create_country_leader={
-	name="The Laughing Mare"	#desc=""
+	name="The Laughing Mare"	#desc=
 	expire="1965.1.1"	picture="Pinkier.tga"
 	ideology=centrism	female=yes
 	traits={}
 }
 create_country_leader={
-	name="The Laughing Mare"	#desc=""
+	name="The Laughing Mare"	#desc=
 	expire="1965.1.1"	picture="Pinkier.tga"
 	ideology=falangism	female=yes
 	traits={FIR_necromancer}
 }
 create_country_leader={
-	name="Unknown Melody"	#desc=""
+	name="Unknown Melody"	#desc=
 	expire="1965.1.1"	picture="leader_unknown.dds"
 	ideology=liberalism	female=yes
 	traits={}
 }
 create_country_leader={
-	name="The Laughing Mare"	#desc=""
+	name="The Laughing Mare"	#desc=
 	expire="1965.1.1"	picture="Pinkier.tga"
 	ideology=religious_socialism	female=yes
 	traits={FIR_necromancer}
 }
 #MILITARY
 create_field_marshal={
-	name="The Laughing Mare"	#id=	desc=""
+	name="The Laughing Mare"	#id=	desc=
 	picture="Pinkied.tga"	female=yes
 	skill=6	attack_skill=6	defense_skill=6
 	planning_skill=6	logistics_skill=6
 	traits={unspecified_race_trait}
 }
 create_field_marshal={
-	name="High Prophet Cranky Doodle"	#id=	desc=""
+	name="High Prophet Cranky Doodle"	#id=	desc=
 	picture="Cranky.tga"	#female=yes
 	skill=1
 	traits={old_guard}
 }
 create_corps_commander={
-	name="Prophet Derpy"	#id=	desc=""
+	name="Prophet Derpy"	#id=	desc=
 	picture="Derpy.tga"	female=yes
 	skill=1
 	traits={pony_race_trait offensive_doctrine}
 }
 create_corps_commander={
-	name="Prophet Lyra Heartstrings"	#id=	desc=""
+	name="Prophet Lyra Heartstrings"	#id=	desc=
 	picture="Lyra.tga"	female=yes
 	skill=1
 	traits={pony_race_trait}
 }
 create_corps_commander={
-	name="Prophet Surprise"	#id=	desc=""
+	name="Prophet Surprise"	#id=	desc=
 	picture="Surprise.tga"	female=yes
 	skill=1
 	traits={pony_race_trait}
 }
 create_corps_commander={
-	name="Prophet Screwball"	#id=	desc=""
+	name="Prophet Screwball"	#id=	desc=
 	picture="Screwball.tga"	female=yes
 	skill=1
 	traits={pony_race_trait}
 }
 create_corps_commander={
-	name="Prophet Pokey Pierce"	#id=	desc=""
+	name="Prophet Pokey Pierce"	#id=	desc=
 	picture="Pokey.tga"	#female=yes
 	skill=1
 	traits={pony_race_trait}

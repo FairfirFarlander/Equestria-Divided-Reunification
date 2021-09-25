@@ -69,13 +69,13 @@ set_politics={
 	election_frequency=36	elections_allowed=no
 }
 create_country_leader={
-	name="Tsar Peter IV"	#desc=""
+	name="Tsar Peter IV"	#desc=
 	picture="PeterIV.tga"	expire="1965.1.1"
 	ideology=despotism	#female=yes
 	traits={}
 }	#Catherine
 create_country_leader={
-	name="Ratibor Svetoslavich"	#desc=""
+	name="Ratibor Svetoslavich"	#desc=
 	expire="1965.1.1"	picture="Ratibor.tga"
 	ideology=fascism_ideology	#female=yes
 	traits={}	#Add Panin

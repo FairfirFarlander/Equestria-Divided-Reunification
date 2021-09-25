@@ -67,7 +67,7 @@ set_politics={
 #	traits={corn_lord}
 #}
 #create_country_leader={
-#	name="Light Narrative"	#desc=""
+#	name="Light Narrative"	#desc=
 #	expire="1965.1.1"	picture="JUN_batgarrison.tga"
 #	ideology=national_communism	#female=yes
 #	traits={}
@@ -79,13 +79,13 @@ create_country_leader={
 	traits={hero_of_the_revolution}
 }
 create_country_leader={
-	name="Kingfisher"	#desc=""	#Huey Long - New Mareland
+	name="Kingfisher"	#desc=	#Huey Long - New Mareland
 	expire="1014.6.6"	picture="Kingfisher.tga"
 	ideology=populism	#female=yes
 	traits={rural_populist}
 }
 create_country_leader={
-	name="Ringo 'Maestro' Jam"	#desc=""	#Robert Maestri (Drummer Maestro Jam)
+	name="Ringo 'Maestro' Jam"	#desc=	#Robert Maestri (Drummer Maestro Jam)
 	expire="1014.6.6"	picture="Ringo.dds"
 	ideology=despotism	female=yes
 	traits={}

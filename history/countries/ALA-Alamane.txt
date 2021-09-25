@@ -59,7 +59,7 @@ set_politics={
 	elections_allowed=no
 }
 create_country_leader={
-	name="Almond Tree"	#desc=""
+	name="Almond Tree"	#desc=
 	expire="1965.1.1"	#picture=""
 	ideology=despotism	#female=yes
 	traits={}

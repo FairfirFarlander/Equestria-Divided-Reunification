@@ -35,7 +35,7 @@ set_politics={
 	election_frequency=48	elections_allowed=no
 }
 #create_country_leader={
-#	name=""	#desc=""
+#	name=""	#desc=
 #	expire="1965.1.1"	#picture=""
 #	ideology=stratocracy	#female=yes
 #	traits={}

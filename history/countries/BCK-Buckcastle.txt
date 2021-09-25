@@ -39,13 +39,13 @@ set_politics={
 	elections_allowed=no
 }
 create_country_leader={
-	name="Rockefeller"	#desc=""
+	name="Rockefeller"	#desc=
 	expire="1965.1.1"	#picture=""
 	ideology=corporatocracy	#female=yes
 	traits={}
 }
 create_country_leader={
-	name="Sea Prism"	#desc=""
+	name="Sea Prism"	#desc=
 	expire="1965.1.1"	#picture=""
 	ideology=despotism	female=yes
 	traits={}

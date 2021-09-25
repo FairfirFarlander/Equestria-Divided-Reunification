@@ -58,7 +58,7 @@ set_politics={
 	election_frequency=36	elections_allowed=no
 }
 create_country_leader={
-	name="Cloudy Quartz"	#desc=""
+	name="Cloudy Quartz"	#desc=
 	expire="1965.1.1"	#picture=""
 	ideology=ultranationalism	female=yes
 	traits={}

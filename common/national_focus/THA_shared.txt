@@ -1,14 +1,54 @@
-	shared_focus={		#The Fruit of Our Eye
-		id=THA_winter_07
-		icon=GFX_goal_water
-		relative_position_id=THA_allies_and_enemies
-		x=0 y=1 cost=4
-		prerequisite={focus=THA_allies_and_enemies}
-		ai_will_do={factor=4000}
-		select_effect={
-			set_temp_variable={aaaaa=1}
-		}
+#The Fruit of Our Eye
+	shared_focus={		#The Council Meets
+		id=THA_S00 #icon=
+		x=0 y=0 cost=4 ai_will_do={factor=40}
+		select_effect={set_temp_variable={aaaaa=1}}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus THA_winter_07"
+			log="[GetDateText]: [Root.GetName]: focus THA_S00"
+		}
+	}
+	shared_focus={		#The Thestral
+		id=THA_S01B #icon=
+		relative_position_id=THA_S00
+		x=-1 y=1 cost=2 ai_will_do={factor=40}
+		prerequisite={focus=THA_S00}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus THA_S01B"
+		}
+	}
+	shared_focus={		#Matters of Safety
+		id=THA_S01C #icon=
+		relative_position_id=THA_S00
+		x=1 y=1 cost=2 ai_will_do={factor=40}
+		prerequisite={focus=THA_S00}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus THA_S01C"
+		}
+	}
+	shared_focus={		#Matters of Population
+		id=THA_S02A #icon=
+		relative_position_id=THA_S00
+		x=-2 y=2 cost=2 ai_will_do={factor=40}
+		prerequisite={focus=THA_S00}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus THA_S02A"
+		}
+	}
+	shared_focus={		#Matters of Tradition
+		id=THA_S02B #icon=
+		relative_position_id=THA_S00
+		x=0 y=2 cost=2 ai_will_do={factor=40}
+		prerequisite={focus=THA_S00}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus THA_S02B"
+		}
+	}
+	shared_focus={		#Matters of Religion
+		id=THA_S02C #icon=
+		relative_position_id=THA_S00
+		x=2 y=2 cost=2 ai_will_do={factor=40}
+		prerequisite={focus=THA_S00}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus THA_S02C"
 		}
 	}

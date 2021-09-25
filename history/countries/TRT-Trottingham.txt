@@ -71,19 +71,19 @@ set_politics={
 	elections_allowed=no
 }
 create_country_leader={
-	name="Rapid Fire"	#desc=""
+	name="Rapid Fire"	#desc=
 	expire="1005.1.1"	#picture="leader_unknown.dds"
 	ideology=stratocracy	#female=yes
 	traits={fascist_demagogue}
 }
 create_country_leader={
-	name="Teddy 'Steady' Hoosevelt"	#desc=""
+	name="Teddy 'Steady' Hoosevelt"	#desc=
 	expire="1005.1.1"	#picture=""
 	ideology=populism	#female=yes
 	traits={headstrong great_war_hero}
 }
 create_country_leader={
-	name="Ms. Harshwhinny"	#desc=""
+	name="Ms. Harshwhinny"	#desc=
 	expire="1005.1.1"	picture="Harshwhinny.dds"
 	ideology=harmonic_libertarianism	female=yes
 	traits={appeaser hedonist}

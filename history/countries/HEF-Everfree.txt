@@ -46,44 +46,44 @@ set_politics={
 	election_frequency=36	elections_allowed=no
 }
 create_country_leader={
-	name="Zecora"	#desc=""
+	name="Zecora"	#desc=
 	expire="1965.1.1"	picture="Zecora.tga"
 	ideology=tribal_council	female=yes
 	traits={}
 }
 create_country_leader={
-	name="Lady Fluttershy"	#desc=""
+	name="Lady Fluttershy"	#desc=
 	expire="1965.1.1"	picture="Fluttershy.tga"
 	ideology=kratokracy	female=yes
 	traits={}
 }
 create_country_leader={
-	name="Flower Seed"	#desc=""
+	name="Flower Seed"	#desc=
 	expire="1965.1.1"	#picture=""
 	ideology=liberalism	#female=yes
 	traits={}
 }
 create_country_leader={
-	name="Red Leaves"	#desc=""
+	name="Red Leaves"	#desc=
 	expire="1965.1.1"	#picture=""
 	ideology=anarchist_communism	#female=yes
 	traits={}
 }
 #MILITARY
 create_field_marshal={
-	name="Lady Fluttershy"	#id=	desc=""
+	name="Lady Fluttershy"	#id=	desc=
 	picture="Fluttershy.tga"	female=yes
 	skill=1
 	traits={pony_race_trait}
 }
 create_corps_commander={
-	name="Zecora"	#id=	desc=""
+	name="Zecora"	#id=	desc=
 	picture="Zecora.tga"	female=yes
 	skill=1
 	traits={zebra_race_trait}
 }
 create_corps_commander={
-	name="Ahuizotl"	#id=	desc=""
+	name="Ahuizotl"	#id=	desc=
 	picture="Ahuizotl.tga"	#female=yes
 	skill=1
 	traits={unspecified_race_trait offensive_doctrine}

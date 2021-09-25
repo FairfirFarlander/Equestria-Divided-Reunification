@@ -70,53 +70,53 @@ set_politics={
 	election_frequency=36	elections_allowed=no
 }
 create_country_leader={
-	name="Mistress Rarity"	#desc=""
+	name="Mistress Rarity"	#desc=
 	expire="1965.1.1"	picture="Rarity.tga"
 	ideology=plutocracy	female=yes
 	traits={}
 }
 create_country_leader={
-	name="Fleur de Lis"	#desc=""
+	name="Fleur de Lis"	#desc=
 	expire="1965.1.1"	picture="Fleur.tga"
 	ideology=oligarchism	female=yes
 	traits={}
 }
 create_country_leader={
-	name="General Fancy Pants"	#desc=""
+	name="General Fancy Pants"	#desc=
 	expire="1965.1.1"	picture="Fancy.tga"
 	ideology=liberalism	#female=yes
 	traits={}
 }
 create_country_leader={
-	name="Shooter Mark"	#desc=""
+	name="Shooter Mark"	#desc=
 	expire="1965.1.1"	#picture=""
 	ideology=anarchist_communism	#female=yes
 	traits={}
 }
 #MILITARY
 create_field_marshal={
-	name="Mistress Rarity"	#id=	desc=""
+	name="Mistress Rarity"	#id=	desc=
 	picture="Rarity.tga"	female=yes
 	skill=1	attack_skill=2	defense_skill=2
 	planning_skill=1	logistics_skill=1
 	traits={pony_race_trait politically_connected}
 }
 create_corps_commander={
-	name="Fancy Pants"	#id=	desc=""
+	name="Fancy Pants"	#id=	desc=
 	picture="Fancy.tga"	#female=yes
 	traits={pony_race_trait politically_connected trait_cautious}
 	skill=2	attack_skill=1	defense_skill=3
 	planning_skill=2	logistics_skill=2
 }
 create_corps_commander={
-	name="Fleur de Lis"	#id=	desc=""
+	name="Fleur de Lis"	#id=	desc=
 	picture="Fleur.tga"	female=yes
 	skill=2	attack_skill=2	defense_skill=2
 	planning_skill=2	logistics_skill=1
 	traits={pony_race_trait media_personality vigilant_sentinel}
 }
 create_navy_leader={
-	name="Generic Admiral"	#id=	desc=""
+	name="Generic Admiral"	#id=	desc=
 	picture=""	female=yes
 	skill=1	attack_skill=1	defense_skill=1
 	maneuvering_skill=2	coordination_skill=2

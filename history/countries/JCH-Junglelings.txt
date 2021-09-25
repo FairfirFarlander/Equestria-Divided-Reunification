@@ -9,12 +9,9 @@ set_stability=0.46 set_war_support=0.07
 add_ideas={
 	JCH_Under_Cities
 	JCH_Chruch_Of_The_First_Queen
-	limited_exports
-	isolation
-	poor_science_base
-	communal_society
-	lack_of_scientists2
-	poverty4
+	volunteer_only limited_exports isolation
+	poor_science_base communal_society
+	lack_of_scientists2 poverty4
 }
 #TECHNOLOGY
 set_technology={
@@ -47,38 +44,36 @@ set_popularities={
 	neutrality=24	democratic=21
 }
 set_politics={
-	ruling_party=communism
-	last_election="1004.11.11"
-	election_frequency=36
-	elections_allowed=no
+	ruling_party=communism	last_election="1004.11.11"
+	election_frequency=36	elections_allowed=no
 }
 create_country_leader={
-	name="Mother Nightshade"	#desc=""
+	name="Mother Nightshade"	#desc=
 	expire="1050.1.1"	picture="Mother_Nightshade.dds"
 	ideology=holy_order_f	female=yes
 	traits={}
 }
 create_country_leader={
-	name="Councilor Tyrennadus"	#desc=""
+	name="Councilor Tyrennadus"	#desc=
 	expire="1050.1.1"	picture="Tyrennadus.dds"
 	ideology=primitive_communism	#female=yes
 	traits={}
 }
 create_country_leader={
-	name="Queen Narratek"	#desc=""
+	name="Queen Narratek"	#desc=
 	expire="1050.1.1"	picture="Queen_Narratek.dds"
 	ideology=tribal_council	female=yes
 	traits={}
 }
 create_country_leader={		#Willow maybe... (Use NewMareland event file line 2890 for name change)
-	name="Aetanae Krix"	#desc=""
+	name="Aetanae Krix"	#desc=
 	expire="1050.1.1"	picture="unknown_bug.tga"
 	ideology=tribal_federation	#female=yes
 	traits={}
 }
 #MILITARY
 create_corps_commander={
-	name="Tyrennadus"	#id=	desc=""
+	name="Tyrennadus"	#id=	desc=
 	picture="unknown_bug.tga"	#female=yes
 	skill=2	attack_skill=2	defense_skill=3
 	planning_skill=3	logistics_skill=1

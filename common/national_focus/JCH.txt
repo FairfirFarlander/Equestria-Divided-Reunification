@@ -9,13 +9,14 @@ focus_tree={
 	shared_focus=EDR_N05
 }
 focus_tree={
-	id=JCH_starter country={factor=0 modifier={add=20 tag=JCH}}
-	continuous_focus_position={x=1750 y=800}
+	id=JCH_starter country={factor=0 modifier={add=30 tag=JCH}}
+	continuous_focus_position={x=0 y=800}
 	default=no
 	shared_focus=JCH_S00
-	shared_focus=JCH_ember_earthworks
-	shared_focus=JCH_L00
-	shared_focus=JCH_D00
+#	shared_focus=JCH_ember_earthworks
+#	shared_focus=JCH_L00
+#	shared_focus=JCH_D00
+	shared_focus=JCH_D02
 }
 focus_tree={
 	id=JCH_CS country={factor=0 modifier={add=20 tag=JCH}}
@@ -27,7 +28,7 @@ focus_tree={
 	shared_focus=JCH_D00
 }
 focus_tree={
-	id=JCH_SU country={factor=0 modifier={add=30 tag=JCH}}
+	id=JCH_SU country={factor=0 modifier={add=20 tag=JCH}}
 	continuous_focus_position={x=1750 y=800}
 	default=no
 	#shared_focus=JCH_SU00

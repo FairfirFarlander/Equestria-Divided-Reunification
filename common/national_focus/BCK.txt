@@ -5,7 +5,7 @@ focus_tree={
 	shared_focus=EDR_I00
 	shared_focus=EDR_L05
 	shared_focus=EDR_N05
-	shared_focus=EDR_N06C
+	shared_focus=EDR_N06B
 	shared_focus=EDR_A05
-	shared_focus=EDR_A08E
+	shared_focus=EDR_A08A
 }

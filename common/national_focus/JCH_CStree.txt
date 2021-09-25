@@ -1,14 +1,4 @@
-#Credits Tree
-#	shared_focus={		#Focus Tree Credits - Coders and Writers
-#		id=JCH_CW #icon=
-#		relative_position_id=JCH_S00
-#		x=-12 y=0 cost=0
-#		available={has_completed_focus=JCH_CW}
-#		completion_reward={
-#			log="[GetDateText]: [Root.GetName]: focus JCH_CW"
-#		}
-#	}
-#Communist Story Tree Main
+#Communist Story Tree Main (AKA Fuck the Everfree)
 	shared_focus={		#The March On Ember
 		id=JCH_CS00 icon=GFX_goal_revolution_pony
 		x=0 y=0 cost=1 ai_will_do={factor=40}
@@ -18,7 +8,7 @@
 		}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus JCH_CS00"
-			#country_event=JCHact2C.01		#Failed COup Attempt
+			#country_event=JCHact2C.01		#Failed Coup Attempt
 		}
 	}
 	shared_focus={		#Seeking Out the Traitors

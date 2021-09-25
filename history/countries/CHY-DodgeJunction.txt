@@ -32,25 +32,25 @@ set_politics={
 	election_frequency=36	elections_allowed=no
 }
 create_country_leader={
-	name="Cherry Jubilee"	#desc=""
+	name="Cherry Jubilee"	#desc=
 	expire="1020.1.1"	#picture=""
 	ideology=neofeudalism	female=yes
 	traits={}
 }
 create_country_leader={
-	name="Cherry Jubilee"	#desc=""
+	name="Cherry Jubilee"	#desc=
 	expire="1020.1.1"	#picture=""
 	ideology=stalinism	female=yes
 	traits={}
 }
 create_country_leader={
-	name="Cherry Jubilee"	#desc=""
+	name="Cherry Jubilee"	#desc=
 	expire="1020.1.1"	#picture=""
 	ideology=despotism	female=yes
 	traits={}
 }
 create_country_leader={
-	name="Cherry Jubilee"	#desc=""
+	name="Cherry Jubilee"	#desc=
 	expire="1020.1.1"	#picture=""
 	ideology=liberalism	female=yes
 	traits={}

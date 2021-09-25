@@ -71,56 +71,56 @@ set_politics={
 	election_frequency=36	elections_allowed=no
 }
 create_country_leader={
-	name="Supreme Commander Applejack"	#desc=""
+	name="Supreme Commander Applejack"	#desc=
 	expire="1965.1.1"	picture="Applejack.tga"
 	ideology=nazism	female=yes
 	traits={}
 }
 create_country_leader={
-	name="Jack Trader"	#desc=""
+	name="Jack Trader"	#desc=
 	expire="1965.1.1"	#picture=""
 	ideology=anarchist_communism	#female=yes
 	traits={}
 }
 create_country_leader={
-	name="Magia Saviour"	#desc=""
+	name="Magia Saviour"	#desc=
 	expire="1965.1.1"	#picture=""
 	ideology=despotism	female=yes
 	traits={}
 }
 create_country_leader={
-	name="Raving Cloud"	#desc=""
+	name="Raving Cloud"	#desc=
 	expire="1965.1.1"	#picture=""
 	ideology=liberalism	female=yes
 	traits={}
 }
 #MILITARY
 create_field_marshal={
-	name="Supreme Commander Applejack"	#id=	desc=""
+	name="Supreme Commander Applejack"	#id=	desc=
 	picture="Applejack2.tga"	female=yes
 	skill=1
 	traits={pony_race_trait offensive_doctrine}
 }
 create_corps_commander={
-	name="Big Macintosh"	#id=	desc=""
+	name="Big Macintosh"	#id=	desc=
 	picture="Bigmac.tga"	#female=yes
 	skill=1
 	traits={pony_race_trait}
 }
 create_corps_commander={
-	name="Braeburn"	#id=	desc=""
+	name="Braeburn"	#id=	desc=
 	picture="Braeburn.tga"	#female=yes
 	skill=1
 	traits={pony_race_trait}
 }
 create_corps_commander={
-	name="Chief Strongheart"	#id=	desc=""
+	name="Chief Strongheart"	#id=	desc=
 	picture="Strongheart.tga"	#female=yes
 	skill=1
 	traits={buffalo_race_trait}
 }
 create_corps_commander={
-	name="Lightning Dust"	#id=	desc=""
+	name="Lightning Dust"	#id=	desc=
 	picture="Lightning.tga"	#female=yes
 	skill=1
 	traits={pony_race_trait}

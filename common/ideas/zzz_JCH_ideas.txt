@@ -28,5 +28,13 @@ ideas={
 				political_power_factor=0.05
 			}
 		}
+		JCH_allbuzz={	#All the Buzz
+			allowed={always=no}
+			#picture=
+			removal_cost=-1
+			modifier={
+				stability_factor=0.08
+			}
+		}
 	}
 }

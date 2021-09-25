@@ -56,19 +56,19 @@ set_politics={
 	elections_allowed=no
 }
 create_country_leader={
-	name="Iris Kelly"	#desc=""
+	name="Iris Kelly"	#desc=
 	expire="1965.1.1"	picture="portrait_pony_generic_navy_13.dds"
 	ideology=corporatocracy	female=yes
 	traits={}
 }
 create_country_leader={
-	name="Mabel Corne"	#desc=""
+	name="Mabel Corne"	#desc=
 	expire="1965.1.1"	picture="portrait_pony_generic_land_8.dds"
 	ideology=democratic_socialism	female=yes
 	traits={}
 }
 create_country_leader={
-	name="Smokey Dust"	#desc=""
+	name="Smokey Dust"	#desc=
 	expire="1965.1.1"	#picture=""
 	ideology=centrism	#female=yes
 	traits={}
