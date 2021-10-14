@@ -54,6 +54,12 @@ set_politics={
 	ruling_party=neutrality	last_election="1001.10.10"
 	election_frequency=36	elections_allowed=no
 }
+create_country_leader={
+	name="Regional Defense Council"	#desc=
+	expire="1004.09.09"	picture="completeanarchy.tga"
+	ideology=anarchist_communism	#female=yes
+	traits={corn_lord}
+}
 #create_country_leader={
 #	name="Lavender Berry"	desc=BAL_amber_alert
 #	expire="1965.1.1"	picture="larrybarry.tga"

@@ -1,0 +1,12 @@
+#EMB Naval OOB Legacy
+units={
+	fleet={
+		name="The Queen's Navy"
+		naval_base=336
+		task_force={
+			name="BuzzBuzz" location=336		#Unnamedhive
+			#Dreadnought
+			ship={name="ERNS Narratek" definition=battleship equipment={pre_dreadnought_nomtg={amount=1 owner=EMB version_name="Narratek 999 Class"}}}
+		}
+	}
+}

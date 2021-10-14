@@ -21,7 +21,7 @@ units={	#DEPLOYMENTS
 		division_template="Communal Militia"
 		start_experience_factor=0.1
 		start_equipment_factor=1
-		force_equipment_variants={melee_equipment_0={owner="JCH" creator="JCH"}}
+		force_equipment_variants={melee_equipment_0={owner="EMB" creator="EMB"}}
 	}
 	division={	#West Yucoltan
 		name="Yucoltan Militia"
@@ -29,7 +29,7 @@ units={	#DEPLOYMENTS
 		division_template="Communal Militia"
 		start_experience_factor=0.1
 		start_equipment_factor=0.9
-		force_equipment_variants={melee_equipment_0={owner="JCH" creator="JCH"}}
+		force_equipment_variants={melee_equipment_0={owner="EMB" creator="EMB"}}
 	}
 	division={	#West Teopixqui Jungle
 		name="Teopixqui Militia"
@@ -37,7 +37,7 @@ units={	#DEPLOYMENTS
 		division_template="Communal Militia"
 		start_experience_factor=0.1
 		start_equipment_factor=0.8
-		force_equipment_variants={melee_equipment_0={owner="JCH" creator="JCH"}}
+		force_equipment_variants={melee_equipment_0={owner="EMB" creator="EMB"}}
 	}
 	division={	#West Teopixqui Jungle
 		name="Chimera Swarm"
@@ -45,7 +45,7 @@ units={	#DEPLOYMENTS
 		division_template="Jungle Unit"
 		start_experience_factor=0.3
 		start_equipment_factor=1
-		force_equipment_variants={melee_equipment_0={owner="JCH" creator="CHN"}}
+		force_equipment_variants={melee_equipment_0={owner="EMB" creator="CHN"}}
 	}
 }
 #STARTING_PRODUCTION

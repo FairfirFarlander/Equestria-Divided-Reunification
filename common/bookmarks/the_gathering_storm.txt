@@ -100,7 +100,7 @@ bookmarks={
 		}
 		"HAY"={	#Hayseed Province
 			history="HAY_GATHERING_STORM_DESC"
-			ideology=neutrality	minor=yes
+			ideology=communism	minor=yes
 			ideas={}
 			focuses={}
 		}
@@ -110,8 +110,8 @@ bookmarks={
 			ideas={}
 			focuses={}
 		}
-		"JCH"={	#Jungle Changelings
-			history="JCH_GATHERING_STORM_DESC"
+		"EMB"={	#Ember
+			history="EMB_GATHERING_STORM_DESC"
 			ideology=communism	minor=yes
 			ideas={}
 			focuses={}

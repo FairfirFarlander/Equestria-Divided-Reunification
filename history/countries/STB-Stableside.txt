@@ -55,7 +55,7 @@ set_politics={
 	election_frequency=36
 	elections_allowed=no
 }
-create_country_leader={
+create_country_leader={	#Sprout, Bud?
 	name="Iris Kelly"	#desc=
 	expire="1965.1.1"	picture="portrait_pony_generic_navy_13.dds"
 	ideology=corporatocracy	female=yes

@@ -64,7 +64,7 @@
 		id=HAY_consult_locals
 		icon=GFX_goal_improve_relations_pony_pony
 		#prerequisite={focus=HAY_winter_07}
-		x=8 y=0 cost=5
+		x=11 y=0 cost=5
 		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAY_consult_locals"
@@ -348,10 +348,10 @@
 		id=HAY_city_focus
 		icon=GFX_goal_rct_expand_the_city
 		relative_position_id=HAY_clear_bayou
-		x=-1 y=3 cost=5
+		x=-3 y=3 cost=5
 		prerequisite={focus=HAY_expand_capital}
 		prerequisite={focus=HAY_local_works}
-		mutually_exclusive={focus=HAY_rural_focus}
+		available={NOT={has_completed_focus=HAY_city_focus}}
 		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAY_city_focus"
@@ -365,7 +365,7 @@
 		x=1 y=3 cost=5
 		prerequisite={focus=HAY_local_works}
 		prerequisite={focus=HAY_landgrants}
-		mutually_exclusive={focus=HAY_city_focus}
+		available={NOT={has_completed_focus=HAY_city_focus}}
 		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAY_rural_focus"

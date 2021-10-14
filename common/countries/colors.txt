@@ -24,7 +24,7 @@ HSW={color=rgb{179 179 255}
 	color_ui=rgb{179 179 255}}
 HWG={color=rgb{249 242 255}
 	color_ui=rgb{249 242 255}}
-JCH={color=rgb{20 45 19}
+EMB={color=rgb{20 45 19}
 	color_ui=rgb{20 45 19}}
 JTL={color=rgb{119 47 65}
 	color_ui=rgb{119 47 65}}

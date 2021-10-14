@@ -8,8 +8,8 @@ state={
 	provinces={3868 3943 3974 3985 4154 6942 6983 9586 9922 10731 11816 11872}
 	resources={rubber=5}
 	history={
-		owner=JCH
-		add_core_of=JCH
+		owner=EMB
+		add_core_of=EMB
 		#add_claim_by=
 		#victory_points={}
 		buildings={

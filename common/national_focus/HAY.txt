@@ -8,8 +8,8 @@ focus_tree={
 	shared_focus=EDR_A05
 }
 focus_tree={
-	id=HAY country={factor=0 modifier={add=20 tag=HAY}}
-	continuous_focus_position={x=1750 y=800}
+	id=HAY country={factor=0 modifier={add=30 tag=HAY}}
+	continuous_focus_position={x=3000 y=800}
 	default=no
 	shared_focus=HAY_no_equestria
 	shared_focus=HAY_consult_locals
@@ -18,7 +18,7 @@ focus_tree={
 	shared_focus=EDR_A05
 }
 focus_tree={
-	id=HAY country={factor=0 modifier={add=30 tag=HAY}}
+	id=HAY country={factor=0 modifier={add=20 tag=HAY}}
 	continuous_focus_position={x=3750 y=800}
 	default=no
 	shared_focus=BAL_proclaim_sesr
