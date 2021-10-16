@@ -11,21 +11,33 @@
 			}
 		}
 	}
-	shared_focus={		#Construct Armament Factories
-		id=EDR_I01B icon=GFX_goal_generic_construct_mil_factory
+	shared_focus={		#Increase Local Arms Production
+		id=EDR_I01A icon=GFX_goal_munitions_factories
 		relative_position_id=EDR_I00
-		x=-1 y=1 cost=7 ai_will_do={factor=40}
+		x=-2 y=1 cost=7 ai_will_do={factor=40}
 		prerequisite={focus=EDR_I00}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_I01B"
+			log="[GetDateText]: [Root.GetName]: focus EDR_I01A"
 			increase_society_development_gradually_with_tt=yes
 			one_random_arms_factory=yes
 		}
 	}
-	shared_focus={		#Construct Industrial Facility
-		id=EDR_I01C icon=GFX_goal_generic_construct_civ_factory
+	shared_focus={		#Improve Inter-State Infrastructure
+		id=EDR_I01B icon=GFX_goal_generic_construct_infrastructure
 		relative_position_id=EDR_I00
-		x=1 y=1 cost=7 ai_will_do={factor=40}
+		x=0 y=1 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_I00}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_I01B"
+			increase_society_development_gradually_with_tt=yes
+			one_random_infrastructure=yes
+			one_random_infrastructure=yes
+		}
+	}
+	shared_focus={		#Contract Civilian Companies
+		id=EDR_I01C icon=GFX_goal_generic_lau_construction
+		relative_position_id=EDR_I00
+		x=2 y=1 cost=7 ai_will_do={factor=40}
 		prerequisite={focus=EDR_I00}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus EDR_I01C"
@@ -33,87 +45,24 @@
 			one_random_industrial_complex=yes
 		}
 	}
-	shared_focus={		#Improve Inter-State Infrastructure
-		id=EDR_I01D icon=GFX_goal_generic_construct_infrastructure
-		relative_position_id=EDR_I00
-		x=3 y=1 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=EDR_I00}
+	shared_focus={		#Construct A Shipyard
+		id=EDR_I02A icon=GFX_goal_generic_naval_industry
+		relative_position_id=EDR_I01A
+		x=-1 y=1 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_I01A}
+		available={any_controlled_state_is_coastal=yes}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_I01D"
-			increase_society_development_gradually_with_tt=yes
-			one_random_infrastructure=yes
-			one_random_infrastructure=yes
+			log="[GetDateText]: [Root.GetName]: focus EDR_I02A"
+			one_random_dockyard=yes
 		}
 	}
-	shared_focus={		#Construct Armament Factories
-		id=EDR_I02B icon=GFX_goal_generic_construct_mil_factory
-		relative_position_id=EDR_I01B
-		x=0 y=1 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=EDR_I01B}
+	shared_focus={		#Oil Extraction and Sythetics Research
+		id=EDR_I02B icon=GFX_goal_oil_derrick
+		relative_position_id=EDR_I00
+		x=-1 y=2 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_I01A focus=EDR_I01B}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus EDR_I02B"
-			increase_society_development_gradually_with_tt=yes
-			two_random_arms_factory=yes
-		}
-	}
-	shared_focus={		#
-		id=EDR_I02C
-		icon=GFX_goal_generic_construct_civ_factory
-		relative_position_id=EDR_I01C
-		x=0 y=1 cost=7
-		prerequisite={focus=EDR_I01C}
-		ai_will_do={factor=40}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_I02C"
-			increase_society_development_gradually_with_tt=yes
-			two_random_industrial_complex=yes
-		}
-	}
-	shared_focus={		#Improve Extraction Techniques
-		id=EDR_I02D icon=GFX_goal_generic_coal_mining
-		relative_position_id=EDR_I01D
-		x=0 y=1 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=EDR_I01C focus=EDR_I01D}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_I02D"
-			add_tech_bonus={
-				name=excavation_bonus
-				bonus=0.75 uses=1
-				category=excavation_tech
-			}
-		}
-	}
-	shared_focus={		#Construct Armament Factories
-		id=EDR_I03B icon=GFX_goal_generic_construct_mil_factory
-		relative_position_id=EDR_I02B
-		x=0 y=1 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=EDR_I02B}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_I03B"
-			increase_society_development_gradually_with_tt=yes
-			two_random_arms_factory=yes
-			one_random_arms_factory=yes
-		}
-	}
-	shared_focus={		#Construct Industrial Facility
-		id=EDR_I03C icon=GFX_goal_generic_construct_civ_factory
-		relative_position_id=EDR_I02C
-		x=0 y=1 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=EDR_I02C}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_I03C"
-			increase_society_development_gradually_with_tt=yes
-			two_random_industrial_complex=yes
-			one_random_industrial_complex=yes
-		}
-	}
-	shared_focus={		#Oil Extraction and Sythetics Production
-		id=EDR_I03D icon=GFX_oilbarrels
-		relative_position_id=EDR_I02D
-		x=0 y=1 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=EDR_I02C focus=EDR_I02D}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_I03D"
 			add_tech_bonus={
 				name=synth_bonus
 				bonus=0.75 uses=1
@@ -121,39 +70,161 @@
 			}
 		}
 	}
-	shared_focus={		#
-		id=EDR_I04D icon=GFX_goal_double_research
-		relative_position_id=EDR_I03C
-		x=2 y=1 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=EDR_I03B}
-		prerequisite={focus=EDR_I03C}
+	shared_focus={		#Invest In Extraction Techniques
+		id=EDR_I02C icon=GFX_goal_generic_coal_mining
+		relative_position_id=EDR_I00
+		x=1 y=2 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_I01B focus=EDR_I01C}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_I02C"
+			add_tech_bonus={
+				name=excavation_bonus
+				bonus=0.75 uses=1
+				category=excavation_tech
+			}
+		}
+	}
+	shared_focus={		#Understanding of the Natural World
+		id=EDR_I02D icon=GFX_goal_double_research
+		relative_position_id=EDR_I01C
+		x=1 y=1 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_I01C}
 		bypass={NOT={amount_research_slots<3}}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_I02D"
+			increase_science_base=yes
+			add_research_slot=1
+		}
+	}
+	shared_focus={		#Reforge the Armnament Industry
+		id=EDR_I03A icon=GFX_IRE_heavy_industry
+		relative_position_id=EDR_I01A
+		x=0 y=2 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_I01A}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_I03A"
+			increase_society_development_gradually_with_tt=yes
+add_offsite_building={
+				type=arms_factory
+				level=1
+			}
+			one_random_arms_factory=yes
+		}
+	}
+	shared_focus={		#Sythetic Oil and Rubber Production Project
+		id=EDR_I03B icon=GFX_goal_oil
+		relative_position_id=EDR_I01B
+		x=0 y=2 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_I02B}
+		prerequisite={focus=EDR_I02C}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_I03B"
+			one_random_synthetic_refinery=yes
+		}
+	}
+	shared_focus={		#Encourage Industrial Development
+		id=EDR_I03C icon=GFX_goal_generic_lau_factory
+		relative_position_id=EDR_I01C
+		x=0 y=2 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_I01C}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_I03C"
+			increase_society_development_gradually_with_tt=yes
+			add_offsite_building={
+				type=industrial_complex
+				level=1
+			}
+			one_random_industrial_complex=yes
+		}
+	}
+	shared_focus={		#Expand Naval Construction Facilities
+		id=EDR_I04A icon=GFX_goal_generic_shipyard
+		relative_position_id=EDR_I02A
+		x=0 y=2 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_I02A}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_I04A"
+			one_random_dockyard=yes
+			one_random_dockyard=yes
+		}
+	}
+	shared_focus={		#Focus On Military Endevours
+		id=EDR_I04B icon=GFX_goal_generic_construct_mil_factory
+		relative_position_id=EDR_I03A
+		x=1 y=1 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_I03A}
+		mutually_exclusive={focus=EDR_I04C}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_I04B"
+			one_random_arms_factory=yes
+			two_random_arms_factory=yes
+		}
+	}
+	shared_focus={		#Focus On Civilian Endevours
+		id=EDR_I04C icon=GFX_goal_improve_industry
+		relative_position_id=EDR_I03C
+		x=-1 y=1 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_I03C}
+		mutually_exclusive={focus=EDR_I04B}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_I04C"
+			two_random_industrial_complex=yes
+			two_random_industrial_complex=yes
+		}
+	}
+	shared_focus={		#Evidence, Reason, and Understanding
+		id=EDR_I04D icon=GFX_focus_research
+		relative_position_id=EDR_I02D
+		x=0 y=2 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_I02D}
+		prerequisite={focus=EDR_I03C}
+		bypass={NOT={amount_research_slots<4}}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus EDR_I04D"
 			increase_science_base=yes
 			add_research_slot=1
 		}
 	}
-	shared_focus={		#
-		id=EDR_I05D icon=GFX_focus_research
-		relative_position_id=EDR_I04D
+	shared_focus={		#Set Aside Oil Stockpiles
+		id=EDR_I05A icon=GFX_oilbarrels
+		relative_position_id=EDR_I04A
 		x=0 y=1 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=EDR_I04D}
-		bypass={NOT={amount_research_slots<4}}
+		prerequisite={focus=EDR_I04A focus=EDR_I04B}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_I05D"
-			increase_science_base=yes
-			add_research_slot=1
+			log="[GetDateText]: [Root.GetName]: focus EDR_I05A"
+			random_owned_controlled_state={
+				add_extra_state_shared_building_slots=1
+				add_building_construction={
+					type=fuel_silo
+					level=1
+					instant_build=yes
+				}
+			}
 		}
 	}
-	shared_focus={		#
-		id=EDR_I06D icon=GFX_focus_research2
-		relative_position_id=EDR_I05D
-		x=0 y=1 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=EDR_I05D}
+	shared_focus={		#From Night To Day #Unlimited Power!
+		id=EDR_I05B icon=GFX_focus_generic_electricity
+		relative_position_id=EDR_I03C
+		x=0 y=2 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_I03C}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_I05B"
+			add_tech_bonus={
+				name=electronics
+				bonus=0.75 uses=1
+				category=electronics
+			}
+		}
+	}
+	shared_focus={		#To Boldly Go Where No-One Has Gone Before
+		id=EDR_I06 icon=GFX_focus_research2
+		relative_position_id=EDR_I04D
+		x=0 y=2 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_I04D}
+		prerequisite={focus=EDR_I05B}
 		bypass={NOT={amount_research_slots<5}}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_I06D"
+			log="[GetDateText]: [Root.GetName]: focus EDR_I06"
 			increase_science_base=yes
 			add_research_slot=1
 		}
