@@ -1,10 +1,9 @@
 focus_tree={
-	id=HFT_equeric country={factor=0 modifier={add=10 tag=HFT}}
-	continuous_focus_position={x=1000 y=1000}
+	id=HFT_generic country={factor=0 modifier={add=10 tag=HFT}}
+	continuous_focus_position={x=1750 y=800}
 	default=no
-	shared_focus=army_effort
-	shared_focus=aviation_effort
-	shared_focus=naval_effort
-	shared_focus=industrial_effort
-	shared_focus=political_effort
+	shared_focus=EDR_I00
+	shared_focus=EDR_L05
+	shared_focus=EDR_N05
+	shared_focus=EDR_A05
 }

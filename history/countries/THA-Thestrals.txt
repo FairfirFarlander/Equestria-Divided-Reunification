@@ -54,8 +54,8 @@ set_politics={
 	election_frequency=36	elections_allowed=no
 }
 create_country_leader={
-	name="Eee"	#desc=
-	expire="1014.6.6"	#picture=""
+	name="Argent End"	#desc=
+	expire="1014.6.6"	picture="Argent_End_Beginning.tga"
 	ideology=despotism	#female=yes
 	traits={}
 }

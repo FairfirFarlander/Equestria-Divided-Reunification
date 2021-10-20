@@ -1,0 +1,5 @@
+HEF_weather_tester={
+	#icon=
+	allowed={tag=HEF}
+	#visible={}
+}

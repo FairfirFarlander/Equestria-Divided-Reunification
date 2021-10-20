@@ -1,39 +1,50 @@
-EDR_L05_reward={
+EDR_L05_reward={	#Removed
 	if={limit={NOT={has_tech=melee_weapons1}}
 		add_tech_bonus={
 			name=musket_weaponry
-			bonus=0.75	uses=2
+			bonus=0.55	uses=1
 			category=infantry_weapons
-		}
-		add_tech_bonus={
-			name=renaissance_artillery
-			bonus=0.75	uses=1
-			category=artillery
 		}
 	}
-	if={limit={AND={has_tech=melee_weapons1 NOT={has_tech=pre_gw_artillery}}}
-		army_experience=5
-		add_tech_bonus={
-			name=rifle_weaponry
-			bonus=0.65	uses=1
-			category=infantry_weapons
-		}
+	if={limit={NOT={has_tech=pre_gw_artillery}}
 		add_tech_bonus={
 			name=renaissance_artillery
 			bonus=0.55	uses=1
 			category=artillery
 		}
 	}
-	if={limit={AND={has_tech=melee_weapons1 has_tech=pre_gw_artillery NOT={has_tech=infantry_weapons}}}
-		army_experience=10
+}
+EDR_L09D_reward={
+	custom_effect_tooltip=EDR_L09D_tooltip
+	hidden_effect={
 		add_tech_bonus={
-			name=rifle_weaponry
-			bonus=0.55	uses=1
-			category=infantry_weapons
+			name=support_weapons_bonus
+			bonus=0.75 uses=2
+			technology=support_weapons
+			technology=support_weapons2
+			technology=support_weapons3
+			technology=support_weapons4
+			technology=support_weapons_a
+			technology=support_weapons_b
+			technology=support_weapons_c
+			technology=support_weapons_d
+			technology=support_weapons_e
+			technology=support_weapons_f
+			technology=infantry_acclimatization
+			technology=night_vision
+			technology=night_vision2
+			technology=infantry_comms
+			technology=infantry_at
+			technology=infantry_at2
+			technology=infantry_at_a
+			technology=infantry_at_b
+			technology=infantry_aa
+			technology=improved_infantry_weapons
+			technology=improved_infantry_weapons_2
+			technology=advanced_infantry_weapons2
+			technology=advanced_infantry_weapons_a
+			technology=advanced_infantry_weapons_c
 		}
-	}
-	if={limit={has_tech=infantry_weapons}
-		army_experience=15
 	}
 }
 EDR_N05_reward={

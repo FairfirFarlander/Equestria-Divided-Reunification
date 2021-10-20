@@ -1,3 +1,49 @@
+#Generic Equestrian Seperatist Tree
+	shared_focus={		#The Death of an Era
+		id=EDR_no_equestria
+		icon=GFX_goal_eqc_shelter_celestia
+		x=0 y=0 cost=1.43
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_no_equestria"
+		}
+	}
+	shared_focus={		#Seperation From Equestria
+		id=EDR_seperation
+		icon=GFX_goal_revolution_pony
+		relative_position_id=EDR_no_equestria
+		x=0 y=1 cost=1.43
+		prerequisite={focus=EDR_no_equestria}
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_seperation"
+		}
+	}
+	shared_focus={		#Keep Your Freinds Close...
+		id=EDR_allies_and_enemies
+		icon=GFX_goal_generic_pony_unity
+		relative_position_id=EDR_revolution04
+		x=0 y=1 cost=1.43
+		prerequisite={focus=EDR_revolution04}
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_allies_and_enemies"
+		}
+	}
+	shared_focus={		#The Winter Troubles
+		id=EDR_winter_07
+		icon=GFX_goal_water
+		relative_position_id=EDR_allies_and_enemies
+		x=0 y=1 cost=4
+		prerequisite={focus=EDR_allies_and_enemies}
+		ai_will_do={factor=4000}
+		select_effect={
+			set_temp_variable={aaaaa=1}
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_winter_07"
+		}
+	}
 #Industry Tree
 	shared_focus={		#Acquire Industrial Tools
 		id=EDR_I00 icon=GFX_goal_generic_production
@@ -12,7 +58,7 @@
 		}
 	}
 	shared_focus={		#Increase Local Arms Production
-		id=EDR_I01A icon=GFX_goal_munitions_factories
+		id=EDR_I01A icon=GFX_goal_pony_labour
 		relative_position_id=EDR_I00
 		x=-2 y=1 cost=7 ai_will_do={factor=40}
 		prerequisite={focus=EDR_I00}
@@ -35,7 +81,7 @@
 		}
 	}
 	shared_focus={		#Contract Civilian Companies
-		id=EDR_I01C icon=GFX_goal_generic_lau_construction
+		id=EDR_I01C icon=GFX_goal_bag_of_money_pony
 		relative_position_id=EDR_I00
 		x=2 y=1 cost=7 ai_will_do={factor=40}
 		prerequisite={focus=EDR_I00}
@@ -97,7 +143,7 @@
 		}
 	}
 	shared_focus={		#Reforge the Armnament Industry
-		id=EDR_I03A icon=GFX_IRE_heavy_industry
+		id=EDR_I03A icon=GFX_goal_industrial_pony
 		relative_position_id=EDR_I01A
 		x=0 y=2 cost=7 ai_will_do={factor=40}
 		prerequisite={focus=EDR_I01A}
@@ -229,226 +275,290 @@ add_offsite_building={
 			add_research_slot=1
 		}
 	}
-	
-	
-	
-	shared_focus={		#Secret Weapons
-		id=EDR_secret_weapons
-		icon=GFX_goal_generic_secret_weapon
-		relative_position_id=EDR_I02Ci
-		x=2 y=1 cost=7
-		prerequisite={focus=EDR_I02Ci}
-		ai_will_do={factor=40}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_secret_weapons"
-			add_tech_bonus={
-				name=secret_bonus
-				bonus=1.0 uses=4
-				category=electronics
-				category=nuclear
-				category=rocketry
-			}
-		}
-	}
-	shared_focus={		#Nuclear Effort
-		id=EDR_nuclear_effort
-		icon=GFX_focus_wonderweapons
-		relative_position_id=EDR_secret_weapons
-		x=0 y=1 cost=7
-		prerequisite={focus=EDR_secret_weapons}
-		ai_will_do={factor=40}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_nuclear_effort"
-			add_tech_bonus={
-				name=nuclear_bonus
-				ahead_reduction=1
-				category=nuclear
-			}
-		}
-	}
 #Army Tree
-	shared_focus={		#Modernize Infantry Equipment
-		id=EDR_L05 icon=GFX_goal_generic_allies_build_infantry
+	shared_focus={		#Recover Lost Weaponry
+		id=EDR_L05 icon=GFX_focus_indy_swing_the_sword
 		search_filters={FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_RESEARCH}
-		x=-10 y=5 cost=7 ai_will_do={factor=40}
+		x=-10 y=5 cost=4 ai_will_do={factor=40}
+		bypass={AND={has_tech=melee_weapons1 has_tech=pre_gw_artillery}}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus EDR_L05"
-			EDR_L05_reward=yes
+			add_equipment_to_stockpile={type=melee_equipment_0 amount=220 producer=EQS}
 		}
 	}
-	shared_focus={		#Support Equipment Modernization
-		id=EDR_support_equipment
-		icon=GFX_goal_generic_small_arms
-		search_filters={FOCUS_FILTER_RESEARCH}
+	shared_focus={		#Restructure the Chain of Command
+		id=EDR_L06A icon=GFX_goal_officers
 		relative_position_id=EDR_L05
-		x=-2 y=1 cost=7
+		x=-3 y=1 cost=7 ai_will_do={factor=40}
 		prerequisite={focus=EDR_L05}
-		ai_will_do={factor=40}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_support_equipment"
+			log="[GetDateText]: [Root.GetName]: focus EDR_L06A"
 			add_tech_bonus={
-				name=recon_engineer_support
-				bonus=0.75	uses=2
+				name=land_doc_bonus
+				bonus=0.75 uses=1
+				category=land_doctrine
+			}
+		}
+	}
+	shared_focus={		#Seek Out Equestrian Weapons Caches
+		id=EDR_L06B icon=GFX_goal_generic_military_equipment
+		relative_position_id=EDR_L05
+		x=-1 y=1 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_L05}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_L06B"
+		}
+	}
+	shared_focus={		#Rekindle The Old Foundaries
+		id=EDR_L06C icon=GFX_goal_generic_army_artillery
+		relative_position_id=EDR_L05
+		x=1 y=1 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_L05}
+		bypass={has_tech=pre_gw_artillery}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_L06C"
+			add_tech_bonus={
+				name=artillery_bonus
+				bonus=0.55 uses=1
+				technology=pre_gw_artillery
+			}
+		}
+	}
+	shared_focus={		#Reverse Engineer Equestrian Rifles
+		id=EDR_L06D icon=GFX_focus_generic_commonwealth_build_infantry
+		relative_position_id=EDR_L05
+		x=3 y=1 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_L05}
+		available={has_equipment={infantry_equipment_0>99}}
+		bypass={has_tech=infantry_weapons}
+		select_effect={
+			set_temp_variable={aaaaa=1}
+			add_equipment_to_stockpile={type=infantry_equipment_0 amount=-100 producer=EQS}
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_L06D"
+			add_tech_bonus={
+				name=infantry_bonus
+				bonus=0.55 uses=1
+				technology=infantry_weapons
+			}
+		}
+	}
+	shared_focus={		#Promote NCOs From Within The Ranks
+		id=EDR_L07A icon=GFX_goal_military_mission_pony
+		relative_position_id=EDR_L06A
+		x=-1 y=1 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_L06A}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_L07A"
+			army_experience=15
+		}
+	}
+	shared_focus={		#Utilize Modern Military Doctrine
+		id=EDR_L07B icon=GFX_goal_generic_army_doctrines
+		relative_position_id=EDR_L06A
+		x=1 y=1 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_L06A}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_L07B"
+			add_tech_bonus={
+				name=land_doc_bonus
+				bonus=0.75 uses=1
+				category=land_doctrine
+			}
+		}
+	}
+	shared_focus={		#Restore Equestrian Tractor-Tank Production
+		id=EDR_L07C icon=GFX_focus_NZL_bob_semple_tank
+		relative_position_id=EDR_L06B
+		x=1 y=1 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_L05}
+		available={has_equipment={gw_tank_equipment>2}}
+		bypass={has_tech=gwtank}
+		select_effect={
+			set_temp_variable={aaaaa=1}
+			add_equipment_to_stockpile={type=gw_tank_equipment amount=-3 producer=EQS}
+			#country_event={id=EDR_L07Creward0.1 days=84}		#Tanks Off The Line
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_L07C"
+			add_equipment_to_stockpile={type=gw_tank_equipment amount=12 producer=EQS}
+			add_tech_bonus={
+				name=gwtank_bonus
+				bonus=0.55 uses=1
+				technology=gwtank
+			}
+		}
+	}
+	shared_focus={		#Develop Specialized Equipment
+		id=EDR_L07D icon=GFX_goal_generic_support_equipment
+		relative_position_id=EDR_L06D
+		x=-1 y=1 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_L06D}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_L07D"
+			add_tech_bonus={
+				name=support_equipment_bonus
+				bonus=0.75 uses=1
 				category=recon_tech
 				category=engineers_tech
+				category=military_police_tech
+				category=maintenance_company_tech
 			}
 		}
 	}
-	shared_focus={		#Doctrine Effort
-		id=EDR_doc
-		icon=GFX_goal_generic_army_doctrines
-		search_filters={FOCUS_FILTER_RESEARCH}
-		relative_position_id=EDR_L05
-		x=-4 y=1 cost=7
-		prerequisite={focus=EDR_L05}
-		ai_will_do={factor=40}
+	shared_focus={		#Form Specialized Combat Regiments
+		id=EDR_L07E icon=GFX_focus_military_derpy
+		relative_position_id=EDR_L06D
+		x=1 y=1 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_L06D}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_doctrine_effort"
-			army_experience=5
+			log="[GetDateText]: [Root.GetName]: focus EDR_L07E"
+			add_tech_bonus={
+				name=special_ops_bonus
+				bonus=0.75 uses=1
+				category=marine_tech
+				category=mountaineers_tech
+			}
+		}
+	}
+	shared_focus={		#Reform Military Operations
+		id=EDR_L08A icon=GFX_goal_AST_state_of_army
+		relative_position_id=EDR_L06A
+		x=0 y=2 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_L07A}
+		prerequisite={focus=EDR_L07B}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_L08A"
 			add_tech_bonus={
 				name=land_doc_bonus
-				bonus=0.66 uses=1
+				bonus=0.75 uses=1
 				category=land_doctrine
 			}
 		}
 	}
-	shared_focus={		#Motorization Effort
-		id=EDR_motorization_effort
-		icon=GFX_goal_generic_army_motorized
-		relative_position_id=EDR_army_effort
-		x=2 y=1 cost=7
-		prerequisite={focus=EDR_army_effort}
-		bypass={has_tech=motorised_infantry}
-		ai_will_do={factor=40}
+	shared_focus={		#Serialize Motor Vehicles
+		id=EDR_L08B icon=GFX_goal_generic_army_motorized
+		relative_position_id=EDR_L07C
+		x=-1 y=1 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_L07C}
+		available={has_equipment={motorized_equipment_1>9}}
+		bypass={has_tech=motorized_infantry}
+		select_effect={
+			set_temp_variable={aaaaa=1}
+			add_equipment_to_stockpile={type=motorized_equipment_1 amount=-10 producer=EQS}
+			#country_event={id=EDR_L07Creward0.1 days=84}		#Tanks Off The Line
+		}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_motorization_effort"
+			log="[GetDateText]: [Root.GetName]: focus EDR_L08B"
+			add_equipment_to_stockpile={type=motorized_equipment_1 amount=30 producer=EQS}
 			add_tech_bonus={
 				name=motorized_bonus
-				bonus=0.66
-				technology=motorised_infantry
-			}
-		}
-	}
-	shared_focus={		#Equipment Effort II
-		id=EDR_equipment_effort_ii
-		icon=GFX_goal_generic_army_artillery
-		relative_position_id=EDR_equipment_effort
-		x=0 y=1 cost=7
-		prerequisite={focus=EDR_equipment_effort}
-		ai_will_do={factor=40}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_equipment_effort_2"
-			add_tech_bonus={
-				name=infantry_artillery_bonus
-				bonus=0.66 uses=1
-				category=infantry_weapons
-				category=artillery
-			}
-		}
-	}
-	shared_focus={		#Doctrine Effort II
-		id=EDR_doctrine_effort_ii
-		icon=GFX_goal_generic_army_doctrines
-		relative_position_id=EDR_doctrine_effort
-		x=0 y=1 cost=7
-		prerequisite={focus=EDR_doctrine_effort}
-		ai_will_do={factor=40}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_doctrine_effort_2"
-			army_experience=5
-			add_tech_bonus={
-				name=land_doc_bonus
-				bonus=1.0 uses=1
-				category=land_doctrine
-			}
-		}
-	}
-	shared_focus={		#Motorization Effort II
-		id=EDR_motorization_effort_ii
-		icon=GFX_goal_generic_build_tank
-		relative_position_id=EDR_motorization_effort
-		x=0 y=1 cost=7
-		prerequisite={focus=EDR_motorization_effort}
-		ai_will_do={factor=40}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_motorization_effort_2"
-			add_tech_bonus={
-				name=motorized_bonus
-				ahead_reduction=2 uses=1
+				bonus=0.55 uses=1
 				category=motorized_equipment
 			}
 		}
 	}
-	shared_focus={		#Equipment Effort III
-		id=EDR_equipment_effort_iii
-		icon=GFX_goal_generic_army_artillery2
-		relative_position_id=EDR_equipment_effort_ii
-		x=0 y=1 cost=7
-		prerequisite={focus=EDR_equipment_effort_ii}
-		ai_will_do={factor=40}
+	shared_focus={		#Repair The Howitzer Factory Molds
+		id=EDR_L08C icon=GFX_goal_artillery
+		relative_position_id=EDR_L06C
+		x=0 y=2 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_L06C}
+		available={has_equipment={artillery_equipment_1>11}}
+		bypass={has_tech=gw_artillery}
+		select_effect={
+			set_temp_variable={aaaaa=1}
+			add_equipment_to_stockpile={type=artillery_equipment_1 amount=-12 producer=EQS}
+		}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_equipment_effort_3"
+			log="[GetDateText]: [Root.GetName]: focus EDR_L08C"
+			add_equipment_to_stockpile={type=artillery_equipment_1 amount=36 producer=EQS}
 			add_tech_bonus={
-				name=infantry_artillery_bonus
-				ahead_reduction=2 uses=1
+				name=artillery_bonus
+				bonus=0.55 uses=1
+				technology=gw_artillery
+			}
+		}
+	}
+	shared_focus={		#Improve Exisitng Rifle Designs
+		id=EDR_L08D icon=GFX_goal_van_rifles
+		relative_position_id=EDR_L06D
+		x=0 y=2 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_L06D}
+		prerequisite={focus=EDR_L07D focus=EDR_L07E}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_L08D"
+			add_tech_bonus={
+				name=infantry_bonus
+				bonus=0.55 uses=1
 				category=infantry_weapons
-				category=artillery
 			}
 		}
 	}
-	shared_focus={		#Doctrine Effort II
-		id=EDR_doctrine_effort_iii
-		icon=GFX_goal_generic_army_doctrines
-		relative_position_id=EDR_doctrine_effort_ii
-		x=0 y=1 cost=7
-		prerequisite={focus=EDR_doctrine_effort_ii}
-		ai_will_do={factor=40}
+	shared_focus={		#Establish The Military Academy
+		id=EDR_L09A icon=GFX_goal_Equestrian_Royal_Army_1
+		relative_position_id=EDR_L06A
+		x=0 y=3 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_L08A}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_doctrine_effort_3"
-			army_experience=5
-			add_tech_bonus={
-				name=land_doc_bonus
-				bonus=1.0 uses=1
-				category=land_doctrine
-			}
+			log="[GetDateText]: [Root.GetName]: focus EDR_L09A"
+			ROOT={add_ideas=EDR_army_command}
 		}
 	}
-	shared_focus={		#Motorization Effort III
-		id=EDR_motorization_effort_iii
-		icon=GFX_goal_generic_army_tanks
-		relative_position_id=EDR_motorization_effort_ii
-		x=0 y=1 cost=7
-		prerequisite={focus=EDR_motorization_effort_ii}
-		ai_will_do={factor=40}
+	shared_focus={		#The Future Of Fighting Vehicles
+		id=EDR_L09B icon=GFX_goal_generic_army_tank_2
+		relative_position_id=EDR_L08B
+		x=0 y=1 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_L08B}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_motorization_effort_3"
+			log="[GetDateText]: [Root.GetName]: focus EDR_L09B"
 			add_tech_bonus={
-				name=armor_bonus
-				bonus=0.66 uses=2
+				name=tank_bonus
+				bonus=0.55 uses=1
 				category=armor
 			}
 		}
 	}
-	shared_focus={		#Special Forces
-		id=EDR_special_forces
-		icon=GFX_goal_generic_special_forces
-		relative_position_id=EDR_doctrine_effort_iii
-		x=0 y=1 cost=7
-		prerequisite={
-			focus=EDR_equipment_effort_iii
-			focus=EDR_doctrine_effort_iii
-			focus=EDR_motorization_effort_iii
-		}
-		ai_will_do={factor=40}
+	shared_focus={		#Man The Arsenals
+		id=EDR_L09C icon=GFX_goal_Anti_Air_Guns
+		relative_position_id=EDR_L08C
+		x=0 y=1 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_L08C}
+		prerequisite={focus=EDR_L08D}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_motorization_effort_3"
+			log="[GetDateText]: [Root.GetName]: focus EDR_L09C"
 			add_tech_bonus={
-				name=special_forces_bonus
-				bonus=1 uses=1
-				category=special_forces_tech
+				name=support_artillery_bonus
+				bonus=0.75 uses=2
+				category=artillery
 			}
 		}
 	}
+	shared_focus={		#Update The Infantry Kit
+		id=EDR_L09D icon=GFX_goal_generic_ponykind
+		relative_position_id=EDR_L08D
+		x=0 y=1 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_L08D}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_L09D"
+			EDR_L09D_reward=yes
+		}
+	}
+	shared_focus={		#To Embue Magic Into A Machine
+		id=EDR_L09E icon=GFX_goal_magical_weapon_focus
+		relative_position_id=EDR_L08D
+		x=2 y=1 cost=7 ai_will_do={factor=40}
+		prerequisite={focus=EDR_L08D}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EDR_L09E"
+			add_tech_bonus={
+				name=magical_tech_bonus
+				bonus=0.75 uses=1
+				category=magical_tech
+			}
+		}
+	}
+	#support_weapons infantry_acclimatization
 #Navy Tree
 	shared_focus={		#Establish the Navy
 		id=EDR_N05 icon=GFX_goal_generic_construct_naval_dockyard
@@ -544,9 +654,7 @@ add_offsite_building={
 		id=EDR_N07B icon=GFX_goal_generic_navy_doctrines_tactics
 		relative_position_id=EDR_N06A
 		x=0 y=1 cost=7 ai_will_do={factor=40}
-		allow_branch={has_dlc="Man the Guns"}
 		prerequisite={focus=EDR_N06A}
-		available={any_controlled_state_is_coastal=yes}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus EDR_N07B"
 			add_tech_bonus={
@@ -656,14 +764,14 @@ add_offsite_building={
 		x=4 y=3 cost=7 ai_will_do={factor=40}
 		prerequisite={focus=EDR_N06D focus=EDR_N06C}
 		prerequisite={focus=EDR_N07E}
-		mutually_exclusive={focus=EDR_N08E focus=EDR_N08C}
+		mutually_exclusive={focus=EDR_N08C focus=EDR_N08D}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus EDR_N08E"
 			EDR_N08E_reward=yes
 		}
 	}
 	shared_focus={		#Establish the Naval Academy
-		id=EDR_N09 icon=GFX_sic_navy_hat
+		id=EDR_N09 icon=GFX_goal_Equestrian_Royal_Navy_1
 		relative_position_id=EDR_N05
 		x=0 y=4 cost=7 ai_will_do={factor=40}
 		prerequisite={focus=EDR_N08E focus=EDR_N08E focus=EDR_N08C}
@@ -882,7 +990,7 @@ add_offsite_building={
 		}
 	}
 	shared_focus={		#Establish the Airforce Academy
-		id=EDR_A09B icon=GFX_goal_air_armada
+		id=EDR_A09B icon=GFX_goal_Equestrian_Royal_Air_Force_1
 		relative_position_id=EDR_A05
 		x=1 y=4 cost=7 ai_will_do={factor=40}
 		prerequisite={focus=EDR_A08D}
@@ -890,51 +998,5 @@ add_offsite_building={
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus EDR_A09B"
 			ROOT={add_ideas=EDR_airforce_command}
-		}
-	}
-#Generic Equestrian Seperatist Tree
-	shared_focus={		#The Death of an Era
-		id=EDR_no_equestria
-		icon=GFX_goal_eqc_shelter_celestia
-		x=0 y=0 cost=1.43
-		ai_will_do={factor=4000}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_no_equestria"
-		}
-	}
-	shared_focus={		#Seperation From Equestria
-		id=EDR_seperation
-		icon=GFX_goal_revolution_pony
-		relative_position_id=EDR_no_equestria
-		x=0 y=1 cost=1.43
-		prerequisite={focus=EDR_no_equestria}
-		ai_will_do={factor=4000}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_seperation"
-		}
-	}
-	shared_focus={		#Keep Your Freinds Close...
-		id=EDR_allies_and_enemies
-		icon=GFX_goal_generic_pony_unity
-		relative_position_id=EDR_revolution04
-		x=0 y=1 cost=1.43
-		prerequisite={focus=EDR_revolution04}
-		ai_will_do={factor=4000}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_allies_and_enemies"
-		}
-	}
-	shared_focus={		#The Winter Troubles
-		id=EDR_winter_07
-		icon=GFX_goal_water
-		relative_position_id=EDR_allies_and_enemies
-		x=0 y=1 cost=4
-		prerequisite={focus=EDR_allies_and_enemies}
-		ai_will_do={factor=4000}
-		select_effect={
-			set_temp_variable={aaaaa=1}
-		}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_winter_07"
 		}
 	}

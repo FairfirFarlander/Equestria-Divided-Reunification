@@ -1,0 +1,27 @@
+HEF_weather_tester={
+	HEF_blizzard={
+		#icon=
+		cost=10
+		fire_only_once=yes
+		days_remove=30
+		highlight_provinces={603 764 776 3741 3768 6631 6747 9622 9741 9745 11655 13124}
+		complete_effect={
+			log="Blizzards back on the menu boyz!"
+			2={
+				add_province_modifier={
+					static_modifiers={weather_extreme_cold}
+					province={all_provinces=yes}
+				}
+			}
+		}
+		remove_effect={
+			log="We killed Bambi"
+			2={
+				remove_province_modifier={
+					static_modifiers={weather_extreme_cold}
+					province={all_provinces=yes}
+				}
+			}
+		}
+	}
+}

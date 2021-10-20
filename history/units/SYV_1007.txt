@@ -1,0 +1,95 @@
+division_template={	#TEMPLATES
+	name="Stroi"	#Based on Foreign (organized) Formation Force
+	priority=0
+	regiments={
+		infantry={x=0 y=0}
+		infantry={x=0 y=1}
+	}
+}
+division_template={
+	name="Streletskoye Voysko"	#Pre-Reform Infantry - Landless
+	priority=1	is_locked=yes	#Locked until reforms
+	regiments={
+		infantry={x=0 y=0}	infantry={x=1 y=0}
+		infantry={x=0 y=1}	infantry={x=1 y=1}
+	}
+}
+division_template={
+	name="Pomestnoe Voysko"	#Pre-Reform Cavalry - Landed
+	priority=1	is_locked=yes	#Locked until reforms
+	regiments={
+		pegasi={x=0 y=0}
+		pegasi={x=0 y=1}
+		pegasi={x=0 y=2}
+	}
+}
+units={	#DEPLOYMENTS
+	division={		#Baicall
+		name="Baicall Stroi"
+		location=6208
+		division_template="Stroi"
+		start_experience_factor=0.02
+		start_equipment_factor=0.6
+	}
+	division={		#Chillwing
+		name="Chillwing Stroi"
+		location=12756
+		division_template="Stroi"
+		start_experience_factor=0.02
+		start_equipment_factor=0.4
+	}
+	division={		#Krupochkino
+		name="Krupochkino Stroi"
+		location=6350
+		division_template="Stroi"
+		start_experience_factor=0.07
+		start_equipment_factor=0.9
+	}
+	division={		#Novochernushsk
+		name="Novochernushsk Stroi"
+		location=351
+		division_template="Stroi"
+		start_experience_factor=0.1
+		start_equipment_factor=1
+		force_equipment_variants={melee_equipment_1={owner="SYV" creator="EQS"}}
+	}
+	division={		#Redheart
+		name="Streletskoye Serdtse"
+		location=3983
+		division_template="Streletskoye Voysko"
+		start_experience_factor=0.1
+		start_equipment_factor=0.8
+	}
+	division={		#Kobilkyno
+		name="Streletskoye Kobilkyno"
+		location=6925
+		division_template="Streletskoye Voysko"
+		start_experience_factor=0.1
+		start_equipment_factor=0.8
+	}
+	division={		#Bird Territory
+		name="Pomestnoe Bordo"
+		location=869
+		division_template="Pomestnoe Voysko"
+		start_experience_factor=0.23
+		start_equipment_factor=0.95
+	}
+}
+instant_effect={	#STARTING PRODUCTION
+	add_equipment_production={
+		equipment={type=melee_equipment_0 creator="TRT"}
+		requested_factories=2 progress=0.75 efficiency=10
+	}
+	add_equipment_production={
+		equipment={type=melee_equipment_1 creator="TRT"}
+		requested_factories=1 progress=0.75 efficiency=30
+	}
+	add_equipment_production={
+		equipment={type=support_equipment_1	creator="TRT"}
+		requested_factories=1 progress=0.75 efficiency=90
+	}
+	add_equipment_production={
+		equipment={type=artillery_equipment_0 creator="TRT"}
+		requested_factories=1 progress=0.75 efficiency=20
+	}
+}

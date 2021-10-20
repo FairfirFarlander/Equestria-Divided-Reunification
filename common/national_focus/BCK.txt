@@ -1,6 +1,6 @@
 focus_tree={
 	id=BCK_generic country={factor=0 modifier={add=10 tag=BCK}}
-	continuous_focus_position={x=10 y=10} #2130 930, 2140 940
+	continuous_focus_position={x=2130 y=940} #2130 930, 2140 940
 	default=no
 	shared_focus=EDR_I00
 	shared_focus=EDR_L05
@@ -8,4 +8,6 @@ focus_tree={
 	shared_focus=EDR_N06B
 	shared_focus=EDR_A05
 	shared_focus=EDR_A08A
+	shared_focus=EDRpolitical_effort
+	shared_focus=EDRgriffon_political_effort
 }

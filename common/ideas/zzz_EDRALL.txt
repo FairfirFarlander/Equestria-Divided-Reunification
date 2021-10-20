@@ -1,5 +1,16 @@
 ideas={
 	country={
+		EDR_army_command={
+			allowed={always=no}
+			#picture=
+			removal_cost=-1
+			modifier={
+				experience_gain_army=0.02
+			}
+			research_bonus={
+				land_doctrine=0.07
+			}
+		}
 		EDR_navy_command={
 			allowed={always=no}
 			#picture=

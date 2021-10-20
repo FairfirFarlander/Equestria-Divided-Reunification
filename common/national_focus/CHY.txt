@@ -1,14 +1,4 @@
 focus_tree={
-	id=CHY_grifneric country={factor=0 modifier={add=10 tag=CHY}}
-	continuous_focus_position={x=1750 y=800}
-	default=no
-	shared_focus=griffon_political_effort
-	shared_focus=griffon_industrial_effort
-	shared_focus=griffon_expand_army
-	shared_focus=griffon_aviation_effort
-	shared_focus=griffon_naval_effort
-}
-focus_tree={
 	id=CHY_generic country={factor=0 modifier={add=10 tag=CHY}}
 	continuous_focus_position={x=1750 y=800}
 	default=no

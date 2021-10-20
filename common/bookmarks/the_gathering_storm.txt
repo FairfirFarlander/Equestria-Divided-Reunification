@@ -158,10 +158,10 @@ bookmarks={
 		#	ideas={}
 		#	focuses={}
 		#}
-		"STP"={	#Petershoof
-			history="STP_GATHERING_STORM_DESC"
-			ideology=neutrality	minor=yes
-			ideas={STP_romanhoove	STP_return	STP_streltsy_rowdy}
+		"SYV"={	#Severyana
+			history="SYV_GATHERING_STORM_DESC"
+			ideology=communism	minor=yes
+			ideas={}
 			focuses={}
 		}
 		"SWT"={	#Stormwing Territories

@@ -9,6 +9,7 @@ state={
 	resources={}
 	history={
 		owner=SYV
+		add_core_of=SYV
 		add_core_of=STG
 		#add_claim_by=
 		victory_points={6350 5}
