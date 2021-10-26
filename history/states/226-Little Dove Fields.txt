@@ -11,10 +11,10 @@ state={
 		owner=HMS
 		add_core_of=HMS
 		#add_claim_by=
-		victory_points={11875 10}
+		victory_points={11875 5}
 		buildings={
 		#STATE BUILDINGS
-			infrastructure=1
+			infrastructure=3
 			air_base=0
 			anti_air_building=0
 			radar_station=0

@@ -6,10 +6,10 @@ state={
 	buildings_max_level_factor=1
 	impassable=no
 	provinces={629 3621 3754 3910 6536 6648 6862 9732 9794 9838 9904 11465 11751 11846 11882 11889}
-	resources={steel=10}
+	resources={steel=8}#w to Bugbear Grove
 	history={
 		owner=BCK
-		add_core_of=BCK
+		add_core_of=CUL
 		#add_claim_by=
 		#victory_points={}
 		set_demilitarized_zone=yes

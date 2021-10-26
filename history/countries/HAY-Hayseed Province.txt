@@ -47,11 +47,11 @@ set_rule={can_generate_female_aces=yes}
 #DIPLOMACY
 #POLITICS
 set_popularities={
-	fascism=11	communism=32
-	neutrality=49	democratic=8
+	fascism=11	communism=49
+	neutrality=32	democratic=8
 }
 set_politics={
-	ruling_party=neutrality	last_election="1001.10.10"
+	ruling_party=communism	last_election="1001.10.10"
 	election_frequency=36	elections_allowed=no
 }
 create_country_leader={

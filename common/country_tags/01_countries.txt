@@ -1,6 +1,6 @@
 ALA="countries/Alamane.txt"
 BCK="countries/Buckcastle.txt"
-CHY="countries/DodgeJunction.txt"
+CHY="countries/CherryClan.txt"
 COT="countries/ConfederationTrotsas.txt"
 CUL="countries/Cult.txt"
 EMB="countries/Ember.txt"

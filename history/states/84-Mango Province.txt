@@ -6,12 +6,12 @@ state={
 	buildings_max_level_factor=1
 	impassable=no
 	provinces={541 925 967 1440 3716 3968 9539 9618 9924 9990 10027 11732 12066 12698}
-	resources={}
+	resources={tungsten=2 steel=2}
 	history={
 		owner=BCK
-		add_core_of=THA
-		#add_claim_by=
-		#victory_points={}
+		add_core_of=BCK
+		#add_claim_by=THA
+		victory_points={541 1}
 		buildings={
 		#STATE BUILDINGS
 			infrastructure=0

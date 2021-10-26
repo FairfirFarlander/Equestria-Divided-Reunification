@@ -1,6 +1,6 @@
 	shared_focus={
 		id=EDRpolitical_effort icon=GFX_goal_generic_demand_territory
-		x=-3 y=-5 cost=10 ai_will_do={factor=40}
+		x=-4 y=-7 cost=10 ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: Focus EDRpolitical_effort"
 			add_political_power=120

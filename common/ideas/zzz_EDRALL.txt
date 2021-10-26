@@ -35,6 +35,15 @@ ideas={
 				air_doctrine=0.07
 			}
 		}
+		EDR_supremacy_populism={
+			allowed={always=no}
+			#picture=
+			removal_cost=-1
+			modifier={
+				fascism_drift=0.1
+				conscription_factor=0.05
+			}
+		}
 		moonstar_influence0={	#Moonstar Influence STARTS
 			allowed={always=no}
 			picture=HMS_idea

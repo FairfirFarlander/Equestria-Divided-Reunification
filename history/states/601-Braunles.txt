@@ -11,7 +11,6 @@ state={
 		#owner=SRS
 		#add_core_of=SRS
 		#add_claim_by=NTR
-		#add_claim_by=FAT
 		victory_points={13235 5}
 		buildings={
 		#STATE BUILDINGS

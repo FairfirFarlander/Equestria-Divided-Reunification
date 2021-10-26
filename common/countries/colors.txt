@@ -8,6 +8,8 @@ COT={color=rgb{157 147 130}
 	color_ui=rgb{157 147 130}}
 CUL={color=rgb{101 1 36}
 	color_ui=rgb{101 1 36}}
+EMB={color=rgb{20 45 19}
+	color_ui=rgb{20 45 19}}
 FLY={color=rgb{137 132 234}
 	color_ui=rgb{137 132 234}}
 HAY={color=rgb{255 204 102}
@@ -24,8 +26,6 @@ HSW={color=rgb{179 179 255}
 	color_ui=rgb{179 179 255}}
 HWG={color=rgb{249 242 255}
 	color_ui=rgb{249 242 255}}
-EMB={color=rgb{20 45 19}
-	color_ui=rgb{20 45 19}}
 JTL={color=rgb{119 47 65}
 	color_ui=rgb{119 47 65}}
 LAS={color=rgb{162 125 0}
@@ -195,8 +195,6 @@ D49={color=rgb{195 149 155}
 	color_ui=rgb{254 194 202}}
 D50={color=rgb{210 106 47}
 	color_ui=rgb{255 138 61}}
-ROC={color=rgb{91 100 130}
-	color_ui=rgb{79 87 112}}
 JAK={color=rgb{100 150 193}
 	color_ui=rgb{100 150 193}}
 GEU={color=rgb{102 0 0}

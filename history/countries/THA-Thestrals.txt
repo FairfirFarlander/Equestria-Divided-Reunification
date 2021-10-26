@@ -59,5 +59,11 @@ create_country_leader={
 	ideology=despotism	#female=yes
 	traits={}
 }
+create_country_leader={
+	name="The Count"	#desc=
+	expire="1025.10.31"	picture="The_Count.tga"
+	ideology=holy_order_f	#female=yes
+	traits={}
+}
 #MILITARY
 #VARIENTS

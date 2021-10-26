@@ -80,7 +80,7 @@ bookmarks={
 			ideas={}
 			focuses={}
 		}
-		#"CHY"={	#Dodge Province
+		#"CHY"={ #Dodge Province
 		#	history="CHY_GATHERING_STORM_DESC"
 		#	ideology=fascism	minor=yes
 		#	ideas={}
@@ -104,60 +104,60 @@ bookmarks={
 			ideas={}
 			focuses={}
 		}
-		"HFT"={	#Hoofington Province
-			history="HFT_GATHERING_STORM_DESC"
-			ideology=neutrality	minor=yes
-			ideas={}
-			focuses={}
-		}
+		#"HFT"={ #Hoofington Province
+		#	history="HFT_GATHERING_STORM_DESC"
+		#	ideology=neutrality	minor=yes
+		#	ideas={}
+		#	focuses={}
+		#}
 		"EMB"={	#Ember
 			history="EMB_GATHERING_STORM_DESC"
 			ideology=communism	minor=yes
 			ideas={}
 			focuses={}
 		}
-		#"JTL"={	#Jungle League
-		#	history="JTL_GATHERING_STORM_DESC"
-		#	ideology=democratic	minor=yes
-		#	ideas={}
-		#	focuses={}
-		#}
+		"JTL"={	#Jungle League
+			history="JTL_GATHERING_STORM_DESC"
+			ideology=neutrality	minor=yes
+			ideas={}
+			focuses={}
+		}
 		"LAS"={	#LasAetherius
 			history="LAS_GATHERING_STORM_DESC"
 			ideology=neutrality	minor=yes
 			ideas={}
 			focuses={}
 		}
-		"MWC"={	#Meadowood Province
-			history="MWC_GATHERING_STORM_DESC"
-			ideology=neutrality	minor=yes
-			ideas={}
-			focuses={}
-		}
+		#"MWC"={	#Meadowood Province
+		#	history="MWC_GATHERING_STORM_DESC"
+		#	ideology=neutrality	minor=yes
+		#	ideas={}
+		#	focuses={}
+		#}
 		"NIH"={	#Acornage Holdout
 			history="NIH_GATHERING_STORM_DESC"
 			ideology=neutrality	minor=yes
 			ideas={}
 			focuses={}
 		}
-		#"PIE"={	#Rockville Province
-		#	history="PIE_GATHERING_STORM_DESC"
-		#	ideology=fascism	minor=yes
-		#	ideas={}
-		#	focuses={}
-		#}
+		"PIE"={	#Rockville Province
+			history="PIE_GATHERING_STORM_DESC"
+			ideology=fascism	minor=yes
+			ideas={}
+			focuses={}
+		}
 		"PLT"={	#Portland Province
 			history="PLT_GATHERING_STORM_DESC"
 			ideology=democratic	minor=yes
 			ideas={}
 			focuses={}
 		}
-		#"STB"={	#Stableside Province
-		#	history="STB_GATHERING_STORM_DESC"
-		#	ideology=neutrality	minor=yes
-		#	ideas={}
-		#	focuses={}
-		#}
+		"STB"={	#Stableside Province
+			history="STB_GATHERING_STORM_DESC"
+			ideology=neutrality	minor=yes
+			ideas={}
+			focuses={}
+		}
 		"SYV"={	#Severyana
 			history="SYV_GATHERING_STORM_DESC"
 			ideology=communism	minor=yes
@@ -176,12 +176,12 @@ bookmarks={
 			ideas={}
 			focuses={}
 		}
-		"VHT"={	#Vanhoover Province
-			history="VHT_GATHERING_STORM_DESC"
-			ideology=communism	minor=yes
-			ideas={}
-			focuses={}
-		}
+		#"VHT"={	#Vanhoover Province
+		#	history="VHT_GATHERING_STORM_DESC"
+		#	ideology=communism	minor=yes
+		#	ideas={}
+		#	focuses={}
+		#}
 		effect={
 			randomize_weather=22345 #Obligatory in every bookmark!
 			#123={rain_light=yes}

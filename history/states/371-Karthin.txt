@@ -22,7 +22,7 @@ state={
 		#SHARED BUILDINGS
 			arms_factory=2
 			industrial_complex=3
-			dockyard=2
+			dockyard=4
 			synthetic_refinery=0
 			fuel_silo=0
 			rocket_site=0

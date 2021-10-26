@@ -1,7 +1,8 @@
 focus_tree={
 	id=BCK_generic country={factor=0 modifier={add=10 tag=BCK}}
-	continuous_focus_position={x=2130 y=940} #2130 930, 2140 940
+	continuous_focus_position={x=2130 y=0} #2130 930, 2140 940
 	default=no
+	shared_focus=EDR_P00
 	shared_focus=EDR_I00
 	shared_focus=EDR_L05
 	shared_focus=EDR_N05

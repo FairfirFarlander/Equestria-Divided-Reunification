@@ -18,9 +18,15 @@ set_technology={
 	melee_weapons=1
 	melee_weapons1=1
 	tech_support=1
+	tech_recon=1
+	tech_engineers=1
 	tech_military_police=1
 	pre_gw_artillery=1
+	#gw_artillery=1
+	#interwar_antitank=1
+	gwtank=1
 	early_fighter=1
+	#early_bomber=1
 	tech_unicorn=1
 	tech_unicorn_ms=1
 }
@@ -30,8 +36,8 @@ set_rule={can_generate_female_aces=yes}
 #DIPLOMACY
 #POLITICS
 set_popularities={
-	fascism=100	communism=0
-	neutrality=0	democratic=0
+	fascism=52	communism=22
+	neutrality=21	democratic=5
 }
 set_politics={
 	ruling_party=fascism
@@ -43,12 +49,12 @@ create_country_leader={
 	name="Radiant Hope"	desc="POLITICS_RADIANTHOPE_DESC"
 	expire="1965.1.1"	picture="RadiantHope.tga"
 	ideology=nazism	female=yes
-	traits={}
+	traits={democratic_sympathies}
 }
 #create_country_leader={
 #	name="King Sombra"	desc="POLITICS_SOMBRA_DESC"
 #	expire="1965.1.1"	picture=GFX_SombraPortrait
-#	ideology=fascism_ideology	#female=yes
+#	ideology=magocracy	#female=yes
 #	traits={}
 #}
 create_country_leader={
@@ -71,16 +77,9 @@ create_country_leader={
 }
 #MILITARY
 create_field_marshal={
-	name="Shining Armour"	id=1043	desc="CRY_Shining_Armour_desc"
-	picture="ShiningArmour.tga"	#female=yes
-	skill=4	attack_skill=2	defense_skill=5
-	planning_skill=3	logistics_skill=3
-	traits={pony_race_trait equestrian_prince royal_guard_commander defensive_doctrine}
-}
-create_field_marshal={
-	name="Reese"	id=199	#desc=
+	name="Reese"	#id=199	#desc=
 	picture="Reese.tga"	#female=yes
-	skill=2	attack_skill=2	defense_skill=2
+	skill=2	attack_skill=2	defense_skill=3
 	planning_skill=2	logistics_skill=1
 	traits={pony_race_trait career_officer brilliant_strategist}
 }
@@ -92,60 +91,32 @@ create_corps_commander={
 	traits={pony_race_trait promising_general}
 }
 create_corps_commander={
-	name="Forest Nutmeg"	#id=	#desc=
-	picture="ForestNutmeg.tga"	female=yes
-	skill=2	attack_skill=1	defense_skill=3
-	planning_skill=2	logistics_skill=1
-	traits={pony_race_trait commando trait_engineer}
-}
-create_corps_commander={
-	name="Icy Snow"	#id=	#desc=
-	picture="Icy_snow.tga"	female=yes
-	skill=2	attack_skill=2	defense_skill=2
-	planning_skill=2	logistics_skill=1
-	traits={pony_race_trait winter_specialist trait_cautious}
-}
-create_corps_commander={
-	name="Cloudie"	id=197	#desc=
-	picture="Cloudie.tga"	female=yes
-	skill=2	attack_skill=2	defense_skill=2
-	planning_skill=2	logistics_skill=1
-	traits={pony_race_trait medical_expert}
-}
-create_corps_commander={
-	name="Deimos Falafel"	id=198	#desc=
+	name="Deimos Falafel"	#id=198	#desc=
 	picture="Damiyan.tga"	#female=yes
 	skill=2	attack_skill=1	defense_skill=2
 	planning_skill=2	logistics_skill=2
 	traits={pony_race_trait winter_specialist media_personality trait_reckless}
 }
 create_corps_commander={
+	name="Icy Snow"	#id=	#desc=
+	picture="Icy_snow.tga"	female=yes
+	skill=1	attack_skill=1	defense_skill=2
+	planning_skill=1	logistics_skill=1
+	traits={pony_race_trait winter_specialist trait_cautious}
+}
+create_corps_commander={
+	name="Cloudie"	#id=197	#desc=
+	picture="Cloudie.tga"	female=yes
+	skill=1	attack_skill=1	defense_skill=2
+	planning_skill=2	logistics_skill=1
+	traits={pony_race_trait medical_expert}
+}
+create_corps_commander={
 	name="Crystalline"	#id=	#desc=
-	picture="Crystalline.tga"	#female=yes
-	skill=2	attack_skill=1	defense_skill=1
-	planning_skill=2	logistics_skill=3
-	traits={pony_race_trait promising_general}
-}
-create_corps_commander={
-	name="Flash Sentry"	id=200	#desc=
-	picture="FlashSentry.tga"	#female=yes
-	skill=3	attack_skill=2	defense_skill=3
-	planning_skill=3	logistics_skill=2
-	traits={pony_race_trait infantry_leader}
-}
-create_corps_commander={
-	name="Solid Shot"	id=1046	desc="solidshot_desc"
-	picture="Solid_Shot.tga"	#female=yes
-	skill=1	attack_skill=2	defense_skill=1
-	planning_skill=1	logistics_skill=1
-	traits={pony_race_trait renowned_marksman infantry_leader}
-}
-create_corps_commander={
-	name="Wondermane"	id=1045	desc="cry_wondermane_desc"
-	picture="wondermane.tga"	female=yes
+	picture="Crystalline.tga"	female=yes
 	skill=1	attack_skill=1	defense_skill=1
-	planning_skill=1	logistics_skill=1
-	traits={pony_race_trait skilled_staffer ranger}
+	planning_skill=1	logistics_skill=3
+	traits={pony_race_trait promising_general}
 }
 random_unit_leader={
 	limit={has_id=1043}

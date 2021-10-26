@@ -6,12 +6,12 @@ state={
 	buildings_max_level_factor=1
 	impassable=no
 	provinces={636 678 704 3641 3646 3650 3700 4155 6531 9377 9587 9620 11601 11604 11642}
-	resources={tungsten=12 steel=32}
+	resources={tungsten=10 steel=22} #Steel 4 to Macintosh Hills, 2 to Mango Province, 4 to Hughills; 2 tungsten to Mango
 	history={
 		owner=THA
 		add_core_of=THA
 		#add_claim_by=THA
-		#victory_points={}
+		victory_points={11601 1}
 		buildings={
 		#STATE BUILDINGS
 			infrastructure=0

@@ -11,7 +11,7 @@ state={
 		#owner=MIT
 		#add_core_of=MIT
 		#add_claim_by=
-		victory_points={2117 1}
+		victory_points={2117 3}
 		victory_points={7387 1}
 		buildings={
 		#STATE BUILDINGS

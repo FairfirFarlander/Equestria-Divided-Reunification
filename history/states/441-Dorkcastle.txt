@@ -11,7 +11,7 @@ state={
 		#owner=FEA
 		#add_core_of=FEA
 		#add_claim_by=
-		victory_points={4132 5}
+		victory_points={4132 3}
 		buildings={
 		#STATE BUILDINGS
 			infrastructure=1

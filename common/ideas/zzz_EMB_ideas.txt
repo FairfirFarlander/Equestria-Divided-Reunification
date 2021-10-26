@@ -1,6 +1,6 @@
 ideas={
 	country={
-		EMB_Chruch_Of_The_First_Queen={	#Heed her teachings
+		EMB_Church_Of_The_First_Queen={	#Heed her teachings
 			allowed={always=no}
 			picture=holy_order
 			removal_cost=-1

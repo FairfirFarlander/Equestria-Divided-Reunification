@@ -1,14 +1,14 @@
 #LOCALE	#Literally Vietnam
 capital=36
 oob="EMB_1007"
-if={limit={has_dlc="Man the Guns"}set_naval_oob="EMB_1007_naval"}
-if={limit={not={has_dlc="Man the Guns"}}set_naval_oob="EMB_1007_naval_legacy"}
+#if={limit={has_dlc="Man the Guns"}set_naval_oob="EMB_1007_naval"}
+#if={limit={not={has_dlc="Man the Guns"}}set_naval_oob="EMB_1007_naval_legacy"}
 #FOUNTATION
 set_research_slots=2
 set_stability=0.46 set_war_support=0.07
 add_ideas={
 	EMB_Under_Cities
-	EMB_Chruch_Of_The_First_Queen
+	EMB_Church_Of_The_First_Queen
 	volunteer_only limited_exports isolation
 	poor_science_base communal_society
 	lack_of_scientists2 poverty4

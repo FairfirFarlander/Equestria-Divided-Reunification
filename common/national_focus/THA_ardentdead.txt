@@ -1,0 +1,54 @@
+#The Fruit of Our Eye
+	shared_focus={		#The Council Meeets
+		id=THA_SS00 #icon=
+		x=0 y=0 cost=4 ai_will_do={factor=40}
+		select_effect={set_temp_variable={aaaaa=1}}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus THA_SS00"
+		}
+	}
+	shared_focus={		#The Thestral
+		id=THA_SS01B #icon=
+		relative_position_id=THA_SS00
+		x=-1 y=1 cost=2 ai_will_do={factor=40}
+		prerequisite={focus=THA_SS00}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus THA_SS01B"
+		}
+	}
+	shared_focus={		#Matters of Safety
+		id=THA_SS01C #icon=
+		relative_position_id=THA_SS00
+		x=1 y=1 cost=2 ai_will_do={factor=40}
+		prerequisite={focus=THA_SS00}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus THA_SS01C"
+		}
+	}
+	shared_focus={		#Matters of Population
+		id=THA_SS02A #icon=
+		relative_position_id=THA_SS00
+		x=-2 y=2 cost=2 ai_will_do={factor=40}
+		prerequisite={focus=THA_SS00}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus THA_SS02A"
+		}
+	}
+	shared_focus={		#Matters of Tradition
+		id=THA_SS02B #icon=
+		relative_position_id=THA_SS00
+		x=0 y=2 cost=2 ai_will_do={factor=40}
+		prerequisite={focus=THA_SS00}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus THA_SS02B"
+		}
+	}
+	shared_focus={		#Matters of Religion
+		id=THA_SS02C #icon=
+		relative_position_id=THA_SS00
+		x=2 y=2 cost=2 ai_will_do={factor=40}
+		prerequisite={focus=THA_SS00}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus THA_SS02C"
+		}
+	}

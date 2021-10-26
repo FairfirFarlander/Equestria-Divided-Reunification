@@ -53,14 +53,14 @@ generic_DD_template=yes
 set_convoys=11
 set_rule={can_generate_female_aces=yes}
 #DIPLOMACY
-if={
-	limit={has_dlc="Together for Victory"}
-	set_autonomy={target=BUF autonomy_state=autonomy_integrated_puppet}
-	set_autonomy={target=CHY autonomy_state=autonomy_integrated_puppet}
-	set_autonomy={target=HFT autonomy_state=autonomy_integrated_puppet}
-	set_autonomy={target=PIE autonomy_state=autonomy_integrated_puppet}
-	else={puppet=BUF puppet=CHY puppet=HFT puppet=PIE}
-}
+#if={
+#	limit={has_dlc="Together for Victory"}
+#	set_autonomy={target=BUF autonomy_state=autonomy_integrated_puppet}
+#	set_autonomy={target=CHY autonomy_state=autonomy_integrated_puppet}
+#	set_autonomy={target=HFT autonomy_state=autonomy_integrated_puppet}
+#	set_autonomy={target=PIE autonomy_state=autonomy_integrated_puppet}
+#	else={puppet=BUF puppet=CHY puppet=HFT puppet=PIE}
+#}
 #POLITICS
 set_popularities={
 	fascism=85	communism=0

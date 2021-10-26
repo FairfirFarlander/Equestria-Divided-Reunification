@@ -1,27 +1,44 @@
 	shared_focus={
-		id=EDRgriffon_political_effort
-		icon=GFX_goal_generic_demand_territory
-		x=-11
-		y=-5
-		cost=10
-
-		available_if_capitulated=yes
-
+		id=EDRgriffon_political_effort icon=GFX_goal_generic_demand_territory
+		x=-12 y=-7 cost=10
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_political_effort"
 			add_political_power=120
 		}
 		search_filters={FOCUS_FILTER_POLITICAL}
-		ai_will_do={
-			factor=3
-		}
 	}
-
-	#Republic
 	shared_focus={
-		id=EDRgriffon_strengthen_government
-		icon=GFX_focus_generic_support_the_left_right_claw
+		id=EDRgriffon_dreams_of_a_republic icon=GFX_goal_support_democracy
+		relative_position_id=EDRgriffon_political_effort
+		x=-2 y=1 cost=10
 		prerequisite={focus=EDRgriffon_political_effort}
+		mutually_exclusive={
+			focus=EDRgriffon_strengthen_government
+			focus=EDRgriffon_rightful_rule
+		}
+		available={
+			hidden_trigger={is_feudal_vassal=yes}
+			NOT={
+				has_country_flag=have_regular_puppets
+				original_tag=WAT
+				original_tag=BAK
+			}
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_dreams_of_a_republic"
+			add_ideas=griffon_republic_support_idea
+		}
+		search_filters={FOCUS_FILTER_POLITICAL}
+	}
+	shared_focus={
+		id=EDRgriffon_strengthen_government icon=GFX_focus_generic_support_the_left_right_claw
+		relative_position_id=EDRgriffon_political_effort
+		x=0 y=1 cost=10
+		prerequisite={focus=EDRgriffon_political_effort}
+		mutually_exclusive={
+			focus=EDRgriffon_dreams_of_a_republic
+			focus=EDRgriffon_rightful_rule
+		}
 		available={
 			OR={
 				has_country_flag=have_regular_puppets
@@ -31,182 +48,82 @@
 				hidden_trigger={is_feudal_vassal=no}
 			}
 		}
-		mutually_exclusive={
-			focus=EDRgriffon_dreams_of_a_republic
-			focus=EDRgriffon_rightful_rule
-		}
-		x=0
-		y=1
-		cost=10
-		relative_position_id=EDRgriffon_political_effort
-		available_if_capitulated=yes
-
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_strengthen_government"
 			add_political_power=20
 		}
 		search_filters={FOCUS_FILTER_POLITICAL}
-		ai_will_do={
-			factor=3
-		}
 	}
-
 	shared_focus={
-		id=EDRgriffon_fundations_of_a_modern_state
-		icon=GFX_goal_generic_neutrality_focus
-		prerequisite={focus=EDRgriffon_strengthen_government}
-		x=0
-		y=2
-		cost=10
+		id=EDRgriffon_rightful_rule icon=GFX_focus_rom_royal_dictatorship
 		relative_position_id=EDRgriffon_political_effort
-		available_if_capitulated=yes
-
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_fundations_of_a_modern_state"
-			add_political_power=40
-			add_stability=0.025
-		}
-		search_filters={FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}
-		ai_will_do={
-			factor=1
-		}
-	}
-
-	#Monarchy to republic
-	shared_focus={
-		id=EDRgriffon_dreams_of_a_republic
-		icon=GFX_goal_support_democracy
+		x=2 y=1 cost=10
 		prerequisite={focus=EDRgriffon_political_effort}
-		available={
-			hidden_trigger={is_feudal_vassal=yes}
-			NOT={
-				has_country_flag=have_regular_puppets
-				original_tag=WAT
-				original_tag=BAK
-			}
-		}
 		mutually_exclusive={
 			focus=EDRgriffon_strengthen_government
-			focus=EDRgriffon_rightful_rule
+			focus=EDRgriffon_dreams_of_a_republic
 		}
-		x=-2
-		y=1
-		cost=10
-		relative_position_id=EDRgriffon_political_effort
-		available_if_capitulated=yes
-
+		available={
+			hidden_trigger={is_feudal_vassal=yes}
+			NOT={has_country_flag=have_regular_puppets}
+			NOT={tag=POM}
+		}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_dreams_of_a_republic"
-			add_ideas=griffon_republic_support_idea
-		}
-		search_filters={FOCUS_FILTER_POLITICAL}
-		ai_will_do={
-			factor=1
-			modifier={
-				factor=0
-				has_government=fascism
+			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_rightful_rule"
+			if={limit={has_government=democratic}
+				add_ideas=griffon_monarchy_dem_support_idea
 			}
-			modifier={
-				original_tag=DEP
-				factor=0
+			else_if={limit={has_government=fascism}
+				add_ideas=griffon_monarchy_fas_support_idea
 			}
+			else={add_ideas=griffon_monarchy_support_idea}
 		}
+		search_filters={FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}
 	}
-
 	shared_focus={
-		id=EDRgriffon_gather_support
-		icon=GFX_goal_generic_improve_relations
+		id=EDRgriffon_gather_support icon=GFX_goal_generic_improve_relations
 		prerequisite={focus=EDRgriffon_dreams_of_a_republic}
-		x=-2
-		y=2
-		cost=10
 		relative_position_id=EDRgriffon_political_effort
-		available_if_capitulated=yes
-
+		x=-2 y=2 cost=10
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_gather_support"
 			add_political_power=80
 			hidden_effect={set_country_flag=prepare_republic}
 		}
 		search_filters={FOCUS_FILTER_POLITICAL}
-		ai_will_do={
-			factor=1
-		}
 	}
-
-	#Monarchy
 	shared_focus={
-		id=EDRgriffon_rightful_rule
-		icon=GFX_focus_rom_royal_dictatorship
-		prerequisite={focus=EDRgriffon_political_effort}
-		available={
-			hidden_trigger={is_feudal_vassal=yes}
-			NOT={has_country_flag=have_regular_puppets}
-			NOT={tag=POM}
-		}
-		mutually_exclusive={
-			focus=EDRgriffon_strengthen_government
-			focus=EDRgriffon_dreams_of_a_republic
-		}
-		x=2
-		y=1
-		cost=10
+		id=EDRgriffon_fundations_of_a_modern_state icon=GFX_goal_generic_neutrality_focus
 		relative_position_id=EDRgriffon_political_effort
-		available_if_capitulated=yes
-
+		x=0 y=2 cost=10
+		prerequisite={focus=EDRgriffon_strengthen_government}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_rightful_rule"
-			if={
-				limit={has_government=democratic}
-				add_ideas=griffon_monarchy_dem_support_idea
-			}
-			else_if={
-				limit={has_government=fascism}
-				add_ideas=griffon_monarchy_fas_support_idea
-			}
-			else={
-				add_ideas=griffon_monarchy_support_idea
-			}
+			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_fundations_of_a_modern_state"
+			add_political_power=40
+			add_stability=0.025
 		}
 		search_filters={FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}
-		ai_will_do={
-			factor=6
-			modifier={
-				has_government=communism
-				factor=0
-			}
-			modifier={
-				has_government=fascism
-				factor=0.2
-			}
-		}
 	}
-
 	shared_focus={
-		id=EDRgriffon_noble_birthright
-		icon=GFX_goal_generic_political_pressure
-		prerequisite={focus=EDRgriffon_rightful_rule}
-		x=2
-		y=2
-		cost=10
+		id=EDRgriffon_noble_birthright icon=GFX_goal_generic_political_pressure
 		relative_position_id=EDRgriffon_political_effort
-		available_if_capitulated=yes
-
+		x=2 y=2 cost=10
+		prerequisite={focus=EDRgriffon_rightful_rule}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_noble_birthright"
 			add_stability=0.05
 			add_war_support=0.05
 		}
 		search_filters={FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY}
-		ai_will_do={
-			factor=1
-		}
 	}
-
-	#Communism
 	shared_focus={
-		id=EDRgriffon_popular_revolution
-		icon=GFX_goal_support_communism
+		id=EDRgriffon_popular_revolution icon=GFX_goal_support_communism
+		relative_position_id=EDRgriffon_political_effort
+		x=-3 y=3 cost=10
+		prerequisite={
+			focus=EDRgriffon_gather_support
+			focus=EDRgriffon_fundations_of_a_modern_state
+		}
 		available={
 			OR={
 				has_government=communism
@@ -215,125 +132,36 @@
 			}
 			hidden_trigger={
 				NOT={tag=BRF}
-				NOT={
-					AND={
-						tag=GRW
-						NOT={has_government=communism}
-					}
-				}
+				NOT={AND={
+					tag=GRW
+					NOT={has_government=communism}
+				}}
 			}
-		}
-		prerequisite={
-			focus=EDRgriffon_gather_support
-			focus=EDRgriffon_fundations_of_a_modern_state
 		}
 		bypass={
 			has_civil_war=yes
 			has_government=communism
 		}
-		x=-3
-		y=3
-		cost=10
-		relative_position_id=EDRgriffon_political_effort
-		available_if_capitulated=yes
-
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_popular_revolution"
-			if={
-				limit={has_idea=griffon_republic_support_idea}
+			if={limit={has_idea=griffon_republic_support_idea}
 				swap_ideas={remove_idea=griffon_republic_support_idea add_idea=griffon_communism_support_idea}
 			}
-			else_if={
-				limit={
-					OR={
-						has_completed_focus=EDRgriffon_gather_support
-						AND={
-							has_completed_focus=EDRgriffon_fundations_of_a_modern_state
-							NOT={has_government=communism}
-						}
+			else_if={limit={OR={has_completed_focus=EDRgriffon_gather_support
+					AND={has_completed_focus=EDRgriffon_fundations_of_a_modern_state
+						NOT={has_government=communism}
 					}
-				}
+				}}
 				add_ideas=griffon_communism_support_idea_trait
 			}
-			else={
-				add_ideas=griffon_communism_support_idea
-			}
+			else={add_ideas=griffon_communism_support_idea}
 		}
 		search_filters={FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL}
-		ai_will_do={
-			factor=1
-			modifier={
-				#has_completed_focus=EDRgriffon_fundations_of_a_modern_state
-				has_government=communism
-
-				factor=5
-			}
-		}
 	}
 	shared_focus={
-		id=EDRgriffon_land_reform
-		icon=GFX_goal_agrarian_reform
-		prerequisite={focus=EDRgriffon_popular_revolution}
-		available={has_government=communism}
-		x=-3
-		y=4
-		cost=10
+		id=EDRgriffon_only_strong_will_survive icon=GFX_goal_support_fascism
 		relative_position_id=EDRgriffon_political_effort
-		available_if_capitulated=yes
-
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_land_reform"
-			add_ideas=EDRgriffon_land_reform_idea
-		}
-		search_filters={FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT}
-		ai_will_do={
-			factor=1
-		}
-	}
-	shared_focus={
-		id=EDRgriffon_five_year_plan
-		icon=GFX_goal_generic_soviet_construction
-		prerequisite={focus=EDRgriffon_land_reform}
-		available={has_government=communism}
-		x=-3
-		y=5
-		cost=10
-		relative_position_id=EDRgriffon_political_effort
-		available_if_capitulated=yes
-
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_five_year_plan"
-			add_timed_idea={idea=EDRgriffon_five_year_plan_idea days=1800}
-		}
-		ai_will_do={
-			factor=1
-		}
-	}
-	shared_focus={
-		id=EDRgriffon_spread_the_revolution
-		icon=GFX_goal_generic_war_with_comintern
-		prerequisite={focus=EDRgriffon_five_year_plan}
-		available={has_government=communism}
-		x=-3
-		y=6
-		cost=10
-		relative_position_id=EDRgriffon_political_effort
-		available_if_capitulated=yes
-
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_spread_the_revolution"
-			add_ideas=EDRgriffon_spread_the_revolution_idea
-		}
-		search_filters={FOCUS_FILTER_WAR_SUPPORT}
-		ai_will_do={
-			factor=1
-		}
-	}
-
-	#Fascism
-	shared_focus={
-		id=EDRgriffon_only_strong_will_survive
-		icon=GFX_goal_support_fascism
+		x=-1 y=3 cost=10
 		prerequisite={
 			focus=EDRgriffon_noble_birthright
 			focus=EDRgriffon_gather_support
@@ -350,126 +178,30 @@
 			has_civil_war=yes
 			has_government=fascism
 		}
-		x=-1
-		y=3
-		cost=10
-		relative_position_id=EDRgriffon_political_effort
-		available_if_capitulated=yes
-
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_only_strong_will_survive"
-			if={
-				limit={has_completed_focus=EDRgriffon_noble_birthright}
+			if={limit={has_completed_focus=EDRgriffon_noble_birthright}
 				country_event=griffonian.3
 			}
-			else_if={
-				limit={has_idea=griffon_republic_support_idea}
+			else_if={limit={has_idea=griffon_republic_support_idea}
 				swap_ideas={remove_idea=griffon_republic_support_idea add_idea=griffon_fascism_support_idea}
 			}
 			else_if={
-				limit={
-					OR={
-						has_completed_focus=EDRgriffon_gather_support
-						AND={
-							has_completed_focus=EDRgriffon_fundations_of_a_modern_state
-							NOT={has_government=fascism}
-						}
+				limit={OR={has_completed_focus=EDRgriffon_gather_support
+					AND={has_completed_focus=EDRgriffon_fundations_of_a_modern_state
+						NOT={has_government=fascism}
 					}
-				}
+				}}
 				add_ideas=griffon_fascism_support_idea_trait
 			}
-			else={
-				add_ideas=griffon_fascism_support_idea
-			}
+			else={add_ideas=griffon_fascism_support_idea}
 		}
 		search_filters={FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL}
-		ai_will_do={
-			factor=1
-			modifier={
-				has_completed_focus=EDRgriffon_fundations_of_a_modern_state
-				has_government=fascism
-				factor=5
-			}
-			modifier={
-				has_idea=griffon_monarchy_fas_support_idea
-				factor=3
-			}
-			modifier={
-				OR={
-					tag=ANG
-					tag=YAL
-					tag=KAT
-					tag=BAR
-				}
-				factor=100
-			}
-		}
 	}
 	shared_focus={
-		id=EDRgriffon_nationalist_thought
-		icon=GFX_goal_generic_military_sphere
-		prerequisite={focus=EDRgriffon_only_strong_will_survive}
-		available={has_government=fascism}
-		x=-1
-		y=4
-		cost=10
+		id=EDRgriffon_harmony_and_liberty icon=GFX_goal_support_democracy
 		relative_position_id=EDRgriffon_political_effort
-		available_if_capitulated=yes
-
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_nationalist_thought"
-			add_ideas=EDRgriffon_nationalist_thought_idea
-		}
-		search_filters={FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ANNEXATION}
-		ai_will_do={
-			factor=1
-		}
-	}
-	shared_focus={
-		id=EDRgriffon_gear_for_war
-		icon=GFX_goal_generic_more_territorial_claims
-		prerequisite={focus=EDRgriffon_nationalist_thought}
-		available={has_government=fascism}
-		x=-1
-		y=5
-		cost=10
-		relative_position_id=EDRgriffon_political_effort
-		available_if_capitulated=yes
-
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_gear_for_war"
-			add_ideas=EDRgriffon_gear_for_war_idea
-		}
-		search_filters={FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT}
-		ai_will_do={
-			factor=1
-		}
-	}
-	shared_focus={
-		id=EDRgriffon_militarization
-		icon=GFX_focus_generic_military_mission
-		prerequisite={focus=EDRgriffon_gear_for_war}
-		available={has_government=fascism}
-		x=-1
-		y=6
-		cost=10
-		relative_position_id=EDRgriffon_political_effort
-		available_if_capitulated=yes
-
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_militarization"
-			add_ideas=EDRgriffon_militarization_idea
-		}
-		search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT}
-		ai_will_do={
-			factor=1
-		}
-	}
-
-	#Harmony
-	shared_focus={
-		id=EDRgriffon_harmony_and_liberty
-		icon=GFX_goal_support_democracy
+		x=1 y=3 cost=10
 		prerequisite={
 			focus=EDRgriffon_noble_birthright
 			focus=EDRgriffon_gather_support
@@ -486,117 +218,30 @@
 			has_civil_war=yes
 			has_government=democratic
 		}
-		x=1
-		y=3
-		cost=10
-		relative_position_id=EDRgriffon_political_effort
-		available_if_capitulated=yes
-
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_harmony_and_liberty"
-			if={
-				limit={has_completed_focus=EDRgriffon_noble_birthright}
+			if={limit={has_completed_focus=EDRgriffon_noble_birthright}
 				country_event=griffonian.4
 			}
-			else_if={
-				limit={has_idea=griffon_republic_support_idea}
+			else_if={limit={has_idea=griffon_republic_support_idea}
 				swap_ideas={remove_idea=griffon_republic_support_idea add_idea=griffon_harmony_support_idea}
 			}
 			else_if={
-				limit={
-					OR={
-						has_completed_focus=EDRgriffon_gather_support
-						AND={
-							has_completed_focus=EDRgriffon_fundations_of_a_modern_state
-							NOT={has_government=democratic}
-						}
+				limit={OR={has_completed_focus=EDRgriffon_gather_support
+					AND={has_completed_focus=EDRgriffon_fundations_of_a_modern_state
+						NOT={has_government=democratic}
 					}
-				}
+				}}
 				add_ideas=griffon_harmony_support_idea_trait
 			}
-			else={
-				add_ideas=griffon_harmony_support_idea
-			}
+			else={add_ideas=griffon_harmony_support_idea}
 		}
 		search_filters={FOCUS_FILTER_POLITICAL}
-		ai_will_do={
-			factor=1
-			modifier={
-				has_completed_focus=EDRgriffon_fundations_of_a_modern_state
-				has_government=democratic
-				factor=5
-			}
-			modifier={
-				has_idea=griffon_monarchy_dem_support_idea
-				factor=3
-			}
-		}
 	}
 	shared_focus={
-		id=EDRgriffon_carry_the_torch
-		icon=GFX_goal_generic_scientific_exchange
-		prerequisite={focus=EDRgriffon_harmony_and_liberty}
-		available={has_government=democratic}
-		x=1
-		y=4
-		cost=10
+		id=EDRgriffon_the_old_ways icon=GFX_focus_generic_support_the_left_right_claw
 		relative_position_id=EDRgriffon_political_effort
-		available_if_capitulated=yes
-
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_carry_the_torch"
-			add_ideas=EDRgriffon_carry_the_torch_idea
-		}
-		search_filters={FOCUS_FILTER_RESEARCH}
-		ai_will_do={
-			factor=1
-		}
-	}
-	shared_focus={
-		id=EDRgriffon_words_not_swords
-		icon=GFX_goal_generic_positive_trade_relations
-		prerequisite={focus=EDRgriffon_carry_the_torch}
-		available={has_government=democratic}
-		x=1
-		y=5
-		cost=10
-		relative_position_id=EDRgriffon_political_effort
-		available_if_capitulated=yes
-
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_words_not_swords"
-			add_ideas=EDRgriffon_words_not_swords_idea
-		}
-		search_filters={FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ANNEXATION}
-		ai_will_do={
-			factor=1
-		}
-	}
-	shared_focus={
-		id=EDRgriffon_common_good
-		icon=GFX_focus_generic_the_giant_wakes
-		prerequisite={focus=EDRgriffon_words_not_swords}
-		available={has_government=democratic}
-		x=1
-		y=6
-		cost=10
-		relative_position_id=EDRgriffon_political_effort
-		available_if_capitulated=yes
-
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_common_good"
-			add_ideas=EDRgriffon_common_good_idea
-		}
-		search_filters={FOCUS_FILTER_INDUSTRY}
-		ai_will_do={
-			factor=1
-		}
-	}
-
-	#Neutrality
-	shared_focus={
-		id=EDRgriffon_the_old_ways
-		icon=GFX_focus_generic_support_the_left_right_claw
+		x=3 y=3 cost=10
 		prerequisite={
 			focus=EDRgriffon_noble_birthright
 			focus=EDRgriffon_fundations_of_a_modern_state
@@ -607,289 +252,267 @@
 				has_government=neutrality
 				has_completed_focus=EDRgriffon_noble_birthright
 			}
-			NOT={
-				has_government=communism
-			}
-
+			NOT={has_government=communism}
 		}
 		bypass={
 			has_civil_war=yes
 			has_government=neutrality
 		}
-		x=3
-		y=3
-		cost=10
-		relative_position_id=EDRgriffon_political_effort
-		available_if_capitulated=yes
-
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_the_old_ways"
-			if={
-				limit={has_completed_focus=EDRgriffon_noble_birthright}
+			if={limit={has_completed_focus=EDRgriffon_noble_birthright}
 				country_event=griffonian.5
 			}
-			else={
-				add_ideas=griffon_neutrality_support_idea
-			}
+			else={add_ideas=griffon_neutrality_support_idea}
 		}
 		search_filters={FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}
-		ai_will_do={
-			factor=1
-			modifier={
-				has_completed_focus=EDRgriffon_fundations_of_a_modern_state
-				has_government=neutrality
-				factor=5
-			}
-			modifier={
-				has_idea=griffon_monarchy_support_idea
-				factor=3
-			}
-			modifier={
-				OR={
-					tag=ANG
-					tag=YAL
-					tag=KAT
-				}
-				factor=100
-			}
-		}
 	}
 	shared_focus={
-		id=EDRgriffon_defend_the_tradition
-		icon=GFX_goal_generic_defence
-		prerequisite={focus=EDRgriffon_the_old_ways}
-		available={has_government=neutrality}
-		x=3
-		y=4
-		cost=10
+		id=EDRgriffon_land_reform icon=GFX_goal_agrarian_reform
 		relative_position_id=EDRgriffon_political_effort
-		available_if_capitulated=yes
-
+		x=-3 y=4 cost=10
+		prerequisite={focus=EDRgriffon_popular_revolution}
+		available={has_government=communism}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_defend_the_tradition"
-			add_ideas=EDRgriffon_defend_the_tradition_idea
+			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_land_reform"
+			add_ideas=griffon_land_reform_idea
 		}
 		search_filters={FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT}
-		ai_will_do={
-			factor=1
+	}
+	shared_focus={
+		id=EDRgriffon_nationalist_thought icon=GFX_goal_generic_military_sphere
+		relative_position_id=EDRgriffon_political_effort
+		x=-1 y=4 cost=10
+		prerequisite={focus=EDRgriffon_only_strong_will_survive}
+		available={has_government=fascism}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_nationalist_thought"
+			add_ideas=griffon_nationalist_thought_idea
+		}
+		search_filters={FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ANNEXATION}
+	}
+	shared_focus={
+		id=EDRgriffon_carry_the_torch icon=GFX_goal_generic_scientific_exchange
+		relative_position_id=EDRgriffon_political_effort
+		x=1 y=4 cost=10
+		prerequisite={focus=EDRgriffon_harmony_and_liberty}
+		available={has_government=democratic}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_carry_the_torch"
+			add_ideas=griffon_carry_the_torch_idea
+		}
+		search_filters={FOCUS_FILTER_RESEARCH}
+	}
+	shared_focus={
+		id=EDRgriffon_defend_the_tradition icon=GFX_goal_generic_defence
+		relative_position_id=EDRgriffon_political_effort
+		x=3 y=4 cost=10
+		prerequisite={focus=EDRgriffon_the_old_ways}
+		available={has_government=neutrality}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_defend_the_tradition"
+			add_ideas=griffon_defend_the_tradition_idea
+		}
+		search_filters={FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT}
+	}
+	shared_focus={
+		id=EDRgriffon_five_year_plan icon=GFX_goal_generic_soviet_construction
+		relative_position_id=EDRgriffon_political_effort
+		x=-3 y=5 cost=10
+		prerequisite={focus=EDRgriffon_land_reform}
+		available={has_government=communism}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_five_year_plan"
+			add_timed_idea={idea=griffon_five_year_plan_idea days=1800}
 		}
 	}
 	shared_focus={
-		id=EDRgriffon_home_guard
-		icon=GFX_focus_generic_little_entente
+		id=EDRgriffon_gear_for_war icon=GFX_goal_generic_more_territorial_claims
+		relative_position_id=EDRgriffon_political_effort
+		x=-1 y=5 cost=10
+		prerequisite={focus=EDRgriffon_nationalist_thought}
+		available={has_government=fascism}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_gear_for_war"
+			add_ideas=griffon_gear_for_war_idea
+		}
+		search_filters={FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT}
+	}
+	shared_focus={
+		id=EDRgriffon_words_not_swords icon=GFX_goal_generic_positive_trade_relations
+		relative_position_id=EDRgriffon_political_effort
+		x=1 y=5 cost=10
+		prerequisite={focus=EDRgriffon_carry_the_torch}
+		available={has_government=democratic}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_words_not_swords"
+			add_ideas=griffon_words_not_swords_idea
+		}
+		search_filters={FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ANNEXATION}
+	}
+	shared_focus={
+		id=EDRgriffon_home_guard icon=GFX_focus_generic_little_entente
+		relative_position_id=EDRgriffon_political_effort
+		x=3 y=5 cost=10
 		prerequisite={focus=EDRgriffon_defend_the_tradition}
 		available={has_government=neutrality}
-		x=3
-		y=5
-		cost=10
-		relative_position_id=EDRgriffon_political_effort
-		available_if_capitulated=yes
-
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_home_guard"
-			add_ideas=EDRgriffon_home_guard_idea
+			add_ideas=griffon_home_guard_idea
 		}
 		search_filters={FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT}
-		ai_will_do={
-			factor=1
-		}
 	}
 	shared_focus={
-		id=EDRgriffon_leading_the_way
-		icon=GFX_goal_generic_small_arms
+		id=EDRgriffon_spread_the_revolution icon=GFX_goal_generic_war_with_comintern
+		relative_position_id=EDRgriffon_political_effort
+		x=-3 y=6 cost=10
+		prerequisite={focus=EDRgriffon_five_year_plan}
+		available={has_government=communism}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_spread_the_revolution"
+			add_ideas=griffon_spread_the_revolution_idea
+		}
+		search_filters={FOCUS_FILTER_WAR_SUPPORT}
+	}
+	shared_focus={
+		id=EDRgriffon_militarization icon=GFX_focus_generic_military_mission
+		relative_position_id=EDRgriffon_political_effort
+		x=-1 y=6 cost=10
+		prerequisite={focus=EDRgriffon_gear_for_war}
+		available={has_government=fascism}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_militarization"
+			add_ideas=griffon_militarization_idea
+		}
+		search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT}
+	}
+	shared_focus={
+		id=EDRgriffon_common_good icon=GFX_focus_generic_the_giant_wakes
+		relative_position_id=EDRgriffon_political_effort
+		x=1 y=6 cost=10
+		prerequisite={focus=EDRgriffon_words_not_swords}
+		available={has_government=democratic}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_common_good"
+			add_ideas=griffon_common_good_idea
+		}
+		search_filters={FOCUS_FILTER_INDUSTRY}
+	}
+	shared_focus={
+		id=EDRgriffon_leading_the_way icon=GFX_goal_generic_small_arms
+		relative_position_id=EDRgriffon_political_effort
+		x=3 y=6 cost=10
 		prerequisite={focus=EDRgriffon_home_guard}
 		available={has_government=neutrality}
-		x=3
-		y=6
-		cost=10
-		relative_position_id=EDRgriffon_political_effort
-		available_if_capitulated=yes
-
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_leading_the_way"
-			add_ideas=EDRgriffon_leading_the_way_idea
+			add_ideas=griffon_leading_the_way_idea
 		}
 		search_filters={FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_WAR_SUPPORT}
-		ai_will_do={
-			factor=1
-		}
 	}
 
 	shared_focus={
-		id=EDRgriffon_fight_to_the_last
-		icon=GFX_goal_generic_demand_territory
+		id=EDRgriffon_fight_to_the_last icon=GFX_goal_generic_demand_territory
+		relative_position_id=EDRgriffon_political_effort
+		x=-2 y=7 cost=10
 		prerequisite={
 			focus=EDRgriffon_spread_the_revolution
 			focus=EDRgriffon_militarization
 		}
-		x=-2
-		y=7
-		cost=10
-		relative_position_id=EDRgriffon_political_effort
-		available_if_capitulated=yes
-
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_fight_to_the_last"
-			add_ideas=EDRgriffon_fight_to_the_last_idea
+			add_ideas=griffon_fight_to_the_last_idea
 		}
 		search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT}
-		ai_will_do={
-			factor=1
-		}
 	}
-
 	shared_focus={
-		id=EDRgriffon_stronger_together
-		icon=GFX_goal_generic_improve_relations
+		id=EDRgriffon_stronger_together icon=GFX_goal_generic_improve_relations
+		relative_position_id=EDRgriffon_political_effort
+		x=2 y=7 cost=10
 		prerequisite={
 			focus=EDRgriffon_common_good
 			focus=EDRgriffon_leading_the_way
 		}
-		x=2
-		y=7
-		cost=10
-		relative_position_id=EDRgriffon_political_effort
-		available_if_capitulated=yes
-
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_stronger_together"
-			add_ideas=EDRgriffon_stronger_together_idea
+			add_ideas=griffon_stronger_together_idea
 		}
 		search_filters={FOCUS_FILTER_STABILITY}
-		ai_will_do={
-			factor=1
-		}
 	}
-
 	shared_focus={
-		id=EDRgriffon_ideological_though
-		icon=GFX_goal_generic_propaganda
+		id=EDRgriffon_ideological_though icon=GFX_goal_generic_propaganda
+		relative_position_id=EDRgriffon_political_effort
+		x=0 y=8 cost=15
 		prerequisite={
 			focus=EDRgriffon_fight_to_the_last
 			focus=EDRgriffon_stronger_together
 		}
-		x=0
-		y=8
-		cost=15
-		relative_position_id=EDRgriffon_political_effort
-		available_if_capitulated=yes
-
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_ideological_though"
 			add_war_support=0.05
 			remove_ideas=feudalism
-			if={
-				limit={has_idea=feudalism}
+			if={limit={has_idea=feudalism}
 				remove_ideas=feudalism
 			}
-			if={
-				limit={has_idea=FAT_Chaos_idea}
+			if={limit={has_idea=FAT_Chaos_idea}
 				remove_ideas=FAT_Chaos_idea
 			}
-			if={
-				limit={has_idea=FAT_Chaos_idea1}
+			if={limit={has_idea=FAT_Chaos_idea1}
 				remove_ideas=FAT_Chaos_idea1
 			}
-			if={
-				limit={has_idea=FAT_Chaos_idea2}
+			if={limit={has_idea=FAT_Chaos_idea2}
 				remove_ideas=FAT_Chaos_idea2
 			}
-			if={
-				limit={is_ai=no}
+			if={limit={is_ai=no}
 				set_rule={can_create_factions=yes}
 			}
 		}
 		search_filters={FOCUS_FILTER_WAR_SUPPORT}
-		ai_will_do={
-			factor=1
-		}
 	}
-
 	shared_focus={
-		id=EDRgriffon_expansionist_focus
-		icon=GFX_goal_generic_major_war
-		prerequisite={
-			focus=EDRgriffon_ideological_though
-		}
+		id=EDRgriffon_expansionist_focus icon=GFX_goal_generic_major_war
+		relative_position_id=EDRgriffon_political_effort
+		x=-2 y=9 cost=10
+		prerequisite={focus=EDRgriffon_ideological_though}
 		mutually_exclusive={
 			focus=EDRgriffon_neutrality_focus
 			focus=EDRgriffon_our_own_way
 		}
-		x=-2
-		y=9
-		cost=10
-		relative_position_id=EDRgriffon_political_effort
-		available_if_capitulated=yes
-
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_expansionist_focus"
 			add_political_power=-50
-			add_ideas=EDRgriffon_expansionist_focus_idea
+			add_ideas=griffon_expansionist_focus_idea
 		}
 		search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION}
-		ai_will_do={
-			factor=1
-		}
 	}
-
 	shared_focus={
-		id=EDRgriffon_our_own_way
-		icon=GFX_focus_generic_self_management
-		prerequisite={
-			focus=EDRgriffon_ideological_though
-		}
+		id=EDRgriffon_our_own_way icon=GFX_focus_generic_self_management
+		relative_position_id=EDRgriffon_political_effort
+		x=0 y=9 cost=10
+		prerequisite={focus=EDRgriffon_ideological_though}
 		mutually_exclusive={
 			focus=EDRgriffon_expansionist_focus
 			focus=EDRgriffon_neutrality_focus
 		}
-		x=0
-		y=9
-		cost=10
-		relative_position_id=EDRgriffon_political_effort
-		available_if_capitulated=yes
-
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_our_own_way"
 			add_political_power=200
 		}
 		search_filters={FOCUS_FILTER_POLITICAL}
-		ai_will_do={
-			factor=1
-		}
 	}
-
 	shared_focus={
-		id=EDRgriffon_neutrality_focus
-		icon=GFX_goal_generic_neutrality_focus
-		prerequisite={
-			focus=EDRgriffon_ideological_though
-		}
+		id=EDRgriffon_neutrality_focus icon=GFX_goal_generic_neutrality_focus
+		relative_position_id=EDRgriffon_political_effort
+		x=2 y=9 cost=10
+		prerequisite={focus=EDRgriffon_ideological_though}
 		mutually_exclusive={
 			focus=EDRgriffon_expansionist_focus
 			focus=EDRgriffon_our_own_way
 		}
-		available={
-			is_in_faction=no
-		}
-		x=2
-		y=9
-		cost=10
-		relative_position_id=EDRgriffon_political_effort
-		available_if_capitulated=yes
-
+		available={is_in_faction=no}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: Focus EDRgriffon_neutrality_focus"
 			add_ideas=neutrality_idea
 		}
 		search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION}
-		ai_will_do={
-			factor=1
-			modifier={
-				factor=0
-				OR={
-					has_government=fascism
-					has_government=communism
-				}
-			}
-		}
 	}

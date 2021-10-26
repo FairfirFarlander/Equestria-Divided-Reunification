@@ -19,7 +19,7 @@ state={
 			anti_air_building=0
 			radar_station=0
 		#SHARED BUILDINGS
-			arms_factory=0
+			arms_factory=1
 			industrial_complex=1
 			#dockyard=0
 			synthetic_refinery=0
@@ -27,11 +27,11 @@ state={
 			rocket_site=0
 			nuclear_reactor=0
 		#PROVINCE BUILDINGS	
-			#={
+			3915={
 				#naval_base=0
-				#bunker=0
+				bunker=1
 				#coastal_bunker=0
-			#}
+			}
 		}
 	}
 }

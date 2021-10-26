@@ -100,9 +100,9 @@ create_field_marshal={
 create_field_marshal={
 	name="Prince Shining Armor"	#id=1043	#desc="CRY_Shining_Armour_desc"
 	picture="Shining.tga"	#female=yes
-	skill=3	attack_skill=2	defense_skill=3
-	planning_skill=2	logistics_skill=3
-	traits={Pony_race_trait equestrian_prince}
+	skill=4	attack_skill=3	defense_skill=5
+	planning_skill=3	logistics_skill=3
+	traits={royal_guard_commander equestrian_prince pony_race_trait  defensive_doctrine}
 }
 #create_corps_commander={	#Should not be a commander
 #	name="Spike"	#id=	desc=

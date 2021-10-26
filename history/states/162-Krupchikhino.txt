@@ -12,7 +12,7 @@ state={
 		add_core_of=SYV
 		add_core_of=STG
 		#add_claim_by=
-		victory_points={6350 5}
+		victory_points={6350 2}
 		buildings={
 		#STATE BUILDINGS
 			infrastructure=2

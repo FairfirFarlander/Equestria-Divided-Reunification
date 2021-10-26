@@ -1,7 +1,7 @@
 state={
 	id=216
 	name="STATE_216"
-	manpower=104550
+	manpower=330000
 	state_category=rural
 	buildings_max_level_factor=1
 	impassable=no
@@ -11,10 +11,10 @@ state={
 		#owner=OLE
 		#add_core_of=OLE
 		#add_claim_by=
-		victory_points={767 10}
+		victory_points={767 5}
 		buildings={
 		#STATE BUILDINGS
-			infrastructure=1
+			infrastructure=2
 			air_base=0
 			anti_air_building=0
 			radar_station=0

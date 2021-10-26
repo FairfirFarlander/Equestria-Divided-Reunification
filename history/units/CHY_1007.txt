@@ -1,0 +1,120 @@
+division_template={	#TEMPLATES
+	name="Provincial Militia"
+	priority=0
+	regiments={
+		infantry={x=0 y=0}
+		infantry={x=0 y=1}
+	}
+}
+division_template={
+	name="Ponies-at-Arms Division"
+	priority=1
+	regiments={
+		infantry={x=0 y=0}	infantry={x=1 y=0}
+		infantry={x=0 y=1}	infantry={x=1 y=1}
+		infantry={x=0 y=2}	infantry={x=1 y=2}
+	}
+}
+division_template={
+	name="Appleoosan Ranger Regiment"
+	priority=2	is_locked=yes
+	regiments={
+		infantry={x=0 y=0}
+		infantry={x=0 y=1}
+		infantry={x=0 y=2}
+	}
+}
+division_template={
+	name="Pegasi Auxilia"
+	priority=1
+	regiments={
+		pegasi={x=0 y=0}	pegasi={x=1 y=0}
+		pegasi={x=0 y=1}	pegasi={x=1 y=1}
+	}
+}
+division_template={
+	name="Steamtank Division"
+	priority=1
+	regiments={
+		light_armor={x=0 y=0}
+	}
+}
+units={	#DEPLOYMENTS
+	division={
+		name="Hoof City Militia"
+		location=11581
+		division_template="Provincial Militia"
+		start_experience_factor=0.1
+		start_equipment_factor=1
+	}
+	division={
+		name="Rosemarein Militia"
+		location=9606
+		division_template="Provincial Militia"
+		start_experience_factor=0.02
+		start_equipment_factor=1
+	}
+	division={
+		name="Pinto Creek Militia"
+		location=11580
+		division_template="Provincial Militia"
+		start_experience_factor=0.02
+		start_equipment_factor=1
+	}
+	division={
+		name="Ayundi Division"
+		location=6415
+		division_template="Provincial Militia"
+		start_experience_factor=0.02
+		start_equipment_factor=1
+	}
+	division={
+		name="Star Gulf Arms Division"
+		location=624
+		division_template="Provincial Militia"
+		start_experience_factor=0.02
+		start_equipment_factor=1
+	}
+	division={
+		name="Palamino Division"
+		location=11622
+		division_template="Ponies-at-Arms Division"
+		start_experience_factor=0.75
+		start_equipment_factor=1
+	}
+	division={
+		name="Palamino Division"
+		location=3630
+		division_template="Ponies-at-Arms Division"
+		start_experience_factor=0.3
+		start_equipment_factor=1
+	}
+	division={
+		name="Sorrowful Division"
+		location=619
+		division_template="Ponies-at-Arms Division"
+		start_experience_factor=0.1
+		start_equipment_factor=1
+	}
+	division={
+		name="Silverstar Rangers"
+		location=11037
+		division_template="Appleoosan Ranger Regiment"
+		start_experience_factor=0.75
+		start_equipment_factor=1
+	}
+	division={
+		name="Meskwakia Arms Division"
+		location=3550
+		division_template="Pegasi Auxilia"
+		start_experience_factor=0.55
+		start_equipment_factor=1
+	}
+	division={
+		name="Aquarium Tank Mover Company"
+		location=11037
+		division_template="Steamtank Division"
+		start_experience_factor=0.1
+		start_equipment_factor=1
+	}
+}

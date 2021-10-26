@@ -1,6 +1,6 @@
 #LOCALE
 capital=116
-#oob="BCK_1007"
+oob="BCK_1007"
 #FOUNTATION
 set_research_slots=2
 set_stability=0.6
@@ -27,10 +27,8 @@ set_convoys=8
 #DIPLOMACY
 #POLITICS
 set_popularities={
-	fascism=8
-	communism=17
-	neutrality=30
-	democratic=45
+	fascism=8	communism=17
+	neutrality=30	democratic=45
 }
 set_politics={
 	ruling_party=neutrality
@@ -52,3 +50,10 @@ create_country_leader={
 }
 #Facism think locus corp.
 #MILITARY
+create_corps_commander={
+	name="Hallow Green"	#id=	desc=
+	picture="Hallow Green.dds"	female=yes
+	skill=1	attack_skill=1	defense_skill=1
+	planning_skill=1	logistics_skill=1
+	traits={pony_race_trait old_guard trait_cautious politically_connected}
+}

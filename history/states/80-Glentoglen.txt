@@ -12,7 +12,7 @@ state={
 		add_core_of=HEB
 		#add_core_of=BUF
 		#add_claim_by=
-		victory_points={9606 5}
+		victory_points={9606 3}
 		buildings={
 		#STATE BUILDINGS
 			infrastructure=2

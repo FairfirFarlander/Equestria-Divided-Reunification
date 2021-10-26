@@ -11,7 +11,7 @@ state={
 		#owner=ANG
 		#add_core_of=ANG
 		#add_claim_by=
-		victory_points={10803 5}
+		victory_points={10803 3}
 		victory_points={12043 5}
 		buildings={
 		#STATE BUILDINGS

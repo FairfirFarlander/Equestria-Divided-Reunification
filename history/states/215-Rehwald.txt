@@ -1,7 +1,7 @@
 state={
 	id=215
 	name="STATE_215"
-	manpower=330000
+	manpower=104550
 	state_category=rural
 	buildings_max_level_factor=1
 	impassable=no
@@ -14,7 +14,7 @@ state={
 		victory_points={9446 3}
 		buildings={
 		#STATE BUILDINGS
-			infrastructure=2
+			infrastructure=1
 			air_base=0
 			anti_air_building=0
 			radar_station=0

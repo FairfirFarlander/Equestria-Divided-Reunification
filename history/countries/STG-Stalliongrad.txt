@@ -1,11 +1,11 @@
 #LOCALE
 capital=153
 oob="STG_1007"
-#if={
-#	limit={has_dlc="Man the Guns"}
-#	set_naval_oob="STG_1007_naval"
-#	else={set_naval_oob="STG_1007_naval_legacy"}
-#}
+if={
+	limit={has_dlc="Man the Guns"}
+	set_naval_oob="STG_1007_naval"
+	else={set_naval_oob="STG_1007_naval_legacy"}
+}
 #FOUNTATION
 set_research_slots=2
 set_stability=0.3
@@ -21,13 +21,18 @@ set_technology={
 	pony_race=1
 	melee_weapons=1
 	melee_weapons1=1
+	infantry_weapons=1
 	tech_support=1
+	tech_recon=1
+	tech_engineers=1
+	tech_military_police=1
 	fuel_silos=1
 	tech_recon=1
 	pre_gw_artillery=1
 	early_fighter=1
 	early_bomber=1
 	gwtank=1
+	trade_interdiction=1
 }
 actually_fix_weapon_techs=yes
 if={limit={has_dlc="Man the Guns"}
@@ -38,13 +43,22 @@ if={limit={has_dlc="Man the Guns"}
 		basic_ship_hull_light=1
 		early_ship_hull_submarine=1
 		basic_ship_hull_submarine=1
+		cruiser_submarines=1
 		early_ship_hull_cruiser=1
+		basic_ship_hull_cruiser=1
 		early_ship_hull_heavy=1
+		pre_dreadnoughts=1
 		basic_battery=1
 		basic_light_battery=1
+		basic_medium_battery=1
+		basic_heavy_battery=1
 		basic_torpedo=1
 		basic_depth_charges=1
 		basic_secondary_battery=1
+		improved_secondary_battery=1
+		basic_cruiser_armor_scheme=1
+		basic_heavy_armor_scheme=1
+		basic_fire_control_system=1
 		mtg_transport=1
 	}
 }
@@ -52,13 +66,17 @@ if={limit={not={has_dlc="Man the Guns"}}
 	set_technology={
 		early_submarine=1
 		basic_submarine=1
+		cruiser_submarines_nomtg=1
 		early_destroyer=1
+		basic_destroyer=1
 		early_light_cruiser=1
 		basic_light_cruiser=1
 		early_heavy_cruiser=1
-		early_battleship=1
+		basic_heavy_cruiser=1
 		early_battlecruiser=1
+		early_battleship=1
 		basic_battleship=1
+		pre_dreadnoughts_nomtg=1
 		transport=1
 	}
 }
@@ -71,6 +89,21 @@ add_tech_bonus={
 	name=armor_bonus
 	bonus=0.15	uses=1
 	technology=basic_light_tank
+}
+add_tech_bonus={
+	name=EDR_STGrecovery
+	bonus=0.15 uses=1
+	technology=gw_artillery
+}
+add_tech_bonus={
+	name=EDR_STGrecovery
+	bonus=0.15 uses=1
+	technology=basic_machine_tools
+}
+add_tech_bonus={
+	name=EDR_STGrecovery
+	bonus=0.15 uses=1
+	technology=mobile_warfare
 }
 add_equipment_to_stockpile={
 	type=gw_tank_equipment
@@ -128,135 +161,156 @@ create_country_leader={
 create_field_marshal={
 	name="Nestor Lunin"	id=1000	#desc=
 	picture="Nestor.tga"	
-	skill=3	attack_skill=2	defense_skill=3
-	planning_skill=2	logistics_skill=3
-	traits={pony_race_trait trait_nestor_lunin}
+	skill=4	attack_skill=3	defense_skill=3
+	planning_skill=3	logistics_skill=4
+	traits={pony_race_trait promising_general brilliant_strategist trait_nestor_lunin}
 }
 create_corps_commander={
-	name="Ember Flare"	#id=	desc=
-	picture="Ember_Flare.tga"	#female=yes
+	name="Ember Flare"
+	picture="Ember_Flare.tga"
 	skill=2	attack_skill=1	defense_skill=3
-	planning_skill=2	logistics_skill=2
+	planning_skill=1	logistics_skill=2
 	traits={pony_race_trait inflexible_strategist}
 }
 create_corps_commander={
-	name="Veronica"	#id=	desc=
+	name="Veronika Krasnova"
 	picture="Veronica.tga"	female=yes
-	skill=2	attack_skill=2	defense_skill=2
-	planning_skill=1	logistics_skill=2
-	traits={pony_race_trait panzer_leader}
+	skill=4	attack_skill=5	defense_skill=3
+	planning_skill=2	logistics_skill=3
+	traits={pony_race_trait trait_engineer panzer_leader}
 }
 create_corps_commander={
-	name="Vinous Kostylev"	id=6970	#desc=
-	picture="Vinous.tga"	#female=yes
-	skill=2	attack_skill=3	defense_skill=3
-	planning_skill=2	logistics_skill=1
+	name="Vinous Kostylev"	id=6970
+	picture="Vinous.tga"
+	skill=3	attack_skill=3	defense_skill=3
+	planning_skill=2	logistics_skill=2
 	traits={pony_race_trait inspiring_commissar}
 }
 create_corps_commander={
-	name="Alexia Goldgear"	id=6969	#desc=
-	picture="Gereval.tga"	#female=yes
-	skill=1	attack_skill=2	defense_skill=2
-	planning_skill=1	logistics_skill=1
-	traits={thestral_race_trait artillery_expert}
-}
-create_corps_commander={
-	name="Cherry Swirl"	id=6968	#desc=
-	picture="Cherry_Swirl.tga"	#female=yes
-	skill=1	attack_skill=2	defense_skill=1
+	name="Alexia Goldgear"	id=6969
+	picture="Gereval.tga"
+	skill=2	attack_skill=2	defense_skill=2
 	planning_skill=2	logistics_skill=1
-	traits={pony_race_trait}
+	traits={thestral_race_trait trait_reckless artillery_expert trickster}
 }
 create_corps_commander={
-	name="Black Paint"	#id=	desc=
-	picture="Black_Paint.tga"	#female=yes
-	skill=1	attack_skill=2	defense_skill=1
+	name="Cherry Swirl"	id=6968
+	picture="Cherry_Swirl.tga"
+	skill=2	attack_skill=2	defense_skill=1
+	planning_skill=2	logistics_skill=2
+	traits={pony_race_trait cavalry_leader}
+}
+create_corps_commander={
+	name="Black Paint"
+	picture="Black_Paint.tga"
+	skill=2	attack_skill=2	defense_skill=1
 	planning_skill=1	logistics_skill=3
-	traits={pony_race_trait}
+	traits={pony_race_trait ranger}
 }
 create_corps_commander={
-	name="Comrade Ulman"	#id=	desc=
-	picture="Ulman.tga"	#female=yes
-	skill=1	attack_skill=1	defense_skill=3
+	name="Comrade Ulman"
+	picture="Ulman.tga"
+	skill=2	attack_skill=1	defense_skill=3
 	planning_skill=1	logistics_skill=2
-	traits={pony_race_trait}
+	traits={pony_race_trait hill_fighter}
 }
 create_corps_commander={
-	name="Fiat Coin"	#id=	desc=
-	picture="Ikapoc.tga"	#female=yes
-	skill=2	attack_skill=3	defense_skill=2
+	name="Fiat Coin"
+	picture="Ikapoc.tga"
+	skill=2	attack_skill=3	defense_skill=1
 	planning_skill=2	logistics_skill=1
 	traits={pony_race_trait brilliant_strategist war_hero}
 }
 create_corps_commander={
-	name="Purple Heart"	#id=	desc=
+	name="Purple Heart"
 	picture="PurpleHeart.tga"	female=yes
-	skill=1	attack_skill=1	defense_skill=2
+	skill=1	attack_skill=1	defense_skill=1
 	planning_skill=1	logistics_skill=1
-	traits={pony_race_trait}
+	traits={pony_race_trait bleeding_heart}
 }
 create_corps_commander={
-	name="Katya Ironstead"	id=6967	#desc=
+	name="Katya Ironstead"	id=6967
 	picture="Katya.tga"	female=yes
 	traits={pony_race_trait winter_specialist}
-	skill=2	attack_skill=1	defense_skill=1
-	planning_skill=1	logistics_skill=2
-}
-create_corps_commander={
-	name="Cogwheel Ponyarchuk"	id=7777	#desc=
-	picture="Ponyarchuk.tga"	#female=yes
-	skill=2	attack_skill=2	defense_skill=1
-	planning_skill=2	logistics_skill=2
-	traits={pony_race_trait politically_connected}
-}
-create_corps_commander={
-	name="Gemian Smit"	#id=	desc=
-	picture="Gemian Smit.tga"	#female=yes
 	skill=1	attack_skill=1	defense_skill=1
-	planning_skill=2	logistics_skill=1
+	planning_skill=1	logistics_skill=1
+}
+create_corps_commander={
+	name="Cogwheel Ponyarchuk"	id=7777
+	picture="Ponyarchuk.tga"
+	skill=3	attack_skill=3	defense_skill=2
+	planning_skill=2	logistics_skill=3
+	traits={pony_race_trait renowned_marksman commando politically_connected}
+}
+create_corps_commander={
+	name="Gemian Smit"
+	picture="Gemian Smit.tga"
+	skill=1	attack_skill=1	defense_skill=1
+	planning_skill=1	logistics_skill=1
 	traits={pony_race_trait career_officer}
 }
 create_corps_commander={
-	name="Whagirl"	#id=	desc=
+	name="Whagirl"
 	picture="Whagirl.tga"	female=yes
 	skill=1	attack_skill=1	defense_skill=1
-	planning_skill=1	logistics_skill=2
-	traits={pony_race_trait}
-}
-create_corps_commander={
-	name="Vampirenok"	#id=	desc=
-	picture="Vampirenok.tga"	female=yes
-	skill=1	attack_skill=2	defense_skill=1
 	planning_skill=1	logistics_skill=1
-	traits={thestral_race_trait infantry_officer}
+	traits={pony_race_trait naval_invader}
 }
 create_corps_commander={
-	name="Depuresso"	#id=	desc=
+	name="Masha Norushkina"
+	picture="Vampirenok.tga"	female=yes
+	skill=3	attack_skill=2	defense_skill=2
+	planning_skill=4	logistics_skill=2
+	traits={thestral_race_trait harsh_leader brilliant_strategist trait_mountaineer infantry_officer}
+}
+create_corps_commander={
+	name="Depuresso"
 	picture="Depuresso.tga"	female=yes
-	skill=1	attack_skill=1	defense_skill=1
+	skill=2	attack_skill=1	defense_skill=2
 	planning_skill=2	logistics_skill=2
 	traits={pony_race_trait harsh_leader}
 }
 create_corps_commander={
-	name="Marussia"	#id=	desc=
+	name="Marussia"
 	picture="Marussia.tga"	female=yes
-	skill=1	attack_skill=2	defense_skill=1
+	skill=1	attack_skill=1	defense_skill=1
 	planning_skill=1	logistics_skill=1
 	traits={pony_race_trait commissar_general}
 }
 create_corps_commander={
-	name="Victor Historia"	#id=	desc=
-	picture="CHG.tga"	#female=yes
+	name="Victor Historia"
+	picture="CHG.tga"
 	skill=1	attack_skill=2	defense_skill=2
 	planning_skill=2	logistics_skill=1
-	traits={pony_race_trait bearer_of_artillery}
+	traits={pony_race_trait artillery_specialist}
 }
 create_corps_commander={
-	name="That BT-7"	#id=	desc=
-	picture="ThatfuckingBt7.tga"	#female=yes
+	name="That BT-7"
+	picture="ThatfuckingBt7.tga"
 	skill=1	attack_skill=1	defense_skill=1
 	planning_skill=1	logistics_skill=1
 	traits={pony_race_trait armor_officer}
+}
+create_navy_leader={
+	name="Furious Glory"
+	portrait_path="gfx/leaders/STG/Furious_Glory.tga"
+	skill=4	attack_skill=4	defense_skill=3
+	maneuvering_skill=4	coordination_skill=2
+	traits={pony_race_trait bold fly_swatter destroyer_leader}
+}
+create_navy_leader={
+	name="Grey Gorshkov"
+	portrait_path="gfx/leaders/STG/Gorshkov.tga"
+	skill=4	attack_skill=4	defense_skill=2
+	maneuvering_skill=3	coordination_skill=4
+	traits={pony_race_trait gentlemanly seawolf blockade_runner}
+}
+create_navy_leader={
+	name="Karina"
+	portrait_path="gfx/leaders/STG/Karina.tga"
+	skill=3	attack_skill=2	defense_skill=3
+	maneuvering_skill=2	coordination_skill=3
+	traits={pony_race_trait battleship_adherent inshore_fighter}
 }
 #VARIENTS
 if={limit={has_dlc="Man the Guns"}

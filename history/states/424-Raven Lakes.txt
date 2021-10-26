@@ -11,9 +11,9 @@ state={
 		#owner=BRZ
 		#add_core_of=BRZ
 		#add_claim_by=
-		victory_points={1138 1}
+		victory_points={1138 5}
 		victory_points={8215 1}
-		victory_points={9972 3}
+		victory_points={9972 1}
 		victory_points={10042 10}
 		buildings={
 		#STATE BUILDINGS

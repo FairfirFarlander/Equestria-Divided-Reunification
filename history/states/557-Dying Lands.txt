@@ -11,7 +11,7 @@ state={
 		#owner=FAT
 		#add_core_of=FAT
 		#add_claim_by=
-		victory_points={10914 1}
+		victory_points={10914 5}
 		buildings={
 		#STATE BUILDINGS
 			infrastructure=1
@@ -20,7 +20,7 @@ state={
 			radar_station=0
 		#SHARED BUILDINGS
 			arms_factory=0
-			industrial_complex=0
+			industrial_complex=1
 			#dockyard=0
 			synthetic_refinery=0
 			fuel_silo=0

@@ -11,7 +11,7 @@ state={
 		#owner=JAK
 		#add_core_of=JAK
 		#add_claim_by=
-		victory_points={6284 20}
+		victory_points={6284 15}
 		buildings={
 		#STATE BUILDINGS
 			infrastructure=3

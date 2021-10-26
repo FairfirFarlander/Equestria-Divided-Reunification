@@ -11,7 +11,7 @@ state={
 		owner=COT
 		add_core_of=COT
 		#add_claim_by=
-		victory_points={3663 1}
+		victory_points={3663 3}
 		buildings={
 		#STATE BUILDINGS
 			infrastructure=3
