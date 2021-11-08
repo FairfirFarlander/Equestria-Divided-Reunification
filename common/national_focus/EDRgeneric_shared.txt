@@ -1,171 +1,66 @@
 #Generic Equestrian Seperatist Tree
 	shared_focus={		#The Death of an Era
 		id=EDR_P00 icon=GFX_goal_eqc_shelter_celestia
-		x=1 y=0 cost=7 ai_will_do={factor=4000} #1.43
+		x=0 y=0 cost=7 ai_will_do={factor=4000} #1.43
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus EDR_P00"
 			add_political_power=100
 		}
 	}
-	shared_focus={		#Totalist
-		id=EDR_P01A icon=GFX_goal_ideology_totalist
+	shared_focus={		#Spread Socialist Ideology
+		id=EDR_P01A icon=GFX_goal_ideology_communist
 		relative_position_id=EDR_P00
-		x=-8 y=1 cost=7 ai_will_do={factor=40}
+		x=-5 y=1 cost=7 ai_will_do={factor=40}
 		prerequisite={focus=EDR_P00}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus EDR_P01A"
 		}
 	}
-	shared_focus={		#Democratic Socialist
-		id=EDR_P01B icon=GFX_goal_ideology_democratic_socialist
+	shared_focus={		#Protect Democratic Process
+		id=EDR_P01B icon=GFX_goal_ideology_social_liberal
 		relative_position_id=EDR_P00
-		x=-6 y=1 cost=7 ai_will_do={factor=40}
+		x=-2 y=1 cost=7 ai_will_do={factor=40}
 		prerequisite={focus=EDR_P00}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus EDR_P01B"
 		}
 	}
-	shared_focus={		#Democratic Socialist
-		id=EDR_P01C icon=GFX_goal_ideology_social_democrat
+	shared_focus={		#Reinvigorate Localized Tratition
+		id=EDR_P01C icon=GFX_goal_ideology_social_conservative
 		relative_position_id=EDR_P00
-		x=-4 y=1 cost=7 ai_will_do={factor=40}
+		x=1 y=1 cost=7 ai_will_do={factor=40}
 		prerequisite={focus=EDR_P00}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus EDR_P01C"
 		}
 	}
-	shared_focus={		#Social Conservative
-		id=EDR_P01D icon=GFX_goal_ideology_social_conservative
+	shared_focus={		#Instill Nationalistic Pride
+		id=EDR_P01D icon=GFX_goal_ideology_national_populist
 		relative_position_id=EDR_P00
-		x=-2 y=1 cost=7 ai_will_do={factor=40}
+		x=5 y=1 cost=7 ai_will_do={factor=40}
 		prerequisite={focus=EDR_P00}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus EDR_P01D"
 		}
 	}
-	shared_focus={		#Monarchist
-		id=EDR_P01E icon=GFX_goal_ideology_monarchist
-		relative_position_id=EDR_P00
-		x=0 y=1 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=EDR_P00}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_P01E"
-		}
-	}
-	shared_focus={		#Authoritarian Democrat
-		id=EDR_P01F icon=GFX_goal_ideology_authoritarian_democrat
-		relative_position_id=EDR_P00
-		x=2 y=1 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=EDR_P00}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_P01F"
-		}
-	}
-	shared_focus={		#Rising of National Populism
-		id=EDR_P01G icon=GFX_goal_ideology_national_populist
-		relative_position_id=EDR_P00
-		x=4 y=1 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=EDR_P00}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_P01G"
-			add_ideas=EDR_supremacy_populism
-		}
-	}
-	shared_focus={		#
-		id=EDR_P02A #icon=
-		relative_position_id=EDR_P01A
+	
+	
+	shared_focus={		#Totalist
+		id=EDR_P02G icon=GFX_goal_ideology_totalist
+		relative_position_id=EDR_P01D
 		x=-1 y=1 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=EDR_P01A}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_P02A"
-		}
-	}
-	shared_focus={		#
-		id=EDR_P02B #icon=
-		relative_position_id=EDR_P01A
-		x=1 y=1 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=EDR_P01A}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_P02B"
-		}
-	}
-	shared_focus={		#
-		id=EDR_P02C #icon=
-		relative_position_id=EDR_P01C
-		x=-1 y=1 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=EDR_P01C}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_P02C"
-		}
-	}
-	shared_focus={		#
-		id=EDR_P02D #icon=
-		relative_position_id=EDR_P01C
-		x=1 y=1 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=EDR_P01C}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_P02D"
-		}
-	}
-	shared_focus={		#
-		id=EDR_P02E #icon=
-		relative_position_id=EDR_P01E
-		x=-1 y=1 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=EDR_P01E}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_P02E"
-		}
-	}
-	shared_focus={		#
-		id=EDR_P02F #icon=
-		relative_position_id=EDR_P01E
-		x=1 y=1 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=EDR_P01E}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_P02F"
-		}
-	}
-	shared_focus={		#
-		id=EDR_P02G #icon=
-		relative_position_id=EDR_P01G
-		x=-1 y=1 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=EDR_P01G}
+		prerequisite={focus=EDR_P01D}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus EDR_P02G"
 		}
 	}
-	shared_focus={		#
-		id=EDR_P02H #icon=
-		relative_position_id=EDR_P01G
+	shared_focus={		#Totalist
+		id=EDR_P02H icon=GFX_goal_ideology_totalist
+		relative_position_id=EDR_P01D
 		x=1 y=1 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=EDR_P01G}
+		prerequisite={focus=EDR_P01D}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus EDR_P02H"
-		}
-	}
-	
-	
-	
-	shared_focus={		#Seperation From Equestria
-		id=EDR_P01
-		icon=GFX_goal_revolution_pony
-		relative_position_id=EDR_P00
-		x=0 y=1 cost=1.43
-		prerequisite={focus=EDR_P0}
-		ai_will_do={factor=4000}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_P01"
-		}
-	}
-	shared_focus={		#Keep Your Freinds Close...
-		id=EDR_P02
-		icon=GFX_goal_generic_pony_unity
-		relative_position_id=EDR_P01
-		x=0 y=1 cost=1.43
-		prerequisite={focus=EDR_P1}
-		ai_will_do={factor=4000}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_P02"
 		}
 	}
 	shared_focus={		#The Winter Troubles

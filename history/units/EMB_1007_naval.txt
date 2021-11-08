@@ -4,9 +4,11 @@ units={
 		name="The Queen's Navy"
 		naval_base=336
 		task_force={
-			name="BuzzBuzz" location=336		#Manehattan
-			#Dreadnought
-			ship={name="ERNS Narratek" definition=battleship equipment={ship_hull_pre_dreadnought={amount=1 owner=EMB version_name="Narratek 999 Class"}}}
+			name="BuzzBuzz" location=336		#Unnamedhive
+			#Battleship/Dreadnought
+			ship={name="ERNS Narratek" definition=battleship equipment={ship_hull_heavy_1={amount=1 owner=EMB version_name="Narratek 999 Class"}}}
+			#Dreadnought	#We tried. It died.
+			#ship={name="ERNS Narratek" definition=battleship equipment={ship_hull_pre_dreadnought={amount=1 owner=EMB version_name="Mounder 999 Class"}}}
 		}
 	}
 }

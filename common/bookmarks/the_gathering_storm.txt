@@ -80,15 +80,9 @@ bookmarks={
 			ideas={}
 			focuses={}
 		}
-		#"CHY"={ #Dodge Province
-		#	history="CHY_GATHERING_STORM_DESC"
-		#	ideology=fascism	minor=yes
-		#	ideas={}
-		#	focuses={}
-		#}
-		"DRG"={	#Dragon Isles
-			history="DRG_GATHERING_STORM_DESC"
-			ideology=democratic	minor=yes
+		"CHY"={ #Dodge Province
+			history="CHY_GATHERING_STORM_DESC"
+			ideology=fascism	minor=yes
 			ideas={}
 			focuses={}
 		}
@@ -179,6 +173,12 @@ bookmarks={
 		#"VHT"={	#Vanhoover Province
 		#	history="VHT_GATHERING_STORM_DESC"
 		#	ideology=communism	minor=yes
+		#	ideas={}
+		#	focuses={}
+		#}
+		#"VII"={	#Dragon Isles
+		#	history="VII_GATHERING_STORM_DESC"
+		#	ideology=democratic	minor=yes
 		#	ideas={}
 		#	focuses={}
 		#}

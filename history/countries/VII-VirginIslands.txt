@@ -1,10 +1,10 @@
 ﻿#LOCALE
 capital=7
-oob="DRG_1007"
+oob="VII_1007"
 #if={
 #	limit={has_dlc="Man the Guns"}
-#	set_naval_oob="DRG_naval"
-#	else={set_naval_oob="DRG_naval_legacy"}
+#	set_naval_oob="VII_naval"
+#	else={set_naval_oob="VII_naval_legacy"}
 #}
 #FOUNTATION
 set_research_slots=2

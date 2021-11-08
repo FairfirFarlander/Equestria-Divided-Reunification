@@ -1,9 +1,19 @@
 focus_tree={
 	id=CHY_generic country={factor=0 modifier={add=10 tag=CHY}}
-	continuous_focus_position={x=1750 y=800}
+	continuous_focus_position={x=290 y=2500}
 	default=no
-	shared_focus=EDR_I00
-	shared_focus=EDR_L05
-	shared_focus=EDR_N05
-	shared_focus=EDR_A05
+	
+	shared_focus=AET_anarchy
+	shared_focus=AET_realpolitik
+	shared_focus=AET_archonate_help
+	shared_focus=AET_industrial_1
+	shared_focus=AET_army_1
+	shared_focus=AET_state_air
+	shared_focus=AET_navy_1
+	shared_focus=AET_wave_one
+	
+	#shared_focus=EDR_I00
+	#shared_focus=EDR_L05
+	#shared_focus=EDR_N05
+	#shared_focus=EDR_A05
 }

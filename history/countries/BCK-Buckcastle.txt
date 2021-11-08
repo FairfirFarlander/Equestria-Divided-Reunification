@@ -43,9 +43,21 @@ create_country_leader={
 	traits={}
 }
 create_country_leader={
+	name="Council of Syndicates"	#desc=
+	expire="1965.1.1"	#picture=""
+	ideology=marxism	female=yes
+	traits={}
+}
+create_country_leader={
 	name="Sea Prism"	#desc=
 	expire="1965.1.1"	#picture=""
 	ideology=despotism	female=yes
+	traits={}
+}
+create_country_leader={
+	name="Sea Prism"	#desc=
+	expire="1965.1.1"	#picture=""
+	ideology=liberalism	female=yes
 	traits={}
 }
 #Facism think locus corp.

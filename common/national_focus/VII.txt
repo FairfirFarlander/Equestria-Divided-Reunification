@@ -1,5 +1,5 @@
 focus_tree={
-	id=DRG_generic country={factor=0 modifier={add=10 tag=DRG}}
+	id=VII_generic country={factor=0 modifier={add=10 tag=VII}}
 	continuous_focus_position={x=1750 y=800}
 	default=no
 	shared_focus=EDR_I00

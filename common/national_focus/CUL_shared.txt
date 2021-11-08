@@ -181,7 +181,7 @@ target=HEF
 }
 create_wargoal={
 type=annex_everything
-target=DRG
+target=VII
 }
 		}
 	}

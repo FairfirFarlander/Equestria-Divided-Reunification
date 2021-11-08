@@ -5,8 +5,10 @@ units={
 		naval_base=336
 		task_force={
 			name="BuzzBuzz" location=336		#Unnamedhive
-			#Dreadnought
-			ship={name="ERNS Narratek" definition=battleship equipment={pre_dreadnought_nomtg={amount=1 owner=EMB version_name="Narratek 999 Class"}}}
+			#Battleship/Dreadnought
+			ship={name="ERNS Narratek" definition=battleship equipment={early_battleship={amount=1 owner=EMB version_name="Narratek 999 Class"}}}
+			#Dreadnought	#We tried. It Died.
+			#ship={name="ERNS Narratek" definition=battleship equipment={pre_dreadnought_nomtg={amount=1 owner=EMB version_name="Mounder 999 Class"}}}
 		}
 	}
 }

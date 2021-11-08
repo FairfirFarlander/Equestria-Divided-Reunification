@@ -1,0 +1,53 @@
+EMB_communal_gardens={
+	EMB_garden_food_effort={
+		icon=GFX_decision_wheat_bundle
+		available={not={has_country_flag=EMB_gardens_in_use}}
+		fire_only_once=no
+		days_remove=90
+		days_re_enable=1
+		highlight_provinces={10023}
+		modifier={
+			monthly_population=0.03
+		}
+		complete_effect={
+			log="[GetDateText]: [Root.GetName]: decision EMB_garden_food_effort"
+			set_country_flag=EMB_gardens_in_use
+		}
+		remove_effect={clr_country_flag=EMB_gardens_in_use}
+	}
+	EMB_garden_plant_effort={
+		icon=GFX_decision_clover_lushi
+		available={not={has_country_flag=EMB_gardens_in_use}}
+		fire_only_once=no
+		days_remove=90
+		days_re_enable=1
+		highlight_provinces={10023}
+		modifier={
+			stability_factor=0.05
+			neutrality_drift=0.2
+		}
+		complete_effect={
+			log="[GetDateText]: [Root.GetName]: decision EMB_garden_food_effort"
+			set_country_flag=EMB_gardens_in_use
+		}
+		remove_effect={clr_country_flag=EMB_gardens_in_use}
+	}
+	EMB_garden_both_effort={
+		icon=GFX_decision_category_opium
+		available={not={has_country_flag=EMB_gardens_in_use}}
+		fire_only_once=no
+		days_remove=90
+		days_re_enable=1
+		highlight_provinces={10023}
+		modifier={
+			stability_factor=0.02
+			monthly_population=0.01
+			fascism_drift=0.1
+		}
+		complete_effect={
+			log="[GetDateText]: [Root.GetName]: decision EMB_garden_food_effort"
+			set_country_flag=EMB_gardens_in_use
+		}
+		remove_effect={clr_country_flag=EMB_gardens_in_use}
+	}
+}

@@ -20,7 +20,7 @@ units={	#DEPLOYMENTS
 		division_template="Militia"
 		start_experience_factor=0.3
 		start_equipment_factor=0.4
-		force_equipment_variants={melee_equipment_1={owner="DRG" creator="EQS"}}
+		force_equipment_variants={melee_equipment_1={owner="VII" creator="EQS"}}
 	}
 	division={	#Dragon's Retreat
 		name="Dragon Warband"
@@ -28,7 +28,7 @@ units={	#DEPLOYMENTS
 		division_template="Dragon Warband"
 		start_experience_factor=0.1
 		start_equipment_factor=1
-		force_equipment_variants={melee_equipment_0={owner="DRG" creator="DRG"}}
+		force_equipment_variants={melee_equipment_0={owner="VII" creator="VII"}}
 	}
 	division={	#The Mountain
 		name="Dragon Warband"
@@ -36,17 +36,17 @@ units={	#DEPLOYMENTS
 		division_template="Dragon Warband"
 		start_experience_factor=0.1
 		start_equipment_factor=1
-		force_equipment_variants={dragon_equipment_0={owner="DRG" creator="DRG"}}
+		force_equipment_variants={dragon_equipment_0={owner="VII" creator="VII"}}
 	}
 }
 #STARTING_PRODUCTION
 instant_effect={
 	add_equipment_production={
-		equipment={type=melee_equipment_0 creator="DRG"}
+		equipment={type=melee_equipment_0 creator="VII"}
 		requested_factories=1 progress=0.96 efficiency=20
 	}
 	add_equipment_production={
-		equipment={type=dragon_equipment_0 creator="DRG"}
+		equipment={type=dragon_equipment_0 creator="VII"}
 		requested_factories=1 progress=0.69 efficiency=15
 	}
 	add_equipment_to_stockpile={type=melee_equipment_0 amount=180 producer=EQS}

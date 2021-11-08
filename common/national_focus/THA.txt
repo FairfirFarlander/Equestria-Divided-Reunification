@@ -1,10 +1,10 @@
 focus_tree={
 	id=THA_generic country={factor=0 modifier={add=10 tag=THA}}
-	continuous_focus_position={x=1750 y=800}
+	continuous_focus_position={x=0 y=0}
 	default=no
 	shared_focus=EDR_I00
-	shared_focus=EDR_L05
+	#shared_focus=EDR_L05
 	#shared_focus=EDR_N05
-	shared_focus=EDR_A05
+	#shared_focus=EDR_A05
 	shared_focus=THA_S00
 }

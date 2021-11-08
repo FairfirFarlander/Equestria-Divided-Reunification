@@ -1,7 +1,7 @@
 #The Fruit of Our Eye
 	shared_focus={		#The Mountain Stands Strong
 		id=THA_S00 icon=GFX_focus_GRE_a_land_of_mountains
-		x=0 y=0 cost=4 ai_will_do={factor=40}
+		x=0 y=0 cost=2.86 ai_will_do={factor=40}
 		select_effect={set_temp_variable={aaaaa=1}}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus THA_S00"
@@ -27,7 +27,7 @@
 		}
 	}
 	shared_focus={		#The Most of Little Time
-		id=THA_S03 icon=GFX_HON_peace_in_our_time
+		id=THA_S03 icon=GFX_goal_NLR_Peace_in_our_Time
 		relative_position_id=THA_S02
 		x=0 y=1 cost=2 ai_will_do={factor=40}
 		prerequisite={focus=THA_S02}
@@ -72,5 +72,25 @@
 		
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus THA_S05"
+		}
+	}
+	shared_focus={		#We Will Never Yield
+		id=THA_SA06 icon=GFX_goal_generic_defence
+		relative_position_id=THA_S05
+		x=-4 y=1 cost=2 ai_will_do={factor=40}
+		prerequisite={focus=THA_S05}
+		mutually_exclusive={focus=THA_SD06}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus THA_SA06"
+		}
+	}
+	shared_focus={		#The Mountain Will Never Fall
+		id=THA_SD06 icon=GFX_goal_fortify_the_westwall
+		relative_position_id=THA_S05
+		x=4 y=1 cost=2 ai_will_do={factor=40}
+		prerequisite={focus=THA_S05}
+		mutually_exclusive={focus=THA_SA06}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus THA_SD06"
 		}
 	}

@@ -1,0 +1,10 @@
+add_namespace=THAact01
+	country_event={		#The March Back To Ayacachtli
+		id=THAact01.01	is_triggered_only=yes
+		immediate={log="[GetDateText]: [Root.GetName]: event THAact01.01"}
+		title=THAact01.01.t	desc=THAact01.01.d
+		#picture=
+		option={name=THAact01.01.a
+			add_stability=0.2
+		}
+	}

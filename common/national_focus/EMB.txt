@@ -10,7 +10,7 @@ focus_tree={
 }
 focus_tree={
 	id=EMB_starter country={factor=0 modifier={add=30 tag=EMB}}
-	continuous_focus_position={x=0 y=800}
+	continuous_focus_position={x=0 y=0}
 	default=no
 	shared_focus=EMB_S00
 #	shared_focus=EMB_ember_earthworks

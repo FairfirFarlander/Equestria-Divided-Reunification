@@ -1,0 +1,6 @@
+EMB_communal_gardens={
+	icon=GFX_decision_swamp
+	priority=100
+	allowed={tag=EMB}
+	visible={has_country_flag=EMB_gardens_enabled}
+}

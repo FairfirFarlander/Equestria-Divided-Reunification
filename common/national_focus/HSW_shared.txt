@@ -135,7 +135,7 @@
 				has_war_with=ROOT
 				is_subject_of=ROOT
 			}}
-			DRG={OR={
+			VII={OR={
 				exists=no
 				has_war_with=ROOT
 				is_subject_of=ROOT
@@ -143,13 +143,13 @@
 		}
 		ai_will_do={factor=20}
 		will_lead_to_war_with=HEF
-		will_lead_to_war_with=DRG
+		will_lead_to_war_with=VII
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HSW_war_to_everfree"
 			every_state={limit={is_core_of=HEF}add_claim_by=HSW}
-			every_state={limit={is_core_of=DRG}add_claim_by=HSW}
+			every_state={limit={is_core_of=VII}add_claim_by=HSW}
 			create_wargoal={type=annex_everything target=HEF}
-			create_wargoal={type=annex_everything target=DRG}
+			create_wargoal={type=annex_everything target=VII}
 		}
 	}
 	shared_focus={		#Destroy the Worthless
@@ -244,7 +244,7 @@
 			has_completed_focus=HSW_rebuild_the_equestria_navy
 			OR={
 				owns_state=7
-				DRG={OR={
+				VII={OR={
 					exists=no
 					is_subject_of=ROOT
 					is_in_faction_with=ROOT

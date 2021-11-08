@@ -24,11 +24,9 @@ add_namespace=EMBact01
 		immediate={log="[GetDateText]: [Root.GetName]: event EMBact01.03"}
 		title=EMBact01.03.t	desc=EMBact01.03.d
 		#picture=
-		option={name=EMBact01.03.a
-			
-		}
+		option={name=EMBact01.03.a}
 	}
-	country_event={
+	country_event={		#The Council Resides
 		id=EMBact01.04	is_triggered_only=yes
 		immediate={log="[GetDateText]: [Root.GetName]: event EMBact01.04"}
 		title=EMBact01.04.t	desc=EMBact01.04.d
@@ -40,12 +38,14 @@ add_namespace=EMBact01
 			add_political_power=-13
 		}
 	}
-	country_event={
+	country_event={		#The Terraces Are Prepared
 		id=EMBact01.05	is_triggered_only=yes
 		immediate={log="[GetDateText]: [Root.GetName]: event EMBact01.05"}
 		title=EMBact01.05.t	desc=EMBact01.05.d
 		#picture=
-		option={name=EMBact01.05.a}
+		option={name=EMBact01.05.a
+			set_country_flag=EMB_gardens_enabled
+		}
 	}
 	country_event={
 		id=EMBact01.06	is_triggered_only=yes

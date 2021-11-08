@@ -12,7 +12,7 @@ add_ideas={
 	limited_exports
 	isolation
 	poor_science_base
-	detached_country
+	agrarian_society
 	no_lack_of_scientists
 	no_poverty
 }

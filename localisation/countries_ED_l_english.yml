@@ -81,19 +81,6 @@ EVERFREE_democratic_ADJ:0 "Realm of Everfree"
 EVERFREE_neutrality_ADJ:0 "Realm of Everfree"
 EVERFREE_communism_ADJ:0 "Realm of Everfree"
 
-HEB_neutrality:0 "House Earthborn"
-HEB_fascism:0 "House Earthborn"
-HEB_communism:0 "House Earthborn"
-HEB_democratic:0 "House Earthborn"
-HEB_neutrality_DEF:0 "House Earthborn"
-HEB_fascism_DEF:0 "House Earthborn"
-HEB_communism_DEF:0 "House Earthborn"
-HEB_democratic_DEF:0 "House Earthborn"
-HEB_fascism_ADJ:0 "House Earthborn"
-HEB_democratic_ADJ:0 "House Earthborn"
-HEB_neutrality_ADJ:0 "House Earthborn"
-HEB_communism_ADJ:0 "House Earthborn"
-
 EARTHB_neutrality:0 "Equestria"
 EARTHB_fascism:0 "Equestria"
 EARTHB_communism:0 "Equestria"
@@ -106,19 +93,6 @@ EARTHB_fascism_ADJ:0 "Equestria"
 EARTHB_democratic_ADJ:0 "Equestria"
 EARTHB_neutrality_ADJ:0 "Equestria"
 EARTHB_communism_ADJ:0 "Equestria"
-
-HSW_neutrality:0 "House Stormwing"
-HSW_fascism:0 "House Stormwing"
-HSW_communism:0 "House Stormwing"
-HSW_democratic:0 "House Stormwing"
-HSW_neutrality_DEF:0 "House Stormwing"
-HSW_fascism_DEF:0 "House Stormwing"
-HSW_communism_DEF:0 "House Stormwing"
-HSW_democratic_DEF:0 "House Stormwing"
-HSW_fascism_ADJ:0 "House Stormwing"
-HSW_democratic_ADJ:0 "House Stormwing"
-HSW_neutrality_ADJ:0 "House Stormwing"
-HSW_communism_ADJ:0 "House Stormwing"
 
 STORM_neutrality:0 "Military Governate of Equestria"
 STORM_fascism:0 "Military Governate of Equestria"
@@ -159,11 +133,7 @@ LAUGHTER_democratic_ADJ:0 "Realm of Laughter"
 LAUGHTER_neutrality_ADJ:0 "Realm of Laughter"
 LAUGHTER_communism_ADJ:0 "Realm of Laughter"
 
-
-
-
 ### factions ###
-
 New_Equestrian_Hegemony:0 "New Equestrian Hegemony"
 Milit_Equestrian_Hegemony:0 "Military Hegemony of Equestria"
 Equestrian_Hegemony:0 "Equestrian Hegemony"
