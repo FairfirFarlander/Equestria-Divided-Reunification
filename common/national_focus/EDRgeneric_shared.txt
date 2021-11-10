@@ -183,7 +183,7 @@
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus EDR_I03A"
 			increase_society_development_gradually_with_tt=yes
-add_offsite_building={
+			add_offsite_building={
 				type=arms_factory
 				level=1
 			}

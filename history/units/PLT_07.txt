@@ -3,7 +3,6 @@ division_template={
 	priority=0
 	regiments={
 		infantry={x=0 y=0}
-		infantry={x=0 y=1}
 	}
 }
 division_template={
@@ -20,21 +19,13 @@ units={	#DEPLOYMENTS
 		name="Portland Militia"
 		location=668
 		division_template="Militia"
-		start_experience_factor=0.1
+		start_experience_factor=0.05
 		start_equipment_factor=1
 		force_equipment_variants={melee_equipment_0={owner="PLT" creator="PLT"}}
 	}
-	division={	#Cuetzpalliztli
-		name="Cuetzpalliztli Militia"
-		location=4913
-		division_template="Militia"
-		start_experience_factor=0.1
-		start_equipment_factor=0.7
-		force_equipment_variants={melee_equipment_0={owner="PLT" creator="PLT"}}
-	}
-	division={	#Portland
+	division={	#Yakima
 		name="1st Portland Guard Regiment"
-		location=668
+		location=7166
 		division_template="Coastal Conscripts"
 		start_experience_factor=0.02
 		start_equipment_factor=0.6
@@ -47,5 +38,5 @@ instant_effect={
 		equipment={type=melee_equipment_0 creator="PLT"}
 		requested_factories=1 progress=0.96 efficiency=28
 	}
-	add_equipment_to_stockpile={type=melee_equipment_1 amount=92 producer=EQS}
+	add_equipment_to_stockpile={type=melee_equipment_1 amount=92 producer=PLT}
 }
