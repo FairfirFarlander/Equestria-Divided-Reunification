@@ -1,18 +1,21 @@
 ﻿l_english:
- VICTORY_POINTS_TOOLTIP:0 "§G$NAME$§! victory points=§Y$POINTS$§!"
+ VICTORY_POINTS_TOOLTIP:0"§G$NAME$§! victory points=§Y$POINTS$§!"
  #Fire Sea
-  VICTORY_POINTS_11755:0 "Port Starswirl"
-  VICTORY_POINTS_4913:0 "Dragon's Retreat"
+  VICTORY_POINTS_11755:0"Port Starswirl"
+  VICTORY_POINTS_4913:0"Dragon's Retreat"
 #Southeast (Jungle) VCs
  #Southern Colonies
-  VICTORY_POINTS_668:0 "Portland"
-  VICTORY_POINTS_9497:0 "Village of Unsoryth" #Moved to Focus
+  VICTORY_POINTS_668:0"Portland"
+  VICTORY_POINTS_9497:0"Village of Unsoryth" #Moved to Focus
  #Forbidden Jungle
-  VICTORY_POINTS_10023:0 "Village of Ember"
-  VICTORY_POINTS_7166:0 "Yakima" #Yakima Firing Range (The Mackie [Battletech])
-  VICTORY_POINTS_336:0 "Unnamedhive"
+  VICTORY_POINTS_10023:0"Village of Ember"
+  VICTORY_POINTS_7166:0"Yakima" #Yakima Firing Range (The Mackie [Battletech])
+  VICTORY_POINTS_336:0"Unnamedhive"
+ #Starswirl Valley
+  VICTORY_POINTS_11052:0"Oversticht"
+  VICTORY_POINTS_3898:0"Leywarden"
  #Changed Unorganized
- VICTORY_POINTS_13097:0 "Redheart's Refuge"
+ VICTORY_POINTS_13097:0"Redheart's Refuge"
 
  #Unorganized
  VICTORY_POINTS_179:0 "Canterlot"

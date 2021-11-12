@@ -11,7 +11,7 @@ state={
 		owner=HMS
 		add_core_of=HMS
 		#add_claim_by=
-		#victory_points={}
+		victory_points={3898 1}	#No VP in EAW
 		buildings={
 		#STATE BUILDINGS
 			infrastructure=1

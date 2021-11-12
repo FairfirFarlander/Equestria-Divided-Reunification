@@ -1,6 +1,6 @@
 #LOCALE	#Welcome to the Orange Grove MotherFucker.
 capital=122
-oob="HFT_1007"
+oob="HFT_07"
 #FOUNTATION
 set_research_slots=2
 set_stability=0.6

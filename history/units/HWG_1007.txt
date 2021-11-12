@@ -1,15 +1,6 @@
 division_template={
-	name="Whitegold Militia"
-	priority=0
-	regiments={
-		infantry={x=0 y=0}
-		infantry={x=0 y=1}
-		infantry={x=0 y=2}
-	}
-}
-division_template={
-	name="Mercenary Company"
-	priority=1
+	name="Mercenary Brigade"	#divisions_name_group=
+	is_locked=yes	priority=1	template_counter=11
 	regiments={
 		infantry={x=0 y=0}
 		infantry={x=0 y=1}
@@ -18,45 +9,14 @@ division_template={
 	}
 }
 division_template={
-	name="Arquebus Regiment"
-	priority=1
+	name="Ironpaws Company"	#divisions_name_group=#
+	is_locked=yes	priority=1	#template_counter=0#
 	regiments={
-		infantry={x=0 y=0}
-		infantry={x=0 y=1}
-	}
-	support={
-		unicorn_company={x=0 y=0}
-		artillery={x=0 y=1}
+		ironpaws={x=0 y=0}
+		ironpaws={x=0 y=1}
+		ironpaws={x=0 y=2}
 	}
 }
-division_template={
-	name="Winged Dragoons"
-	priority=1	is_locked=yes
-	regiments={
-		pegasi={x=0 y=0}
-		pegasi={x=0 y=1}
-	}
-}
-division_template={
-	name="Praetor Guard"
-	priority=2	is_locked=yes
-	regiments={
-		infantry={x=0 y=0}	pegasi={x=1 y=0}
-		infantry={x=0 y=1}
-	}
-	support={
-		unicorn_company={x=0 y=0}
-	}
-}
-#division_template={
-#	name="Ironpaws Company"
-#	priority=1	is_locked=yes
-#	regiments={
-#		ironpaws={x=0 y=0}
-#		ironpaws={x=0 y=1}
-#		ironpaws={x=0 y=2}
-#	}
-#}
 units={
 	division={		#Manehattan
 		name="Ivory Tower Praetor Guard"

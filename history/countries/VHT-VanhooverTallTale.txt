@@ -1,12 +1,12 @@
-#LOCALE
+#LOCALE#
 capital=14
 oob="VHT_1007"
 #if={
 #	limit={has_dlc="Man the Guns"}
 #	set_naval_oob="VHT_1007_naval"
 #	else={set_naval_oob="VHT_1007_naval_legacy"}
-#}
-#FOUNTATION
+#}#
+#FOUNTATION#
 set_research_slots=2
 set_stability=0.65
 set_war_support=0.36
@@ -15,9 +15,9 @@ add_ideas={
 	better_science_base
 	lack_of_scientists2
 	poverty5
-	#VHT_vanguard_untrained
+	#VHT_vanguard_untrained#
 }
-#TECHNOLOGY
+#TECHNOLOGY#
 set_technology={
 	pony_race=1
 	melee_weapons=1
@@ -51,11 +51,11 @@ actually_fix_weapon_techs=yes
 generic_CA_template=yes
 generic_CL_template=yes
 generic_DD_template=yes
-#MISC
+#MISC#
 set_convoys=64
 set_rule={can_generate_female_aces=yes}
-#DIPLOMACY
-#POLITICS
+#DIPLOMACY#
+#POLITICS#
 set_popularities={
 	fascism=18	communism=67
 	neutrality=6	democratic=9
@@ -66,19 +66,19 @@ set_politics={
 	election_frequency=48
 	elections_allowed=no
 }
-create_country_leader={	#TEMP
-	name="Strawberry Snowflake"	#desc=
+create_country_leader={	#TEMP#
+	name="Strawberry Snowflake"	#desc=#
 	expire="1965.1.1"	picture="Strawberry_Snowflake.tga"
 	ideology=leninism	female=yes
 	traits={rural_populist}
 }
-#MILITARY
+#MILITARY#
 create_corps_commander={
-	name="Indigo Skies"	#id=	desc=
-	#picture=".tga"	#female=yes	#Batpony
+	name="Indigo Skies"	#id=	desc=#
+	#picture=".tga"	#female=yes	#Batpony#
 	skill=1	attack_skill=2	defense_skill=1
-	planning_skill=1	logistics_skill=1
-	traits={thestral_race_trait commissar_general}
+	planning_skill=1	logistics_skill=2
+	traits={thestral_race_trait air_force_commander commissar_general}
 }
 create_corps_commander={
 	name="Crimson Hoof"	#id=	desc=
@@ -87,4 +87,18 @@ create_corps_commander={
 	planning_skill=1	logistics_skill=1
 	traits={pony_race_trait}
 }
-#VARIENTS
+create_corps_commander={
+	name="Moonlight Elegy"		#id=	desc=#
+	picture="Moonlight_Elegy.dds"	female=yes
+	skill=1	attack_skill=1	defense_skill=1
+	planning_skill=1	logistics_skill=1
+	traits={pony_race_trait infantry_leader winter_specialist}
+}
+create_corps_commander={
+	name="Lavender Blossom"		#id=	desc=#
+	picture="Lavender_Blossom.dds"	female=yes
+	skill=1	attack_skill=1	defense_skill=1
+	planning_skill=1	logistics_skill=1
+	traits={pony_race_trait harsh_leader infantry_leader}
+}
+#VARIENTS#

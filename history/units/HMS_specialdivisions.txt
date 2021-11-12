@@ -1,0 +1,55 @@
+division_template={	#TEMPLATES#	#Use decisions and foci to get.#
+	name="Slave Battalion"	#divisions_name_group=#
+	is_locked=yes	priority=0	template_counter=1
+	regiments={
+		infantry={x=0 y=0}
+		infantry={x=0 y=1}
+		infantry={x=1 y=2}
+	}
+}
+division_template={	#Use decisions and foci to get.#
+	name="Pegasi Slave Battalion"	#divisions_name_group=#
+	is_locked=yes	priority=0	template_counter=2
+	regiments={
+		pegasi={x=0 y=0}
+		pegasi={x=0 y=1}
+	}
+}
+division_template={	#Use decisions and foci to get.#
+	name="Knightly Order"	#divisions_name_group=#
+	is_locked=yes	priority=2	template_counter=5
+	regiments={
+		infantry={x=0 y=0}
+		infantry={x=0 y=1}
+		infantry={x=0 y=2}
+	}
+	support={
+		unicorn_company={x=0 y=0}
+	}
+}
+division_template={	#Use decisions and foci to get.#
+	name="Inquisitorial Regiment"	#divisions_name_group=#
+	is_locked=yes	priority=2	template_counter=8
+	regiments={
+		infantry={x=0 y=0}
+		infantry={x=0 y=1}
+	}
+	support={
+		unicorn_company={x=0 y=0}
+		military_police={x=0 y=1}
+	}
+}
+units={
+	division={	#Luna Nova#
+		name="Order of the Moon"
+		location=6023	division_template="Knightly Order"
+		start_experience_factor=0.75	start_equipment_factor=1
+		force_equipment_variants={melee_equipment_0={owner="HMS" creator="EQS"}}
+	}
+	division={	#Neighagra Falls#
+		name="Order of the Sun"
+		location=6165	division_template="Knightly Order"
+		start_experience_factor=0.75	start_equipment_factor=1
+		force_equipment_variants={melee_equipment_0={owner="HMS" creator="EQS"}}
+	}
+}

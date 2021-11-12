@@ -1,10 +1,9 @@
 division_template={
-	name="Orange Clan Militia"
+	name="Clan Militia"	#divisions_name_group=#
+	is_locked=no	priority=0	template_counter=3
 	regiments={
 		infantry={x=0 y=0}
-		infantry={x=0 y=1}
 	}
-	priority=0
 }
 division_template={
 	name="Hornless Levy"

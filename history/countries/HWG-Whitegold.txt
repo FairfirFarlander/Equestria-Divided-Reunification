@@ -1,10 +1,10 @@
 #LOCALE
 capital=75
-oob="HWG_1007"
+oob="HWG_07"
 if={
 	limit={has_dlc="Man the Guns"}
-	set_naval_oob="HWG_1007_naval"
-	else={set_naval_oob="HWG_1007_naval_legacy"}
+	set_naval_oob="HWG_07_naval"
+	else={set_naval_oob="HWG_07_naval_legacy"}
 }
 13={	#Baltimare
 	start_resistance=yes	set_compliance=16

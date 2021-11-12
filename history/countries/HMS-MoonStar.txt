@@ -1,12 +1,12 @@
-#LOCALE	#Chi la dura la vince
+#LOCALE#	#Chi la dura la vince#
 capital=3
-oob="HMS_1007"
+oob="HMS_07"
 #if={
 	#limit={has_dlc="Man the Guns"}
 	#set_naval_oob="HMS_1007_naval"
 	#else={set_naval_oob="HMS_1007_naval_legacy"}
-#}
-#FOUNTATION
+#}#
+#FOUNTATION#
 set_research_slots=3
 set_stability=0.5
 set_war_support=0.5
@@ -20,12 +20,13 @@ add_ideas={
 	lack_of_scientists3
 	poverty2
 }
-#TECHNOLOGY
+#TECHNOLOGY#
 set_technology={
 	pony_race=1
 	melee_weapons=1
 	tech_support=1
-	#TEM_ursas=1
+	tech_military_police=1
+	#TEM_ursas=1#	#Will Unlock Later#
 	tech_unicorn=1
 	#tech_unicorn_ms=1
 	#tech_unicorn_th=1
@@ -53,10 +54,10 @@ set_technology={
 actually_fix_weapon_techs=yes
 #generic_CL_template=yes
 #generic_DD_template=yes
-#MISC
-#set_convoys=11
+#MISC#
+#set_convoys=11#
 set_rule={can_generate_female_aces=yes}
-#POLITICS
+#POLITICS#
 set_popularities={
 	fascism=60	communism=10
 	neutrality=25	democratic=5
@@ -66,40 +67,40 @@ set_politics={
 	election_frequency=36	elections_allowed=no
 }
 create_country_leader={
-	name="Prince Shining Armor"	#desc=
+	name="Prince Shining Armor"	#desc=#
 	expire="1965.1.1"	picture="Shining.tga"
 	ideology=despotism	female=yes
 	traits={}
 }
 create_country_leader={
-	name="Archmagister Twilight Sparkle"	#desc=
+	name="Archmagister Twilight Sparkle"	#desc=#
 	expire="1965.1.1"	picture="Twilight.tga"
 	ideology=magocracy	female=yes
 	traits={}
 }
 create_country_leader={
-	name="White Wind"	#desc=
+	name="White Wind"	#desc=#
 	expire="1965.1.1"	picture=""
 	ideology=liberalism	female=yes
 	traits={}
 }
 create_country_leader={
-	name="Frail Lance"	#desc=
+	name="Frail Lance"	#desc=#
 	expire="1965.1.1"	picture=""
-	ideology=anarchist_communism	#female=yes
+	ideology=anarchist_communism	#female=yes#
 	traits={}
 }
-#MILITARY
+#MILITARY#
 create_field_marshal={
-	name="Archmagister Twilight Sparkle"	#id=	desc=
+	name="Twilight Sparkle"	#id=	desc=#
 	picture="Twilight.tga"	female=yes
 	skill=1	attack_skill=1	defense_skill=1
-	planning_skill=1	logistics_skill=1
-	traits={pony_race_trait}
+	planning_skill=2	logistics_skill=2
+	traits={trait_archmagister pony_race_trait organizer organisational_leader}
 }
 create_field_marshal={
-	name="Prince Shining Armor"	#id=1043	#desc="CRY_Shining_Armour_desc"
-	picture="Shining.tga"	#female=yes
+	name="Prince Shining Armor"	#id=1043#	#desc="CRY_Shining_Armour_desc"#
+	picture="Shining.tga"	#female=yes#
 	skill=4	attack_skill=3	defense_skill=5
 	planning_skill=3	logistics_skill=3
 	traits={royal_guard_commander equestrian_prince pony_race_trait  defensive_doctrine}
@@ -109,11 +110,12 @@ create_field_marshal={
 #	picture="Spike.tga"	#female=yes
 #	skill=1
 #	traits={dragon_race_trait offensive_doctrine}
-#}
+#}#
 create_corps_commander={
-	name="Grand Inquisitor Trixie Lulamoon"	#id=	desc=
+	name="Grand Inquisitor Trixie Lulamoon"	#id=	desc=#
 	picture="Inquisitor_Trixie.tga"	female=yes
-	skill=1
-	traits={pony_race_trait}
+	skill=1	attack_skill=2	defense_skill=1
+	planning_skill=2	logistics_skill=1
+	traits={media_personality pony_race_trait}
 }
-#VARIENTS
+#VARIENTS#
