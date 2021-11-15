@@ -11,7 +11,7 @@ state={
 		owner=BCK
 		add_core_of=BCK
 		#add_claim_by=
-		victory_points={9867 3}
+		victory_points={9867 10}	#3 in EAW
 		buildings={
 		#STATE BUILDINGS
 			infrastructure=2

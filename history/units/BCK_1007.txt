@@ -1,87 +1,16 @@
-division_template={
-	name="Citizen Militia"
-	priority=0
+division_template={	#TEMPLATES#
+	name="Marelander Militia"	#divisions_name_group=#
+	is_locked=yes	priority=1	template_counter=17
 	regiments={
-		infantry={x=0 y=0}
+		infantry={x=0 y=0}	infantry={x=1 y=0}
+		infantry={x=0 y=1}	infantry={x=1 y=1}
 	}
 }
-division_template={
-	name="Provincial Levy"
-	priority=1
-	regiments={
-		infantry={x=0 y=0}
-		infantry={x=0 y=1}
-	}
-}
-division_template={
-	name="Marelander Militia"
-	priority=1	is_locked=yes
-	regiments={
-		infantry={x=0 y=0}
-		infantry={x=0 y=1}
-		infantry={x=0 y=2}
-	}
-}
-units={	#DEPLOYMENTS
-	division={
-		name="Meadowland Militia"
-		location=9867
-		division_template="Citizen Militia"
-		start_experience_factor=0
-		start_equipment_factor=1
-	}
-	division={
-		name="Mango Militia"
-		location=541
-		division_template="Citizen Militia"
-		start_experience_factor=0
-		start_equipment_factor=1
-	}
-	division={
-		name="Rambling Rock Ridge Militia"
-		location=9507
-		division_template="Citizen Militia"
-		start_experience_factor=0
-		start_equipment_factor=1
-	}
-	division={
-		name="Lesie Militia"
-		location=11600
-		division_template="Citizen Militia"
-		start_experience_factor=0
-		start_equipment_factor=1
-	}
-	division={
-		name="1st Castellen Royal Regiment"
-		location=9867
-		division_template="Provincial Levy"
-		start_experience_factor=0.1
-		start_equipment_factor=1
-		force_equipment_variants={melee_equipment_0={owner="BCK" creator="EQS"}}
-	}
-	division={
-		name="2nd Castellen Royal Army"
-		location=9867
-		division_template="Provincial Levy"
-		start_experience_factor=0.02
-		start_equipment_factor=1
-		force_equipment_variants={melee_equipment_0={owner="BCK" creator="EQS"}}
-	}
-	division={
-		name="3rd Castellen Royal Army"
-		location=9867
-		division_template="Provincial Levy"
-		start_experience_factor=0
-		start_equipment_factor=1
-		force_equipment_variants={melee_equipment_0={owner="BCK" creator="EQS"}}
-	}
-	division={	#Add 4 more units
+units={	#DEPLOYMENTS#
+	division={	#Add 4 more units#
 		name="Amethyian Ponies-at-Arms"
-		location=3915
-		division_template="Marelander Militia"
-		start_experience_factor=0.25
-		start_equipment_factor=1
+		location=3915	division_template="Marelander Militia"
+		start_experience_factor=0.25	start_equipment_factor=1
 		force_equipment_variants={melee_equipment_1={owner="BCK" creator="HWG"}}
 	}
 }
-#STARTING_PRODUCTION

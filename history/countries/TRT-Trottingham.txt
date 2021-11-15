@@ -1,6 +1,6 @@
 #LOCALE
 capital=67
-oob="TRT_1007"
+oob="TRT_07"
 #if={
 #	limit={has_dlc="Man the Guns"}
 #	set_naval_oob="TRT_1007_naval"
@@ -11,13 +11,10 @@ set_research_slots=2
 set_stability=0.36
 set_war_support=0.14
 add_ideas={
-	pre_industrial_society
-	better_science_base
-	lack_of_scientists2
-	poverty4
-	extensive_conscription
-	TRT_refugee_crisis
-	TRT_ragged_flag
+	TRT_refugee_crisis TRT_ragged_flag
+	volunteer_only export_focus civilian_economy
+	better_science_base pre_industrial_society
+	lack_of_scientists2 poverty4
 }
 #TECHNOLOGY
 set_technology={

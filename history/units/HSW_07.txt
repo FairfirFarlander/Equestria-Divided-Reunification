@@ -1,0 +1,127 @@
+division_template={	#TEMPLATES#
+	name="Psiloi"	#divisions_name_group=#
+	is_locked=no	priority=0	template_counter=3
+	regiments={
+		infantry={x=0 y=0}
+	}
+}
+division_template={	#TEMPLATES
+	name="Merarchía Pezikoú"	#divisions_name_group=#
+	is_locked=no	priority=1	template_counter=59
+	regiments={
+		infantry={x=0 y=0}
+		infantry={x=0 y=1}
+		infantry={x=0 y=2}
+	}
+}
+division_template={
+	name="Pígasos Sýntagma"	#divisions_name_group=#
+	is_locked=no	priority=1	#template_counter=0#
+	regiments={
+		pegasi={x=0 y=0}
+		pegasi={x=0 y=1}
+		pegasi={x=0 y=2}
+	}
+}
+division_template={
+	name="Hoplitai"	#divisions_name_group=#
+	is_locked=yes	priority=2	template_counter=37
+	regiments={
+		pegasi={x=0 y=0}
+		pegasi={x=0 y=1}
+		pegasi={x=0 y=2}
+	}
+	support={
+		recon={x=0 y=0}
+	}
+}
+units={
+	division={
+		name="Osdalei Militia"
+		location=11672
+		division_template="Psiloi"
+		start_experience_factor=0.08
+		start_equipment_factor=0.6
+		force_equipment_variants={melee_equipment_0={owner="HSW" creator="HSW"}}
+	}
+	division={
+		name="Hope Hollow Militia"
+		location=907
+		division_template="Psiloi"
+		start_experience_factor=0.08
+		start_equipment_factor=0.6
+		force_equipment_variants={melee_equipment_0={owner="HSW" creator="HSW"}}
+	}
+	division={
+		name="Marechester Militia"
+		location=11686
+		division_template="Psiloi"
+		start_experience_factor=0.08
+		start_equipment_factor=0.6
+		force_equipment_variants={melee_equipment_0={owner="HSW" creator="HSW"}}
+	}
+	division={
+		name="Shire Militia"
+		location=9806
+		division_template="Psiloi"
+		start_experience_factor=0.06
+		start_equipment_factor=0.5
+		force_equipment_variants={melee_equipment_0={owner="HSW" creator="HSW"}}
+	}
+	division={
+		name="Hilllund Pezikoú"
+		location=6534
+		division_template="Merarchía Pezikoú"
+		start_experience_factor=0.2
+		start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_0={owner="HSW" creator="HSW"}}
+	}
+	division={
+		name="Goran Pezikoú"
+		location=3340
+		division_template="Merarchía Pezikoú"
+		start_experience_factor=0.1
+		start_equipment_factor=0.7
+		force_equipment_variants={melee_equipment_0={owner="HSW" creator="HSW"}}
+	}
+	division={
+		name="Trotter Pezikoú"
+		location=6793
+		division_template="Merarchía Pezikoú"
+		start_experience_factor=0.15
+		start_equipment_factor=0.7
+		force_equipment_variants={melee_equipment_0={owner="HSW" creator="HSW"}}
+	}
+	division={
+		name="Ironwing Sýntagma"
+		location=6298
+		division_template="Pígasos Sýntagma"
+		start_experience_factor=0.75
+		start_equipment_factor=1
+		force_equipment_variants={melee_equipment_0={owner="HSW" creator="HSW"}}
+	}
+	division={
+		name="Moonlighter Sýntagma"
+		location=9068
+		division_template="Pígasos Sýntagma"
+		start_experience_factor=0.55
+		start_equipment_factor=1
+		force_equipment_variants={melee_equipment_0={owner="HSW" creator="HSW"}}
+	}
+	division={
+		name="Dale River Sýntagma"
+		location=3272
+		division_template="Pígasos Sýntagma"
+		start_experience_factor=0.75
+		start_equipment_factor=1
+		force_equipment_variants={melee_equipment_0={owner="HSW" creator="HSW"}}
+	}
+	division={
+		name="Stormwing Hoplitai Pigaso"
+		location=9470
+		division_template="Hoplitai"
+		start_experience_factor=1
+		start_equipment_factor=1
+		force_equipment_variants={melee_equipment_0={owner="HSW" creator="HSW"}}
+	}
+}

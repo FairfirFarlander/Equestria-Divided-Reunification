@@ -1,27 +1,3 @@
-division_template={	#TEMPLATES
-	name="Provincial Militia"
-	priority=0
-	regiments={
-		infantry={x=0 y=0}
-	}
-}
-division_template={	#Use decisions and foci to get.
-	name="Slave Regiment"
-	priority=0	is_locked=yes
-	regiments={
-		infantry={x=0 y=0}	infantry={x=1 y=0}
-		infantry={x=0 y=1}	infantry={x=1 y=1}
-		infantry={x=0 y=2}
-	}
-}
-division_template={
-	name="Legionnairie Division"
-	priority=1
-	regiments={
-		infantry={x=0 y=0}	infantry={x=1 y=0}
-		infantry={x=0 y=1}	infantry={x=1 y=1}
-	}
-}
 #division_template={
 #	name="Seraph Regiment"
 #	priority=1	is_locked=yes
@@ -57,69 +33,6 @@ division_template={
 	}
 }
 units={
-	division={
-		name="Bitterberry Militia"
-		location=11100
-		division_template="Provincial Militia"
-		start_experience_factor=0.1
-		start_equipment_factor=1
-	}
-	division={
-		name="Neighagra Militia"
-		location=6165
-		division_template="Provincial Militia"
-		start_experience_factor=0.1
-		start_equipment_factor=1
-	}
-	division={
-		name="Hollow Shades Militia"
-		location=6598
-		division_template="Provincial Militia"
-		start_experience_factor=0.1
-		start_equipment_factor=1
-	}
-	division={
-		name="Trotterfield Militia"
-		location=9208
-		division_template="Provincial Militia"
-		start_experience_factor=0.1
-		start_equipment_factor=1
-	}
-	division={
-		name="Trotslvania Militia"
-		location=3044
-		division_template="Provincial Militia"
-		start_experience_factor=0.1
-		start_equipment_factor=1
-	}
-	division={
-		name="Stratusburg Militia"
-		location=11875
-		division_template="Provincial Militia"
-		start_experience_factor=0.1
-		start_equipment_factor=1
-	}
-	division={
-		name="Legio 'Canterlot' I"
-		location=179
-		division_template="Legionnairie Division"
-		start_experience_factor=0.3
-		start_equipment_factor=1
-	}
-	division={
-		name="Legio 'Bales' II"
-		location=3162
-		division_template="Legionnairie Division"
-		start_experience_factor=0.3
-		start_equipment_factor=1
-	}
-	division={
-		name="Legio 'Whinnyapolis' III"
-		location=9887
-		division_template="Legionnairie Division"
-		start_experience_factor=0.3
-		start_equipment_factor=1
-	}
 	division={
 		name="Sunrise Inquisitorial Commission"
 		location=9887

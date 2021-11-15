@@ -1,6 +1,6 @@
 #LOCALE
 capital=38
-#oob="PIE_1007"
+oob="PIE_07"
 #FOUNTATION
 set_research_slots=2
 set_stability=0.7 set_war_support=0.06

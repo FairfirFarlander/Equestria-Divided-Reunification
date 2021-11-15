@@ -4,7 +4,7 @@ ideas={
 			allowed={always=no}	removal_cost=-1
 			picture=dont_tread_on_me
 			modifier={
-				conscription=0.025
+				#conscription=0.025
 			}
 		}
 		COT_Wrath_of_the_Clan_Earthbornd={	#Earthborn has taken some of our lands

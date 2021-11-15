@@ -1,34 +1,31 @@
-division_template={	#TEMPLATES
-	name="Psiloi"
-	priority=0
+division_template={	#TEMPLATES#
+	name="Psiloi"	#divisions_name_group=#
+	is_locked=no	priority=0	template_counter=3
 	regiments={
 		infantry={x=0 y=0}
-		infantry={x=0 y=1}
 	}
 }
 division_template={	#TEMPLATES
-	name="Merarchía Pezikoú"
-	priority=1
+	name="Merarchía Pezikoú"	#divisions_name_group=#
+	is_locked=no	priority=1	template_counter=59
 	regiments={
 		infantry={x=0 y=0}
 		infantry={x=0 y=1}
 		infantry={x=0 y=2}
-		infantry={x=0 y=3}
 	}
 }
 division_template={
-	name="Pígasos Sýntagma"
-	priority=1
+	name="Pígasos Sýntagma"	#divisions_name_group=#
+	is_locked=no	priority=1	#template_counter=0#
 	regiments={
 		pegasi={x=0 y=0}
 		pegasi={x=0 y=1}
 		pegasi={x=0 y=2}
-		pegasi={x=0 y=3}
 	}
 }
 division_template={
-	name="Hoplitai"
-	priority=2	is_locked=yes
+	name="Hoplitai"	#divisions_name_group=#
+	is_locked=yes	priority=2	template_counter=37
 	regiments={
 		pegasi={x=0 y=0}
 		pegasi={x=0 y=1}
@@ -39,7 +36,8 @@ division_template={
 	}
 }
 #division_template={
-#	name="Griffon Knights"
+#	name="Griffon Knights"	#divisions_name_group=#
+#	is_locked=yes	priority=1	#template_counter=0#
 #	regiments={
 #		knights={x=0 y=0}
 #		knights={x=1 y=0}

@@ -1,6 +1,6 @@
 #LOCALE
 capital=95
-oob="HSW_1007"
+oob="HSW_07"
 #if={
 	#limit={has_dlc="Man the Guns"}
 	#set_naval_oob="HSW_1007_naval"

@@ -1,6 +1,6 @@
 #LOCALE
 capital=116
-oob="BCK_1007"
+oob="BCK_07"
 #FOUNTATION
 set_research_slots=2
 set_stability=0.6

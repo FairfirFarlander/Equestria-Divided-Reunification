@@ -1,6 +1,6 @@
 ideas={
 	country={
-		NIH_Night_Guard_Divisions={	#This Equestrian Military holdout is home to the last of the Royal Night Guard.
+		NIH_night_guard_divisions={	#This Equestrian Military holdout is home to the last of the Royal Night Guard.#
 			allowed={always=no}
 			picture=moonlight
 			removal_cost=-1
@@ -9,13 +9,13 @@ ideas={
 				conscription=0.03
 			}
 		}
-		NIH_Last_Of_The_Line={	#The last of the royal family
+		NIH_last_of_the_line={	#The last of the royal family#
 			allowed={always=no}
 			picture=LIT_crown_4
 			removal_cost=-1
 			modifier={
 				stability_factor=0.15
-				recruitable_population=-0.033
+				conscription=-0.033
 			}
 		}
 		NIH_cultcell={
@@ -30,7 +30,7 @@ ideas={
 				democratic_drift=0.02
 			}
 		}
-		NIH_The_Bitter_Cold={	#The Bitter Cold
+		NIH_the_bitter_cold={	#The Bitter Cold#
 			allowed={always=no}
 			picture=weter
 			removal_cost=-1

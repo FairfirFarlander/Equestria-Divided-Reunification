@@ -8,8 +8,8 @@ state={
 	provinces={83 95 181 320 567 3053 3388 6035 6139 6201 6324 9319 11072 11097 11109 11139 11304 11392}
 	resources={crystals=11}
 	history={
-		owner=CRY
-		add_core_of=CRY
+		owner=CRI
+		add_core_of=CRI
 		#add_claim_by=
 		victory_points={11109 10}
 		buildings={

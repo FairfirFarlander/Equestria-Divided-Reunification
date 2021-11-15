@@ -8,8 +8,8 @@ state={
 	provinces={6070 9176}
 	resources={}
 	history={
-		owner=STG
-		add_core_of=STG
+		owner=SGR
+		add_core_of=SGR
 		#victory_points={}
 		buildings={
 		#STATE BUILDINGS

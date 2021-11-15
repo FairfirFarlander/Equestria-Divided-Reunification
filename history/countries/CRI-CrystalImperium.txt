@@ -1,15 +1,15 @@
 #LOCALE
 capital=344
-oob="CRY_1007"
+oob="CRY_07"
 #FOUNTATION
 set_research_slots=3
 set_stability=0.50
 set_war_support=0.3
 add_ideas={
-	crystal_heart
 	royal_family
 	sombra_threat
-	equestrian_overlord
+	volunteer_only export_focus civilian_economy
+	
 	outdated_industry
 }
 #TECHNOLOGY
@@ -82,6 +82,13 @@ create_field_marshal={
 	skill=2	attack_skill=2	defense_skill=3
 	planning_skill=2	logistics_skill=1
 	traits={pony_race_trait career_officer brilliant_strategist}
+}
+create_field_marshal={	#Why was this field marshal removed?#
+	name="Colloid"	id=1044	#desc=
+	picture="Colloid.tga"
+	skill=3	attack_skill=2	defense_skill=3
+	planning_skill=3	logistics_skill=2
+	traits={pony_race_trait old_guard}
 }
 create_corps_commander={
 	name="Dusty Ember"	desc=CRY_DUSTY_EMBER_DESC

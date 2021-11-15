@@ -6,7 +6,7 @@ division_template={	#TEMPLATES#
 	}
 }
 division_template={
-	name="Ponies-at-Arms Brigade"	#divisions_name_group=#
+	name="Ponies-at-Arms"	#divisions_name_group=#
 	is_locked=no	priority=1	template_counter=59
 	regiments={
 		infantry={x=0 y=0}	infantry={x=1 y=0}
@@ -64,13 +64,13 @@ units={	#DEPLOYMENTS#
 	}
 	division={	#Appleoosa#
 		name="Appleloosan Arms Brigade"
-		location=11037	division_template="Ponies-at-Arms Brigade"
+		location=11037	division_template="Ponies-at-Arms"
 		start_experience_factor=0.1	start_equipment_factor=1
 		force_equipment_variants={melee_equipment_0={owner="HEB" creator="HEB"}}
 	}
 	division={	#Hoofington#
 		name="Hoofington Arms Brigade"
-		location=11581	division_template="Ponies-at-Arms Brigade"
+		location=11581	division_template="Ponies-at-Arms"
 		start_experience_factor=0.1	start_equipment_factor=1
 		force_equipment_variants={melee_equipment_0={owner="HEB" creator="HEB"}}
 	}
@@ -90,12 +90,12 @@ units={	#DEPLOYMENTS#
 		name="Aquarium Tank Mover Company"
 		location=3631	division_template="Steamtank Division"
 		start_experience_factor=0.6	start_equipment_factor=1
-		force_equipment_variants={melee_equipment_1={owner="HEB" creator="HEB"}}
+		force_equipment_variants={melee_equipment_1={owner="HEB" creator="EQS"}}
 	}
 	division={	#Appleoosa#
 		name="Braeburn's Rangers"
 		location=6415	division_template="Appleoosan Ranger Regiment"
 		start_experience_factor=0.75	start_equipment_factor=0.8
-		force_equipment_variants={melee_equipment_1={owner="HEB" creator="HEB"}}
+		force_equipment_variants={melee_equipment_1={owner="HEB" creator="EQS"}}
 	}
 }

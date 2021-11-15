@@ -11,7 +11,7 @@ state={
 		owner=CHY
 		add_core_of=CHY
 		#add_claim_by=
-		#victory_points={}
+		victory_points={3592 1}	#Not in base EAW#
 		buildings={
 		#STATE BUILDINGS
 			infrastructure=0

@@ -1,6 +1,6 @@
 #LOCALE
 capital=5
-oob="HEF_1007"
+oob="HEF_07"
 #FOUNTATION
 set_research_slots=2
 set_stability=0.1

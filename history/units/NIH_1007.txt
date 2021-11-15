@@ -52,37 +52,27 @@ division_template={
 units={
 	division={
 		name="Featherfall Snow Ponies Militia "
-		location=3653
-		division_template="Acorange Defence Militia"
-		start_experience_factor=0.3
-		start_equipment_factor=1
+		location=3653	division_template="Acorange Defence Militia"
+		start_experience_factor=0.3	start_equipment_factor=1
 	}
 	division={
 		name="Acorange Ember Keepers Militia"
-		location=748
-		division_template="Acorange Defence Militia"
-		start_experience_factor=0.3
-		start_equipment_factor=1
+		location=748	division_template="Acorange Defence Militia"
+		start_experience_factor=0.3	start_equipment_factor=1
 	}
 	division={
 		name="Prince Blueblood's Guard"
-		location=1455
-		division_template="Royal Prince Guard"
-		start_experience_factor=0.3
-		start_equipment_factor=1
+		location=1455	division_template="Royal Prince Guard"
+		start_experience_factor=0.3	start_equipment_factor=1
 	}
 	division={
 		name="56th Lunar Guard"
-		location=11696
-		division_template="Royal Lunar Guard"
-		start_experience_factor=0.3
-		start_equipment_factor=1
+		location=11696	division_template="Royal Lunar Guard"
+		start_experience_factor=0.3	start_equipment_factor=1
 	}
 	division={
 		name="33rd Lunar Guard"
-		location=731
-		division_template="Royal Lunar Guard"
-		start_experience_factor=0.3
-		start_equipment_factor=1
+		location=731	division_template="Royal Lunar Guard"
+		start_experience_factor=0.3	start_equipment_factor=1
 	}
 	

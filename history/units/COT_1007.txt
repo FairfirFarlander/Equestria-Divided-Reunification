@@ -1,10 +1,8 @@
-#Greybacks
-#Kellys Irish Brigade
-#Attaches from Griffon Empire (Prussia)
-#WIngbardian (German) Volunteers
-#Talouse (Griffonia Italian) Brigade
-division_template={
-	name="State Militia"
+#Greybacks - Kellys Irish Brigade - Attaches from Griffon Empire (Prussia)#
+#Wingbardian (German) Volunteers - Talouse (Griffonia Italian) Brigade#
+division_template={	#TEMPLATES#
+	name="State Militia"	#divisions_name_group=#
+	is_locked=no	priority=0	template_counter=3
 	regiments={
 		infantry={x=0 y=0}
 		infantry={x=0 y=1}
@@ -13,7 +11,8 @@ division_template={
 	priority=0
 }
 division_template={
-	name="State Infantry Regiment"
+	name="State Infantry Regiment"	#divisions_name_group=#
+	is_locked=no	priority=1	template_counter=54
 	regiments={
 		infantry={x=0 y=0}	infantry={x=1 y=0}
 		infantry={x=0 y=1}	infantry={x=1 y=1}
@@ -21,8 +20,8 @@ division_template={
 	}
 }
 #division_template={
-#	name="Republican Guard"
-#	is_locked=yes
+#	name="Republican Guard"	#divisions_name_group=#
+	is_locked=yes	priority=0	template_counter=38
 #	regiments={
 #		marine={x=0 y=0}	marine={x=1 y=0}
 #		marine={x=0 y=1}	marine={x=1 y=1}
@@ -30,10 +29,9 @@ division_template={
 #	support={
 #		artillery={x=0 y=0}
 #	}
-#	priority=1
 #}
-units={
-	division={		#Haystin
+units={	#DEPLOYMENTS#
+	division={		#Haystin#
 		name="Whooves of Horston"
 		location=3663
 		division_template="State Militia"
@@ -41,7 +39,7 @@ units={
 		start_equipment_factor=1
 		force_equipment_variants={melee_equipment_0={owner="COT" creator="COT"}}
 	}
-	division={		#Canter Creek
+	division={		#Canter Creek#
 		name="Lodgers of Canter Creek"
 		location=4535
 		division_template="State Militia"
@@ -49,7 +47,7 @@ units={
 		start_equipment_factor=0.8
 		force_equipment_variants={melee_equipment_1={owner="COT" creator="COT"}}
 	}
-	division={		#Haystin
+	division={		#Haystin#
 		name="6th North Trotsas 'Apple Buckers'"
 		location=1643
 		division_template="State Infantry Regiment"
@@ -57,7 +55,7 @@ units={
 		start_equipment_factor=1
 		force_equipment_variants={melee_equipment_1={owner="COT" creator="COT"}}
 	}
-	division={		#San Manetonio
+	division={		#San Manetonio#
 		name="2nd South Trotsas"
 		location=11754
 		division_template="State Infantry Regiment"
@@ -65,7 +63,7 @@ units={
 		start_equipment_factor=1
 		force_equipment_variants={melee_equipment_1={owner="COT" creator="COT"}}
 	}
-	division={		#Trotgaron - Former Rosemarin
+	division={		#Trotgaron - Former Rosemarin#
 		name="13th Rosemarin 'Greybacks'"
 		location=3937
 		division_template="State Infantry Regiment"

@@ -8,8 +8,8 @@ state={
 	provinces={131 3069 3178 3226 6046 6305 9042 11063 11064}
 	resources={steel=3}
 	history={
-		owner=STG
-		add_core_of=STG
+		owner=SGR
+		add_core_of=SGR
 		#add_claim_by=
 		victory_points={3069 3}
 		buildings={

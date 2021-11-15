@@ -6,8 +6,9 @@ ideas={
 			removal_cost=-1
 			modifier={
 				stability_factor=-0.13
-				monthly_population=0.17
-				conscription=-0.03
+				exodus_national_appeal=0.5
+				exodus_assimilation_proportion=-0.5
+				exodus_nomadicity=-0.5
 			}
 		}
 		TRT_immigration_reforms={
@@ -38,6 +39,7 @@ ideas={
 			removal_cost=-1
 			modifier={
 				stability_factor=0.17
+				democratic_acceptance=20
 			}
 		}
 		#TRT_scuttled_navy={

@@ -1,8 +1,8 @@
 #LOCALE	Literally Vietnam#
 capital=36
-oob="EMB_1007"
-#if={limit={has_dlc="Man the Guns"}set_naval_oob="EMB_1007_naval"}#
-#if={limit={not={has_dlc="Man the Guns"}}set_naval_oob="EMB_1007_naval_legacy"}#
+oob="EMB_07"
+#if={limit={has_dlc="Man the Guns"}set_naval_oob="EMB_07_naval"}#
+#if={limit={not={has_dlc="Man the Guns"}}set_naval_oob="EMB_07_naval_legacy"}#
 #FOUNTATION#
 set_research_slots=2
 set_stability=0.46 set_war_support=0.07
