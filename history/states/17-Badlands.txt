@@ -12,7 +12,7 @@ state={
 		add_core_of=THA
 		add_core_of=VII
 		#add_claim_by=
-		#victory_points={}
+		#victory_points={}	#Put a VP on 10374 Dragon Village
 		buildings={
 		#STATE BUILDINGS
 			infrastructure=0

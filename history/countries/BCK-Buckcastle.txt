@@ -37,33 +37,33 @@ set_politics={
 	elections_allowed=no
 }
 create_country_leader={
-	name="Rockefeller"	#desc=
-	expire="1965.1.1"	#picture=""
-	ideology=corporatocracy	#female=yes
+	name="Rockefeller"	#desc=#
+	expire="1965.1.1"	#picture=""#
+	ideology=corporatocracy	#female=yes#
 	traits={}
 }
 create_country_leader={
-	name="Council of Syndicates"	#desc=
-	expire="1965.1.1"	#picture=""
+	name="Council of Syndicates"	#desc=#
+	expire="1965.1.1"	#picture=""#
 	ideology=marxism	female=yes
 	traits={}
 }
 create_country_leader={
-	name="Sea Prism"	#desc=
-	expire="1965.1.1"	#picture=""
+	name="Merry Wreath"	desc=BCK_wreath_desc
+	expire="1965.1.1"	#picture=""#
 	ideology=despotism	female=yes
 	traits={}
 }
 create_country_leader={
-	name="Sea Prism"	#desc=
-	expire="1965.1.1"	#picture=""
+	name="Sea Prism"	#desc=#
+	expire="1965.1.1"	#picture=""#
 	ideology=liberalism	female=yes
 	traits={}
 }
-#Facism think locus corp.
-#MILITARY
+#Facism think locus corp.#
+#MILITARY#
 create_corps_commander={
-	name="Hallow Green"	#id=	desc=
+	name="Hallow Green"	#id=	desc=#
 	picture="Hallow Green.dds"	female=yes
 	skill=1	attack_skill=1	defense_skill=1
 	planning_skill=1	logistics_skill=1

@@ -1,26 +1,30 @@
 ﻿l_english:
-###Country Name###
+#Country Names#
 BCK_fascism:0 "Buckcastle"
-BCK_fascism_DEF:0 "Buckcastle"
-BCK_fascism_ADJ:0 "Vidonian"
-BCK_communism:0 "Buckcastle"
-BCK_communism_DEF:0 "Buckcastle"
-BCK_communism_ADJ:0 "Vidonian"
-BCK_neutrality:0 "Buckcastle"
-BCK_neutrality_DEF:0 "Buckcastle"
-BCK_neutrality_ADJ:0 "Vidonian"
-BCK_democratic:0 "Buckcastle"
-BCK_democratic_DEF:0 "Buckcastle"
-BCK_democratic_ADJ:0 "Vidonian"
-### party ###
+ BCK_fascism_DEF:0 "Buckcastle"
+ BCK_fascism_ADJ:0 "Vidonian"
+ BCK_communism:0 "Buckcastle"
+ BCK_communism_DEF:0 "Buckcastle"
+ BCK_communism_ADJ:0 "Vidonian"
+ BCK_neutrality:0 "Buckcastle"
+ BCK_neutrality_DEF:0 "Buckcastle"
+ BCK_neutrality_ADJ:0 "Vidonian"
+ BCK_democratic:0 "Buckcastle"
+ BCK_democratic_DEF:0 "Buckcastle"
+ BCK_democratic_ADJ:0 "Vidonian"
+
+#Leaders#
+BCK_wreath_desc:0"§YBorn§!: 6th of April, 978 in Hayderson\n\n§YBiography§!: Born in Hayderson, a suburb of Las Pegasus, Cherry Soda is the middle of three siblings, although her brother would be keen to point out that she's only a few minutes older than him. From a young age, Cherry took an interest in all things related to flying, be it pulp tales of ponies flying to distant worlds or eagerly following the development of airplanes. Other than that, her life was notable only for how absolutely normal it was, in every sense of the term, she was a model Equestrian pony. She likely would have continued to lead an unremarkable life were it not for the rapid destabilization of her homeland and the declaration of independence issued by Las Pegasus' mayor. Although not a military mare by trade, she joined up with the newly formed Las Pegasus army, either at the request of her brother, or of her own desire to support him. Regardless of why she joined, it quickly became apparent that she had a knack for coordinating joint land and air operations, with a solid understanding of the ins and outs of both army and airforce bureaucracy.\n\n§YPortrait by§!: Bunnyshrubby"
+
+#Political Parties
 BCK_fascism_party:0 "FAC"
-BCK_fascism_party_long:0 "FAC"
-BCK_communism_party:0 "COM"
-BCK_communism_party_long:0 "COM"
-BCK_neutrality_party:0 "NEU"
-BCK_neutrality_party_long:0 "NEU"
-BCK_democratic_party:0 "DEC"
-BCK_democratic_party_long:0 "DEC"
+ BCK_fascism_party_long:0 "FAC"
+ BCK_communism_party:0 "COM"
+ BCK_communism_party_long:0 "COM"
+ BCK_neutrality_party:0 "NEU"
+ BCK_neutrality_party_long:0 "NEU"
+ BCK_democratic_party:0 "DEC"
+ BCK_democratic_party_long:0 "DEC"
 ###National Focuses###
 #Storyline Tree
 #BCK_:0 ""

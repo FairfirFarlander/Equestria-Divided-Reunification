@@ -1,5 +1,5 @@
 shared_focus={		#Acquire Industrial Tools
-	id=PLT_P00 icon=GFX_goal_generic_production
+	id=PLT_I00 icon=GFX_goal_generic_production
 	x=5 y=0 cost=7 ai_will_do={factor=40}
 	completion_reward={
 		log="[GetDateText]: [Root.GetName]: focus PLT_P00"
@@ -11,7 +11,7 @@ shared_focus={		#Acquire Industrial Tools
 	}
 }
 shared_focus={		#Increase Local Arms Production
-	id=PLT_P01A icon=GFX_goal_pony_labour
+	id=PLT_I01A icon=GFX_goal_pony_labour
 	relative_position_id=PLT_I00
 	x=-2 y=1 cost=7 ai_will_do={factor=40}
 	prerequisite={focus=PLT_I00}

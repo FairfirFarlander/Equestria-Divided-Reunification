@@ -7,7 +7,7 @@ state={
 	impassable=no
 	provinces={511 2049 6578 6945 7065 8077 9209 9308 9680 9976 10041 11215 11397 11917 12001}
 	resources={chromium=5}
-	history={
+	history={	#Hooffields
 		owner=MWC
 		add_core_of=MWC
 		#add_claim_by=

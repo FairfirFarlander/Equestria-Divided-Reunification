@@ -10,7 +10,7 @@ oob="LAS_1007"
 set_research_slots=2
 set_stability=0.8 set_war_support=0.03
 add_ideas={
-	limited_conscription limited_exports civilian_economy
+	volunteer_only export_focus civilian_economy
 	poor_science_base agrarian_society
 	lack_of_scientists3 poverty5
 }

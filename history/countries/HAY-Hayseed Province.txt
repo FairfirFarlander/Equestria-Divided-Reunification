@@ -19,9 +19,10 @@ add_ideas={
 	poverty4
 }
 #TECHNOLOGY
-set_technology={
+set_technology={	#Give Tanks
 	pony_race=1
 	melee_weapons=1
+	motorised_infantry=1
 	pre_gw_artillery=1
 	tech_support=1
 	tech_pegasi=1

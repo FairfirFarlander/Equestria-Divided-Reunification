@@ -1,6 +1,6 @@
 focus_tree={
 	id=VHT_generic country={factor=0 modifier={add=10 tag=VHT}}
-	continuous_focus_position={x==0 y=10}
+	continuous_focus_position={x=0 y=10}
 	default=no
 	shared_focus=VAN_The_Calm_Revolution
 	shared_focus=VAN_Defense_Of_The_Commune

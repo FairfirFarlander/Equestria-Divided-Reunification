@@ -1,4 +1,4 @@
-#LOCALE
+#LOCALE			#Add Hofffield and McColt Civil War here
 capital=48
 oob="MWC_1007"
 if={
