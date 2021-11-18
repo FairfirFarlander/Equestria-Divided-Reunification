@@ -1,11 +1,8 @@
 add_namespace=PLTact01
-	country_event={		#Event Verbosity
-		id=PLTact01.verbosity	is_triggered_only=yes
-		immediate={log="[GetDateText]: [Root.GetName]: event PLTact01.verbosity"}
-		title=PLTact01.verbosity.t	desc=PLTact01.verbosity.d
+	country_event={		#Testmedammit
+		id=PLTact01.01	is_triggered_only=yes
+		immediate={log="[GetDateText]: [Root.GetName]: event PLTact01.01"}
+		title=PLTact01.01.t	desc=PLTact01.01.d
 		#picture=
-		option={name=PLTact01.verbosity.a}
-		option={name=PLTact01.verbosity.b
-			set_country_flag=PLTlessevents
-		}
+		option={name=PLTact01.01.a}
 	}

@@ -1,11 +1,11 @@
 #LOCALE
 capital=153
-oob="STG_1007"
-if={
-	limit={has_dlc="Man the Guns"}
-	set_naval_oob="STG_1007_naval"
-	else={set_naval_oob="STG_1007_naval_legacy"}
-}
+#oob="SGR_1007"
+#if={
+#	limit={has_dlc="Man the Guns"}
+#	set_naval_oob="SGR_1007_naval"
+#	else={set_naval_oob="SGR_1007_naval_legacy"}
+#}
 #FOUNTATION
 set_research_slots=2
 set_stability=0.3
@@ -49,38 +49,6 @@ set_convoys=15
 add_manpower=5000
 set_variable={var=palace_construction value=0}
 set_rule={can_generate_female_aces=yes}
-add_tech_bonus={
-	name=armor_bonus
-	bonus=0.15	uses=1
-	technology=basic_light_tank
-}
-add_tech_bonus={
-	name=EDR_STGrecovery
-	bonus=0.15 uses=1
-	technology=gw_artillery
-}
-add_tech_bonus={
-	name=EDR_STGrecovery
-	bonus=0.15 uses=1
-	technology=basic_machine_tools
-}
-add_tech_bonus={
-	name=EDR_STGrecovery
-	bonus=0.15 uses=1
-	technology=mobile_warfare
-}
-add_equipment_to_stockpile={
-	type=gw_tank_equipment
-	amount=18	producer=EQS
-}
-add_equipment_to_stockpile={
-	type=melee_equipment_0
-	amount=600	producer=EQS
-}
-add_equipment_to_stockpile={
-	type=melee_equipment_1
-	amount=500	producer=STG
-}
 #DIPLOMACY
 #POLITICS
 set_popularities={
@@ -123,7 +91,7 @@ create_country_leader={
 #}
 #MILITARY
 create_field_marshal={
-	name="Nestor Lunin"	id=1000	#desc=
+	name="Nestor Lunin"	#id=1000	#desc=
 	picture="Nestor.tga"	
 	skill=4	attack_skill=3	defense_skill=3
 	planning_skill=3	logistics_skill=4
@@ -144,21 +112,21 @@ create_corps_commander={
 	traits={pony_race_trait trait_engineer panzer_leader}
 }
 create_corps_commander={
-	name="Vinous Kostylev"	id=6970
+	name="Vinous Kostylev"	#id=6970
 	picture="Vinous.tga"
 	skill=3	attack_skill=3	defense_skill=3
 	planning_skill=2	logistics_skill=2
 	traits={pony_race_trait inspiring_commissar}
 }
 create_corps_commander={
-	name="Alexia Goldgear"	id=6969
+	name="Alexia Goldgear"	#id=6969
 	picture="Gereval.tga"
 	skill=2	attack_skill=2	defense_skill=2
 	planning_skill=2	logistics_skill=1
 	traits={thestral_race_trait trait_reckless artillery_expert trickster}
 }
 create_corps_commander={
-	name="Cherry Swirl"	id=6968
+	name="Cherry Swirl"	#id=6968
 	picture="Cherry_Swirl.tga"
 	skill=2	attack_skill=2	defense_skill=1
 	planning_skill=2	logistics_skill=2
@@ -193,14 +161,14 @@ create_corps_commander={
 	traits={pony_race_trait bleeding_heart}
 }
 create_corps_commander={
-	name="Katya Ironstead"	id=6967
+	name="Katya Ironstead"	#id=6967
 	picture="Katya.tga"	female=yes
 	traits={pony_race_trait winter_specialist}
 	skill=1	attack_skill=1	defense_skill=1
 	planning_skill=1	logistics_skill=1
 }
 create_corps_commander={
-	name="Cogwheel Ponyarchuk"	id=7777
+	name="Cogwheel Ponyarchuk"	#id=7777
 	picture="Ponyarchuk.tga"
 	skill=3	attack_skill=3	defense_skill=2
 	planning_skill=2	logistics_skill=3
@@ -257,21 +225,21 @@ create_corps_commander={
 }
 create_navy_leader={
 	name="Furious Glory"
-	portrait_path="gfx/leaders/STG/Furious_Glory.tga"
+	picture="Furious_Glory.tga"
 	skill=4	attack_skill=4	defense_skill=3
 	maneuvering_skill=4	coordination_skill=2
 	traits={pony_race_trait bold fly_swatter destroyer_leader}
 }
 create_navy_leader={
 	name="Grey Gorshkov"
-	portrait_path="gfx/leaders/STG/Gorshkov.tga"
+	picture="Gorshkov.tga"
 	skill=4	attack_skill=4	defense_skill=2
 	maneuvering_skill=3	coordination_skill=4
 	traits={pony_race_trait gentlemanly seawolf blockade_runner}
 }
 create_navy_leader={
 	name="Karina"
-	portrait_path="gfx/leaders/STG/Karina.tga"
+	picture="Karina.tga"
 	skill=3	attack_skill=2	defense_skill=3
 	maneuvering_skill=2	coordination_skill=3
 	traits={pony_race_trait battleship_adherent inshore_fighter}

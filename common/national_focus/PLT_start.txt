@@ -1,8 +1,22 @@
-shared_focus={		#In the Shadow of Giants
-	id=PLT_P00 icon=GFX_goal_som_equestria
-	x=0 y=0 cost=7 ai_will_do={factor=40}
+shared_focus={		#In the Shadow of Giants#
+	id=PLT_S00 icon=GFX_goal_som_equestria
+	x=0 y=0 cost=1 ai_will_do={factor=40}
 	select_effect={
-		country_event=PLTact01.verbosity
+		country_event=EDR_gen.01	#Event Verbosity
+	}
+	completion_reward={
+		log="[GetDateText]: [Root.GetName]: focus PLT_P00"
+	}
+}
+shared_focus={		#In the Shadow of Giants#
+	id=PLT_S01 icon=GFX_goal_som_equestria
+	relative_position_id=PLT_S00
+	x=0 y=1 cost=1 ai_will_do={factor=40}
+	prerequisite={focus=PLT_S00}
+	select_effect={
+		if={limit={not={has_country_flag=PLTlessevents}}
+			country_event=PLTact01.02	#
+		}
 	}
 	completion_reward={
 		log="[GetDateText]: [Root.GetName]: focus PLT_P00"
