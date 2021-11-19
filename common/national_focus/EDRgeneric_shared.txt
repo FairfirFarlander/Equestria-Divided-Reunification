@@ -350,11 +350,14 @@
 		bypass={has_tech=pre_gw_artillery}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus EDR_L06C"
-			add_tech_bonus={
-				name=artillery_bonus
-				bonus=0.55 uses=1
-				technology=pre_gw_artillery
+			if={limit={not={is_researching_technology=pre_gw_artillery}}
+				add_tech_bonus={
+					name=artillery_bonus
+					bonus=0.55 uses=1
+					technology=pre_gw_artillery
+				}
 			}
+			else={ROOT={add_ideas=EDR_temp_arty_bonus}}
 		}
 	}
 	shared_focus={		#Reverse Engineer Equestrian Rifles
@@ -370,11 +373,14 @@
 		}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus EDR_L06D"
-			add_tech_bonus={
-				name=infantry_bonus
-				bonus=0.55 uses=1
-				technology=infantry_weapons
+			if={limit={not={is_researching_technology=infantry_weapons}}
+				add_tech_bonus={
+					name=infantry_bonus
+					bonus=0.55 uses=1
+					technology=infantry_weapons
+				}
 			}
+			else={ROOT={add_ideas=EDR_temp_inftry_bonus}}
 		}
 	}
 	shared_focus={		#Promote NCOs From Within The Ranks
@@ -416,10 +422,12 @@
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus EDR_L07C"
 			add_equipment_to_stockpile={type=gw_tank_equipment amount=12 producer=EQS}
-			add_tech_bonus={
-				name=gwtank_bonus
-				bonus=0.55 uses=1
-				technology=gwtank
+			if={limit={not={is_researching_technology=gwtank}}
+				add_tech_bonus={
+					name=gwtank_bonus
+					bonus=0.55 uses=1
+					technology=gwtank
+				}
 			}
 		}
 	}

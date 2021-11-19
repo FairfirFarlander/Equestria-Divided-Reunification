@@ -1,5 +1,23 @@
 ideas={
 	country={
+		EDR_temp_arty_bonus={
+			allowed={always=no}
+			available={not={has_tech=pre_gw_artillery}}
+			#picture=
+			removal_cost=-1
+			research_bonus={
+				artillery=0.55
+			}
+		}
+		EDR_temp_inftry_bonus={
+			allowed={always=no}
+			available={not={has_tech=infantry_weapons}}
+			#picture=
+			removal_cost=-1
+			research_bonus={
+				infantry_weapons=0.55
+			}
+		}
 		EDR_army_command={
 			allowed={always=no}
 			#picture=

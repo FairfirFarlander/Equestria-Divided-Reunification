@@ -4,5 +4,56 @@ add_namespace=PLTact01
 		immediate={log="[GetDateText]: [Root.GetName]: event PLTact01.01"}
 		title=PLTact01.01.t	desc=PLTact01.01.d
 		#picture=
-		option={name=PLTact01.01.a}
+		option={name=PLTact01.01.a
+			country_event=PLTact01.02
+		}
 	}
+	country_event={		#Testmedammit
+		id=PLTact01.02	is_triggered_only=yes
+		immediate={log="[GetDateText]: [Root.GetName]: event PLTact01.02"}
+		title=PLTact01.02.t	desc=PLTact01.02.d
+		#picture=
+		option={name=PLTact01.02.a
+			add_political_power=10
+			country_event=PLTact01.03
+		}
+	}
+	country_event={		#Testmedammit
+		id=PLTact01.03	is_triggered_only=yes
+		immediate={log="[GetDateText]: [Root.GetName]: event PLTact01.03"}
+		title=PLTact01.03.t	desc=PLTact01.03.d
+		#picture=
+		option={name=PLTact01.03.a
+			add_political_power=-5
+			country_event=PLTact01.04
+		}
+	}
+	country_event={		#Testmedammit
+		id=PLTact01.04	is_triggered_only=yes
+		immediate={log="[GetDateText]: [Root.GetName]: event PLTact01.04"}
+		title=PLTact01.04.t	desc=PLTact01.04.d
+		#picture=
+		option={name=PLTact01.04.a
+			add_political_power=-5
+			country_event=PLTact01.05
+		}
+	}
+	country_event={		#Testmedammit
+		id=PLTact01.05	is_triggered_only=yes
+		immediate={log="[GetDateText]: [Root.GetName]: event PLTact01.05"}
+		title=PLTact01.04.t	desc=PLTact01.04.d
+		#picture=
+		option={name=PLTact01.05.a
+			set_country_flag={flag=thistle_tap days=300}
+			hidden_effect={complete_national_focus=PLT_S01A}
+		}
+		option={name=PLTact01.05.b
+			set_country_flag={flag=wind_tuft days=300}
+			hidden_effect={complete_national_focus=PLT_S01B}
+		}
+		option={name=PLTact01.05.c
+			set_country_flag={flag=rael_grey days=300}
+			hidden_effect={complete_national_focus=PLT_S01C}
+		}
+	}
+	
