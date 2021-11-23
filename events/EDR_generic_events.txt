@@ -4,6 +4,22 @@ add_namespace=EDR_gen
 		immediate={log="[GetDateText]: [Root.GetName]: event EDR_gen.01"}
 		title=EDR_gen.01.t	desc=EDR_gen.01.d
 		#picture=
-		option={name=EDR_gen.01.a clr_country_flag=PLTlessevents}
-		option={name=EDR_gen.01.b set_country_flag=PLTlessevents}
+		option={name=EDR_gen.01.a
+			trigger={not={original_tag=THA}}
+			clr_country_flag=EDRlessevents
+		}
+		option={name=EDR_gen.01.b
+			trigger={not={original_tag=THA}}
+			set_country_flag=EDRlessevents
+		}
+		option={name=EDR_gen.01.a	#THA Option A
+			trigger={original_tag=THA}
+			clr_country_flag=EDRlessevents
+			hidden_effect={country_event={id=THAact01.01 days=3}}
+		}
+		option={name=EDR_gen.01.b	#THA Option B
+			trigger={original_tag=THA}
+			set_country_flag=EDRlessevents
+			country_event={id=THAact01.06 days=10}
+		}
 	}

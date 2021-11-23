@@ -1,7 +1,7 @@
 state={
 	id=311
 	name="STATE_311"
-	manpower=586444
+	manpower=319352
 	state_category=rural
 	buildings_max_level_factor=1
 	impassable=no
@@ -11,7 +11,7 @@ state={
 		#owner=CHN
 		#add_core_of=CHN
 		#add_claim_by=
-		victory_points={4342 1}
+		victory_points={4342 3}
 		buildings={
 		#STATE BUILDINGS
 			infrastructure=0

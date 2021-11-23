@@ -2,7 +2,7 @@ state={
 	id=316
 	name="STATE_316"
 	manpower=2272308
-	state_category=town
+	state_category=large_town
 	buildings_max_level_factor=1
 	impassable=no
 	provinces={11167 11661 11690 11693 }
@@ -11,7 +11,7 @@ state={
 		#owner=CHN
 		#add_core_of=CHN
 		#add_claim_by=
-		victory_points={11690 10}
+		victory_points={11690 15}
 		buildings={
 		#STATE BUILDINGS
 			infrastructure=4

@@ -2,7 +2,7 @@ state={
 	id=176
 	name="STATE_176"
 	manpower=130550
-	state_category=pastoral
+	state_category=rural
 	buildings_max_level_factor=1
 	impassable=no
 	provinces={124 3055 11073 11115 11125 11164 13205}
@@ -11,7 +11,7 @@ state={
 		owner=HMS
 		add_core_of=HMS
 		#add_claim_by=
-		#victory_points={}
+		victory_points={124 1}
 		buildings={
 		#STATE BUILDINGS
 			infrastructure=1

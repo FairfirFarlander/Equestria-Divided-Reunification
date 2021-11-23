@@ -30,5 +30,55 @@ ideas={
 				democratic_drift=0.02
 			}
 		}
+		THA_the_great_mourning={
+			allowed={always=no}
+			#picture=#
+			removal_cost=-1
+			modifier={
+				stability_factor=-0.15
+				war_support_factor=-0.05
+			}
+		}
+		THA_temp_infantry_bonus={
+			allowed={always=no}
+			available={not={has_tech=infantry_weapons}}
+			#picture=
+			removal_cost=-1
+			research_bonus={
+				infantry_weapons=0.55
+			}
+		}
+		THA_mountain_is_alone={
+			allowed={always=no}
+			#picture=#
+			removal_cost=-1
+		}
+	}
+	political_advisor={
+		THA_auburn_political={
+			#picture=#
+			allowed={original_tag=THA}
+			available={
+				and={
+					has_completed_focus=THA_S02A
+					not={has_idea=THA_auburn_military}
+				}
+			}
+			traits={rearmer}
+		}
+	}
+	high_command={
+		THA_auburn_military={
+			ledger=army
+			#picture=#
+			allowed={original_tag=THA}
+			available={
+				and={
+					has_completed_focus=THA_S02A
+					not={has_idea=THA_auburn_political}
+				}
+			}
+			traits={army_infantry_1}
+		}
 	}
 }

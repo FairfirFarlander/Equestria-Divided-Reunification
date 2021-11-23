@@ -1,5 +1,6 @@
 ﻿l_english:
  VICTORY_POINTS_TOOLTIP:0"§G$NAME$§! victory points=§Y$POINTS$§!"
+ #VICTORY_POINTS_:0""
  #Fire Sea
   VICTORY_POINTS_11755:0"Port Starswirl"
   VICTORY_POINTS_4913:0"Dragon's Retreat"
@@ -7,25 +8,50 @@
  #Southern Colonies
   VICTORY_POINTS_668:0"Portland"
   VICTORY_POINTS_9497:0"Narmina" #Moved to Focus
+  VICTORY_POINTS_9572:0"Galloprey"
+  VICTORY_POINTS_586:0"Stableside"
  #Forbidden Jungle
   VICTORY_POINTS_10023:0"Village of Ember"
   VICTORY_POINTS_7166:0"Yakima" #Yakima Firing Range (The Mackie [Battletech])
   VICTORY_POINTS_336:0"Riversend"
+  VICTORY_POINTS_11264:0"Mareidian"
+  VICTORY_POINTS_405:0"Saltmane"
+  VICTORY_POINTS_8622:0"Tenochtitlan"
+  VICTORY_POINTS_3444:0"Tonaltzintli"
+ #Dragon Badlands
+  VICTORY_POINTS_569:0"Ayacachtli"
+  VICTORY_POINTS_11601:0"Macintosh Mountains"
+  VICTORY_POINTS_541:0"Mango Province"
+ #Hayseed Swamps
+  VICTORY_POINTS_11499:0"Saltlickingham"
+  VICTORY_POINTS_963:0"New Horseleans"
+  VICTORY_POINTS_13011:0"Baltimare"
+
+
+
+
+
+
+#FDSFSDFDS
  #Starswirl Valley
   VICTORY_POINTS_11052:0"Oversticht"
   VICTORY_POINTS_3898:0"Leywarden"
  #Changed Unorganized
  VICTORY_POINTS_13097:0"Redheart's Refuge"
-
+ VICTORY_POINTS_11672:0"Old Cloudsdale"
+ VICTORY_POINTS_9741:0"Old Ponyville"
+ 
+ #Untouched Organized Areas
+ #Las Pegasus
+ VICTORY_POINTS_69:0 "Las Pegasus"
+ 
+ 
  #Unorganized
  VICTORY_POINTS_179:0 "Canterlot"
  VICTORY_POINTS_9470:0 "Cloudsdale"
- VICTORY_POINTS_11672:0 "Old Cloudsdale"
  VICTORY_POINTS_6415:0 "Strongheart's Tribe"
  VICTORY_POINTS_13071:0 "The Mountain"
  VICTORY_POINTS_950:0 "Fillydelphia"
- VICTORY_POINTS_9741:0 "Old Ponyville"
- VICTORY_POINTS_69:0 "Las Pegasus"
  VICTORY_POINTS_11037:0 "Appleloosa"
  VICTORY_POINTS_11581:0 "Hoofington"
  VICTORY_POINTS_11269:0 "Yakistown"
@@ -70,7 +96,6 @@
  VICTORY_POINTS_9477:0 "Porridge Town"
  VICTORY_POINTS_3082:0 "Village Up North"
  VICTORY_POINTS_3920:0 "Prance"
- VICTORY_POINTS_963:0 "New Horseleans"
  VICTORY_POINTS_6355:0 "Sovyenok"
  VICTORY_POINTS_9235:0 "Frosthill"
  VICTORY_POINTS_9150:0 "Ponytown"
@@ -79,7 +104,6 @@
  VICTORY_POINTS_11272:0 "Yonderhill"
  VICTORY_POINTS_6280:0 "Mariposa"
  VICTORY_POINTS_11686:0 "Marechester"
- VICTORY_POINTS_11499:0 "Saltlickingham"
  VICTORY_POINTS_3698:0 "Seaddle"
  VICTORY_POINTS_9400:0 "Southpark"
  VICTORY_POINTS_9867:0 "Buckcastle" #polyshkopole
@@ -91,10 +115,8 @@
  VICTORY_POINTS_304:0 "Quebuck"
  VICTORY_POINTS_9275:0 "Evergreen"
  VICTORY_POINTS_9378:0 "Bara'dur"
- VICTORY_POINTS_405:0 "Saltmane"
  VICTORY_POINTS_9294:0 "Ghastly Gorge"
  VICTORY_POINTS_11877:0 "Detrot"
- VICTORY_POINTS_11264:0 "Mareidian" 
  VICTORY_POINTS_3217:0 "Stavropon"
  VICTORY_POINTS_10438:0 "Pielciudad"
  VICTORY_POINTS_1937:0 "Prospero"
@@ -220,7 +242,6 @@
  VICTORY_POINTS_4080:0 "Dappleshore"
  VICTORY_POINTS_6996:0 "Canterbury"
  VICTORY_POINTS_3663:0 "Horston"
- VICTORY_POINTS_9572:0 "Galloprey" 
  VICTORY_POINTS_6797:0 "Endräkt"
  VICTORY_POINTS_7588:0 "Equadoe"
  VICTORY_POINTS_767:0 "Svenholm"
@@ -409,7 +430,6 @@
  VICTORY_POINTS_9190:0 "Nansen"
  VICTORY_POINTS_11191:0 "Sverdrup"
  VICTORY_POINTS_6033:0 "Ingstad"
- VICTORY_POINTS_569:0 "Ayacachtli"
  VICTORY_POINTS_4342:0 "Kladisium"
  VICTORY_POINTS_176:0 "Gardis"
  VICTORY_POINTS_6778:0 "Hovenhamn"

@@ -1,6 +1,6 @@
 #LOCALE
 capital=30
-oob="THA_1007"
+oob="THA_07"
 #FOUNTATION
 set_research_slots=2
 set_stability=0.23
@@ -15,6 +15,14 @@ add_ideas={
 	agrarian_society
 	no_lack_of_scientists
 	no_poverty
+}
+add_offsite_building={
+	type=industrial_complex
+	level=1
+}
+add_offsite_building={
+	type=arms_factory
+	level=1
 }
 #TECHNOLOGY
 set_technology={

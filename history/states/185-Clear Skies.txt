@@ -1,7 +1,7 @@
 state={
 	id=185
 	name="STATE_185"
-	manpower=145071
+	manpower=195400
 	state_category=rural
 	buildings_max_level_factor=1
 	impassable=no
@@ -12,6 +12,7 @@ state={
 		add_core_of=FLY
 		#add_claim_by=
 		#victory_points={6800 2}
+		victory_points={3953 3}
 		buildings={
 		#STATE BUILDINGS
 			infrastructure=1

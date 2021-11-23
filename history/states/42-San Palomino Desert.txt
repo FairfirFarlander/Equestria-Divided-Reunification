@@ -1,7 +1,7 @@
 state={
 	id=42
 	name="STATE_42"
-	manpower=44200
+	manpower=8200
 	state_category=wasteland
 	buildings_max_level_factor=1
 	impassable=no

@@ -1,7 +1,7 @@
 state={
 	id=107
 	name="STATE_107"
-	manpower=205400
+	manpower=155071
 	state_category=rural
 	buildings_max_level_factor=1
 	impassable=no

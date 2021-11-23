@@ -2,7 +2,7 @@ state={
 	id=310
 	name="STATE_310"
 	manpower=381304
-	state_category=rural
+	state_category=pastoral
 	buildings_max_level_factor=1
 	impassable=no
 	provinces={703 4623 4738 4854 5205 7366 8110 10599 11669 12278 12429 12582}
@@ -14,7 +14,7 @@ state={
 		#victory_points={}
 		buildings={
 		#STATE BUILDINGS
-			infrastructure=2
+			infrastructure=0
 			air_base=0
 			anti_air_building=0
 			radar_station=0

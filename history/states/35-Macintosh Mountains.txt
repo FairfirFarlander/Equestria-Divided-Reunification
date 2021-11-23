@@ -15,7 +15,7 @@ state={
 		buildings={
 		#STATE BUILDINGS
 			infrastructure=0
-			air_base=0
+			air_base=0	#Gimmie air field through focus!
 			anti_air_building=0
 			radar_station=0
 		#SHARED BUILDINGS

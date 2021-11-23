@@ -1,8 +1,8 @@
 state={
 	id=525
 	name="STATE_525"
-	manpower=967400
-	state_category=city
+	manpower=767400
+	state_category=large_town
 	buildings_max_level_factor=1
 	impassable=no
 	provinces={1493 1576 2374 4599 4928 5073 5089 7573 7635 10351 10359 10485 10510 11671 12359 12465 12748}
@@ -20,7 +20,7 @@ state={
 			radar_station=0
 		#SHARED BUILDINGS
 			arms_factory=1
-			industrial_complex=2
+			industrial_complex=1
 			#dockyard=0
 			synthetic_refinery=0
 			fuel_silo=0

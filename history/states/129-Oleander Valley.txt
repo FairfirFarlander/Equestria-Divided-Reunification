@@ -1,7 +1,7 @@
 state={
 	id=129
 	name="STATE_129"
-	manpower=116910
+	manpower=189371
 	state_category=rural
 	buildings_max_level_factor=1
 	impassable=no
@@ -11,10 +11,10 @@ state={
 		owner=HSW
 		add_core_of=HSW
 		#add_claim_by=
-		#victory_points={3893 1}
+		#victory_points={3893 2}
 		buildings={
 		#STATE BUILDINGS
-			infrastructure=1
+			infrastructure=2
 			air_base=0
 			anti_air_building=0
 			radar_station=0

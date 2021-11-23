@@ -11,10 +11,10 @@ state={
 		owner=HFT
 		add_core_of=HFT
 		#add_claim_by=
-		#victory_points={}
+		#victory_points={6789 3}
 		buildings={
 		#STATE BUILDINGS
-			infrastructure=2
+			infrastructure=3
 			air_base=0
 			anti_air_building=0
 			radar_station=0

@@ -8,9 +8,9 @@ state={
 	provinces={405 495 564 6535 9509 11388 11431}
 	resources={}
 	history={
-		owner=JTL
+		owner=HWG
 		add_core_of=JTL
-		#add_claim_by=
+		add_claim_by=HWG
 		victory_points={405 5}
 		buildings={
 		#STATE BUILDINGS

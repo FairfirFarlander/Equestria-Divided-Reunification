@@ -1,0 +1,41 @@
+sub_units={
+	ember_knights={
+		sprite=infantry
+		map_icon_category=infantry
+		priority=580
+		ai_priority=200
+		special_forces=yes
+		active=no
+		type={infantry}
+		group=infantry
+		categories={
+			category_front_line
+			category_all_infantry
+			category_special_forces
+			category_army
+			category_heavy_infantry
+		}
+		#SizeDefinitions
+		max_strength=15
+		max_organisation=70
+		default_morale=0.4
+		manpower=500
+		combat_width=1.5
+
+		#MiscAbilities
+		training_time=180
+		suppression=2
+		weight=0.6
+		
+		supply_consumption=0.08
+		breakthrough=0.5
+		hardness=300
+		armor_value=2500
+		
+		can_be_parachuted=no
+		need={
+			infantry_equipment=100
+			support_equipment=10
+		}
+	}
+}
