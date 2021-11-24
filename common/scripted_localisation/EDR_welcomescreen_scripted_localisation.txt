@@ -4,7 +4,7 @@ defined_text={#Country
 	text={trigger={original_tag=BCK}localization_key=EAW_WS_BCK}
 	text={trigger={original_tag=CHY}localization_key=EAW_WS_CHY}
 	text={trigger={original_tag=COT}localization_key=EAW_WS_COT}
-	text={trigger={original_tag=CRI}localization_key=EAW_WS_CRI}
+	text={trigger={original_tag=CRL}localization_key=EAW_WS_CRL}
 	text={trigger={original_tag=CUL}localization_key=EAW_WS_CUL}
 	text={trigger={original_tag=EMB}localization_key=EAW_WS_EMB}
 	text={trigger={original_tag=FLY}localization_key=EAW_WS_FLY}
@@ -38,7 +38,7 @@ defined_text={
 	text={trigger={original_tag=BCK}localization_key=EAW_WS_BCK_desc}
 	text={trigger={original_tag=CHY}localization_key=EAW_WS_CHY_desc}
 	text={trigger={original_tag=COT}localization_key=EAW_WS_COT_desc}
-	text={trigger={original_tag=CRI}localization_key=EAW_WS_CRI_desc}
+	text={trigger={original_tag=CRL}localization_key=EAW_WS_CRL_desc}
 	text={trigger={original_tag=CUL}localization_key=EAW_WS_CUL_desc}
 	text={trigger={original_tag=EMB}localization_key=EAW_WS_EMB_desc}
 	text={trigger={original_tag=FLY}localization_key=EAW_WS_FLY_desc}

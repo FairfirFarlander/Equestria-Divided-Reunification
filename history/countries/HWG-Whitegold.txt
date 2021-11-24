@@ -96,7 +96,7 @@ create_country_leader={
 #MILITARY
 create_field_marshal={
 	name="Mistress Rarity"	#id=	desc=
-	picture="Rarity.tga"	female=yes
+	picture="HWG_rarity.dds"	female=yes
 	skill=1	attack_skill=2	defense_skill=2
 	planning_skill=1	logistics_skill=1
 	traits={pony_race_trait politically_connected}

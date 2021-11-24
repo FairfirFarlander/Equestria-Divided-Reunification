@@ -1,4 +1,33 @@
-﻿l_english: 
+﻿l_english:
+#Homescreen Welcome#
+#Country Name#
+ HWG_fascism:0"House Whitegold"
+  HWG_fascism_DEF:0"The City-States of House Whitegold"
+  HWG_fascism_ADJ:0"Maneglendi"
+ HWG_communism:0"Equestrian Socialist State"
+  HWG_communism_DEF:0"The Socialist State of Equestria"
+  HWG_communism_ADJ:0"Equestrian"
+ HWG_neutrality:0"Sunshine Federation"
+  HWG_neutrality_DEF:0"The Federation of Sunshine City-States"
+  HWG_neutrality_ADJ:0"Maneglendi"
+ HWG_democratic:0"Manehattan Republic"
+  HWG_democratic_DEF:0"The Republic of Manehattan"
+  HWG_democratic_ADJ:0"Equestrian"
+#Political Parties#
+ HWG_fascism_party:0"SCN"
+  HWG_fascism_party_long:0"Society of Canterlot Nobles"
+ HWG_communism_party:0"UWC"
+  HWG_communism_party_long:0"Undercity Workers Collective"
+ HWG_neutrality_party:0"ETU"
+  HWG_neutrality_party_long:0"Equestrian Trade Union"
+ HWG_democratic_party:0"MRP"
+  HWG_democratic_party_long:0"Manehattan Republican Party"
+ HWG_democracy_united:0"ARR"
+  HWG_democracy_united_long:0"Alliance to Restore the Republic"
+#Ideas#
+ HWG_idea:0 "Eyes and ears, our shields and spears."
+  HWG_idea_desc:0 "Home of the Equestrian nobles, wealthy merchants, craftsponies and artisans - the members of House Whitegold like to think of themselves as the last remnants of the once great civilization of Equestria. But beneath the carefully crafted cloak of glamour and sophistication, there lies a harsh reality of a House that is more vicious and powerhungry than any other. Schemers, spies, assassins and smoothtalkers - the Whitegolds prefer a more subtle approach to achieving their goals. They fight with words, wealth, and daggers - to challenge them is to play a deadly game of lies and deception against the very masters of the trade..."
+#Unsorted#
 HWG_retake_new_mareland:0 "Taking back what belong to us"
 HWG_retake_new_mareland_desc:0 "These treacherous ponies thought they could run away from the wrath of all-rich Rarity, they don't know yet how wrong they are!"
 HWG_assert_control_over_the_crystal_dominion:0 "Assert Control over the Crystal Empire"
@@ -113,15 +142,3 @@ HWG_retake_control:0 "Retake control"
 HWG_retake_control_desc:0 "It will take us years to calm down the situation in Equestria and balance the inflation caused by this war, but this is nothing that I cannot deal with."
 HWG_infrastructure_effort_iii:0 "Infrastructure Effort III"
 HWG_infrastructure_effort_iii_desc:0 "Infrastructure Effort III"
-
-
-### party ###
-HWG_neutrality_party:0 "Monarchists"
-HWG_communism_party:0  "Socialist Rebels"
-HWG_democratic_party:0 "Rebels"
-HWG_fascism_party:0 "Society of Canterlot Nobles"
-
-
-### ideas ###
-HWG_idea:0 "Eyes and ears, our shields and spears."
-HWG_idea_desc:0 "Home of the Equestrian nobles, wealthy merchants, craftsponies and artisans - the members of House Whitegold like to think of themselves as the last remnants of the once great civilization of Equestria. But beneath the carefully crafted cloak of glamour and sophistication, there lies a harsh reality of a House that is more vicious and powerhungry than any other. Schemers, spies, assassins and smoothtalkers - the Whitegolds prefer a more subtle approach to achieving their goals. They fight with words, wealth, and daggers - to challenge them is to play a deadly game of lies and deception against the very masters of the trade..."

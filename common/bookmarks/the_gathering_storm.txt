@@ -39,7 +39,7 @@ bookmarks={
 		#	ideas={CUL_idea}
 		#	focuses={}
 		#}
-		"CRI"={	#Crystal Empire (EDR)
+		"CRL"={	#Crystal Empire (EDR)
 			history="CRY_GATHERING_STORM_DESC"
 			ideology=fascism	#minor=yes
 			ideas={crystal_heart	royal_family	sombra_threat}

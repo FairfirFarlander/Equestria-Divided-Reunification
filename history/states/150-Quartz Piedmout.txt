@@ -8,8 +8,8 @@ state={
 	provinces={185 316 332 394 3174 3206 3296 3525 6364 9079}
 	resources={tungsten=12 steel=34}
 	history={
-		owner=CRI
-		add_core_of=CRI
+		owner=CRL
+		add_core_of=CRL
 		#add_claim_by=
 		#victory_points={}
 		buildings={
