@@ -1,37 +1,14 @@
-state={
+state={	#EDRSTATE
 	id=661
 	name="STATE_661"
 	manpower=44567
 	state_category=small_island
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={1479 10395 10435}
-	resources={}
 	history={
 		owner=ALA
 		add_core_of=SGR
 		add_claim_by=ALA
 		victory_points={10395 1}
-		buildings={
-		#STATE BUILDINGS
-			infrastructure=0
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
-			arms_factory=0
-			industrial_complex=0
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
-		}
 	}
 }

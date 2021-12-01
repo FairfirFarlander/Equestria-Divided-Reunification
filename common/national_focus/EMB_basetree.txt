@@ -3,7 +3,6 @@
 		id=EMB_S00 icon=GFX_goal_chn_communist_banner
 		x=0 y=0 cost=8 ai_will_do={factor=4000}
 		select_effect={
-			set_temp_variable={aaaaa=1}
 			country_event={id=EMBact01.01 days=21}		#The Great Migration
 			country_event={id=EMBact01.02 days=42}		#The Finishing Touches
 		}

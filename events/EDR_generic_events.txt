@@ -5,21 +5,11 @@ add_namespace=EDR_gen
 		title=EDR_gen.01.t	desc=EDR_gen.01.d
 		#picture=
 		option={name=EDR_gen.01.a
-			trigger={not={original_tag=THA}}
 			clr_country_flag=EDRlessevents
+			EDR_event_verbosity_ya=yes
 		}
 		option={name=EDR_gen.01.b
-			trigger={not={original_tag=THA}}
 			set_country_flag=EDRlessevents
-		}
-		option={name=EDR_gen.01.a	#THA Option A
-			trigger={original_tag=THA}
-			clr_country_flag=EDRlessevents
-			hidden_effect={country_event={id=THAact01.01 days=3}}
-		}
-		option={name=EDR_gen.01.b	#THA Option B
-			trigger={original_tag=THA}
-			set_country_flag=EDRlessevents
-			country_event={id=THAact01.06 days=10}
+			EDR_event_verbosity_nein=yes
 		}
 	}

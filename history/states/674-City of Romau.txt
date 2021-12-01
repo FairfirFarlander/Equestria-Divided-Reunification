@@ -4,35 +4,17 @@ state={
 	manpower=2230000
 	state_category=metropolis
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={1027 4071}
 	resources={steel=8}
 	history={
 		#owner=ROU
 		#add_core_of=ROU
-		#add_claim_by=
-		victory_points={1027 25}
-		victory_points={4071 5}
+		#victory_points={1027 25}
+		#victory_points={4071 5}
 		buildings={
-		#STATE BUILDINGS
 			infrastructure=8
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
 			arms_factory=2
 			industrial_complex=4
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
 		}
 	}
 }

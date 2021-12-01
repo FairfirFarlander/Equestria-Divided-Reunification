@@ -4,34 +4,15 @@ state={
 	manpower=175670
 	state_category=rural
 	buildings_max_level_factor=3
-	impassable=no
 	provinces={7673 10522 9215 12302 4652 8360}
-	resources={}
 	history={
 		#owner=HAU
 		#add_core_of=HAU
-		#add_claim_by=
-		victory_points={10522 5}
+		#victory_points={10522 5}
 		buildings={
-		#STATE BUILDINGS
 			infrastructure=2
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
-			arms_factory=0
 			industrial_complex=1
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			10522={
-				naval_base=2
-				#bunker=0
-				#coastal_bunker=0
-			}
+			10522={naval_base=2}
 		}
 	}
 }

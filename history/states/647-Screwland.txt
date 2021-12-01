@@ -4,34 +4,16 @@ state={
 	manpower=812056
 	state_category=town
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={4027 5192 7110 8189 8224 9950 10092 10959 12922}
 	resources={steel=10 crystals=38}
 	history={
 		#owner=DMT
 		#add_core_of=DMT
-		#add_claim_by=
-		victory_points={4027 10}
+		#victory_points={4027 10}
 		buildings={
-		#STATE BUILDINGS
 			infrastructure=2
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
 			arms_factory=1
 			industrial_complex=1
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
 		}
 	}
 }

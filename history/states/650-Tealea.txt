@@ -4,34 +4,13 @@ state={
 	manpower=175607
 	state_category=rural
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={1449 1568 1598 1624 1639 4602 4643 8187 10362 10402 10418 10502 10515 10935 10943 12394 12453 12466 12496}
-	resources={}
 	history={
 		#owner=FIR
 		#add_core_of=FIR
-		#add_claim_by=
-		victory_points={4643 2}
+		#victory_points={4643 2}
 		buildings={
-		#STATE BUILDINGS
 			infrastructure=1
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
-			arms_factory=0
-			industrial_complex=0
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
 		}
 	}
 }

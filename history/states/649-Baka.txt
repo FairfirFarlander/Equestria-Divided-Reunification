@@ -3,36 +3,21 @@ state={
 	name="STATE_649"
 	manpower=1678101
 	state_category=large_city
-	buildings_max_level_factor=1
-	impassable=no
+	buildings_max_level_factor=2
 	provinces={1784 4379 4817 7696 7738 10137 10309 10592 10703 12517 12574 12602 13233}
 	resources={oil=15 steel=6}
 	history={
 		#owner=BAK
 		#add_core_of=BAK
-		#add_claim_by=
-		victory_points={7738 20}
-		victory_points={10309 3}
+		#victory_points={7738 20}
+		#victory_points={10309 3}
 		buildings={
-		#STATE BUILDINGS
 			infrastructure=3
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
 			arms_factory=1
 			industrial_complex=1
 			dockyard=4
-			synthetic_refinery=0
 			fuel_silo=1
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			7738={
-				naval_base=4
-				#bunker=0
-				#coastal_bunker=0
-			}
+			7738={naval_base=4}
 		}
 	}
 }

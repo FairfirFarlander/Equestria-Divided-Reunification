@@ -1,0 +1,14 @@
+EDR_event_verbosity_ya={
+	if={limit={original_tag=HWG}
+		hidden_effect={country_event={id=HWGact01.01 days=3}}}
+	if={limit={original_tag=THA}
+		hidden_effect={country_event={id=THAact01.01 days=3}}}
+	#if={limit={original_tag=THA}
+	#	hidden_effect={country_event={id=TAGact01.01 days=me}}}
+}
+EDR_event_verbosity_nein={
+	if={limit={original_tag=THA}
+		hidden_effect={country_event={id=THAact01.06 days=10}}}
+	#if={limit={original_tag=THA}
+	#	hidden_effect={country_event={id=TAGact01.01 days=me}}}
+}
