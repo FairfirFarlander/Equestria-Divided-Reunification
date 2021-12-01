@@ -46,7 +46,7 @@ bookmarks={
 			focuses={CRY_oldorder	CRY_comrevolution	CRY_oldking}
 		}
 		"SGR"={	#Stalliongrad Remnants
-			history="SGR_GATHERING_STORM_DESC"
+			history="STG_GATHERING_STORM_DESC"
 			ideology=communism	#minor=yes
 			ideas={severe_famine	incomplete_industrialization}
 			focuses={vasya_2	the_palace	manifesto_of_materialism}

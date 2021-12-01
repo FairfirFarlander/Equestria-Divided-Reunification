@@ -4,34 +4,11 @@ state={
 	manpower=124509
 	state_category=rural
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={438 4814 4830 7175 7204 7221 7780 11992 12570}
 	resources={tungsten=4 steel=4 crystals=2}
 	history={
 		#owner=LUS
 		#add_core_of=LUS
-		#add_claim_by=
-		victory_points={11992 3}
-		buildings={
-		#STATE BUILDINGS
-			infrastructure=0
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
-			arms_factory=0
-			industrial_complex=0
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
-		}
+		#victory_points={11992 3}
 	}
 }

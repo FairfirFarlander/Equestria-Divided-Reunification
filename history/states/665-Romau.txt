@@ -4,35 +4,15 @@ state={
 	manpower=456090
 	state_category=rural
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={1154 1184 1287 1375 1879 4140 4157 4181 7089 10480 12074 12152}
-	resources={}
 	history={
 		#owner=YAL
 		#add_core_of=YAL
 		#add_core_of=ROU
-		#add_claim_by=
-		victory_points={4157 4}
+		#victory_points={4157 4}
 		buildings={
-		#STATE BUILDINGS
 			infrastructure=3
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
-			arms_factory=0
 			industrial_complex=1
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
 		}
 	}
 }

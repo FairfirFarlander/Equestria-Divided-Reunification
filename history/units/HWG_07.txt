@@ -107,8 +107,8 @@ units={
 		force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
 	}
 	division={	#Manehattan#
-		name="Militia of Baltimare"
-		location=13011	division_template="Praetor Guard"
+		name="Ivory Tower Praetor Guard"
+		location=758	division_template="Praetor Guard"
 		start_experience_factor=1	start_equipment_factor=1.0
 		force_equipment_variants={melee_equipment_1={owner="HWG" creator="HWG"}}
 	}

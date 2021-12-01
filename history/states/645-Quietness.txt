@@ -4,37 +4,22 @@ state={
 	manpower=1711109
 	state_category=large_city
 	buildings_max_level_factor=1
-	impassable=no
-	provinces={1075 2009 4957 5010 7179 7849 10617 11911 11968 12010 12751 12800 12802 12856 }
+	provinces={1075 2009 4957 5010 7179 7849 10617 11911 11968 12010 12751 12800 12802 12856}
 	resources={steel=12}
 	history={
 		#owner=NIM
 		#add_core_of=NIM
-		#add_claim_by=
-		victory_points={7849 2}
-		victory_points={11911 25}
-		victory_points={12751 5}
-		victory_points={12802 1}
+		#victory_points={7849 2}
+		#victory_points={11911 25}
+		#victory_points={12751 5}
+		#victory_points={12802 1}
 		buildings={
-		#STATE BUILDINGS
 			infrastructure=5
 			air_base=4
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
 			arms_factory=2
 			industrial_complex=3
 			dockyard=1
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			11911={
-				naval_base=2
-				#bunker=0
-				#coastal_bunker=0
-			}
+			11911={naval_base=2}
 		}
 	}
 }
