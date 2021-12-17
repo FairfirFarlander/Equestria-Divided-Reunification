@@ -4,34 +4,14 @@ state={
 	manpower=89709
 	state_category=pastoral
 	buildings_max_level_factor=1
-	impassable=no
-	provinces={1622 1929 2072 3109 4128 7372 7465 7931 9986 10071 10883 10951 12241 12824 }
+	provinces={1622 1929 2072 3109 4128 7372 7465 7931 9986 10071 10883 10951 12241 12824}
 	resources={aluminium=10 tungsten=5 steel=5}
 	history={
 		#owner=GRU
 		#add_core_of=GRU
-		#add_claim_by=
-		victory_points={12241 5}
+		#victory_points={12241 5}
 		buildings={
-		#STATE BUILDINGS
-			infrastructure=0
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
-			arms_factory=0
-			industrial_complex=0
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			12241={
-				#naval_base=0
-				bunker=2
-				#coastal_bunker=0
-			}
+			12241={bunker=2}
 		}
 	}
 }

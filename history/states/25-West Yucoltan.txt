@@ -1,38 +1,18 @@
-state={
+state={	#EDRSTATE
 	id=25
 	name="STATE_25"
 	manpower=119500
 	state_category=pastoral
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={336 3991 4084 4097 7008 7215 7908 8046 11987 12018 12842 13074}
-	resources={rubber=30}
+	resources={rubber=30}	#EAW 15
 	history={
 		owner=EMB
 		add_core_of=EMB
 		add_core_of=PLT
-		#add_claim_by=
 		victory_points={336 1}
 		buildings={
-		#STATE BUILDINGS
-			infrastructure=0
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
-			arms_factory=0
-			industrial_complex=0
-			dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			336={
-				naval_base=0	#1 For Focus EMB
-				#bunker=0
-				#coastal_bunker=0
-			}
+			336={naval_base=0}	#1 For Focus EMB
 		}
 	}
 }

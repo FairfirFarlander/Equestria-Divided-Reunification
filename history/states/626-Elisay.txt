@@ -11,27 +11,11 @@ state={
 		#owner=BAR
 		#add_core_of=BAR
 		#add_claim_by=WIT
-		victory_points={12307 3}
+		#victory_points={12307 3}
 		buildings={
-		#STATE BUILDINGS
 			infrastructure=1
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
-			arms_factory=0
 			industrial_complex=1
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			12307={
-				#naval_base=0
-				bunker=2
-				#coastal_bunker=0
-			}
+			12307={bunker=2}
 		}
 	}
 }

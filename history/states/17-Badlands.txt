@@ -1,38 +1,15 @@
-state={
+state={	#EDRSTATE
 	id=17
 	name="STATE_17"
 	manpower=1300
 	state_category=wasteland
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={4476 6698 7590 7622 9309 9403 10374 11346 11360 12347}
 	resources={oil=32}
 	history={
 		owner=THA
 		add_core_of=THA
-		add_core_of=VII
-		#add_claim_by=
+		add_claim_by=VII
 		#victory_points={}	#Put a VP on 10374 Dragon Village
-		buildings={
-		#STATE BUILDINGS
-			infrastructure=0
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
-			arms_factory=0
-			industrial_complex=0
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
-		}
 	}
 }

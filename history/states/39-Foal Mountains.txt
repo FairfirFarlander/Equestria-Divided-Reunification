@@ -1,37 +1,13 @@
-state={
+state={	#EDRSTATE
 	id=39
 	name="STATE_39"
 	manpower=33800
 	state_category=pastoral
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={77 114 611 778 3005 3007 3070 3128 3136 3262 3393 3476 4109 4178 6093 6147 6160 6668 7096 11548 11590 11965 13099}
 	resources={tungsten=24 steel=16 crystals=5}
 	history={
 		owner=HMS
 		add_core_of=HMS
-		#add_claim_by=
-		#victory_points={}
-		buildings={
-		#STATE BUILDINGS
-			infrastructure=0
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
-			arms_factory=0
-			industrial_complex=0
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
-		}
 	}
 }
