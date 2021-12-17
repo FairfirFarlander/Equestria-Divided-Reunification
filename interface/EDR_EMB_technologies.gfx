@@ -1,0 +1,7 @@
+spriteTypes={
+	#EMB MOTORISED/MECHANISED#
+	SpriteType={
+		name="GFX_EMB_motorised_infantry_medium"
+		texturefile="gfx/interface/technologies/NCH_improir.dds"
+	}
+}
