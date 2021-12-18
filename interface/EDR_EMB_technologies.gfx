@@ -1,4 +1,9 @@
 spriteTypes={
+	#EMB_infantry#
+	SpriteType={
+		name="GFX_EMB_infantry_weapons_medium"
+		texturefile="gfx/interface/technologies/CHN_infantry_equipment_1.dds"
+	}
 	#EMB MOTORISED/MECHANISED#
 	SpriteType={
 		name="GFX_EMB_motorised_infantry_medium"
