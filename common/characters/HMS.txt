@@ -1,0 +1,112 @@
+characters={	#Country Leaders#
+	HMS_twilight_sparkle={
+		name=HMS_twilight_sparkle
+		portraits={
+			civilian={
+				large="gfx/leaders/HMS/HMS_twilight_sparkle.dds"
+				#small=""#
+			}
+			army={
+				large="gfx/leaders/HMS/HMS_twilight_sparkle.dds"
+				#small=""#
+			}
+		}
+		country_leader={
+			#desc=""#
+			ideology=magocracy	#female=yes#
+			expire="1030.1.1"	#Undecided#
+			traits={}
+			id=-1
+		}
+		field_marshal={
+			#desc=#	#female=yes#
+			skill=1	attack_skill=1	defense_skill=1
+			planning_skill=2	logistics_skill=2
+			traits={trait_archmagister pony_race_trait organizer organisational_leader}
+		}
+	}
+	HMS_frail_lance={
+		name=HMS_frail_lance
+		portraits={
+			civilian={
+				large="gfx/leaders/HMS/HMS_frail_lance.dds"
+				#small=""#
+			}
+		}
+		country_leader={
+			#desc=""#
+			ideology=anarchist_communism	#female=no#
+			expire="1030.1.1"	#Undecided#
+			traits={}
+			id=-1
+		}
+	}
+	HMS_shining_armor={
+		name=HMS_shining_armor
+		portraits={
+			civilian={
+				large="gfx/leaders/HMS/HMS_shining_armor.dds"
+				#small=""#
+			}
+		}
+		country_leader={
+			#desc=""#
+			ideology=despotism	#female=no#
+			expire="1030.1.1"	#Undecided#
+			traits={}
+			id=-1
+		}
+		field_marshal={
+			#desc=CRY_Shining_Armour_desc#	#female=no#
+			skill=4	attack_skill=3	defense_skill=5
+			planning_skill=3	logistics_skill=3
+			traits={royal_guard_commander equestrian_prince pony_race_trait  defensive_doctrine}
+		}
+	}
+	HMS_white_wind={
+		name=HMS_white_wind
+		portraits={
+			civilian={
+				large="gfx/leaders/HMS/HMS_white_wind.dds"
+				#small=""#
+			}
+		}
+		country_leader={
+			#desc=""#
+			ideology=liberalism	#female=no#
+			expire="1030.1.1"	#Undecided#
+			traits={}
+			id=-1
+		}
+	}
+	HMS_trixie_lulamoon={
+		name=HMS_trixie_lulamoon
+		portraits={
+			army={
+				large="gfx/leaders/HMS/HMS_trixie_lulamoon.dds"
+				#small=""#
+			}
+		}
+		corps_commander={
+			#desc=#	#female=yes#
+			skill=1	attack_skill=2	defense_skill=1
+			planning_skill=2	logistics_skill=1
+			traits={media_personality pony_race_trait}
+		}
+	}
+	HMS_spike={
+		name=HMS_spike
+		portraits={
+			army={
+				large="gfx/leaders/HMS/HMS_spike.dds"
+				#small=""#
+			}
+		}
+		corps_commander={
+			#desc=#	#female=no#
+			skill=1	attack_skill=1	defense_skill=1
+			planning_skill=1	logistics_skill=1
+			traits={dragon_race_trait}
+		}
+	}
+}

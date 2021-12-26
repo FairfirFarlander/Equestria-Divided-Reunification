@@ -1,0 +1,17 @@
+characters={
+	COT_jd_neighvis={
+		name=COT_jd_neighvis
+		portraits={
+			civilian={
+				large="gfx/leaders/SCS/JDavis.tga"
+				small="gfx/leaders/COT/small/COT_jd_neighvis.dds"
+			}
+		}
+		country_leader={
+			desc="neighvis_desc"	ideology=centrism
+			#expire="1030.03.13.08"
+			traits={}
+			id=-1
+		}
+	}
+}

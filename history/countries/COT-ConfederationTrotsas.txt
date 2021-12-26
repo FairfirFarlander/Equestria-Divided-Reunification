@@ -66,52 +66,11 @@ set_politics={
 	election_frequency=48
 	elections_allowed=no
 }
-create_country_leader={
-	name="J.D. Neighvis"	desc="neighvis_desc"
-	expire="1965.1.1"	picture="JDavis.tga"
-	ideology=centrism	#female=yes
-	traits={}
-}
-create_field_marshal={
-	name="Neighson E. Miles"	#id=	desc=
-	picture="StewedApple.tga"	#female=yes
-	skill=2	attack_skill=3	defense_skill=1
-	planning_skill=2	logistics_skill=2
-	traits={pony_race_trait harsh_leader signal_expert_trait}
-}
-create_corps_commander={
-	name="Apple Ale"	#id=	desc=
-	picture="Apple_Ale.tga"	female=yes
-	skill=2	attack_skill=3	defense_skill=1
-	planning_skill=3	logistics_skill=2
-	traits={pony_race_trait politically_connected logistics_wizard}
-}
-create_corps_commander={
-	name="Moonshine Melody"	#id=	desc="SCS_moonshine_desc"
-	picture="Moonshine_Melody.tga"	#female=yes
-	skill=2	attack_skill=3	defense_skill=1
-	planning_skill=1	logistics_skill=3
-	traits={pony_race_trait harsh_leader}
-}
-create_corps_commander={
-	name="Burnside Fervor"	#id=	desc=
-	picture="Cuddle_Fervor.tga"	female=yes #?
-	skill=2	attack_skill=2	defense_skill=3
-	planning_skill=1	logistics_skill=2
-	traits={artillery_expert trait_cautious}
-}
-create_corps_commander={
-	name="Sorren Peak"	#id=	desc="SCS_dixie_horse_desc"
-	picture="some_dixie_horse.tga"	#female=yes
-	skill=2	attack_skill=2	defense_skill=1
-	planning_skill=1	logistics_skill=2
-	traits={pony_race_trait harsh_leader trait_reckless}
-}#
-create_navy_leader={
-	name="Horace Hoofley"	#id=	desc=#
-	#picture=""	female=no#
-	skill=1	attack_skill=1	defense_skill=1
-	maneuvering_skill=1	coordination_skill=1
-	traits={pony_race_trait }
-}
+recruit_character=COT_jd_neighvis
+recruit_character=SCS_silverstar
+recruit_character=SCS_apple_ale
+recruit_character=SCS_moonshine_melody
+recruit_character=SCS_sorren_peak
+recruit_character=SCS_burnside_fervor
+recruit_character=SCS_stewed_apple
 #VARIENTS

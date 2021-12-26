@@ -1,0 +1,41 @@
+characters={
+	CHY_cherry_jubilee={
+		name=CHY_jubilee
+		gender=female
+		portraits={
+			civilian={
+				large="gfx/leaders/CHY/Cherry_jubilee.tga"
+			}
+		}
+		country_leader={
+			desc="CHY_cjubilee_poli_desc"	ideology=neofeudalism
+			#expire="1030.03.13.08"
+			traits={}
+			id=-1
+		}
+		country_leader={
+			desc="CHY_cjubilee_poli_desc"	ideology=stalinism
+			#expire="1030.03.13.08"
+			traits={}
+			id=-1
+		}
+		country_leader={
+			desc="CHY_cjubilee_poli_desc"	ideology=despotism
+			#expire="1030.03.13.08"
+			traits={}
+			id=-1
+		}
+		country_leader={
+			desc="CHY_cjubilee_poli_desc"	ideology=liberalism
+			#expire="1030.03.13.08"
+			traits={}
+			id=-1
+		}
+		corps_commander={
+			desc="CHY_cjubilee_mili_desc"
+			skill=1	attack_skill=1	defense_skill=1
+			planning_skill=1	logistics_skill=1
+			traits={pony_race_trait}
+		}
+	}
+}

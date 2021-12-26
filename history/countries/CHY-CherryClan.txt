@@ -1,6 +1,10 @@
 #LOCALE#
 capital=22
-oob="CHY_07"
+#if={
+	#limit={has_dlc="No Step Back"}
+	#set_oob="CHY_07_nsb"
+	#else={set_oob="CHY_07"}
+#}#
 #FOUNTATION#
 set_research_slots=2
 set_stability=0.8
@@ -10,6 +14,15 @@ add_ideas={
 	pre_industrial_society
 	lack_of_scientists3
 	poverty3
+}
+if={
+	limit={has_dlc="No Step Back"}
+	add_ideas={
+		traditionalism_academy_spirit
+		doctrinal_orthodoxy_spirit
+		disdain_for_the_digging_spirit
+	}
+	else={add_ideas={EQS_bad_tanks}}
 }
 #TECHNOLOGY#
 set_technology={
@@ -33,35 +46,5 @@ set_politics={
 	ruling_party=fascism	last_election="1006.10.10"
 	election_frequency=36	elections_allowed=no
 }
-create_country_leader={
-	name="Cherry Jubilee"	#desc=#
-	expire="1020.1.1"	picture="Cherry_Jubilee.tga"
-	ideology=neofeudalism	female=yes
-	traits={}
-}
-create_country_leader={
-	name="Cherry Jubilee"	#desc=#
-	expire="1020.1.1"	picture="Cherry_Jubilee.tga"
-	ideology=stalinism	female=yes
-	traits={}
-}
-create_country_leader={
-	name="Cherry Jubilee"	#desc=#
-	expire="1020.1.1"	picture="Cherry_Jubilee.tga"
-	ideology=despotism	female=yes
-	traits={}
-}
-create_country_leader={
-	name="Cherry Jubilee"	#desc=#
-	expire="1020.1.1"	picture="Cherry_Jubilee.tga"
-	ideology=liberalism	female=yes
-	traits={}
-}
-#MILITARY#
-create_corps_commander={
-	name="Cherry Jubilee"	#id=	desc=#
-	picture="Cherry_Jubilee.tga"	female=yes
-	skill=1	attack_skill=1	defense_skill=1
-	planning_skill=2	logistics_skill=2
-	traits={politically_connected pony_race_trait}
-}
+#CHARACTERS#
+recruit_character=CHY_cherry_jubilee

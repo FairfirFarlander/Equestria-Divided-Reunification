@@ -1,0 +1,106 @@
+characters={	#Country Leaders#
+	HSW_rainbow_dash={
+		name=HSW_rainbow_dash
+		portraits={
+			civilian={
+				large="gfx/leaders/HSW/HSW_rainbow_dash.dds"
+				#small=""#
+			}
+			army={
+				large="gfx/leaders/HSW/HSW_rainbow_dash.dds"
+				#small=""#
+			}
+		}
+		country_leader={
+			#desc=""#
+			ideology=stratocracy	#female=yes#
+			expire="1030.1.1"	#Undecided#
+			traits={}
+			id=-1
+		}
+		field_marshal={
+			#desc=#	#female=yes#
+			skill=3	attack_skill=4	defense_skill=3
+			planning_skill=1	logistics_skill=2
+			traits={pony_race_trait trait_reckless offensive_doctrine}
+		}
+	}
+	HSW_storm_mayhem={
+		name=HSW_storm_mayhem
+		portraits={
+			civilian={
+				large="gfx/leaders/HSW/HSW_storm_mayhem.dds"
+				#small=""#
+			}
+		}
+		country_leader={
+			#desc=""#
+			ideology=anarchist_communism	#female=no#
+			expire="1030.1.1"	#Undecided#
+			traits={}
+			id=-1
+		}
+	}
+	HSW_steel_wings={
+		name=HSW_steel_wings
+		portraits={
+			civilian={
+				large="gfx/leaders/HSW/HSW_steel_wings.dds"
+				#small=""#
+			}
+		}
+		country_leader={
+			#desc=""#
+			ideology=despotism	#female=no#
+			expire="1030.1.1"	#Undecided#
+			traits={}
+			id=-1
+		}
+	}
+	HSW_sunny_cloud={
+		name=HSW_sunny_cloud
+		portraits={
+			civilian={
+				large="gfx/leaders/HSW/HSW_sunny_cloud.dds"
+				#small=""#
+			}
+		}
+		country_leader={
+			#desc=""#
+			ideology=liberalism	#female=no#
+			expire="1030.1.1"	#Undecided#
+			traits={}
+			id=-1
+		}
+	}
+	HSW_soarin={
+		name=HSW_soarin
+		portraits={
+			army={
+				large="gfx/leaders/HSW/HSW_soarin.dds"
+				#small=""#
+			}
+		}
+		corps_commander={
+			#desc=#	#female=no#
+			skill=3	attack_skill=2	defense_skill=3
+			planning_skill=1	logistics_skill=2
+			traits={pony_race_trait air_force_commander war_hero}
+		}
+	}
+	HSW_spitfire={
+		name=HSW_spitfire
+		portraits={
+			army={
+				large="gfx/leaders/HSW/HSW_spitfire.dds"
+				#small=""#
+			}
+		}
+		corps_commander={
+			#desc=#	#female=yes#
+			skill=3	attack_skill=2	defense_skill=1
+			planning_skill=2	logistics_skill=3
+			traits={pony_race_trait harsh_leader organizer}
+		}
+	}
+}

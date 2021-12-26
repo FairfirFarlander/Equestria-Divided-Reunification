@@ -1,4 +1,4 @@
-version="2110_0.0.2"
+version="2110_0.0.3"
 tags={
 	"Alternative History"
 	"National Focuses"
@@ -7,4 +7,4 @@ tags={
 }
 name="EAW: Equestria Divided Reunification"
 dependencies={"Equestria at War"}
-supported_version="1.10.8"
+supported_version="1.11.4"

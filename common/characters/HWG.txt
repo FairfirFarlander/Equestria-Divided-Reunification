@@ -1,0 +1,231 @@
+characters={	#Country Leaders#
+	HWG_rarity={
+		name=HWG_mistress_rarity
+		portraits={
+			civilian={
+				large="gfx/leaders/HWG/HWG_rarity.dds"
+				#small=""#
+			}
+			army={
+				large="gfx/leaders/HWG/HWG_rarity.dds"
+				#small=""#
+			}
+		}
+		country_leader={
+			#desc=""#
+			ideology=plutocracy
+			expire="1012.09.8.20"	#Based on 982 - Lives to 30#
+			traits={}
+			id=-1
+		}
+		field_marshal={
+			#desc=#
+			skill=1	attack_skill=2	defense_skill=2
+			planning_skill=1	logistics_skill=1
+			traits={pony_race_trait politically_connected}
+		}
+		gender=female
+	}
+	HWG_shooter_mark={
+		name=HWG_shooter_mark
+		portraits={
+			civilian={
+				#large=""#
+				#small=""#
+			}
+		}
+		country_leader={
+			#desc=#
+			ideology=anarchist_communism
+			expire="1030.1.1"   #Undecided#
+			traits={}
+			id=-1
+		}
+	}
+	HWG_fleur_de_lis={
+		name=HWG_fleur_de_lis
+		portraits={
+			civilian={
+				large="gfx/leaders/HWG/HWG_fleur_de_lis.dds"
+				#small=""#
+			}
+			army={
+				large="gfx/leaders/HWG/HWG_fleur_de_lis.dds"
+				#small=""#
+			}
+		}
+		country_leader={
+			#desc=""#
+			ideology=oligarchism
+			expire="1030.1.1"	#Undecided#
+			traits={}
+			id=-1
+		}
+		corps_commander={
+			#desc=#
+			skill=2 attack_skill=2	defense_skill=2
+			planning_skill=2	logistics_skill=1
+			traits={pony_race_trait media_personality vigilant_sentinel}
+		}
+		advisor={
+			slot=political_advisor
+			idea_token=HWG_fleur_de_lis
+			allowed={original_tag=HWG}
+			available={has_intelligence_agency=yes}
+			visible={has_dlc="La Resistance"}
+			traits={head_of_intelligence}
+		}
+		advisor={
+			slot=political_advisor
+			idea_token=HWG_fleur_de_lis
+			allowed={original_tag=HWG}
+			available={not={has_country_flag=fleur_de_lis_arrested}}
+			traits={backroom_backstabber}
+		}
+		gender=female
+	}
+	HWG_fancy_pants={
+		name=HWG_fancy_pants
+		portraits={
+			civilian={
+				large="gfx/leaders/HWG/HWG_fancy_pants.dds"
+				#small=""#
+			}
+			army={
+				large="gfx/leaders/HWG/HWG_fancy_pants.dds"
+				#small=""#
+			}
+		}
+		country_leader={
+			#desc=#
+			ideology=liberalism
+			expire="1030.1.1"   #Undecided#
+			traits={}
+			id=-1
+		}
+		corps_commander={
+			#desc=#
+			skill=2 attack_skill=1	defense_skill=3
+			planning_skill=2	logistics_skill=1
+			traits={pony_race_trait politically_connected trait_cautious}
+		}
+		advisor={
+			slot=political_advisor
+			idea_token=HWG_fancy_pants
+			allowed={original_tag=HWG}
+			traits={smooth_talking_charmer}
+		}
+	}
+	HWG_clair_de_lune={
+		name=HWG_clair_de_lune
+		portraits={
+			civilian={
+				#large=""#
+				#small=""#
+			}
+			army={
+				large="gfx/leaders/HWG/HWG_hornybastard.dds"
+				#small=""#
+			}
+		}
+		corps_commander={
+			#desc=#
+			skill=1 attack_skill=1	defense_skill=1
+			planning_skill=1	logistics_skill=1
+			traits={thestral_race_trait}
+		}
+		gender=female
+	}
+	HWG_generic_admiral={
+		name=HWG_generic_admiral
+		portraits={
+			army={
+				large="gfx/leaders/HWG/HWG_generic_admiral.dds"
+				#small=""#
+			}
+		}
+		navy_leader={
+			#desc=#
+			skill=1	attack_skill=1	defense_skill=1
+			maneuvering_skill=2	coordination_skill=2
+			traits={pony_race_trait aviation_enthusiast}
+		}
+		gender=female
+	}
+	HWG_flim_flam={
+		name=HWG_flim_flam
+		portraits={
+			civilian={
+				#small="GFX_idea_flim"#
+			}
+		}
+		advisor={
+			slot=political_advisor
+			idea_token=HWG_flim_flam
+			allowed={original_tag=HWG}
+			available={has_country_flag=HWG_flim_flam_hired}
+			traits={captain_of_industry}
+		}
+	}
+	HWG_diamond_tiara={
+		name=HWG_diamond_tiara
+		portraits={
+			civilian={
+				#small=""#
+			}
+		}
+		advisor={
+			slot=political_advisor
+			idea_token=HWG_diamond_tiara
+			allowed={original_tag=HWG}
+			available={has_country_flag=HWG_filthy_rich_dead}
+			traits={smooth_talking_charmer}
+		}
+	}
+	HWG_nighthooves={
+		name=HWG_nighthooves
+		portraits={
+			civilian={
+				#small=""#
+			}
+		}
+		advisor={
+			slot=political_advisor
+			idea_token=HWG_nighthooves
+			allowed={original_tag=HWG}
+			available={has_intelligence_agency=yes}
+			visible={has_dlc="La Resistance"}
+			traits={head_of_intelligence}
+		}
+	}
+	HWG_sweetie_belle={
+		name=HWG_sweetie_belle
+		portraits={
+			civilian={
+				#small=""#
+			}
+		}
+		advisor={
+			slot=political_advisor
+			idea_token=HWG_sweetie_belle
+			allowed={original_tag=HWG}
+			#available={RarityisDead?flag}#
+			traits={known_pony}
+		}
+	}
+	HWG_filthy_rich={
+		name=HWG_filthy_rich
+		portraits={
+			civilian={
+				#small=""#
+			}
+		}
+		advisor={
+			slot=political_advisor
+			idea_token=HWG_filthy_rich
+			allowed={original_tag=HWG}
+			available={has_country_flag=HWG_filthy_rich_dead}
+			traits={smooth_talking_charmer}
+		}
+	}
+}

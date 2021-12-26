@@ -1,0 +1,69 @@
+characters={
+	BCK_rockfeller={
+		name=BCK_rockfeller
+		portraits={civilian={large="gfx/leaders/SCS/Rockhoof.tga"}}
+		country_leader={
+			desc="BCK_rockfeller_poli_desc"	ideology=plutocracy
+			#expire="1030.03.13.08"
+			traits={}
+			id=-1
+		}
+	}
+	BCK_syndicate_council={
+		name=BCK_syndicate_council
+		#portraits={civilian={large="gfx/leaders/BCK/BCK_cogme.dds"}}#
+		country_leader={
+			desc="BCK_council_poli_desc"	ideology=marxism
+			expire="1030.03.13.08"
+			traits={}
+			id=-1
+		}
+	}
+	BCK_merry_wreath={
+		name=BCK_merry_wreath
+		portraits={
+			#civilian={large="gfx/leaders/BCK/BCK_merry_wreath.dds"}#
+			#army={large="gfx/leaders/BCK/BCK_merry_wreath.dds"}#
+		}
+		country_leader={
+			desc="BCK_mwreath_poli_desc"	ideology=despotism
+			expire="1030.03.13.08"
+			traits={}
+			id=-1
+		}
+		field_marshal={
+			desc="BCK_wreath_mili_desc"
+			skill=3 attack_skill=4	defense_skill=2
+			planning_skill=2	logistics_skill=1
+			traits={pony_race_trait trait_reckless}
+		}
+	}
+	BCK_sea_prism={
+		name=BCK_sea_prism
+		gender=female
+		#portraits={civilian={large="gfx/leaders/BCK/BCK_sea_prism.dds"}}#
+		country_leader={
+			desc="BCK_sprism_poli_desc"	ideology=liberalism
+			expire="1030.03.13.08"
+			traits={}
+			id=-1
+		}
+	}
+	BCK_hallow_green={
+		name=BCK_hallow_green
+		gender=female
+		portraits={
+			#civilian={small="gfx/leaders/BCK/small/BCK_hallow_green.dds"}#
+			army={
+				large="gfx/leaders/Pony/portrait_pony_generic_land_12.dds"
+				#small="gfx/leaders/BCK/small/BCK_hallow_green.dds"#
+			}
+		}
+		corps_commander={
+			desc="BCK_hgreen_mili_desc"
+			skill=1 attack_skill=1	defense_skill=1
+			planning_skill=1	logistics_skill=1
+			traits={pony_race_trait old_guard trait_cautious politically_connected}
+		}
+	}
+}
