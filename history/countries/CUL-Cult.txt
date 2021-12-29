@@ -1,6 +1,10 @@
 #LOCALE
 capital=2
-oob="CUL_1007"
+if={
+	limit={has_dlc="No Step Back"}
+	set_oob="CUL_07"	#_nsb
+	else={set_oob="CUL_07"}
+}
 #FOUNTATION
 set_research_slots=3
 set_stability=0.5
@@ -14,6 +18,15 @@ add_ideas={
 	poor_science_base
 	lack_of_scientists1
 	poverty
+}
+if={
+	limit={has_dlc="No Step Back"}
+	add_ideas={
+		traditionalism_academy_spirit
+		doctrinal_orthodoxy_spirit
+		disdain_for_the_digging_spirit
+	}
+	else={add_ideas={EQS_bad_tanks}}
 }
 #TECHNOLOGY
 set_technology={
@@ -39,71 +52,13 @@ set_politics={
 	election_frequency=36
 	elections_allowed=no
 }
-create_country_leader={
-	name="The Laughing Mare"	#desc=
-	expire="1965.1.1"	picture="Pinkier.tga"
-	ideology=centrism	female=yes
-	traits={}
-}
-create_country_leader={
-	name="The Laughing Mare"	#desc=
-	expire="1965.1.1"	picture="Pinkier.tga"
-	ideology=falangism	female=yes
-	traits={FIR_necromancer}
-}
-create_country_leader={
-	name="Unknown Melody"	#desc=
-	expire="1965.1.1"	picture="leader_unknown.dds"
-	ideology=liberalism	female=yes
-	traits={}
-}
-create_country_leader={
-	name="The Laughing Mare"	#desc=
-	expire="1965.1.1"	picture="Pinkier.tga"
-	ideology=religious_socialism	female=yes
-	traits={FIR_necromancer}
-}
-#MILITARY
-create_field_marshal={
-	name="The Laughing Mare"	#id=	desc=
-	picture="Pinkied.tga"	female=yes
-	skill=6	attack_skill=6	defense_skill=6
-	planning_skill=6	logistics_skill=6
-	traits={unspecified_race_trait}
-}
-create_field_marshal={
-	name="High Prophet Cranky Doodle"	#id=	desc=
-	picture="Cranky.tga"	#female=yes
-	skill=1
-	traits={old_guard}
-}
-create_corps_commander={
-	name="Prophet Derpy"	#id=	desc=
-	picture="Derpy.tga"	female=yes
-	skill=1
-	traits={pony_race_trait offensive_doctrine}
-}
-create_corps_commander={
-	name="Prophet Lyra Heartstrings"	#id=	desc=
-	picture="Lyra.tga"	female=yes
-	skill=1
-	traits={pony_race_trait}
-}
-create_corps_commander={
-	name="Prophet Surprise"	#id=	desc=
-	picture="Surprise.tga"	female=yes
-	skill=1
-	traits={pony_race_trait}
-}
-create_corps_commander={
-	name="Prophet Screwball"	#id=	desc=
-	picture="Screwball.tga"	female=yes
-	skill=1
-	traits={pony_race_trait}
-}
-create_corps_commander={
-	name="Prophet Pokey Pierce"	#id=	desc=
-	picture="Pokey.tga"	#female=yes
-	skill=1
-	traits={pony_race_trait}
-}
+#CHARACTERS#
+recruit_character=CUL_the_laughing_mare
+recruit_character=CUL_unknown_melody
+recruit_character=CUL_cranky_doodle
+recruit_character=CUL_derpy_hooves
+recruit_character=CUL_lyra_heartstrings
+recruit_character=CUL_surprise
+recruit_character=CUL_screwball
+recruit_character=CUL_pokey_pierce
+#VARIENTS#

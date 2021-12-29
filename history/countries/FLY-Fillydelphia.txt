@@ -1,6 +1,10 @@
 #LOCALE
 capital=12
-#oob="FLY_1007"
+if={
+	limit={has_dlc="No Step Back"}
+	set_oob="FLY_07"	#_nsb
+	else={set_oob="FLY_07"}
+}
 #if={
 #	limit={has_dlc="Man the Guns"}
 #	set_naval_oob="FLY_1007_naval"
@@ -15,6 +19,15 @@ add_ideas={
 	pre_industrial_society
 	lack_of_scientists3
 	poverty2
+}
+if={
+	limit={has_dlc="No Step Back"}
+	add_ideas={
+		traditionalism_academy_spirit
+		doctrinal_orthodoxy_spirit
+		disdain_for_the_digging_spirit
+	}
+	else={add_ideas={EQS_bad_tanks}}
 }
 #TECHNOLOGY
 set_technology={
@@ -52,11 +65,6 @@ set_politics={
 	ruling_party=fascism	last_election="1001.10.10"
 	election_frequency=36	elections_allowed=no
 }
-create_country_leader={
-	name="Cherry Jam"	#desc=
-	expire="1014.6.6"	picture="Ringo.dds"
-	ideology=plutocracy	female=yes
-	traits={}
-}
-#MILITARY
+#CHARACTERS#
+recruit_character=FLY_cherry_jam
 #VARIENTS

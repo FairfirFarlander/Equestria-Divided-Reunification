@@ -2,7 +2,7 @@
 capital=116
 if={
 	limit={has_dlc="No Step Back"}
-	set_oob="BCK_07"
+	set_oob="BCK_07"	#_nsb
 	else={set_oob="BCK_07"}
 }
 #FOUNTATION#

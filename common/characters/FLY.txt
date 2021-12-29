@@ -1,0 +1,13 @@
+characters={
+	FLY_cherry_jam={
+		name=FLY_cherry_jam
+		gender=female
+		#portraits={civilian={large="gfx/leaders/FLY/FLY_cherry_jam.dds"}}#
+		country_leader={
+			desc="FLY_cjam_poli_desc"	ideology=holy_order_f
+			#expire="1030.03.13.08"
+			traits={}
+			id=-1
+		}
+	}
+}

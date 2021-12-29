@@ -1,0 +1,38 @@
+characters={
+	BALTIMARE_ash_moustache={
+		name=BALTIMARE_mayor_ash_moustache
+		portraits={
+			civilian={
+				small="GFX_idea_BAL_ash_moustache"
+			}
+		}
+		advisor={
+			slot=political_advisor
+			idea_token=BALTIMARE_amoustache_advi
+			allowed={
+				OR={
+					original_tag=HWG
+					original_tag=HAY
+				}
+			}
+			visible={
+				OR={
+					has_country_flag=amoustache_pardoned
+					has_country_flag=amoustache_banished
+				}
+				NOT={has_global_flag=amoustache_ded}
+			}
+			traits={smooth_talking_charmer compassionate_gentleman}
+		}
+		#country_leader={
+		#	ideology=centrism
+		#	expire="1965.1.1.1"
+		#	id=-1
+		#}
+		#country_leader={
+		#	ideology=liberalism
+		#	expire="1965.1.1.1"
+		#	id=-1
+		#}
+	}
+}

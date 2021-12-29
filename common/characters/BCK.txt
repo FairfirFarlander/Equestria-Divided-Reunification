@@ -56,7 +56,7 @@ characters={
 			#civilian={small="gfx/leaders/BCK/small/BCK_hallow_green.dds"}#
 			army={
 				large="gfx/leaders/Pony/portrait_pony_generic_land_12.dds"
-				#small="gfx/leaders/BCK/small/BCK_hallow_green.dds"#
+				#small="gfx/leaders/BCK/small/BCK_hallow_green_small.dds"#
 			}
 		}
 		corps_commander={

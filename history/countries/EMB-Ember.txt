@@ -1,6 +1,10 @@
 #LOCALE	Literally Vietnam#
 capital=36
-oob="EMB_07"
+if={
+	limit={has_dlc="No Step Back"}
+	set_oob="EMB_07"	#_nsb#
+	else={set_oob="EMB_07"}
+}
 #if={limit={has_dlc="Man the Guns"}set_naval_oob="EMB_07_naval"}#
 #if={limit={not={has_dlc="Man the Guns"}}set_naval_oob="EMB_07_naval_legacy"}#
 #FOUNTATION#
@@ -56,38 +60,11 @@ set_politics={
 	ruling_party=communism	last_election="1004.11.11"
 	election_frequency=36	elections_allowed=no
 }
-create_country_leader={
-	name="Mother Nightshade"	#desc=#
-	expire="1050.1.1"	picture="Mother_Nightshade.dds"
-	ideology=holy_order_f	female=yes
-	traits={}
-}
-create_country_leader={
-	name="Councilor Tyrennadus"	#desc=#
-	expire="1050.1.1"	picture="Tyrennadus.dds"
-	ideology=primitive_communism	#female=yes#
-	traits={}
-}
-create_country_leader={
-	name="Queen Narratek"	#desc=#
-	expire="1050.1.1"	picture="Queen_Narratek.dds"
-	ideology=tribal_council	female=yes
-	traits={}
-}
-create_country_leader={		#Willow maybe... (Use NewMareland event file line 2890 for name change)#
-	name="Aetanae Krix"	#desc=#
-	expire="1050.1.1"	picture="unknown_bug.tga"
-	ideology=tribal_federation	#female=yes#
-	traits={}
-}
-#MILITARY#
-create_corps_commander={
-	name="Tyrennadus"	#id=	desc=#
-	picture="Tyrennadus.dds"	#female=yes#
-	skill=2	attack_skill=2	defense_skill=3
-	planning_skill=3	logistics_skill=1
-	traits={changeling_race_trait old_guard}
-}
+#CHARACTERS#
+recruit_character=EMB_mother_nightshade
+recruit_character=EMB_councilor_tyrennadus
+recruit_character=EMB_queen_narratek
+recruit_character=EMB_aetanae_krix
 #VARIENTS#
 if={limit={has_dlc="Man the Guns"}
 	create_equipment_variant={

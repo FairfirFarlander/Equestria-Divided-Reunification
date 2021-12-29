@@ -1,10 +1,10 @@
 #LOCALE#
 capital=22
-#if={
-	#limit={has_dlc="No Step Back"}
-	#set_oob="CHY_07_nsb"
-	#else={set_oob="CHY_07"}
-#}#
+if={
+	limit={has_dlc="No Step Back"}
+	set_oob="CHY_07"	#_nsb
+	else={set_oob="CHY_07"}
+}
 #FOUNTATION#
 set_research_slots=2
 set_stability=0.8
@@ -48,3 +48,4 @@ set_politics={
 }
 #CHARACTERS#
 recruit_character=CHY_cherry_jubilee
+#VARIENTS#

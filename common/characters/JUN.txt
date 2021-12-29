@@ -1,0 +1,12 @@
+characters={
+	HAY_light_narrative={
+		name=HAY_light_narrative
+		portraits={civilian={large="gfx/leaders/NMS/batgarrison.tga"}}
+		corps_commander={
+			desc="HAY_lnarrative_mili_desc"
+			skill=2	attack_skill=1	defense_skill=1
+			planning_skill=1	logistics_skill=4
+			traits={media_personality promising_general thestral_race_trait}
+		}
+	}
+}

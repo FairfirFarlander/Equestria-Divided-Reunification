@@ -1,0 +1,142 @@
+characters={
+	HAY_regional_defense_council={
+		name=HAY_regional_defense_council
+		portraits={
+			civilian={
+				large="gfx/leaders/BAL/completeanarchy.tga"
+				#small="gfx/leaders/HAY/HAY_regional_defense_council_small.dds"#
+			}
+		}
+		country_leader={
+			desc="HAY_rdcouncil_poli_desc"	ideology=anarchist_communism
+			expire="1030.03.13.08"
+			traits={}
+			id=-1
+		}
+		advisor={
+			slot=political_advisor
+			idea_token=HAY_rdcouncil_advi
+			allowed={original_tag=HAY}
+			traits={}
+		}
+	}
+	HAY_lavender_berry={
+		name=HAY_lavender_berry
+		portraits={
+			civilian={
+				large="gfx/leaders/BAL/larrybarry.tga"
+				small="GFX_idea_larry"
+			}
+		}
+		#country_leader={
+		#	desc="HAY_lberry_poli_desc"	ideology=stalinism	#BAL_amber_alert
+		#	expire="1030.03.13.08"
+		#	traits={secret_police_chief}
+		#	id=-1
+		#}
+		advisor={
+			slot=political_advisor
+			idea_token=HAY_lberry_advi
+			allowed={original_tag=HAY}
+			available={
+				has_country_flag=HAY_baltimare_liberated
+				NOT={
+					OR={
+						#has_global_flag=baltimare_communists_executed
+						has_country_flag=HAY_lberry_banished
+						has_country_leader={
+							character=HAY_lavender_berry
+							ruling_only=yes
+						}
+					}
+				}
+			}
+			traits={prince_of_terror}
+			modifier={decryption_factor=0.05}
+		}
+	}
+	HAY_meadowbrook={
+		name=HAY_meadowbrook
+		portraits={civilian={small="GFX_idea_BAL_meadowbrook"}}
+		advisor={
+			slot=political_advisor
+			idea_token=HAY_meadowbrook_advi
+			allowed={original_tag=HAY}
+			available={not={has_country_flag=HAY_meadowbrook_banished}}
+			traits={popular_figurehead}
+		}
+	}
+	HAY_golden_delicious={
+		name=HAY_golden_delicious	#_name
+		portraits={
+			civilian={large="gfx/leaders/BAL/Golden Delicious.tga"}
+			army={
+				large="gfx/leaders/BAL/Golden Delicious.tga"
+				small="GFX_idea_Golden_Delicious"
+			}
+		}
+		country_leader={
+			desc="HAY_gdelicious_poli_desc"	ideology=syndicalism	#BAL_delicious_desc_yummy
+			expire="1030.03.13.08"
+			traits={hero_of_the_revolution}
+			id=-1
+		}
+		field_marshal={
+			desc="HAY_gdelicious_mili_desc"	#BAL_delicious_desc_yummy
+			skill=2	attack_skill=2	defense_skill=2
+			planning_skill=2	logistics_skill=1
+			traits={pony_race_trait offensive_doctrine inspirational_leader}
+		}
+	}
+	HAY_cricket_chafer={
+		name=HAY_cricket_chafer	#chafer1
+		portraits={
+			civilian={large="gfx/leaders/BAL/Chafer.tga"}
+			army={
+				large="gfx/leaders/BAL/Chafer.tga"
+				small="GFX_idea_chafer"
+			}
+		}
+		country_leader={
+			desc="HAY_cchafer_poli_desc"	ideology=leninism	#BAL_corn_lord
+			expire="1030.03.13.08"
+			traits={corn_lord}
+			id=-1
+		}
+		corps_commander={
+			traits={pony_race_trait swamp_fox jungle_rat}
+			desc="HAY_cchafer_mili_desc"	#BAL_corn_lord
+			skill=2	attack_skill=1	defense_skill=1
+			planning_skill=2	logistics_skill=3
+		}
+		advisor={
+			slot=army_chief
+			idea_token=HAY_cchafer_staf	#chafer1
+			cost=100
+			allowed={original_tag=HAY}
+			available={
+				NOT={
+					has_country_flag=BAL_commie_advisors_blocked
+					has_country_leader={
+						character=BAL_cricket_chafer
+						ruling_only=yes
+					}
+				}
+			}
+			traits={jungle_warfare_expert}
+		}
+	}
+	HAY_ringo_jam={	#Robert Maestri (Drummer Maestro Jam)
+		name=HAY_ringo_jam
+		gender=female
+		portraits={civilian={large="gfx/leaders/Pony/portrait_pony_generic_7.dds"}}
+		country_leader={
+			desc="HAY_rjam_poli_desc"	ideology=despotism
+			expire="1014.06.06.20"
+			traits={}
+			id=-1
+		}
+	}
+	#Light Narrative
+	#Kingfisher
+}

@@ -1,0 +1,48 @@
+characters={
+	EMB_mother_nightshade={
+		name=EMB_mother_nightshade
+		portraits={civilian={large="gfx/leaders/EMB/EMB_mother_nightshade.dds"}}
+		country_leader={
+			desc="EMB_mnightshade_poli_desc"	ideology=holy_order_f
+			#expire="1030.03.13.08"
+			traits={}
+			id=-1
+		}
+	}
+	EMB_councilor_tyrennadus={
+		name=EMB_councilor_tyrennadus
+		portraits={civilian={large="gfx/leaders/EMB/EMB_councilor_tyrennadus.dds"}}
+		country_leader={
+			desc="EMB_ctyrennadus_poli_desc"	ideology=primitive_communism
+			expire="1030.03.13.08"
+			traits={}
+			id=-1
+		}
+		corps_commander={
+			desc="EMB_ctyrennadus_mili_desc"
+			skill=2	attack_skill=2	defense_skill=3
+			planning_skill=3	logistics_skill=1
+			traits={changeling_race_trait old_guard}
+		}
+	}
+	EMB_queen_narratek={
+		name=EMB_queen_narratek
+		portraits={civilian={large="gfx/leaders/EMB/EMB_queen_narratek.dds"}}
+		country_leader={
+			desc="EMB_qnarratek_poli_desc"	ideology=tribal_council
+			expire="1030.03.13.08"
+			traits={}
+			id=-1
+		}
+	}
+	EMB_aetanae_krix={	#Willow
+		name=EMB_aetanae_krix
+		#portraits={civilian={large="gfx/leaders/EMB/EMB_aetanae_krix.dds"}}#
+		country_leader={
+			desc="EMB_akrix_poli_desc"	ideology=tribal_federation
+			expire="1030.03.13.08"
+			traits={}
+			id=-1
+		}
+	}
+}
