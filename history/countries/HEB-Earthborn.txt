@@ -1,6 +1,10 @@
 #LOCALE#
 capital=21
-oob="HEB_07"
+if={
+	limit={has_dlc="No Step Back"}
+	set_oob="HEB_07"	#_nsb
+	else={set_oob="HEB_07"}
+}
 #if={
 #	limit={has_dlc="Man the Guns"}
 #	set_naval_oob="HEB_07_naval"
@@ -19,6 +23,15 @@ add_ideas={
 	pre_industrial_society
 	lack_of_scientists3		#Hit 1 ASAP#
 	poverty4
+}
+if={
+	limit={has_dlc="No Step Back"}
+	add_ideas={
+		traditionalism_academy_spirit
+		doctrinal_orthodoxy_spirit
+		disdain_for_the_digging_spirit
+	}
+	else={add_ideas={EQS_bad_tanks}}
 }
 #TECHNOLOGY#
 set_technology={
@@ -70,64 +83,15 @@ set_politics={
 	ruling_party=fascism	last_election="1000.10.10"
 	election_frequency=36	elections_allowed=no
 }
-create_country_leader={
-	name="Supreme Commander Applejack"	#desc=#
-	expire="1965.1.1"	picture="Applejack.tga"
-	ideology=nazism	female=yes
-	traits={}
-}
-create_country_leader={
-	name="Jack Trader"	#desc=#
-	expire="1965.1.1"	#picture=""#
-	ideology=anarchist_communism	#female=yes#
-	traits={}
-}
-create_country_leader={
-	name="Magia Saviour"	#desc=#
-	expire="1965.1.1"	#picture=""#
-	ideology=despotism	female=yes
-	traits={}
-}
-create_country_leader={
-	name="Raving Cloud"	#desc=#
-	expire="1965.1.1"	#picture=""#
-	ideology=liberalism	female=yes
-	traits={}
-}
-#MILITARY#
-create_field_marshal={
-	name="Supreme Commander Applejack"	#id=	desc=#
-	picture="Applejack2.tga"	female=yes
-	skill=2	attack_skill=3	defense_skill=3
-	planning_skill=1	logistics_skill=1
-	traits={pony_race_trait ranger offensive_doctrine}
-}
-create_corps_commander={
-	name="Big Macintosh"	#id=	desc=#
-	picture="Bigmac.tga"	#female=yes#
-	skill=2	attack_skill=2	defense_skill=3
-	planning_skill=1	logistics_skill=2
-	traits={pony_race_trait inflexible_strategist}
-}
-#create_corps_commander={
-#	name="Chief Strongheart"	#id=	desc=#
-#	picture="Strongheart.tga"	#female=yes#
-#	skill=2	attack_skill=2	defense_skill=2
-#	planning_skill=3	logistics_skill=2
-#	traits={buffalo_race_trait inspirational_leader}
-#}#
-create_corps_commander={
-	name="Braeburn"	#id=	desc=#
-	picture="Braeburn.tga"	#female=yes#
-	skill=1	attack_skill=2	defense_skill=1
-	planning_skill=1	logistics_skill=2
-	traits={desert_fox pony_race_trait}
-}
-create_corps_commander={
-	name="Lightning Dust"	#id=	desc=#
-	picture="Lightning.tga"	#female=yes#
-	skill=2	attack_skill=3	defense_skill=2
-	planning_skill=1	logistics_skill=1
-	traits={pony_race_trait trait_reckless harsh_leader trait_focused}
-}
+#CHARACTERS#
+recruit_character=HEB_applejack
+recruit_character=HEB_jack_trader
+recruit_character=HEB_magia_saviour
+recruit_character=HEB_raving_cloud
+recruit_character=HEB_big_mac
+recruit_character=HEB_braeburn
+recruit_character=HEB_lightning_dust
+recruit_character=HEB_chief_strongheart
+recruit_character=HEB_apple_bloom
+recruit_character=HEB_granny_smith
 #VARIENTS#

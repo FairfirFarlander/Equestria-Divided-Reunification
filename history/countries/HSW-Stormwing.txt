@@ -1,6 +1,10 @@
 #LOCALE
 capital=95
-oob="HSW_07"
+if={
+	limit={has_dlc="No Step Back"}
+	set_oob="HSW_07"	#_nsb
+	else={set_oob="HSW_07"}
+}
 #if={
 	#limit={has_dlc="Man the Guns"}
 	#set_naval_oob="HSW_1007_naval"
@@ -21,6 +25,15 @@ add_ideas={
 	pre_industrial_society
 	lack_of_scientists3
 	poverty5
+}
+if={
+	limit={has_dlc="No Step Back"}
+	add_ideas={
+		traditionalism_academy_spirit
+		doctrinal_orthodoxy_spirit
+		disdain_for_the_digging_spirit
+	}
+	else={add_ideas={EQS_bad_tanks}}
 }
 #TECHNOLOGY
 set_technology={
@@ -67,53 +80,15 @@ set_politics={
 	ruling_party=fascism	last_election="1001.09.09"
 	election_frequency=36	elections_allowed=no
 }
-create_country_leader={
-	name="Force Commander Supreme Rainbow Dash"	#desc=
-	expire="1965.1.1"	picture="Rainbow.tga"
-	ideology=stratocracy	female=yes
-	traits={}
-}
-create_country_leader={
-	name="Steel Wings"	#desc=
-	expire="1965.1.1"	picture="leader_unknown.dds"
-	ideology=despotism	female=yes
-	traits={}
-}
-create_country_leader={
-	name="Sunny Cloud"	#desc=
-	expire="1965.1.1"	picture="leader_unknown.dds"
-	ideology=liberalism	female=yes
-	traits={}
-}
-create_country_leader={
-	name="Storm Mayhem"	#desc=
-	expire="1965.1.1"	picture="leader_unknown.dds"
-	ideology=anarchist_communism	#female=yes
-	traits={}
-}
-#MILITARY
-create_field_marshal={
-	name="Force Commander Supreme Rainbow Dash"	#id=	desc=
-	picture="Rainbow.tga"	female=yes
-	skill=3	attack_skill=4	defense_skill=3
-	planning_skill=1	logistics_skill=2
-	traits={pony_race_trait trait_reckless offensive_doctrine}
-}
-create_corps_commander={
-	name="Wing Commander Soarin"	#id=	desc=
-	picture="Soarin.tga"	#female=yes
-	skill=3	attack_skill=2	defense_skill=3
-	planning_skill=1	logistics_skill=2
-	traits={pony_race_trait air_force_commander war_hero}
-}
-#create_corps_commander={
-#	name="Wing Commander Spitfire"	#id=	desc=
-#	picture="Spitfire.tga"	female=yes
-#	skill=3	attack_skill=2	defense_skill=1
-#	planning_skill=2	logistics_skill=3
-#	traits={pony_race_trait harsh_leader organizer}
-#}
-#VARIENTS
+#CHARCTERS#
+recruit_character=HSW_rainbow_dash
+recruit_character=HSW_storm_mayhem
+recruit_character=HSW_steel_wings
+recruit_character=HSW_sunny_cloud
+recruit_character=HSW_soarin
+recruit_character=HSW_spitfire
+recruit_character=HSW_scootaloo
+#VARIENTS#
 if={limit={has_dlc="Man the Guns"}
 	create_equipment_variant={	#Heavy Cruiser AR1-EN1 MG2-SG1-AA1
 		name="Galeland 1004 Class"	type=ship_hull_cruiser_1

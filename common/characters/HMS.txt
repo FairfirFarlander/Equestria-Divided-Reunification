@@ -1,25 +1,19 @@
-characters={	#Country Leaders#
+characters={
 	HMS_twilight_sparkle={
 		name=HMS_twilight_sparkle
+		gender=female
 		portraits={
-			civilian={
-				large="gfx/leaders/HMS/HMS_twilight_sparkle.dds"
-				#small=""#
-			}
-			army={
-				large="gfx/leaders/HMS/HMS_twilight_sparkle.dds"
-				#small=""#
-			}
+			civilian={large="gfx/leaders/HMS/HMS_twilight_sparkle.dds"}
+			army={large="gfx/leaders/HMS/HMS_twilight_sparkle.dds"}
 		}
 		country_leader={
-			#desc=""#
-			ideology=magocracy	#female=yes#
-			expire="1030.1.1"	#Undecided#
+			desc="HMS_tsparkle_poli_desc"	ideology=magocracy
+			expire="1030.03.13.08"
 			traits={}
 			id=-1
 		}
 		field_marshal={
-			#desc=#	#female=yes#
+			desc="HMS_tsparkle_mili_desc"
 			skill=1	attack_skill=1	defense_skill=1
 			planning_skill=2	logistics_skill=2
 			traits={trait_archmagister pony_race_trait organizer organisational_leader}
@@ -27,16 +21,10 @@ characters={	#Country Leaders#
 	}
 	HMS_frail_lance={
 		name=HMS_frail_lance
-		portraits={
-			civilian={
-				large="gfx/leaders/HMS/HMS_frail_lance.dds"
-				#small=""#
-			}
-		}
+		portraits={civilian={large="gfx/leaders/HMS/HMS_frail_lance.dds"}}
 		country_leader={
-			#desc=""#
-			ideology=anarchist_communism	#female=no#
-			expire="1030.1.1"	#Undecided#
+			desc="HMS_flance_poli_desc"	ideology=anarchist_communism
+			expire="1030.03.13.08"
 			traits={}
 			id=-1
 		}
@@ -46,18 +34,21 @@ characters={	#Country Leaders#
 		portraits={
 			civilian={
 				large="gfx/leaders/HMS/HMS_shining_armor.dds"
-				#small=""#
+				#small="gfx/leaders/HMS/HMS_shining_armor_small.dds"#
+			}
+			army={
+				large="gfx/leaders/HMS/HMS_shining_armor.dds"
+				#small="gfx/leaders/HMS/HMS_shining_armor_small.dds"#
 			}
 		}
 		country_leader={
-			#desc=""#
-			ideology=despotism	#female=no#
-			expire="1030.1.1"	#Undecided#
+			desc="HMS_sarmor_poli_desc"	ideology=despotism
+			expire="1030.03.13.08"
 			traits={}
 			id=-1
 		}
 		field_marshal={
-			#desc=CRY_Shining_Armour_desc#	#female=no#
+			desc="HMS_sarmor_mili_desc"
 			skill=4	attack_skill=3	defense_skill=5
 			planning_skill=3	logistics_skill=3
 			traits={royal_guard_commander equestrian_prince pony_race_trait  defensive_doctrine}
@@ -65,30 +56,26 @@ characters={	#Country Leaders#
 	}
 	HMS_white_wind={
 		name=HMS_white_wind
-		portraits={
-			civilian={
-				large="gfx/leaders/HMS/HMS_white_wind.dds"
-				#small=""#
-			}
-		}
+		gender=female
+		portraits={civilian={large="gfx/leaders/HMS/HMS_white_wind.dds"}}
 		country_leader={
-			#desc=""#
-			ideology=liberalism	#female=no#
-			expire="1030.1.1"	#Undecided#
+			desc="HMS_wwind_poli_desc"	ideology=liberalism
+			expire="1030.03.13.08"
 			traits={}
 			id=-1
 		}
 	}
 	HMS_trixie_lulamoon={
 		name=HMS_trixie_lulamoon
+		gender=female
 		portraits={
 			army={
 				large="gfx/leaders/HMS/HMS_trixie_lulamoon.dds"
-				#small=""#
+				#small="gfx/leaders/HMS/HMS_trixie_lulamoon_small.dds"#
 			}
 		}
 		corps_commander={
-			#desc=#	#female=yes#
+			desc="HMS_tlulamoon_mili_desc"
 			skill=1	attack_skill=2	defense_skill=1
 			planning_skill=2	logistics_skill=1
 			traits={media_personality pony_race_trait}
@@ -96,17 +83,33 @@ characters={	#Country Leaders#
 	}
 	HMS_spike={
 		name=HMS_spike
-		portraits={
-			army={
-				large="gfx/leaders/HMS/HMS_spike.dds"
-				#small=""#
-			}
-		}
+		portraits={army={large="gfx/leaders/HMS/HMS_spike.dds"}}
 		corps_commander={
-			#desc=#	#female=no#
+			desc="HMS_spike_mili_desc"
 			skill=1	attack_skill=1	defense_skill=1
 			planning_skill=1	logistics_skill=1
-			traits={dragon_race_trait}
+			traits={dragon_race_trait}	#Add trait that reduces command to 1.#
+		}
+	}
+	HMS_cadence={
+		name=HMS_cadence
+		gender=female
+		portraits={
+			civilian={
+				large="gfx/leaders/HMS/HMS_cadence.dds"
+				small="gfx/leaders/HMS/HMS_cadence_small.dds"
+			}
+		}
+		country_leader={
+			desc="HMS/HMS_cadence_poli_desc"	ideology=despotism
+			expire="1030.03.13.08"
+			traits={}
+			id=-1
+		}
+		advisor={
+			slot=political_advisor
+			idea_token=HMS_cadence_advi
+			traits={}
 		}
 	}
 }

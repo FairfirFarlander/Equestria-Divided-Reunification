@@ -1,6 +1,10 @@
 #LOCALE#
 capital=5
-oob="HEF_07"
+if={
+	limit={has_dlc="No Step Back"}
+	set_oob="HEF_07"	#_nsb
+	else={set_oob="HEF_07"}
+}
 #FOUNTATION#
 set_research_slots=2
 set_stability=0.1
@@ -22,6 +26,15 @@ add_ideas={
 	detached_country
 	lack_of_scientists3
 	poverty3
+}
+if={
+	limit={has_dlc="No Step Back"}
+	add_ideas={
+		traditionalism_academy_spirit
+		doctrinal_orthodoxy_spirit
+		disdain_for_the_digging_spirit
+	}
+	else={add_ideas={EQS_bad_tanks}}
 }
 #TECHNOLOGY#
 set_technology={
@@ -50,4 +63,4 @@ recruit_character=HEF_lady_fluttershy
 recruit_character=HEF_red_leaves
 recruit_character=HEF_zecora
 recruit_character=HEF_flower_seed
-recruit_character=HEF_ahuizotl
+#VARIENTS#

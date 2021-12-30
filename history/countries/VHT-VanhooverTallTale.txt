@@ -1,6 +1,10 @@
 #LOCALE#
 capital=14
-oob="VHT_1007"
+if={
+	limit={has_dlc="No Step Back"}
+	set_oob="VHT_07"	#_nsb
+	else={set_oob="VHT_07"}
+}
 #if={
 #	limit={has_dlc="Man the Guns"}
 #	set_naval_oob="VHT_1007_naval"
@@ -16,6 +20,15 @@ add_ideas={
 	lack_of_scientists2
 	poverty5
 	#VHT_vanguard_untrained#
+}
+if={
+	limit={has_dlc="No Step Back"}
+	add_ideas={
+		traditionalism_academy_spirit
+		doctrinal_orthodoxy_spirit
+		disdain_for_the_digging_spirit
+	}
+	else={add_ideas={EQS_bad_tanks}}
 }
 #TECHNOLOGY#
 set_technology={
@@ -61,44 +74,13 @@ set_popularities={
 	neutrality=6	democratic=9
 }
 set_politics={
-	ruling_party=communism
-	last_election="1005.09.09"
-	election_frequency=48
-	elections_allowed=no
+	ruling_party=communism	last_election="1005.09.09"
+	election_frequency=48	elections_allowed=no
 }
-create_country_leader={	#TEMP#
-	name="Strawberry Snowflake"	#desc=#
-	expire="1965.1.1"	picture="Strawberry_Snowflake.tga"
-	ideology=leninism	female=yes
-	traits={rural_populist}
-}
-#MILITARY#
-create_corps_commander={
-	name="Indigo Skies"	#id=	desc=#
-	#picture=".tga"	#female=yes	#Batpony#
-	skill=1	attack_skill=2	defense_skill=1
-	planning_skill=1	logistics_skill=2
-	traits={thestral_race_trait air_force_commander commissar_general}
-}
-create_corps_commander={
-	name="Crimson Hoof"	#id=	desc=
-	#picture=".tga"	#female=yes	#Unicornpony
-	skill=1	attack_skill=1	defense_skill=3
-	planning_skill=1	logistics_skill=1
-	traits={pony_race_trait}
-}
-create_corps_commander={
-	name="Moonlight Elegy"		#id=	desc=#
-	picture="Moonlight_Elegy.dds"	female=yes
-	skill=1	attack_skill=1	defense_skill=1
-	planning_skill=1	logistics_skill=1
-	traits={pony_race_trait infantry_leader winter_specialist}
-}
-create_corps_commander={
-	name="Lavender Blossom"		#id=	desc=#
-	picture="Lavender_Blossom.dds"	female=yes
-	skill=1	attack_skill=1	defense_skill=1
-	planning_skill=1	logistics_skill=1
-	traits={pony_race_trait harsh_leader infantry_leader}
-}
+#CHARACTERS#
+recruit_character=VHT_strawberry_snowflake
+recruit_character=VHT_indigo_skies
+recruit_character=VHT_crimson_hoof
+recruit_character=VHT_moonlight_elegy
+recruit_character=VHT_lavender_blossom
 #VARIENTS#

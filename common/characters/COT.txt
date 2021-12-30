@@ -1,17 +1,111 @@
 characters={
 	COT_jd_neighvis={
 		name=COT_jd_neighvis
-		portraits={
-			civilian={
-				large="gfx/leaders/SCS/JDavis.tga"
-				small="gfx/leaders/COT/small/COT_jd_neighvis.dds"
-			}
-		}
+		portraits={civilian={large="gfx/leaders/SCS/JDavis.tga"}}
 		country_leader={
-			desc="neighvis_desc"	ideology=centrism
+			desc="COT_jdneighvis_poli_desc"	ideology=centrism	#neighvis_desc
 			#expire="1030.03.13.08"
 			traits={}
 			id=-1
+		}
+	}
+	COT_stewed_apple={
+		name=COT_neighson_e_miles
+		portraits={
+			army={
+				large="gfx/leaders/SCS/StewedApple.tga"
+				small="GFX_idea_SCS_stuart"
+			}
+		}
+		field_marshal={
+			desc="COT_nemiles_mili_desc"
+			skill=3 attack_skill=4	defense_skill=2
+			planning_skill=2	logistics_skill=2
+			traits={pony_race_trait offensive_doctrine fast_planner cavalry_leader}
+		}
+		advisor={
+			slot=army_chief
+			idea_token=COT_nemiles_chie
+			cost=200
+			traits={army_chief_maneuver_3}
+		}
+	}
+	COT_silverstar={
+		name=COT_silverstar
+		portraits={
+			army={
+				large="gfx/leaders/SCS/Silverstar.tga"
+				small="gfx/interface/ideas/Advisors/SCS/SCS_silverstar.tga"
+			}
+		}
+		corps_commander={
+			desc="COT_sstar_mili_desc"	#silverstar_desc
+			skill=2 attack_skill=2	defense_skill=2
+			planning_skill=2	logistics_skill=1
+			traits={pony_race_trait inflexible_strategist defensive_doctrine}
+		}
+	}
+	COT_apple_ale={
+		name=COT_apple_ale
+		gender=female
+		portraits={
+			army={
+				large="gfx/leaders/SCS/Apple_Ale.tga"
+				small="gfx/interface/ideas/Advisors/SCS/SCS_apple_ale.tga"
+			}
+		}
+		corps_commander={
+			desc="COT_aale_mili_desc"	#SCS_apple_waifu_desc
+			skill=2 attack_skill=2	defense_skill=1
+			planning_skill=2	logistics_skill=2
+			traits={pony_race_trait brilliant_strategist politically_connected logistics_wizard}
+		}
+	}
+	COT_moonshine_melody={
+		name=COT_moonshine_melody
+		gender=female
+		portraits={
+			army={
+				large="gfx/leaders/SCS/Moonshine_Melody.tga"
+				small="gfx/interface/ideas/Advisors/SCS/SCS_moonshine_melody.tga"
+			}
+		}
+		corps_commander={
+			desc="COT_mmelody_mili_desc"	#SCS_moonshine_desc
+			skill=2 attack_skill=2	defense_skill=1
+			planning_skill=1	logistics_skill=3
+			traits={pony_race_trait harsh_leader}
+		}
+	}
+	COT_sorren_peak={
+		name=COT_sorren_peak
+		portraits={
+			army={
+				large="gfx/leaders/SCS/some_dixie_horse.tga"
+				small="gfx/interface/ideas/Advisors/SCS/SCS_some_dixie_horse.tga"
+			}
+		}
+		corps_commander={
+			desc="COT_speak_mili_desc"	#SCS_dixie_horse_desc
+			skill=2 attack_skill=2	defense_skill=2
+			planning_skill=1	logistics_skill=2
+			traits={pony_race_trait trait_reckless harsh_leader}
+		}
+	}
+	COT_burnside_fervor={
+		name=COT_burnside_fervor
+		gender=female
+		portraits={
+			army={
+				large="gfx/leaders/SCS/Cuddle_Fervor.tga"
+				small="gfx/interface/ideas/Advisors/SCS/SCS_cuddle_fervor.tga"
+			}
+		}
+		corps_commander={
+			desc="COT_bfervor_mili_desc"
+			skill=3 attack_skill=2	defense_skill=4
+			planning_skill=1	logistics_skill=3
+			traits={pony_race_trait trait_cautious artillery_expert}
 		}
 	}
 }

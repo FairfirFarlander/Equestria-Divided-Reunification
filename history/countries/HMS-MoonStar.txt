@@ -1,6 +1,10 @@
 #LOCALE#	#Chi la dura la vince#
 capital=3
-oob="HMS_07"
+if={
+	limit={has_dlc="No Step Back"}
+	set_oob="HMS_07"	#_nsb
+	else={set_oob="HMS_07"}
+}
 #if={
 	#limit={has_dlc="Man the Guns"}
 	#set_naval_oob="HMS_1007_naval"
@@ -19,6 +23,15 @@ add_ideas={
 	outdated_industry
 	lack_of_scientists3
 	poverty2
+}
+if={
+	limit={has_dlc="No Step Back"}
+	add_ideas={
+		traditionalism_academy_spirit
+		doctrinal_orthodoxy_spirit
+		disdain_for_the_digging_spirit
+	}
+	else={add_ideas={EQS_bad_tanks}}
 }
 #TECHNOLOGY#
 set_technology={
@@ -66,56 +79,12 @@ set_politics={
 	ruling_party=fascism	last_election="1000.10.10"
 	election_frequency=36	elections_allowed=no
 }
-create_country_leader={
-	name="Prince Shining Armor"	#desc=#
-	expire="1965.1.1"	picture="Shining.tga"
-	ideology=despotism	female=yes
-	traits={}
-}
-create_country_leader={
-	name="Archmagister Twilight Sparkle"	#desc=#
-	expire="1965.1.1"	picture="Twilight.tga"
-	ideology=magocracy	female=yes
-	traits={}
-}
-create_country_leader={
-	name="White Wind"	#desc=#
-	expire="1965.1.1"	picture=""
-	ideology=liberalism	female=yes
-	traits={}
-}
-create_country_leader={
-	name="Frail Lance"	#desc=#
-	expire="1965.1.1"	picture=""
-	ideology=anarchist_communism	#female=yes#
-	traits={}
-}
-#MILITARY#
-create_field_marshal={
-	name="Twilight Sparkle"	#id=	desc=#
-	picture="Twilight.tga"	female=yes
-	skill=1	attack_skill=1	defense_skill=1
-	planning_skill=2	logistics_skill=2
-	traits={trait_archmagister pony_race_trait organizer organisational_leader}
-}
-create_field_marshal={
-	name="Prince Shining Armor"	#id=1043#	#desc="CRY_Shining_Armour_desc"#
-	picture="Shining.tga"	#female=yes#
-	skill=4	attack_skill=3	defense_skill=5
-	planning_skill=3	logistics_skill=3
-	traits={royal_guard_commander equestrian_prince pony_race_trait  defensive_doctrine}
-}
-#create_corps_commander={	#Should not be a commander
-#	name="Spike"	#id=	desc=
-#	picture="Spike.tga"	#female=yes
-#	skill=1
-#	traits={dragon_race_trait offensive_doctrine}
-#}#
-create_corps_commander={
-	name="Grand Inquisitor Trixie Lulamoon"	#id=	desc=#
-	picture="Inquisitor_Trixie.tga"	female=yes
-	skill=1	attack_skill=2	defense_skill=1
-	planning_skill=2	logistics_skill=1
-	traits={media_personality pony_race_trait}
-}
+#CHARACTERS#
+recruit_character=HMS_twilight_sparkle
+recruit_character=HMS_frail_lance
+recruit_character=HMS_shining_armor
+recruit_character=HMS_white_wind
+recruit_character=HMS_trixie_lulamoon
+recruit_character=HMS_spike
+recruit_character=HMS_cadence
 #VARIENTS#

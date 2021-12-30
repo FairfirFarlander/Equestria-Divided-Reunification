@@ -1,0 +1,75 @@
+characters={
+	VHT_strawberry_snowflake={
+		name=VHT_strawberry_snowflake
+		gender=female
+		portraits={civilian={large="gfx/leaders/VAN/Strawberry_Snowflake.tga"}}
+		country_leader={
+			desc="VHT_ssnowflake_poli_desc"	ideology=leninism
+			expire="1030.03.13.08"
+			traits={rural_populist}
+			id=-1
+		}
+	}
+	VHT_indigo_skies={
+		name=VHT_indigo_skies
+		#portraits={
+		#	army={
+		#		large="gfx/leaders/VHT/VHT_indigo_skies.dds"
+		#		small="gfx/leaders/VHT/VHT_indigo_skies_small.dds"
+		#	}
+		#}
+		corps_commander={
+			desc="VHT_iskies_mili_desc"
+			skill=1 attack_skill=2	defense_skill=1
+			planning_skill=1	logistics_skill=2
+			traits={thestral_race_trait air_force_commander commissar_general}
+		}
+	}
+	VHT_crimson_hoof={
+		name=VHT_crimson_hoof
+		#portraits={
+		#	army={
+		#		large="gfx/leaders/VHT/VHT_crimson_hoof.dds"
+		#		small="gfx/leaders/VHT/VHT_crimson_hoof_small.dds"
+		#	}
+		#}
+		corps_commander={
+			desc="VHT_choof_mili_desc"
+			skill=1 attack_skill=1	defense_skill=3
+			planning_skill=1	logistics_skill=1
+			traits={pony_race_trait}
+		}
+	}
+	VHT_moonlight_elegy={
+		name=VHT_moonlight_elegy
+		gender=female
+		#portraits={
+		#	army={
+		#		large="gfx/leaders/VHT/VHT_moonlight_elegy.dds"
+		#		small="gfx/leaders/VHT/VHT_moonlight_elegy_small.dds"
+		#	}
+		#}
+		corps_commander={
+			desc="VHT_melegy_mili_desc"
+			skill=1 attack_skill=1	defense_skill=1
+			planning_skill=1	logistics_skill=1
+			traits={pony_race_trait infantry_leader winter_specialist}
+		}
+	}
+	VHT_lavender_blossom={
+		name=VHT_lavender_blossom
+		gender=female
+		#portraits={
+		#	army={
+		#		large="gfx/leaders/VHT/VHT_lavender_blossom.dds"
+		#		small="gfx/leaders/VHT/VHT_lavender_blossom_small.dds"
+		#	}
+		#}
+		corps_commander={
+			desc="VHT_lblossom_mili_desc"
+			skill=1 attack_skill=1	defense_skill=1
+			planning_skill=1	logistics_skill=1
+			traits={pony_race_trait harsh_leader infantry_leader}
+		}
+	}
+}

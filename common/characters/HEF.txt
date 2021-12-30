@@ -4,10 +4,7 @@ characters={
 		gender=female
 		portraits={
 			civilian={large="gfx/leaders/HEF/HEF_lady_fluttershy.dds"}
-			army={
-				large="gfx/leaders/HEF/HEF_lady_fluttershy.dds"
-				small="gfx/leaders/HEF/small/HEF_lady_fluttershy.dds"
-			}
+			army={large="gfx/leaders/HEF/HEF_lady_fluttershy.dds"}
 		}
 		country_leader={
 			desc="HEF_lfluttershy_poli_desc"	ideology=magocracy
@@ -24,7 +21,7 @@ characters={
 	}
 	HEF_red_leaves={
 		name=HEF_red_leaves
-		portraits={civilian={large="gfx/leaders/HEF/HEF_red_leaves.dds"}}
+		#portraits={civilian={large="gfx/leaders/HEF/HEF_red_leaves.dds"}}#
 		country_leader={
 			desc="HEF_rleaves_poli_desc"	ideology=anarchist_communism
 			expire="1030.03.13.08"
@@ -37,12 +34,12 @@ characters={
 		gender=female
 		portraits={
 			civilian={
-				large="gfx/leaders/HEF/HEF_zecora.dds"
-				small="gfx/leaders/HEF/small/HEF_zecora.dds"
+				large="gfx/leaders/ZRS/Zecora.tga"
+				#small="gfx/leaders/HEF/small/HEF_zecora.dds"#
 			}
 			army={
-				large="gfx/leaders/HEF/HEF_zecora.dds"
-				small="gfx/leaders/HEF/small/HEF_zecora.dds"
+				large="gfx/leaders/ZRS/Zecora.tga"
+				#small="gfx/leaders/HEF/small/HEF_zecora.dds"#
 			}
 		}
 		country_leader={
@@ -60,36 +57,13 @@ characters={
 	}
 	HEF_flower_seed={
 		name=HEF_flower_seed
-		portraits={
-			civilian={
-				large="gfx/leaders/HEF/HEF_flower_seed.dds"
-				#small="gfx/leaders/HEF/small/HEF_flower_seed.dds"#
-			}
-		}
+		gender=female
+		#portraits={civilian={large="gfx/leaders/HEF/HEF_flower_seed.dds"}}#
 		country_leader={
 			desc="HEF_fseed_poli_desc"	ideology=liberalism
 			expire="1030.03.13.08"
 			traits={}
 			id=-1
-		}
-	}
-	HEF_ahuizotl={
-		name=HEF_ahuizotl
-		portraits={
-			civilian={
-				large="gfx/leaders/HEF/HEF_ahuizotl.dds"
-				#small="gfx/leaders/HEF/small/HEF_ahuizotl.dds"#
-			}
-			army={
-				large="gfx/leaders/HEF/HEF_ahuizotl.dds"
-				#small="gfx/leaders/HEF/small/HEF_ahuizotl.dds"#
-			}
-		}
-		corps_commander={
-			desc="HEF_ahuizotl_mili_desc"
-			skill=1	attack_skill=1	defense_skill=1
-			planning_skill=1	logistics_skill=1
-			traits={unspecified_race_trait}	#Add 3 more#
 		}
 	}
 }

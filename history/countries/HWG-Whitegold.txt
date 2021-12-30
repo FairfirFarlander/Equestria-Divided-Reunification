@@ -1,19 +1,23 @@
-#LOCALE
+#LOCALE#
 capital=75
-oob="HWG_07"
+if={
+	limit={has_dlc="No Step Back"}
+	set_oob="HWG_07"	#_nsb#
+	else={set_oob="HWG_07"}
+}
 if={
 	limit={has_dlc="Man the Guns"}
 	set_naval_oob="HWG_07_naval"
 	else={set_naval_oob="HWG_07_naval_legacy"}
 }
-13={	#Baltimare
+13={	#Baltimare#
 	start_resistance=yes	set_compliance=16
 	set_resistance=26	set_garrison_strength=0.40
 }
-#FOUNTATION
+#FOUNTATION#
 set_research_slots=2
 set_stability=0.4
-set_war_support=0.08	#0.29
+set_war_support=0.08	#0.29#
 add_ideas={
 	HWG_idea
 	HWG_tradefleet
@@ -24,7 +28,16 @@ add_ideas={
 	lack_of_scientists3
 	poverty5
 }
-#TECHNOLOGY
+if={
+	limit={has_dlc="No Step Back"}
+	add_ideas={
+		traditionalism_academy_spirit
+		doctrinal_orthodoxy_spirit
+		disdain_for_the_digging_spirit
+	}
+	else={add_ideas={EQS_bad_tanks}}
+}
+#TECHNOLOGY#
 set_technology={
 	pony_race=1
 	melee_weapons=1
@@ -35,7 +48,7 @@ set_technology={
 	tech_unicorn=1
 	early_fighter=1
 	early_bomber=1
-	#tech_ironpaws=1
+	#tech_ironpaws=1#
 }
 if={limit={has_dlc="Man the Guns"}
 	set_technology={
@@ -56,11 +69,11 @@ if={limit={not={has_dlc="Man the Guns"}}
 	}
 }
 actually_fix_weapon_techs=yes
-#Misc
+#MISC#
 set_convoys=11
 set_rule={can_generate_female_aces=yes}
-#DIPLOMACY
-#POLITICS
+#DIPLOMACY#
+#POLITICS#
 set_popularities={
 	fascism=66	communism=12
 	neutrality=13	democratic=9
@@ -69,71 +82,64 @@ set_politics={
 	ruling_party=fascism	last_election="1001.10.10"
 	election_frequency=36	elections_allowed=no
 }
-create_country_leader={
-	name="Mistress Rarity"	#desc=
-	expire="1965.1.1"	picture="HWG_rarity.dds"
-	ideology=plutocracy	female=yes
-	traits={}
+#CHARACTERS#
+recruit_character=HWG_rarity
+recruit_character=HWG_shooter_mark
+recruit_character=HWG_fleur_de_lis
+recruit_character=HWG_fancy_pants
+recruit_character=HWG_clair_de_lune
+recruit_character=HWG_generic_admiral
+recruit_character=HWG_flim_flam
+recruit_character=HWG_filthy_rich
+recruit_character=HWG_diamond_tiara
+recruit_character=HWG_sweetie_belle
+recruit_character=HWG_nighthooves
+if={
+	limit={has_dlc="La Resistance"}
+	add_advisor_role={
+		character=HWG_fleur_de_lis
+		advisor={
+			slot=political_advisor
+			idea_token=sweetie_drops
+			allowed={has_dlc="La Resistance"}
+			available={has_intelligence_agency=yes}
+			traits={head_of_intelligence}	#upgrade me#
+		}
+	}
+	add_advisor_role={
+		character=HWG_nighthooves
+		advisor={
+			slot=political_advisor
+			idea_token=sweetie_drops
+			allowed={has_dlc="La Resistance"}
+			available={has_intelligence_agency=yes}
+			traits={head_of_intelligence}
+		}
+	}
+	else={
+		add_advisor_role={
+			character=HWG_fleur_de_lis
+			advisor={
+				slot=political_advisor
+				allowed={not={has_dlc="La Resistance"}}
+				traits={backroom_backstabber}	#upgrade me?#
+			}
+		}
+		add_advisor_role={
+			character=HWG_nighthooves
+			advisor={
+				slot=political_advisor
+				allowed={not={has_dlc="La Resistance"}}
+				traits={backroom_backstabber}	#encrypt/decrypt trait here#
+			}
+		}
+	}
 }
-create_country_leader={
-	name="Fleur de Lis"	#desc=
-	expire="1965.1.1"	picture="Fleur.tga"
-	ideology=oligarchism	female=yes
-	traits={}
-}
-create_country_leader={
-	name="General Fancy Pants"	#desc=
-	expire="1965.1.1"	picture="Fancy.tga"
-	ideology=liberalism	#female=yes
-	traits={}
-}
-create_country_leader={
-	name="Shooter Mark"	#desc=
-	expire="1965.1.1"	#picture=""
-	ideology=anarchist_communism	#female=yes
-	traits={}
-}
-#MILITARY
-create_field_marshal={
-	name="Mistress Rarity"	#id=	desc=
-	picture="HWG_rarity.dds"	female=yes
-	skill=1	attack_skill=2	defense_skill=2
-	planning_skill=1	logistics_skill=1
-	traits={pony_race_trait politically_connected}
-}
-create_corps_commander={
-	name="Fancy Pants"	#id=	desc=
-	picture="Fancy.tga"	#female=yes
-	traits={pony_race_trait politically_connected trait_cautious}
-	skill=2	attack_skill=1	defense_skill=3
-	planning_skill=2	logistics_skill=2
-}
-create_corps_commander={
-	name="Fleur de Lis"	#id=	desc=
-	picture="Fleur.tga"	female=yes
-	skill=2	attack_skill=2	defense_skill=2
-	planning_skill=2	logistics_skill=1
-	traits={pony_race_trait media_personality vigilant_sentinel}
-}
-create_corps_commander={
-	name="Clair de Lune"	#id=	desc=
-	picture="Hornybastard.dds"	female=yes
-	skill=1	attack_skill=1	defense_skill=1
-	planning_skill=1	logistics_skill=1
-	traits={thestral_race_trait}
-}
-create_navy_leader={
-	name="Generic Admiral"	#id=	desc=
-	picture=""	female=yes
-	skill=1	attack_skill=1	defense_skill=1
-	maneuvering_skill=2	coordination_skill=2
-	traits={pony_race_trait aviation_enthusiast}
-}
-#VARIENTS
+#VARIENTS#
 if={limit={has_dlc="Man the Guns"}
-	create_equipment_variant={	#Heavy Cruiser AR1-EN1 MG2-SG3
+	create_equipment_variant={	#Heavy Cruiser AR1-EN1 MG2-SG3#
 		name="Belle 1003 Class"	type=ship_hull_cruiser_1
-		parent_version=1	#obsolete=yes
+		parent_version=1	#obsolete=yes#
 		modules={
 			fixed_ship_battery_slot=ship_medium_battery_1
 			fixed_ship_anti_air_slot=empty
@@ -147,9 +153,9 @@ if={limit={has_dlc="Man the Guns"}
 			rear_1_custom_slot=ship_medium_battery_1
 		}
 	}
-	create_equipment_variant={	#Light Cruiser AR1-EN1 LG3
+	create_equipment_variant={	#Light Cruiser AR1-EN1 LG3#
 		name="Auditor 1003 Class"	type=ship_hull_cruiser_1
-		parent_version=0	#obsolete=yes
+		parent_version=0	#obsolete=yes#
 		modules={
 			fixed_ship_battery_slot=ship_light_medium_battery_1
 			fixed_ship_anti_air_slot=empty
@@ -163,9 +169,9 @@ if={limit={has_dlc="Man the Guns"}
 			rear_1_custom_slot=ship_light_medium_battery_1
 		}
 	}
-	create_equipment_variant={	#Torpedo Destroyer
+	create_equipment_variant={	#Torpedo Destroyer#
 		name="Investor 1005 Class"	type=ship_hull_light_1 
-		parent_version=1	#obsolete=yes
+		parent_version=1	#obsolete=yes#
 		modules={
 			fixed_ship_battery_slot=ship_light_battery_1
 			fixed_ship_anti_air_slot=empty
@@ -177,7 +183,7 @@ if={limit={has_dlc="Man the Guns"}
 			rear_1_custom_slot=empty
 		}
 	}
-	create_equipment_variant={	#Destroyer
+	create_equipment_variant={	#Destroyer#
 		name="Surveyor 1003 Class"	type=ship_hull_light_1
 		parent_version=0	obsolete=yes
 		modules={
@@ -193,9 +199,9 @@ if={limit={has_dlc="Man the Guns"}
 	}
 }
 if={limit={not={has_dlc="Man the Guns"}}
-	create_equipment_variant={	#Heavy Cruiser
+	create_equipment_variant={	#Heavy Cruiser#
 		name="Belle 1003 Class"	type=heavy_cruiser_1
-		parent_version=1	#obsolete=yes
+		parent_version=1	#obsolete=yes#
 		upgrades={
 			ship_reliability_upgrade=0
 			ship_engine_upgrade=0
@@ -203,9 +209,9 @@ if={limit={not={has_dlc="Man the Guns"}}
 			ship_gun_upgrade=0
 		}
 	}
-	create_equipment_variant={	#Light Cruiser
+	create_equipment_variant={	#Light Cruiser#
 		name="Auditor 1003 Class"	type=light_cruiser_1
-		parent_version=0	#obsolete=yes
+		parent_version=0	#obsolete=yes#
 		upgrades={
 			ship_reliability_upgrade=1
 			ship_engine_upgrade=0
@@ -213,9 +219,9 @@ if={limit={not={has_dlc="Man the Guns"}}
 			ship_anti_air_upgrade=0
 		}
 	}
-	create_equipment_variant={	#Light-Medium Destroyer
+	create_equipment_variant={	#Light-Medium Destroyer#
 		name="Investor 1005 Class"	type=destroyer_1
-		parent_version=1	#obsolete=yes
+		parent_version=1	#obsolete=yes#
 		upgrades={
 			ship_torpedo_upgrade=1
 			destroyer_engine_upgrade=0
@@ -223,7 +229,7 @@ if={limit={not={has_dlc="Man the Guns"}}
 			ship_anti_air_upgrade=0
 		}
 	}
-	create_equipment_variant={	#Destroyer
+	create_equipment_variant={	#Destroyer#
 		name="Surveyor 1003 Class"	type=destroyer_1
 		parent_version=0	obsolete=yes
 		upgrades={
@@ -234,9 +240,9 @@ if={limit={not={has_dlc="Man the Guns"}}
 		}
 	}
 }
-create_equipment_variant={	#Aircraft
-	name="Chelangel UM06-9"	#Neighchelangelo - Ultramarine 06' V9
-	type=tac_bomber_equipment_1	parent_version=0	#obsolete=yes
+create_equipment_variant={	#Aircraft#
+	name="Chelangel UM06-9"	#Neighchelangelo - Ultramarine 06' V9#
+	type=tac_bomber_equipment_1	parent_version=0	#obsolete=yes#
 	upgrades={
 		plane_tac_bomb_upgrade=0	plane_range_upgrade=1
 		plane_engine_upgrade=0	plane_reliability_upgrade=0
