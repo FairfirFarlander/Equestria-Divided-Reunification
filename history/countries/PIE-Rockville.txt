@@ -1,6 +1,10 @@
 #LOCALE
 capital=38
-oob="PIE_07"
+if={
+	limit={has_dlc="No Step Back"}
+	set_oob="PIE_07"	#_nsb
+	else={set_oob="PIE_07"}
+}
 #FOUNTATION
 set_research_slots=2
 set_stability=0.7 set_war_support=0.06
@@ -8,6 +12,15 @@ add_ideas={
 	volunteer_only limited_exports civilian_economy
 	better_science_base agrarian_society
 	lack_of_scientists3 poverty4
+}
+if={
+	limit={has_dlc="No Step Back"}
+	add_ideas={
+		traditionalism_academy_spirit
+		doctrinal_orthodoxy_spirit
+		disdain_for_the_digging_spirit
+	}
+	else={add_ideas={EQS_bad_tanks}}
 }
 #TECHNOLOGY
 set_technology={
@@ -28,23 +41,9 @@ set_politics={	#Mareocrity, Marearchy, Matriarchy (Use this one)
 	ruling_party=fascism	last_election="1000.10.10"
 	election_frequency=36	elections_allowed=no
 }
-create_country_leader={	#Governor -  Matriarch
-	name="Governor Marble Pie"	#desc=
-	expire="1965.1.1"	picture="Marble.tga"
-	ideology=maarite_minion	female=yes #ultranationalism
-	traits={}
-}
-create_country_leader={
-	name="Sapphire Smiles"	#desc=
-	expire="1965.1.1"	#picture=""
-	ideology=democratic_socialism	female=yes
-	traits={}
-}
-create_country_leader={
-	name="Cloudy Quartz"	#desc=
-	expire="1965.1.1"	#picture=""
-	ideology=despotism	female=yes
-	traits={}
-}
-#MILITARY
+#CHARACTERS#
+recruit_character=PIE_marble_pie
+recruit_character=PIE_sapphire_smiles
+recruit_character=PIE_cloudy_quartz
+#recruit_character=PIE_maud_pie		#Implement me!
 #VARIENTS

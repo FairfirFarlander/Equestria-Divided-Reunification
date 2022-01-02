@@ -1,6 +1,10 @@
 #LOCALE
 capital=66
-oob="LAS_1007"
+if={
+	limit={has_dlc="No Step Back"}
+	set_oob="LAS_07"	#_nsb
+	else={set_oob="LAS_07"}
+}
 #if={
 	#limit={has_dlc="Man the Guns"}
 	#set_naval_oob="LAS_1007_naval"
@@ -13,6 +17,15 @@ add_ideas={
 	volunteer_only export_focus civilian_economy
 	poor_science_base agrarian_society
 	lack_of_scientists3 poverty5
+}
+if={
+	limit={has_dlc="No Step Back"}
+	add_ideas={
+		traditionalism_academy_spirit
+		doctrinal_orthodoxy_spirit
+		disdain_for_the_digging_spirit
+	}
+	else={add_ideas={EQS_bad_tanks}}
 }
 #TECHNOLOGY
 set_technology={
@@ -55,45 +68,11 @@ set_politics={
 	ruling_party=fascism	last_election="1001.09.09"
 	election_frequency=36	elections_allowed=no
 }
-create_country_leader={
-	name="Governor General Pine Chest"	desc=pcadesc
-	expire="1965.1.1"	picture="pinechest.tga"
-	ideology=stratocracy	#female=yes
-	traits={anti_communist}
-}
-create_country_leader={
-	name="Steel Wings"	#desc=
-	expire="1965.1.1"	picture="leader_unknown.dds"
-	ideology=despotism	female=yes
-	traits={}
-}
-create_country_leader={
-	name="Sunny Cloud"	#desc=
-	expire="1965.1.1"	picture="leader_unknown.dds"
-	ideology=liberalism	female=yes
-	traits={}
-}
-create_country_leader={
-	name="Storm Mayhem"	#desc=
-	expire="1965.1.1"	picture="leader_unknown.dds"
-	ideology=anarchist_communism	#female=yes
-	traits={}
-}
-#MILITARY
-create_field_marshal={
-	name="Pine Chest"	#id=	desc=
-	picture="pinechest.tga"	#female=yes
-	skill=2	attack_skill=1	defense_skill=2
-	planning_skill=2	logistics_skill=2
-	traits={pony_race_trait trait_reckless inflexible_strategist politically_connected}
-}
-create_corps_commander={
-	name="Wing Commander Spitfire"	#id=	desc=
-	picture="Spitfire.tga"	female=yes
-	skill=3	attack_skill=2	defense_skill=1
-	planning_skill=2	logistics_skill=3
-	traits={pony_race_trait harsh_leader organizer}
-}
+#CHARACTERS#
+recruit_character=LAS_pine_chest
+recruit_character=LAS_storm_mayhem
+recruit_character=LAS_steel_wings
+recruit_character=LAS_sunny_cloud
 #VARIENTS
 if={limit={has_dlc="Man the Guns"}
 	create_equipment_variant={	#Heavy Cruiser AR1-EN1 MG2-SG1-AA1

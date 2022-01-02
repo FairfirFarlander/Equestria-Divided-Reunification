@@ -1,6 +1,10 @@
 #LOCALE	#Welcome to the Orange Grove MotherFucker.
 capital=122
-oob="HFT_07"
+if={
+	limit={has_dlc="No Step Back"}
+	set_oob="HFT_07"	#_nsb
+	else={set_oob="HFT_07"}
+}
 #FOUNTATION
 set_research_slots=2
 set_stability=0.6
@@ -10,6 +14,15 @@ add_ideas={
 	agrarian_society
 	lack_of_scientists3
 	poverty5
+}
+if={
+	limit={has_dlc="No Step Back"}
+	add_ideas={
+		traditionalism_academy_spirit
+		doctrinal_orthodoxy_spirit
+		disdain_for_the_digging_spirit
+	}
+	else={add_ideas={EQS_bad_tanks}}
 }
 #TECHNOLOGY
 set_technology={
@@ -30,25 +43,8 @@ set_politics={
 	ruling_party=neutrality	last_election="1003.11.11"
 	election_frequency=48	elections_allowed=no
 }
-create_country_leader={	#Keep Hoofington Manpower-Lose it and get Spies.
-	name="Madame Orange"	#desc=
-	expire="1965.1.1"	picture="Madame_Orange.dds"
-	ideology=despotism	female=yes
-	traits={}
-}
-create_country_leader={
-	name="Trixie Lulamoon"
-	expire="1965.1.1"
-	picture="Inquisitor_Trixie.dds"
-	ideology=magocracy
-	female=yes
-	traits={}
-}
-#MILITARY
-create_corps_commander={
-	name="Orange Grove"	#id=	desc=
-	#picture=""	#female=yes
-	skill=1	attack_skill=1	defense_skill=1
-	planning_skill=1	logistics_skill=1
-	traits={}
-}
+#CHARACTERS#
+recruit_character=HFT_orange
+recruit_character=HFT_orange_grove
+#recruit_character=HFT_trixie_lulamoon
+#VARIENTS#

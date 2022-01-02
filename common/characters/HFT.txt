@@ -1,0 +1,54 @@
+characters={
+	HFT_orange={	#Keep Hoofington Manpower-Lose it and get Spies.
+		name=HFT_orange
+		gender=female
+		portraits={civilian={large="gfx/leaders/HFT/HFT_orange.dds"}}
+		country_leader={
+			desc="HFT_orange_poli_desc"	ideology=despotism
+			expire="1030.03.13.08"
+			traits={}
+			id=-1
+		}
+	}
+	HFT_orange_grove={
+		name=HFT_orange_grove
+		#portraits={
+		#	army={
+		#		large="gfx/leaders/HFT/HFT_orange_grove.dds"
+		#		small="gfx/leaders/HFT/HFT_orange_grove_small.dds"
+		#	}
+		#}
+		corps_commander={
+			desc="HFT_ogrove_mili_desc"
+			skill=1	attack_skill=1	defense_skill=1
+			planning_skill=1	logistics_skill=1
+			traits={pony_race_trait}
+		}
+	}
+	HFT_trixie_lulamoon={
+		name=HFT_trixie_lulamoon
+		gender=female
+		portraits={
+			civilian={
+				large="gfx/leaders/HFT/HFT_trixie_lulamoon.dds"
+				small="gfx/leaders/HFT/HFT_trixie_lulamoon_small.dds"
+			}
+			army={
+				large="gfx/leaders/HFT/HFT_trixie_lulamoon.dds"
+				small="gfx/leaders/HFT/HFT_trixie_lulamoon_small.dds"
+			}
+		}
+		country_leader={
+			desc="HFT_tlulamoon_poli_desc"	ideology=magocracy
+			expire="1030.03.13.08"
+			traits={}
+			id=-1
+		}
+		corps_commander={
+			desc="HFT_tlulamoon_mili_desc"
+			skill=1	attack_skill=2	defense_skill=1
+			planning_skill=2	logistics_skill=1
+			traits={media_personality pony_race_trait}
+		}
+	}
+}
