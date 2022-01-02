@@ -35,19 +35,4 @@ characters={
 		#	id=-1
 		#}
 	}
-	JUNGLE_ahuizotl={
-		name=JUNGLE_ahuizotl
-		portraits={
-			army={
-				large="gfx/leaders/TEM/ahuizotl.tga"
-				#small="gfx/leaders/JUNGLE/HEF_ahuizotl_small.dds"#
-			}
-		}
-		corps_commander={
-			desc="JUNGLE_ahuizotl_mili_desc"
-			skill=1	attack_skill=1	defense_skill=1
-			planning_skill=1	logistics_skill=1
-			traits={unspecified_race_trait}	#Add 3 more#
-		}
-	}
 }

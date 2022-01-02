@@ -1,0 +1,68 @@
+characters={
+	TRT_rapid_fire={
+		name=TRT_rapid_fire
+		#portraits={
+		#	civilian={
+		#		large="gfx/leaders/TRT/TRT_rapid_fire.dds"
+		#		small="gfx/leaders/TRT/TRT_rapid_fire_small.dds"
+		#	}
+		#	army={
+		#		large="gfx/leaders/TRT/TRT_rapid_fire.dds"
+		#		small="gfx/leaders/TRT/TRT_rapid_fire_small.dds"
+		#	}
+		#}
+		country_leader={
+			desc="TRT_rfire_poli_desc"	ideology=stratocracy
+			expire="1030.03.13.08"
+			traits={fascist_demagogue}
+			id=-1
+		}
+		corps_commander={
+			desc="TRT_rfire_mili_desc"
+			skill=1 attack_skill=1	defense_skill=1
+			planning_skill=1	logistics_skill=1
+			traits={pony_race_trait}
+		}
+	}
+	TRT_teddy_hoosevelt={	#teddy_steady_roosevelt
+		name=TRT_teddy_hoosevelt
+		#portraits={
+		#	civilian={
+		#		large="gfx/leaders/TRT/TRT_teddy_hoosevelt.dds"
+		#		small="gfx/leaders/TRT/TRT_teddy_hoosevelt_small.dds"
+		#	}
+		#	army={
+		#		large="gfx/leaders/TRT/TRT_teddy_hoosevelt.dds"
+		#		small="gfx/leaders/TRT/TRT_teddy_hoosevelt_small.dds"
+		#	}
+		#}
+		country_leader={
+			desc="TRT_thoosevelt_poli_desc"	ideology=populism
+			expire="1030.03.13.08"
+			traits={headstrong great_war_hero}
+			id=-1
+		}
+		corps_commander={
+			desc="TRT_thoosevelt_mili_desc"
+			skill=1 attack_skill=1	defense_skill=1
+			planning_skill=1	logistics_skill=1
+			traits={pony_race_trait}
+		}
+	}
+	TRT_harshwhinny={	#ms._harshwhinny
+		name=TRT_harshwhinny
+		gender=female
+		portraits={
+			civilian={
+				large="gfx/leaders/TRT/TRT_harshwhinny.dds"
+				#small="gfx/leaders/TRT/TRT_harshwhinny_small.dds"#
+			}
+		}
+		country_leader={
+			desc="TRT_harshwhinny_poli_desc"	ideology=harmonic_libertarianism
+			expire="1030.03.13.08"
+			traits={appeaser hedonist}
+			id=-1
+		}
+	}
+}

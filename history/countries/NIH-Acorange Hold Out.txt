@@ -1,6 +1,10 @@
 #LOCALE#
 capital=136
-oob="NIH_07"
+if={
+	limit={has_dlc="No Step Back"}
+	set_oob="NIH_07"	#_nsb
+	else={set_oob="NIH_07"}
+}
 #FOUNTATION#
 set_research_slots=2
 set_stability=0.45
@@ -12,6 +16,15 @@ add_ideas={
 	volunteer_only closed_economy isolation
 	better_science_base outdated_industry
 	lack_of_scientists2 poverty1
+}
+if={
+	limit={has_dlc="No Step Back"}
+	add_ideas={
+		traditionalism_academy_spirit
+		doctrinal_orthodoxy_spirit
+		disdain_for_the_digging_spirit
+	}
+	else={add_ideas={EQS_bad_tanks}}
 }
 #TECHNOLOGY#
 set_technology={
@@ -37,18 +50,6 @@ set_politics={
 	ruling_party=neutrality	last_election="1004.11.11"
 	election_frequency=48	elections_allowed=no
 }
-#create_country_leader={
-#	name=""	#desc=
-#	expire="1965.1.1"	#picture=""
-#	ideology=stratocracy	#female=yes
-#	traits={}
-#}
-#MILITARY#
-create_corps_commander={
-	name="Cursed Fate"	#id=	desc=#
-	picture="Cursed_Fate.dds"	female=no
-	skill=1	attack_skill=1	defense_skill=1
-	planning_skill=1	logistics_skill=1
-	traits={pony_race_trait}
-}
+#CHARACTERS#
+recruit_character=NIH_cursed_fate
 #VARIENTS#

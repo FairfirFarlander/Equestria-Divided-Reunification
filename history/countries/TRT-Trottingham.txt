@@ -1,12 +1,16 @@
-#LOCALE
+#LOCALE#
 capital=67
-oob="TRT_07"
+if={
+	limit={has_dlc="No Step Back"}
+	set_oob="TRT_07"	#_nsb
+	else={set_oob="TRT_07"}
+}
 #if={
 #	limit={has_dlc="Man the Guns"}
 #	set_naval_oob="TRT_1007_naval"
 #	else={set_naval_oob="TRT_1007_naval_legacy"}
-#}
-#FOUNTATION
+#}#
+#FOUNTATION#
 set_research_slots=2
 set_stability=0.36
 set_war_support=0.14
@@ -62,28 +66,11 @@ set_popularities={
 	neutrality=39	democratic=19
 }
 set_politics={
-	ruling_party=neutrality
-	last_election="1004.11.11"
-	election_frequency=36
-	elections_allowed=no
+	ruling_party=neutrality	last_election="1004.11.11"
+	election_frequency=36	elections_allowed=no
 }
-create_country_leader={
-	name="Rapid Fire"	#desc=
-	expire="1005.1.1"	#picture="leader_unknown.dds"
-	ideology=stratocracy	#female=yes
-	traits={fascist_demagogue}
-}
-create_country_leader={
-	name="Teddy 'Steady' Hoosevelt"	#desc=
-	expire="1005.1.1"	#picture=""
-	ideology=populism	#female=yes
-	traits={headstrong great_war_hero}
-}
-create_country_leader={
-	name="Ms. Harshwhinny"	#desc=
-	expire="1005.1.1"	picture="Harshwhinny.dds"
-	ideology=harmonic_libertarianism	female=yes
-	traits={appeaser hedonist}
-}
-#MILITARY
-#VARIENTS
+#CHARACTERS#
+recruit_character=TRT_rapid_fire
+recruit_character=TRT_teddy_hoosevelt
+recruit_character=TRT_harshwhinny
+#VARIENTS#

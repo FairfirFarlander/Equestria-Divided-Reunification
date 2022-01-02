@@ -25,49 +25,15 @@ set_rule={can_generate_female_aces=yes}
 #POLITICS
 set_popularities={
 	fascism=8	communism=30
-	neutrality=45	democratic=17
+	neutrality=17	democratic=45
 }
 set_politics={
-	ruling_party=neutrality
-	last_election="1004.11.11"
-	election_frequency=36
-	elections_allowed=no
+	ruling_party=democratic	last_election="1004.11.11"
+	election_frequency=36	elections_allowed=no
 }
-create_country_leader={
-	name="Ahuizotl"	#desc=TEM_ahuizotl_desc
-	expire="2066.1.1"	picture="Ahuizotl.tga"
-	ideology=falangism	#female=yes
-	traits={}
-}
-create_country_leader={
-	name="Tenoch"	#desc=
-	expire="1965.1.1"	picture="Tenoch.tga"
-	ideology=primitive_communism	#female=yes
-	traits={}
-}
-create_country_leader={
-	name="Tenoch"	#desc=
-	expire="1965.1.1"	picture="Tenoch.tga"
-	ideology=tribal_council	#female=yes
-	traits={}
-}
-#create_country_leader={
-#	name="Ahuizotl"	#desc=TEM_ahuizotl_desc
-#	expire="1965.1.1"	picture="Ahuizotl.tga"
-#	ideology=theocracy_subideology	#female=yes
-#	traits={}
-#}
-create_country_leader={
-	name="Tailcoatl"	#desc=
-	expire="1965.1.1"	picture="Tailcoatl.tga"
-	ideology=tribal_federation	female=yes
-	traits={}
-}
-#MILITARY
-create_corps_commander={
-	name="Mem"	#id=	desc=
-	picture="Mem.tga"	#female=yes
-	skill=1	attack_skill=1	defense_skill=1
-	planning_skill=1	logistics_skill=1
-	traits={pony_race_trait}
-}
+#CHARACTERS#
+#recruit_character=JUN_ahuizotl
+recruit_character=JTL_tailcoatl
+recruit_character=JTL_temple_chant
+#recruit_character=JTL_tenoch
+#VARIENTS#

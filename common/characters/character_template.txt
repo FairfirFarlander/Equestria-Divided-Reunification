@@ -1,0 +1,41 @@
+characters={
+	TAG_NAM={
+		name=TAG_NAM
+		gender=female
+		portraits={
+			civilian={
+				large="gfx/leaders/TAG/TAG_NAM.dds"
+				small="gfx/leaders/TAG/TAG_NAM_small.dds"
+			}
+			army={
+				large="gfx/leaders/TAG/TAG_NAM.dds"
+				small="gfx/leaders/TAG/TAG_NAM_small.dds"
+			}
+		}
+		country_leader={
+			desc="TAG_SNA_poli_desc"	ideology=IDE
+			expire="1030.03.13.08"
+			traits={}
+			id=-1
+		}
+		field_marshal/corps_commander={
+			desc="TAG_SNA_mili_desc"
+			skill=1	attack_skill=1	defense_skill=1
+			planning_skill=1	logistics_skill=1
+			traits={RACE}
+		}
+		navy_leader={
+			desc="TAG_SNA_navy_desc"
+			skill=1	attack_skill=1	defense_skill=1
+			maneuvering_skill=1	coordination_skill=1
+			traits={pony_race_trait aviation_enthusiast}
+		}
+		advisor={
+			slot=political_advisor	high_command	A/A/N_chief	theorist
+			ledger=army	air	navy
+			cost=50
+			idea_token=TAG_SNA_advi
+			traits={}
+		}
+	}
+}
