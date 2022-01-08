@@ -1,9 +1,0 @@
-focus_tree={
-	id=LAS_generic country={factor=0 modifier={add=10 tag=LAS}}
-	continuous_focus_position={x=1750 y=800}
-	default=no
-	shared_focus=EDR_I00
-	shared_focus=EDR_L05
-	shared_focus=EDR_N05
-	shared_focus=EDR_A05
-}

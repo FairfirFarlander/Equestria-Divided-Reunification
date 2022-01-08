@@ -1,3 +1,0 @@
-NDefines.NGame.START_DATE = "1007.1.1.12"
-NDefines.NGame.END_DATE = "1030.1.1.1"
-NDefines.NDiplomacy.TENSION_TIME_SCALE_START_DATE = "1007.1.1.12"
