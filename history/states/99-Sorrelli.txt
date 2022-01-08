@@ -1,37 +1,17 @@
-state={
+state={	#EDRSTATE
 	id=99
 	name="STATE_99"
 	manpower=173931
 	state_category=rural
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={279 526 711 3234 3381 3485 3522 3548 6282 6377 6571 9238 9263 9375 9570 9670 11232 11260 11343 11359 11372 11676 13066}
 	resources={steel=10}
 	history={
 		owner=HSW
 		add_core_of=HSW
-		#add_claim_by=
 		victory_points={9375 2}
 		buildings={
-		#STATE BUILDINGS
 			infrastructure=1
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
-			arms_factory=0
-			industrial_complex=0
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
 		}
 	}
 }

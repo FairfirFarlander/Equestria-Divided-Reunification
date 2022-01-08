@@ -8,9 +8,10 @@ state={
 	provinces={10266}
 	resources={}
 	history={
+		owner=CYE
 		#owner=MIT
 		#add_core_of=MIT
-		#victory_points={10266 1}
+		victory_points={10266 1}
 		buildings={
 			10266={naval_base=1}
 		}

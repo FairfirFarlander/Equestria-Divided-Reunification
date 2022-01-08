@@ -50,28 +50,11 @@ set_popularities={
 	neutrality=30	democratic=26
 }
 set_politics={
-	ruling_party=neutrality
-	last_election="1004.11.11"
-	election_frequency=36
-	elections_allowed=no
+	ruling_party=neutrality	last_election="1004.11.11"
+	election_frequency=36	elections_allowed=no
 }
-create_country_leader={	#Sprout, Bud?
-	name="Iris Kelly"	#desc=
-	expire="1965.1.1"	picture="portrait_pony_generic_navy_13.dds"
-	ideology=corporatocracy	female=yes
-	traits={}
-}
-create_country_leader={
-	name="Mabel Corne"	#desc=
-	expire="1965.1.1"	picture="portrait_pony_generic_land_8.dds"
-	ideology=democratic_socialism	female=yes
-	traits={}
-}
-create_country_leader={
-	name="Smokey Dust"	#desc=
-	expire="1965.1.1"	#picture=""
-	ideology=centrism	#female=yes
-	traits={}
-}
-#MILITARY
+#CHARACTERS#
+recruit_character=STB_iris_kelly
+recruit_character=STB_mabel_corne
+recruit_character=STB_smokey_dust
 #VARIENTS

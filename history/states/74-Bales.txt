@@ -1,37 +1,18 @@
-state={
+state={	#EDRSTATE
 	id=74
 	name="STATE_74"
-	manpower=1122000
+	manpower=1109000
 	state_category=city
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={115 168 3162 3183 6118 6207 9132 9154 11116 11118 11386 13276 13277 13278}
-	resources={}
 	history={
 		owner=HMS
 		add_core_of=HMS
-		#add_claim_by=
 		victory_points={3162 20}
 		buildings={
-		#STATE BUILDINGS
-			infrastructure=6
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
+			infrastructure=3
 			arms_factory=1
 			industrial_complex=3
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
 		}
 	}
 }

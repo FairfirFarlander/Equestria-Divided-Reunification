@@ -4,34 +4,16 @@ state={
 	manpower=406890
 	state_category=rural
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={1187 1281 1343 4312 4654 7236 7249 7441 7587 9733 9963 10156 12122 12125 12131 12136 12144}
 	resources={tungsten=7 steel=10}
 	history={
+		owner=CYE
 		#owner=FAL
 		#add_core_of=FAL
-		#add_claim_by=
 		victory_points={12144 5}
 		buildings={
-		#STATE BUILDINGS
-			infrastructure=2
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
+			infrastructure=1
 			arms_factory=1
-			industrial_complex=0
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
 		}
 	}
 }

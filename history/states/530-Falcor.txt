@@ -4,35 +4,19 @@ state={
 	manpower=1354598
 	state_category=city
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={1317 1724 1739 1807 4731 4779 4829 4847 6102 7250 7616 7754 10296 10756 12779}
 	resources={tungsten=5 steel=12}
 	history={
+		owner=CYE
 		#owner=WNG
 		#add_core_of=WNG
 		#add_core_of=FAL
-		#add_claim_by=
 		victory_points={7754 20}
 		buildings={
-		#STATE BUILDINGS
-			infrastructure=6
+			infrastructure=3
 			air_base=2
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
 			arms_factory=2
 			industrial_complex=3
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
 		}
 	}
 }

@@ -1,36 +1,19 @@
-state={
+state={	#EDRSTATE
 	id=332
 	name="STATE_332"
 	manpower=383900
 	state_category=town
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={119 196 3112 3186 6133 9133 9310 11192}
-	resources={}
 	history={
 		owner=SGR
 		add_core_of=SGR
 		victory_points={119 10}
 		buildings={
-		#STATE BUILDINGS
-			infrastructure=4
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
-			arms_factory=0
-			industrial_complex=0
+			infrastructure=2
 			dockyard=3
-			synthetic_refinery=0
 			fuel_silo=1
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			119={
-				naval_base=5
-				#bunker=0
-				#coastal_bunker=0
-			}
+			119={naval_base=5}
 		}
 	}
 }

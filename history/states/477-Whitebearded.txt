@@ -4,34 +4,11 @@ state={
 	manpower=124506
 	state_category=rural
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={227 393 1350 1804 3216 3265 3357 3385 4324 6379 6772 7343 9271 10183 11256 12242}
-	resources={tungsten=6 steel=6 crystals=10}
+	resources={steel=6 chromium=12 crystals=10}
 	history={
+		owner=CYE
 		#owner=MNC
 		#add_core_of=MNC
-		#add_claim_by=
-		#victory_points={}
-		buildings={
-		#STATE BUILDINGS
-			infrastructure=0
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
-			arms_factory=0
-			industrial_complex=0
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
-		}
 	}
 }

@@ -11,11 +11,11 @@ state={	#EDRSTATE
 		add_claim_by=HWG
 		victory_points={13011 25}
 		buildings={
-			infrastructure=5
+			infrastructure=3
 			air_base=1
 			arms_factory=1
 			industrial_complex=2
-			dockyard=1	#3 EAW
+			dockyard=1	#2 EAW
 			13011={naval_base=2}
 		}
 	}

@@ -6,9 +6,10 @@ state={
 	buildings_max_level_factor=1
 	provinces={12233}
 	history={
+		owner=CYE
 		#owner=MIT
 		#add_core_of=MIT
-		#victory_points={12233 1}
+		victory_points={12233 1}
 		buildings={
 			infrastructure=1
 			12233={naval_base=1}

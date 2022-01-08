@@ -10,6 +10,7 @@ state={	#EDRSTATE
 		add_core_of=VHT
 		victory_points={585 25}
 		buildings={
+			infrastructure=4
 			air_base=1
 			anti_air_building=1
 			arms_factory=1

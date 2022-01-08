@@ -4,34 +4,17 @@ state={
 	manpower=650489
 	state_category=rural
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={1172 1625 2063 4077 4192 4628 4656 7518 7606 9623 10459 10819 10848 12342 12736}
 	resources={steel=6 crystals=12}
 	history={
+		owner=CYE
 		#owner=WIT
 		#add_core_of=WIT
-		#add_claim_by=
 		victory_points={10848 5}
 		buildings={
-		#STATE BUILDINGS
-			infrastructure=2
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
-			arms_factory=0
+			infrastructure=1
 			industrial_complex=1
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			10848={
-				#naval_base=0
-				bunker=1
-				#coastal_bunker=0
-			}
+			10848={bunker=1}
 		}
 	}
 }

@@ -4,34 +4,16 @@ state={
 	manpower=197607
 	state_category=rural
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={433 487 544 579 1071 1525 3518 3566 3582 4060 5078 6454 6492 7455 9225 9422 9436 9502 9989 10061 11140 11451 11485 11501 11512 11527 11551 11910 11967 12730 12860}
-	resources={}
 	history={
+		owner=CYE
 		#owner=VED
 		#add_core_of=VED
-		#add_claim_by=
-		victory_points={9502 1}
+		victory_points={9502 3}
 		buildings={
-		#STATE BUILDINGS
 			infrastructure=1
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
-			arms_factory=0
 			industrial_complex=1
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
+			9502={naval_base=1}
 		}
 	}
 }

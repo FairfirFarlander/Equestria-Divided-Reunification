@@ -1,0 +1,114 @@
+characters={
+	MWC_rose_petal={
+		name=MWC_rose_petal
+		gender=female
+		portraits={
+			civilian={
+				large="gfx/leaders/Pony/portrait_pony_generic_2.dds"
+				#large="gfx/leaders/MWC/MWC_rose_petal.dds"
+			}
+		}
+		country_leader={
+			desc="MWC_rpetal_poli_desc"	ideology=ultranationalism
+			expire="1030.03.13.08"
+			traits={}
+			id=-1
+		}
+	}
+	MWC_mulberry_wine={
+		name=MWC_mulberry_wine
+		portraits={
+			civilian={
+				large="gfx/leaders/Pony/portrait_pony_generic_land_4.dds"
+				#large="gfx/leaders/MWC/MWC_mulberry_wine.dds"
+			}
+		}
+		country_leader={
+			desc="MWC_mwine_poli_desc"	ideology=syndicalism
+			expire="1030.03.13.08"
+			traits={}
+			id=-1
+		}
+	}
+	MWC_honey_dew={
+		name=MWC_honey_dew
+		gender=female
+		portraits={
+			civilian={
+				large="gfx/leaders/Pony/portrait_pony_generic_3.dds"
+				#large="gfx/leaders/MWC/MWC_honey_dew.dds"
+			}
+		}
+		country_leader={
+			desc="MWC_hdew_poli_desc"	ideology=centrism
+			expire="1030.03.13.08"
+			traits={}
+			id=-1
+		}
+	}
+	MWC_maple_leaf={
+		name=MWC_maple_leaf
+		portraits={
+			civilian={
+				large="gfx/leaders/Pony/portrait_pony_generic_navy_4.dds"
+				#large="gfx/leaders/MWC/MWC_maple_leaf.dds"
+			}
+		}
+		country_leader={
+			desc="MWC_mleaf_poli_desc"	ideology=liberalism
+			expire="1030.03.13.08"
+			traits={}
+			id=-1
+		}
+	}
+	
+	
+	MWC_apple_cider={
+		name=MWC_apple_cider
+		gender=female
+		portraits={
+			army={
+				large="gfx/leaders/MWC/MWC_apple_cider.dds"
+				small="gfx/leaders/MWC/MWC_apple_cider_small.dds"
+			}
+		}
+		field_marshal/corps_commander={
+			desc="MWC_acider_mili_desc"
+			skill=1	attack_skill=1	defense_skill=1
+			planning_skill=1	logistics_skill=1
+			traits={RACE}
+		}
+	}
+	MWC_mist_feather={
+		name=MWC_mist_feather
+		gender=female
+		portraits={
+			army={
+				large="gfx/leaders/MWC/MWC_mist_feather.dds"
+				small="gfx/leaders/MWC/MWC_mist_feather_small.dds"
+			}
+		}
+		field_marshal/corps_commander={
+			desc="MWC_mfeather_mili_desc"
+			skill=1	attack_skill=1	defense_skill=1
+			planning_skill=1	logistics_skill=1
+			traits={RACE}
+		}
+	}
+	MWC_NAM={
+		name=MWC_NAM
+		gender=female
+		portraits={
+			army={
+				large="gfx/leaders/MWC/MWC_NAM.dds"
+				small="gfx/leaders/MWC/MWC_NAM_small.dds"
+			}
+		}
+		navy_leader={
+			desc="MWC_SNA_navy_desc"
+			skill=1	attack_skill=1	defense_skill=1
+			maneuvering_skill=1	coordination_skill=1
+			traits={pony_race_trait aviation_enthusiast}
+		}
+	}
+}

@@ -28,6 +28,7 @@ THA={color=rgb{0 0 102}color_ui=rgb{0 0 102}}
 TRT={color=rgb{217 253 106}color_ui=rgb{217 253 106}}
 VHT={color=rgb{203 41 41}color_ui=rgb{203 41 41}}
 VII={color=rgb{22 167 209}color_ui=rgb{22 167 209}}
+CYE={color=rgb{0 0 0}color_ui=rgb{0 0 0}}
 #EAW Base
 EQS={color=rgb{158 242 117}color_ui=rgb{158 242 117}}
 NLR={color=rgb{41 37 110}color_ui=rgb{41 37 110}}

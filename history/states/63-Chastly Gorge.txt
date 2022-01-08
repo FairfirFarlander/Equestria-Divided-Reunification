@@ -1,38 +1,14 @@
-state={
+state={	#EDRSTATE
 	id=63
 	name="STATE_63"
 	manpower=45110
 	state_category=pastoral
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={629 3621 3754 3910 6536 6648 6862 9732 9794 9838 9904 11465 11751 11846 11882 11889}
-	resources={steel=8}#w to Bugbear Grove
+	resources={steel=8}	#2 to Bugbear Grove
 	history={
 		owner=BCK
 		add_core_of=CUL
-		#add_claim_by=
-		#victory_points={}
 		set_demilitarized_zone=yes
-		buildings={
-		#STATE BUILDINGS
-			infrastructure=0
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
-			arms_factory=0
-			industrial_complex=0
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
-		}
 	}
 }

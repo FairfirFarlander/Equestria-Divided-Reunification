@@ -5,7 +5,7 @@ state={	#EDRSTATE
 	state_category=wasteland
 	buildings_max_level_factor=1
 	provinces={4476 6698 7590 7622 9309 9403 10374 11346 11360 12347}
-	resources={oil=32}
+	resources={oil=26}
 	history={
 		owner=THA
 		add_core_of=THA

@@ -4,34 +4,15 @@ state={
 	manpower=506709
 	state_category=rural
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={1997 2023 2052 2079 2168 5190 7915 8199 8213 10494 10790 10792 10846 10874 10970 12196 12703 12729 12770 12853 12872 12969 12983 12999}
 	resources={rubber=28}
 	history={
+		owner=CYE
 		#owner=MIT
 		#add_core_of=MIT
-		#add_claim_by=
 		victory_points={12729 5}
 		buildings={
-		#STATE BUILDINGS
-			infrastructure=2
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
-			arms_factory=0
-			industrial_complex=0
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
+			infrastructure=1
 		}
 	}
 }

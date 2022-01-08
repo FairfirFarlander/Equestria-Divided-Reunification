@@ -1,37 +1,15 @@
-state={
+state={	#EDRSTATE
 	id=180
 	name="STATE_180"
 	manpower=80550
 	state_category=pastoral
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={462 513 572 3337 3470 3483 3967 6509 6520 6557 9493 9554 11477 11503}
-	resources={}
 	history={
 		owner=HSW
 		add_core_of=HSW
-		#add_claim_by=
-		#victory_points={}
 		buildings={
-		#STATE BUILDINGS
 			infrastructure=1
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
-			arms_factory=0
-			industrial_complex=0
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
 		}
 	}
 }

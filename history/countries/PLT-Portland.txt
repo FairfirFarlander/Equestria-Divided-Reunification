@@ -1,6 +1,10 @@
 #LOCATION#
 capital=351
-oob="PLT_07"
+if={
+	limit={has_dlc="No Step Back"}
+	set_oob="PLT_07"	#_nsb
+	else={set_oob="PLT_07"}
+}
 if={limit={has_dlc="Man the Guns"}set_naval_oob="PLT_07_naval"
 	else={set_naval_oob="PLT_07_naval_legacy"}
 }
@@ -9,6 +13,15 @@ set_research_slots=2 set_stability=0.41 set_war_support=0.09
 add_ideas={
 	volunteer_only export_focus civilian_economy
 	better_science_base agrarian_society lack_of_scientists2 poverty4
+}
+if={
+	limit={has_dlc="No Step Back"}
+	add_ideas={
+		traditionalism_academy_spirit
+		doctrinal_orthodoxy_spirit
+		disdain_for_the_digging_spirit
+	}
+	else={add_ideas={EQS_bad_tanks}}
 }
 #TECHNOLOGY#
 set_technology={
@@ -45,30 +58,10 @@ set_politics={
 	ruling_party=democratic	last_election="1004.11.11"
 	election_frequency=36	elections_allowed=no
 }
-create_country_leader={
-	name="Rael 'Filly' Grey"	#desc=	Earl Riley#
-	expire="1965.1.1"	picture="portrait_pony_generic_navy_14.dds"
-	ideology=bandit	female=yes
-	traits={}
-}
-create_country_leader={
-	name="Rael 'Filly' Grey"	#desc=	Earl Riley#
-	expire="1965.1.1"	picture="portrait_pony_generic_navy_14.dds"
-	ideology=leninism	female=yes
-	traits={}
-}
-create_country_leader={
-	name="Willie Hoofard Taft"	#desc=	William Howard Taft#
-	expire="1965.1.1"	#picture=""#
-	ideology=republicanism	#female=yes#
-	traits={appeaser}	#Add some anti-trust.#
-}
-create_country_leader={
-	name="Thistle Tap"	#desc=	Joseph Carson - Joeseph 'Seahawk' Barhoof#
-	expire="1965.1.1"	picture="portrait_pony_generic_land_11.dds"
-	ideology=harmonic_libertarianism	female=no
-	traits={}
-}
+#CHARACTERS#
+recruit_character=PLT_rael_grey
+recruit_character=PLT_willie_hoofard_tuft
+recruit_character=PLT_thistle_tap
 #VARIENTS#
 if={limit={has_dlc="Man the Guns"}
 	create_equipment_variant={	#Light Cruiser#

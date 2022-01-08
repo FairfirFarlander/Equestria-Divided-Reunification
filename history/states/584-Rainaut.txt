@@ -4,34 +4,11 @@ state={
 	manpower=124055
 	state_category=pastoral
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={1320 1918 4210 4398 5094 7315 7386 7442 10155 10198 10593 12214 12578 12889}
 	resources={tungsten=8 steel=6 crystals=6}
 	history={
+		owner=CYE
 		#owner=VED
 		#add_core_of=VED
-		#add_claim_by=
-		#victory_points={}
-		buildings={
-		#STATE BUILDINGS
-			infrastructure=0
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
-			arms_factory=0
-			industrial_complex=0
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
-		}
 	}
 }

@@ -6,11 +6,12 @@ state={
 	buildings_max_level_factor=1
 	provinces={2182 2210 2224 5131 5146 5171 8157 8231 10818 10952 11001 12759 13195}
 	history={
+		owner=CYE
 		#owner=NCH
 		#add_core_of=NCH
-		#victory_points={5131 7}
+		victory_points={5131 7}
 		buildings={
-			infrastructure=2
+			infrastructure=1
 			industrial_complex=1
 		}
 	}

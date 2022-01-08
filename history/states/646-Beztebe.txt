@@ -7,12 +7,13 @@ state={
 	provinces={1768 1812 4659 5220 6787 7681 7685 7833 10659 10692 11023 12390 12542 12639}
 	resources={aluminium=2 steel=5}
 	history={
+		owner=CYE
 		#owner=RCT
 		#add_core_of=RCT
-		#victory_points={10659 2}
-		#victory_points={11023 5}
+		victory_points={10659 2}
+		victory_points={11023 5}
 		buildings={
-			infrastructure=2
+			infrastructure=1
 			arms_factory=1
 			industrial_complex=1
 		}

@@ -4,34 +4,15 @@ state={
 	manpower=95066
 	state_category=rural
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={618 742 745 757 1323 1393 1408 1411 1737 1763 1788 3593 3726 4385 4790 4857 4863 6620 6758 6760 7760 7761 7880 9592 9753 10258 10273 10482 10644 10706}
 	resources={tungsten=4 steel=4}
 	history={
+		owner=CYE
 		#owner=FAT
 		#add_core_of=FAT
-		#add_claim_by=
 		victory_points={745 3}
 		buildings={
-		#STATE BUILDINGS
-			infrastructure=0
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
-			arms_factory=0
-			industrial_complex=0
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
+			infrastructure=1
 		}
 	}
 }

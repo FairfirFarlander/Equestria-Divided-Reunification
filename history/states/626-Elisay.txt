@@ -4,14 +4,14 @@ state={
 	manpower=177860
 	state_category=rural
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={1538 1637 7497 8120 10358 10471 12035 12307 12480}
 	resources={steel=6 chromium=4 crystals=12}
 	history={
+		owner=CYE
 		#owner=BAR
 		#add_core_of=BAR
 		#add_claim_by=WIT
-		#victory_points={12307 3}
+		victory_points={12307 3}
 		buildings={
 			infrastructure=1
 			industrial_complex=1

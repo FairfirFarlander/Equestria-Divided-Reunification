@@ -1,37 +1,16 @@
-state={
+state={	#EDRSTATE
 	id=90
 	name="STATE_90"
 	manpower=144200
 	state_category=rural
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={432 519 549 587 663 694 3530 3679 3690 3692 6500 6542 6568 6712 6934 9503 9517 9522 9655 11486 11499 11623 11640 13126}
-	resources={}
 	history={
 		owner=HAY
 		add_core_of=HAY
-		#add_claim_by=
 		victory_points={11499 5}
 		buildings={
-		#STATE BUILDINGS
 			infrastructure=1
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
-			arms_factory=0
-			industrial_complex=0
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
 		}
 	}
 }

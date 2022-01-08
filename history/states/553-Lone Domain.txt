@@ -4,36 +4,17 @@ state={
 	manpower=546077
 	state_category=rural
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={1438 1666 1761 1826 4469 4675 4762 4821 4832 7691 7759 7785 7844 7854 10053 10565 10574 10583 10643 10681 12556 12565 13222}
-	resources={}
 	history={
+		owner=CYE
 		#owner=HLQ
 		#add_core_of=HLQ
-		#add_claim_by=
 		victory_points={4469 2}
 		victory_points={4821 2}
 		victory_points={10574 3}
 		buildings={
-		#STATE BUILDINGS
 			infrastructure=1
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
-			arms_factory=0
 			industrial_complex=1
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
 		}
 	}
 }

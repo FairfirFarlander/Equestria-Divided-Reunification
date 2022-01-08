@@ -4,34 +4,17 @@ state={
 	manpower=1850469
 	state_category=city
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={1377 4299 7374 8082 8114 9951 10021 12137 }
-	resources={}
 	history={
+		owner=CYE
 		#owner=WIT
 		#add_core_of=WIT
-		#add_claim_by=
 		victory_points={7374 25}
 		buildings={
-		#STATE BUILDINGS
-			infrastructure=4
+			infrastructure=2
 			air_base=1
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
 			arms_factory=2
 			industrial_complex=3
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
 		}
 	}
 }

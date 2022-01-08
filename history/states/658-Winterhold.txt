@@ -6,11 +6,12 @@ state={
 	buildings_max_level_factor=3
 	provinces={7673 10522 9215 12302 4652 8360}
 	history={
+		owner=CYE
 		#owner=HAU
 		#add_core_of=HAU
-		#victory_points={10522 5}
+		victory_points={10522 5}
 		buildings={
-			infrastructure=2
+			infrastructure=1
 			industrial_complex=1
 			10522={naval_base=2}
 		}

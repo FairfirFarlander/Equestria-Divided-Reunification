@@ -4,37 +4,19 @@ state={
 	manpower=690560
 	state_category=city
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={1094 1110 1138 1193 1882 2149 4099 4169 4793 5143 5152 7086 7500 7655 7789 7861 8208 8215 9972 10042 10069 10986 12306}
-	resources={}
 	history={
+		owner=CYE
 		#owner=BRZ
 		#add_core_of=BRZ
-		#add_claim_by=
 		victory_points={1138 5}
 		victory_points={8215 1}
 		victory_points={9972 1}
-		victory_points={10042 10}
+		victory_points={10042 15}
 		buildings={
-		#STATE BUILDINGS
-			infrastructure=4
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
+			infrastructure=2
 			arms_factory=1
 			industrial_complex=2
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
 		}
 	}
 }

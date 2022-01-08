@@ -4,34 +4,16 @@ state={
 	manpower=1297960
 	state_category=rural
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={1769 4422 4875 7536 11571 12588 13161}
-	resources={}
 	history={
+		owner=CYE
 		#owner=PLB
 		#add_core_of=PLB
-		#add_claim_by=
-		#victory_points={}
+		victory_points={7536 10}
 		buildings={
-		#STATE BUILDINGS
 			infrastructure=1
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
-			arms_factory=0
+			arms_factory=1
 			industrial_complex=1
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
 		}
 	}
 }

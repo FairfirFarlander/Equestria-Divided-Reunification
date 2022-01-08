@@ -4,40 +4,20 @@ state={
 	manpower=768649
 	state_category=town
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={1214 1303 1420 1830 4094 4179 4337 7197 7259 9965 11143 11949 12028 12143 12170 12231 12272}
 	resources={chromium=5}
 	history={
+		owner=CYE
 		#owner=BAK
 		#add_core_of=BAK
-		#add_claim_by=
 		victory_points={7197 3}
 		victory_points={12143 5}
 		buildings={
-		#STATE BUILDINGS
-			infrastructure=2
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
-			arms_factory=0
+			infrastructure=1
 			industrial_complex=1
 			dockyard=2
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			7197={
-				naval_base=2
-				#bunker=0
-				#coastal_bunker=0
-			}
-			12143={
-				naval_base=2
-				#bunker=0
-				#coastal_bunker=0
-			}
+			7197={naval_base=2}
+			12143={naval_base=2}
 		}
 	}
 }

@@ -11,7 +11,7 @@ state={	#EDRSTATE
 		add_core_of=SGR
 		victory_points={3069 3}
 		buildings={
-			infrastructure=2
+			infrastructure=1
 			dockyard=1
 		}
 	}

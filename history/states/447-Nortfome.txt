@@ -4,35 +4,16 @@ state={
 	manpower=595600
 	state_category=rural
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={1107 1787 1853 2002 2086 4856 5157 8106 9084 10066 10139 10629 10632 10729 10772 11955 12069 12539}
-	resources={oil=4}
+	resources={oil=8}
 	history={
+		owner=CYE
 		#owner=PYT
 		#add_core_of=PYT
-		#add_claim_by=
-		victory_points={9084 3}
+		victory_points={8106 3}
 		victory_points={10632 5}
 		buildings={
-		#STATE BUILDINGS
 			infrastructure=1
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
-			arms_factory=0
-			industrial_complex=0
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
 		}
 	}
 }

@@ -7,6 +7,7 @@ state={
 	provinces={2080 2120 2192 5117 7619 8193 10171 10511 10948 12775 12896 12935 12945}
 	resources={aluminium=7 tungsten=2 steel=5}
 	history={
+		owner=CYE
 		#owner=GRU
 		#add_core_of=GRU
 	}

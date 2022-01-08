@@ -1,6 +1,10 @@
 #LOCALE			#Add Hofffield and McColt Civil War here
 capital=48
-oob="MWC_1007"
+if={
+	limit={has_dlc="No Step Back"}
+	set_oob="MWC_07"	#_nsb
+	else={set_oob="MWC_07"}
+}
 if={
 	limit={has_dlc="Man the Guns"}
 	set_naval_oob="MWC_1007_naval"
@@ -16,6 +20,15 @@ add_ideas={
 	lack_of_scientists2
 	poverty4
 	#MWC_militia
+}
+if={
+	limit={has_dlc="No Step Back"}
+	add_ideas={
+		traditionalism_academy_spirit
+		doctrinal_orthodoxy_spirit
+		disdain_for_the_digging_spirit
+	}
+	else={add_ideas={EQS_bad_tanks}}
 }
 #TECHNOLOGY
 set_technology={
@@ -57,36 +70,18 @@ set_popularities={
 	neutrality=65	democratic=19
 }
 set_politics={
-	ruling_party=neutrality
-	last_election="1004.11.11"
-	election_frequency=36
-	elections_allowed=no
+	ruling_party=neutrality	last_election="1004.11.11"
+	election_frequency=36	elections_allowed=no
 }
-create_country_leader={
-	name="Honey Dew"	#desc=
-	expire="1965.1.1"	picture=""
-	ideology=centrism	female=yes
-	traits={}
-}
-create_country_leader={
-	name="Maple Leaf"	#desc=
-	expire="1965.1.1"	#picture="Filthy.tga"
-	ideology=liberalism	#female=yes
-	traits={}
-}
-create_country_leader={
-	name="Mulberry Vine"	#desc=
-	expire="1965.1.1"	#picture="Fancy.tga"
-	ideology=syndicalism	#female=yes
-	traits={}
-}
-create_country_leader={
-	name="Rose Petal"	#desc=
-	expire="1965.1.1"	#picture="leader_unknown.dds"
-	ideology=ultranationalism	female=yes
-	traits={}
-}
-#MILITARY
+#CHARACTERS#
+recruit_character=MWC_rose_petal
+recruit_character=MWC_mulberry_wine
+recruit_character=MWC_honey_dew
+recruit_character=MWC_maple_leaf
+recruit_character=MWC_
+recruit_character=MWC_
+recruit_character=MWC_
+#Add Hoofield and Mccolt soon.
 create_corps_commander={
 	name="Apple Cider"	#id=	desc=
 	picture=""	female=yes	#Earth pony

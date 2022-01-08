@@ -1,37 +1,17 @@
-state={
+state={	#EDRSTATE
 	id=143
 	name="STATE_143"
-	manpower=190840
+	manpower=333840	#190840
 	state_category=town
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={304 331 386 3072 6197 7968 9516 11358}
-	resources={oil=14}
+	resources={oil=7}
 	history={
 		owner=CRL
 		add_core_of=CRL
-		#add_claim_by=
 		victory_points={304 10}
 		buildings={
-		#STATE BUILDINGS
-			infrastructure=2
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
-			arms_factory=0
-			industrial_complex=0
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
+			infrastructure=1
 		}
 	}
 }

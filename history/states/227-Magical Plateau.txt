@@ -1,37 +1,16 @@
-state={
+state={	#EDRSTATE
 	id=227
 	name="STATE_227"
 	manpower=214892
 	state_category=rural
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={667 784 3681 3788 3907 4124 6877 6894 7143 9108 9607 9644 9755 9811 11576 11611 11713 11792 11851 12013 12016}
-	resources={}
 	history={
 		owner=ALA
 		add_core_of=ALA
-		#add_claim_by=
 		victory_points={784 2}
 		buildings={
-		#STATE BUILDINGS
 			infrastructure=1
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
-			arms_factory=0
-			industrial_complex=0
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
 		}
 	}
 }

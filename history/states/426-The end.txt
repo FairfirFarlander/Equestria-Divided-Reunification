@@ -4,44 +4,22 @@ state={
 	manpower=354600
 	state_category=town
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={292 339 6404 10125 11273 11319 13167 13183 13187}
-	resources={}
 	history={
+		owner=CYE
 		#owner=HLR
 		#add_core_of=HLR
-		#add_claim_by=
 		victory_points={10125 5}
 		buildings={
-		#STATE BUILDINGS
-			infrastructure=3
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
+			infrastructure=2
 			arms_factory=1
 			industrial_complex=1
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
 			10125={
 				naval_base=1
 				bunker=2
-				#coastal_bunker=0
 			}
-			13167={
-				#naval_base=0
-				bunker=1
-				#coastal_bunker=0
-			}
-			13187={
-				#naval_base=0
-				bunker=1
-				#coastal_bunker=0
-			}
+			13167={bunker=1}
+			13187={bunker=1}
 		}
 	}
 }

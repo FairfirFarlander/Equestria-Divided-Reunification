@@ -4,34 +4,17 @@ state={
 	manpower=611187
 	state_category=town
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={1359 1412 4202 4291 4395 4414 5104 7232 7310 7411 8100 10210 10259 10324 12142 12295}
 	resources={rubber=12}
 	history={
+		owner=CYE
 		#owner=FAL
 		#add_core_of=FAL
-		#add_claim_by=
 		victory_points={12142 10}
 		buildings={
-		#STATE BUILDINGS
-			infrastructure=3
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
-			arms_factory=0
-			industrial_complex=0
+			infrastructure=2
 			dockyard=1
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			12142={
-				naval_base=1
-				#bunker=0
-				#coastal_bunker=0
-			}
+			12142={naval_base=1}
 		}
 	}
 }

@@ -1,37 +1,19 @@
-state={
+state={	#EDRSTATE
 	id=344
 	name="STATE_344"
 	manpower=3300667
 	state_category=megalopolis
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={489}
-	resources={}
 	history={
 		owner=CRL
 		add_core_of=CRL
-		#add_claim_by=
 		victory_points={489 40}
 		buildings={
-		#STATE BUILDINGS
-			infrastructure=10
-			air_base=0
+			infrastructure=5
 			anti_air_building=3
-			radar_station=0
-		#SHARED BUILDINGS
 			arms_factory=2
 			industrial_complex=5
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
 		}
 	}
 }

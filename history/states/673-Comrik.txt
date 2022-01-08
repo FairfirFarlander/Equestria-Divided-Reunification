@@ -7,9 +7,10 @@ state={
 	provinces={4636 7597 7903 8007 10843 12397 12781}
 	resources={steel=7}
 	history={
+		owner=CYE
 		#owner=ERI
 		#add_core_of=ERI
-		#victory_points={8007 2}
+		victory_points={8007 2}
 		buildings={
 			infrastructure=1
 		}

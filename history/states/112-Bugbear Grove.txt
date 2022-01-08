@@ -1,38 +1,17 @@
-state={
+state={	#EDRSTATE
 	id=112
 	name="STATE_112"
 	manpower=16510
 	state_category=pastoral
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={542 910 6548 6875 9510 9525 9597 9692 9907 11582 11790}
 	resources={steel=2}
 	history={
 		owner=BCK
 		add_core_of=CUL
-		#add_claim_by=
-		#victory_points={}
 		set_demilitarized_zone=yes
 		buildings={
-		#STATE BUILDINGS
 			infrastructure=1
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
-			arms_factory=0
-			industrial_complex=0
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
 		}
 	}
 }

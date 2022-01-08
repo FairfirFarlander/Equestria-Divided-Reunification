@@ -4,35 +4,19 @@ state={
 	manpower=737489
 	state_category=large_town
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={756 1384 1632 2000 4482 4549 4958 5003 5029 6686 7448 7491 7560 7584 7639 7924 9205 9605 10205 10357 10414 10476 10742 10852 12161 12218 12239 12248 12722 12877}
-	resources={steel=12 chromium=18}
+	resources={steel=12 chromium=21}
 	history={
+		owner=CYE
 		#owner=FRN
 		#add_core_of=JES
 		#add_claim_by=FRN
 		victory_points={7560 5}
 		victory_points={7584 15}
 		buildings={
-		#STATE BUILDINGS
-			infrastructure=3
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
+			infrastructure=2
 			arms_factory=1
 			industrial_complex=1
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
 		}
 	}
 }

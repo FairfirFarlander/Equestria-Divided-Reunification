@@ -6,6 +6,7 @@ state={
 	buildings_max_level_factor=1
 	provinces={7114}
 	history={
+		owner=CYE
 		#owner=EQC
 		#add_core_of=EQC
 		buildings={

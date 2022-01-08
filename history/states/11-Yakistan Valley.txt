@@ -1,4 +1,4 @@
-state={	#EDRSTATE
+state={
 	id=11
 	name="STATE_11"
 	manpower=2600000
@@ -7,12 +7,12 @@ state={	#EDRSTATE
 	provinces={1594 1635 3197 3317 3334 4598 4641 6248 6291 6391 6428 7632 9286 9324 11269}
 	resources={steel=20}
 	history={
+		owner=CYE
 		#owner=YAK
 		#add_core_of=YAK
-		#add_claim_by=
 		victory_points={11269 30}
 		buildings={
-			infrastructure=6
+			infrastructure=3
 			arms_factory=1
 			industrial_complex=3
 		}

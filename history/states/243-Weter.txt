@@ -4,34 +4,19 @@ state={
 	manpower=2735980
 	state_category=large_city
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={39 64 85 207 226 248 333 3035 3143 3176 6022 6122 6203 6225 6242 6245 9153 9254 9260 9265 9287 9331 9353 9386 11084 11154 11224 11234 13324 13328}
-	resources={}
 	history={
+		owner=CYE
 		#owner=GRF
 		#add_core_of=GRF
-		#add_claim_by=
 		victory_points={85 30}
 		buildings={
-		#STATE BUILDINGS
-			infrastructure=4
+			infrastructure=2
 			air_base=3
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
 			arms_factory=2
 			industrial_complex=3
 			dockyard=2
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			85={
-				naval_base=3
-				#bunker=0
-				#coastal_bunker=0
-			}
+			85={naval_base=3}
 		}
 	}
 }

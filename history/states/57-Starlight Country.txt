@@ -1,37 +1,19 @@
-state={
+state={	#EDRSTATE
 	id=57
 	name="STATE_57"
 	manpower=275600
 	state_category=large_town
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={3335}
 	resources={tungsten=8 steel=3 crystals=5}
 	history={
 		owner=STL
 		add_core_of=STL
-		#add_claim_by=
 		victory_points={3335 15}
 		buildings={
-		#STATE BUILDINGS
-			infrastructure=6
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
+			infrastructure=3
 			arms_factory=1
 			industrial_complex=2
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
 		}
 	}
 }

@@ -4,36 +4,19 @@ state={
 	manpower=824567
 	state_category=large_town
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={681 725 1325 1397 1597 3723 3756 3963 4551 7224 7266 7569 9938 10004 10093 10181 10215 11643 12041 12189 12250 12876}
-	resources={steel=12 chromium=8}
+	resources={steel=12 chromium=11}
 	history={
+		owner=CYE
 		#owner=ARA
 		#add_core_of=ARA
-		#add_claim_by=
 		victory_points={1325 2}
 		victory_points={3756 3}
 		victory_points={7266 10}
 		buildings={
-		#STATE BUILDINGS
-			infrastructure=4
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
+			infrastructure=2
 			arms_factory=1
 			industrial_complex=2
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
 		}
 	}
 }

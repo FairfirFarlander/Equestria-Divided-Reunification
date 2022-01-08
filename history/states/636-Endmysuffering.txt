@@ -6,8 +6,9 @@ state={
 	buildings_max_level_factor=1
 	provinces={4709 4770 7702 7792 7850 8188 10020 10392 10545}
 	history={
+		owner=CYE
 		#owner=FIR
 		#add_core_of=FIR
-		#victory_points={10020 3}
+		victory_points={10020 1}
 	}
 }

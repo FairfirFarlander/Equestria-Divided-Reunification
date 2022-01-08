@@ -4,34 +4,16 @@ state={
 	manpower=784760
 	state_category=large_town
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={1 652 1636 4017 4115 4583 4591 4677 4792 6642 6997 7176 11146 11880 11976}
 	resources={oil=5 chromium=2}
 	history={
+		owner=CYE
 		#owner=WNG
 		#add_core_of=WNG
-		#add_claim_by=
 		victory_points={6997 15}
 		buildings={
-		#STATE BUILDINGS
-			infrastructure=3
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
-			arms_factory=0
+			infrastructure=2
 			industrial_complex=3
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
 		}
 	}
 }

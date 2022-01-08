@@ -1,37 +1,20 @@
-state={
+state={	#EDRSTATE
 	id=116
 	name="STATE_116"
 	manpower=311100
 	state_category=rural
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={503 595 3495 3523 3737 3931 6621 6759 6792 9867 11613 11616 11699}
-	resources={}
 	history={
 		owner=BCK
 		add_core_of=BCK
-		#add_claim_by=
 		victory_points={9867 10}	#3 in EAW
 		buildings={
-		#STATE BUILDINGS
-			infrastructure=2
+			infrastructure=1
 			air_base=1
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
 			arms_factory=1
 			industrial_complex=1
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			9867={
-				#naval_base=0
-				bunker=1
-				#coastal_bunker=0
-			}
+			9867={bunker=1}
 		}
 	}
 }

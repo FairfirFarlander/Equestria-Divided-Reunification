@@ -1,37 +1,13 @@
-state={
+state={	#EDRSTATE
 	id=108
 	name="STATE_108"
 	manpower=113100
 	state_category=rural
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={918 931 3930 4080 4182 6744 6954 7068 7098 7183 7198 9979 11749 11798}
-	resources={}
 	history={
 		owner=HWG
 		add_core_of=HWG
-		#add_claim_by=
 		victory_points={4080 2}
-		buildings={
-		#STATE BUILDINGS
-			infrastructure=0
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
-			arms_factory=0
-			industrial_complex=0
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
-		}
 	}
 }

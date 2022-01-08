@@ -4,34 +4,12 @@ state={
 	manpower=186905
 	state_category=pastoral
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={305 1262 3270 3294 3300 4400 6217 6224 6246 6278 6297 6323 6368 6388 7403 7718 9385 10348 10406 10479 10552 11320 11365 12244}
 	resources={tungsten=10 steel=8 crystals=10}
 	history={
+		owner=CYE
 		#owner=MNC
 		#add_core_of=MNC
-		#add_claim_by=
 		victory_points={6224 3}
-		buildings={
-		#STATE BUILDINGS
-			infrastructure=0
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
-			arms_factory=0
-			industrial_complex=0
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
-		}
 	}
 }

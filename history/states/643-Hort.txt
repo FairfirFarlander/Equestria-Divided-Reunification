@@ -7,6 +7,7 @@ state={
 	provinces={1200 1660 2175 2227 5168 5186 8239 10933 10989 10994 11031 12937 12972}
 	resources={oil=3}
 	history={
+		owner=CYE
 		#owner=WAT
 		#add_core_of=WAT
 	}

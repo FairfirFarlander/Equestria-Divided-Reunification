@@ -4,34 +4,19 @@ state={
 	manpower=1600300
 	state_category=town
 	buildings_max_level_factor=1.2
-	impassable=no
 	provinces={602 777 4757 4784 4869 7794 7834 9740 9802 10621 10718 12346 12463 12701}
-	resources={oil=20 steel=5}
+	resources={oil=10 steel=5}
 	history={
+		owner=CYE
 		#owner=CHN
 		#add_core_of=CHN
-		#add_claim_by=
 		victory_points={12346 10}
 		buildings={
-		#STATE BUILDINGS
-			infrastructure=2
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
-			arms_factory=0
+			infrastructure=1
 			industrial_complex=1
 			dockyard=2
-			synthetic_refinery=0
 			fuel_silo=1
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			12346={
-				naval_base=4
-				#bunker=0
-				#coastal_bunker=0
-			}
+			12346={naval_base=4}
 		}
 	}
 }

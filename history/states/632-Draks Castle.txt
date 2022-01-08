@@ -7,8 +7,9 @@ state={
 	provinces={438 4814 4830 7175 7204 7221 7780 11992 12570}
 	resources={tungsten=4 steel=4 crystals=2}
 	history={
+		owner=CYE
 		#owner=LUS
 		#add_core_of=LUS
-		#victory_points={11992 3}
+		victory_points={7204 3}
 	}
 }

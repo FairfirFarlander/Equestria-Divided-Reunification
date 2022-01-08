@@ -4,34 +4,12 @@ state={
 	manpower=59484
 	state_category=wasteland
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={1157 1296 1366 1385 1417 4075 4119 4275 4336 4348 4392 7254 7295 10103 10158 10193 10267 10283 12048 12127 12197 12267 12292}
 	resources={tungsten=7 steel=12 crystals=15}
 	history={
+		owner=CYE
 		#owner=SIC
 		#add_core_of=SIC
-		#add_claim_by=
 		victory_points={1366 1}
-		buildings={
-		#STATE BUILDINGS
-			infrastructure=0
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
-			arms_factory=0
-			industrial_complex=0
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
-		}
 	}
 }

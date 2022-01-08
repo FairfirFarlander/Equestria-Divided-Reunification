@@ -1,37 +1,17 @@
-state={
+state={	#EDRSTATE
 	id=301
 	name="STATE_301"
 	manpower=54478
 	state_category=rural
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={1204 1587 1767 1843 1913 4133 4151 4200 7083 7139 7388 9834 10081 11650 12079}
-	resources={}
 	history={
+		owner=CYE
 		#owner=OLE
 		#add_core_of=OLE
-		#add_claim_by=
-		victory_points={9834 3}
+		victory_points={9834 1}
 		buildings={
-		#STATE BUILDINGS
-			infrastructure=0
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
-			arms_factory=0
-			industrial_complex=0
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
+			9834={naval_base=1}
 		}
 	}
 }

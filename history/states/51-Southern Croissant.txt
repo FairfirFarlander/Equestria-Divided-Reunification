@@ -1,37 +1,17 @@
-state={
+state={	#EDRSTATE
 	id=51
 	name="STATE_51"
 	manpower=651400
 	state_category=rural
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={660 684 690 3484 3663 3676 9551 9617 9660 11520 11539 11554 11619 11646 11663 11679}
-	resources={chromium=12}
+	resources={chromium=14}
 	history={
 		owner=COT
 		add_core_of=COT
-		#add_claim_by=
 		victory_points={3663 3}
 		buildings={
-		#STATE BUILDINGS
-			infrastructure=3
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
-			arms_factory=0
-			industrial_complex=0
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
+			infrastructure=2
 		}
 	}
 }

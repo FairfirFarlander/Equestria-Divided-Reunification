@@ -10,8 +10,7 @@ state={	#EDRSTATE
 		owner=THA
 		add_core_of=THA
 		victory_points={11601 1}	#EAW
-		buildings={
-			air_base=0	#Gimmie air field through focus!
+		buildings={	#Gimmie air field through focus!
 		}
 	}
 }

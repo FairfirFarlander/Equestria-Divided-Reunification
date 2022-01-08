@@ -4,35 +4,17 @@ state={
 	manpower=306549
 	state_category=rural
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={3 84 1391 1418 1680 1694 3086 4238 4250 4333 4850 7188 7298 7357 7741 7874 9292 9409 10211 10568 12285 12619}
 	resources={oil=9 aluminium=18}
 	history={
+		owner=CYE
 		#owner=EQC
 		#add_core_of=EQC
-		#add_claim_by=
 		victory_points={84 5}
 		victory_points={1680 1}
 		buildings={
-		#STATE BUILDINGS
-			infrastructure=3
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
-			arms_factory=0
-			industrial_complex=0
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			84={
-				naval_base=1
-				#bunker=0
-				#coastal_bunker=0
-			}
+			infrastructure=2
+			84={naval_base=1}
 		}
 	}
 }

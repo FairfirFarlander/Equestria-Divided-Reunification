@@ -1,37 +1,16 @@
-state={
+state={	#EDRSTATE
 	id=145
 	name="STATE_145"
 	manpower=30550
 	state_category=pastoral
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={3325 3341 6066 6389 9038 9083 9435 11065 11126 11409}
 	resources={crystals=5}
 	history={
 		owner=CRL
 		add_core_of=CRL
-		#add_claim_by=
-		#victory_points={}
 		buildings={
-		#STATE BUILDINGS
 			infrastructure=1
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
-			arms_factory=0
-			industrial_complex=0
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
 		}
 	}
 }

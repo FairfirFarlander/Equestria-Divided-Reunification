@@ -5,13 +5,14 @@ state={
 	state_category=rural
 	buildings_max_level_factor=1
 	provinces={2215 2228 4010 5218 7025 7085 8129 9995 10098 10926 10992 11021 11925 12920 12954}
-	resources={chromium=6 crystals=24}
+	resources={chromium=9 crystals=24}
 	history={
+		owner=CYE
 		#owner=DMT
 		#add_core_of=DMT
-		#victory_points={4010 3}
+		victory_points={4010 3}
 		buildings={
-			infrastructure=2
+			infrastructure=1
 		}
 	}
 }

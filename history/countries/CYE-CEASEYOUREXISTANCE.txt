@@ -1,0 +1,26 @@
+capital=574
+oob="CYE"
+set_research_slots=1
+set_stability=1
+set_war_support=0
+add_ideas={
+	disarmed_nation	closed_economy	isolation
+	poor_science_base	lack_of_scientists	poverty
+	detached_country	generic_race_idea
+}
+set_technology={
+	pony_race=1
+	melee_weapons=1
+	tech_support=1
+}
+actually_fix_weapon_techs=yes
+set_rule={can_generate_female_aces=yes}
+set_popularities={
+	fascism=0	communism=0
+	neutrality=100	democratic=0
+}
+set_politics={
+	ruling_party=neutrality	last_election="1000.10.10"
+	election_frequency=36	elections_allowed=no
+}
+#VARIENTS#

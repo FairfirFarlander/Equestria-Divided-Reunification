@@ -1,37 +1,13 @@
-state={
+state={	#EDRSTATE
 	id=348
 	name="STATE_348"
 	manpower=129900
 	state_category=rural
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={3444 3553 6241 11556}
-	resources={}
 	history={
 		owner=JTL
 		add_core_of=JTL
-		#add_claim_by=
 		victory_points={3444 1}
-		buildings={
-		#STATE BUILDINGS
-			infrastructure=0
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
-			arms_factory=0
-			industrial_complex=0
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
-		}
 	}
 }

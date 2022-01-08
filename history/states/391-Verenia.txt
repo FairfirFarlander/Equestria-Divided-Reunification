@@ -4,35 +4,18 @@ state={
 	manpower=1317004
 	state_category=large_city
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={1267 1780 3739 4404 4687 4785 7701 7707 7750 10544 10576 10673 10705 12555 12595 12599 12655}
 	resources={steel=10}
 	history={
+		owner=CYE
 		#owner=EYR
 		#add_core_of=EYR
-		#add_claim_by=
 		victory_points={4404 25}
 		victory_points={7701 2}
 		buildings={
-		#STATE BUILDINGS
-			infrastructure=4
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
+			infrastructure=2
 			arms_factory=2
 			industrial_complex=3
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
 		}
 	}
 }

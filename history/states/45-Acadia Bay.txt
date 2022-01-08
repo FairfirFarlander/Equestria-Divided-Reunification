@@ -10,7 +10,7 @@ state={	#EDRSTATE
 		add_core_of=VHT
 		victory_points={7077 5}
 		buildings={
-			infrastructure=4
+			infrastructure=2
 			7077={naval_base=1}
 		}
 	}

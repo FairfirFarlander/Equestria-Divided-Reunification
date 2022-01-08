@@ -10,7 +10,7 @@ state={	#EDRSTATE
 		add_core_of=HEB
 		victory_points={11037 3}
 		buildings={
-			infrastructure=4
+			infrastructure=2
 		}
 	}
 }

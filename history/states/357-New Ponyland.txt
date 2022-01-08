@@ -4,34 +4,15 @@ state={
 	manpower=103457
 	state_category=pastoral
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={18 1068 1600 1938 2004 3087 3168 3795 4073 6094 6382 6409 7994 9957 10031 10126 12372}
 	resources={oil=12 aluminium=23}
 	history={
+		owner=CYE
 		#owner=EQC
 		#add_core_of=EQC
-		#add_claim_by=
 		victory_points={9957 1}
 		buildings={
-		#STATE BUILDINGS
-			infrastructure=3
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
-			arms_factory=0
-			industrial_complex=0
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
+			infrastructure=2
 		}
 	}
 }

@@ -7,11 +7,12 @@ state={
 	provinces={1510 1579 4513 4557 7090 7574 7944 9946 10060 10401 10428 10469 11924 12375 12420 12490}
 	resources={steel=4 chromium=8 crystals=16}
 	history={
+		owner=CYE
 		#owner=BAR
 		#add_core_of=BAR
 		#add_claim_by=WIT
-		#victory_points={4557 3}
-		#victory_points={9946 10}
+		victory_points={4557 3}
+		victory_points={9946 10}
 		buildings={
 			infrastructure=1
 			arms_factory=1

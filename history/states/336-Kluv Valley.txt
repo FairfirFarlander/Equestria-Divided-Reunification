@@ -4,35 +4,17 @@ state={
 	manpower=167453
 	state_category=rural
 	buildings_max_level_factor=1
-	impassable=no
 	provinces={261 300 356 384 429 3376 3421 4512 6222 6420 6493 9266 9313 9411 11149 11214 11242 11347 11368}
 	resources={aluminium=5 steel=9}
 	history={
+		owner=CYE
 		#owner=GRF
 		#add_core_of=GRF
 		#add_claim_by=YAK
 		#add_claim_by=JAK
 		victory_points={9411 5}
 		buildings={
-		#STATE BUILDINGS
-			infrastructure=2
-			air_base=0
-			anti_air_building=0
-			radar_station=0
-		#SHARED BUILDINGS
-			arms_factory=0
-			industrial_complex=0
-			#dockyard=0
-			synthetic_refinery=0
-			fuel_silo=0
-			rocket_site=0
-			nuclear_reactor=0
-		#PROVINCE BUILDINGS	
-			#={
-				#naval_base=0
-				#bunker=0
-				#coastal_bunker=0
-			#}
+			infrastructure=1
 		}
 	}
 }
