@@ -7,6 +7,7 @@ state={
 	provinces={1982 6473 7969 8125 9192 9337 10329 10523 10837 11321}
 	history={
 		owner=CYE
+		add_core_of=CYE
 		#owner=NTR
 		#add_core_of=NTR
 	}

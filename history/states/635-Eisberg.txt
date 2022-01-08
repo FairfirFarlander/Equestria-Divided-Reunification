@@ -8,6 +8,7 @@ state={
 	resources={chromium=9 crystals=24}
 	history={
 		owner=CYE
+		add_core_of=CYE
 		#owner=DMT
 		#add_core_of=DMT
 		victory_points={4010 3}

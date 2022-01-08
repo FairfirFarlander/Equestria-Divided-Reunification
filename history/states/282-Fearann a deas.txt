@@ -8,6 +8,7 @@ state={
 	resources={tungsten=8 crystals=9}
 	history={
 		owner=CYE
+		add_core_of=CYE
 		#owner=PNG
 		#add_core_of=PNG
 		buildings={

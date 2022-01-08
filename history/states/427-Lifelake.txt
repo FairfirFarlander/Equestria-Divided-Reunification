@@ -7,6 +7,7 @@ state={
 	provinces={1133 1671 1891 9299 9985 11225 11348 11377 13168}
 	history={
 		owner=CYE
+		add_core_of=CYE
 		#owner=HLR
 		#add_core_of=HLR
 		buildings={

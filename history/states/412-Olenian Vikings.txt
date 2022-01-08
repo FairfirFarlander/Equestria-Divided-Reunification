@@ -8,6 +8,7 @@ state={
 	resources={steel=6 crystals=12}
 	history={
 		owner=CYE
+		add_core_of=CYE
 		#owner=OLV
 		#add_core_of=OLV
 		victory_points={5091 3}

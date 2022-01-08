@@ -7,6 +7,7 @@ state={
 	provinces={4559 4937 5002 8023}
 	history={
 		owner=CYE
+		add_core_of=CYE
 		#owner=RCT
 		#add_core_of=RCT
 		#add_claim_by=WIT

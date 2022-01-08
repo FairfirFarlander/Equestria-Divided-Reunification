@@ -7,6 +7,7 @@ state={
 	provinces={4597 12501}
 	history={
 		owner=CYE
+		add_core_of=CYE
 		#owner=CHN
 		#add_core_of=CHN
 		victory_points={12501 15}

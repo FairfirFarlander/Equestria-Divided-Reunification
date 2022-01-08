@@ -8,6 +8,7 @@ state={
 	resources={rubber=6}
 	history={
 		owner=CYE
+		add_core_of=CYE
 		#owner=MIT
 		#add_core_of=MIT
 		victory_points={2184 3}

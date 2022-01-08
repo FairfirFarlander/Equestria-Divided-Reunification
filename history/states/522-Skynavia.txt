@@ -8,6 +8,7 @@ state={
 	resources={steel=5}
 	history={
 		owner=CYE
+		add_core_of=CYE
 		#owner=SRS
 		#add_core_of=SRS
 		#add_claim_by=NTR

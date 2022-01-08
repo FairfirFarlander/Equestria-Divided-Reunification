@@ -8,6 +8,7 @@ state={
 	resources={crystals=38}
 	history={
 		owner=CYE
+		add_core_of=CYE
 		#owner=GFF
 		#add_core_of=GFF
 		#add_core_of=GRF

@@ -7,6 +7,7 @@ state={
 	provinces={1051 2185 4525 7589 8148 9968 11946 12331 12609 13234}
 	history={
 		owner=CYE
+		add_core_of=CYE
 		#owner=FBK
 		#add_core_of=FBK
 	}

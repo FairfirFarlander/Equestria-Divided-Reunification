@@ -8,6 +8,7 @@ state={
 	resources={aluminium=3 steel=3 crystals=4}
 	history={
 		owner=CYE
+		add_core_of=CYE
 		#owner=JAK
 		#add_core_of=JAK
 		buildings={

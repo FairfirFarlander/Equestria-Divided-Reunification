@@ -8,6 +8,7 @@ state={
 	resources={aluminium=11 steel=12}
 	history={
 		owner=CYE
+		add_core_of=CYE
 		#owner=YAL
 		#add_core_of=YAL
 		victory_points={7815 2}

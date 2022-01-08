@@ -7,6 +7,7 @@ state={
 	provinces={1488 4496 4566 4582 7312 7338 7492 7531 7647 7675 10134 10371 12238}
 	history={
 		owner=CYE
+		add_core_of=CYE
 		#owner=CYA
 		#add_core_of=CYA
 		#add_claim_by=MIT

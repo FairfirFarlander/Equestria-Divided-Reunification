@@ -8,6 +8,7 @@ state={
 	resources={aluminium=7 tungsten=2 steel=5}
 	history={
 		owner=CYE
+		add_core_of=CYE
 		#owner=GRU
 		#add_core_of=GRU
 	}

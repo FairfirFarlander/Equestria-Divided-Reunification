@@ -7,6 +7,7 @@ state={
 	provinces={1285 1376 1884 4085 4384 4401 4408 4504 4532 7292 7549 10177 10232 10261 10431 10616 12204 12232 12288 12436}
 	history={
 		owner=CYE
+		add_core_of=CYE
 		#owner=BRF
 		#add_core_of=BRF
 		#add_core_of=GRW

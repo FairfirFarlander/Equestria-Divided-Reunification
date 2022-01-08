@@ -8,6 +8,7 @@ state={
 	resources={chromium=11}
 	history={
 		owner=CYE
+		add_core_of=CYE
 		#owner=RCT
 		#add_core_of=RCT
 		victory_points={1383 2}

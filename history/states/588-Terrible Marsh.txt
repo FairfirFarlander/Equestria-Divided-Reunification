@@ -8,6 +8,7 @@ state={
 	resources={oil=20}
 	history={
 		owner=CYE
+		add_core_of=CYE
 		#owner=GRW
 		#add_core_of=GRW
 		#add_core_of=BRF

@@ -8,6 +8,7 @@ state={
 	resources={aluminium=22}
 	history={
 		owner=CYE
+		add_core_of=CYE
 		#owner=OLE
 		#add_core_of=OLE
 		buildings={

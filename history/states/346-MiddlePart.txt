@@ -7,6 +7,7 @@ state={
 	provinces={274 275 335 3322 5085 6343 6358 9033 9339 11158 11227 11258 11275 11369}
 	history={
 		owner=CYE
+		add_core_of=CYE
 		#owner=YAK
 		#add_core_of=YAK
 		victory_points={9339 1}

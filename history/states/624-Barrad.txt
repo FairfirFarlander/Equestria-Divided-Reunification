@@ -8,6 +8,7 @@ state={
 	resources={steel=4 chromium=8 crystals=16}
 	history={
 		owner=CYE
+		add_core_of=CYE
 		#owner=BAR
 		#add_core_of=BAR
 		#add_claim_by=WIT
