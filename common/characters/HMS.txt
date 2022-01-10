@@ -21,7 +21,7 @@ characters={
 	}
 	HMS_frail_lance={
 		name=HMS_frail_lance
-		portraits={civilian={large="gfx/leaders/HMS/HMS_frail_lance.dds"}}
+		#portraits={civilian={large="gfx/leaders/HMS/HMS_frail_lance.dds"}}
 		country_leader={
 			desc="HMS_flance_poli_desc"	ideology=anarchist_communism
 			expire="1030.03.13.08"
@@ -57,7 +57,7 @@ characters={
 	HMS_white_wind={
 		name=HMS_white_wind
 		gender=female
-		portraits={civilian={large="gfx/leaders/HMS/HMS_white_wind.dds"}}
+		#portraits={civilian={large="gfx/leaders/HMS/HMS_white_wind.dds"}}
 		country_leader={
 			desc="HMS_wwind_poli_desc"	ideology=liberalism
 			expire="1030.03.13.08"
@@ -97,7 +97,7 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/HMS/HMS_cadence.dds"
-				small="gfx/leaders/HMS/HMS_cadence_small.dds"
+				#small="gfx/leaders/HMS/HMS_cadence_small.dds"
 			}
 		}
 		country_leader={

@@ -119,15 +119,30 @@ characters={
 			traits={thestral_race_trait}	#add siren trait
 		}
 	}
+	HWG_mashed_potato={
+		name=HWG_mashed_potato
+		portraits={
+			army={
+				large="gfx/leaders/HWG/HWG_mashed_potato.dds"
+				#small="gfx/leaders/HWG/HWG_mashed_potato_small.dds"
+			}
+		}
+		corps_commander={
+			desc="HWG_mpotato_mili_desc"
+			skill=1 attack_skill=1	defense_skill=1
+			planning_skill=1	logistics_skill=1
+			traits={diamond_dog_race_trait}
+		}
+	}
 	HWG_generic_admiral={
 		name=HWG_generic_admiral
 		gender=female
-		portraits={
-			army={
-				large="gfx/leaders/HWG/HWG_generic_admiral.dds"
-				#small="gfx/leaders/HWG/HWG_generic_admiral_small.dds"#
-			}
-		}
+		#portraits={
+		#	army={
+		#		large="gfx/leaders/HWG/HWG_generic_admiral.dds"
+		#		small="gfx/leaders/HWG/HWG_generic_admiral_small.dds"#
+		#	}
+		#}
 		navy_leader={
 			desc="HWG_gadmiral_navy_desc"
 			skill=1	attack_skill=1	defense_skill=1

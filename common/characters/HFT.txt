@@ -30,12 +30,12 @@ characters={
 		gender=female
 		portraits={
 			civilian={
-				large="gfx/leaders/HFT/HFT_trixie_lulamoon.dds"
-				small="gfx/leaders/HFT/HFT_trixie_lulamoon_small.dds"
+				large="gfx/leaders/HMS/HMS_trixie_lulamoon.dds"
+				#small="gfx/leaders/HFT/HFT_trixie_lulamoon_small.dds"
 			}
 			army={
-				large="gfx/leaders/HFT/HFT_trixie_lulamoon.dds"
-				small="gfx/leaders/HFT/HFT_trixie_lulamoon_small.dds"
+				large="gfx/leaders/HMS/HMS_trixie_lulamoon.dds"
+				#small="gfx/leaders/HFT/HFT_trixie_lulamoon_small.dds"
 			}
 		}
 		country_leader={

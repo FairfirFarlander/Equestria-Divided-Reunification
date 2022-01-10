@@ -61,54 +61,53 @@ characters={
 			id=-1
 		}
 	}
-	
-	
-	MWC_apple_cider={
+	MWC_apple_cider={	#earthy
 		name=MWC_apple_cider
 		gender=female
-		portraits={
-			army={
-				large="gfx/leaders/MWC/MWC_apple_cider.dds"
-				small="gfx/leaders/MWC/MWC_apple_cider_small.dds"
-			}
-		}
-		field_marshal/corps_commander={
+		#portraits={
+		#	army={
+		#		large="gfx/leaders/MWC/MWC_apple_cider.dds"
+		#		small="gfx/leaders/MWC/MWC_apple_cider_small.dds"
+		#	}
+		#}
+		corps_commander={
 			desc="MWC_acider_mili_desc"
-			skill=1	attack_skill=1	defense_skill=1
-			planning_skill=1	logistics_skill=1
-			traits={RACE}
+			skill=1	attack_skill=2	defense_skill=1
+			planning_skill=1	logistics_skill=2
+			traits={pony_race_trait harsh_leader trait_engineer}
 		}
 	}
-	MWC_mist_feather={
+	MWC_mist_feather={	#pegasi
 		name=MWC_mist_feather
 		gender=female
-		portraits={
-			army={
-				large="gfx/leaders/MWC/MWC_mist_feather.dds"
-				small="gfx/leaders/MWC/MWC_mist_feather_small.dds"
-			}
-		}
-		field_marshal/corps_commander={
+		#portraits={
+		#	army={
+		#		large="gfx/leaders/MWC/MWC_mist_feather.dds"
+		#		small="gfx/leaders/MWC/MWC_mist_feather_small.dds"
+		#	}
+		#}
+		corps_commander={
 			desc="MWC_mfeather_mili_desc"
 			skill=1	attack_skill=1	defense_skill=1
 			planning_skill=1	logistics_skill=1
 			traits={RACE}
 		}
 	}
-	MWC_NAM={
-		name=MWC_NAM
+	MWC_anna_taylor={
+		name=MWC_anna_taylor
 		gender=female
-		portraits={
-			army={
-				large="gfx/leaders/MWC/MWC_NAM.dds"
-				small="gfx/leaders/MWC/MWC_NAM_small.dds"
-			}
-		}
+		#portraits={
+		#	army={
+		#		large="gfx/leaders/MWC/MWC_anna_taylor.dds"
+		#		small="gfx/leaders/MWC/MWC_anna_taylor_small.dds"
+		#	}
+		#}
 		navy_leader={
-			desc="MWC_SNA_navy_desc"
+			desc="MWC_ataylor_navy_desc"
 			skill=1	attack_skill=1	defense_skill=1
-			maneuvering_skill=1	coordination_skill=1
+			maneuvering_skill=2	coordination_skill=2
 			traits={pony_race_trait aviation_enthusiast}
 		}
 	}
+	#Add Hoofield and Mccolt soon.
 }

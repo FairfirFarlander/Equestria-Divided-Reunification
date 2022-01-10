@@ -63,7 +63,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/HEB/HEB_big_mac.dds"
-				small="gfx/leaders/HEB/HEB_big_mac_small.dds"
+				#small="gfx/leaders/HEB/HEB_big_mac_small.dds"
 			}
 		}
 		corps_commander={
@@ -78,7 +78,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/HEB/HEB_braeburn.dds"
-				small="gfx/leaders/HEB/HEB_braeburn_small.dds"
+				#small="gfx/leaders/HEB/HEB_braeburn_small.dds"
 			}
 		}
 		corps_commander={
@@ -94,7 +94,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/HEB/HEB_lightning_dust.dds"
-				small="gfx/leaders/HEB/HEB_lightning_dust_small.dds"
+				#small="gfx/leaders/HEB/HEB_lightning_dust_small.dds"
 			}
 		}
 		corps_commander={
@@ -109,7 +109,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/HEB/HEB_chief_strongheart.dds"
-				small="gfx/leaders/HEB/HEB_chief_strongheart_small.dds"
+				#small="gfx/leaders/HEB/HEB_chief_strongheart_small.dds"
 			}
 		}
 		corps_commander={
@@ -130,11 +130,11 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/HEB/HEB_apple_bloom.dds"
-				small="gfx/leaders/HEB/HEB_apple_bloom_small.dds"
+				#small="gfx/leaders/HEB/HEB_apple_bloom_small.dds"
 			}
 			army={
 				large="gfx/leaders/HEB/HEB_apple_bloom.dds"
-				small="gfx/leaders/HEB/HEB_apple_bloom_small.dds"
+				#small="gfx/leaders/HEB/HEB_apple_bloom_small.dds"
 			}
 		}
 		advisor={

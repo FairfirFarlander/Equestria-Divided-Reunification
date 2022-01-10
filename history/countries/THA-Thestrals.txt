@@ -1,6 +1,10 @@
 #LOCALE
 capital=30
-oob="THA_07"
+if={
+	limit={has_dlc="No Step Back"}
+	set_oob="THA_07"	#_nsb
+	else={set_oob="THA_07"}
+}
 #FOUNTATION
 set_research_slots=2
 set_stability=0.23
@@ -15,6 +19,15 @@ add_ideas={
 	agrarian_society
 	no_lack_of_scientists
 	no_poverty
+}
+if={
+	limit={has_dlc="No Step Back"}
+	add_ideas={
+		traditionalism_academy_spirit
+		doctrinal_orthodoxy_spirit
+		disdain_for_the_digging_spirit
+	}
+	else={add_ideas={EQS_bad_tanks}}
 }
 add_offsite_building={
 	type=industrial_complex
@@ -62,17 +75,8 @@ set_politics={
 	ruling_party=neutrality	last_election="1001.10.10"
 	election_frequency=36	elections_allowed=no
 }
-create_country_leader={
-	name="Argent End"	#desc=
-	expire="1014.6.6"	picture="Argent_End_Beginning.tga"
-	ideology=despotism	#female=yes
-	traits={}
-}
-create_country_leader={
-	name="The Count"	#desc=
-	expire="1025.10.31"	picture="The_Count.tga"
-	ideology=holy_order_f	#female=yes
-	traits={}
-}
-#MILITARY
+#CHARACTERS#
+recruit_character=THA_argent_end
+recruit_character=THA_auburn_peak
+recruit_character=THA_the_niece
 #VARIENTS

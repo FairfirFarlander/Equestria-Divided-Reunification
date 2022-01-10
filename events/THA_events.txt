@@ -63,11 +63,11 @@ add_namespace=THAact01
 		}
 	}
 	country_event={		#Auburn's Reassuring Word
-		id=THAact01.07	is_triggered_only=yes
-		immediate={log="[GetDateText]: [Root.GetName]: event THAact01.07"}
-		title=THAact01.07.t	desc=THAact01.07.d
+		id=THAact01.08	is_triggered_only=yes
+		immediate={log="[GetDateText]: [Root.GetName]: event THAact01.08"}
+		title=THAact01.08.t	desc=THAact01.08.d
 		#picture=
-		option={name=THAact01.07.a
+		option={name=THAact01.08.a
 			add_ideas=THA_temp_infantry_bonus
 		}
 	}

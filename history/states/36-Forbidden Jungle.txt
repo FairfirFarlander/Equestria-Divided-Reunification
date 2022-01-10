@@ -1,8 +1,8 @@
 state={	#EDRSTATE
 	id=36
 	name="STATE_36"
-	manpower=90140	#40140
-	state_category=pastoral
+	manpower=390140	#90140	#40140
+	state_category=town
 	buildings_max_level_factor=1
 	provinces={543 557 1079 6552 6723 7040 9541 10023 11525 11901 12042 13249}
 	resources={oil=15 rubber=11}	#EAW no oil
@@ -11,5 +11,10 @@ state={	#EDRSTATE
 		add_core_of=EMB
 		#add_claim_by=THA
 		victory_points={10023 3}	#EAW no
+		buildings={
+			infrastructure=1
+			arms_factory=1
+			industrial_complex=1
+		}
 	}
 }

@@ -1,6 +1,10 @@
 #LOCALE
 capital=153
-#oob="SGR_1007"
+if={
+	limit={has_dlc="No Step Back"}
+	set_oob="SGR_07"	#_nsb
+	else={set_oob="SGR_07"}
+}
 #if={
 #	limit={has_dlc="Man the Guns"}
 #	set_naval_oob="SGR_1007_naval"
@@ -59,191 +63,12 @@ set_politics={
 	ruling_party=communism	last_election="1003.5.3"
 	election_frequency=36	elections_allowed=no
 }
-create_country_leader={
-	name="Tsar Peter IV"	#desc=
-	picture="PeterIV.tga"	expire="1965.1.1"
-	ideology=despotism	#female=yes
-	traits={}
-}
-create_country_leader={
-	name="Ratibor Svetoslavich"	#desc=
-	expire="1965.1.1"	picture="Ratibor.tga"
-	ideology=fascism_ideology	#female=yes
-	traits={}
-}
-create_country_leader={
-	name="Caramelka Sladkaya"	desc="POLITICS_CARAMELKA"
-	expire="1965.1.1"	picture="Caramelka.tga"
-	ideology=socialism	female=yes
-	traits={}
-}
-create_country_leader={
-	name="Altidiya"	desc="POLITICS_ALTY_DESC"
-	expire="1965.1.1"	picture="Alty.tga"
-	ideology=leninism	female=yes
-	traits={}
-}
-#create_country_leader={
-	#name="Sinister"	desc="POLITICS_SINNIE_DESC"
-	#expire="1965.1.1"	picture="Alty.dds"
-	#ideology=leninism	#female=yes
-	#traits={Dictator}
-#}
-#MILITARY
-create_field_marshal={
-	name="Nestor Lunin"	#id=1000	#desc=
-	picture="Nestor.tga"	
-	skill=4	attack_skill=3	defense_skill=3
-	planning_skill=3	logistics_skill=4
-	traits={pony_race_trait promising_general brilliant_strategist trait_nestor_lunin}
-}
-create_corps_commander={
-	name="Ember Flare"
-	picture="Ember_Flare.tga"
-	skill=2	attack_skill=1	defense_skill=3
-	planning_skill=1	logistics_skill=2
-	traits={pony_race_trait inflexible_strategist}
-}
-create_corps_commander={
-	name="Veronika Krasnova"
-	picture="Veronica.tga"	female=yes
-	skill=4	attack_skill=5	defense_skill=3
-	planning_skill=2	logistics_skill=3
-	traits={pony_race_trait trait_engineer panzer_leader}
-}
-create_corps_commander={
-	name="Vinous Kostylev"	#id=6970
-	picture="Vinous.tga"
-	skill=3	attack_skill=3	defense_skill=3
-	planning_skill=2	logistics_skill=2
-	traits={pony_race_trait inspiring_commissar}
-}
-create_corps_commander={
-	name="Alexia Goldgear"	#id=6969
-	picture="Gereval.tga"
-	skill=2	attack_skill=2	defense_skill=2
-	planning_skill=2	logistics_skill=1
-	traits={thestral_race_trait trait_reckless artillery_expert trickster}
-}
-create_corps_commander={
-	name="Cherry Swirl"	#id=6968
-	picture="Cherry_Swirl.tga"
-	skill=2	attack_skill=2	defense_skill=1
-	planning_skill=2	logistics_skill=2
-	traits={pony_race_trait cavalry_leader}
-}
-create_corps_commander={
-	name="Black Paint"
-	picture="Black_Paint.tga"
-	skill=2	attack_skill=2	defense_skill=1
-	planning_skill=1	logistics_skill=3
-	traits={pony_race_trait ranger}
-}
-create_corps_commander={
-	name="Comrade Ulman"
-	picture="Ulman.tga"
-	skill=2	attack_skill=1	defense_skill=3
-	planning_skill=1	logistics_skill=2
-	traits={pony_race_trait hill_fighter}
-}
-create_corps_commander={
-	name="Fiat Coin"
-	picture="Ikapoc.tga"
-	skill=2	attack_skill=3	defense_skill=1
-	planning_skill=2	logistics_skill=1
-	traits={pony_race_trait brilliant_strategist war_hero}
-}
-create_corps_commander={
-	name="Purple Heart"
-	picture="PurpleHeart.tga"	female=yes
-	skill=1	attack_skill=1	defense_skill=1
-	planning_skill=1	logistics_skill=1
-	traits={pony_race_trait bleeding_heart}
-}
-create_corps_commander={
-	name="Katya Ironstead"	#id=6967
-	picture="Katya.tga"	female=yes
-	traits={pony_race_trait winter_specialist}
-	skill=1	attack_skill=1	defense_skill=1
-	planning_skill=1	logistics_skill=1
-}
-create_corps_commander={
-	name="Cogwheel Ponyarchuk"	#id=7777
-	picture="Ponyarchuk.tga"
-	skill=3	attack_skill=3	defense_skill=2
-	planning_skill=2	logistics_skill=3
-	traits={pony_race_trait renowned_marksman commando politically_connected}
-}
-create_corps_commander={
-	name="Gemian Smit"
-	picture="Gemian Smit.tga"
-	skill=1	attack_skill=1	defense_skill=1
-	planning_skill=1	logistics_skill=1
-	traits={pony_race_trait career_officer}
-}
-create_corps_commander={
-	name="Whagirl"
-	picture="Whagirl.tga"	female=yes
-	skill=1	attack_skill=1	defense_skill=1
-	planning_skill=1	logistics_skill=1
-	traits={pony_race_trait naval_invader}
-}
-create_corps_commander={
-	name="Masha Norushkina"
-	picture="Vampirenok.tga"	female=yes
-	skill=3	attack_skill=2	defense_skill=2
-	planning_skill=4	logistics_skill=2
-	traits={thestral_race_trait harsh_leader brilliant_strategist trait_mountaineer infantry_officer}
-}
-create_corps_commander={
-	name="Depuresso"
-	picture="Depuresso.tga"	female=yes
-	skill=2	attack_skill=1	defense_skill=2
-	planning_skill=2	logistics_skill=2
-	traits={pony_race_trait harsh_leader}
-}
-create_corps_commander={
-	name="Marussia"
-	picture="Marussia.tga"	female=yes
-	skill=1	attack_skill=1	defense_skill=1
-	planning_skill=1	logistics_skill=1
-	traits={pony_race_trait commissar_general}
-}
-create_corps_commander={
-	name="Victor Historia"
-	picture="CHG.tga"
-	skill=1	attack_skill=2	defense_skill=2
-	planning_skill=2	logistics_skill=1
-	traits={pony_race_trait artillery_specialist}
-}
-create_corps_commander={
-	name="That BT-7"
-	picture="ThatfuckingBt7.tga"
-	skill=1	attack_skill=1	defense_skill=1
-	planning_skill=1	logistics_skill=1
-	traits={pony_race_trait armor_officer}
-}
-create_navy_leader={
-	name="Furious Glory"
-	picture="Furious_Glory.tga"
-	skill=4	attack_skill=4	defense_skill=3
-	maneuvering_skill=4	coordination_skill=2
-	traits={pony_race_trait bold fly_swatter destroyer_leader}
-}
-create_navy_leader={
-	name="Grey Gorshkov"
-	picture="Gorshkov.tga"
-	skill=4	attack_skill=4	defense_skill=2
-	maneuvering_skill=3	coordination_skill=4
-	traits={pony_race_trait gentlemanly seawolf blockade_runner}
-}
-create_navy_leader={
-	name="Karina"
-	picture="Karina.tga"
-	skill=3	attack_skill=2	defense_skill=3
-	maneuvering_skill=2	coordination_skill=3
-	traits={pony_race_trait battleship_adherent inshore_fighter}
-}
-#VARIENTS
-if={limit={has_dlc="Man the Guns"}
-}
+#CHARACTERS#
+recruit_character=SGR_ratibor_sventoslavich
+recruit_character=SGR_altidiya
+recruit_character=SGR_peter_iv
+recruit_character=SGR_caramelka_sladkaya
+recruit_character=SGR_nestor_lunin
+recruit_character=SGR_sinister_serov
+recruit_character=SGR_vasiliy_pantsushenko
+#VARIENTS#

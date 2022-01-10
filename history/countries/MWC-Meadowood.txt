@@ -78,25 +78,10 @@ recruit_character=MWC_rose_petal
 recruit_character=MWC_mulberry_wine
 recruit_character=MWC_honey_dew
 recruit_character=MWC_maple_leaf
-recruit_character=MWC_
-recruit_character=MWC_
-recruit_character=MWC_
+recruit_character=MWC_apple_cider
+recruit_character=MWC_mist_feather
+recruit_character=MWC_anna_taylor
 #Add Hoofield and Mccolt soon.
-create_corps_commander={
-	name="Apple Cider"	#id=	desc=
-	picture=""	female=yes	#Earth pony
-	traits={pony_race_trait harsh_leader trait_engineer}
-	skill=1	attack_skill=2	defense_skill=1
-	planning_skill=1	logistics_skill=2
-}
-create_corps_commander={
-	name="Mist Feather"	#id=	desc=
-	picture=""	female=yes	#Pegasi pony
-	traits={pony_race_trait ranger hill_fighter}
-	skill=1	attack_skill=1	defense_skill=2
-	planning_skill=1	logistics_skill=2
-}
-#Admiral Anna Taylor
 #VARIENTS
 if={limit={has_dlc="Man the Guns"}
 	create_equipment_variant={	#Light Cruiser

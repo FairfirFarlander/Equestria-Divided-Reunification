@@ -1,0 +1,33 @@
+characters={
+	SYV_ratibor_sventoslavich={
+		name=SYV_ratibor_sventoslavich
+		portraits={civilian={large="gfx/leaders/STG/Ratibor.tga"}}
+		country_leader={
+			desc="SYV_rsventoslavich_poli_desc"	ideology=fascism_ideology
+			expire="1030.03.13.08"
+			traits={}
+			id=-1
+		}
+	}
+	SYV_peter_iv={	#Tsar Peter IV
+		name=SYV_peter_iv
+		portraits={civilian={large="gfx/leaders/STG/PeterIV.tga"}}
+		country_leader={
+			desc="SYV_piv_poli_desc"	ideology=despotism
+			expire="1030.03.13.08"
+			traits={}
+			id=-1
+		}
+	}
+	SYV_caramelka_sladkaya={
+		name=SYV_caramelka_sladkaya
+		gender=female
+		portraits={civilian={large="gfx/leaders/STG/Caramelka.tga"}}
+		country_leader={	#POLITICS_CARAMELKA
+			desc="SYV_csladkaya_poli_desc"	ideology=socialism
+			expire="1030.03.13.08"
+			traits={}
+			id=-1
+		}
+	}
+}

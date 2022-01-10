@@ -1,6 +1,10 @@
 #LOCALE
 capital=157
-oob="SYV_07"
+if={
+	limit={has_dlc="No Step Back"}
+	set_oob="SYV_07"	#_nsb
+	else={set_oob="SYV_07"}
+}
 #FOUNTATION
 set_research_slots=2
 set_stability=0.17
@@ -10,11 +14,23 @@ add_ideas={
 	better_science_base pre_industrial_society
 	lack_of_scientists1 poverty2
 }
+if={
+	limit={has_dlc="No Step Back"}
+	add_ideas={
+		traditionalism_academy_spirit
+		doctrinal_orthodoxy_spirit
+		disdain_for_the_digging_spirit
+	}
+	else={add_ideas={EQS_bad_tanks}}
+}
 #TECHNOLOGY
 set_technology={
 	pony_race=1
 	melee_weapons=1
+	melee_weapons1=1
 	tech_support=1
+	tech_military_police=1
+	pre_gw_artillery=1
 	tech_pegasi=1
 }
 actually_fix_weapon_techs=yes
@@ -43,46 +59,20 @@ generic_CL_template=yes
 generic_DD_template=yes
 generic_SS_template=yes
 #MISC
+set_convoys=7
 set_rule={can_generate_female_aces=yes}
 #DIPLOMACY
 #POLITICS
 set_popularities={
-	fascism=10	communism=40
-	neutrality=7	democratic=43
+	fascism=10	communism=20
+	neutrality=27	democratic=43
 }
 set_politics={
-	ruling_party=communism	last_election="1005.10.31"
+	ruling_party=democratic	last_election="1005.10.31"
 	election_frequency=36	elections_allowed=no
 }
-create_country_leader={
-	name="Ratibor Svetoslavich"	#desc=
-	expire="1965.1.1"	picture="Ratibor.tga"
-	ideology=fascism_ideology	#female=yes
-	traits={}	#Add Panin
-}
-create_country_leader={
-	name="Florid Aria"	#desc=
-	expire="1034.12.31"	#picture=""
-	ideology=socialist_monarchism	female=yes
-	traits={}
-}
-#create_country_leader={
-#	name="Altidiya"	desc="POLITICS_ALTY_DESC"
-#	expire="1965.1.1"	picture="Alty.tga"
-#	ideology=leninism	female=yes
-#	traits={}
-#}
-create_country_leader={
-	name="Tsar Peter IV"	#desc=
-	expire="1965.1.1"	picture="PeterIV.tga"
-	ideology=despotism	#female=yes
-	traits={}
-}
-create_country_leader={
-	name="Caramelka Sladkaya"	desc="POLITICS_CARAMELKA"
-	expire="1965.1.1"	picture="Caramelka.tga"
-	ideology=socialism	female=yes
-	traits={}
-}
-#MILITARY
+#CHARACTERS#
+recruit_character=SYV_ratibor_sventoslavich
+recruit_character=SYV_peter_iv
+recruit_character=SYV_caramelka_sladkaya
 #VARIENTS

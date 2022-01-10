@@ -1,11 +1,10 @@
 #LOCALE
 capital=169
-#oob="HSW_1007"
-#if={
-	#limit={has_dlc="Man the Guns"}
-	#set_naval_oob="PIE_1007_naval"
-	#else={set_naval_oob="PIE_1007_naval_legacy"}
-#}
+if={
+	limit={has_dlc="No Step Back"}
+	set_oob="SWT_07"	#_nsb
+	else={set_oob="SWT_07"}
+}
 #FOUNTATION
 set_research_slots=2
 set_stability=0.5
@@ -16,6 +15,15 @@ add_ideas={
 	agrarian_society
 	lack_of_scientists3
 	poverty4
+}
+if={
+	limit={has_dlc="No Step Back"}
+	add_ideas={
+		traditionalism_academy_spirit
+		doctrinal_orthodoxy_spirit
+		disdain_for_the_digging_spirit
+	}
+	else={add_ideas={EQS_bad_tanks}}
 }
 #TECHNOLOGY
 set_technology={
@@ -42,10 +50,7 @@ if={limit={not={has_dlc="Man the Guns"}}
 	}
 }
 actually_fix_weapon_techs=yes
-generic_CL_template=yes
-generic_DD_template=yes
 #MISC
-set_convoys=11
 set_rule={can_generate_female_aces=yes}
 #DIPLOMACY
 #POLITICS
@@ -57,11 +62,5 @@ set_politics={
 	ruling_party=fascism	last_election="1000.10.10"
 	election_frequency=36	elections_allowed=no
 }
-create_country_leader={
-	name="Cloudy Quartz"	#desc=
-	expire="1965.1.1"	#picture=""
-	ideology=ultranationalism	female=yes
-	traits={}
-}
-#MILITARY
+#CHARACTERS#
 #VARIENTS

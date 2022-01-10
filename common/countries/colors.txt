@@ -21,7 +21,7 @@ PIE={color=rgb{187 227 208}color_ui=rgb{187 227 208}}
 PLT={color=rgb{41 64 109}color_ui=rgb{41 64 109}}
 SGR={color=rgb{249 26 93}color_ui=rgb{249 26 93}}
 STB={color=rgb{166 208 53}color_ui=rgb{166 208 53}}
-STP={color=rgb{55 129 12}color_ui=rgb{55 129 12}}
+#STP={color=rgb{55 129 12}color_ui=rgb{55 129 12}}
 SWT={color=rgb{214 254 244}color_ui=rgb{214 254 244}}
 SYV={color=rgb{252 160 254}color_ui=rgb{252 160 254}}
 THA={color=rgb{0 0 102}color_ui=rgb{0 0 102}}
