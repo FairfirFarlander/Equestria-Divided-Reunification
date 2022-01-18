@@ -1,450 +1,84 @@
-	shared_focus={		#The War
-		id=HEB_the_war
-		icon=GFX_goal_generic_demand_territory
-		x=15 y=0 cost=2
-		ai_will_do={factor=20}
+#Story Tree Main#
+	shared_focus={		#The Gathering#
+		id=HEB_S00 icon=GFX_goal_generic_national_unity_horseshoe
+		x=0 y=0 cost=8 ai_will_do={factor=4000}
+		select_effect={
+		}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HEB_the_war"
-			add_political_power=250
+			log="[GetDateText]: [Root.GetName]: focus HEB_S00"
 		}
 	}
-	shared_focus={		#Fully Mobolize Our Nation
-		id=HEB_fully_mobolize_our_nation
-		icon=GFX_goal_generic_small_arms
-		relative_position_id=HEB_the_war
-		x=-2 y=1 cost=7
-		prerequisite={focus=HEB_the_war}
-		ai_will_do={factor=20}
+	shared_focus={		#Empower Clan Governors#
+		id=HEB_S01A icon=GFX_goal_collaborate_local_elites_pony
+		relative_position_id=HEB_S00
+		x=-6 y=1 cost=2 ai_will_do={factor=4000}
+		prerequisite={focus=HEB_S00}
+		mutually_exclusive={focus=HEB_S01B}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HEB_fully_mobolize_our_nation"
-			add_manpower=2000000
+			log="[GetDateText]: [Root.GetName]: focus HEB_S01A"
 		}
 	}
-	shared_focus={		#"Free Will" Slavery
-		id=HEB_more_industry
-		icon=GFX_goal_generic_construct_civ_factory
-		relative_position_id=HEB_the_war
-		x=0 y=1 cost=7
-		prerequisite={focus=HEB_the_war}
-		ai_will_do={factor=20}
+	shared_focus={		#Respect Local Autonomy#
+		id=HEB_S01B icon=GFX_goal_improve_relations_pony_pony
+		relative_position_id=HEB_S00
+		x=-4 y=1 cost=2 ai_will_do={factor=4000}
+		prerequisite={focus=HEB_S00}
+		mutually_exclusive={focus=HEB_S01A}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HEB_more_industry"
-			three_random_industrial_complex=yes
-			two_random_industrial_complex=yes
+			log="[GetDateText]: [Root.GetName]: focus HEB_S01B"
 		}
 	}
-	shared_focus={		#Use Our Contacts
-		id=HEB_more_weapons
-		icon=GFX_goal_generic_construct_mil_factory
-		relative_position_id=HEB_the_war
-		x=2 y=1 cost=7
-		prerequisite={focus=HEB_the_war}
+	shared_focus={		#
+		id=HEB_S01C #icon=
+		relative_position_id=HEB_S00
+		x=1 y=1 cost=2 ai_will_do={factor=4000}
+		prerequisite={focus=HEB_S00}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HEB_more_weapons"
-			three_random_arms_factory=yes
-			two_random_arms_factory=yes
+			log="[GetDateText]: [Root.GetName]: focus HEB_S01C"
 		}
 	}
-	shared_focus={		#Calm Before The Storm
-		id=HEB_calm_before_the_storm
-		icon=GFX_goal_generic_alliance
-		relative_position_id=HEB_the_war
-		x=0 y=2 cost=7
-		prerequisite={focus=HEB_more_industry}
-		prerequisite={focus=HEB_more_weapons}
-		prerequisite={focus=HEB_fully_mobolize_our_nation}
-		ai_will_do={factor=20}
+	shared_focus={		#
+		id=HEB_S01D #icon=
+		relative_position_id=HEB_S00
+		x=3 y=1 cost=2 ai_will_do={factor=400}
+		prerequisite={focus=HEB_S00}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HEB_calm_before_the_storm"
-			add_war_support=0.25
+			log="[GetDateText]: [Root.GetName]: focus HEB_S01D"
 		}
 	}
-	shared_focus={		#Bring Them Down!
-		id=HEB_war_to_cloudsdale
-		icon=GFX_goal_generic_major_war
-		relative_position_id=HEB_calm_before_the_storm
-		x=-2 y=1 cost=7
-		prerequisite={focus=HEB_calm_before_the_storm}
-		available={any_neighbor_country={tag=HSW}}
-		bypass={
-			HSW={OR={
-				exists=no
-				has_war_with=ROOT
-				is_subject_of=ROOT
-			}}
-		}
-		ai_will_do={factor=20}
-		will_lead_to_war_with=HSW
+	shared_focus={		#The Hoove Plan#
+		id=HEB_S02A #icon=
+		relative_position_id=HEB_S01A
+		x=-2 y=1 cost=2 ai_will_do={factor=40}
+		prerequisite={focus=HEB_S01A}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HEB_war_to_cloudsdale"
-			every_state={limit={is_core_of=HSW}add_claim_by=HEB}
-			create_wargoal={type=annex_everything target=HSW}
+			log="[GetDateText]: [Root.GetName]: focus HEB_S02A"
 		}
 	}
-	shared_focus={		#Break the Horn
-		id=HEB_war_to_canterlot
-		icon=GFX_goal_generic_major_war
-		relative_position_id=HEB_calm_before_the_storm
-		x=0 y=1 cost=7
-		prerequisite={focus=HEB_calm_before_the_storm}
-		available={any_neighbor_country={tag=HMS}}
-		bypass={
-			HMS={OR={
-				exists=no
-				has_war_with=ROOT
-				is_subject_of=ROOT
-			}}
-		}
-		ai_will_do={factor=20}
-		will_lead_to_war_with=HMS
+	shared_focus={		#
+		id=HEB_S02B #icon=
+		relative_position_id=HEB_S01A
+		x=0 y=1 cost=2 ai_will_do={factor=40}
+		prerequisite={focus=HEB_S01A focus=HEB_S01B}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HEB_war_to_canterlot"
-			every_state={limit={is_core_of=HMS}add_claim_by=HEB}
-			create_wargoal={type=annex_everything target=HMS}
+			log="[GetDateText]: [Root.GetName]: focus HEB_S02B"
 		}
 	}
-	shared_focus={		#Burning Down the Forest
-		id=HEB_war_to_everfree
-		icon=GFX_goal_generic_major_war
-		relative_position_id=HEB_calm_before_the_storm
-		x=2 y=1 cost=7
-		prerequisite={focus=HEB_calm_before_the_storm}
-		available={any_neighbor_country={tag=HEF}}
-		bypass={
-			HEF={OR={
-				exists=no
-				has_war_with=ROOT
-				is_subject_of=ROOT
-			}}
-			VII={OR={
-				exists=no
-				has_war_with=ROOT
-				is_subject_of=ROOT
-			}}
-		}
-		ai_will_do={factor=20}
-		will_lead_to_war_with=HEF
-		will_lead_to_war_with=VII
+	shared_focus={		#
+		id=HEB_S02C #icon=
+		relative_position_id=HEB_S01B
+		x=0 y=1 cost=2 ai_will_do={factor=40}
+		prerequisite={focus=HEB_S01A focus=HEB_S01B}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HEB_war_to_everfree"
-			every_state={limit={is_core_of=HEF}add_claim_by=HEB}
-			every_state={limit={is_core_of=VII}add_claim_by=HEB}
-			create_wargoal={type=annex_everything target=HEF}
-			create_wargoal={type=annex_everything target=VII}
+			log="[GetDateText]: [Root.GetName]: focus HEB_S02C"
 		}
 	}
-	shared_focus={		#War Against the Shadow King
-		id=HEB_war_against_the_crystal_empire
-		icon=GFX_goal_generic_major_war
-		relative_position_id=HEB_calm_before_the_storm
-		x=-3 y=2 cost=7
-		prerequisite={focus=HEB_war_to_cloudsdale}
-		available={any_neighbor_country={tag=CRY}}
-		bypass={
-			CRY={OR={
-				exists=no
-				has_war_with=ROOT
-				is_subject_of=ROOT
-			}}
-		}
-		ai_will_do={factor=20}
-		will_lead_to_war_with=CRY
+	shared_focus={		#
+		id=HEB_S02D #icon=
+		relative_position_id=HEB_S01B
+		x=2 y=1 cost=2 ai_will_do={factor=40}
+		prerequisite={focus=HEB_S01B}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HEB_war_against_the_crystal_empire"
-			every_state={limit={is_core_of=CRY}add_claim_by=HEB}
-			create_wargoal={type=annex_everything target=CRY}
-		}
-	}
-	shared_focus={		#Time to "Eat the Apple"
-		id=HEB_war_to_appleloosa
-		icon=GFX_goal_generic_major_war
-		relative_position_id=HEB_calm_before_the_storm
-		x=-1 y=2 cost=7
-		prerequisite={focus=HEB_war_to_cloudsdale}
-		prerequisite={focus=HEB_war_to_canterlot}
-		prerequisite={focus=HEB_war_to_everfree}
-		available={any_neighbor_country={tag=HEB}}
-		bypass={tag=HEB}
-		ai_will_do={factor=20}
-		will_lead_to_war_with=HEB
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HEB_war_to_appleloosa"
-			#every_state={limit={is_core_of=HEB}add_claim_by=HEB}
-			#create_wargoal={type=annex_everything target=HEB}
-		}
-	}
-	shared_focus={		#Stopping the Red Tide
-		id=HEB_war_against_stalliongrad
-		icon=GFX_goal_generic_major_war
-		relative_position_id=HEB_calm_before_the_storm
-		x=1 y=2 cost=7
-		prerequisite={focus=HEB_war_to_canterlot}
-		available={any_neighbor_country={OR={tag=STL tag=STG}}}
-		bypass={
-			STG={OR={
-				exists=no
-				has_war_with=ROOT
-				is_subject_of=ROOT
-			}}
-			STL={OR={
-				exists=no
-				has_war_with=ROOT
-				is_subject_of=ROOT
-			}}
-		}
-		ai_will_do={factor=20}
-		will_lead_to_war_with=STG
-		will_lead_to_war_with=STL
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HEB_war_against_stalliongrad"
-			every_state={limit={is_core_of=STG}add_claim_by=HEB}every_state={limit={is_core_of=STL}add_claim_by=HEB}
-			create_wargoal={type=annex_everything target=STG}
-			create_wargoal={type=annex_everything target=STL}
-		}
-	}
-	shared_focus={		#Bringing down the "Gem" of Manehattan
-		id=HEB_war_to_manehattan
-		icon=GFX_goal_generic_major_war
-		relative_position_id=HEB_calm_before_the_storm
-		x=3 y=2 cost=7
-		prerequisite={
-			focus=HEB_war_to_canterlot
-			focus=HEB_war_to_everfree
-		}
-		available={any_neighbor_country={tag=HWG}}
-		bypass={
-			HWG={OR={
-				exists=no
-				has_war_with=ROOT
-				is_subject_of=ROOT
-			}}
-		}
-		ai_will_do={factor=20}
-		will_lead_to_war_with=HWG
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HEB_war_to_manehattan"
-			every_state={limit={is_core_of=HWG}add_claim_by=HEB}
-			create_wargoal={type=annex_everything target=HWG}
-		}
-	}
-	shared_focus={		#Assert Control Over the Crystal Dominion
-		id=HEB_assert_control_over_the_crystal_dominion
-		icon=GFX_goal_generic_forceful_treaty
-		relative_position_id=HEB_calm_before_the_storm
-		x=-2 y=3 cost=7
-		prerequisite={focus=HEB_war_against_the_crystal_empire}
-		available={AND={
-			CRY={OR={
-				exists=no
-				is_subject_of=ROOT
-			}}
-			HSW={exists=no}
-			HMS={exists=no}
-			HEF={exists=no}
-			HWG={exists=no}
-			CUL={exists=no}
-		}}
-		ai_will_do={factor=20}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HEB_assert_control_over_the_crystal_dominion"
-			every_state={limit={is_core_of=CRY}add_claim_by=HEB}
-			create_wargoal={type=annex_everything target=CRY}
-		}
-	}
-	shared_focus={		#Burn These Lunatics at the Stake
-		id=HEB_war_against_laughter
-		icon=GFX_goal_generic_major_war
-		relative_position_id=HEB_calm_before_the_storm
-		x=0 y=3 cost=7
-		prerequisite={focus=HEB_calm_before_the_storm}
-		prerequisite={focus=HEB_war_to_cloudsdale}
-		prerequisite={focus=HEB_war_to_canterlot}
-		prerequisite={focus=HEB_war_to_everfree}
-		prerequisite={focus=HEB_war_against_the_crystal_empire}
-		prerequisite={focus=HEB_war_to_appleloosa}
-		prerequisite={focus=HEB_war_against_stalliongrad}
-		prerequisite={focus=HEB_war_to_manehattan}
-		available={
-			HSW={exists=no}
-			HMS={exists=no}
-			HEF={exists=no}
-			HWG={exists=no}
-			CRY={OR={
-				exists=no
-				is_subject_of=ROOT
-			}}
-			STG={OR={
-				exists=no
-				is_subject_of=ROOT
-			}}
-			STL={OR={
-				exists=no
-				is_subject_of=ROOT
-			}}
-		}
-		bypass={CUL={exists=no}}
-		ai_will_do={factor=20}
-		will_lead_to_war_with=CUL
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HEB_war_against_laughter"
-			every_state={limit={is_core_of=CUL}add_claim_by=HEB}
-			create_wargoal={type=annex_everything target=CUL}
-		}
-	}
-	shared_focus={		#The pursuit of New Mareland
-		id=HEB_retake_new_mareland
-		icon=GFX_goal_generic_major_war
-		relative_position_id=HEB_calm_before_the_storm
-		x=2 y=3 cost=7
-		prerequisite={
-			focus=HEB_war_to_everfree
-			focus=HEB_war_to_manehattan
-		}
-		available={
-			has_war=no
-			has_completed_focus=HEB_rebuild_the_equestria_navy
-			OR={
-				owns_state=7
-				VII={OR={
-					exists=no
-					is_subject_of=ROOT
-					is_in_faction_with=ROOT
-				}}
-			}
-		}
-		bypass={
-			EQC={OR={
-				exists=no
-				has_war_with=ROOT
-				is_subject_of=ROOT
-			}}
-		}
-		ai_will_do={factor=20}
-		will_lead_to_war_with=EQC
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HEB_retake_new_mareland"
-			every_state={limit={is_core_of=EQC}add_claim_by=HEB}
-			create_wargoal={type=annex_everything target=EQC}
-		}
-	}
-	shared_focus={		#Equestria Reunited
-		id=HEB_equestria_reunited
-		icon=GFX_goal_generic_attack_allies
-		relative_position_id=HEB_calm_before_the_storm
-		x=0 y=4 cost=4
-		prerequisite={focus=HEB_war_against_laughter}
-		ai_will_do={factor=20}
-		available={
-			owns_state=3
-			owns_state=5
-			owns_state=21
-			owns_state=75
-			owns_state=68
-			owns_state=70
-			owns_state=344
-			owns_state=153
-			HEF={exists=no}
-			HMS={exists=no}
-			HSW={exists=no}
-			HWG={exists=no}
-			CUL={exists=no}
-			CRY={OR={
-				exists=no
-				is_subject_of=ROOT
-			}}
-			STG={OR={
-				exists=no
-				is_subject_of=ROOT
-			}}
-			STL={OR={
-				exists=no
-				is_subject_of=ROOT
-			}}
-		}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HEB_equestria_reunited"
-			create_faction=Equestrian_Hegemony
-			set_cosmetic_tag=EARTHB
-		}
-	}
-	shared_focus={		#Take Care of the Changeling Threat
-		id=HEB_take_care_of_the_changeling_threat
-		icon=GFX_goal_generic_CAS
-		relative_position_id=HEB_equestria_reunited
-		x=-3 y=1 cost=7
-		prerequisite={focus=HEB_equestria_reunited}
-		mutually_exclusive={focus=HEB_let_them_come}
-		available={any_neighbor_country={tag=CHN}}
-		bypass={
-			CHN={OR={
-				exists=no
-				has_war_with=ROOT
-				is_subject_of=ROOT
-			}}
-		}
-		ai_will_do={factor=10}
-		will_lead_to_war_with=CHN
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HEB_take_care_of_the_changeling_threat"
-			create_wargoal={type=annex_everything target=CHN}
-		}
-	}
-	shared_focus={		#Let Them Come
-		id=HEB_let_them_come
-		icon=GFX_goal_generic_fortify_city
-		relative_position_id=HEB_equestria_reunited
-		x=-1 y=1 cost=7
-		prerequisite={focus=HEB_equestria_reunited}
-		mutually_exclusive={focus=HEB_take_care_of_the_changeling_threat}
-		available={any_neighbor_country={tag=CHN tag=CNN}}
-		bypass={
-			CHN={OR={
-				exists=no
-				is_subject_of=ROOT
-				is_in_faction_with=ROOT
-			}}
-			CCN={OR={
-				exists=no
-				is_subject_of=ROOT
-				is_in_faction_with=ROOT
-			}}
-		}
-		ai_will_do={factor=10}
-		will_lead_to_war_with=CHN
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HEB_let_them_come"
-			add_ideas=deterrence
-		}
-	}
-	shared_focus={		#Focus for Retake control
-		id=HEB_retake_control
-		icon=GFX_focus_hol_the_foundations_of_defense
-		relative_position_id=HEB_equestria_reunited
-		x=3 y=1 cost=7
-		prerequisite={focus=HEB_equestria_reunited}
-		ai_will_do={factor=10}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HEB_retake_control"
-			every_state={limit={is_core_of=HEB} add_core_of=HEB}
-			every_state={limit={is_core_of=HEF} add_core_of=HEB}
-			every_state={limit={is_core_of=HWG} add_core_of=HEB}
-			every_state={limit={is_core_of=HMS} add_core_of=HEB}
-			every_state={limit={is_core_of=HSW} add_core_of=HEB}
-			every_state={limit={is_core_of=CUL} add_core_of=HEB}
-			every_state={limit={is_core_of=STG} add_core_of=HEB}
-			every_state={limit={is_core_of=STL} add_core_of=HEB}
-		}
-	}
-	shared_focus={		#Focus for Transform
-		id=HEB_modern_society
-		icon=GFX_goal_generic_construct_civ_factory
-		relative_position_id=HEB_retake_control		#Temporarily
-		x=0 y=1 cost=1
-		prerequisite={focus=HEB_retake_control}
-		bypass={has_idea=modern_society}
-		available={num_of_factories>40}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HEB_modern_society"
-			add_ideas=agrarian_society
+			log="[GetDateText]: [Root.GetName]: focus HEB_S02D"
 		}
 	}

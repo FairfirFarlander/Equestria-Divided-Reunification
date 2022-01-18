@@ -1,4 +1,7 @@
 ﻿l_english:
+###Homescreen Welcome###
+EAW_WS_HEB:0""
+ EAW_WS_HEB_desc:0""
 ###Country Name###
 HEB_fascism:0"House Earthborn"
  HEB_fascism_DEF:0"The Clans of House Earthborn"
@@ -24,3 +27,40 @@ HEB_fascism_party:0"CEC"
 ###Ideas###
 HEB_idea:0 "We are Equestria!"
  HEB_idea_desc:0 "The militaristic regime of House Earthborn has no equals when it comes to pure, brutal strength and unbroken will. Years of harsh training and intense indoctrination have turned a herd of farmers into a relentless war machine that will not stop until all orders of Applejack the Ever-vigilant are fulfilled. Not unlike the legendary behemoths of old - once set in motion, there is no force in this world that can stop the thundering of their hooves. Unstoppable as an avalanche, destructive as an earthquake, unyeilding as a mountain - the behemoth of Equestria has awoken and is ready to crush its enemies."
+###National Focuses###
+#Story Tree Main
+HEB_S00:0"The Gathering"
+ HEB_S00_desc:0""
+  HEBact01.01.t:0"" #On select event for HEB_S00
+   HEBact01.01.d:0""
+   HEBact01.01.a:0""
+   HEB_ideasada:0"" #Idea on event completion.
+   HEB_ideasada_desc:0""
+ HEB_S01A:0"Empower Clan Governors"
+  HEB_S01A_desc:0""
+   HEBact01.04.t:0"" #Completion event for HEB_S01
+    HEBact01.04.d:0""
+    HEBact01.04.a:0""
+    HEBact01.04.b:0""
+ HEB_S01B:0"Respect Local Autonomy"
+  HEB_S01B_desc:0""
+ HEB_S01C:0""
+  HEB_S01C_desc:0""
+ HEB_S01D:0""
+  HEB_S01D_desc:0""
+ HEB_S02A:0""
+  HEB_S02A_desc:0""
+ HEB_S02B:0""
+  HEB_S02B_desc:0""
+ HEB_S02C:0""
+  HEB_S02C_desc:0""
+ HEB_S02D:0""
+  HEB_S02D_desc:0""
+
+
+
+
+
+
+
+

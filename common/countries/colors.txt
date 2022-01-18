@@ -28,11 +28,12 @@ THA={color=rgb{0 0 102}color_ui=rgb{0 0 102}}
 TRT={color=rgb{217 253 106}color_ui=rgb{217 253 106}}
 VHT={color=rgb{203 41 41}color_ui=rgb{203 41 41}}
 VII={color=rgb{22 167 209}color_ui=rgb{22 167 209}}
+WTC={color=rgb{219 252 225}color_ui=rgb{219 252 225}}
 CYE={color=rgb{0 0 0}color_ui=rgb{0 0 0}}
 #EAW Base
 EQS={color=rgb{158 242 117}color_ui=rgb{158 242 117}}
 NLR={color=rgb{41 37 110}color_ui=rgb{41 37 110}}
-VII={color=rgb{196 195 164}color_ui=rgb{181 180 164}}
+DRG={color=rgb{196 195 164}color_ui=rgb{181 180 164}}
 STG={color=rgb{249 26 93}color_ui=rgb{249 26 93}}
 YAK={color=rgb{124 198 240}color_ui=rgb{124 198 240}}
 CRY={color=rgb{213 166 240}color_ui=rgb{213 166 240}}

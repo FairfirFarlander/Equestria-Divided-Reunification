@@ -1,24 +1,20 @@
-#LOCALE
+#LOCALE#
 capital=30
 if={
 	limit={has_dlc="No Step Back"}
-	set_oob="THA_07"	#_nsb
+	set_oob="THA_07"	#_nsb#
 	else={set_oob="THA_07"}
 }
-#FOUNTATION
+#FOUNTATION#
 set_research_slots=2
 set_stability=0.23
 set_war_support=0.11
 add_ideas={
+	volunteer_only limited_exports isolation
+	poor_science_base agrarian_society
+	no_lack_of_scientists no_poverty
 	THA_Ancestor_Guidance
 	THA_Warrior_Culture_Traditions
-	volunteer_only
-	limited_exports
-	isolation
-	poor_science_base
-	agrarian_society
-	no_lack_of_scientists
-	no_poverty
 }
 if={
 	limit={has_dlc="No Step Back"}
@@ -37,7 +33,7 @@ add_offsite_building={
 	type=arms_factory
 	level=1
 }
-#TECHNOLOGY
+#TECHNOLOGY#
 set_technology={
 	pony_race=1
 	melee_weapons=1
@@ -62,11 +58,11 @@ if={limit={not={has_dlc="Man the Guns"}}
 }
 actually_fix_weapon_techs=yes
 generic_DD_template=yes
-#Misc
+#MISC#
 set_convoys=3
 set_rule={can_generate_female_aces=yes}
-#DIPLOMACY
-#POLITICS
+#DIPLOMACY#
+#POLITICS#
 set_popularities={
 	fascism=11	communism=32
 	neutrality=49	democratic=8
@@ -79,4 +75,4 @@ set_politics={
 recruit_character=THA_argent_end
 recruit_character=THA_auburn_peak
 recruit_character=THA_the_niece
-#VARIENTS
+#VARIENTS#

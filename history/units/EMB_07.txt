@@ -23,23 +23,30 @@ division_template={
 	}
 }
 units={	#DEPLOYMENTS
-	division={	#	YesYes
+division={	#West Teopixqui Jungle
+		name="Ember Militia"
+		location=10023	division_template="Militia"
+		start_experience_factor=0.1	start_equipment_factor=1
+		force_equipment_variants={melee_equipment_0={owner="EMB" creator="EMB"}}
+	}
+	division={	#YesYes#
 		name="Mosquito Militia"
 		location=9497	division_template="Militia"
 		start_experience_factor=0.1	start_equipment_factor=1
 		force_equipment_variants={melee_equipment_0={owner="EMB" creator="EMB"}}
 	}
-	division={	#West Yucoltan
+	division={	#West Yucoltan#
 		name="Yucoltan Militia"
 		location=336	division_template="Militia"
 		start_experience_factor=0.1	start_equipment_factor=0.9
 		force_equipment_variants={melee_equipment_0={owner="EMB" creator="EMB"}}
 	}
-	division={	#West Teopixqui Jungle
+	
+	division={	#West Teopixqui Jungle#
 		name="River Runners"
 		location=10023	division_template="Tunnel Runners"
 		start_experience_factor=0.3	start_equipment_factor=1
-		force_equipment_variants={melee_equipment_0={owner="EMB" creator="CHN"}}
+		force_equipment_variants={melee_equipment_0={owner="EMB" creator="EMB"}}
 	}
 }
 #STARTING_PRODUCTION

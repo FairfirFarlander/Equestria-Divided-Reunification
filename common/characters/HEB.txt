@@ -59,7 +59,6 @@ characters={
 	}
 	HEB_big_mac={
 		name=HEB_big_mac
-		gender=female
 		portraits={
 			army={
 				large="gfx/leaders/HEB/HEB_big_mac.dds"
@@ -83,9 +82,9 @@ characters={
 		}
 		corps_commander={
 			desc="HEB_braeburn_mili_desc"
-			skill=1 attack_skill=2	defense_skill=1
-			planning_skill=1	logistics_skill=2
-			traits={pony_race_trait desert_fox}
+			skill=2 attack_skill=2	defense_skill=1
+			planning_skill=1	logistics_skill=4
+			traits={pony_race_trait urban_assault_specialist desert_fox}
 		}
 	}
 	HEB_lightning_dust={
@@ -106,6 +105,7 @@ characters={
 	}
 	HEB_chief_strongheart={
 		name=HEB_chief_strongheart
+		gender=female
 		portraits={
 			army={
 				large="gfx/leaders/HEB/HEB_chief_strongheart.dds"

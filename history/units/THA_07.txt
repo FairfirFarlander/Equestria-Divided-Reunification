@@ -1,4 +1,4 @@
-division_template={	#TEMPLATES#	#TEMP#
+division_template={	#TEMPLATES#
 	name="Thestral Levy"	#divisions_name_group=#
 	is_locked=no	priority=0	template_counter=3
 	regiments={
@@ -6,32 +6,25 @@ division_template={	#TEMPLATES#	#TEMP#
 	}
 }
 division_template={
-	name="Mountain Guard"	#divisions_name_group=#
-	is_locked=no	priority=0	template_counter=3
-	regiments={
-		mountaineers={x=0 y=0}
-		mountaineers={x=0 y=1}
-	}
-}
-division_template={
-	name="Mountain Guard"	#divisions_name_group=#
-	is_locked=no	priority=0	template_counter=3
+	name="Huscarls"	#divisions_name_group=#
+	is_locked=no	priority=1	template_counter=38
 	regiments={
 		infantry={x=0 y=0}
 		infantry={x=0 y=1}
 	}
 }
-units={	#DEPLOYMENTS#
-	division={		#Trottingham
-		name="Trottingham Training Militia"
-		location=9484	division_template="Provincial Militia"
-		start_experience_factor=0	start_equipment_factor=0.6
-		force_equipment_variants={melee_equipment_0={owner="TRT" creator="EQS"}}
+division_template={
+	name="End Guard"	#divisions_name_group=#
+	is_locked=no	priority=2	template_counter=39
+	regiments={
+		pegasi={x=0 y=0}
 	}
-	division={		#Trottingham
-		name="Royal Trottingham Regiment of Hoof"
-		location=9484	division_template="Loyal Guard Regiment"
-		start_experience_factor=0.75	start_equipment_factor=1
-		force_equipment_variants={infantry_equipment_0={owner="TRT" creator="EQS"}}
+}
+units={	#DEPLOYMENTS#
+	division={		#Ayacachtli#
+		name="Praetorea Ayacachtli"
+		location=569	division_template="End Guard"
+		start_experience_factor=0.75	start_equipment_factor=0.8
+		force_equipment_variants={infantry_equipment_0={owner="THA" creator="THA"}}
 	}
 }

@@ -7,7 +7,7 @@ characters={
 			army={large="gfx/leaders/HEF/HEF_lady_fluttershy.dds"}
 		}
 		country_leader={
-			desc="HEF_lfluttershy_poli_desc"	ideology=magocracy
+			desc="HEF_lfluttershy_poli_desc"	ideology=kratokracy
 			expire="1030.03.13.08"
 			traits={}
 			id=-1

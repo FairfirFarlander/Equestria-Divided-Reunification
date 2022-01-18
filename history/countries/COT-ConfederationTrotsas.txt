@@ -44,6 +44,9 @@ if={limit={has_dlc="Man the Guns"}
 	set_technology={
 		early_ship_hull_light=1
 		early_ship_hull_cruiser=1
+		coastal_defense_ships=1
+		monitors_mtg=1
+		pre_dreadnoughts=1
 		early_ship_hull_heavy=1
 		basic_battery=1
 		basic_depth_charges=1
@@ -57,6 +60,9 @@ if={limit={not={has_dlc="Man the Guns"}}
 		early_destroyer=1
 		early_light_cruiser=1
 		early_heavy_cruiser=1
+		monitors_nomtg=1
+		coastal_defense_ships_nomtg=1
+		pre_dreadnoughts_nomtg=1
 		early_battlecruiser=1
 		transport=1
 	}
@@ -86,3 +92,33 @@ recruit_character=COT_sorren_peak
 recruit_character=COT_burnside_fervor
 recruit_character=COT_stewed_apple
 #VARIENTS#
+if={limit={has_dlc="Man the Guns"}
+	create_equipment_variant={	#Dreadnaughts suck! Only get one gun. *TY; We tried. It died. *FF
+		name="Rockhoof 980 Class"	type=ship_hull_pre_dreadnought
+		parent_version=0
+		modules={
+			fixed_ship_battery_slot=ship_heavy_battery_1
+			fixed_ship_anti_air_slot=ship_anti_air_1
+			fixed_ship_fire_control_system_slot=ship_fire_control_system_0
+			fixed_ship_radar_slot=empty
+			fixed_ship_engine_slot=heavy_ship_engine_1
+			fixed_ship_secondaries_slot=ship_secondaries_1
+			fixed_ship_armor_slot=ship_armor_bc_1
+			front_1_custom_slot=empty
+			mid_1_custom_slot=ship_secondaries_1
+			rear_1_custom_slot=empty
+		}
+	}
+}
+if={limit={not={has_dlc="Man the Guns"}}
+	create_equipment_variant={	#Dreadnaughts suck! Only get one gun. *TY; We tried. It died. *FF
+		name="Rockhoof 980 Class"	type=pre_dreadnought_nomtg
+		parent_version=0
+		upgrades={
+			ship_reliability_upgrade=0
+			ship_engine_upgrade=0
+			ship_armor_upgrade=0
+			ship_gun_upgrade=0
+		}
+	}
+}

@@ -1,28 +1,35 @@
 #LOCALE#
-capital=75
+capital=13
 if={
 	limit={has_dlc="No Step Back"}
-	set_oob="HWG_07"	#_nsb#
-	else={set_oob="HWG_07"}
+	set_oob="WTC_07"	#_nsb#
+	else={set_oob="WTC_07"}
 }
 if={
 	limit={has_dlc="Man the Guns"}
 	set_naval_oob="HWG_07_naval"
 	else={set_naval_oob="HWG_07_naval_legacy"}
 }
+79={	#Yakima/Cuetzpalliztli#
+	start_resistance=yes	set_compliance=16
+	set_resistance=13	set_garrison_strength=0.40
+}
+352={	#Saltmane/Itzomitl Coast#
+	start_resistance=yes	set_compliance=16
+	set_resistance=7	set_garrison_strength=0.60
+}
 #FOUNTATION#
-set_research_slots=3
+set_research_slots=2
 set_stability=0.4
 set_war_support=0.08	#0.29#
 add_ideas={
+	volunteer_only export_focus civilian_economy
+	big_science_base outdated_industry
+	lack_of_scientists3 poverty5
 	HWG_idea
 	HWG_tradefleet
 	HWG_tensions
 	HWG_society
-	big_science_base
-	outdated_industry
-	lack_of_scientists3
-	poverty5
 }
 if={
 	limit={has_dlc="No Step Back"}
@@ -66,72 +73,20 @@ if={limit={not={has_dlc="Man the Guns"}}
 }
 actually_fix_weapon_techs=yes
 #MISC#
-set_convoys=11
+set_convoys=4
 set_rule={can_generate_female_aces=yes}
 #DIPLOMACY#
 #POLITICS#
-set_popularities={
-	fascism=66	communism=12
-	neutrality=13	democratic=9
+set_popularities={	#1929 - The Great Depression. Lasted almost a decade (10). 42 is when the US entered WWII.
+	fascism=42	communism=19
+	neutrality=29	democratic=10
 }
 set_politics={
 	ruling_party=fascism	last_election="1001.10.10"
 	election_frequency=36	elections_allowed=no
 }
-#CHARACTERS#
-recruit_character=HWG_rarity
-recruit_character=HWG_shooter_mark
-recruit_character=HWG_fleur_de_lis
-recruit_character=HWG_fancy_pants
-recruit_character=HWG_clair_de_lune
-recruit_character=HWG_mashed_potato
-recruit_character=HWG_generic_admiral
-recruit_character=HWG_flim_flam
-recruit_character=HWG_filthy_rich
-recruit_character=HWG_diamond_tiara
-recruit_character=HWG_sweetie_belle
-recruit_character=HWG_nighthooves
-if={
-	limit={has_dlc="La Resistance"}
-	add_advisor_role={
-		character=HWG_fleur_de_lis
-		advisor={
-			slot=political_advisor
-			idea_token=sweetie_drops
-			allowed={has_dlc="La Resistance"}
-			available={has_intelligence_agency=yes}
-			traits={head_of_intelligence}	#upgrade me#
-		}
-	}
-	add_advisor_role={
-		character=HWG_nighthooves
-		advisor={
-			slot=political_advisor
-			idea_token=sweetie_drops
-			allowed={has_dlc="La Resistance"}
-			available={has_intelligence_agency=yes}
-			traits={head_of_intelligence}
-		}
-	}
-	else={
-		add_advisor_role={
-			character=HWG_fleur_de_lis
-			advisor={
-				slot=political_advisor
-				allowed={not={has_dlc="La Resistance"}}
-				traits={backroom_backstabber}	#upgrade me?#
-			}
-		}
-		add_advisor_role={
-			character=HWG_nighthooves
-			advisor={
-				slot=political_advisor
-				allowed={not={has_dlc="La Resistance"}}
-				traits={backroom_backstabber}	#encrypt/decrypt trait here#
-			}
-		}
-	}
-}
+#CHARACTERS#	#humble appeaser, rutheless capitalist; deal broker, ideological crusader; hawk?;reluctant interventionalist, ideological crusader
+#recruit_character=
 #VARIENTS#
 if={limit={has_dlc="Man the Guns"}
 	create_equipment_variant={	#Heavy Cruiser AR1-EN1 MG2-SG3#
