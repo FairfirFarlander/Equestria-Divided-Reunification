@@ -1,0 +1,29 @@
+#Story Tree Main#
+	shared_focus={		#A #
+		id=TAG_S00 icon=GFX_goal_generic_national_unity_horseshoe
+		x=0 y=0 cost=8 ai_will_do={factor=4000}
+		select_effect={
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus TAG_S00"
+		}
+	}
+	shared_focus={		#Empower Clan Governors#
+		id=TAG_S01 icon=GFX_goal_collaborate_local_elites_pony
+		relative_position_id=TAG_S00
+		x=-6 y=1 cost=2 ai_will_do={factor=4000}
+		prerequisite={focus=TAG_S00}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus TAG_S01"
+		}
+	}
+	shared_focus={		#Empower Clan Governors#
+		id=TAG_S02 icon=GFX_goal_collaborate_local_elites_pony
+		relative_position_id=TAG_S01
+		x=-6 y=1 cost=2 ai_will_do={factor=4000}
+		prerequisite={focus=TAG_S01}
+		available={has_completed_focus=TAG_S00}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus TAG_S02"
+		}
+	}
