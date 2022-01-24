@@ -8,6 +8,7 @@ state={	#EDRSTATE
 	history={
 		owner=HFT
 		add_core_of=HFT
+		victory_points={11593 1}
 		buildings={
 			infrastructure=1
 		}

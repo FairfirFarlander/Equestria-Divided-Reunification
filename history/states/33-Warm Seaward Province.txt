@@ -8,8 +8,9 @@ state={	#EDRSTATE
 	history={
 		owner=PLT
 		add_core_of=PLT
+		victory_points={688 2}
 		buildings={
-			infrastructure=1	#EAW 0
+			infrastructure=1
 			industrial_complex=1	#EAW 0
 		}
 	}

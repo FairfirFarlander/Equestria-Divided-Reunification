@@ -9,6 +9,7 @@ state={	#EDRSTATE
 		owner=HMS
 		add_core_of=HMS
 		victory_points={3898 1}	#No VP in EAW
+		#victory_points={6931 2}
 		buildings={
 			infrastructure=1
 		}
