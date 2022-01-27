@@ -13,4 +13,5 @@ focus_tree={
 	default=no
 	shared_focus=HEB_the_war
 	shared_focus=HEB_S00
+	shared_focus=HEB_L00
 }
