@@ -117,6 +117,7 @@ air_wings={		#House Whitegold Airforce (HWGAF)#
 	#Manehattan#
 	75={fighter_equipment_0={owner="HWG" amount=6}}
 	75={tac_bomber_equipment_0={owner="HWG"	amount=2}}
+	75={strat_bomber_equipment_1={owner="HWG" amount=3}}
 	#Baltimare#
 	13={fighter_equipment_0={owner="HWG" amount=2}}
 	13={tac_bomber_equipment_0={owner="HWG" amount=1}}

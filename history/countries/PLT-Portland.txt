@@ -29,6 +29,7 @@ set_technology={
 	tech_support=1
 	pre_gw_artillery=1
 	pony_race=1
+	penal_infantry=1
 }
 if={limit={has_dlc="Man the Guns"}
 	set_technology={

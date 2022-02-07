@@ -55,17 +55,17 @@ characters={
 			modifier={decryption_factor=0.05}
 		}
 	}
-	HAY_meadowbrook={
-		name=HAY_meadowbrook
-		portraits={civilian={small="GFX_idea_BAL_meadowbrook"}}
-		advisor={
-			slot=political_advisor
-			idea_token=HAY_meadowbrook_advi
-			allowed={original_tag=HAY}
-			available={not={has_country_flag=HAY_meadowbrook_banished}}
-			traits={popular_figurehead}
-		}
-	}
+	#HAY_meadowbrook={	#Add her descendant later
+	#	name=HAY_meadowbrook
+	#	portraits={civilian={small="GFX_idea_BAL_meadowbrook"}}
+	#	advisor={
+	#		slot=political_advisor
+	#		idea_token=HAY_meadowbrook_advi
+	#		allowed={original_tag=HAY}
+	#		available={not={has_country_flag=HAY_meadowbrook_banished}}
+	#		traits={popular_figurehead}
+	#	}
+	#}
 	HAY_golden_delicious={
 		name=HAY_golden_delicious	#_name
 		portraits={

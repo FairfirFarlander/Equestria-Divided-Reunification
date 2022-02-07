@@ -18,7 +18,7 @@ focus_tree={
 	shared_focus=EDR_A05
 }
 focus_tree={
-	id=HAY country={factor=0 modifier={add=20 tag=HAY}}
+	id=HAY country={factor=0 modifier={add=40 tag=HAY}}
 	continuous_focus_position={x=3750 y=800}
 	default=no
 	shared_focus=BAL_proclaim_sesr
@@ -27,3 +27,10 @@ focus_tree={
 	shared_focus=BAL_decentralized_militia
 	shared_focus=BAL_centralized_army
 }
+focus_tree={
+	id=HAY country={factor=0 modifier={add=30 tag=HAY}}
+	continuous_focus_position={x=3750 y=800}
+	default=no
+	shared_focus = BAL_revolution
+}
+	
