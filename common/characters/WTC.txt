@@ -1,0 +1,13 @@
+characters={
+	WTC_dashing_habedasher={
+		name=WTC_dashing_habedasher
+		#portraits={civilian={large="gfx/leaders/WTC/WTC_rarity.dds"}}
+		country_leader={
+			desc="WTC_dashing_habedasher_poli_desc"
+			ideology=plutocracy
+			expire="1030.03.13.08"
+			traits={}
+			id=-1
+		}
+	}
+}

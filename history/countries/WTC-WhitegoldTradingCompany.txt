@@ -7,8 +7,8 @@ if={
 }
 if={
 	limit={has_dlc="Man the Guns"}
-	set_naval_oob="HWG_07_naval"
-	else={set_naval_oob="HWG_07_naval_legacy"}
+	set_naval_oob="WTC_07_naval"
+	else={set_naval_oob="WTC_07_naval_legacy"}
 }
 79={	#Yakima/Cuetzpalliztli#
 	start_resistance=yes	set_compliance=16
@@ -86,7 +86,7 @@ set_politics={
 	election_frequency=36	elections_allowed=no
 }
 #CHARACTERS#	#humble appeaser, rutheless capitalist; deal broker, ideological crusader; hawk?;reluctant interventionalist, ideological crusader
-#recruit_character=
+recruit_character=WTC_dashing_habedasher
 #VARIENTS#
 if={limit={has_dlc="Man the Guns"}
 	create_equipment_variant={	#Heavy Cruiser AR1-EN1 MG2-SG3#

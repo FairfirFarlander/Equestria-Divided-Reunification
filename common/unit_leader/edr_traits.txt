@@ -16,4 +16,13 @@ leader_traits={
 		}
 	}
 	#Corp Commander Traits#
+	trait_foreman={
+		type=corps_commander
+		trait_type=personality_trait
+		allowed={always=no} ai_will_do={factor=1}
+		modifier={
+			army_org_factor=0.05
+			army_morale_factor=-0.05
+		}
+	}
 }

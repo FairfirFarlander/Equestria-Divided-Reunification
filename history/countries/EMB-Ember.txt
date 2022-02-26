@@ -16,6 +16,7 @@ add_ideas={
 	volunteer_only limited_exports isolation
 	poor_science_base communal_society
 	lack_of_scientists2 poverty4
+	EQS_bad_tanks
 }
 #TECHNOLOGY#
 set_technology={
@@ -65,6 +66,7 @@ recruit_character=EMB_mother_nightshade
 recruit_character=EMB_councilor_tyrennadus
 recruit_character=EMB_queen_narratek
 recruit_character=EMB_aetanae_krix
+recruit_character=EMB_foreman_test
 #VARIENTS#
 if={limit={has_dlc="Man the Guns"}
 	create_equipment_variant={

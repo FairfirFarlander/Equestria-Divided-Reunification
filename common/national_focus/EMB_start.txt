@@ -1,0 +1,23 @@
+#Ember Starting Story Tree
+	shared_focus={		#The Underway Awaits!
+		id=EMB_S00 #icon=
+		x=0 y=0 cost=8 ai_will_do={factor=4000}
+		select_effect={
+			country_event={id=EMBact01.01 days=21}		#The Great Migration
+			country_event={id=EMBact01.02 days=42}		#The Finishing Touches
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EMB_S00"
+			country_event=EMBact01.03		#A Nation Born Underground
+		}
+	}
+	shared_focus={		#Our Future Underground
+		id=EMB_S01 icon=GFX_goal_commune_politics
+		relative_position_id=EMB_S00
+		x=0 y=1 cost=2 ai_will_do={factor=320}
+		prerequisite={focus=EMB_S00}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EMB_S01"
+			country_event=EMBact01.04		#The Council Resides
+		}
+	}
