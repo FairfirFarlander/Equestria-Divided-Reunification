@@ -1,46 +1,51 @@
-﻿l_english: 
-HMS_retake_new_mareland:0 "Punish New Mareland's Heresy"
-HMS_retake_new_mareland_desc:0 "Ponies from New Mareland thought that the distance which separates us can save them ... hah, magic can do anything you traitorous fools!"
-HMS_assert_control_over_the_crystal_dominion:0 "Assert Control over the Crystal Empire"
-HMS_assert_control_over_the_crystal_dominion_desc:0 "The Inquisition has done a great job of bringing the Crystal Ponies to heel. Those who denied Shining armor and Cadence, the Sisters'S teachings or the Hegemony of Magic are dead, the others know their place."
-HMS_take_care_of_the_changeling_threat:0 "Take care of the Changeling Threat"
-HMS_take_care_of_the_changeling_threat_desc:0 "Queen Chrysalis doesn't know yet that the number of her subjects and modernity of her industry are irrelevant when I can knock them out with a snap of my magical hoof."
-HMS_let_them_come:0 "Let Them Come"
-HMS_let_them_come_desc:0 "Should they come for us, the erection of magical defenses and fortresses will ensure great casualties on the changelings armies. Time is on our side, for magic is evergrowing."
-HMS_calm_before_the_storm:0 "Calm Before The Storm"
-HMS_calm_before_the_storm_desc:0 "Celestia and Luna's legacies won't end this way, i will show these fanatical fools the only right way!"
-HMS_more_industry:0 "Send the slaves to the factories"
-HMS_more_industry_desc:0 "The slaves shall work for our industry, anything they can't steal to use in a revolt against us shall be made by them."
-HMS_war_to_everfree:0 "Purge the Forest"
-HMS_war_to_everfree_desc:0 "I knew that a forest and animal fanatic like you would one day cause big problems for me and this kingdom, it's a shame you don't want to see the truth!"
-HMS_war_to_appleloosa:0 "Destroy our most hated ennemies"
-HMS_war_to_appleloosa_desc:0 "You will pay for this betrayal Applejack. If you sacrificed yourself like pinkie, as was your duty, you would have been a hero. Had you simply ran away, you would have only been a traitor. Instead you declared war to Unicornkind and magic itself... you will have to suffer and watch your loved ones die. For i won't let harm come to my race."
-HMS_war_against_stalliongrad:0 "Taking back Stalliongrad"
-HMS_war_against_stalliongrad_desc:0 "Stalliongrad was briefly under our control before they split away in their damned revolution for ¨Equality¨, bringing their lands back under our control should be a priority, before they can build up like the other Houses did."
-HMS_equestria_reunited:0 "Equestria: Reunited"
-HMS_equestria_reunited_desc:0 "Victory! This is a victory for unicornkind and ultimately for all of ponykind. This is a victory soiled in blood, but i would never change what I did. I had to do all this for myself, my family, my nation and our princesses. The day of Ascension is on the horizon, and it will all be worth it in the end."
-HMS_war_to_cloudsdale:0 "Cloudsdale will burn"
-HMS_war_to_cloudsdale_desc:0 "Why can't she understand that i will bring ascension?! Why can't she understand everything it entails?! Ughh, I must take care of this stubborn pegasus, for the future's sake!"
-HMS_war_against_the_crystal_empire:0 "War Against The Shadow King"
-HMS_war_against_the_crystal_empire_desc:0 "Even if i hightly respect the King's knowledge and power over the arcanes, i won't let a powerhungry tyrant, and especially not an ennemy of the Sisters, take over Equestria."
-HMS_more_weapons:0 "Magical Weapon Factories"
-HMS_more_weapons_desc:0 "Who needs laborers if magic can do all the work for us? Especially when said laborers could get the bright idea of using the weapons they make against us.."
-HMS_war_to_manehattan:0 "Destroy the ¨Gem¨ of Manehattan"
-HMS_war_to_manehattan_desc:0 "Rarity is a traitor, if she had any higher goals, a real sense of duty, she would use her money and influence to help me bring upon our Ascension, not use it to fill her pockets! It is time for us to take Manehattan, purge it of traitors, and empty their coffers."
-HMS_fully_mobolize_our_nation:0 "fight for the cause"
-HMS_fully_mobolize_our_nation_desc:0 "Every Unicorn knows perfectly well that we are closer to the ideal race, closer than the three other tribes. The Three other tribes knows that we are the greatest hope for ponykind.... And the slaves knows their places, it is time for everyone to enter the war effort."
-HMS_the_war:0 "The War"
-HMS_the_war_desc:0 "finally the time has come to get rid of the threat of my ex-friends's forces ... It's a pity they can't see the truth despite all the signs, but nothing is impossible for my magic."
-HMS_GATHERING_STORM_DESC:0 "Wizards, scientists, sages, and Unicorn supremacists desperately holding onto the old ways of the Celestial Sisters. With Princess Cadance and Prince Shining Armor playing a facade of legitimate royal rulers, the Archmagister Twilight Sparkle - the de facto ruler of the House - is free to focus on her plans to bring ascension upon the Unicorn race. All that while a well oiled Inquisitorial machine attempts to root out all signs of heresy within the realm. Anypony who speaks against the teachings of Celestia and Luna is a blasphemer and an enemy. Anypony who isn't a Unicorn is merely a tool to be used for ascension. Those are the truths of the House - accept them or have your will broken."
-
-
-### party ###
-HMS_neutrality_party:0 "Monarchist Rule"
-HMS_communism_party:0  "Rebels"
-HMS_democratic_party:0 "Harmonists"
-HMS_fascism_party:0 "Canterlot Council of Unicorns"
-
-
-### ideas ###
-HMS_idea:0 "Power through knowledge, ascension through magic."
-HMS_idea_desc:0 "Wizards, scientists, sages, and Unicorn supremacists desperately holding onto the old ways of the Celestial Sisters. With Princess Cadance and Prince Shining Armor playing a facade of legitimate royal rulers, the Archmagister Twilight Sparkle - the de facto ruler of the House - is free to focus on her plans to bring ascension upon the Unicorn race. All that while a well oiled Inquisitorial machine attempts to root out all signs of heresy within the realm. Anypony who speaks against the teachings of Celestia and Luna is a blasphemer and an enemy. Anypony who isn't a Unicorn is merely a tool to be used for ascension. Those are the truths of the House - accept them of have your will broken."
+﻿l_english:
+###Introduction###
+##Bookmark##
+HMS_GATHERING_STORM_DESC:0""
+##Welcome Screen##
+ EAW_WS_HMS:0""
+  EAW_WS_HMS_desc:0""
+###Characters###
+##Leaders##
+HMS_twilight_sparkle:0"Twilight Sparkle"
+ HMS_tsparkle_poli_desc:o""
+ HMS_tsparkle_mili_desc:0""
+ HMS_frail_lance:0"Frail Lance"
+  HMS_flance_poli_desc:0""
+ HMS_shining_armor:0"Shining Armor"
+  HMS_sarmor_poli_desc:0""
+  HMS_sarmor_mili_desc:0""
+ HMS_white_wind:0"White Wind"
+  HMS_wwind_poli_desc:0""
+ HMS_cadence:0"Cadence"
+  HMS_cadence_poli_desc:0""
+  HMS_cadence_advi_desc:0""
+##Commanders##
+ HMS_trixie_lulamoon:0"Trixie Lulamoon"
+  HMS_tlulamoon_mili_desc:0""
+ HMS_spike:0"Spike"
+  HMS_spike_mili_desc:0""
+##Advisors##
+###Country Name###
+HMS:0"House Moon and Star"
+ HMS_DEF:0"House Moon and Star"
+ HMS_ADJ:0"House Moon and Star"
+ UNICORN:0 "New Unicornia"
+  UNICORN_DEF:0 "New Unicornia"
+  UNICORN_ADJ:0 "New Unicornia"
+###Political Parties###
+HMS_fascism_party:0"CCU"
+ HMS_fascism_party_long:0"Canterlot Council of Unicorns"
+ HMS_communism_party:0"REB"
+  HMS_communism_party_long:0"Rebels"
+ HMS_neutrality_party:MR"
+  HMS_neutrality_party_long:0"Monarchist Rule"
+ HMS_democratic_party:0"HAR"
+  HMS_democratic_party_long:0"Harmonists"
+###Ideas###
+###National Focuses###
+##Storyline Tree##
+#HMS_:0""
+# HMS__desc:0""
+# HMS_:0""
+#  HMS__desc:0""

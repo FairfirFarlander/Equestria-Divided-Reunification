@@ -65,6 +65,7 @@ characters={
 			}
 		}
 		corps_commander={
+			desc="VII_torch_mili_desc"
 			skill=1	attack_skill=1	defense_skill=1
 			planning_skill=1	logistics_skill=1
 			traits={dragon_race_trait old_guard harsh_leader}
@@ -147,7 +148,7 @@ characters={
 		advisor={
 			slot=high_command
 			ledger=army
-			idea_token=VII_grima_staf
+			idea_token=VII_grima_high
 			cost=100
 			traits={army_infantry_2}
 		}
@@ -188,7 +189,7 @@ characters={
 		advisor={
 			slot=high_command
 			ledger=army
-			idea_token=VII_kahamit_staf
+			idea_token=VII_kahamit_high
 			cost=100
 			traits={army_regrouping_2}
 		}
@@ -199,7 +200,7 @@ characters={
 		advisor={
 			slot=high_command
 			ledger=army
-			idea_token=VII_kalagar_staf
+			idea_token=VII_kalagar_high
 			cost=100
 			traits={army_chief_morale_2}
 		}
@@ -210,7 +211,7 @@ characters={
 		advisor={
 			slot=high_command
 			ledger=navy
-			idea_token=VII_nightburn_staf
+			idea_token=VII_nightburn_high
 			cost=100
 			traits={navy_screen_2}
 		}
@@ -221,7 +222,7 @@ characters={
 		advisor={
 			slot=high_command
 			ledger=air
-			idea_token=VII_naga_staf
+			idea_token=VII_naga_high
 			cost=100
 			traits={air_naval_strike_2}
 		}

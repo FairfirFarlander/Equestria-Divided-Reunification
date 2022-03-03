@@ -1,30 +1,44 @@
 ﻿l_english:
+###Introduction###
+##Bookmark##
+HFT_GATHERING_STORM_DESC:0""
+##Welcome Screen##
+ EAW_WS_HFT:0""
+  EAW_WS_HFT_desc:0""
+###Characters###
+##Leaders##
+HFT_orange:0"Madam Orange"
+ HFT_orange_poli_desc:0""
+ HFT_trixie_lulamoon:0"Trixie Lulamoon"
+  HFT_tlulamoon_poli_desc:0""
+  HFT_tlulamoon_mili_desc:0""
+##Commanders##
+ HFT_orange_grove:0"Orange Grove"
+  HFT_ogrove_mili_desc:0""
+##Advisors##
 ###Country Name###
-HFT_fascism:0 "Hoofington Protectorate"
-HFT_fascism_DEF:0 "The Protectorate of Hoofington"
-HFT_fascism_ADJ:0 "Hayfolk"
-HFT_communism:0 "Hoofington"
-HFT_communism_DEF:0 "Hoofington"
-HFT_communism_ADJ:0 "Hayfolk"
-HFT_neutrality:0 "Hoofington Province"
-HFT_neutrality_DEF:0 "The Province of Hoofington"
-HFT_neutrality_ADJ:0 "Hayfolk"
-HFT_democratic:0 "Hoofington"
-HFT_democratic_DEF:0 "Hoofington"
-HFT_democratic_ADJ:0 "Hayfolk"
-### party ###
-HFT_fascism_party:0 "CEIS"
-HFT_fascism_party_long:0 "Celestial Inquisition"
-HFT_communism_party:0 "OFWP"
-HFT_communism_party_long:0 "Orange Field Workers Party"
-HFT_neutrality_party:0 "COR"
-HFT_neutrality_party_long:0 "Clan Orange"
-HFT_democratic_party:0 "OYGIDNI"
-HFT_democratic_party_long:0 "OrangeyagladIdidn'tnameit?"
+HFT:0"Hoofington"
+ HFT_DEF:0"Hoofington"
+ HFT_ADJ:0"Hayfolk"
+ HFT_fascism:0"Hoofington Protectorate"
+  HFT_fascism_DEF:0"The Protectorate of Hoofington"
+  HFT_fascism_ADJ:0"Hayfolk"
+ HFT_neutrality:0"Hoofington Province"
+  HFT_neutrality_DEF:0"The Province of Hoofington"
+  HFT_neutrality_ADJ:0"Hayfolk"
+###Political Parties###
+HFT_fascism_party:0"CEIS"
+ HFT_fascism_party_long:0"Celestial Inquisition"
+ HFT_communism_party:0"OFWP"
+  HFT_communism_party_long:0"Orange Field Workers Party"
+ HFT_neutrality_party:0"COR"
+  HFT_neutrality_party_long:0"Clan Orange"
+ HFT_democratic_party:0"OYGIDNI"
+  HFT_democratic_party_long:0"OrangeyagladIdidn'tnameit?"
+###Ideas###
 ###National Focuses###
-#Storyline Tree
-#HFT_:0 ""
-#HFT__desc:0 ""
-#Economic Tree
-#HFT_:0 ""
-#HFT__desc:0 ""
+##Storyline Tree##
+#HFT_:0""
+# HFT__desc:0""
+# HFT_:0""
+#  HFT__desc:0""

@@ -24,46 +24,5 @@ characters={
 			traits={inflexible_strategist trait_reckless politically_connected pony_race_trait}
 		}
 	}
-	LAS_storm_mayhem={
-		name=LAS_storm_mayhem
-		#portraits={civilian={large="gfx/leaders/LAS/LAS_storm_mayhem.dds"}}#
-		country_leader={
-			desc="LAS_smayhem_poli_desc"	ideology=anarchist_communism
-			expire="1030.03.13.08"
-			traits={}
-			id=-1
-		}
-	}
-	LAS_steel_wings={
-		name=LAS_steel_wings
-		gender=female
-		#portraits={
-		#	civilian={large="gfx/leaders/LAS/LAS_steel_wings.dds"}
-		#	army={large="gfx/leaders/LAS/LAS_steel_wings.dds"}
-		#}
-		country_leader={
-			desc="LAS_swings_poli_desc"	ideology=despotism
-			expire="1030.03.13.08"
-			traits={}
-			id=-1
-		}
-		corps_commander={
-			desc="LAS_swings_mili_desc"
-			skill=1	attack_skill=1	defense_skill=1
-			planning_skill=1	logistics_skill=1
-			traits={pony_race_trait}
-		}
-	}
-	LAS_sunny_cloud={
-		name=LAS_sunny_cloud
-		gender=female
-		#portraits={civilian={large="gfx/leaders/LAS/LAS_sunny_cloud.dds"}}
-		country_leader={
-			desc="LAS_scloud_poli_desc"	ideology=liberalism
-			expire="1030.03.13.08"
-			traits={}
-			id=-1
-		}
-	}
 	#allows Spitfire from HSW_spitfire to join via focus or decision.
 }

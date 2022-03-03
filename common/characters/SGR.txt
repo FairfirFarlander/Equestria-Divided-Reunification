@@ -57,6 +57,7 @@ characters={
 			id=-1
 		}
 		field_marshal={
+			desc="SGR_nlunin_mili_desc"
 			skill=5	attack_skill=4	defense_skill=4
 			planning_skill=3	logistics_skill=5
 			traits={brilliant_strategist promising_general trait_nestor_lunin pony_race_trait}

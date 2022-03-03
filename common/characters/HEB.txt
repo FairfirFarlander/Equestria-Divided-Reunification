@@ -148,7 +148,7 @@ characters={
 		gender=female
 		portraits={
 			civilian={small="gfx/leaders/HEB/HEB_granny_smith_small.dds"}
-			army={small="gfx/leaders/HEB/HEB_granny_smith_small.dds"}
+			#army={small="gfx/leaders/HEB/HEB_granny_smith_small.dds"}
 		}
 		advisor={
 			slot=political_advisor

@@ -101,7 +101,7 @@ characters={
 			}
 		}
 		country_leader={
-			desc="HMS/HMS_cadence_poli_desc"	ideology=despotism
+			desc="HMS_cadence_poli_desc"	ideology=despotism
 			expire="1030.03.13.08"
 			traits={}
 			id=-1

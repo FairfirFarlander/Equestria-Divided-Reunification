@@ -1,30 +1,42 @@
 ﻿l_english:
+###Introduction###
+##Bookmark##
+NIH_GATHERING_STORM_DESC:0""
+##Welcome Screen##
+ EAW_WS_NIH:0""
+  EAW_WS_NIH_desc:0""
+###Characters###
+##Leaders##
+NIH_cursed_fate:0"Cursed Fate"
+ NIH_cfate_poli_desc:0""
+ NIH_cfate_mili_desc:0""
+##Commanders##
+##Advisors##
 ###Country Name###
-NIH_fascism:0 "The Acorange City Brigade"
-NIH_fascism_DEF:0 "The Protectorate of Trottingham"
-NIH_fascism_ADJ:0 "Acorange"
-NIH_communism:0 "TRNSR"
-NIH_communism_DEF:0 "The Red North Star Republic"
-NIH_communism_ADJ:0 "Acorange"
-NIH_neutrality:0 "The Acorange Hold Out"
-NIH_neutrality_DEF:0 "The Acorange Hold Out" 
-NIH_neutrality_ADJ:0 "Acorange"
-NIH_democratic:0 "The North Star Republic"
-NIH_democratic_DEF:0 "The Republic of The Northern Star"
-NIH_democratic_ADJ:0 "Acorange"
-### party ###
-NIH_fascism_party:0 "ETM"
-NIH_fascism_party_long:0 "Eye Of The Moon"
-NIH_communism_party:0 "ARSS"
-NIH_communism_party_long:0 "Acorange Red Star Society"
-NIH_neutrality_party:0 "COF"
-NIH_neutrality_party_long:0 "Council of Officers"
-NIH_democratic_party:0 "TNL"
-NIH_democratic_party_long:0 "Ponies Of The North Star"
+NIH_fascism:0"The Acorange City Brigade"
+ NIH_fascism_DEF:0"The Protectorate of Trottingham"
+ NIH_fascism_ADJ:0"Acorange"
+ NIH_communism:0"TRNSR"
+  NIH_communism_DEF:0"The Red North Star Republic"
+  NIH_communism_ADJ:0"Acorange"
+ NIH_neutrality:0"The Acorange Hold Out"
+  NIH_neutrality_DEF:0"The Acorange Hold Out" 
+  NIH_neutrality_ADJ:0"Acorange"
+ NIH_democratic:0"The North Star Republic"
+  NIH_democratic_DEF:0"The Republic of The Northern Star"
+  NIH_democratic_ADJ:0"Acorange"
+###Political Parties###
+NIH_fascism_party:0"ETM"
+ NIH_fascism_party_long:0"Eye Of The Moon"
+ NIH_communism_party:0"ARSS"
+  NIH_communism_party_long:0"Acorange Red Star Society"
+ NIH_neutrality_party:0"COF"
+  NIH_neutrality_party_long:0"Council of Officers"
+ NIH_democratic_party:0"TNL"
+  NIH_democratic_party_long:0"Ponies Of The North Star"
 ###National Focuses###
-#Storyline Tree
-#TRT_:0 ""
-#TRT__desc:0 ""
-#Economic Tree
-#TRT_:0 ""
-#TRT__desc:0 ""
+#Storyline Tree##
+#TRT_:0""
+# TRT__desc:0""
+# TRT_:0""
+#  TRT__desc:0""

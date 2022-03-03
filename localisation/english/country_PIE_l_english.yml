@@ -1,30 +1,36 @@
 ﻿l_english:
+###Introduction###
+##Bookmark##
+PIE_GATHERING_STORM_DESC:0""
+##Welcome Screen##
+ EAW_WS_PIE:0""
+  EAW_WS_PIE_desc:0""
+###Characters###
+##Leaders##
+PIE_marble_pie:0"Marble Pie"
+ PIE_mpie_poli_desc:0""
+ PIE_sapphire_smiles:0"Sapphire Smiles"
+  PIE_ssmiles_poli_desc:0""
+ PIE_cloudy_quartz:0"Cloudy Quartz"
+  PIE_cquartz_poli_desc:0""
+##Commanders##
+##Advisors##
 ###Country Name###
-PIE_fascism:0 "Rockville Province"
-PIE_fascism_DEF:0 "The Province of Rockville"
-PIE_fascism_ADJ:0 "Pie Clanner"
-PIE_communism:0 "Rockville Province"
-PIE_communism_DEF:0 "The Province of Rockville"
-PIE_communism_ADJ:0 "Pie Clanner"
-PIE_neutrality:0 "Rockville Province"
-PIE_neutrality_DEF:0 "The Province of Rockville" 
-PIE_neutrality_ADJ:0 "Pie Clanner"
-PIE_democratic:0 "Rockville Province"
-PIE_democratic_DEF:0 "The Province of Rockville"
-PIE_democratic_ADJ:0 "Pie Clanner"
-### party ###
-PIE_fascism_party:0 "FAC"
-PIE_fascism_party_long:0 "FAC"
-PIE_communism_party:0 "COM"
-PIE_communism_party_long:0 "COM"
-PIE_neutrality_party:0 "NEU"
-PIE_neutrality_party_long:0 "NEU"
-PIE_democratic_party:0 "DEC"
-PIE_democratic_party_long:0 "DEC"
+PIE:0"Rockville Province"
+ PIE_DEF:0"The Province of Rockville"
+ PIE_ADJ:0"Pie Clanner"
+###Political Parties###
+PIE_fascism_party:0"FAC"
+ PIE_fascism_party_long:0"FAC"
+ PIE_communism_party:0"COM"
+  PIE_communism_party_long:0"COM"
+ PIE_neutrality_party:0"NEU"
+  PIE_neutrality_party_long:0"NEU"
+ PIE_democratic_party:0"DEC"
+  PIE_democratic_party_long:0"DEC"
 ###National Focuses###
-#Storyline Tree
-#PIE_:0 ""
-#PIE__desc:0 ""
-#Economic Tree
-#PIE_:0 ""
-#PIE__desc:0 ""
+##Storyline Tree##
+#PIE_:0""
+# PIE__desc:0""
+# PIE_:0""
+#  PIE__desc:0""

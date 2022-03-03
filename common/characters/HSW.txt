@@ -98,7 +98,7 @@ characters={
 		}
 		advisor={
 			slot=high_command	ledger=army	cost=50
-			idea_token=HSW_scootaloo_staf
+			idea_token=HSW_scootaloo_high
 			allowed={original_tag=HSW}
 			traits={}
 		}

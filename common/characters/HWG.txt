@@ -88,7 +88,7 @@ characters={
 			id=-1
 		}
 		corps_commander={
-			#desc="HWG_fpants_mili_desc"
+			desc="HWG_fpants_mili_desc"
 			skill=2 attack_skill=1	defense_skill=3
 			planning_skill=2	logistics_skill=1
 			traits={pony_race_trait politically_connected trait_cautious}
@@ -214,6 +214,7 @@ characters={
 		advisor={
 			slot=high_command
 			ledger=army
+			idea_token=HWG_nighthooves_high
 			cost=50
 			traits={}
 		}

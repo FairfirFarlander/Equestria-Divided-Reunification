@@ -1,34 +1,67 @@
 ﻿l_english:
-###Homescreen Welcome###
-EAW_WS_HEB:0""
- EAW_WS_HEB_desc:0""
+###Introduction###
+##Bookmark##
+HEB_GATHERING_STORM_DESC:0""
+##Welcome Screen##
+ EAW_WS_HEB:0""
+  EAW_WS_HEB_desc:0""
+###Characters###
+##Leaders##
+HEB_applejack:0"Applejack"
+ HEB_applejack_poli_desc:0""
+ HEB_applejack_mili_desc:0""
+ HEB_jack_trader:0"Jack Trader"
+  HEB_jtrader_poli_desc:0""
+ HEB_magia_saviour:0"Magia Saviour"
+  HEB_msaviour_poli_desc:0""
+ HEB_raving_cloud:0"Raving Cloud"
+  HEB_rcloud_poli_desc:0""
+##Commanders##
+ HEB_big_mac:0"Big Mac"
+  HEB_bmac_mili_desc:0""
+ HEB_braeburn:0"Braeburn"
+  HEB_braeburn_mili_desc:0""
+ HEB_lightning_dust:0"Lightning Dust"
+  HEB_ldust_mili_desc:0""
+ HEB_chief_strongheart:0"Chief Strongheart"
+  HEB_cstrongheart_mili_desc:0""
+  HEB_cstrongheart_advi_desc:0""
+##Advisors##
+ HEB_apple_bloom:0"Apple Bloom"
+  HEB_abloom_advi_desc:0""
+ HEB_granny_smith:0"Grnny Smith"
+  HEB_gsmith_advi:0""
+  HEB_gsmith_theo:0""
 ###Country Name###
 HEB_fascism:0"House Earthborn"
  HEB_fascism_DEF:0"The Clans of House Earthborn"
  HEB_fascism_ADJ:0"Eerathi"
  HEB_communism:0"South Equestrian Communes"
- HEB_communism_DEF:0"The Communes of Southern Equestria"
- HEB_communism_ADJ:0"Equestrians"
+  HEB_communism_DEF:0"The Communes of Southern Equestria"
+  HEB_communism_ADJ:0"Equestrians"
  HEB_neutrality:0"Equestrian Confederation"
- HEB_neutrality_DEF:0"The Confederation of Southern Equestrian States"
- HEB_neutrality_ADJ:0"Equestrians"
+  HEB_neutrality_DEF:0"The Confederation of Southern Equestrian States"
+  HEB_neutrality_ADJ:0"Equestrians"
  HEB_democratic:0"Southern Equestrian Republic"
- HEB_democratic_DEF:0"The Southern Republic of Equestria"
- HEB_democratic_ADJ:0"Equestrians"
+  HEB_democratic_DEF:0"The Southern Republic of Equestria"
+  HEB_democratic_ADJ:0"Equestrians"
+ EARTHB:0"Equestria"
+  EARTHB_DEF:0"Equestria"
+  EARTHB_ADJ:0"Equestria"
 ###Political Parties###
 HEB_fascism_party:0"CEC"
  HEB_fascism_party_long:0"The Council of Earthborn Clans"
  HEB_communism_party:0"SWU"
- HEB_communism_party_long:0"Southern Workers Union"
+  HEB_communism_party_long:0"Southern Workers Union"
  HEB_neutrality_party:0"NSM"
- HEB_neutrality_party_long:0"Network of Southern Mayors"
+  HEB_neutrality_party_long:0"Network of Southern Mayors"
  HEB_democratic_party:0"ARR"
- HEB_democratic_party_long:0"Alliance to Restore the Republic"
+  HEB_democratic_party_long:0"Alliance to Restore the Republic"
 ###Ideas###
-HEB_idea:0 "We are Equestria!"
- HEB_idea_desc:0 "The militaristic regime of House Earthborn has no equals when it comes to pure, brutal strength and unbroken will. Years of harsh training and intense indoctrination have turned a herd of farmers into a relentless war machine that will not stop until all orders of Applejack the Ever-vigilant are fulfilled. Not unlike the legendary behemoths of old - once set in motion, there is no force in this world that can stop the thundering of their hooves. Unstoppable as an avalanche, destructive as an earthquake, unyeilding as a mountain - the behemoth of Equestria has awoken and is ready to crush its enemies."
+HEB_idea:0"We are Equestria!"
+ HEB_idea_desc:0"The militaristic regime of House Earthborn has no equals when it comes to pure, brutal strength and unbroken will. Years of harsh training and intense indoctrination have turned a herd of farmers into a relentless war machine that will not stop until all orders of Applejack the Ever-vigilant are fulfilled. Not unlike the legendary behemoths of old - once set in motion, there is no force in this world that can stop the thundering of their hooves. Unstoppable as an avalanche, destructive as an earthquake, unyeilding as a mountain - the behemoth of Equestria has awoken and is ready to crush its enemies."
 ###National Focuses###
-#Story Tree Main
+##Story Tree Main##
 HEB_S00:0"The Gathering"
  HEB_S00_desc:0""
   HEBact01.01.t:0"" #On select event for HEB_S00
@@ -60,9 +93,9 @@ HEB_S00:0"The Gathering"
   HEB_S02D_desc:0""
  HEB_S03C:0"Pay Out War Debts"
   HEB_S03C_desc:0""
-
- HEB_L00:0"The Matter of the Army"
-  HEB_L00_desc:0""
+##Army Tree##
+HEB_L00:0"The Matter of the Army"
+ HEB_L00_desc:0""
  HEB_L01A:0"Favor the Militias"
   HEB_L01A_desc:0""
  HEB_L01B:0"A Solid Comprimise"
@@ -71,11 +104,3 @@ HEB_S00:0"The Gathering"
   HEB_L1C_desc:0""
  HEB_L0:0""
   HEB_L0_desc:0""
-
-
-
-
-
-
-
-

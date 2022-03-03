@@ -111,7 +111,7 @@ characters={
 		}
 		advisor={
 			slot=army_chief
-			idea_token=HAY_cchafer_staf	#chafer1
+			idea_token=HAY_cchafer_chie	#chafer1
 			cost=100
 			allowed={original_tag=HAY}
 			available={

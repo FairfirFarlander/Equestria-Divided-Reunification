@@ -1,30 +1,33 @@
 ﻿l_english:
+###Introduction###
+##Bookmark##
+LAS_GATHERING_STORM_DESC:0""
+##Welcome Screen##
+ EAW_WS_LAS:0""
+  EAW_WS_LAS_desc:0""
+###Characters###
+##Leaders##
+LAS_pine_chest:0"Pine Chest"
+ LAS_pchest_poli_desc:0""
+ LAS_pchest_mili_desc:0""
+##Commanders##
+##Advisors##
 ###Country Name###
-LAS_fascism:0 "Las Aetherius"
-LAS_fascism_DEF:0 "The Province of Las Aetherius"
-LAS_fascism_ADJ:0 "Pegasi"
-LAS_communism:0 "Las Aetherius"
-LAS_communism_DEF:0 "The Province of Las Aetherius"
-LAS_communism_ADJ:0 "Pegasi"
-LAS_neutrality:0 "Las Aetherius"
-LAS_neutrality_DEF:0 "The Province of Las Aetherius" 
-LAS_neutrality_ADJ:0 "Pegasi"
-LAS_democratic:0 "Las Aetherius"
-LAS_democratic_DEF:0 "The Province of Las Aetherius"
-LAS_democratic_ADJ:0 "Pegasi"
-### party ###
-LAS_fascism_party:0 "FAC"
-LAS_fascism_party_long:0 "FAC"
-LAS_communism_party:0 "COM"
-LAS_communism_party_long:0 "COM"
-LAS_neutrality_party:0 "NEU"
-LAS_neutrality_party_long:0 "NEU"
-LAS_democratic_party:0 "DEC"
-LAS_democratic_party_long:0 "DEC"
+LAS:0"Las Aetherius"
+ LAS_DEF:0"The Province of Las Aetherius"
+ LAS_ADJ:0"Pegasi"
+###Political Parties###
+LAS_fascism_party:0"FAC"
+ LAS_fascism_party_long:0"FAC"
+ LAS_communism_party:0"COM"
+  LAS_communism_party_long:0"COM"
+ LAS_neutrality_party:0"NEU"
+  LAS_neutrality_party_long:0"NEU"
+ LAS_democratic_party:0"DEC"
+  LAS_democratic_party_long:0"DEC"
 ###National Focuses###
-#Storyline Tree
-#LAS_:0 ""
-#LAS__desc:0 ""
-#Economic Tree
-#LAS_:0 ""
-#LAS__desc:0 ""
+##Storyline Tree##
+#LAS_:0""
+# LAS__desc:0""
+# LAS_:0""
+#  LAS__desc:0""

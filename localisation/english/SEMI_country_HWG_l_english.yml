@@ -1,0 +1,52 @@
+﻿l_english:
+#####################
+# POLITICAL FOCUSES #
+#####################
+HWG_convene_the_house_council:0"Convene the House Council"
+HWG_convene_the_house_council_desc:0"It appears event are in motion. Our spies report of suspicious movements from all sides. We must summon a host of trusted allies and advisors to plan for the coming storm."
+HWG_economic_affairs:0"Economic Affairs"
+HWG_economic_affairs_desc:0"Our economy, while lucrative, is merely at a fraction of it's potential. It is time we addressed the lingering issues at hoof"
+HWG_the_question_of_business:0"The Question of Business"
+HWG_the_question_of_business_desc:0"Business is the backbone of our economy, yet it is found wanting in light of our ambitions. Perhaps there is a way to improve this."
+HWG_the_question_of_unemployment:0"The Question of Unemployment"
+HWG_the_question_of_unemployment_desc:0"The war drags on dragging hundreds into it's cold embrace, yet unemployemnt continues to grow. We must deal with this idleness."
+HWG_the_question_of_investment:0"The Question of Investment"
+HWG_the_question_of_investment_desc:0"The value of the bit has fallen so far. We must stabilize the situation by investing our funds into a decent venture."
+HWG_maintain_the_status_quo:0"Maintain the Status Quo"
+HWG_maintain_the_status_quo_desc:0"Our leadership has been adequate thus far. We will continue to lead our house through these troubled times."
+HWG_an_exchange_of_hooves:0"An Exchange of Hooves"
+HWG_an_exchange_of_hooves_desc:0"Defunct Focus"
+HWG_of_mice_and_ponies:0"Of Mice and Ponies"
+HWG_of_mice_and_ponies_desc:0"Let us leave the rest of Equestria to their wars. We will continue to monitor them. If one becomes too powerful, we will simply pull put them back in line."
+HWG_enact_emergency_measures:0"Enact Emergency Measures"
+HWG_enact_emergency_measures_desc:0"To ensure our continued way of life we must take drastic measures.   I... we must take matters into our own hooves."
+################
+# ARMY FOCUSES #
+################
+HWG_invest_in_modern_rifles:0"Invest in Modern Rifles"
+HWG_mobilize_the_economy:0"Mobilize the Economy"
+HWG_pool_resources:0"Wartime Tariffs"
+HWG_increase_conscription:0"Increase Conscription"
+HWG_bolster_military_armament:0"Bolster Military Armament"
+HWG_decentralized_command_structure:0"Decentralized Command Structure"
+HWG_waking_the_chimera:0"Mobile Warfare Doctrine"
+HWG_la_liberation:0"Mass Assault Doctrine"
+HWG_centralized_command_structure:0"Centralized Command Structure"
+HWG_pone_the_guns:0"Superior Firepower Doctrine"
+HWG_together_to_freindship:0"Grand Battleplan Doctrine"
+#################
+# NAVAL FOCUSES #
+#################
+HWG_the_state_of_our_navy:0"The State of Our Navy"
+HWG_cut_naval_spending:0"Cut Naval Spending"
+HWG_invest_in_the_navy:0"Invest in the Navy"
+HWG_screen_hull_focus:0"Destroyers and Cruisers"
+HWG_capital_hull_focus:0"Capital Ships"
+HWG_carrier_and_naval_air_focus:0"Carriers and Naval Aircraft"
+HWG_submarine_focus:0"Submarines"
+##########
+# EVENTS #
+##########
+whitegoldpolitic.1.t:0"The Council Deliberates"
+whitegoldpolitic.1.d:0"This event was trimmed due to scope. Please select 'Keep calm and carry on.' to continue."
+whitegoldpolitic.1.a:0"Keep calm and carry on."
