@@ -70,6 +70,7 @@ characters={
 			}
 		}
 		field_marshal={
+			desc="CRL_reese_mili_desc"
 			skill=2	attack_skill=2	defense_skill=3
 			planning_skill=2	logistics_skill=1
 			traits={brilliant_strategist career_officer pony_race_trait}
@@ -77,7 +78,7 @@ characters={
 		advisor={
 			slot=army_chief
 			cost=100
-			idea_token=CRL_reese
+			idea_token=CRL_reese_chie
 			traits={army_logistics_2}
 		}
 	}
@@ -106,7 +107,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="CRL_DUSTY_EMBER_DESC"
+			desc="CRY_DUSTY_EMBER_DESC"	#"CRL_dember_mili_desc"
 			skill=2	attack_skill=2	defense_skill=4
 			planning_skill=2	logistics_skill=1
 			traits={promising_general pony_race_trait}
@@ -121,6 +122,7 @@ characters={
 			}
 		}
 		corps_commander={
+			desc="CRL_dfalafel_mili_desc"
 			skill=2	attack_skill=1	defense_skill=2
 			planning_skill=2	logistics_skill=2
 			traits={trait_reckless media_personality pony_race_trait winter_specialist}
@@ -143,6 +145,7 @@ characters={
 			}
 		}
 		corps_commander={
+			desc="CRL_isnow_mili_desc"
 			skill=1	attack_skill=1	defense_skill=2
 			planning_skill=1	logistics_skill=1
 			traits={trait_cautious pony_race_trait winter_specialist}
@@ -158,6 +161,7 @@ characters={
 			}
 		}
 		corps_commander={
+			desc="CRL_cloudie_mili_desc"
 			skill=1	attack_skill=1	defense_skill=2
 			planning_skill=2	logistics_skill=1
 			traits={medical_expert pony_race_trait}
@@ -173,6 +177,7 @@ characters={
 			}
 		}
 		corps_commander={
+			desc="CRL_crystalline_mili_desc"
 			skill=1	attack_skill=1	defense_skill=1
 			planning_skill=1	logistics_skill=3
 			traits={promising_general pony_race_trait}
@@ -187,6 +192,7 @@ characters={
 			}
 		}
 		corps_commander={
+			desc="CRL_shooves_mili_desc"
 			skill=3	attack_skill=3	defense_skill=2
 			planning_skill=2	logistics_skill=3
 			traits={ranger brilliant_strategist pony_race_trait}

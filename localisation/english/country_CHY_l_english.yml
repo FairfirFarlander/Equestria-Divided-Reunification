@@ -1,40 +1,34 @@
 ﻿l_english:
-#Bookmark Description#
- CHY_GATHERING_STORM_DESC:0""
-#Homescreen Welcome#
+###Introduction###
+##Bookmark##
+CHY_GATHERING_STORM_DESC:0""
+##Welcome Screen##
  EAW_WS_CHY:0""
   EAW_WS_CHY_desc:0""
-#Characters
- CHY_cherry_jubilee:0"Cherry Jubilee"
-  CHY_cjubilee_poli_desc:0""
-  CHY_cjubilee_mili_desc:0""
-#Country Name#
- CHY_fascism:0"Cherry Clan"
-  CHY_fascism_DEF:0"Cherry Clan"
-  CHY_fascism_ADJ:0"Cheari"
- CHY_communism:0"Cherry Clan"
-  CHY_communism_DEF:0"Cherry Clan"
-  CHY_communism_ADJ:0"Cheari"
- CHY_neutrality:0"Cherry Clan"
-  CHY_neutrality_DEF:0"Cherry Clan"
-  CHY_neutrality_ADJ:0"Cheari"
- CHY_democratic:0"Cherry Clan"
-  CHY_democratic_DEF:0"Cherry Clan"
-  CHY_democratic_ADJ:0"Cheari"
-#Political Parties#
- CHY_fascism_party:0"FAC"
-  CHY_fascism_party_long:0"FAC"
+###Characters###
+##Leaders##
+CHY_cherry_jubilee:0"Cherry Jubilee"
+ CHY_cjubilee_poli_desc:0""
+ CHY_cjubilee_mili_desc:0""
+##Commanders##
+##Advisors##
+###Country Name###
+CHY:0"Cherry Clan"
+ CHY_DEF:0"Cherry Clan"
+ CHY_ADJ:0"Cheari"
+###Political Parties###
+CHY_fascism_party:0"FAC"
+ CHY_fascism_party_long:0"FAC"
  CHY_communism_party:0"COM"
   CHY_communism_party_long:0"COM"
  CHY_neutrality_party:0"NEU"
   CHY_neutrality_party_long:0"NEU"
  CHY_democratic_party:0"DEC"
   CHY_democratic_party_long:0"DEC"
-#Ideas#
+###Ideas###
 ###National Focuses###
-#Storyline Tree
+##Storyline Tree##
 #CHY_:0""
-#CHY__desc:0""
-#Economic Tree
-#CHY_:0""
-#CHY__desc:0""
+# CHY__desc:0""
+# CHY_:0""
+#  CHY__desc:0""

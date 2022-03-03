@@ -1,30 +1,32 @@
 ﻿l_english:
+###Introduction###
+##Bookmark##
+FLY_GATHERING_STORM_DESC:0""
+##Welcome Screen##
+ EAW_WS_FLY:0""
+  EAW_WS_FLY_desc:0""
+###Characters###
+##Leaders##
+FLY_cherry_jam:0"Cherry Jam"
+ FLY_cjam_poli_desc:0""
+##Commanders##
+##Advisors##
 ###Country Name###
-FLY_fascism:0 "Fillydelphia Province"
-FLY_fascism_DEF:0 "The Province of Fillydelphia"
-FLY_fascism_ADJ:0 "Filleian"
-FLY_communism:0 "Fillydelphia Province"
-FLY_communism_DEF:0 "The Province of Fillydelphia"
-FLY_communism_ADJ:0 "Filleian"
-FLY_neutrality:0 "Fillydelphia Province"
-FLY_neutrality_DEF:0 "The Province of Fillydelphia"
-FLY_neutrality_ADJ:0 "Filleian"
-FLY_democratic:0 "Fillydelphia Province"
-FLY_democratic_DEF:0 "The Province of Fillydelphia"
-FLY_democratic_ADJ:0 "Filleian"
-### party ###
-FLY_fascism_party:0 "FAC"
-FLY_fascism_party_long:0 "FAC"
-FLY_communism_party:0 "COM"
-FLY_communism_party_long:0 "COM"
-FLY_neutrality_party:0 "NEU"
-FLY_neutrality_party_long:0 "NEU"
-FLY_democratic_party:0 "DEC"
-FLY_democratic_party_long:0 "DEC"
+FLY:0"Fillydelphia Province"
+ FLY_DEF:0"The Province of Fillydelphia"
+ FLY_ADJ:0"Filleian"
+###Political Parties###
+FLY_fascism_party:0"FAC"
+ FLY_fascism_party_long:0"FAC"
+ FLY_communism_party:0"COM"
+  FLY_communism_party_long:0"COM"
+ FLY_neutrality_party:0"NEU"
+  FLY_neutrality_party_long:0"NEU"
+ FLY_democratic_party:0"DEC"
+  FLY_democratic_party_long:0"DEC"
 ###National Focuses###
-#Storyline Tree
-#FLY_:0 ""
-#FLY__desc:0 ""
-#Economic Tree
-#FLY_:0 ""
-#FLY__desc:0 ""
+##Storyline Tree##
+#FLY_:0""
+# FLY__desc:0""
+# FLY_:0""
+#  FLY__desc:0""

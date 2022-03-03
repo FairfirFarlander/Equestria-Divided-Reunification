@@ -9,8 +9,8 @@ characters={
 			id=-1
 		}
 	}
-	COT_stewed_apple={
-		name=COT_neighson_e_miles
+	COT_neighson_e_miles={
+		name=COT_stewed_apple
 		portraits={
 			army={
 				large="gfx/leaders/SCS/StewedApple.tga"
@@ -18,14 +18,14 @@ characters={
 			}
 		}
 		field_marshal={
-			desc="COT_nemiles_mili_desc"
+			desc="COT_sapple_mili_desc"
 			skill=3 attack_skill=4	defense_skill=2
 			planning_skill=2	logistics_skill=2
 			traits={pony_race_trait offensive_doctrine fast_planner cavalry_leader}
 		}
 		advisor={
 			slot=army_chief
-			idea_token=COT_nemiles_chie
+			idea_token=COT_sapple_chie
 			cost=200
 			traits={army_chief_maneuver_3}
 		}
@@ -39,7 +39,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="COT_sstar_mili_desc"	#silverstar_desc
+			desc="COT_silverstar_mili_desc"	#silverstar_desc
 			skill=2 attack_skill=2	defense_skill=2
 			planning_skill=2	logistics_skill=1
 			traits={pony_race_trait inflexible_strategist defensive_doctrine}

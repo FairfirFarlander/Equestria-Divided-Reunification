@@ -68,7 +68,7 @@ characters={
 		}
 		advisor={
 			slot=high_command	ledger=army	cost=50
-			idea_token=CUL_dhooves_staf
+			idea_token=CUL_dhooves_high
 			allowed={original_tag=CUL}
 			traits={}
 		}
@@ -91,7 +91,7 @@ characters={
 		}
 		advisor={
 			slot=high_command	ledger=army	cost=50
-			idea_token=CUL_lheartstrings_staf
+			idea_token=CUL_lheartstrings_high
 			allowed={original_tag=CUL}
 			traits={army_regrouping_1}
 		}
@@ -129,7 +129,7 @@ characters={
 		}
 		advisor={
 			slot=high_command	ledger=army	cost=50
-			idea_token=CUL_screwball_staf
+			idea_token=CUL_screwball_high
 			allowed={original_tag=CUL}
 			traits={}
 		}
@@ -150,7 +150,7 @@ characters={
 		}
 		advisor={
 			slot=high_command	ledger=army	cost=50
-			idea_token=CUL_ppierce_staf
+			idea_token=CUL_ppierce_high
 			allowed={original_tag=CUL}
 			traits={}
 		}
