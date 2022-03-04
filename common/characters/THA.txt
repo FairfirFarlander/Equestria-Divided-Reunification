@@ -48,7 +48,7 @@ characters={
 		advisor={
 			slot=army_chief
 			cost=150
-			idea_token=THA_apeak_advi
+			idea_token=THA_apeak_chie
 			traits={}
 		}
 	}

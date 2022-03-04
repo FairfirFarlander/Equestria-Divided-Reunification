@@ -1,42 +1,42 @@
 ﻿l_english:
 ###Introduction###
 ##Bookmark##
-JTL_GATHERING_STORM_DESC:0""
+JTL_GATHERING_STORM_DESC:""
 ##Welcome Screen##
- EAW_WS_JTL:0""
-  EAW_WS_JTL_desc:0""
+ EAW_WS_JTL:""
+  EAW_WS_JTL_desc:""
 ###Characters###
 ##Leaders##
-JUN_ahuizotl:0"Ahuizotl"
- JTL_ahuizotl_poli_desc:0""
- JTL_ahuizotl_mili_desc:0""
- JTL_temple_chant:0"Temple Chant"
-  JTL_tchant_poli_desc:0""
-  JTL_tchant_mili_desc:0""
- JTL_tailcoatl:0"Tailcoatl"
-  JTL_tailcoatl_poli_desc:0""
-  JTL_tailcoatl_mili_desc:0""
+JUN_ahuizotl:"Ahuizotl"
+ JTL_ahuizotl_poli_desc:""
+ JTL_ahuizotl_mili_desc:""
+ JTL_temple_chant:"Temple Chant"
+  JTL_tchant_poli_desc:""
+  JTL_tchant_mili_desc:""
+ JTL_tailcoatl:"Tailcoatl"
+  JTL_tailcoatl_poli_desc:""
+  JTL_tailcoatl_mili_desc:""
 ##Commanders##
- JTL_tenoch:0"Tenoch"
-  JTL_tenoch_mili_desc:0""
+ JTL_tenoch:"Tenoch"
+  JTL_tenoch_mili_desc:""
 ##Advisors##
 ###Country Name###
-JTL:0"Jungle League"
- JTL_DEF:0"The League fo the Jungle"
- JTL_ADJ:0"Aztalan"
+JTL:"Jungle League"
+ JTL_DEF:"The League fo the Jungle"
+ JTL_ADJ:"Aztalan"
 ###Political Parties###
-JTL_fascism_party:0"FAC"
- JTL_fascism_party_long:0"FAC"
- JTL_communism_party:0"COM"
-  JTL_communism_party_long:0"COM"
- JTL_neutrality_party:0"NEU"
-  JTL_neutrality_party_long:0"NEU"
- JTL_democratic_party:0"DEC"
-  JTL_democratic_party_long:0"DEC"
+JTL_fascism_party:"FAC"
+ JTL_fascism_party_long:"FAC"
+ JTL_communism_party:"COM"
+  JTL_communism_party_long:"COM"
+ JTL_neutrality_party:"NEU"
+  JTL_neutrality_party_long:"NEU"
+ JTL_democratic_party:"DEC"
+  JTL_democratic_party_long:"DEC"
 ###Ideas##
 ###National Focuses###
 ##Storyline Tree##
-#JTL_:0""
-# JTL__desc:0""
-# JTL_:0""
-#  JTL__desc:0""
+#JTL_:""
+# JTL__desc:""
+# JTL_:""
+#  JTL__desc:""

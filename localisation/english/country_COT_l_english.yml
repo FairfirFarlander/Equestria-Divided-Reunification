@@ -1,46 +1,46 @@
 ﻿l_english:
 ###Introduction###
 ##Bookmark##
-COT_GATHERING_STORM_DESC:0""
+COT_GATHERING_STORM_DESC:""
 ##Welcome Screen##
- EAW_WS_COT:0""
-  EAW_WS_COT_desc:0""
+ EAW_WS_COT:""
+  EAW_WS_COT_desc:""
 ###Characters###
 ##Leaders##
-COT_jd_neighvis:0"J.D. Neighvis"
- COT_jdneighvis_poli_desc:0""
+COT_jd_neighvis:"J.D. Neighvis"
+ COT_jdneighvis_poli_desc:""
 ##Commanders##
- COT_stewed_apple:0"Stewed Apple"   #Neighson E. Miles
-  COT_sapple_mili_desc:0""
-  COT_sapple_chie_desc:0""
- COT_silverstar:0"Silverstar"
-  COT_silverstar_mili_desc:0""
- COT_apple_ale:0"Apple Ale"
-  COT_aale_mili_desc:0""
- COT_moonshine_melody:0"Moonshine Melody"
-  COT_mmelody_mili_desc:0""
- COT_sorren_peak:0"Sorren Peak"
-  COT_speak_mili_desc:0""
- COT_burnside_fervor:0"Burnside Fervor"
-  COT_bfervor_mili_desc:0""
+ COT_stewed_apple:"Stewed Apple"   #Neighson E. Miles
+  COT_sapple_mili_desc:""
+  COT_sapple_chie_desc:""
+ COT_silverstar:"Silverstar"
+  COT_silverstar_mili_desc:""
+ COT_apple_ale:"Apple Ale"
+  COT_aale_mili_desc:""
+ COT_moonshine_melody:"Moonshine Melody"
+  COT_mmelody_mili_desc:""
+ COT_sorren_peak:"Sorren Peak"
+  COT_speak_mili_desc:""
+ COT_burnside_fervor:"Burnside Fervor"
+  COT_bfervor_mili_desc:""
 ##Advisors##
 ###Country Name###
-COT:0"Southern Confederation"
- COT_DEF:0"The Confederation of Southern States"
- COT_ADJ:0"Southron"
+COT:"Southern Confederation"
+ COT_DEF:"The Confederation of Southern States"
+ COT_ADJ:"Southron"
 ###Political Parties###
-COT_fascism_party:0"FAC"
- COT_fascism_party_long:0"FAC"
- COT_communism_party:0"COM"
-  COT_communism_party_long:0"COM"
- COT_neutrality_party:0"NEU"
-  COT_neutrality_party_long:0"NEU"
- COT_democratic_party:0"DEC"
-  COT_democratic_party_long:0"DEC"
+COT_fascism_party:"FAC"
+ COT_fascism_party_long:"FAC"
+ COT_communism_party:"COM"
+  COT_communism_party_long:"COM"
+ COT_neutrality_party:"NEU"
+  COT_neutrality_party_long:"NEU"
+ COT_democratic_party:"DEC"
+  COT_democratic_party_long:"DEC"
 ###Ideas###
 ###National Focuses###
 ##Storyline Tree##
-#COT_:0""
-# COT__desc:0""
-# COT_:0""
-#  COT__desc:0""
+#COT_:""
+# COT__desc:""
+# COT_:""
+#  COT__desc:""

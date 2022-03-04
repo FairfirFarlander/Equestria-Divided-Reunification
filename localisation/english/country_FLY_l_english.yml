@@ -1,32 +1,32 @@
 ﻿l_english:
 ###Introduction###
 ##Bookmark##
-FLY_GATHERING_STORM_DESC:0""
+FLY_GATHERING_STORM_DESC:""
 ##Welcome Screen##
- EAW_WS_FLY:0""
-  EAW_WS_FLY_desc:0""
+ EAW_WS_FLY:""
+  EAW_WS_FLY_desc:""
 ###Characters###
 ##Leaders##
-FLY_cherry_jam:0"Cherry Jam"
- FLY_cjam_poli_desc:0""
+FLY_cherry_jam:"Cherry Jam"
+ FLY_cjam_poli_desc:""
 ##Commanders##
 ##Advisors##
 ###Country Name###
-FLY:0"Fillydelphia Province"
- FLY_DEF:0"The Province of Fillydelphia"
- FLY_ADJ:0"Filleian"
+FLY:"Fillydelphia Province"
+ FLY_DEF:"The Province of Fillydelphia"
+ FLY_ADJ:"Filleian"
 ###Political Parties###
-FLY_fascism_party:0"FAC"
- FLY_fascism_party_long:0"FAC"
- FLY_communism_party:0"COM"
-  FLY_communism_party_long:0"COM"
- FLY_neutrality_party:0"NEU"
-  FLY_neutrality_party_long:0"NEU"
- FLY_democratic_party:0"DEC"
-  FLY_democratic_party_long:0"DEC"
+FLY_fascism_party:"FAC"
+ FLY_fascism_party_long:"FAC"
+ FLY_communism_party:"COM"
+  FLY_communism_party_long:"COM"
+ FLY_neutrality_party:"NEU"
+  FLY_neutrality_party_long:"NEU"
+ FLY_democratic_party:"DEC"
+  FLY_democratic_party_long:"DEC"
 ###National Focuses###
 ##Storyline Tree##
-#FLY_:0""
-# FLY__desc:0""
-# FLY_:0""
-#  FLY__desc:0""
+#FLY_:""
+# FLY__desc:""
+# FLY_:""
+#  FLY__desc:""

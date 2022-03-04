@@ -1,31 +1,31 @@
 ﻿l_english:
 ###Introduction###
 ##Bookmark##
-WTC_GATHERING_STORM_DESC:0""
+WTC_GATHERING_STORM_DESC:""
 ##Welcome Screen##
- EAW_WS_WTC:0""
-  EAW_WS_WTC_desc:0""
+ EAW_WS_WTC:""
+  EAW_WS_WTC_desc:""
 ###Characters###
 ##Leaders##
-WTC_dashing_haberdasher:0"Dashing Haberdasher"
- WTC_dhaberdasher_poli_desc:0""
+WTC_dashing_haberdasher:"Dashing Haberdasher"
+ WTC_dhaberdasher_poli_desc:""
 ###Country Name###
-WTC:0"MTC"
- WTC_DEF:0"Manehattan Trading Company"
- WTC_ADJ:0"Maneglendi"
+WTC:"Manehattan Trading Company"
+ WTC_DEF:"The Manehattan Trading Company"
+ WTC_ADJ:"Maneglendi"
 ###Political Parties###
-WTC_fascism_party:0"FAC"
- WTC_fascism_party_long:0"FAC"
- WTC_communism_party:0"COM"
-  WTC_communism_party_long:0"COM"
- WTC_neutrality_party:0"NEU"
+WTC_fascism_party:"FAC"
+ WTC_fascism_party_long:"FAC"
+ WTC_communism_party:"COM"
+  WTC_communism_party_long:"COM"
+ WTC_neutrality_party:"NEU"
   WTC_neutrality_party_long:"NEU"
- WTC_democratic_party:0"DEC"
-  WTC_democratic_party_long:0"DEC"
+ WTC_democratic_party:"DEC"
+  WTC_democratic_party_long:"DEC"
 ###Ideas###
 ###National Focuses###
 ##Storyline Tree##
-#WTC_:0""
-# WTC__desc:0""
-# WTC_:0""
-#  WTC__desc:0""
+#WTC_:""
+# WTC__desc:""
+# WTC_:""
+#  WTC__desc:""

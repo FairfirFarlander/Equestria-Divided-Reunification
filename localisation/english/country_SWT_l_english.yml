@@ -1,30 +1,32 @@
 ﻿l_english:
+###Introduction###
+##Bookmark##
+SWT_GATHERING_STORM_DESC:""
+##Welcome Screen##
+ EAW_WS_SWT:""
+  EAW_WS_SWT_desc:""
+###Characters###
+##Leaders##
+##Commanders##
+##Advisors##
 ###Country Name###
-SWT_fascism:0 "The Northern Pegisus Territory"
-SWT_fascism_DEF:0 "The Northern Pegisus Territory"
-SWT_fascism_ADJ:0 "TNorthern Pegusi"
-SWT_communism:0 "The Northern Pegisus Territory"
-SWT_communism_DEF:0 "The Northern Pegisus Territory"
-SWT_communism_ADJ:0 "Northern Pegusi"
-SWT_neutrality:0 "The Northern Pegisus Territory"
-SWT_neutrality_DEF:0 "The Northern Pegisus Territory" 
-SWT_neutrality_ADJ:0 "Northern Pegusi"
-SWT_democratic:0 "The Northern Pegisus Territory"
-SWT_democratic_DEF:0 "The Northern Pegisus Territory"
-SWT_democratic_ADJ:0 "Northern Pegusi"
-### party ###
-SWT_fascism_party:0 "FAC"
-SWT_fascism_party_long:0 "FAC"
-SWT_communism_party:0 "COM"
-SWT_communism_party_long:0 "COM"
-SWT_neutrality_party:0 "NEU"
-SWT_neutrality_party_long:0 "NEU"
-SWT_democratic_party:0 "DEC"
-SWT_democratic_party_long:0 "DEC"
+SWT:"The Northern Pegisus Territory"
+ SWT_DEF:"The Northern Pegisus Territory"
+ SWT_ADJ:"TNorthern Pegusi"
+###Poltitical Parties###
+SWT_fascism_party:"FAC"
+ SWT_fascism_party_long:"FAC"
+ SWT_communism_party:"COM"
+  SWT_communism_party_long:"COM"
+ SWT_neutrality_party:"NEU"
+  SWT_neutrality_party_long:"NEU"
+ SWT_democratic_party:"DEC"
+  SWT_democratic_party_long:"DEC"
+###Ideas###
 ###National Focuses###
 #Storyline Tree
-#SWT_:0 ""
-#SWT__desc:0 ""
+#SWT_:""
+#SWT__desc:""
 #Economic Tree
-#SWT_:0 ""
-#SWT__desc:0 ""
+#SWT_:""
+#SWT__desc:""

@@ -86,7 +86,7 @@ set_politics={
 	election_frequency=36	elections_allowed=no
 }
 #CHARACTERS#	#humble appeaser, rutheless capitalist; deal broker, ideological crusader; hawk?;reluctant interventionalist, ideological crusader
-recruit_character=WTC_dashing_habedasher
+recruit_character=WTC_dashing_haberdasher
 #VARIENTS#
 if={limit={has_dlc="Man the Guns"}
 	create_equipment_variant={	#Heavy Cruiser AR1-EN1 MG2-SG3#

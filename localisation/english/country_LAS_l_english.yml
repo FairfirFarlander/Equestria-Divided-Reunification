@@ -1,33 +1,33 @@
 ﻿l_english:
 ###Introduction###
 ##Bookmark##
-LAS_GATHERING_STORM_DESC:0""
+LAS_GATHERING_STORM_DESC:""
 ##Welcome Screen##
- EAW_WS_LAS:0""
-  EAW_WS_LAS_desc:0""
+ EAW_WS_LAS:""
+  EAW_WS_LAS_desc:""
 ###Characters###
 ##Leaders##
-LAS_pine_chest:0"Pine Chest"
- LAS_pchest_poli_desc:0""
- LAS_pchest_mili_desc:0""
+LAS_pine_chest:"Pine Chest"
+ LAS_pchest_poli_desc:""
+ LAS_pchest_mili_desc:""
 ##Commanders##
 ##Advisors##
 ###Country Name###
-LAS:0"Las Aetherius"
- LAS_DEF:0"The Province of Las Aetherius"
- LAS_ADJ:0"Pegasi"
+LAS:"Las Aetherius"
+ LAS_DEF:"The Province of Las Aetherius"
+ LAS_ADJ:"Pegasi"
 ###Political Parties###
-LAS_fascism_party:0"FAC"
- LAS_fascism_party_long:0"FAC"
- LAS_communism_party:0"COM"
-  LAS_communism_party_long:0"COM"
- LAS_neutrality_party:0"NEU"
-  LAS_neutrality_party_long:0"NEU"
- LAS_democratic_party:0"DEC"
-  LAS_democratic_party_long:0"DEC"
+LAS_fascism_party:"FAC"
+ LAS_fascism_party_long:"FAC"
+ LAS_communism_party:"COM"
+  LAS_communism_party_long:"COM"
+ LAS_neutrality_party:"NEU"
+  LAS_neutrality_party_long:"NEU"
+ LAS_democratic_party:"DEC"
+  LAS_democratic_party_long:"DEC"
 ###National Focuses###
 ##Storyline Tree##
-#LAS_:0""
-# LAS__desc:0""
-# LAS_:0""
-#  LAS__desc:0""
+#LAS_:""
+# LAS__desc:""
+# LAS_:""
+#  LAS__desc:""

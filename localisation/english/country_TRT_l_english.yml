@@ -1,30 +1,48 @@
 ﻿l_english:
+###Introduction###
+##Bookmark##
+TRT_GATHERING_STORM_DESC:""
+##Welcome Screen##
+ EAW_WS_TRT:""
+  EAW_WS_TRT_desc:""
+###Characters###
+##Leaders##
+TRT_rapid_fire:"Rapid Fire"
+ TRT_rfire_poli_desc:""
+ TRT_rfire_mili_desc:""
+ TRT_teddy_hoosevelt:"Teddy Hoosevelt"
+  TRT_thoosevelt_poli_desc:""
+  TRT_thoosevelt_mili_desc:""
+ TRT_harshwhinny:"Ms. Harshwhinny"
+  TRT_harshwhinny_poli_desc:""
+##Commanders##
+##Advisors##
 ###Country Name###
-TRT_fascism:0 "Trottingham Protectorate"
-TRT_fascism_DEF:0 "The Protectorate of Trottingham"
-TRT_fascism_ADJ:0 "Treilish"
-TRT_communism:0 "SRGI"
-TRT_communism_DEF:0 "The Socialist Republic of the Griffish Isles"
-TRT_communism_ADJ:0 "Treilish"
-TRT_neutrality:0 "Trottingham City-State"
-TRT_neutrality_DEF:0 "The City-State of Trottingham" 
-TRT_neutrality_ADJ:0 "Treilish"
-TRT_democratic:0 "Equestrian Republic"
-TRT_democratic_DEF:0 "The Republic of Equestria"
-TRT_democratic_ADJ:0 "Treilish"
-### party ###
-TRT_fascism_party:0 "NSTWP"
-TRT_fascism_party_long:0 "National Socialist Treilish Worker's Party"
-TRT_communism_party:0 "TWP"
-TRT_communism_party_long:0 "Trottingham Workers Party"
-TRT_neutrality_party:0 "CTH"
-TRT_neutrality_party_long:0 "Council of Trottingham"
-TRT_democratic_party:0 "PER"
-TRT_democratic_party_long:0 "Party of Equestrian Restoration"
+TRT_fascism:"Trottingham Protectorate"
+ TRT_fascism_DEF:"The Protectorate of Trottingham"
+ TRT_fascism_ADJ:"Treilish"
+ TRT_communism:"SRGI"
+  TRT_communism_DEF:"The Socialist Republic of the Griffish Isles"
+  TRT_communism_ADJ:"Treilish"
+ TRT_neutrality:"Trottingham City-State"
+  TRT_neutrality_DEF:"The City-State of Trottingham" 
+  TRT_neutrality_ADJ:"Treilish"
+ TRT_democratic:"Equestrian Republic"
+  TRT_democratic_DEF:"The Republic of Equestria"
+  TRT_democratic_ADJ:"Treilish"
+###Political Parties###
+TRT_fascism_party:"NSTWP"
+ TRT_fascism_party_long:"National Socialist Treilish Worker's Party"
+ TRT_communism_party:"TWP"
+  TRT_communism_party_long:"Trottingham Workers Party"
+ TRT_neutrality_party:"CTH"
+  TRT_neutrality_party_long:"Council of Trottingham"
+ TRT_democratic_party:"PER"
+  TRT_democratic_party_long:"Party of Equestrian Restoration"
+###Ideas###
 ###National Focuses###
-#Storyline Tree
-#TRT_:0 ""
-#TRT__desc:0 ""
-#Economic Tree
-#TRT_:0 ""
-#TRT__desc:0 ""
+##Storyline Tree##
+#TRT_:""
+# TRT__desc:""
+# TRT_:""
+#  TRT__desc:""
