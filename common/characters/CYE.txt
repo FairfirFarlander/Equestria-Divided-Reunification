@@ -1,0 +1,12 @@
+characters={
+	CYE_nothinginterestinghappens={
+		name=CYE_voidwalker
+		#portraits={civilian={large=""}}
+		country_leader={
+			desc="CYE_nihappens_desc"	ideology=anarchism
+			#expire="1030.03.13.08"
+			traits={}
+			id=-1
+		}
+	}
+}
