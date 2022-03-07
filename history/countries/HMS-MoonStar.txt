@@ -36,6 +36,7 @@ if={
 #TECHNOLOGY#
 set_technology={
 	pony_race=1
+	penal_infantry=1
 	melee_weapons=1
 	tech_support=1
 	tech_military_police=1

@@ -66,7 +66,8 @@ recruit_character=EMB_mother_nightshade
 recruit_character=EMB_councilor_tyrennadus
 recruit_character=EMB_queen_narratek
 recruit_character=EMB_aetanae_krix
-recruit_character=EMB_foreman_test
+recruit_character=EMB_hthrax_ballus	#Remove after testing
+recruit_character=EMB_lavander_opal	#Remove after testing
 #VARIENTS#
 if={limit={has_dlc="Man the Guns"}
 	create_equipment_variant={

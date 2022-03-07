@@ -10,4 +10,9 @@ characters={
 			id=-1
 		}
 	}
+	#Loyal Navy (includes convoys/mostly convoys) - likely due to 
+	#Native to the South (could be mistaken for Earthborn)
+	#Treats his troops and sailors as equals.
+	#Insane/risk-taker (The Ahuizotl hat to Rarity)
+	#
 }
