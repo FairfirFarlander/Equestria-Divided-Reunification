@@ -1,3 +1,19 @@
+focus_tree={
+	id=EDR_generic_focus_tree
+	country={factor=6}
+	continuous_focus_position={x=60 y=60}
+	shared_focus=EDR_I00
+	shared_focus=EDR_L05
+	shared_focus=EDR_N05
+	shared_focus=EDR_N06B
+	shared_focus=EDR_A05
+	shared_focus=EDR_A08A
+}
+focus_tree={
+	id=EDR_null_focus_tree
+	country={factor=0 modifier={add=8 tag=CYE}}	default=no
+	continuous_focus_position={x=60 y=60}
+}
 #Generic Equestrian Seperatist Tree
 	shared_focus={		#The Death of an Era
 		id=EDR_P00 icon=GFX_goal_eqc_shelter_celestia

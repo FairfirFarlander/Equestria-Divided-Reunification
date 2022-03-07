@@ -10,6 +10,7 @@ state={	#EDRSTATE
 		owner=HEB
 		add_core_of=HEB
 		#add_core_of=BUF
+		add_claim_by=COT
 		buildings={	
 			arms_factory=1
 		}

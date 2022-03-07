@@ -23,13 +23,13 @@ defined_text={#Country
 	text={trigger={original_tag=PLT}localization_key=EAW_WS_PLT}
 	text={trigger={original_tag=SGR}localization_key=EAW_WS_SGR}
 	text={trigger={original_tag=STB}localization_key=EAW_WS_STB}
-	text={trigger={original_tag=STP}localization_key=EAW_WS_STP}
 	text={trigger={original_tag=SWT}localization_key=EAW_WS_SWT}
 	text={trigger={original_tag=SYV}localization_key=EAW_WS_SYV}
 	text={trigger={original_tag=THA}localization_key=EAW_WS_THA}
 	text={trigger={original_tag=TRT}localization_key=EAW_WS_TRT}
 	text={trigger={original_tag=VHT}localization_key=EAW_WS_VHT}
 	text={trigger={original_tag=VII}localization_key=EAW_WS_VII}
+	text={trigger={original_tag=WTC}localization_key=EAW_WS_WTC}
 	text={localization_key="[Root.GetNameDef]"}
 }
 defined_text={
@@ -57,13 +57,13 @@ defined_text={
 	text={trigger={original_tag=PLT}localization_key=EAW_WS_PLT_desc}
 	text={trigger={original_tag=SGR}localization_key=EAW_WS_SGR_desc}
 	text={trigger={original_tag=STB}localization_key=EAW_WS_STB_desc}
-	text={trigger={original_tag=STP}localization_key=EAW_WS_STP_desc}
 	text={trigger={original_tag=SWT}localization_key=EAW_WS_SWT_desc}
 	text={trigger={original_tag=SYV}localization_key=EAW_WS_SYV_desc}
 	text={trigger={original_tag=THA}localization_key=EAW_WS_THA_desc}
 	text={trigger={original_tag=TRT}localization_key=EAW_WS_TRT_desc}
 	text={trigger={original_tag=VHT}localization_key=EAW_WS_VHT_desc}
 	text={trigger={original_tag=VII}localization_key=EAW_WS_VII_desc}
+	text={trigger={original_tag=WTC}localization_key=EAW_WS_WTC_desc}
 	text={trigger={is_griffon_continent_country=yes}
 		localization_key=griffonian.0.d
 	}

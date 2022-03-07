@@ -6,9 +6,8 @@ ideas={
 			removal_cost=-1
 			modifier={
 				stability_factor=-0.13
-				exodus_national_appeal=0.5
-				exodus_assimilation_proportion=-0.5
-				exodus_nomadicity=-0.5
+				monthly_population=0.13
+				recruitable_population=-0.096
 			}
 		}
 		TRT_immigration_reforms={
