@@ -29,14 +29,5 @@ ideas={
 				consumer_goods_factor=-0.05
 			}
 		}
-		HSW_warriorcode={	#Placeholder for Order 313
-			allowed={always=no}	removal_cost=-1
-			#picture=
-			modifier={
-				#conscription_factor=-0.0
-				war_support_factor=0.1
-			}
-		}
-		#Order 313
 	}
 }

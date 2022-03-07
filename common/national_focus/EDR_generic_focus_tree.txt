@@ -1,82 +1,19 @@
-#Generic Equestrian Seperatist Tree
-	shared_focus={		#The Death of an Era
-		id=EDR_P00 icon=GFX_goal_eqc_shelter_celestia
-		x=0 y=0 cost=7 ai_will_do={factor=4000} #1.43
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_P00"
-			add_political_power=100
-		}
-	}
-	shared_focus={		#Spread Socialist Ideology
-		id=EDR_P01A icon=GFX_goal_ideology_communist
-		relative_position_id=EDR_P00
-		x=-5 y=1 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=EDR_P00}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_P01A"
-		}
-	}
-	shared_focus={		#Protect Democratic Process
-		id=EDR_P01B icon=GFX_goal_ideology_social_liberal
-		relative_position_id=EDR_P00
-		x=-2 y=1 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=EDR_P00}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_P01B"
-		}
-	}
-	shared_focus={		#Reinvigorate Localized Tratition
-		id=EDR_P01C icon=GFX_goal_ideology_social_conservative
-		relative_position_id=EDR_P00
-		x=1 y=1 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=EDR_P00}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_P01C"
-		}
-	}
-	shared_focus={		#Instill Nationalistic Pride
-		id=EDR_P01D icon=GFX_goal_ideology_national_populist
-		relative_position_id=EDR_P00
-		x=5 y=1 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=EDR_P00}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_P01D"
-		}
-	}
-	
-	
-	shared_focus={		#Totalist
-		id=EDR_P02G icon=GFX_goal_ideology_totalist
-		relative_position_id=EDR_P01D
-		x=-1 y=1 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=EDR_P01D}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_P02G"
-		}
-	}
-	shared_focus={		#Totalist
-		id=EDR_P02H icon=GFX_goal_ideology_totalist
-		relative_position_id=EDR_P01D
-		x=1 y=1 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=EDR_P01D}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_P02H"
-		}
-	}
-	shared_focus={		#The Winter Troubles
-		id=EDR_P03
-		icon=GFX_goal_water
-		relative_position_id=EDR_P02
-		x=0 y=1 cost=4
-		prerequisite={focus=EDR_P2}
-		ai_will_do={factor=4000}
-		select_effect={
-			set_temp_variable={aaaaa=1}
-		}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EDR_P03"
-		}
-	}
+focus_tree={
+	id=EDR_generic_focus_tree
+	country={factor=6}
+	continuous_focus_position={x=60 y=60}
+	shared_focus=EDR_I00
+	shared_focus=EDR_L05
+	shared_focus=EDR_N05
+	shared_focus=EDR_N06B
+	shared_focus=EDR_A05
+	shared_focus=EDR_A08A
+}
+focus_tree={
+	id=EDR_null_focus_tree
+	country={factor=0 modifier={add=8 tag=CYE}}	default=no
+	continuous_focus_position={x=60 y=60}
+}
 #Industry Tree
 	shared_focus={		#Acquire Industrial Tools
 		id=EDR_I00 icon=GFX_goal_generic_production

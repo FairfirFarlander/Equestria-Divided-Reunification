@@ -5,35 +5,7 @@ ideas={
 			allowed_civil_war={}
 			removal_cost=-1
 			picture=culidea
-			modifier={
-				ai_focus_aggressive_factor=0.9
-				MONTHLY_POPULATION=-0.36
-				weekly_manpower=666
-				land_reinforce_rate=0.33
-				production_lack_of_resource_penalty_factor=-0.36
-				training_time_army_factor=-0.36
-				conscription=0.20
-				surrender_limit=0.15
-				resistance_damage_to_garrison=-0.5
-				non_core_manpower=0.20
-				resistance_target_on_our_occupied_states=0.10
-				resistance_growth_on_our_occupied_states=0.10
-			}
-			targeted_modifier={
-				tag=CHN
-				attack_bonus_against=0.33
-				defense_bonus_against=0.33
-			}
-			targeted_modifier={
-				tag=CCN
-				attack_bonus_against=0.33
-				defense_bonus_against=0.33
-			}
-			targeted_modifier={
-				tag=CRY
-				attack_bonus_against=0.66
-				defense_bonus_against=0.66
-			}
-		}	
+			modifier={}	
+		}
 	}
 }

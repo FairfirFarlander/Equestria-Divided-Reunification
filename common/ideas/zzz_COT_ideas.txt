@@ -14,29 +14,11 @@ ideas={
 				stability_factor=-0.09
 			}
 		}
-		COT_cultcell={
-			allowed={always=no}	removal_cost=-1
-			#picture=
-			modifier={
-				political_power_gain=-0.40
-				stability_factor=-0.15
-				industrial_capacity_factory=-0.15
-				communism_drift=0.02
-				democratic_drift=0.02
-			}
-		}
 		COT_Griffonian_Imports={	#Trading from Southern Griffonia
 			allowed={always=no}	removal_cost=-1
 			picture=EQC_griffon_minorities1
 			modifier={
 				stability_factor=0.05
-			}
-		}
-		COT_winendebt={	#A Deal With the Diamond Idea
-			allowed={always=no}	removal_cost=-1
-			#picture=
-			modifier={
-				consumer_goods_factor=0.1
 			}
 		}
 	}

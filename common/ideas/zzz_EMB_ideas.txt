@@ -19,22 +19,5 @@ ideas={
 				dig_in_speed = 1
 			}
 		}
-		EMB_ember_expanded={	#The Fruit of Our Embers
-			allowed={always=no}
-			#picture=
-			removal_cost=-1
-			modifier={
-				stability_factor=0.05
-				political_power_factor=0.05
-			}
-		}
-		EMB_allbuzz={	#All the Buzz
-			allowed={always=no}
-			#picture=
-			removal_cost=-1
-			modifier={
-				stability_factor=0.08
-			}
-		}
 	}
 }

@@ -13,13 +13,6 @@ add_ideas={
 	HEF_idea
 	HEF_everycreature_fights
 	HEF_everfreeway
-	HEF_tribaldiscontent
-	#HEF_wildrose0
-	#HEF_oldoaks0
-	#HEF_beartooth0
-	#HEF_naturesfury0
-	#HEF_herwatchfuleyes0
-	#HEF_childrenoftheforest0
 	closed_economy
 	isolation
 	poor_science_base

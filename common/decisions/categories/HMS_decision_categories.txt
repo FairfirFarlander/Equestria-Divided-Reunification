@@ -1,6 +1,0 @@
-HMS_slavery={
-	icon=GFX_decision_generic_magic
-	priority=100
-	allowed={tag=HMS}
-	#visible={has_country_flag=EMB_gardens_enabled}
-}
