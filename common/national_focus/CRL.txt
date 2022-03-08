@@ -1,0 +1,23 @@
+focus_tree={
+	id=CRL_tree
+	country={modifier={add=7 original_tag=CRL}}
+	continuous_focus_position={x=1200 y=1500}
+	shared_focus=CRY_wintersun
+	shared_focus=CRY_equestriagames
+	shared_focus=CRY_grandfestival
+	shared_focus=CRY_crystalfaire
+	shared_focus=CRY_wintersun
+	shared_focus=CRY_crystallinganniversary
+	shared_focus=CRY_military
+}
+focus_tree={
+	id=CRL_tree
+	country={
+		modifier={add=4 original_tag=CRL}
+		modifier={add=4 has_government=fascism}
+	}
+	continuous_focus_position={x=1200 y=1500}
+	shared_focus=CRY_military
+	shared_focus=CRY_oldking
+	shared_focus=CRY_royal_marriage_radiant
+}

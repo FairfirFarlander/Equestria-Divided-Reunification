@@ -1,38 +1,14 @@
 focus_tree={
-	id=EMB_generic country={factor=0 modifier={add=10 tag=EMB}}
+	id=EMB country={modifier={add=7 tag=EMB}}
 	continuous_focus_position={x=1750 y=800}
-	default=no
 	shared_focus=EMB_S00
-	shared_focus=EDR_I00
-	shared_focus=EDR_L05
-	shared_focus=EDR_A05
-	shared_focus=EDR_N05
-}
-focus_tree={
-	id=EMB_starter country={factor=0 modifier={add=30 tag=EMB}}
-	continuous_focus_position={x=0 y=0}
-	default=no
-	shared_focus=EMB_S00
-#	shared_focus=EMB_ember_earthworks
-#	shared_focus=EMB_L00
-#	shared_focus=EMB_D00
-	shared_focus=EMB_D02
-}
-focus_tree={
-	id=EMB_CS country={factor=0 modifier={add=20 tag=EMB}}
-	continuous_focus_position={x=1750 y=800}
-	default=no
+	shared_focus=EMB_S10
 	shared_focus=EMB_CS00
 	shared_focus=EMB_ember_earthworks
-	shared_focus=EMB_L00
-	shared_focus=EMB_D00
-}
-focus_tree={
-	id=EMB_SU country={factor=0 modifier={add=20 tag=EMB}}
-	continuous_focus_position={x=1750 y=800}
-	default=no
-	#shared_focus=EMB_SU00
-	shared_focus=EMB_ember_earthworks
-	shared_focus=EMB_L00
-	shared_focus=EMB_D00
+	shared_focus=EDR_I00
+	shared_focus=EDR_L05
+	shared_focus=EDR_N05
+	shared_focus=EDR_N06B
+	shared_focus=EDR_A05
+	shared_focus=EDR_A08A
 }

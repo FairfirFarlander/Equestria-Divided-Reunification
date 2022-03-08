@@ -1,16 +1,6 @@
 focus_tree={
-	id=COT_generic country={factor=0 modifier={add=10 tag=COT}}
-	continuous_focus_position={x=1750 y=800}
-	default=no
-	shared_focus=EDR_I00
-	shared_focus=EDR_L05
-	shared_focus=EDR_N05
-	shared_focus=EDR_A05
-}
-focus_tree={
-	id=COT country={factor=0 modifier={add=20 tag=COT}}
+	id=COT country={modifier={add=9 tag=COT}}
 	continuous_focus_position={x=40 y=950}
-	default=no
 	shared_focus=COT_constitutional_convention
 	shared_focus=COT_grand_army_of_the_confederacy
 	shared_focus=COT_naval_air

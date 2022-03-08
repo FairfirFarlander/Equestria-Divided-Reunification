@@ -1,10 +1,16 @@
 focus_tree={
-	id=THA_generic country={factor=0 modifier={add=10 tag=THA}}
+	id=THA country={modifier={add=10 tag=THA}}
 	continuous_focus_position={x=2000 y=0}
-	default=no
 	shared_focus=EDR_I00
-	#shared_focus=EDR_L05
-	#shared_focus=EDR_N05
-	#shared_focus=EDR_A05
+	shared_focus=EDR_L05
+	shared_focus=EDR_N05
+	shared_focus=EDR_A05
 	shared_focus=THA_S00
+	shared_focus=THA_SS00
+	shared_focus = NMS_stranded
+	shared_focus = NMS_the_third_position
+	shared_focus = NMS_economic_stuff
+	shared_focus = NMS_army_stuff
+	shared_focus = NMS_aztlan_navy
+	shared_focus = NMS_aztlan_airforce
 }

@@ -1,16 +1,14 @@
 focus_tree={
-	id=JTL_generic country={factor=0 modifier={add=10 tag=JTL}}
+	id=JTL country={modifier={add=7 tag=JTL}}
 	continuous_focus_position={x=3750 y=800}
-	default=no
-	#shared_focus = BAL_proclaim_sesr
-	#shared_focus = #BAL_continue_collectivization
-	#shared_focus = BAL_continue_nationalization
-	#shared_focus = BAL_decentralized_militia
-	#shared_focus = BAL_centralized_army
-	
-	#shared_focus=TEM_the_uprising
+	shared_focus = JUN_decleration
+	shared_focus = JUN_army_debate
+	shared_focus = JUN_aztlan_airforce
+	shared_focus = JUN_aztlan_navy
+	shared_focus = JUN_the_three_regions
+	shared_focus = JUN_the_political_situation
+	shared_focus=TEM_the_uprising
 	shared_focus=TEM_sacrifice_berry
-	
 	#shared_focus=EDR_I00
 	#shared_focus=EDR_L05
 	#shared_focus=EDR_N05
