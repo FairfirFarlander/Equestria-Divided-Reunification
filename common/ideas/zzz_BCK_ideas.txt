@@ -5,7 +5,8 @@ ideas={
 			picture=collectivization_effort
 			removal_cost=-1
 			modifier={
-				stability_factor=0.015
+				local_resources_factor=0.05
+				stability_factor=0.025
 			}
 		}
 		BCK_The_Middle_Ground={		#Most trade passes through us it seems.
@@ -13,8 +14,8 @@ ideas={
 			picture=BUF_equestrian_traders
 			removal_cost=-1
 			modifier={
-				trade_opinion_factor=0.25
 				opinion_gain_monthly=3
+				trade_opinion_factor=0.25
 				license_purchase_cost=-0.5
 			}
 		}

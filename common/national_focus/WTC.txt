@@ -3,4 +3,5 @@ focus_tree={
 	continuous_focus_position={x=0 y=0}
 	default=no
 	shared_focus=TAG_S00
+	shared_focus = EQS_buffalo_relations
 }

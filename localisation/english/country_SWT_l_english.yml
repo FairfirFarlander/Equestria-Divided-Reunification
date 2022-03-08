@@ -24,9 +24,8 @@ SWT_fascism_party:"FAC"
   SWT_democratic_party_long:"DEC"
 ###Ideas###
 ###National Focuses###
-#Storyline Tree
+##Storyline Tree##
 #SWT_:""
-#SWT__desc:""
-#Economic Tree
-#SWT_:""
-#SWT__desc:""
+# SWT__desc:""
+# SWT_:""
+#  SWT__desc:""

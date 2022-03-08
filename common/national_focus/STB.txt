@@ -1,10 +1,16 @@
 focus_tree={
-	id=STB_generic country={factor=0 modifier={add=10 tag=STB}}
+	id=STB country={modifier={add=7 tag=STB}}
 	continuous_focus_position={x=1750 y=800}
-	default=no
-	#shared_focus=EDR_I00
-	#shared_focus=EDR_L05
-	#shared_focus=EDR_N05
-	#shared_focus=EDR_A05
+	shared_focus=EDR_I00
+	shared_focus=EDR_L05
+	shared_focus=EDR_N05
+	shared_focus=EDR_A05
 	shared_focus=BAR_bulwark_have_fallen
+	shared_focus = CES_mobilized_trade_fleet
+	shared_focus = CES_lookout
+	shared_focus = CES_defenses_stableside
+	shared_focus = CES_printing_press
+	shared_focus = CES_stableside_roads
+	shared_focus = CES_prepare_the_offense_2
+	shared_focus = CES_not_prepare_the_offense_2
 }
