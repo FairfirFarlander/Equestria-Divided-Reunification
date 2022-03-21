@@ -4,7 +4,7 @@
 		id=THA_S00 icon=GFX_focus_GRE_a_land_of_mountains
 		x=0 y=0 cost=2.86 ai_will_do={factor=40}
 		select_effect={
-			country_event=EDR_gen.01	#Event Verbosity
+			country_event=EDR_evt_gen.000	#Event Verbosity
 		}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus THA_S00"

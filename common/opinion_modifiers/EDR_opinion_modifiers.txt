@@ -12,4 +12,6 @@ opinion_modifiers={
 	moonstar_opinion3={value=30}
 	moonstar_opinion4={value=40}
 	moonstar_opinion5={value=50}
+	#Ember Related Opinions
+	EMB_self_isolation={value=-20}
 }

@@ -1,5 +1,11 @@
 ideas={
 	country={
+		EMB_council_narratek_intrusion={
+			#picture=
+			modifier={
+				political_power_factor=-0.05
+			}
+		}
 		EMB_Church_Of_The_First_Queen={	#Heed her teachings
 			allowed={always=no}
 			picture=holy_order

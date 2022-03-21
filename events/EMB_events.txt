@@ -1,3 +1,43 @@
+add_namespace=EMB_evt_a01
+	country_event={		#Gathering Council of Ember
+		id=EMB_evt_a01.001
+		title=EMB_evt_a01.001.t	desc=EMB_evt_a01.001.d	#picture=
+		is_triggered_only=yes	#timeout_days=3
+		option={
+			name=EMB_evt_a01.001.a
+			add_ideas=EMB_council_narratek_intrusion
+		}
+		option={
+			name=EMB_evt_a01.001.h
+			trigger={is_debug=yes}
+			remove_ideas=EMB_council_narratek_intrusion
+		}
+		option={
+			name=EMB_evt_a01.001.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event EMB_evt_a01.001"}
+	}
+	country_event={		#Backlash from the Unions
+		id=EMB_evt_a01.011
+		title=EMB_evt_a01.011.t	desc=EMB_evt_a01.011.d	#picture=
+		is_triggered_only=yes
+		option={
+			name=EMB_evt_a01.011.a
+			EMB_SE_evt_a01.011.a=yes
+			add_ideas=closed_economy
+		}
+		option={
+			name=EMB_evt_a01.011.h
+			trigger={is_debug=yes}
+			EMB_SE_evt_a01.011.h=yes
+		}
+		option={
+			name=EMB_evt_a01.011.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event EMB_evt_a01.011"}
+	}
 add_namespace=EMBact01
 	country_event={		#The Great Migration
 		id=EMBact01.01	is_triggered_only=yes

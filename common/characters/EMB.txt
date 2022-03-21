@@ -48,18 +48,18 @@ characters={
 			id=-1
 		}
 	}
-	EMB_hthrax_ballus={
-		name=EMB_hthrax_ballus
+	EMB_hithax_ballas={
+		name=EMB_hithax_ballas
 		portraits={army={large="gfx/leaders/EMB/EMB_councilor_tyrennadus_old.dds"}}
 		corps_commander={
-			desc="EMB_hballus_mili_desc"
+			desc="EMB_hballas_mili_desc"
 			skill=1	attack_skill=1	defense_skill=1
 			planning_skill=2	logistics_skill=2
 			traits={trait_foreman changeling_race_trait}
 		}
 	}
-	EMB_lavander_opal={
-		name=EMB_lavander_opal
+	EMB_lavender_opal={
+		name=EMB_lavender_opal
 		portraits={army={large="gfx/leaders/EMB/EMB_mother_nightshade_old.dds"}}
 		corps_commander={
 			desc="EMB_lopal_mili_desc"
