@@ -10,7 +10,7 @@ characters={
 		}
 		country_leader={
 			desc="THA_aend_poli_desc"	ideology=despotism
-			expire="1014.06.06.21"
+			expire="1014.06.06.21"	#Used to be 1014
 			traits={}
 			id=-1
 		}
