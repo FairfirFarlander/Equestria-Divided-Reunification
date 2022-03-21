@@ -9,7 +9,7 @@ characters={
 		country_leader={
 			desc="HWG_rarity_poli_desc"
 			ideology=plutocracy
-			expire="1012.09.8.20"	#Based on 982 - Lives to 30#
+			expire="1017.09.8.20"	#Based on 982 - Lives to 30 : Used to be 1012 so now 35#
 			traits={}
 			id=-1
 		}
