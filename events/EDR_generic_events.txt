@@ -1,15 +1,15 @@
-add_namespace=EDR_gen
+add_namespace=EDR_evt_gen
 	country_event={		#Event Verbosity
-		id=EDR_gen.01	is_triggered_only=yes
-		immediate={log="[GetDateText]: [Root.GetName]: event EDR_gen.01"}
-		title=EDR_gen.01.t	desc=EDR_gen.01.d
-		#picture=
-		option={name=EDR_gen.01.a
+		id=EDR_evt_gen.000
+		title=EDR_evt_gen.000.t	desc=EDR_evt_gen.000.d	#picture=
+		is_triggered_only=yes
+		option={name=EDR_evt_gen.000.a
 			clr_country_flag=EDRlessevents
 			EDR_event_verbosity_ya=yes
 		}
-		option={name=EDR_gen.01.b
+		option={name=EDR_evt_gen.000.b
 			set_country_flag=EDRlessevents
 			EDR_event_verbosity_nein=yes
 		}
+		immediate={log="[GetDateText]: [Root.GetName]: event EDR_evt_gen.000"}
 	}

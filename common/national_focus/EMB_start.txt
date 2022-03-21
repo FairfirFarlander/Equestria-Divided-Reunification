@@ -1,43 +1,122 @@
 #Ember Starting Story Tree
-	shared_focus={		#Dealing With the Outside
+	shared_focus={	#Dealing With the Outside
 		id=EMB_S00 #icon=
-		x=0 y=0 cost=8 ai_will_do={factor=4000}
-		set_temp_variable={aaaaa=1}
+		cost=1 x=6 y=0
+		search_filters={FOCUS_FILTER_POLITICAL}
+		select_effect={country_event=EDR_evt_gen.000}	#Event Verbosity
+		ai_will_do={factor=4000}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus EMB_S00"
-			country_event=EMBact01.010		#Gathering Council of Ember
+			country_event=EMB_evt_a01.001	#Gathering Council of Ember
 		}
 	}
-	shared_focus={		#Shutting Ourselves Away
+	shared_focus={	#Shutting Ourselves Away
 		id=EMB_S01 #icon=
-		relative_position_id=EMB_S00
-		x=0 y=1 cost=2 ai_will_do={factor=4000}
-		set_temp_variable={aaaaa=1}
+		cost=8 x=0 y=1 relative_position_id=EMB_S00
+		search_filters={FOCUS_FILTER_POLITICAL}
 		prerequisite={focus=EMB_S00}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus EMB_S01"
-			country_event=EMBact01.020		#The Council Resides
+			country_event=EMB_evt_a01.011		#Backlash from the Caravan Unions
 		}
 	}
 	shared_focus={		#The Underway Awaits
 		id=EMB_S02 #icon=
 		relative_position_id=EMB_S01
 		x=0 y=1 cost=2 ai_will_do={factor=4000}
-		set_temp_variable={aaaaa=1}
 		prerequisite={focus=EMB_S01}
+		select_effect={set_temp_variable={aaaaa=1}}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus EMB_S02"
-			man
 		}
 	}
-	shared_focus={		#Shutting Ourselves Away
-		id=EMB_S01 #icon=
+	shared_focus={		#A Future Completely Underground
+		id=EMB_S0X #icon=
 		relative_position_id=EMB_S00
-		x=0 y=1 cost=2 ai_will_do={factor=4000}
-		set_temp_variable={aaaaa=1}
+		x=0 y=5 cost=2 ai_will_do={factor=80}
 		prerequisite={focus=EMB_S00}
+		select_effect={set_temp_variable={aaaaa=1}}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EMB_S01"
-			country_event=EMBact01.020		#The Council Resides
+			log="[GetDateText]: [Root.GetName]: focus EMB_S0X"
+		}
+	}
+	shared_focus={
+		id=EMB_S0X #icon=
+		relative_position_id=EMB_S00
+		x=0 y=5 cost=2 ai_will_do={factor=80}
+		prerequisite={focus=EMB_S00}
+		select_effect={set_temp_variable={aaaaa=1}}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EMB_S0X"
+		}
+	}
+	shared_focus={
+		id=EMB_S0X #icon=
+		relative_position_id=EMB_S00
+		x=0 y=5 cost=2 ai_will_do={factor=80}
+		prerequisite={focus=EMB_S00}
+		select_effect={set_temp_variable={aaaaa=1}}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EMB_S0X"
+		}
+	}
+	shared_focus={
+		id=EMB_S0X #icon=
+		relative_position_id=EMB_S00
+		x=0 y=5 cost=2 ai_will_do={factor=80}
+		prerequisite={focus=EMB_S00}
+		select_effect={set_temp_variable={aaaaa=1}}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EMB_S0X"
+		}
+	}
+	shared_focus={
+		id=EMB_S0X #icon=
+		relative_position_id=EMB_S00
+		x=0 y=5 cost=2 ai_will_do={factor=80}
+		prerequisite={focus=EMB_S00}
+		select_effect={set_temp_variable={aaaaa=1}}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EMB_S0X"
+		}
+	}
+	shared_focus={
+		id=EMB_S0X #icon=
+		relative_position_id=EMB_S00
+		x=0 y=5 cost=2 ai_will_do={factor=80}
+		prerequisite={focus=EMB_S00}
+		select_effect={set_temp_variable={aaaaa=1}}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EMB_S0X"
+		}
+	}
+	shared_focus={
+		id=EMB_S0X #icon=
+		relative_position_id=EMB_S00
+		x=0 y=5 cost=2 ai_will_do={factor=80}
+		prerequisite={focus=EMB_S00}
+		select_effect={set_temp_variable={aaaaa=1}}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EMB_S0X"
+		}
+	}
+	shared_focus={
+		id=EMB_S0X #icon=
+		relative_position_id=EMB_S00
+		x=0 y=5 cost=2 ai_will_do={factor=80}
+		prerequisite={focus=EMB_S00}
+		select_effect={set_temp_variable={aaaaa=1}}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EMB_S0X"
+		}
+	}
+	shared_focus={
+		id=EMB_S0X #icon=
+		relative_position_id=EMB_S00
+		x=0 y=5 cost=2 ai_will_do={factor=80}
+		prerequisite={focus=EMB_S00}
+		select_effect={set_temp_variable={aaaaa=1}}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EMB_S0X"
 		}
 	}
