@@ -1,7 +1,7 @@
 #Ember Starting Story Tree
 	shared_focus={	#Dealing With the Outside
 		id=EMB_S00 #icon=
-		cost=1 x=6 y=0
+		cost=2 x=6 y=0
 		search_filters={FOCUS_FILTER_POLITICAL}
 		select_effect={country_event=EDR_evt_gen.000}	#Event Verbosity
 		ai_will_do={factor=4000}
@@ -15,6 +15,7 @@
 		cost=8 x=0 y=1 relative_position_id=EMB_S00
 		search_filters={FOCUS_FILTER_POLITICAL}
 		prerequisite={focus=EMB_S00}
+		ai_will_do={factor=4000}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus EMB_S01"
 			country_event=EMB_evt_a01.011		#Backlash from the Caravan Unions
@@ -22,101 +23,24 @@
 	}
 	shared_focus={		#The Underway Awaits
 		id=EMB_S02 #icon=
-		relative_position_id=EMB_S01
-		x=0 y=1 cost=2 ai_will_do={factor=4000}
+		cost=8 x=0 y=1 relative_position_id=EMB_S01
+		search_filters={FOCUS_FILTER_POLITICAL}
 		prerequisite={focus=EMB_S01}
-		select_effect={set_temp_variable={aaaaa=1}}
+		select_effect={country_event={id=EMB_evt_a01.021 days=4}}	#Dark News for the Surface
+		ai_will_do={factor=4000}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus EMB_S02"
+			country_event=EMB_evt_a01.022	#The Great Movement Underground
 		}
 	}
 	shared_focus={		#A Future Completely Underground
-		id=EMB_S0X #icon=
-		relative_position_id=EMB_S00
-		x=0 y=5 cost=2 ai_will_do={factor=80}
-		prerequisite={focus=EMB_S00}
-		select_effect={set_temp_variable={aaaaa=1}}
+		id=EMB_S03 #icon=
+		cost=2 x=0 y=1 relative_position_id=EMB_S02
+		search_filters={FOCUS_FILTER_POLITICAL}
+		prerequisite={focus=EMB_S02}
+		ai_will_do={factor=4000}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EMB_S0X"
-		}
-	}
-	shared_focus={
-		id=EMB_S0X #icon=
-		relative_position_id=EMB_S00
-		x=0 y=5 cost=2 ai_will_do={factor=80}
-		prerequisite={focus=EMB_S00}
-		select_effect={set_temp_variable={aaaaa=1}}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EMB_S0X"
-		}
-	}
-	shared_focus={
-		id=EMB_S0X #icon=
-		relative_position_id=EMB_S00
-		x=0 y=5 cost=2 ai_will_do={factor=80}
-		prerequisite={focus=EMB_S00}
-		select_effect={set_temp_variable={aaaaa=1}}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EMB_S0X"
-		}
-	}
-	shared_focus={
-		id=EMB_S0X #icon=
-		relative_position_id=EMB_S00
-		x=0 y=5 cost=2 ai_will_do={factor=80}
-		prerequisite={focus=EMB_S00}
-		select_effect={set_temp_variable={aaaaa=1}}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EMB_S0X"
-		}
-	}
-	shared_focus={
-		id=EMB_S0X #icon=
-		relative_position_id=EMB_S00
-		x=0 y=5 cost=2 ai_will_do={factor=80}
-		prerequisite={focus=EMB_S00}
-		select_effect={set_temp_variable={aaaaa=1}}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EMB_S0X"
-		}
-	}
-	shared_focus={
-		id=EMB_S0X #icon=
-		relative_position_id=EMB_S00
-		x=0 y=5 cost=2 ai_will_do={factor=80}
-		prerequisite={focus=EMB_S00}
-		select_effect={set_temp_variable={aaaaa=1}}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EMB_S0X"
-		}
-	}
-	shared_focus={
-		id=EMB_S0X #icon=
-		relative_position_id=EMB_S00
-		x=0 y=5 cost=2 ai_will_do={factor=80}
-		prerequisite={focus=EMB_S00}
-		select_effect={set_temp_variable={aaaaa=1}}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EMB_S0X"
-		}
-	}
-	shared_focus={
-		id=EMB_S0X #icon=
-		relative_position_id=EMB_S00
-		x=0 y=5 cost=2 ai_will_do={factor=80}
-		prerequisite={focus=EMB_S00}
-		select_effect={set_temp_variable={aaaaa=1}}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EMB_S0X"
-		}
-	}
-	shared_focus={
-		id=EMB_S0X #icon=
-		relative_position_id=EMB_S00
-		x=0 y=5 cost=2 ai_will_do={factor=80}
-		prerequisite={focus=EMB_S00}
-		select_effect={set_temp_variable={aaaaa=1}}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EMB_S0X"
+			log="[GetDateText]: [Root.GetName]: focus EMB_S03"
+			country_event=EMB_evt_a01.031	#The Great Movement Underground
 		}
 	}
