@@ -13,7 +13,7 @@ add_namespace=EMB_evt_a01
 			remove_ideas=EMB_council_narratek_intrusion
 		}
 		option={
-			name=EMB_evt_a01.001.r
+			name=EMB_evt_C-FF_W-TY.r
 			trigger={is_debug=yes}
 		}
 		immediate={log="[GetDateText]: [Root.GetName]: event EMB_evt_a01.001"}
@@ -33,10 +33,63 @@ add_namespace=EMB_evt_a01
 			EMB_SE_evt_a01.011.h=yes
 		}
 		option={
-			name=EMB_evt_a01.011.r
+			name=EMB_evt_C-FF_W-TY.r
 			trigger={is_debug=yes}
 		}
 		immediate={log="[GetDateText]: [Root.GetName]: event EMB_evt_a01.011"}
+	}
+	country_event={		#Dark News for the Surface
+		id=EMB_evt_a01.021
+		title=EMB_evt_a01.021.t	desc=EMB_evt_a01.021.d	#picture=
+		is_triggered_only=yes
+		option={
+			name=EMB_evt_a01.021.a
+		}
+		option={
+			name=EMB_evt_C-FF_W-TY.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event EMB_evt_a01.021"}
+	}
+	country_event={		#The Great Movement Underground
+		id=EMB_evt_a01.022
+		title=EMB_evt_a01.022.t	desc=EMB_evt_a01.022.d	#picture=
+		is_triggered_only=yes
+		option={
+			name=EMB_evt_a01.022.a
+			add_manpower=5000
+			add_political_power=-50
+		}
+		option={
+			name=EMB_evt_a01.022.h
+			trigger={is_debug=yes}
+			add_manpower=-5000
+			add_political_power=50
+		}
+		option={
+			name=EMB_evt_C-FF_W-TY.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event EMB_evt_a01.022"}
+	}
+	country_event={		#A Walkout
+		id=EMB_evt_a01.031
+		title=EMB_evt_a01.031.t	desc=EMB_evt_a01.031.d	#picture=
+		is_triggered_only=yes	#timeout_days=3
+		option={
+			name=EMB_evt_a01.031.a
+			remove_ideas=EMB_council_narratek_intrusion
+		}
+		option={
+			name=EMB_evt_a01.031.h
+			trigger={is_debug=yes}
+			add_ideas=EMB_council_narratek_intrusion
+		}
+		option={
+			name=EMB_evt_C-FF_W-TY.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event EMB_evt_a01.031"}
 	}
 add_namespace=EMBact01
 	country_event={		#The Great Migration
