@@ -11,8 +11,8 @@
 		}
 	}
 	shared_focus={	#Shutting Ourselves Away
-		id=EMB_S01 #icon=
-		cost=8 x=0 y=1 relative_position_id=EMB_S00
+		id=EMB_S01A #icon=
+		cost=7 x=-1 y=1 relative_position_id=EMB_S00
 		search_filters={FOCUS_FILTER_POLITICAL}
 		prerequisite={focus=EMB_S00}
 		ai_will_do={factor=4000}
@@ -22,25 +22,49 @@
 		}
 	}
 	shared_focus={		#The Underway Awaits
-		id=EMB_S02 #icon=
-		cost=8 x=0 y=1 relative_position_id=EMB_S01
-		search_filters={FOCUS_FILTER_POLITICAL}
-		prerequisite={focus=EMB_S01}
+		id=EMB_S01B #icon=
+		cost=7 x=1 y=1 relative_position_id=EMB_S00
+		search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER}
+		prerequisite={focus=EMB_S00}
+		available={has_completed_focus=EMB_S01A}
 		select_effect={country_event={id=EMB_evt_a01.021 days=4}}	#Dark News for the Surface
 		ai_will_do={factor=4000}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EMB_S02"
+			log="[GetDateText]: [Root.GetName]: focus EMB_S01B"
 			country_event=EMB_evt_a01.022	#The Great Movement Underground
 		}
 	}
 	shared_focus={		#A Future Completely Underground
-		id=EMB_S03 #icon=
-		cost=2 x=0 y=1 relative_position_id=EMB_S02
+		id=EMB_S02 #icon=
+		cost=2 x=0 y=2 relative_position_id=EMB_S00
 		search_filters={FOCUS_FILTER_POLITICAL}
-		prerequisite={focus=EMB_S02}
+		prerequisite={focus=EMB_S01A}
+		prerequisite={focus=EMB_S01B}
 		ai_will_do={factor=4000}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EMB_S03"
+			log="[GetDateText]: [Root.GetName]: focus EMB_S02"
 			country_event=EMB_evt_a01.031	#The Great Movement Underground
+		}
+	}
+	shared_focus={		#A Royal Idea
+		id=EMB_S03A #icon=
+		cost=7 x=-1 y=1 relative_position_id=EMB_S02
+		search_filters={FOCUS_FILTER_STABILITY}
+		prerequisite={focus=EMB_S02}
+		ai_will_do={factor=80}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EMB_S03A"
+			country_event=EMB_evt_a01.031	#The Great Movement Underground
+		}
+	}
+	shared_focus={		#An Alchemical Idea
+		id=EMB_S03B #icon=
+		cost=7 x=1 y=1 relative_position_id=EMB_S02
+		search_filters={FOCUS_FILTER_RESEARCH}
+		prerequisite={focus=EMB_S02}
+		ai_will_do={factor=80}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EMB_S03B"
+			country_event=EMB_evt_a01.032	#To Whom the Task Lies
 		}
 	}

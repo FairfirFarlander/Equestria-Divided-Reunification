@@ -39,29 +39,29 @@ add_namespace=EMB_evt_a01
 		immediate={log="[GetDateText]: [Root.GetName]: event EMB_evt_a01.011"}
 	}
 	country_event={		#Dark News for the Surface
-		id=EMB_evt_a01.021
-		title=EMB_evt_a01.021.t	desc=EMB_evt_a01.021.d	#picture=
+		id=EMB_evt_a01.012
+		title=EMB_evt_a01.012.t	desc=EMB_evt_a01.012.d	#picture=
 		is_triggered_only=yes
 		option={
-			name=EMB_evt_a01.021.a
+			name=EMB_evt_a01.012.a
 		}
 		option={
 			name=EMB_evt_C-FF_W-TY.r
 			trigger={is_debug=yes}
 		}
-		immediate={log="[GetDateText]: [Root.GetName]: event EMB_evt_a01.021"}
+		immediate={log="[GetDateText]: [Root.GetName]: event EMB_evt_a01.012"}
 	}
 	country_event={		#The Great Movement Underground
-		id=EMB_evt_a01.022
-		title=EMB_evt_a01.022.t	desc=EMB_evt_a01.022.d	#picture=
+		id=EMB_evt_a01.013
+		title=EMB_evt_a01.013.t	desc=EMB_evt_a01.013.d	#picture=
 		is_triggered_only=yes
 		option={
-			name=EMB_evt_a01.022.a
+			name=EMB_evt_a01.013.a
 			add_manpower=5000
 			add_political_power=-50
 		}
 		option={
-			name=EMB_evt_a01.022.h
+			name=EMB_evt_a01.013.h
 			trigger={is_debug=yes}
 			add_manpower=-5000
 			add_political_power=50
@@ -70,18 +70,18 @@ add_namespace=EMB_evt_a01
 			name=EMB_evt_C-FF_W-TY.r
 			trigger={is_debug=yes}
 		}
-		immediate={log="[GetDateText]: [Root.GetName]: event EMB_evt_a01.022"}
+		immediate={log="[GetDateText]: [Root.GetName]: event EMB_evt_a01.013"}
 	}
 	country_event={		#A Walkout
-		id=EMB_evt_a01.031
-		title=EMB_evt_a01.031.t	desc=EMB_evt_a01.031.d	#picture=
-		is_triggered_only=yes	#timeout_days=3
+		id=EMB_evt_a01.021
+		title=EMB_evt_a01.021.t	desc=EMB_evt_a01.021.d	#picture=
+		is_triggered_only=yes
 		option={
-			name=EMB_evt_a01.031.a
+			name=EMB_evt_a01.021.a
 			remove_ideas=EMB_council_narratek_intrusion
 		}
 		option={
-			name=EMB_evt_a01.031.h
+			name=EMB_evt_a01.021.h
 			trigger={is_debug=yes}
 			add_ideas=EMB_council_narratek_intrusion
 		}
@@ -89,7 +89,90 @@ add_namespace=EMB_evt_a01
 			name=EMB_evt_C-FF_W-TY.r
 			trigger={is_debug=yes}
 		}
+		immediate={log="[GetDateText]: [Root.GetName]: event EMB_evt_a01.021"}
+	}
+	country_event={		#The Architect
+		id=EMB_evt_a01.031
+		title=EMB_evt_a01.031.t	desc=EMB_evt_a01.031.d	#picture=
+		is_triggered_only=yes
+		option={
+			name=EMB_evt_a01.031.a
+			add_ideas=EMB_grain_gardens_inactive
+		}
+		option={
+			name=EMB_evt_a01.031.b
+			add_ideas=EMB_health_gardens
+		}
+		option={
+			name=EMB_evt_a01.031.c
+			add_ideas=EMB_nature_gardens
+		}
+		option={
+			name=EMB_evt_a01.031.h
+			trigger={is_debug=yes}
+			custom_effect_tooltip=EMB_evt_a01.031.h_tooltip
+			hidden_effect={
+				remove_ideas={
+					EMB_grain_gardens_inactive
+					EMB_health_gardens
+					EMB_nature_gardens
+				}
+			}
+		}
+		option={
+			name=EMB_evt_C-FF_W-TY.r
+			trigger={is_debug=yes}
+		}
 		immediate={log="[GetDateText]: [Root.GetName]: event EMB_evt_a01.031"}
+	}
+	country_event={		#To Whom the Task Lies
+		id=EMB_evt_a01.032
+		title=EMB_evt_a01.032.t	desc=EMB_evt_a01.032.d	#picture=
+		is_triggered_only=yes
+		option={
+			name=EMB_evt_a01.032.a
+			hidden_effect={country_event={id=EMB_evt_a01.033 days=120}}
+		}
+		option={
+			name=EMB_evt_a01.032.b
+			hidden_effect={country_event={id=EMB_evt_a01.034 days=90}}
+		}
+		option={
+			name=EMB_evt_C-FF_W-TY.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event EMB_evt_a01.032"}
+	}
+	country_event={		#A Twisted Natural Light
+		id=EMB_evt_a01.033
+		title=EMB_evt_a01.033.t	desc=EMB_evt_a01.033.d	#picture=
+		is_triggered_only=yes	#timeout_days=3
+		option={
+			name=EMB_evt_a01.033.a
+			add_popularity={ideology=fascism popularity=0.05}
+			add_popularity={ideology=neutrality popularity=0.03}
+			add_popularity={ideology=communism popularity=-0.07}
+		}
+		option={
+			name=EMB_evt_C-FF_W-TY.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event EMB_evt_a01.033"}
+	}
+	country_event={		#Power of the Underground
+		id=EMB_evt_a01.034
+		title=EMB_evt_a01.034.t	desc=EMB_evt_a01.034.d	#picture=
+		is_triggered_only=yes	#timeout_days=3
+		option={
+			name=EMB_evt_a01.034.a
+			add_popularity={ideology=communism popularity=0.05}
+			add_popularity={ideology=fascism popularity=-0.05}
+		}
+		option={
+			name=EMB_evt_C-FF_W-TY.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event EMB_evt_a01.034"}
 	}
 add_namespace=EMBact01
 	country_event={		#The Great Migration
