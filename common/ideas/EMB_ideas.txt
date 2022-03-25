@@ -6,6 +6,32 @@ ideas={
 				political_power_factor=-0.05
 			}
 		}
+		EMB_grain_gardens_inactive={
+			#picture=
+			modifier={
+				stability_factor=0.03
+			}
+		}
+		EMB_grain_gardens_active={
+			#picture=
+			modifier={
+				stability_factor=0.03
+				#ADD ME LATER
+			}
+		}
+		EMB_health_gardens={
+			#picture=
+			modifier={
+				army_morale_factor=0.03
+				stability_factor=0.03
+			}
+		}
+		EMB_nature_gardens={
+			#picture=
+			modifier={
+				stability_factor=0.1
+			}
+		}
 		EMB_Church_Of_The_First_Queen={	#Heed her teachings
 			allowed={always=no}
 			picture=holy_order
