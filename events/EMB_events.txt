@@ -132,10 +132,18 @@ add_namespace=EMB_evt_a01
 		option={
 			name=EMB_evt_a01.032.a
 			hidden_effect={country_event={id=EMB_evt_a01.033 days=120}}
+			add_tech_bonus={
+				bonus=0.3	uses=1
+				category=industry
+			}
 		}
 		option={
 			name=EMB_evt_a01.032.b
 			hidden_effect={country_event={id=EMB_evt_a01.034 days=90}}
+			add_tech_bonus={
+				bonus=0.5	uses=1
+				category=race_tech
+			}
 		}
 		option={
 			name=EMB_evt_C-FF_W-TY.r
@@ -173,6 +181,19 @@ add_namespace=EMB_evt_a01
 			trigger={is_debug=yes}
 		}
 		immediate={log="[GetDateText]: [Root.GetName]: event EMB_evt_a01.034"}
+	}
+	country_event={		#A Special Session
+		id=EMB_evt_a01.041
+		title=EMB_evt_a01.041.t	desc=EMB_evt_a01.041.d	#picture=
+		is_triggered_only=yes	#timeout_days=3
+		option={
+			name=EMB_evt_a01.041.a
+		}
+		option={
+			name=EMB_evt_C-FF_W-TY.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event EMB_evt_a01.041"}
 	}
 add_namespace=EMBact01
 	country_event={		#The Great Migration
