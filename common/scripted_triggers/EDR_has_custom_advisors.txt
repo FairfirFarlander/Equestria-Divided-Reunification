@@ -1,0 +1,35 @@
+country_with_custom_advisors={
+	OR={
+		original_tag=ALA
+		original_tag=BCK
+		original_tag=CHY
+		original_tag=COT
+		original_tag=CRL
+		original_tag=CUL
+		original_tag=CYE
+		original_tag=EMB
+		original_tag=FLY
+		original_tag=HAY
+		original_tag=HEB
+		original_tag=HEF
+		original_tag=HFT
+		original_tag=HMS
+		original_tag=HSW
+		original_tag=HWG
+		original_tag=JTL
+		original_tag=LAS
+		original_tag=MWC
+		original_tag=NIH
+		original_tag=PIE
+		original_tag=PLT
+		original_tag=SGR
+		original_tag=STB
+		original_tag=SWT
+		original_tag=SYV
+		original_tag=THA
+		original_tag=TRT
+		original_tag=VHT
+		original_tag=VII
+		original_tag=WTC
+	}
+}

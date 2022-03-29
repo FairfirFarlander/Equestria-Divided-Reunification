@@ -219,4 +219,40 @@ characters={
 			traits={}
 		}
 	}
+	HWG_whispy_locks={
+		name=HWG_whispy_locks
+		portraits={civilian={small="gfx/leaders/HWG/small/HWG_whispy_locks_small.dds"}}
+		advisor={
+			slot=political_advisor
+			idea_token=HWG_wlocks_advi
+			traits={}
+		}
+	}
+	HWG_lemon_meringue={
+		name=HWG_lemon_meringue
+		portraits={civilian={small="gfx/leaders/HWG/small/HWG_lemon_meringue_small.dds"}}
+		advisor={
+			slot=political_advisor
+			idea_token=HWG_lmeringue_advi
+			traits={}
+		}
+	}
+	HWG_prim_n_proper={
+		name=HWG_prim_n_proper
+		portraits={civilian={small="gfx/leaders/HWG/small/HWG_prim_n_proper_small.dds"}}
+		advisor={
+			slot=political_advisor
+			idea_token=HWG_pnproper_advi
+			traits={}
+		}
+	}
+	HWG_straight_arrow={
+		name=HWG_straight_arrow
+		portraits={civilian={small="gfx/leaders/HWG/small/HWG_straight_arrow_small.dds"}}
+		advisor={
+			slot=political_advisor
+			idea_token=HWG_sarrow_advi
+			traits={}
+		}
+	}
 }

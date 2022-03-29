@@ -7,8 +7,15 @@ WTC_GATHERING_STORM_DESC:""
   EAW_WS_WTC_desc:""
 ###Characters###
 ##Leaders##
-WTC_dashing_haberdasher:"Dashing Haberdasher"
- WTC_dhaberdasher_poli_desc:"§YPortrait By§!: Tiviyl"
+WTC_dashing_habidasher:"Dashing Habidasher"
+ WTC_dhabidasher_poli_desc:"§YPortrait By§!: Tiviyl"
+#Advisors#
+ WTC_eloi_path:"Eloi Path"
+  WTC_epath_advi_desc:""
+ WTC_zebrican_mercenary:"Zebrican Mercenary"
+  WTC_zmercenary_advi_desc:""
+ WTC_saddle_arabian_mercenary:"Saddle Arabian Mercenary"
+  WTC_samercenary_advi_desc:""
 ###Country Name###
 WTC:"Manehattan Trading Company"
  WTC_DEF:"The Manehattan Trading Company"
