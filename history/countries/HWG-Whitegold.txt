@@ -91,6 +91,10 @@ recruit_character=HWG_flim_flam
 recruit_character=HWG_filthy_rich
 recruit_character=HWG_diamond_tiara
 recruit_character=HWG_sweetie_belle
+recruit_character=HWG_whispy_locks
+recruit_character=HWG_lemon_meringue
+recruit_character=HWG_prim_n_proper
+recruit_character=HWG_straight_arrow
 recruit_character=HWG_nighthooves
 if={
 	limit={has_dlc="La Resistance"}
