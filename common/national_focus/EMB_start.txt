@@ -27,11 +27,11 @@
 		search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER}
 		prerequisite={focus=EMB_S00}
 		available={has_completed_focus=EMB_S01A}
-		select_effect={country_event={id=EMB_evt_a01.021 days=4}}	#Dark News for the Surface
+		select_effect={country_event={id=EMB_evt_a01.012 days=4}}	#Dark News for the Surface
 		ai_will_do={factor=4000}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus EMB_S01B"
-			country_event=EMB_evt_a01.022	#The Great Movement Underground
+			country_event=EMB_evt_a01.013	#The Great Movement Underground
 		}
 	}
 	shared_focus={		#A Future Completely Underground
@@ -43,22 +43,22 @@
 		ai_will_do={factor=4000}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus EMB_S02"
-			country_event=EMB_evt_a01.031	#The Great Movement Underground
+			country_event=EMB_evt_a01.021	#The Great Movement Underground
 		}
 	}
 	shared_focus={		#A Royal Idea
-		id=EMB_S03A #icon=
+		id=EMB_S03A icon=GFX_goal_SZC_improvised_farming_machinery
 		cost=7 x=-1 y=1 relative_position_id=EMB_S02
 		search_filters={FOCUS_FILTER_STABILITY}
 		prerequisite={focus=EMB_S02}
 		ai_will_do={factor=80}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus EMB_S03A"
-			country_event=EMB_evt_a01.031	#The Great Movement Underground
+			country_event=EMB_evt_a01.031	#The Architect
 		}
 	}
 	shared_focus={		#An Alchemical Idea
-		id=EMB_S03B #icon=
+		id=EMB_S03B icon=GFX_goal_agriculture
 		cost=7 x=1 y=1 relative_position_id=EMB_S02
 		search_filters={FOCUS_FILTER_RESEARCH}
 		prerequisite={focus=EMB_S02}
@@ -66,5 +66,49 @@
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus EMB_S03B"
 			country_event=EMB_evt_a01.032	#To Whom the Task Lies
+		}
+	}
+	shared_focus={		#The Costs of Safety
+		id=EMB_S04 #icon=
+		cost=2 x=0 y=2 relative_position_id=EMB_S02
+		search_filters={FOCUS_FILTER_POLITICAL}
+		prerequisite={focus=EMB_S03A}
+		prerequisite={focus=EMB_S03B}
+		ai_will_do={factor=80}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EMB_S04"
+			country_event=EMB_evt_a01.041	#A Special Session
+		}
+	}
+	shared_focus={		#The Beginning of Troubles
+		id=EMB_S05A #icon=
+		cost=7 x=-2 y=1 relative_position_id=EMB_S04
+		search_filters={FOCUS_FILTER_STABILITY FOCUS_FILTER_RESEARCH}
+		prerequisite={focus=EMB_S04}
+		ai_will_do={factor=80}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EMB_S05A"
+			add_stability=-0.05
+			
+		}
+	}
+	shared_focus={		#The Cost of No Sun
+		id=EMB_S05B #icon=
+		cost=7 x=0 y=1 relative_position_id=EMB_S04
+		search_filters={FOCUS_FILTER_RESEARCH FOCUS_FILTER_STABILITY FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL}
+		prerequisite={focus=EMB_S04}
+		ai_will_do={factor=80}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EMB_S05B"
+		}
+	}
+	shared_focus={		#There is Not Enough Room
+		id=EMB_S05C #icon=
+		cost=7 x=2 y=1 relative_position_id=EMB_S04
+		search_filters={FOCUS_FILTER_POLITICAL}
+		prerequisite={focus=EMB_S04}
+		ai_will_do={factor=80}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EMB_S05C"
 		}
 	}
