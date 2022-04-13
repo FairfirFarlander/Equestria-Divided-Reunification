@@ -11,11 +11,11 @@ if={
 	else={set_naval_oob="WTC_07_naval_legacy"}
 }
 79={	#Yakima/Cuetzpalliztli#
-	start_resistance=yes	set_compliance=16
+	start_resistance=yes	set_compliance=60
 	set_resistance=13	set_garrison_strength=0.40
 }
 352={	#Saltmane/Itzomitl Coast#
-	start_resistance=yes	set_compliance=16
+	start_resistance=yes	set_compliance=60
 	set_resistance=7	set_garrison_strength=0.60
 }
 #FOUNTATION#
@@ -26,10 +26,6 @@ add_ideas={
 	volunteer_only export_focus civilian_economy
 	big_science_base outdated_industry
 	lack_of_scientists3 poverty5
-	HWG_idea
-	HWG_tradefleet
-	HWG_tensions
-	HWG_society
 }
 if={
 	limit={has_dlc="No Step Back"}
@@ -91,117 +87,4 @@ recruit_character=WTC_dashing_habidasher
 recruit_character=WTC_eloi_path
 recruit_character=WTC_zebrican_mercenary
 recruit_character=WTC_saddle_arabian_mercenary
-
-#VARIENTS#
-if={limit={has_dlc="Man the Guns"}
-	create_equipment_variant={	#Heavy Cruiser AR1-EN1 MG2-SG3#
-		name="Belle 1003 Class"	type=ship_hull_cruiser_1
-		parent_version=1	#obsolete=yes#
-		modules={
-			fixed_ship_battery_slot=ship_medium_battery_1
-			fixed_ship_anti_air_slot=empty
-			fixed_ship_fire_control_system_slot=empty
-			fixed_ship_radar_slot=empty
-			fixed_ship_engine_slot=cruiser_ship_engine_1
-			fixed_ship_armor_slot=ship_armor_cruiser_1
-			fixed_ship_secondaries_slot=ship_secondaries_1
-			mid_1_custom_slot=ship_secondaries_1
-			mid_2_custom_slot=ship_secondaries_1
-			rear_1_custom_slot=ship_medium_battery_1
-		}
-	}
-	create_equipment_variant={	#Light Cruiser AR1-EN1 LG3#
-		name="Auditor 1003 Class"	type=ship_hull_cruiser_1
-		parent_version=0	#obsolete=yes#
-		modules={
-			fixed_ship_battery_slot=ship_light_medium_battery_1
-			fixed_ship_anti_air_slot=empty
-			fixed_ship_fire_control_system_slot=empty
-			fixed_ship_radar_slot=empty
-			fixed_ship_engine_slot=cruiser_ship_engine_1
-			fixed_ship_armor_slot=ship_armor_cruiser_1
-			fixed_ship_secondaries_slot=empty
-			mid_1_custom_slot=ship_light_medium_battery_1
-			mid_2_custom_slot=ship_secondaries_1
-			rear_1_custom_slot=ship_light_medium_battery_1
-		}
-	}
-	create_equipment_variant={	#Torpedo Destroyer#
-		name="Investor 1005 Class"	type=ship_hull_light_1 
-		parent_version=1	#obsolete=yes#
-		modules={
-			fixed_ship_battery_slot=ship_light_battery_1
-			fixed_ship_anti_air_slot=empty
-			fixed_ship_fire_control_system_slot=empty
-			fixed_ship_radar_slot=empty
-			fixed_ship_engine_slot=light_ship_engine_1
-			fixed_ship_torpedo_slot=ship_torpedo_1
-			mid_1_custom_slot=ship_torpedo_1
-			rear_1_custom_slot=empty
-		}
-	}
-	create_equipment_variant={	#Destroyer#
-		name="Surveyor 1003 Class"	type=ship_hull_light_1
-		parent_version=0	obsolete=yes
-		modules={
-			fixed_ship_battery_slot=ship_light_battery_1
-			fixed_ship_anti_air_slot=empty
-			fixed_ship_fire_control_system_slot=empty
-			fixed_ship_radar_slot=empty
-			fixed_ship_engine_slot=light_ship_engine_1
-			fixed_ship_torpedo_slot=empty
-			mid_1_custom_slot=empty
-			rear_1_custom_slot=empty
-		}
-	}
-}
-if={limit={not={has_dlc="Man the Guns"}}
-	create_equipment_variant={	#Heavy Cruiser#
-		name="Belle 1003 Class"	type=heavy_cruiser_1
-		parent_version=1	#obsolete=yes#
-		upgrades={
-			ship_reliability_upgrade=0
-			ship_engine_upgrade=0
-			ship_armor_upgrade=0
-			ship_gun_upgrade=0
-		}
-	}
-	create_equipment_variant={	#Light Cruiser#
-		name="Auditor 1003 Class"	type=light_cruiser_1
-		parent_version=0	#obsolete=yes#
-		upgrades={
-			ship_reliability_upgrade=1
-			ship_engine_upgrade=0
-			ship_gun_upgrade=1
-			ship_anti_air_upgrade=0
-		}
-	}
-	create_equipment_variant={	#Light-Medium Destroyer#
-		name="Investor 1005 Class"	type=destroyer_1
-		parent_version=1	#obsolete=yes#
-		upgrades={
-			ship_torpedo_upgrade=1
-			destroyer_engine_upgrade=0
-			ship_ASW_upgrade=0
-			ship_anti_air_upgrade=0
-		}
-	}
-	create_equipment_variant={	#Destroyer#
-		name="Surveyor 1003 Class"	type=destroyer_1
-		parent_version=0	obsolete=yes
-		upgrades={
-			ship_torpedo_upgrade=0
-			destroyer_engine_upgrade=0
-			ship_ASW_upgrade=0
-			ship_anti_air_upgrade=0
-		}
-	}
-}
-create_equipment_variant={	#Aircraft#
-	name="Chelangel UM06-9"	#Neighchelangelo - Ultramarine 06' V9#
-	type=tac_bomber_equipment_1	parent_version=0	#obsolete=yes#
-	upgrades={
-		plane_tac_bomb_upgrade=0	plane_range_upgrade=1
-		plane_engine_upgrade=0	plane_reliability_upgrade=0
-	}
-}
+#VARIANTS#

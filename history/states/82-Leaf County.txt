@@ -9,5 +9,9 @@ state={	#EDRSTATE
 	history={
 		owner=HAY
 		add_core_of=HAY
+		victory_points={11531 1}
+		buildings={
+			11531={bunker=1}
+		}
 	}
 }
