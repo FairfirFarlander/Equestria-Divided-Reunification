@@ -1,16 +1,26 @@
-state={	#EDRSTATE
+
+state={
 	id=137
 	name="STATE_137"
-	manpower=69850
-	state_category=pastoral
-	buildings_max_level_factor=1
-	provinces={654 666 772 1455 3417 3439 3653 3656 3658 3667 6544 6689 7454 7661 11459 11476 11753}
+
 	history={
-		owner=NIH
-		add_core_of=NIH
-		buildings={
-			infrastructure=1
-			air_base=1
+		owner = COL
+		add_core_of = COL
+		add_core_of = CRY
+		buildings = {
+			air_base = 1
+			infrastructure = 1
+			666   = { bunker = 3 }
+			3667  = { bunker = 3 }
+
 		}
+
 	}
+
+	provinces={
+		654 666 772 1455 3417 3439 3653 3656 3658 3667 6544 6689 7454 7661 11459 11476 11753
+	}
+	manpower=69850
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

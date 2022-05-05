@@ -1,31 +1,31 @@
-spriteTypes={
+spriteTypes = {
 
-	SpriteType={
-		name="GFX_idea_HWG_idea"
-		texturefile="gfx/interface/ideas/hwgidea.dds"
+	SpriteType = {
+		name = "GFX_idea_HWG_idea"
+		texturefile = "gfx/interface/ideas/hwgidea.dds"
 	}
-	SpriteType={
-		name="GFX_idea_HEB_idea"
-		texturefile="gfx/interface/ideas/hebidea.dds"
+	SpriteType = {
+		name = "GFX_idea_HEB_idea"
+		texturefile = "gfx/interface/ideas/hebidea.dds"
 	}
-	SpriteType={
-		name="GFX_idea_HEF_idea"
-		texturefile="gfx/interface/ideas/hefidea.dds"
+	SpriteType = {
+		name = "GFX_idea_HEF_idea"
+		texturefile = "gfx/interface/ideas/hefidea.dds"
 	}
-	SpriteType={
-		name="GFX_idea_CUL_idea"
-		texturefile="gfx/interface/ideas/culidea.dds"
+	SpriteType = {
+		name = "GFX_idea_COL_idea"
+		texturefile = "gfx/interface/ideas/colidea.dds"
 	}
-	SpriteType={
-		name="GFX_idea_HMS_idea"
-		texturefile="gfx/interface/ideas/hmsidea.dds"
+	SpriteType = {
+		name = "GFX_idea_HMS_idea"
+		texturefile = "gfx/interface/ideas/hmsidea.dds"
 	}
-	SpriteType={
-		name="GFX_idea_HEB_idea"
-		texturefile="gfx/interface/ideas/hebidea.dds"
+	SpriteType = {
+		name = "GFX_idea_HEB_idea"
+		texturefile = "gfx/interface/ideas/hebidea.dds"
 	}
-        SpriteType={
-		name="GFX_idea_HSW_idea"
-		texturefile="gfx/interface/ideas/hswidea.dds"
+        SpriteType = {
+		name = "GFX_idea_HSW_idea"
+		texturefile = "gfx/interface/ideas/hswidea.dds"
 	}
 }

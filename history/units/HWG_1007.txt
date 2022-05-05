@@ -1,243 +1,171 @@
-division_template={
-	name="Mercenary Brigade"	#divisions_name_group=
-	is_locked=yes	priority=1	template_counter=11
-	regiments={
-		infantry={x=0 y=0}
-		infantry={x=0 y=1}
-		infantry={x=0 y=2}
-		infantry={x=0 y=3}
+division_template = {
+	name = "Highland Division"
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+	}
+	support = {
+		unicorn_company = { x = 0 y = 0}
 	}
 }
-division_template={
-	name="Ironpaws Company"	#divisions_name_group=#
-	is_locked=yes	priority=1	#template_counter=0#
-	regiments={
-		ironpaws={x=0 y=0}
-		ironpaws={x=0 y=1}
-		ironpaws={x=0 y=2}
+division_template = {
+	name = "Onhooves Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+
+	support = {
+		unicorn_company = { x = 0 y = 0}
 	}
 }
-units={
-	division={		#Manehattan
-		name="Ivory Tower Praetor Guard"
-		location=758
-		division_template="Praetor Guard"
-		start_experience_factor=1
-		start_equipment_factor=1
-		force_equipment_variants={melee_equipment_1={owner="HWG" creator="HWG"}}
+
+units = {
+	division = {
+		name = "1st Onhooves Division"
+		location = 758
+		division_template = "Onhooves Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
-	division={		#Manehattan
-		name="Shining Gem Berrets"
-		location=758
-		division_template="Arquebus Regiment"
-		start_experience_factor=0.9
-		start_equipment_factor=1
-		force_equipment_variants={melee_equipment_1={owner="HWG" creator="HWG"}}
+	division = {
+		name = "2st Onhooves Division"
+		location = 758
+		division_template = "Onhooves Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
-	division={		#Manehattan
-		name="Manehattan City Guard"
-		location=758
-		division_template="Arquebus Regiment"
-		start_experience_factor=0.5
-		start_equipment_factor=1
-		force_equipment_variants={melee_equipment_1={owner="HWG" creator="HWG"}}
+	division = {
+		name = "3st Onhooves Division"
+		location = 758
+		division_template = "Onhooves Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
-	#division={		#Baltimare
-	#	name="Ley Shots of Baltimare"
-	#	location=13011
-	#	division_template="Arquebus Regiment"
-	#	start_experience_factor=0.4
-	#	start_equipment_factor=0.9
-	#	force_equipment_variants={melee_equipment_1={owner="HWG" creator="HWG"}}
-	#}
-	#division={		#Albion
-	#	name="The Muskets of Albion"
-	#	location=10359
-	#	division_template="Arquebus Regiment"
-	#	start_experience_factor=0.35
-	#	start_equipment_factor=0.8
-	#}
-	#division={		#Prancing Shores
-	#	name="Prancing Shores Guard"
-	#	location=3920
-	#	division_template="Arquebus Regiment"
-	#	start_experience_factor=0.1
-	#	start_equipment_factor=0.7
-	#}
-	#division={		#Freeside
-	#	name="Tradesguard of Freeside"
-	#	location=920
-	#	division_template="Arquebus Regiment"
-	#	start_experience_factor=0.08
-	#	start_equipment_factor=0.6
-	#}
-	division={		#Manehattan
-		name="1st Manehattan 'Foe Hammer' Dragoons"
-		location=970
-		division_template="Winged Dragoons"
-		start_experience_factor=0.75
-		start_equipment_factor=0.2
-		force_equipment_variants={melee_equipment_1={owner="HWG" creator="HWG"}}
+	division = {
+		name = "4st Onhooves Division"
+		location = 758
+		division_template = "Onhooves Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
-	#division={		#Baltimare
-	#	name="Dragoons of Baltimare"
-	#	location=13011
-	#	division_template="Winged Dragoons"
-	#	start_experience_factor=0.1
-	#	start_equipment_factor=1
-	#	force_equipment_variants={melee_equipment_1={owner="HWG" creator="HWG"}}
-	#}
-	division={		#Hayston - Manehattan
-		name="Storm Eye's Deadeyes"
-		location=6734
-		division_template="Mercenary Company"
-		start_experience_factor=0.65
-		start_equipment_factor=0.5
+	division = {
+		name = "5st Onhooves Division"
+		location = 758
+		division_template = "Onhooves Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
-	division={		#Bronclyn - Manehattan
-		name="Company of Fancy Hats"
-		location=11710
-		division_template="Mercenary Company"
-		start_experience_factor=0.55
-		start_equipment_factor=1
-		force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
+	division = {
+		name = "6st Onhooves Division"
+		location = 758
+		division_template = "Onhooves Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
-	#division={		#Summerfield - Freeside
-	#	name="Horns of Summerfield"
-	#	location=874
-	#	division_template="Mercenary Company"
-	#	start_experience_factor=0.55
-	#	start_equipment_factor=1
-	#	force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
-	#}
-	division={		#Summerfield - Freeside
-		name="Plain's Runners Company"
-		location=874
-		division_template="Mercenary Company"
-		start_experience_factor=0.5
-		start_equipment_factor=1
-		force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
+	division = {
+		name = "7st Onhooves Division"
+		location = 758
+		division_template = "Onhooves Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
-	#division={		#Bridlepolis - Mareland
-	#	name="Company of the Riverhorse"
-	#	location=6812
-	#	division_template="Mercenary Company"
-	#	start_experience_factor=0.4
-	#	start_equipment_factor=0.85
-	#	force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
-	#}
-	division={		#Baltimare
-		name="The Adze of Wrath"
-		location=13011
-		division_template="Mercenary Company"
-		start_experience_factor=0.25
-		start_equipment_factor=0.7
-		force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
+	division = {
+		name = "8st Onhooves Division"
+		location = 758
+		division_template = "Onhooves Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
-	#division={		#Upper Poninsula
-	#	name="The Merry Pones of Poppin"
-	#	location=7068
-	#	division_template="Mercenary Company"
-	#	start_experience_factor=0.25
-	#	start_equipment_factor=0.6
-	#	force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
-	#}
-	#division={		#Outside Baltimare
-	#	name="We Are Dragonborn"
-	#	location=9505
-	#	division_template="Mercenary Company"
-	#	start_experience_factor=0.75
-	#	start_equipment_factor=1
-	#	force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
-	#}
-	#division={		#Upper Albion
-	#	name="Her Mistress' Dogs of War"
-	#	location=10351
-	#	division_template="Highland Company"
-	#	start_experience_factor=0.35
-	#	start_equipment_factor=0.75
-	#	force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
-	#}
-	division={		#Bronclyn - Manehattan
-		name="Militia of the Undercity"
-		location=11710
-		division_template="Whitegold Militia"
-		start_experience_factor=0.3
-		start_equipment_factor=0.75
-		force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
+	division = {
+		name = "9st Onhooves Division"
+		location = 758
+		division_template = "Onhooves Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
-	division={		#Baltimare
-		name="Milita of Baltimare"
-		location=13011
-		division_template="Whitegold Militia"
-		start_experience_factor=0.20
-		start_equipment_factor=1
-		force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
+	division = {
+		name = "10st Onhooves Division"
+		location = 758
+		division_template = "Onhooves Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
-	#division={		#Summerfield - Freeside
-	#	name="Riverwatch of Summerfield"
-	#	location=874
-	#	division_template="Whitegold Militia"
-	#	start_experience_factor=0.3
-	#	start_equipment_factor=1
-	#	force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
-	#}
-	#division={		#Freeside
-	#	name="Tradesguard of Freeside"
-	#	location=920
-	#	division_template="Whitegold Militia"
-	#	start_experience_factor=0.08
-	#	start_equipment_factor=0.6
-	#}
-	division={		#Canterbury - Algonquin
-		name="Town Watch of Canterbury"
-		location=6996
-		division_template="Whitegold Militia"
-		start_experience_factor=0.15
-		start_equipment_factor=0.75
-		force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
+	division = {
+		name = "11st Onhooves Division"
+		location = 758
+		division_template = "Onhooves Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
-	division={		#Doppleshore - Poninsula
-		name="Town Watch of Dappleshore"
-		location=4080
-		division_template="Whitegold Militia"
-		start_experience_factor=0.1
-		start_equipment_factor=0.5
-		force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
+	division = {
+		name = "12st Onhooves Division"
+		location = 758
+		division_template = "Onhooves Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
-}
-air_wings={		#House Whitegold Airforce (HWGAF)
-	#Manehattan
-	75={fighter_equipment_0={owner="HWG" amount=6}}
-	75={tac_bomber_equipment_0={owner="HWG"	amount=2}}
-	#Baltimare
-	13={fighter_equipment_0={owner="HWG" amount=2}}
-	13={tac_bomber_equipment_0={owner="HWG" amount=1}}
-}
-#######################
-# STARTING PRODUCTION #
-#######################
-instant_effect={
-	add_equipment_production={
-		equipment={type=melee_equipment_0 creator="HWG"}
-		requested_factories=2 progress=0.75 efficiency=90
+	division = {
+		name = "13st Onhooves Division"
+		location = 758
+		division_template = "Onhooves Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
-	add_equipment_production={
-		equipment={type=melee_equipment_1 creator="HWG"}
-		requested_factories=1 progress=0.10 efficiency=10
+	division = {
+		name = "14st Onhooves Division"
+		location = 758
+		division_template = "Onhooves Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
-	add_equipment_production={
-		equipment={type=support_equipment_1	creator="HWG"}
-		requested_factories=1 progress=0.75 efficiency=90
+	division = {
+		name = "15st Onhooves Division"
+		location = 758
+		division_template = "Onhooves Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
-	add_equipment_production={
-		equipment={type=artillery_equipment_0 creator="HWG"}
-		requested_factories=1 progress=0.75 efficiency=80
+	division = {
+		name = "16st Onhooves Division"
+		location = 758
+		division_template = "Onhooves Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
-}
-instant_effect={
-	add_equipment_to_stockpile={type=melee_equipment_0 amount=700 producer=HWG}
-	add_equipment_to_stockpile={type=melee_equipment_1 amount=400 producer=HWG}
-	add_equipment_to_stockpile={type=support_equipment_1 amount=81 producer=HWG}
-	add_equipment_to_stockpile={type=artillery_equipment_0 amount=36 producer=HWG}
+	division = {
+		name = "17st Onhooves Division"
+		location = 758
+		division_template = "Onhooves Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "18st Onhooves Division"
+		location = 758
+		division_template = "Onhooves Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "19st Onhooves Division"
+		location = 758
+		division_template = "Onhooves Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "20st Onhooves Division"
+		location = 758
+		division_template = "Onhooves Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
 }

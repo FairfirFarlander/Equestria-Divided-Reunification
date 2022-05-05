@@ -1,26 +1,61 @@
-state={	#EDRSTATE
+
+state={
 	id=75
 	name="STATE_75"
-	manpower=4734800
-	state_category=megalopolis
-	buildings_max_level_factor=2
-	provinces={758 799 970 980 3037 3744 3761 3798 3861 4135 6734 6764 6818 6955 9686 9689 9719 9787 11692 11707 11710 11768 11805}
-	resources={steel=20}
+	state_category = megalopolis
+
 	history={
-		owner=HWG
-		add_core_of=HWG
-		victory_points={758 30}
-		victory_points={6734 2}
-		victory_points={11710 3}
-		buildings={
-			infrastructure=4
-			air_base=4
-			anti_air_building=1
-			arms_factory=3
-			industrial_complex=6
-			dockyard=1
-			fuel_silo=1
-			11710={naval_base=5}
+		owner = HWG
+		add_core_of = HWG
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 6
+			arms_factory = 3
+			anti_air_building = 1
+			air_base = 4
+			dockyard = 2
+			fuel_silo = 1
+			758 = { bunker = 3 }
+			799 = { bunker = 2 }
+			970 = { bunker = 2 }
+			980 = { bunker = 2 }
+			3037 = { bunker = 2 }
+			3744 = { bunker = 2 }
+			3761 = { bunker = 2 }
+			3798 = { bunker = 2 }
+			3861 = { bunker = 2 }
+			4135 = { bunker = 2 }
+			6734 = { bunker = 3 }
+			6764 = { bunker = 2 }
+			6818 = { bunker = 2 }
+			6955 = { bunker = 3 }
+			9686 = { bunker = 2 }
+			9689 = { bunker = 2 }
+			9719 = { bunker = 2 }
+			9787 = { bunker = 2 }
+			11692 = { bunker = 2 }
+			11707 = { bunker = 2 }
+			11768 = { bunker = 2 }
+			11805 = { bunker = 2 }
+			11710 = { naval_base = 5 bunker = 3 }
 		}
+		
+		## 6/7/19 notes: VP entries only count the last one, disregarding the previous entries. only accepts integers. must need a value after the province id, does not accept 0. ##
+		## ok new plan, devolution of VPs ##
+		
+		victory_points = { 758 30 }
+		
+		victory_points = { 11710 3 }
+		
+		victory_points = { 6734 2 }
 	}
+	resources = {
+		steel = 20
+	}
+
+	provinces={
+		758 799 970 980 3037 3744 3761 3798 3861 4135 6734 6764 6818 6955 9686 9689 9719 9787 11692 11707 11710 11768 11805
+	}
+	manpower=4734800
+	buildings_max_level_factor=2.000
 }

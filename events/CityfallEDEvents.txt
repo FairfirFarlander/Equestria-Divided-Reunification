@@ -1,2631 +1,2631 @@
-﻿add_namespace=edcityfall
+﻿add_namespace = edcityfall
 
 # The Fall of Canterlot (Earthborn)
-news_event={
-	id=edcityfall.1
-	title=edcityfall.1.t
-	desc=edcityfall.1.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.1
+	title = edcityfall.1.t
+	desc = edcityfall.1.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		3={is_controlled_by=HEB}
-		3={is_owned_by=HMS}
-		HMS={has_war_with=HEB}
-		NOT={has_global_flag=fall_of_canterlot_ed}
+	trigger = {
+		3 = { is_controlled_by = HEB }
+		3 = { is_owned_by = HMS }
+		HMS = { has_war_with = HEB }
+		NOT = { has_global_flag = fall_of_canterlot_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_canterlot_ed
+	immediate = {
+		set_global_flag = fall_of_canterlot_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.1.a
-		trigger={
-			NOT={
-				TAG=HEB
-				TAG=HMS
+	option = {
+		name = edcityfall.1.a
+		trigger = {
+			NOT = {
+				TAG = HEB
+				TAG = HMS
 			}
 		}
 	}
-	option={
-		name=edcityfall.1.b
-		trigger={TAG=HEB}
+	option = {
+		name = edcityfall.1.b
+		trigger = { TAG = HEB }
 	}
-	option={
-		name=edcityfall.1.c
-		trigger={TAG=HMS}
+	option = {
+		name = edcityfall.1.c
+		trigger = { TAG = HMS }
 	}
 }
 # The Fall of Canterlot (Everfree)
-news_event={
-	id=edcityfall.2
-	title=edcityfall.2.t
-	desc=edcityfall.2.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.2
+	title = edcityfall.2.t
+	desc = edcityfall.2.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		3={is_controlled_by=HEF}
-		3={is_owned_by=HMS}
-		HMS={has_war_with=HEF}
-		NOT={has_global_flag=fall_of_canterlot_ed}
+	trigger = {
+		3 = { is_controlled_by = HEF }
+		3 = { is_owned_by = HMS }
+		HMS = { has_war_with = HEF }
+		NOT = { has_global_flag = fall_of_canterlot_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_canterlot_ed
+	immediate = {
+		set_global_flag = fall_of_canterlot_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.2.a
-		trigger={
-			NOT={
-				TAG=HEF
-				TAG=HMS
+	option = {
+		name = edcityfall.2.a
+		trigger = {
+			NOT = {
+				TAG = HEF
+				TAG = HMS
 			}
 		}
 	}
-	option={
-		name=edcityfall.2.b
-		trigger={TAG=HEF}
+	option = {
+		name = edcityfall.2.b
+		trigger = { TAG = HEF }
 	}
-	option={
-		name=edcityfall.2.c
-		trigger={TAG=HMS}
+	option = {
+		name = edcityfall.2.c
+		trigger = { TAG = HMS }
 	}
 }
 # The Fall of Canterlot (Stormwind)
-news_event={
-	id=edcityfall.3
-	title=edcityfall.3.t
-	desc=edcityfall.3.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.3
+	title = edcityfall.3.t
+	desc = edcityfall.3.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		3={is_controlled_by=HSW}
-		3={is_owned_by=HMS}
-		HMS={has_war_with=HSW}
-		NOT={has_global_flag=fall_of_canterlot_ed}
+	trigger = {
+		3 = { is_controlled_by = HSW }
+		3 = { is_owned_by = HMS }
+		HMS = { has_war_with = HSW }
+		NOT = { has_global_flag = fall_of_canterlot_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_canterlot_ed
+	immediate = {
+		set_global_flag = fall_of_canterlot_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.3.a
-		trigger={
-			NOT={
-				TAG=HSW
-				TAG=HMS
+	option = {
+		name = edcityfall.3.a
+		trigger = {
+			NOT = {
+				TAG = HSW
+				TAG = HMS
 			}
 		}
 	}
-	option={
-		name=edcityfall.3.b
-		trigger={TAG=HSW}
+	option = {
+		name = edcityfall.3.b
+		trigger = { TAG = HSW }
 	}
-	option={
-		name=edcityfall.3.c
-		trigger={TAG=HMS}
+	option = {
+		name = edcityfall.3.c
+		trigger = { TAG = HMS }
 	}
 }
 # The Fall of Canterlot (Laughter)
-news_event={
-	id=edcityfall.4
-	title=edcityfall.4.t
-	desc=edcityfall.4.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.4
+	title = edcityfall.4.t
+	desc = edcityfall.4.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		3={is_controlled_by=CUL}
-		3={is_owned_by=HMS}
-		HMS={has_war_with=CUL}
-		NOT={has_global_flag=fall_of_canterlot_ed}
+	trigger = {
+		3 = { is_controlled_by = COL }
+		3 = { is_owned_by = HMS }
+		HMS = { has_war_with = COL }
+		NOT = { has_global_flag = fall_of_canterlot_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_canterlot_ed
+	immediate = {
+		set_global_flag = fall_of_canterlot_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.4.a
-		trigger={
-			NOT={
-				TAG=CUL
-				TAG=HMS
+	option = {
+		name = edcityfall.4.a
+		trigger = {
+			NOT = {
+				TAG = COL
+				TAG = HMS
 			}
 		}
 	}
-	option={
-		name=edcityfall.4.b
-		trigger={TAG=CUL}
+	option = {
+		name = edcityfall.4.b
+		trigger = { TAG = COL }
 	}
-	option={
-		name=edcityfall.4.c
-		trigger={TAG=HMS}
+	option = {
+		name = edcityfall.4.c
+		trigger = { TAG = HMS }
 	}
 }
 # The Fall of Canterlot (Whitegold)
-news_event={
-	id=edcityfall.5
-	title=edcityfall.5.t
-	desc=edcityfall.5.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.5
+	title = edcityfall.5.t
+	desc = edcityfall.5.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		3={is_controlled_by=HWG}
-		3={is_owned_by=HMS}
-		HMS={has_war_with=HWG}
-		NOT={has_global_flag=fall_of_canterlot_ed}
+	trigger = {
+		3 = { is_controlled_by = HWG }
+		3 = { is_owned_by = HMS }
+		HMS = { has_war_with = HWG }
+		NOT = { has_global_flag = fall_of_canterlot_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_canterlot_ed
+	immediate = {
+		set_global_flag = fall_of_canterlot_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name= edcityfall.5.a
-		trigger={
-			NOT={
-				TAG=HWG
-				TAG=HMS
+	option = {
+		name =  edcityfall.5.a
+		trigger = {
+			NOT = {
+				TAG = HWG
+				TAG = HMS
 			}
 		}
 	}
-	option={
-		name=edcityfall.5.b
-		trigger={TAG=HWG}
+	option = {
+		name = edcityfall.5.b
+		trigger = { TAG = HWG }
 	}
-	option={
-		name=edcityfall.5.c
-		trigger={TAG=HMS}
+	option = {
+		name = edcityfall.5.c
+		trigger = { TAG = HMS }
 	}
 }
 # The Fall of Canterlot (Sombra)
-news_event={
-	id=edcityfall.6
-	title=edcityfall.6.t
-	desc=edcityfall.6.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.6
+	title = edcityfall.6.t
+	desc = edcityfall.6.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		3={is_controlled_by=CRY}
-		3={is_owned_by=HMS}
-		HMS={has_war_with=CRY}
-		NOT={has_global_flag=fall_of_canterlot_ed}
+	trigger = {
+		3 = { is_controlled_by = CRY }
+		3 = { is_owned_by = HMS }
+		HMS = { has_war_with = CRY }
+		NOT = { has_global_flag = fall_of_canterlot_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_canterlot_ed
+	immediate = {
+		set_global_flag = fall_of_canterlot_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.6.a
-		trigger={
-			NOT={
-				TAG=CRY
-				TAG=HMS
+	option = {
+		name = edcityfall.6.a
+		trigger = {
+			NOT = {
+				TAG = CRY
+				TAG = HMS
 			}
 		}
 	}
-	option={
-		name=edcityfall.6.b
-		trigger={TAG=CRY}
+	option = {
+		name = edcityfall.6.b
+		trigger = { TAG = CRY }
 	}
-	option={
-		name=edcityfall.6.c
-		trigger={TAG=HMS}
+	option = {
+		name = edcityfall.6.c
+		trigger = { TAG = HMS }
 	}
 }
 # The Fall of Manehattan (Moonandstar)
-news_event={
-	id=edcityfall.7
-	title=edcityfall.7.t
-	desc=edcityfall.7.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.7
+	title = edcityfall.7.t
+	desc = edcityfall.7.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		75={is_controlled_by=HMS}
-		75={is_owned_by=HWG}
-		HWG={has_war_with=HMS}
-		NOT={has_global_flag=fall_of_manehattan_ed}
+	trigger = {
+		75 = { is_controlled_by = HMS }
+		75 = { is_owned_by = HWG }
+		HWG = { has_war_with = HMS }
+		NOT = { has_global_flag = fall_of_manehattan_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_manehattan_ed
+	immediate = {
+		set_global_flag = fall_of_manehattan_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.7.a
-		trigger={
-			NOT={
-				TAG=HMS
-				TAG=HWG
+	option = {
+		name = edcityfall.7.a
+		trigger = {
+			NOT = {
+				TAG = HMS
+				TAG = HWG
 			}
 		}
 	}
-	option={
-		name=edcityfall.7.b
-		trigger={TAG=HMS}
+	option = {
+		name = edcityfall.7.b
+		trigger = { TAG = HMS }
 	}
-	option={
-		name=edcityfall.7.c
-		trigger={TAG=HWG}
+	option = {
+		name = edcityfall.7.c
+		trigger = { TAG = HWG }
 	}
 }
 # The Fall of Manehattan (Stormwind)
-news_event={
-	id=edcityfall.8
-	title=edcityfall.8.t
-	desc=edcityfall.8.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.8
+	title = edcityfall.8.t
+	desc = edcityfall.8.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		75={is_controlled_by=HSW}
-		75={is_owned_by=HWG}
-		HWG={has_war_with=HSW}
-		NOT={has_global_flag=fall_of_manehattan_ed}
+	trigger = {
+		75 = { is_controlled_by = HSW }
+		75 = { is_owned_by = HWG }
+		HWG = { has_war_with = HSW }
+		NOT = { has_global_flag = fall_of_manehattan_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_manehattan_ed
+	immediate = {
+		set_global_flag = fall_of_manehattan_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.8.a
-		trigger={
-			NOT={
-				TAG=HSW
-				TAG=HWG
+	option = {
+		name = edcityfall.8.a
+		trigger = {
+			NOT = {
+				TAG = HSW
+				TAG = HWG
 			}
 		}
 	}
-	option={
-		name=edcityfall.8.b
-		trigger={TAG=HSW}
+	option = {
+		name = edcityfall.8.b
+		trigger = { TAG = HSW }
 	}
-	option={
-		name=edcityfall.8.c
-		trigger={TAG=HWG}
+	option = {
+		name = edcityfall.8.c
+		trigger = { TAG = HWG }
 	}
 }
 # The Fall of Manehattan (Earthborn)
-news_event={
-	id=edcityfall.9
-	title=edcityfall.9.t
-	desc=edcityfall.9.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.9
+	title = edcityfall.9.t
+	desc = edcityfall.9.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		75={is_controlled_by=HEB}
-		75={is_owned_by=HWG}
-		HWG={has_war_with=HEB}
-		NOT={has_global_flag=fall_of_manehattan_ed}
+	trigger = {
+		75 = { is_controlled_by = HEB }
+		75 = { is_owned_by = HWG }
+		HWG = { has_war_with = HEB }
+		NOT = { has_global_flag = fall_of_manehattan_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_manehattan_ed
+	immediate = {
+		set_global_flag = fall_of_manehattan_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.9.a
-		trigger={
-			NOT={
-				TAG=HEB
-				TAG=HWG
+	option = {
+		name = edcityfall.9.a
+		trigger = {
+			NOT = {
+				TAG = HEB
+				TAG = HWG
 			}
 		}
 	}
-	option={
-		name=edcityfall.9.b
-		trigger={TAG=HEB}
+	option = {
+		name = edcityfall.9.b
+		trigger = { TAG = HEB }
 	}
-	option={
-		name=edcityfall.9.c
-		trigger={TAG=HWG}
+	option = {
+		name = edcityfall.9.c
+		trigger = { TAG = HWG }
 	}
 }
 # The Fall of Manehattan (Everfree)
-news_event={
-	id=edcityfall.10
-	title=edcityfall.10.t
-	desc=edcityfall.10.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.10
+	title = edcityfall.10.t
+	desc = edcityfall.10.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		75={is_controlled_by=HEF}
-		75={is_owned_by=HWG}
-		HWG={has_war_with=HEF}
-		NOT={has_global_flag=fall_of_manehattan_ed}
+	trigger = {
+		75 = { is_controlled_by = HEF }
+		75 = { is_owned_by = HWG }
+		HWG = { has_war_with = HEF }
+		NOT = { has_global_flag = fall_of_manehattan_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_manehattan_ed
+	immediate = {
+		set_global_flag = fall_of_manehattan_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.10.a
-		trigger={
-			NOT={
-				TAG=HEF
-				TAG=HWG
+	option = {
+		name = edcityfall.10.a
+		trigger = {
+			NOT = {
+				TAG = HEF
+				TAG = HWG
 			}
 		}
 	}
-	option={
-		name=edcityfall.10.b
-		trigger={TAG=HEF}
+	option = {
+		name = edcityfall.10.b
+		trigger = { TAG = HEF }
 	}
-	option={
-		name=edcityfall.10.c
-		trigger={TAG=HWG}
+	option = {
+		name = edcityfall.10.c
+		trigger = { TAG = HWG }
 	}
 }
 # The Fall of Manehattan (Laughter)
-news_event={
-	id=edcityfall.11
-	title=edcityfall.11.t
-	desc=edcityfall.11.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.11
+	title = edcityfall.11.t
+	desc = edcityfall.11.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		75={is_controlled_by=CUL}
-		75={is_owned_by=HWG}
-		HWG={has_war_with=CUL}
-		NOT={has_global_flag=fall_of_manehattan_ed}
+	trigger = {
+		75 = { is_controlled_by = COL }
+		75 = { is_owned_by = HWG }
+		HWG = { has_war_with = COL }
+		NOT = { has_global_flag = fall_of_manehattan_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_manehattan_ed
+	immediate = {
+		set_global_flag = fall_of_manehattan_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.11.a
-		trigger={
-			NOT={
-				TAG=CUL
-				TAG=HWG
+	option = {
+		name = edcityfall.11.a
+		trigger = {
+			NOT = {
+				TAG = COL
+				TAG = HWG
 			}
 		}
 	}
-	option={
-		name=edcityfall.11.b
-		trigger={TAG=CUL}
+	option = {
+		name = edcityfall.11.b
+		trigger = { TAG = COL }
 	}
-	option={
-		name=edcityfall.11.c
-		trigger={TAG=HWG}
+	option = {
+		name = edcityfall.11.c
+		trigger = { TAG = HWG }
 	}
 }
 # The Fall of Manehattan (Sombra)
-news_event={
-	id=edcityfall.12
-	title=edcityfall.12.t
-	desc=edcityfall.12.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.12
+	title = edcityfall.12.t
+	desc = edcityfall.12.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		75={is_controlled_by=CRY}
-		75={is_owned_by=HWG}
-		HWG={has_war_with=CRY}
-		NOT={has_global_flag=fall_of_manehattan_ed}
+	trigger = {
+		75 = { is_controlled_by = CRY }
+		75 = { is_owned_by = HWG }
+		HWG = { has_war_with = CRY }
+		NOT = { has_global_flag = fall_of_manehattan_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_manehattan_ed
+	immediate = {
+		set_global_flag = fall_of_manehattan_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.12.a
-		trigger={
-			NOT={
-				TAG=CRY
-				TAG=HWG
+	option = {
+		name = edcityfall.12.a
+		trigger = {
+			NOT = {
+				TAG = CRY
+				TAG = HWG
 			}
 		}
 	}
-	option={
-		name=edcityfall.12.b
-		trigger={TAG=CRY}
+	option = {
+		name = edcityfall.12.b
+		trigger = { TAG = CRY }
 	}
-	option={
-		name=edcityfall.12.c
-		trigger={TAG=HWG}
+	option = {
+		name = edcityfall.12.c
+		trigger = { TAG = HWG }
 	}
 }
 # The Fall of Cloudsdale (Moonandstar)
-news_event={
-	id=edcityfall.13
-	title=edcityfall.13.t
-	desc=edcityfall.13.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.13
+	title = edcityfall.13.t
+	desc = edcityfall.13.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		68={is_controlled_by=HMS}
-		68={is_owned_by=HSW}
-		HSW={has_war_with=HMS}
-		NOT={has_global_flag=fall_of_cloudsdale_ed}
+	trigger = {
+		68 = { is_controlled_by = HMS }
+		68 = { is_owned_by = HSW }
+		HSW = { has_war_with = HMS }
+		NOT = { has_global_flag = fall_of_cloudsdale_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_cloudsdale_ed
+	immediate = {
+		set_global_flag = fall_of_cloudsdale_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.13.a
-		trigger={
-			NOT={
-				TAG=HMS
-				TAG=HSW
+	option = {
+		name = edcityfall.13.a
+		trigger = {
+			NOT = {
+				TAG = HMS
+				TAG = HSW
 			}
 		}
 	}
-	option={
-		name=edcityfall.13.b
-		trigger={TAG=HMS}
+	option = {
+		name = edcityfall.13.b
+		trigger = { TAG = HMS }
 	}
-	option={
-		name=edcityfall.13.c
-		trigger={TAG=HSW}
+	option = {
+		name = edcityfall.13.c
+		trigger = { TAG = HSW }
 	}
 }
 # The Fall of Cloudsdale (Whitegold)
-news_event={
-	id=edcityfall.14
-	title=edcityfall.14.t
-	desc=edcityfall.14.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.14
+	title = edcityfall.14.t
+	desc = edcityfall.14.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		68={is_controlled_by=HWG}
-		68={is_owned_by=HSW}
-		HSW={has_war_with=HWG}
-		NOT={has_global_flag=fall_of_cloudsdale_ed}
+	trigger = {
+		68 = { is_controlled_by = HWG }
+		68 = { is_owned_by = HSW }
+		HSW = { has_war_with = HWG }
+		NOT = { has_global_flag = fall_of_cloudsdale_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_cloudsdale_ed
+	immediate = {
+		set_global_flag = fall_of_cloudsdale_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.14.a
-		trigger={
-			NOT={
-				TAG=HWG
-				TAG=HSW
+	option = {
+		name = edcityfall.14.a
+		trigger = {
+			NOT = {
+				TAG = HWG
+				TAG = HSW
 			}
 		}
 	}
-	option={
-		name=edcityfall.14.b
-		trigger={TAG=HWG}
+	option = {
+		name = edcityfall.14.b
+		trigger = { TAG = HWG }
 	}
-	option={
-		name=edcityfall.14.c
-		trigger={TAG=HSW}
+	option = {
+		name = edcityfall.14.c
+		trigger = { TAG = HSW }
 	}
 }
 # The Fall of Cloudsdale (Earthborn)
-news_event={
-	id=edcityfall.15
-	title=edcityfall.15.t
-	desc=edcityfall.15.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.15
+	title = edcityfall.15.t
+	desc = edcityfall.15.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		68={is_controlled_by=HEB}
-		68={is_owned_by=HSW}
-		HSW={has_war_with=HEB}
-		NOT={has_global_flag=fall_of_cloudsdale_ed}
+	trigger = {
+		68 = { is_controlled_by = HEB }
+		68 = { is_owned_by = HSW }
+		HSW = { has_war_with = HEB }
+		NOT = { has_global_flag = fall_of_cloudsdale_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_cloudsdale_ed
+	immediate = {
+		set_global_flag = fall_of_cloudsdale_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.15.a
-		trigger={
-			NOT={
-				TAG=HEB
-				TAG=HSW
+	option = {
+		name = edcityfall.15.a
+		trigger = {
+			NOT = {
+				TAG = HEB
+				TAG = HSW
 			}
 		}
 	}
-	option={
-		name=edcityfall.15.b
-		trigger={TAG=HEB}
+	option = {
+		name = edcityfall.15.b
+		trigger = { TAG = HEB }
 	}
-	option={
-		name=edcityfall.15.c
-		trigger={TAG=HSW}
+	option = {
+		name = edcityfall.15.c
+		trigger = { TAG = HSW }
 	}
 }
 # The Fall of Cloudsdale (Everfree)
-news_event={
-	id=edcityfall.16
-	title=edcityfall.16.t
-	desc=edcityfall.16.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.16
+	title = edcityfall.16.t
+	desc = edcityfall.16.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		68={is_controlled_by=HEF}
-		68={is_owned_by=HSW}
-		HSW={has_war_with=HEF}
-		NOT={has_global_flag=fall_of_cloudsdale_ed}
+	trigger = {
+		68 = { is_controlled_by = HEF }
+		68 = { is_owned_by = HSW }
+		HSW = { has_war_with = HEF }
+		NOT = { has_global_flag = fall_of_cloudsdale_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_cloudsdale_ed
+	immediate = {
+		set_global_flag = fall_of_cloudsdale_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.16.a
-		trigger={
-			NOT={
-				TAG=HEF
-				TAG=HSW
+	option = {
+		name = edcityfall.16.a
+		trigger = {
+			NOT = {
+				TAG = HEF
+				TAG = HSW
 			}
 		}
 	}
-	option={
-		name=edcityfall.16.b
-		trigger={TAG=HEF}
+	option = {
+		name = edcityfall.16.b
+		trigger = { TAG = HEF }
 	}
-	option={
-		name=edcityfall.16.c
-		trigger={TAG=HSW}
+	option = {
+		name = edcityfall.16.c
+		trigger = { TAG = HSW }
 	}
 }
 # The Fall of Cloudsdale (Laughter)
-news_event={
-	id=edcityfall.17
-	title=edcityfall.17.t
-	desc=edcityfall.17.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.17
+	title = edcityfall.17.t
+	desc = edcityfall.17.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		68={is_controlled_by=CUL}
-		68={is_owned_by=HSW}
-		HSW={has_war_with=CUL}
-		NOT={has_global_flag=fall_of_cloudsdale_ed}
+	trigger = {
+		68 = { is_controlled_by = COL }
+		68 = { is_owned_by = HSW }
+		HSW = { has_war_with = COL }
+		NOT = { has_global_flag = fall_of_cloudsdale_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_cloudsdale_ed
+	immediate = {
+		set_global_flag = fall_of_cloudsdale_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.17.a
-		trigger={
-			NOT={
-				TAG=CUL
-				TAG=HSW
+	option = {
+		name = edcityfall.17.a
+		trigger = {
+			NOT = {
+				TAG = COL
+				TAG = HSW
 			}
 		}
 	}
-	option={
-		name=edcityfall.17.b
-		trigger={TAG=CUL}
+	option = {
+		name = edcityfall.17.b
+		trigger = { TAG = COL }
 	}
-	option={
-		name=edcityfall.17.c
-		trigger={TAG=HSW}
+	option = {
+		name = edcityfall.17.c
+		trigger = { TAG = HSW }
 	}
 }
 # The Fall of Cloudsdale (Sombra)
-news_event={
-	id=edcityfall.18
-	title=edcityfall.18.t
-	desc=edcityfall.18.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.18
+	title = edcityfall.18.t
+	desc = edcityfall.18.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		68={is_controlled_by=CRY}
-		68={is_owned_by=HSW}
-		HSW={has_war_with=CRY}
-		NOT={has_global_flag=fall_of_cloudsdale_ed}
+	trigger = {
+		68 = { is_controlled_by = CRY }
+		68 = { is_owned_by = HSW }
+		HSW = { has_war_with = CRY }
+		NOT = { has_global_flag = fall_of_cloudsdale_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_cloudsdale_ed
+	immediate = {
+		set_global_flag = fall_of_cloudsdale_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.18.a
-		trigger={
-			NOT={
-				TAG=CRY
-				TAG=HSW
+	option = {
+		name = edcityfall.18.a
+		trigger = {
+			NOT = {
+				TAG = CRY
+				TAG = HSW
 			}
 		}
 	}
-	option={
-		name=edcityfall.18.b
-		trigger={TAG=CRY}
+	option = {
+		name = edcityfall.18.b
+		trigger = { TAG = CRY }
 	}
-	option={
-		name=edcityfall.18.c
-		trigger={TAG=HSW}
+	option = {
+		name = edcityfall.18.c
+		trigger = { TAG = HSW }
 	}
 }
 # The Fall of Appleloosa (Moonandstar)
-news_event={
-	id=edcityfall.19
-	title=edcityfall.19.t
-	desc=edcityfall.19.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.19
+	title = edcityfall.19.t
+	desc = edcityfall.19.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		21={is_controlled_by=HMS}
-		21={is_owned_by=HEB}
-		HEB={has_war_with=HMS}
-		NOT={has_global_flag=fall_of_appleloosa_ed}
+	trigger = {
+		21 = { is_controlled_by = HMS }
+		21 = { is_owned_by = HEB }
+		HEB = { has_war_with = HMS }
+		NOT = { has_global_flag = fall_of_appleloosa_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_appleloosa_ed
+	immediate = {
+		set_global_flag = fall_of_appleloosa_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.19.a
-		trigger={
-			NOT={
-				TAG=HMS
-				TAG=HEB
+	option = {
+		name = edcityfall.19.a
+		trigger = {
+			NOT = {
+				TAG = HMS
+				TAG = HEB
 			}
 		}
 	}
-	option={
-		name=edcityfall.19.b
-		trigger={TAG=HMS}
+	option = {
+		name = edcityfall.19.b
+		trigger = { TAG = HMS }
 	}
-	option={
-		name=edcityfall.19.c
-		trigger={TAG=HEB}
+	option = {
+		name = edcityfall.19.c
+		trigger = { TAG = HEB }
 	}
 }
 # The Fall of Appleloosa (Stormwind)
-news_event={
-	id=edcityfall.20
-	title=edcityfall.20.t
-	desc=edcityfall.20.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.20
+	title = edcityfall.20.t
+	desc = edcityfall.20.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		21={is_controlled_by=HSW}
-		21={is_owned_by=HEB}
-		HEB={has_war_with=HSW}
-		NOT={has_global_flag=fall_of_appleloosa_ed}
+	trigger = {
+		21 = { is_controlled_by = HSW }
+		21 = { is_owned_by = HEB }
+		HEB = { has_war_with = HSW }
+		NOT = { has_global_flag = fall_of_appleloosa_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_appleloosa_ed
+	immediate = {
+		set_global_flag = fall_of_appleloosa_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.20.a
-		trigger={
-			NOT={
-				TAG=HSW
-				TAG=HEB
+	option = {
+		name = edcityfall.20.a
+		trigger = {
+			NOT = {
+				TAG = HSW
+				TAG = HEB
 			}
 		}
 	}
-	option={
-		name=edcityfall.20.b
-		trigger={TAG=HSW}
+	option = {
+		name = edcityfall.20.b
+		trigger = { TAG = HSW }
 	}
-	option={
-		name=edcityfall.20.c
-		trigger={TAG=HEB}
+	option = {
+		name = edcityfall.20.c
+		trigger = { TAG = HEB }
 	}
 }
 # The Fall of Appleloosa (Everfree)
-news_event={
-	id=edcityfall.21
-	title=edcityfall.21.t
-	desc=edcityfall.21.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.21
+	title = edcityfall.21.t
+	desc = edcityfall.21.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		21={is_controlled_by=HEF}
-		21={is_owned_by=HEB}
-		HEB={has_war_with=HEF}
-		NOT={has_global_flag=fall_of_appleloosa_ed}
+	trigger = {
+		21 = { is_controlled_by = HEF }
+		21 = { is_owned_by = HEB }
+		HEB = { has_war_with = HEF }
+		NOT = { has_global_flag = fall_of_appleloosa_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_appleloosa_ed
+	immediate = {
+		set_global_flag = fall_of_appleloosa_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.21.a
-		trigger={
-			NOT={
-				TAG=HEF
-				TAG=HEB
+	option = {
+		name = edcityfall.21.a
+		trigger = {
+			NOT = {
+				TAG = HEF
+				TAG = HEB
 			}
 		}
 	}
-	option={
-		name=edcityfall.21.b
-		trigger={TAG=HEF}
+	option = {
+		name = edcityfall.21.b
+		trigger = { TAG = HEF }
 	}
-	option={
-		name=edcityfall.21.c
-		trigger={TAG=HEB}
+	option = {
+		name = edcityfall.21.c
+		trigger = { TAG = HEB }
 	}
 }
 # The Fall of Appleloosa (Whitegold)
-news_event={
-	id=edcityfall.22
-	title=edcityfall.22.t
-	desc=edcityfall.22.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.22
+	title = edcityfall.22.t
+	desc = edcityfall.22.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		21={is_controlled_by=HWG}
-		21={is_owned_by=HEB}
-		HEB={has_war_with=HWG}
-		NOT={has_global_flag=fall_of_appleloosa_ed}
+	trigger = {
+		21 = { is_controlled_by = HWG }
+		21 = { is_owned_by = HEB }
+		HEB = { has_war_with = HWG }
+		NOT = { has_global_flag = fall_of_appleloosa_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_appleloosa_ed
+	immediate = {
+		set_global_flag = fall_of_appleloosa_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.22.a
-		trigger={
-			NOT={
-				TAG=HWG
-				TAG=HEB
+	option = {
+		name = edcityfall.22.a
+		trigger = {
+			NOT = {
+				TAG = HWG
+				TAG = HEB
 			}
 		}
 	}
-	option={
-		name=edcityfall.22.b
-		trigger={TAG=HWG}
+	option = {
+		name = edcityfall.22.b
+		trigger = { TAG = HWG }
 	}
-	option={
-		name=edcityfall.22.c
-		trigger={TAG=HEB}
+	option = {
+		name = edcityfall.22.c
+		trigger = { TAG = HEB }
 	}
 }
 # The Fall of Appleloosa (Laughter)
-news_event={
-	id=edcityfall.23
-	title=edcityfall.23.t
-	desc=edcityfall.23.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.23
+	title = edcityfall.23.t
+	desc = edcityfall.23.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		21={is_controlled_by=CUL}
-		21={is_owned_by=HEB}
-		HEB={has_war_with=CUL}
-		NOT={has_global_flag=fall_of_appleloosa_ed}
+	trigger = {
+		21 = { is_controlled_by = COL }
+		21 = { is_owned_by = HEB }
+		HEB = { has_war_with = COL }
+		NOT = { has_global_flag = fall_of_appleloosa_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_appleloosa_ed
+	immediate = {
+		set_global_flag = fall_of_appleloosa_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.23.a
-		trigger={
-			NOT={
-				TAG=CUL
-				TAG=HEB
+	option = {
+		name = edcityfall.23.a
+		trigger = {
+			NOT = {
+				TAG = COL
+				TAG = HEB
 			}
 		}
 	}
-	option={
-		name=edcityfall.23.b
-		trigger={TAG=CUL}
+	option = {
+		name = edcityfall.23.b
+		trigger = { TAG = COL }
 	}
-	option={
-		name=edcityfall.23.c
-		trigger={TAG=HEB}
+	option = {
+		name = edcityfall.23.c
+		trigger = { TAG = HEB }
 	}
 }
 # The Fall of Appleloosa (Sombra)
-news_event={
-	id=edcityfall.24
-	title=edcityfall.24.t
-	desc=edcityfall.24.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.24
+	title = edcityfall.24.t
+	desc = edcityfall.24.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		21={is_controlled_by=CRY}
-		21={is_owned_by=HEB}
-		HEB={has_war_with=CRY}
-		NOT={has_global_flag=fall_of_appleloosa_ed}
+	trigger = {
+		21 = { is_controlled_by = CRY }
+		21 = { is_owned_by = HEB }
+		HEB = { has_war_with = CRY }
+		NOT = { has_global_flag = fall_of_appleloosa_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_appleloosa_ed
+	immediate = {
+		set_global_flag = fall_of_appleloosa_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.24.a
-		trigger={
-			NOT={
-				TAG=CRY
-				TAG=HEB
+	option = {
+		name = edcityfall.24.a
+		trigger = {
+			NOT = {
+				TAG = CRY
+				TAG = HEB
 			}
 		}
 	}
-	option={
-		name=edcityfall.24.b
-		trigger={TAG=CRY}
+	option = {
+		name = edcityfall.24.b
+		trigger = { TAG = CRY }
 	}
-	option={
-		name=edcityfall.24.c
-		trigger={TAG=HEB}
+	option = {
+		name = edcityfall.24.c
+		trigger = { TAG = HEB }
 	}
 }
 # The Fall of Everfree (Moonandstar)
-news_event={
-	id=edcityfall.25
-	title=edcityfall.25.t
-	desc=edcityfall.25.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.25
+	title = edcityfall.25.t
+	desc = edcityfall.25.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		5={is_controlled_by=HMS}
-		5={is_owned_by=HEF}
-		HEF={has_war_with=HMS}
-		NOT={has_global_flag=fall_of_everfree_ed}
+	trigger = {
+		5 = { is_controlled_by = HMS }
+		5 = { is_owned_by = HEF }
+		HEF = { has_war_with = HMS }
+		NOT = { has_global_flag = fall_of_everfree_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_everfree_ed
+	immediate = {
+		set_global_flag = fall_of_everfree_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.25.a
-		trigger={
-			NOT={
-				TAG=HMS
-				TAG=HEF
+	option = {
+		name = edcityfall.25.a
+		trigger = {
+			NOT = {
+				TAG = HMS
+				TAG = HEF
 			}
 		}
 	}
-	option={
-		name=edcityfall.25.b
-		trigger={TAG=HMS}
+	option = {
+		name = edcityfall.25.b
+		trigger = { TAG = HMS }
 	}
-	option={
-		name=edcityfall.25.c
-		trigger={TAG=HEF}
+	option = {
+		name = edcityfall.25.c
+		trigger = { TAG = HEF }
 	}
 }
 # The Fall of Everfree (Earthborn)
-news_event={
-	id=edcityfall.26
-	title=edcityfall.26.t
-	desc=edcityfall.26.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.26
+	title = edcityfall.26.t
+	desc = edcityfall.26.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		5={is_controlled_by=HEB}
-		5={is_owned_by=HEF}
-		HEF={has_war_with=HEB}
-		NOT={has_global_flag=fall_of_everfree_ed}
+	trigger = {
+		5 = { is_controlled_by = HEB }
+		5 = { is_owned_by = HEF }
+		HEF = { has_war_with = HEB }
+		NOT = { has_global_flag = fall_of_everfree_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_everfree_ed
+	immediate = {
+		set_global_flag = fall_of_everfree_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.26.a
-		trigger={
-			NOT={
-				TAG=HEB
-				TAG=HEF
+	option = {
+		name = edcityfall.26.a
+		trigger = {
+			NOT = {
+				TAG = HEB
+				TAG = HEF
 			}
 		}
 	}
-	option={
-		name=edcityfall.26.b
-		trigger={TAG=HEB}
+	option = {
+		name = edcityfall.26.b
+		trigger = { TAG = HEB }
 	}
-	option={
-		name=edcityfall.26.c
-		trigger={TAG=HEF}
+	option = {
+		name = edcityfall.26.c
+		trigger = { TAG = HEF }
 	}
 }
 # The Fall of Everfree (Stormwind)
-news_event={
-	id=edcityfall.27
-	title=edcityfall.27.t
-	desc=edcityfall.27.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.27
+	title = edcityfall.27.t
+	desc = edcityfall.27.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		5={is_controlled_by=HSW}
-		5={is_owned_by=HEF}
-		HEF={has_war_with=HSW}
-		NOT={has_global_flag=fall_of_everfree_ed}
+	trigger = {
+		5 = { is_controlled_by = HSW }
+		5 = { is_owned_by = HEF }
+		HEF = { has_war_with = HSW }
+		NOT = { has_global_flag = fall_of_everfree_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_everfree_ed
+	immediate = {
+		set_global_flag = fall_of_everfree_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.27.a
-		trigger={
-			NOT={
-				TAG=HSW
-				TAG=HEF
+	option = {
+		name = edcityfall.27.a
+		trigger = {
+			NOT = {
+				TAG = HSW
+				TAG = HEF
 			}
 		}
 	}
-	option={
-		name=edcityfall.27.b
-		trigger={TAG=HSW}
+	option = {
+		name = edcityfall.27.b
+		trigger = { TAG = HSW }
 	}
-	option={
-		name=edcityfall.27.c
-		trigger={TAG=HEF}
+	option = {
+		name = edcityfall.27.c
+		trigger = { TAG = HEF }
 	}
 }
 # The Fall of Everfree (Whitegold)
-news_event={
-	id=edcityfall.28
-	title=edcityfall.28.t
-	desc=edcityfall.28.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.28
+	title = edcityfall.28.t
+	desc = edcityfall.28.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		5={is_controlled_by=HWG}
-		5={is_owned_by=HEF}
-		HEF={has_war_with=HWG}
-		NOT={has_global_flag=fall_of_everfree_ed}
+	trigger = {
+		5 = { is_controlled_by = HWG }
+		5 = { is_owned_by = HEF }
+		HEF = { has_war_with = HWG }
+		NOT = { has_global_flag = fall_of_everfree_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_everfree_ed
+	immediate = {
+		set_global_flag = fall_of_everfree_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.28.a
-		trigger={
-			NOT={
-				TAG=HWG
-				TAG=HEF
+	option = {
+		name = edcityfall.28.a
+		trigger = {
+			NOT = {
+				TAG = HWG
+				TAG = HEF
 			}
 		}
 	}
-	option={
-		name=edcityfall.28.b
-		trigger={TAG=HWG}
+	option = {
+		name = edcityfall.28.b
+		trigger = { TAG = HWG }
 	}
-	option={
-		name=edcityfall.28.c
-		trigger={TAG=HEF}
+	option = {
+		name = edcityfall.28.c
+		trigger = { TAG = HEF }
 	}
 }
 # The Fall of Everfree (Laughter)
-news_event={
-	id=edcityfall.29
-	title=edcityfall.29.t
-	desc=edcityfall.29.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.29
+	title = edcityfall.29.t
+	desc = edcityfall.29.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		5={is_controlled_by=CUL}
-		5={is_owned_by=HEF}
-		HEF={has_war_with=CUL}
-		NOT={has_global_flag=fall_of_everfree_ed}
+	trigger = {
+		5 = { is_controlled_by = COL }
+		5 = { is_owned_by = HEF }
+		HEF = { has_war_with = COL }
+		NOT = { has_global_flag = fall_of_everfree_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_everfree_ed
+	immediate = {
+		set_global_flag = fall_of_everfree_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.29.a
-		trigger={
-			NOT={
-				TAG=CUL
-				TAG=HEF
+	option = {
+		name = edcityfall.29.a
+		trigger = {
+			NOT = {
+				TAG = COL
+				TAG = HEF
 			}
 		}
 	}
-	option={
-		name=edcityfall.29.b
-		trigger={TAG=CUL}
+	option = {
+		name = edcityfall.29.b
+		trigger = { TAG = COL }
 	}
-	option={
-		name=edcityfall.29.c
-		trigger={TAG=HEF}
+	option = {
+		name = edcityfall.29.c
+		trigger = { TAG = HEF }
 	}
 }
 # The Fall of Everfree (Sombra)
-news_event={
-	id=edcityfall.30
-	title=edcityfall.30.t
-	desc=edcityfall.30.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.30
+	title = edcityfall.30.t
+	desc = edcityfall.30.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		5={is_controlled_by=CRY}
-		5={is_owned_by=HEF}
-		HEF={has_war_with=CRY}
-		NOT={has_global_flag=fall_of_everfree_ed}
+	trigger = {
+		5 = { is_controlled_by = CRY }
+		5 = { is_owned_by = HEF }
+		HEF = { has_war_with = CRY }
+		NOT = { has_global_flag = fall_of_everfree_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_everfree_ed
+	immediate = {
+		set_global_flag = fall_of_everfree_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.30.a
-		trigger={
-			NOT={
-				TAG=CRY
-				TAG=HEF
+	option = {
+		name = edcityfall.30.a
+		trigger = {
+			NOT = {
+				TAG = CRY
+				TAG = HEF
 			}
 		}
 	}
-	option={
-		name=edcityfall.30.b
-		trigger={TAG=CRY}
+	option = {
+		name = edcityfall.30.b
+		trigger = { TAG = CRY }
 	}
-	option={
-		name=edcityfall.30.c
-		trigger={TAG=HEF}
+	option = {
+		name = edcityfall.30.c
+		trigger = { TAG = HEF }
 	}
 }
 # The Fall of Culterlot (Stormwind)
-news_event={
-	id=edcityfall.31
-	title=edcityfall.31.t
-	desc=edcityfall.31.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.31
+	title = edcityfall.31.t
+	desc = edcityfall.31.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		3={is_controlled_by=HSW}
-		3={is_owned_by=CUL}
-		CUL={has_war_with=HSW}
-		NOT={has_global_flag=fall_of_culterlot_ed}
+	trigger = {
+		3 = { is_controlled_by = HSW }
+		3 = { is_owned_by = COL }
+		COL = { has_war_with = HSW }
+		NOT = { has_global_flag = fall_of_culterlot_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_culterlot_ed
+	immediate = {
+		set_global_flag = fall_of_culterlot_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.31.a
-		trigger={
-			NOT={
-				TAG=HSW
-				TAG=CUL
+	option = {
+		name = edcityfall.31.a
+		trigger = {
+			NOT = {
+				TAG = HSW
+				TAG = COL
 			}
 		}
 	}
-	option={
-		name=edcityfall.31.b
-		trigger={TAG=HSW}
+	option = {
+		name = edcityfall.31.b
+		trigger = { TAG = HSW }
 	}
-	option={
-		name=edcityfall.31.c
-		trigger={TAG=CUL}
+	option = {
+		name = edcityfall.31.c
+		trigger = { TAG = COL }
 	}
 }
 # The Fall of Culterlot (Whitegold)
-news_event={
-	id=edcityfall.32
-	title=edcityfall.32.t
-	desc=edcityfall.32.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.32
+	title = edcityfall.32.t
+	desc = edcityfall.32.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		3={is_controlled_by=HWG}
-		3={is_owned_by=CUL}
-		CUL={has_war_with=HWG}
-		NOT={has_global_flag=fall_of_culterlot_ed}
+	trigger = {
+		3 = { is_controlled_by = HWG }
+		3 = { is_owned_by = COL }
+		COL = { has_war_with = HWG }
+		NOT = { has_global_flag = fall_of_culterlot_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_culterlot_ed
+	immediate = {
+		set_global_flag = fall_of_culterlot_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.32.a
-		trigger={
-			NOT={
-				TAG=HWG
-				TAG=CUL
+	option = {
+		name = edcityfall.32.a
+		trigger = {
+			NOT = {
+				TAG = HWG
+				TAG = COL
 			}
 		}
 	}
-	option={
-		name=edcityfall.32.b
-		trigger={TAG=HWG}
+	option = {
+		name = edcityfall.32.b
+		trigger = { TAG = HWG }
 	}
-	option={
-		name=edcityfall.32.c
-		trigger={TAG=CUL}
+	option = {
+		name = edcityfall.32.c
+		trigger = { TAG = COL }
 	}
 }
 # The Fall of Culterlot (Everfree)
-news_event={
-	id=edcityfall.33
-	title=edcityfall.33.t
-	desc=edcityfall.33.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.33
+	title = edcityfall.33.t
+	desc = edcityfall.33.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		3={is_controlled_by=HEF}
-		3={is_owned_by=CUL}
-		CUL={has_war_with=HEF}
-		NOT={has_global_flag=fall_of_culterlot_ed}
+	trigger = {
+		3 = { is_controlled_by = HEF }
+		3 = { is_owned_by = COL }
+		COL = { has_war_with = HEF }
+		NOT = { has_global_flag = fall_of_culterlot_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_culterlot_ed
+	immediate = {
+		set_global_flag = fall_of_culterlot_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.33.a
-		trigger={
-			NOT={
-				TAG=HEF
-				TAG=CUL
+	option = {
+		name = edcityfall.33.a
+		trigger = {
+			NOT = {
+				TAG = HEF
+				TAG = COL
 			}
 		}
 	}
-	option={
-		name=edcityfall.33.b
-		trigger={TAG=HEF}
+	option = {
+		name = edcityfall.33.b
+		trigger = { TAG = HEF }
 	}
-	option={
-		name=edcityfall.33.c
-		trigger={TAG=CUL}
+	option = {
+		name = edcityfall.33.c
+		trigger = { TAG = COL }
 	}
 }
 # The Fall of Culterlot (Earthborn)
-news_event={
-	id=edcityfall.34
-	title=edcityfall.34.t
-	desc=edcityfall.34.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.34
+	title = edcityfall.34.t
+	desc = edcityfall.34.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		3={is_controlled_by=HEB}
-		3={is_owned_by=CUL}
-		CUL={has_war_with=HEB}
-		NOT={has_global_flag=fall_of_culterlot_ed}
+	trigger = {
+		3 = { is_controlled_by = HEB }
+		3 = { is_owned_by = COL }
+		COL = { has_war_with = HEB }
+		NOT = { has_global_flag = fall_of_culterlot_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_culterlot_ed
+	immediate = {
+		set_global_flag = fall_of_culterlot_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.34.a
-		trigger={
-			NOT={
-				TAG=HEB
-				TAG=CUL
+	option = {
+		name = edcityfall.34.a
+		trigger = {
+			NOT = {
+				TAG = HEB
+				TAG = COL
 			}
 		}
 	}
-	option={
-		name=edcityfall.34.b
-		trigger={TAG=HEB}
+	option = {
+		name = edcityfall.34.b
+		trigger = { TAG = HEB }
 	}
-	option={
-		name=edcityfall.34.c
-		trigger={TAG=CUL}
+	option = {
+		name = edcityfall.34.c
+		trigger = { TAG = COL }
 	}
 }
 # The Fall of Culterlot (Sombra)
-news_event={
-	id=edcityfall.35
-	title=edcityfall.35.t
-	desc=edcityfall.35.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.35
+	title = edcityfall.35.t
+	desc = edcityfall.35.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		3={is_controlled_by=CRY}
-		3={is_owned_by=CUL}
-		CUL={has_war_with=CRY}
-		NOT={has_global_flag=fall_of_culterlot_ed}
+	trigger = {
+		3 = { is_controlled_by = CRY }
+		3 = { is_owned_by = COL }
+		COL = { has_war_with = CRY }
+		NOT = { has_global_flag = fall_of_culterlot_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_culterlot_ed
+	immediate = {
+		set_global_flag = fall_of_culterlot_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.35.a
-		trigger={
-			NOT={
-				TAG=CRY
-				TAG=CUL
+	option = {
+		name = edcityfall.35.a
+		trigger = {
+			NOT = {
+				TAG = CRY
+				TAG = COL
 			}
 		}
 	}
-	option={
-		name=edcityfall.35.b
-		trigger={TAG=CRY}
+	option = {
+		name = edcityfall.35.b
+		trigger = { TAG = CRY }
 	}
-	option={
-		name=edcityfall.35.c
-		trigger={TAG=CUL}
+	option = {
+		name = edcityfall.35.c
+		trigger = { TAG = COL }
 	}
 }
 # The Fall of the Crystal City (Laughter)
-news_event={
-	id=edcityfall.36
-	title=edcityfall.36.t
-	desc=edcityfall.36.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.36
+	title = edcityfall.36.t
+	desc = edcityfall.36.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		344={is_controlled_by=CUL}
-		344={is_owned_by=CRY}
-		CRY={has_war_with=CUL}
-		NOT={has_global_flag=fall_of_sombra_ed}
+	trigger = {
+		344 = { is_controlled_by = COL }
+		344 = { is_owned_by = CRY }
+		CRY = { has_war_with = COL }
+		NOT = { has_global_flag = fall_of_sombra_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_sombra_ed
+	immediate = {
+		set_global_flag = fall_of_sombra_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.36.a
-		trigger={
-			NOT={
-				TAG=CUL
-				TAG=CRY
+	option = {
+		name = edcityfall.36.a
+		trigger = {
+			NOT = {
+				TAG = COL
+				TAG = CRY
 			}
 		}
 	}
-	option={
-		name=edcityfall.36.b
-		trigger={TAG=CUL}
+	option = {
+		name = edcityfall.36.b
+		trigger = { TAG = COL }
 	}
-	option={
-		name=edcityfall.36.c
-		trigger={TAG=CRY}
+	option = {
+		name = edcityfall.36.c
+		trigger = { TAG = CRY }
 	}
 }
 # The Fall of the Crystal City (Moonandstar)
-news_event={
-	id=edcityfall.37
-	title=edcityfall.37.t
-	desc=edcityfall.37.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.37
+	title = edcityfall.37.t
+	desc = edcityfall.37.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		344={is_controlled_by=HMS}
-		344={is_owned_by=CRY}
-		CRY={has_war_with=HMS}
-		NOT={has_global_flag=fall_of_sombra_ed}
+	trigger = {
+		344 = { is_controlled_by = HMS }
+		344 = { is_owned_by = CRY }
+		CRY = { has_war_with = HMS }
+		NOT = { has_global_flag = fall_of_sombra_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_sombra_ed
+	immediate = {
+		set_global_flag = fall_of_sombra_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.37.a
-		trigger={
-			NOT={
-				TAG=HMS
-				TAG=CRY
+	option = {
+		name = edcityfall.37.a
+		trigger = {
+			NOT = {
+				TAG = HMS
+				TAG = CRY
 			}
 		}
 	}
-	option={
-		name=edcityfall.37.b
-		trigger={TAG=HMS}
+	option = {
+		name = edcityfall.37.b
+		trigger = { TAG = HMS }
 	}
-	option={
-		name=edcityfall.37.c
-		trigger={TAG=CRY}
+	option = {
+		name = edcityfall.37.c
+		trigger = { TAG = CRY }
 	}
 }
 # The Fall of the Crystal City (Whitegold)
-news_event={
-	id=edcityfall.38
-	title=edcityfall.38.t
-	desc=edcityfall.38.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.38
+	title = edcityfall.38.t
+	desc = edcityfall.38.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		344={is_controlled_by=HWG}
-		344={is_owned_by=CRY}
-		CRY={has_war_with=HWG}
-		NOT={has_global_flag=fall_of_sombra_ed}
+	trigger = {
+		344 = { is_controlled_by = HWG }
+		344 = { is_owned_by = CRY }
+		CRY = { has_war_with = HWG }
+		NOT = { has_global_flag = fall_of_sombra_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_sombra_ed
+	immediate = {
+		set_global_flag = fall_of_sombra_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.38.a
-		trigger={
-			NOT={
-				TAG=HWG
-				TAG=CRY
+	option = {
+		name = edcityfall.38.a
+		trigger = {
+			NOT = {
+				TAG = HWG
+				TAG = CRY
 			}
 		}
 	}
-	option={
-		name=edcityfall.38.b
-		trigger={TAG=HWG}
+	option = {
+		name = edcityfall.38.b
+		trigger = { TAG = HWG }
 	}
-	option={
-		name=edcityfall.38.c
-		trigger={TAG=CRY}
+	option = {
+		name = edcityfall.38.c
+		trigger = { TAG = CRY }
 	}
 }
 # The Fall of the Crystal City (Stormwind)
-news_event={
-	id=edcityfall.39
-	title=edcityfall.39.t
-	desc=edcityfall.39.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.39
+	title = edcityfall.39.t
+	desc = edcityfall.39.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		344={is_controlled_by=HSW}
-		344={is_owned_by=CRY}
-		CRY={has_war_with=HSW}
-		NOT={has_global_flag=fall_of_sombra_ed}
+	trigger = {
+		344 = { is_controlled_by = HSW }
+		344 = { is_owned_by = CRY }
+		CRY = { has_war_with = HSW }
+		NOT = { has_global_flag = fall_of_sombra_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_sombra_ed
+	immediate = {
+		set_global_flag = fall_of_sombra_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.39.a
-		trigger={
-			NOT={
-				TAG=HSW
-				TAG=CRY
+	option = {
+		name = edcityfall.39.a
+		trigger = {
+			NOT = {
+				TAG = HSW
+				TAG = CRY
 			}
 		}
 	}
-	option={
-		name=edcityfall.39.b
-		trigger={TAG=HSW}
+	option = {
+		name = edcityfall.39.b
+		trigger = { TAG = HSW }
 	}
-	option={
-		name=edcityfall.39.c
-		trigger={TAG=CRY}
+	option = {
+		name = edcityfall.39.c
+		trigger = { TAG = CRY }
 	}
 }
 # The Fall of the Crystal City (Earthborn)
-news_event={
-	id=edcityfall.40
-	title=edcityfall.40.t
-	desc=edcityfall.40.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.40
+	title = edcityfall.40.t
+	desc = edcityfall.40.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		344={is_controlled_by=HEB}
-		344={is_owned_by=CRY}
-		CRY={has_war_with=HEB}
-		NOT={has_global_flag=fall_of_sombra_ed}
+	trigger = {
+		344 = { is_controlled_by = HEB }
+		344 = { is_owned_by = CRY }
+		CRY = { has_war_with = HEB }
+		NOT = { has_global_flag = fall_of_sombra_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_sombra_ed
+	immediate = {
+		set_global_flag = fall_of_sombra_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.40.a
-		trigger={
-			NOT={
-				TAG=HEB
-				TAG=CRY
+	option = {
+		name = edcityfall.40.a
+		trigger = {
+			NOT = {
+				TAG = HEB
+				TAG = CRY
 			}
 		}
 	}
-	option={
-		name=edcityfall.40.b
-		trigger={TAG=HEB}
+	option = {
+		name = edcityfall.40.b
+		trigger = { TAG = HEB }
 	}
-	option={
-		name=edcityfall.40.c
-		trigger={TAG=CRY}
+	option = {
+		name = edcityfall.40.c
+		trigger = { TAG = CRY }
 	}
 }
 # The Fall of the Crystal City (Everfree)
-news_event={
-	id=edcityfall.41
-	title=edcityfall.41.t
-	desc=edcityfall.41.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.41
+	title = edcityfall.41.t
+	desc = edcityfall.41.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		344={is_controlled_by=HEF}
-		344={is_owned_by=CRY}
-		CRY={has_war_with=HEF}
-		NOT={has_global_flag=fall_of_sombra_ed}
+	trigger = {
+		344 = { is_controlled_by = HEF }
+		344 = { is_owned_by = CRY }
+		CRY = { has_war_with = HEF }
+		NOT = { has_global_flag = fall_of_sombra_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_sombra_ed
+	immediate = {
+		set_global_flag = fall_of_sombra_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.41.a
-		trigger={
-			NOT={
-				TAG=HEF
-				TAG=CRY
+	option = {
+		name = edcityfall.41.a
+		trigger = {
+			NOT = {
+				TAG = HEF
+				TAG = CRY
 			}
 		}
 	}
-	option={
-		name=edcityfall.41.b
-		trigger={TAG=HEF}
+	option = {
+		name = edcityfall.41.b
+		trigger = { TAG = HEF }
 	}
-	option={
-		name=edcityfall.41.c
-		trigger={TAG=CRY}
+	option = {
+		name = edcityfall.41.c
+		trigger = { TAG = CRY }
 	}
 }
 # The Fall of Stalliongrad (Moonandstar)
-news_event={
-	id=edcityfall.42
-	title=edcityfall.42.t
-	desc=edcityfall.42.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.42
+	title = edcityfall.42.t
+	desc = edcityfall.42.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		153={is_controlled_by=HMS}
-		153={is_owned_by=STG}
-		STG={has_war_with=HMS}
-		NOT={has_global_flag=fall_of_stalliongrad_ed}
+	trigger = {
+		153 = { is_controlled_by = HMS }
+		153 = { is_owned_by = STG }
+		STG = { has_war_with = HMS }
+		NOT = { has_global_flag = fall_of_stalliongrad_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_stalliongrad_ed
+	immediate = {
+		set_global_flag = fall_of_stalliongrad_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.42.a
-		trigger={
-			NOT={
-				TAG=HMS
-				TAG=STG
+	option = {
+		name = edcityfall.42.a
+		trigger = {
+			NOT = {
+				TAG = HMS
+				TAG = STG
 			}
 		}
 	}
-	option={
-		name=edcityfall.42.b
-		trigger={TAG=HMS}
+	option = {
+		name = edcityfall.42.b
+		trigger = { TAG = HMS }
 	}
-	option={
-		name=edcityfall.42.c
-		trigger={TAG=STG}
+	option = {
+		name = edcityfall.42.c
+		trigger = { TAG = STG }
 	}
 }
 # The Fall of Stalliongrad (Whitegold)
-news_event={
-	id=edcityfall.43
-	title=edcityfall.43.t
-	desc=edcityfall.43.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.43
+	title = edcityfall.43.t
+	desc = edcityfall.43.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		153={is_controlled_by=HWG}
-		153={is_owned_by=STG}
-		STG={has_war_with=HWG}
-		NOT={has_global_flag=fall_of_stalliongrad_ed}
+	trigger = {
+		153 = { is_controlled_by = HWG }
+		153 = { is_owned_by = STG }
+		STG = { has_war_with = HWG }
+		NOT = { has_global_flag = fall_of_stalliongrad_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_stalliongrad_ed
+	immediate = {
+		set_global_flag = fall_of_stalliongrad_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.43.a
-		trigger={
-			NOT={
-				TAG=HWG
-				TAG=STG
+	option = {
+		name = edcityfall.43.a
+		trigger = {
+			NOT = {
+				TAG = HWG
+				TAG = STG
 			}
 		}
 	}
-	option={
-		name=edcityfall.43.b
-		trigger={TAG=HWG}
+	option = {
+		name = edcityfall.43.b
+		trigger = { TAG = HWG }
 	}
-	option={
-		name=edcityfall.43.c
-		trigger={TAG=STG}
+	option = {
+		name = edcityfall.43.c
+		trigger = { TAG = STG }
 	}
 }
 # The Fall of Stalliongrad (Stormwind)
-news_event={
-	id=edcityfall.44
-	title=edcityfall.44.t
-	desc=edcityfall.44.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.44
+	title = edcityfall.44.t
+	desc = edcityfall.44.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		153={is_controlled_by=HSW}
-		153={is_owned_by=STG}
-		STG={has_war_with=HSW}
-		NOT={has_global_flag=fall_of_stalliongrad_ed}
+	trigger = {
+		153 = { is_controlled_by = HSW }
+		153 = { is_owned_by = STG }
+		STG = { has_war_with = HSW }
+		NOT = { has_global_flag = fall_of_stalliongrad_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_stalliongrad_ed
+	immediate = {
+		set_global_flag = fall_of_stalliongrad_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.44.a
-		trigger={
-			NOT={
-				TAG=HSW
-				TAG=STG
+	option = {
+		name = edcityfall.44.a
+		trigger = {
+			NOT = {
+				TAG = HSW
+				TAG = STG
 			}
 		}
 	}
-	option={
-		name=edcityfall.44.b
-		trigger={TAG=HSW}
+	option = {
+		name = edcityfall.44.b
+		trigger = { TAG = HSW }
 	}
-	option={
-		name=edcityfall.44.c
-		trigger={TAG=STG}
+	option = {
+		name = edcityfall.44.c
+		trigger = { TAG = STG }
 	}
 }
 # The Fall of Stalliongrad (Everfree)
-news_event={
-	id=edcityfall.45
-	title=edcityfall.45.t
-	desc=edcityfall.45.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.45
+	title = edcityfall.45.t
+	desc = edcityfall.45.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		153={is_controlled_by=HEF}
-		153={is_owned_by=STG}
-		STG={has_war_with=HEF}
-		NOT={has_global_flag=fall_of_stalliongrad_ed}
+	trigger = {
+		153 = { is_controlled_by = HEF }
+		153 = { is_owned_by = STG }
+		STG = { has_war_with = HEF }
+		NOT = { has_global_flag = fall_of_stalliongrad_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_stalliongrad_ed
+	immediate = {
+		set_global_flag = fall_of_stalliongrad_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.45.a
-		trigger={
-			NOT={
-				TAG=HEF
-				TAG=STG
+	option = {
+		name = edcityfall.45.a
+		trigger = {
+			NOT = {
+				TAG = HEF
+				TAG = STG
 			}
 		}
 	}
-	option={
-		name=edcityfall.45.b
-		trigger={TAG=HEF}
+	option = {
+		name = edcityfall.45.b
+		trigger = { TAG = HEF }
 	}
-	option={
-		name=edcityfall.45.c
-		trigger={TAG=STG}
+	option = {
+		name = edcityfall.45.c
+		trigger = { TAG = STG }
 	}
 }
 # The Fall of Stalliongrad (Earthborn)
-news_event={
-	id=edcityfall.46
-	title=edcityfall.46.t
-	desc=edcityfall.46.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.46
+	title = edcityfall.46.t
+	desc = edcityfall.46.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		153={is_controlled_by=HEB}
-		153={is_owned_by=STG}
-		STG={has_war_with=HEB}
-		NOT={has_global_flag=fall_of_stalliongrad_ed}
+	trigger = {
+		153 = { is_controlled_by = HEB }
+		153 = { is_owned_by = STG }
+		STG = { has_war_with = HEB }
+		NOT = { has_global_flag = fall_of_stalliongrad_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_stalliongrad_ed
+	immediate = {
+		set_global_flag = fall_of_stalliongrad_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.46.a
-		trigger={
-			NOT={
-				TAG=HEB
-				TAG=STG
+	option = {
+		name = edcityfall.46.a
+		trigger = {
+			NOT = {
+				TAG = HEB
+				TAG = STG
 			}
 		}
 	}
-	option={
-		name=edcityfall.46.b
-		trigger={TAG=HEB}
+	option = {
+		name = edcityfall.46.b
+		trigger = { TAG = HEB }
 	}
-	option={
-		name=edcityfall.46.c
-		trigger={TAG=STG}
+	option = {
+		name = edcityfall.46.c
+		trigger = { TAG = STG }
 	}
 }
 # The Fall of Stalliongrad (Laughter)
-news_event={
-	id=edcityfall.47
-	title=edcityfall.47.t
-	desc=edcityfall.47.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.47
+	title = edcityfall.47.t
+	desc = edcityfall.47.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		153={is_controlled_by=CUL}
-		153={is_owned_by=STG}
-		STG={has_war_with=CUL}
-		NOT={has_global_flag=fall_of_stalliongrad_ed}
+	trigger = {
+		153 = { is_controlled_by = COL }
+		153 = { is_owned_by = STG }
+		STG = { has_war_with = COL }
+		NOT = { has_global_flag = fall_of_stalliongrad_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_stalliongrad_ed
+	immediate = {
+		set_global_flag = fall_of_stalliongrad_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.47.a
-		trigger={
-			NOT={
-				TAG=CUL
-				TAG=STG
+	option = {
+		name = edcityfall.47.a
+		trigger = {
+			NOT = {
+				TAG = COL
+				TAG = STG
 			}
 		}
 	}
-	option={
-		name=edcityfall.47.b
-		trigger={TAG=CUL}
+	option = {
+		name = edcityfall.47.b
+		trigger = { TAG = COL }
 	}
-	option={
-		name=edcityfall.47.c
-		trigger={TAG=STG}
+	option = {
+		name = edcityfall.47.c
+		trigger = { TAG = STG }
 	}
 }
 # The Fall of Stalliongrad (Sombra)
-news_event={
-	id=edcityfall.48
-	title=edcityfall.48.t
-	desc=edcityfall.48.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.48
+	title = edcityfall.48.t
+	desc = edcityfall.48.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		153={is_controlled_by=CRY}
-		153={is_owned_by=STG}
-		STG={has_war_with=CRY}
-		NOT={has_global_flag=fall_of_stalliongrad_ed}
+	trigger = {
+		153 = { is_controlled_by = CRY }
+		153 = { is_owned_by = STG }
+		STG = { has_war_with = CRY }
+		NOT = { has_global_flag = fall_of_stalliongrad_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_stalliongrad_ed
+	immediate = {
+		set_global_flag = fall_of_stalliongrad_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.48.a
-		trigger={
-			NOT={
-				TAG=CRY
-				TAG=STG
+	option = {
+		name = edcityfall.48.a
+		trigger = {
+			NOT = {
+				TAG = CRY
+				TAG = STG
 			}
 		}
 	}
-	option={
-		name=edcityfall.48.b
-		trigger={TAG=CRY}
+	option = {
+		name = edcityfall.48.b
+		trigger = { TAG = CRY }
 	}
-	option={
-		name=edcityfall.48.c
-		trigger={TAG=STG}
+	option = {
+		name = edcityfall.48.c
+		trigger = { TAG = STG }
 	}
 }
 # The Fall of Canterlot (Stalliongrad)
-news_event={
-	id=edcityfall.49
-	title=edcityfall.49.t
-	desc=edcityfall.49.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.49
+	title = edcityfall.49.t
+	desc = edcityfall.49.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		3={is_controlled_by=STG}
-		3={is_owned_by=HMS}
-		HMS={has_war_with=STG}
-		NOT={has_global_flag=fall_of_canterlot_ed}
+	trigger = {
+		3 = { is_controlled_by = STG }
+		3 = { is_owned_by = HMS }
+		HMS = { has_war_with = STG }
+		NOT = { has_global_flag = fall_of_canterlot_ed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_canterlot_ed
+	immediate = {
+		set_global_flag = fall_of_canterlot_ed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.49.a
-		trigger={
-			NOT={
-				TAG=STG
-				TAG=HMS
+	option = {
+		name = edcityfall.49.a
+		trigger = {
+			NOT = {
+				TAG = STG
+				TAG = HMS
 			}
 		}
 	}
-	option={
-		name=edcityfall.49.b
-		trigger={TAG=STG}
+	option = {
+		name = edcityfall.49.b
+		trigger = { TAG = STG }
 	}
-	option={
-		name=edcityfall.49.c
-		trigger={TAG=HMS}
+	option = {
+		name = edcityfall.49.c
+		trigger = { TAG = HMS }
 	}
 }
 # The Fall of Canterlot (Changebugs)
-news_event={
-	id=edcityfall.50
-	title=edcityfall.50.t
-	desc=edcityfall.50.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.50
+	title = edcityfall.50.t
+	desc = edcityfall.50.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		3={is_controlled_by=CHN}
-		NOT={has_global_flag=fall_of_canterlot_changed}
+	trigger = {
+		3 = { is_controlled_by = CHN }
+		NOT = { has_global_flag = fall_of_canterlot_changed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_canterlot_changed
+	immediate = {
+		set_global_flag = fall_of_canterlot_changed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.50.a
-		trigger={
-			NOT={
-				TAG=CHN
-				TAG=HMS
-				TAG=HEB
-				TAG=HEF
-				TAG=HWG
-				TAG=HSW
-				TAG=CUL
-				TAG=CRY
-				TAG=STG
-				TAG=STL
+	option = {
+		name = edcityfall.50.a
+		trigger = {
+			NOT = {
+				TAG = CHN
+				TAG = HMS
+				TAG = HEB
+				TAG = HEF
+				TAG = HWG
+				TAG = HSW
+				TAG = COL
+				TAG = CRY
+				TAG = STG
+				TAG = STL
 			}
 		}
 	}
-	option={
-		name=edcityfall.50.b
-		trigger={TAG=CHN}
+	option = {
+		name = edcityfall.50.b
+		trigger = { TAG = CHN }
 	}
-	option={
-		name=edcityfall.50.c
-		trigger={
-                                TAG=HMS
-				TAG=HEB
-				TAG=HEF
-				TAG=HWG
-				TAG=HSW
-				TAG=CUL
-				TAG=CRY
-				TAG=STG
-				TAG=STL
-               }
+	option = {
+		name = edcityfall.50.c
+		trigger = { 
+                                TAG = HMS
+				TAG = HEB
+				TAG = HEF
+				TAG = HWG
+				TAG = HSW
+				TAG = COL
+				TAG = CRY
+				TAG = STG
+				TAG = STL
+                }
 	}
 }
 # The Fall of the Crystal City (Changebugs)
-news_event={
-	id=edcityfall.51
-	title=edcityfall.51.t
-	desc=edcityfall.51.d
-	picture=GFX_news_event_fall_of_canterloted	
-	major=yes
+news_event = {
+	id = edcityfall.51
+	title = edcityfall.51.t
+	desc = edcityfall.51.d
+	picture = GFX_news_event_fall_of_canterloted	
+	major = yes
 	
-	trigger={
-		344={is_controlled_by=CHN}
-		344={is_owned_by=CRY}
-		CRY={has_war_with=CHN}
-		NOT={has_global_flag=fall_of_sombra_changed}
+	trigger = {
+		344 = { is_controlled_by = CHN }
+		344 = { is_owned_by = CRY }
+		CRY = { has_war_with = CHN }
+		NOT = { has_global_flag = fall_of_sombra_changed }
 	}
 	
-	immediate={
-		set_global_flag=fall_of_sombra_changed
+	immediate = {
+		set_global_flag = fall_of_sombra_changed
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.51.a
-		trigger={
-			NOT={
-				TAG=CHN
-				TAG=CRY
+	option = {
+		name = edcityfall.51.a
+		trigger = {
+			NOT = {
+				TAG = CHN
+				TAG = CRY
 			}
 		}
 	}
-	option={
-		name=edcityfall.51.b
-		trigger={TAG=CHN}
+	option = {
+		name = edcityfall.51.b
+		trigger = { TAG = CHN }
 	}
-	option={
-		name=edcityfall.51.c
-		trigger={TAG=CRY}
+	option = {
+		name = edcityfall.51.c
+		trigger = { TAG = CRY }
 	}
 }
 # Equestrian Reunification (Laughter)
-news_event={
-	id=edcityfall.52
-	title=edcityfall.52.t
-	desc=edcityfall.52.d
-	picture=GFX_event_laughter_victory	
-	major=yes
+news_event = {
+	id = edcityfall.52
+	title = edcityfall.52.t
+	desc = edcityfall.52.d
+	picture = GFX_event_laughter_victory	
+	major = yes
 	
-	trigger={
-		344={is_owned_by=CUL}
-		3={is_owned_by=CUL}
-		21={is_owned_by=CUL}
-		68={is_owned_by=CUL}
-		75={is_owned_by=CUL}
-		153={is_owned_by=CUL}
-		5={is_owned_by=CUL}
-		75={is_owned_by=CUL}
-		70={is_owned_by=CUL}
-		136={is_owned_by=CUL}
-		344={is_controlled_by=CUL}
-		3={is_controlled_by=CUL}
-		21={is_controlled_by=CUL}
-		68={is_controlled_by=CUL}
-		75={is_controlled_by=CUL}
-		153={is_controlled_by=CUL}
-		5={is_controlled_by=CUL}
-		75={is_controlled_by=CUL}
-		70={is_controlled_by=CUL}
-		136={is_controlled_by=CUL}
-		NOT={has_global_flag=ed_eqs_reunited}
+	trigger = {
+		344 = { is_owned_by = COL }
+		3 = { is_owned_by = COL }
+		21 = { is_owned_by = COL }
+		68 = { is_owned_by = COL }
+		75 = { is_owned_by = COL }
+		153 = { is_owned_by = COL }
+		5 = { is_owned_by = COL }
+		75 = { is_owned_by = COL }
+		70 = { is_owned_by = COL }
+		136 = { is_owned_by = COL }
+		344 = { is_controlled_by = COL }
+		3 = { is_controlled_by = COL }
+		21 = { is_controlled_by = COL }
+		68 = { is_controlled_by = COL }
+		75 = { is_controlled_by = COL }
+		153 = { is_controlled_by = COL }
+		5 = { is_controlled_by = COL }
+		75 = { is_controlled_by = COL }
+		70 = { is_controlled_by = COL }
+		136 = { is_controlled_by = COL }
+		NOT = { has_global_flag = ed_eqs_reunited }
 	}
 	
-	immediate={
-		set_global_flag=ed_eqs_reunited
+	immediate = {
+		set_global_flag = ed_eqs_reunited
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.52.a
-		trigger={
-			NOT={
-				TAG=CHN
-				TAG=CUL
+	option = {
+		name = edcityfall.52.a
+		trigger = {
+			NOT = {
+				TAG = CHN
+				TAG = COL
 			}
 		}
 	}
-	option={
-		name=edcityfall.52.b
-		trigger={TAG=CUL}
+	option = {
+		name = edcityfall.52.b
+		trigger = { TAG = COL }
 	}
-	option={
-		name=edcityfall.52.c
-		trigger={TAG=CHN}
+	option = {
+		name = edcityfall.52.c
+		trigger = { TAG = CHN }
 	}
 }
 # Equestrian Reunification (Sombra)
-news_event={
-	id=edcityfall.53
-	title=edcityfall.53.t
-	desc=edcityfall.53.d
-	picture=GFX_event_sombra_victory	
-	major=yes
+news_event = {
+	id = edcityfall.53
+	title = edcityfall.53.t
+	desc = edcityfall.53.d
+	picture = GFX_event_sombra_victory	
+	major = yes
 	
-	trigger={
-		344={is_owned_by=CRY}
-		3={is_owned_by=CRY}
-		21={is_owned_by=CRY}
-		68={is_owned_by=CRY}
-		75={is_owned_by=CRY}
-		153={is_owned_by=CRY}
-		5={is_owned_by=CRY}
-		75={is_owned_by=CRY}
-		70={is_owned_by=CRY}
-		136={is_owned_by=CRY}
-		344={is_controlled_by=CRY}
-		3={is_controlled_by=CRY}
-		21={is_controlled_by=CRY}
-		68={is_controlled_by=CRY}
-		75={is_controlled_by=CRY}
-		153={is_controlled_by=CRY}
-		5={is_controlled_by=CRY}
-		75={is_controlled_by=CRY}
-		70={is_controlled_by=CRY}
-		136={is_controlled_by=CRY}
-		NOT={has_global_flag=ed_eqs_reunited}
+	trigger = {
+		344 = { is_owned_by = CRY }
+		3 = { is_owned_by = CRY }
+		21 = { is_owned_by = CRY }
+		68 = { is_owned_by = CRY }
+		75 = { is_owned_by = CRY }
+		153 = { is_owned_by = CRY }
+		5 = { is_owned_by = CRY }
+		75 = { is_owned_by = CRY }
+		70 = { is_owned_by = CRY }
+		136 = { is_owned_by = CRY }
+		344 = { is_controlled_by = CRY }
+		3 = { is_controlled_by = CRY }
+		21 = { is_controlled_by = CRY }
+		68 = { is_controlled_by = CRY }
+		75 = { is_controlled_by = CRY }
+		153 = { is_controlled_by = CRY }
+		5 = { is_controlled_by = CRY }
+		75 = { is_controlled_by = CRY }
+		70 = { is_controlled_by = CRY }
+		136 = { is_controlled_by = CRY }
+		NOT = { has_global_flag = ed_eqs_reunited }
 	}
 	
-	immediate={
-		set_global_flag=ed_eqs_reunited
+	immediate = {
+		set_global_flag = ed_eqs_reunited
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.53.a
-		trigger={
-			NOT={
-				TAG=CHN
-				TAG=CRY
+	option = {
+		name = edcityfall.53.a
+		trigger = {
+			NOT = {
+				TAG = CHN
+				TAG = CRY
 			}
 		}
 	}
-	option={
-		name=edcityfall.53.b
-		trigger={TAG=CRY}
+	option = {
+		name = edcityfall.53.b
+		trigger = { TAG = CRY }
 	}
-	option={
-		name=edcityfall.53.c
-		trigger={TAG=CHN}
+	option = {
+		name = edcityfall.53.c
+		trigger = { TAG = CHN }
 	}
 }
 # Equestrian Reunification (Stalliongrad)
-news_event={
-	id=edcityfall.54
-	title=edcityfall.54.t
-	desc=edcityfall.54.d
-	picture=GFX_event_stalliongrad_victory	
-	major=yes
+news_event = {
+	id = edcityfall.54
+	title = edcityfall.54.t
+	desc = edcityfall.54.d
+	picture = GFX_event_stalliongrad_victory	
+	major = yes
 	
-	trigger={
-		344={is_owned_by=STG}
-		3={is_owned_by=STG}
-		21={is_owned_by=STG}
-		68={is_owned_by=STG}
-		75={is_owned_by=STG}
-		153={is_owned_by=STG}
-		5={is_owned_by=STG}
-		75={is_owned_by=STG}
-		70={is_owned_by=STG}
-		136={is_owned_by=STG}
-		344={is_controlled_by=STG}
-		3={is_controlled_by=STG}
-		21={is_controlled_by=STG}
-		68={is_controlled_by=STG}
-		75={is_controlled_by=STG}
-		153={is_controlled_by=STG}
-		5={is_controlled_by=STG}
-		75={is_controlled_by=STG}
-		70={is_controlled_by=STG}
-		136={is_controlled_by=STG}
-		NOT={has_global_flag=ed_eqs_reunited}
+	trigger = {
+		344 = { is_owned_by = STG }
+		3 = { is_owned_by = STG }
+		21 = { is_owned_by = STG }
+		68 = { is_owned_by = STG }
+		75 = { is_owned_by = STG }
+		153 = { is_owned_by = STG }
+		5 = { is_owned_by = STG }
+		75 = { is_owned_by = STG }
+		70 = { is_owned_by = STG }
+		136 = { is_owned_by = STG }
+		344 = { is_controlled_by = STG }
+		3 = { is_controlled_by = STG }
+		21 = { is_controlled_by = STG }
+		68 = { is_controlled_by = STG }
+		75 = { is_controlled_by = STG }
+		153 = { is_controlled_by = STG }
+		5 = { is_controlled_by = STG }
+		75 = { is_controlled_by = STG }
+		70 = { is_controlled_by = STG }
+		136 = { is_controlled_by = STG }
+		NOT = { has_global_flag = ed_eqs_reunited }
 	}
 	
-	immediate={
-		set_global_flag=ed_eqs_reunited
+	immediate = {
+		set_global_flag = ed_eqs_reunited
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.54.a
-		trigger={
-			NOT={
-				TAG=CHN
-				TAG=STG
+	option = {
+		name = edcityfall.54.a
+		trigger = {
+			NOT = {
+				TAG = CHN
+				TAG = STG
 			}
 		}
 	}
-	option={
-		name=edcityfall.54.b
-		trigger={TAG=STG}
+	option = {
+		name = edcityfall.54.b
+		trigger = { TAG = STG }
 	}
-	option={
-		name=edcityfall.54.c
-		trigger={TAG=CHN}
+	option = {
+		name = edcityfall.54.c
+		trigger = { TAG = CHN }
 	}
 }
 # Equestrian Reunification (Moonandstar)
-news_event={
-	id=edcityfall.55
-	title=edcityfall.55.t
-	desc=edcityfall.55.d
-	picture=GFX_event_moonandstar_victory	
-	major=yes
+news_event = {
+	id = edcityfall.55
+	title = edcityfall.55.t
+	desc = edcityfall.55.d
+	picture = GFX_event_moonandstar_victory	
+	major = yes
 	
-	trigger={
-		344={is_owned_by=HMS}
-		3={is_owned_by=HMS}
-		21={is_owned_by=HMS}
-		68={is_owned_by=HMS}
-		75={is_owned_by=HMS}
-		153={is_owned_by=HMS}
-		5={is_owned_by=HMS}
-		75={is_owned_by=HMS}
-		70={is_owned_by=HMS}
-		136={is_owned_by=HMS}
-		344={is_controlled_by=HMS}
-		3={is_controlled_by=HMS}
-		21={is_controlled_by=HMS}
-		68={is_controlled_by=HMS}
-		75={is_controlled_by=HMS}
-		153={is_controlled_by=HMS}
-		5={is_controlled_by=HMS}
-		75={is_controlled_by=HMS}
-		70={is_controlled_by=HMS}
-		136={is_controlled_by=HMS}
-		NOT={has_global_flag=ed_eqs_reunited}
+	trigger = {
+		344 = { is_owned_by = HMS }
+		3 = { is_owned_by = HMS }
+		21 = { is_owned_by = HMS }
+		68 = { is_owned_by = HMS }
+		75 = { is_owned_by = HMS }
+		153 = { is_owned_by = HMS }
+		5 = { is_owned_by = HMS }
+		75 = { is_owned_by = HMS }
+		70 = { is_owned_by = HMS }
+		136 = { is_owned_by = HMS }
+		344 = { is_controlled_by = HMS }
+		3 = { is_controlled_by = HMS }
+		21 = { is_controlled_by = HMS }
+		68 = { is_controlled_by = HMS }
+		75 = { is_controlled_by = HMS }
+		153 = { is_controlled_by = HMS }
+		5 = { is_controlled_by = HMS }
+		75 = { is_controlled_by = HMS }
+		70 = { is_controlled_by = HMS }
+		136 = { is_controlled_by = HMS }
+		NOT = { has_global_flag = ed_eqs_reunited }
 	}
 	
-	immediate={
-		set_global_flag=ed_eqs_reunited
+	immediate = {
+		set_global_flag = ed_eqs_reunited
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.55.a
-		trigger={
-			NOT={
-				TAG=CHN
-				TAG=HMS
+	option = {
+		name = edcityfall.55.a
+		trigger = {
+			NOT = {
+				TAG = CHN
+				TAG = HMS
 			}
 		}
 	}
-	option={
-		name=edcityfall.55.b
-		trigger={TAG=HMS}
+	option = {
+		name = edcityfall.55.b
+		trigger = { TAG = HMS }
 	}
-	option={
-		name=edcityfall.55.c
-		trigger={TAG=CHN}
+	option = {
+		name = edcityfall.55.c
+		trigger = { TAG = CHN }
 	}
 }
 # Equestrian Reunification (Whitegold)
-news_event={
-	id=edcityfall.56
-	title=edcityfall.56.t
-	desc=edcityfall.56.d
-	picture=GFX_event_whitegold_victory	
-	major=yes
+news_event = {
+	id = edcityfall.56
+	title = edcityfall.56.t
+	desc = edcityfall.56.d
+	picture = GFX_event_whitegold_victory	
+	major = yes
 	
-	trigger={
-		344={is_owned_by=HWG}
-		3={is_owned_by=HWG}
-		21={is_owned_by=HWG}
-		68={is_owned_by=HWG}
-		75={is_owned_by=HWG}
-		153={is_owned_by=HWG}
-		5={is_owned_by=HWG}
-		75={is_owned_by=HWG}
-		70={is_owned_by=HWG}
-		136={is_owned_by=HWG}
-		344={is_controlled_by=HWG}
-		3={is_controlled_by=HWG}
-		21={is_controlled_by=HWG}
-		68={is_controlled_by=HWG}
-		75={is_controlled_by=HWG}
-		153={is_controlled_by=HWG}
-		5={is_controlled_by=HWG}
-		75={is_controlled_by=HWG}
-		70={is_controlled_by=HWG}
-		136={is_controlled_by=HWG}
-		NOT={has_global_flag=ed_eqs_reunited}
+	trigger = {
+		344 = { is_owned_by = HWG }
+		3 = { is_owned_by = HWG }
+		21 = { is_owned_by = HWG }
+		68 = { is_owned_by = HWG }
+		75 = { is_owned_by = HWG }
+		153 = { is_owned_by = HWG }
+		5 = { is_owned_by = HWG }
+		75 = { is_owned_by = HWG }
+		70 = { is_owned_by = HWG }
+		136 = { is_owned_by = HWG }
+		344 = { is_controlled_by = HWG }
+		3 = { is_controlled_by = HWG }
+		21 = { is_controlled_by = HWG }
+		68 = { is_controlled_by = HWG }
+		75 = { is_controlled_by = HWG }
+		153 = { is_controlled_by = HWG }
+		5 = { is_controlled_by = HWG }
+		75 = { is_controlled_by = HWG }
+		70 = { is_controlled_by = HWG }
+		136 = { is_controlled_by = HWG }
+		NOT = { has_global_flag = ed_eqs_reunited }
 	}
 	
-	immediate={
-		set_global_flag=ed_eqs_reunited
+	immediate = {
+		set_global_flag = ed_eqs_reunited
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.56.a
-		trigger={
-			NOT={
-				TAG=CHN
-				TAG=HWG
+	option = {
+		name = edcityfall.56.a
+		trigger = {
+			NOT = {
+				TAG = CHN
+				TAG = HWG
 			}
 		}
 	}
-	option={
-		name=edcityfall.56.b
-		trigger={TAG=HWG}
+	option = {
+		name = edcityfall.56.b
+		trigger = { TAG = HWG }
 	}
-	option={
-		name=edcityfall.56.c
-		trigger={TAG=CHN}
+	option = {
+		name = edcityfall.56.c
+		trigger = { TAG = CHN }
 	}
 }
 # Equestrian Reunification (Stormwind)
-news_event={
-	id=edcityfall.57
-	title=edcityfall.57.t
-	desc=edcityfall.57.d
-	picture=GFX_event_stormwing_victory	
-	major=yes
+news_event = {
+	id = edcityfall.57
+	title = edcityfall.57.t
+	desc = edcityfall.57.d
+	picture = GFX_event_stormwing_victory	
+	major = yes
 	
-	trigger={
-		344={is_owned_by=HSW}
-		3={is_owned_by=HSW}
-		21={is_owned_by=HSW}
-		68={is_owned_by=HSW}
-		75={is_owned_by=HSW}
-		153={is_owned_by=HSW}
-		5={is_owned_by=HSW}
-		75={is_owned_by=HSW}
-		70={is_owned_by=HSW}
-		136={is_owned_by=HSW}
-		344={is_controlled_by=HSW}
-		3={is_controlled_by=HSW}
-		21={is_controlled_by=HSW}
-		68={is_controlled_by=HSW}
-		75={is_controlled_by=HSW}
-		153={is_controlled_by=HSW}
-		5={is_controlled_by=HSW}
-		75={is_controlled_by=HSW}
-		70={is_controlled_by=HSW}
-		136={is_controlled_by=HSW}
-		NOT={has_global_flag=ed_eqs_reunited}
+	trigger = {
+		344 = { is_owned_by = HSW }
+		3 = { is_owned_by = HSW }
+		21 = { is_owned_by = HSW }
+		68 = { is_owned_by = HSW }
+		75 = { is_owned_by = HSW }
+		153 = { is_owned_by = HSW }
+		5 = { is_owned_by = HSW }
+		75 = { is_owned_by = HSW }
+		70 = { is_owned_by = HSW }
+		136 = { is_owned_by = HSW }
+		344 = { is_controlled_by = HSW }
+		3 = { is_controlled_by = HSW }
+		21 = { is_controlled_by = HSW }
+		68 = { is_controlled_by = HSW }
+		75 = { is_controlled_by = HSW }
+		153 = { is_controlled_by = HSW }
+		5 = { is_controlled_by = HSW }
+		75 = { is_controlled_by = HSW }
+		70 = { is_controlled_by = HSW }
+		136 = { is_controlled_by = HSW }
+		NOT = { has_global_flag = ed_eqs_reunited }
 	}
 	
-	immediate={
-		set_global_flag=ed_eqs_reunited
+	immediate = {
+		set_global_flag = ed_eqs_reunited
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.57.a
-		trigger={
-			NOT={
-				TAG=CHN
-				TAG=HSW
+	option = {
+		name = edcityfall.57.a
+		trigger = {
+			NOT = {
+				TAG = CHN
+				TAG = HSW
 			}
 		}
 	}
-	option={
-		name=edcityfall.57.b
-		trigger={TAG=HSW}
+	option = {
+		name = edcityfall.57.b
+		trigger = { TAG = HSW }
 	}
-	option={
-		name=edcityfall.57.c
-		trigger={TAG=CHN}
+	option = {
+		name = edcityfall.57.c
+		trigger = { TAG = CHN }
 	}
 }
 # Equestrian Reunification (Everfree)
-news_event={
-	id=edcityfall.58
-	title=edcityfall.58.t
-	desc=edcityfall.58.d
-	picture=GFX_event_everfree_victory	
-	major=yes
+news_event = {
+	id = edcityfall.58
+	title = edcityfall.58.t
+	desc = edcityfall.58.d
+	picture = GFX_event_everfree_victory	
+	major = yes
 	
-	trigger={
-		344={is_owned_by=HEF}
-		3={is_owned_by=HEF}
-		21={is_owned_by=HEF}
-		68={is_owned_by=HEF}
-		75={is_owned_by=HEF}
-		153={is_owned_by=HEF}
-		5={is_owned_by=HEF}
-		75={is_owned_by=HEF}
-		70={is_owned_by=HEF}
-		136={is_owned_by=HEF}
-		344={is_controlled_by=HEF}
-		3={is_controlled_by=HEF}
-		21={is_controlled_by=HEF}
-		68={is_controlled_by=HEF}
-		75={is_controlled_by=HEF}
-		153={is_controlled_by=HEF}
-		5={is_controlled_by=HEF}
-		75={is_controlled_by=HEF}
-		70={is_controlled_by=HEF}
-		136={is_controlled_by=HEF}
-		NOT={has_global_flag=ed_eqs_reunited}
+	trigger = {
+		344 = { is_owned_by = HEF }
+		3 = { is_owned_by = HEF }
+		21 = { is_owned_by = HEF }
+		68 = { is_owned_by = HEF }
+		75 = { is_owned_by = HEF }
+		153 = { is_owned_by = HEF }
+		5 = { is_owned_by = HEF }
+		75 = { is_owned_by = HEF }
+		70 = { is_owned_by = HEF }
+		136 = { is_owned_by = HEF }
+		344 = { is_controlled_by = HEF }
+		3 = { is_controlled_by = HEF }
+		21 = { is_controlled_by = HEF }
+		68 = { is_controlled_by = HEF }
+		75 = { is_controlled_by = HEF }
+		153 = { is_controlled_by = HEF }
+		5 = { is_controlled_by = HEF }
+		75 = { is_controlled_by = HEF }
+		70 = { is_controlled_by = HEF }
+		136 = { is_controlled_by = HEF }
+		NOT = { has_global_flag = ed_eqs_reunited }
 	}
 	
-	immediate={
-		set_global_flag=ed_eqs_reunited
+	immediate = {
+		set_global_flag = ed_eqs_reunited
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.58.a
-		trigger={
-			NOT={
-				TAG=CHN
-				TAG=HEF
+	option = {
+		name = edcityfall.58.a
+		trigger = {
+			NOT = {
+				TAG = CHN
+				TAG = HEF
 			}
 		}
 	}
-	option={
-		name=edcityfall.58.b
-		trigger={TAG=HEF}
+	option = {
+		name = edcityfall.58.b
+		trigger = { TAG = HEF }
 	}
-	option={
-		name=edcityfall.58.c
-		trigger={TAG=CHN}
+	option = {
+		name = edcityfall.58.c
+		trigger = { TAG = CHN }
 	}
 }
 # Equestrian Reunification (Earthborn)
-news_event={
-	id=edcityfall.59
-	title=edcityfall.59.t
-	desc=edcityfall.59.d
-	picture=GFX_event_earthborn_victory	
-	major=yes
+news_event = {
+	id = edcityfall.59
+	title = edcityfall.59.t
+	desc = edcityfall.59.d
+	picture = GFX_event_earthborn_victory	
+	major = yes
 	
-	trigger={
-		344={is_owned_by=HEB}
-		3={is_owned_by=HEB}
-		21={is_owned_by=HEB}
-		68={is_owned_by=HEB}
-		75={is_owned_by=HEB}
-		153={is_owned_by=HEB}
-		5={is_owned_by=HEB}
-		75={is_owned_by=HEB}
-		70={is_owned_by=HEB}
-		136={is_owned_by=HEB}
-		344={is_controlled_by=HEB}
-		3={is_controlled_by=HEB}
-		21={is_controlled_by=HEB}
-		68={is_controlled_by=HEB}
-		75={is_controlled_by=HEB}
-		153={is_controlled_by=HEB}
-		5={is_controlled_by=HEB}
-		75={is_controlled_by=HEB}
-		70={is_controlled_by=HEB}
-		136={is_controlled_by=HEB}
-		NOT={has_global_flag=ed_eqs_reunited}
+	trigger = {
+		344 = { is_owned_by = HEB }
+		3 = { is_owned_by = HEB }
+		21 = { is_owned_by = HEB }
+		68 = { is_owned_by = HEB }
+		75 = { is_owned_by = HEB }
+		153 = { is_owned_by = HEB }
+		5 = { is_owned_by = HEB }
+		75 = { is_owned_by = HEB }
+		70 = { is_owned_by = HEB }
+		136 = { is_owned_by = HEB }
+		344 = { is_controlled_by = HEB }
+		3 = { is_controlled_by = HEB }
+		21 = { is_controlled_by = HEB }
+		68 = { is_controlled_by = HEB }
+		75 = { is_controlled_by = HEB }
+		153 = { is_controlled_by = HEB }
+		5 = { is_controlled_by = HEB }
+		75 = { is_controlled_by = HEB }
+		70 = { is_controlled_by = HEB }
+		136 = { is_controlled_by = HEB }
+		NOT = { has_global_flag = ed_eqs_reunited }
 	}
 	
-	immediate={
-		set_global_flag=ed_eqs_reunited
+	immediate = {
+		set_global_flag = ed_eqs_reunited
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.59.a
-		trigger={
-			NOT={
-				TAG=CHN
-				TAG=HEB
+	option = {
+		name = edcityfall.59.a
+		trigger = {
+			NOT = {
+				TAG = CHN
+				TAG = HEB
 			}
 		}
 	}
-	option={
-		name=edcityfall.59.b
-		trigger={TAG=HEB}
+	option = {
+		name = edcityfall.59.b
+		trigger = { TAG = HEB }
 	}
-	option={
-		name=edcityfall.59.c
-		trigger={TAG=CHN}
+	option = {
+		name = edcityfall.59.c
+		trigger = { TAG = CHN }
 	}
 }
 # Equestrian Conquest (Changelings)
-news_event={
-	id=edcityfall.60
-	title=edcityfall.60.t
-	desc=edcityfall.60.d
-	picture=GFX_event_changeling_victory	
-	major=yes
+news_event = {
+	id = edcityfall.60
+	title = edcityfall.60.t
+	desc = edcityfall.60.d
+	picture = GFX_event_changeling_victory	
+	major = yes
 	
-	trigger={
-		344={is_owned_by=CHN}
-		3={is_owned_by=CHN}
-		21={is_owned_by=CHN}
-		68={is_owned_by=CHN}
-		75={is_owned_by=CHN}
-		153={is_owned_by=CHN}
-		5={is_owned_by=CHN}
-		75={is_owned_by=CHN}
-		70={is_owned_by=CHN}
-		136={is_owned_by=CHN}
-		344={is_controlled_by=CHN}
-		3={is_controlled_by=CHN}
-		21={is_controlled_by=CHN}
-		68={is_controlled_by=CHN}
-		75={is_controlled_by=CHN}
-		153={is_controlled_by=CHN}
-		5={is_controlled_by=CHN}
-		75={is_controlled_by=CHN}
-		70={is_controlled_by=CHN}
-		136={is_controlled_by=CHN}
-		NOT={has_global_flag=ed_eqs_conquered}
+	trigger = {
+		344 = { is_owned_by = CHN }
+		3 = { is_owned_by = CHN }
+		21 = { is_owned_by = CHN }
+		68 = { is_owned_by = CHN }
+		75 = { is_owned_by = CHN }
+		153 = { is_owned_by = CHN }
+		5 = { is_owned_by = CHN }
+		75 = { is_owned_by = CHN }
+		70 = { is_owned_by = CHN }
+		136 = { is_owned_by = CHN }
+		344 = { is_controlled_by = CHN }
+		3 = { is_controlled_by = CHN }
+		21 = { is_controlled_by = CHN }
+		68 = { is_controlled_by = CHN }
+		75 = { is_controlled_by = CHN }
+		153 = { is_controlled_by = CHN }
+		5 = { is_controlled_by = CHN }
+		75 = { is_controlled_by = CHN }
+		70 = { is_controlled_by = CHN }
+		136 = { is_controlled_by = CHN }
+		NOT = { has_global_flag = ed_eqs_conquered }
 	}
 	
-	immediate={
-		set_global_flag=ed_eqs_conquered
+	immediate = {
+		set_global_flag = ed_eqs_conquered
 	}
 	
-	mean_time_to_happen={
-		days=2
+	mean_time_to_happen = {
+		days = 2
 	}
 	
-	option={
-		name=edcityfall.60.a
-		trigger={
-			NOT={
-				TAG=CHN
-				TAG=CCN
+	option = {
+		name = edcityfall.60.a
+		trigger = {
+			NOT = {
+				TAG = CHN
+				TAG = CCN
 			}
 		}
 	}
-	option={
-		name=edcityfall.60.b
-		trigger={TAG=CHN}
+	option = {
+		name = edcityfall.60.b
+		trigger = { TAG = CHN }
 	}
-	option={
-		name=edcityfall.60.c
-		trigger={TAG=CCN}
+	option = {
+		name = edcityfall.60.c
+		trigger = { TAG = CCN }
 	}
 }

@@ -1,0 +1,6 @@
+COL = "countries/Cult.txt"
+HWG = "countries/Whitegold.txt"
+HEB = "countries/Earthborn.txt"
+HMS = "countries/Moonandstar.txt"
+HEF = "countries/Everfree.txt"
+HSW = "countries/Stormwind.txt"

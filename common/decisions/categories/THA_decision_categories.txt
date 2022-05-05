@@ -1,6 +1,0 @@
-THA_the_king={
-	#icon=#
-	priority=100
-	allowed={tag=THA}
-	visible={has_country_flag=THA_the_king_speaks}
-}

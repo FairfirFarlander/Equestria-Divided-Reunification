@@ -1,0 +1,130 @@
+characters = {
+	ED_Pinkie = {
+		name = "The Laughing Mare"
+		gender = female
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/COL/Pinkier.dds"
+			}
+			army = {
+				large = "gfx/leaders/COL/Pinkied.dds"
+			}
+		}
+		country_leader = {
+			ideology = falangism
+			expire = "1965.1.1"
+			traits = { FIR_necromancer }
+			id = -1
+		}
+		country_leader = {
+			ideology = religious_socialism
+			expire = "1965.1.1"
+			traits = { FIR_necromancer }
+			id = -1
+		}
+		country_leader = {
+			ideology = centrism
+			expire = "1965.1.1"
+			traits = {}
+			id = -1
+		}
+		field_marshal = {
+			skill = 6
+			attack_skill = 6
+			defense_skill = 6
+			planning_skill = 6
+			logistics_skill = 6
+			traits = { unspecified_race_trait }
+		}
+	}
+	ED_Melody = {
+		name = "Unknown Melody"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/leader_unknown.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = "1965.1.1"
+			traits = {}
+			id = -1
+		}
+	}
+	ED_Cranky = {
+		name = "High Prophet Cranky Doodle"
+		portraits = {
+			army = {
+				large = "gfx/leaders/COL/Cranky.dds"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = { unspecified_race_trait old_guard }
+		}
+	}
+	ED_Derpy = {
+		name = "Prophet Derpy"
+		gender = female
+		portraits = {
+			army = {
+				large = "gfx/leaders/COL/Derpy.dds"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = {pony_race_trait offensive_doctrine}
+		}
+	}
+	ED_Lyra = {
+		name = "Prophet Lyra Heartstrings"
+		gender = female
+		portraits = {
+			army = {
+				large = "gfx/leaders/COL/Lyra.dds"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = {pony_race_trait}
+		}
+	}
+	ED_Surprise = {
+		name = "Prophet Surprise"
+		gender = female
+		portraits = {
+			army = {
+				large = "gfx/leaders/COL/Surprise.dds"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = {pony_race_trait}
+		}
+	}
+	ED_Screwball = {
+		name = "Prophet Screwball"
+		gender = female
+		portraits = {
+			army = {
+				large = "gfx/leaders/COL/Screwball.dds"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = {pony_race_trait}
+		}
+	}
+	ED_Pokey = {
+		name = "Prophet Pokey Pierce"
+		portraits = {
+			army = {
+				large = "gfx/leaders/COL/Pokey.dds"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = {pony_race_trait}
+		}
+	}
+}

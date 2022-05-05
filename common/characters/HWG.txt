@@ -1,258 +1,110 @@
-characters={
-	HWG_rarity={
-		name=HWG_rarity	#mistress rarity
-		gender=female
-		portraits={
-			civilian={large="gfx/leaders/HWG/HWG_rarity.dds"}
-			army={large="gfx/leaders/HWG/HWG_rarity.dds"}
-		}
-		country_leader={
-			desc="HWG_rarity_poli_desc"
-			ideology=plutocracy
-			expire="1017.09.8.20"	#Based on 982 - Lives to 30 : Used to be 1012 so now 35#
-			traits={}
-			id=-1
-		}
-		field_marshal={
-			desc="HWG_rarity_mili_desc"
-			skill=1	attack_skill=2	defense_skill=2
-			planning_skill=1	logistics_skill=1
-			traits={pony_race_trait politically_connected}
-		}
-	}
-	HWG_shooter_mark={
-		name=HWG_shooter_mark
-		#portraits={civilian={large="gfx/leaders/HWG/HWG_shooter_mark.dds"}}#
-		country_leader={
-			desc="HWG_smark_mili_desc"	ideology=anarchist_communism
-			expire="1030.03.13.08"
-			traits={}
-			id=-1
-		}
-	}
-	HWG_fleur_de_lis={
-		name=HWG_fleur_de_lis
-		gender=female
-		portraits={
-			civilian={
-				large="gfx/leaders/HWG/HWG_fleur_de_lis.dds"
-				#small="gfx/leaders/HWG/HWG_fleur_de_lis_small.dds"#
+characters = {
+	ED_Rarity = {
+		name = "Mistress Rarity"
+		gender = female
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HWG/Rarity.dds"
 			}
-			army={
-				large="gfx/leaders/HWG/HWG_fleur_de_lis.dds"
-				#small="gfx/leaders/HWG/HWG_fleur_de_lis_small.dds"#
+			army = {
+				large = "gfx/leaders/HWG/Rarity.dds"
 			}
 		}
-		country_leader={
-			desc="HWG_fdlis_poli_desc"	ideology=oligarchism
-			expire="1030.03.13.08"
-			traits={}
-			id=-1
+		country_leader = {
+			ideology = plutocracy
+			expire = "1965.1.1"
+			traits = {}
+			id = -1
 		}
-		corps_commander={
-			desc="HWG_fdlis_mili_desc"
-			skill=2 attack_skill=2	defense_skill=2
-			planning_skill=2	logistics_skill=1
-			traits={pony_race_trait media_personality vigilant_sentinel}
+		field_marshal = {
+			desc = "HWG_rarity_mili_desc"
+			skill = 1
+			traits = { pony_race_trait }
 		}
-		#advisor={
-		#	slot=political_advisor
-		#	idea_token=HWG_fdlis_advi
-		#	available={has_intelligence_agency=yes}
-		#	visible={has_dlc="La Resistance"}
-		#	traits={head_of_intelligence}	#upgrade me
-		#}
-		#advisor={
-		#	slot=political_advisor
-		#	idea_token=HWG_fleur_de_lis
-		#	available={not={has_country_flag=fleur_de_lis_arrested}}
-		#	traits={backroom_backstabber}	#upgrade me?
-		#}#See HWG-Whitegold.txt in countries.
 	}
-	HWG_fancy_pants={
-		name=HWG_fancy_pants
-		portraits={
-			civilian={
-				large="gfx/leaders/EQS/Prez-PM_Pants.tga"
-				small="GFX_idea_fancy_pants"
-			}
-			army={
-				large="gfx/leaders/EQS/Prez-PM_Pants.tga"
-				small="GFX_idea_fancy_pants"
+	ED_Shooter = {
+		name = "Shooter Mark"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/leader_unknown.dds"
 			}
 		}
-		country_leader={
-			desc="HWG_fpants_poli_desc"	ideology=liberalism
-			expire="1030.03.13.08"
-			traits={}
-			id=-1
-		}
-		corps_commander={
-			desc="HWG_fpants_mili_desc"
-			skill=2 attack_skill=1	defense_skill=3
-			planning_skill=2	logistics_skill=1
-			traits={pony_race_trait politically_connected trait_cautious}
-		}
-		advisor={
-			slot=political_advisor
-			idea_token=HWG_fpants_advi
-			traits={smooth_talking_charmer}
+		country_leader = {
+			ideology = anarchist_communism
+			expire = "1965.1.1"
+			traits = {}
+			id = -1
 		}
 	}
-	HWG_clair_de_lune={
-		name=HWG_clair_de_lune	#HWG_hornybastard - Why dafuq did I agree to dis joke name?#
-		gender=female			#--Farlander shrugged-- ~FF#
-		portraits={
-			civilian={
-				large="gfx/leaders/HWG/HWG_clair_de_lune.dds"
-				#small="gfx/leaders/HWG/HWG_clair_de_lune_small.dds"#
+	ED_Fleur = {
+		name = "Fleur de Lis"
+		gender = female
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HWG/Fleur.dds"
 			}
-			army={
-				large="gfx/leaders/HWG/HWG_clair_de_lune.dds"
-				#small="gfx/leaders/HWG/HWG_clair_de_lune_small.dds"#
+			army = {
+				large = "gfx/leaders/HWG/Fleur.dds"
 			}
 		}
-		corps_commander={
-			desc="HWG_cdlune_mili_desc"
-			skill=1 attack_skill=1	defense_skill=1
-			planning_skill=1	logistics_skill=1
-			traits={thestral_race_trait}	#add siren trait
+		country_leader = {
+			ideology = oligarchism
+			expire = "1965.1.1"
+			traits = {}
+			id = -1
+		}
+		corps_commander = {
+			skill = 1
+			traits = { pony_race_trait }
 		}
 	}
-	HWG_mashed_potato={
-		name=HWG_mashed_potato
-		portraits={
-			army={
-				large="gfx/leaders/HWG/HWG_mashed_potato.dds"
-				#small="gfx/leaders/HWG/HWG_mashed_potato_small.dds"
+	ED_Fancy = {
+		name = "General Fancy Pants"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EQS/Prez-PM_Pants.tga"
+				small = "GFX_idea_fancy_pants"
+			}
+			army = {
+				large = "gfx/leaders/EQS/Prez-PM_Pants.tga"
+				small = "GFX_idea_fancy_pants"
 			}
 		}
-		corps_commander={
-			desc="HWG_mpotato_mili_desc"
-			skill=1 attack_skill=1	defense_skill=1
-			planning_skill=1	logistics_skill=1
-			traits={diamond_dog_race_trait}
+		country_leader = {
+			ideology = liberalism
+			expire = "1965.1.1"
+			traits = {}
+			id = -1
+		}
+		corps_commander = {
+			skill = 1
+			traits = { pony_race_trait }
 		}
 	}
-	HWG_generic_admiral={
-		name=HWG_generic_admiral
-		gender=female
-		#portraits={
-		#	army={
-		#		large="gfx/leaders/HWG/HWG_generic_admiral.dds"
-		#		small="gfx/leaders/HWG/HWG_generic_admiral_small.dds"#
-		#	}
-		#}
-		navy_leader={
-			desc="HWG_gadmiral_navy_desc"
-			skill=1	attack_skill=1	defense_skill=1
-			maneuvering_skill=2	coordination_skill=2
-			traits={pony_race_trait aviation_enthusiast}
-		}
-	}
-	HWG_flim_flam={
-		name=HWG_flim_flam
-		portraits={civilian={small="GFX_idea_flim"}}
-		advisor={
-			slot=political_advisor
-			idea_token=HWG_fflam_advi
-			available={has_country_flag=HWG_flim_flam_hired}
-			traits={captain_of_industry}
-		}
-	}
-	HWG_filthy_rich={
-		name=HWG_filthy_rich
-		portraits={
-			civilian={
-				large="gfx/leaders/EQS/Prez-PM_Filth.tga"
-				small="GFX_idea_filthy_rich"
+	ED_Diamond = {
+		name = "Diamond Tiara"
+		gender = female
+		portraits = {
+			army = {
+				large = "gfx/leaders/HWG/Tiara.dds"
 			}
 		}
-		advisor={
-			slot=political_advisor
-			idea_token=HWG_frich_advi
-			available={has_country_flag=HWG_filthy_rich_dead}
-			traits={smooth_talking_charmer}
+		corps_commander = {
+			skill = 1
+			traits = { pony_race_trait }
 		}
 	}
-	HWG_diamond_tiara={
-		name=HWG_diamond_tiara
-		gender=female
-		#portraits={civilian={small="gfx/leaders/HWG/HWG_diamond_tiara_small.dds"}}#
-		advisor={
-			slot=political_advisor
-			idea_token=HWG_dtiara_advi
-			available={has_country_flag=HWG_filthy_rich_dead}
-			traits={smooth_talking_charmer}
-		}
-	}
-	HWG_sweetie_belle={
-		name=HWG_sweetie_belle
-		gender=female
-		portraits={
-			civilian={
-				#small="gfx/leaders/HWG/HWG_sweetie_belle_small.dds"#
+	ED_Sweetie = {
+		name = "Sweetie Belle"
+		gender = female
+		portraits = {
+			army = {
+				large = "gfx/leaders/HWG/Sweetie.dds"
 			}
 		}
-		advisor={
-			slot=political_advisor
-			idea_token=HWG_sbelle_advi
-			available={has_global_flag=rarity_is_dead}
-			traits={known_pony}
-		}
-	}
-	HWG_nighthooves={
-		name=HWG_nighthooves
-		#portraits={civilian={small="gfx/leaders/HWG/HWG_nighthooves.dds"}}#
-		#advisor={
-		#	slot=political_advisor
-		#	idea_token=HWG_nighthooves_advi
-		#	available={has_intelligence_agency=yes}
-		#	visible={has_dlc="La Resistance"}
-		#	traits={head_of_intelligence}
-		#}
-		advisor={
-			slot=high_command
-			ledger=army
-			idea_token=HWG_nighthooves_high
-			cost=50
-			traits={}
-		}
-	}
-	HWG_whispy_locks={
-		name=HWG_whispy_locks
-		portraits={civilian={small="gfx/leaders/HWG/small/HWG_whispy_locks_small.dds"}}
-		advisor={
-			slot=political_advisor
-			idea_token=HWG_wlocks_advi
-			traits={}
-		}
-	}
-	HWG_lemon_meringue={
-		name=HWG_lemon_meringue
-		portraits={civilian={small="gfx/leaders/HWG/small/HWG_lemon_meringue_small.dds"}}
-		advisor={
-			slot=political_advisor
-			idea_token=HWG_lmeringue_advi
-			traits={}
-		}
-	}
-	HWG_prim_n_proper={
-		name=HWG_prim_n_proper
-		portraits={civilian={small="gfx/leaders/HWG/small/HWG_prim_n_proper_small.dds"}}
-		advisor={
-			slot=political_advisor
-			idea_token=HWG_pnproper_advi
-			traits={}
-		}
-	}
-	HWG_straight_arrow={
-		name=HWG_straight_arrow
-		portraits={civilian={small="gfx/leaders/HWG/small/HWG_straight_arrow_small.dds"}}
-		advisor={
-			slot=political_advisor
-			idea_token=HWG_sarrow_advi
-			traits={}
+		corps_commander = {
+			skill = 1
+			traits = { pony_race_trait }
 		}
 	}
 }

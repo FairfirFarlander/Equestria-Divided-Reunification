@@ -1,6 +1,0 @@
-﻿l_english:
-#Generic Events#
- EDR_evt_gen.000.t:"Event Verbosity"
-  EDR_evt_gen.000.d:"Equestria Divided: Reunification as a mod is focused more on story-telling rather than actual gameplay. While we try our best to keep things objective, we should warn you that the event frequency can be very frequent and verbose. For this reason, we are giving you, the player, the option to reduce non-critical events. This is a quality of life improvement you may benefit from over time. That said, we hope you enjoy the mod. Thank you.\n\n~The Equestria Divided: Reunification Team"
-  EDR_evt_gen.000.a:"Keep all events enabled. \n§GRecommended for singleplayer playthroughs.§!"
-  EDR_evt_gen.000.b:"Reduce non-critical event frequency.\n§CRecommended for multiplayer playthroughs.§!"

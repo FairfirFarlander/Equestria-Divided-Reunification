@@ -1,10 +1,7 @@
-version="2110_0.0.3"
+version="1.00"
 tags={
 	"Alternative History"
-	"National Focuses"
-	"Military"
-	"Map"
 }
-name="EAW: Equestria Divided Reunification"
-dependencies={"Equestria at War"}
-supported_version="1.11.4"
+name="EAW: Equestria Divided"
+supported_version="1.9.3"
+remote_file_id="2144499326"

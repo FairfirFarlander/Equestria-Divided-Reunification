@@ -1,0 +1,1581 @@
+focus_tree = {
+	id = COL
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = COL
+		}
+	}
+	#Focus for Retake New Mareland
+	focus = {
+		id = COL_retake_new_mareland
+		icon = GFX_goal_generic_major_war
+		x = 17
+		y = 10
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_assert_control_over_the_crystal_dominion }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = EQC
+}
+		}
+	}
+
+	#Focus for Assert Control over the Crystal Dominion
+	focus = {
+		id = COL_assert_control_over_the_crystal_dominion
+		icon = GFX_goal_generic_forceful_treaty
+		x = 21
+		y = 8
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_retake_control }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			every_state = { limit = { is_core_of = CRY } add_core_of = COL }
+		}
+	}
+
+	#Focus for Take care of the Changeling Threat
+	focus = {
+		id = COL_take_care_of_the_changeling_threat
+		icon = GFX_goal_generic_CAS
+		x = 19
+		y = 10
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_assert_control_over_the_crystal_dominion }
+		mutually_exclusive = { focus = COL_let_them_come }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = CHN
+}
+create_wargoal= { 
+type = annex_everything 
+target = CCN
+}
+		}
+	}
+
+	#Focus for Let Them Come
+	focus = {
+		id = COL_let_them_come
+		icon = GFX_goal_generic_fortify_city
+		x = 22
+		y = 10
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_assert_control_over_the_crystal_dominion }
+		mutually_exclusive = { focus = COL_take_care_of_the_changeling_threat }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= deterrence
+		}
+	}
+
+	#Focus for Calm Before The Storm
+	focus = {
+		id = COL_calm_before_the_storm
+		icon = GFX_goal_generic_alliance
+		x = 24
+		y = 2
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = COL_more_industry 
+		}
+		prerequisite = { 
+			focus = COL_more_weapons 
+		}
+		prerequisite = { 
+			focus = COL_fully_mobolize_our_nation 
+		}
+		ai_will_do = {
+			factor = 2
+		}
+		completion_reward = {
+			add_war_support= 0.25
+                        add_threat = 5
+			every_state = { limit = { is_core_of = HMS } add_claim_by = COL }
+			every_state = { limit = { is_core_of = HSW } add_claim_by = COL }
+			every_state = { limit = { is_core_of = HWG } add_claim_by = COL }
+			every_state = { limit = { is_core_of = HEF } add_claim_by = COL }
+			every_state = { limit = { is_core_of = HEB } add_claim_by = COL }
+			every_state = { limit = { is_core_of = CRY } add_claim_by = COL }
+			every_state = { limit = { is_core_of = STG } add_claim_by = COL }
+			every_state = { limit = { is_core_of = STL } add_claim_by = COL }
+		}
+	}
+
+	#Focus for More industry
+	focus = {
+		id = COL_more_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 24
+		y = 1
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_the_war }
+		ai_will_do = {
+			factor = 2
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for War to Everfree
+	focus = {
+		id = COL_war_to_everfree
+		icon = GFX_goal_generic_major_war
+		x = 21
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_calm_before_the_storm }
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			tag= HEF
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = HEF
+}
+create_wargoal= { 
+type = annex_everything 
+target = DRG
+}
+		}
+	}
+
+	#Focus for War to Appleloosa
+	focus = {
+		id = COL_war_to_appleloosa
+		icon = GFX_goal_generic_major_war
+		x = 23
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_calm_before_the_storm }
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			tag= HEB
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = HEB
+}
+		}
+	}
+
+	#Focus for War against Stalliongrad
+	focus = {
+		id = COL_war_against_stalliongrad
+		icon = GFX_goal_generic_major_war
+		x = 31
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_calm_before_the_storm }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = STG
+}
+create_wargoal= { 
+type = annex_everything 
+target = STL
+}
+		}
+	}
+
+	#Focus for Equestria: Reunited
+	focus = {
+		id = COL_equestria_reunited
+		icon = GFX_goal_generic_attack_allies
+		x = 24
+		y = 6
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = COL_war_to_everfree 
+		}
+		prerequisite = { 
+			focus = COL_war_to_appleloosa 
+		}
+		prerequisite = { 
+			focus = COL_war_against_stalliongrad 
+		}
+		prerequisite = { 
+			focus = COL_war_to_cloudsdale 
+		}
+		prerequisite = { 
+			focus = COL_war_against_the_crystal_empire 
+		}
+		prerequisite = { 
+			focus = COL_war_to_canterlot 
+		}
+		prerequisite = { 
+			focus = COL_war_against_laughter 
+		}
+		prerequisite = { 
+			focus = COL_war_to_manehattan 
+		}
+		ai_will_do = {
+			factor = 8
+		}
+		available = {
+			owns_state= 3
+			owns_state= 5
+			owns_state= 21
+			owns_state= 75
+			owns_state= 68
+			owns_state= 70
+			owns_state= 344
+			owns_state= 153
+		}
+		completion_reward = {
+			create_faction= Laughter_Hegemony
+                        set_cosmetic_tag = LAUGHTER 
+		}
+	}
+
+	#Focus for War to Cloudsdale
+	focus = {
+		id = COL_war_to_cloudsdale
+		icon = GFX_goal_generic_major_war
+		x = 25
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_calm_before_the_storm }
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			tag= HSW
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = HSW
+}
+		}
+	}
+
+	#Focus for War Against the Crystal Empire
+	focus = {
+		id = COL_war_against_the_crystal_empire
+		icon = GFX_goal_generic_major_war
+		x = 29
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_calm_before_the_storm }
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = CRY
+}
+		}
+	}
+
+	#Focus for More weapons
+	focus = {
+		id = COL_more_weapons
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 31
+		y = 1
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_the_war }
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for War to Manehattan
+	focus = {
+		id = COL_war_to_manehattan
+		icon = GFX_goal_generic_major_war
+		x = 19
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_calm_before_the_storm }
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			tag= HWG
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = HWG
+}
+		}
+	}
+
+	#Focus for Fully Mobolize Our Nation
+	focus = {
+		id = COL_fully_mobolize_our_nation
+		icon = GFX_goal_generic_small_arms
+		x = 17
+		y = 1
+		cost = 7
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = { focus = COL_the_war }
+		completion_reward = {
+			add_manpower= 2000000
+		}
+	}
+
+	#Focus for The War
+	focus = {
+		id = COL_the_war
+		icon = GFX_goal_generic_demand_territory
+		x = 24
+		y = 0
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			add_political_power = 250
+			add_threat = 5
+		}
+	}
+
+	#Focus for Extra Research Slot
+	focus = {
+		id = COL_extra_research_slot
+		icon = GFX_focus_research
+		x = 12
+		y = 5
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_construction_effort_iii }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus extra_tech_slot"
+			add_research_slot = 1
+		}
+	}
+
+	#Focus for Extra Research slot II
+	focus = {
+		id = COL_extra_research_slot_ii
+		icon = GFX_focus_research
+		x = 12
+		y = 6
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_extra_research_slot }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			num_of_factories > 50
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus extra_tech_slot_2"
+			add_research_slot = 1
+		}
+	}
+
+	#Focus for Secret Weapons
+	focus = {
+		id = COL_secret_weapons
+		icon = GFX_goal_generic_secret_weapon
+		x = 14
+		y = 5
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_construction_effort_iii }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus secret_weapons"
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 1.0
+				uses = 4
+				category = electronics
+				category = nuclear
+				category = rocketry
+			}
+		}
+	}
+
+	#Focus for Nuclear Effort
+	focus = {
+		id = COL_nuclear_effort
+		icon = GFX_focus_wonderweapons
+		x = 14
+		y = 6
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_secret_weapons }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus nuclear_effort"
+			add_tech_bonus = {
+				name = nuclear_bonus
+				ahead_reduction = 1
+				category = nuclear
+			}
+		}
+	}
+
+	#Focus for Modern Society
+	focus = {
+		id = COL_modern_society
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 24
+		y = 11
+		cost = 15
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_early_industrial_society }
+		bypass = {
+			
+			NOT = { has_idea = outdated_industry }
+		
+		}
+		available = {
+			
+			num_of_factories > 40
+		
+		}
+		completion_reward = {
+			
+			log = "[GetDateText]: [Root.GetName]: Focus remove_outdated_industry"
+			add_ideas = modern_society
+		
+		}
+	}
+
+	#Focus for Agrarian Society
+	focus = {
+		id = COL_agrarian_society
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 24
+		y = 8
+		cost = 20
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_transform }
+		search_filters = {  FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH  } 
+		bypass = {
+			
+			NOT = { has_idea = agrarian_society }
+		
+		}
+		available = {
+			
+			num_of_factories > 25
+		
+		}
+		completion_reward = {
+			
+			log = "[GetDateText]: [Root.GetName]: Focus remove_agrarian_society"
+			add_ideas = pre_industrial_society
+		
+		}
+	}
+
+	#Focus for Early Industrial Society
+	focus = {
+		id = COL_early_industrial_society
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 24
+		y = 9
+		cost = 15
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_agrarian_society }
+		search_filters = {  FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH  } 
+		bypass = {
+			
+			NOT = { has_idea = pre_industrial_society }
+		
+		}
+		available = {
+			
+			num_of_factories > 35
+		
+		}
+		completion_reward = {
+			
+			log = "[GetDateText]: [Root.GetName]: Focus remove_pre_industrial_society"
+			add_ideas = outdated_industry
+		
+		}
+	}
+
+	#Focus for Transform
+	focus = {
+		id = COL_transform
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 24
+		y = 7
+		cost = 
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_equestria_reunited }
+		bypass = {
+			NOT = { has_idea = tribal_society }
+		}
+		available = {
+			num_of_factories > 15
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus remove_tribal_society"
+			add_ideas = agrarian_society
+		}
+	}
+
+	#Focus for Construction effort III
+	focus = {
+		id = COL_construction_effort_iii
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 12
+		y = 3
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_construction_effort_ii }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for Armament Effort III
+	focus = {
+		id = COL_armament_effort_iii
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 14
+		y = 3
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_armament_effort_ii }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for Infrastructure Effort
+	focus = {
+		id = COL_infrastructure_effort
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 10
+		y = 5
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_construction_effort_iii }
+		cost = 7		
+		available_if_capitulated = yes
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = infrastructure_effort_tt
+				all_owned_state = {			
+					free_building_slots = {
+						building = infrastructure
+						size < 1
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#Focus for Armament Effort II
+	focus = {
+		id = COL_armament_effort_ii
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 14
+		y = 2
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_armament_effort }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for Construction effort II
+	focus = {
+		id = COL_construction_effort_ii
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 12
+		y = 2
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_construction_effort }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for Armament Effort
+	focus = {
+		id = COL_armament_effort
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 14
+		y = 1
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_startup_industrial_effort }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for Startup Industrial Effort
+	focus = {
+		id = COL_startup_industrial_effort
+		icon = GFX_goal_generic_production
+		x = 13
+		y = 0
+		cost = 7
+		available_if_capitulated = yes
+		available = {
+			num_of_controlled_states > 3
+			num_of_factories > 3
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus industrial_effort"
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+	}
+
+	#Focus for Construction effort
+	focus = {
+		id = COL_construction_effort
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 12
+		y = 1
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_startup_industrial_effort }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for Cruiser Effort
+	focus = {
+		id = COL_cruiser_effort
+		icon = GFX_goal_generic_navy_cruiser
+		x = 10
+		y = 2
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_rebuild_the_equestria_navy }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus cruiser_effort"
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cl_tech
+				category = ca_tech
+			}
+		}
+	}
+
+	#Focus for Destroyer Effort
+	focus = {
+		id = COL_destroyer_effort
+		icon = GFX_goal_generic_wolf_pack
+		x = 8
+		y = 3
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_submarine_effort }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus destroyer_effort"
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = dd_tech
+			}
+		}
+	}
+
+	#Focus for Battleship Effort
+	focus = {
+		id = COL_battleship_effort
+		icon = GFX_goal_generic_navy_battleship
+		x = 10
+		y = 3
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_cruiser_effort }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus capital_ships_effort"
+			navy_experience = 25
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = bc_tech
+				category = bb_tech
+				category = cv_tech
+			}
+		}
+	}
+
+	#Focus for Rebuild The Equestria Navy
+	focus = {
+		id = COL_rebuild_the_equestria_navy
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 9
+		y = 1
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_naval_focus }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus large_navy"
+			add_tech_bonus = {
+				name = fleet_in_being_bonus
+				bonus = 1.0
+				uses = 2
+				category = fleet_in_being_tree
+			}
+		}
+	}
+
+	#Focus for Submarine Effort
+	focus = {
+		id = COL_submarine_effort
+		icon = GFX_goal_generic_navy_submarine
+		x = 8
+		y = 2
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_rebuild_the_equestria_navy }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus submarine_effort"
+			add_tech_bonus = {
+				name = ss_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = ss_tech
+			}
+		}
+	}
+
+	#Focus for Naval Focus
+	focus = {
+		id = COL_naval_focus
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 9
+		y = 0
+		cost = 7
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 0.1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+                         			is_coastal = yes
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+                         			is_coastal = yes
+						NOT = {
+							owner = {
+								any_owned_state = {									free_building_slots = {
+										building = dockyard
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = dockyard
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for Rocket Effort
+	focus = {
+		id = COL_rocket_effort
+		icon = GFX_focus_rocketry
+		x = 5
+		y = 3
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_aviation_effort_iii }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus rocket_effort"
+			add_tech_bonus = {
+				name = jet_rocket_bonus
+				ahead_reduction = 1
+				uses = 2
+				category = rocketry
+				category = jet_technology
+			}
+		}
+	}
+
+	#Focus for Aviation Effort III
+	focus = {
+		id = COL_aviation_effort_iii
+		icon = GFX_goal_generic_air_doctrine
+		x = 5
+		y = 2
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_aviation_effort_ii }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 85
+			add_tech_bonus = {
+				name =  air_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+
+	#Focus for Aviation Effort II
+	focus = {
+		id = COL_aviation_effort_ii
+		icon = GFX_goal_generic_air_fighter
+		x = 5
+		y = 1
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_aviation_effort }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+				technology = heavy_fighter1
+				technology = heavy_fighter2
+				technology = heavy_fighter3
+			}
+		}
+	}
+
+	#Focus for Motorization Effort III
+	focus = {
+		id = COL_motorization_effort_iii
+		icon = GFX_goal_generic_army_tanks
+		x = 2
+		y = 5
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_motorization_effort_ii }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.66
+				uses = 2
+				category = armor
+			}
+		}
+	}
+
+	#Focus for Special Forces
+	focus = {
+		id = COL_special_forces
+		icon = GFX_goal_generic_special_forces
+		x = 1
+		y = 6
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = COL_equipment_effort_iii 
+		}
+		prerequisite = { 
+			focus = COL_doctrine_effort_ii 
+		}
+		prerequisite = { 
+			focus = COL_motorization_effort_iii 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus special_forces"
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1
+				uses = 1
+				category = special_forces_tech
+			}
+		}
+	}
+
+	#Focus for Aviation Effort
+	focus = {
+		id = COL_aviation_effort
+		icon = GFX_goal_generic_build_airforce
+		x = 5
+		y = 0
+		cost = 7
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 85
+			add_tech_bonus = {
+				name =  air_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+
+	#Focus for Doctrine Effort II
+	focus = {
+		id = COL_doctrine_effort_ii
+		icon = GFX_goal_generic_army_doctrines
+		x = 1
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_doctrine_effort }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus doctrine_effort_2"
+			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	#Focus for Equipment Effort III
+	focus = {
+		id = COL_equipment_effort_iii
+		icon = GFX_goal_generic_army_artillery2
+		x = 0
+		y = 5
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_equipment_effort_ii }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus equipment_effort_3"
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+
+	#Focus for Equipment Effort II
+	focus = {
+		id = COL_equipment_effort_ii
+		icon = GFX_goal_generic_army_artillery
+		x = 0
+		y = 3
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_equipment_effort }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus equipment_effort_2"
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 0.66
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+
+	#Focus for Doctrine Effort
+	focus = {
+		id = COL_doctrine_effort
+		icon = GFX_goal_generic_army_doctrines
+		x = 1
+		y = 2
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_army_effort }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus doctrine_effort"
+			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.66
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	#Focus for Motorization Effort
+	focus = {
+		id = COL_motorization_effort
+		icon = GFX_goal_generic_army_motorized
+		x = 2
+		y = 1
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_army_effort }
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			has_tech = motorised_infantry
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus motorization_effort"
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 0.66
+				technology = motorised_infantry
+			}
+		}
+	}
+
+	#Focus for Equipment Effort
+	focus = {
+		id = COL_equipment_effort
+		icon = GFX_goal_generic_small_arms
+		x = 0
+		y = 1
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_army_effort }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus equipment_effort"
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+
+	#Focus for Army Effort
+	focus = {
+		id = COL_army_effort
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 1
+		y = 0
+		cost = 7
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus army_effort"
+			army_experience = 105
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	#Focus for Motorization Effort II
+	focus = {
+		id = COL_motorization_effort_ii
+		icon = GFX_goal_generic_build_tank
+		x = 2
+		y = 3
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_motorization_effort }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus mechanization_effort"
+			add_tech_bonus = {
+				name = motorized_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+
+	#Focus for War to Canterlot
+	focus = {
+		id = COL_war_to_canterlot
+		icon = GFX_goal_generic_major_war
+		x = 17
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_calm_before_the_storm }
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			tag= HMS
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = HMS
+}
+		}
+	}
+
+	#Focus for War against Laughter
+	focus = {
+		id = COL_war_against_laughter
+		icon = GFX_goal_generic_major_war
+		x = 27
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_calm_before_the_storm }
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			tag= COL
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = COL
+}
+		}
+	}
+
+	#Focus for Retake control
+	focus = {
+		id = COL_retake_control
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 21
+		y = 7
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = COL_equestria_reunited }
+		ai_will_do = {
+			factor = 8
+		}
+		completion_reward = {
+			every_state = { limit = { is_core_of = COL } add_core_of = COL }
+			every_state = { limit = { is_core_of = HEF } add_core_of = COL }
+			every_state = { limit = { is_core_of = HWG } add_core_of = COL }
+			every_state = { limit = { is_core_of = HEB } add_core_of = COL }
+			every_state = { limit = { is_core_of = HSW } add_core_of = COL }
+			every_state = { limit = { is_core_of = HMS } add_core_of = COL }
+			every_state = { limit = { is_core_of = STG } add_core_of = COL }
+			every_state = { limit = { is_core_of = STL } add_core_of = COL }
+		}
+	}
+
+#End of focuses 
+ }

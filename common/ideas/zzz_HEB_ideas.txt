@@ -1,98 +1,54 @@
-ideas={
-	country={
-		HEB_idea={
-			allowed={always=no}	removal_cost=-1
-			picture=hebidea
-		}
-		HEB_clanandkin00={	#For HEB aligned PIE CHY FLY
-			allowed={always=no}	removal_cost=-1
-			#picture=
-			modifier={
-				mobilization_speed=-0.1
-				conscription_factor=-0.1
-				training_time_factor=0.05
+ideas = {
+
+	country = {
+	
+	
+		HEB_idea = {
+			allowed = {
+				always = no
 			}
-		}
-		HEB_clanandkin01={	#1 Clans - Just Apple
-			allowed={always=no}	removal_cost=-1
-			#picture=
-			modifier={
-				mobilization_speed=-0.1
-				conscription_factor=0.05
-				training_time_factor=-0.05
+
+			allowed_civil_war = {
 			}
-		}
-		HEB_clanandkin02={	#2 Clans
-			allowed={always=no}	removal_cost=-1
-			#picture=
-			modifier={
-				mobilization_speed=-0.1
-				conscription_factor=0.10
-				training_time_factor=-0.05
+
+			removal_cost = -1
+
+			picture = hebidea 
+
+
+			modifier = {
+		                ai_focus_aggressive_factor = 0.8
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_infrastructure_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
+				industrial_capacity_factory = 0.10
+				production_speed_buildings_factor = 0.10
+                                resistance_damage_to_garrison = -0.5 
+				conscription = 0.05
+				research_speed_factor = 0.10
+				non_core_manpower = 0.08
 			}
-		}
-		HEB_clanandkin03={	#3 Clans
-			allowed={always=no}	removal_cost=-1
-			#picture=
-			modifier={
-				mobilization_speed=-0.1
-				conscription_factor=0.15
-				training_time_factor=-0.05
+			research_bonus = {
+				magical_tech = -0.95
 			}
-		}
-		HEB_clanandkin04={	#4 Clans
-			allowed={always=no}	removal_cost=-1
-			#picture=
-			modifier={
-				mobilization_speed=-0.1
-				conscription_factor=0.2
-				training_time_factor=-0.05
+
+			targeted_modifier = {
+				tag = CHN
+				defense_bonus_against = 0.05
 			}
-		}
-		HEB_dehorn={
-			allowed={always=no}	removal_cost=-1
-			#picture=
-			research_bonus={
-				race_tech=0.05
-				pegasi_tech=-0.05
-				unicorn_tech=-0.20
+			targeted_modifier = {
+				tag = CCN
+				defense_bonus_against = 0.05
 			}
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+					instant = yes
+
+
 		}
-		HEB_dehorncrack={
-			allowed={always=no}	removal_cost=-1
-			#picture=
-			research_bonus={
-				race_tech=0.05
-				pegasi_tech=-0.05
-				unicorn_tech=-0.30
-			}
-		}
-		HEB_dehornclip={
-			allowed={always=no}	removal_cost=-1
-			#picture=
-			research_bonus={
-				race_tech=0.05
-				pegasi_tech=-0.15
-				unicorn_tech=-0.20
-			}
-		}
-		HEB_dehornpegasai={
-			allowed={always=no}	removal_cost=-1
-			#picture=
-			research_bonus={
-				race_tech=0.05
-				pegasi_tech=0.15
-				unicorn_tech=-0.20
-			}
-		}
-		#
-	}
-	hidden_ideas={
-		HEB_idea_ai={
-			allowed={always=no}	removal_cost=-1
-			modifier={
-				ai_focus_aggressive_factor=0.8
-			}
-		}
-	}
+	}	
 }

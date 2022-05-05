@@ -1,42 +1,45 @@
-ideas={
-	country={
-		HMS_idea={
-			allowed={always=no}	removal_cost=-1
-			picture=hmsidea
+ideas = {
+
+	country = {
+	
+	
+		HMS_idea = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+
+			picture = hmsidea
+
+			modifier = {
+		                ai_focus_aggressive_factor = 0.8
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				research_speed_factor = 0.15
+				planning_speed = 0.35
+				army_attack_factor = 0.07
+				army_core_defence_factor = 0.07
+                                resistance_damage_to_garrison = -0.55 
+				conscription = 0.05
+				non_core_manpower = 0.08
+			}
+			research_bonus = {
+				magical_tech = 0.70
+			}
+			targeted_modifier = {
+				tag = CHN
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = CCN
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+
 		}
-		HMS_sunandmoon={
-			allowed={always=no}	removal_cost=-1
-			picture=sunrise_sparkle
-			modifier={
-				stability_factor=0.1
-			}
-		}
-		HMS_unicornrace={
-			allowed={always=no}	removal_cost=-1
-			picture=unicorn_academy
-			modifier={
-				#War Support Here
-			}
-			research_bonus={
-				unicorn_tech=0.4
-			}
-		}
-		HMS_slavery={
-			allowed={always=no}	removal_cost=-1
-			picture=pony_enslaved
-			modifier={
-				stability_factor=-0.1
-				conscription_factor=-0.40
-				monthly_population=-0.1
-				industrial_capacity_factory=-0.1
-				industrial_capacity_dockyard=-0.1
-				consumer_goods_factor=-0.05
-				local_resources_factor=0.1
-				production_speed_buildings_factor=0.05
-			}
-			research_bonus={
-				race_tech=-0.2
-			}
-		}
-	}
+	}	
 }

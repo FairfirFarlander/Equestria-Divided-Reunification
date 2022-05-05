@@ -1,17 +1,27 @@
-state={	#EDRSTATE
+
+state={
 	id=146
 	name="STATE_146"
-	manpower=711880
-	state_category=town
-	buildings_max_level_factor=1
-	provinces={79 117 358 360 3060 3120 3219 3457 3570 6429 6435 7810 9097 9098 9150 11032 11186 11313 11342 11514 11543 13297 13298 13302}
+
 	history={
-		owner=CRL
-		add_core_of=CRL
-		victory_points={9150 10}
-		buildings={
-			infrastructure=1
-			arms_factory=1
+		owner = COL
+		add_core_of = COL
+		buildings = {
+			infrastructure = 2
+			arms_factory = 2
+			industrial_complex = 2
+
 		}
+		victory_points = {
+			9150 10
+		}
+
 	}
+
+	provinces={
+		79 117 358 360 3060 3120 3219 3457 3570 6429 6435 7810 9097 9098 9150 11032 11186 11313 11342 11514 11543 13297 13298 13302
+	}
+	manpower=711880
+	buildings_max_level_factor=1.000
+	state_category=town
 }

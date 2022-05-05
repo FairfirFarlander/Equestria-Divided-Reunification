@@ -1,16 +1,25 @@
-state={	#EDRSTATE
+
+state={
 	id=183
 	name="STATE_183"
-	manpower=155928
-	state_category=rural
-	buildings_max_level_factor=1
-	provinces={38 3088 3098 3126 3132 6041 9208 11173 11190}
+
 	history={
-		owner=HMS
-		add_core_of=HMS
-		victory_points={9208 1}
-		buildings={
-			infrastructure=1
+		owner = HMS
+		add_core_of = HMS
+		buildings = {
+			infrastructure = 1
+
 		}
+		victory_points = {
+			9208 1 
+		}
+
 	}
+
+	provinces={
+		38 3088 3098 3126 3132 6041 9208 11173 11190 
+	}
+	manpower=155928
+	buildings_max_level_factor=1.000
+	state_category=pastoral
 }

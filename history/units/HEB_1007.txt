@@ -1,118 +1,180 @@
-division_template={
-	name="Provincial Militia"	#divisions_name_group=
-	is_locked=no	priority=0	template_counter=3
-	regiments={
-		infantry={x=0 y=0}
+division_template = {
+	name = "Highland Division"
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		engineer = { x = 0 y = 2 }
 	}
 }
-division_template={
-	name="Ponies-at-Arms Brigade"
-	priority=1
-	regiments={
-		infantry={x=0 y=0}	infantry={x=1 y=0}
-		infantry={x=0 y=1}	infantry={x=1 y=1}
+division_template = {
+	name = "Light Tank Division"
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		engineer = { x = 0 y = 2 }
 	}
 }
-division_template={
-	name="Pegasi Auxilia"
-	priority=1
-	regiments={
-		pegasi={x=0 y=0}	pegasi={x=1 y=0}
-		pegasi={x=0 y=1}	pegasi={x=1 y=1}
+division_template = {
+	name = "Onhooves Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+
+	support = {
+		artillery = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		engineer = { x = 0 y = 2 }
 	}
 }
-division_template={
-	name="Steamtank Division"
-	priority=1
-	regiments={
-		light_armor={x=0 y=0}
+
+units = {
+	division = {
+		name = "1st Onhooves Division"
+		location = 27
+		division_template = "Onhooves Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
-}
-division_template={
-	name="Appleoosan Ranger Regiment"
-	priority=2	is_locked=yes
-	regiments={
-		infantry={x=0 y=0}
-		infantry={x=0 y=1}
-		infantry={x=0 y=2}
+	division = {
+		name = "2st Onhooves Division"
+		location = 27
+		division_template = "Onhooves Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
-}
-units={	#DEPLOYMENTS
-	division={
-		name="Hoof City Militia"
-		location=11581
-		division_template="Provincial Militia"
-		start_experience_factor=0.1
-		start_equipment_factor=1
+	division = {
+		name = "3st Onhooves Division"
+		location = 27
+		division_template = "Onhooves Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
-	division={
-		name="Rosemarein Militia"
-		location=9606
-		division_template="Provincial Militia"
-		start_experience_factor=0.02
-		start_equipment_factor=1
+	division = {
+		name = "4st Onhooves Division"
+		location = 27
+		division_template = "Onhooves Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
-	division={
-		name="Pinto Creek Militia"
-		location=11580
-		division_template="Provincial Militia"
-		start_experience_factor=0.02
-		start_equipment_factor=1
+	division = {
+		name = "5st Onhooves Division"
+		location = 27
+		division_template = "Onhooves Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
-	division={
-		name="Ayundi Division"
-		location=6415
-		division_template="Provincial Militia"
-		start_experience_factor=0.02
-		start_equipment_factor=1
+	division = {
+		name = "6st Onhooves Division"
+		location = 27
+		division_template = "Onhooves Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
-	division={
-		name="Star Gulf Arms Division"
-		location=624
-		division_template="Provincial Militia"
-		start_experience_factor=0.02
-		start_equipment_factor=1
+	division = {
+		name = "7st Onhooves Division"
+		location = 27
+		division_template = "Onhooves Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
-	division={
-		name="Palamino Division"
-		location=11622
-		division_template="Ponies-at-Arms Division"
-		start_experience_factor=0.75
-		start_equipment_factor=1
+	division = {
+		name = "8st Onhooves Division"
+		location = 27
+		division_template = "Onhooves Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
-	division={
-		name="Palamino Division"
-		location=3630
-		division_template="Ponies-at-Arms Division"
-		start_experience_factor=0.3
-		start_equipment_factor=1
+	division = {
+		name = "9st Onhooves Division"
+		location = 27
+		division_template = "Onhooves Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
-	division={
-		name="Sorrowful Division"
-		location=619
-		division_template="Ponies-at-Arms Division"
-		start_experience_factor=0.1
-		start_equipment_factor=1
+	division = {
+		name = "10st Onhooves Division"
+		location = 27
+		division_template = "Onhooves Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
-	division={
-		name="Silverstar Rangers"
-		location=11037
-		division_template="Appleoosan Ranger Regiment"
-		start_experience_factor=0.75
-		start_equipment_factor=1
+	division = {
+		name = "11st Onhooves Division"
+		location = 27
+		division_template = "Onhooves Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
-	division={
-		name="Meskwakia Arms Division"
-		location=3550
-		division_template="Pegasi Auxilia"
-		start_experience_factor=0.55
-		start_equipment_factor=1
+	division = {
+		name = "12st Onhooves Division"
+		location = 27
+		division_template = "Onhooves Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
-	division={
-		name="Aquarium Tank Mover Company"
-		location=11037
-		division_template="Steamtank Division"
-		start_experience_factor=0.1
-		start_equipment_factor=1
+	division = {
+		name = "13st Onhooves Division"
+		location = 27
+		division_template = "Onhooves Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "14st Onhooves Division"
+		location = 27
+		division_template = "Onhooves Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "15st Onhooves Division"
+		location = 27
+		division_template = "Onhooves Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "16st Onhooves Division"
+		location = 27
+		division_template = "Onhooves Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "17st Onhooves Division"
+		location = 27
+		division_template = "Onhooves Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "18st Onhooves Division"
+		location = 27
+		division_template = "Onhooves Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "1st Light Tank Division"
+		location = 27
+		division_template = "Light Tank Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
 }

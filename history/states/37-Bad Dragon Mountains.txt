@@ -1,14 +1,19 @@
-state={	#EDRSTATE
+
+state={
 	id=37
 	name="STATE_37"
-	manpower=20130
-	state_category=wasteland
-	buildings_max_level_factor=1
-	provinces={698 1550 6683 7546 9642 9658 10498 11488 13268}
-	resources={crystals=8}
+
 	history={
-		owner=THA
-		add_core_of=THA
-		add_core_of=VII
+		owner = DRG
+		add_core_of = DRG
+		add_core_of = HEF
+
 	}
+
+	provinces={
+		698 1550 6683 7546 9642 9658 10498 11488 13268
+	}
+	manpower=2013
+	buildings_max_level_factor=1.000
+	state_category=wasteland
 }

@@ -1,14 +1,16 @@
-state={	#EDRSTATE
+state={
 	id=661
 	name="STATE_661"
-	manpower=44567
-	state_category=small_island
-	buildings_max_level_factor=1
-	provinces={1479 10395 10435}
-	history={
-		owner=ALA
-		add_core_of=SGR
-		add_claim_by=ALA
-		victory_points={10395 1}
+	state_category = small_island
+	provinces={
+		10395 1479 10435
 	}
+	history={
+		owner = HWG
+		add_core_of = STG
+		add_core_of = HWG
+		victory_points = { 10395 2 }
+	}
+	manpower=44567
+	buildings_max_level_factor=1.000
 }

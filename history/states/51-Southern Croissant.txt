@@ -1,17 +1,28 @@
-state={	#EDRSTATE
+
+state={
 	id=51
 	name="STATE_51"
-	manpower=651400
-	state_category=rural
-	buildings_max_level_factor=1
-	provinces={660 684 690 3484 3663 3676 9551 9617 9660 11520 11539 11554 11619 11646 11663 11679}
-	resources={chromium=14}
-	history={
-		owner=COT
-		add_core_of=COT
-		victory_points={3663 3}
-		buildings={
-			infrastructure=2
-		}
+	resources={
+		chromium=12.000
 	}
+
+	history={
+		owner = HEB
+		add_core_of = HEB
+		buildings = {
+			infrastructure = 3
+
+		}
+		victory_points = {
+			3663 1
+		}
+
+	}
+
+	provinces={
+		660 684 690 3484 3663 3676 9551 9617 9660 11520 11539 11554 11619 11646 11663 11679
+	}
+	manpower=751400
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

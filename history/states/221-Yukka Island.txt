@@ -1,12 +1,21 @@
-state={	#EDRSTATE
+state={
 	id=221
 	name="STATE_221"
-	manpower=1748
-	state_category=small_island
-	buildings_max_level_factor=1
-	provinces={177}
+	state_category = small_island
+
 	history={
-		owner=PLT
-		add_core_of=PLT
+		owner = HEF
+		add_core_of = HEF
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+
+		}
 	}
+
+	provinces={
+		177
+	}
+	manpower=1748
+	buildings_max_level_factor=1.000
 }

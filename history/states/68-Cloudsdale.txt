@@ -1,16 +1,28 @@
-state={	#EDRSTATE
+
+state={
 	id=68
 	name="STATE_68"
-	manpower=100620
-	state_category=pastoral
-	buildings_max_level_factor=1
-	provinces={744 746 3743 3961 6666 6731 9548 9563 9603 9672 9909 11672}
+
 	history={
-		owner=HSW
-		add_core_of=HSW
-		victory_points={11672 1}
-		buildings={
-			infrastructure=2
+		owner = HSW
+		add_core_of = HSW
+		victory_points = {
+			11672 30
 		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			air_base = 6
+			arms_factory = 1
+			anti_air_building = 3
+		}
+
 	}
+
+	provinces={
+		744 746 3743 3961 6666 6731 9548 9563 9603 9672 9909 11672
+	}
+	manpower=803100
+	buildings_max_level_factor=1.000
+	state_category=large_town
 }

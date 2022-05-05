@@ -1,16 +1,22 @@
-state={	#EDRSTATE
+
+state={
 	id=173
 	name="STATE_173"
-	manpower=87100
-	state_category=pastoral
-	buildings_max_level_factor=1
-	provinces={1009 1467 3350 3857 6292 7147 9396 10074 10767 11230 11271}
-	resources={oil=6}
+
 	history={
-		owner=SWT
-		add_core_of=SWT
-		buildings={
-			infrastructure=1
+		owner = HSW
+		add_core_of = HSW
+		buildings = {
+			infrastructure = 1
+
 		}
+
 	}
+
+	provinces={
+		1009 1467 3350 3857 6292 7147 9396 10074 10767 11230 11271 
+	}
+	manpower=87100
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

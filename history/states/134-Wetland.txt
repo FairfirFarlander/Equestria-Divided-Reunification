@@ -1,12 +1,17 @@
-state={	#EDRSTATE
+state={
 	id=134
 	name="STATE_134"
-	manpower=9945
-	state_category=wasteland
-	buildings_max_level_factor=1
-	provinces={101 3009 3095 3119 6138 6206 9178 11155}
+	state_category = rural
+
 	history={
-		owner=HMS
-		add_core_of=HMS
+		owner = COL
+		add_core_of = COL
+
 	}
+
+	provinces={
+		101 3009 3095 3119 6138 6206 9178 11155
+	}
+	manpower=9945
+	buildings_max_level_factor=1.000
 }

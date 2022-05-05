@@ -1,12 +1,23 @@
-state={	#EDRSTATE
+
+state={
 	id=1
 	name="STATE_1"
-	manpower=848901	#1
-	state_category=wasteland
-	buildings_max_level_factor=1
-	provinces={512 553 3579 3626 3655 6449 6533 6599 6780 9434 9550 9578 9582 9629 11535 11584}
+
 	history={
-		owner=HEF
-		add_core_of=HEF
+		owner = HEF
+		add_core_of = HEF
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+
+		}
+
 	}
+
+	provinces={
+		512 553 3579 3604 3626 3655 6449 6533 6599 6780 9434 9550 9578 9582 9598 9629 11535 11570 11584
+	}
+	manpower=140000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
 }

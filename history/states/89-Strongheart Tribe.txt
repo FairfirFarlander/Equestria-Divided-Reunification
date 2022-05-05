@@ -1,18 +1,27 @@
-state={	#EDRSTATE
+
+state={
 	id=89
 	name="STATE_89"
-	manpower=230100
-	state_category=rural
-	buildings_max_level_factor=1
-	provinces={122 318 347 649 3207 3256 6415 9520 9635 11247 11301 11528 11636}
+
 	history={
-		owner=HEB
-		add_core_of=HEB
-		#add_core_of=BUF
-		add_claim_by=COT
-		victory_points={6415 3}
-		buildings={
-			industrial_complex=1
+		owner = HEB
+		add_core_of = BUF
+		add_core_of = HEB
+		victory_points = {
+			6415 10
 		}
+		buildings = {
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+
 	}
+
+	provinces={
+		122 318 347 649 3207 3256 6415 9520 9635 11247 11301 11528 11636
+	}
+	manpower=230100
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

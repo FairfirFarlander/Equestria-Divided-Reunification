@@ -1,106 +1,105 @@
-characters={
-	HSW_rainbow_dash={
-		name=HSW_rainbow_dash
-		gender=female
-		portraits={
-			civilian={large="gfx/leaders/HSW/HSW_rainbow_dash.dds"}
-			army={large="gfx/leaders/HSW/HSW_rainbow_dash.dds"}
-		}
-		country_leader={
-			desc="HSW_rdash_poli_desc"	ideology=stratocracy
-			expire="1030.03.13.08"
-			traits={}
-			id=-1
-		}
-		field_marshal={	#force commander supreme
-			desc="HSW_rdash_mili_desc"
-			skill=3	attack_skill=4	defense_skill=3
-			planning_skill=1	logistics_skill=2
-			traits={pony_race_trait trait_reckless offensive_doctrine}
-		}
-	}
-	HSW_storm_mayhem={
-		name=HSW_storm_mayhem
-		#portraits={civilian={large="gfx/leaders/HSW/HSW_storm_mayhem.dds"}}#
-		country_leader={
-			desc="HSW_smayhem_poli_desc"	ideology=anarchist_communism
-			expire="1030.03.13.08"
-			traits={}
-			id=-1
-		}
-	}
-	HSW_steel_wings={
-		name=HSW_steel_wings
-		#portraits={civilian={large="gfx/leaders/HSW/HSW_steel_wings.dds"}}#
-		country_leader={
-			desc="HSW_swings_poli_desc"	ideology=despotism
-			expire="1030.03.13.08"
-			traits={}
-			id=-1
-		}
-	}
-	HSW_sunny_cloud={
-		name=HSW_sunny_cloud
-		gender=female
-		#portraits={civilian={large="gfx/leaders/HSW/HSW_sunny_cloud.dds"}}#
-		country_leader={
-			desc="HSW_scloud_poli_desc"	ideology=liberalism
-			expire="1030.03.13.08"
-			traits={}
-			id=-1
-		}
-	}
-	HSW_soarin={
-		name=HSW_soarin
-		portraits={
-			army={
-				large="gfx/leaders/HSW/HSW_soarin.dds"
-				#small="gfx/leaders/HSW/HSW_soarin_small.dds"#
+characters = {
+	ED_Rainbow = {
+		name = "Force Commander Supreme Rainbow Dash"
+		gender = female
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HSW/Rainbow.dds"
+			}
+			army = {
+				large = "gfx/leaders/HSW/Rainbow.dds"
 			}
 		}
-		corps_commander={	#wing commander
-			desc="HSW_soarin_mili_desc"
-			skill=3	attack_skill=2	defense_skill=3
-			planning_skill=1	logistics_skill=2
-			traits={pony_race_trait air_force_commander war_hero}
+		country_leader = {
+			ideology = stratocracy
+			expire = "1965.1.1"
+			traits = {}
+			id = -1
+		}
+		field_marshal = {
+			skill = 2
+			traits = { pony_race_trait offensive_doctrine }
 		}
 	}
-	HSW_spitfire={
-		name=HSW_spitfire
-		gender=female
-		portraits={
-			army={
-				large="gfx/leaders/HSW/HSW_spitfire.dds"
-				#small="gfx/leaders/HSW/HSW_spitfire_small.dds"#
+	ED_Storm = {
+		name = "Storm Mayhem"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/leader_unknown.dds"
 			}
 		}
-		corps_commander={	#wing commander
-			desc="HSW_spitfire_mili_desc"
-			skill=3	attack_skill=2	defense_skill=1
-			planning_skill=2	logistics_skill=3
-			traits={pony_race_trait harsh_leader organizer}
+		country_leader = {
+			ideology = anarchist_communism
+			expire = "1965.1.1"
+			traits = {}
+			id = -1
 		}
 	}
-	HSW_scootaloo={
-		name=HSW_scootaloo
-		gender=female
-		portraits={
-			army={
-				large="gfx/leaders/HSW/HSW_scootaloo.dds"
-				#small="gfx/leaders/HSW/HSW_scootaloo_small.dds"#
+	ED_Steel = {
+		name = "Steel Wings"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/leader_unknown.dds"
 			}
 		}
-		corps_commander={
-			desc="HSW_scootaloo_mili_desc"
-			skill=1	attack_skill=1	defense_skill=1
-			planning_skill=1	logistics_skill=1
-			traits={pony_race_trait}
+		country_leader = {
+			ideology = despotism
+			expire = "1965.1.1"
+			traits = {}
+			id = -1
 		}
-		advisor={
-			slot=high_command	ledger=army	cost=50
-			idea_token=HSW_scootaloo_high
-			allowed={original_tag=HSW}
-			traits={}
+	}
+	ED_Sunny = {
+		name = "Sunny Cloud"
+		gender = female
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/leader_unknown.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = "1965.1.1"
+			traits = {}
+			id = -1
+		}
+	}
+	ED_Soarin = {
+		name = "Wing Commander Soarin"
+		portraits = {
+			army = {
+				large = "gfx/leaders/HSW/Soarin.dds"
+			}
+		}
+		field_marshal = {
+			skill = 1
+			traits = { pony_race_trait }
+		}
+	}
+	ED_Spitfire = {
+		name = "Wing Commander Spitfire"
+		gender = female
+		portraits = {
+			army = {
+				large = "gfx/leaders/HSW/Spitfire.dds"
+			}
+		}
+		field_marshal = {
+			skill = 1
+			traits = { pony_race_trait offensive_doctrine }
+		}
+	}
+	ED_Scootaloo = {
+		name = "Scootaloo"
+		gender = female
+		portraits = {
+			army = {
+				large = "gfx/leaders/HSW/Scootaloo.dds"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			traits = { pony_race_trait }
 		}
 	}
 }
