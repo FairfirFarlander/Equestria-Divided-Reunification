@@ -1,7 +1,7 @@
 state={
 	id=241
 	name="STATE_241"
-	manpower=10790
+	manpower=20790
 	state_category=enclave
 	buildings_max_level_factor=1
 	provinces={3082 6079}
