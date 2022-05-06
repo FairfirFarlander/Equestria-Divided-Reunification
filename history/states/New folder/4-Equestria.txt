@@ -1,0 +1,26 @@
+state={
+	id=4
+	name="STATE_4"
+	manpower=46359
+	state_category=town	#rural
+	buildings_max_level_factor=1
+	provinces={902 3838 4913 6891 9851 9863 10917 11673 11755 11773 11804 11824}
+	resources={rubber=23}
+	history={
+		owner=VII
+		add_core_of=VII
+		victory_points={11755 3}	#NoEAW
+		victory_points={4913 1}	#NoEAW
+		buildings={
+			infrastructure=1
+			air_base=1
+			arms_factory=1
+			industrial_complex=1
+			dockyard=1
+			3838={naval_base=1}
+			4913={naval_base=1}
+			11755={naval_base=2}	#5
+			11804={naval_base=1}
+		}
+	}
+}

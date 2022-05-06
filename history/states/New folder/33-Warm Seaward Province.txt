@@ -1,0 +1,16 @@
+state={
+	id=33
+	name="STATE_33"
+	manpower=129000
+	state_category=rural
+	buildings_max_level_factor=1
+	provinces={561 571 688 707 3541 3571 3657 3688 6540 6555 6656 6693 9545 9636 11615 11618 11653}
+	history={
+		owner=PLT
+		add_core_of=PLT
+		buildings={
+			infrastructure=1	#EAW 0
+			industrial_complex=1	#EAW 0
+		}
+	}
+}

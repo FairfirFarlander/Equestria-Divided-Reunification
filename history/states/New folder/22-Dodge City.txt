@@ -1,0 +1,18 @@
+state={
+	id=22
+	name="STATE_22"
+	manpower=833200
+	state_category=large_town
+	buildings_max_level_factor=1
+	provinces={491 819 3703 9454 9558 9650 9679 11427 11479 11651 12512}
+	history={
+		owner=CHY
+		add_core_of=CHY
+		victory_points={11427 10}
+		buildings={
+			infrastructure=3
+			arms_factory=1	#EAW 0
+			industrial_complex=2
+		}
+	}
+}

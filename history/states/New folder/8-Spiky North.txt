@@ -1,0 +1,18 @@
+state={
+	id=8
+	name="STATE_8"
+	manpower=43000
+	state_category=pastoral
+	buildings_max_level_factor=1
+	provinces={7069 9833 9945 10113}
+	history={
+		owner=VII
+		add_core_of=VII
+		victory_points={10113 1}
+		buildings={
+			infrastructure=1	#EDRonly
+			dockyard=1
+			10113={naval_base=1}
+		}
+	}
+}

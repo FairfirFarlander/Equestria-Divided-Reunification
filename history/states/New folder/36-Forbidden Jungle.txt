@@ -1,0 +1,15 @@
+state={
+	id=36
+	name="STATE_36"
+	manpower=90140	#40140
+	state_category=pastoral
+	buildings_max_level_factor=1
+	provinces={543 557 1079 6552 6723 7040 9541 10023 11525 11901 12042 13249}
+	resources={oil=15 rubber=11}	#EAW no oil
+	history={
+		owner=EMB
+		add_core_of=EMB
+		#add_claim_by=THA
+		victory_points={10023 3}	#EAW no
+	}
+}

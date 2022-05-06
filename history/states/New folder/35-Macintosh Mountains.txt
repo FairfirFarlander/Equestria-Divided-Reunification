@@ -1,0 +1,16 @@
+state={
+	id=35
+	name="STATE_35"
+	manpower=36500
+	state_category=pastoral
+	buildings_max_level_factor=1
+	provinces={636 678 704 3641 3646 3650 3700 4155 6531 9377 9587 9620 11601 11604 11642}
+	resources={tungsten=10 steel=22} #Steel 4 to Macintosh Hills, 2 to Mango Province, 4 to Hughills; 2 tungsten to Mango
+	history={
+		owner=THA
+		add_core_of=THA
+		victory_points={11601 1}	#EAW
+		buildings={	#Gimmie air field through focus!
+		}
+	}
+}

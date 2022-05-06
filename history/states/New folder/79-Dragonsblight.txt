@@ -1,0 +1,21 @@
+state={
+	id=79
+	name="STATE_79"
+	manpower=81427
+	state_category=pastoral
+	buildings_max_level_factor=1
+	provinces={379 1145 4131 4146 7166 8035 10779 10875}
+	resources={oil=6 rubber=5}
+	history={
+		owner=HWG	#Down the Road make provisional Same with Saltmane
+		add_core_of=PLT
+		add_claim_by=HWG
+		victory_points={7166 1}
+		buildings={
+			7166={
+				naval_base=1
+				bunker=1
+			}
+		}
+	}
+}

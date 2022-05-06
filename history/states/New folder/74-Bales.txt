@@ -1,0 +1,18 @@
+state={
+	id=74
+	name="STATE_74"
+	manpower=1109000
+	state_category=city
+	buildings_max_level_factor=1
+	provinces={115 168 3162 3183 6118 6207 9132 9154 11116 11118 11386 13276 13277 13278}
+	history={
+		owner=HMS
+		add_core_of=HMS
+		victory_points={3162 20}
+		buildings={
+			infrastructure=3
+			arms_factory=1
+			industrial_complex=3
+		}
+	}
+}

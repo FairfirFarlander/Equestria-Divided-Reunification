@@ -1,0 +1,14 @@
+state={
+	id=26
+	name="STATE_26"
+	manpower=148868
+	state_category=rural
+	buildings_max_level_factor=1
+	provinces={482 692 708 3474 3705 6470 6487 6582 6708 6725 9416 9497 9652 9681 11402 11468 12505 13116 13248}
+	resources={rubber=24}	#EAW 14
+	history={
+		owner=EMB
+		add_core_of=EMB
+		victory_points={9497 1}	#no EAW
+	}
+}

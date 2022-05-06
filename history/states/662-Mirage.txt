@@ -1,22 +1,18 @@
 state={
 	id=662
 	name="STATE_662"
-	provinces={
-		1614 2065 7602 7618 8099 12333
-	}
-	state_category = rural
-	history = {
-		owner = HWG
-		add_core_of = STG
-		add_core_of = HWG
-		buildings = {
-			infrastructure = 2
-
-		}
-		victory_points = {
-			1614 5
-		}
-	}
 	manpower=83450
-	buildings_max_level_factor=1.000
+	state_category=rural
+	buildings_max_level_factor=1
+	provinces={1614 2065 7602 7618 8099 12333}
+	history={
+		owner=HWG
+		add_core_of=HWG
+		add_claim_by=STG
+		victory_points={1614 1}
+		buildings={
+			infrastructure=1
+			1614={naval_base=1}
+		}
+	}
 }
