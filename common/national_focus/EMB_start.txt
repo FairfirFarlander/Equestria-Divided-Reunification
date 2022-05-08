@@ -1,6 +1,6 @@
 #Ember Starting Story Tree
 	shared_focus={	#Dealing With the Outside
-		id=EMB_S00 #icon=
+		id=EMB_S00 icon=GFX_goal_chn_communist_banner
 		cost=2 x=6 y=0
 		search_filters={FOCUS_FILTER_POLITICAL}
 		select_effect={country_event=EDR_evt_gen.000}	#Event Verbosity
@@ -11,7 +11,7 @@
 		}
 	}
 	shared_focus={	#Shutting Ourselves Away
-		id=EMB_S01A #icon=
+		id=EMB_S01A icon=GFX_goal_EQS_TNO_shut_doors
 		cost=7 x=-2 y=1 relative_position_id=EMB_S00
 		search_filters={FOCUS_FILTER_POLITICAL}
 		prerequisite={focus=EMB_S00}
@@ -22,7 +22,7 @@
 		}
 	}
 	shared_focus={	#The Underway Awaits
-		id=EMB_S01B #icon=
+		id=EMB_S01B icon=GFX_goal_commune_politics
 		cost=7 x=0 y=1 relative_position_id=EMB_S00
 		search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER}
 		prerequisite={focus=EMB_S00}
@@ -35,7 +35,7 @@
 		}
 	}
 	shared_focus={	#A Future Completely Underground
-		id=EMB_S01C #icon=
+		id=EMB_S01C icon=GFX_focus_DMT_hall_of_the_mountain_king
 		cost=2 x=2 y=1 relative_position_id=EMB_S00
 		search_filters={FOCUS_FILTER_POLITICAL}
 		prerequisite={focus=EMB_S00}
@@ -69,7 +69,7 @@
 		}
 	}
 	shared_focus={	#The Costs of Safety
-		id=EMB_S03 #icon=
+		id=EMB_S03 icon=GFX_HON_peace_in_our_time
 		cost=2 x=0 y=2 relative_position_id=EMB_S01B
 		search_filters={FOCUS_FILTER_POLITICAL}
 		prerequisite={focus=EMB_S02A}
@@ -81,7 +81,7 @@
 		}
 	}
 	shared_focus={		#The Beginning of Troubles
-		id=EMB_S04A #icon=
+		id=EMB_S04A icon=GFX_SIA_jungletraining
 		cost=7 x=-2 y=1 relative_position_id=EMB_S03
 		search_filters={FOCUS_FILTER_STABILITY FOCUS_FILTER_RESEARCH}
 		prerequisite={focus=EMB_S03}
@@ -93,18 +93,18 @@
 		}
 	}
 	shared_focus={		#The Cost of No Sun
-		id=EMB_S04B #icon=
+		id=EMB_S04B icon=GFX_goal_sunshine
 		cost=7 x=0 y=1 relative_position_id=EMB_S03
 		search_filters={FOCUS_FILTER_RESEARCH FOCUS_FILTER_STABILITY FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL}
 		prerequisite={focus=EMB_S03}
 		ai_will_do={factor=80}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus EMB_S04B"
-			country_event=EMB_evt_a01.042	#
+			country_event=EMB_evt_a01.042	#Restlessness on the Rise
 		}
 	}
 	shared_focus={		#There is Not Enough Room
-		id=EMB_S04C #icon=
+		id=EMB_S04C icon=GFX_focus_collective_housing
 		cost=7 x=2 y=1 relative_position_id=EMB_S03
 		search_filters={FOCUS_FILTER_POLITICAL}
 		prerequisite={focus=EMB_S03}

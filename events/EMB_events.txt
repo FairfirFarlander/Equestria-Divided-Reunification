@@ -226,7 +226,7 @@ add_namespace=EMB_evt_a01
 		}
 		immediate={log="[GetDateText]: [Root.GetName]: event EMB_evt_a01.041"}
 	}
-	country_event={		#
+	country_event={		#Restlessness on the Rise
 		id=EMB_evt_a01.042
 		title=EMB_evt_a01.042.t	desc=EMB_evt_a01.042.d	#picture=
 		is_triggered_only=yes	#timeout_days=3

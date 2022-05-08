@@ -6,7 +6,7 @@ division_template={	#TEMPLATES#
 	}
 }
 division_template={
-	name="State Legion"	#divisions_name_group=#
+	name="Legionaries"	#divisions_name_group=#
 	is_locked=no	priority=1	template_counter=9
 	regiments={
 		infantry={x=0 y=0}	infantry={x=1 y=0}
@@ -76,43 +76,43 @@ units={
 	}
 	division={	#Canterlot#
 		name="Legio I 'Canterlot'"
-		location=179	division_template="State Legion"
+		location=179	division_template="Legionaries"
 		start_experience_factor=0.15	start_equipment_factor=0.8
 		force_equipment_variants={melee_equipment_0={owner="HMS" creator="HMS"}}
 	}
 	division={	#Bales#
 		name="Legio III 'Bales'"
-		location=3162	division_template="State Legion"
+		location=3162	division_template="Legionaries"
 		start_experience_factor=0.1	start_equipment_factor=0.7
 		force_equipment_variants={melee_equipment_0={owner="HMS" creator="HMS"}}
 	}
 	division={	#Whinnyapolis#
 		name="Legio V 'Whinnyapolis'"
-		location=9887	division_template="State Legion"
+		location=9887	division_template="Legionaries"
 		start_experience_factor=0.1	start_equipment_factor=0.7
 		force_equipment_variants={melee_equipment_0={owner="HMS" creator="HMS"}}
 	}
 	division={	#Foal Mountains#
 		name="Legio II 'Canterlot'"
-		location=77	division_template="State Legion"
+		location=77	division_template="Legionaries"
 		start_experience_factor=0.2	start_equipment_factor=0.6
 		force_equipment_variants={melee_equipment_0={owner="HMS" creator="HMS"}}
 	}
 	division={	#Trotsylvania#
 		name="Legio IV 'Bales'"
-		location=3044	division_template="State Legion"
+		location=3044	division_template="Legionaries"
 		start_experience_factor=0.15	start_equipment_factor=0.
 		force_equipment_variants={melee_equipment_0={owner="HMS" creator="HMS"}}
 	}
 	division={	#Phlox Flower Plain River#
 		name="Legio VI 'Whinnyapolis'"
-		location=3380	division_template="State Legion"
+		location=3380	division_template="Legionaries"
 		start_experience_factor=0.2	start_equipment_factor=0.6
 		force_equipment_variants={melee_equipment_0={owner="HMS" creator="HMS"}}
 	}
 	division={	#Stratusburg#
 		name="Legio VII 'Starswirl Valley'"
-		location=11875	division_template="State Legion"
+		location=11875	division_template="Legionaries"
 		start_experience_factor=0.15	start_equipment_factor=0.6
 		force_equipment_variants={melee_equipment_0={owner="HMS" creator="HMS"}}
 	}

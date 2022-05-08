@@ -1,0 +1,123 @@
+#EQD Focuses House Differencials
+	defined_text={
+		name=GetEQD_S00_SLOC
+		text={trigger={tag=CUL}localization_key=EQD_S00_CUL}
+		text={trigger={tag=HEB}localization_key=EQD_S00_HEB}
+		text={trigger={tag=HEF}localization_key=EQD_S00_HEF}
+		text={trigger={tag=HMS}localization_key=EQD_S00_HMS}
+		text={trigger={tag=HSW}localization_key=EQD_S00_HSW}
+		text={trigger={tag=HWG}localization_key=EQD_S00_HWG}
+		text={localization_key=EQD_S00_GENERIC}
+	}
+	defined_text={
+		name=GetEQD_S00_desc_SLOC
+		text={trigger={tag=CUL}localization_key=EQD_S00_CUL_desc}
+		text={trigger={tag=HEB}localization_key=EQD_S00_HEB_desc}
+		text={trigger={tag=HEF}localization_key=EQD_S00_HEF_desc}
+		text={trigger={tag=HMS}localization_key=EQD_S00_HMS_desc}
+		text={trigger={tag=HSW}localization_key=EQD_S00_HSW_desc}
+		text={trigger={tag=HWG}localization_key=EQD_S00_HWG_desc}
+		text={localization_key=EQD_S00_GENERIC_desc}
+	}
+	defined_text={
+		name=GetEQD_S01A_SLOC
+		text={trigger={tag=CUL}localization_key=EQD_S01A_CUL}
+		text={trigger={tag=HEB}localization_key=EQD_S01A_HEB}
+		text={trigger={tag=HEF}localization_key=EQD_S01A_HEF}
+		text={trigger={tag=HMS}localization_key=EQD_S01A_HMS}
+		text={trigger={tag=HSW}localization_key=EQD_S01A_HSW}
+		text={trigger={tag=HWG}localization_key=EQD_S01A_HWG}
+		text={localization_key=EQD_S01A_GENERIC}
+	}
+	defined_text={
+		name=GetEQD_S01A_desc_SLOC
+		text={trigger={tag=CUL}localization_key=EQD_S01A_CUL_desc}
+		text={trigger={tag=HEB}localization_key=EQD_S01A_HEB_desc}
+		text={trigger={tag=HEF}localization_key=EQD_S01A_HEF_desc}
+		text={trigger={tag=HMS}localization_key=EQD_S01A_HMS_desc}
+		text={trigger={tag=HSW}localization_key=EQD_S01A_HSW_desc}
+		text={trigger={tag=HWG}localization_key=EQD_S01A_HWG_desc}
+		text={localization_key=EQD_S01A_GENERIC_desc}
+	}
+	defined_text={
+		name=GetEQD_S01B_SLOC
+		text={trigger={tag=CUL}localization_key=EQD_S01B_CUL}
+		text={trigger={tag=HEB}localization_key=EQD_S01B_HEB}
+		text={trigger={tag=HEF}localization_key=EQD_S01B_HEF}
+		text={trigger={tag=HMS}localization_key=EQD_S01B_HMS}
+		text={trigger={tag=HSW}localization_key=EQD_S01B_HSW}
+		text={trigger={tag=HWG}localization_key=EQD_S01B_HWG}
+		text={localization_key=EQD_S01B_GENERIC}
+	}
+	defined_text={
+		name=GetEQD_S01B_desc_SLOC
+		text={trigger={tag=CUL}localization_key=EQD_S01B_CUL_desc}
+		text={trigger={tag=HEB}localization_key=EQD_S01B_HEB_desc}
+		text={trigger={tag=HEF}localization_key=EQD_S01B_HEF_desc}
+		text={trigger={tag=HMS}localization_key=EQD_S01B_HMS_desc}
+		text={trigger={tag=HSW}localization_key=EQD_S01B_HSW_desc}
+		text={trigger={tag=HWG}localization_key=EQD_S01B_HWG_desc}
+		text={localization_key=EQD_S01B_GENERIC_desc}
+	}
+	defined_text={
+		name=GetEQD_S01C_SLOC
+		text={trigger={tag=CUL}localization_key=EQD_S01C_CUL}
+		text={trigger={tag=HEB}localization_key=EQD_S01C_HEB}
+		text={trigger={tag=HEF}localization_key=EQD_S01C_HEF}
+		text={trigger={tag=HMS}localization_key=EQD_S01C_HMS}
+		text={trigger={tag=HSW}localization_key=EQD_S01C_HSW}
+		text={trigger={tag=HWG}localization_key=EQD_S01C_HWG}
+		text={localization_key=EQD_S01C_GENERIC}
+	}
+	defined_text={
+		name=GetEQD_S01C_desc_SLOC
+		text={trigger={tag=CUL}localization_key=EQD_S01C_CUL_desc}
+		text={trigger={tag=HEB}localization_key=EQD_S01C_HEB_desc}
+		text={trigger={tag=HEF}localization_key=EQD_S01C_HEF_desc}
+		text={trigger={tag=HMS}localization_key=EQD_S01C_HMS_desc}
+		text={trigger={tag=HSW}localization_key=EQD_S01C_HSW_desc}
+		text={trigger={tag=HWG}localization_key=EQD_S01C_HWG_desc}
+		text={localization_key=EQD_S01C_GENERIC_desc}
+	}
+	defined_text={
+		name=GetEQD_S02_desc_SLOC
+		text={trigger={tag=CUL}localization_key=EQD_S02_CUL_desc}
+		text={trigger={tag=HEB}localization_key=EQD_S02_HEB_desc}
+		text={trigger={tag=HEF}localization_key=EQD_S02_HEF_desc}
+		text={trigger={tag=HMS}localization_key=EQD_S02_HMS_desc}
+		text={trigger={tag=HSW}localization_key=EQD_S02_HSW_desc}
+		text={trigger={tag=HWG}localization_key=EQD_S02_HWG_desc}
+		text={localization_key=EQD_S02_GENERIC_desc}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	defined_text={
+		name=GetEQD_SXX_SLOC
+		text={trigger={tag=CUL}localization_key=EQD_SXX_CUL}
+		text={trigger={tag=HEB}localization_key=EQD_SXX_HEB}
+		text={trigger={tag=HEF}localization_key=EQD_SXX_HEF}
+		text={trigger={tag=HMS}localization_key=EQD_SXX_HMS}
+		text={trigger={tag=HSW}localization_key=EQD_SXX_HSW}
+		text={trigger={tag=HWG}localization_key=EQD_SXX_HWG}
+		text={localization_key=EQD_SXX_GENERIC}
+	}
+	defined_text={
+		name=GetEQD_SXX_desc_SLOC
+		text={trigger={tag=CUL}localization_key=EQD_SXX_CUL_desc}
+		text={trigger={tag=HEB}localization_key=EQD_SXX_HEB_desc}
+		text={trigger={tag=HEF}localization_key=EQD_SXX_HEF_desc}
+		text={trigger={tag=HMS}localization_key=EQD_SXX_HMS_desc}
+		text={trigger={tag=HSW}localization_key=EQD_SXX_HSW_desc}
+		text={trigger={tag=HWG}localization_key=EQD_SXX_HWG_desc}
+		text={localization_key=EQD_SXX_GENERIC_desc}
+	}
