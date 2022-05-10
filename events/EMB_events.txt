@@ -214,6 +214,7 @@ add_namespace=EMB_evt_a01
 		is_triggered_only=yes	#timeout_days=3
 		option={
 			name=EMB_evt_a01.041.a
+			add_stability=-0.05
 			add_tech_bonus={
 				name=EMB_mp_technology_bonus
 				bonus=0.5	uses=1
@@ -232,13 +233,26 @@ add_namespace=EMB_evt_a01
 		is_triggered_only=yes	#timeout_days=3
 		option={
 			name=EMB_evt_a01.042.a
+			add_stability=-0.05
+			add_tech_bonus={
+				name=EMB_excavation_technology_bonus
+				bonus=1	uses=1
+				category=excavation_tech
+			}
 		}
 		option={
 			name=EMB_evt_a01.042.b
+			load_oob="EMB_S04B_militia"
 		}
 		option={
 			name=EMB_evt_a01.042.c
-			hidden_effect={country_event=id=EMB_evt_a01.044}
+			add_tech_bonus={
+				name=EMB_changeling_bonus
+				bonus=1	uses=1
+				category=race_tech
+			}
+			add_popularity={ideology=fascism popularity=0.02}
+			add_popularity={ideology=communism popularity=-0.02}
 		}
 		option={
 			name=EMB_evt_C-FF_W-TY.r
@@ -252,12 +266,28 @@ add_namespace=EMB_evt_a01
 		is_triggered_only=yes	#timeout_days=3
 		option={
 			name=EMB_evt_a01.043.a
+			hidden_effect={country_event=id=EMB_evt_a01.044}
 		}
 		option={
 			name=EMB_evt_C-FF_W-TY.r
 			trigger={is_debug=yes}
 		}
 		immediate={log="[GetDateText]: [Root.GetName]: event EMB_evt_a01.043"}
+	}
+add_namespace=EMB_evt_a00#Non-story Events
+	country_event={		#The Beast of Embers
+		id=EMB_evt_a00.001
+		title=EMB_evt_a00.001.t	desc=EMB_evt_a00.001.d	#picture=
+		is_triggered_only=yes	#timeout_days=3
+		option={
+			name=EMB_evt_a00.001.a
+			add_equipment_to_stockpile={type=train_equipment_1 amount=1 producer=EMB}
+		}
+		option={
+			name=EMB_evt_C-FF_W-TY.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event EMB_evt_a00.001"}
 	}
 add_namespace=EMBact01
 	country_event={		#The Great Migration

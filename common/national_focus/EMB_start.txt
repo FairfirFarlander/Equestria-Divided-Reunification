@@ -50,6 +50,8 @@
 		id=EMB_S02A icon=GFX_goal_SZC_improvised_farming_machinery
 		cost=7 x=-1 y=1 relative_position_id=EMB_S01B
 		search_filters={FOCUS_FILTER_STABILITY}
+		prerequisite={focus=EMB_S01A}
+		prerequisite={focus=EMB_S01B}
 		prerequisite={focus=EMB_S01C}
 		ai_will_do={factor=80}
 		completion_reward={
@@ -61,6 +63,8 @@
 		id=EMB_S02B icon=GFX_goal_agriculture
 		cost=7 x=1 y=1 relative_position_id=EMB_S01B
 		search_filters={FOCUS_FILTER_RESEARCH}
+		prerequisite={focus=EMB_S01A}
+		prerequisite={focus=EMB_S01B}
 		prerequisite={focus=EMB_S01C}
 		ai_will_do={factor=80}
 		completion_reward={
@@ -80,7 +84,7 @@
 			country_event=EMB_evt_a01.031	#A Special Session
 		}
 	}
-	shared_focus={		#The Beginning of Troubles
+	shared_focus={	#The Beginning of Troubles
 		id=EMB_S04A icon=GFX_SIA_jungletraining
 		cost=7 x=-2 y=1 relative_position_id=EMB_S03
 		search_filters={FOCUS_FILTER_STABILITY FOCUS_FILTER_RESEARCH}
@@ -88,11 +92,10 @@
 		ai_will_do={factor=80}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus EMB_S04A"
-			add_stability=-0.05
 			country_event=EMB_evt_a01.041	#They are Correct
 		}
 	}
-	shared_focus={		#The Cost of No Sun
+	shared_focus={	#The Cost of No Sun
 		id=EMB_S04B icon=GFX_goal_sunshine
 		cost=7 x=0 y=1 relative_position_id=EMB_S03
 		search_filters={FOCUS_FILTER_RESEARCH FOCUS_FILTER_STABILITY FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL}
@@ -103,7 +106,7 @@
 			country_event=EMB_evt_a01.042	#Restlessness on the Rise
 		}
 	}
-	shared_focus={		#There is Not Enough Room
+	shared_focus={	#There is Not Enough Room
 		id=EMB_S04C icon=GFX_focus_collective_housing
 		cost=7 x=2 y=1 relative_position_id=EMB_S03
 		search_filters={FOCUS_FILTER_POLITICAL}
@@ -113,7 +116,7 @@
 			log="[GetDateText]: [Root.GetName]: focus EMB_S04C"
 		}
 	}
-	shared_focus={		#A Hard, Tactical Solution
+	shared_focus={	#A Hard, Tactical Solution
 		id=EMB_S05A #icon=
 		cost=7 x=-3 y=1 relative_position_id=EMB_S04B
 		#search_filters={}

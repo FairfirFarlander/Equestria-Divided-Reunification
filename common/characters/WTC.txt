@@ -9,6 +9,26 @@ characters={
 			traits={}
 		}
 	}
+	WTC_alicia_habidasher={
+		name=WTC_alicia_habidasher
+		portraits={
+			civilian={
+				large="gfx/leaders/WTC/WTC_alicia_habidasher.dds"
+				small="gfx/leaders/WTC/small/WTC_alicia_habidasher_small.dds"
+			}
+		}
+		country_leader={
+			desc="WTC_ahabidasher_poli_desc"
+			ideology=despotism	#Temp
+			expire="1030.03.13.08"
+			traits={}
+		}
+		advisor={
+			slot=political_advisor
+			idea_token=WTC_ahabidasher_advi
+			traits={}
+		}
+	}
 	###Character Here
 	WTC_eloi_path={
 		name=WTC_eloi_path

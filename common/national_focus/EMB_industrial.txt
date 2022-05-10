@@ -1,0 +1,260 @@
+#Ember Starting Industrial Tree
+	shared_focus={	#From Militia to Defense Force
+		id=EMB_M00 #icon=
+		cost=2 x=-10 y=0
+		search_filters={}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EMB_M00"
+			army_experience=15
+			add_tech_bonus={
+				name=EMB_support_technology_bonus
+				bonus=0.5	uses=1
+				category=support_tech
+			}
+		}
+	}
+	shared_focus={	#A Quest for Officers	(Military Military)
+		id=EMB_MM01 #icon=
+		cost=7 x=-3 y=1 relative_position_id=EMB_M00
+		search_filters={}
+		prerequisite={focus=EMB_M00}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EMB_MM01"
+			add_corps_commander_role={
+				character=EMB_hithax_ballas
+				desc="EMB_hballas_mili_desc"
+				skill=1	attack_skill=1	defense_skill=1
+				planning_skill=2	logistics_skill=2
+				traits={trait_foreman changeling_race_trait}
+			}
+			custom_effect_tooltip=EMB_hithax_ballas_stats
+			add_corps_commander_role={
+				character=EMB_lavender_opal
+				desc="EMB_lopal_mili_desc"
+				skill=1	attack_skill=1	defense_skill=2
+				planning_skill=1	logistics_skill=2
+				traits={trait_cautious changeling_race_trait}
+			}
+			custom_effect_tooltip=EMB_lavender_opal_stats
+		}
+	}
+	shared_focus={	#Our Traditions Are Not Yet Dead
+		id=EMB_MM02A #icon=
+		cost=7 x=-1 y=1 relative_position_id=EMB_MM01
+		search_filters={}
+		prerequisite={focus=EMB_MM01}
+		mutually_exclusive={focus=EMB_MM02B}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EMB_MM02A"
+			set_technology={mass_assault=1}
+		}
+	}
+	shared_focus={	#Adapting to Modern Times
+		id=EMB_MM02B #icon=
+		cost=7 x=1 y=1 relative_position_id=EMB_MM01
+		search_filters={}
+		prerequisite={focus=EMB_MM01}
+		mutually_exclusive={focus=EMB_MM02A}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EMB_MM02B"
+			set_technology={superior_firepower=1}
+		}
+	}
+	shared_focus={	#Armor for All
+		id=EMB_MM03A #icon=
+		cost=7 x=-2 y=2 relative_position_id=EMB_MM01
+		search_filters={}
+		prerequisite={focus=EMB_MM02A focus=EMB_MM02B}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EMB_MM03A"
+			add_ideas=EMB_armor_for_all
+		}
+	}
+	shared_focus={	#Black Powder and Pole Arms
+		id=EMB_MM03B #icon=
+		cost=7 x=0 y=2 relative_position_id=EMB_MM01
+		search_filters={}
+		prerequisite={focus=EMB_MM02A focus=EMB_MM02B}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EMB_MM03B"
+			add_ideas=EMB_bad_breeech_loaders
+		}
+	}
+	shared_focus={	#To Fill the Ranks
+		id=EMB_MM03C #icon=
+		cost=7 x=2 y=2 relative_position_id=EMB_MM01
+		search_filters={}
+		prerequisite={focus=EMB_MM02A focus=EMB_MM02B}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EMB_MM03C"
+			add_ideas=EMB_every_drone_fights
+		}
+	}
+	shared_focus={	#A Royal Training
+		id=EMB_MM04A #icon=
+		cost=7 x=-1 y=3 relative_position_id=EMB_MM01
+		search_filters={}
+		prerequisite={focus=EMB_MM03A focus=EMB_MM03B}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EMB_MM04A"
+			army_experience=35
+		}
+	}
+	shared_focus={	#An Angry Swarm
+		id=EMB_MM04B #icon=
+		cost=7 x=1 y=3 relative_position_id=EMB_MM01
+		search_filters={}
+		prerequisite={focus=EMB_MM03B focus=EMB_MM03C}
+		bypass={has_tech=tech_changeling_c has_tech=tech_changeling_c2 has_tech=tech_changeling_c3}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EMB_MM04B"
+			if={limit={not={is_researching_technology=gwtank}}
+				add_tech_bonus={
+					name=EMB_warswarms_technology_bonus
+					bonus=1 uses=1
+					technology=tech_changeling_c
+					technology=tech_changeling_c2
+					technology=tech_changeling_c3
+				}
+			}
+		}
+	}
+	###########################################
+	shared_focus={	#The Farms of Level 5	(Military Industrial)
+		id=EMB_MI01 #icon=
+		cost=7 x=3 y=1 relative_position_id=EMB_M00
+		search_filters={}
+		prerequisite={focus=EMB_M00}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EMB_MI01"
+			add_stability=0.03
+		}
+	}
+	shared_focus={	#To Deal With a Lack of Food
+		id=EMB_MI02A #icon=
+		cost=7 x=-2 y=1 relative_position_id=EMB_MI01
+		search_filters={}
+		prerequisite={focus=EMB_MI01}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EMB_MI02A"
+			one_random_industrial_complex=yes
+		}
+	}
+	shared_focus={	#Proper Factories
+		id=EMB_MI02B #icon=
+		cost=7 x=0 y=1 relative_position_id=EMB_MI01
+		search_filters={}
+		prerequisite={focus=EMB_MI01}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EMB_MI02B"
+			36={
+				add_extra_state_shared_building_slots=2
+				add_building_construction={
+					type=industrial_complex
+					level=2 instant_build=yes
+				}
+			}
+		}
+	}
+	shared_focus={	#The Steel Mills of Level 10
+		id=EMB_MI02C #icon=
+		cost=7 x=2 y=1 relative_position_id=EMB_MI01
+		search_filters={}
+		prerequisite={focus=EMB_MI01}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EMB_MI02C"
+			36={add_resource={type=steel amount=3}}
+		}
+	}
+	shared_focus={	#A Long Forgotten Convoy
+		id=EMB_MI03A #icon=
+		cost=7 x=-1 y=1 relative_position_id=EMB_MI02B
+		search_filters={}
+		prerequisite={focus=EMB_MI02A}
+		prerequisite={focus=EMB_MI02B}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EMB_MI03A"
+			set_technology={basic_train=1}
+			country_event={id=EMB_evt_a00.001 days=1}
+		}
+	}
+	shared_focus={	#Defense Production
+		id=EMB_MI03B #icon=
+		cost=7 x=1 y=1 relative_position_id=EMB_MI02B
+		search_filters={}
+		prerequisite={focus=EMB_MI02B}
+		prerequisite={focus=EMB_MI02C}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EMB_MI03B"
+			two_random_arms_factory=yes
+		}
+	}
+	shared_focus={	#The Puttering of Progress
+		id=EMB_MI04A #icon=
+		cost=7 x=-1 y=1 relative_position_id=EMB_MI03A
+		search_filters={}
+		prerequisite={focus=EMB_MI03A}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EMB_MI04A"
+			add_tech_bonus={
+				name=EMB_motorized_equipment
+				bonus=1 uses=1
+				category=motorized_equipment
+			}
+			add_ideas=EMB_steam_engines
+		}
+	}
+	shared_focus={	#Steel Beasts of War
+		id=EMB_MI04B #icon=
+		cost=7 x=1 y=1 relative_position_id=EMB_MI03A
+		search_filters={}
+		prerequisite={focus=EMB_MI03A}
+		prerequisite={focus=EMB_MI03B}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EMB_MI04B"
+			if={limit={has_dlc="No Step Back"}
+				add_tech_bonus={
+					name=EMB_motorized_equipment
+					bonus=1 uses=1
+					technology=gwtank
+					category=cat_heavy_armor
+				}
+			}
+			else={
+				add_tech_bonus={
+					name=EMB_motorized_equipment
+					bonus=1 uses=1
+					technology=gwtank_chassis
+					category=cat_heavy_armor
+				}
+			}
+		}
+	}
+	shared_focus={	#The Great Cauldron
+		id=EMB_MI04C #icon=
+		cost=7 x=1 y=1 relative_position_id=EMB_MI03B
+		search_filters={}
+		prerequisite={focus=EMB_MI03B}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EMB_MI04C"
+			#ARGH!
+		}
+	}
