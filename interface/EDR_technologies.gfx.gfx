@@ -1,0 +1,7 @@
+#spriteTypes={
+#	SpriteType={
+#		name="GFX_reunification_folder_tab"
+#		texturefile="gfx/interface/techtree/techtree_magic_tab.dds"
+#		noOfFrames=2
+#	}
+#}
