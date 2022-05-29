@@ -51,21 +51,21 @@ characters={
 	EMB_hithax_ballas={
 		name=EMB_hithax_ballas
 		portraits={army={large="gfx/leaders/EMB/EMB_councilor_tyrennadus_old.dds"}}
-		corps_commander={
-			desc="EMB_hballas_mili_desc"
-			skill=1	attack_skill=1	defense_skill=1
-			planning_skill=2	logistics_skill=2
-			traits={trait_foreman changeling_race_trait}
-		}
+		#corps_commander={	#Done in focus EMB_MM01
+		#	desc="EMB_hballas_mili_desc"
+		#	skill=1	attack_skill=1	defense_skill=1
+		#	planning_skill=2	logistics_skill=2
+		#	traits={trait_foreman changeling_race_trait}
+		#}
 	}
 	EMB_lavender_opal={
 		name=EMB_lavender_opal
 		portraits={army={large="gfx/leaders/EMB/EMB_mother_nightshade_old.dds"}}
-		corps_commander={
-			desc="EMB_lopal_mili_desc"
-			skill=1	attack_skill=1	defense_skill=2
-			planning_skill=1	logistics_skill=2
-			traits={trait_cautious changeling_race_trait}
-		}
+		#corps_commander={
+		#	desc="EMB_lopal_mili_desc"
+		#	skill=1	attack_skill=1	defense_skill=2
+		#	planning_skill=1	logistics_skill=2
+		#	traits={trait_cautious changeling_race_trait}
+		#}
 	}
 }

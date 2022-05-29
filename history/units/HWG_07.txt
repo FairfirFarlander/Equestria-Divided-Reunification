@@ -89,13 +89,13 @@ units={
 		force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
 	}
 	division={	#Manehattan#
-		name="Arquebiers of Manehattan"
+		name="Arqueteers of Manehattan"
 		location=758	division_template="Arquebus Regiment"
 		start_experience_factor=0.1	start_equipment_factor=1.0
 		force_equipment_variants={melee_equipment_1={owner="HWG" creator="HWG"}}
 	}
 	division={	#Baltimare#
-		name="Arquebiers of Baltimare"
+		name="Arqueteers of Baltimare"
 		location=13011	division_template="Arquebus Regiment"
 		start_experience_factor=0.25	start_equipment_factor=0.8
 		force_equipment_variants={melee_equipment_1={owner="HWG" creator="HWG"}}

@@ -9,7 +9,7 @@ state={	#EDRSTATE
 		owner=HEB
 		add_core_of=HEB
 		add_claim_by=COT
-		victory_points={11037 3}
+		victory_points={11037 5}
 		buildings={
 			infrastructure=2
 		}

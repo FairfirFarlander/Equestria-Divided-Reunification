@@ -68,5 +68,50 @@ ideas={
 				stability_factor=0.08
 			}
 		}
+		EMB_armor_for_all={
+			allowed={always=no}
+			#picture=
+			removal_cost=-1
+			modifier={
+				defence=0.02
+				breakthrough_factor=0.02
+			}
+		}
+		EMB_bad_breeech_loaders={
+			allowed={always=no}
+			#picture=
+			removal_cost=-1
+			equipment_bonus={
+				infantry_equipment={
+					instant=yes reliability=-0.33
+				}
+			}
+		}
+		EMB_every_drone_fights={
+			allowed={always=no}
+			#picture=
+			removal_cost=-1
+			modifier={
+				army_org_factor=-0.03
+				training_time_factor=-0.1
+				recruitable_population_factor=0.1
+			}
+		}
+		EMB_steam_engines={
+			allowed={always=no}
+			#picture=
+			removal_cost=-1
+			equipment_bonus={
+				motorized_equipment={
+					instant=yes reliability=-0.1
+				}
+				armored_car_equipment={
+					instant=yes reliability=-0.1
+				}
+				armor={
+					instant=yes reliability=-0.1
+				}
+			}
+		}
 	}
 }

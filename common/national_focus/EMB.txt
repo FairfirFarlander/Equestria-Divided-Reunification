@@ -3,6 +3,7 @@ focus_tree={
 	continuous_focus_position={x=1200 y=0}
 	shared_focus=EMB_S00
 	shared_focus=EMB_S10
+	shared_focus=EMB_M00
 	#shared_focus=EMB_CS00
 	#shared_focus=EMB_ember_earthworks
 	#shared_focus=EDR_I00

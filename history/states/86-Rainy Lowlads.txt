@@ -8,5 +8,8 @@ state={	#EDRSTATE
 	history={
 		owner=STB
 		add_core_of=STB
+		buildings={
+			infrastructure=1
+		}
 	}
 }

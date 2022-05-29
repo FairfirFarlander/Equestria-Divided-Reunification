@@ -10,5 +10,8 @@ state={	#EDRSTATE
 		owner=EMB
 		add_core_of=EMB
 		victory_points={9497 1}	#no EAW
+		buildings={
+			infrastructure=1
+		}
 	}
 }
