@@ -6,8 +6,8 @@ state={	#EDRSTATE
 	buildings_max_level_factor=1
 	provinces={454 3536 3946 6504 6569 9431 9523 9534 11420 11483 11563 11606 12674}
 	history={
-		owner=HMS
-		add_core_of=HMS
+		owner=MSS
+		add_core_of=MSS
 		buildings={
 			infrastructure=1
 		}

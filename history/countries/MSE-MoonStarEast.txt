@@ -1,0 +1,46 @@
+#LOCALE#
+capital=226
+#if={
+#	limit={has_dlc="No Step Back"}
+#	set_oob="MSE_07"	#_nsb
+#	else={set_oob="MSE_07"}
+#}
+#FOUNTATION#
+set_research_slots=2
+set_stability=0.37
+set_war_support=0.13	#1812
+add_ideas={
+	volunteer_only export_focus civilian_economy
+	poor_science_base agrarian_society
+	lack_of_scientists3 poverty4
+}
+if={
+	limit={has_dlc="No Step Back"}
+	add_ideas={
+		traditionalism_academy_spirit
+		doctrinal_orthodoxy_spirit
+		disdain_for_the_digging_spirit
+	}
+	else={add_ideas={EQS_bad_tanks}}
+}
+#TECHNOLOGY#
+set_technology={
+	pony_race=1
+	melee_weapons=1
+	tech_support=1
+}
+actually_fix_weapon_techs=yes
+#MISC#
+set_convoys=3
+set_rule={can_generate_female_aces=yes}
+#POLITICS#
+set_popularities={
+	fascism=40	communism=22
+	neutrality=18	democratic=20
+}
+set_politics={
+	ruling_party=fascism	last_election="1000.10.10"
+	election_frequency=36	elections_allowed=no
+}
+#CHARACTERS#
+#VARIENTS#

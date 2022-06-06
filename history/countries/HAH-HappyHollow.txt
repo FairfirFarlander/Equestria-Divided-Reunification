@@ -1,0 +1,53 @@
+#LOCALE#
+capital=40
+#if={
+#	limit={has_dlc="No Step Back"}
+#	set_oob="HAH_07"	#_nsb
+#	else={set_oob="HAH_07"}
+#}
+#if={
+	#limit={has_dlc="Man the Guns"}
+	#set_naval_oob="HAH_1007_naval"
+	#else={set_naval_oob="HAH_1007_naval_legacy"}
+#}#
+#FOUNTATION#
+set_research_slots=2
+set_stability=0.16
+set_war_support=0.04
+add_ideas={
+	volunteer_only limited_exports isolation
+	better_science_base agrarian_society
+	lack_of_scientists1 poverty1
+}
+if={
+	limit={has_dlc="No Step Back"}
+	add_ideas={
+		traditionalism_academy_spirit
+		doctrinal_orthodoxy_spirit
+		disdain_for_the_digging_spirit
+	}
+	else={add_ideas={EQS_bad_tanks}}
+}
+#TECHNOLOGY#
+set_technology={
+	pony_race=1
+	melee_weapons=1
+	tech_support=1
+	tech_military_police=1
+	tech_unicorn=1
+}
+actually_fix_weapon_techs=yes
+#MISC#
+set_convoys=2	#remove 1 convoy later
+set_rule={can_generate_female_aces=yes}
+#POLITICS#
+set_popularities={	#Battle of Britain and the Clone War
+	fascism=40	communism=19
+	neutrality=22	democratic=19
+}
+set_politics={
+	ruling_party=fascism	last_election="1000.10.10"
+	election_frequency=36	elections_allowed=no
+}
+#CHARACTERS#
+#VARIENTS#

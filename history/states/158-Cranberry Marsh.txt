@@ -7,9 +7,9 @@ state={	#EDRSTATE
 	provinces={3876 6320 9350 9861 9901 10007 11218 11257 11378 13122}
 	resources={oil=5}
 	history={
-		owner=SYV
-		add_core_of=SYV
+		owner=SGR	#SYV
 		add_core_of=SGR
+		#add_core_of=SYV
 		buildings={
 			infrastructure=1
 		}

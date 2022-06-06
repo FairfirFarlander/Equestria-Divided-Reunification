@@ -7,6 +7,7 @@ CUL={color=rgb{101 1 36}color_ui=rgb{101 1 36}}
 EMB={color=rgb{20 45 19}color_ui=rgb{20 45 19}}
 FLY={color=rgb{137 132 234}color_ui=rgb{137 132 234}}
 FSH={color=rgb{178 72 171}color_ui=rgb{178 72 171}}
+HAH={color=rgb{210 36 170}color_ui=rgb{210 36 170}}
 HAY={color=rgb{255 204 102}color_ui=rgb{255 204 102}}
 HEB={color=rgb{255 136 77}color_ui=rgb{255 136 77}}
 HEF={color=rgb{0 128 0}color_ui=rgb{0 128 0}}
@@ -16,6 +17,9 @@ HSW={color=rgb{179 179 255}color_ui=rgb{179 179 255}}
 HWG={color=rgb{249 242 255}color_ui=rgb{249 242 255}}
 JTL={color=rgb{119 47 65}color_ui=rgb{119 47 65}}
 LAS={color=rgb{162 125 0}color_ui=rgb{162 125 0}}
+MSE={color=rgb{144 26 255}color_ui=rgb{144 26 255}}
+MSN={color=rgb{164 26 255}color_ui=rgb{164 26 255}}
+MSS={color=rgb{125 26 255}color_ui=rgb{125 26 255}}
 MWC={color=rgb{2 147 189}color_ui=rgb{2 147 189}}
 NIH={color=rgb{41 37 110}color_ui=rgb{41 37 110}}
 PIE={color=rgb{187 227 208}color_ui=rgb{187 227 208}}

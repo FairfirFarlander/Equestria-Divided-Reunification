@@ -6,9 +6,9 @@ state={	#EDRSTATE
 	buildings_max_level_factor=1
 	provinces={3755 6478 9573 11683 11715}
 	history={
-		owner=SYV
-		add_core_of=SYV
+		owner=SGR	#SYV
 		add_core_of=SGR
+		#add_core_of=SYV
 		buildings={
 			infrastructure=2
 		}
