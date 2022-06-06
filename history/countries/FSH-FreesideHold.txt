@@ -1,0 +1,76 @@
+#LOCALE#
+capital=107
+#if={
+#	limit={has_dlc="No Step Back"}
+#	set_oob="FSH_07"	#_nsb#
+#	else={set_oob="FSH_07"}
+#}
+#FOUNTATION#
+set_research_slots=2
+set_stability=0.23
+set_war_support=0.11
+add_ideas={
+	volunteer_only limited_exports isolation
+	poor_science_base agrarian_society
+	no_lack_of_scientists no_poverty
+	THA_Ancestor_Guidance
+	THA_Warrior_Culture_Traditions
+}
+if={
+	limit={has_dlc="No Step Back"}
+	add_ideas={
+		traditionalism_academy_spirit
+		doctrinal_orthodoxy_spirit
+		disdain_for_the_digging_spirit
+	}
+	else={add_ideas={EQS_bad_tanks}}
+}
+add_offsite_building={
+	type=industrial_complex
+	level=1
+}
+add_offsite_building={
+	type=arms_factory
+	level=1
+}
+#TECHNOLOGY#
+set_technology={
+	pony_race=1
+	melee_weapons=1
+	melee_weapons1=1
+	tech_mountaineers=1
+	tech_support=1
+	pre_gw_artillery=1
+	tech_pegasi=1
+}
+if={limit={has_dlc="Man the Guns"}
+	set_technology={
+		early_ship_hull_light=1
+		basic_battery=1
+		mtg_transport=1
+	}
+}
+if={limit={not={has_dlc="Man the Guns"}}
+	set_technology={
+		early_destroyer=1
+		transport=1
+	}
+}
+actually_fix_weapon_techs=yes
+generic_DD_template=yes
+#MISC#
+set_convoys=3
+set_rule={can_generate_female_aces=yes}
+#DIPLOMACY#
+#POLITICS#
+set_popularities={
+	fascism=8	communism=31
+	neutrality=29	democratic=32
+}
+set_politics={
+	ruling_party=democratic	last_election="1011.01.01"
+	election_frequency=36	elections_allowed=no
+}
+#CHARACTERS#
+recruit_character=THA_the_niece
+#VARIENTS#
