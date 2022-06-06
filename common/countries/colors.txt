@@ -6,6 +6,7 @@ CRL={color=rgb{213 166 240}color_ui=rgb{213 166 240}}
 CUL={color=rgb{101 1 36}color_ui=rgb{101 1 36}}
 EMB={color=rgb{20 45 19}color_ui=rgb{20 45 19}}
 FLY={color=rgb{137 132 234}color_ui=rgb{137 132 234}}
+FSH={color=rgb{178 72 171}color_ui=rgb{178 72 171}}
 HAY={color=rgb{255 204 102}color_ui=rgb{255 204 102}}
 HEB={color=rgb{255 136 77}color_ui=rgb{255 136 77}}
 HEF={color=rgb{0 128 0}color_ui=rgb{0 128 0}}
@@ -25,6 +26,7 @@ STB={color=rgb{166 208 53}color_ui=rgb{166 208 53}}
 SWT={color=rgb{214 254 244}color_ui=rgb{214 254 244}}
 SYV={color=rgb{252 160 254}color_ui=rgb{252 160 254}}
 THA={color=rgb{0 0 102}color_ui=rgb{0 0 102}}
+TRH={color=rgb{36 36 154}color_ui=rgb{36 36 154}}
 TRT={color=rgb{217 253 106}color_ui=rgb{217 253 106}}
 VHT={color=rgb{203 41 41}color_ui=rgb{203 41 41}}
 VII={color=rgb{22 167 209}color_ui=rgb{22 167 209}}

@@ -1,10 +1,10 @@
 #LOCALE#
-capital=30
-if={
-	limit={has_dlc="No Step Back"}
-	set_oob="THA_07"	#_nsb#
-	else={set_oob="THA_07"}
-}
+capital=128
+#if={
+#	limit={has_dlc="No Step Back"}
+#	set_oob="TRH_07"	#_nsb#
+#	else={set_oob="TRH_07"}
+#}
 #FOUNTATION#
 set_research_slots=2
 set_stability=0.23
@@ -64,15 +64,13 @@ set_rule={can_generate_female_aces=yes}
 #DIPLOMACY#
 #POLITICS#
 set_popularities={
-	fascism=11	communism=32
-	neutrality=49	democratic=8
+	fascism=32	communism=29
+	neutrality=31	democratic=8
 }
 set_politics={
-	ruling_party=neutrality	last_election="1001.10.10"
+	ruling_party=democratic	last_election="1011.01.01"
 	election_frequency=36	elections_allowed=no
 }
 #CHARACTERS#
-recruit_character=THA_argent_end
-#recruit_character=THA_auburn_peak
-#recruit_character=THA_the_niece
+recruit_character=THA_auburn_peak
 #VARIENTS#

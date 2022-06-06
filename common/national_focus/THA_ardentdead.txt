@@ -1,7 +1,7 @@
 #The Fruit of Our Eye
 	shared_focus={		#The Council Meeets
 		id=THA_SS00 #icon=
-		x=0 y=0 cost=4 ai_will_do={factor=40}
+		x=0 y=8 cost=4 ai_will_do={factor=40}
 		select_effect={set_temp_variable={aaaaa=1}}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus THA_SS00"

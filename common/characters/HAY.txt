@@ -37,17 +37,11 @@ characters={
 		advisor={
 			slot=political_advisor
 			idea_token=HAY_lberry_advi
-			allowed={original_tag=HAY}
 			available={
-				has_country_flag=HAY_baltimare_liberated
 				NOT={
-					OR={
-						#has_global_flag=baltimare_communists_executed
-						has_country_flag=HAY_lberry_banished
-						has_country_leader={
-							character=HAY_lavender_berry
-							ruling_only=yes
-						}
+					has_country_leader={
+						character=HAY_lavender_berry
+						ruling_only=yes
 					}
 				}
 			}
@@ -88,7 +82,7 @@ characters={
 			traits={pony_race_trait offensive_doctrine inspirational_leader}
 		}
 	}
-	HAY_cricket_chafer={
+	HAY_cricket_chafer={ #Diamond Chafer
 		name=HAY_cricket_chafer	#chafer1
 		portraits={
 			civilian={large="gfx/leaders/BAL/Chafer.tga"}
@@ -98,33 +92,23 @@ characters={
 			}
 		}
 		country_leader={
-			desc="HAY_cchafer_poli_desc"	ideology=leninism	#BAL_corn_lord
+			desc="BAL_corn_lord"	ideology=leninism	#HAY_cchafer_poli_desc
 			expire="1030.03.13.08"
 			traits={corn_lord}
 			id=-1
 		}
 		corps_commander={
 			traits={pony_race_trait swamp_fox jungle_rat}
-			desc="HAY_cchafer_mili_desc"	#BAL_corn_lord
+			desc="BAL_corn_lord"	#HAY_cchafer_mili_desc
 			skill=2	attack_skill=1	defense_skill=1
 			planning_skill=2	logistics_skill=3
 		}
-		advisor={
-			slot=army_chief
-			idea_token=HAY_cchafer_chie	#chafer1
-			cost=100
-			allowed={original_tag=HAY}
-			available={
-				NOT={
-					has_country_flag=BAL_commie_advisors_blocked
-					has_country_leader={
-						character=BAL_cricket_chafer
-						ruling_only=yes
-					}
-				}
-			}
-			traits={jungle_warfare_expert}
-		}
+		#advisor={
+		#	slot=army_chief
+		#	idea_token=chafer1	#HAY_cchafer_chie
+		#	cost=100
+		#	traits={jungle_warfare_expert}
+		#}
 	}
 	HAY_ringo_jam={	#Robert Maestri (Drummer Maestro Jam)
 		name=HAY_ringo_jam
@@ -139,4 +123,284 @@ characters={
 	}
 	#Light Narrative
 	#Kingfisher
+	HAY_starlit_night={
+		name=HAY_starlit_night
+		gender=female
+		portraits={
+			civilian={small="GFX_idea_starrynight"}
+		}
+		advisor={
+			slot=political_advisor
+			idea_token=HAY_snight_advi
+			traits={captain_of_industry}
+			modifier={research_speed_factor=0.025}
+		}
+	}
+	HAY_cobalt_hoof={
+		name=HAY_cobalt_hoof
+		portraits={
+			civilian={
+				small="GFX_idea_cobalt"
+			}
+		}
+		advisor={
+			slot=political_advisor
+			idea_token=HAY_choof_advi
+			traits={bureaucrat}
+		}
+	}
+	HAY_nesty_mango={
+		name=HAY_nesty_mango
+		gender=female
+		portraits={
+			civilian={
+				small="GFX_idea_BAL_anarchist_advisor1"
+			}
+		}
+		advisor={
+			slot=political_advisor
+			idea_token=HAY_nmango_advi
+			traits={rural_populist}
+		}
+	}
+	HAY_free_spirit={
+		name=HAY_free_spirit
+		portraits={
+			civilian={
+				small="GFX_idea_unknown_advisor"
+			}
+		}
+		advisor={
+			slot=political_advisor
+			idea_token=HAY_fspirit_advi
+			traits={silent_workhorse}
+		}
+	}
+	HAY_ministry_of_defense={
+		name=HAY_ministry_of_defense
+		portraits={
+			civilian={small="GFX_idea_BAL_Ministry_of_defense"}
+		}
+		available={has_country_flag=HAY_ministries_unlocked}
+		advisor={
+			slot=political_advisor
+			idea_token=HAY_modefense_advi
+			traits={BAL_mod}
+		}
+	}
+	HAY_ministry_of_information={
+		name=HAY_ministry_of_information
+		portraits={
+			civilian={small="GFX_idea_BAL_Ministry_of_information"}
+		}
+		available={has_country_flag=HAY_ministries_unlocked}
+		advisor={
+			slot=political_advisor
+			idea_token=HAY_moinformation_advi
+			traits={BAL_moi}
+		}
+	}
+	HAY_ministry_of_labour={
+		name=HAY_ministry_of_labour
+		portraits={
+			civilian={small="GFX_idea_BAL_Ministry_of_labor"}
+		}
+		available={has_country_flag=HAY_ministries_unlocked}
+		advisor={
+			slot=political_advisor
+			idea_token=HAY_molabour_advi
+			traits={BAL_mol}
+		}
+	}
+	HAY_silver_storm={
+		name=HAY_silver_storm
+		portraits={
+			army={small="GFX_idea_silverstorm"}
+		}
+		advisor={
+			slot=theorist
+			ledger=army
+			cost=150
+			idea_token=HAY_sstorm_advi
+			traits={military_theorist}
+		}
+	}
+	HAY_lucky_star={
+		name=HAY_lucky_star
+		portraits={
+			army={small="GFX_idea_luckystar"}
+		}
+		advisor={
+			slot=theorist
+			ledger=air
+			cost=100
+			idea_token=HAY_lstar_advi
+			traits={rocket_scientist}
+			modifier={rocketry=0.1}
+		}
+	}
+	HAY_blitz_banana={
+		name=HAY_blitz_banana
+		gender=female
+		portraits={
+			army={small="GFX_idea_blitz1"}
+		}
+		advisor={
+			slot=army_chief
+			idea_token=HAY_bbanana_chie
+			traits={army_chief_drill_2}
+		}
+	}
+	HAY_ocean_breeze={
+		name=HAY_ocean_breeze
+		gender=female
+		portraits={
+			army={small="GFX_idea_oceanbreeze"}
+		}
+		advisor={
+			slot=navy_chief
+			idea_token=HAY_obreeze_chie
+			traits={navy_fleet_logistics_3}
+		}
+	}
+	HAY_river_pearl={
+		name=HAY_river_pearl
+		gender=female
+		portraits={
+			army={small="GFX_idea_riverpearl"}
+		}
+		advisor={
+			slot=navy_chief
+			idea_token=HAY_rpearl_advi
+			traits={navy_submarine_3}
+		}
+	}
+	HAY_diamond_blossom={
+		name=HAY_diamond_blossom
+		gender=female
+		portraits={
+			army={small="GFX_idea_diamondblossom"}
+		}
+		advisor={
+			slot=air_chief
+			idea_token=HAY_dblossom_advi
+			traits={air_chief_old_guard}
+		}
+	}
+	HAY_obsidian_shard={
+		name=HAY_obsidian_shard
+		gender=female
+		portraits={
+			army={small="GFX_idea_obsidia"}
+		}
+		advisor={
+			slot=air_chief
+			idea_token=HAY_oshard_advi
+			traits={air_chief_night_operations_2}
+		}
+	}
+	HAY_blueberry_sabre={
+		name=HAY_blueberry_sabre
+		portraits={
+			army={small="GFX_idea_blueberry"}
+		}
+		advisor={
+			slot=high_command
+			ledger=army
+			cost=150
+			idea_token=HAY_bsabre_advi
+			traits={army_regrouping_3}
+		}
+	}
+	HAY_marsh_shimmer={	#lavender
+		name=HAY_marsh_shimmer
+		gender=female
+		portraits={
+			army={small="GFX_idea_lavender"}
+		}
+		advisor={
+			slot=high_command
+			ledger=army
+			cost=100
+			idea_token=HAY_mshimmer_advi
+			traits={army_commando_2}
+		}
+	}
+	HAY_sky_chaser={
+		name=HAY_sky_chaser
+		portraits={
+			army={small="GFX_idea_skychaser"}
+		}
+		advisor={
+			slot=high_command
+			ledger=army
+			cost=100
+			idea_token=HAY_schaser_advi
+			traits={army_logistics_2}
+		}
+	}
+	HAY_silver_mane={
+		name=HAY_silver_mane
+		portraits={
+			army={
+				large="gfx/leaders/BAL/silvermane.tga"
+				small="GFX_idea_silvermane"
+			}
+		}
+		corps_commander={
+			desc="HAY_smane_mili_desc"
+			skill=1	attack_skill=1	defense_skill=1
+			planning_skill=1	logistics_skill=1
+			traits={pony_race_trait ranger}
+		}
+	}
+	HAY_lime_pearl={
+		name=HAY_lime_pearl
+		gender=female
+		portraits={
+			army={
+				large="gfx/leaders/BAL/commie_waifu.tga"
+				small="GFX_idea_commie_waifu"
+			}
+		}
+		corps_commander={
+			desc="HAY_lpearl_mili_desc"
+			skill=1	attack_skill=1	defense_skill=1
+			planning_skill=1	logistics_skill=1
+			traits={pony_race_trait commando}
+		}
+	}
+	HAY_stylus_pen={
+		name=HAY_stylus_pen
+		gender=female
+		portraits={
+			army={
+				large="gfx/leaders/BAL/glorious_commie_waifu.tga"
+				small="GFX_idea_glorious_commie_waifu"
+			}
+		}
+		corps_commander={
+			desc="BAL_waifu_desc"	#HAY_spen_mili_desc
+			skill=2	attack_skill=2	defense_skill=2
+			planning_skill=1	logistics_skill=2
+			traits={pony_race_trait infantry_leader trickster}
+			legacy_id=11250
+		}
+	}
+	HAY_boreal_bloom={
+		name=HAY_boreal_bloom
+		portraits={
+			army={
+				large="gfx/leaders/BAL/Brandon.tga"
+				small="GFX_idea_Brandon"
+			}
+		}
+		corps_commander={
+			desc="BAL_gay_brandon_desc"	#HAY_bbloom_mili_desc
+			skill=3	attack_skill=4	defense_skill=1
+			planning_skill=2	logistics_skill=3
+			traits={arrow pony_race_trait trickster expert_improviser}
+			legacy_id=11251
+		}
+	}
 }

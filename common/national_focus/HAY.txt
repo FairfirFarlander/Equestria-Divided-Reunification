@@ -1,11 +1,12 @@
 focus_tree={
 	id=HAY country={modifier={add=7 tag=HAY}}
 	continuous_focus_position={x=3000 y=800}
-	shared_focus=HAY_no_equestria
-	shared_focus=HAY_consult_locals
-	shared_focus=EDR_L05
-	shared_focus=EDR_N05
-	shared_focus=EDR_A05
+	#shared_focus=HAY_no_equestria
+	#shared_focus=HAY_consult_locals
+	#shared_focus=EDR_L05
+	#shared_focus=EDR_N05
+	#shared_focus=EDR_A05
+	shared_focus=HAY_S00
 	shared_focus=BAL_proclaim_sesr
 	shared_focus=BAL_continue_collectivization
 	shared_focus=BAL_continue_nationalization
@@ -13,3 +14,403 @@ focus_tree={
 	shared_focus=BAL_centralized_army
 	shared_focus=BAL_revolution
 }
+	shared_focus={	#
+		id=HAY_S00 #icon=
+		cost=8 x=0 y=0
+		search_filters={}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAY_S00"
+		}
+	}
+
+
+
+
+	shared_focus={		#The Death of an Era
+		id=HAY_no_equestria
+		icon=GFX_goal_eqc_shelter_celestia
+		x=0 y=0 cost=1.43
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAY_no_equestria"
+			country_event=HAYintro.1	#The Baltimare Riots - War Related Bonus
+		}
+	}
+	shared_focus={		#The Revolution of 04'
+		id=HAY_revolution04
+		icon=GFX_goal_revolution_pony
+		relative_position_id=HAY_no_equestria
+		x=0 y=1 cost=1.43
+		prerequisite={focus=HAY_no_equestria}
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAY_revolution04"
+			country_event=HAYintro.2	#A New Age - Pick Who Takes Charge
+		}
+	}
+	shared_focus={		#Keep Your Freinds Close...
+		id=HAY_allies_and_enemies
+		icon=GFX_goal_generic_pony_unity
+		relative_position_id=HAY_revolution04
+		x=0 y=1 cost=1.43
+		prerequisite={focus=HAY_revolution04}
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAY_allies_and_enemies"
+			country_event=HAYintro.3	#...And Your Enemies Closer - Pick an Ally
+		}
+	}
+	shared_focus={		#The Winter Troubles
+		id=HAY_winter_07
+		icon=GFX_goal_water
+		relative_position_id=HAY_allies_and_enemies
+		x=0 y=1 cost=4
+		prerequisite={focus=HAY_allies_and_enemies}
+		ai_will_do={factor=4000}
+		select_effect={
+			set_temp_variable={aaaaa=1}
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAY_winter_07"
+		}
+	}
+#	shared_focus={		#Calm Before The Storm
+#		id=HAY_calm_before_the_storm
+#		icon=GFX_goal_generic_alliance
+#		relative_position_id=HAY_allies_and_enemies
+#		x=0 y=7 cost=1.43
+#		prerequisite={focus=HAY_fully_mobolize_our_nation}
+#		prerequisite={focus=HAY_more_industry}
+#		prerequisite={focus=HAY_more_weapons}
+#		ai_will_do={factor=4000}
+#		completion_reward={
+#			log="[GetDateText]: [Root.GetName]: focus HAY_calm_before_the_storm"
+#			add_war_support=0.25
+#		}
+#	}
+	shared_focus={		#Consult the Locals
+		id=HAY_consult_locals
+		icon=GFX_goal_improve_relations_pony_pony
+		#prerequisite={focus=HAY_winter_07}
+		x=11 y=0 cost=5
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAY_consult_locals"
+			increase_society_development_gradually_with_tt=yes
+			add_tech_bonus={
+				name=industrial_bonus
+				bonus=0.75 uses=2
+				technology=tech_pony_misc
+				technology=tech_pony_misc3
+				technology=tech_pony_misc_a
+				technology=tech_pony_misc_a2
+				technology=tech_pony_misc_b
+			}
+		}
+	}
+	shared_focus={		#Hire Industrial Experts
+		id=HAY_industrialist_experts
+		icon=GFX_DAH_Topke
+		relative_position_id=HAY_consult_locals
+		x=-3 y=1 cost=5
+		prerequisite={focus=HAY_consult_locals}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAY_industrialist_experts"
+			#Unlock Industry Advisor
+		}
+	}
+	shared_focus={		#Bridge the Swamps
+		id=HAY_connect_swamps
+		icon=GFX_goal_KTG_Jungle_Railroad
+		relative_position_id=HAY_consult_locals
+		x=0 y=1 cost=5
+		prerequisite={focus=HAY_consult_locals}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAY_connect_swamps"
+			increase_society_development_gradually_with_tt=yes
+			27={
+				add_extra_state_shared_building_slots=1
+				add_building_construction={
+					type=infrastructure
+					level=1 instant_build=yes
+				}
+			}
+			82={
+				add_extra_state_shared_building_slots=1
+				add_building_construction={
+					type=infrastructure
+					level=1 instant_build=yes
+				}
+			}
+		}
+	}
+	shared_focus={		#Attract Foreign Immigrants
+		id=HAY_attract_immigrants
+		icon=GFX_goal_pony_passport
+		relative_position_id=HAY_consult_locals
+		x=3 y=1 cost=5
+		prerequisite={focus=HAY_consult_locals}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAY_attract_immigrants"
+			27={add_manpower=5000}
+			28={add_manpower=5000}
+			82={add_manpower=5000}
+			90={add_manpower=5000}
+			12={add_manpower=-5000}
+			13={add_manpower=-5000}
+			29={add_manpower=-5000}
+			106={add_manpower=-5000}
+		}
+	}
+	shared_focus={		#Aquire Industrial Blueprints
+		id=HAY_industrial_blueprints
+		icon=GFX_goal_generic_lau_factory
+		relative_position_id=HAY_industrialist_experts
+		x=-1 y=1 cost=5
+		prerequisite={focus=HAY_industrialist_experts}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAY_industrial_blueprints"
+			increase_society_development_gradually_with_tt=yes
+			add_tech_bonus={
+				name=HAY_industrialbonus1
+				bonus=1.5 uses=1
+				category=industry
+			}
+		}
+	}
+	shared_focus={		#Invest in Kululu Steel
+		id=HAY_kululu_steel
+		icon=GFX_Steel
+		relative_position_id=HAY_industrialist_experts
+		x=1 y=1 cost=5
+		prerequisite={focus=HAY_industrialist_experts focus=HAY_connect_swamps}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAY_kululu_steel"
+			increase_society_development_gradually_with_tt=yes
+			82={
+				add_extra_state_shared_building_slots=1
+				add_building_construction={
+					type=infrastructure
+					level=1 instant_build=yes
+				}
+				add_building_construction={
+					type=industrial_complex
+					level=1 instant_build=yes
+				}
+			}
+		}
+	}
+	shared_focus={		#Develop the Bayou
+		id=HAY_clear_bayou
+		icon=GFX_goal_dam
+		relative_position_id=HAY_connect_swamps
+		x=0 y=1 cost=5
+		prerequisite={focus=HAY_industrialist_experts focus=HAY_attract_immigrants}
+		prerequisite={focus=HAY_connect_swamps}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAY_clear_bayou"
+			increase_society_development_gradually_with_tt=yes
+			27={
+				add_extra_state_shared_building_slots=1
+				add_building_construction={
+					type=infrastructure
+					level=1 instant_build=yes
+				}
+			}
+			add_offsite_building={
+				type=industrial_complex
+				level=1
+			}
+		}
+	}
+	shared_focus={		#Import Farming Tools
+		id=HAY_farming_tools
+		icon=GFX_goal_SZC_improvised_farming_machinery
+		relative_position_id=HAY_connect_swamps
+		x=2 y=1 cost=5
+		prerequisite={focus=HAY_connect_swamps focus=HAY_attract_immigrants}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAY_farming_tools"
+			increase_society_development_gradually_with_tt=yes
+			add_tech_bonus={
+				name=HAY_industrialbonus1
+				bonus=0.75 uses=2
+				category=industry
+			}
+		}
+	}
+	shared_focus={		#Contract Local Gunsmiths
+		id=HAY_contract_gunsmiths
+		icon=GFX_goal_munitions_factories
+		relative_position_id=HAY_kululu_steel
+		x=-1 y=1 cost=5
+		prerequisite={focus=HAY_industrial_blueprints}
+		prerequisite={focus=HAY_kululu_steel}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAY_contract_gunsmiths"
+			add_offsite_building={
+				type=arms_factory
+				level=1
+			}
+		}
+	}
+	shared_focus={		#Survey for Minerals
+		id=HAY_survey_minerals
+		icon=GFX_focus_indy_excavations
+		relative_position_id=HAY_kululu_steel
+		x=1 y=1 cost=5
+		prerequisite={focus=HAY_kululu_steel}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAY_survey_minerals"
+			add_tech_bonus={
+				name=industrial_bonus
+				bonus=0.5	uses=2
+				category=excavation_tech
+			}
+		}
+	}
+	shared_focus={		#Support the Lumberworks
+		id=HAY_lumberworks
+		icon=GFX_goal_generic_forestry
+		relative_position_id=HAY_clear_bayou
+		x=1 y=1 cost=5
+		prerequisite={focus=HAY_clear_bayou}
+		prerequisite={focus=HAY_farming_tools}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAY_lumberworks"
+			27={
+				add_extra_state_shared_building_slots=1
+				add_building_construction={
+					type=industrial_complex
+					level=1 instant_build=yes
+				}
+			}
+		}
+	}
+	shared_focus={		#Reinvigorate Equestrian Education
+		id=HAY_reinvigorate_education
+		icon=GFX_goal_bookstack
+		relative_position_id=HAY_attract_immigrants
+		x=0 y=2 cost=8
+		prerequisite={focus=HAY_attract_immigrants}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAY_reinvigorate_education"
+			decrease_illiteracy=yes
+			custom_effect_tooltip=HAY_education_decision
+			hidden_effect={set_country_flag=can_improve_illiteracy}
+		}
+	}
+	shared_focus={		#Expand New Horseleans
+		id=HAY_expand_capital
+		icon=GFX_goal_factory_complex
+		relative_position_id=HAY_clear_bayou
+		x=-2 y=2 cost=5
+		prerequisite={focus=HAY_kululu_steel}
+		prerequisite={focus=HAY_contract_gunsmiths focus=HAY_survey_minerals}
+		#Find a way to have a portion of focuses as requirements. State Specific Flags?
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAY_expand_capital"
+			increase_society_development_gradually_with_tt=yes
+			28={
+				set_state_category=large_town
+				add_extra_state_shared_building_slots=1
+				add_building_construction={
+					type=infrastructure
+					level=1 instant_build=yes
+				}
+				add_building_construction={
+					type=dockyard
+					level=1 instant_build=yes
+				}
+			}
+		}
+	}
+	shared_focus={		#Local Works Projects
+		id=HAY_local_works
+		icon=GFX_goal_construction_engineering
+		relative_position_id=HAY_clear_bayou
+		x=0 y=2 cost=5
+		prerequisite={focus=HAY_clear_bayou}
+		prerequisite={focus=HAY_farming_tools}
+		prerequisite={focus=HAY_lumberworks}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAY_local_works"
+			increase_society_development_gradually_with_tt=yes
+			HAY={
+				add_timed_idea={
+					idea=HAY_works_frenzy
+					days=356
+				}
+			}
+		}
+	}
+	shared_focus={		#Distribute Land Grants
+		id=HAY_landgrants
+		icon=GFX_goal_generic_land_reform
+		relative_position_id=HAY_clear_bayou
+		x=2 y=2 cost=5
+		prerequisite={focus=HAY_farming_tools focus=HAY_lumberworks}
+		prerequisite={focus=HAY_reinvigorate_education}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAY_landgrants"
+			increase_society_development_gradually_with_tt=yes
+			27={set_state_category=rural}
+			82={set_state_category=rural}
+		}
+	}
+	shared_focus={		#The Hoof Plan - Jumpin' Jack
+		id=HAY_city_focus
+		icon=GFX_goal_rct_expand_the_city
+		relative_position_id=HAY_clear_bayou
+		x=-3 y=3 cost=5
+		prerequisite={focus=HAY_expand_capital}
+		prerequisite={focus=HAY_local_works}
+		available={NOT={has_completed_focus=HAY_city_focus}}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAY_city_focus"
+			increase_society_development_gradually_with_tt=yes
+		}
+	}
+	shared_focus={		#The Frogpony Plan - Ain't Got No Home
+		id=HAY_rural_focus
+		icon=GFX_focus_AUS_agriculture
+		relative_position_id=HAY_clear_bayou
+		x=1 y=3 cost=5
+		prerequisite={focus=HAY_local_works}
+		prerequisite={focus=HAY_landgrants}
+		available={NOT={has_completed_focus=HAY_city_focus}}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAY_rural_focus"
+			increase_society_development_gradually_with_tt=yes
+		}
+	}
+	shared_focus={		#Institute the Baltimare School System
+		id=HAY_higher_education
+		icon=GFX_goal_KTG_Bookstack
+		relative_position_id=HAY_reinvigorate_education
+		x=0 y=2 cost=8
+		prerequisite={focus=HAY_reinvigorate_education}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAY_higher_education"
+			increase_science_base=yes
+			add_research_slot=1
+		}
+	}
