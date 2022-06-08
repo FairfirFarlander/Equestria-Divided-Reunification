@@ -1,0 +1,33 @@
+EDR_equestrian_minors_status={
+	name="EDR_equestrian_minors_status"
+	group="RULE_GROUP_GAME_SETUP"
+	default={
+		name=DEFAULT
+		text="RULE_OPTION_DEFAULT"
+		desc="RULE_OPTION_DEFAULT_MINORS_DESC"
+	}
+	option={
+		name=EDR_NO_MINORS
+		text="RULE_OPTION_NO_MINORS"
+		desc="RULE_OPTION_NO_MINORS_DESC"
+	}
+}
+EDR_CUL_status={
+	name="EDR_CUL_status"
+	group="RULE_GROUP_GAME_SETUP"
+	default={
+		name=EDR_NO_CUL
+		text="RULE_OPTION_NO_CUL"
+		desc="RULE_OPTION_NO_CUL_DESC"
+	}
+	option={
+		name=EDR_CUL_START
+		text="RULE_OPTION_CUL_START"
+		desc="RULE_OPTION_CUL_START_DESC"
+	}
+	#option={
+	#	name=EDR_CUL_INTEGRATE	#Remove and consolidate into minors later.
+	#	text="RULE_OPTION_CUL_INTEGRATE"
+	#	desc="RULE_OPTION_CUL_INTEGRATE_DESC"
+	#}
+}

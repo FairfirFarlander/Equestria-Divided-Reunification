@@ -7,8 +7,8 @@ state={	#EDRSTATE
 	provinces={334 494 552 833 1655 2729 3173 3366 3545 3720 3722 4287 6534 6558 8025 9701 9736 9875}
 	resources={steel=5}
 	history={
-		owner=TRH
-		add_core_of=TRH
+		owner=HSW	#TRH
+		add_core_of=HSW	#TRH
 		victory_points={3722 1}
 	}
 }

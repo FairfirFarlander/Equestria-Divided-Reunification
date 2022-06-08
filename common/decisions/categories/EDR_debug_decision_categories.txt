@@ -1,0 +1,85 @@
+EDR_debug_decisions={
+	#icon=
+	priority=4
+	visible={is_debug=yes}
+}
+EDR_debug_land_decisions={
+	#icon=
+	priority=3
+	visible={
+		is_debug=yes
+		not={has_global_flag=EDR_no_minors}
+	}
+}
+EDR_debug_HEB_land_decisions={
+	#icon=
+	priority=2
+	visible={
+		is_debug=yes
+		not={has_global_flag=EDR_no_minors}
+		or={
+			tag=HEB
+			has_global_flag=EDR_debug_shwland
+		}
+	}
+}
+EDR_debug_HEF_land_decisions={
+	#icon=
+	priority=2
+	visible={
+		is_debug=yes
+		not={has_global_flag=EDR_no_minors}
+		or={
+			tag=HEF
+			has_global_flag=EDR_debug_shwland
+		}
+	}
+}
+EDR_debug_HMS_land_decisions={
+	#icon=
+	priority=2
+	visible={
+		is_debug=yes
+		not={has_global_flag=EDR_no_minors}
+		or={
+			tag=HMS
+			has_global_flag=EDR_debug_shwland
+		}
+	}
+}
+EDR_debug_HSW_land_decisions={
+	#icon=
+	priority=2
+	visible={
+		is_debug=yes
+		not={has_global_flag=EDR_no_minors}
+		or={
+			tag=HSW
+			has_global_flag=EDR_debug_shwland
+		}
+	}
+}
+EDR_debug_HWG_land_decisions={
+	#icon=
+	priority=2
+	visible={
+		is_debug=yes
+		not={has_global_flag=EDR_no_minors}
+		or={
+			tag=HWG
+			has_global_flag=EDR_debug_shwland
+		}
+	}
+}
+EDR_debug_STG_land_decisions={
+	#icon=
+	priority=2
+	visible={
+		is_debug=yes
+		not={has_global_flag=EDR_no_minors}
+		or={
+			tag=SGR
+			has_global_flag=EDR_debug_shwland
+		}
+	}
+}
