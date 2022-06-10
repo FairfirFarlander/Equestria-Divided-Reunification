@@ -18,7 +18,7 @@ add_namespace=EMB_evt_a01
 		}
 		immediate={log="[GetDateText]: [Root.GetName]: event EMB_evt_a01.001"}
 	}
-	country_event={		#Backlash from the Unions
+	country_event={		#Backlash from the Caravan Unions
 		id=EMB_evt_a01.011
 		title=EMB_evt_a01.011.t	desc=EMB_evt_a01.011.d	#picture=
 		is_triggered_only=yes
@@ -260,19 +260,85 @@ add_namespace=EMB_evt_a01
 		}
 		immediate={log="[GetDateText]: [Root.GetName]: event EMB_evt_a01.042"}
 	}
-	country_event={		#Clearing the Council Villages
+	country_event={		#The Housing Crisis
 		id=EMB_evt_a01.043
 		title=EMB_evt_a01.043.t	desc=EMB_evt_a01.043.d	#picture=
 		is_triggered_only=yes	#timeout_days=3
 		option={
 			name=EMB_evt_a01.043.a
-			hidden_effect={country_event=id=EMB_evt_a01.044}
+			36={
+				add_extra_state_shared_building_slots=1
+				add_building_construction={
+					type=infrastructure
+					level=1 instant_build=yes
+				}
+			}
+			add_popularity={ideology=communism popularity=0.03}
+			add_popularity={ideology=fascism popularity=-0.03}
+		}
+		option={
+			name=EMB_evt_a01.043.b
+			26={
+				add_extra_state_shared_building_slots=1
+				add_building_construction={
+					type=infrastructure
+					level=1 instant_build=yes
+				}
+			}
+			add_popularity={ideology=neutrality popularity=0.03}
+			add_popularity={ideology=communism popularity=-0.03}
+		}
+		option={
+			name=EMB_evt_a01.043.c
+			country_event=EMB_evt_a01.044	#Clearing the Council Villages
 		}
 		option={
 			name=EMB_evt_C-FF_W-TY.r
 			trigger={is_debug=yes}
 		}
 		immediate={log="[GetDateText]: [Root.GetName]: event EMB_evt_a01.043"}
+	}
+	country_event={		#Clearing the Council Villages
+		id=EMB_evt_a01.044
+		title=EMB_evt_a01.044.t	desc=EMB_evt_a01.044.d	#picture=
+		is_triggered_only=yes	#timeout_days=3
+		option={
+			name=EMB_evt_a01.044.a
+			36={add_manpower=-20}
+			add_popularity={ideology=fascism popularity=0.05}
+			add_popularity={ideology=communism popularity=-0.05}
+		}
+		option={
+			name=EMB_evt_a01.044.b
+			36={add_manpower=20}
+			add_popularity={ideology=communism popularity=0.05}
+			add_popularity={ideology=fascism popularity=-0.05}
+		}
+		option={
+			name=EMB_evt_C-FF_W-TY.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event EMB_evt_a01.044"}
+	}
+	country_event={		#Mother Nightshade
+		id=EMB_evt_a01.051
+		title=EMB_evt_a01.051.t	desc=EMB_evt_a01.051.d	#picture=
+		is_triggered_only=yes	#timeout_days=3
+		option={
+			name=EMB_evt_a01.051.a
+			add_popularity={ideology=fascism popularity=0.03}
+			add_popularity={ideology=communism popularity=-0.03}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event EMB_evt_a01.051"}
+	}
+	country_event={		#Risk of Famine
+		id=EMB_evt_a01.052
+		title=EMB_evt_a01.052.t	desc=EMB_evt_a01.052.d	#picture=
+		is_triggered_only=yes	#timeout_days=3
+		option={
+			name=EMB_evt_a01.052.a
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event EMB_evt_a01.052"}
 	}
 add_namespace=EMB_evt_a00#Non-story Events
 	country_event={		#The Beast of Embers
