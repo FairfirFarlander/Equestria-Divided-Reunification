@@ -1,6 +1,6 @@
 #LOCALE
 capital=16
-oob="JTL_1007"
+#oob="JTL_1007"
 #FOUNTATION
 set_research_slots=2
 set_stability=0.6 set_war_support=0.17

@@ -25,6 +25,6 @@ units={	#DEPLOYMENTS#
 		name="Praetorea Ayacachtli"
 		location=569	division_template="End Guard"
 		start_experience_factor=0.75	start_equipment_factor=0.8
-		force_equipment_variants={infantry_equipment_0={owner="THA" creator="THA"}}
+		force_equipment_variants={melee_equipment_0={owner="THA" creator="THA"}}
 	}
 }

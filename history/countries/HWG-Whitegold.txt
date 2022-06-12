@@ -140,8 +140,8 @@ if={
 #VARIENTS#
 if={limit={has_dlc="Man the Guns"}
 	create_equipment_variant={	#Heavy Cruiser AR1-EN1 MG2-SG3#
-		name="Belle 1003 Class"	type=ship_hull_cruiser_1
-		parent_version=1	#obsolete=yes#
+		name="Belle 1003 Class"
+		type=ship_hull_cruiser_1
 		modules={
 			fixed_ship_battery_slot=ship_medium_battery_1
 			fixed_ship_anti_air_slot=empty
@@ -156,8 +156,8 @@ if={limit={has_dlc="Man the Guns"}
 		}
 	}
 	create_equipment_variant={	#Light Cruiser AR1-EN1 LG3#
-		name="Auditor 1003 Class"	type=ship_hull_cruiser_1
-		parent_version=0	#obsolete=yes#
+		name="Auditor 1003 Class"
+		type=ship_hull_cruiser_1
 		modules={
 			fixed_ship_battery_slot=ship_light_medium_battery_1
 			fixed_ship_anti_air_slot=empty
@@ -172,8 +172,8 @@ if={limit={has_dlc="Man the Guns"}
 		}
 	}
 	create_equipment_variant={	#Torpedo Destroyer#
-		name="Investor 1005 Class"	type=ship_hull_light_1 
-		parent_version=1	#obsolete=yes#
+		name="Investor 1005 Class"
+		type=ship_hull_light_1
 		modules={
 			fixed_ship_battery_slot=ship_light_battery_1
 			fixed_ship_anti_air_slot=empty
@@ -186,8 +186,8 @@ if={limit={has_dlc="Man the Guns"}
 		}
 	}
 	create_equipment_variant={	#Destroyer#
-		name="Surveyor 1003 Class"	type=ship_hull_light_1
-		parent_version=0	obsolete=yes
+		name="Surveyor 1003 Class"
+		type=ship_hull_light_1
 		modules={
 			fixed_ship_battery_slot=ship_light_battery_1
 			fixed_ship_anti_air_slot=empty
@@ -202,8 +202,8 @@ if={limit={has_dlc="Man the Guns"}
 }
 if={limit={not={has_dlc="Man the Guns"}}
 	create_equipment_variant={	#Heavy Cruiser#
-		name="Belle 1003 Class"	type=heavy_cruiser_1
-		parent_version=1	#obsolete=yes#
+		name="Belle 1003 Class"
+		type=heavy_cruiser_1
 		upgrades={
 			ship_reliability_upgrade=0
 			ship_engine_upgrade=0
@@ -212,8 +212,8 @@ if={limit={not={has_dlc="Man the Guns"}}
 		}
 	}
 	create_equipment_variant={	#Light Cruiser#
-		name="Auditor 1003 Class"	type=light_cruiser_1
-		parent_version=0	#obsolete=yes#
+		name="Auditor 1003 Class"
+		type=light_cruiser_1
 		upgrades={
 			ship_reliability_upgrade=1
 			ship_engine_upgrade=0
@@ -222,8 +222,8 @@ if={limit={not={has_dlc="Man the Guns"}}
 		}
 	}
 	create_equipment_variant={	#Light-Medium Destroyer#
-		name="Investor 1005 Class"	type=destroyer_1
-		parent_version=1	#obsolete=yes#
+		name="Investor 1005 Class"
+		type=destroyer_1
 		upgrades={
 			ship_torpedo_upgrade=1
 			destroyer_engine_upgrade=0
@@ -232,8 +232,8 @@ if={limit={not={has_dlc="Man the Guns"}}
 		}
 	}
 	create_equipment_variant={	#Destroyer#
-		name="Surveyor 1003 Class"	type=destroyer_1
-		parent_version=0	obsolete=yes
+		name="Surveyor 1003 Class"
+		type=destroyer_1
 		upgrades={
 			ship_torpedo_upgrade=0
 			destroyer_engine_upgrade=0
@@ -244,7 +244,7 @@ if={limit={not={has_dlc="Man the Guns"}}
 }
 create_equipment_variant={	#Aircraft#
 	name="Chelangel UM06-9"	#Neighchelangelo - Ultramarine 06' V9#
-	type=tac_bomber_equipment_1	parent_version=0	#obsolete=yes#
+	type=tac_bomber_equipment_1
 	upgrades={
 		plane_tac_bomb_upgrade=0	plane_range_upgrade=1
 		plane_engine_upgrade=0	plane_reliability_upgrade=0

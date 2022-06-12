@@ -83,3 +83,15 @@ EDR_debug_STG_land_decisions={
 		}
 	}
 }
+EDR_debug_FLY_land_decisions={
+	#icon=
+	priority=2
+	visible={
+		is_debug=yes
+		not={has_global_flag=EDR_no_minors}
+		or={
+			tag=FLY
+			has_global_flag=EDR_debug_shwland
+		}
+	}
+}

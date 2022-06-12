@@ -1,10 +1,10 @@
 #LOCALE
 capital=12
-if={
-	limit={has_dlc="No Step Back"}
-	set_oob="FLY_07"	#_nsb
-	else={set_oob="FLY_07"}
-}
+#if={
+#	limit={has_dlc="No Step Back"}
+#	set_oob="FLY_07"	#_nsb
+#	else={set_oob="FLY_07"}
+#}
 #if={
 #	limit={has_dlc="Man the Guns"}
 #	set_naval_oob="FLY_1007_naval"

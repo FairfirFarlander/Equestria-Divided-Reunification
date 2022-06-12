@@ -64,7 +64,7 @@ set_popularities={
 	neutrality=26	democratic=23
 }
 set_politics={
-	ruling_party=kratokracy	last_election="1016.1.21"
+	ruling_party=fascism	last_election="1016.1.21"
 	election_frequency=36	elections_allowed=no
 }
 #CHARACTERS#

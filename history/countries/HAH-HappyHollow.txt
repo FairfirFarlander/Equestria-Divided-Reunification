@@ -50,4 +50,7 @@ set_politics={
 	election_frequency=36	elections_allowed=no
 }
 #CHARACTERS#
+recruit_character=HAH_generic_pony
 #VARIENTS#
+#NOTES#
+#Joy, Harmony, Tranquility (Tranq)

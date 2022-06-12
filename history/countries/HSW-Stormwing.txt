@@ -91,8 +91,8 @@ recruit_character=HSW_scootaloo
 #VARIENTS#
 if={limit={has_dlc="Man the Guns"}
 	create_equipment_variant={	#Heavy Cruiser AR1-EN1 MG2-SG1-AA1
-		name="Galeland 1004 Class"	type=ship_hull_cruiser_1
-		parent_version=1	#obsolete=yes
+		name="Galeland 1004 Class"
+		type=ship_hull_cruiser_1
 		modules={
 			fixed_ship_battery_slot=ship_medium_battery_1
 			fixed_ship_anti_air_slot=ship_anti_air_1
@@ -107,8 +107,8 @@ if={limit={has_dlc="Man the Guns"}
 		}
 	}
 	create_equipment_variant={	#Light Cruiser AR1-EN1 LG1-AA2
-		name="Hurricane 1005 Class"	type=ship_hull_cruiser_1
-		parent_version=0	#obsolete=yes
+		name="Hurricane 1005 Class"
+		type=ship_hull_cruiser_1
 		modules={
 			fixed_ship_battery_slot=ship_light_medium_battery_1
 			fixed_ship_anti_air_slot=ship_anti_air_1
@@ -123,8 +123,8 @@ if={limit={has_dlc="Man the Guns"}
 		}
 	}
 	create_equipment_variant={	#Destroyer EN1 LG1
-		name="Windtide 1006 Class"	type=ship_hull_light_1
-		parent_version=0	#obsolete=yes
+		name="Windtide 1006 Class"
+		type=ship_hull_light_1
 		modules={
 			fixed_ship_battery_slot=ship_light_battery_1
 			fixed_ship_anti_air_slot=empty
@@ -140,7 +140,7 @@ if={limit={has_dlc="Man the Guns"}
 if={limit={not={has_dlc="Man the Guns"}}
 	create_equipment_variant={	#Heavy Cruiser
 		name="Galeland 1004 Class"	#name_group=
-		type=heavy_cruiser_1	parent_version=0	#obsolete=yes
+		type=heavy_cruiser_1
 		upgrades={
 			ship_reliability_upgrade=0
 			ship_engine_upgrade=0
@@ -150,7 +150,7 @@ if={limit={not={has_dlc="Man the Guns"}}
 	}
 	create_equipment_variant={	#Light Cruiser
 		name="Hurricane 1005 Class"	#name_group=
-		type=light_cruiser_1	parent_version=0	#obsolete=yes
+		type=light_cruiser_1
 		upgrades={
 			ship_reliability_upgrade=0
 			ship_engine_upgrade=0
@@ -160,7 +160,7 @@ if={limit={not={has_dlc="Man the Guns"}}
 	}
 	create_equipment_variant={	#Destroyer
 		name="Windtide 1006 Class"	#name_group=
-		type=destroyer_1	parent_version=0	#obsolete=yes
+		type=destroyer_1
 		upgrades={
 			ship_torpedo_upgrade=0
 			destroyer_engine_upgrade=0

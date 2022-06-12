@@ -1,5 +1,5 @@
 #LOCALE#
-capital=188
+capital=56
 #if={
 #	limit={has_dlc="No Step Back"}
 #	set_oob="MSS_07"	#_nsb

@@ -1,6 +1,6 @@
 #LOCALE
 capital=344
-oob="CRY_07"
+#oob="CRY_07"
 #FOUNTATION
 set_research_slots=3
 set_stability=0.50

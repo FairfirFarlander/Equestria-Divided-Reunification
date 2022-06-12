@@ -47,7 +47,7 @@ bookmarks={
 		}
 		"VII"={	#Isle of Dragon
 			history="VII_GATHERING_STORM_DESC"
-			ideology=kratokracy
+			ideology=fascism
 			ideas={}
 			focuses={}
 		}

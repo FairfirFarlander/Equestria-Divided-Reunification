@@ -1,15 +1,15 @@
 #LOCALE#
 capital=13
-if={
-	limit={has_dlc="No Step Back"}
-	set_oob="WTC_07"	#_nsb#
-	else={set_oob="WTC_07"}
-}
-if={
-	limit={has_dlc="Man the Guns"}
-	set_naval_oob="WTC_07_naval"
-	else={set_naval_oob="WTC_07_naval_legacy"}
-}
+#if={
+#	limit={has_dlc="No Step Back"}
+#	set_oob="WTC_07"	#_nsb#
+#	else={set_oob="WTC_07"}
+#}
+#if={
+#	limit={has_dlc="Man the Guns"}
+#	set_naval_oob="WTC_07_naval"
+#	else={set_naval_oob="WTC_07_naval_legacy"}
+#}
 79={	#Yakima/Cuetzpalliztli#
 	start_resistance=yes	set_compliance=60
 	set_resistance=13	set_garrison_strength=0.40
