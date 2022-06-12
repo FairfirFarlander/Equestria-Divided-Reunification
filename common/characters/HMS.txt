@@ -32,13 +32,10 @@ characters={
 	HMS_shining_armor={
 		name=HMS_shining_armor
 		portraits={
-			civilian={
-				large="gfx/leaders/HMS/HMS_shining_armor.dds"
-				#small="gfx/leaders/HMS/HMS_shining_armor_small.dds"#
-			}
+			civilian={large="gfx/leaders/HMS/HMS_shining_armor.dds"}
 			army={
 				large="gfx/leaders/HMS/HMS_shining_armor.dds"
-				#small="gfx/leaders/HMS/HMS_shining_armor_small.dds"#
+				small="gfx/interface/ideas/unknown_advisor2.dds"
 			}
 		}
 		country_leader={
@@ -71,7 +68,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/HMS/HMS_trixie_lulamoon.dds"
-				#small="gfx/leaders/HMS/HMS_trixie_lulamoon_small.dds"#
+				small="gfx/interface/ideas/unknown_advisor2.dds"
 			}
 		}
 		corps_commander={
@@ -83,7 +80,12 @@ characters={
 	}
 	HMS_spike={
 		name=HMS_spike
-		portraits={army={large="gfx/leaders/HMS/HMS_spike.dds"}}
+		portraits={
+			army={
+				large="gfx/leaders/HMS/HMS_spike.dds"
+				small="gfx/interface/ideas/unknown_advisor2.dds"
+			}
+		}
 		corps_commander={
 			desc="HMS_spike_mili_desc"
 			skill=1	attack_skill=1	defense_skill=1
@@ -97,7 +99,7 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/HMS/HMS_cadence.dds"
-				#small="gfx/leaders/HMS/HMS_cadence_small.dds"
+				small="gfx/interface/ideas/unknown_advisor2.dds"
 			}
 		}
 		country_leader={

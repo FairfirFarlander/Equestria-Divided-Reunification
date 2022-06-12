@@ -3,10 +3,7 @@ characters={
 		name=THA_argent_end
 		portraits={
 			civilian={large="gfx/leaders/THA/THA_argent_end.dds"}
-			army={
-				large="gfx/leaders/THA/THA_argent_end.dds"
-			#	small="gfx/leaders/THA/THA_argent_end_small.dds"
-			}
+			army={large="gfx/leaders/THA/THA_argent_end.dds"}
 		}
 		country_leader={
 			desc="THA_aend_poli_desc"	ideology=despotism
@@ -26,11 +23,11 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/THA/THA_auburn_peak.dds"
-			#	small="gfx/leaders/THA/THA_auburn_peak_small.dds"
+				small="gfx/interface/ideas/unknown_advisor2.dds"
 			}
 			army={
 				large="gfx/leaders/THA/THA_auburn_peak.dds"
-			#	small="gfx/leaders/THA/THA_auburn_peak_small.dds"
+				small="gfx/interface/ideas/unknown_advisor2.dds"
 			}
 		}
 		country_leader={
@@ -55,12 +52,12 @@ characters={
 	THA_the_niece={
 		name=THA_the_niece
 		gender=female
-		#portraits={
-		#	civilian={
-		#		large="gfx/leaders/THA/THA_the_niece.dds"
-		#		small="gfx/leaders/THA/THA_the_niece_small.dds"
-		#	}
-		#}
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/interface/ideas/unknown_advisor2.dds"
+			}
+		}
 		country_leader={
 			desc="THA_tniece_poli_desc"	ideology=harmonic_libertarianism
 			expire="1030.03.13.08"

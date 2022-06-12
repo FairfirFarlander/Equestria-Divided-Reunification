@@ -1,16 +1,15 @@
 characters={
 	TRT_rapid_fire={
 		name=TRT_rapid_fire
-		#portraits={
-		#	civilian={
-		#		large="gfx/leaders/TRT/TRT_rapid_fire.dds"
-		#		small="gfx/leaders/TRT/TRT_rapid_fire_small.dds"
-		#	}
-		#	army={
-		#		large="gfx/leaders/TRT/TRT_rapid_fire.dds"
-		#		small="gfx/leaders/TRT/TRT_rapid_fire_small.dds"
-		#	}
-		#}
+		portraits={
+			civilian={
+				large="gfx/leaders/Pony/portrait_eqs_pony_generic_12.dds"
+			}
+			army={
+				large="gfx/leaders/Pony/portrait_eqs_pony_generic_12.dds"
+				small="gfx/interface/ideas/unknown_advisor2.dds"
+			}
+		}
 		country_leader={
 			desc="TRT_rfire_poli_desc"	ideology=stratocracy
 			expire="1030.03.13.08"
@@ -26,16 +25,15 @@ characters={
 	}
 	TRT_teddy_hoosevelt={	#teddy_steady_roosevelt
 		name=TRT_teddy_hoosevelt
-		#portraits={
-		#	civilian={
-		#		large="gfx/leaders/TRT/TRT_teddy_hoosevelt.dds"
-		#		small="gfx/leaders/TRT/TRT_teddy_hoosevelt_small.dds"
-		#	}
-		#	army={
-		#		large="gfx/leaders/TRT/TRT_teddy_hoosevelt.dds"
-		#		small="gfx/leaders/TRT/TRT_teddy_hoosevelt_small.dds"
-		#	}
-		#}
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+			army={
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/interface/ideas/unknown_advisor2.dds"
+			}
+		}
 		country_leader={
 			desc="TRT_thoosevelt_poli_desc"	ideology=populism
 			expire="1030.03.13.08"
@@ -53,10 +51,7 @@ characters={
 		name=TRT_harshwhinny
 		gender=female
 		portraits={
-			civilian={
-				large="gfx/leaders/TRT/TRT_harshwhinny.dds"
-				#small="gfx/leaders/TRT/TRT_harshwhinny_small.dds"#
-			}
+			civilian={large="gfx/leaders/TRT/TRT_harshwhinny.dds"}
 		}
 		country_leader={
 			desc="TRT_harshwhinny_poli_desc"	ideology=harmonic_libertarianism

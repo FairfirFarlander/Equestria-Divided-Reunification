@@ -11,7 +11,7 @@ characters={
 	}
 	BCK_syndicate_council={
 		name=BCK_syndicate_council
-		#portraits={civilian={large="gfx/leaders/BCK/BCK_cogme.dds"}}#
+		portraits={civilian={large="gfx/leaders/BAL/completeanarchy.dds"}}
 		country_leader={
 			desc="BCK_council_poli_desc"	ideology=marxism
 			expire="1030.03.13.08"
@@ -22,8 +22,8 @@ characters={
 	BCK_merry_wreath={
 		name=BCK_merry_wreath
 		portraits={
-			#civilian={large="gfx/leaders/BCK/BCK_merry_wreath.dds"}#
-			#army={large="gfx/leaders/BCK/BCK_merry_wreath.dds"}#
+			civilian={large="gfx/leaders/Pony/portrait_pony_generic_navy_16.dds"}
+			army={large="gfx/leaders/Pony/portrait_pony_generic_navy_16.dds"}
 		}
 		country_leader={
 			desc="BCK_mwreath_poli_desc"	ideology=despotism
@@ -53,10 +53,10 @@ characters={
 		name=BCK_hallow_green
 		gender=female
 		portraits={
-			#civilian={small="gfx/leaders/BCK/small/BCK_hallow_green.dds"}#
+			civilian={small="gfx/interface/ideas/generic_generals_small/Pony/portrait_pony_generic_navy_12.dds"}
 			army={
-				large="gfx/leaders/Pony/portrait_pony_generic_land_12.dds"
-				#small="gfx/leaders/BCK/BCK_hallow_green_small.dds"#
+				large="gfx/leaders/Pony/portrait_pony_generic_navy_12.dds"
+				small="gfx/interface/ideas/generic_generals_small/Pony/portrait_pony_generic_12.dds"
 			}
 		}
 		corps_commander={

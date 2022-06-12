@@ -3,10 +3,7 @@ characters={
 		name=PLT_rael_grey
 		gender=female
 		portraits={
-			civilian={
-				large="gfx/leaders/Pony/portrait_pony_generic_navy_14.dds"
-				#large="gfx/leaders/PLT/PLT_rael_grey.dds"
-			}
+			civilian={large="gfx/leaders/Pony/portrait_pony_generic_navy_14.dds"}
 		}
 		country_leader={
 			desc="PLT_rgrey_poli_desc"	ideology=bandit
@@ -24,10 +21,7 @@ characters={
 	PLT_willie_hoofard_tuft={	#William Howard Taft#
 		name=PLT_willie_hoofard_tuft
 		portraits={
-			civilian={
-				large="gfx/leaders/Pony/portrait_pony_generic_land_3.dds"
-				#large="gfx/leaders/PLT/PLT_willie_hoofard_tuft.dds"
-			}
+			civilian={large="gfx/leaders/Pony/portrait_pony_generic_land_3.dds"}
 		}
 		country_leader={
 			desc="PLT_whtuft_poli_desc"	ideology=republicanism
@@ -39,10 +33,7 @@ characters={
 	PLT_thistle_tap={	#Joseph Carson - Joeseph 'Seahawk' Barhoof#
 		name=PLT_thistle_tap
 		portraits={
-			civilian={
-				large="gfx/leaders/Pony/portrait_pony_generic_land_11.dds"
-				#large="gfx/leaders/PLT/PLT_thistle_tap.dds"
-			}
+			civilian={large="gfx/leaders/Pony/portrait_pony_generic_land_11.dds"}
 		}
 		country_leader={
 			desc="PLT_ttap_poli_desc"	ideology=harmonic_libertarianism

@@ -2,13 +2,10 @@ characters={
 	NIH_cursed_fate={
 		name=NIH_cursed_fate
 		portraits={
-			civilian={
-				large="gfx/leaders/NIH/NIH_cursed_fate.dds"
-				#small="gfx/leaders/NIH/NIH_cursed_fate_small.dds"#
-			}
+			civilian={large="gfx/leaders/NIH/NIH_cursed_fate.dds"}
 			army={
 				large="gfx/leaders/NIH/NIH_cursed_fate.dds"
-				#small="gfx/leaders/NIH/NIH_cursed_fate_small.dds"#
+				small="gfx/interface/ideas/unknown_advisor2.dds"
 			}
 		}
 		country_leader={

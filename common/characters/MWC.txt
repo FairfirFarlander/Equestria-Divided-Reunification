@@ -3,10 +3,7 @@ characters={
 		name=MWC_rose_petal
 		gender=female
 		portraits={
-			civilian={
-				large="gfx/leaders/Pony/portrait_pony_generic_2.dds"
-				#large="gfx/leaders/MWC/MWC_rose_petal.dds"
-			}
+			civilian={large="gfx/leaders/Pony/portrait_pony_generic_2.dds"}
 		}
 		country_leader={
 			desc="MWC_rpetal_poli_desc"	ideology=ultranationalism
@@ -18,10 +15,7 @@ characters={
 	MWC_mulberry_wine={
 		name=MWC_mulberry_wine
 		portraits={
-			civilian={
-				large="gfx/leaders/Pony/portrait_pony_generic_land_4.dds"
-				#large="gfx/leaders/MWC/MWC_mulberry_wine.dds"
-			}
+			civilian={large="gfx/leaders/Pony/portrait_pony_generic_land_4.dds"}
 		}
 		country_leader={
 			desc="MWC_mwine_poli_desc"	ideology=syndicalism
@@ -34,10 +28,7 @@ characters={
 		name=MWC_honey_dew
 		gender=female
 		portraits={
-			civilian={
-				large="gfx/leaders/Pony/portrait_pony_generic_3.dds"
-				#large="gfx/leaders/MWC/MWC_honey_dew.dds"
-			}
+			civilian={large="gfx/leaders/Pony/portrait_pony_generic_3.dds"}
 		}
 		country_leader={
 			desc="MWC_hdew_poli_desc"	ideology=centrism
@@ -49,10 +40,7 @@ characters={
 	MWC_maple_leaf={
 		name=MWC_maple_leaf
 		portraits={
-			civilian={
-				large="gfx/leaders/Pony/portrait_pony_generic_navy_4.dds"
-				#large="gfx/leaders/MWC/MWC_maple_leaf.dds"
-			}
+			civilian={large="gfx/leaders/Pony/portrait_pony_generic_navy_4.dds"}
 		}
 		country_leader={
 			desc="MWC_mleaf_poli_desc"	ideology=liberalism
@@ -64,12 +52,12 @@ characters={
 	MWC_apple_cider={	#earthy
 		name=MWC_apple_cider
 		gender=female
-		#portraits={
-		#	army={
-		#		large="gfx/leaders/MWC/MWC_apple_cider.dds"
-		#		small="gfx/leaders/MWC/MWC_apple_cider_small.dds"
-		#	}
-		#}
+		portraits={
+			army={
+				large="gfx/leaders/Pony/portrait_pony_generic_land_8.dds"
+				small="gfx/interface/ideas/unknown_advisor2.dds"
+			}
+		}
 		corps_commander={
 			desc="MWC_acider_mili_desc"
 			skill=1	attack_skill=2	defense_skill=1
@@ -80,12 +68,12 @@ characters={
 	MWC_mist_feather={	#pegasi
 		name=MWC_mist_feather
 		gender=female
-		#portraits={
-		#	army={
-		#		large="gfx/leaders/MWC/MWC_mist_feather.dds"
-		#		small="gfx/leaders/MWC/MWC_mist_feather_small.dds"
-		#	}
-		#}
+		portraits={
+			army={
+				large="gfx/leaders/Pony/portrait_pony_generic_land_9.dds"
+				small="gfx/interface/ideas/unknown_advisor2.dds"
+			}
+		}
 		corps_commander={
 			desc="MWC_mfeather_mili_desc"
 			skill=1	attack_skill=1	defense_skill=1
@@ -96,12 +84,12 @@ characters={
 	MWC_anna_taylor={
 		name=MWC_anna_taylor
 		gender=female
-		#portraits={
-		#	army={
-		#		large="gfx/leaders/MWC/MWC_anna_taylor.dds"
-		#		small="gfx/leaders/MWC/MWC_anna_taylor_small.dds"
-		#	}
-		#}
+		portraits={
+			army={
+				large="gfx/leaders/Pony/portrait_pony_generic_navy_6.dds"
+				small="gfx/interface/ideas/unknown_advisor2.dds"
+			}
+		}
 		navy_leader={
 			desc="MWC_ataylor_navy_desc"
 			skill=1	attack_skill=1	defense_skill=1

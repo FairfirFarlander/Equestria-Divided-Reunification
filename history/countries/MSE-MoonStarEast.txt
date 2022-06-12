@@ -43,4 +43,5 @@ set_politics={
 	election_frequency=36	elections_allowed=no
 }
 #CHARACTERS#
+recruit_character=MSE_generc_pony
 #VARIENTS#

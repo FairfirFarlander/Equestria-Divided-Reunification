@@ -35,11 +35,10 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/ZRS/Zecora.tga"
-				#small="gfx/leaders/HEF/small/HEF_zecora.dds"#
 			}
 			army={
 				large="gfx/leaders/ZRS/Zecora.tga"
-				#small="gfx/leaders/HEF/small/HEF_zecora.dds"#
+				small="gfx/interface/ideas/unknown_advisor2.dds"
 			}
 		}
 		country_leader={
@@ -58,7 +57,7 @@ characters={
 	HEF_flower_seed={
 		name=HEF_flower_seed
 		gender=female
-		#portraits={civilian={large="gfx/leaders/HEF/HEF_flower_seed.dds"}}#
+		portraits={civilian={large="gfx/leaders/Pony/portrait_pony_generic_6.dds"}}
 		country_leader={
 			desc="HEF_fseed_poli_desc"	ideology=liberalism
 			expire="1030.03.13.08"

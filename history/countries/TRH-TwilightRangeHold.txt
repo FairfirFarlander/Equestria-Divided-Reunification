@@ -68,7 +68,7 @@ set_popularities={
 	neutrality=31	democratic=8
 }
 set_politics={
-	ruling_party=democratic	last_election="1011.01.01"
+	ruling_party=fascism	last_election="1011.01.01"
 	election_frequency=36	elections_allowed=no
 }
 #CHARACTERS#

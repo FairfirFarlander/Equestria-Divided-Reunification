@@ -37,7 +37,13 @@ characters={
 	}
 	JUNGLE_light_narrative={
 		name=JUNGLE_light_narrative
-		portraits={civilian={large="gfx/leaders/NMS/batgarrison.tga"}}
+		portraits={
+			civilian={large="gfx/leaders/NMS/batgarrison.tga"}
+			army={
+				large="gfx/leaders/NMS/batgarrison.tga"
+				small="gfx/interface/ideas/unknown_advisor2.dds"
+			}
+		}
 		corps_commander={
 			desc="JUNGLE_lnarrative_mili_desc"
 			skill=2	attack_skill=1	defense_skill=1

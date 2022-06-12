@@ -3,14 +3,8 @@ characters={
 		name=HEB_applejack
 		gender=female
 		portraits={
-			civilian={
-				large="gfx/leaders/HEB/HEB_applejack_poli.dds"
-				#small="gfx/leaders/HEB/HEB_applejack_poli_small.dds"#
-			}
-			army={
-				large="gfx/leaders/HEB/HEB_applejack_mili.dds"
-				#small="gfx/leaders/HEB/HEB_applejack_mili_small.dds"#
-			}
+			civilian={large="gfx/leaders/HEB/HEB_applejack_poli.dds"}
+			army={large="gfx/leaders/HEB/HEB_applejack_mili.dds"}
 		}
 		country_leader={
 			desc="HEB_applejack_poli_desc"	ideology=nazism
@@ -62,7 +56,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/HEB/HEB_big_mac.dds"
-				#small="gfx/leaders/HEB/HEB_big_mac_small.dds"
+				small="gfx/interface/ideas/unknown_advisor2.dds"
 			}
 		}
 		corps_commander={
@@ -77,7 +71,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/HEB/HEB_braeburn.dds"
-				#small="gfx/leaders/HEB/HEB_braeburn_small.dds"
+				small="gfx/interface/ideas/unknown_advisor2.dds"
 			}
 		}
 		corps_commander={
@@ -93,7 +87,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/HEB/HEB_lightning_dust.dds"
-				#small="gfx/leaders/HEB/HEB_lightning_dust_small.dds"
+				small="gfx/interface/ideas/unknown_advisor2.dds"
 			}
 		}
 		corps_commander={
@@ -109,7 +103,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/HEB/HEB_chief_strongheart.dds"
-				#small="gfx/leaders/HEB/HEB_chief_strongheart_small.dds"
+				small="gfx/interface/ideas/unknown_advisor2.dds"
 			}
 		}
 		corps_commander={
@@ -130,11 +124,11 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/HEB/HEB_apple_bloom.dds"
-				#small="gfx/leaders/HEB/HEB_apple_bloom_small.dds"
+				small="gfx/interface/ideas/unknown_advisor2.dds"
 			}
 			army={
 				large="gfx/leaders/HEB/HEB_apple_bloom.dds"
-				#small="gfx/leaders/HEB/HEB_apple_bloom_small.dds"
+				small="gfx/interface/ideas/unknown_advisor2.dds"
 			}
 		}
 		advisor={
@@ -147,8 +141,10 @@ characters={
 		name=HEB_granny_smith
 		gender=female
 		portraits={
-			#civilian={small="gfx/leaders/HEB/HEB_granny_smith_small.dds"}
-			#army={small="gfx/leaders/HEB/HEB_granny_smith_small.dds"}
+			civilian={
+				large="gfx/leaders/HEB/HEB_granny_smith.dds"
+				small="gfx/interface/ideas/unknown_advisor2.dds"
+			}
 		}
 		advisor={
 			slot=political_advisor

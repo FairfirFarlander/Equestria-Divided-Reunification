@@ -12,12 +12,12 @@ characters={
 	}
 	HFT_orange_grove={
 		name=HFT_orange_grove
-		#portraits={
-		#	army={
-		#		large="gfx/leaders/HFT/HFT_orange_grove.dds"
-		#		small="gfx/leaders/HFT/HFT_orange_grove_small.dds"
-		#	}
-		#}
+		portraits={
+			army={
+				large="gfx/leaders/Pony/portrait_pony_generic_7.dds"
+				small="gfx/interface/ideas/unknown_advisor2.dds"
+			}
+		}
 		corps_commander={
 			desc="HFT_ogrove_mili_desc"
 			skill=1	attack_skill=1	defense_skill=1
@@ -29,13 +29,10 @@ characters={
 		name=HFT_trixie_lulamoon
 		gender=female
 		portraits={
-			civilian={
-				large="gfx/leaders/HMS/HMS_trixie_lulamoon.dds"
-				#small="gfx/leaders/HFT/HFT_trixie_lulamoon_small.dds"
-			}
+			civilian={large="gfx/leaders/HMS/HMS_trixie_lulamoon.dds"}
 			army={
 				large="gfx/leaders/HMS/HMS_trixie_lulamoon.dds"
-				#small="gfx/leaders/HFT/HFT_trixie_lulamoon_small.dds"
+				small="gfx/interface/ideas/unknown_advisor2.dds"
 			}
 		}
 		country_leader={

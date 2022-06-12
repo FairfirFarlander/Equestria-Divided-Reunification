@@ -12,12 +12,13 @@ characters={
 	}
 	VHT_indigo_skies={
 		name=VHT_indigo_skies
-		#portraits={
-		#	army={
-		#		large="gfx/leaders/VHT/VHT_indigo_skies.dds"
-		#		small="gfx/leaders/VHT/VHT_indigo_skies_small.dds"
-		#	}
-		#}
+		gender=female
+		portraits={
+			army={
+				large="gfx/leaders/Pony/portrait_pony_generic_land_1.dds"
+				small="gfx/interface/ideas/unknown_advisor2.dds"
+			}
+		}
 		corps_commander={
 			desc="VHT_iskies_mili_desc"
 			skill=1 attack_skill=2	defense_skill=1
@@ -27,12 +28,12 @@ characters={
 	}
 	VHT_crimson_hoof={
 		name=VHT_crimson_hoof
-		#portraits={
-		#	army={
-		#		large="gfx/leaders/VHT/VHT_crimson_hoof.dds"
-		#		small="gfx/leaders/VHT/VHT_crimson_hoof_small.dds"
-		#	}
-		#}
+		portraits={
+			army={
+				large="gfx/leaders/Pony/portrait_pony_generic_land_4.dds"
+				small="gfx/interface/ideas/unknown_advisor2.dds"
+			}
+		}
 		corps_commander={
 			desc="VHT_choof_mili_desc"
 			skill=1 attack_skill=1	defense_skill=3
@@ -43,12 +44,12 @@ characters={
 	VHT_moonlight_elegy={
 		name=VHT_moonlight_elegy
 		gender=female
-		#portraits={
-		#	army={
-		#		large="gfx/leaders/VHT/VHT_moonlight_elegy.dds"
-		#		small="gfx/leaders/VHT/VHT_moonlight_elegy_small.dds"
-		#	}
-		#}
+		portraits={
+			army={
+				large="gfx/leaders/Pony/portrait_pony_generic_land_10.dds"
+				small="gfx/interface/ideas/unknown_advisor2.dds"
+			}
+		}
 		corps_commander={
 			desc="VHT_melegy_mili_desc"
 			skill=1 attack_skill=1	defense_skill=1
@@ -59,12 +60,12 @@ characters={
 	VHT_lavender_blossom={
 		name=VHT_lavender_blossom
 		gender=female
-		#portraits={
-		#	army={
-		#		large="gfx/leaders/VHT/VHT_lavender_blossom.dds"
-		#		small="gfx/leaders/VHT/VHT_lavender_blossom_small.dds"
-		#	}
-		#}
+		portraits={
+			army={
+				large="gfx/leaders/Pony/portrait_pony_generic_land_10.dds"
+				small="gfx/interface/ideas/unknown_advisor2.dds"
+			}
+		}
 		corps_commander={
 			desc="VHT_lblossom_mili_desc"
 			skill=1 attack_skill=1	defense_skill=1

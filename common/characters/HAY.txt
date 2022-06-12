@@ -4,7 +4,7 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/BAL/completeanarchy.tga"
-				#small="gfx/leaders/HAY/HAY_regional_defense_council_small.dds"#
+				small="gfx/interface/ideas/unknown_advisor2.dds"
 			}
 		}
 		country_leader={
@@ -236,7 +236,7 @@ characters={
 			cost=100
 			idea_token=HAY_lstar_advi
 			traits={rocket_scientist}
-			modifier={rocketry=0.1}
+			research_bonus={rocketry=0.1}
 		}
 	}
 	HAY_blitz_banana={
@@ -384,7 +384,6 @@ characters={
 			skill=2	attack_skill=2	defense_skill=2
 			planning_skill=1	logistics_skill=2
 			traits={pony_race_trait infantry_leader trickster}
-			legacy_id=11250
 		}
 	}
 	HAY_boreal_bloom={
@@ -400,7 +399,6 @@ characters={
 			skill=3	attack_skill=4	defense_skill=1
 			planning_skill=2	logistics_skill=3
 			traits={arrow pony_race_trait trickster expert_improviser}
-			legacy_id=11251
 		}
 	}
 }

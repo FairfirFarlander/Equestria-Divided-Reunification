@@ -1,7 +1,9 @@
 characters={
 	CYE_nothinginterestinghappens={
 		name=CYE_voidwalker
-		#portraits={civilian={large=""}}
+		portraits={
+			civilian={large="gfx/leaders/Asia/Unknown_Griffon.dds"}
+		}
 		country_leader={
 			desc="CYE_nihappens_desc"	ideology=anarchism
 			#expire="1030.03.13.08"

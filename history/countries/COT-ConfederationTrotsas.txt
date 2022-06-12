@@ -85,12 +85,12 @@ set_politics={
 }
 #CHARACTERS#
 recruit_character=COT_jd_neighvis
+recruit_character=COT_neighson_e_miles
 recruit_character=COT_silverstar
 recruit_character=COT_apple_ale
 recruit_character=COT_moonshine_melody
 recruit_character=COT_sorren_peak
 recruit_character=COT_burnside_fervor
-recruit_character=COT_stewed_apple
 #VARIENTS#
 if={limit={has_dlc="No Step Back"}
 	create_equipment_variant={

@@ -1,12 +1,12 @@
 characters={
-	SWT_generic_pony={
-		name=SWT_generc_pony
+	MSS_generic_pony={
+		name=MSS_generc_pony
 		gender=female
 		portraits={
 			civilian={large="gfx/leaders/leader_unknown.dds"}
 		}
 		country_leader={
-			desc="SWT_gpony_poli_desc"	ideology=fascism_ideology
+			desc="MSS_gpony_poli_desc"	ideology=fascism_ideology
 			expire="1030.03.13.08"
 			traits={}
 			id=-1

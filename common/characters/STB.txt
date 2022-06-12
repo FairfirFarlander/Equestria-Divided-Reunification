@@ -3,10 +3,7 @@ characters={
 		name=STB_iris_kelly
 		gender=female
 		portraits={
-			civilian={
-				large="gfx/leaders/Pony/portrait_pony_generic_navy_13.dds"
-				#large="gfx/leaders/STB/STB_iris_kelly.dds"
-			}
+			civilian={large="gfx/leaders/Pony/portrait_pony_generic_navy_13.dds"}
 		}
 		country_leader={
 			desc="STB_ikelly_poli_desc"	ideology=corporatocracy
@@ -19,10 +16,7 @@ characters={
 		name=STB_mabel_corne
 		gender=female
 		portraits={
-			civilian={
-				large="gfx/leaders/Pony/portrait_pony_generic_land_8.dds"
-				#large="gfx/leaders/STB/STB_mabel_corne.dds"
-			}
+			civilian={large="gfx/leaders/Pony/portrait_pony_generic_land_8.dds"}
 		}
 		country_leader={
 			desc="STB_mcorne_poli_desc"	ideology=democratic_socialism
@@ -34,10 +28,7 @@ characters={
 	STB_smokey_dust={
 		name=STB_smokey_dust
 		portraits={
-			civilian={
-				large="gfx/leaders/Pony/portrait_pony_generic_navy_8.dds"
-				#large="gfx/leaders/STB/STB_smokey_dust.dds"
-			}
+			civilian={large="gfx/leaders/Pony/portrait_pony_generic_navy_8.dds"}
 		}
 		country_leader={
 			desc="STB_sdust_poli_desc"	ideology=centrism

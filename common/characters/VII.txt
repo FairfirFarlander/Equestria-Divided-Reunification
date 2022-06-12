@@ -35,13 +35,10 @@ characters={
 		name=VII_ruby
 		gender=female
 		portraits={
-			civilian={
-				large="gfx/leaders/DRG/rubydragon.tga"
-				#small="gfx/leaders/DRG/rubydragon.tga"#
-			}
+			civilian={large="gfx/leaders/DRG/rubydragon.tga"}
 			army={
 				large="gfx/leaders/DRG/rubydragon.tga"
-				#small="gfx/leaders/DRG/rubydragon.tga"#
+				small="gfx/interface/ideas/unknown_advisor2.dds"
 			}
 		}
 		country_leader={

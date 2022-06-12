@@ -2,7 +2,7 @@ characters={
 	ALA_almond_tree={
 		name=ALA_almond_tree
 		gender=female
-		#portraits={civilian={large="gfx/leaders/ALA/ALA_almond_tree.dds"}}#
+		portraits={civilian={large="gfx/leaders/Pony/portrait_pony_generic_4.dds"}}
 		country_leader={
 			desc="ALA_atree_poli_desc"	ideology=despotism
 			expire="1030.03.13.08"

@@ -28,10 +28,10 @@ characters={
 	JTL_temple_chant={
 		name=JTL_temple_chant
 		portraits={
-			
+			civilian={large="gfx/leaders/TEM/Mem.tga"}
 			army={
 				large="gfx/leaders/TEM/Mem.tga"
-				#small="gfx/leaders/JTL/JTL_mem_small.dds"#
+				small="gfx/interface/ideas/unknown_advisor2.dds"
 			}
 		}
 		country_leader={
