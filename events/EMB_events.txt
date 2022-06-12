@@ -165,6 +165,7 @@ add_namespace=EMB_evt_a01
 		}
 		option={
 			name=EMB_evt_a01.023.b
+			trigger={is_debug=yes}
 			add_popularity={ideology=fascism popularity=-0.05}
 			add_popularity={ideology=neutrality popularity=-0.03}
 			add_popularity={ideology=communism popularity=0.07}
@@ -186,6 +187,7 @@ add_namespace=EMB_evt_a01
 		}
 		option={
 			name=EMB_evt_a01.024.b
+			trigger={is_debug=yes}
 			add_popularity={ideology=communism popularity=-0.05}
 			add_popularity={ideology=fascism popularity=0.05}
 		}
@@ -310,6 +312,7 @@ add_namespace=EMB_evt_a01
 		}
 		option={
 			name=EMB_evt_a01.044.b
+			trigger={is_debug=yes}
 			36={add_manpower=20}
 			add_popularity={ideology=communism popularity=0.05}
 			add_popularity={ideology=fascism popularity=-0.05}
@@ -329,6 +332,16 @@ add_namespace=EMB_evt_a01
 			add_popularity={ideology=fascism popularity=0.03}
 			add_popularity={ideology=communism popularity=-0.03}
 		}
+		option={
+			name=EMB_evt_a01.051.b
+			trigger={is_debug=yes}
+			add_popularity={ideology=communism popularity=0.03}
+			add_popularity={ideology=fascism popularity=-0.03}
+		}
+		option={
+			name=EMB_evt_C-FF_W-TY.r
+			trigger={is_debug=yes}
+		}
 		immediate={log="[GetDateText]: [Root.GetName]: event EMB_evt_a01.051"}
 	}
 	country_event={		#Risk of Famine
@@ -337,8 +350,87 @@ add_namespace=EMB_evt_a01
 		is_triggered_only=yes	#timeout_days=3
 		option={
 			name=EMB_evt_a01.052.a
+			add_stability=-0.15
+			add_popularity={ideology=communism popularity=0.05}
+		}
+		option={
+			name=EMB_evt_a01.052.b
+			add_stability=-0.15
+			add_popularity={ideology=fascism popularity=0.05}
+		}
+		option={
+			name=EMB_evt_a01.052.c
+			add_stability=-0.15
+			add_popularity={ideology=neutrality popularity=0.05}
+		}
+		option={
+			name=EMB_evt_C-FF_W-TY.r
+			trigger={is_debug=yes}
 		}
 		immediate={log="[GetDateText]: [Root.GetName]: event EMB_evt_a01.052"}
+	}
+	country_event={		#The March
+		id=EMB_evt_a01.061
+		title=EMB_evt_a01.061.t	desc=EMB_evt_a01.061.d	#picture=
+		is_triggered_only=yes	#timeout_days=3
+		option={
+			name=EMB_evt_a01.061.a
+			add_ideas=EMB_the_march
+		}
+		option={
+			name=EMB_evt_a01.061.b
+			trigger={is_debug=yes}
+			remove_ideas=EMB_the_march
+		}
+		option={
+			name=EMB_evt_C-FF_W-TY.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event EMB_evt_a01.061"}
+	}
+	country_event={		#Reserved Event
+		id=EMB_evt_a01.062
+		title=EMB_evt_a01.062.t	desc=EMB_evt_a01.062.d	#picture=
+		is_triggered_only=yes	#timeout_days=3
+		option={
+			name=EMB_evt_a01.062.a
+		}
+		option={
+			name=EMB_evt_C-FF_W-TY.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event EMB_evt_a01.062"}
+	}
+	country_event={		#From March to a Riot
+		id=EMB_evt_a01.063
+		title=EMB_evt_a01.063.t	desc=EMB_evt_a01.063.d	#picture=
+		is_triggered_only=yes	#timeout_days=3
+		option={
+			name=EMB_evt_a01.063.a
+			add_stability=-0.10
+			add_popularity={ideology=fascism popularity=-0.2}
+			set_country_flag=EMB_communist_tree
+			load_focus_tree=EMB_communist
+		}
+		option={
+			name=EMB_evt_a01.063.b
+			add_stability=-0.10
+			add_popularity={ideology=communism popularity=-0.2}
+			set_country_flag=EMB_fascist_tree
+			load_focus_tree=EMB_fascist
+		}
+		option={
+			name=EMB_evt_a01.063.c
+			add_stability=-0.05
+			add_popularity={ideology=communism popularity=-0.1}
+			set_country_flag=EMB_neutral_tree
+			load_focus_tree=EMB_neutral
+		}
+		option={
+			name=EMB_evt_C-FF_W-TY.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event EMB_evt_a01.063"}
 	}
 add_namespace=EMB_evt_a00#Non-story Events
 	country_event={		#The Beast of Embers
