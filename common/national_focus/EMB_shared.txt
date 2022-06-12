@@ -13,7 +13,6 @@
 	shared_focus={		#Carving Into the Rocks
 		id=EMB_ember_earthworks
 		icon=GFX_goal_chn_man_secretsociety
-		relative_position_id=EMB_S00
 		x=8 y=0 cost=5
 		available={OR={
 			has_country_flag=EMB_early_construction
@@ -122,7 +121,6 @@
 	shared_focus={		#A Hoof on the World Stage
 		id=EMB_D00
 		#icon=
-		relative_position_id=EMB_S00
 		x=-5 y=0 cost=1
 		available={has_country_flag=EMB_diplomacy_unlocked}
 		#ai_will_do={factor=40}
@@ -182,10 +180,10 @@
 		x=-1 y=1 cost=1
 		prerequisite={focus=EMB_L01C}
 		prerequisite={focus=EMB_D01A}
-		available={AND={	#Diplomacy must be complete beforehand.
-			has_completed_focus=EMB_D?
-			has_completed_focus=EMB_D?
-		}}
+		#available={AND={	#Diplomacy must be complete beforehand.
+		#	has_completed_focus=EMB_D?
+		#	has_completed_focus=EMB_D?
+		#}}
 		#ai_will_do={factor=40}
 		completion_reward={
 			#log="[GetDateText]: [Root.GetName]: focus EMB_LD02"
@@ -205,7 +203,6 @@
 	shared_focus={		#A Fortress in the Making
 		id=EMB_L00
 		#icon=
-		relative_position_id=EMB_S00
 		x=-10 y=0 cost=1
 		available={has_country_flag=EMB_military_unlocked}
 		#ai_will_do={factor=40}

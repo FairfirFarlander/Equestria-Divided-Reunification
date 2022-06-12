@@ -1,6 +1,6 @@
 focus_tree={
 	id=EDR_generic_focus_tree
-	country={factor=6}
+	country={factor=2}
 	continuous_focus_position={x=60 y=60}
 	shared_focus=EDR_I00
 	shared_focus=EDR_L05
@@ -11,7 +11,7 @@ focus_tree={
 }
 focus_tree={
 	id=generic_testing_focus_tree
-	country={factor=0 modifier={add=7 tag=BCK}}
+	country={factor=0 modifier={add=4 tag=BCK is_debug=yes}}
 	continuous_focus_position={x=2130 y=0} #2130 930, 2140 940
 	shared_focus=EDR_P00
 	shared_focus=EDR_I00
@@ -25,7 +25,7 @@ focus_tree={
 }
 focus_tree={
 	id=EDR_null_focus_tree
-	country={factor=0 modifier={add=8 tag=CYE}}	default=no
+	country={factor=0 modifier={add=4 tag=CYE}}	default=no
 	continuous_focus_position={x=60 y=60}
 }
 #Generic Equestrian Seperatist Tree
@@ -96,9 +96,9 @@ focus_tree={
 	shared_focus={		#The Winter Troubles
 		id=EDR_P03
 		icon=GFX_goal_water
-		relative_position_id=EDR_P02
-		x=0 y=1 cost=4
-		prerequisite={focus=EDR_P2}
+		relative_position_id=EDR_P00
+		x=0 y=3 cost=4
+		prerequisite={focus=EDR_P01}
 		ai_will_do={factor=4000}
 		select_effect={
 			set_temp_variable={aaaaa=1}

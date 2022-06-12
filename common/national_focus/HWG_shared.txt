@@ -124,7 +124,6 @@
 		prerequisite={focus=HWG_war_to_everfree}
 		available={
 			has_war=no
-			has_completed_focus=HWG_rebuild_the_equestria_navy
 			OR={
 				owns_state=7
 				VII={OR={

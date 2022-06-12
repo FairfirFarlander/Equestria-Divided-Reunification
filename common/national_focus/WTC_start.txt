@@ -1,5 +1,5 @@
 focus_tree={
-	id=WTC_start country={factor=0 modifier={add=10 tag=WTC}}
+	id=WTC_start country={factor=0 modifier={add=3 tag=WTC}}
 	continuous_focus_position={x=0 y=0}
 	default=no
 	shared_focus=WTC_S00
@@ -69,7 +69,6 @@ focus_tree={
 		prerequisite={focus=WTC_S03A}
 		prerequisite={focus=WTC_S03B}
 		prerequisite={focus=WTC_S03C}
-		prerequisite={focus=WTC_S03D}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus WTC_S04"
 		}
@@ -115,7 +114,7 @@ focus_tree={
 		id=WTC_A00 icon=GFX_goal_collaborate_local_elites_pony
 		relative_position_id=WTC_S00
 		x=-6 y=0 cost=2 ai_will_do={factor=4000}
-		available={focus=WTC_S07}
+		available={has_completed_focus=WTC_S07}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus WTC_A00"
 		}

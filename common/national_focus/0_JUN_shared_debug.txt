@@ -1,0 +1,120 @@
+
+### Civil War Tree ###
+shared_focus = {
+	id = JUN_decleration
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 2.00
+	x = 18
+	y = 7
+	ai_will_do = {
+		factor = 80
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JUN_decleration"
+		add_political_power = 75
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+### Army Tree ###
+
+shared_focus = {
+	id = JUN_army_debate
+	icon = GFX_SIA_jungletraining
+	cost = 4.40
+	x = -2
+	y = 0
+	ai_will_do = {
+		factor = 80
+	}
+	available = {
+	    has_completed_focus = JUN_proclaim_the_federation
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JUN_army_debate"
+		army_experience = 25
+	}
+	search_filters = { FOCUS_FILTER_ARMY_BONUS }
+}
+### Air Tree ###
+
+shared_focus = {
+	id = JUN_aztlan_airforce
+	icon = GFX_goal_generic_air_doctrine
+	cost = 4.40
+	x = -11
+	y = 0
+	ai_will_do = {
+		factor = 30
+	}
+	available = {
+	    has_completed_focus = JUN_proclaim_the_federation
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JUN_aztlan_airforce"
+		air_experience = 25
+	}
+	search_filters = { FOCUS_FILTER_AIRFORCE_BONUS }
+}
+### Navy Tree ###
+
+shared_focus = {
+	id = JUN_aztlan_navy
+	icon = GFX_goal_generic_navy_doctrines_tactics
+	cost = 4.40
+	x = 28
+	y = 0
+	ai_will_do = {
+		factor = 30
+	}
+	available = {
+	    has_completed_focus = JUN_proclaim_the_federation
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JUN_aztlan_navy"
+		navy_experience = 25
+	}
+	search_filters = { FOCUS_FILTER_NAVY_BONUS }
+}
+### Economic Tree ###
+
+shared_focus = {
+	id = JUN_the_three_regions
+	icon = GFX_DAH_Topke
+	cost = 5.80
+	x = 18
+	y = 0
+	ai_will_do = {
+		factor = 80
+	}
+	available = {
+	    has_completed_focus = JUN_proclaim_the_federation
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JUN_the_three_regions"
+		swap_ideas = {
+		    remove_idea = JUN_economic_backwater
+			add_idea = JUN_economic_backwater_2
+		}
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+}
+
+### Political Situation ###
+
+shared_focus = {
+	id = JUN_the_political_situation
+	icon = GFX_goal_plantation_grants
+	cost = 4.40
+	x = 8
+	y = 0
+	ai_will_do = {
+		factor = 150
+	}
+	available = {
+	    always = no
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JUN_the_political_situation"
+		custom_effect_tooltip = JUN_civil_war_ended_tp
+	}
+}

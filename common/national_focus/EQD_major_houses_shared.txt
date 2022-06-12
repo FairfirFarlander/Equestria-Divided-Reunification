@@ -1,10 +1,9 @@
 focus_tree={
 	id=EQD_major_houses_shared
-	country={
-		modifier={add=10 tag=CUL} modifier={add=10 tag=HEB}
-		modifier={add=10 tag=HEF} modifier={add=10 tag=HMS}
-		modifier={add=10 tag=HSW} modifier={add=10 tag=HWG}
-		modifier={add=10 tag=BCK}
+	country={factor=1
+		modifier={add=3 tag=CUL} modifier={add=3 tag=HEB}
+		modifier={add=3 tag=HEF} modifier={add=3 tag=HMS}
+		modifier={add=3 tag=HSW} modifier={add=3 tag=HWG}
 	}
 	continuous_focus_position={x=1800 y=30}
 	shared_focus=EQD_S00

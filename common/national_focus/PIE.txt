@@ -1,5 +1,5 @@
 focus_tree={
-	id=PIE country={modifier={add=7 tag=PIE}}
+	id=PIE country={modifier={add=3 tag=PIE}}
 	continuous_focus_position={x=1750 y=800}
 	shared_focus=EDR_I00
 	shared_focus=EDR_L05

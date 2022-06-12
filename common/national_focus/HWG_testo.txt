@@ -550,11 +550,9 @@
 		id=HWG_decentralized_command_structure
 		#icon=
 		relative_position_id=HWG_invest_in_modern_rifles
-		prerequisite={
-			focus=HWG_invest_in_modern_rifles
-			hidden_trigger={has_completed_focus=HWG_restructuring_the_military}
-		}
+		prerequisite={focus=HWG_invest_in_modern_rifles}
 		mutually_exclusive={focus=HWG_centralized_command_structure}
+		available={has_completed_focus=HWG_restructuring_the_military}
 		x=-2
 		y=1
 		cost=6
@@ -608,11 +606,9 @@
 		id=HWG_centralized_command_structure
 		#icon=
 		relative_position_id=HWG_invest_in_modern_rifles
-		prerequisite={
-			focus=HWG_invest_in_modern_rifles
-			hidden_trigger={has_completed_focus=HWG_restructuring_the_military}
-		}
+		prerequisite={focus=HWG_invest_in_modern_rifles}
 		mutually_exclusive={focus=HWG_decentralized_command_structure}
+		available={hidden_trigger={has_completed_focus=HWG_restructuring_the_military}}
 		x=2
 		y=1
 		cost=6
@@ -701,11 +697,9 @@
 		id=HWG_invest_in_the_navy
 		#icon=
 		relative_position_id=HWG_the_state_of_our_navy
-		prerequisite={
-			focus=HWG_the_state_of_our_navy
-			hidden_trigger={has_completed_focus=HWG_restructuring_the_military}
-		}
+		prerequisite={focus=HWG_the_state_of_our_navy}
 		mutually_exclusive={focus=HWG_cut_naval_spending}
+		available={hidden_trigger={has_completed_focus=HWG_restructuring_the_military}}
 		x=2
 		y=1
 		cost=8

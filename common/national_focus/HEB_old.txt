@@ -302,7 +302,6 @@
 		}
 		available={
 			has_war=no
-			has_completed_focus=HEB_rebuild_the_equestria_navy
 			OR={
 				owns_state=7
 				VII={OR={

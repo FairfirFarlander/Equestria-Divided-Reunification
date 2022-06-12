@@ -1,0 +1,32 @@
+### Initial War Tree ###
+shared_focus = {
+	id = TEM_the_uprising
+	icon = GFX_goal_TEM_the_uprising
+	cost = 2.90
+	x = 10
+	y = 8
+	ai_will_do = {
+		factor = 80
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TEM_the_uprising"
+		add_political_power = 75
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+shared_focus = {
+	id = TEM_sacrifice_berry
+	icon = GFX_goal_purge_opposition
+	cost = 1.50
+	x = -2
+	y = 6
+	ai_will_do = {
+		factor = 80
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TEM_sacrifice_berry"
+		country_event = { 
+			id = temple.6
+		}
+	}
+}

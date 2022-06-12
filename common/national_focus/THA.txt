@@ -1,5 +1,5 @@
 focus_tree={
-	id=THA country={modifier={add=10 tag=THA}}
+	id=THA country={modifier={add=3 tag=THA}}
 	continuous_focus_position={x=6000 y=0}
 	#shared_focus=EDR_I00
 	#shared_focus=EDR_L05

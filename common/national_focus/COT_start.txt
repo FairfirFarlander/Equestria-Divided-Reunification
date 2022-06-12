@@ -841,28 +841,6 @@
 		}
 	}
 	shared_focus={
-		id=COT_fieldmarshal_advisor_stuart_recon_bonus icon=GFX_focus_RAJ_lions_of_the_great_war
-		relative_position_id=COT_fieldmarshal_advisor_lee
-		x=-4 y=0 cost=5 ai_will_do={factor=8}
-		prerequisite={focus=COT_grand_army_of_the_confederacy}
-		mutually_exclusive={
-			focus=COT_fieldmarshal_advisor_lee
-			focus=COT_fieldmarshal_advisor_stonewall
-		}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus COT_fieldmarshal_advisor_stuart_recon_bonus"
-			add_field_marshal_role={
-				character=SCS_stewed_apple
-				skill=3 attack_skill=4 defense_skill=2
-				planning_skill=2 logistics_skill=2
-				traits={offensive_doctrine fast_planner cavalry_leader pony_race_trait}
-				legacy_id=99991
-			}
-			custom_effect_tooltip=available_political_advisor
-			show_ideas_tooltip=SCS_stuart
-		}
-	}
-	shared_focus={
 		id=COT_fieldmarshal_advisor_lee icon=GFX_goal_offensive_army
 		relative_position_id=COT_grand_army_of_the_confederacy
 		x=0 y=1 cost=5 ai_will_do={factor=8}
@@ -882,6 +860,28 @@
 			}
 			custom_effect_tooltip=available_political_advisor
 			show_ideas_tooltip=SCS_lee
+		}
+	}
+	shared_focus={
+		id=COT_fieldmarshal_advisor_stuart_recon_bonus icon=GFX_focus_RAJ_lions_of_the_great_war
+		relative_position_id=COT_fieldmarshal_advisor_lee
+		x=-4 y=0 cost=5 ai_will_do={factor=8}
+		prerequisite={focus=COT_grand_army_of_the_confederacy}
+		mutually_exclusive={
+			focus=COT_fieldmarshal_advisor_lee
+			focus=COT_fieldmarshal_advisor_stonewall
+		}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: Focus COT_fieldmarshal_advisor_stuart_recon_bonus"
+			add_field_marshal_role={
+				character=SCS_stewed_apple
+				skill=3 attack_skill=4 defense_skill=2
+				planning_skill=2 logistics_skill=2
+				traits={offensive_doctrine fast_planner cavalry_leader pony_race_trait}
+				legacy_id=99991
+			}
+			custom_effect_tooltip=available_political_advisor
+			show_ideas_tooltip=SCS_stuart
 		}
 	}
 	shared_focus={
@@ -1405,7 +1405,6 @@
 		available={
 			or={
 				has_government=fascism
-				has_completed_focus=COT_manifest_destiny
 			}
 		}
 		completion_reward={
