@@ -1,0 +1,36 @@
+﻿l_english:
+###Introduction###
+##Bookmark##
+HAH_GATHERING_STORM_DESC:""
+##Welcome Screen##
+ EAW_WS_HAH:""
+  EAW_WS_HAH_desc:""
+###Characters###
+##Leaders##
+HAH_generic_pony:"Generic pony"
+ HAH_generic_pony_desc:""
+##Commanders##
+##Advisors##
+###Country Name###
+HAH:"Hollow Shades"
+ HAH_DEF:"Hollow Shades"
+ HAH_ADJ:"Hollow Shades"
+ HAH_happy:"Happy Hollow"
+  HAH_happy_DEF:"Happy Hollow"
+  HAH_happy_ADJ:"Happy Hollow"
+###Political Parties###
+#HAH_fascism_party:"CCU"
+# HAH_fascism_party_long:"Canterlot Council of Unicorns"
+# HAH_communism_party:"REB"
+#  HAH_communism_party_long:"Rebels"
+# HAH_neutrality_party:"MR"
+#  HAH_neutrality_party_long:"Monarchist Rule"
+# HAH_democratic_party:"HAR"
+#  HAH_democratic_party_long:"Harmonists"
+###Ideas###
+###National Focuses###
+##Storyline Tree##
+#HAH_:""
+# HAH__desc:""
+# HAH_:""
+#  HAH__desc:""

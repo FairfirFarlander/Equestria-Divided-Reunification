@@ -1,0 +1,33 @@
+﻿l_english:
+###Introduction###
+##Bookmark##
+MSN_GATHERING_STORM_DESC:""
+##Welcome Screen##
+ EAW_WS_MSS:""
+  EAW_WS_MSS_desc:""
+###Characters###
+##Leaders##
+MSS_generic_pony:"Generic pony"
+ MSS_generic_pony_desc:""
+##Commanders##
+##Advisors##
+###Country Name###
+MSS:"Friesland"
+ MSS_DEF:"The Slave State of Friesland"
+ MSS_ADJ:"Frieslandi"
+###Political Parties###
+#MSS_fascism_party:"CCU"
+# MSS_fascism_party_long:"Canterlot Council of Unicorns"
+# MSS_communism_party:"REB"
+#  MSS_communism_party_long:"Rebels"
+# MSS_neutrality_party:"MR"
+#  MSS_neutrality_party_long:"Monarchist Rule"
+# MSS_democratic_party:"HAR"
+#  MSS_democratic_party_long:"Harmonists"
+###Ideas###
+###National Focuses###
+##Storyline Tree##
+#MSS_:""
+# MSS__desc:""
+# MSS_:""
+#  MSS__desc:""

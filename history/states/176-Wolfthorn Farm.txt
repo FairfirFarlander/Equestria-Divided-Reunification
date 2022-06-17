@@ -3,7 +3,6 @@ state={	#EDRSTATE
 	name="STATE_176"
 	manpower=130550
 	state_category=rural
-	buildings_max_level_factor=1
 	provinces={124 3055 11073 11115 11125 11164 13205}
 	history={
 		owner=HMS
@@ -11,6 +10,7 @@ state={	#EDRSTATE
 		victory_points={124 1}
 		buildings={
 			infrastructure=1
+			industrial_complex=1
 		}
 	}
 }

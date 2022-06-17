@@ -1,0 +1,31 @@
+﻿l_english:
+###Introduction###
+##Bookmark##
+TRH_GATHERING_STORM_DESC:""
+##Welcome Screen##
+ EAW_WS_TRH:""
+  EAW_WS_TRH_desc:""
+###Characters###
+##Leaders##
+##Commanders##
+##Advisors##
+###Country Name###
+TRH:"Twilight Range Hold"
+ TRH_DEF:"The Thestral Hold of the Twilight Range"
+ TRH_ADJ:"Thestrali"
+###Political Parties###
+#TRH_fascism_party:"CCU"
+# TRH_fascism_party_long:"Canterlot Council of Unicorns"
+# TRH_communism_party:"REB"
+#  TRH_communism_party_long:"Rebels"
+# TRH_neutrality_party:"MR"
+#  TRH_neutrality_party_long:"Monarchist Rule"
+# TRH_democratic_party:"HAR"
+#  TRH_democratic_party_long:"Harmonists"
+###Ideas###
+###National Focuses###
+##Storyline Tree##
+#TRH_:""
+# TRH__desc:""
+# TRH_:""
+#  TRH__desc:""

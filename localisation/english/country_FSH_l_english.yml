@@ -1,0 +1,31 @@
+﻿l_english:
+###Introduction###
+##Bookmark##
+FSH_GATHERING_STORM_DESC:""
+##Welcome Screen##
+ EAW_WS_FSH:""
+  EAW_WS_FSH_desc:""
+###Characters###
+##Leaders##
+##Commanders##
+##Advisors##
+###Country Name###
+FSH:"Freeside Hold"
+ FSH_DEF:"The Thestral Hold of Freeside"
+ FSH_ADJ:"Thestrali"
+###Political Parties###
+#FSH_fascism_party:"CCU"
+# FSH_fascism_party_long:"Canterlot Council of Unicorns"
+# FSH_communism_party:"REB"
+#  FSH_communism_party_long:"Rebels"
+# FSH_neutrality_party:"MR"
+#  FSH_neutrality_party_long:"Monarchist Rule"
+# FSH_democratic_party:"HAR"
+#  FSH_democratic_party_long:"Harmonists"
+###Ideas###
+###National Focuses###
+##Storyline Tree##
+#FSH_:""
+# FSH__desc:""
+# FSH_:""
+#  FSH__desc:""

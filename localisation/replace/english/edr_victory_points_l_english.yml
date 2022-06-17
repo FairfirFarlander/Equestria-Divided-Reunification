@@ -34,9 +34,11 @@
   VICTORY_POINTS_3898:"Leywarden"
   VICTORY_POINTS_6598:"Happy Hollow"
  #Changed Unorganized
- VICTORY_POINTS_13097:"Redheart's Refuge"
- VICTORY_POINTS_11672:"Old Cloudsdale"
- VICTORY_POINTS_9741:"Old Ponyville"
+  VICTORY_POINTS_13097:"Redheart's Refuge"
+  VICTORY_POINTS_11672:"Old Cloudsdale"
+  VICTORY_POINTS_9741:"Old Ponyville"
+ #Lush Central Plain
+  VICTORY_POINTS_3162:"Belltown"
  
  #Untouched Organized Areas
  #Las Pegasus

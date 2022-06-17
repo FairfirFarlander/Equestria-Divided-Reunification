@@ -1,6 +1,6 @@
 characters={
 	HAH_generic_pony={
-		name=HAH_generc_pony
+		name=HAH_generic_pony
 		gender=female
 		portraits={
 			civilian={large="gfx/leaders/leader_unknown.dds"}

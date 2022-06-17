@@ -1,14 +1,7 @@
-#LOCALE#
 capital=56
-#if={
-#	limit={has_dlc="No Step Back"}
-#	set_oob="MSS_07"	#_nsb
-#	else={set_oob="MSS_07"}
-#}
-#FOUNTATION#
+oob="MSN_1012"
 set_research_slots=2
-set_stability=0.36
-set_war_support=0.14	#1812
+set_stability=0.36 set_war_support=0.14
 add_ideas={
 	volunteer_only export_focus civilian_economy
 	poor_science_base agrarian_society
@@ -23,25 +16,18 @@ if={
 	}
 	else={add_ideas={EQS_bad_tanks}}
 }
-#TECHNOLOGY#
 set_technology={
 	pony_race=1
+	penal_infantry=1
 	melee_weapons=1
 	tech_support=1
+	tech_unicorn=1
+	tech_unicorn_ms=1
 }
 actually_fix_weapon_techs=yes
-#MISC#
-set_convoys=3
 set_rule={can_generate_female_aces=yes}
-#POLITICS#
-set_popularities={
-	fascism=40	communism=20
-	neutrality=22	democratic=18
-}
-set_politics={
-	ruling_party=fascism	last_election="1000.10.10"
-	election_frequency=36	elections_allowed=no
-}
-#CHARACTERS#
+set_popularities={fascism=40 communism=20 neutrality=22 democratic=18}
+set_politics={ruling_party=fascism elections_allowed=no}
 recruit_character=MSN_generic_pony
-#VARIENTS#
+#NOTES#
+#Stab/WarS are based off of 18(12)-18(14)/50. MSN is 14.

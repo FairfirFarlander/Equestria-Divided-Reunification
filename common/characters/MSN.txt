@@ -1,6 +1,6 @@
 characters={
 	MSN_generic_pony={
-		name=MSN_generc_pony
+		name=MSN_generic_pony
 		gender=female
 		portraits={
 			civilian={large="gfx/leaders/leader_unknown.dds"}

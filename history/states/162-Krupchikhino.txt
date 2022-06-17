@@ -1,7 +1,7 @@
 state={	#EDRSTATE
 	id=162
 	name="STATE_162"
-	manpower=110814
+	manpower=100814	#110814
 	state_category=rural
 	buildings_max_level_factor=1
 	provinces={3273 6350 6395 9237 9383 9392}

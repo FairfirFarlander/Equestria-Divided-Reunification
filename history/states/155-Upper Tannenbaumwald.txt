@@ -1,7 +1,7 @@
 state={	#EDRSTATE
 	id=155
 	name="STATE_155"
-	manpower=27722
+	manpower=17722	#27722
 	state_category=wasteland
 	buildings_max_level_factor=1
 	provinces={151 3054 3083 6074 6168 6170}
