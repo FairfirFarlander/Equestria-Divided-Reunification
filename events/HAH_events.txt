@@ -1,0 +1,92 @@
+add_namespace=HAH_evt_a01
+	country_event={		#Rules of Dominion
+		id=HAH_evt_a01.001
+		title=HAH_evt_a01.001.t	desc=HAH_evt_a01.001.d	#picture=
+		is_triggered_only=yes	#timeout_days=3
+		option={
+			name=HAH_evt_a01.001.a
+			load_oob="HAH_S00_legionarie_cohort"
+		}
+		option={
+			name=HAH_evt_C-FF_W-TY.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_evt_a01.001"}
+	}
+	country_event={		#Back to Business
+		id=HAH_evt_a01.021
+		title=HAH_evt_a01.021.t	desc=HAH_evt_a01.021.d	#picture=
+		is_triggered_only=yes	#timeout_days=3
+		option={
+			name=HAH_evt_a01.021.a
+			set_country_flag=HAH_gathering_materials
+		}
+		option={
+			name=HAH_evt_a01.021.h
+			trigger={is_debug=yes}
+			clr_country_flag=HAH_gathering_materials
+		}
+		option={
+			name=HAH_evt_C-FF_W-TY.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_evt_a01.021"}
+	}
+	country_event={		#The Luxuries of The Capital
+		id=HAH_evt_a01.022
+		title=HAH_evt_a01.022.t	desc=HAH_evt_a01.022.d	#picture=
+		is_triggered_only=yes	#timeout_days=3
+		option={
+			name=HAH_evt_a01.022.a
+			clr_country_flag=HAH_gathering_materials
+			set_country_flag=HAH_business_concluded
+			add_stability=0.04
+			add_political_power=10
+		}
+		option={
+			name=HAH_evt_a01.022.h
+			trigger={is_debug=yes}
+			set_country_flag=HAH_gathering_materials
+			clr_country_flag=HAH_business_concluded
+			add_stability=-0.04
+			add_political_power=-10
+		}
+		option={
+			name=HAH_evt_C-FF_W-TY.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_evt_a01.022"}
+	}
+	country_event={		#Bread and Circuses
+		id=HAH_evt_a01.032
+		title=HAH_evt_a01.032.t	desc=HAH_evt_a01.032.d	#picture=
+		is_triggered_only=yes	#timeout_days=3
+		option={
+			name=HAH_evt_a01.032.a
+			set_country_flag=HAH_bread_and_circuses
+		}
+		option={
+			name=HAH_evt_a01.032.h
+			trigger={is_debug=yes}
+			clr_country_flag=HAH_bread_and_circuses
+		}
+		option={
+			name=HAH_evt_C-FF_W-TY.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_evt_a01.032"}
+	}
+	country_event={		#A Ball
+		id=HAH_evt_a01.035
+		title=HAH_evt_a01.035.t	desc=HAH_evt_a01.035.d	#picture=
+		is_triggered_only=yes	#timeout_days=3
+		option={
+			name=HAH_evt_a01.035.a
+			set_country_flag=HAH_bread_and_circuses
+		}
+		option={
+			name=HAH_evt_C-FF_W-TY.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_evt_a01.035"}
+	}

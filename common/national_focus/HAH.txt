@@ -1,0 +1,16 @@
+focus_tree={
+	id=HAH country={modifier={add=3 tag=HAH}}
+	continuous_focus_position={x=1200 y=-350}
+	shared_focus=HAH_S00
+}
+focus_tree={	#DEBUG
+	id=HAH country={modifier={add=4 tag=HAH is_debug=yes}}
+	continuous_focus_position={x=1200 y=-350}
+	#shared_focus=EQD_S00
+	#shared_focus=HSW_calm_before_the_storm
+	shared_focus=HAH_S00
+	#shared_focus=EDR_I00
+	#shared_focus=EDR_L05
+	#shared_focus=EDR_N05
+	#shared_focus=EDR_A05
+}

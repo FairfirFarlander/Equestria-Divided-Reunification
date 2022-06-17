@@ -164,7 +164,7 @@ add_namespace=EMB_evt_a01
 			add_popularity={ideology=communism popularity=-0.07}
 		}
 		option={
-			name=EMB_evt_a01.023.b
+			name=EMB_evt_a01.023.h
 			trigger={is_debug=yes}
 			add_popularity={ideology=fascism popularity=-0.05}
 			add_popularity={ideology=neutrality popularity=-0.03}
@@ -186,7 +186,7 @@ add_namespace=EMB_evt_a01
 			add_popularity={ideology=fascism popularity=-0.05}
 		}
 		option={
-			name=EMB_evt_a01.024.b
+			name=EMB_evt_a01.024.h
 			trigger={is_debug=yes}
 			add_popularity={ideology=communism popularity=-0.05}
 			add_popularity={ideology=fascism popularity=0.05}
@@ -311,7 +311,7 @@ add_namespace=EMB_evt_a01
 			add_popularity={ideology=communism popularity=-0.05}
 		}
 		option={
-			name=EMB_evt_a01.044.b
+			name=EMB_evt_a01.044.h
 			trigger={is_debug=yes}
 			36={add_manpower=20}
 			add_popularity={ideology=communism popularity=0.05}
@@ -333,7 +333,7 @@ add_namespace=EMB_evt_a01
 			add_popularity={ideology=communism popularity=-0.03}
 		}
 		option={
-			name=EMB_evt_a01.051.b
+			name=EMB_evt_a01.051.h
 			trigger={is_debug=yes}
 			add_popularity={ideology=communism popularity=0.03}
 			add_popularity={ideology=fascism popularity=-0.03}
@@ -378,7 +378,7 @@ add_namespace=EMB_evt_a01
 			add_ideas=EMB_the_march
 		}
 		option={
-			name=EMB_evt_a01.061.b
+			name=EMB_evt_a01.061.h
 			trigger={is_debug=yes}
 			remove_ideas=EMB_the_march
 		}

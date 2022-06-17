@@ -1,0 +1,22 @@
+HAH_gathering_materials={
+	#icon=
+	priority=2
+	allowed={tag=HAH}
+	visible={
+		or={
+			has_country_flag=HAH_gathering_materials
+			is_debug=yes
+		}
+	}
+}
+HAH_bread_and_circuses={
+	#icon=
+	priority=2
+	allowed={tag=HAH}
+	visible={
+		or={
+			has_country_flag=HAH_bread_and_circuses
+			is_debug=yes
+		}
+	}
+}

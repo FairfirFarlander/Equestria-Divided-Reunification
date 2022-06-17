@@ -1,0 +1,12 @@
+HAH_gathering_materials={
+	HAH_gathing_mah_shitz={
+		#icon=
+		available={hidden_trigger={always=no}}
+	}
+}
+HAH_bread_and_circuses={
+	HAH_gimmie_bread_and_circuses={
+		#icon=
+		available={hidden_trigger={always=no}}
+	}
+}

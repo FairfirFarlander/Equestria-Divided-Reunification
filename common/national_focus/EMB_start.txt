@@ -18,7 +18,7 @@
 		ai_will_do={factor=4000}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus EMB_S01"
-			country_event=EMB_evt_a01.011		#Backlash from the Caravan Unions
+			country_event=EMB_evt_a01.011	#Backlash from the Caravan Unions
 		}
 	}
 	shared_focus={	#The Underway Awaits
