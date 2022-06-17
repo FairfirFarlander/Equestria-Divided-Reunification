@@ -3,7 +3,7 @@ EDR_debug_decisions={
 	priority=4
 	visible={is_debug=yes}
 }
-EDR_debug_land_decisions={
+EDR_debug_toggle_minors_decisions={
 	#icon=
 	priority=3
 	visible={
@@ -18,7 +18,10 @@ EDR_debug_HEB_land_decisions={
 		is_debug=yes
 		not={has_global_flag=EDR_no_minors}
 		or={
-			tag=HEB
+			and={
+				tag=HEB
+				has_global_flag=EDR_debug_shwlandmaj
+			}
 			has_global_flag=EDR_debug_shwland
 		}
 	}
@@ -30,7 +33,10 @@ EDR_debug_HEF_land_decisions={
 		is_debug=yes
 		not={has_global_flag=EDR_no_minors}
 		or={
-			tag=HEF
+			and={
+				tag=HEF
+				has_global_flag=EDR_debug_shwlandmaj
+			}
 			has_global_flag=EDR_debug_shwland
 		}
 	}
@@ -42,7 +48,10 @@ EDR_debug_HMS_land_decisions={
 		is_debug=yes
 		not={has_global_flag=EDR_no_minors}
 		or={
-			tag=HMS
+			and={
+				tag=HMS
+				has_global_flag=EDR_debug_shwlandmaj
+			}
 			has_global_flag=EDR_debug_shwland
 		}
 	}
@@ -54,7 +63,10 @@ EDR_debug_HSW_land_decisions={
 		is_debug=yes
 		not={has_global_flag=EDR_no_minors}
 		or={
-			tag=HSW
+			and={
+				tag=HSW
+				has_global_flag=EDR_debug_shwlandmaj
+			}
 			has_global_flag=EDR_debug_shwland
 		}
 	}
@@ -66,19 +78,25 @@ EDR_debug_HWG_land_decisions={
 		is_debug=yes
 		not={has_global_flag=EDR_no_minors}
 		or={
-			tag=HWG
+			and={
+				tag=HWG
+				has_global_flag=EDR_debug_shwlandmaj
+			}
 			has_global_flag=EDR_debug_shwland
 		}
 	}
 }
-EDR_debug_STG_land_decisions={
+EDR_debug_SGR_land_decisions={
 	#icon=
 	priority=2
 	visible={
 		is_debug=yes
 		not={has_global_flag=EDR_no_minors}
 		or={
-			tag=SGR
+			and={
+				tag=SGR
+				has_global_flag=EDR_debug_shwlandmaj
+			}
 			has_global_flag=EDR_debug_shwland
 		}
 	}
@@ -90,7 +108,10 @@ EDR_debug_FLY_land_decisions={
 		is_debug=yes
 		not={has_global_flag=EDR_no_minors}
 		or={
-			tag=FLY
+			and={
+				tag=HLY
+				has_global_flag=EDR_debug_shwlandmaj
+			}
 			has_global_flag=EDR_debug_shwland
 		}
 	}

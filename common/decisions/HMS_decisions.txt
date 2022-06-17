@@ -1,3 +1,214 @@
+HMS_political_intrigue={
+	HMS_inquisition_opinion={
+		#icon=
+		available={hidden_trigger={always=no}}
+	}
+	HMS_elites_opinion={
+		#icon=
+		available={hidden_trigger={always=no}}
+	}
+	HMS_military_opinion={
+		#icon=
+		available={hidden_trigger={always=no}}
+	}
+	HMS_church_opinion={
+		#icon=
+		available={hidden_trigger={always=no}}
+	}
+	HMS_slavers_opinion={
+		#icon=
+		available={hidden_trigger={always=no}}
+	}
+	HMS_citizens_opinion={
+		#icon=
+		available={hidden_trigger={always=no}}
+	}
+#Opinion Fuckery Portion
+	HMS_res_opinion_fuckery={
+		#icon=
+		visible={
+			not={has_country_flag=HMS_opinion_fuckery}
+			hidden_trigger={is_debug=yes}
+		}
+		complete_effect={
+			log="DEBUG [GetDateText]: [Root.GetName]: DEBUG decision HMS_res_opinion_fuckery"
+			set_country_flag=HMS_opinion_fuckery
+		}
+	}
+	HMS_rev_opinion_fuckery={
+		#icon=
+		visible={
+			has_country_flag=HMS_opinion_fuckery
+			hidden_trigger={is_debug=yes}
+		}
+		complete_effect={
+			log="[GetDateText]: [Root.GetName]: DEBUG decision HMS_rev_opinion_fuckery"
+			clr_country_flag=HMS_opinion_fuckery
+		}
+	}
+	HMS_add_inquisition_opinion={
+		#icon=
+		visible={
+			has_country_flag=HMS_opinion_fuckery
+			hidden_trigger={is_debug=yes}
+		}
+		available={check_variable={inquisition_opinion<5}}
+		complete_effect={
+			log="[GetDateText]: [Root.GetName]: DEBUG decision HMS_add_inquisition_opinion"
+			add_to_variable={HMS_inquisition_opinion=1}
+		}
+	}
+	HMS_sub_inquisition_opinion={
+		#icon=
+		visible={
+			has_country_flag=HMS_opinion_fuckery
+			hidden_trigger={is_debug=yes}
+		}
+		available={check_variable={HMS_inquisition_opinion>0}}
+		complete_effect={
+			log="[GetDateText]: [Root.GetName]: DEBUG decision HMS_sub_inquisition_opinion"
+			subtract_from_variable={HMS_inquisition_opinion=1}
+		}
+	}
+	HMS_add_elites_opinion={
+		#icon=
+		visible={
+			has_country_flag=HMS_opinion_fuckery
+			hidden_trigger={is_debug=yes}
+		}
+		available={check_variable={HMS_elites_opinion<5}}
+		complete_effect={
+			log="[GetDateText]: [Root.GetName]: DEBUG decision HMS_add_elites_opinion"
+			add_to_variable={HMS_elites_opinion=1}
+		}
+	}
+	HMS_sub_elites_opinion={
+		#icon=
+		visible={
+			has_country_flag=HMS_opinion_fuckery
+			hidden_trigger={is_debug=yes}
+		}
+		available={check_variable={HMS_elites_opinion>0}}
+		complete_effect={
+			log="[GetDateText]: [Root.GetName]: DEBUG decision HMS_sub_elites_opinion"
+			subtract_from_variable={HMS_elites_opinion=1}
+		}
+	}
+	HMS_add_military_opinion={
+		#icon=
+		visible={
+			has_country_flag=HMS_opinion_fuckery
+			hidden_trigger={is_debug=yes}
+		}
+		available={check_variable={HMS_military_opinion<5}}
+		complete_effect={
+			log="[GetDateText]: [Root.GetName]: DEBUG decision HMS_add_military_opinion"
+			add_to_variable={HMS_military_opinion=1}
+		}
+	}
+	HMS_sub_military_opinion={
+		#icon=
+		visible={
+			has_country_flag=HMS_opinion_fuckery
+			hidden_trigger={is_debug=yes}
+		}
+		available={check_variable={HMS_military_opinion>0}}
+		complete_effect={
+			log="[GetDateText]: [Root.GetName]: DEBUG decision HMS_sub_military_opinion"
+			subtract_from_variable={HMS_military_opinion=1}
+		}
+	}
+	HMS_add_church_opinion={
+		#icon=
+		visible={
+			has_country_flag=HMS_opinion_fuckery
+			hidden_trigger={is_debug=yes}
+		}
+		available={check_variable={HMS_church_opinion<5}}
+		complete_effect={
+			log="[GetDateText]: [Root.GetName]: DEBUG decision HMS_add_church_opinion"
+			add_to_variable={HMS_church_opinion=1}
+		}
+	}
+	HMS_sub_church_opinion={
+		#icon=
+		visible={
+			has_country_flag=HMS_opinion_fuckery
+			hidden_trigger={is_debug=yes}
+		}
+		available={check_variable={HMS_church_opinion>0}}
+		complete_effect={
+			log="[GetDateText]: [Root.GetName]: DEBUG decision HMS_sub_church_opinion"
+			subtract_from_variable={HMS_church_opinion=1}
+		}
+	}
+	HMS_add_slavers_opinion={
+		#icon=
+		visible={
+			has_country_flag=HMS_opinion_fuckery
+			hidden_trigger={is_debug=yes}
+		}
+		available={check_variable={HMS_slavers_opinion<5}}
+		complete_effect={
+			log="[GetDateText]: [Root.GetName]: DEBUG decision HMS_add_slavers_opinion"
+			add_to_variable={HMS_slavers_opinion=1}
+		}
+	}
+	HMS_sub_slavers_opinion={
+		#icon=
+		visible={
+			has_country_flag=HMS_opinion_fuckery
+			hidden_trigger={is_debug=yes}
+		}
+		available={check_variable={HMS_slavers_opinion>0}}
+		complete_effect={
+			log="[GetDateText]: [Root.GetName]: DEBUG decision HMS_sub_slavers_opinion"
+			subtract_from_variable={HMS_slavers_opinion=1}
+		}
+	}
+	HMS_add_citizens_opinion={
+		#icon=
+		visible={
+			has_country_flag=HMS_opinion_fuckery
+			hidden_trigger={is_debug=yes}
+		}
+		available={check_variable={HMS_citizens_opinion<5}}
+		complete_effect={
+			log="[GetDateText]: [Root.GetName]: DEBUG decision HMS_add_citizens_opinion"
+			add_to_variable={HMS_citizens_opinion=1}
+		}
+	}
+	HMS_sub_citizens_opinion={
+		#icon=
+		visible={
+			has_country_flag=HMS_opinion_fuckery
+			hidden_trigger={is_debug=yes}
+		}
+		available={check_variable={HMS_citizens_opinion>0}}
+		complete_effect={
+			log="[GetDateText]: [Root.GetName]: DEBUG decision HMS_sub_citizens_opinion"
+			subtract_from_variable={HMS_citizens_opinion=1}
+		}
+	}
+	HMS_nuke_opinion_debug={
+		#icon=
+		visible={
+			hidden_trigger={is_debug=yes}
+			has_country_flag=HMS_opinion_fuckery
+		}
+		complete_effect={
+			log="[GetDateText]: [Root.GetName]: DEBUG decision HMS_nuke_opinion_debug"
+			HMS={
+				set_variable={HMS_inquisition_opinion=3}
+				set_variable={HMS_elites_opinion=3}
+				set_variable={HMS_military_opinion=3}
+				set_variable={HMS_church_opinion=3}
+				set_variable={HMS_slavers_opinion=3}
+				set_variable={HMS_citizens_opinion=3}
+			}
+		}
+	}
+}
 HMS_slavery={
 	HMS_emergency_slave_battalions={	#Press Slaves Into Service
 		icon=GFX_decision_generic_intelligence_operation	

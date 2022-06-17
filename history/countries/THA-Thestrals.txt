@@ -76,3 +76,5 @@ recruit_character=THA_argent_end
 #recruit_character=THA_auburn_peak
 #recruit_character=THA_the_niece
 #VARIENTS#
+#NOTES#
+#The first great first fruit war. Fighting for Mangoes! EEEEEEE!

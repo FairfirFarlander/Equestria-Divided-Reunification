@@ -1,9 +1,21 @@
 focus_tree={
 	id=HMS country={modifier={add=3 tag=HMS}}
-	continuous_focus_position={x=1750 y=800}
-	shared_focus=HMS_the_war
-	shared_focus=EDR_I00
-	shared_focus=EDR_L05
-	shared_focus=EDR_N05
-	shared_focus=EDR_A05
+	continuous_focus_position={x=1200 y=-350}
+	shared_focus=HMS_S00
+}
+focus_tree={	#DEBUG
+	id=HMS country={modifier={add=4 tag=HMS is_debug=yes}}
+	continuous_focus_position={x=1200 y=-350}
+	#shared_focus=EQD_S00
+	#shared_focus=HSW_calm_before_the_storm
+	shared_focus=HMS_S00
+	#shared_focus=EDR_I00
+	#shared_focus=EDR_L05
+	#shared_focus=EDR_N05
+	#shared_focus=EDR_A05
+	#shared_focus=EQS_TNO_chaos_in_canterlot
+	#shared_focus=EQS_TNO_the_regency_begins
+	#shared_focus=EQS_TNO_to_meet_the_deadline
+	#shared_focus=EQS_UESR_hope_reborn
+	#shared_focus=EQS_UESR_fully_automated_luxury_gay_bat_communism
 }

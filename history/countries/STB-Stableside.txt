@@ -58,3 +58,6 @@ recruit_character=STB_iris_kelly
 recruit_character=STB_mabel_corne
 recruit_character=STB_smokey_dust
 #VARIENTS
+#NOTES#
+#The great Pearsurrection. They will come back or take the Rosemarin/Hoofington coast.
+#The second great first fruit war, now this. WTFOMGBBQ!?

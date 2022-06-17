@@ -1,4 +1,8 @@
 EDR_debug_decisions={
+	EDR_show_not_tell={
+		#icon=
+		available={hidden_trigger={always=no}}
+	}
 	dockyard_please={
 		#icon=
 		visible={
@@ -8,52 +12,34 @@ EDR_debug_decisions={
 		complete_effect={one_random_dockyard=yes}
 	}
 }
-EDR_debug_land_decisions={
-	EDR_land_decisions_on={
+EDR_debug_toggle_minors_decisions={
+	EDR_major_restricted_land_decisions_on={
 		#icon=
-		visible={not={has_global_flag=EDR_debug_shwland}}
+		visible={not={has_global_flag=EDR_debug_shwlandmaj}}
+		complete_effect={set_global_flag=EDR_debug_shwlandmaj}
+	}
+	EDR_major_restricted_land_decisions_off={
+		#icon=
+		visible={
+			has_global_flag=EDR_debug_shwlandmaj
+			not={has_global_flag=EDR_debug_shwland}
+		}
+		complete_effect={clr_global_flag=EDR_debug_shwlandmaj}
+	}
+	EDR_minors_land_decisions_on={
+		#icon=
+		visible={
+			not={has_global_flag=EDR_debug_shwland}
+			has_global_flag=EDR_debug_shwlandmaj
+		}
 		complete_effect={set_global_flag=EDR_debug_shwland}
 	}
-	EDR_land_decisions_off={
+	EDR_minors_land_decisions_off={
 		#icon=
-		visible={has_global_flag=EDR_debug_shwland}
+		visible={
+			has_global_flag=EDR_debug_shwland
+		}
 		complete_effect={clr_global_flag=EDR_debug_shwland}
-	}
-}
-EDR_debug_FLY_land_decisions={
-	FLY_res_FSH={
-		#icon=
-		visible={
-			and={
-				not={country_exists=FSH}
-				country_exists=FLY
-			}
-		}
-		fire_only_once=no
-		complete_effect={
-			107={
-				add_core_of=FSH
-				remove_core_of=FLY
-				transfer_state_to=FSH
-			}
-		}
-	}
-	FLY_rev_FSH={
-		#icon=
-		visible={
-			and={
-				country_exists=FSH
-				country_exists=FLY
-			}
-		}
-		fire_only_once=no
-		complete_effect={
-			107={
-				remove_core_of=FSH
-				add_core_of=FLY
-				transfer_state_to=FLY
-			}
-		}
 	}
 }
 EDR_debug_HEB_land_decisions={
@@ -818,7 +804,7 @@ EDR_debug_HEF_land_decisions={
 		complete_effect={
 			13={
 				add_core_of=WTC
-				remove_core_of=HEF
+				remove_core_of=HWG
 				transfer_state_to=WTC
 			}
 			79={
@@ -840,7 +826,7 @@ EDR_debug_HEF_land_decisions={
 		complete_effect={
 			13={
 				remove_core_of=WTC
-				add_core_of=HEF
+				add_core_of=HWG
 				transfer_state_to=HEF
 			}
 			79={
@@ -1575,8 +1561,52 @@ EDR_debug_HWG_land_decisions={
 			}
 		}
 	}
+	HWG_res_WTC={
+		#icon=
+		visible={not={country_exists=WTC}}
+		fire_only_once=no
+		complete_effect={
+			13={
+				add_core_of=WTC
+				remove_core_of=HWG
+				transfer_state_to=WTC
+			}
+			79={
+				add_core_of=WTC
+				remove_core_of=HEF
+				transfer_state_to=WTC
+			}
+			352={
+				add_core_of=WTC
+				remove_core_of=HEF
+				transfer_state_to=WTC
+			}
+		}
+	}
+	HWG_rev_WTC={
+		#icon=
+		visible={country_exists=WTC}
+		fire_only_once=no
+		complete_effect={
+			13={
+				remove_core_of=WTC
+				add_core_of=HWG
+				transfer_state_to=HEF
+			}
+			79={
+				remove_core_of=WTC
+				add_core_of=HEF
+				transfer_state_to=HEF
+			}
+			352={
+				remove_core_of=WTC
+				add_core_of=HEF
+				transfer_state_to=HEF
+			}
+		}
+	}
 }
-EDR_debug_STG_land_decisions={
+EDR_debug_SGR_land_decisions={
 	SGR_res_TRT={
 		#icon=
 		visible={not={country_exists=TRT}}
@@ -1598,6 +1628,42 @@ EDR_debug_STG_land_decisions={
 				remove_core_of=TRT
 				add_core_of=SGR
 				transfer_state_to=SGR
+			}
+		}
+	}
+}
+EDR_debug_FLY_land_decisions={
+	FLY_res_FSH={
+		#icon=
+		visible={
+			and={
+				not={country_exists=FSH}
+				country_exists=FLY
+			}
+		}
+		fire_only_once=no
+		complete_effect={
+			107={
+				add_core_of=FSH
+				remove_core_of=FLY
+				transfer_state_to=FSH
+			}
+		}
+	}
+	FLY_rev_FSH={
+		#icon=
+		visible={
+			and={
+				country_exists=FSH
+				country_exists=FLY
+			}
+		}
+		fire_only_once=no
+		complete_effect={
+			107={
+				remove_core_of=FSH
+				add_core_of=FLY
+				transfer_state_to=FLY
 			}
 		}
 	}

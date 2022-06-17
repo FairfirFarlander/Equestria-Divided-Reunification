@@ -98,7 +98,7 @@ focus_tree={
 		icon=GFX_goal_water
 		relative_position_id=EDR_P00
 		x=0 y=3 cost=4
-		prerequisite={focus=EDR_P01}
+		prerequisite={focus=EDR_P00}
 		ai_will_do={factor=4000}
 		select_effect={
 			set_temp_variable={aaaaa=1}

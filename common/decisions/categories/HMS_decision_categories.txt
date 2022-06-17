@@ -1,6 +1,16 @@
+HMS_political_intrigue={
+	icon=GFX_decision_generic_magic
+	priority=2
+	allowed={tag=HMS}
+	visible={
+		or={
+			has_country_flag=HMS_politics_active
+			is_debug=yes
+		}
+	}
+}
 HMS_slavery={
 	icon=GFX_decision_generic_magic
-	priority=100
+	priority=2
 	allowed={tag=HMS}
-	#visible={has_country_flag=EMB_gardens_enabled}
 }
