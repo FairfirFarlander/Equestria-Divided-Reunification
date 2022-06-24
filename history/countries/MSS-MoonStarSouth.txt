@@ -27,7 +27,7 @@ set_technology={
 actually_fix_weapon_techs=yes
 set_rule={can_generate_female_aces=yes}
 set_popularities={fascism=40 communism=18 neutrality=20 democratic=22}
-set_politics={ruling_party=fascism elections_allowed=no}
+set_politics={ruling_party=fascism}
 recruit_character=MSS_generic_pony
 #NOTES#
 #Stab/WarS are based off of 18(12)-18(14)/50. MSS is 12.

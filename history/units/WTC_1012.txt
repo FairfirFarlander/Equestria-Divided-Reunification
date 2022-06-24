@@ -1,0 +1,47 @@
+division_template={
+	name="Ponies of Fortune"	#divisions_name_group=#
+	priority=0	template_counter=18
+	regiments={
+		infantry={x=0 y=0}
+	}
+}
+division_template={
+	name="Mercenary Brigade"	#divisions_name_group=
+	template_counter=11
+	regiments={
+		infantry={x=0 y=0}
+		infantry={x=0 y=1}
+	}
+}
+division_template={
+	name="Whitegold Militia"	#divisions_name_group=#
+	is_locked=yes	template_counter=58
+	regiments={
+		infantry={x=0 y=0}
+		infantry={x=0 y=1}
+		infantry={x=0 y=2}
+	}
+}
+units={
+	division={	#Itzomitl Coast
+		name="The Adze of Wrath"
+		location=405	division_template="Mercenary Brigade"
+		start_experience_factor=0.26
+		start_equipment_factor=0.7
+		force_equipment_variants={melee_equipment_0={owner="WTC" creator="WTC"}}
+	}
+	division={	#Cuetzpalliztli
+		name="Company of Fancy Hats"
+		location=7166	division_template="Mercenary Brigade"
+		start_experience_factor=0.18
+		start_equipment_factor=0.6
+		force_equipment_variants={melee_equipment_0={owner="WTC" creator="WTC"}}
+	}
+	division={	#Baltimare
+		name="Milita of Baltimare"
+		location=13011	division_template="Whitegold Militia"
+		start_experience_factor=0.1
+		start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_0={owner="WTC" creator="HWG"}}
+	}
+}

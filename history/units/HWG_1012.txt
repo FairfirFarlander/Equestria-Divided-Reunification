@@ -1,13 +1,13 @@
 division_template={
 	name="Ponies of Fortune"	#divisions_name_group=#
-	is_locked=no	priority=0	template_counter=18
+	priority=0	template_counter=18
 	regiments={
 		infantry={x=0 y=0}
 	}
 }
 division_template={
 	name="Whitegold Militia"	#divisions_name_group=#
-	is_locked=no	priority=1	template_counter=58
+	template_counter=58
 	regiments={
 		infantry={x=0 y=0}
 		infantry={x=0 y=1}
@@ -15,8 +15,8 @@ division_template={
 	}
 }
 division_template={
-	name="Arquebus Regiment"	#divisions_name_group=#
-	is_locked=yes	priority=1	template_counter=16
+	name="Arquebusiers"	#divisions_name_group=#
+	is_locked=yes	template_counter=16
 	regiments={
 		infantry={x=0 y=0}
 		infantry={x=0 y=1}
@@ -24,14 +24,6 @@ division_template={
 	support={
 		unicorn_company={x=0 y=0}
 		artillery={x=0 y=1}
-	}
-}
-division_template={
-	name="Winged Dragoons"	#divisions_name_group=#
-	is_locked=yes	priority=1	template_counter=3
-	regiments={
-		pegasi={x=0 y=0}
-		pegasi={x=0 y=1}
 	}
 }
 division_template={
@@ -49,62 +41,44 @@ units={
 	division={	#Canterbury#
 		name="Patrolponies of Canterbury"
 		location=6996	division_template="Ponies of Fortune"
-		start_experience_factor=0.1	start_equipment_factor=0.4
+		start_experience_factor=0.1	start_equipment_factor=0.5
 		force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
 	}
 	division={	#Bridlepolis#
 		name="Guilders of Mareland"
 		location=6812	division_template="Ponies of Fortune"
-		start_experience_factor=0.25	start_equipment_factor=0.4
+		start_experience_factor=0.26	start_equipment_factor=0.7
 		force_equipment_variants={melee_equipment_1={owner="HWG" creator="EQS"}}
 	}
 	division={	#Summerfield#
 		name="Tradesguard of Freeside"
 		location=874	division_template="Ponies of Fortune"
-		start_experience_factor=0.15	start_equipment_factor=0.6
+		start_experience_factor=0.14	start_equipment_factor=0.55
 		force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
 	}
 	division={	#Dappleshore#
 		name="Freebooters of the Poninsula"
 		location=4080	division_template="Ponies of Fortune"
-		start_experience_factor=0.25	start_equipment_factor=0.75
+		start_experience_factor=0.22	start_equipment_factor=0.65
 		force_equipment_variants={melee_equipment_0={owner="HWG" creator="EQS"}}
 	}
 	division={	#Hayston#
 		name="Militia of the Overcity"
 		location=6734	division_template="Whitegold Militia"
-		start_experience_factor=0.2	start_equipment_factor=1.0
+		start_experience_factor=0.18	start_equipment_factor=0.85
 		force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
 	}
 	division={	#Bronclyn#
 		name="Militia of the Undercity"
 		location=11710	division_template="Whitegold Militia"
-		start_experience_factor=0.25	start_equipment_factor=0.95
-		force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
-	}
-	division={	#Baltimare#
-		name="Militia of Baltimare"
-		location=13011	division_template="Whitegold Militia"
-		start_experience_factor=0.3	start_equipment_factor=0.9
+		start_experience_factor=0.26	start_equipment_factor=0.95
 		force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
 	}
 	division={	#Manehattan#
 		name="Arqueteers of Manehattan"
-		location=758	division_template="Arquebus Regiment"
+		location=758	division_template="Arquebusiers"
 		start_experience_factor=0.1	start_equipment_factor=1.0
 		force_equipment_variants={melee_equipment_1={owner="HWG" creator="HWG"}}
-	}
-	division={	#Baltimare#
-		name="Arqueteers of Baltimare"
-		location=13011	division_template="Arquebus Regiment"
-		start_experience_factor=0.25	start_equipment_factor=0.8
-		force_equipment_variants={melee_equipment_1={owner="HWG" creator="HWG"}}
-	}
-	division={	#Baltimare#
-		name="Manehattan 'Foe Hammer' Dragoons"
-		location=13011	division_template="Winged Dragoons"
-		start_experience_factor=0.3	start_equipment_factor=1
-		force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
 	}
 	division={	#Manehattan#
 		name="Ivory Tower Praetor Guard"
@@ -115,10 +89,9 @@ units={
 }
 air_wings={		#House Whitegold Airforce (HWGAF)#
 	#Manehattan#
-	75={fighter_equipment_0={owner="HWG" amount=6}}
-	75={tac_bomber_equipment_0={owner="HWG"	amount=2}}
-	75={strat_bomber_equipment_1={owner="HWG" amount=3}}
-	#Baltimare#
-	#13={fighter_equipment_0={owner="HWG" amount=2}}
-	#13={tac_bomber_equipment_0={owner="HWG" amount=1}}
+	75={
+		fighter_equipment_0={owner="HWG" amount=48}
+		tac_bomber_equipment_0={owner="HWG"	amount=12}
+		strat_bomber_equipment_1={owner="HWG" amount=3}
+	}
 }

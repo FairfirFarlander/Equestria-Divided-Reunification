@@ -1,28 +1,20 @@
-#LOCALE#
 capital=21
-if={
-	limit={has_dlc="No Step Back"}
-	set_oob="HEB_07"	#_nsb
-	else={set_oob="HEB_07"}
-}
+oob="HEB_1012"
 #if={
 #	limit={has_dlc="Man the Guns"}
 #	set_naval_oob="HEB_07_naval"
 #	else={set_naval_oob="HEB_07_naval_legacy"}
-#}#
-#FOUNTATION#
+#}
 set_research_slots=3
-set_stability=0.5
-set_war_support=0.12
+set_stability=0.5 set_war_support=0.12
 add_ideas={
+	volunteer_only export_focus civilian_economy
+	big_science_base pre_industrial_society
+	lack_of_scientists3 poverty4
 	HEB_idea
 	HEB_idea_ai
 	HEB_clanandkin04
 	HEB_dehorn
-	big_science_base
-	pre_industrial_society
-	lack_of_scientists3		#Hit 1 ASAP#
-	poverty4
 }
 if={
 	limit={has_dlc="No Step Back"}
@@ -33,7 +25,6 @@ if={
 	}
 	else={add_ideas={EQS_bad_tanks}}
 }
-#TECHNOLOGY#
 set_technology={
 	pony_race=1
 	melee_weapons=1
@@ -62,28 +53,14 @@ if={limit={not={has_dlc="Man the Guns"}}
 actually_fix_weapon_techs=yes
 generic_CL_template=yes
 generic_DD_template=yes
-#MISC#
 set_convoys=11
 set_rule={can_generate_female_aces=yes}
-#DIPLOMACY#
-#if={
-#	limit={has_dlc="Together for Victory"}
-#	set_autonomy={target=BUF autonomy_state=autonomy_integrated_puppet}
-#	set_autonomy={target=CHY autonomy_state=autonomy_integrated_puppet}
-#	set_autonomy={target=HFT autonomy_state=autonomy_integrated_puppet}
-#	set_autonomy={target=PIE autonomy_state=autonomy_integrated_puppet}
-#	else={puppet=BUF puppet=CHY puppet=HFT puppet=PIE}
-#}
-#POLITICS#
-set_popularities={
-	fascism=85	communism=0
-	neutrality=15	democratic=0
-}
-set_politics={
-	ruling_party=fascism	last_election="1000.10.10"
-	election_frequency=36	elections_allowed=no
-}
-#CHARACTERS#
+create_faction=Earthborn
+add_to_faction=CHY
+add_to_faction=HFT
+add_to_faction=PIE
+set_popularities={fascism=85 communism=0 neutrality=15 democratic=0}
+set_politics={ruling_party=fascism}
 recruit_character=HEB_applejack
 recruit_character=HEB_jack_trader
 recruit_character=HEB_magia_saviour
@@ -94,4 +71,5 @@ recruit_character=HEB_lightning_dust
 recruit_character=HEB_chief_strongheart
 recruit_character=HEB_apple_bloom
 recruit_character=HEB_granny_smith
-#VARIENTS#
+#NOTES#
+#Hit 1 ASAP literacy#

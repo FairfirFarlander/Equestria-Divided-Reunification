@@ -1,28 +1,20 @@
-#LOCALE#
 capital=75
-if={
-	limit={has_dlc="No Step Back"}
-	set_oob="HWG_07"	#_nsb#
-	else={set_oob="HWG_07"}
-}
+oob="HWG_1012"
 if={
 	limit={has_dlc="Man the Guns"}
 	set_naval_oob="HWG_07_naval"
 	else={set_naval_oob="HWG_07_naval_legacy"}
 }
-#FOUNTATION#
 set_research_slots=3
-set_stability=0.4
-set_war_support=0.08	#0.29#
+set_stability=0.4 set_war_support=0.08
 add_ideas={
+	volunteer_only export_focus civilian_economy
+	big_science_base outdated_industry
+	lack_of_scientists3 poverty5
 	HWG_idea
 	HWG_tradefleet
 	HWG_tensions
 	HWG_society
-	big_science_base
-	outdated_industry
-	lack_of_scientists3
-	poverty5
 }
 if={
 	limit={has_dlc="No Step Back"}
@@ -33,19 +25,14 @@ if={
 	}
 	else={add_ideas={EQS_bad_tanks}}
 }
-#TECHNOLOGY#
 set_technology={
 	pony_race=1
 	melee_weapons=1
 	melee_weapons1=1
-	pre_gw_artillery=1
-	tech_pegasi=1
 	tech_support=1
-	tech_unicorn=1
+	pre_gw_artillery=1
 	early_fighter=1
 	early_bomber=1
-	strategic_bomber1=1
-	#tech_ironpaws=1#
 }
 if={limit={has_dlc="Man the Guns"}
 	set_technology={
@@ -66,20 +53,12 @@ if={limit={not={has_dlc="Man the Guns"}}
 	}
 }
 actually_fix_weapon_techs=yes
-#MISC#
-set_convoys=11
+set_convoys=8
 set_rule={can_generate_female_aces=yes}
-#DIPLOMACY#
-#POLITICS#
-set_popularities={
-	fascism=66	communism=12
-	neutrality=13	democratic=9
-}
-set_politics={
-	ruling_party=fascism	last_election="1001.10.10"
-	election_frequency=36	elections_allowed=no
-}
-#CHARACTERS#
+create_faction=WhiteGold
+add_to_faction=WTC
+set_popularities={fascism=66 communism=12 neutrality=13 democratic=9}
+set_politics={ruling_party=fascism}
 recruit_character=HWG_rarity
 recruit_character=HWG_shooter_mark
 recruit_character=HWG_fleur_de_lis
@@ -102,7 +81,7 @@ if={
 		character=HWG_fleur_de_lis
 		advisor={
 			slot=political_advisor
-			idea_token=sweetie_drops
+			idea_token=HWG_fdlis_advi
 			allowed={has_dlc="La Resistance"}
 			available={has_intelligence_agency=yes}
 			traits={head_of_intelligence}	#upgrade me#
@@ -112,7 +91,7 @@ if={
 		character=HWG_nighthooves
 		advisor={
 			slot=political_advisor
-			idea_token=sweetie_drops
+			idea_token=HWG_nighthooves_advi
 			allowed={has_dlc="La Resistance"}
 			available={has_intelligence_agency=yes}
 			traits={head_of_intelligence}
@@ -123,6 +102,7 @@ if={
 			character=HWG_fleur_de_lis
 			advisor={
 				slot=political_advisor
+				idea_token=HWG_fdlis_advi
 				allowed={not={has_dlc="La Resistance"}}
 				traits={backroom_backstabber}	#upgrade me?#
 			}
@@ -131,13 +111,13 @@ if={
 			character=HWG_nighthooves
 			advisor={
 				slot=political_advisor
+				idea_token=HWG_nighthooves_advi
 				allowed={not={has_dlc="La Resistance"}}
 				traits={backroom_backstabber}	#encrypt/decrypt trait here#
 			}
 		}
 	}
 }
-#VARIENTS#
 if={limit={has_dlc="Man the Guns"}
 	create_equipment_variant={	#Heavy Cruiser AR1-EN1 MG2-SG3#
 		name="Belle 1003 Class"
@@ -250,3 +230,8 @@ create_equipment_variant={	#Aircraft#
 		plane_engine_upgrade=0	plane_reliability_upgrade=0
 	}
 }
+#NOTES#
+#strategic_bomber1=1
+#tech_pegasi=1
+#tech_unicorn=1
+#tech_ironpaws=1

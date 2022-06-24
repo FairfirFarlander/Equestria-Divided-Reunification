@@ -27,7 +27,7 @@ actually_fix_weapon_techs=yes
 set_convoys=2
 set_rule={can_generate_female_aces=yes}
 set_popularities={fascism=40 communism=19 neutrality=22 democratic=19}
-set_politics={ruling_party=fascism elections_allowed=no}
+set_politics={ruling_party=fascism}
 recruit_character=HAH_generic_pony
 #NOTES#
 #Joy, Harmony, Tranquility (Tranq)

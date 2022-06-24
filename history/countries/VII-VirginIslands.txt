@@ -1,26 +1,17 @@
-﻿#LOCALE
-capital=7
-if={
-	limit={has_dlc="No Step Back"}
-	set_oob="VII_07"	#_nsb
-	else={set_oob="VII_07"}
-}
+﻿capital=7
+oob="VII_1012"
 #if={
 #	limit={has_dlc="Man the Guns"}
 #	set_naval_oob="VII_naval"
 #	else={set_naval_oob="VII_naval_legacy"}
 #}
-#FOUNTATION
 set_research_slots=2
-set_stability=0.6
-set_war_support=0.22
+set_stability=0.6 set_war_support=0.22
 add_ideas={
-	poor_science_base
-	tribal_society
-	lack_of_scientists2
-	poverty5
+	volunteer_only export_focus civilian_economy
+	poor_science_base tribal_society
+	lack_of_scientists2 poverty5
 }
-#TECHNOLOGY
 set_technology={
 	dragon_race=1
 	griffon_race=1
@@ -54,20 +45,10 @@ if={limit={not={has_dlc="Man the Guns"}}
 actually_fix_weapon_techs=yes
 generic_CL_template=yes
 generic_DD_template=yes
-#Misc
 set_convoys=11
 set_rule={can_generate_female_aces=yes}
-#DIPLOMACY
-#POLITICS
-set_popularities={
-	fascism=44	communism=7
-	neutrality=26	democratic=23
-}
-set_politics={
-	ruling_party=fascism	last_election="1016.1.21"
-	election_frequency=36	elections_allowed=no
-}
-#CHARACTERS#
+set_popularities={fascism=44 communism=7 neutrality=26 democratic=23}
+set_politics={ruling_party=fascism}
 recruit_character=VII_ember
 recruit_character=VII_ruby
 recruit_character=VII_torch
@@ -88,4 +69,4 @@ recruit_character=VII_naga
 recruit_character=VII_ludmilla
 recruit_character=VII_tamm
 recruit_character=VII_kukulkan
-#VARIENTS#
+#NOTES#

@@ -1,27 +1,20 @@
-#LOCALE#
 capital=13
-#if={
-#	limit={has_dlc="No Step Back"}
-#	set_oob="WTC_07"	#_nsb#
-#	else={set_oob="WTC_07"}
-#}
+oob="WTC_1012"
 #if={
 #	limit={has_dlc="Man the Guns"}
 #	set_naval_oob="WTC_07_naval"
 #	else={set_naval_oob="WTC_07_naval_legacy"}
 #}
 79={	#Yakima/Cuetzpalliztli#
-	start_resistance=yes	set_compliance=60
+	start_resistance=yes	set_compliance=61
 	set_resistance=13	set_garrison_strength=0.40
 }
 352={	#Saltmane/Itzomitl Coast#
-	start_resistance=yes	set_compliance=60
+	start_resistance=yes	set_compliance=61
 	set_resistance=7	set_garrison_strength=0.60
 }
-#FOUNTATION#
 set_research_slots=2
-set_stability=0.4
-set_war_support=0.08	#0.29#
+set_stability=0.4 set_war_support=0.08
 add_ideas={
 	volunteer_only export_focus civilian_economy
 	big_science_base outdated_industry
@@ -36,7 +29,6 @@ if={
 	}
 	else={add_ideas={EQS_bad_tanks}}
 }
-#TECHNOLOGY#
 set_technology={
 	pony_race=1
 	melee_weapons=1
@@ -45,9 +37,6 @@ set_technology={
 	tech_pegasi=1
 	tech_support=1
 	tech_unicorn=1
-	early_fighter=1
-	early_bomber=1
-	#tech_ironpaws=1#
 }
 if={limit={has_dlc="Man the Guns"}
 	set_technology={
@@ -68,24 +57,16 @@ if={limit={not={has_dlc="Man the Guns"}}
 	}
 }
 actually_fix_weapon_techs=yes
-#MISC#
 set_convoys=4
 set_rule={can_generate_female_aces=yes}
-#DIPLOMACY#
-#POLITICS#
-set_popularities={	#1929 - The Great Depression. Lasted almost a decade (10). 42 is when the US entered WWII.
-	fascism=42	communism=19
-	neutrality=29	democratic=10
-}
-set_politics={
-	ruling_party=fascism	last_election="1001.10.10"
-	election_frequency=36	elections_allowed=no
-}
-#CHARACTERS#	#humble appeaser, rutheless capitalist; deal broker, ideological crusader; hawk?;reluctant interventionalist, ideological crusader
+set_popularities={fascism=42 communism=19 neutrality=29 democratic=10}
+set_politics={ruling_party=fascism}	
 recruit_character=WTC_dashing_habidasher
-recruit_character=WTC_alicia_habidasher	#Temp
-#recruit_character=#
+recruit_character=WTC_alicia_habidasher
 recruit_character=WTC_eloi_path
 recruit_character=WTC_zebrican_mercenary
 recruit_character=WTC_saddle_arabian_mercenary
-#VARIANTS#
+#NOTES#
+#1929 - The Great Depression. Lasted almost a decade (10). 42 is when the US entered WWII.
+#humble appeaser, rutheless capitalist; deal broker, ideological crusader; hawk?;reluctant interventionalist, ideological crusader.
+#Alicia should be given roles later, not at start. Setup character accordingly.

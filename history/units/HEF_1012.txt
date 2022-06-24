@@ -1,13 +1,13 @@
-division_template={	#TEMPLATES
+division_template={
 	name="Everfree Militia"	#divisions_name_group=#
-	is_locked=no	priority=0	template_counter=24
+	priority=0	template_counter=24
 	regiments={
 		infantry={x=0 y=0}
 	}
 }
 division_template={
 	name="Tribal Warband"	#divisions_name_group=#
-	is_locked=no	priority=1	template_counter=40
+	template_counter=40
 	regiments={
 		infantry={x=0 y=0}
 		infantry={x=0 y=1}
@@ -22,7 +22,7 @@ division_template={
 		infantry={x=0 y=1}
 	}
 	support={
-		ursas={x=0 y=1}
+		ursas={x=0 y=0}
 	}
 }
 units={	#Dragon Units: Ruby, Sapphire, Emerald, Onyx, and Amethyst Warbands
