@@ -1,13 +1,13 @@
-division_template={	#TEMPLATES#
+division_template={
 	name="Thestral Levy"	#divisions_name_group=#
-	is_locked=no	priority=0	template_counter=3
+	is_locked=yes	priority=0	template_counter=3
 	regiments={
 		infantry={x=0 y=0}
 	}
 }
 division_template={
 	name="Huscarls"	#divisions_name_group=#
-	is_locked=no	priority=1	template_counter=38
+	template_counter=38
 	regiments={
 		infantry={x=0 y=0}
 		infantry={x=0 y=1}
@@ -15,12 +15,12 @@ division_template={
 }
 division_template={
 	name="End Guard"	#divisions_name_group=#
-	is_locked=no	priority=2	template_counter=39
+	is_locked=yes	priority=2	template_counter=39
 	regiments={
 		pegasi={x=0 y=0}
 	}
 }
-units={	#DEPLOYMENTS#
+units={
 	division={		#Ayacachtli#
 		name="Praetorea Ayacachtli"
 		location=569	division_template="End Guard"

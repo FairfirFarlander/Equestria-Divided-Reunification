@@ -1,26 +1,18 @@
-#LOCALE#
 capital=67
-if={
-	limit={has_dlc="No Step Back"}
-	set_oob="TRT_07"	#_nsb
-	else={set_oob="TRT_07"}
-}
+oob="TRT_1012"
 #if={
 #	limit={has_dlc="Man the Guns"}
 #	set_naval_oob="TRT_1007_naval"
 #	else={set_naval_oob="TRT_1007_naval_legacy"}
-#}#
-#FOUNTATION#
+#}
 set_research_slots=2
-set_stability=0.36
-set_war_support=0.14
+set_stability=0.36 set_war_support=0.14
 add_ideas={
-	TRT_refugee_crisis TRT_ragged_flag
 	volunteer_only export_focus civilian_economy
 	better_science_base pre_industrial_society
 	lack_of_scientists2 poverty4
+	TRT_refugee_crisis TRT_ragged_flag
 }
-#TECHNOLOGY
 set_technology={
 	pony_race=1
 	melee_weapons=1
@@ -55,22 +47,15 @@ actually_fix_weapon_techs=yes
 generic_CA_template=yes
 generic_CL_template=yes
 generic_DD_template=yes
-#MISC
 set_convoys=8
-#add_manpower=0
 set_rule={can_generate_female_aces=yes}
-#DIPLOMACY
-#POLITICS
-set_popularities={
-	fascism=33	communism=9
-	neutrality=39	democratic=19
-}
+set_popularities={fascism=33 communism=9 neutrality=39 democratic=19}
 set_politics={
-	ruling_party=neutrality	last_election="1004.11.11"
-	election_frequency=36	elections_allowed=no
+	ruling_party=neutrality	last_election="1008.11.11"
+	election_frequency=48	elections_allowed=yes
 }
-#CHARACTERS#
 recruit_character=TRT_rapid_fire
 recruit_character=TRT_teddy_hoosevelt
 recruit_character=TRT_harshwhinny
-#VARIENTS#
+#NOTES#
+#add_manpower=0

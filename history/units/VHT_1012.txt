@@ -1,6 +1,6 @@
-division_template={	#TEMPLATES#
+division_template={
 	name="Communal Militia"	#divisions_name_group=#
-	is_locked=no	priority=0	template_counter=14
+	priority=0	template_counter=14
 	regiments={
 		infantry={x=0 y=0}
 		infantry={x=0 y=1}
@@ -8,7 +8,7 @@ division_template={	#TEMPLATES#
 }
 division_template={
 	name="Revolutionary Guard"	#divisions_name_group=#
-	is_locked=no	priority=1	template_counter=3
+	template_counter=3
 	regiments={
 		infantry={x=0 y=0}
 		infantry={x=0 y=1}
@@ -18,33 +18,33 @@ division_template={
 }
 division_template={
 	name="Light Hoofed Guard"	#divisions_name_group=#
-	is_locked=no	priority=1	template_counter=37
+	template_counter=37
 	regiments={
 		pegasi={x=0 y=0}
 		pegasi={x=0 y=1}
-		pegasi={x=1 y=0}
+		pegasi={x=0 y=2}
 	}
 }
-units={	#DEPLOYMENTS#
+units={
 	division={	#Vanhoover#
 		name="Vanhoover Militia"
 		location=585	division_template="Communal Militia"
-		start_experience_factor=0.04	start_equipment_factor=0.4
+		start_experience_factor=0.04	start_equipment_factor=0.55
 		force_equipment_variants={melee_equipment_1={owner="VHT" creator="VHT"}}
 	}
-	division={	#Acadia#
+	division={	#Cape Acadia#
 		name="Acadian Militia"
 		location=7077	division_template="Communal Militia"
-		start_experience_factor=0.08	start_equipment_factor=0.8
+		start_experience_factor=0.08	start_equipment_factor=0.65
 		force_equipment_variants={melee_equipment_0={owner="VHT" creator="VHT"}}
 	}
-	division={	#Salt Lick City#
+	division={	#Roe Plains#
 		name="Salt Lick City Militia"
 		location=9677	division_template="Communal Militia"
 		start_experience_factor=0.06	start_equipment_factor=0.6
 		force_equipment_variants={melee_equipment_0={owner="VHT" creator="VHT"}}
 	}
-	division={	#Seaward Shoals#
+	division={	#Coastal Tall Tale#
 		name="Seaward Shoals Militia"
 		location=10754	division_template="Communal Militia"
 		start_experience_factor=0.06	start_equipment_factor=0.6
@@ -53,31 +53,31 @@ units={	#DEPLOYMENTS#
 	division={	#Tall Tale#
 		name="Tall Tale Militia"
 		location=13145	division_template="Communal Militia"
-		start_experience_factor=0.2	start_equipment_factor=0.3
+		start_experience_factor=0.02	start_equipment_factor=0.5
 		force_equipment_variants={melee_equipment_1={owner="VHT" creator="VHT"}}
 	}
 	division={	#Upper Vanhoover#
 		name="1st Vanhoover Brigade"
 		location=7059	division_template="Revolutionary Guard"
-		start_experience_factor=0.25	start_equipment_factor=0.8
+		start_experience_factor=0.22	start_equipment_factor=0.9
 		force_equipment_variants={melee_equipment_1={owner="VHT" creator="VHT"}}
 	}
 	division={	#South Roe Plains#
 		name="1st Tall Tale Brigade"
 		location=775	division_template="Revolutionary Guard"
-		start_experience_factor=0.15	start_equipment_factor=0.7
+		start_experience_factor=0.18	start_equipment_factor=0.85
 		force_equipment_variants={melee_equipment_1={owner="VHT" creator="VHT"}}
 	}
 	division={	#Mid-river in Tale Tale#
 		name="2nd Tall Tale Brigade"
 		location=11935	division_template="Revolutionary Guard"
-		start_experience_factor=0.1	start_equipment_factor=1
+		start_experience_factor=0.1	start_equipment_factor=0.75
 		force_equipment_variants={melee_equipment_0={owner="VHT" creator="VHT"}}
 	}
 	division={	#Upper Unicorn Range#
 		name="1st Acadian Light Brigade"
 		location=11553	division_template="Light Hoofed Guard"
-		start_experience_factor=0.25	start_equipment_factor=0.7
+		start_experience_factor=0.26	start_equipment_factor=0.95
 		force_equipment_variants={melee_equipment_1={owner="VHT" creator="VHT"}}
 	}
 }

@@ -1,21 +1,13 @@
-#LOCALE#
 capital=116
-if={
-	limit={has_dlc="No Step Back"}
-	set_oob="BCK_07"	#_nsb
-	else={set_oob="BCK_07"}
-}
-#FOUNTATION#
+oob="BCK_1012"
 set_research_slots=2
-set_stability=0.6
-set_war_support=0.17
+set_stability=0.6 set_war_support=0.17
 add_ideas={
+	volunteer_only export_focus civilian_economy
+	better_science_base agrarian_society
+	lack_of_scientists3 poverty3
 	BCK_Bountiful_Harvests
 	BCK_The_Middle_Ground
-	better_science_base
-	agrarian_society
-	lack_of_scientists3
-	poverty3
 }
 if={
 	limit={has_dlc="No Step Back"}
@@ -26,7 +18,6 @@ if={
 	}
 	else={add_ideas={EQS_bad_tanks}}
 }
-#TECHNOLOGY#
 set_technology={
 	pony_race=1
 	melee_weapons=1
@@ -35,25 +26,14 @@ set_technology={
 }
 actually_fix_weapon_techs=yes
 set_rule={can_generate_female_aces=yes}
-#MISC#
 starting_train_buffer=1
 set_convoys=8
-#DIPLOMACY#
-#POLITICS#
-set_popularities={
-	fascism=8	communism=17
-	neutrality=30	democratic=45
-}
-set_politics={
-	ruling_party=neutrality
-	last_election="1004.11.11"
-	election_frequency=36
-	elections_allowed=no
-}
-#CHARACTERS#
+set_popularities={fascism=8 communism=17 neutrality=30 democratic=45}
+set_politics={ruling_party=neutrality}
 recruit_character=BCK_rockfeller
 recruit_character=BCK_syndicate_council
 recruit_character=BCK_merry_wreath
 recruit_character=BCK_sea_prism
 recruit_character=BCK_hallow_green
-#Facism think locus corp.#
+#NOTES#
+#Facism think locus corp.

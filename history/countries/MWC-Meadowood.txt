@@ -1,24 +1,16 @@
-#LOCALE			#Add Hofffield and McColt Civil War here
 capital=48
-#if={
-#	limit={has_dlc="No Step Back"}
-#	set_oob="MWC_07"	#_nsb
-#	else={set_oob="MWC_07"}
-#}
+oob="MWC_1012"
 if={
 	limit={has_dlc="Man the Guns"}
 	set_naval_oob="MWC_1007_naval"
 	else={set_naval_oob="MWC_1007_naval_legacy"}
 }
-#FOUNTATION
 set_research_slots=2
-set_stability=0.8
-set_war_support=0.19
+set_stability=0.8 set_war_support=0.19
 add_ideas={
-	better_science_base
-	pre_industrial_society
-	lack_of_scientists2
-	poverty4
+	volunteer_only export_focus civilian_economy
+	better_science_base pre_industrial_society
+	lack_of_scientists2 poverty4
 	#MWC_militia
 }
 if={
@@ -30,7 +22,6 @@ if={
 	}
 	else={add_ideas={EQS_bad_tanks}}
 }
-#TECHNOLOGY
 set_technology={
 	pony_race=1
 	melee_weapons=1
@@ -60,20 +51,10 @@ if={limit={not={has_dlc="Man the Guns"}}
 	}
 }
 actually_fix_weapon_techs=yes
-#MISC
 set_convoys=17
 set_rule={can_generate_female_aces=yes}
-#DIPLOMACY
-#POLITICS
-set_popularities={
-	fascism=7	communism=9
-	neutrality=65	democratic=19
-}
-set_politics={
-	ruling_party=neutrality	last_election="1004.11.11"
-	election_frequency=36	elections_allowed=no
-}
-#CHARACTERS#
+set_popularities={fascism=7 communism=9 neutrality=65 democratic=19}
+set_politics={ruling_party=neutrality}
 recruit_character=MWC_rose_petal
 recruit_character=MWC_mulberry_wine
 recruit_character=MWC_honey_dew
@@ -81,8 +62,6 @@ recruit_character=MWC_maple_leaf
 recruit_character=MWC_apple_cider
 recruit_character=MWC_mist_feather
 recruit_character=MWC_anna_taylor
-#Add Hoofield and Mccolt soon.
-#VARIENTS
 if={limit={has_dlc="Man the Guns"}
 	create_equipment_variant={	#Light Cruiser
 		name="Meadowood Class"	#name_group=
@@ -136,3 +115,6 @@ if={limit={not={has_dlc="Man the Guns"}}
 		}
 	}
 }
+#NOTES#
+#Add Hofffield and McColt Civil War here
+#Add Hoofield and Mccolt soon.

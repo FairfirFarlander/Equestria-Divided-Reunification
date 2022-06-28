@@ -1,18 +1,15 @@
-#LOCATION#
 capital=351
-if={
-	limit={has_dlc="No Step Back"}
-	set_oob="PLT_07"	#_nsb
-	else={set_oob="PLT_07"}
-}
-if={limit={has_dlc="Man the Guns"}set_naval_oob="PLT_07_naval"
-	else={set_naval_oob="PLT_07_naval_legacy"}
-}
-#FOUNTATION#
+oob="PLT_1012"
+#if={
+#	limit={has_dlc="Man the Guns"}
+#	set_naval_oob="PLT_07_naval"
+#	else={set_naval_oob="PLT_07_naval_legacy"}
+#}
 set_research_slots=2 set_stability=0.41 set_war_support=0.09
 add_ideas={
 	volunteer_only export_focus civilian_economy
-	better_science_base agrarian_society lack_of_scientists2 poverty4
+	better_science_base agrarian_society
+	lack_of_scientists2 poverty4
 }
 if={
 	limit={has_dlc="No Step Back"}
@@ -23,9 +20,9 @@ if={
 	}
 	else={add_ideas={EQS_bad_tanks}}
 }
-#TECHNOLOGY#
 set_technology={
-	melee_weapons=1 melee_weapons1=1
+	melee_weapons=1
+	melee_weapons1=1
 	tech_support=1
 	pre_gw_artillery=1
 	pony_race=1
@@ -47,23 +44,13 @@ if={limit={not={has_dlc="Man the Guns"}}
 	}
 }
 actually_fix_weapon_techs=yes
-#MISC#
 set_convoys=3
 set_rule={can_generate_female_aces=yes}
-#DIPLOMACY#
-set_popularities={
-	fascism=12	communism=17
-	neutrality=30	democratic=41
-}
-set_politics={
-	ruling_party=democratic	last_election="1004.11.11"
-	election_frequency=36	elections_allowed=no
-}
-#CHARACTERS#
+set_popularities={fascism=12 communism=17 neutrality=30 democratic=41}
+set_politics={ruling_party=democratic}
 recruit_character=PLT_rael_grey
 recruit_character=PLT_willie_hoofard_tuft
 recruit_character=PLT_thistle_tap
-#VARIENTS#
 if={limit={has_dlc="Man the Guns"}
 	create_equipment_variant={	#Light Cruiser#
 		name="Archipelago 996 Class"	#name_group=#

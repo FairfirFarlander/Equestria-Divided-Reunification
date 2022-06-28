@@ -1,19 +1,11 @@
-#LOCALE#
 capital=22
-if={
-	limit={has_dlc="No Step Back"}
-	set_oob="CHY_07"	#_nsb
-	else={set_oob="CHY_07"}
-}
-#FOUNTATION#
+oob="CHY_1012"
 set_research_slots=2
-set_stability=0.8
-set_war_support=0.02
+set_stability=0.8 set_war_support=0.02
 add_ideas={
-	better_science_base
-	pre_industrial_society
-	lack_of_scientists3
-	poverty3
+	volunteer_only export_focus civilian_economy
+	better_science_base pre_industrial_society
+	lack_of_scientists3 poverty3
 }
 if={
 	limit={has_dlc="No Step Back"}
@@ -24,7 +16,6 @@ if={
 	}
 	else={add_ideas={EQS_bad_tanks}}
 }
-#TECHNOLOGY#
 set_technology={
 	pony_race=1
 	melee_weapons=1
@@ -32,20 +23,8 @@ set_technology={
 	pre_gw_artillery=1
 }
 actually_fix_weapon_techs=yes
-#MISC#
 set_rule={can_generate_female_aces=yes}
-#DIPLOMACY#
-#POLITICS#
-set_popularities={
-	fascism=48
-	communism=23
-	neutrality=15
-	democratic=14
-}
-set_politics={
-	ruling_party=fascism	last_election="1006.10.10"
-	election_frequency=36	elections_allowed=no
-}
-#CHARACTERS#
+set_popularities={fascism=48 communism=23 neutrality=15 democratic=14}
+set_politics={ruling_party=fascism}
 recruit_character=CHY_cherry_jubilee
-#VARIENTS#
+#NOTES#

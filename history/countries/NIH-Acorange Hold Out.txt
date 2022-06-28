@@ -1,21 +1,14 @@
-#LOCALE#
 capital=136
-if={
-	limit={has_dlc="No Step Back"}
-	set_oob="NIH_07"	#_nsb
-	else={set_oob="NIH_07"}
-}
-#FOUNTATION#
+oob="NIH_1012"
 set_research_slots=2
-set_stability=0.45
-set_war_support=0.15
+set_stability=0.45 set_war_support=0.15
 add_ideas={
-	NIH_night_guard_divisions
-	NIH_last_of_the_line
-	NIH_the_bitter_cold
 	volunteer_only closed_economy isolation
 	better_science_base outdated_industry
 	lack_of_scientists2 poverty1
+	NIH_night_guard_divisions
+	NIH_last_of_the_line
+	NIH_the_bitter_cold
 }
 if={
 	limit={has_dlc="No Step Back"}
@@ -26,7 +19,6 @@ if={
 	}
 	else={add_ideas={EQS_bad_tanks}}
 }
-#TECHNOLOGY#
 set_technology={
 	pony_race=1
 	melee_weapons=1
@@ -38,18 +30,9 @@ set_technology={
 	tech_pegasi=1
 }
 actually_fix_weapon_techs=yes
-#MISC#
+add_manpower=5000
 set_rule={can_generate_female_aces=yes}
-#DIPLOMACY#
-#POLITICS#
-set_popularities={
-	fascism=36	communism=4
-	neutrality=45	democratic=15
-}
-set_politics={
-	ruling_party=neutrality	last_election="1004.11.11"
-	election_frequency=48	elections_allowed=no
-}
-#CHARACTERS#
+set_popularities={fascism=36 communism=4 neutrality=45 democratic=15}
+set_politics={ruling_party=neutrality}
 recruit_character=NIH_cursed_fate
-#VARIENTS#
+#NOTES#

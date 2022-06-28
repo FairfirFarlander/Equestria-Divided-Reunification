@@ -1,25 +1,16 @@
-#LOCALE#
 capital=525
+oob="ALA_1012"
 #if={
-	#limit={has_dlc="No Step Back"}
-	#set_oob="ALA_07"
-	#else={set_oob="ALA_07"}
-#}#
-#if={
-	#limit={has_dlc="Man the Guns"}
-	#set_naval_oob="ALA_1007_naval"
-	#else={set_naval_oob="ALA_1007_naval_legacy"}
-#}#
-#FOUNTATION#
+#	limit={has_dlc="Man the Guns"}
+#	set_naval_oob="ALA_1007_naval"
+#	else={set_naval_oob="ALA_1007_naval_legacy"}
+#}
 set_research_slots=2
-set_stability=0.36
-set_war_support=0.12
+set_stability=0.36 set_war_support=0.12
 add_ideas={
-	agrarian_society
-	poor_science_base
-	lack_of_scientists3
-	poverty2
-	limited_conscription
+	volunteer_only export_focus civilian_economy
+	poor_science_base agrarian_society
+	lack_of_scientists3 poverty2
 }
 if={
 	limit={has_dlc="No Step Back"}
@@ -30,7 +21,6 @@ if={
 	}
 	else={add_ideas={EQS_bad_tanks}}
 }
-#TECHNOLOGY#
 set_technology={
 	pony_race=1
 	melee_weapons=1
@@ -56,22 +46,10 @@ if={limit={not={has_dlc="Man the Guns"}}
 actually_fix_weapon_techs=yes
 generic_CL_template=yes
 generic_DD_template=yes
-#MISC#
 starting_train_buffer=0
 set_convoys=13
 set_rule={can_generate_female_aces=yes}
-#DIPLOMACY#
-#POLITICS#
-set_popularities={
-	fascism=13	communism=11
-	neutrality=67	democratic=9
-}
-set_politics={
-	ruling_party=neutrality
-	last_election="1004.11.11"
-	election_frequency=36
-	elections_allowed=no
-}
-#CHARACTERS#
+set_popularities={fascism=13 communism=11 neutrality=67 democratic=9}
+set_politics={ruling_party=neutrality}
 recruit_character=ALA_almond_tree
-#VARIENTS#
+#NOTES#

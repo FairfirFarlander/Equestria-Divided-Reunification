@@ -1,0 +1,88 @@
+division_template={
+	name="Provincial Militia"	#divisions_name_group=#
+	priority=0	template_counter=7
+	regiments={
+		infantry={x=0 y=0}
+	}
+}
+division_template={
+	name="Infantry Levies"	#divisions_name_group=#
+	template_counter=58
+	regiments={
+		infantry={x=0 y=0}
+		infantry={x=0 y=1}
+		infantry={x=0 y=2}
+	}
+}
+division_template={
+	name="Arquebusiers"	#divisions_name_group=#
+	is_locked=yes	template_counter=3
+	regiments={
+		infantry={x=0 y=0}
+		infantry={x=0 y=1}
+	}
+	support={
+		artillery={x=0 y=0}
+	}
+}
+division_template={
+	name="Winged Dragoons"	#divisions_name_group=#
+	priority=2	template_counter=37
+	regiments={
+		pegasi={x=0 y=0}
+		pegasi={x=0 y=1}
+	}
+	support={
+		recon={x=0 y=0}
+	}
+}
+units={
+	division={	#Somland#
+		name="Somland Militia"
+		location=10395	division_template="Provincial Militia"
+		start_experience_factor=0.18	start_equipment_factor=0.6
+		force_equipment_variants={melee_equipment_0={owner="ALA" creator="ALA"}}
+	}
+	division={	#Quiet Expanse#
+		name="Lesnoye Militia"
+		location=12070	division_template="Provincial Militia"
+		start_experience_factor=0.1	start_equipment_factor=0.5
+		force_equipment_variants={melee_equipment_0={owner="ALA" creator="ALA"}}
+	}
+	division={	#Magical Plateau#
+		name="Mythica Militia"
+		location=784	division_template="Provincial Militia"
+		start_experience_factor=0.14	start_equipment_factor=0.55
+		force_equipment_variants={melee_equipment_0={owner="ALA" creator="ALA"}}
+	}
+	division={	#Albion#
+		name="Forost Vaulden Levy"
+		location=10359	division_template="Infantry Levies"
+		start_experience_factor=0.14	start_equipment_factor=0.8
+		force_equipment_variants={melee_equipment_0={owner="ALA" creator="ALA"}}
+	}
+	division={	#Raven Highground#
+		name="Blackened Rock Levy"
+		location=6902	division_template="Infantry Levies"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_0={owner="ALA" creator="ALA"}}
+	}
+	division={	#Loupia#
+		name="Musketeers du Prance"
+		location=3920	division_template="Arquebusiers"
+		start_experience_factor=0.26	start_equipment_factor=0.95
+		force_equipment_variants={melee_equipment_0={owner="ALA" creator="ALA"}}
+	}
+	division={	#Albion#
+		name="Musketeers du Albione"
+		location=12359	division_template="Arquebusiers"
+		start_experience_factor=0.22	start_equipment_factor=0.9
+		force_equipment_variants={melee_equipment_0={owner="ALA" creator="ALA"}}
+	}
+	division={	#Albion#
+		name="Royal Dragoons du Albione"
+		location=10359	division_template="Winged Dragoons"
+		start_experience_factor=0.3	start_equipment_factor=1
+		force_equipment_variants={melee_equipment_0={owner="ALA" creator="ALA"}}
+	}
+}

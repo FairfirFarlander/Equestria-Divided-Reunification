@@ -1,27 +1,19 @@
-#LOCALE
 capital=47
-if={
-	limit={has_dlc="No Step Back"}
-	set_oob="COT_07"	#_nsb
-	else={set_oob="COT_07"}
-}
+oob="COT_1012"
 #if={
 #	limit={has_dlc="Man the Guns"}
 #	set_naval_oob="COT_naval"
 #	else={set_naval_oob="COT_naval_legacy"}
 #}
-#FOUNTATION
 set_research_slots=2
-set_stability=0.49
-set_war_support=0.16
+set_stability=0.49 set_war_support=0.16
 add_ideas={
+	volunteer_only export_focus civilian_economy
+	big_science_base outdated_industry
+	lack_of_scientists2 poverty3
 	COT_Do_Not_Tread
 	COT_Wrath_of_the_Clan_Earthbornd
 	COT_Griffonian_Imports
-	outdated_industry
-	big_science_base
-	lack_of_scientists2
-	poverty3
 }
 if={
 	limit={has_dlc="No Step Back"}
@@ -32,7 +24,6 @@ if={
 	}
 	else={add_ideas={EQS_bad_tanks}}
 }
-#TECHNOLOGY
 set_technology={
 	pony_race=1
 	melee_weapons=1
@@ -70,20 +61,10 @@ if={limit={not={has_dlc="Man the Guns"}}
 actually_fix_weapon_techs=yes
 generic_CL_template=yes
 generic_DD_template=yes
-#MISC#
 set_convoys=17
 set_rule={can_generate_female_aces=yes}
-#DIPLOMACY#
-#POLITICS#
-set_popularities={
-	fascism=18	communism=7
-	neutrality=61	democratic=14
-}
-set_politics={
-	ruling_party=neutrality	last_election="1002.10.10"
-	election_frequency=48	elections_allowed=no
-}
-#CHARACTERS#
+set_popularities={fascism=18 communism=7 neutrality=61 democratic=14}
+set_politics={ruling_party=neutrality}
 recruit_character=COT_jd_neighvis
 recruit_character=COT_neighson_e_miles
 recruit_character=COT_silverstar
@@ -91,7 +72,6 @@ recruit_character=COT_apple_ale
 recruit_character=COT_moonshine_melody
 recruit_character=COT_sorren_peak
 recruit_character=COT_burnside_fervor
-#VARIENTS#
 if={limit={has_dlc="No Step Back"}
 	create_equipment_variant={
 		name="M1-13 Applesauce"	type=light_tank_chassis_0
@@ -163,3 +143,8 @@ if={limit={not={has_dlc="Man the Guns"}}
 		}
 	}
 }
+#NOTES#
+#Greybacks - Kellys Irish Brigade
+#Attaches from Griffon Empire (Prussia)
+#Wingbardian (German) Volunteers
+#Talouse (Griffonia Italian) Brigade

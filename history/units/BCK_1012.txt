@@ -1,20 +1,20 @@
-division_template={	#TEMPLATES#
+division_template={
 	name="Citizen Militia"	#divisions_name_group=#
-	is_locked=no	priority=0	template_counter=3
+	priority=0	template_counter=3
 	regiments={
 		infantry={x=0 y=0}
 	}
 }
 division_template={
 	name="Provincial Levy"	#divisions_name_group=#
-	is_locked=no	priority=1	template_counter=58
+	template_counter=58
 	regiments={
 		infantry={x=0 y=0}
 		infantry={x=0 y=1}
 		infantry={x=0 y=2}
 	}
 }
-units={	#DEPLOYMENTS#
+units={
 	division={	#Buckcastle#
 		name="Meadowland Militia"
 		location=9867	division_template="Citizen Militia"
@@ -29,7 +29,7 @@ units={	#DEPLOYMENTS#
 	}
 	division={	#Rambling Rock Ridge#
 		name="Rambling Rock Ridge Militia"
-		location=9507	division_template="Citizen Militia"
+		location=11596	division_template="Citizen Militia"
 		start_experience_factor=0	start_equipment_factor=0.2
 		force_equipment_variants={melee_equipment_0={owner="BCK" creator="BCK"}}
 	}
@@ -45,7 +45,7 @@ units={	#DEPLOYMENTS#
 		start_experience_factor=0.1	start_equipment_factor=0.8
 		force_equipment_variants={melee_equipment_0={owner="BCK" creator="EQS"}}
 	}
-	division={	#Mareway#
+	division={	#Amethyst Basin#
 		name="Castellen Royal Regiment II"
 		location=3915	division_template="Provincial Levy"
 		start_experience_factor=0.02	start_equipment_factor=0.75

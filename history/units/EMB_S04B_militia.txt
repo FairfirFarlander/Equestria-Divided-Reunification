@@ -5,7 +5,7 @@ division_template={
 		infantry={x=0 y=0}
 	}
 }
-units={	#DEPLOYMENTS
+units={
 	division={	#West Teopixqui Jungle
 		name="Topside Militia"
 		location=10023	division_template="Militia"

@@ -1,0 +1,16 @@
+#division_template={
+#	name="Republican Guard"	#divisions_name_group=#
+#	is_locked=yes	priority=2	template_counter=38
+#	regiments={
+#		marine={x=0 y=0}	marine={x=1 y=0}
+#		marine={x=0 y=1}	marine={x=1 y=1}
+#	}
+#	support={
+#		artillery={x=0 y=0}
+#	}
+#}
+#Whooves of Horston
+#Lodgers of Canter Creek
+#6th North Trotsas 'Apple Buckers'
+#2nd South Trotsas
+#13th Rosemarin 'Greybacks'

@@ -12,7 +12,7 @@ division_template={
 		light_dragons={x=0 y=0}
 	}
 }
-units={	#DEPLOYMENTS#
+units={
 	division={	#Port Starswirl#
 		name="Port Starswirl Militia"
 		location=11755	division_template="Provincial Pony Militia"
@@ -32,7 +32,6 @@ units={	#DEPLOYMENTS#
 		force_equipment_variants={dragon_equipment_0={owner="VII" creator="VII"}}
 	}
 }
-#STARTING_PRODUCTION#
 instant_effect={
 	add_equipment_production={
 		equipment={type=melee_equipment_0 creator="VII"}

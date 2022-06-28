@@ -1,37 +1,29 @@
-division_template={	#TEMPLATES#
+division_template={
 	name="Provincial Militia"	#divisions_name_group=#
-	is_locked=no	priority=0	template_counter=3
+	priority=0	template_counter=3
 	regiments={
 		infantry={x=0 y=0}
 	}
 }
 division_template={
 	name="Ponies-at-Arms"	#divisions_name_group=#
-	is_locked=no	priority=1	template_counter=59
+	template_counter=59
 	regiments={
 		infantry={x=0 y=0}
 		infantry={x=0 y=1}
 		infantry={x=0 y=2}
 	}
 }
-division_template={
-	name="Pegasi Auxilia"	#divisions_name_group=#
-	is_locked=no	priority=1	#template_counter=0#
-	regiments={
-		pegasi={x=0 y=0}
-		pegasi={x=0 y=1}
-	}
-}
-units={	#DEPLOYMENTS#
-	division={	#Pie Family Rock Farm#
+units={
+	division={	#Rockfarms#
 		name="Rock Farm Militia"
 		location=11029	division_template="Provincial Militia"
 		start_experience_factor=0.06	start_equipment_factor=0.6
 		force_equipment_variants={melee_equipment_0={owner="PIE" creator="PIE"}}
 	}
 	division={	#Carrottop#
-		name="Rockville Militia"
-		location=3586	division_template="Provincial Militia"
+		name="Carrottop Militia"
+		location=9457	division_template="Provincial Militia"
 		start_experience_factor=0.06	start_equipment_factor=0.4
 		force_equipment_variants={melee_equipment_0={owner="PIE" creator="PIE"}}
 	}
@@ -48,14 +40,14 @@ units={	#DEPLOYMENTS#
 		force_equipment_variants={melee_equipment_0={owner="PIE" creator="HEB"}}
 	}
 	division={	#Rockville#
-		name="Pear Clan Arms Brigade"
+		name="Peach Clan Arms Brigade"
 		location=11511	division_template="Ponies-at-Arms"
 		start_experience_factor=0.1	start_equipment_factor=0.5
 		force_equipment_variants={melee_equipment_0={owner="PIE" creator="HEB"}}
 	}
 	division={	#Rockville#
-		name="Pie Clan Auxilia"
-		location=11511	division_template="Pegasi Auxilia"
+		name="Apricot Clan Brigade"
+		location=11511	division_template="Ponies-at-Arms"
 		start_experience_factor=0.1	start_equipment_factor=0.5
 		force_equipment_variants={melee_equipment_0={owner="PIE" creator="HEB"}}
 	}

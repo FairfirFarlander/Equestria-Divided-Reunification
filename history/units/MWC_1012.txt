@@ -1,0 +1,91 @@
+division_template={
+	name="Provincial Militia"	#divisions_name_group=#
+	priority=0	template_counter=54
+	regiments={
+		infantry={x=0 y=0}
+	}
+}
+division_template={
+	name="Militia Regiment"	#divisions_name_group=#
+	template_counter=3
+	regiments={
+		infantry={x=0 y=0}
+		infantry={x=0 y=1}
+		infantry={x=0 y=2}
+	}
+}
+division_template={
+	name="Winged Militia Regiemnt"	#divisions_name_group=#
+	regiments={
+		pegasi={x=0 y=0}
+		pegasi={x=0 y=1}
+	}
+}
+units={
+	division={	#Coltfoalnia#
+		name="Prancisco Militia"
+		location=2064	division_template="Provincial Militia"
+		start_experience_factor=0.04	start_equipment_factor=0.6
+		force_equipment_variants={melee_equipment_1={owner="MWC" creator="MWC"}}
+	}
+	division={	#Coltfoalnia#
+		name="Applewood Militia"
+		location=6311	division_template="Provincial Militia"
+		start_experience_factor=0.02	start_equipment_factor=0.55
+		force_equipment_variants={melee_equipment_1={owner="MWC" creator="MWC"}}
+	}
+	division={	#Tall Woods#
+		name="Woodsville Militia"
+		location=511	division_template="Provincial Militia"
+		start_experience_factor=0.04	start_equipment_factor=0.6
+		force_equipment_variants={melee_equipment_1={owner="MWC" creator="MWC"}}
+	}
+	division={	#Mead Lake#
+		name="Mead Resort Militia"
+		location=6412	division_template="Provincial Militia"
+		start_experience_factor=0	start_equipment_factor=0.5
+		force_equipment_variants={melee_equipment_1={owner="MWC" creator="MWC"}}
+	}
+	division={	#Black Early Forest#
+		name="Raspberry Grove Militia"
+		location=9406	division_template="Provincial Militia"
+		start_experience_factor=0	start_equipment_factor=0.5
+		force_equipment_variants={melee_equipment_1={owner="MWC" creator="MWC"}}
+	}
+	division={	#Peachwoods#
+		name="Peachville Militia"
+		location=11515	division_template="Provincial Militia"
+		start_experience_factor=0.02	start_equipment_factor=0.55
+		force_equipment_variants={melee_equipment_1={owner="MWC" creator="MWC"}}
+	}
+	division={	#Tall Woods#
+		name="McColts Clan Militia"
+		location=6945	division_template="Militia Regiment"
+		start_experience_factor=0.3	start_equipment_factor=1
+		force_equipment_variants={melee_equipment_1={owner="MWC" creator="MWC"}}
+	}
+	division={	#Smokey Mountains#
+		name="Hoofield Clan Militia"
+		location=12685	division_template="Militia Regiment"
+		start_experience_factor=0.3	start_equipment_factor=1
+		force_equipment_variants={melee_equipment_1={owner="MWC" creator="MWC"}}
+	}
+	division={	#Black Early Forest#
+		name="Bridger Guard Regiment"
+		location=3182	division_template="Militia Regiment"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_1={owner="MWC" creator="MWC"}}
+	}
+	division={	#White Tail Woods#
+		name="Forest Guard Regiment"
+		location=9361	division_template="Militia Regiment"
+		start_experience_factor=0.14	start_equipment_factor=0.8
+		force_equipment_variants={melee_equipment_1={owner="MWC" creator="MWC"}}
+	}
+	division={	#Coltfoalnia#
+		name="Riverguard Guard Regiment"
+		location=329	division_template="Winged Militia Regiemnt"
+		start_experience_factor=0.18	start_equipment_factor=0.85
+		force_equipment_variants={melee_equipment_1={owner="MWC" creator="MWC"}}
+	}
+}
