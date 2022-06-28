@@ -12,4 +12,6 @@ characters={
 			id=-1
 		}
 	}
+	#Inquisitor General
+	#Add 2 attack blips and a trait that adds attack at the cost of defense... Into the negative
 }

@@ -1,0 +1,29 @@
+focus_tree={
+	id=TRT country={modifier={add=3 tag=TRT}}
+	continuous_focus_position={x=1200 y=-350}
+}
+focus_tree={	#DEBUG
+	id=TRT country={modifier={add=4 tag=TRT is_debug=yes}}
+	continuous_focus_position={x=1200 y=-350}
+	shared_focus=examine_the_situation
+	shared_focus=Ministry_of_defense
+	shared_focus=Crystal_Fair
+	shared_focus=Friendship_Games
+	shared_focus=EQS_Civil_War_End
+	shared_focus=EQS_buffalo_relations
+	shared_focus=eqs_come_to_compromise
+	shared_focus=eqs_prevent_the_vote
+	#shared_focus=NLR_a_new_army
+	#shared_focus=NLR_civil_war_end
+	#shared_focus=NLR_civil_war_economy
+	#shared_focus=SOL_Imperium_Solis
+	#shared_focus=SOL_twilight_ascend
+	#shared_focus=SOL_civil_war_measures
+	#shared_focus=SOL_military_reorganization
+	#shared_focus=EDR_I00
+	#shared_focus=EDR_L05
+	#shared_focus=EDR_N05
+	#shared_focus=EDR_N06B
+	#shared_focus=EDR_A05
+	#shared_focus=EDR_A08A
+}
