@@ -33,6 +33,8 @@ set_technology={
 }
 actually_fix_weapon_techs=yes
 set_rule={can_generate_female_aces=yes}
+create_faction=Stormwing
+add_to_faction=SWT
 set_popularities={fascism=78 communism=7 neutrality=9 democratic=6}
 set_politics={ruling_party=fascism}
 recruit_character=HSW_rainbow_dash

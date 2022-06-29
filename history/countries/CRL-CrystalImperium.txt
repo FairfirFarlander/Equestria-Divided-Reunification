@@ -1,18 +1,14 @@
-#LOCALE
 capital=344
-#oob="CRY_07"
-#FOUNTATION
+oob="CRL_1012"
 set_research_slots=3
-set_stability=0.50
-set_war_support=0.3
+set_stability=0.50 set_war_support=0.3
 add_ideas={
+	volunteer_only export_focus civilian_economy
+	substantial_science_base outdated_industry
+	lack_of_scientists3 poverty3
 	royal_family
 	sombra_threat
-	volunteer_only export_focus civilian_economy
-	
-	outdated_industry
 }
-#TECHNOLOGY
 set_technology={
 	pony_race=1
 	melee_weapons=1
@@ -22,28 +18,15 @@ set_technology={
 	tech_engineers=1
 	tech_military_police=1
 	pre_gw_artillery=1
-	#gw_artillery=1
-	#interwar_antitank=1
 	gwtank=1
 	early_fighter=1
-	#early_bomber=1
 	tech_unicorn=1
 	tech_unicorn_ms=1
 }
 actually_fix_weapon_techs=yes
-#MISC
 set_rule={can_generate_female_aces=yes}
-#DIPLOMACY
-#POLITICS
-set_popularities={
-	fascism=52	communism=22
-	neutrality=21	democratic=5
-}
-set_politics={
-	ruling_party=fascism	last_election="1000.10.10"
-	election_frequency=36	elections_allowed=no
-}
-#CHARACTERS#
+set_popularities={fascism=52 communism=22 neutrality=21 democratic=5}
+set_politics={ruling_party=fascism}
 recruit_character=CRL_radiant_hope
 recruit_character=CRL_arctic_lily
 recruit_character=CRL_disputed
@@ -59,4 +42,4 @@ recruit_character=CRL_squeeky_hooves
 recruit_character=CRL_sakira
 recruit_character=CRL_dust_snowfall
 recruit_character=CRL_lake_frost
-#VARIENTS#
+#NOTES#

@@ -1,14 +1,7 @@
-#LOCALE#
 capital=128
-#if={
-#	limit={has_dlc="No Step Back"}
-#	set_oob="TRH_07"	#_nsb#
-#	else={set_oob="TRH_07"}
-#}
-#FOUNTATION#
+#load_oob="TRH_spawn"
 set_research_slots=2
-set_stability=0.23
-set_war_support=0.11
+set_stability=0.23 set_war_support=0.11
 add_ideas={
 	volunteer_only limited_exports isolation
 	poor_science_base agrarian_society
@@ -33,7 +26,6 @@ add_offsite_building={
 	type=arms_factory
 	level=1
 }
-#TECHNOLOGY#
 set_technology={
 	pony_race=1
 	melee_weapons=1
@@ -43,34 +35,10 @@ set_technology={
 	pre_gw_artillery=1
 	tech_pegasi=1
 }
-if={limit={has_dlc="Man the Guns"}
-	set_technology={
-		early_ship_hull_light=1
-		basic_battery=1
-		mtg_transport=1
-	}
-}
-if={limit={not={has_dlc="Man the Guns"}}
-	set_technology={
-		early_destroyer=1
-		transport=1
-	}
-}
 actually_fix_weapon_techs=yes
-generic_DD_template=yes
-#MISC#
 set_convoys=3
 set_rule={can_generate_female_aces=yes}
-#DIPLOMACY#
-#POLITICS#
-set_popularities={
-	fascism=32	communism=29
-	neutrality=31	democratic=8
-}
-set_politics={
-	ruling_party=fascism	last_election="1011.01.01"
-	election_frequency=36	elections_allowed=no
-}
-#CHARACTERS#
+set_popularities={fascism=32 communism=29 neutrality=31 democratic=8}
+set_politics={ruling_party=fascism}
 recruit_character=THA_auburn_peak
-#VARIENTS#
+#NOTES#

@@ -1,0 +1,75 @@
+division_template={
+	name="Psiloi"	#divisions_name_group=#
+	priority=0	template_counter=3
+	regiments={
+		infantry={x=0 y=0}
+	}
+}
+division_template={
+	name="Merarchía Pezikoú"	#divisions_name_group=#
+	template_counter=59
+	regiments={
+		infantry={x=0 y=0}
+		infantry={x=0 y=1}
+		infantry={x=0 y=2}
+	}
+}
+division_template={
+	name="Pígasos Sýntagma"	#divisions_name_group=#
+	is_locked=yes	priority=1	#template_counter=0#
+	regiments={
+		pegasi={x=0 y=0}
+		pegasi={x=0 y=1}
+		pegasi={x=0 y=2}
+	}
+}
+units={
+	division={	#Solside Plains#
+		name="Chicoltgo Psiloi"
+		location=11216	division_template="Psiloi"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_0={owner="SWT" creator="HSW"}}
+	}
+	division={	#Galloping Gorge#
+		name="Yonderhill Psiloi"
+		location=11272	division_template="Psiloi"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_0={owner="SWT" creator="HSW"}}
+	}
+	division={	#Pine Creek#
+		name="Pine Creek Psiloi"
+		location=457	division_template="Psiloi"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_0={owner="SWT" creator="HSW"}}
+	}
+	division={	#Diamond Lands#
+		name="Diamondflake Psiloi"
+		location=3774	division_template="Psiloi"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_0={owner="SWT" creator="HSW"}}
+	}
+	division={	#Whitebell#
+		name="Whitebell Psiloi"
+		location=9351	division_template="Psiloi"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_0={owner="SWT" creator="HSW"}}
+	}
+	division={	#Fairflanks#
+		name="Fairflanks Psiloi"
+		location=705	division_template="Psiloi"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_0={owner="SWT" creator="HSW"}}
+	}
+	division={	#Western Yeahcon#
+		name="Swampponies"
+		location=6292	division_template="Merarchía Pezikoú"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_0={owner="SWT" creator="HSW"}}
+	}
+	division={	#Mareposa#
+		name="Mareposa Sýntagma"
+		location=6280	division_template="Pígasos Sýntagma"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_0={owner="SWT" creator="HSW"}}
+	}
+}

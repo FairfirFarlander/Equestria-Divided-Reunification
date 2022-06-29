@@ -1,0 +1,36 @@
+division_template={
+	name="Thestral Levy"	#divisions_name_group=#
+	is_locked=yes	priority=0	template_counter=3
+	regiments={
+		infantry={x=0 y=0}
+	}
+}
+division_template={
+	name="Huscarls"	#divisions_name_group=#
+	template_counter=38
+	regiments={
+		infantry={x=0 y=0}
+		infantry={x=0 y=1}
+	}
+}
+division_template={
+	name="End Guard"	#divisions_name_group=#
+	is_locked=yes	priority=2	template_counter=39
+	regiments={
+		pegasi={x=0 y=0}
+	}
+}
+units={
+	division={		#April Grove#
+		name="April Grove Huscarls"
+		location=3902	division_template="Huscarls"
+		start_experience_factor=0.75	start_equipment_factor=1
+		force_equipment_variants={melee_equipment_0={owner="FSH" creator="FSH"}}
+	}
+	division={		#April Grove#
+		name="Nieche Guard"
+		location=3902	division_template="End Guard"
+		start_experience_factor=0.75	start_equipment_factor=1
+		force_equipment_variants={melee_equipment_0={owner="FSH" creator="FSH"}}
+	}
+}

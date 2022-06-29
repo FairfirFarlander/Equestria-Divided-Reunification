@@ -1,13 +1,7 @@
-#LOCALE	Literally Vietnam#
 capital=36
-if={
-	limit={has_dlc="No Step Back"}
-	set_oob="EMB_07"	#_nsb#
-	else={set_oob="EMB_07"}
-}
+oob="EMB_1012"
 #if={limit={has_dlc="Man the Guns"}set_naval_oob="EMB_07_naval"}#
 #if={limit={not={has_dlc="Man the Guns"}}set_naval_oob="EMB_07_naval_legacy"}#
-#FOUNTATION#
 set_research_slots=2
 set_stability=0.46 set_war_support=0.07
 add_ideas={
@@ -18,18 +12,11 @@ add_ideas={
 	lack_of_scientists2 poverty4
 	EQS_bad_tanks
 }
-#TECHNOLOGY#
 set_technology={
 	changeling_race=1
 	melee_weapons=1
 	tech_support=1
 	tech_jager=1
-	#construction1=1#
-	#Testtech#
-	#pre_gw_artillery=1#
-	#gw_artillery=1#
-	#interwar_antiair=1#
-	#basic_fire_control_system=1#
 }
 if={limit={has_dlc="Man the Guns"}
 	set_technology={
@@ -48,27 +35,16 @@ if={limit={not={has_dlc="Man the Guns"}}
 	}
 }
 actually_fix_weapon_techs=yes
-#MISC#
 set_convoys=2
 set_rule={can_generate_female_aces=yes}
-#DIPLOMACY#
-#POLITICS#
-set_popularities={
-	fascism=13	communism=42
-	neutrality=24	democratic=21
-}
-set_politics={
-	ruling_party=communism	last_election="1004.11.11"
-	election_frequency=36	elections_allowed=no
-}
-#CHARACTERS#
+set_popularities={fascism=13 communism=42 neutrality=24 democratic=21}
+set_politics={ruling_party=communism}
 recruit_character=EMB_mother_nightshade
 recruit_character=EMB_councilor_tyrennadus
 recruit_character=EMB_queen_narratek
 recruit_character=EMB_aetanae_krix
 recruit_character=EMB_hithax_ballas	#Remove after testing
 recruit_character=EMB_lavender_opal	#Remove after testing
-#VARIENTS#
 if={limit={has_dlc="Man the Guns"}
 	create_equipment_variant={
 		name="Narratek 999 Class"	type=ship_hull_heavy_1
@@ -87,7 +63,7 @@ if={limit={has_dlc="Man the Guns"}
 			rear_1_custom_slot=ship_heavy_battery_1
 		}
 	}
-#	create_equipment_variant={	#Dreadnaughts suck! Only get one gun. *TY; We tried. It died. *FF
+#	create_equipment_variant={
 #		name="Mounder 999 Class"	type=ship_hull_pre_dreadnought
 #		parent_version=0	#obsolete=yes
 #		modules={
@@ -105,7 +81,7 @@ if={limit={has_dlc="Man the Guns"}
 #	}
 }
 if={limit={not={has_dlc="Man the Guns"}}
-	create_equipment_variant={	#Dreadnaughts suck! Only get one gun. *TY; We tried. It died. *FF#
+	create_equipment_variant={
 		name="Narratek 999 Class"	type=battleship_1
 		parent_version=0	#obsolete=yes#
 		upgrades={
@@ -115,7 +91,7 @@ if={limit={not={has_dlc="Man the Guns"}}
 			ship_gun_upgrade=1
 		}
 	}
-#	create_equipment_variant={	#Dreadnaughts suck! Only get one gun. *TY; We tried. It died. *FF
+#	create_equipment_variant={
 #		name="Mounder 999 Class"	type=pre_dreadnought_nomtg
 #		parent_version=0	#obsolete=yes
 #		upgrades={
@@ -126,3 +102,12 @@ if={limit={not={has_dlc="Man the Guns"}}
 #		}
 #	}
 }
+#NOTES#
+#Literally Vietnam
+#Dreadnaughts suck! Only get one gun. *TY; We tried. It died. *FF
+#construction1=1
+#Testtech
+#pre_gw_artillery=1
+#gw_artillery=1
+#interwar_antiair=1
+#basic_fire_control_system=1

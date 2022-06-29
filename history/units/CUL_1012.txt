@@ -1,0 +1,126 @@
+division_template={
+	name="Townsfolk Mob"	#divisions_name_group=#
+	priority=0	template_counter=22
+	regiments={
+		infantry={x=0 y=0}
+		infantry={x=0 y=1}
+	}
+}
+division_template={
+	name="Reveler Cultists"	#divisions_name_group=#
+	template_counter=1
+	regiments={
+		infantry={x=0 y=0}
+		infantry={x=0 y=1}
+		infantry={x=0 y=2}
+		infantry={x=0 y=3}
+		infantry={x=0 y=4}
+	}
+}
+division_template={
+	name="Euphories Detachment"	#divisions_name_group=#
+	template_counter=2
+	regiments={
+		pegasi={x=0 y=0}
+		pegasi={x=0 y=1}
+		pegasi={x=0 y=2}
+	}
+}
+units={
+	division={	#Nocturnal Valley#
+		name="Riverpool Mob"
+		location=6864	division_template="Townsfolk Mob"
+		start_experience_factor=0.02	start_equipment_factor=0.55
+		force_equipment_variants={melee_equipment_0={owner="CUL" creator="CUL"}}
+	}
+	division={	#Hearth's Warming Field#
+		name="Hearthome Mob"
+		location=3511	division_template="Townsfolk Mob"
+		start_experience_factor=0.02	start_equipment_factor=0.55
+		force_equipment_variants={melee_equipment_0={owner="CUL" creator="CUL"}}
+	}
+	division={	#Selnite Divide#
+		name="Snowybury Mob"
+		location=11109	division_template="Townsfolk Mob"
+		start_experience_factor=0.02	start_equipment_factor=0.55
+		force_equipment_variants={melee_equipment_0={owner="CUL" creator="CUL"}}
+	}
+	division={	#Emerald Piedmont#
+		name="Canterine Mob"
+		location=9164	division_template="Townsfolk Mob"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_0={owner="CUL" creator="CUL"}}
+	}
+	division={	#Jade Hills#
+		name="Whinnypeg Mob"
+		location=10448	division_template="Townsfolk Mob"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_0={owner="CUL" creator="CUL"}}
+	}
+	division={	#Evergreen#
+		name="Evergreen Mob"
+		location=9275	division_template="Townsfolk Mob"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_0={owner="CUL" creator="CUL"}}
+	}
+	division={	#Solside Plains#
+		name="Chicoltgo Mob"
+		location=11216	division_template="Townsfolk Mob"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_0={owner="CUL" creator="CUL"}}
+	}
+	division={	#Mareposa#
+		name="Mareposa Mob"
+		location=6280	division_template="Townsfolk Mob"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_0={owner="CUL" creator="CUL"}}
+	}
+	division={	#Diamond Lands#
+		name="Diamondflake Mob"
+		location=3774	division_template="Townsfolk Mob"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_0={owner="CUL" creator="CUL"}}
+	}
+	division={	#Whinnysota#
+		name="Whinnyapolis Cult"
+		location=9887	division_template="Reveler Cultists"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_0={owner="CUL" creator="CUL"}}
+	}
+	division={	#Feldspar Fields#
+		name="Ponytown Cult"
+		location=9150	division_template="Reveler Cultists"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_0={owner="CUL" creator="CUL"}}
+	}
+	division={	#Agate Fields#
+		name="Quebuck Cult"
+		location=304	division_template="Reveler Cultists"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_0={owner="CUL" creator="CUL"}}
+	}
+	division={	#Shiny Bound#
+		name="Hedgewards Cult"
+		location=9236	division_template="Reveler Cultists"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_0={owner="CUL" creator="CUL"}}
+	}
+	division={	#Bluebell Fields#
+		name="Marechester Cult"
+		location=11686	division_template="Reveler Cultists"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_0={owner="CUL" creator="CUL"}}
+	}
+	division={	#Acornage#
+		name="Acornage Cult"
+		location=748	division_template="Reveler Cultists"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_0={owner="CUL" creator="CUL"}}
+	}
+	division={	#Western Featherfall Dale#
+		name="Euphories of Featherfall"
+		location=3653	division_template="Euphories Detachment"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_0={owner="CUL" creator="CUL"}}
+	}
+}

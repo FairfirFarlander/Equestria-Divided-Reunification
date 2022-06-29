@@ -400,6 +400,12 @@ on_actions={
 					add_core_of=CUL
 					transfer_state_to=CUL
 				}
+				CUL={
+					load_oob="CUL_1012"
+					delete_unit_template_and_units={division_template="Provincial Militia"}
+					delete_unit_template_and_units={division_template="Legionarie Detachment"}
+					delete_unit_template_and_units={division_template="Royal Guard"}
+				}
 			}
 		}
 	}

@@ -1,22 +1,18 @@
-#LOCALE
 capital=28
-#oob="HAY_1007"
+oob="HAY_1012"
 #if={
 #	limit={has_dlc="Man the Guns"}
 #	set_naval_oob="HAY_1007_naval"
 #	else={set_naval_oob="HAY_1007_naval_legacy"}
 #}
-#FOUNTATION
 set_research_slots=2
-set_stability=0.23
-set_war_support=0.11
+set_stability=0.23 set_war_support=0.11
 add_ideas={
+	volunteer_only export_focus civilian_economy
+	better_science_base agrarian_society
+	lack_of_scientists2 poverty4
 	HAY_Anarchist_Breeding_Ground
 	HAY_Mass_unrest
-	better_science_base
-	agrarian_society
-	lack_of_scientists2
-	poverty4
 }
 if={
 	limit={has_dlc="No Step Back"}
@@ -27,8 +23,7 @@ if={
 	}
 	else={add_ideas={EQS_bad_tanks}}
 }
-#TECHNOLOGY
-set_technology={	#Give Tanks
+set_technology={
 	pony_race=1
 	melee_weapons=1
 	motorised_infantry=1
@@ -51,20 +46,10 @@ if={limit={not={has_dlc="Man the Guns"}}
 	}
 }
 actually_fix_weapon_techs=yes
-#Misc
 set_convoys=3
 set_rule={can_generate_female_aces=yes}
-#DIPLOMACY
-#POLITICS
-set_popularities={
-	fascism=11	communism=49
-	neutrality=32	democratic=8
-}
-set_politics={
-	ruling_party=communism	last_election="1001.10.10"
-	election_frequency=36	elections_allowed=no
-}
-#CHARACTERS#
+set_popularities={fascism=11 communism=49 neutrality=32 democratic=8}
+set_politics={ruling_party=communism}
 recruit_character=HAY_regional_defense_council
 recruit_character=HAY_lavender_berry
 recruit_character=HAY_golden_delicious
@@ -91,4 +76,5 @@ recruit_character=HAY_silver_mane
 recruit_character=HAY_lime_pearl
 recruit_character=HAY_stylus_pen
 recruit_character=HAY_boreal_bloom
-#VARIENTS#
+#NOTES#
+#Give Tanks later on.

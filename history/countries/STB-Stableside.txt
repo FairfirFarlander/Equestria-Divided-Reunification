@@ -1,22 +1,17 @@
-#LOCALE
 capital=15
-#oob="STB_1007"
+oob="STB_1012"
 #if={
 #	limit={has_dlc="Man the Guns"}
 #	set_naval_oob="STB_1007_naval"
 #	else={set_naval_oob="STB_1007_naval_legacy"}
 #}
-#FOUNTATION
 set_research_slots=2
-set_stability=0.42
-set_war_support=0.08
+set_stability=0.42 set_war_support=0.08
 add_ideas={
-	better_science_base
-	pre_industrial_society
-	lack_of_scientists3
-	poverty2
+	volunteer_only export_focus civilian_economy
+	better_science_base pre_industrial_society
+	lack_of_scientists3 poverty2
 }
-#TECHNOLOGY
 set_technology={
 	pony_race=1
 	melee_weapons=1
@@ -41,23 +36,13 @@ if={limit={not={has_dlc="Man the Guns"}}
 actually_fix_weapon_techs=yes
 generic_CL_template=yes
 generic_DD_template=yes
-#MISC
 set_convoys=10
 set_rule={can_generate_female_aces=yes}
-#POLITICS
-set_popularities={
-	fascism=18	communism=26
-	neutrality=30	democratic=26
-}
-set_politics={
-	ruling_party=neutrality	last_election="1004.11.11"
-	election_frequency=36	elections_allowed=no
-}
-#CHARACTERS#
+set_popularities={fascism=18 communism=26 neutrality=30 democratic=26}
+set_politics={ruling_party=neutrality}
 recruit_character=STB_iris_kelly
 recruit_character=STB_mabel_corne
 recruit_character=STB_smokey_dust
-#VARIENTS
 #NOTES#
 #The great Pearsurrection. They will come back or take the Rosemarin/Hoofington coast.
 #The second great first fruit war, now this. WTFOMGBBQ!?

@@ -1,0 +1,74 @@
+division_template={
+	name="National Guard"	#divisions_name_group=#
+	is_locked=no	priority=0	template_counter=3
+	regiments={
+		infantry={x=0 y=0}
+	}
+}
+division_template={
+	name="Infantry Regiment"	#divisions_name_group=#
+	#template_counter=#
+	regiments={
+		infantry={x=0 y=0}
+		infantry={x=0 y=1}
+		infantry={x=0 y=2}
+	}
+}
+division_template={
+	name="Pegasi Regiment"	#divisions_name_group=#
+	#template_counter=0#
+	regiments={
+		pegasi={x=0 y=0}
+		pegasi={x=0 y=1}
+	}
+}
+units={
+	division={	#Las Pegaus#
+		name="Las Pegasus Militia"
+		location=69	division_template="National Guard"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_1={owner="LAS" creator="EQS"}}
+	}
+	division={	#Waffleland#
+		name="Jamtown Militia"
+		location=1373	division_template="National Guard"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_0={owner="LAS" creator="LAS"}}
+	}
+	division={	#Aetherlands#
+		name="Foaledo Militia"
+		location=3645	division_template="National Guard"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_0={owner="LAS" creator="LAS"}}
+	}
+	division={	#Las Pegasus#
+		name="1st Infantry Regiment"
+		location=6464	division_template="Infantry Regiment"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_0={owner="LAS" creator="LAS"}}
+	}
+	division={	#Waffleland#
+		name="2nd Infantry Regiment"
+		location=3846	division_template="Infantry Regiment"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_0={owner="LAS" creator="LAS"}}
+	}
+	division={	#Aetherlands#
+		name="3rd Infantry Regiment"
+		location=11622	division_template="Infantry Regiment"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_0={owner="LAS" creator="LAS"}}
+	}
+	division={
+		name="Pegasi Regiment"
+		location=69	division_template="Pegasi Regiment"
+		start_experience_factor=0.3	start_equipment_factor=1
+		force_equipment_variants={melee_equipment_0={owner="LAS" creator="LAS"}}
+	}
+	division={
+		name="Pegasi Regiment"
+		location=6120	division_template="Pegasi Regiment"
+		start_experience_factor=0.26	start_equipment_factor=0.95
+		force_equipment_variants={melee_equipment_0={owner="LAS" creator="LAS"}}
+	}
+}

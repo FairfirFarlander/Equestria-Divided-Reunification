@@ -179,6 +179,50 @@ JTL_warparty={
 		11={"Ozomahuatl War Party"}#52
 	}
 }
+PLT_warband_homeland={
+	name="Southern Tribal Warbands"
+	for_countries={PLT}
+	can_use={always=yes}
+	division_types={"infantry"}
+	fallback_name="Tribal Warband"
+	ordered={
+		1={"Mazatl Warband"}#26
+		2={"Ahuiliztli Warband"}#33
+		3={"Tlatic Warband"}#33
+		4={"Uetzmixtli Warband"}#33
+		5={"Yayauhxochitl Warband"}#351
+		6={"Xiloxaual Warband"}#351
+		7={"Teyahua Warband"}#351
+	}
+}
+PLT_warband_noncore={
+	name="Northern Tribal Warbands"
+	for_countries={PLT}
+	can_use={always=no}
+	division_types={"infantry"}
+	fallback_name="Tribal Warband"
+	ordered={
+		1={"Xipil Warband"}#16
+		2={"Ihuicayah Warband"}#16
+		3={"Nenecotzin Warband"}#16
+		4={"Teixochitl Warband"}#16
+		5={"Xochitl Warband"}#16
+		6={"Chipatzal Warband"}#24
+		7={"Ahuilizhuitl Warband"}#24
+		8={"Mazapil Warband"}#24
+		9={"Tlazopilli Warband"}#348
+		10={"Coaxoch Warband"}#88
+		11={"Ueman Warband"}#352
+		12={"Ichtaca Warband"}#90
+		13={"Huitzilli Warband"}#82
+		14={"Axapilli Warband"}#82
+		15={"Itzhuitl Warband"}#82
+		16={"Coyotl Warband"}#32
+		17={"Ixpil Warband"}#32
+		18={"Tonalquetzal Warband"}#32
+		20={"Huexaual Warband"}#81
+	}
+}
 PLT_warparty_homeland={
 	name="Southern Tribal War Parties"
 	for_countries={PLT}
@@ -192,55 +236,26 @@ PLT_warparty_homeland={
 		4={"Namametl War Party"}#79
 		5={"Teicotl War Party"}#25
 		6={"Patli War Party"}#25
+		7={"Coszcatzin War Party"}#353
 	}
 }
 PLT_warparty_noncore={
 	name="Northern Tribal War Parties"
 	for_countries={PLT}
-	can_use={always=yes}
+	can_use={always=no}
 	division_types={"infantry"}
 	fallback_name="Tribal War Party"
 	ordered={
-		1={"Coszcatzin War Party"}#353
-		2={"Nopaltzin War Party"}#36
-		3={"Xidira War Party"}#36
-		4={"Citlalli War Party"}#350
-		5={"Xiomina War Party"}#31
+		1={"Nopaltzin War Party"}#36
+		2={"Xidira War Party"}#36
+		3={"Citlalli War Party"}#350
+		4={"Xiomina War Party"}#31
 	}
 }
-THA_tzinacantli_warparty={
-	name="Tzinacantli Warriors"
-	for_countries={JTL}
-	can_use={always=yes}
-	division_types={"infantry"}
-	fallback_name="Tzinacantli War Party"
-	ordered={
-		1={"Eloxopa War Party"}#35
-		2={"Tezcacoatl War Party"}#35
-	}
-}
-THA_warparty={
-	name="Tribal War Parties"
-	for_countries={JTL}
-	can_use={always=yes}
-	division_types={"infantry"}
-	fallback_name="Tribal War Party"
-	ordered={
-		1={"Citlalli War Party"}#350
-		2={"Xiomina War Party"}#31
-		3={"Teicotl War Party"}#25
-		4={"Nopaltzin War Party"}#36
-		5={"Xidira War Party"}#36
-		6={"Patli War Party"}#25
-		7={"Coszcatzin War Party"}#353
-		8={"Necalcuintli War Party"}#79
-		9={"Namametl War Party"}#79
-	}
-}
-ALLSWE_warband={
+THA_warband={
 	name="Tribal Warband"
-	for_countries={HAY PLT STB THA WTC}
-	can_use={always=yes}
+	for_countries={THA}
+	can_use={always=no}
 	division_types={"infantry"}
 	fallback_name="Tribal Warband"
 	ordered={
@@ -270,5 +285,34 @@ ALLSWE_warband={
 		24={"Yayauhxochitl Warband"}#351
 		25={"Xiloxaual Warband"}#351
 		26={"Teyahua Warband"}#351
+	}
+}
+THA_tzinacantli_warparty={
+	name="Tzinacantli Warriors"
+	for_countries={JTL}
+	can_use={always=no}
+	division_types={"infantry"}
+	fallback_name="Tzinacantli War Party"
+	ordered={
+		1={"Eloxopa War Party"}#35
+		2={"Tezcacoatl War Party"}#35
+	}
+}
+THA_warparty={
+	name="Tribal War Parties"
+	for_countries={JTL}
+	can_use={always=no}
+	division_types={"infantry"}
+	fallback_name="Tribal War Party"
+	ordered={
+		1={"Citlalli War Party"}#350
+		2={"Xiomina War Party"}#31
+		3={"Teicotl War Party"}#25
+		4={"Nopaltzin War Party"}#36
+		5={"Xidira War Party"}#36
+		6={"Patli War Party"}#25
+		7={"Coszcatzin War Party"}#353
+		8={"Necalcuintli War Party"}#79
+		9={"Namametl War Party"}#79
 	}
 }
