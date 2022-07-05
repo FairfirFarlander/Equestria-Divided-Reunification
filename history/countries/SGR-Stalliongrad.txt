@@ -6,11 +6,13 @@ oob="SGR_1012"
 #	else={set_naval_oob="SGR_1007_naval_legacy"}
 #}
 set_research_slots=2
-set_stability=0.3 set_war_support=0.6
+set_stability=0.31 set_war_support=0.17
 add_ideas={
 	volunteer_only export_focus civilian_economy
-	better_science_base pre_industrial_society
-	lack_of_scientists3 poverty4
+	better_science_base outdated_industry2
+	lack_of_scientists2 poverty3
+	SGR_famine_0
+	SGR_refugee_crisis_0
 }
 set_technology={
 	pony_race=1
@@ -41,7 +43,6 @@ if={limit={not={has_dlc="Man the Guns"}}
 	}
 }
 set_convoys=15
-set_variable={var=palace_construction value=0}
 set_rule={can_generate_female_aces=yes}
 set_popularities={democratic=5 fascism=3 communism=91 neutrality=1}
 set_politics={ruling_party=communism}
@@ -54,3 +55,4 @@ recruit_character=SGR_nestor_lunin
 recruit_character=SGR_sinister_serov
 #NOTES#
 #Add a Coup at game start
+#set_variable={var=palace_construction value=0}

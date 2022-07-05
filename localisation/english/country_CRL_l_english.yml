@@ -1,7 +1,7 @@
 ﻿l_english:
 ##Welcome Screen##
- EAW_WS_CRL:""
-  EAW_WS_CRL_desc:""
+ EAW_WS_CRL:"[Root.GetNameDef] - The Broken Heart"
+  EAW_WS_CRL_desc:"§YThe Crystal Empire§! was first founded by an ancient Princess, an Alicorn that stood up for her subjects and strongly believed that Love, like Friendship, is the greatest gift of all, and that using the power of said Love was the key to prosperity. As such, she created the Empire's most ancient and most important relic, §Ythe Crystal Heart§!, which is stored just below the Crystal Palace in the Capital, to radiate §Ythe Power of Love§! across all of the Empire.\n\nNot all ponies in the Empire believed in prosperity through love, though. An evil, corrupted unicorn, §RKing Sombra§!, rose up and claimed the Empire's throne for himself. His dark, twisted magic §Rcorrupted the Crystal Heart§!, further empowering his strength and control over the Empire. He ended up enslaving his own subjects through his dark methods, brainwashing them into obedient slaves. With this slave army, he marched south towards §YEquestria§!, but was stopped and banished by §Ythe Royal Sisters§!.\n\nThe Empire then §Ydisappeared§! for hundreds of years within the thick snow, only to magically reappear a few years ago. §YEquestria§! rallied to §Ythe Crystal ponies'§! rescue as the evil spirit of §RKing Sombra§! returned to the land, still not willing to give up his Kingdom. With the combined power of §Ythe Crystal Heart§!, the evil King was once again banished. However, with him returning from banishment once already, one can only hope that he is unable to breach containment once more...\n\nAfter the second banishment of Sombra, §YPrincess Celestia§! installed §YPrincess Mi Amore Cadenza§!, or simply Cadence on the throne of the Empire, effectively turning the Empire into §Ga puppet state§! of its southern neighbour. §YPrincess Cadence§! is still a popular figure in the Empire, though there is a lot going within the snowy Empire nowadays, including the birth of a possible heir to the throne, §YPrincess Flurry Heart§!.\n\nThe Empire of Ice and Snow is protected through the strength of Love and Friendship, but how long will the Crystal Heart keep beating? And will §Ythe Princess§! hold onto power in this new, changing world?"
 ###Characters###
 ##Leaders##
 CRL_radiant_hope:"Radiant Hope"
@@ -45,7 +45,7 @@ CRL:"Crystal Empire"
  CRL_ADJ:"Crystali"
  CRL_fascism:"Crystal Empire"
   CRL_fascism_DEF:"The Crystal Empire"
-  CRL_fascism_ADJ:"Sombra's"
+  CRL_fascism_ADJ:"Crystali"
  CRL_communism:"Crystal Ponies' Republic"
   CRL_communism_DEF:"The Crystal Ponies' Republic"
   CRL_communism_ADJ:"Crystali"

@@ -1,5 +1,32 @@
 ideas={
 	country={
+		EDR_polar_sympathies={
+			allowed={always=no}
+			#picture
+			removal_cost=-1
+			modifier={
+				fascism_drift=0.05
+				communism_drift=0.05
+			}
+		}
+		EDR_sovereign_sympathies={
+			allowed={always=no}
+			#picture
+			removal_cost=-1
+			modifier={
+				fascism_drift=0.05
+				neutrality_drift=0.05
+			}
+		}
+		EDR_harmonic_sympathies={
+			allowed={always=no}
+			#picture
+			removal_cost=-1
+			modifier={
+				neutrality_drift=0.05
+				democratic_drift=0.05
+			}
+		}
 		EDR_temp_arty_bonus={
 			allowed={always=no}
 			available={not={has_tech=pre_gw_artillery}}

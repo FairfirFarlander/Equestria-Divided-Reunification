@@ -38,10 +38,88 @@ division_template={
 	}
 }
 units={
-	#division={	#Vanhoover#
-	#	name="Vanhoover Militia"
-	#	location=585	division_template="Communal Militia"
-	#	start_experience_factor=0.04	start_equipment_factor=0.55
-	#	force_equipment_variants={melee_equipment_1={owner="VHT" creator="VHT"}}
-	#}
+	division={	#Mirage#
+		name="Militia"
+		location=1614	division_template="Pony's Militia"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_1={owner="SGR" creator="SGR"}}
+	}
+	division={	#Baicall#
+		name="Militia"
+		location=6208	division_template="Pony's Militia"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_1={owner="SGR" creator="SGR"}}
+	}
+	division={	#Petershoof#
+		name="Militia"
+		location=311	division_template="Pony's Militia"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_1={owner="SGR" creator="SGR"}}
+	}
+	division={	#Majestic Gardens#
+		name="Militia"
+		location=3217	division_template="Pony's Militia"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_1={owner="SGR" creator="SGR"}}
+	}
+	division={	#Marshmallow#
+		name="Militia"
+		location=200	division_template="Pony's Militia"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_1={owner="SGR" creator="SGR"}}
+	}
+	division={	#Hoofbeat Krai#
+		name="Forest Brothers"
+		location=11546	division_template="Pony's Militia"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_1={owner="SGR" creator="SGR"}}
+	}
+	division={	#Caramel Marks#
+		name="Militia"
+		location=3584	division_template="Pony's Militia"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_1={owner="SGR" creator="SGR"}}
+	}
+	division={	#Stalliongrad#
+		name="Militia"
+		location=488	division_template="Pony's Militia"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_1={owner="SGR" creator="SGR"}}
+	}
+	division={	#Kobilkyno#
+		name="Kopytnaya"
+		location=6925	division_template="Kopytnaya Diviziya"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_1={owner="SGR" creator="SGR"}}
+	}
+	division={	#Zakatnie Lands#
+		name="Kopytnaya"
+		location=351	division_template="Kopytnaya Diviziya"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_1={owner="SGR" creator="SGR"}}
+	}
+	division={	#Baicall#
+		name="Kopytnaya"
+		location=9094	division_template="Kopytnaya Diviziya"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_1={owner="SGR" creator="SGR"}}
+	}
+	division={	#Bird Territory#
+		name="Pegasov"
+		location=869	division_template="Diviziya Pegasov"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_1={owner="SGR" creator="SGR"}}
+	}
+	division={	#Caramel Marks#
+		name="Pervaya Pegasiya"
+		location=3159	division_template="Diviziya Pegasov"
+		start_experience_factor=0.1	start_equipment_factor=0.75
+		force_equipment_variants={melee_equipment_1={owner="SGR" creator="SGR"}}
+	}
+	division={	#Stalliongrad#
+		name="Brigada Krepkaya Bronya"
+		location=9433	division_template="Tankovaya Brigada"
+		start_experience_factor=0.1	start_equipment_factor=0.3
+		force_equipment_variants={melee_equipment_1={owner="SGR" creator="SGR"}}
+	}
 }

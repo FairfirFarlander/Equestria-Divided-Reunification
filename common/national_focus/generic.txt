@@ -1,81 +1,81 @@
 	shared_focus={
-		id=EDRpolitical_effort icon=GFX_goal_generic_demand_territory
-		x=-4 y=-7 cost=10 ai_will_do={factor=40}
+		id=political_effort icon=GFX_goal_generic_demand_territory
+		x=2 y=-7 cost=10 ai_will_do={factor=40}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDRpolitical_effort"
+			log="[GetDateText]: [Root.GetName]: Focus political_effort"
 			add_political_power=120
 		}
 		search_filters={FOCUS_FILTER_POLITICAL}
 	}
 	shared_focus={
-		id=EDRcollectivist_ethos icon=GFX_goal_generic_national_unity
-		relative_position_id=EDRpolitical_effort
+		id=collectivist_ethos icon=GFX_goal_generic_national_unity
+		relative_position_id=political_effort
 		x=-1 y=1 cost=10
-		prerequisite={focus=EDRpolitical_effort}
-		mutually_exclusive={focus=EDRliberty_ethos}
+		prerequisite={focus=political_effort}
+		mutually_exclusive={focus=liberty_ethos}
 		available={OR={
 			has_government=fascism
 			has_government=communism
 			has_government=neutrality
 		}}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDRcollectivist_ethos"
+			log="[GetDateText]: [Root.GetName]: Focus collectivist_ethos"
 			add_ideas=collectivist_ethos_focus
 		}
 		search_filters={FOCUS_FILTER_POLITICAL}
 	}
 	shared_focus={
-		id=EDRliberty_ethos
+		id=liberty_ethos
 		icon=GFX_goal_support_democracy
-		relative_position_id=EDRpolitical_effort
+		relative_position_id=political_effort
 		x=1 y=1 cost=10
-		prerequisite={focus=EDRpolitical_effort}
-		mutually_exclusive={focus=EDRcollectivist_ethos}
+		prerequisite={focus=political_effort}
+		mutually_exclusive={focus=collectivist_ethos}
 		available={OR={
 			has_government=democratic
 			has_government=neutrality
 		}}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDRliberty_ethos"
+			log="[GetDateText]: [Root.GetName]: Focus liberty_ethos"
 			add_ideas=liberty_ethos_focus
 		}
 	}
 	shared_focus={
-		id=EDRnationalism_focus icon=GFX_goal_support_fascism
-		relative_position_id=EDRcollectivist_ethos
+		id=nationalism_focus icon=GFX_goal_support_fascism
+		relative_position_id=collectivist_ethos
 		x=-2 y=1 cost=10
-		prerequisite={focus=EDRcollectivist_ethos}
-		mutually_exclusive={focus=EDRinternationalism_focus}
+		prerequisite={focus=collectivist_ethos}
+		mutually_exclusive={focus=internationalism_focus}
 		available={OR={has_government=fascism has_government=neutrality}}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDRnationalism_focus"
+			log="[GetDateText]: [Root.GetName]: Focus nationalism_focus"
 			add_ideas=nationalism
 		}
 		search_filters={FOCUS_FILTER_POLITICAL}
 	}
 	shared_focus={
-		id=EDRinternationalism_focus icon=GFX_goal_support_communism
-		relative_position_id=EDRcollectivist_ethos
+		id=internationalism_focus icon=GFX_goal_support_communism
+		relative_position_id=collectivist_ethos
 		x=0 y=1 cost=10
-		prerequisite={focus=EDRcollectivist_ethos}
-		mutually_exclusive={focus=EDRnationalism_focus}
+		prerequisite={focus=collectivist_ethos}
+		mutually_exclusive={focus=nationalism_focus}
 		available={OR={
 			has_government=communism
 			has_government=neutrality
 		}}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDRinternationalism_focus"
+			log="[GetDateText]: [Root.GetName]: Focus internationalism_focus"
 			add_timed_idea={idea=internationalism days=720}
 		}
 	}
 	shared_focus={
-		id=EDRneutrality_focus icon=GFX_goal_generic_neutrality_focus
-		relative_position_id=EDRliberty_ethos
+		id=neutrality_focus icon=GFX_goal_generic_neutrality_focus
+		relative_position_id=liberty_ethos
 		x=0 y=1 cost=10
-		prerequisite={focus=EDRliberty_ethos}
-		mutually_exclusive={focus=EDRinterventionism_focus}
+		prerequisite={focus=liberty_ethos}
+		mutually_exclusive={focus=interventionism_focus}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDRneutrality_focus"
+			log="[GetDateText]: [Root.GetName]: Focus neutrality_focus"
 			if={
 				limit={NOT={has_idea=neutrality_idea}}
 				add_ideas=neutrality_idea
@@ -85,13 +85,13 @@
 		search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION}
 	}
 	shared_focus={
-		id=EDRinterventionism_focus icon=GFX_goal_generic_political_pressure
-		relative_position_id=EDRliberty_ethos
+		id=interventionism_focus icon=GFX_goal_generic_political_pressure
+		relative_position_id=liberty_ethos
 		x=2 y=1 cost=10
-		prerequisite={focus=EDRliberty_ethos}
-		mutually_exclusive={focus=EDRneutrality_focus}
+		prerequisite={focus=liberty_ethos}
+		mutually_exclusive={focus=neutrality_focus}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDRinterventionism_focus"
+			log="[GetDateText]: [Root.GetName]: Focus interventionism_focus"
 			if={
 				limit={has_idea=neutrality_idea}
 				remove_ideas=neutrality_idea
@@ -102,12 +102,12 @@
 		search_filters={FOCUS_FILTER_POLITICAL}
 	}
 	shared_focus={
-		id=EDRmilitarism icon=GFX_goal_generic_political_pressure
-		relative_position_id=EDRnationalism_focus
+		id=militarism icon=GFX_goal_generic_political_pressure
+		relative_position_id=nationalism_focus
 		x=0 y=1 cost=10
-		prerequisite={focus=EDRnationalism_focus}
+		prerequisite={focus=nationalism_focus}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDRmilitarism"
+			log="[GetDateText]: [Root.GetName]: Focus militarism"
 			if={
 				limit={has_idea=neutrality_idea}
 				remove_ideas=neutrality_idea
@@ -119,12 +119,12 @@
 		search_filters={FOCUS_FILTER_MANPOWER FOCUS_FILTER_RESISTANCE FOCUS_FILTER_ARMY_BONUS}
 	}
 	shared_focus={
-		id=EDRpolitical_correctness icon=GFX_goal_generic_dangerous_deal
-		relative_position_id=EDRinternationalism_focus
+		id=political_correctness icon=GFX_goal_generic_dangerous_deal
+		relative_position_id=internationalism_focus
 		x=0 y=1 cost=10
-		prerequisite={focus=EDRinternationalism_focus}
+		prerequisite={focus=internationalism_focus}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDRpolitical_correctness"
+			log="[GetDateText]: [Root.GetName]: Focus political_correctness"
 			if={
 				limit={has_idea=neutrality_idea}
 				remove_ideas=neutrality_idea
@@ -135,33 +135,33 @@
 		search_filters={FOCUS_FILTER_RESISTANCE FOCUS_FILTER_POLITICAL}
 	}
 	shared_focus={
-		id=EDRdeterrence icon=GFX_goal_generic_defence
-		relative_position_id=EDRneutrality_focus
+		id=deterrence icon=GFX_goal_generic_defence
+		relative_position_id=neutrality_focus
 		x=0 y=1 cost=10
-		prerequisite={focus=EDRneutrality_focus}
+		prerequisite={focus=neutrality_focus}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDRdeterrence"
+			log="[GetDateText]: [Root.GetName]: Focus deterrence"
 			add_ideas=deterrence
 		}
 		search_filters={FOCUS_FILTER_INDUSTRY}
 	}
 	shared_focus={
-		id=EDRvolunteer_corps icon=GFX_goal_generic_allies_build_infantry
-		relative_position_id=EDRinterventionism_focus
+		id=volunteer_corps icon=GFX_goal_generic_allies_build_infantry
+		relative_position_id=interventionism_focus
 		x=0 y=1 cost=10
-		prerequisite={focus=EDRinterventionism_focus}
+		prerequisite={focus=interventionism_focus}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDRvolunteer_corps"
+			log="[GetDateText]: [Root.GetName]: Focus volunteer_corps"
 			add_ideas=volunteer_corps_focus
 		}
 	}
 	shared_focus={
-		id=EDRmilitary_youth icon=GFX_goal_generic_more_territorial_claims
-		relative_position_id=EDRmilitarism
+		id=military_youth icon=GFX_goal_generic_more_territorial_claims
+		relative_position_id=militarism
 		x=0 y=1 cost=10
-		prerequisite={focus=EDRmilitarism}
+		prerequisite={focus=militarism}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDRmilitary_youth"
+			log="[GetDateText]: [Root.GetName]: Focus military_youth"
 			add_ideas=military_youth_focus
 			if={limit={has_government=fascism}
 				add_popularity={ideology=fascism popularity=0.2}
@@ -173,45 +173,45 @@
 		search_filters={FOCUS_FILTER_MANPOWER}
 	}
 	shared_focus={
-		id=EDRindoctrination_focus icon=GFX_goal_generic_propaganda
-		relative_position_id=EDRpolitical_correctness
+		id=indoctrination_focus icon=GFX_goal_generic_propaganda
+		relative_position_id=political_correctness
 		x=0 y=1 cost=10
-		prerequisite={focus=EDRpolitical_correctness}
+		prerequisite={focus=political_correctness}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDRindoctrination_focus"
+			log="[GetDateText]: [Root.GetName]: Focus indoctrination_focus"
 			add_ideas=indoctrination_focus
 			add_political_power=150
 		}
 		search_filters={FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
 	}
 	shared_focus={
-		id=EDRforeign_expeditions icon=GFX_goal_generic_more_territorial_claims
-		relative_position_id=EDRvolunteer_corps
+		id=foreign_expeditions icon=GFX_goal_generic_more_territorial_claims
+		relative_position_id=volunteer_corps
 		x=0 y=1 cost=10
-		prerequisite={focus=EDRvolunteer_corps}
+		prerequisite={focus=volunteer_corps}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDRforeign_expeditions"
+			log="[GetDateText]: [Root.GetName]: Focus foreign_expeditions"
 			add_ideas=foreign_expeditions_focus
 		}
 	}
 	shared_focus={
-		id=EDRparamilitarism icon=GFX_goal_generic_military_sphere
-		relative_position_id=EDRmilitary_youth
+		id=paramilitarism icon=GFX_goal_generic_military_sphere
+		relative_position_id=military_youth
 		x=0 y=1 cost=10
-		prerequisite={focus=EDRmilitary_youth}
+		prerequisite={focus=military_youth}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDRparamilitarism"
+			log="[GetDateText]: [Root.GetName]: Focus paramilitarism"
 			add_ideas=paramilitarism_focus
 		}
 		search_filters={FOCUS_FILTER_ARMY_BONUS}
 	}
 	shared_focus={
-		id=EDRpolitical_commissars icon=GFX_goal_generic_forceful_treaty
-		relative_position_id=EDRindoctrination_focus
+		id=political_commissars icon=GFX_goal_generic_forceful_treaty
+		relative_position_id=indoctrination_focus
 		x=0 y=1 cost=10
-		prerequisite={focus=EDRindoctrination_focus}
+		prerequisite={focus=indoctrination_focus}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDRpolitical_commissars"
+			log="[GetDateText]: [Root.GetName]: Focus political_commissars"
 			add_ideas=political_commissars_focus
 			if={limit={has_government=fascism}
 				add_popularity={ideology=fascism popularity=0.2}
@@ -224,17 +224,17 @@
 		search_filters={FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_POLITICAL}
 	}
 	shared_focus={
-		id=EDRwhy_we_fight icon=GFX_goal_generic_propaganda
-		relative_position_id=EDRdeterrence
+		id=why_we_fight icon=GFX_goal_generic_propaganda
+		relative_position_id=deterrence
 		x=0 y=2 cost=10
-		prerequisite={focus=EDRforeign_expeditions focus=EDRdeterrence}
+		prerequisite={focus=foreign_expeditions focus=deterrence}
 		available={OR={
 			threat>0.75
 			has_defensive_war=yes
 		}}
 		continue_if_invalid=yes
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDRwhy_we_fight"
+			log="[GetDateText]: [Root.GetName]: Focus why_we_fight"
 			add_ideas=why_we_fight_focus
 			custom_effect_tooltip=why_we_fight_effect
 			hidden_effect={if={
@@ -245,12 +245,12 @@
 		search_filters={FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY}
 	}
 	shared_focus={
-		id=EDRideological_fanaticism icon=GFX_goal_generic_demand_territory
-		relative_position_id=EDRpolitical_commissars
+		id=ideological_fanaticism icon=GFX_goal_generic_demand_territory
+		relative_position_id=political_commissars
 		x=-1 y=1 cost=10
-		prerequisite={focus=EDRparamilitarism focus=EDRpolitical_commissars}
+		prerequisite={focus=paramilitarism focus=political_commissars}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDRideological_fanaticism"
+			log="[GetDateText]: [Root.GetName]: Focus ideological_fanaticism"
 			add_ideas=ideological_fanaticism_focus
 			set_rule={can_create_factions=yes}
 			hidden_effect={
@@ -262,10 +262,10 @@
 		search_filters={FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT}
 	}
 	shared_focus={
-		id=EDRtechnology_sharing icon=GFX_goal_generic_scientific_exchange
-		relative_position_id=EDRwhy_we_fight
+		id=technology_sharing icon=GFX_goal_generic_scientific_exchange
+		relative_position_id=why_we_fight
 		x=-1 y=2 cost=10
-		prerequisite={focus=EDRideological_fanaticism focus=EDRwhy_we_fight}
+		prerequisite={focus=ideological_fanaticism focus=why_we_fight}
 		available={
 			has_war=yes
 			is_in_faction=yes
@@ -275,7 +275,7 @@
 			}
 		}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus EDRtechnology_sharing"
+			log="[GetDateText]: [Root.GetName]: Focus technology_sharing"
 			if={limit={original_research_slots<3}
 				add_research_slot=1
 			}

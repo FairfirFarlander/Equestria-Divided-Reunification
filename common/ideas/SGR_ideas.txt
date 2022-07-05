@@ -1,0 +1,45 @@
+ideas={
+	country={
+		SGR_famine_0={
+			allowed={always=no}
+			picture=severe_famine
+			removal_cost=-1
+			modifier={
+				political_power_gain=-0.5
+				conscription_factor=-0.2
+				consumer_goods_factor=0.12
+				stability_factor=-0.25
+				war_support_factor=-0.1
+				industrial_capacity_factory=-0.17
+				industrial_capacity_dockyard=-0.17
+			}
+		}
+		SGR_refugee_crisis_0={
+			allowed={always=no}
+			picture=CHN_equestria_chaos3
+			removal_cost=-1
+			modifier={
+				political_power_gain=-0.2
+				weekly_manpower=369
+				stability_weekly=-0.005
+				democratic_drift=0.05
+			}
+		}
+		SGR_refugee_crisis_1={
+			allowed={always=no}
+			picture=CHN_equestria_chaos2
+			removal_cost=-1
+			modifier={
+				
+			}
+		}
+		SGR_refugee_crisis_2={
+			allowed={always=no}
+			picture=CHN_equestria_chaos1
+			removal_cost=-1
+			modifier={
+				
+			}
+		}
+	}
+}
