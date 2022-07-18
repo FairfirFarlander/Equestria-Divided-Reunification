@@ -43,3 +43,4 @@ recruit_character=CRL_sakira
 recruit_character=CRL_dust_snowfall
 recruit_character=CRL_lake_frost
 #NOTES#
+#Make a Quebuck Rebellion - Mattor iz estatic!
