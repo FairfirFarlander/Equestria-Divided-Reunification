@@ -1,6 +1,6 @@
 #Story Tree Main
 	shared_focus={	#Under Their Domain
-		id=HAH_S00 #icon=
+		id=HAH_S00 icon=GFX_goal_authoritarian
 		x=-9 y=0 cost=8
 		search_filters={}
 		select_effect={country_event=EDR_evt_gen.000}	#Event Verbosity
@@ -11,7 +11,7 @@
 		}
 	}
 	shared_focus={	#A Demand for Timber and Stone
-		id=HAH_S01A #icon=
+		id=HAH_S01A icon=GFX_goal_generic_forestry
 		x=-2 y=1 cost=2 relative_position_id=HAH_S00
 		search_filters={}
 		prerequisite={focus=HAH_S00}
@@ -29,7 +29,7 @@
 		}
 	}
 	shared_focus={	#Grain Quotas
-		id=HAH_S01B #icon=
+		id=HAH_S01B icon=GFX_YAL_cooperative_farms_and_mines
 		x=0 y=1 cost=2 relative_position_id=HAH_S00
 		search_filters={}
 		prerequisite={focus=HAH_S00}
@@ -40,7 +40,7 @@
 		}
 	}
 	shared_focus={	#A Quota for Steel
-		id=HAH_S01C #icon=
+		id=HAH_S01C icon=GFX_focus_generic_steel
 		x=2 y=1 cost=2 relative_position_id=HAH_S00
 		search_filters={}
 		prerequisite={focus=HAH_S00}
@@ -56,7 +56,7 @@
 		}
 	}
 	shared_focus={	#Now On to Business
-		id=HAH_S02 #icon=
+		id=HAH_S02 icon=GFX_goal_generic_intelligence_exchange_pony
 		x=0 y=2 cost=2 relative_position_id=HAH_S00
 		search_filters={}
 		prerequisite={focus=HAH_S01A}
@@ -70,8 +70,8 @@
 		}
 	}
 	shared_focus={	#A Grander Library
-		id=HAH_D03A #icon=
-		x=-3 y=1 cost=2 relative_position_id=HAH_S02
+		id=HAH_D03A icon=GFX_goal_bookstack
+		x=-4 y=1 cost=2 relative_position_id=HAH_S02
 		search_filters={}
 		prerequisite={focus=HAH_S02}
 		ai_will_do={factor=80}
@@ -87,8 +87,8 @@
 		}
 	}
 	shared_focus={	#The Glory of the Theatre
-		id=HAH_D03B #icon=
-		x=-1 y=1 cost=2 relative_position_id=HAH_S02
+		id=HAH_D03B icon=GFX_focus_presto
+		x=-2 y=1 cost=2 relative_position_id=HAH_S02
 		search_filters={}
 		prerequisite={focus=HAH_S02}
 		ai_will_do={factor=80}
@@ -102,9 +102,9 @@
 			}
 		}
 	}
-	shared_focus={	#The Glory of the Theatre
-		id=HAH_D03C #icon=
-		x=1 y=1 cost=2 relative_position_id=HAH_S02
+	shared_focus={	#Statues to Their Gods
+		id=HAH_D03C icon=GFX_goal_EQS_TNO_meet_leaders
+		x=2 y=1 cost=2 relative_position_id=HAH_S02
 		search_filters={}
 		prerequisite={focus=HAH_S02}
 		ai_will_do={factor=80}
@@ -121,14 +121,14 @@
 		}
 	}
 	shared_focus={	#Whispering Wisp Manner
-		id=HAH_D03D #icon=
-		x=3 y=1 cost=2 relative_position_id=HAH_S02
+		id=HAH_D03D icon=GFX_goal_generic_castle
+		x=4 y=1 cost=2 relative_position_id=HAH_S02
 		search_filters={}
 		prerequisite={focus=HAH_S02}
 		ai_will_do={factor=80}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_D03D"
-			country_event=HAH_evt_a01.035	#A Ball
+			country_event=HAH_evt_a01.036	#A Ball
 			add_to_variable={HAH_back_to_business=1}
 			if={
 				limit={check_variable={HAH_back_to_business=4}}
@@ -137,13 +137,110 @@
 		}
 	}
 	shared_focus={	#Bubble Bubble
-		id=HAH_S04 #icon=
-		x=0 y=2 cost=2 relative_position_id=HAH_S02
+		id=HAH_S04A icon=GFX_goal_water
+		x=-1 y=2 cost=2 relative_position_id=HAH_S02
 		search_filters={}
 		prerequisite={focus=HAH_S02}
 		available={has_country_flag=HAH_business_concluded}
 		ai_will_do={factor=80}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HAH_S04"
+			log="[GetDateText]: [Root.GetName]: focus HAH_S04A"
+			country_event=HAH_evt_a01.041
+		}
+	}
+	shared_focus={	#Toil and Trouble
+		id=HAH_S04B icon=GFX_focus_indy_zebra_potion_masters
+		x=1 y=2 cost=2 relative_position_id=HAH_S02
+		search_filters={}
+		prerequisite={focus=HAH_S02}
+		available={
+			has_country_flag=HAH_business_concluded
+			has_completed_focus=HAH_S04A
+		}
+		ai_will_do={factor=80}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAH_S04B"
+			country_event=HAH_evt_a01.042
+		}
+	}
+	shared_focus={	#Willow's Solution
+		id=HAH_S05 icon=GFX_goal_golden_lotus
+		x=0 y=3 cost=2 relative_position_id=HAH_S02
+		search_filters={}
+		prerequisite={focus=HAH_S04A}
+		prerequisite={focus=HAH_S04B}
+		ai_will_do={factor=80}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAH_S05"
+			country_event=HAH_evt_a01.051
+		}
+	}
+	shared_focus={	#An Unforseen Issue
+		id=HAH_S06A icon=GFX_goal_BRF_mason_eye
+		x=-1 y=1 cost=2 relative_position_id=HAH_S05
+		search_filters={}
+		prerequisite={focus=HAH_S05}
+		ai_will_do={factor=80}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAH_S06A"
+			country_event=HAH_evt_a02.061
+		}
+	}
+	shared_focus={	#To Protect Those Who Are Yet to be Tested On
+		id=HAH_S06B icon=GFX_goal_academy_of_medicine
+		x=1 y=1 cost=2 relative_position_id=HAH_S05
+		search_filters={}
+		prerequisite={focus=HAH_S05}
+		ai_will_do={factor=80}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAH_S06B"
+			country_event=HAH_evt_a02.062
+		}
+	}
+	shared_focus={	#The Masks
+		id=HAH_S07A #icon=
+		x=-2 y=2 cost=2 relative_position_id=HAH_S05
+		search_filters={}
+		prerequisite={focus=HAH_S06A}
+		prerequisite={focus=HAH_S06B}
+		ai_will_do={factor=80}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAH_S07A"
+			#country_event=HAH_evt_a02.071
+		}
+	}
+	shared_focus={	#The Breads
+		id=HAH_S07B #icon=
+		x=0 y=2 cost=2 relative_position_id=HAH_S05
+		search_filters={}
+		prerequisite={focus=HAH_S06A}
+		prerequisite={focus=HAH_S06B}
+		ai_will_do={factor=80}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAH_S07B"
+			MSN={add_opinion_modifier={target=HAH modifier=moonstar_seeth_opinion}}
+			MSE={add_opinion_modifier={target=HAH modifier=moonstar_seeth_opinion}}
+			MSS={add_opinion_modifier={target=HAH modifier=moonstar_seeth_opinion}}
+			add_stability=0.02
+		}
+	}
+	shared_focus={	#The Wine
+		id=HAH_S07C #icon=
+		x=2 y=2 cost=2 relative_position_id=HAH_S05
+		search_filters={}
+		prerequisite={focus=HAH_S06A}
+		prerequisite={focus=HAH_S06B}
+		ai_will_do={factor=80}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAH_S07C"
+			add_stability=0.03
+			add_tech_bonus={
+				name=HAH_earthy_bonus
+				bonus=0.5	uses=1
+				technology=tech_pony_misc3
+				technology=tech_pony_misc_a2
+				technology=tech_pony_misc_b
+				technology=tech_pony_misc_c2
+			}
 		}
 	}

@@ -1,12 +1,97 @@
 HAH_gathering_materials={
-	HAH_gathing_mah_shitz={
+	HAH_gathering_mah_shitz={
 		#icon=
 		available={hidden_trigger={always=no}}
 	}
-}
-HAH_bread_and_circuses={
-	HAH_gimmie_bread_and_circuses={
+	HAH_gather_one={	#Letter to an Old Friend
 		#icon=
-		available={hidden_trigger={always=no}}
+		fire_only_once=yes
+		days_remove=28
+		complete_effect={
+			log="[GetDateText]: [Root.GetName]: decision HAH_dummy"
+			set_country_flag=HAH_ima_gathering_shiz
+		}
+		remove_effect={
+			log="[GetDateText]: [Root.GetName]: decision complete HAH_dummy"
+			add_to_variable={HAH_back_to_business=1}
+			clr_country_flag=HAH_ima_gathering_shiz
+			country_event={id=HAH_evt_a01.023 days=28}	#Letter to an Old Friend
+		}
+	}
+	HAH_gather_two={	#Shipping the Equipment Here
+		#icon=
+		fire_only_once=yes
+		days_remove=28
+		complete_effect={
+			log="[GetDateText]: [Root.GetName]: decision HAH_dummy"
+			set_country_flag=HAH_ima_gathering_shiz
+		}
+		remove_effect={
+			log="[GetDateText]: [Root.GetName]: decision complete HAH_dummy"
+			add_to_variable={HAH_back_to_business=1}
+			clr_country_flag=HAH_ima_gathering_shiz
+			country_event={id=HAH_evt_a01.024 days=28}	#Shipping the Equipment Here
+		}
+	}
+	HAH_gather_three={	#Acquiring the Proper Ingredeints
+		#icon=
+		fire_only_once=yes
+		days_remove=28
+		complete_effect={
+			log="[GetDateText]: [Root.GetName]: decision HAH_dummy"
+			set_country_flag=HAH_ima_gathering_shiz
+		}
+		remove_effect={
+			log="[GetDateText]: [Root.GetName]: decision complete HAH_dummy"
+			add_to_variable={HAH_back_to_business=1}
+			clr_country_flag=HAH_ima_gathering_shiz
+			country_event={id=HAH_evt_a01.025 days=28}	#Acquiring the Proper Ingredients
+		}
+	}
+	HAH_gather_four={	#Acquiring the Most Important Ingredient
+		#icon=
+		fire_only_once=yes
+		days_remove=28
+		complete_effect={
+			log="[GetDateText]: [Root.GetName]: decision HAH_dummy"
+			set_country_flag=HAH_ima_gathering_shiz
+		}
+		remove_effect={
+			log="[GetDateText]: [Root.GetName]: decision complete HAH_dummy"
+			add_to_variable={HAH_back_to_business=1}
+			clr_country_flag=HAH_ima_gathering_shiz
+			country_event={id=HAH_evt_a01.026 days=28}	#Acquiring the Most Important Ingredient
+		}
+	}
+}
+HAH_bread_and_circuses={	#Bread and Circuses
+	HAH_grand_play={	#Plays of Various Names
+		#icon=
+		cost=30
+		fire_only_once=no
+		days_remove=7
+		days_re_enable=28
+		complete_effect={
+			log="[GetDateText]: [Root.GetName]: decision HAH_grand_play"
+		}
+		remove_effect={
+			add_stability=0.02
+		}
+	}
+	HAH_grand_fesitval={	#Festivals of Various Seasons
+		#icon=
+		cost=50
+		fire_only_once=no
+		days_remove=28
+		days_re_enable=56
+		modifier={
+			production_speed_buildings_factor=-0.2
+			stability_weekly=0.01
+			industrial_capacity_factory=-0.2
+		}
+		complete_effect={
+			log="[GetDateText]: [Root.GetName]: decision HAH_grand_fesitval"
+		}
+		#remove_effect={} #Add Events Later
 	}
 }

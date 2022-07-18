@@ -1,15 +1,56 @@
 characters={
-	HAH_generic_pony={
-		name=HAH_generic_pony
-		gender=female
+	HAH_misty_wisps={
+		name=HAH_misty_wisps
 		portraits={
-			civilian={large="gfx/leaders/leader_unknown.dds"}
+			civilian={large="gfx/leaders/HAH/HAH_misty_wisps.dds"}
 		}
-		country_leader={
-			desc="HAH_gpony_poli_desc"	ideology=fascism_ideology
+		country_leader={	#Can switch to neofeudal
+			desc="HAH_mwisps_poli_desc"	ideology=neofeudalism
 			expire="1030.03.13.08"
 			traits={}
 			id=-1
+		}
+	}
+	HAH_willow_branch={
+		name=HAH_willow_branch
+		portraits={
+			civilian={large="gfx/leaders/HAH/HAH_willow_branch.dds"}
+		}
+		country_leader={
+			desc="HAH_wbranch_poli_desc"	ideology=harmonic_theocracy	#esotericism
+			expire="1030.03.13.08"
+			traits={}
+			id=-1
+		}
+	}
+	HAH_fiddle_pick={
+		name=HAH_fiddle_pick
+		portraits={
+			army={large="gfx/leaders/HAH/HAH_fiddle_pick.dds"}
+		}
+		corps_commander={	#sucks at defense, good at offense
+			desc="HAH_fpick_mili_desc"
+			skill=1 attack_skill=3	defense_skill=1
+			planning_skill=1	logistics_skill=1
+			traits={pony_race_trait}
+		}
+	}
+	HAH_string_bow={
+		name=HAH_string_bow
+		portraits={
+			army={large="gfx/leaders/HAH/HAH_string_bow.dds"}
+		}
+		country_leader={
+			desc="HAH_sbow_poli_desc"	ideology=equalism
+			expire="1030.03.13.08"
+			traits={}
+			id=-1
+		}
+		corps_commander={	#sucks at offense, good at defense
+			desc="HAH_sbow_mili_desc"
+			skill=1 attack_skill=1	defense_skill=3
+			planning_skill=1	logistics_skill=1
+			traits={pony_race_trait}
 		}
 	}
 }

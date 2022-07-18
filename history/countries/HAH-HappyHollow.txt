@@ -28,8 +28,11 @@ set_convoys=2
 set_rule={can_generate_female_aces=yes}
 set_popularities={fascism=40 communism=19 neutrality=22 democratic=19}
 set_politics={ruling_party=fascism}
-recruit_character=HAH_generic_pony
+recruit_character=HAH_misty_wisps
+recruit_character=HAH_willow_branch
+recruit_character=HAH_fiddle_pick
+recruit_character=HAH_string_bow
 #NOTES#
 #Joy, Harmony, Tranquility (Tranq)
-#remove 1 convoy later when the doctor takes charge
+#Remove 1 convoy later when the doctor takes charge
 #Popularities based off of the Battle of Britain and the Clone War
