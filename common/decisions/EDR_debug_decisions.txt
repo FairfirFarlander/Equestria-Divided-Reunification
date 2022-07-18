@@ -3,6 +3,10 @@ EDR_debug_decisions={
 		#icon=
 		available={hidden_trigger={always=no}}
 	}
+	miller_flour={
+		#icon=
+		complete_effect={one_random_arms_factory=yes}
+	}
 	dockyard_please={
 		#icon=
 		visible={
@@ -11,6 +15,18 @@ EDR_debug_decisions={
 		}
 		complete_effect={one_random_dockyard=yes}
 	}
+	gimmie_dreadnut={
+		#icon=
+		complete_effect={
+			if={limit={has_dlc="Man the Guns"}
+				set_technology={pre_dreadnoughts=1}
+			}
+			else={
+				set_technology={pre_dreadnoughts_nomtg=1}
+			}
+		}
+	}
+	
 }
 EDR_debug_toggle_minors_decisions={
 	EDR_major_restricted_land_decisions_on={

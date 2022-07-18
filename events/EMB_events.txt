@@ -2,7 +2,7 @@ add_namespace=EMB_evt_a01
 	country_event={		#Gathering Council of Ember
 		id=EMB_evt_a01.001
 		title=EMB_evt_a01.001.t	desc=EMB_evt_a01.001.d	#picture=
-		is_triggered_only=yes	#timeout_days=3
+		is_triggered_only=yes
 		option={
 			name=EMB_evt_a01.001.a
 			add_ideas=EMB_council_narratek_intrusion
@@ -156,7 +156,7 @@ add_namespace=EMB_evt_a01
 	country_event={		#A Twisted Natural Light
 		id=EMB_evt_a01.023
 		title=EMB_evt_a01.023.t	desc=EMB_evt_a01.023.d	#picture=
-		is_triggered_only=yes	#timeout_days=3
+		is_triggered_only=yes
 		option={
 			name=EMB_evt_a01.023.a
 			add_popularity={ideology=fascism popularity=0.05}
@@ -179,7 +179,7 @@ add_namespace=EMB_evt_a01
 	country_event={		#Power of the Underground
 		id=EMB_evt_a01.024
 		title=EMB_evt_a01.024.t	desc=EMB_evt_a01.024.d	#picture=
-		is_triggered_only=yes	#timeout_days=3
+		is_triggered_only=yes
 		option={
 			name=EMB_evt_a01.024.a
 			add_popularity={ideology=communism popularity=0.05}
@@ -200,7 +200,7 @@ add_namespace=EMB_evt_a01
 	country_event={		#A Special Session
 		id=EMB_evt_a01.031
 		title=EMB_evt_a01.031.t	desc=EMB_evt_a01.031.d	#picture=
-		is_triggered_only=yes	#timeout_days=3
+		is_triggered_only=yes
 		option={
 			name=EMB_evt_a01.031.a
 		}
@@ -213,7 +213,7 @@ add_namespace=EMB_evt_a01
 	country_event={		#They Are Correct
 		id=EMB_evt_a01.041
 		title=EMB_evt_a01.041.t	desc=EMB_evt_a01.041.d	#picture=
-		is_triggered_only=yes	#timeout_days=3
+		is_triggered_only=yes
 		option={
 			name=EMB_evt_a01.041.a
 			add_stability=-0.05
@@ -232,7 +232,7 @@ add_namespace=EMB_evt_a01
 	country_event={		#Restlessness on the Rise
 		id=EMB_evt_a01.042
 		title=EMB_evt_a01.042.t	desc=EMB_evt_a01.042.d	#picture=
-		is_triggered_only=yes	#timeout_days=3
+		is_triggered_only=yes
 		option={
 			name=EMB_evt_a01.042.a
 			add_stability=-0.05
@@ -265,7 +265,7 @@ add_namespace=EMB_evt_a01
 	country_event={		#The Housing Crisis
 		id=EMB_evt_a01.043
 		title=EMB_evt_a01.043.t	desc=EMB_evt_a01.043.d	#picture=
-		is_triggered_only=yes	#timeout_days=3
+		is_triggered_only=yes
 		option={
 			name=EMB_evt_a01.043.a
 			36={
@@ -303,7 +303,7 @@ add_namespace=EMB_evt_a01
 	country_event={		#Clearing the Council Villages
 		id=EMB_evt_a01.044
 		title=EMB_evt_a01.044.t	desc=EMB_evt_a01.044.d	#picture=
-		is_triggered_only=yes	#timeout_days=3
+		is_triggered_only=yes
 		option={
 			name=EMB_evt_a01.044.a
 			36={add_manpower=-20}
@@ -326,7 +326,7 @@ add_namespace=EMB_evt_a01
 	country_event={		#Mother Nightshade
 		id=EMB_evt_a01.051
 		title=EMB_evt_a01.051.t	desc=EMB_evt_a01.051.d	#picture=
-		is_triggered_only=yes	#timeout_days=3
+		is_triggered_only=yes
 		option={
 			name=EMB_evt_a01.051.a
 			add_popularity={ideology=fascism popularity=0.03}
@@ -347,7 +347,7 @@ add_namespace=EMB_evt_a01
 	country_event={		#Risk of Famine
 		id=EMB_evt_a01.052
 		title=EMB_evt_a01.052.t	desc=EMB_evt_a01.052.d	#picture=
-		is_triggered_only=yes	#timeout_days=3
+		is_triggered_only=yes
 		option={
 			name=EMB_evt_a01.052.a
 			add_stability=-0.15
@@ -372,7 +372,7 @@ add_namespace=EMB_evt_a01
 	country_event={		#The March
 		id=EMB_evt_a01.061
 		title=EMB_evt_a01.061.t	desc=EMB_evt_a01.061.d	#picture=
-		is_triggered_only=yes	#timeout_days=3
+		is_triggered_only=yes
 		option={
 			name=EMB_evt_a01.061.a
 			add_ideas=EMB_the_march
@@ -391,7 +391,7 @@ add_namespace=EMB_evt_a01
 	country_event={		#Reserved Event
 		id=EMB_evt_a01.062
 		title=EMB_evt_a01.062.t	desc=EMB_evt_a01.062.d	#picture=
-		is_triggered_only=yes	#timeout_days=3
+		is_triggered_only=yes
 		option={
 			name=EMB_evt_a01.062.a
 		}
@@ -404,7 +404,7 @@ add_namespace=EMB_evt_a01
 	country_event={		#From March to a Riot
 		id=EMB_evt_a01.063
 		title=EMB_evt_a01.063.t	desc=EMB_evt_a01.063.d	#picture=
-		is_triggered_only=yes	#timeout_days=3
+		is_triggered_only=yes
 		option={
 			name=EMB_evt_a01.063.a
 			add_stability=-0.10
@@ -436,7 +436,7 @@ add_namespace=EMB_evt_a00#Non-story Events
 	country_event={		#The Beast of Embers
 		id=EMB_evt_a00.001
 		title=EMB_evt_a00.001.t	desc=EMB_evt_a00.001.d	#picture=
-		is_triggered_only=yes	#timeout_days=3
+		is_triggered_only=yes
 		option={
 			name=EMB_evt_a00.001.a
 			add_equipment_to_stockpile={type=train_equipment_1 amount=1 producer=EMB}

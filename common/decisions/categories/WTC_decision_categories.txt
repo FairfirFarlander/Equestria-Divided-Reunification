@@ -1,0 +1,11 @@
+WTC_purchase_technology={
+	icon=GFX_decision_generic_magic
+	priority=2
+	allowed={tag=WTC}
+	visible={
+		or={
+			has_country_flag=WTC_can_purchase_technology
+			is_debug=yes
+		}
+	}
+}
