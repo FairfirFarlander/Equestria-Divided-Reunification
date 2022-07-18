@@ -1,38 +1,38 @@
 ﻿l_english:
 ###Introduction###
 ##Bookmark##
-WTC_GATHERING_STORM_DESC:""
+WTC_GATHERING_STORM_DESC: ""
 ##Welcome Screen##
- EAW_WS_WTC:""
-  EAW_WS_WTC_desc:""
+ EAW_WS_WTC: ""
+  EAW_WS_WTC_desc: ""
 ###Characters###
 ##Leaders##
-WTC_dashing_habidasher:"Dashing Habidasher"
- WTC_dhabidasher_poli_desc:"§YPortrait By§!: Tiviyl"
+WTC_dashing_habidasher: "Dashing Habidasher"
+ WTC_dhabidasher_poli_desc: "§YPortrait By§!: Tiviyl"
 #Advisors#
- WTC_eloi_path:"Eloi Path"
-  WTC_epath_advi_desc:""
- WTC_zebrican_mercenary:"Zebrican Mercenary"
-  WTC_zmercenary_advi_desc:""
- WTC_saddle_arabian_mercenary:"Saddle Arabian Mercenary"
-  WTC_samercenary_advi_desc:""
+ WTC_eloi_path: "Eloi Path"
+  WTC_epath_advi_desc: ""
+ WTC_zebrican_mercenary: "Zebrican Mercenary"
+  WTC_zmercenary_advi_desc: ""
+ WTC_saddle_arabian_mercenary: "Saddle Arabian Mercenary"
+  WTC_samercenary_advi_desc: ""
 ###Country Name###
-WTC:"Manehattan Trading Company"
- WTC_DEF:"The Manehattan Trading Company"
- WTC_ADJ:"Maneglendi"
+WTC: "Manehattan Trading Company"
+ WTC_DEF: "The Manehattan Trading Company"
+ WTC_ADJ: "Maneglendi"
 ###Political Parties###
-WTC_fascism_party:"FAC"
- WTC_fascism_party_long:"FAC"
- WTC_communism_party:"COM"
-  WTC_communism_party_long:"COM"
- WTC_neutrality_party:"NEU"
-  WTC_neutrality_party_long:"NEU"
- WTC_democratic_party:"DEC"
-  WTC_democratic_party_long:"DEC"
+WTC_fascism_party: "FAC"
+ WTC_fascism_party_long: "FAC"
+ WTC_communism_party: "COM"
+  WTC_communism_party_long: "COM"
+ WTC_neutrality_party: "NEU"
+  WTC_neutrality_party_long: "NEU"
+ WTC_democratic_party: "DEC"
+  WTC_democratic_party_long: "DEC"
 ###Ideas###
 ###National Focuses###
 ##Storyline Tree##
-WTC_S00:"A Company Controlled From Afar"
- WTC_S00_desc:"This company was once called Haberdasher Shipping, but now it has been corrupted and changed to suit the needs of the Manehattans. And although the Company has been in my family for generations, I only am in charge because somepony in Manehattan allows it to be so. If I am to keep my family’s company and my own head, I must oblige them. Even if I must go down dark paths to do so."
-# WTC_:""
-#  WTC__desc:""
+WTC_S00: "A Company Controlled From Afar"
+ WTC_S00_desc: "This company was once called Haberdasher Shipping, but now it has been corrupted and changed to suit the needs of the Manehattans. And although the Company has been in my family for generations, I only am in charge because somepony in Manehattan allows it to be so. If I am to keep my family’s company and my own head, I must oblige them. Even if I must go down dark paths to do so."
+# WTC_: ""
+#  WTC__desc: ""

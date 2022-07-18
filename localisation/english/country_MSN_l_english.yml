@@ -1,33 +1,33 @@
 ﻿l_english:
 ###Introduction###
 ##Bookmark##
-MSN_GATHERING_STORM_DESC:""
+MSN_GATHERING_STORM_DESC: ""
 ##Welcome Screen##
- EAW_WS_MSN:""
-  EAW_WS_MSN_desc:""
+ EAW_WS_MSN: ""
+  EAW_WS_MSN_desc: ""
 ###Characters###
 ##Leaders##
-MSN_generic_pony:"Generic pony"
- MSN_generic_pony_desc:""
+MSN_generic_pony: "Generic pony"
+ MSN_generic_pony_desc: ""
 ##Commanders##
 ##Advisors##
 ###Country Name###
-MSN:"Neighagra"
- MSN_DEF:"The Slave State of Neighagra"
- MSN_ADJ:"Neighagran"
+MSN: "Neighagra"
+ MSN_DEF: "The Slave State of Neighagra"
+ MSN_ADJ: "Neighagran"
 ###Political Parties###
-#MSN_fascism_party:"CCU"
-# MSN_fascism_party_long:"Canterlot Council of Unicorns"
-# MSN_communism_party:"REB"
-#  MSN_communism_party_long:"Rebels"
-# MSN_neutrality_party:"MR"
-#  MSN_neutrality_party_long:"Monarchist Rule"
-# MSN_democratic_party:"HAR"
-#  MSN_democratic_party_long:"Harmonists"
+#MSN_fascism_party: "CCU"
+# MSN_fascism_party_long: "Canterlot Council of Unicorns"
+# MSN_communism_party: "REB"
+#  MSN_communism_party_long: "Rebels"
+# MSN_neutrality_party: "MR"
+#  MSN_neutrality_party_long: "Monarchist Rule"
+# MSN_democratic_party: "HAR"
+#  MSN_democratic_party_long: "Harmonists"
 ###Ideas###
 ###National Focuses###
 ##Storyline Tree##
-#MSN_:""
-# MSN__desc:""
-# MSN_:""
-#  MSN__desc:""
+#MSN_: ""
+# MSN__desc: ""
+# MSN_: ""
+#  MSN__desc: ""

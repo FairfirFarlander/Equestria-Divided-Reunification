@@ -1,36 +1,36 @@
 ﻿l_english:
 ###Introduction###
 ##Bookmark##
-PIE_GATHERING_STORM_DESC:""
+PIE_GATHERING_STORM_DESC: ""
 ##Welcome Screen##
- EAW_WS_PIE:""
-  EAW_WS_PIE_desc:""
+ EAW_WS_PIE: ""
+  EAW_WS_PIE_desc: ""
 ###Characters###
 ##Leaders##
-PIE_marble_pie:"Marble Pie"
- PIE_mpie_poli_desc:""
- PIE_sapphire_smiles:"Sapphire Smiles"
-  PIE_ssmiles_poli_desc:""
- PIE_cloudy_quartz:"Cloudy Quartz"
-  PIE_cquartz_poli_desc:""
+PIE_marble_pie: "Marble Pie"
+ PIE_mpie_poli_desc: ""
+ PIE_sapphire_smiles: "Sapphire Smiles"
+  PIE_ssmiles_poli_desc: ""
+ PIE_cloudy_quartz: "Cloudy Quartz"
+  PIE_cquartz_poli_desc: ""
 ##Commanders##
 ##Advisors##
 ###Country Name###
-PIE:"Rockville Province"
- PIE_DEF:"The Province of Rockville"
- PIE_ADJ:"Pie Clanner"
+PIE: "Rockville Province"
+ PIE_DEF: "The Province of Rockville"
+ PIE_ADJ: "Pie Clanner"
 ###Political Parties###
-PIE_fascism_party:"FAC"
- PIE_fascism_party_long:"FAC"
- PIE_communism_party:"COM"
-  PIE_communism_party_long:"COM"
- PIE_neutrality_party:"NEU"
-  PIE_neutrality_party_long:"NEU"
- PIE_democratic_party:"DEC"
-  PIE_democratic_party_long:"DEC"
+PIE_fascism_party: "FAC"
+ PIE_fascism_party_long: "FAC"
+ PIE_communism_party: "COM"
+  PIE_communism_party_long: "COM"
+ PIE_neutrality_party: "NEU"
+  PIE_neutrality_party_long: "NEU"
+ PIE_democratic_party: "DEC"
+  PIE_democratic_party_long: "DEC"
 ###National Focuses###
 ##Storyline Tree##
-#PIE_:""
-# PIE__desc:""
-# PIE_:""
-#  PIE__desc:""
+#PIE_: ""
+# PIE__desc: ""
+# PIE_: ""
+#  PIE__desc: ""

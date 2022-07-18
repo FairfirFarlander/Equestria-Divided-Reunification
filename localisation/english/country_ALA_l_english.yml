@@ -1,33 +1,33 @@
 ﻿l_english:
 ###Introduction###
 ##Bookmark##
-ALA_GATHERING_STORM_DESC:""
+ALA_GATHERING_STORM_DESC: ""
 ##Welcome Screen##
- EAW_WS_ALA:""
-  EAW_WS_ALA_desc:""
+ EAW_WS_ALA: ""
+  EAW_WS_ALA_desc: ""
 ###Characters###
 ##Leaders##
-ALA_almond_tree:"Almond Tree"
- ALA_atree_poli_desc:""
+ALA_almond_tree: "Almond Tree"
+ ALA_atree_poli_desc: ""
 ##Commanders##
 ##Advisors##
 ###Country Name###
-ALA:"Alamane"
- ALA_DEF:"Alamane"
- ALA_ADJ:"Macanae"
+ALA: "Alamane"
+ ALA_DEF: "Alamane"
+ ALA_ADJ: "Macanae"
 ###Political Parties###
-ALA_fascism_party:"FAC"
- ALA_fascism_party_long:"FAC"
- ALA_communism_party:"COM"
-  ALA_communism_party_long:"COM"
- ALA_neutrality_party:"NEU"
-  ALA_neutrality_party_long:"NEU"
- ALA_democratic_party:"DEC"
-  ALA_democratic_party_long:"DEC"
+ALA_fascism_party: "FAC"
+ ALA_fascism_party_long: "FAC"
+ ALA_communism_party: "COM"
+  ALA_communism_party_long: "COM"
+ ALA_neutrality_party: "NEU"
+  ALA_neutrality_party_long: "NEU"
+ ALA_democratic_party: "DEC"
+  ALA_democratic_party_long: "DEC"
 ###Ideas###
 ###National Focuses###
 ##Storyline Tree##
-#ALA_:""
-# ALA__desc:""
-# ALA_:""
-#  ALA__desc:""
+#ALA_: ""
+# ALA__desc: ""
+# ALA_: ""
+#  ALA__desc: ""

@@ -1,31 +1,31 @@
 ﻿l_english:
 ###Introduction###
 ##Bookmark##
-#STP_GATHERING_STORM_DESC:""
+#STP_GATHERING_STORM_DESC: ""
 ##Welcome Screen##
-# EAW_WS_STP:""
-#  EAW_WS_STP_desc:""
+# EAW_WS_STP: ""
+#  EAW_WS_STP_desc: ""
 ###Characters###
 ##Leaders##
 ##Commanders##
 ##Advisors##
 ###Country Name###
-STP:"Petershoof"
- STP_DEF:"The Province Petershoof"
- STP_ADJ:"Severyani"
+STP: "Petershoof"
+ STP_DEF: "The Province Petershoof"
+ STP_ADJ: "Severyani"
 ###Political Parties###
-STP_fascism_party:"FAC"
- STP_fascism_party_long:"FAC"
- STP_communism_party:"COM"
-  STP_communism_party_long:"COM"
- STP_neutrality_party:"NEU"
-  STP_neutrality_party_long:"NEU"
- STP_democratic_party:"DEC"
-  STP_democratic_party_long:"DEC"
+STP_fascism_party: "FAC"
+ STP_fascism_party_long: "FAC"
+ STP_communism_party: "COM"
+  STP_communism_party_long: "COM"
+ STP_neutrality_party: "NEU"
+  STP_neutrality_party_long: "NEU"
+ STP_democratic_party: "DEC"
+  STP_democratic_party_long: "DEC"
 ###Ideas###
 ###National Focuses###
 ##Storyline Tree##
-#STP_:""
-# STP__desc:""
-# STP_:""
-#  STP__desc:""
+#STP_: ""
+# STP__desc: ""
+# STP_: ""
+#  STP__desc: ""
