@@ -11,12 +11,11 @@
 #Convene the House Council
 #FF# #The focus remains mostly the same save for the yank of event and lack of branching trees for the moment. Plans are instead to let Rarity go insane via events in select focuses (similar to EQS Celestia).
 	shared_focus={
-		id=HWG_convene_the_house_council
-		icon=GFX_goal_government_icon
-		x=2
-		y=-8
-		cost=1
-		ai_will_do={factor=100	}
+		id=HWG_convene_the_house_council icon=GFX_goal_government_icon
+		cost=1 x=-10 y=0
+		search_filters={}
+		select_effect={country_event=EDR_evt_gen.000}	#Event Verbosity
+		ai_will_do={factor=100}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_convene_the_house_council"
 			country_event=whitegoldpolitic.1
@@ -25,34 +24,28 @@
 #Economic Affairs
 #FF# #This is the economic tree start. These focuses will mostly reduce the poverty, and Canterlot Elite ideas.
 	shared_focus={
-		id=HWG_economic_affairs
+		id=HWG_economic_affairs #icon=
+		cost=1 x=-5 y=1 relative_position_id=HWG_convene_the_house_council
+		search_filters={}
 		prerequisite={focus=HWG_convene_the_house_council}
-		relative_position_id=HWG_convene_the_house_council
-		x=-5
-		y=1
-		cost=1
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_economic_affairs"
 		}
 	}
 	shared_focus={
-		id=HWG_the_question_of_business
+		id=HWG_the_question_of_business #icon=
+		cost=4 x=-1 y=1 relative_position_id=HWG_economic_affairs
+		search_filters={}
 		prerequisite={focus=HWG_economic_affairs}
-		relative_position_id=HWG_economic_affairs
-		x=-1
-		y=1
-		cost=4
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_the_question_of_business"
 		}
 	}
 	shared_focus={
-		id=HWG_the_question_of_unemployment
+		id=HWG_the_question_of_unemployment #icon=
+		cost=4 x=0 y=2 relative_position_id=HWG_economic_affairs
+		search_filters={}
 		prerequisite={focus=HWG_economic_affairs}
-		relative_position_id=HWG_economic_affairs
-		x=0
-		y=2
-		cost=4
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_the_question_of_unemployment"
 			decrease_poverty=yes
@@ -61,12 +54,10 @@
 		}
 	}
 	shared_focus={
-		id=HWG_the_question_of_investment
+		id=HWG_the_question_of_investment #icon=
+		cost=4 x=1 y=1 relative_position_id=HWG_economic_affairs
+		search_filters={}
 		prerequisite={focus=HWG_economic_affairs}
-		relative_position_id=HWG_economic_affairs
-		x=1
-		y=1
-		cost=4
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_the_question_of_investment"
 		}
@@ -74,68 +65,56 @@
 #Domestic Affairs
 #FF# #This is the domestic tree start. These focuses will reduce the Underclass and Illiteracy ideas as well as offering improvements to encryption, activating censorship, and a possible ponypower boost.
 	shared_focus={
-		id=HWG_domestic_affairs
+		id=HWG_domestic_affairs #icon=
+		cost=1 x=0 y=1 relative_position_id=HWG_convene_the_house_council
+		search_filters={}
 		prerequisite={focus=HWG_convene_the_house_council}
-		relative_position_id=HWG_convene_the_house_council
-		x=0
-		y=1
-		cost=1
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_domestic_affairs"
 		}
 	}
 	shared_focus={
-		id=HWG_dealing_with_espionage
+		id=HWG_dealing_with_espionage #icon=
+		cost=4 x=-2 y=1 relative_position_id=HWG_domestic_affairs
+		search_filters={}
 		prerequisite={focus=HWG_domestic_affairs}
-		relative_position_id=HWG_domestic_affairs
-		x=-2
-		y=1
-		cost=4
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_dealing_with_espionage"
 		}
 	}
 	shared_focus={
-		id=HWG_press_regulations
+		id=HWG_press_regulations #icon=
+		cost=4 x=-1 y=2 relative_position_id=HWG_domestic_affairs
+		search_filters={}
 		prerequisite={focus=HWG_domestic_affairs}
-		relative_position_id=HWG_domestic_affairs
-		x=-1
-		y=2
-		cost=4
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_press_regulations"
 		}
 	}
 	shared_focus={
-		id=HWG_the_question_of_organized_labor
+		id=HWG_the_question_of_organized_labor #icon=
+		cost=4 x=0 y=1 relative_position_id=HWG_domestic_affairs
+		search_filters={}
 		prerequisite={focus=HWG_domestic_affairs}
-		relative_position_id=HWG_domestic_affairs
-		x=0
-		y=1
-		cost=4
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_the_question_of_organized_labor"
 		}
 	}
 	shared_focus={
-		id=HWG_question_of_education
+		id=HWG_question_of_education #icon=
+		cost=4 x=1 y=2 relative_position_id=HWG_domestic_affairs
+		search_filters={}
 		prerequisite={focus=HWG_domestic_affairs}
-		relative_position_id=HWG_domestic_affairs
-		x=1
-		y=2
-		cost=4
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_question_of_education"
 			decrease_illiteracy=yes
 		}
 	}
 	shared_focus={
-		id=HWG_the_question_of_crime
+		id=HWG_the_question_of_crime #icon=
+		cost=4 x=2 y=1 relative_position_id=HWG_domestic_affairs
+		search_filters={}
 		prerequisite={focus=HWG_domestic_affairs}
-		relative_position_id=HWG_domestic_affairs
-		x=2
-		y=1
-		cost=4
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_the_question_of_crime"
 		}
@@ -143,45 +122,37 @@
 #Military Affairs
 #FF# #This is the Military Tree start. It has differing options to improve recruitment, unlocks the military trees, and unlocks some basic military manufacturers.
 	shared_focus={
-		id=HWG_military_affairs
+		id=HWG_military_affairs #icon=
+		cost=1 x=5 y=1 relative_position_id=HWG_convene_the_house_council
+		search_filters={}
 		prerequisite={focus=HWG_convene_the_house_council}
-		relative_position_id=HWG_convene_the_house_council
-		x=5
-		y=1
-		cost=1
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_military_affairs"
 		}
 	}
 	shared_focus={
-		id=HWG_a_matter_of_recruitment
+		id=HWG_a_matter_of_recruitment #icon=
+		cost=4 x=-1 y=1 relative_position_id=HWG_military_affairs
+		search_filters={}
 		prerequisite={focus=HWG_military_affairs}
-		relative_position_id=HWG_military_affairs
-		x=-1
-		y=1
-		cost=4
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_a_matter_of_recruitment"
 		}
 	}
 	shared_focus={
-		id=HWG_restructuring_the_military
+		id=HWG_restructuring_the_military #icon=
+		cost=4 x=0 y=2 relative_position_id=HWG_military_affairs
+		search_filters={}
 		prerequisite={focus=HWG_military_affairs}
-		relative_position_id=HWG_military_affairs
-		x=0
-		y=2
-		cost=4
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_restructuring_the_military"
 		}
 	}
 	shared_focus={
-		id=HWG_military_weapon_contracts
+		id=HWG_military_weapon_contracts #icon=
+		cost=4 x=1 y=1 relative_position_id=HWG_military_affairs
+		search_filters={}
 		prerequisite={focus=HWG_military_affairs}
-		relative_position_id=HWG_military_affairs
-		x=1
-		y=1
-		cost=4
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_military_weapon_contracts"
 		}
@@ -189,131 +160,109 @@
 #Foreign Affairs
 #FF# #This is the Foreign Affairs tree start. In it's basic form it will allow focuses that tamper with HSW, HEB, and HMS. If the proposal event (unfinished) is agreed to, focuses to deal with HEF and STG will become availible.
 	shared_focus={
-		id=HWG_foreign_affairs
+		id=HWG_foreign_affairs #icon=
+		cost=1 x=-3 y=1 relative_position_id=HWG_convene_the_house_council
+		search_filters={}
 		prerequisite={focus=HWG_convene_the_house_council}
-		relative_position_id=HWG_convene_the_house_council
-		x=-3
-		y=1
-		cost=1
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_foreign_affairs"
 		}
 	}
 	shared_focus={
-		id=HWG_an_unorthadox_proposal
+		id=HWG_an_unorthadox_proposal #icon=
+		cost=1 x=0 y=2 relative_position_id=HWG_foreign_affairs
+		search_filters={}
 		prerequisite={focus=HWG_foreign_affairs}
 		prerequisite={			
 			focus=HWG_the_question_of_investment
 			focus=HWG_dealing_with_espionage
 		}
-		relative_position_id=HWG_foreign_affairs
-		x=0
-		y=2
-		cost=1
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_an_unorthadox_proposal"
 		}
 	}
 	shared_focus={
-		id=HWG_indebt_the_loyal
+		id=HWG_indebt_the_loyal #icon=
+		cost=4 x=-1 y=1 relative_position_id=HWG_an_unorthadox_proposal
+		search_filters={}
 		prerequisite={focus=HWG_an_unorthadox_proposal}
-		relative_position_id=HWG_an_unorthadox_proposal
-		x=-1
-		y=1
-		cost=4
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_indebt_the_loyal"
 		}
 	}
 	shared_focus={
-		id=HWG_reign_in_the_proud
+		id=HWG_reign_in_the_proud #icon=
+		cost=4 x=0 y=2 relative_position_id=HWG_an_unorthadox_proposal
+		search_filters={}
 		prerequisite={focus=HWG_an_unorthadox_proposal}
-		relative_position_id=HWG_an_unorthadox_proposal
-		x=0
-		y=2
-		cost=4
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_reign_in_the_proud"
 		}
 	}
 	shared_focus={
-		id=HWG_decieve_the_deluded
+		id=HWG_decieve_the_deluded #icon=
+		cost=4 x=1 y=1 relative_position_id=HWG_an_unorthadox_proposal
+		search_filters={}
 		prerequisite={focus=HWG_an_unorthadox_proposal}
-		relative_position_id=HWG_an_unorthadox_proposal
-		x=1
-		y=1
-		cost=4
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_decieve_the_deluded"
 		}
 	}
 	shared_focus={
-		id=HWG_the_petershoof_question
+		id=HWG_the_petershoof_question #icon=
+		cost=4 x=0 y=2 relative_position_id=HWG_decieve_the_deluded
+		search_filters={}
 		prerequisite={focus=HWG_decieve_the_deluded}
-		relative_position_id=HWG_decieve_the_deluded
 		mutually_exclusive={focus=HWG_'liberate'_the_opressed}
 		mutually_exclusive={focus=HWG_...and_your_enemies_closer}
-		x=0
-		y=2
-		cost=4
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_the_petershoof_question"
 		}
 	}
 	shared_focus={
-		id=HWG_appease_the_aggressive
+		id=HWG_appease_the_aggressive #icon=
+		cost=4 x=2 y=2 relative_position_id=HWG_an_unorthadox_proposal
+		search_filters={}
 		prerequisite={focus=HWG_an_unorthadox_proposal}
-		relative_position_id=HWG_an_unorthadox_proposal
 		mutually_exclusive={focus=HWG_in_defense_of_baltimare}
-		x=2
-		y=2
-		cost=4
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_appease_the_aggressive"
 		}
 	}
 	shared_focus={
-		id=HWG_empower_the_strong
+		id=HWG_empower_the_strong #icon=
+		cost=4 x=0 y=2 relative_position_id=HWG_appease_the_aggressive
+		search_filters={}
 		prerequisite={focus=HWG_appease_the_aggressive}
-		relative_position_id=HWG_appease_the_aggressive
-		x=0
-		y=2
-		cost=4
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_empower_the_strong"
 		}
 	}
 	shared_focus={
-		id=HWG_the_matter_of_stalliongrad
+		id=HWG_the_matter_of_stalliongrad #icon=
+		cost=4 x=3 y=1 relative_position_id=HWG_an_unorthadox_proposal
+		search_filters={}
 		prerequisite={focus=HWG_an_unorthadox_proposal}
-		relative_position_id=HWG_an_unorthadox_proposal
-		x=3
-		y=1
-		cost=4
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_the_matter_of_stalliongrad"
 		}
 	}
 	shared_focus={
-		id=HWG_'liberate'_the_opressed
+		id=HWG_'liberate'_the_opressed #icon=
+		cost=4 x=0 y=2 relative_position_id=HWG_the_matter_of_stalliongrad
+		search_filters={}
 		prerequisite={focus=HWG_the_matter_of_stalliongrad}
-		relative_position_id=HWG_the_matter_of_stalliongrad
 		mutually_exclusive={focus=HWG_the_petershoof_question}
 		mutually_exclusive={focus=HWG_...and_your_enemies_closer}
-		x=0
-		y=2
-		cost=4
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_'liberate'_the_opressed"
 		}
 	}
 	shared_focus={
-		id=HWG_revisit_our_agreement
+		id=HWG_revisit_our_agreement #iocn=
+		cost=4 x=0 y=2 relative_position_id=HWG_'liberate'_the_opressed
+		search_filters={}
 		prerequisite={focus=HWG_'liberate'_the_opressed}
-		relative_position_id=HWG_'liberate'_the_opressed
-		x=0
-		y=2
-		cost=4
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_revisit_our_agreement"
 		}
@@ -321,96 +270,80 @@
 #Defensive Affairs
 #FF# #This is the Defensive Affairs tree start. In it's basic form it will allow the fortification of Albion and Manehattan. If the Two Birds event (unfinished) is agreed to, focuses to create border forts will be availible in select provinces.
 	shared_focus={
-		id=HWG_defensive_affairs
+		id=HWG_defensive_affairs #icon=
+		cost=1 x=3 y=1 relative_position_id=HWG_convene_the_house_council
+		search_filters={}
 		prerequisite={focus=HWG_convene_the_house_council}
-		relative_position_id=HWG_convene_the_house_council
-		x=3
-		y=1
-		cost=1
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_defensive_affairs"
 		}
 	}
 	shared_focus={
-		id=HWG_two_birds_with_one_stone
+		id=HWG_two_birds_with_one_stone #icon=
+		cost=1 x=0 y=2 relative_position_id=HWG_defensive_affairs
+		search_filters={}
 		prerequisite={focus=HWG_defensive_affairs}
 		prerequisite={
 			focus=HWG_the_question_of_crime
 			focus=HWG_a_matter_of_recruitment
 		}
-		relative_position_id=HWG_defensive_affairs
-		x=0
-		y=2
-		cost=1
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_two_birds_with_one_stone"
 		}
 	}
 	shared_focus={
-		id=HWG_in_defense_of_baltimare
+		id=HWG_in_defense_of_baltimare #icon=
+		cost=4 x=-2 y=2 relative_position_id=HWG_two_birds_with_one_stone
+		search_filters={}
 		prerequisite={focus=HWG_two_birds_with_one_stone}
-		relative_position_id=HWG_two_birds_with_one_stone
 		mutually_exclusive={focus=HWG_appease_the_aggressive}
-		x=-2
-		y=2
-		cost=4
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_in_defense_of_baltimare"
 		}
 	}
 	shared_focus={
-		id=HWG_the_question_of_the_southeast
+		id=HWG_the_question_of_the_southeast #icon=
+		cost=4 x=0 y=2 relative_position_id=HWG_in_defense_of_baltimare
+		search_filters={}
 		prerequisite={focus=HWG_in_defense_of_baltimare}
-		relative_position_id=HWG_in_defense_of_baltimare
-		x=0
-		y=2
-		cost=4
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_the_question_of_the_southeast"
 		}
 	}
 	shared_focus={
-		id=HWG_keep_your_allies_close...
+		id=HWG_keep_your_allies_close... #icon=
+		cost=4 x=-1 y=1 relative_position_id=HWG_two_birds_with_one_stone
+		search_filters={}
 		prerequisite={focus=HWG_two_birds_with_one_stone}
-		relative_position_id=HWG_two_birds_with_one_stone
-		x=-1
-		y=1
-		cost=4
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_keep_your_allies_close..."
 		}
 	}
 	shared_focus={
-		id=HWG_...and_your_enemies_closer
+		id=HWG_...and_your_enemies_closer #icon=
+		cost=4 x=0 y=2 relative_position_id=HWG_keep_your_allies_close...
+		search_filters={}
 		prerequisite={focus=HWG_keep_your_allies_close...}
-		relative_position_id=HWG_keep_your_allies_close...
 		mutually_exclusive={focus=HWG_the_petershoof_question}
 		mutually_exclusive={focus=HWG_'liberate'_the_opressed}
-		x=0
-		y=2
-		cost=4
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_...and_your_enemies_closer"
 		}
 	}
 	shared_focus={
-		id=HWG_in_defense_of_albion
+		id=HWG_in_defense_of_albion #icon=
+		cost=4 x=0 y=2 relative_position_id=HWG_two_birds_with_one_stone
+		search_filters={}
 		prerequisite={focus=HWG_two_birds_with_one_stone}
-		relative_position_id=HWG_two_birds_with_one_stone
-		x=0
-		y=2
-		cost=4
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_in_defense_of_albion"
 		}
 	}
 	shared_focus={
-		id=HWG_refurbish_the_wall
+		id=HWG_refurbish_the_wall #icon=
+		cost=4 x=1 y=1 relative_position_id=HWG_two_birds_with_one_stone
+		search_filters={}
 		prerequisite={focus=HWG_two_birds_with_one_stone}
-		relative_position_id=HWG_two_birds_with_one_stone
-		x=1
-		y=1
-		cost=4
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_refurbish_the_wall"
 		}
@@ -423,11 +356,10 @@
 #Focus for Breech Loaded Rifle Research
 #FF# #This focus either instantly researches Breech Loaded rifles of gives a 100% research bonus. Because of planned starting national spirits, it will take some time to ramp up production. These guns shouldn't be widely avalible enough to offer an unfair advantage. Even then future garrison requirements will gobble up any produced weapon stocks.
 	shared_focus={
-		id=HWG_invest_in_modern_rifles
+		id=HWG_invest_in_modern_rifles #icon
+		cost=4 x=23 y=0
+		search_filters={}
 		available={has_completed_focus=HWG_military_affairs}
-		x=23
-		y=0
-		cost=4
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_invest_in_modern_rifles"
 			add_tech_bonus={
@@ -441,12 +373,10 @@
 #Focus for Economic Laws
 #FF# #The first of the mobilization focuses. It offers a simply bump of economic mobilization (Civilian to Early, early to Partial, etc. When combined with Emergency Powers, the bump is doubled (Civilian to partial and so forth), at the cost of some stability and poltical points. At 35 days, this focus is a cheap upgrade. The focus will only go to War Economy for Emergency powers and Partial for the other political paths.
 	shared_focus={
-		id=HWG_mobilize_the_economy
-		relative_position_id=HWG_invest_in_modern_rifles
+		id=HWG_mobilize_the_economy #icon=
+		cost=5 x=-2 y=0 relative_position_id=HWG_invest_in_modern_rifles
+		search_filters={}
 		available={has_completed_focus=HWG_military_affairs}
-		x=-2
-		y=0
-		cost=5
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_mobilize_the_economy"
 			if={
@@ -462,12 +392,10 @@
 #Focus for Trade Laws
 #FF# #The second mobilization focus allows for a bump of resource laws to allow more resources to be kept. As iron is in short supply at the start, this focus is crucial to HWGs war efforts and industrial devleopment. The same bump convention applies as with the prior mobilization focus with limits at closed and limited exports respectively. The Equestrian Trade Union will remember these transgressions however...
 	shared_focus={
-		id=HWG_pool_resources
-		relative_position_id=HWG_invest_in_modern_rifles
+		id=HWG_pool_resources #icon=
+		cost=5 x=-4 y=1 relative_position_id=HWG_invest_in_modern_rifles
+		search_filters={}
 		available={has_completed_focus=HWG_military_affairs}
-		x=-4
-		y=1
-		cost=5
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_pool_resources"
 			if={
@@ -483,13 +411,10 @@
 #Focus for Conscription
 #FF# #The third mobilization focus works exactly as listed on the tin. Limits are service by requirement and extensive conscription respectively.
 	shared_focus={
-		id=HWG_increase_conscription
-		#icon=
-		relative_position_id=HWG_invest_in_modern_rifles
+		id=HWG_increase_conscription #icon=
+		cost=5 x=2 y=0 relative_position_id=HWG_invest_in_modern_rifles
+		search_filters={}
 		available={has_completed_focus=HWG_military_affairs}
-		x=2
-		y=0
-		cost=5
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_increase_conscription"
 			if={
@@ -509,13 +434,10 @@
 #Focus for Military Factories
 #FF# #The final Mobilization focus. It is currently incomplete and set for review as to it's purpose. For the time it grants 4 mils in random territories.
 	shared_focus={
-		id=HWG_bolster_military_armament
-		#icon=
-		relative_position_id=HWG_invest_in_modern_rifles
+		id=HWG_bolster_military_armament #icon=
+		cost=5 x=4 y=1 relative_position_id=HWG_invest_in_modern_rifles
+		search_filters={}
 		available={has_completed_focus=HWG_military_affairs}
-		x=4
-		y=1
-		cost=5
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_bolster_military_armament"
 			75={
@@ -547,15 +469,12 @@
 #FF# #The following six focuses will allow a choice of overall army bonus and initial doctrine choice. Each path will have varying bonuses complimenting their doctrine.
 #Focus for Decentralized Command Structure
 	shared_focus={
-		id=HWG_decentralized_command_structure
-		#icon=
-		relative_position_id=HWG_invest_in_modern_rifles
+		id=HWG_decentralized_command_structure #icon=
+		cost=6 x=-2 y=1 relative_position_id=HWG_invest_in_modern_rifles
+		search_filters={}
 		prerequisite={focus=HWG_invest_in_modern_rifles}
 		mutually_exclusive={focus=HWG_centralized_command_structure}
 		available={has_completed_focus=HWG_restructuring_the_military}
-		x=-2
-		y=1
-		cost=6
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_decentralized_command_structure"
 			army_experience=30
@@ -563,14 +482,11 @@
 	}
 #Focus for Mobile Warfare Doctrine
 	shared_focus={
-		id=HWG_waking_the_chimera
-		#icon=
+		id=HWG_waking_the_chimera #icon=
+		cost=4 x=-1 y=1 relative_position_id=HWG_decentralized_command_structure
+		search_filters={}
 		prerequisite={focus=HWG_decentralized_command_structure}
-		relative_position_id=HWG_decentralized_command_structure
 		mutually_exclusive={focus=HWG_la_liberation}
-		x=-1
-		y=1
-		cost=4
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_waking_the_chimera"
 			add_tech_bonus={
@@ -583,14 +499,11 @@
 	}
 #Focus for Mass Assault Doctrine
 	shared_focus={
-		id=HWG_la_liberation
-		#icon=
+		id=HWG_la_liberation #icon=
+		cost=4 x=1 y=1 relative_position_id=HWG_decentralized_command_structure
+		search_filters={}
 		prerequisite={focus=HWG_decentralized_command_structure}
-		relative_position_id=HWG_decentralized_command_structure
 		mutually_exclusive={focus=HWG_waking_the_chimera}
-		x=1
-		y=1
-		cost=4
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_la_liberation"
 			add_tech_bonus={
@@ -603,15 +516,12 @@
 	}
 #Focus for Centralized Command Structure
 	shared_focus={
-		id=HWG_centralized_command_structure
-		#icon=
-		relative_position_id=HWG_invest_in_modern_rifles
+		id=HWG_centralized_command_structure #icon=
+		cost=6 x=2 y=1 relative_position_id=HWG_invest_in_modern_rifles
+		search_filters={}
 		prerequisite={focus=HWG_invest_in_modern_rifles}
 		mutually_exclusive={focus=HWG_decentralized_command_structure}
 		available={hidden_trigger={has_completed_focus=HWG_restructuring_the_military}}
-		x=2
-		y=1
-		cost=6
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_centralized_command_structure"
 			army_experience=30
@@ -619,14 +529,11 @@
 	}
 #Focus for Superior Firepower Doctrine
 	shared_focus={
-		id=HWG_pone_the_guns
-		#icon=
+		id=HWG_pone_the_guns #icon=
+		cost=4 x=-1 y=1 relative_position_id=HWG_centralized_command_structure
+		search_filters={}
 		prerequisite={focus=HWG_centralized_command_structure}
-		relative_position_id=HWG_centralized_command_structure
 		mutually_exclusive={focus=HWG_together_to_freindship}
-		x=-1
-		y=1
-		cost=4
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_pone_the_guns"
 			add_tech_bonus={
@@ -639,14 +546,11 @@
 	}
 #Focus for Grand Battleplan Doctrine
 	shared_focus={
-		id=HWG_together_to_freindship
-		#icon=
+		id=HWG_together_to_freindship #icon=
+		cost=4 x=1 y=1 relative_position_id=HWG_centralized_command_structure
+		search_filters={}
 		prerequisite={focus=HWG_centralized_command_structure}
-		relative_position_id=HWG_centralized_command_structure
 		mutually_exclusive={focus=HWG_pone_the_guns}
-		x=1
-		y=1
-		cost=4
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_together_to_freindship"
 			add_tech_bonus={
@@ -663,12 +567,9 @@
 #FF# #Relinked but UNCHANGED. This tree is designed to do four things, reduce the Antiquated Trade Fleet Malii, provide tech bonuses for naval development, unlock naval designers, and provide Whitegold specific bonuses (such as a naval academy). The plans for this are not set in stone.
 #Focus for The State of Our Navy
 	shared_focus={
-		id=HWG_the_state_of_our_navy
-		#icon=
+		id=HWG_the_state_of_our_navy #icon=
+		cost=7 x=10 y=0
 		available={has_completed_focus=HWG_military_affairs}
-		x=10
-		y=0
-		cost=7
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_the_state_of_our_navy"
 			navy_experience=25
@@ -678,14 +579,11 @@
 #Focus for Cut Naval Spending
 #FF# #This blank focus will lead to a cheaper fleet at the expense of overall effectiveness.
 	shared_focus={
-		id=HWG_cut_naval_spending
-		#icon=
-		relative_position_id=HWG_the_state_of_our_navy
+		id=HWG_cut_naval_spending #icon=
+		cost=8 x=-2 y=1 relative_position_id=HWG_the_state_of_our_navy
+		search_filters={}
 		prerequisite={focus=HWG_the_state_of_our_navy}
 		mutually_exclusive={focus=HWG_invest_in_the_navy}
-		x=-2
-		y=1
-		cost=8
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_cut_naval_spending"
 			#
@@ -694,28 +592,22 @@
 #Focus for Invest in the Navy
 #FF# #This blank focus will lead to a potent yet expensive navy.
 	shared_focus={
-		id=HWG_invest_in_the_navy
-		#icon=
-		relative_position_id=HWG_the_state_of_our_navy
+		id=HWG_invest_in_the_navy #icon=
+		cost=8 x=2 y=1 relative_position_id=HWG_the_state_of_our_navy
+		search_filters={}
 		prerequisite={focus=HWG_the_state_of_our_navy}
 		mutually_exclusive={focus=HWG_cut_naval_spending}
 		available={hidden_trigger={has_completed_focus=HWG_restructuring_the_military}}
-		x=2
-		y=1
-		cost=8
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_invest_in_the_navy"
 		}
 	}
 #Focus for Destroyers and Cruisers
 	shared_focus={
-		id=HWG_screen_hull_focus
-		#icon=
-		relative_position_id=HWG_invest_in_the_navy
+		id=HWG_screen_hull_focus #icon=
+		cost=8 x=0 y=1 relative_position_id=HWG_invest_in_the_navy
+		search_filters={}
 		prerequisite={focus=HWG_invest_in_the_navy}
-		x=0
-		y=1
-		cost=8
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_screen_hull_focus"
 			add_tech_bonus={
@@ -730,13 +622,10 @@
 	}
 #Focus for Capital Ship Hulls
 	shared_focus={
-		id=HWG_capital_hull_focus
-		#icon=
-		relative_position_id=HWG_invest_in_the_navy
+		id=HWG_capital_hull_focus #icon=
+		cost=8 x=2 y=1 relative_position_id=HWG_invest_in_the_navy
+		search_filters={}
 		prerequisite={focus=HWG_invest_in_the_navy}
-		x=2
-		y=1
-		cost=8
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_capital_hull_focus"
 			add_tech_bonus={
@@ -751,13 +640,10 @@
 	}
 #Focus for Carriers and Naval Air
 	shared_focus={
-		id=HWG_carrier_and_naval_air_focus
-		#icon=
-		relative_position_id=HWG_invest_in_the_navy
+		id=HWG_carrier_and_naval_air_focus #icon=
+		cost=8 x=-1 y=2 relative_position_id=HWG_invest_in_the_navy
+		search_filters={}
 		prerequisite={focus=HWG_invest_in_the_navy}
-		x=-1
-		y=2
-		cost=8
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_carrier_focus"
 			add_tech_bonus={
@@ -776,13 +662,10 @@
 	}
 #Focus for Submarines
 	shared_focus={
-		id=HWG_submarine_focus
-		#icon=
-		relative_position_id=HWG_invest_in_the_navy
+		id=HWG_submarine_focus #icon=
+		cost=8 x=1 y=2 relative_position_id=HWG_invest_in_the_navy
+		search_filters={}
 		prerequisite={focus=HWG_invest_in_the_navy}
-		x=1
-		y=2
-		cost=8
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_submarine_focus"
 			add_tech_bonus={

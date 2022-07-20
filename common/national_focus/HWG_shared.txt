@@ -1,6 +1,6 @@
 	shared_focus={		#Time for Action
 		id=HWG_the_war icon=GFX_goal_generic_demand_territory
-		x=11 y=-8 cost=2 ai_will_do={factor=40}
+		x=8 y=0 cost=2 ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HWG_the_war"
 			add_political_power=250

@@ -5,13 +5,13 @@ focus_tree={
 		modifier={add=3 tag=HEF} modifier={add=3 tag=HMS}
 		modifier={add=3 tag=HSW} modifier={add=3 tag=HWG}
 	}
-	continuous_focus_position={x=1800 y=30}
+	continuous_focus_position={x=650 y=30}
 	shared_focus=EQD_S00
-	shared_focus=HSW_calm_before_the_storm
-	shared_focus=EDR_I00
-	shared_focus=EDR_L05
-	shared_focus=EDR_N05
-	shared_focus=EDR_A05
+	#shared_focus=HSW_calm_before_the_storm
+	#shared_focus=EDR_I00
+	#shared_focus=EDR_L05
+	#shared_focus=EDR_N05
+	#shared_focus=EDR_A05
 }
 	shared_focus={		#From the Ashes of Eques
 		id=EQD_S00 icon=GFX_goal_generic_demand_territory

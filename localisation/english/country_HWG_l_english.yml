@@ -80,7 +80,7 @@ HWG_idea: "Eyes and ears, our shields and spears."
  HWG_idea_desc: "Home of the Equestrian nobles, wealthy merchants, craftsponies and artisans - the members of House Whitegold like to think of themselves as the last remnants of the once great civilization of Equestria. But beneath the carefully crafted cloak of glamour and sophistication, there lies a harsh reality of a House that is more vicious and powerhungry than any other. Schemers, spies, assassins and smoothtalkers - the Whitegolds prefer a more subtle approach to achieving their goals. They fight with words, wealth, and daggers - to challenge them is to play a deadly game of lies and deception against the very masters of the trade..."
 ###National Focuses###
 ##Storyline Tree##
-#TAG_: ""
-# TAG__desc: ""
-# TAG_: ""
-#  TAG__desc: ""
+HWG_S00: "A Decade of Decadence"
+ HWG_S00_desc: ""
+ HWG_S01: ""
+  HWG_S01_desc: ""
