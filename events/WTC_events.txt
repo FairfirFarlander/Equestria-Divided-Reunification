@@ -1,0 +1,15 @@
+add_namespace=WTC_evt_a01
+	country_event={		#Control From Afar
+		id=WTC_evt_a01.001
+		title=WTC_evt_a01.001.t	desc=WTC_evt_a01.001.d
+		is_triggered_only=yes
+		option={
+			name=WTC_evt_a01.001.a
+			
+		}
+		option={
+			name=EDR_credit_W-TY_C-FF.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event WTC_evt_a01.001"}
+	}

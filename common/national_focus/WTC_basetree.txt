@@ -11,16 +11,17 @@ focus_tree={
 	shared_focus={		#A Company Controlled from Afar
 		id=WTC_S00 icon=GFX_goal_shadow_government
 		x=0 y=0 cost=8 ai_will_do={factor=4000}
-		select_effect={
-		}
+		search_filters={}
+		select_effect={country_event=EDR_evt_gen.000}	#Event Verbosity
+		ai_will_do={factor=4000}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus WTC_S00"
+			country_event=WTC_evt_a01.001	#Control From Afar
 		}
 	}
 	shared_focus={		#Hope of rebuilding
 		id=WTC_S01 icon=GFX_goal_collaborate_local_elites_pony
-		relative_position_id=WTC_S00
-		x=0 y=1 cost=2 ai_will_do={factor=4000}
+		x=0 y=1 cost=2 relative_position_id=WTC_S00
 		prerequisite={focus=WTC_S00}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus WTC_S01"
