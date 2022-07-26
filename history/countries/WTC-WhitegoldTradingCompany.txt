@@ -19,6 +19,7 @@ add_ideas={
 	volunteer_only export_focus civilian_economy
 	big_science_base outdated_industry
 	lack_of_scientists3 poverty5
+	WTC_no_army
 }
 if={
 	limit={has_dlc="No Step Back"}

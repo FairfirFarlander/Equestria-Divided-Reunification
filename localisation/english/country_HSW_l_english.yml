@@ -8,8 +8,8 @@ HSW_GATHERING_STORM_DESC: ""
 ###Characters###
 ##Leaders##
 HSW_rainbow_dash: "Rainbow Dash"
- HSW_rdash_poli_desc: ""
- HSW_rdash_mili_desc: ""
+ HSW_rdash_poli_desc: "§YArtwork By§!: PoorYarrickDA\n§YPreserved By§!: Fujin777\n§YResized By§!: Sorencer"
+ HSW_rdash_mili_desc: "§YArtwork By§!: PoorYarrickDA\n§YPreserved By§!: Fujin777\n§YResized By§!: Sorencer"
  HSW_storm_mayhem: "Storm Mayhem"
   HSW_smayhem_poli_desc: ""
  HSW_steel_wings: "Steel Wings"
@@ -22,8 +22,8 @@ HSW_rainbow_dash: "Rainbow Dash"
  HSW_spitfire: "Spitfire"
   HSW_spitfire_mili_desc: ""
  HSW_scootaloo: "Scootaloo"
-  HSW_scootaloo_mili_desc: ""
-  HSW_scootaloo_high_desc: ""
+  HSW_scootaloo_mili_desc: "§YArtwork By§!: ruhje\n§YResized By§!: Sorencer"
+  HSW_scootaloo_high_desc: "§YArtwork By§!: ruhje\n§YResized By§!: Sorencer"
 ##Advisors##
 ###Country Name###
 HSW_fascism: "House Stormwing"

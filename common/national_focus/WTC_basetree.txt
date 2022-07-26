@@ -19,16 +19,20 @@ focus_tree={
 			country_event=WTC_evt_a01.001	#Control From Afar
 		}
 	}
-	shared_focus={		#Hope of rebuilding
-		id=WTC_S01 icon=GFX_goal_collaborate_local_elites_pony
+	shared_focus={		#Protection From the Chaos Around Us
+		id=WTC_S01 #icon=
 		x=0 y=1 cost=2 relative_position_id=WTC_S00
 		prerequisite={focus=WTC_S00}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus WTC_S01"
+			swap_ideas={
+				remove_idea=WTC_no_army
+				add_idea=WTC_mercenary_army
+			}
 		}
 	}
 	shared_focus={		#Quotas From the North
-		id=WTC_S02 icon=GFX_goal_collaborate_local_elites_pony
+		id=WTC_S02 #icon=
 		relative_position_id=WTC_S01
 		x=0 y=1 cost=2 ai_will_do={factor=4000}
 		prerequisite={focus=WTC_S01}
@@ -37,7 +41,7 @@ focus_tree={
 		}
 	}
 	shared_focus={		#Their Demands for Exsotic Fruits
-		id=WTC_S03A icon=GFX_goal_collaborate_local_elites_pony
+		id=WTC_S03A #icon=
 		relative_position_id=WTC_S02
 		x=-2 y=1 cost=2 ai_will_do={factor=4000}
 		prerequisite={focus=WTC_S02}
@@ -46,7 +50,7 @@ focus_tree={
 		}
 	}
 	shared_focus={		#Their Demands for Sugar
-		id=WTC_S03B icon=GFX_goal_collaborate_local_elites_pony
+		id=WTC_S03B #icon=
 		relative_position_id=WTC_S02
 		x=0 y=1 cost=2 ai_will_do={factor=4000}
 		prerequisite={focus=WTC_S02}
@@ -55,7 +59,7 @@ focus_tree={
 		}
 	}
 	shared_focus={		#Their Demands for Tea
-		id=WTC_S03C icon=GFX_goal_collaborate_local_elites_pony
+		id=WTC_S03C #icon=
 		relative_position_id=WTC_S02
 		x=2 y=1 cost=2 ai_will_do={factor=4000}
 		prerequisite={focus=WTC_S02}
@@ -64,7 +68,7 @@ focus_tree={
 		}
 	}
 	shared_focus={		#Their Demands are Sated for Now
-		id=WTC_S04 icon=GFX_goal_collaborate_local_elites_pony
+		id=WTC_S04 #icon=
 		relative_position_id=WTC_S02
 		x=0 y=2 cost=2 ai_will_do={factor=4000}
 		prerequisite={focus=WTC_S03A}
@@ -75,7 +79,7 @@ focus_tree={
 		}
 	}
 	shared_focus={		#To Begin Salvaging What Was Baltimare
-		id=WTC_S05 icon=GFX_goal_collaborate_local_elites_pony
+		id=WTC_S05 #icon=
 		relative_position_id=WTC_S00
 		x=5 y=0 cost=2 ai_will_do={factor=4000}
 		available={has_completed_focus=WTC_S04}
@@ -84,7 +88,7 @@ focus_tree={
 		}
 	}
 	shared_focus={		#Baltimare's Old Factories
-		id=WTC_S06A icon=GFX_goal_collaborate_local_elites_pony
+		id=WTC_S06A #icon=
 		relative_position_id=WTC_S05
 		x=-1 y=1 cost=2 ai_will_do={factor=4000}
 		prerequisite={focus=WTC_S05}
@@ -93,7 +97,7 @@ focus_tree={
 		}
 	}
 	shared_focus={		#Clearing the Shipyards
-		id=WTC_S06B icon=GFX_goal_collaborate_local_elites_pony
+		id=WTC_S06B #icon=
 		relative_position_id=WTC_S05
 		x=1 y=1 cost=2 ai_will_do={factor=4000}
 		prerequisite={focus=WTC_S05}
@@ -102,7 +106,7 @@ focus_tree={
 		}
 	}
 	shared_focus={		#Salvaging the Habbidasher Shipping Fleet
-		id=WTC_S07 icon=GFX_goal_collaborate_local_elites_pony
+		id=WTC_S07 #icon=
 		relative_position_id=WTC_S05
 		x=0 y=2 cost=2 ai_will_do={factor=4000}
 		prerequisite={focus=WTC_S06A}
@@ -112,7 +116,7 @@ focus_tree={
 		}
 	}
 	shared_focus={		#Protection From the Chaos Around Us
-		id=WTC_A00 icon=GFX_goal_collaborate_local_elites_pony
+		id=WTC_A00 #icon=
 		relative_position_id=WTC_S00
 		x=-6 y=0 cost=2 ai_will_do={factor=4000}
 		available={has_completed_focus=WTC_S07}

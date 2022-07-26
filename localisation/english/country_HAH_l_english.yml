@@ -8,15 +8,15 @@ HAH_GATHERING_STORM_DESC: ""
 ###Characters###
 ##Leaders##
 HAH_misty_wisps: "Misty Wisps"
- HAH_mwisps_poli_desc: ""
+ HAH_mwisps_poli_desc: "§YPortrait By§!: Tiviyl"
  HAH_willow_branch: "Willow Branch"
-  HAH_wbranch_poli_desc: ""
+  HAH_wbranch_poli_desc: "§YPortrait By§!: Tiviyl"
 ##Commanders##
  HAH_fiddle_pick: "Fiddle Pick"
-  HAH_fpick_mili_desc: ""
+  HAH_fpick_mili_desc: "§YPortrait By§!: Tiviyl"
  HAH_string_bow: "String Bow"
-  HAH_sbow_poli_desc: ""
-  HAH_sbow_mili_desc: ""
+  HAH_sbow_poli_desc: "§YPortrait By§!: Tiviyl"
+  HAH_sbow_mili_desc: "§YPortrait By§!: Tiviyl"
 ##Advisors##
 ###Country Name###
 HAH: "Hollow Shades"

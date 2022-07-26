@@ -46,3 +46,4 @@ recruit_character=HSW_spitfire
 recruit_character=HSW_scootaloo
 #NOTES#
 #tech_knights=1
+#Rainbow has a connection to Marechester in Pax Chryslaia as this is where she is shot down. Maybe I can make a call here.
