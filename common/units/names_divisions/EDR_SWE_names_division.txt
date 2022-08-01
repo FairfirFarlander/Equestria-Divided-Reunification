@@ -12,7 +12,7 @@
 }
 ALLSWE_tzinacantli_warriors={
 	name="Tzinacantli Warriors"
-	for_countries={HAY JTL PLT WTC}
+	for_countries={PLF JTL PLT WTC}
 	can_use={has_country_flag=EDR_SWE_tzinacantli_recruited}
 	division_types={"infantry"}
 	fallback_name="%s Tzinacantli Warriors"

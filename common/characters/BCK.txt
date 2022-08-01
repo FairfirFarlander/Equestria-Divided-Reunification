@@ -53,10 +53,10 @@ characters={
 		name=BCK_hallow_green
 		gender=female
 		portraits={
-			civilian={small="gfx/interface/ideas/generic_generals_small/Pony/portrait_pony_generic_navy_12.dds"}
+			#civilian={small="gfx/interface/ideas/generic_generals_small/Pony/portrait_pony_generic_navy_12.dds"}
 			army={
 				large="gfx/leaders/Pony/portrait_pony_generic_navy_12.dds"
-				small="gfx/interface/ideas/generic_generals_small/Pony/portrait_pony_generic_12.dds"
+				#small="gfx/interface/ideas/generic_generals_small/Pony/portrait_pony_generic_12.dds"
 			}
 		}
 		corps_commander={

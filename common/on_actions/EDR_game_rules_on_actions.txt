@@ -118,7 +118,7 @@ on_actions={
 						transfer_troops=no
 					}
 					annex_country={
-						target=HAY
+						target=PLF
 						transfer_troops=no
 					}
 					annex_country={
@@ -142,7 +142,7 @@ on_actions={
 							or={
 								is_core_of=BCK
 								is_core_of=EMB
-								is_core_of=HAY
+								is_core_of=PLF
 								is_core_of=JTL
 								is_core_of=PLT
 								is_core_of=STB
@@ -152,7 +152,7 @@ on_actions={
 						add_core_of=HEF
 						remove_core_of=BCK
 						remove_core_of=EMB
-						remove_core_of=HAY
+						remove_core_of=PLF
 						remove_core_of=JTL
 						remove_core_of=PLT
 						remove_core_of=STB
@@ -222,7 +222,7 @@ on_actions={
 						transfer_troops=no
 					}
 					annex_country={
-						target=MSS
+						target=FRI
 						transfer_troops=no
 					}
 					every_state={
@@ -231,14 +231,14 @@ on_actions={
 								is_core_of=FLY
 								is_core_of=HAH
 								is_core_of=MSN
-								is_core_of=MSS
+								is_core_of=FRI
 							}
 						}
 						add_core_of=HMS
 						remove_core_of=FLY
 						remove_core_of=HAH
 						remove_core_of=MSN
-						remove_core_of=MSS
+						remove_core_of=FRI
 					}
 				}
 				65={

@@ -220,7 +220,7 @@
 			log="[GetDateText]: [Root.GetName]: focus HAH_S07B"
 			MSN={add_opinion_modifier={target=HAH modifier=moonstar_seeth_opinion}}
 			MSE={add_opinion_modifier={target=HAH modifier=moonstar_seeth_opinion}}
-			MSS={add_opinion_modifier={target=HAH modifier=moonstar_seeth_opinion}}
+			FRI={add_opinion_modifier={target=HAH modifier=moonstar_seeth_opinion}}
 			add_stability=0.02
 		}
 	}

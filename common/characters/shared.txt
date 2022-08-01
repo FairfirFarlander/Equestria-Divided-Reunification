@@ -12,7 +12,7 @@ characters={
 			allowed={
 				OR={
 					original_tag=HWG
-					original_tag=HAY
+					original_tag=PLF
 				}
 			}
 			visible={

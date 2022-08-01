@@ -1,7 +1,7 @@
 EMB_SE_evt_a01.011.a={	#Gives negative opinion modifiers to neighbors.
 	custom_effect_tooltip=EMB_evt_a01.011.atip
 	hidden_effect={
-		HAY={
+		PLF={
 			add_opinion_modifier={
 				target=EMB
 				modifier=EMB_self_isolation
@@ -42,7 +42,7 @@ EMB_SE_evt_a01.011.a={	#Gives negative opinion modifiers to neighbors.
 EMB_SE_evt_a01.011.h={	#Removes negative opinion modifiers to neighbors.
 	custom_effect_tooltip=EMB_evt_a01.011.htip
 	hidden_effect={
-		HAY={
+		PLF={
 			remove_opinion_modifier={
 				target=EMB
 				modifier=EMB_self_isolation

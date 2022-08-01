@@ -8,7 +8,7 @@ defined_text={#Country
 	text={trigger={original_tag=CUL}localization_key=EAW_WS_CUL}
 	text={trigger={original_tag=EMB}localization_key=EAW_WS_EMB}
 	text={trigger={original_tag=FLY}localization_key=EAW_WS_FLY}
-	text={trigger={original_tag=HAY}localization_key=EAW_WS_HAY}
+	text={trigger={original_tag=PLF}localization_key=EAW_WS_PLF}
 	text={trigger={original_tag=HEB}localization_key=EAW_WS_HEB}
 	text={trigger={original_tag=HEF}localization_key=EAW_WS_HEF}
 	text={trigger={original_tag=HFT}localization_key=EAW_WS_HFT}
@@ -21,6 +21,7 @@ defined_text={#Country
 	text={trigger={original_tag=NIH}localization_key=EAW_WS_NIH}
 	text={trigger={original_tag=PIE}localization_key=EAW_WS_PIE}
 	text={trigger={original_tag=PLT}localization_key=EAW_WS_PLT}
+	text={trigger={original_tag=PRT}localization_key=EAW_WS_PRT}
 	text={trigger={original_tag=SGR}localization_key=EAW_WS_SGR}
 	text={trigger={original_tag=STB}localization_key=EAW_WS_STB}
 	text={trigger={original_tag=SWT}localization_key=EAW_WS_SWT}
@@ -42,7 +43,7 @@ defined_text={
 	text={trigger={original_tag=CUL}localization_key=EAW_WS_CUL_desc}
 	text={trigger={original_tag=EMB}localization_key=EAW_WS_EMB_desc}
 	text={trigger={original_tag=FLY}localization_key=EAW_WS_FLY_desc}
-	text={trigger={original_tag=HAY}localization_key=EAW_WS_HAY_desc}
+	text={trigger={original_tag=PLF}localization_key=EAW_WS_PLF_desc}
 	text={trigger={original_tag=HEB}localization_key=EAW_WS_HEB_desc}
 	text={trigger={original_tag=HEF}localization_key=EAW_WS_HEF_desc}
 	text={trigger={original_tag=HFT}localization_key=EAW_WS_HFT_desc}
@@ -55,6 +56,7 @@ defined_text={
 	text={trigger={original_tag=NIH}localization_key=EAW_WS_NIH_desc}
 	text={trigger={original_tag=PIE}localization_key=EAW_WS_PIE_desc}
 	text={trigger={original_tag=PLT}localization_key=EAW_WS_PLT_desc}
+	text={trigger={original_tag=PRT}localization_key=EAW_WS_PRT_desc}
 	text={trigger={original_tag=SGR}localization_key=EAW_WS_SGR_desc}
 	text={trigger={original_tag=STB}localization_key=EAW_WS_STB_desc}
 	text={trigger={original_tag=SWT}localization_key=EAW_WS_SWT_desc}

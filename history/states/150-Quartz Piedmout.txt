@@ -4,7 +4,7 @@ state={	#EDRSTATE
 	manpower=133540
 	state_category=pastoral
 	buildings_max_level_factor=1
-	provinces={185 316 332 394 3174 3206 3296 3525 6364 9079}
+	provinces={185 316 332 394 3174 3206 3296 3525 6364 9079 11057}
 	resources={tungsten=12 steel=34}
 	history={
 		owner=CRL

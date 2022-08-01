@@ -35,7 +35,7 @@ create_faction=MoonandStar
 add_to_faction=HAH
 add_to_faction=MSN
 add_to_faction=MSE
-add_to_faction=MSS
+add_to_faction=FRI
 set_popularities={fascism=60 communism=10 neutrality=25 democratic=5}
 set_politics={ruling_party=fascism}
 recruit_character=HMS_twilight_sparkle

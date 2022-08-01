@@ -5,7 +5,7 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/CRY/RadiantHope.tga"
-				small="gfx/interface/ideas/CRY_radiant_hope_idea.dds"
+				#small="gfx/interface/ideas/CRY_radiant_hope_idea.dds"
 			}
 		}
 		country_leader={	#POLITICS_RADIANTHOPE_DESC

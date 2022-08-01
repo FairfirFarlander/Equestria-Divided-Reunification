@@ -1,0 +1,33 @@
+capital=188
+oob="FRI_1012"
+set_research_slots=2
+set_stability=0.38 set_war_support=0.12
+add_ideas={
+	volunteer_only export_focus civilian_economy
+	poor_science_base agrarian_society
+	lack_of_scientists2 poverty4
+}
+if={
+	limit={has_dlc="No Step Back"}
+	add_ideas={
+		traditionalism_academy_spirit
+		doctrinal_orthodoxy_spirit
+		disdain_for_the_digging_spirit
+	}
+	else={add_ideas={EQS_bad_tanks}}
+}
+set_technology={
+	pony_race=1
+	penal_infantry=1
+	melee_weapons=1
+	tech_support=1
+	tech_unicorn=1
+	tech_unicorn_th=1
+}
+actually_fix_weapon_techs=yes
+set_rule={can_generate_female_aces=yes}
+set_popularities={fascism=40 communism=18 neutrality=20 democratic=22}
+set_politics={ruling_party=fascism}
+recruit_character=FRI_generic_pony
+#NOTES#
+#Stab/WarS are based off of 18(12)-18(14)/50. FRI is 12.

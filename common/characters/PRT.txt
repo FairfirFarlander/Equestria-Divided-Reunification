@@ -1,0 +1,15 @@
+characters={
+	PRT_generic_pony={
+		name=PRT_generic_pony
+		gender=female
+		portraits={
+			civilian={large="gfx/leaders/leader_unknown.dds"}
+		}
+		country_leader={
+			desc="PRT_gpony_poli_desc"	ideology=tribal_federation
+			expire="1030.03.13.08"
+			traits={}
+			id=-1
+		}
+	}
+}

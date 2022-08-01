@@ -503,55 +503,55 @@ EDR_debug_HEF_land_decisions={
 			}
 		}
 	}
-	HEF_res_HAY={
+	HEF_res_PLF={
 		#icon=
-		visible={not={country_exists=HAY}}
+		visible={not={country_exists=PLF}}
 		fire_only_once=no
 		complete_effect={
 			27={
-				add_core_of=HAY
+				add_core_of=PLF
 				remove_core_of=HEF
-				transfer_state_to=HAY
+				transfer_state_to=PLF
 			}
 			28={
-				add_core_of=HAY
+				add_core_of=PLF
 				remove_core_of=HEF
-				transfer_state_to=HAY
+				transfer_state_to=PLF
 			}
 			82={
-				add_core_of=HAY
+				add_core_of=PLF
 				remove_core_of=HEF
-				transfer_state_to=HAY
+				transfer_state_to=PLF
 			}
 			90={
-				add_core_of=HAY
+				add_core_of=PLF
 				remove_core_of=HEF
-				transfer_state_to=HAY
+				transfer_state_to=PLF
 			}
 		}
 	}
-	HEF_rev_HAY={
+	HEF_rev_PLF={
 		#icon=
-		visible={country_exists=HAY}
+		visible={country_exists=PLF}
 		fire_only_once=no
 		complete_effect={
 			27={
-				remove_core_of=HAY
+				remove_core_of=PLF
 				add_core_of=HEF
 				transfer_state_to=HEF
 			}
 			28={
-				remove_core_of=HAY
+				remove_core_of=PLF
 				add_core_of=HEF
 				transfer_state_to=HEF
 			}
 			82={
-				remove_core_of=HAY
+				remove_core_of=PLF
 				add_core_of=HEF
 				transfer_state_to=HEF
 			}
 			90={
-				remove_core_of=HAY
+				remove_core_of=PLF
 				add_core_of=HEF
 				transfer_state_to=HEF
 			}
@@ -971,45 +971,45 @@ EDR_debug_HMS_land_decisions={
 			}
 		}
 	}
-	HMS_res_MSS={
+	HMS_res_FRI={
 		#icon=
-		visible={not={country_exists=MSS}}
+		visible={not={country_exists=FRI}}
 		fire_only_once=no
 		complete_effect={
 			186={
-				add_core_of=MSS
+				add_core_of=FRI
 				remove_core_of=HMS
-				transfer_state_to=MSS
+				transfer_state_to=FRI
 			}
 			188={
-				add_core_of=MSS
+				add_core_of=FRI
 				remove_core_of=HMS
-				transfer_state_to=MSS
+				transfer_state_to=FRI
 			}
 			223={
-				add_core_of=MSS
+				add_core_of=FRI
 				remove_core_of=HMS
-				transfer_state_to=MSS
+				transfer_state_to=FRI
 			}
 		}
 	}
-	HMS_rev_MSS={
+	HMS_rev_FRI={
 		#icon=
-		visible={country_exists=MSS}
+		visible={country_exists=FRI}
 		fire_only_once=no
 		complete_effect={
 			186={
-				remove_core_of=MSS
+				remove_core_of=FRI
 				add_core_of=HMS
 				transfer_state_to=HMS
 			}
 			188={
-				remove_core_of=MSS
+				remove_core_of=FRI
 				add_core_of=HMS
 				transfer_state_to=HMS
 			}
 			223={
-				remove_core_of=MSS
+				remove_core_of=FRI
 				add_core_of=HMS
 				transfer_state_to=HMS
 			}

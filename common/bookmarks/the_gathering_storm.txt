@@ -9,8 +9,8 @@ bookmarks={
 			ideas={}
 			focuses={}
 		}
-		"HAY"={	#Ponies Liberation Front
-			history="HAY_GATHERING_STORM_DESC"
+		"PLF"={	#Ponies Liberation Front
+			history="PLF_GATHERING_STORM_DESC"
 			ideology=communism
 			ideas={}
 			focuses={}

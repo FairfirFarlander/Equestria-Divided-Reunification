@@ -7,8 +7,8 @@ state={	#EDRSTATE
 	provinces={563 3423 3506 3533 3669 6583 9559 9575 11407 11502 11531 11547}
 	resources={steel=5}
 	history={
-		owner=HAY
-		add_core_of=HAY
+		owner=PLF
+		add_core_of=PLF
 		victory_points={11531 1}
 		buildings={
 			11531={bunker=1}
