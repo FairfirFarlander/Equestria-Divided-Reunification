@@ -6,7 +6,8 @@ state={	#EDRSTATE
 	buildings_max_level_factor=1
 	provinces={425 1111 1152 1207 6524 7173 13245 13246 13247}
 	history={
-		owner=EMB
-		add_core_of=EMB
+		owner=JTL
+		add_core_of=JTL
+		add_claim_by=PLT
 	}
 }

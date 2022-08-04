@@ -1,0 +1,34 @@
+characters={
+	SOY_yaria={
+		name=SOY_yaria
+		gender=female
+		portraits={
+			civilian={
+				large="gfx/leaders/SOY/SOY_Yaria.dds"
+				small="GFX_idea_CHN_queen_yaria"
+			}
+		}
+		country_leader={
+			desc="chn_queen_yaria_desc"	ideology=despotism	#Change desc soon.
+			expire="1030.03.13.08"
+			traits={queen_yaria}
+			id=-1
+		}
+	}
+	SOY_venyx={
+		name=SOY_venyx
+		gender=female
+		portraits={
+			army={
+				large="gfx/leaders/CHN/Venyx.tga"
+				small="gfx/interface/ideas/Advisors/CHN/idea_Venyx.tga"
+			}
+		}
+		corps_commander={
+			desc="SOY_venyx_mili_desc"
+			skill=2 attack_skill=1	defense_skill=1
+			planning_skill=3	logistics_skill=2
+			traits={changeling_race_trait organizer winter_specialist}
+		}
+	}
+}

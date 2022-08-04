@@ -1,0 +1,17 @@
+state={
+	id=319
+	name="STATE_319"
+	manpower=78318	#39159
+	state_category=pastoral
+	buildings_max_level_factor=1
+	provinces={913 3158 4627 9203 9779 11128 12637}
+	history={
+		owner=EMB
+		add_core_of=EMB
+		#owner=CHN
+		#add_core_of=CHN
+		buildings={
+			infrastructure=1
+		}
+	}
+}

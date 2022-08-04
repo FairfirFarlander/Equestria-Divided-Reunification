@@ -4,7 +4,7 @@ CHY={color=rgb{204 11 64}color_ui=rgb{204 11 64}}
 COT={color=rgb{157 147 130}color_ui=rgb{157 147 130}}
 CRL={color=rgb{213 166 240}color_ui=rgb{213 166 240}}
 CUL={color=rgb{101 1 36}color_ui=rgb{101 1 36}}
-EMB={color=rgb{20 45 19}color_ui=rgb{20 45 19}}
+EMB={color=rgb{130 15 15}color_ui=rgb{130 15 15}}
 FLY={color=rgb{137 132 234}color_ui=rgb{137 132 234}}
 FSH={color=rgb{178 72 171}color_ui=rgb{178 72 171}}
 HAH={color=rgb{210 36 170}color_ui=rgb{210 36 170}}
@@ -26,6 +26,7 @@ PIE={color=rgb{187 227 208}color_ui=rgb{187 227 208}}
 PLT={color=rgb{41 64 109}color_ui=rgb{41 64 109}}
 PRT={color=rgb{41 200 109}color_ui=rgb{41 200 109}}
 SGR={color=rgb{249 26 93}color_ui=rgb{249 26 93}}
+SOY={color=rgb{166 234 251}color_ui=rgb{166 234 251}}
 STB={color=rgb{166 208 53}color_ui=rgb{166 208 53}}
 #STP={color=rgb{55 129 12}color_ui=rgb{55 129 12}}
 SWT={color=rgb{214 254 244}color_ui=rgb{214 254 244}}

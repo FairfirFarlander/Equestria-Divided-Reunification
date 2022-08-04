@@ -7,7 +7,7 @@ state={	#EDRSTATE
 	provinces={3868 3943 3974 3985 4154 6942 6983 9586 9922 10731 11816 11872}
 	resources={rubber=5}
 	history={
-		owner=EMB
-		add_core_of=EMB
+		owner=STB
+		add_core_of=STB
 	}
 }

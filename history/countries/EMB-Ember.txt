@@ -1,7 +1,5 @@
-capital=36
+capital=319
 oob="EMB_1012"
-#if={limit={has_dlc="Man the Guns"}set_naval_oob="EMB_07_naval"}#
-#if={limit={not={has_dlc="Man the Guns"}}set_naval_oob="EMB_07_naval_legacy"}#
 set_research_slots=2
 set_stability=0.46 set_war_support=0.07
 add_ideas={
@@ -18,22 +16,6 @@ set_technology={
 	tech_support=1
 	tech_jager=1
 }
-if={limit={has_dlc="Man the Guns"}
-	set_technology={
-		#pre_dreadnoughts=1#	#Screw yew, i'm gonna go play dreadnought.#
-		#early_ship_hull_heavy=1#
-		#basic_battery=1#
-		#basic_secondary_battery=1#
-		mtg_transport=1
-	}
-}
-if={limit={not={has_dlc="Man the Guns"}}
-	set_technology={
-		#pre_dreadnoughts_nomtg=1#	#Screw yew, i'm gonna go play dreadnought.#
-		#early_battleship=1#
-		transport=1
-	}
-}
 actually_fix_weapon_techs=yes
 set_convoys=2
 set_rule={can_generate_female_aces=yes}
@@ -45,63 +27,6 @@ recruit_character=EMB_queen_narratek
 recruit_character=EMB_aetanae_krix
 recruit_character=EMB_hithax_ballas	#Remove after testing
 recruit_character=EMB_lavender_opal	#Remove after testing
-if={limit={has_dlc="Man the Guns"}
-	create_equipment_variant={
-		name="Narratek 999 Class"	type=ship_hull_heavy_1
-		parent_version=0	#obsolete=yes#
-		modules={
-			fixed_ship_battery_slot=ship_heavy_battery_1
-			fixed_ship_anti_air_slot=ship_anti_air_1
-			fixed_ship_fire_control_system_slot=ship_fire_control_system_0
-			fixed_ship_radar_slot=empty
-			fixed_ship_engine_slot=heavy_ship_engine_1
-			fixed_ship_secondaries_slot=ship_secondaries_1
-			fixed_ship_armor_slot=ship_armor_bb_1
-			front_1_custom_slot=empty
-			mid_1_custom_slot=ship_secondaries_1
-			mid_2_custom_slot=ship_secondaries_1
-			rear_1_custom_slot=ship_heavy_battery_1
-		}
-	}
-#	create_equipment_variant={
-#		name="Mounder 999 Class"	type=ship_hull_pre_dreadnought
-#		parent_version=0	#obsolete=yes
-#		modules={
-#			fixed_ship_battery_slot=ship_heavy_battery_1
-#			fixed_ship_anti_air_slot=empty
-#			fixed_ship_fire_control_system_slot=ship_fire_control_system_0
-#			fixed_ship_radar_slot=empty
-#			fixed_ship_engine_slot=heavy_ship_engine_1
-#			fixed_ship_secondaries_slot=empty
-#			fixed_ship_armor_slot=ship_armor_bc_1
-#			front_1_custom_slot=empty
-#			mid_1_custom_slot=empty
-#			rear_1_custom_slot=empty
-#		}
-#	}
-}
-if={limit={not={has_dlc="Man the Guns"}}
-	create_equipment_variant={
-		name="Narratek 999 Class"	type=battleship_1
-		parent_version=0	#obsolete=yes#
-		upgrades={
-			ship_reliability_upgrade=0
-			ship_engine_upgrade=0
-			ship_armor_upgrade=0
-			ship_gun_upgrade=1
-		}
-	}
-#	create_equipment_variant={
-#		name="Mounder 999 Class"	type=pre_dreadnought_nomtg
-#		parent_version=0	#obsolete=yes
-#		upgrades={
-#			ship_reliability_upgrade=0
-#			ship_engine_upgrade=0
-#			ship_armor_upgrade=0
-#			ship_gun_upgrade=1
-#		}
-#	}
-}
 #NOTES#
 #Literally Vietnam
 #Dreadnaughts suck! Only get one gun. *TY; We tried. It died. *FF
