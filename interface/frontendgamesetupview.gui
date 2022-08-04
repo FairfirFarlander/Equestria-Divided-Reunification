@@ -111,14 +111,14 @@ guiTypes={
 		buttonType={
 			name="country_leader"
 			quadTextureSprite="GFX_leader_unknown"
-			position={x=17 y=22}
-			scale=0.75
+			position={x=22 y=17}
+			scale=0.308
 			clicksound=click_checkbox
 		}
 		iconType={
 			name="country_flag"
 			quadTextureSprite="GFX_shield_medium"
-			position={x=33 y=186}
+			position={x=80 y=22}
 			Orientation="UPPER_LEFT"
 			alwaystransparent=yes
 		}		
@@ -130,10 +130,10 @@ guiTypes={
 		}		
 		instantTextBoxType={
 			name="country_name"
-			position={x=8 y=247}
-			font="hoi_20b"
+			position={x=8 y=87}
+			font="hoi_16mbs"
 			borderSize={x=0 y=0}
-			maxWidth=131
+			maxWidth=170
 			maxHeight=20
 			fixedsize=yes	
 			format=center		
@@ -162,15 +162,15 @@ guiTypes={
 		name="country_entry_mini"
 		iconType={
 			name="country_flag"
-			quadTextureSprite="GFX_shield_medium"
-			position={x=26 y=22}
+			quadTextureSprite="GFX_flag_small2"
+			position={x=9 y=-50}
 			Orientation="UPPER_LEFT"
 			alwaystransparent=yes
 		}
 		buttonType={
 			name="country"	
-			quadTextureSprite="GFX_country_selection_minor_entry"
-			position={x=0 y=0}
+			quadTextureSprite="GFX_mini_country_selector"
+			position={x=0 y=-59}
 			clicksound=click_checkbox
 		}		
 	}
@@ -522,7 +522,7 @@ guiTypes={
 	}
 		containerWindowType={
 		name="gamesetup_interesting_countries_window"
-		size={width=1225 height=806}
+		size={width=1225 height=717}
 		Orientation=center
 		origo=center
 		clipping=no
@@ -542,17 +542,6 @@ guiTypes={
 			name="single_player_country_bg"
 			quadTextureSprite="GFX_country_selection_bg"
 		}
-		#ButtonType={
-		#	name="back_button"
-		#	position={x=-158 y=-52}
-		#	quadTextureSprite="GFX_button_148x34"	
-		#	buttonText="BACK"
-		#	buttonFont="hoi_18mbs"
-		#	Orientation="CENTER_DOWN"
-		#	clicksound=click_close
-		#	oversound=ui_menu_over
-		#	shortcut="ESCAPE"
-		#}
 		ButtonType={
 			name="select_button"
 			position={x=-130 y=-52}
@@ -566,175 +555,48 @@ guiTypes={
 		}			
 		containerWindowType={
 			name="countries"
-			position={x=15 y=45}
+			position={x=7 y=55}
 			size={width=-15 height=120}
 			gridboxType={
 				name="countries_grid"
 				position={x=0 y=0}
 				size={width=100% height=100%}
-				slotsize={width=150 height=0}
-				add_horizontal=yes
-				max_slots_vertical=1
+				slotsize={width=170 height=95}
+				max_slots_vertical=2
+				max_slots_horizontal=7
 				format="UPPER_LEFT"
 			}	
 		}
 		containerWindowType={
-			name="countries_medium"
-			position={x=15 y=330}
-			size={width=-15 height=120}
-			gridboxType={
-				name="countries_grid"
-				position={x=0 y=0}
-				size={width=100% height=100%}
-				slotsize={width=150 height=0}
-				add_horizontal=yes
-				max_slots_vertical=1
-				max_slots_horizontal=8
-				format="UPPER_LEFT"
-			}
-		}
-		containerWindowType={
 			name="countries_mini"
-			position={x=15 y=333}
+			position={x=12 y=330}
 			size={width=-15 height=120}
 			gridboxType={
 				name="countries_grid"
 				position={x=0 y=0}
 				size={width=100% height=100%}
-				slotsize={width=150 height=86}
+				slotsize={width=52 height=55}
 				add_horizontal=yes
-				max_slots_vertical=2
-				max_slots_horizontal=8
+				max_slots_vertical=3
+				max_slots_horizontal=23
 				format="UPPER_LEFT"
 			}
 		}
-		#iconType={
-		#	name="update_overlay_6"
-		#	quadTextureSprite="GFX_country_selection_minor_entry_new_113_overlay"
-		#	position={x=15 y=333}
-		#	Orientation="UPPER_LEFT"
-		#	alwaystransparent=yes
-		#}
-		#iconType={
-		#	name="update_overlay_5"
-		#	quadTextureSprite="GFX_country_selection_minor_entry_new_113_overlay"
-		#	position={x=165 y=333}
-		#	Orientation="UPPER_LEFT"
-		#	alwaystransparent=yes
-		#}
-		#iconType={
-		#	name="update_overlay_3"
-		#	quadTextureSprite="GFX_country_selection_minor_entry_new_113_overlay"
-		#	position={x=315 y=333}
-		#	Orientation="UPPER_LEFT"
-		#	alwaystransparent=yes
-		#}
-		#iconType={
-		#	name="update_overlay_2"
-		#	quadTextureSprite="GFX_country_selection_minor_entry_new_113_overlay"
-		#	position={x=465 y=333}
-		#	Orientation="UPPER_LEFT"
-		#	alwaystransparent=yes
-		#}
-		#iconType={
-		#	name="update_overlay"
-		#	quadTextureSprite="GFX_country_selection_minor_entry_new_113_overlay"
-		#	position={x=615 y=333}
-		#	Orientation="UPPER_LEFT"
-		#	alwaystransparent=yes
-		#}
-		#iconType={
-		#	name="update_overlay_4"
-		#	quadTextureSprite="GFX_country_selection_minor_entry_new_113_overlay"
-		#	position={x=765 y=333}
-		#	Orientation="UPPER_LEFT"
-		#	alwaystransparent=yes
-		#}
-		#iconType={
-		#	name="update_overlay_14"
-		#	quadTextureSprite="GFX_country_selection_minor_entry_new_113_overlay"
-		#	position={x=915 y=333}
-		#	Orientation="UPPER_LEFT"
-		#	alwaystransparent=yes
-		#}
-		# iconType={
-		# 	name="update_overlay_11"
-		# 	quadTextureSprite="GFX_country_selection_minor_entry_new_113_overlay"
-		# 	position={x=15 y=420}
-		# 	Orientation="UPPER_LEFT"
-		# 	alwaystransparent=yes
-		#}
-		# iconType={
-		# 	name="update_overlay_7"
-		# 	quadTextureSprite="GFX_country_selection_minor_entry_new_113_overlay"
-		# 	position={x=165 y=420}
-		# 	Orientation="UPPER_LEFT"
-		# 	alwaystransparent=yes
-		#}
-		# iconType={
-		# 	name="update_overlay_8"
-		# 	quadTextureSprite="GFX_country_selection_minor_entry_new_113_overlay"
-		# 	position={x=315 y=420}
-		# 	Orientation="UPPER_LEFT"
-		# 	alwaystransparent=yes
-		#}
-		# iconType={
-		# 	name="update_overlay_9"
-		# 	quadTextureSprite="GFX_country_selection_minor_entry_new_113_overlay"
-		# 	position={x=465 y=420}
-		# 	Orientation="UPPER_LEFT"
-		# 	alwaystransparent=yes
-		#}
-		# iconType={
-		# 	name="update_overlay_10"
-		# 	quadTextureSprite="GFX_country_selection_minor_entry_new_113_overlay"
-		# 	position={x=615 y=420}
-		# 	Orientation="UPPER_LEFT"
-		# 	alwaystransparent=yes
-		#}
-		# iconType={
-		# 	name="update_overlay_12"
-		# 	quadTextureSprite="GFX_country_selection_minor_entry_new_113_overlay"
-		# 	position={x=765 y=420}
-		# 	Orientation="UPPER_LEFT"
-		# 	alwaystransparent=yes
-		#}
-		# iconType={
-		# 	name="update_overlay_15"
-		# 	quadTextureSprite="GFX_country_selection_minor_entry_new_113_overlay"
-		# 	position={x=1065 y=420}
-		# 	Orientation="UPPER_LEFT"
-		# 	alwaystransparent=yes
-		#}
-		# iconType={
-		# 	name="update_overlay_16"
-		# 	quadTextureSprite="GFX_country_selection_minor_entry_new_113_overlay"
-		# 	position={x=915 y=420}
-		# 	Orientation="UPPER_LEFT"
-		# 	alwaystransparent=yes
-		#}
-		# iconType={
-		# 	name="update_overlay_13"
-		# 	quadTextureSprite="GFX_country_selection_minor_entry_new_113_overlay"
-		# 	position={x=1065 y=333}
-		# 	Orientation="UPPER_LEFT"
-		# 	alwaystransparent=yes
-		#}
 		iconType={
 			name="minor_country_leader"
 			quadTextureSprite="GFX_leader_unknown"
-			position={x=289 y=530}
+			position={x=289 y=441}
 			scale=0.696
 			rotation=-0.04
 		}
 		iconType={
-				name="minor_portrait_overlay"
-				spriteType="GFX_minor_portrait_overlay"
-				position={x=280 y=519}
+			name="minor_portrait_overlay"
+			spriteType="GFX_minor_portrait_overlay"
+			position={x=280 y=430}
 		}
 		instantTextBoxType={
 			name="info_title"
-			position={x=10 y=539}
+			position={x=10 y=450}
 			font="hoi4_typewriter22"
 			borderSize={x=0 y=0}
 			text="FE_COUNTRY_INFO_TITLE"
@@ -744,7 +606,7 @@ guiTypes={
 		}
 		containerWindowType={
 			name="info"				
-			position={x=35 y=574}
+			position={x=35 y=485}
 			instantTextBoxType={
 				name="leader_label"
 				position={x=0 y=-5}
@@ -837,16 +699,16 @@ guiTypes={
 		}
 		instantTextBoxType={
 			name="nation_title"
-			position={x=437 y=518}
+			position={x=442 y=421}
 			font="hoi_24header"
 			borderSize={x=0 y=0}
 			maxWidth=340
-			maxHeight=30	
+			maxHeight=48	
 			format=centre
 		}
 		containerWindowType={
 			name="spirit"
-			position={x=451 y=564}
+			position={x=451 y=475}
 			iconType={
 				name="pol_faction_icon"
 				spriteType="GFX_pol_factions_strip"
@@ -855,7 +717,7 @@ guiTypes={
 			}
 			containerWindowType={
 				name="ideas"
-				position={x=90 y=0}
+				position={x=91 y=-1}
 				size={width=100%% height=70}
 				gridboxType={
 					name="ideas_grid"
@@ -884,7 +746,7 @@ guiTypes={
 		}
 		instantTextBoxType={
 			name="history_title"
-			position={x=830 y=539}
+			position={x=830 y=450}
 			font="hoi4_typewriter22"
 			borderSize={x=0 y=0}
 			text="FE_COUNTRY_HISTORY_TITLE"
@@ -894,12 +756,258 @@ guiTypes={
 		}
 		instantTextBoxType={
 			name="history"
-			position={x=810 y=570}
+			position={x=810 y=480}
 			font="hoi4_typewriter16"
 			borderSize={x=0 y=0}
 			maxWidth=380
 			maxHeight=30	
 			format=left
+		}
+		instantTextBoxType={
+			name="EquestriaName"
+			position={x=39 y=43}
+			font="hoi_24header"
+			text="CSS_EquestriaName"
+			maxWidth=115
+			maxHeight=15
+			fixedsize=yes
+			format=center
+			Orientation="UPPER_LEFT"
+		}
+		instantTextBoxType={
+			name="GriffoniaName"
+			position={x=539 y=43}
+			font="hoi_24header"
+			text="CSS_GriffoniaName"
+			maxWidth=115
+			maxHeight=15
+			fixedsize=yes
+			format=center
+			Orientation="UPPER_LEFT"
+		}
+		instantTextBoxType={
+			name="ZebricaName"
+			position={x=880 y=43}
+			font="hoi_24header"
+			text="CSS_ZebricaName"
+			maxWidth=115
+			maxHeight=15
+			fixedsize=yes
+			format=center
+			Orientation="UPPER_LEFT"
+		}
+		instantTextBoxType={
+			name="EDR_eastregion"
+			position={x=25 y=260}
+			font="hoi_16mbs"
+			text="Titans of the East"
+			maxWidth=200
+			maxHeight=15
+			fixedsize=yes
+			format=left
+			Orientation="UPPER_LEFT"
+		}
+		instantTextBoxType={
+			name="EDR_southeastregion"
+			position={x=233 y=260}
+			font="hoi_16mbs"
+			text="Myths From The Jungle"
+			maxWidth=200
+			maxHeight=15
+			fixedsize=yes
+			format=left
+			Orientation="UPPER_LEFT"
+		}
+		instantTextBoxType={
+			name="EDR_southwestregion"
+			position={x=25 y=315}
+			font="hoi_16mbs"
+			text="For Clan and Country"
+			maxWidth=200
+			maxHeight=15
+			fixedsize=yes
+			format=left
+			Orientation="UPPER_LEFT"
+		}
+		instantTextBoxType={
+			name="EDR_northeastregion"
+			position={x=233 y=315}
+			font="hoi_16mbs"
+			text="Lords of the Marches"
+			maxWidth=200
+			maxHeight=15
+			fixedsize=yes
+			format=left
+			Orientation="UPPER_LEFT"
+		}
+		instantTextBoxType={
+			name="EDR_centralregion"
+			position={x=410 y=315}
+			font="hoi_16mbs"
+			text="Of Gods and Mortals"
+			maxWidth=200
+			maxHeight=15
+			fixedsize=yes
+			format=left
+			Orientation="UPPER_LEFT"
+		}
+		instantTextBoxType={
+			name="EDR_westerncorridor"
+			position={x=25 y=372}
+			font="hoi_16mbs"
+			text="Wings of the Phoenix"
+			maxWidth=200
+			maxHeight=15
+			fixedsize=yes
+			format=left
+			Orientation="UPPER_LEFT"
+		}
+		instantTextBoxType={
+			name="EDR_westernregion"
+			position={x=180 y=372}
+			font="hoi_16mbs"
+			text="Tides of the West"
+			maxWidth=200
+			maxHeight=15
+			fixedsize=yes
+			format=left
+			Orientation="UPPER_LEFT"
+		}
+		instantTextBoxType={
+			name="EDR_chaotic"
+			position={x=335 y=372}
+			font="hoi_16mbs"
+			text="Chaos and Disorder"
+			maxWidth=200
+			maxHeight=15
+			fixedsize=yes
+			format=left
+			Orientation="UPPER_LEFT"
+		}
+		instantTextBoxType={
+			name="Update1Name"
+			position={x=545 y=260}
+			font="hoi_16mbs"
+			text="CSS_ZebricaUpdate"	#2.0
+			maxWidth=200
+			maxHeight=15
+			fixedsize=yes
+			format=left
+			Orientation="UPPER_LEFT"
+		}
+		
+		instantTextBoxType={
+			name="Update2Name"
+			position={x=699 y=260}
+			font="hoi_16mbs"
+			text="CSS_TwoEagles"	#1.9
+			maxWidth=200
+			maxHeight=15
+			fixedsize=yes
+			format=left
+			Orientation="UPPER_LEFT"
+		}
+		
+		instantTextBoxType={
+			name="Update3Name"
+			position={x=805 y=260}
+			font="hoi_16mbs"
+			text="CSS_MountainShadow"	#1.8
+			maxWidth=200
+			maxHeight=15
+			fixedsize=yes
+			format=left
+			Orientation="UPPER_LEFT"
+		}
+		
+		instantTextBoxType={
+			name="Update4Name"
+			position={x=540 y=315}
+			font="hoi_16mbs"
+			text="CSS_Republican"	#1.7.3
+			maxWidth=200
+			maxHeight=15
+			fixedsize=yes
+			format=left
+			Orientation="UPPER_LEFT"
+		}
+		
+		instantTextBoxType={
+			name="Update5Name"
+			position={x=905 y=315}
+			font="hoi_16mbs"
+			text="CSS_BurningSea"	#1.5.1
+			maxWidth=200
+			maxHeight=15
+			fixedsize=yes
+			format=left
+			Orientation="UPPER_LEFT"
+		}
+		
+		instantTextBoxType={
+			name="Update6Name"
+			position={x=685 y=315}
+			font="hoi_16mbs"
+			text="CSS_Herzland"	#1.7
+			maxWidth=200
+			maxHeight=15
+			fixedsize=yes
+			format=left
+			Orientation="UPPER_LEFT"
+		}
+		
+		instantTextBoxType={
+			name="Update7Name"
+			position={x=1115 y=315}
+			font="hoi_16mbs"
+			text="CSS_NorthLight"	#1.4
+			maxWidth=200
+			maxHeight=15
+			fixedsize=yes
+			format=left
+			Orientation="UPPER_LEFT"
+		}
+		
+		instantTextBoxType={
+			name="Update8Name"
+			position={x=540 y=372}
+			font="hoi_16mbs"
+			text="CSS_BrotherFeud"	#1.3.5
+			maxWidth=200
+			maxHeight=15
+			fixedsize=yes
+			format=left
+			Orientation="UPPER_LEFT"
+		}
+		
+		instantTextBoxType={
+			name="Update9Name"
+			position={x=905 y=372}
+			font="hoi_16mbs"
+			text="CSS_Breadcrumbs"	#1.3.3
+			maxWidth=200
+			maxHeight=15
+			fixedsize=yes
+			format=left
+			Orientation="UPPER_LEFT"
+		}
+		
+		instantTextBoxType={
+			name="Update10Name"
+			position={x=1010 y=372}
+			font="hoi_16mbs"
+			text="CSS_Riverlands"	#1.3
+			maxWidth=200
+			maxHeight=15
+			fixedsize=yes
+			format=left
+			Orientation="UPPER_LEFT"
+		}
+		iconType={
+			name="RandomCountry"
+			spriteType="GFX_icon_unknown"
+			position={x=1153 y=364}
+			alwaystransparent=yes
 		}
 	}
 	containerWindowType={

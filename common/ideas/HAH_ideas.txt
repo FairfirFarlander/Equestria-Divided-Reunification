@@ -1,0 +1,11 @@
+ideas={
+	country={
+		HAH_masked_ponies={
+			allowed={always=no}	removal_cost=-1
+			#picture=
+			modifier={
+				stability_weekly=-0.001
+			}
+		}
+	}
+}

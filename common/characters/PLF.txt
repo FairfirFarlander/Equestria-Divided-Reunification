@@ -4,7 +4,7 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/BAL/completeanarchy.tga"
-				small="gfx/interface/ideas/unknown_advisor2.dds"
+				small="GFX_idea_unknown_advisor"
 			}
 		}
 		country_leader={

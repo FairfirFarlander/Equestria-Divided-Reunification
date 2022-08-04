@@ -38,7 +38,7 @@ characters={
 			}
 			army={
 				large="gfx/leaders/ZRS/Zecora.tga"
-				small="gfx/interface/ideas/unknown_advisor2.dds"
+				small="GFX_idea_unknown_advisor"
 			}
 		}
 		country_leader={

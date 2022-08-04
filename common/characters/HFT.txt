@@ -15,7 +15,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/Pony/portrait_pony_generic_7.dds"
-				small="gfx/interface/ideas/unknown_advisor2.dds"
+				small="GFX_idea_unknown_advisor"
 			}
 		}
 		corps_commander={
@@ -32,7 +32,7 @@ characters={
 			civilian={large="gfx/leaders/HMS/HMS_trixie_lulamoon.dds"}
 			army={
 				large="gfx/leaders/HMS/HMS_trixie_lulamoon.dds"
-				small="gfx/interface/ideas/unknown_advisor2.dds"
+				small="GFX_idea_unknown_advisor"
 			}
 		}
 		country_leader={

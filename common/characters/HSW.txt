@@ -55,7 +55,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/HSW/HSW_soarin.dds"
-				small="gfx/interface/ideas/unknown_advisor2.dds"
+				small="GFX_idea_unknown_advisor"
 			}
 		}
 		corps_commander={	#wing commander
@@ -71,7 +71,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/HSW/HSW_spitfire.dds"
-				small="gfx/interface/ideas/unknown_advisor2.dds"
+				small="GFX_idea_unknown_advisor"
 			}
 		}
 		corps_commander={	#wing commander
@@ -87,7 +87,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/HSW/HSW_scootaloo.dds"
-				small="gfx/interface/ideas/unknown_advisor2.dds"
+				small="GFX_idea_unknown_advisor"
 			}
 		}
 		corps_commander={

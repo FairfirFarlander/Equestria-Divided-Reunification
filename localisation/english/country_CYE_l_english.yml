@@ -12,9 +12,9 @@ CYE_voidwalker: "§R...§!"
 ##Commanders##
 ##Advisors##
 ###Country Name###
-CYE: ""
- CYE_DEF: ""
- CYE_ADJ: ""
+CYE: "Cease Your Existance"
+ CYE_DEF: "Cease Your Existance"
+ CYE_ADJ: "CEASE!!!"
 ###Political Parties###
 CYE_fascism_party: ""
  CYE_fascism_party_long: ""

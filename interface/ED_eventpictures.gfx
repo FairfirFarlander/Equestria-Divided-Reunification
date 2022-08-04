@@ -1,42 +1,41 @@
 spriteTypes={
-
 	spriteType={
 		name="GFX_news_event_fall_of_canterloted"
 		texturefile="gfx/event_pictures/fall_of_canterloted.dds"
 	}
-	SpriteType={
+	spriteType={
 		name="GFX_event_moonandstar_victory"
 		texturefile="gfx/event_pictures/moonandstar_victory.dds"
 	}
-	SpriteType={
+	spriteType={
 		name="GFX_event_whitegold_victory"
 		texturefile="gfx/event_pictures/whitegold_victory.dds"
 	}
-	SpriteType={
+	spriteType={
 		name="GFX_event_stormwing_victory"
 		texturefile="gfx/event_pictures/stormwing_victory.dds"
 	}
-	SpriteType={
+	spriteType={
 		name="GFX_event_earthborn_victory"
 		texturefile="gfx/event_pictures/earthborn_victory.dds"
 	}
-	SpriteType={
+	spriteType={
 		name="GFX_event_everfree_victory"
 		texturefile="gfx/event_pictures/everfree_victory.dds"
 	}
-	SpriteType={
+	spriteType={
 		name="GFX_event_laughter_victory"
 		texturefile="gfx/event_pictures/laughter_victory.dds"
 	}
-	SpriteType={
+	spriteType={
 		name="GFX_event_stalliongrad_victory"
 		texturefile="gfx/event_pictures/stalliongrad_victory.dds"
 	}
-	SpriteType={
+	spriteType={
 		name="GFX_event_sombra_victory"
 		texturefile="gfx/event_pictures/sombra_victory.dds"
 	}
-	SpriteType={
+	spriteType={
 		name="GFX_event_changeling_victory"
 		texturefile="gfx/event_pictures/changeling_victory.dds"
 	}

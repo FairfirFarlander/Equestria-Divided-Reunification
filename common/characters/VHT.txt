@@ -16,7 +16,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/Pony/portrait_pony_generic_land_1.dds"
-				small="gfx/interface/ideas/unknown_advisor2.dds"
+				small="GFX_idea_unknown_advisor"
 			}
 		}
 		corps_commander={
@@ -31,7 +31,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/Pony/portrait_pony_generic_land_4.dds"
-				small="gfx/interface/ideas/unknown_advisor2.dds"
+				small="GFX_idea_unknown_advisor"
 			}
 		}
 		corps_commander={
@@ -47,7 +47,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/Pony/portrait_pony_generic_land_10.dds"
-				small="gfx/interface/ideas/unknown_advisor2.dds"
+				small="GFX_idea_unknown_advisor"
 			}
 		}
 		corps_commander={
@@ -63,7 +63,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/Pony/portrait_pony_generic_land_10.dds"
-				small="gfx/interface/ideas/unknown_advisor2.dds"
+				small="GFX_idea_unknown_advisor"
 			}
 		}
 		corps_commander={

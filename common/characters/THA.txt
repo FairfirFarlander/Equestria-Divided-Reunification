@@ -23,11 +23,11 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/THA/THA_auburn_peak.dds"
-				small="gfx/interface/ideas/unknown_advisor2.dds"
+				small="GFX_idea_unknown_advisor"
 			}
 			army={
 				large="gfx/leaders/THA/THA_auburn_peak.dds"
-				small="gfx/interface/ideas/unknown_advisor2.dds"
+				small="GFX_idea_unknown_advisor"
 			}
 		}
 		country_leader={
@@ -55,7 +55,7 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/leader_unknown.dds"
-				small="gfx/interface/ideas/unknown_advisor2.dds"
+				small="GFX_idea_unknown_advisor"
 			}
 		}
 		country_leader={

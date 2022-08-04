@@ -206,3 +206,46 @@ add_namespace=HAH_evt_a02
 		}
 		immediate={log="[GetDateText]: [Root.GetName]: event HAH_evt_a02.062"}
 	}
+	country_event={		#The Masks
+		id=HAH_evt_a02.071
+		title=HAH_evt_a02.071.t	desc=HAH_evt_a02.071.d	#picture=
+		is_triggered_only=yes
+		option={
+			name=HAH_evt_a02.071.a
+		}
+		option={
+			name=HAH_evt_C-FF_W-TY.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_evt_a02.071"}
+	}
+	country_event={		#The Grand Masquerade
+		id=HAH_evt_a02.074
+		title=HAH_evt_a02.074.t	desc=HAH_evt_a02.074.d	#picture=
+		is_triggered_only=yes
+		option={
+			name=HAH_evt_a02.074.a
+			#HMS={add_opinion_modifier={target=HAH modifier=}}	#GIMIIE A FUCKING OPINION 'ERE
+			add_stability=0.15
+			add_popularity={ideology=democratic popularity=-0.03}
+		}
+		option={
+			name=HAH_evt_C-FF_W-TY.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_evt_a02.074"}
+	}
+	country_event={		#Mandated Masks
+		id=HAH_evt_a02.081
+		title=HAH_evt_a02.081.t	desc=HAH_evt_a02.081.d	#picture=
+		is_triggered_only=yes
+		option={
+			name=HAH_evt_a02.081.a
+			add_ideas=HAH_masked_ponies
+		}
+		option={
+			name=HAH_evt_C-FF_W-TY.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_evt_a02.081"}
+	}

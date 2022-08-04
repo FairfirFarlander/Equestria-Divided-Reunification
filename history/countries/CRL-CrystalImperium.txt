@@ -4,7 +4,7 @@ set_research_slots=3
 set_stability=0.50 set_war_support=0.3
 add_ideas={
 	volunteer_only export_focus civilian_economy
-	substantial_science_base outdated_industry
+	big_science_base outdated_industry
 	lack_of_scientists3 poverty3
 	royal_family
 	sombra_threat

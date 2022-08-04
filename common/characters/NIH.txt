@@ -5,7 +5,7 @@ characters={
 			civilian={large="gfx/leaders/NIH/NIH_cursed_fate.dds"}
 			army={
 				large="gfx/leaders/NIH/NIH_cursed_fate.dds"
-				small="gfx/interface/ideas/unknown_advisor2.dds"
+				small="GFX_idea_unknown_advisor"
 			}
 		}
 		country_leader={

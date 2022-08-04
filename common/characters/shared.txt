@@ -41,7 +41,7 @@ characters={
 			civilian={large="gfx/leaders/NMS/batgarrison.tga"}
 			army={
 				large="gfx/leaders/NMS/batgarrison.tga"
-				small="gfx/interface/ideas/unknown_advisor2.dds"
+				small="GFX_idea_unknown_advisor"
 			}
 		}
 		corps_commander={

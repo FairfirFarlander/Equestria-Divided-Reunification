@@ -43,7 +43,7 @@ characters={
 	}
 	CUL_cranky_doodle={
 		name=CUL_cranky_doodle
-		portraits={civilian={small="gfx/interface/ideas/unknown_advisor2.dds"}}
+		portraits={civilian={small="GFX_idea_unknown_advisor"}}
 		advisor={
 			slot=political_advisor
 			idea_token=CUL_cdoodle_advi
@@ -54,10 +54,10 @@ characters={
 		name=CUL_derpy_hooves
 		gender=female
 		portraits={
-			civilian={small="gfx/interface/ideas/unknown_advisor2.dds"}
+			civilian={small="GFX_idea_unknown_advisor"}
 			army={
 				large="gfx/leaders/CUL/CUL_derpy_hooves.dds"
-				small="gfx/interface/ideas/unknown_advisor2.dds"
+				small="GFX_idea_unknown_advisor"
 			}
 		}
 		corps_commander={
@@ -77,10 +77,10 @@ characters={
 		name=CUL_lyra_heartstrings
 		gender=female
 		portraits={
-			civilian={small="gfx/interface/ideas/unknown_advisor2.dds"}
+			civilian={small="GFX_idea_unknown_advisor"}
 			army={
 				large="gfx/leaders/CUL/CUL_lyra_heartstrings.dds"
-				small="gfx/interface/ideas/unknown_advisor2.dds"
+				small="GFX_idea_unknown_advisor"
 			}
 		}
 		corps_commander={
@@ -102,7 +102,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/CUL/CUL_surprise.dds"
-				small="gfx/interface/ideas/unknown_advisor2.dds"
+				small="GFX_idea_unknown_advisor"
 			}
 		}
 		corps_commander={
@@ -118,7 +118,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/CUL/CUL_screwball.dds"
-				small="gfx/interface/ideas/unknown_advisor2.dds"
+				small="GFX_idea_unknown_advisor"
 			}
 		}
 		corps_commander={
@@ -139,7 +139,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/CUL/CUL_pokey_pierce.dds"
-				small="gfx/interface/ideas/unknown_advisor2.dds"
+				small="GFX_idea_unknown_advisor"
 			}
 		}
 		corps_commander={

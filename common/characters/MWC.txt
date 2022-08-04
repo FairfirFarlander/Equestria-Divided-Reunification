@@ -55,7 +55,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/Pony/portrait_pony_generic_land_8.dds"
-				small="gfx/interface/ideas/unknown_advisor2.dds"
+				small="GFX_idea_unknown_advisor"
 			}
 		}
 		corps_commander={
@@ -71,7 +71,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/Pony/portrait_pony_generic_land_9.dds"
-				small="gfx/interface/ideas/unknown_advisor2.dds"
+				small="GFX_idea_unknown_advisor"
 			}
 		}
 		corps_commander={
@@ -87,7 +87,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/Pony/portrait_pony_generic_navy_6.dds"
-				small="gfx/interface/ideas/unknown_advisor2.dds"
+				small="GFX_idea_unknown_advisor"
 			}
 		}
 		navy_leader={

@@ -36,11 +36,11 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/HWG/HWG_fleur_de_lis.dds"
-				small="gfx/interface/ideas/unknown_advisor2.dds"
+				small="GFX_idea_unknown_advisor"
 			}
 			army={
 				large="gfx/leaders/HWG/HWG_fleur_de_lis.dds"
-				small="gfx/interface/ideas/unknown_advisor2.dds"
+				small="GFX_idea_unknown_advisor"
 			}
 		}
 		country_leader={
@@ -105,11 +105,11 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/HWG/HWG_clair_de_lune.dds"
-				small="gfx/interface/ideas/unknown_advisor2.dds"
+				small="GFX_idea_unknown_advisor"
 			}
 			army={
 				large="gfx/leaders/HWG/HWG_clair_de_lune.dds"
-				small="gfx/interface/ideas/unknown_advisor2.dds"
+				small="GFX_idea_unknown_advisor"
 			}
 		}
 		corps_commander={
@@ -124,7 +124,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/HWG/HWG_mashed_potato.dds"
-				small="gfx/interface/ideas/unknown_advisor2.dds"
+				small="GFX_idea_unknown_advisor"
 			}
 		}
 		corps_commander={
@@ -140,7 +140,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/Pony/portrait_pony_generic_navy_7.dds"
-				small="gfx/interface/ideas/unknown_advisor2.dds"
+				small="GFX_idea_unknown_advisor"
 			}
 		}
 		navy_leader={
@@ -178,7 +178,7 @@ characters={
 	HWG_diamond_tiara={
 		name=HWG_diamond_tiara
 		gender=female
-		portraits={civilian={small="gfx/interface/ideas/unknown_advisor2.dds"}}
+		portraits={civilian={small="GFX_idea_unknown_advisor"}}
 		advisor={
 			slot=political_advisor
 			idea_token=HWG_dtiara_advi
@@ -191,7 +191,7 @@ characters={
 		gender=female
 		portraits={
 			civilian={
-				small="gfx/interface/ideas/unknown_advisor2.dds"
+				small="GFX_idea_unknown_advisor"
 			}
 		}
 		advisor={
@@ -204,8 +204,8 @@ characters={
 	HWG_nighthooves={
 		name=HWG_nighthooves
 		portraits={
-			civilian={small="gfx/interface/ideas/unknown_advisor2.dds"}
-			army={small="gfx/interface/ideas/unknown_advisor2.dds"}
+			civilian={small="GFX_idea_unknown_advisor"}
+			army={small="GFX_idea_unknown_advisor"}
 		}
 		#advisor={
 		#	slot=political_advisor
@@ -224,7 +224,7 @@ characters={
 	}
 	HWG_whispy_locks={
 		name=HWG_whispy_locks
-		portraits={civilian={small="gfx/interface/ideas/unknown_advisor2.dds"}}
+		portraits={civilian={small="GFX_idea_unknown_advisor"}}
 		advisor={
 			slot=political_advisor
 			idea_token=HWG_wlocks_advi
@@ -233,7 +233,7 @@ characters={
 	}
 	HWG_lemon_meringue={
 		name=HWG_lemon_meringue
-		portraits={civilian={small="gfx/interface/ideas/unknown_advisor2.dds"}}
+		portraits={civilian={small="GFX_idea_unknown_advisor"}}
 		advisor={
 			slot=political_advisor
 			idea_token=HWG_lmeringue_advi
@@ -242,7 +242,7 @@ characters={
 	}
 	HWG_prim_n_proper={
 		name=HWG_prim_n_proper
-		portraits={civilian={small="gfx/interface/ideas/unknown_advisor2.dds"}}
+		portraits={civilian={small="GFX_idea_unknown_advisor"}}
 		advisor={
 			slot=political_advisor
 			idea_token=HWG_pnproper_advi
@@ -251,7 +251,7 @@ characters={
 	}
 	HWG_straight_arrow={
 		name=HWG_straight_arrow
-		portraits={civilian={small="gfx/interface/ideas/unknown_advisor2.dds"}}
+		portraits={civilian={small="GFX_idea_unknown_advisor"}}
 		advisor={
 			slot=political_advisor
 			idea_token=HWG_sarrow_advi

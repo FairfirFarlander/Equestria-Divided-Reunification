@@ -173,6 +173,7 @@
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_S05"
 			country_event=HAH_evt_a01.051
+			set_variable={HAH_grand_masquerade=0}
 		}
 	}
 	shared_focus={	#An Unforseen Issue
@@ -198,7 +199,7 @@
 		}
 	}
 	shared_focus={	#The Masks
-		id=HAH_S07A #icon=
+		id=HAH_S07A icon=GFX_goal_chn_man_mask
 		x=-2 y=2 cost=2 relative_position_id=HAH_S05
 		search_filters={}
 		prerequisite={focus=HAH_S06A}
@@ -206,11 +207,16 @@
 		ai_will_do={factor=80}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_S07A"
-			#country_event=HAH_evt_a02.071
+			country_event=HAH_evt_a02.071
+			add_to_variable={HAH_grand_masquerade=1}
+			if={
+				limit={check_variable={HAH_grand_masquerade=3}}
+				country_event=HAH_evt_a02.074	#The Grand Masquerade
+			}
 		}
 	}
 	shared_focus={	#The Breads
-		id=HAH_S07B #icon=
+		id=HAH_S07B icon=GFX_goal_breadfocus
 		x=0 y=2 cost=2 relative_position_id=HAH_S05
 		search_filters={}
 		prerequisite={focus=HAH_S06A}
@@ -222,10 +228,15 @@
 			MSE={add_opinion_modifier={target=HAH modifier=moonstar_seeth_opinion}}
 			FRI={add_opinion_modifier={target=HAH modifier=moonstar_seeth_opinion}}
 			add_stability=0.02
+			add_to_variable={HAH_grand_masquerade=1}
+			if={
+				limit={check_variable={HAH_grand_masquerade=3}}
+				country_event=HAH_evt_a02.074	#The Grand Masquerade
+			}
 		}
 	}
 	shared_focus={	#The Wine
-		id=HAH_S07C #icon=
+		id=HAH_S07C icon=GFX_goal_GEO_wine
 		x=2 y=2 cost=2 relative_position_id=HAH_S05
 		search_filters={}
 		prerequisite={focus=HAH_S06A}
@@ -241,6 +252,77 @@
 				technology=tech_pony_misc_a2
 				technology=tech_pony_misc_b
 				technology=tech_pony_misc_c2
+			}
+			add_to_variable={HAH_grand_masquerade=1}
+			if={
+				limit={check_variable={HAH_grand_masquerade=3}}
+				country_event=HAH_evt_a02.074	#The Grand Masquerade
+			}
+		}
+	}
+	shared_focus={	#It Is Not Just A Theory
+		id=HAH_S08 icon=GFX_goal_generic_scientific_exchange_pony
+		x=0 y=3 cost=2 relative_position_id=HAH_S05
+		search_filters={}
+		prerequisite={focus=HAH_S07A}
+		prerequisite={focus=HAH_S07B}
+		prerequisite={focus=HAH_S07C}
+		ai_will_do={factor=80}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAH_S08"
+			country_event=HAH_evt_a02.081
+			custom_effect_tooltip=HAH_S08_tooltip
+			set_country_flag=HAH_unlock_economy
+			set_country_flag=HAH_unlock_military
+		}
+	}
+	shared_focus={	#Increased Production
+		id=HAH_S09A #icon=
+		x=-3 y=1 cost=2 relative_position_id=HAH_S08
+		search_filters={}
+		prerequisite={focus=HAH_S08}
+		ai_will_do={factor=80}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAH_S09A"
+			one_random_industrial_complex=yes
+		}
+	}
+	shared_focus={	#Willow’s Ingredient
+		id=HAH_S09B #icon=
+		x=-1 y=1 cost=2 relative_position_id=HAH_S08
+		search_filters={}
+		prerequisite={focus=HAH_S08}
+		ai_will_do={factor=80}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAH_S09B"
+			country_event=HAH_evt_a02.092	#Farming Poison Joke
+		}
+	}
+	shared_focus={	#The Bobbies
+		id=HAH_S09C #icon=
+		x=1 y=1 cost=2 relative_position_id=HAH_S08
+		search_filters={}
+		prerequisite={focus=HAH_S08}
+		ai_will_do={factor=80}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAH_S09C"
+			country_event=HAH_evt_a02.093	#The Bobbies
+		}
+	}
+	shared_focus={	#The Constables
+		id=HAH_S09D #icon=
+		x=3 y=1 cost=2 relative_position_id=HAH_S08
+		search_filters={}
+		prerequisite={focus=HAH_S08}
+		ai_will_do={factor=80}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAH_S09D"
+			custom_effect_tooltip=HAH_S09D_tooltip
+			hidden_effect={
+				HAH={
+					recruit_character=HAH_fiddle_pick
+					recruit_character=HAH_string_bow
+				}
 			}
 		}
 	}

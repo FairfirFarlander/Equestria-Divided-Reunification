@@ -31,7 +31,7 @@ characters={
 			civilian={large="gfx/leaders/TEM/Mem.tga"}
 			army={
 				large="gfx/leaders/TEM/Mem.tga"
-				small="gfx/interface/ideas/unknown_advisor2.dds"
+				small="GFX_idea_unknown_advisor"
 			}
 		}
 		country_leader={
