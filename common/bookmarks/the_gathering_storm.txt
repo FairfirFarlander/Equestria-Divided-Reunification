@@ -444,12 +444,6 @@ bookmarks={
 			focuses={}
 		}
 		#Lords of the Marches (Row Two)
-		"HAH"={	#Hollow Shades
-			history="HAH_GATHERING_STORM_DESC"
-			ideology=fascism	minor=yes
-			ideas={}
-			focuses={}
-		}
 		"MSN"={	#Neighagra
 			history="MSN_GATHERING_STORM_DESC"
 			ideology=fascism	minor=yes
@@ -469,6 +463,12 @@ bookmarks={
 			focuses={}
 		}
 		#Of Gods and Mortals (Row Two)
+		"HAH"={	#Hollow Shades
+			history="HAH_GATHERING_STORM_DESC"
+			ideology=fascism	minor=yes
+			ideas={}
+			focuses={}
+		}
 		"HEF"={	#House Everfree
 			history="HEF_GATHERING_STORM_DESC"
 			ideology=fascism	minor=yes

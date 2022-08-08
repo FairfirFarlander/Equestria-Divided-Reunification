@@ -1,10 +1,31 @@
 ideas={
 	country={
+		HAH_inquisition_impatience={
+			allowed={always=no}	removal_cost=-1
+			#picture=
+			modifier={
+				stability_weekly=-0.003
+			}
+		}
 		HAH_masked_ponies={
 			allowed={always=no}	removal_cost=-1
 			#picture=
 			modifier={
 				stability_weekly=-0.001
+			}
+		}
+		HAH_bobbies={
+			allowed={always=no}	removal_cost=-1
+			#picture=
+			modifier={
+				resistance_target=-0.05
+			}
+		}
+		HAH_tranquil_ponies={
+			allowed={always=no}	removal_cost=-1
+			#picture=
+			modifier={
+				stability_weekly=0.0015
 			}
 		}
 	}

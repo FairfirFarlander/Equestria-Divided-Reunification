@@ -139,6 +139,7 @@ add_namespace=HAH_evt_a01
 		is_triggered_only=yes
 		option={
 			name=HAH_evt_a01.041.a
+			add_stability=0.05
 		}
 		option={
 			name=HAH_evt_C-FF_W-TY.r
@@ -225,9 +226,9 @@ add_namespace=HAH_evt_a02
 		is_triggered_only=yes
 		option={
 			name=HAH_evt_a02.074.a
-			#HMS={add_opinion_modifier={target=HAH modifier=}}	#GIMIIE A FUCKING OPINION 'ERE
+			HMS={add_opinion_modifier={target=HAH modifier=HMS_to_HAH_disapproval}}
 			add_stability=0.15
-			add_popularity={ideology=democratic popularity=-0.03}
+			add_popularity={ideology=democratic popularity=0.03}
 		}
 		option={
 			name=HAH_evt_C-FF_W-TY.r
@@ -242,10 +243,126 @@ add_namespace=HAH_evt_a02
 		option={
 			name=HAH_evt_a02.081.a
 			add_ideas=HAH_masked_ponies
+			set_country_flag=HAH_unlock_economy
+			set_country_flag=HAH_unlock_military
 		}
 		option={
 			name=HAH_evt_C-FF_W-TY.r
 			trigger={is_debug=yes}
 		}
 		immediate={log="[GetDateText]: [Root.GetName]: event HAH_evt_a02.081"}
+	}
+	country_event={		#Farming Poison Joke
+		id=HAH_evt_a02.092
+		title=HAH_evt_a02.092.t	desc=HAH_evt_a02.092.d	#picture=
+		is_triggered_only=yes
+		option={
+			name=HAH_evt_a02.092.a
+		}
+		option={
+			name=HAH_evt_C-FF_W-TY.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_evt_a02.092"}
+	}
+	country_event={		#The Bobbies
+		id=HAH_evt_a02.093
+		title=HAH_evt_a02.093.t	desc=HAH_evt_a02.093.d	#picture=
+		is_triggered_only=yes
+		option={
+			name=HAH_evt_a02.093.a
+			add_ideas=HAH_bobbies
+			load_oob="HAH_S09C_bobbies_division"
+		}
+		option={
+			name=HAH_evt_C-FF_W-TY.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_evt_a02.093"}
+	}
+	country_event={		#Project Flu Season
+		id=HAH_evt_a02.101
+		title=HAH_evt_a02.101.t	desc=HAH_evt_a02.101.d	#picture=
+		is_triggered_only=yes
+		option={
+			name=HAH_evt_a02.101.a
+		}
+		option={
+			name=HAH_evt_C-FF_W-TY.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_evt_a02.101"}
+	}
+	country_event={		#The Tranquil Ponies
+		id=HAH_evt_a02.102
+		title=HAH_evt_a02.102.t	desc=HAH_evt_a02.102.d	#picture=
+		is_triggered_only=yes
+		option={
+			name=HAH_evt_a02.102.a
+			swap_ideas={
+				remove_idea=HAH_masked_ponies
+				add_idea=HAH_tranquil_ponies
+			}
+		}
+		option={
+			name=HAH_evt_C-FF_W-TY.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_evt_a02.102"}
+	}
+	country_event={		#The Choice
+		id=HAH_evt_a02.111
+		title=HAH_evt_a02.111.t	desc=HAH_evt_a02.111.d	#picture=
+		is_triggered_only=yes
+		option={
+			name=HAH_evt_a02.111.a
+			set_country_flag=HAH_misty_and_willow_in_charge
+			country_event=HAH_evt_a03m.001
+		}
+		option={
+			name=HAH_evt_a02.111.b
+			set_country_flag=HAH_willow_in_charge
+			country_event=HAH_evt_a03w.001
+		}
+		option={
+			name=HAH_evt_C-FF_W-TY.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_evt_a02.111"}
+	}
+add_namespace=HAH_evt_a03m
+	country_event={		#Nothing Here
+		id=HAH_evt_a03m.000
+		title=HAH_evt_a03m.000.t	desc=HAH_evt_a03m.000.d	#picture=
+		is_triggered_only=yes
+		option={
+			name=HAH_evt_a03m.000.a
+			load_focus_tree={
+				tree=HAH_misty
+				keep_completed=yes
+			}
+		}
+		option={
+			name=HAH_evt_C-FF_W-TY.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_evt_a03m.000"}
+	}
+add_namespace=HAH_evt_a03w
+	country_event={		#Willow Storms Off
+		id=HAH_evt_a03w.000
+		title=HAH_evt_a03w.000.t	desc=HAH_evt_a03w.000.d	#picture=
+		is_triggered_only=yes
+		option={
+			name=HAH_evt_a03w.000.a
+			load_focus_tree={
+				tree=HAH_misty
+				keep_completed=yes
+			}
+		}
+		option={
+			name=HAH_evt_C-FF_W-TY.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_evt_a03w.000"}
 	}

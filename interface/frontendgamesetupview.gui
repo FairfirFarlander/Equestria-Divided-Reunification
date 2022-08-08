@@ -798,10 +798,10 @@ guiTypes={
 		}
 		instantTextBoxType={
 			name="EDR_eastregion"
-			position={x=25 y=260}
+			position={x=18 y=260}
 			font="hoi_16mbs"
-			text="Titans of the East"
-			maxWidth=200
+			text="| Titans of the East                              |"
+			maxWidth=205
 			maxHeight=15
 			fixedsize=yes
 			format=left
@@ -809,10 +809,10 @@ guiTypes={
 		}
 		instantTextBoxType={
 			name="EDR_southeastregion"
-			position={x=233 y=260}
+			position={x=226 y=260}
 			font="hoi_16mbs"
-			text="Myths From The Jungle"
-			maxWidth=200
+			text="| Myths From The Jungle                                                      |"
+			maxWidth=310
 			maxHeight=15
 			fixedsize=yes
 			format=left
@@ -820,10 +820,10 @@ guiTypes={
 		}
 		instantTextBoxType={
 			name="EDR_southwestregion"
-			position={x=25 y=315}
+			position={x=18 y=315}
 			font="hoi_16mbs"
-			text="For Clan and Country"
-			maxWidth=200
+			text="| For Clan and Country                        |"
+			maxWidth=205
 			maxHeight=15
 			fixedsize=yes
 			format=left
@@ -831,10 +831,10 @@ guiTypes={
 		}
 		instantTextBoxType={
 			name="EDR_northeastregion"
-			position={x=233 y=315}
+			position={x=226 y=315}
 			font="hoi_16mbs"
-			text="Lords of the Marches"
-			maxWidth=200
+			text="| Lords of the Marches      |"
+			maxWidth=150
 			maxHeight=15
 			fixedsize=yes
 			format=left
@@ -842,10 +842,10 @@ guiTypes={
 		}
 		instantTextBoxType={
 			name="EDR_centralregion"
-			position={x=410 y=315}
+			position={x=382 y=315}
 			font="hoi_16mbs"
-			text="Of Gods and Mortals"
-			maxWidth=200
+			text="| Gods and Mortals             |"
+			maxWidth=151
 			maxHeight=15
 			fixedsize=yes
 			format=left
