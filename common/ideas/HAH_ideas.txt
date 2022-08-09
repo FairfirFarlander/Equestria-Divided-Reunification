@@ -1,5 +1,12 @@
 ideas={
 	country={
+		HAH_HMS_puppet={
+			allowed={always=no}	removal_cost=-1
+			picture=hmsidea
+			modifier={
+				military_leader_cost_factor=40
+			}
+		}
 		HAH_inquisition_impatience={
 			allowed={always=no}	removal_cost=-1
 			#picture=

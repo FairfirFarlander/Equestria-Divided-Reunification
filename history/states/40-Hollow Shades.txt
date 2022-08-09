@@ -9,6 +9,7 @@ state={	#EDRSTATE
 		owner=HAH
 		add_core_of=HAH
 		victory_points={6598 3}
+		victory_points={575 1}
 		buildings={
 			infrastructure=1
 		}

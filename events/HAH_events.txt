@@ -5,7 +5,8 @@ add_namespace=HAH_evt_a01
 		is_triggered_only=yes
 		option={
 			name=HAH_evt_a01.001.a
-			load_oob="HAH_S00_legionarie_cohort"
+			custom_effect_tooltip=HAH_evt_a01.001.a_tooltip
+			hidden_effect={load_oob="HAH_S00_legionarie_cohort"}
 		}
 		option={
 			name=HAH_evt_C-FF_W-TY.r

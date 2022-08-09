@@ -1,0 +1,27 @@
+#Story Stub
+	shared_focus={	#
+		id=JTL_S00 #icon=
+		x=0 y=0 cost=8
+		offset={
+			x=0
+			trigger={is_debug=yes}
+		}
+		search_filters={}
+		select_effect={country_event=EDR_evt_gen.000}	#Event Verbosity
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus JTL_S00"
+		}
+	}
+#Army Military Tree
+	shared_focus={	#
+		id=JTL_L01 #icon=
+		x=-6 y=1 cost=2 relative_position_id=JTL_S00
+		search_filters={}
+		prerequisite={focus=JTL_S00}
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus JTL_L01"
+			army_experience=15
+		}
+	}

@@ -6,6 +6,7 @@ add_ideas={
 	volunteer_only limited_exports isolation
 	better_science_base agrarian_society
 	lack_of_scientists1 poverty1
+	HAH_HMS_puppet
 	HAH_inquisition_impatience
 }
 if={

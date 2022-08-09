@@ -36,7 +36,20 @@ JTL_fascism_party: "FAC"
 ###Ideas##
 ###National Focuses###
 ##Storyline Tree##
-#JTL_: ""
-# JTL__desc: ""
+JTL_S00: ""
+ JTL_S00_desc: ""
+# JTL_: ""
+#  JTL__desc: ""
+##Army Tree##
+JTL_L01: ""
+ JTL_L01_desc: ""
+# JTL_: ""
+#  JTL__desc: ""
+# JTL_: ""
+#  JTL__desc: ""
+# JTL_: ""
+#  JTL__desc: ""
+# JTL_: ""
+#  JTL__desc: ""
 # JTL_: ""
 #  JTL__desc: ""

@@ -1030,5 +1030,24 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 20202;20201;;-1;-1;-1;-1;-1;ZAREDLINIA_STRAIT;Zaredlinia Southeast
 20202;8626;;-1;-1;-1;-1;-1;ZAREDLINIA_STRAIT;Zaredlinia West
 
+9701;3961;impassable;-1;-1;-1;-1;-1;;Twilight Range
+9701;6666;impassable;-1;-1;-1;-1;-1;;Twilight Range
+4287;3485;impassable;-1;-1;-1;-1;-1;;Twilight Range
+3720;3485;impassable;-1;-1;-1;-1;-1;;Twilight Range
+3720;9570;impassable;-1;-1;-1;-1;-1;;Twilight Range
+2729;9570;impassable;-1;-1;-1;-1;-1;;Twilight Range
+2729;11343;impassable;-1;-1;-1;-1;-1;;Twilight Range
+2729;334;impassable;-1;-1;-1;-1;-1;;Twilight Range
+9875;3884;impassable;-1;-1;-1;-1;-1;;Twilight Range
+9875;11786;impassable;-1;-1;-1;-1;-1;;Twilight Range
+9875;966;impassable;-1;-1;-1;-1;-1;;Twilight Range
+833;966;impassable;-1;-1;-1;-1;-1;;Twilight Range
+833;133;impassable;-1;-1;-1;-1;-1;;Twilight Range
+833;9914;impassable;-1;-1;-1;-1;-1;;Twilight Range
+552;9914;impassable;-1;-1;-1;-1;-1;;Twilight Range
+552;10;impassable;-1;-1;-1;-1;-1;;Twilight Range
+6534;10;impassable;-1;-1;-1;-1;-1;;Twilight Range
+6534;6462;impassable;-1;-1;-1;-1;-1;;Twilight Range
+
 
 -1;-1;;-1;-1;-1;-1;-1;-1
