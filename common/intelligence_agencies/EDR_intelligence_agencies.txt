@@ -1,0 +1,12 @@
+intelligence_agency={
+	#picture=
+	names={"CI"}	#Celestial Inqusition
+	default={tag=HMS}
+	available={original_tag=HMS}
+}
+intelligence_agency={
+	#picture=
+	names={"NH"}	#Night Hooves
+	default={tag=HWG}
+	available={original_tag=HWG}
+}

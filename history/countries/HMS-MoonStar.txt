@@ -27,9 +27,14 @@ set_technology={
 	tech_support=1
 	tech_military_police=1
 	tech_unicorn=1
+	airships1=1
 	#TEM_ursas=1 tech_pony_magical_infantry=1 Will Unlock Later#
 }
 actually_fix_weapon_techs=yes
+if={
+	limit={has_dlc="La Resistance"}
+	create_intelligence_agency=yes
+}
 set_rule={can_generate_female_aces=yes}
 create_faction=MoonandStar
 add_to_faction=HAH

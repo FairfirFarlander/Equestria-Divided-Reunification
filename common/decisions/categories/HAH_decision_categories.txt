@@ -20,3 +20,11 @@ HAH_bread_and_circuses={
 		}
 	}
 }
+HAH_border_wars={
+	#icon=
+	priority=3
+	allowed={tag=HAH}
+	visible={
+		is_debug=yes
+	}
+}
