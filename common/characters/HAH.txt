@@ -23,19 +23,13 @@ characters={
 			id=-1
 		}
 	}
-	HAH_fiddle_pick={
+	HAH_fiddle_pick={	#See Focus Tree
 		name=HAH_fiddle_pick
 		portraits={
 			army={large="gfx/leaders/HAH/HAH_fiddle_pick.dds"}
 		}
-		corps_commander={	#sucks at defense, good at offense
-			desc="HAH_fpick_mili_desc"
-			skill=1 attack_skill=3	defense_skill=1
-			planning_skill=1	logistics_skill=1
-			traits={pony_race_trait}
-		}
 	}
-	HAH_string_bow={
+	HAH_string_bow={	#See Focus Tree
 		name=HAH_string_bow
 		portraits={
 			army={large="gfx/leaders/HAH/HAH_string_bow.dds"}
@@ -46,11 +40,17 @@ characters={
 			traits={}
 			id=-1
 		}
-		corps_commander={	#sucks at offense, good at defense
-			desc="HAH_sbow_mili_desc"
-			skill=1 attack_skill=1	defense_skill=3
-			planning_skill=1	logistics_skill=1
-			traits={pony_race_trait}
-		}
+	}
+	HAH_word_spinner={	#See Focus Tree
+		name=HAH_word_spinner
+		#portraits={
+		#	civilian={small="gfx/leaders/HAH/small/HAH_word_spinner.dds"}
+		#}
+	}
+	HAH_uncle_haystack={	#See Focus Tree
+		name=HAH_uncle_haystack
+		#portraits={
+		#	civilian={small="gfx/leaders/HAH/small/HAH_uncle_haystack.dds"}
+		#}
 	}
 }

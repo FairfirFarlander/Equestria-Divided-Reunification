@@ -316,13 +316,22 @@
 		ai_will_do={factor=80}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_S09D"
-			custom_effect_tooltip=HAH_S09D_tooltip
-			hidden_effect={
-				HAH={
-					recruit_character=HAH_fiddle_pick
-					recruit_character=HAH_string_bow
-				}
+			add_corps_commander_role={	#sucks at defense, good at offense
+				character=HAH_fiddle_pick
+				desc="HAH_fpick_mili_desc"
+				skill=1 attack_skill=3	defense_skill=1
+				planning_skill=1	logistics_skill=1
+				traits={pony_race_trait}
 			}
+			custom_effect_tooltip=HAH_fpick_stats
+			add_corps_commander_role={	#sucks at offense, good at defense
+				character=HAH_string_bow
+				desc="HAH_sbow_mili_desc"
+				skill=1 attack_skill=1	defense_skill=3
+				planning_skill=1	logistics_skill=1
+				traits={pony_race_trait}
+			}
+			custom_effect_tooltip=HAH_sbow_stats
 		}
 	}
 	shared_focus={	#Project Flu Season

@@ -35,5 +35,19 @@ ideas={
 				stability_weekly=0.0015
 			}
 		}
+		HAH_daily_rabble={
+			allowed={always=no}	removal_cost=-1
+			#picture=
+			modifier={
+				stability_weekly=0.001
+			}
+		}
+		HAH_avant_garde={
+			allowed={always=no}	removal_cost=-1
+			#picture=
+			modifier={
+				production_speed_buildings_factor=0.05
+			}
+		}
 	}
 }
