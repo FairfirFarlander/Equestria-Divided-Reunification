@@ -33,6 +33,7 @@ focus_tree={	#DEBUG
 	shared_focus=HAH_S00
 	shared_focus=HAH_WS00
 	shared_focus=HAH_I00
+	shared_focus=HAH_M00
 	#shared_focus=EDR_I00
 	#shared_focus=EDR_L05
 	#shared_focus=EDR_N05

@@ -6,5 +6,8 @@ tags={
 	"Map"
 }
 name="EAW: Equestria Divided Reunification"
-dependencies={"Equestria at War"}
-supported_version="1.11.4"
+dependencies={
+	"Equestria at War"
+}
+supported_version="1.11.12"
+remote_file_id="2848345089"

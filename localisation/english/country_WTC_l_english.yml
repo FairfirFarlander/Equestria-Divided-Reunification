@@ -35,6 +35,15 @@ WTC_fascism_party: "FAC"
 ###Ideas###
 WTC_no_army: "No Standing Army"
  WTC_no_army_desc: "[WTC.GetNameDef] "
+###Decisions###
+##WTC Aquisitions##
+WTC_purchase_technology: "[WTC.GetName] Aquistiions"
+ WTC_JER_armor: "Purchase [JER.GetAdjective] Tanks"
+  WTC_JER_armor_desc: "The [JER.GetName] is well known for their ferocious armor corps the world over. A few of my contacts may be able to convince the [JER.GetAdjective] army to sell a few older models of vehicles to me for a price. I'm sure we could come to an arangement, especially with [75.GetName] footing part of the bill.\n\n§WThe §Y[WTC.GetName]§! will need...\n£army_experience §Y45 Army Experience§!, £pol_power §Y55 Political Power§!, and £convoy_texticon §Y8 Convoys§! to select this decision.\nThe £convoy_texticon §YConvoys§! will be §Grefunded§! on completion.§!"
+  WTC_JER_armor_req_blocked: "£army_experience  §R45§! £pol_power  §R55§! £convoy_texticon  §R8§!"
+  WTC_JER_armor_req: "£army_experience  §Y45§! £pol_power  §Y55§! £convoy_texticon  §Y8§!"
+  WTC_JER_armor_rev_tip: "§LThe §Y[WTC.GetName]§! will receive §Y[JER.GetAdjective]§! early tank equipment and form two divisions that will marshal in Baltimare.\n\nThe Aquelian Light Horse composted of...\n2 §5light tank brigades§! and 3 §7infantry brigades§!.\n\nThe Coltjun Aquarium Builders composed of...\n1 §1heavy tank brigade§! and 3 §7infantry brigades§!.§!"
+ 
 ###National Focuses###
 ##Storyline Tree##
 WTC_S00: "A Company Controlled From Afar"

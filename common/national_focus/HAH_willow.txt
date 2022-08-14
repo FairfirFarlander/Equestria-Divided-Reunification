@@ -1,9 +1,9 @@
 #Story Tree Willow
 	shared_focus={	#Willow Takes His Stand
 		id=HAH_WS00 icon=GFX_goal_secret_agents
-		x=-9 y=0 cost=8
+		x=0 y=0 cost=8
 		offset={
-			x=9
+			x=8
 			trigger={is_debug=yes}
 		}
 		search_filters={}

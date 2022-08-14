@@ -1,9 +1,9 @@
-#Story Tree Willow
+#Economic Tree
 	shared_focus={	#Rebuilding The Old Forest Roads
 		id=HAH_I00 icon=GFX_infrastructure_road
-		x=0 y=0 cost=5
+		x=8 y=0 cost=5
 		offset={
-			x=3
+			x=8
 			trigger={is_debug=yes}
 		}
 		search_filters={FOCUS_FILTER_INDUSTRY}

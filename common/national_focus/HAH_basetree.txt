@@ -1,7 +1,7 @@
 #Story Tree Main
 	shared_focus={	#Under Their Domain
 		id=HAH_S00 icon=GFX_goal_authoritarian
-		x=-9 y=0 cost=1
+		x=0 y=0 cost=1
 		search_filters={}
 		select_effect={country_event=EDR_evt_gen.000}	#Event Verbosity
 		ai_will_do={factor=4000}
