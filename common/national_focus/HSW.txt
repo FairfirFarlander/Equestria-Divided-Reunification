@@ -8,10 +8,66 @@ focus_tree={
 	shared_focus=EDR_N05
 	shared_focus=EDR_A05
 }
+focus_tree={
+	id=HSW_debug country={modifier={add=4 tag=HSW is_debug=yes}}
+	continuous_focus_position={x=0 y=-350}
+	shared_focus=EQD_S00
+	shared_focus=HSW_calm_before_the_storm
+	shared_focus=EDR_I00
+	shared_focus=EDR_L05
+	shared_focus=EDR_N05
+	shared_focus=EDR_A05
+}
+#Legacy Focus Tree
+	shared_focus={		#The Portward Campaign
+		id=EQD_HSW_03A #icon=
+		cost=7 x=-2 y=1 relative_position_id=EQD_S02
+		search_filters={}
+		prerequisite={focus=EQD_S02}
+		mutually_exclusive={focus=EQD_HSW_03B}
+		ai_will_do={factor=40}
+		will_lead_to_war_with=SWT
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EQD_HSW_03A"
+			if={limit={
+					SWT={
+						exists=yes
+						is_in_faction_with=HSW
+					}
+				}
+				country_event=HSW_evt_a11.001	#The Matter of the Northern Territories
+			}
+		}
+	}
+	shared_focus={		#The Skystar Campaign
+		id=EQD_HSW_03B #icon=
+		cost=7 x=2 y=1 relative_position_id=EQD_S02
+		search_filters={}
+		prerequisite={focus=EQD_S02}
+		mutually_exclusive={focus=EQD_HSW_03A}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EQD_HSW_03B"
+		}
+	}
+	shared_focus={		#The Skystar Campaign
+		id=EQD_HSW_04A #icon=
+		cost=7 x=-2 y=1 relative_position_id=EQD_HSW_03A
+		search_filters={}
+		prerequisite={focus=EQD_HSW_03A}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EQD_HSW_04A"
+		}
+	}
 	shared_focus={		#Calm Before The Storm
 		id=HSW_calm_before_the_storm
 		icon=GFX_goal_generic_alliance
 		x=0 y=0 cost=7
+		offset={
+			x=6
+			trigger={is_debug=yes}
+		}
 		ai_will_do={factor=20}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HSW_calm_before_the_storm"

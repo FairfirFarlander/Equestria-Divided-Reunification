@@ -1,0 +1,127 @@
+add_namespace=HSW_evt_a11
+	country_event={	#The Matter of the Northern Territories
+		id=HSW_evt_a11.001
+		title=HSW_evt_a11.001.t	desc=HSW_evt_a11.001.d	#picture=
+		is_triggered_only=yes
+		option={
+			name=HSW_evt_a11.001.a
+			country_event=HSW_evt_a11.002	#Stormwing Requests Our Integration
+		}
+		option={
+			name=HSW_evt_a11.001.b
+			country_event=HSW_evt_a11.003	#An Offered Wing
+		}
+		option={
+			name=HSW_evt_C-FF_W-FF.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HSW_evt_a11.001"}
+	}
+	country_event={	#Stormwing Requests Our Integration
+		id=HSW_evt_a11.002
+		title=HSW_evt_a11.002.t	desc=HSW_evt_a11.002.d	#picture=
+		is_triggered_only=yes
+		option={
+			name=HSW_evt_a11.002.a
+			country_event=HSW_evt_a11.004
+		}
+		option={
+			name=HSW_evt_a11.002.b
+			country_event=HSW_evt_a11.005
+		}
+		option={
+			name=HSW_evt_C-FF_W-FF.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HSW_evt_a11.002"}
+	}
+	country_event={	#An Offered Wing
+		id=HSW_evt_a11.003
+		title=HSW_evt_a11.003.t	desc=HSW_evt_a11.003.d	#picture=
+		is_triggered_only=yes
+		option={
+			name=HSW_evt_a11.003.a
+			country_event=HSW_evt_a11.006
+		}
+		option={
+			name=HSW_evt_a11.003.b
+			country_event=HSW_evt_a11.007
+		}
+		option={
+			name=HSW_evt_C-FF_W-FF.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HSW_evt_a11.003"}
+	}
+	country_event={	#
+		id=HSW_evt_a11.004
+		title=HSW_evt_a11.004.t	desc=HSW_evt_a11.004.d	#picture=
+		is_triggered_only=yes
+		option={
+			name=HSW_evt_a11.004.a
+			country_event=HSW_evt_a11.006
+		}
+		option={
+			name=HSW_evt_a11.004.b
+			country_event=HSW_evt_a11.007
+		}
+		option={
+			name=HSW_evt_C-FF_W-FF.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HSW_evt_a11.004"}
+	}
+	country_event={	#
+		id=HSW_evt_a11.005
+		title=HSW_evt_a11.005.t	desc=HSW_evt_a11.005.d	#picture=
+		is_triggered_only=yes
+		option={
+			name=HSW_evt_a11.005.a
+			country_event=HSW_evt_a11.006
+		}
+		option={
+			name=HSW_evt_a11.005.b
+			country_event=HSW_evt_a11.007
+		}
+		option={
+			name=HSW_evt_C-FF_W-FF.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HSW_evt_a11.005"}
+	}
+	country_event={	#
+		id=HSW_evt_a11.006
+		title=HSW_evt_a11.006.t	desc=HSW_evt_a11.006.d	#picture=
+		is_triggered_only=yes
+		option={
+			name=HSW_evt_a11.006.a
+			country_event=HSW_evt_a11.006
+		}
+		option={
+			name=HSW_evt_a11.006.b
+			country_event=HSW_evt_a11.007
+		}
+		option={
+			name=HSW_evt_C-FF_W-FF.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HSW_evt_a11.006"}
+	}
+	country_event={	#
+		id=HSW_evt_a11.007
+		title=HSW_evt_a11.007.t	desc=HSW_evt_a11.007.d	#picture=
+		is_triggered_only=yes
+		option={
+			name=HSW_evt_a11.007.a
+			country_event=HSW_evt_a11.006
+		}
+		option={
+			name=HSW_evt_a11.007.b
+			country_event=HSW_evt_a11.007
+		}
+		option={
+			name=HSW_evt_C-FF_W-FF.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HSW_evt_a11.007"}
+	}

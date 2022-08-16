@@ -15,7 +15,11 @@ focus_tree={
 }
 	shared_focus={		#From the Ashes of Eques
 		id=EQD_S00 icon=GFX_goal_generic_demand_territory
-		cost=7 x=0 y=-2
+		cost=7 x=0 y=0
+		offset={
+			y=0
+			trigger={is_debug=yes}
+		}
 		search_filters={FOCUS_FILTER_POLITICAL}
 		select_effect={country_event=EDR_evt_gen.000}	#Event Verbosity
 		ai_will_do={factor=4000}

@@ -74,22 +74,17 @@ EQD_S00: "[Root.GetEQD_S00_SLOC]"
    EQD_S02_HSW_desc: "I will reunite Equestria or die trying!"
    EQD_S02_HWG_desc: "My old friends... and each of them has all these riches that don't belong to me yet! They must be mine! Only me will be able to afford the throne!"
    EQD_S02_GENERIC_desc: ""
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+##Wargoals Tree##
+EQD_W04A: "The Valley Marches"
+ EQD_W04A_desc: ""
+ EQD_W04B: "The Frozen Wastes"
+  EQD_W04B_desc: ""
+ EQD_W04C: "The Stalliongrad Front"
+  EQD_W04C_desc: ""
+ EQD_W05A: "The Coltfoalnia Coasts"
+  EQD_W05A_desc: ""
+ EQD_W05B: "The Stormwing Plains"
+  EQD_W05B_desc: ""
  EQD_SXX: "[Root.GetEQD_SXX_SLOC]"
   EQD_SXX_desc: "[Root.GetEQD_SXX_desc_SLOC]"
    EQD_SXX_CUL: ""
@@ -106,16 +101,3 @@ EQD_S00: "[Root.GetEQD_S00_SLOC]"
     EQD_SXX_HWG_desc: ""
    EQD_SXX_GENERIC: ""
     EQD_SXX_GENERIC_desc: ""
-
-
-
-
-
-
-
-
-
-
-
-
-
