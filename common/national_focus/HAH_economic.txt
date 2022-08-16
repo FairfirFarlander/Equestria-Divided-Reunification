@@ -32,12 +32,12 @@
 				character=HAH_word_spinner
 				advisor={
 					slot=political_advisor
-					idea_token=HAH_wspinner
+					idea_token=HAH_wspinner_advi
 					research_bonus={
-						race_tech=0.05
+						race_tech=0.1
 					}
 					modifier={
-						research_speed_factor=0.15
+						research_speed_factor=0.05
 					}
 				}
 			}
@@ -135,7 +135,7 @@
 				character=HAH_uncle_haystack
 				advisor={
 					slot=political_advisor
-					idea_token=HAH_uhaystack
+					idea_token=HAH_uhaystack_advi
 					modifier={
 						stability_weekly=0.005
 						resistance_decay=0.05

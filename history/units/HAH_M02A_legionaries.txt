@@ -1,0 +1,16 @@
+division_template={
+	name="Legionaries"	#divisions_name_group=#
+	template_counter=38
+	regiments={
+		infantry={x=0 y=0}	infantry={x=1 y=0}
+		infantry={x=0 y=1}	infantry={x=1 y=1}
+	}
+}
+units={
+	division={	#Hollow Shades#
+		name="Home Legion"
+		location=6598	division_template="Legionaries"
+		start_experience_factor=0.2	start_equipment_factor=1
+		force_equipment_variants={melee_equipment_1={owner="HAH" creator="HAH"}}
+	}
+}

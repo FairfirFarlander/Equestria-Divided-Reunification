@@ -41,6 +41,12 @@ characters={
 			id=-1
 		}
 	}
+	HAH_boiled_apples={	#See Focus Tree
+		name=HAH_boiled_apples
+		#portraits={
+		#	civilian={small="gfx/leaders/HAH/small/HAH_boiled_apples.dds"}
+		#}
+	}
 	HAH_word_spinner={	#See Focus Tree
 		name=HAH_word_spinner
 		#portraits={

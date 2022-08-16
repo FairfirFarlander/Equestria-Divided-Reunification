@@ -50,4 +50,24 @@ ideas={
 			}
 		}
 	}
+	hidden_ideas={
+		HAH_M01C_temp_melee_bonus={
+			allowed={always=no}
+			available={not={has_tech=melee_weapons1}}
+			#picture=
+			removal_cost=-1
+			research_bonus={
+				infantry_weapons=0.50
+			}
+		}
+		HAH_M02C_temp_artillery_bonus={
+			allowed={always=no}
+			available={not={has_tech=pre_gw_artillery}}
+			#picture=
+			removal_cost=-1
+			research_bonus={
+				artillery=0.50
+			}
+		}
+	}
 }

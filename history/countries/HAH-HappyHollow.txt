@@ -34,6 +34,7 @@ recruit_character=HAH_misty_wisps
 recruit_character=HAH_willow_branch
 recruit_character=HAH_fiddle_pick
 recruit_character=HAH_string_bow
+recruit_character=HAH_boiled_apples
 recruit_character=HAH_word_spinner
 recruit_character=HAH_uncle_haystack
 #NOTES#
