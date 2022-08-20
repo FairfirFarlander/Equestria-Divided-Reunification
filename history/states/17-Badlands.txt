@@ -3,6 +3,7 @@ state={	#EDRSTATE
 	name="STATE_17"
 	manpower=11300
 	state_category=wasteland
+	#impassable=yes
 	buildings_max_level_factor=1
 	provinces={4476 6698 7590 7622 9309 9403 10374 11346 11360 12347}
 	resources={oil=26}

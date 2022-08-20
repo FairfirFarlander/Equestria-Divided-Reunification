@@ -8,6 +8,7 @@ state={	#EDRSTATE
 	history={
 		owner=CRL
 		add_core_of=CRL
+		victory_points={11453 5}
 		buildings={
 			infrastructure=1
 		}

@@ -947,37 +947,22 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 13137;2072;impassable;-1;-1;-1;-1;-1;;BarradMountain
 13137;2072;impassable;-1;-1;-1;-1;-1;;BarradMountain
 
-9138;13058;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
-9138;1173;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
-9182;1173;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
-
-3700;9620;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
-9620;636;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
-4155;636;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
-4155;11604;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
-4155;3650;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
-9377;3650;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
-9377;817;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
-11106;817;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
-11106;3939;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
-11106;13009;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
-11106;3956;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
-
-7451;5283;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
-7451;11497;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
-9083;3193;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
-151;3193;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
-192;3034;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
-3048;3132;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
-3048;3034;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
-3179;192;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
-192;6168;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
-6168;3193;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
-6168;151;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
-9226;9083;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
-67;9083;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
-67;11409;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
-67;9038;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
+9138;13058;impassable;-1;-1;-1;-1;-1;;CanterlotMountains
+9138;1173;impassable;-1;-1;-1;-1;-1;;CanterlotMountains
+9182;1173;impassable;-1;-1;-1;-1;-1;;CanterlotMountains
+9083;3193;impassable;-1;-1;-1;-1;-1;;NeighgaraMountains
+151;3193;impassable;-1;-1;-1;-1;-1;;NeighgaraMountains
+192;3034;impassable;-1;-1;-1;-1;-1;;NeighgaraMountains
+3048;3132;impassable;-1;-1;-1;-1;-1;;NeighgaraMountains
+3048;3034;impassable;-1;-1;-1;-1;-1;;NeighgaraMountains
+3179;192;impassable;-1;-1;-1;-1;-1;;NeighgaraMountains
+192;6168;impassable;-1;-1;-1;-1;-1;;NeighgaraMountains
+6168;3193;impassable;-1;-1;-1;-1;-1;;NeighgaraMountains
+6168;151;impassable;-1;-1;-1;-1;-1;;NeighgaraMountains
+9226;9083;impassable;-1;-1;-1;-1;-1;;NeighgaraMountains
+67;9083;impassable;-1;-1;-1;-1;-1;;NeighgaraMountains
+67;11409;impassable;-1;-1;-1;-1;-1;;NeighgaraMountains
+67;9038;impassable;-1;-1;-1;-1;-1;;NeighgaraMountains
 
 2067;12819;impassable;-1;-1;-1;-1;-1;;WittenlandMountains
 2067;5072;impassable;-1;-1;-1;-1;-1;;WittenlandMountains
@@ -1030,6 +1015,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 20202;20201;;-1;-1;-1;-1;-1;ZAREDLINIA_STRAIT;Zaredlinia Southeast
 20202;8626;;-1;-1;-1;-1;-1;ZAREDLINIA_STRAIT;Zaredlinia West
 
+#EDR - Specific
 9701;3961;impassable;-1;-1;-1;-1;-1;;Twilight Range
 9701;6666;impassable;-1;-1;-1;-1;-1;;Twilight Range
 4287;3485;impassable;-1;-1;-1;-1;-1;;Twilight Range
@@ -1048,6 +1034,98 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 552;10;impassable;-1;-1;-1;-1;-1;;Twilight Range
 6534;10;impassable;-1;-1;-1;-1;-1;;Twilight Range
 6534;6462;impassable;-1;-1;-1;-1;-1;;Twilight Range
+
+6683;11732;impassable;-1;-1;-1;-1;-1;;Scale Mountains
+6683;661;impassable;-1;-1;-1;-1;-1;;Scale Mountains
+6683;6518;impassable;-1;-1;-1;-1;-1;;Scale Mountains
+13268;6518;impassable;-1;-1;-1;-1;-1;;Scale Mountains
+13268;9444;impassable;-1;-1;-1;-1;-1;;Scale Mountains
+10498;680;impassable;-1;-1;-1;-1;-1;;Scale Mountains
+11488;680;impassable;-1;-1;-1;-1;-1;;Scale Mountains
+9642;9429;impassable;-1;-1;-1;-1;-1;;Scale Mountains
+9642;11497;impassable;-1;-1;-1;-1;-1;;Scale Mountains
+7451;11497;impassable;-1;-1;-1;-1;-1;;Scale Mountains
+5283;11497;impassable;-1;-1;-1;-1;-1;;Scale Mountains
+5283;7857;impassable;-1;-1;-1;-1;-1;;Scale Mountains
+
+3700;9539;impassable;-1;-1;-1;-1;-1;;Macintosh Mountains
+3700;6739;impassable;-1;-1;-1;-1;-1;;Macintosh Mountains
+3700;11666;impassable;-1;-1;-1;-1;-1;;Macintosh Mountains
+3700;704;impassable;-1;-1;-1;-1;-1;;Macintosh Mountains
+636;704;impassable;-1;-1;-1;-1;-1;;Macintosh Mountains
+3650;797;impassable;-1;-1;-1;-1;-1;;Macintosh Mountains
+678;9377;impassable;-1;-1;-1;-1;-1;;Macintosh Mountains
+
+4507;699;impassable;-1;-1;-1;-1;-1;;Furry Mountains
+4507;730;impassable;-1;-1;-1;-1;-1;;Furry Mountains
+
+12398;11657;impassable;-1;-1;-1;-1;-1;;Canter Creek Mountains
+12398;9537;impassable;-1;-1;-1;-1;-1;;Canter Creek Mountains
+12398;6751;impassable;-1;-1;-1;-1;-1;;Canter Creek Mountains
+12398;660;impassable;-1;-1;-1;-1;-1;;Canter Creek Mountains
+12398;11520;impassable;-1;-1;-1;-1;-1;;Canter Creek Mountains
+9809;716;impassable;-1;-1;-1;-1;-1;;Canter Creek Mountains
+9780;716;impassable;-1;-1;-1;-1;-1;;Canter Creek Mountains
+9780;9690;impassable;-1;-1;-1;-1;-1;;Canter Creek Mountains
+10449;9690;impassable;-1;-1;-1;-1;-1;;Canter Creek Mountains
+10449;555;impassable;-1;-1;-1;-1;-1;;Canter Creek Mountains
+
+9428;13010;impassable;-1;-1;-1;-1;-1;;Snortora Desert
+9496;13010;impassable;-1;-1;-1;-1;-1;;Snortora Desert
+9496;137;impassable;-1;-1;-1;-1;-1;;Snortora Desert
+9496;3473;impassable;-1;-1;-1;-1;-1;;Snortora Desert
+9496;11505;impassable;-1;-1;-1;-1;-1;;Snortora Desert
+6595;11505;impassable;-1;-1;-1;-1;-1;;Snortora Desert
+3572;11505;impassable;-1;-1;-1;-1;-1;;Snortora Desert
+3572;537;impassable;-1;-1;-1;-1;-1;;Snortora Desert
+3572;11415;impassable;-1;-1;-1;-1;-1;;Snortora Desert
+3572;469;impassable;-1;-1;-1;-1;-1;;Snortora Desert
+3514;469;impassable;-1;-1;-1;-1;-1;;Snortora Desert
+11517;469;impassable;-1;-1;-1;-1;-1;;Snortora Desert
+11517;9414;impassable;-1;-1;-1;-1;-1;;Snortora Desert
+11401;9414;impassable;-1;-1;-1;-1;-1;;Snortora Desert
+11401;3207;impassable;-1;-1;-1;-1;-1;;Snortora Desert
+11444;11639;impassable;-1;-1;-1;-1;-1;;Snortora Desert
+11444;9769;impassable;-1;-1;-1;-1;-1;;Snortora Desert
+
+6709;3207;impassable;-1;-1;-1;-1;-1;;Meskwakia
+6709;649;impassable;-1;-1;-1;-1;-1;;Meskwakia
+11652;649;impassable;-1;-1;-1;-1;-1;;Meskwakia
+11652;11636;impassable;-1;-1;-1;-1;-1;;Meskwakia
+9651;11636;impassable;-1;-1;-1;-1;-1;;Meskwakia
+9651;674;impassable;-1;-1;-1;-1;-1;;Meskwakia
+9651;11603;impassable;-1;-1;-1;-1;-1;;Meskwakia
+9651;687;impassable;-1;-1;-1;-1;-1;;Meskwakia
+3704;687;impassable;-1;-1;-1;-1;-1;;Meskwakia
+3701;687;impassable;-1;-1;-1;-1;-1;;Meskwakia
+3701;3537;impassable;-1;-1;-1;-1;-1;;Meskwakia
+3701;555;impassable;-1;-1;-1;-1;-1;;Meskwakia
+3701;3550;impassable;-1;-1;-1;-1;-1;;Meskwakia
+6695;3550;impassable;-1;-1;-1;-1;-1;;Meskwakia
+6695;8113;impassable;-1;-1;-1;-1;-1;;Meskwakia
+9614;8113;impassable;-1;-1;-1;-1;-1;;Meskwakia
+9614;11639;impassable;-1;-1;-1;-1;-1;;Meskwakia
+
+6842;9769;impassable;-1;-1;-1;-1;-1;;San Palomino Desert
+6842;9612;impassable;-1;-1;-1;-1;-1;;San Palomino Desert
+3819;9612;impassable;-1;-1;-1;-1;-1;;San Palomino Desert
+3819;3796;impassable;-1;-1;-1;-1;-1;;San Palomino Desert
+3819;11605;impassable;-1;-1;-1;-1;-1;;San Palomino Desert
+9619;11605;impassable;-1;-1;-1;-1;-1;;San Palomino Desert
+3665;11605;impassable;-1;-1;-1;-1;-1;;San Palomino Desert
+3665;637;impassable;-1;-1;-1;-1;-1;;San Palomino Desert
+6559;637;impassable;-1;-1;-1;-1;-1;;San Palomino Desert
+6559;3649;impassable;-1;-1;-1;-1;-1;;San Palomino Desert
+6559;9771;impassable;-1;-1;-1;-1;-1;;San Palomino Desert
+6559;3630;impassable;-1;-1;-1;-1;-1;;San Palomino Desert
+6714;3630;impassable;-1;-1;-1;-1;-1;;San Palomino Desert
+9560;3630;impassable;-1;-1;-1;-1;-1;;San Palomino Desert
+9560;11622;impassable;-1;-1;-1;-1;-1;;San Palomino Desert
+9560;9456;impassable;-1;-1;-1;-1;-1;;San Palomino Desert
+3499;9456;impassable;-1;-1;-1;-1;-1;;San Palomino Desert
+3499;11481;impassable;-1;-1;-1;-1;-1;;San Palomino Desert
+11545;11481;impassable;-1;-1;-1;-1;-1;;San Palomino Desert
+11545;13010;impassable;-1;-1;-1;-1;-1;;San Palomino Desert
 
 
 -1;-1;;-1;-1;-1;-1;-1;-1
