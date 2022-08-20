@@ -1,7 +1,7 @@
 #Story Tree Main
 	shared_focus={		#
 		id=HMS_S00 #icon=
-		x=-9 y=0 cost=8 ai_will_do={factor=4000}
+		x=0 y=0 cost=8 ai_will_do={factor=4000}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HMS_S00"
 			set_country_flag=HMS_politics_active

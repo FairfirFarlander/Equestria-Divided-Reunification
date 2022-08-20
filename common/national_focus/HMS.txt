@@ -9,6 +9,7 @@ focus_tree={	#DEBUG
 	#shared_focus=EQD_S00
 	#shared_focus=HSW_calm_before_the_storm
 	shared_focus=HMS_S00
+	shared_focus=HMS_LAN00
 	#shared_focus=EDR_I00
 	#shared_focus=EDR_L05
 	#shared_focus=EDR_N05
