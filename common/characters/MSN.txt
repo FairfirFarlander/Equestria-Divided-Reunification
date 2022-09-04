@@ -1,4 +1,17 @@
 characters={
+	MSN_duchess_aurora={
+		name=MSN_duchess_aurora
+		gender=female
+		portraits={
+			civilian={large="gfx/leaders/MSN/MSN_duchess_aurora.dds"}
+		}
+		country_leader={
+			desc="MSN_daurora"	ideology=fascism_ideology
+			expire="1030.03.13.08"
+			traits={}
+			id=-1
+		}
+	}
 	MSN_generic_pony={
 		name=MSN_generic_pony
 		gender=female
@@ -6,7 +19,19 @@ characters={
 			civilian={large="gfx/leaders/leader_unknown.dds"}
 		}
 		country_leader={
-			desc="MSN_gpony_poli_desc"	ideology=fascism_ideology
+			desc="MSN_gpony_poli_desc"	ideology=conservatism
+			expire="1030.03.13.08"
+			traits={}
+			id=-1
+		}
+		country_leader={
+			desc="MSN_gpony_poli_desc"	ideology=marxism
+			expire="1030.03.13.08"
+			traits={}
+			id=-1
+		}
+		country_leader={
+			desc="MSN_gpony_poli_desc"	ideology=despotism
 			expire="1030.03.13.08"
 			traits={}
 			id=-1

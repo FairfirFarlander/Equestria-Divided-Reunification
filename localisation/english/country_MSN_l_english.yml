@@ -7,8 +7,10 @@ MSN_GATHERING_STORM_DESC: ""
   EAW_WS_MSN_desc: ""
 ###Characters###
 ##Leaders##
-MSN_generic_pony: "Generic pony"
- MSN_generic_pony_desc: ""
+MSN_duchess_aurora: "Duchess Aurora"
+ MSN_daurora_poli_desc: "§LPortrait§! by: §CTiviyl§!"
+ MSN_generic_pony: "Generic pony"
+  MSN_generic_pony_desc: ""
 ##Commanders##
 ##Advisors##
 ###Country Name###
