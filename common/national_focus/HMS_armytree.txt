@@ -15,7 +15,7 @@
 	shared_focus={		#Restore the Campanian System
 		id=HMS_L01A #icon=
 		relative_position_id=HMS_LAN00
-		x=-1 y=1 cost=2 ai_will_do={factor=320}
+		x=-3 y=1 cost=2 ai_will_do={factor=320}
 		prerequisite={focus=HMS_LAN00}
 		mutually_exclusive={focus=HMS_L01B}
 		completion_reward={
@@ -28,7 +28,7 @@
 	shared_focus={		#Retain Equestian Conscription
 		id=HMS_L01B #icon=
 		relative_position_id=HMS_LAN00
-		x=1 y=1 cost=2 ai_will_do={factor=320}
+		x=3 y=1 cost=2 ai_will_do={factor=320}
 		prerequisite={focus=HMS_LAN00}
 		mutually_exclusive={focus=HMS_L01A}
 		completion_reward={

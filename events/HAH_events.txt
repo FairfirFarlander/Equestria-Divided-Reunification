@@ -122,17 +122,17 @@ add_namespace=HAH_evt_a01
 		immediate={log="[GetDateText]: [Root.GetName]: event HAH_evt_a01.032"}
 	}
 	country_event={		#A Ball
-		id=HAH_evt_a01.036
-		title=HAH_evt_a01.036.t	desc=HAH_evt_a01.036.d	#picture=
+		id=HAH_evt_a01.035
+		title=HAH_evt_a01.035.t	desc=HAH_evt_a01.035.d	#picture=
 		is_triggered_only=yes
 		option={
-			name=HAH_evt_a01.036.a
+			name=HAH_evt_a01.035.a
 		}
 		option={
 			name=HAH_evt_C-FF_W-TY.r
 			trigger={is_debug=yes}
 		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_evt_a01.036"}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_evt_a01.035"}
 	}
 	country_event={		#Production Begins
 		id=HAH_evt_a01.041
@@ -318,12 +318,12 @@ add_namespace=HAH_evt_a02
 		option={
 			name=HAH_evt_a02.111.a
 			set_country_flag=HAH_misty_and_willow_in_charge
-			country_event=HAH_evt_a03m.001
+			country_event=HAH_evt_a03m.000
 		}
 		option={
 			name=HAH_evt_a02.111.b
 			set_country_flag=HAH_willow_in_charge
-			country_event=HAH_evt_a03w.001
+			country_event=HAH_evt_a03w.000
 		}
 		option={
 			name=HAH_evt_C-FF_W-TY.r
@@ -357,7 +357,7 @@ add_namespace=HAH_evt_a03w
 		option={
 			name=HAH_evt_a03w.000.a
 			load_focus_tree={
-				tree=HAH_misty
+				tree=HAH_willow
 				keep_completed=yes
 			}
 		}

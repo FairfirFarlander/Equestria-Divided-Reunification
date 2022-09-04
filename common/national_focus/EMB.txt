@@ -1,25 +1,25 @@
 focus_tree={
-	id=EMB country={modifier={add=3 tag=EMB}}
+	id=EMB country={factor=0 modifier={add=3 tag=EMB}}
 	continuous_focus_position={x=1200 y=-350}
 	shared_focus=EMB_S00
 }
 focus_tree={	#Fascist Tree
-	id=EMB_fascist country={modifier={add=4 tag=EMB has_country_flag=EMB_fascist_tree}}
+	id=EMB_fascist country={factor=0 modifier={add=4 tag=EMB has_country_flag=EMB_fascist_tree}}
 	continuous_focus_position={x=1200 y=-350}
 	#shared_focus=EMB_FS00
 }
 focus_tree={	#Communist Tree
-	id=EMB_communist country={modifier={add=4 tag=EMB has_country_flag=EMB_communist_tree}}
+	id=EMB_communist country={factor=0 modifier={add=4 tag=EMB has_country_flag=EMB_communist_tree}}
 	continuous_focus_position={x=1200 y=-350}
 	shared_focus=EMB_CS00
 }
 focus_tree={	#Neutral Tree
-	id=EMB_neutral country={modifier={add=4 tag=EMB has_country_flag=EMB_neutral_tree}}
+	id=EMB_neutral country={factor=0 modifier={add=4 tag=EMB has_country_flag=EMB_neutral_tree}}
 	continuous_focus_position={x=1200 y=-350}
 	#shared_focus=EMB_NS00
 }
 focus_tree={	#DEBUG
-	id=EMB country={modifier={add=4 tag=EMB is_debug=yes}}
+	id=EMB country={factor=0 modifier={add=4 tag=EMB is_debug=yes}}
 	continuous_focus_position={x=1200 y=-350}
 	shared_focus=EMB_S00
 	shared_focus=EMB_S10

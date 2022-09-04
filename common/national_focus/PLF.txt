@@ -1,5 +1,5 @@
 focus_tree={
-	id=PLF country={modifier={add=3 tag=PLF}}
+	id=PLF country={factor=0 modifier={add=3 tag=PLF}}
 	continuous_focus_position={x=3000 y=800}
 	#shared_focus=PLF_no_equestria
 	#shared_focus=PLF_consult_locals

@@ -1,10 +1,10 @@
 focus_tree={
-	id=HMS country={modifier={add=3 tag=HMS}}
+	id=HMS country={factor=0 modifier={add=3 tag=HMS}}
 	continuous_focus_position={x=1200 y=-350}
 	shared_focus=HMS_S00
 }
 focus_tree={	#DEBUG
-	id=HMS country={modifier={add=4 tag=HMS is_debug=yes}}
+	id=HMS country={factor=0 modifier={add=4 tag=HMS is_debug=yes}}
 	continuous_focus_position={x=1200 y=-350}
 	#shared_focus=EQD_S00
 	#shared_focus=HSW_calm_before_the_storm

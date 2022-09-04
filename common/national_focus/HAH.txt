@@ -1,10 +1,10 @@
 focus_tree={
-	id=HAH country={modifier={add=3 tag=HAH}}
+	id=HAH country={factor=0 modifier={add=3 tag=HAH}}
 	continuous_focus_position={x=1200 y=-350}
 	shared_focus=HAH_S00
 }
 focus_tree={
-	id=HAH_misty country={modifier={add=5 tag=HAH has_country_flag=HAH_misty_and_willow_in_charge}}
+	id=HAH_misty country={factor=0 modifier={add=5 tag=HAH has_country_flag=HAH_misty_and_willow_in_charge}}
 	continuous_focus_position={x=1200 y=-350}
 	#shared_focus=HAH_MS00
 	shared_focus=EDR_I00
@@ -15,7 +15,7 @@ focus_tree={
 	shared_focus=EDR_A08A
 }
 focus_tree={
-	id=HAH_willow country={modifier={add=5 tag=HAH has_country_flag=HAH_willow_in_charge}}
+	id=HAH_willow country={factor=0 modifier={add=5 tag=HAH has_country_flag=HAH_willow_in_charge}}
 	continuous_focus_position={x=1200 y=-350}
 	#shared_focus=HAH_WS00
 	shared_focus=EDR_I00
@@ -26,7 +26,7 @@ focus_tree={
 	shared_focus=EDR_A08A
 }
 focus_tree={	#DEBUG
-	id=HAH_debug country={modifier={add=4 tag=HAH is_debug=yes}}
+	id=HAH_debug country={factor=0 modifier={add=4 tag=HAH is_debug=yes}}
 	continuous_focus_position={x=1200 y=-350}
 	#shared_focus=EQD_S00
 	#shared_focus=HSW_calm_before_the_storm

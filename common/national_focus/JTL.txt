@@ -1,5 +1,5 @@
 focus_tree={
-	id=JTL country={modifier={add=3 tag=JTL}}
+	id=JTL country={factor=0 modifier={add=3 tag=JTL}}
 	continuous_focus_position={x=3750 y=-400}
 	shared_focus=JUN_decleration
 	shared_focus=JUN_army_debate

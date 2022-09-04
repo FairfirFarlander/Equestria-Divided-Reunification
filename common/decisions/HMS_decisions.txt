@@ -15,14 +15,14 @@ HMS_political_intrigue={
 		#icon=
 		available={hidden_trigger={always=no}}
 	}
-	HMS_slavers_opinion={
-		#icon=
-		available={hidden_trigger={always=no}}
-	}
-	HMS_citizens_opinion={
-		#icon=
-		available={hidden_trigger={always=no}}
-	}
+	#HMS_slavers_opinion={
+	#	#icon=
+	#	available={hidden_trigger={always=no}}
+	#}
+	#HMS_citizens_opinion={
+	#	#icon=
+	#	available={hidden_trigger={always=no}}
+	#}
 #Opinion Fuckery Portion
 	HMS_res_opinion_fuckery={
 		#icon=

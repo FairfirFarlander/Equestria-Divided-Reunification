@@ -4,7 +4,7 @@
 		x=0 y=0 cost=1
 		search_filters={}
 		select_effect={country_event=EDR_evt_gen.000}	#Event Verbosity
-		ai_will_do={factor=4000}
+		ai_will_do={factor=80}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_S00"
 			country_event=HAH_evt_a01.001	#Rules of Dominion
@@ -12,10 +12,10 @@
 	}
 	shared_focus={	#A Demand for Timber and Stone
 		id=HAH_S01A icon=GFX_goal_generic_forestry
-		x=-2 y=1 cost=2 relative_position_id=HAH_S00
+		x=-2 y=1 cost=5 relative_position_id=HAH_S00
 		search_filters={}
 		prerequisite={focus=HAH_S00}
-		ai_will_do={factor=4000}
+		ai_will_do={factor=80}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_S01A"
 			40={
@@ -30,10 +30,10 @@
 	}
 	shared_focus={	#Grain Quotas
 		id=HAH_S01B icon=GFX_YAL_cooperative_farms_and_mines
-		x=0 y=1 cost=2 relative_position_id=HAH_S00
+		x=0 y=1 cost=5 relative_position_id=HAH_S00
 		search_filters={}
 		prerequisite={focus=HAH_S00}
-		ai_will_do={factor=4000}
+		ai_will_do={factor=80}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_S01B"
 			set_technology={tech_pony_misc=1}
@@ -41,10 +41,10 @@
 	}
 	shared_focus={	#A Quota for Steel
 		id=HAH_S01C icon=GFX_focus_generic_steel
-		x=2 y=1 cost=2 relative_position_id=HAH_S00
+		x=2 y=1 cost=5 relative_position_id=HAH_S00
 		search_filters={}
 		prerequisite={focus=HAH_S00}
-		ai_will_do={factor=4000}
+		ai_will_do={factor=80}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_S01C"
 			40={
@@ -62,7 +62,7 @@
 		prerequisite={focus=HAH_S01A}
 		prerequisite={focus=HAH_S01B}
 		prerequisite={focus=HAH_S01C}
-		ai_will_do={factor=4000}
+		ai_will_do={factor=80}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_S02"
 			country_event=HAH_evt_a01.021	#Back to Business
@@ -71,7 +71,7 @@
 	}
 	shared_focus={	#A Grander Library
 		id=HAH_D03A icon=GFX_goal_bookstack
-		x=-4 y=1 cost=2 relative_position_id=HAH_S02
+		x=-3 y=1 cost=5 relative_position_id=HAH_S02
 		search_filters={}
 		prerequisite={focus=HAH_S02}
 		ai_will_do={factor=80}
@@ -88,10 +88,10 @@
 	}
 	shared_focus={	#The Glory of the Theatre
 		id=HAH_D03B icon=GFX_focus_presto
-		x=-2 y=1 cost=2 relative_position_id=HAH_S02
+		x=-1 y=1 cost=5 relative_position_id=HAH_S02
 		search_filters={}
 		prerequisite={focus=HAH_S02}
-		ai_will_do={factor=80}
+		ai_will_do={factor=60}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_D03B"
 			country_event=HAH_evt_a01.032	#Bread and Circuses
@@ -104,10 +104,10 @@
 	}
 	shared_focus={	#Statues to Their Gods
 		id=HAH_D03C icon=GFX_goal_EQS_TNO_meet_leaders
-		x=2 y=1 cost=2 relative_position_id=HAH_S02
+		x=1 y=1 cost=5 relative_position_id=HAH_S02
 		search_filters={}
 		prerequisite={focus=HAH_S02}
-		ai_will_do={factor=80}
+		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_D03C"
 			add_stability=0.04
@@ -122,13 +122,13 @@
 	}
 	shared_focus={	#Whispering Wisp Manner
 		id=HAH_D03D icon=GFX_goal_generic_castle
-		x=4 y=1 cost=2 relative_position_id=HAH_S02
+		x=3 y=1 cost=5 relative_position_id=HAH_S02
 		search_filters={}
 		prerequisite={focus=HAH_S02}
-		ai_will_do={factor=80}
+		ai_will_do={factor=20}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_D03D"
-			country_event=HAH_evt_a01.036	#A Ball
+			country_event=HAH_evt_a01.035	#A Ball
 			add_to_variable={HAH_back_to_business=1}
 			if={
 				limit={check_variable={HAH_back_to_business=4}}
@@ -138,7 +138,7 @@
 	}
 	shared_focus={	#Bubble Bubble
 		id=HAH_S04A icon=GFX_goal_water
-		x=-1 y=2 cost=2 relative_position_id=HAH_S02
+		x=-2 y=2 cost=2 relative_position_id=HAH_S02
 		search_filters={}
 		prerequisite={focus=HAH_S02}
 		available={has_country_flag=HAH_business_concluded}
@@ -150,7 +150,7 @@
 	}
 	shared_focus={	#Toil and Trouble
 		id=HAH_S04B icon=GFX_focus_indy_zebra_potion_masters
-		x=1 y=2 cost=2 relative_position_id=HAH_S02
+		x=2 y=2 cost=2 relative_position_id=HAH_S02
 		search_filters={}
 		prerequisite={focus=HAH_S02}
 		available={

@@ -1,9 +1,9 @@
 focus_tree={
-	id=TRT country={modifier={add=3 tag=TRT}}
+	id=TRT country={factor=0 modifier={add=3 tag=TRT}}
 	continuous_focus_position={x=1200 y=-350}
 }
 focus_tree={	#DEBUG
-	id=TRT country={modifier={add=4 tag=TRT is_debug=yes}}
+	id=TRT country={factor=0 modifier={add=4 tag=TRT is_debug=yes}}
 	continuous_focus_position={x=1200 y=-350}
 	shared_focus=examine_the_situation
 	shared_focus=Ministry_of_defense

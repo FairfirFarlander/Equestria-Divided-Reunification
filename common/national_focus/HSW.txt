@@ -1,5 +1,5 @@
 focus_tree={
-	id=HSW country={modifier={add=3 tag=HSW}}
+	id=HSW country={factor=0 modifier={add=3 tag=HSW}}
 	continuous_focus_position={x=1750 y=800}
 	shared_focus=EQD_S00
 	shared_focus=HSW_calm_before_the_storm
@@ -9,7 +9,7 @@ focus_tree={
 	shared_focus=EDR_A05
 }
 focus_tree={
-	id=HSW_debug country={modifier={add=4 tag=HSW is_debug=yes}}
+	id=HSW_debug country={factor=0 modifier={add=4 tag=HSW is_debug=yes}}
 	continuous_focus_position={x=0 y=-350}
 	shared_focus=EQD_S00
 	shared_focus=HSW_calm_before_the_storm
