@@ -11,16 +11,106 @@
 		ai_will_do={factor=4000}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS00"
-			country_event=HAH_evt_a01.001	#Rules of Dominion
+			country_event=HAH_evt_a03w.001	#Storming of the Factory
 		}
 	}
 	shared_focus={	#Under New Management But Has Really Anything Changed?
-		id=HAH_WS01A #icon=
-		x=-2 y=1 cost=2 relative_position_id=HAH_WS00
+		id=HAH_WS01 #icon=
+		x=0 y=1 cost=2 relative_position_id=HAH_WS00
 		search_filters={}
 		prerequisite={focus=HAH_WS00}
+		select_effect={
+			country_event=HAH_evt_a03w.011	#Swift and Quick Moves
+			country_event=HAH_evt_a03w.012	#The Inquisition Sanctions Us
+		}
 		ai_will_do={factor=4000}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HAH_WS01A"
+			log="[GetDateText]: [Root.GetName]: focus HAH_WS01"
+			country_event=HAH_evt_a03w.013	#Morning Dew's Personal Meeting with Willow
+		}
+	}
+	shared_focus={	#Increasing Data Collection and Testing
+		id=HAH_WS02A #icon=
+		x=-1 y=1 cost=2 relative_position_id=HAH_WS01
+		search_filters={}
+		prerequisite={focus=HAH_WS01}
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAH_WS02A"
+		}
+	}
+	shared_focus={	#Increasing the Production of the Factory
+		id=HAH_WS02B #icon=
+		x=1 y=1 cost=2 relative_position_id=HAH_WS01
+		search_filters={}
+		prerequisite={focus=HAH_WS01}
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAH_WS02B"
+		}
+	}
+	shared_focus={	#Canterlot Demands More Drastic Tests
+		id=HAH_WS03 #icon=
+		x=0 y=2 cost=2 relative_position_id=HAH_WS01
+		search_filters={}
+		prerequisite={focus=HAH_WS02A}
+		prerequisite={focus=HAH_WS02B}
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAH_WS03"
+			#country_event=HAH_evt_a03w.031	#The Blockades Are Lifted, but Policing Increases	#After Raid
+		}
+	}
+	shared_focus={	#Compensating for the Decrees
+		id=HAH_WS04A #icon=
+		x=-2 y=1 cost=2 relative_position_id=HAH_WS03
+		search_filters={}
+		prerequisite={focus=HAH_WS03}
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAH_WS04A"
+		}
+	}
+	shared_focus={	#Purchasing a Train
+		id=HAH_WS04B #icon=
+		x=0 y=1 cost=2 relative_position_id=HAH_WS03
+		search_filters={}
+		prerequisite={focus=HAH_WS03}
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAH_WS04B"
+		}
+	}
+	shared_focus={	#More Than Just Foal's Gold
+		id=HAH_WS04C #icon=
+		x=2 y=1 cost=2 relative_position_id=HAH_WS03
+		search_filters={}
+		prerequisite={focus=HAH_WS03}
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAH_WS04C"
+		}
+	}
+	shared_focus={	#Called to Canterlot
+		id=HAH_WS05 #icon=
+		x=0 y=2 cost=2 relative_position_id=HAH_WS03
+		search_filters={}
+		prerequisite={focus=HAH_WS04A}
+		prerequisite={focus=HAH_WS04B}
+		prerequisite={focus=HAH_WS04C}
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAH_WS05"
+			country_event=HAH_evt_a03w.051	#Going to Canterlot not as a Servant, but a Leader
+		}
+	}
+	shared_focus={	#Called to Canterlot
+		id=HAH_WS06 #icon=
+		x=0 y=1 cost=2 relative_position_id=HAH_WS05
+		search_filters={}
+		prerequisite={focus=HAH_WS05}
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAH_WS06"
 		}
 	}

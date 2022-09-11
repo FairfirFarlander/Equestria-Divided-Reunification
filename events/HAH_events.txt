@@ -367,3 +367,94 @@ add_namespace=HAH_evt_a03w
 		}
 		immediate={log="[GetDateText]: [Root.GetName]: event HAH_evt_a03w.000"}
 	}
+	country_event={		#Storming of the Factory
+		id=HAH_evt_a03w.001
+		title=HAH_evt_a03w.001.t	desc=HAH_evt_a03w.001.d	#picture=
+		is_triggered_only=yes
+		option={
+			name=HAH_evt_a03w.001.a
+		}
+		option={
+			name=HAH_evt_C-FF_W-TY.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_evt_a03w.001"}
+	}
+	country_event={		#Swift and Quick Moves
+		id=HAH_evt_a03w.011
+		title=HAH_evt_a03w.011.t	desc=HAH_evt_a03w.011.d	#picture=
+		is_triggered_only=yes
+		option={
+			name=HAH_evt_a03w.011.a
+		}
+		option={
+			name=HAH_evt_C-FF_W-TY.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_evt_a03w.011"}
+	}
+	country_event={		#The Inquisition Sanctions Us
+		id=HAH_evt_a03w.012
+		title=HAH_evt_a03w.012.t	desc=HAH_evt_a03w.012.d	#picture=
+		is_triggered_only=yes
+		option={
+			name=HAH_evt_a03w.012.a
+		}
+		option={
+			name=HAH_evt_C-FF_W-TY.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_evt_a03w.012"}
+	}
+	country_event={		#Morning Dew's Personal Meeting with Willow
+		id=HAH_evt_a03w.013
+		title=HAH_evt_a03w.013.t	desc=HAH_evt_a03w.013.d	#picture=
+		is_triggered_only=yes
+		option={
+			name=HAH_evt_a03w.013.a
+		}
+		option={
+			name=HAH_evt_C-FF_W-TY.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_evt_a03w.013"}
+	}
+	country_event={		#The Blockades Are Lifted, but Policing Increases
+		id=HAH_evt_a03w.031
+		title=HAH_evt_a03w.031.t	desc=HAH_evt_a03w.031.d	#picture=
+		is_triggered_only=yes
+		option={
+			name=HAH_evt_a03w.031.a
+		}
+		option={
+			name=HAH_evt_C-FF_W-TY.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_evt_a03w.031"}
+	}
+	country_event={		#The Policing Finally Lessens
+		id=HAH_evt_a03w.041
+		title=HAH_evt_a03w.041.t	desc=HAH_evt_a03w.041.d	#picture=
+		is_triggered_only=yes
+		option={
+			name=HAH_evt_a03w.041.a
+		}
+		option={
+			name=HAH_evt_C-FF_W-TY.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_evt_a03w.041"}
+	}
+	country_event={		#Going to Canterlot not as a Servant, but a Leader
+		id=HAH_evt_a03w.051
+		title=HAH_evt_a03w.051.t	desc=HAH_evt_a03w.051.d	#picture=
+		is_triggered_only=yes
+		option={
+			name=HAH_evt_a03w.051.a
+		}
+		option={
+			name=HAH_evt_C-FF_W-TY.r
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_evt_a03w.051"}
+	}
