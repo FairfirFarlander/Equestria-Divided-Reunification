@@ -25,3 +25,4 @@ set_rule={can_generate_female_aces=yes}
 set_popularities={fascism=12 communism=17 neutrality=30 democratic=41}
 set_politics={ruling_party=democratic}
 recruit_character=PRT_generic_pony
+#Notes#

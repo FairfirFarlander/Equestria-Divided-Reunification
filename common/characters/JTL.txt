@@ -2,10 +2,10 @@ characters={
 	JUN_ahuizotl={
 		name=JUN_ahuizotl
 		portraits={
-			civilian={large="gfx/leaders/TEM/ahuizotl.tga"}
+			civilian={large="gfx/leaders/TEM/Ahuizotl.tga"}
 			army={
-				large="gfx/leaders/TEM/ahuizotl.tga"
-				small="gfx/interface/ideas/Advisors/TEM/TEM_ahuizotl.tga"
+				large="gfx/leaders/TEM/Ahuizotl.tga"
+				small="GFX_idea_TEM_Ahuizotl_Advisor"
 			}
 		}
 		country_leader={

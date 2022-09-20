@@ -1,6 +1,6 @@
 #Story Tree Willow
 	shared_focus={	#Willow Takes His Stand
-		id=HAH_WS00 icon=GFX_goal_secret_agents
+		id=HAH_WS00 #icon=
 		x=0 y=0 cost=8
 		offset={
 			x=8
@@ -12,6 +12,7 @@
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS00"
 			country_event=HAH_evt_a03w.001	#Storming of the Factory
+			add_stability=-0.2
 		}
 	}
 	shared_focus={	#Under New Management But Has Really Anything Changed?

@@ -399,6 +399,7 @@ add_namespace=HAH_evt_a03w
 		is_triggered_only=yes
 		option={
 			name=HAH_evt_a03w.012.a
+			add_ideas=HAH_inquisition_sanctions
 		}
 		option={
 			name=HAH_evt_C-FF_W-TY.r
