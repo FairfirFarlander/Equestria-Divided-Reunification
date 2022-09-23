@@ -3,30 +3,39 @@ characters={
 		name=HEF_lady_fluttershy
 		gender=female
 		portraits={
-			civilian={large="gfx/leaders/HEF/HEF_lady_fluttershy.dds"}
-			army={large="gfx/leaders/HEF/HEF_lady_fluttershy.dds"}
+			civilian={
+				large="gfx/leaders/HEF/HEF_lady_fluttershy.dds"
+			}
+			army={
+				large="gfx/leaders/HEF/HEF_lady_fluttershy.dds"
+			}
 		}
 		country_leader={
-			desc="HEF_lfluttershy_poli_desc"	ideology=kratokracy
-			expire="1030.03.13.08"
+			desc="HEF_lfluttershy_poli_desc"
+			ideology=kratokracy
 			traits={}
-			id=-1
 		}
 		field_marshal={
 			desc="HEF_lfluttershy_mili_desc"
-			skill=1	attack_skill=1	defense_skill=1
-			planning_skill=1	logistics_skill=1
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
 			traits={pony_race_trait}	#Add 3 more#
 		}
 	}
 	HEF_red_leaves={
 		name=HEF_red_leaves
-		#portraits={civilian={large="gfx/leaders/HEF/HEF_red_leaves.dds"}}#
+		portraits={
+			civilian={
+				large="gfx/leaders/Pony/portrait_pony_generic_land_4.dds"
+			}
+		}
 		country_leader={
-			desc="HEF_rleaves_poli_desc"	ideology=anarchist_communism
-			expire="1030.03.13.08"
+			desc="HEF_rleaves_poli_desc"
+			ideology=anarchist_communism
 			traits={}
-			id=-1
 		}
 	}
 	HEF_zecora={
@@ -42,27 +51,32 @@ characters={
 			}
 		}
 		country_leader={
-			desc="HEF_zecora_poli_desc"	ideology=tribal_council
-			expire="1030.03.13.08"
+			desc="HEF_zecora_poli_desc"
+			ideology=tribal_council
 			traits={}
-			id=-1
 		}
 		corps_commander={
 			desc="HEF_zecora_mili_desc"
-			skill=1	attack_skill=1	defense_skill=1
-			planning_skill=1	logistics_skill=1
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
 			traits={pony_race_trait}	#Add 3 more#
 		}
 	}
 	HEF_flower_seed={
 		name=HEF_flower_seed
 		gender=female
-		portraits={civilian={large="gfx/leaders/Pony/portrait_pony_generic_6.dds"}}
+		portraits={
+			civilian={
+				large="gfx/leaders/Pony/portrait_pony_generic_6.dds"
+			}
+		}
 		country_leader={
-			desc="HEF_fseed_poli_desc"	ideology=liberalism
-			expire="1030.03.13.08"
+			desc="HEF_fseed_poli_desc"
+			ideology=liberalism
 			traits={}
-			id=-1
 		}
 	}
 }

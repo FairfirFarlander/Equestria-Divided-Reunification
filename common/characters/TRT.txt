@@ -11,10 +11,14 @@ characters={
 			}
 		}
 		country_leader={
-			desc="TRT_rfire_poli_desc"	ideology=stratocracy
-			expire="1030.03.13.08"
+			desc="TRT_rfire_poli_desc"
+			ideology=stratocracy
 			traits={fascist_demagogue}
-			id=-1
+		}
+		country_leader={
+			desc="WTC_gpony_poli_desc"
+			ideology=democratic_socialism
+			traits={}
 		}
 		corps_commander={
 			desc="TRT_rfire_mili_desc"
@@ -35,10 +39,12 @@ characters={
 			}
 		}
 		country_leader={
-			desc="TRT_thoosevelt_poli_desc"	ideology=populism
-			expire="1030.03.13.08"
-			traits={headstrong great_war_hero}
-			id=-1
+			desc="TRT_thoosevelt_poli_desc"
+			ideology=populism
+			traits={
+				headstrong
+				great_war_hero
+			}
 		}
 		corps_commander={
 			desc="TRT_thoosevelt_mili_desc"
@@ -51,13 +57,16 @@ characters={
 		name=TRT_harshwhinny
 		gender=female
 		portraits={
-			civilian={large="gfx/leaders/TRT/TRT_harshwhinny.dds"}
+			civilian={
+				large="gfx/leaders/TRT/TRT_harshwhinny.dds"
+			}
 		}
 		country_leader={
 			desc="TRT_harshwhinny_poli_desc"	ideology=harmonic_libertarianism
-			expire="1030.03.13.08"
-			traits={appeaser hedonist}
-			id=-1
+			traits={
+				appeaser
+				hedonist
+			}
 		}
 	}
 }

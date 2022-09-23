@@ -6,10 +6,24 @@ characters={
 			civilian={large="gfx/leaders/leader_unknown.dds"}
 		}
 		country_leader={
-			desc="SWT_gpony_poli_desc"	ideology=fascism_ideology
-			expire="1030.03.13.08"
+			desc="SWT_gpony_poli_desc"
+			ideology=fascism_ideology
 			traits={}
-			id=-1
+		}
+		country_leader={
+			desc="WTC_gpony_poli_desc"
+			ideology=conservatism
+			traits={}
+		}
+		country_leader={
+			desc="WTC_gpony_poli_desc"
+			ideology=democratic_socialism
+			traits={}
+		}
+		country_leader={
+			desc="WTC_gpony_poli_desc"
+			ideology=despotism
+			traits={}
 		}
 	}
 }

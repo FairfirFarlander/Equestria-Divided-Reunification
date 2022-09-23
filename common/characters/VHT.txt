@@ -2,12 +2,30 @@ characters={
 	VHT_strawberry_snowflake={
 		name=VHT_strawberry_snowflake
 		gender=female
-		portraits={civilian={large="gfx/leaders/VAN/Strawberry_Snowflake.tga"}}
+		portraits={
+			civilian={
+				large="gfx/leaders/VAN/Strawberry_Snowflake.tga"
+			}
+		}
 		country_leader={
-			desc="VHT_ssnowflake_poli_desc"	ideology=leninism
-			expire="1030.03.13.08"
+			desc="VHT_ssnowflake_poli_desc"
+			ideology=leninism
 			traits={rural_populist}
-			id=-1
+		}
+		country_leader={
+			desc="WTC_gpony_poli_desc"
+			ideology=conservatism
+			traits={}
+		}
+		country_leader={
+			desc="WTC_gpony_poli_desc"
+			ideology=fascism_ideology
+			traits={}
+		}
+		country_leader={
+			desc="WTC_gpony_poli_desc"
+			ideology=despotism
+			traits={}
 		}
 	}
 	VHT_indigo_skies={
@@ -21,9 +39,16 @@ characters={
 		}
 		corps_commander={
 			desc="VHT_iskies_mili_desc"
-			skill=1 attack_skill=2	defense_skill=1
-			planning_skill=1	logistics_skill=2
-			traits={thestral_race_trait air_force_commander commissar_general}
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			traits={
+				thestral_race_trait
+				air_force_commander
+				commissar_general
+			}
 		}
 	}
 	VHT_crimson_hoof={
@@ -36,9 +61,14 @@ characters={
 		}
 		corps_commander={
 			desc="VHT_choof_mili_desc"
-			skill=1 attack_skill=1	defense_skill=3
-			planning_skill=1	logistics_skill=1
-			traits={pony_race_trait}
+			skill=1
+			attack_skill=1
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=1
+			traits={
+				pony_race_trait
+			}
 		}
 	}
 	VHT_moonlight_elegy={
@@ -52,9 +82,16 @@ characters={
 		}
 		corps_commander={
 			desc="VHT_melegy_mili_desc"
-			skill=1 attack_skill=1	defense_skill=1
-			planning_skill=1	logistics_skill=1
-			traits={pony_race_trait infantry_leader winter_specialist}
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			traits={
+				pony_race_trait
+				infantry_leader
+				winter_specialist
+			}
 		}
 	}
 	VHT_lavender_blossom={
@@ -68,9 +105,16 @@ characters={
 		}
 		corps_commander={
 			desc="VHT_lblossom_mili_desc"
-			skill=1 attack_skill=1	defense_skill=1
-			planning_skill=1	logistics_skill=1
-			traits={pony_race_trait harsh_leader infantry_leader}
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			traits={
+				pony_race_trait
+				harsh_leader
+				infantry_leader
+			}
 		}
 	}
 }

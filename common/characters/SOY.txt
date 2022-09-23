@@ -9,10 +9,24 @@ characters={
 			}
 		}
 		country_leader={
-			desc="chn_queen_yaria_desc"	ideology=despotism	#Change desc soon.
-			expire="1030.03.13.08"
+			desc="chn_queen_yaria_desc"
+			ideology=despotism	#Change desc soon.
 			traits={queen_yaria}
-			id=-1
+		}
+		country_leader={
+			desc="WTC_gpony_poli_desc"
+			ideology=conservatism
+			traits={}
+		}
+		country_leader={
+			desc="WTC_gpony_poli_desc"
+			ideology=democratic_socialism
+			traits={}
+		}
+		country_leader={
+			desc="WTC_gpony_poli_desc"
+			ideology=fascism_ideology
+			traits={}
 		}
 	}
 	SOY_venyx={
@@ -26,9 +40,16 @@ characters={
 		}
 		corps_commander={
 			desc="SOY_venyx_mili_desc"
-			skill=2 attack_skill=1	defense_skill=1
-			planning_skill=3	logistics_skill=2
-			traits={changeling_race_trait organizer winter_specialist}
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=2
+			traits={
+				changeling_race_trait
+				organizer
+				winter_specialist
+			}
 		}
 	}
 }

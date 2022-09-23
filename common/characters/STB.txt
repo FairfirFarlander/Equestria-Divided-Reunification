@@ -3,38 +3,46 @@ characters={
 		name=STB_iris_kelly
 		gender=female
 		portraits={
-			civilian={large="gfx/leaders/Pony/portrait_pony_generic_navy_13.dds"}
+			civilian={
+				large="gfx/leaders/Pony/portrait_pony_generic_navy_13.dds"
+			}
 		}
 		country_leader={
-			desc="STB_ikelly_poli_desc"	ideology=corporatocracy
-			expire="1030.03.13.08"
+			desc="STB_ikelly_poli_desc"
+			ideology=corporatocracy
 			traits={}
-			id=-1
 		}
 	}
 	STB_mabel_corne={
 		name=STB_mabel_corne
 		gender=female
 		portraits={
-			civilian={large="gfx/leaders/Pony/portrait_pony_generic_land_8.dds"}
+			civilian={
+				large="gfx/leaders/Pony/portrait_pony_generic_land_8.dds"
+			}
 		}
 		country_leader={
-			desc="STB_mcorne_poli_desc"	ideology=democratic_socialism
-			expire="1030.03.13.08"
+			desc="STB_mcorne_poli_desc"
+			ideology=democratic_socialism
 			traits={}
-			id=-1
 		}
 	}
 	STB_smokey_dust={
 		name=STB_smokey_dust
 		portraits={
-			civilian={large="gfx/leaders/Pony/portrait_pony_generic_navy_8.dds"}
+			civilian={
+				large="gfx/leaders/Pony/portrait_pony_generic_navy_8.dds"
+			}
 		}
 		country_leader={
-			desc="STB_sdust_poli_desc"	ideology=centrism
-			expire="1030.03.13.08"
+			desc="STB_sdust_poli_desc"
+			ideology=centrism
 			traits={}
-			id=-1
+		}
+		country_leader={
+			desc="WTC_gpony_poli_desc"
+			ideology=conservatism
+			traits={}
 		}
 	}
 }

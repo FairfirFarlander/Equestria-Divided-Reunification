@@ -2,13 +2,29 @@ characters={
 	CYE_nothinginterestinghappens={
 		name=CYE_voidwalker
 		portraits={
-			civilian={large="gfx/leaders/Asia/Unknown_Griffon.dds"}
+			civilian={
+				large="gfx/leaders/Asia/Unknown_Griffon.dds"
+			}
 		}
 		country_leader={
-			desc="CYE_nihappens_desc"	ideology=anarchism
-			#expire="1030.03.13.08"
+			desc="CYE_nihappens_desc"
+			ideology=anarchism
 			traits={}
-			id=-1
+		}
+		country_leader={
+			desc="WTC_gpony_poli_desc"
+			ideology=conservatism
+			traits={}
+		}
+		country_leader={
+			desc="WTC_gpony_poli_desc"
+			ideology=democratic_socialism
+			traits={}
+		}
+		country_leader={
+			desc="WTC_gpony_poli_desc"
+			ideology=fascism_ideology
+			traits={}
 		}
 	}
 }

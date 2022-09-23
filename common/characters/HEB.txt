@@ -3,52 +3,71 @@ characters={
 		name=HEB_applejack
 		gender=female
 		portraits={
-			civilian={large="gfx/leaders/HEB/HEB_applejack_poli.dds"}
-			army={large="gfx/leaders/HEB/HEB_applejack_mili.dds"}
+			civilian={
+				large="gfx/leaders/HEB/HEB_applejack_poli.dds"
+			}
+			army={
+				large="gfx/leaders/HEB/HEB_applejack_mili.dds"
+			}
 		}
 		country_leader={
-			desc="HEB_applejack_poli_desc"	ideology=nazism
-			expire="1030.03.13.08"
+			desc="HEB_applejack_poli_desc"
+			ideology=nazism
 			traits={}
-			id=-1
 		}
 		field_marshal={
 			desc="HEB_applejack_mili_desc"
-			skill=2	attack_skill=3	defense_skill=3
-			planning_skill=1	logistics_skill=1
-			traits={pony_race_trait ranger offensive_doctrine}
+			skill=2
+			attack_skill=3
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=1
+			traits={
+				pony_race_trait
+				ranger
+				offensive_doctrine
+			}
 		}
 	}
 	HEB_jack_trader={
 		name=HEB_jack_trader
-		#portraits={civilian={large="gfx/leaders/HEB/HEB_jack_trader.dds"}}#
+		portraits={
+			civilian={
+				large="gfx/leaders/Pony/portrait_pony_generic_land_13.dds"
+			}
+		}
 		country_leader={
-			desc="HEB_jtrader_poli_desc"	ideology=anarchist_communism
-			expire="1030.03.13.08"
+			desc="HEB_jtrader_poli_desc"
+			ideology=anarchist_communism
 			traits={}
-			id=-1
 		}
 	}
 	HEB_magia_saviour={
 		name=HEB_magia_saviour
 		gender=female
-		#portraits={civilian={large="gfx/leaders/HEB/HEB_magia_saviour.dds"}}#
+		portraits={
+			civilian={
+				large="gfx/leaders/Pony/portrait_riv_pony_generic_1.dds"
+			}
+		}
 		country_leader={
-			desc="HEB_msaviour_poli_desc"	ideology=despotism
-			expire="1030.03.13.08"
+			desc="HEB_msaviour_poli_desc"
+			ideology=despotism
 			traits={}
-			id=-1
 		}
 	}
 	HEB_raving_cloud={
 		name=HEB_raving_cloud
 		gender=female
-		#portraits={civilian={large="gfx/leaders/HEB/HEB_raving_cloud.dds"}}#
+		portraits={
+			civilian={
+				large="gfx/leaders/Pony/portrait_pony_generic_land_9.dds"
+			}
+		}
 		country_leader={
-			desc="HEB_rcloud_poli_desc"	ideology=liberalism
-			expire="1030.03.13.08"
+			desc="HEB_rcloud_poli_desc"
+			ideology=liberalism
 			traits={}
-			id=-1
 		}
 	}
 	HEB_big_mac={
@@ -61,9 +80,15 @@ characters={
 		}
 		corps_commander={
 			desc="HEB_bmac_mili_desc"
-			skill=2 attack_skill=2	defense_skill=3
-			planning_skill=1	logistics_skill=2
-			traits={pony_race_trait inflexible_strategist}
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=2
+			traits={
+				pony_race_trait
+				inflexible_strategist
+			}
 		}
 	}
 	HEB_braeburn={
@@ -76,9 +101,16 @@ characters={
 		}
 		corps_commander={
 			desc="HEB_braeburn_mili_desc"
-			skill=2 attack_skill=2	defense_skill=1
-			planning_skill=1	logistics_skill=4
-			traits={pony_race_trait urban_assault_specialist desert_fox}
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=4
+			traits={
+				pony_race_trait
+				urban_assault_specialist
+				desert_fox
+			}
 		}
 	}
 	HEB_lightning_dust={
@@ -92,9 +124,17 @@ characters={
 		}
 		corps_commander={
 			desc="HEB_ldust_mili_desc"
-			skill=2 attack_skill=3	defense_skill=2
-			planning_skill=1	logistics_skill=1
-			traits={pony_race_trait trait_reckless harsh_leader trait_focused}
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			traits={
+				pony_race_trait
+				trait_reckless
+				harsh_leader
+				trait_focused
+			}
 		}
 	}
 	HEB_chief_strongheart={
@@ -108,9 +148,15 @@ characters={
 		}
 		corps_commander={
 			desc="HEB_cstrongheart_mili_desc"
-			skill=2 attack_skill=2	defense_skill=2
-			planning_skill=3	logistics_skill=2
-			traits={buffalo_race_trait inspirational_leader}
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			traits={
+				buffalo_race_trait
+				inspirational_leader
+			}
 		}
 		advisor={
 			slot=political_advisor

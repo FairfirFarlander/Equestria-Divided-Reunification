@@ -8,10 +8,9 @@ characters={
 			}
 		}
 		country_leader={
-			desc="PLF_rdcouncil_poli_desc"	ideology=anarchist_communism
-			expire="1030.03.13.08"
+			desc="PLF_rdcouncil_poli_desc"
+			ideology=anarchist_communism
 			traits={}
-			id=-1
 		}
 		advisor={
 			slot=political_advisor
@@ -29,7 +28,8 @@ characters={
 			}
 		}
 		#country_leader={
-		#	desc="PLF_lberry_poli_desc"	ideology=stalinism	#BAL_amber_alert
+		#	desc="PLF_lberry_poli_desc"
+		#	ideology=stalinism	#BAL_amber_alert
 		#	expire="1030.03.13.08"
 		#	traits={secret_police_chief}
 		#	id=-1
@@ -51,7 +51,11 @@ characters={
 	}
 	#PLF_meadowbrook={	#Add her descendant later
 	#	name=PLF_meadowbrook
-	#	portraits={civilian={small="GFX_idea_BAL_meadowbrook"}}
+	#	portraits={
+	#		civilian={
+	#			small="GFX_idea_BAL_meadowbrook"
+	#		}
+	#	}
 	#	advisor={
 	#		slot=political_advisor
 	#		idea_token=PLF_meadowbrook_advi
@@ -63,45 +67,61 @@ characters={
 	PLF_golden_delicious={
 		name=PLF_golden_delicious	#_name
 		portraits={
-			civilian={large="gfx/leaders/BAL/Golden Delicious.tga"}
+			civilian={
+				large="gfx/leaders/BAL/Golden Delicious.tga"
+			}
 			army={
 				large="gfx/leaders/BAL/Golden Delicious.tga"
 				small="GFX_idea_Golden_Delicious"
 			}
 		}
 		country_leader={
-			desc="PLF_gdelicious_poli_desc"	ideology=syndicalism	#BAL_delicious_desc_yummy
-			expire="1030.03.13.08"
+			desc="PLF_gdelicious_poli_desc"
+			ideology=syndicalism	#BAL_delicious_desc_yummy
 			traits={hero_of_the_revolution}
-			id=-1
 		}
 		field_marshal={
 			desc="PLF_gdelicious_mili_desc"	#BAL_delicious_desc_yummy
-			skill=2	attack_skill=2	defense_skill=2
-			planning_skill=2	logistics_skill=1
-			traits={pony_race_trait offensive_doctrine inspirational_leader}
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			traits={
+				pony_race_trait
+				offensive_doctrine
+				inspirational_leader
+			}
 		}
 	}
 	PLF_cricket_chafer={ #Diamond Chafer
 		name=PLF_cricket_chafer	#chafer1
 		portraits={
-			civilian={large="gfx/leaders/BAL/Chafer.tga"}
+			civilian={
+				large="gfx/leaders/BAL/Chafer.tga"
+			}
 			army={
 				large="gfx/leaders/BAL/Chafer.tga"
 				small="GFX_idea_chafer"
 			}
 		}
 		country_leader={
-			desc="BAL_corn_lord"	ideology=leninism	#PLF_cchafer_poli_desc
-			expire="1030.03.13.08"
+			desc="BAL_corn_lord"
+			ideology=leninism	#PLF_cchafer_poli_desc
 			traits={corn_lord}
-			id=-1
 		}
 		corps_commander={
-			traits={pony_race_trait swamp_fox jungle_rat}
 			desc="BAL_corn_lord"	#PLF_cchafer_mili_desc
-			skill=2	attack_skill=1	defense_skill=1
-			planning_skill=2	logistics_skill=3
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=3
+			traits={
+				pony_race_trait
+				swamp_fox
+				jungle_rat
+			}
 		}
 		#advisor={
 		#	slot=army_chief
@@ -113,12 +133,26 @@ characters={
 	PLF_ringo_jam={	#Robert Maestri (Drummer Maestro Jam)
 		name=PLF_ringo_jam
 		gender=female
-		portraits={civilian={large="gfx/leaders/Pony/portrait_pony_generic_7.dds"}}
+		portraits={
+			civilian={
+				large="gfx/leaders/Pony/portrait_pony_generic_7.dds"
+			}
+		}
 		country_leader={
-			desc="PLF_rjam_poli_desc"	ideology=despotism
+			desc="PLF_rjam_poli_desc"
+			ideology=despotism
 			expire="1014.06.06.20"
 			traits={}
-			id=-1
+		}
+		country_leader={
+			desc="WTC_gpony_poli_desc"
+			ideology=conservatism
+			traits={}
+		}
+		country_leader={
+			desc="WTC_gpony_poli_desc"
+			ideology=fascism_ideology
+			traits={}
 		}
 	}
 	#Light Narrative
@@ -127,7 +161,9 @@ characters={
 		name=PLF_starlit_night
 		gender=female
 		portraits={
-			civilian={small="GFX_idea_starrynight"}
+			civilian={
+				small="GFX_idea_starrynight"
+			}
 		}
 		advisor={
 			slot=political_advisor
@@ -179,7 +215,9 @@ characters={
 	PLF_ministry_of_defense={
 		name=PLF_ministry_of_defense
 		portraits={
-			civilian={small="GFX_idea_BAL_Ministry_of_defense"}
+			civilian={
+				small="GFX_idea_BAL_Ministry_of_defense"
+			}
 		}
 		available={has_country_flag=PLF_ministries_unlocked}
 		advisor={
@@ -191,7 +229,9 @@ characters={
 	PLF_ministry_of_information={
 		name=PLF_ministry_of_information
 		portraits={
-			civilian={small="GFX_idea_BAL_Ministry_of_information"}
+			civilian={
+				small="GFX_idea_BAL_Ministry_of_information"
+			}
 		}
 		available={has_country_flag=PLF_ministries_unlocked}
 		advisor={
@@ -203,7 +243,9 @@ characters={
 	PLF_ministry_of_labour={
 		name=PLF_ministry_of_labour
 		portraits={
-			civilian={small="GFX_idea_BAL_Ministry_of_labor"}
+			civilian={
+				small="GFX_idea_BAL_Ministry_of_labor"
+			}
 		}
 		available={has_country_flag=PLF_ministries_unlocked}
 		advisor={
@@ -243,7 +285,9 @@ characters={
 		name=PLF_blitz_banana
 		gender=female
 		portraits={
-			army={small="GFX_idea_blitz1"}
+			army={
+				small="GFX_idea_blitz1"
+			}
 		}
 		advisor={
 			slot=army_chief
@@ -255,7 +299,9 @@ characters={
 		name=PLF_ocean_breeze
 		gender=female
 		portraits={
-			army={small="GFX_idea_oceanbreeze"}
+			army={
+				small="GFX_idea_oceanbreeze"
+			}
 		}
 		advisor={
 			slot=navy_chief
@@ -267,7 +313,9 @@ characters={
 		name=PLF_river_pearl
 		gender=female
 		portraits={
-			army={small="GFX_idea_riverpearl"}
+			army={
+				small="GFX_idea_riverpearl"
+			}
 		}
 		advisor={
 			slot=navy_chief
@@ -279,7 +327,9 @@ characters={
 		name=PLF_diamond_blossom
 		gender=female
 		portraits={
-			army={small="GFX_idea_diamondblossom"}
+			army={
+				small="GFX_idea_diamondblossom"
+			}
 		}
 		advisor={
 			slot=air_chief
@@ -291,7 +341,9 @@ characters={
 		name=PLF_obsidian_shard
 		gender=female
 		portraits={
-			army={small="GFX_idea_obsidia"}
+			army={
+				small="GFX_idea_obsidia"
+			}
 		}
 		advisor={
 			slot=air_chief
@@ -302,7 +354,9 @@ characters={
 	PLF_blueberry_sabre={
 		name=PLF_blueberry_sabre
 		portraits={
-			army={small="GFX_idea_blueberry"}
+			army={
+				small="GFX_idea_blueberry"
+			}
 		}
 		advisor={
 			slot=high_command
@@ -316,7 +370,9 @@ characters={
 		name=PLF_marsh_shimmer
 		gender=female
 		portraits={
-			army={small="GFX_idea_lavender"}
+			army={
+				small="GFX_idea_lavender"
+			}
 		}
 		advisor={
 			slot=high_command
@@ -329,7 +385,9 @@ characters={
 	PLF_sky_chaser={
 		name=PLF_sky_chaser
 		portraits={
-			army={small="GFX_idea_skychaser"}
+			army={
+				small="GFX_idea_skychaser"
+			}
 		}
 		advisor={
 			slot=high_command
@@ -349,9 +407,15 @@ characters={
 		}
 		corps_commander={
 			desc="PLF_smane_mili_desc"
-			skill=1	attack_skill=1	defense_skill=1
-			planning_skill=1	logistics_skill=1
-			traits={pony_race_trait ranger}
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			traits={
+				pony_race_trait
+				ranger
+			}
 		}
 	}
 	PLF_lime_pearl={
@@ -365,9 +429,15 @@ characters={
 		}
 		corps_commander={
 			desc="PLF_lpearl_mili_desc"
-			skill=1	attack_skill=1	defense_skill=1
-			planning_skill=1	logistics_skill=1
-			traits={pony_race_trait commando}
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			traits={
+				pony_race_trait
+				commando
+			}
 		}
 	}
 	PLF_stylus_pen={
@@ -381,9 +451,16 @@ characters={
 		}
 		corps_commander={
 			desc="BAL_waifu_desc"	#PLF_spen_mili_desc
-			skill=2	attack_skill=2	defense_skill=2
-			planning_skill=1	logistics_skill=2
-			traits={pony_race_trait infantry_leader trickster}
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			traits={
+				pony_race_trait
+				infantry_leader
+				trickster
+			}
 		}
 	}
 	PLF_boreal_bloom={
@@ -396,9 +473,17 @@ characters={
 		}
 		corps_commander={
 			desc="BAL_gay_brandon_desc"	#PLF_bbloom_mili_desc
-			skill=3	attack_skill=4	defense_skill=1
-			planning_skill=2	logistics_skill=3
-			traits={arrow pony_race_trait trickster expert_improviser}
+			skill=3
+			attack_skill=4
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=3
+			traits={
+				arrow
+				pony_race_trait
+				trickster
+				expert_improviser
+			}
 		}
 	}
 }

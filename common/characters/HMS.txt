@@ -3,63 +3,89 @@ characters={
 		name=HMS_twilight_sparkle
 		gender=female
 		portraits={
-			civilian={large="gfx/leaders/HMS/HMS_twilight_sparkle.dds"}
-			army={large="gfx/leaders/HMS/HMS_twilight_sparkle.dds"}
+			civilian={
+				large="gfx/leaders/HMS/HMS_twilight_sparkle.dds"
+			}
+			army={
+				large="gfx/leaders/HMS/HMS_twilight_sparkle.dds"
+			}
 		}
 		country_leader={
-			desc="HMS_tsparkle_poli_desc"	ideology=magocracy
-			expire="1030.03.13.08"
+			desc="HMS_tsparkle_poli_desc"
+			ideology=magocracy
 			traits={}
-			id=-1
 		}
 		field_marshal={
 			desc="HMS_tsparkle_mili_desc"
-			skill=1	attack_skill=1	defense_skill=1
-			planning_skill=2	logistics_skill=2
-			traits={trait_archmagister pony_race_trait organizer organisational_leader}
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			traits={
+				trait_archmagister
+				pony_race_trait
+				organizer
+				organisational_leader
+			}
 		}
 	}
 	HMS_frail_lance={
 		name=HMS_frail_lance
-		#portraits={civilian={large="gfx/leaders/HMS/HMS_frail_lance.dds"}}
+		portraits={
+			civilian={
+				large="gfx/leaders/Pony/portrait_pony_generic_navy_10.dds"
+			}
+		}
 		country_leader={
-			desc="HMS_flance_poli_desc"	ideology=anarchist_communism
-			expire="1030.03.13.08"
+			desc="HMS_flance_poli_desc"
+			ideology=anarchist_communism
 			traits={}
-			id=-1
 		}
 	}
 	HMS_shining_armor={
 		name=HMS_shining_armor
 		portraits={
-			civilian={large="gfx/leaders/HMS/HMS_shining_armor.dds"}
+			civilian={
+				large="gfx/leaders/HMS/HMS_shining_armor.dds"
+			}
 			army={
 				large="gfx/leaders/HMS/HMS_shining_armor.dds"
 				small="GFX_idea_unknown_advisor"
 			}
 		}
 		country_leader={
-			desc="HMS_sarmor_poli_desc"	ideology=despotism
-			expire="1030.03.13.08"
+			desc="HMS_sarmor_poli_desc"
+			ideology=despotism
 			traits={}
-			id=-1
 		}
 		field_marshal={
 			desc="HMS_sarmor_mili_desc"
-			skill=4	attack_skill=3	defense_skill=5
-			planning_skill=3	logistics_skill=3
-			traits={royal_guard_commander equestrian_prince pony_race_trait  defensive_doctrine}
+			skill=4
+			attack_skill=3
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=3
+			traits={
+				royal_guard_commander
+				equestrian_prince
+				pony_race_trait
+				defensive_doctrine
+			}
 		}
 	}
 	HMS_white_wind={
 		name=HMS_white_wind
 		gender=female
-		#portraits={civilian={large="gfx/leaders/HMS/HMS_white_wind.dds"}}
+		portraits={
+			civilian={
+				large="gfx/leaders/Pony/portrait_pony_generic_navy_7.dds"
+			}
+		}
 		country_leader={
-			desc="HMS_wwind_poli_desc"	ideology=liberalism
-			expire="1030.03.13.08"
+			desc="HMS_wwind_poli_desc"
+			ideology=liberalism
 			traits={}
-			id=-1
 		}
 	}
 	HMS_trixie_lulamoon={
@@ -73,9 +99,15 @@ characters={
 		}
 		corps_commander={
 			desc="HMS_tlulamoon_mili_desc"
-			skill=1	attack_skill=2	defense_skill=1
-			planning_skill=2	logistics_skill=1
-			traits={media_personality pony_race_trait}
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			traits={
+				media_personality
+				pony_race_trait
+			}
 		}
 	}
 	HMS_spike={
@@ -88,8 +120,11 @@ characters={
 		}
 		corps_commander={
 			desc="HMS_spike_mili_desc"
-			skill=1	attack_skill=1	defense_skill=1
-			planning_skill=1	logistics_skill=1
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
 			traits={dragon_race_trait}	#Add trait that reduces command to 1.#
 		}
 	}
@@ -103,10 +138,9 @@ characters={
 			}
 		}
 		country_leader={
-			desc="HMS_cadence_poli_desc"	ideology=despotism
-			expire="1030.03.13.08"
+			desc="HMS_cadence_poli_desc"
+			ideology=despotism
 			traits={}
-			id=-1
 		}
 		advisor={
 			slot=political_advisor

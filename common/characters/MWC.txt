@@ -3,50 +3,54 @@ characters={
 		name=MWC_rose_petal
 		gender=female
 		portraits={
-			civilian={large="gfx/leaders/Pony/portrait_pony_generic_2.dds"}
+			civilian={
+				large="gfx/leaders/Pony/portrait_pony_generic_2.dds"
+			}
 		}
 		country_leader={
-			desc="MWC_rpetal_poli_desc"	ideology=ultranationalism
-			expire="1030.03.13.08"
+			desc="MWC_rpetal_poli_desc"
+			ideology=ultranationalism
 			traits={}
-			id=-1
 		}
 	}
 	MWC_mulberry_wine={
 		name=MWC_mulberry_wine
 		portraits={
-			civilian={large="gfx/leaders/Pony/portrait_pony_generic_land_4.dds"}
+			civilian={
+				large="gfx/leaders/Pony/portrait_pony_generic_land_4.dds"
+			}
 		}
 		country_leader={
-			desc="MWC_mwine_poli_desc"	ideology=syndicalism
-			expire="1030.03.13.08"
+			desc="MWC_mwine_poli_desc"
+			ideology=syndicalism
 			traits={}
-			id=-1
 		}
 	}
 	MWC_honey_dew={
 		name=MWC_honey_dew
 		gender=female
 		portraits={
-			civilian={large="gfx/leaders/Pony/portrait_pony_generic_3.dds"}
+			civilian={
+				large="gfx/leaders/Pony/portrait_pony_generic_3.dds"
+			}
 		}
 		country_leader={
-			desc="MWC_hdew_poli_desc"	ideology=centrism
-			expire="1030.03.13.08"
+			desc="MWC_hdew_poli_desc"
+			ideology=centrism
 			traits={}
-			id=-1
 		}
 	}
 	MWC_maple_leaf={
 		name=MWC_maple_leaf
 		portraits={
-			civilian={large="gfx/leaders/Pony/portrait_pony_generic_navy_4.dds"}
+			civilian={
+				large="gfx/leaders/Pony/portrait_pony_generic_navy_4.dds"
+			}
 		}
 		country_leader={
-			desc="MWC_mleaf_poli_desc"	ideology=liberalism
-			expire="1030.03.13.08"
+			desc="MWC_mleaf_poli_desc"
+			ideology=liberalism
 			traits={}
-			id=-1
 		}
 	}
 	MWC_apple_cider={	#earthy
@@ -60,9 +64,16 @@ characters={
 		}
 		corps_commander={
 			desc="MWC_acider_mili_desc"
-			skill=1	attack_skill=2	defense_skill=1
-			planning_skill=1	logistics_skill=2
-			traits={pony_race_trait harsh_leader trait_engineer}
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			traits={
+				pony_race_trait
+				harsh_leader
+				trait_engineer
+			}
 		}
 	}
 	MWC_mist_feather={	#pegasi
@@ -76,8 +87,11 @@ characters={
 		}
 		corps_commander={
 			desc="MWC_mfeather_mili_desc"
-			skill=1	attack_skill=1	defense_skill=1
-			planning_skill=1	logistics_skill=1
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
 			traits={pony_race_trait}
 		}
 	}
@@ -92,9 +106,15 @@ characters={
 		}
 		navy_leader={
 			desc="MWC_ataylor_navy_desc"
-			skill=1	attack_skill=1	defense_skill=1
-			maneuvering_skill=2	coordination_skill=2
-			traits={pony_race_trait aviation_enthusiast}
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=2
+			coordination_skill=2
+			traits={
+				pony_race_trait
+				aviation_enthusiast
+			}
 		}
 	}
 	#Add Hoofield and Mccolt soon.

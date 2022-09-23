@@ -3,20 +3,43 @@ characters={
 		name=CHY_cherry_jubilee
 		gender=female
 		portraits={
-			civilian={large="gfx/leaders/CHY/CHY_cherry_jubilee.dds"}
-			army={large="gfx/leaders/CHY/CHY_cherry_jubilee.dds"}
+			civilian={
+				large="gfx/leaders/CHY/CHY_cherry_jubilee.dds"
+			}
+			army={
+				large="gfx/leaders/CHY/CHY_cherry_jubilee.dds"
+			}
 		}
 		country_leader={
-			desc="CHY_cjubilee_poli_desc"	ideology=neofeudalism
-			expire="1030.03.13.08"
+			desc="CHY_cjubilee_poli_desc"
+			ideology=neofeudalism
 			traits={}
-			id=-1
+		}
+		country_leader={
+			desc="WTC_gpony_poli_desc"
+			ideology=conservatism
+			traits={}
+		}
+		country_leader={
+			desc="WTC_gpony_poli_desc"
+			ideology=democratic_socialism
+			traits={}
+		}
+		country_leader={
+			desc="WTC_gpony_poli_desc"
+			ideology=despotism
+			traits={}
 		}
 		field_marshal={
 			desc="CHY_cjubilee_mili_desc"
-			skill=1	attack_skill=1	defense_skill=1
-			planning_skill=1	logistics_skill=1
-			traits={pony_race_trait}
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			traits={
+				pony_race_trait
+			}
 		}
 	}
 }

@@ -5,10 +5,14 @@ characters={
 			civilian={large="gfx/leaders/HAH/HAH_misty_wisps.dds"}
 		}
 		country_leader={	#Can switch to neofeudal
-			desc="HAH_mwisps_poli_desc"	ideology=neofeudalism
-			expire="1030.03.13.08"
+			desc="HAH_mwisps_poli_desc"
+			ideology=neofeudalism
 			traits={}
-			id=-1
+		}
+		country_leader={
+			desc="WTC_gpony_poli_desc"
+			ideology=despotism
+			traits={}
 		}
 	}
 	HAH_willow_branch={
@@ -17,10 +21,9 @@ characters={
 			civilian={large="gfx/leaders/HAH/HAH_willow_branch.dds"}
 		}
 		country_leader={
-			desc="HAH_wbranch_poli_desc"	ideology=harmonic_theocracy	#esotericism
-			expire="1030.03.13.08"
+			desc="HAH_wbranch_poli_desc"
+			ideology=harmonic_theocracy	#esotericism
 			traits={}
-			id=-1
 		}
 	}
 	HAH_fiddle_pick={	#See Focus Tree
@@ -35,28 +38,33 @@ characters={
 			army={large="gfx/leaders/HAH/HAH_string_bow.dds"}
 		}
 		country_leader={
-			desc="HAH_sbow_poli_desc"	ideology=equalism
-			expire="1030.03.13.08"
+			desc="HAH_sbow_poli_desc"
+			ideology=equalism
 			traits={}
-			id=-1
 		}
 	}
 	HAH_boiled_apples={	#See Focus Tree
 		name=HAH_boiled_apples
-		#portraits={
-		#	civilian={small="gfx/leaders/HAH/small/HAH_boiled_apples.dds"}
-		#}
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_unknown_advisor.dds"
+			}
+		}
 	}
 	HAH_word_spinner={	#See Focus Tree
 		name=HAH_word_spinner
-		#portraits={
-		#	civilian={small="gfx/leaders/HAH/small/HAH_word_spinner.dds"}
-		#}
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_unknown_advisor.dds"
+			}
+		}
 	}
 	HAH_uncle_haystack={	#See Focus Tree
 		name=HAH_uncle_haystack
-		#portraits={
-		#	civilian={small="gfx/leaders/HAH/small/HAH_uncle_haystack.dds"}
-		#}
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_unknown_advisor.dds"
+			}
+		}
 	}
 }

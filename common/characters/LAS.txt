@@ -13,15 +13,36 @@ characters={
 		}
 		country_leader={
 			desc="LAS_pchest_poli_desc"	ideology=stratocracy	#pcadesc
-			expire="1030.03.13.08"
 			traits={anti_communist}
-			id=-1
+		}
+				country_leader={
+			desc="WTC_gpony_poli_desc"
+			ideology=conservatism
+			traits={}
+		}
+		country_leader={
+			desc="WTC_gpony_poli_desc"
+			ideology=democratic_socialism
+			traits={}
+		}
+		country_leader={
+			desc="WTC_gpony_poli_desc"
+			ideology=despotism
+			traits={}
 		}
 		field_marshal={
 			desc="LAS_pchest_mili_desc"
-			skill=2	attack_skill=1	defense_skill=2
-			planning_skill=2	logistics_skill=2
-			traits={inflexible_strategist trait_reckless politically_connected pony_race_trait}
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			traits={
+				inflexible_strategist
+				trait_reckless
+				politically_connected
+				pony_race_trait
+			}
 		}
 	}
 	#allows Spitfire from HSW_spitfire to join via focus or decision.

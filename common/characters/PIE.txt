@@ -2,34 +2,48 @@ characters={
 	PIE_marble_pie={	#Governor -  Matriarch
 		name=PIE_marble_pie
 		gender=female
-		portraits={civilian={large="gfx/leaders/PIE/PIE_marble_pie.dds"}}
+		portraits={
+			civilian={
+				large="gfx/leaders/PIE/PIE_marble_pie.dds"
+			}
+		}
 		country_leader={
-			desc="PIE_mpie_poli_desc"	ideology=maarite_minion	 #ultranationalism
-			expire="1030.03.13.08"
+			desc="PIE_mpie_poli_desc"
+			ideology=maarite_minion	 #ultranationalism
 			traits={}
-			id=-1
+		}
+		country_leader={
+			desc="WTC_gpony_poli_desc"
+			ideology=conservatism
+			traits={}
 		}
 	}
 	PIE_sapphire_smiles={
 		name=PIE_sapphire_smiles
 		gender=female
-		#portraits={civilian={large="gfx/leaders/PIE/PIE_sapphire_smiles.dds"}}#
+		portraits={
+			civilian={
+				large="gfx/leaders/Pony/portrait_pony_generic_navy_13.dds"
+			}
+		}
 		country_leader={
-			desc="PIE_ssmiles_poli_desc"	ideology=democratic_socialism
-			expire="1030.03.13.08"
+			desc="PIE_ssmiles_poli_desc"
+			ideology=democratic_socialism
 			traits={}
-			id=-1
 		}
 	}
 	PIE_cloudy_quartz={
 		name=PIE_cloudy_quartz
 		gender=female
-		#portraits={civilian={large="gfx/leaders/PIE/PIE_cloudy_quartz.dds"}}#
+		portraits={
+			civilian={
+				large="gfx/leaders/Pony/portrait_eqs_pony_generic_9.dds"
+			}
+		}
 		country_leader={
-			desc="PIE_cquartz_poli_desc"	ideology=despotism
-			expire="1030.03.13.08"
+			desc="PIE_cquartz_poli_desc"
+			ideology=despotism
 			traits={}
-			id=-1
 		}
 	}
 }

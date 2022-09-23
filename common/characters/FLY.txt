@@ -2,12 +2,30 @@ characters={
 	FLY_cherry_jam={
 		name=FLY_cherry_jam
 		gender=female
-		portraits={civilian={large="gfx/leaders/Pony/portrait_pony_generic_5.dds"}}
+		portraits={
+			civilian={
+				large="gfx/leaders/Pony/portrait_pony_generic_5.dds"
+			}
+		}
 		country_leader={
-			desc="FLY_cjam_poli_desc"	ideology=holy_order_f
-			#expire="1030.03.13.08"
+			desc="FLY_cjam_poli_desc"
+			ideology=holy_order_f
 			traits={}
-			id=-1
+		}
+		country_leader={
+			desc="WTC_gpony_poli_desc"
+			ideology=conservatism
+			traits={}
+		}
+		country_leader={
+			desc="WTC_gpony_poli_desc"
+			ideology=democratic_socialism
+			traits={}
+		}
+		country_leader={
+			desc="WTC_gpony_poli_desc"
+			ideology=despotism
+			traits={}
 		}
 	}
 }

@@ -5,6 +5,7 @@ tags={
 	"Military"
 	"Map"
 }
+picture="Thumbnail.png"
 name="EAW: Equestria Divided Reunification"
 dependencies={
 	"Equestria at War"

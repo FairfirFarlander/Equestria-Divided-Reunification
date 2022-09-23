@@ -9,43 +9,55 @@ characters={
 			}
 		}
 		country_leader={	#POLITICS_RADIANTHOPE_DESC
-			desc="CRL_rhope_poli_desc"	ideology=nazism
-			expire="1030.03.13.08"
+			desc="CRL_rhope_poli_desc"
+			ideology=nazism
 			traits={democratic_sympathies}
-			id=-1
+		}
+		country_leader={
+			desc="WTC_gpony_poli_desc"
+			ideology=conservatism
+			traits={}
 		}
 	}
 	CRL_arctic_lily={
 		name=CRL_arctic_lily
 		gender=female
-		portraits={civilian={large="gfx/leaders/CRY/ArcticLily.tga"}}
+		portraits={
+			civilian={
+				large="gfx/leaders/CRY/ArcticLily.tga"
+			}
+		}
 		country_leader={
-			desc="CRL_alily_poli_desc"	ideology=leninism
-			expire="1030.03.13.08"
-			id=-1
+			desc="CRL_alily_poli_desc"
+			ideology=leninism
 		}
 	}
 	CRL_disputed={
 		name=CRL_disputed
-		portraits={civilian={large="gfx/leaders/leader_unknown.dds"}}
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+			}
+		}
 		country_leader={
-			desc="CRL_disputed_poli_desc"	ideology=despotism
-			expire="1030.03.13.08"
-			id=-1
+			desc="CRL_disputed_poli_desc"
+			ideology=despotism
 		}
 	}
 	CRL_sombra={
 		name=CRL_sombra
 		portraits={
-			civilian={large="GFX_SombraPortrait"}
+			civilian={
+				large="GFX_SombraPortrait"
+			}
 			army={
 				large="GFX_SombraPortrait"
 				small="GFX_idea_sombra_leader"
 			}
 		}
 		country_leader={
-			desc="POLITICS_SOMBRA_DESC"	ideology=magocracy
-			expire="1030.03.13.08"
+			desc="POLITICS_SOMBRA_DESC"
+			ideology=magocracy
 			traits={sombra_trait warmonger}
 		}
 		advisor={
@@ -71,9 +83,16 @@ characters={
 		}
 		field_marshal={
 			desc="CRL_reese_mili_desc"
-			skill=2	attack_skill=2	defense_skill=3
-			planning_skill=2	logistics_skill=1
-			traits={brilliant_strategist career_officer pony_race_trait}
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			traits={
+				brilliant_strategist
+				career_officer
+				pony_race_trait
+			}
 		}
 		advisor={
 			slot=army_chief
@@ -92,9 +111,15 @@ characters={
 		}
 		field_marshal={
 			desc="CRL_colloid_mili_desc"
-			skill=3 attack_skill=2	defense_skill=3
-			planning_skill=3	logistics_skill=2
-			traits={pony_race_trait old_guard}
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			traits={
+				pony_race_trait
+				old_guard
+			}
 		}
 	}
 	CRL_dusty_ember={
@@ -108,9 +133,15 @@ characters={
 		}
 		corps_commander={
 			desc="CRY_DUSTY_EMBER_DESC"	#"CRL_dember_mili_desc"
-			skill=2	attack_skill=2	defense_skill=4
-			planning_skill=2	logistics_skill=1
-			traits={promising_general pony_race_trait}
+			skill=2
+			attack_skill=2
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=1
+			traits={
+				promising_general
+				pony_race_trait
+			}
 		}
 	}
 	CRL_deimos_falafel={
@@ -123,9 +154,17 @@ characters={
 		}
 		corps_commander={
 			desc="CRL_dfalafel_mili_desc"
-			skill=2	attack_skill=1	defense_skill=2
-			planning_skill=2	logistics_skill=2
-			traits={trait_reckless media_personality pony_race_trait winter_specialist}
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			traits={
+				trait_reckless
+				media_personality
+				pony_race_trait
+				winter_specialist
+			}
 		}
 		advisor={
 			slot=high_command
@@ -146,9 +185,16 @@ characters={
 		}
 		corps_commander={
 			desc="CRL_isnow_mili_desc"
-			skill=1	attack_skill=1	defense_skill=2
-			planning_skill=1	logistics_skill=1
-			traits={trait_cautious pony_race_trait winter_specialist}
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			traits={
+				trait_cautious
+				pony_race_trait
+				winter_specialist
+			}
 		}
 	}
 	CRL_cloudie={
@@ -162,9 +208,15 @@ characters={
 		}
 		corps_commander={
 			desc="CRL_cloudie_mili_desc"
-			skill=1	attack_skill=1	defense_skill=2
-			planning_skill=2	logistics_skill=1
-			traits={medical_expert pony_race_trait}
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			traits={
+				medical_expert
+				pony_race_trait
+			}
 		}
 	}
 	CRL_crystalline={
@@ -178,9 +230,15 @@ characters={
 		}
 		corps_commander={
 			desc="CRL_crystalline_mili_desc"
-			skill=1	attack_skill=1	defense_skill=1
-			planning_skill=1	logistics_skill=3
-			traits={promising_general pony_race_trait}
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=3
+			traits={
+				promising_general
+				pony_race_trait
+			}
 		}
 	}
 	CRL_squeeky_hooves={
@@ -193,9 +251,16 @@ characters={
 		}
 		corps_commander={
 			desc="CRL_shooves_mili_desc"
-			skill=3	attack_skill=3	defense_skill=2
-			planning_skill=2	logistics_skill=3
-			traits={ranger brilliant_strategist pony_race_trait}
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			traits={
+				ranger
+				brilliant_strategist
+				pony_race_trait
+			}
 		}
 	}
 	CRL_sakira={
@@ -208,30 +273,25 @@ characters={
 			}
 		}
 		country_leader={
-			desc="TAG_SNA_poli_desc"	ideology=nazism
-			expire="1030.03.13.08"
+			desc="CRL_sakira_poli_desc"
+			ideology=nazism
 			traits={}
-			id=-1
 		}
 		advisor={
 			slot=political_advisor
-			visible={
-				has_government=fascism
-				hidden_trigger={NOT={EQS={is_subject_of=CRL}}}
-			}
 			idea_token=CRL_sakira_advi
 			traits={captain_of_industry}
 		}
 	}
 	CRL_dust_snowfall={
 		name=dust_snowfall
-		portraits={civilian={small="GFX_idea_dust_snowfall"}}
+		portraits={
+			civilian={
+				small="GFX_idea_dust_snowfall"
+			}
+		}
 		advisor={
 			slot=political_advisor
-			visible={
-				has_government=fascism
-				hidden_trigger={NOT={has_country_flag=dust_dead}}
-			}
 			idea_token=CRL_dsnowfall_advi
 			traits={prince_of_terror}
 		}
@@ -248,10 +308,6 @@ characters={
 			ledger=army
 			cost=100
 			research_bonus={industry=0.075}
-			visible={
-				has_government=fascism
-				NOT={has_country_flag=lake_blind}
-			}
 			idea_token=CRL_lfrost_theo
 			traits={industry_theorist}
 		}

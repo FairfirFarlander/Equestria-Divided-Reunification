@@ -2,22 +2,41 @@ characters={
 	NIH_cursed_fate={
 		name=NIH_cursed_fate
 		portraits={
-			civilian={large="gfx/leaders/NIH/NIH_cursed_fate.dds"}
+			civilian={
+				large="gfx/leaders/NIH/NIH_cursed_fate.dds"
+			}
 			army={
 				large="gfx/leaders/NIH/NIH_cursed_fate.dds"
 				small="GFX_idea_unknown_advisor"
 			}
 		}
 		country_leader={
-			desc="NIH_cfate_poli_desc"	ideology=despotism
-			expire="1030.03.13.08"
+			desc="NIH_cfate_poli_desc"
+			ideology=despotism
 			traits={}
-			id=-1
+		}
+		country_leader={
+			desc="WTC_gpony_poli_desc"
+			ideology=conservatism
+			traits={}
+		}
+		country_leader={
+			desc="WTC_gpony_poli_desc"
+			ideology=democratic_socialism
+			traits={}
+		}
+		country_leader={
+			desc="WTC_gpony_poli_desc"
+			ideology=fascism_ideology
+			traits={}
 		}
 		corps_commander={
 			desc="NIH_cfate_mili_desc"
-			skill=1 attack_skill=1	defense_skill=1
-			planning_skill=1	logistics_skill=1
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
 			traits={pony_race_trait}
 		}
 	}

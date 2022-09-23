@@ -9,47 +9,54 @@ characters={
 			}
 		}
 		country_leader={
-			desc="JTL_ahuizotl_poli_desc"	ideology=falangism
-			expire="1030.03.13.08"
-			id=-1
+			desc="JTL_ahuizotl_poli_desc"
+			ideology=falangism
 		}
 		country_leader={
-			desc="JTL_ahuizotl_poli_desc"	ideology=theocracy_subideology
-			expire="1030.03.13.08"
-			id=-1
+			desc="JTL_ahuizotl_poli_desc"
+			ideology=theocracy_subideology
 		}
 		field_marshal={
 			desc="JTL_ahuizotl_mili_desc"	#TEM_ahuizotl_desc
-			skill=4	attack_skill=5	defense_skill=1
-			planning_skill=2	logistics_skill=2
-			traits={unspecified_race_trait offensive_doctrine}	#Add 3 more#
+			skill=4
+			attack_skill=5
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			traits={
+				unspecified_race_trait
+				offensive_doctrine
+			}	#Add 3 more#
 		}
 	}
 	JTL_temple_chant={
 		name=JTL_temple_chant
 		portraits={
-			civilian={large="gfx/leaders/TEM/Mem.tga"}
+			civilian={
+				large="gfx/leaders/TEM/Mem.tga"
+			}
 			army={
 				large="gfx/leaders/TEM/Mem.tga"
 				small="GFX_idea_unknown_advisor"
 			}
 		}
 		country_leader={
-			desc="JTL_tchant_poli_desc"	ideology=primitive_communism
-			expire="1030.03.13.08"
+			desc="JTL_tchant_poli_desc"
+			ideology=primitive_communism
 			traits={}
-			id=-1
 		}
 		country_leader={
-			desc="JTL_tchant_poli_desc"	ideology=tribal_council
-			expire="1030.03.13.08"
+			desc="JTL_tchant_poli_desc"
+			ideology=tribal_council
 			traits={}
-			id=-1
 		}
 		corps_commander={
 			desc="JTL_tchant_mili_desc"
-			skill=1	attack_skill=1	defense_skill=1
-			planning_skill=1	logistics_skill=1
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
 			traits={pony_race_trait}
 		}
 	}
@@ -67,16 +74,21 @@ characters={
 			}
 		}
 		country_leader={
-			desc="JTL_tailcoatl_poli_desc"	ideology=tribal_federation
-			expire="1030.03.13.08"
+			desc="JTL_tailcoatl_poli_desc"
+			ideology=tribal_federation
 			traits={}
-			id=-1
 		}
 		field_marshal={
 			desc="JTL_tailcoatl_mili_desc"
-			skill=2	attack_skill=1	defense_skill=2
-			planning_skill=1	logistics_skill=3
-			traits={pony_race_trait jungle_rat}
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=3
+			traits={
+				pony_race_trait
+				jungle_rat
+			}
 		}
 	}
 	JTL_tenoch={
@@ -89,9 +101,15 @@ characters={
 		}
 		corps_commander={
 			desc="JTL_tenoch_mili_desc"
-			skill=2	attack_skill=2	defense_skill=2
-			planning_skill=2	logistics_skill=1
-			traits={pony_race_trait jungle_rat}
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			traits={
+				pony_race_trait
+				jungle_rat
+			}
 		}
 	}
 }

@@ -2,12 +2,30 @@ characters={
 	ALA_almond_tree={
 		name=ALA_almond_tree
 		gender=female
-		portraits={civilian={large="gfx/leaders/Pony/portrait_pony_generic_4.dds"}}
+		portraits={
+			civilian={
+				large="gfx/leaders/Pony/portrait_pony_generic_4.dds"
+			}
+		}
 		country_leader={
-			desc="ALA_atree_poli_desc"	ideology=despotism
-			expire="1030.03.13.08"
+			desc="ALA_atree_poli_desc"
+			ideology=despotism
 			traits={}
-			id=-1
+		}
+		country_leader={
+			desc="WTC_gpony_poli_desc"
+			ideology=conservatism
+			traits={}
+		}
+		country_leader={
+			desc="WTC_gpony_poli_desc"
+			ideology=democratic_socialism
+			traits={}
+		}
+		country_leader={
+			desc="WTC_gpony_poli_desc"
+			ideology=fascism_ideology
+			traits={}
 		}
 	}
 }

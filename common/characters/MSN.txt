@@ -6,10 +6,9 @@ characters={
 			civilian={large="gfx/leaders/MSN/MSN_duchess_aurora.dds"}
 		}
 		country_leader={
-			desc="MSN_daurora"	ideology=fascism_ideology
-			expire="1030.03.13.08"
+			desc="MSN_daurora"
+			ideology=fascism_ideology
 			traits={}
-			id=-1
 		}
 	}
 	MSN_generic_pony={
@@ -19,22 +18,19 @@ characters={
 			civilian={large="gfx/leaders/leader_unknown.dds"}
 		}
 		country_leader={
-			desc="MSN_gpony_poli_desc"	ideology=conservatism
-			expire="1030.03.13.08"
+			desc="MSN_gpony_poli_desc"
+			ideology=conservatism
 			traits={}
-			id=-1
 		}
 		country_leader={
-			desc="MSN_gpony_poli_desc"	ideology=marxism
-			expire="1030.03.13.08"
+			desc="MSN_gpony_poli_desc"
+			ideology=marxism
 			traits={}
-			id=-1
 		}
 		country_leader={
-			desc="MSN_gpony_poli_desc"	ideology=despotism
-			expire="1030.03.13.08"
+			desc="MSN_gpony_poli_desc"
+			ideology=despotism
 			traits={}
-			id=-1
 		}
 	}
 	#Inquisitor General

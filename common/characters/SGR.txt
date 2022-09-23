@@ -1,66 +1,87 @@
 characters={
 	SGR_ratibor_sventoslavich={
 		name=SGR_ratibor_sventoslavich
-		portraits={civilian={large="gfx/leaders/STG/Ratibor.tga"}}
+		portraits={
+			civilian={
+				large="gfx/leaders/STG/Ratibor.tga"
+			}
+		}
 		country_leader={
-			desc="SGR_rsventoslavich_poli_desc"	ideology=fascism_ideology
-			expire="1030.03.13.08"
+			desc="SGR_rsventoslavich_poli_desc"
+			ideology=fascism_ideology
 			traits={}
-			id=-1
 		}
 	}
 	SGR_altidiya={
 		name=SGR_altidiya
 		gender=female
-		portraits={civilian={large="gfx/leaders/STG/Alty.tga"}}
+		portraits={
+			civilian={
+				large="gfx/leaders/STG/Alty.tga"
+			}
+		}
 		country_leader={	#POLITICS_ALTY_DESC
-			desc="SGR_altidiya_poli_desc"	ideology=leninism
-			expire="1030.03.13.08"
+			desc="SGR_altidiya_poli_desc"
+			ideology=leninism
 			traits={}
-			id=-1
 		}
 	}
 	SGR_peter_iv={	#Tsar Peter IV
 		name=SGR_peter_iv
-		portraits={civilian={large="gfx/leaders/STG/PeterIV.tga"}}
+		portraits={
+			civilian={
+				large="gfx/leaders/STG/PeterIV.tga"
+			}
+		}
 		country_leader={
-			desc="SGR_piv_poli_desc"	ideology=despotism
-			expire="1030.03.13.08"
+			desc="SGR_piv_poli_desc"
+			ideology=despotism
 			traits={}
-			id=-1
 		}
 	}
 	SGR_caramelka_sladkaya={
 		name=SGR_caramelka_sladkaya
 		gender=female
-		portraits={civilian={large="gfx/leaders/STG/Caramelka.tga"}}
+		portraits={
+			civilian={
+				large="gfx/leaders/STG/Caramelka.tga"
+			}
+		}
 		country_leader={	#POLITICS_CARAMELKA
-			desc="SGR_csladkaya_poli_desc"	ideology=socialism
-			expire="1030.03.13.08"
+			desc="SGR_csladkaya_poli_desc"
+			ideology=socialism
 			traits={}
-			id=-1
 		}
 	}
 	SGR_nestor_lunin={
 		name=SGR_nestor_lunin
 		portraits={
-			civilian={large="gfx/leaders/STG/Nestor.tga"}
+			civilian={
+				large="gfx/leaders/STG/Nestor.tga"
+			}
 			army={
 				large="gfx/leaders/STG/Nestor.tga"
 				small="GFX_idea_nestor_lunin"
 			}
 		}
 		country_leader={
-			desc="NESTOR_DESC"	ideology=leninism
-			expire="1030.03.13.08"
+			desc="NESTOR_DESC"
+			ideology=leninism
 			traits={}
-			id=-1
 		}
 		field_marshal={
 			desc="SGR_nlunin_mili_desc"
-			skill=5	attack_skill=4	defense_skill=4
-			planning_skill=3	logistics_skill=5
-			traits={brilliant_strategist promising_general trait_nestor_lunin pony_race_trait}
+			skill=5
+			attack_skill=4
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=5
+			traits={
+				brilliant_strategist
+				promising_general
+				trait_nestor_lunin
+				pony_race_trait
+			}
 		}
 		advisor={
 			slot=theorist
@@ -79,15 +100,17 @@ characters={
 			}
 		}
 		country_leader={
-			desc="SGR_sserov_poli_desc"	ideology=stalinism
-			expire="1030.03.13.08"
+			desc="SGR_sserov_poli_desc"
+			ideology=stalinism
 			traits={dictator}
-			id=-1
 		}
 		advisor={
 			slot=political_advisor
 			idea_token=SGR_sserov_advi
-			traits={ideological_crusader demagogue}
+			traits={
+				ideological_crusader
+				demagogue
+			}
 		}
 	}
 	SGR_vasiliy_pantsushenko={
@@ -99,10 +122,9 @@ characters={
 			}
 		}
 		country_leader={
-			desc="SGR_vpantsushenko_poli_desc"	ideology=leninism
-			expire="1030.03.13.08"
+			desc="SGR_vpantsushenko_poli_desc"
+			ideology=leninism
 			traits={}
-			id=-1
 		}
 		advisor={
 			slot=political_advisor

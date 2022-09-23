@@ -2,19 +2,31 @@ characters={
 	THA_argent_end={
 		name=THA_argent_end
 		portraits={
-			civilian={large="gfx/leaders/THA/THA_argent_end.dds"}
-			army={large="gfx/leaders/THA/THA_argent_end.dds"}
+			civilian={
+				large="gfx/leaders/THA/THA_argent_end.dds"
+			}
+			army={
+				large="gfx/leaders/THA/THA_argent_end.dds"
+			}
 		}
 		country_leader={
-			desc="THA_aend_poli_desc"	ideology=despotism
+			desc="THA_aend_poli_desc"
+			ideology=despotism
 			expire="1014.06.06.21"	#Used to be 1014
 			traits={}
-			id=-1
+		}
+		country_leader={
+			desc="WTC_gpony_poli_desc"
+			ideology=democratic_socialism
+			traits={}
 		}
 		field_marshal={
 			desc="THA_aend_mili_desc"
-			skill=1	attack_skill=1	defense_skill=1
-			planning_skill=1	logistics_skill=1
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
 			traits={thestral_race_trait}
 		}
 	}
@@ -31,15 +43,17 @@ characters={
 			}
 		}
 		country_leader={
-			desc="THA_apeak_poli_desc"	ideology=holy_order_f
-			expire="1030.03.13.08"
+			desc="THA_apeak_poli_desc"
+			ideology=holy_order_f
 			traits={}
-			id=-1
 		}
 		corps_commander={
 			desc="THA_apeak_mili_desc"
-			skill=1	attack_skill=1	defense_skill=1
-			planning_skill=1	logistics_skill=1
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
 			traits={thestral_race_trait}
 		}
 		advisor={
@@ -59,10 +73,9 @@ characters={
 			}
 		}
 		country_leader={
-			desc="THA_tniece_poli_desc"	ideology=harmonic_libertarianism
-			expire="1030.03.13.08"
+			desc="THA_tniece_poli_desc"
+			ideology=harmonic_libertarianism
 			traits={}
-			id=-1
 		}
 		advisor={
 			slot=political_advisor

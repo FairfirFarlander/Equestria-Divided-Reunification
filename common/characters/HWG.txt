@@ -3,31 +3,43 @@ characters={
 		name=HWG_rarity	#mistress rarity
 		gender=female
 		portraits={
-			civilian={large="gfx/leaders/HWG/HWG_rarity.dds"}
-			army={large="gfx/leaders/HWG/HWG_rarity.dds"}
+			civilian={
+				large="gfx/leaders/HWG/HWG_rarity.dds"
+			}
+			army={
+				large="gfx/leaders/HWG/HWG_rarity.dds"
+			}
 		}
 		country_leader={
 			desc="HWG_rarity_poli_desc"
 			ideology=plutocracy
 			expire="1017.09.8.20"	#Based on 982 - Lives to 30 : Used to be 1012 so now 35#
 			traits={}
-			id=-1
 		}
 		field_marshal={
 			desc="HWG_rarity_mili_desc"
-			skill=1	attack_skill=2	defense_skill=2
-			planning_skill=1	logistics_skill=1
-			traits={pony_race_trait politically_connected}
+			skill=1
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			traits={
+				pony_race_trait
+				politically_connected
+			}
 		}
 	}
 	HWG_shooter_mark={
 		name=HWG_shooter_mark
-		portraits={civilian={large="gfx/leaders/Pony/portrait_pony_generic_navy_4.dds"}}
+		portraits={
+			civilian={
+				large="gfx/leaders/Pony/portrait_pony_generic_navy_4.dds"
+			}
+		}
 		country_leader={
-			desc="HWG_smark_mili_desc"	ideology=anarchist_communism
-			expire="1030.03.13.08"
+			desc="HWG_smark_mili_desc"
+			ideology=anarchist_communism
 			traits={}
-			id=-1
 		}
 	}
 	HWG_fleur_de_lis={
@@ -44,10 +56,9 @@ characters={
 			}
 		}
 		country_leader={
-			desc="HWG_fdlis_poli_desc"	ideology=oligarchism
-			expire="1030.03.13.08"
+			desc="HWG_fdlis_poli_desc"
+			ideology=oligarchism
 			traits={}
-			id=-1
 		}
 		corps_commander={
 			desc="HWG_fdlis_mili_desc"
@@ -67,7 +78,7 @@ characters={
 		#	idea_token=HWG_fleur_de_lis
 		#	available={not={has_country_flag=fleur_de_lis_arrested}}
 		#	traits={backroom_backstabber}	#upgrade me?
-		#}#See HWG-Whitegold.txt in countries.
+		#}	#See HWG-Whitegold.txt in countries.
 	}
 	HWG_fancy_pants={
 		name=HWG_fancy_pants
@@ -82,16 +93,22 @@ characters={
 			}
 		}
 		country_leader={
-			desc="HWG_fpants_poli_desc"	ideology=liberalism
-			expire="1030.03.13.08"
+			desc="HWG_fpants_poli_desc"
+			ideology=liberalism
 			traits={}
-			id=-1
 		}
 		corps_commander={
 			desc="HWG_fpants_mili_desc"
-			skill=2 attack_skill=1	defense_skill=3
-			planning_skill=2	logistics_skill=1
-			traits={pony_race_trait politically_connected trait_cautious}
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			traits={
+				pony_race_trait
+				politically_connected
+				trait_cautious
+			}
 		}
 		advisor={
 			slot=political_advisor
@@ -101,7 +118,7 @@ characters={
 	}
 	HWG_clair_de_lune={
 		name=HWG_clair_de_lune	#HWG_hornybastard - Why dafuq did I agree to dis joke name?#
-		gender=female			#--Farlander shrugged-- ~FF#
+		gender=female	#--Farlander shrugged-- ~FF#
 		portraits={
 			civilian={
 				large="gfx/leaders/HWG/HWG_clair_de_lune.dds"
@@ -114,8 +131,11 @@ characters={
 		}
 		corps_commander={
 			desc="HWG_cdlune_mili_desc"
-			skill=1 attack_skill=1	defense_skill=1
-			planning_skill=1	logistics_skill=1
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
 			traits={thestral_race_trait}	#add siren trait
 		}
 	}
@@ -129,8 +149,11 @@ characters={
 		}
 		corps_commander={
 			desc="HWG_mpotato_mili_desc"
-			skill=1 attack_skill=1	defense_skill=1
-			planning_skill=1	logistics_skill=1
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
 			traits={diamond_dog_race_trait}
 		}
 	}
@@ -145,14 +168,24 @@ characters={
 		}
 		navy_leader={
 			desc="HWG_gadmiral_navy_desc"
-			skill=1	attack_skill=1	defense_skill=1
-			maneuvering_skill=2	coordination_skill=2
-			traits={pony_race_trait aviation_enthusiast}
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=2
+			coordination_skill=2
+			traits={
+				pony_race_trait
+				aviation_enthusiast
+			}
 		}
 	}
 	HWG_flim_flam={
 		name=HWG_flim_flam
-		portraits={civilian={small="GFX_idea_flim"}}
+		portraits={
+			civilian={
+				small="GFX_idea_flim"
+			}
+		}
 		advisor={
 			slot=political_advisor
 			idea_token=HWG_fflam_advi
@@ -178,7 +211,11 @@ characters={
 	HWG_diamond_tiara={
 		name=HWG_diamond_tiara
 		gender=female
-		portraits={civilian={small="GFX_idea_unknown_advisor"}}
+		portraits={
+			civilian={
+				small="GFX_idea_unknown_advisor"
+			}
+		}
 		advisor={
 			slot=political_advisor
 			idea_token=HWG_dtiara_advi
@@ -204,8 +241,12 @@ characters={
 	HWG_nighthooves={
 		name=HWG_nighthooves
 		portraits={
-			civilian={small="GFX_idea_unknown_advisor"}
-			army={small="GFX_idea_unknown_advisor"}
+			civilian={
+				small="GFX_idea_unknown_advisor"
+			}
+			army={
+				small="GFX_idea_unknown_advisor"
+			}
 		}
 		#advisor={
 		#	slot=political_advisor
@@ -224,7 +265,11 @@ characters={
 	}
 	HWG_whispy_locks={
 		name=HWG_whispy_locks
-		portraits={civilian={small="GFX_idea_unknown_advisor"}}
+		portraits={
+			civilian={
+				small="GFX_idea_unknown_advisor"
+			}
+		}
 		advisor={
 			slot=political_advisor
 			idea_token=HWG_wlocks_advi
@@ -233,7 +278,11 @@ characters={
 	}
 	HWG_lemon_meringue={
 		name=HWG_lemon_meringue
-		portraits={civilian={small="GFX_idea_unknown_advisor"}}
+		portraits={
+			civilian={
+				small="GFX_idea_unknown_advisor"
+			}
+		}
 		advisor={
 			slot=political_advisor
 			idea_token=HWG_lmeringue_advi
@@ -242,7 +291,11 @@ characters={
 	}
 	HWG_prim_n_proper={
 		name=HWG_prim_n_proper
-		portraits={civilian={small="GFX_idea_unknown_advisor"}}
+		portraits={
+			civilian={
+				small="GFX_idea_unknown_advisor"
+			}
+		}
 		advisor={
 			slot=political_advisor
 			idea_token=HWG_pnproper_advi
@@ -251,7 +304,11 @@ characters={
 	}
 	HWG_straight_arrow={
 		name=HWG_straight_arrow
-		portraits={civilian={small="GFX_idea_unknown_advisor"}}
+		portraits={
+			civilian={
+				small="GFX_idea_unknown_advisor"
+			}
+		}
 		advisor={
 			slot=political_advisor
 			idea_token=HWG_sarrow_advi

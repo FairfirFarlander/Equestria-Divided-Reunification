@@ -1,12 +1,28 @@
 characters={
 	COT_jd_neighvis={
 		name=COT_jd_neighvis
-		portraits={civilian={large="gfx/leaders/SCS/JDavis.tga"}}
+		portraits={
+			civilian={
+				large="gfx/leaders/SCS/JDavis.tga"			}		}
 		country_leader={
-			desc="COT_jdneighvis_poli_desc"	ideology=centrism	#neighvis_desc
-			#expire="1030.03.13.08"
+			desc="COT_jdneighvis_poli_desc"
+			ideology=centrism	#neighvis_desc
 			traits={}
-			id=-1
+		}
+		country_leader={
+			desc="WTC_gpony_poli_desc"
+			ideology=conservatism
+			traits={}
+		}
+		country_leader={
+			desc="WTC_gpony_poli_desc"
+			ideology=democratic_socialism
+			traits={}
+		}
+		country_leader={
+			desc="WTC_gpony_poli_desc"
+			ideology=fascism_ideology
+			traits={}
 		}
 	}
 	COT_neighson_e_miles={
@@ -19,15 +35,25 @@ characters={
 		}
 		field_marshal={
 			desc="COT_sapple_mili_desc"
-			skill=3 attack_skill=4	defense_skill=2
-			planning_skill=2	logistics_skill=2
-			traits={pony_race_trait offensive_doctrine fast_planner cavalry_leader}
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			traits={
+				pony_race_trait
+				offensive_doctrine
+				fast_planner
+				cavalry_leader
+			}
 		}
 		advisor={
 			slot=army_chief
 			idea_token=COT_sapple_chie
 			cost=200
-			traits={army_chief_maneuver_3}
+			traits={
+				army_chief_maneuver_3
+			}
 		}
 	}
 	COT_silverstar={
@@ -40,9 +66,16 @@ characters={
 		}
 		corps_commander={
 			desc="COT_silverstar_mili_desc"	#silverstar_desc
-			skill=2 attack_skill=2	defense_skill=2
-			planning_skill=2	logistics_skill=1
-			traits={pony_race_trait inflexible_strategist defensive_doctrine}
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			traits={
+				pony_race_trait
+				inflexible_strategist
+				defensive_doctrine
+			}
 		}
 	}
 	COT_apple_ale={
@@ -56,9 +89,17 @@ characters={
 		}
 		corps_commander={
 			desc="COT_aale_mili_desc"	#SCS_apple_waifu_desc
-			skill=2 attack_skill=2	defense_skill=1
-			planning_skill=2	logistics_skill=2
-			traits={pony_race_trait brilliant_strategist politically_connected logistics_wizard}
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			traits={
+				pony_race_trait
+				brilliant_strategist
+				politically_connected
+				logistics_wizard
+			}
 		}
 	}
 	COT_moonshine_melody={
@@ -72,9 +113,15 @@ characters={
 		}
 		corps_commander={
 			desc="COT_mmelody_mili_desc"	#SCS_moonshine_desc
-			skill=2 attack_skill=2	defense_skill=1
-			planning_skill=1	logistics_skill=3
-			traits={pony_race_trait harsh_leader}
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=3
+			traits={
+				pony_race_trait
+				harsh_leader
+			}
 		}
 	}
 	COT_sorren_peak={
@@ -87,9 +134,16 @@ characters={
 		}
 		corps_commander={
 			desc="COT_speak_mili_desc"	#SCS_dixie_horse_desc
-			skill=2 attack_skill=2	defense_skill=2
-			planning_skill=1	logistics_skill=2
-			traits={pony_race_trait trait_reckless harsh_leader}
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			traits={
+				pony_race_trait
+				trait_reckless
+				harsh_leader
+			}
 		}
 	}
 	COT_burnside_fervor={
@@ -103,9 +157,16 @@ characters={
 		}
 		corps_commander={
 			desc="COT_bfervor_mili_desc"
-			skill=3 attack_skill=2	defense_skill=4
-			planning_skill=1	logistics_skill=3
-			traits={pony_race_trait trait_cautious artillery_expert}
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=1
+			logistics_skill=3
+			traits={
+				pony_race_trait
+				trait_cautious
+				artillery_expert
+			}
 		}
 	}
 }
