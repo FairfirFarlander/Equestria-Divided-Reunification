@@ -12,7 +12,6 @@
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS00"
 			country_event=HAH_evt_a03w.001	#Storming of the Factory
-			add_stability=-0.2
 		}
 	}
 	shared_focus={	#Under New Management But Has Really Anything Changed?
@@ -105,13 +104,232 @@
 			country_event=HAH_evt_a03w.051	#Going to Canterlot not as a Servant, but a Leader
 		}
 	}
-	shared_focus={	#Called to Canterlot
-		id=HAH_WS06 #icon=
-		x=0 y=1 cost=2 relative_position_id=HAH_WS05
+	shared_focus={	#Connections
+		id=HAH_WS06A #icon=
+		x=-1 y=1 cost=2 relative_position_id=HAH_WS05
 		search_filters={}
 		prerequisite={focus=HAH_WS05}
 		ai_will_do={factor=4000}
 		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HAH_WS06"
+			log="[GetDateText]: [Root.GetName]: focus HAH_WS06A"
+		}
+	}
+	shared_focus={	#Tranquil State
+		id=HAH_WS06B #icon=
+		x=1 y=1 cost=2 relative_position_id=HAH_WS05
+		search_filters={}
+		prerequisite={focus=HAH_WS05}
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAH_WS06B"
+		}
+	}
+	shared_focus={	#Letters from Canterlot
+		id=HAH_WS07A #icon=
+		x=-2 y=2 cost=2 relative_position_id=HAH_WS05
+		search_filters={}
+		prerequisite={focus=HAH_WS06A}
+		prerequisite={focus=HAH_WS06B}
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAH_WS07A"
+		}
+	}
+	shared_focus={	#Guidance
+		id=HAH_WS07B #icon=
+		x=0 y=2 cost=2 relative_position_id=HAH_WS05
+		search_filters={}
+		prerequisite={focus=HAH_WS06A}
+		prerequisite={focus=HAH_WS06B}
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAH_WS07B"
+		}
+	}
+	shared_focus={	#Stranger
+		id=HAH_WS07C #icon=
+		x=2 y=2 cost=2 relative_position_id=HAH_WS05
+		search_filters={}
+		prerequisite={focus=HAH_WS06A}
+		prerequisite={focus=HAH_WS06B}
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAH_WS07C"
+		}
+	}
+	shared_focus={	#Reforms
+		id=HAH_WS08A #icon=
+		x=-3 y=1 cost=2 relative_position_id=HAH_WS07B
+		search_filters={}
+		prerequisite={focus=HAH_WS07A}
+		prerequisite={focus=HAH_WS07B}
+		prerequisite={focus=HAH_WS07C}
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAH_WS08A"
+		}
+	}
+	shared_focus={	#A Cruel Decree
+		id=HAH_WS08B #icon=
+		x=-1 y=1 cost=2 relative_position_id=HAH_WS07B
+		search_filters={}
+		prerequisite={focus=HAH_WS07A}
+		prerequisite={focus=HAH_WS07B}
+		prerequisite={focus=HAH_WS07C}
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAH_WS08B"
+		}
+	}
+	shared_focus={	#Let Them Fly
+		id=HAH_WS08C #icon=
+		x=1 y=1 cost=2 relative_position_id=HAH_WS07B
+		search_filters={}
+		prerequisite={focus=HAH_WS07A}
+		prerequisite={focus=HAH_WS07B}
+		prerequisite={focus=HAH_WS07C}
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAH_WS08C"
+		}
+	}
+	shared_focus={	#Better Than
+		id=HAH_WS08D #icon=
+		x=3 y=1 cost=2 relative_position_id=HAH_WS07B
+		search_filters={}
+		prerequisite={focus=HAH_WS07A}
+		prerequisite={focus=HAH_WS07B}
+		prerequisite={focus=HAH_WS07C}
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAH_WS08D"
+		}
+	}
+	shared_focus={	#Dear Friend
+		id=HAH_WS09 #icon=
+		x=0 y=2 cost=2 relative_position_id=HAH_WS07B
+		search_filters={}
+		prerequisite={focus=HAH_WS08A}
+		prerequisite={focus=HAH_WS08B}
+		prerequisite={focus=HAH_WS08C}
+		prerequisite={focus=HAH_WS08D}
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAH_WS09"
+		}
+	}
+	shared_focus={	#Revenge Will Come
+		id=HAH_WS10 #icon=
+		x=0 y=1 cost=2 relative_position_id=HAH_WS09
+		search_filters={}
+		prerequisite={focus=HAH_WS09}
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAH_WS10"
+		}
+	}
+	shared_focus={	#Hollow Defenders
+		id=HAH_WS11A #icon=
+		x=-3 y=1 cost=2 relative_position_id=HAH_WS10
+		search_filters={}
+		prerequisite={focus=HAH_WS10}
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAH_WS11A"
+		}
+	}
+	shared_focus={	#Barn Fire
+		id=HAH_WS11B #icon=
+		x=-1 y=1 cost=2 relative_position_id=HAH_WS10
+		search_filters={}
+		prerequisite={focus=HAH_WS10}
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAH_WS11B"
+		}
+	}
+	shared_focus={	#Rosie Project
+		id=HAH_WS11C #icon=
+		x=1 y=1 cost=2 relative_position_id=HAH_WS10
+		search_filters={}
+		prerequisite={focus=HAH_WS10}
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAH_WS11C"
+		}
+	}
+	shared_focus={	#Raining Mists
+		id=HAH_WS11D #icon=
+		x=3 y=1 cost=2 relative_position_id=HAH_WS10
+		search_filters={}
+		prerequisite={focus=HAH_WS10}
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAH_WS11D"
+		}
+	}
+	shared_focus={	#Rally Tranquil
+		id=HAH_WS12A #icon=
+		x=-3 y=2 cost=2 relative_position_id=HAH_WS10
+		search_filters={}
+		prerequisite={focus=HAH_WS11A}
+		prerequisite={focus=HAH_WS11B}
+		prerequisite={focus=HAH_WS11C}
+		prerequisite={focus=HAH_WS11D}
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAH_WS12A"
+		}
+	}
+	shared_focus={	#Longer Welcome
+		id=HAH_WS12B #icon=
+		x=-1 y=2 cost=2 relative_position_id=HAH_WS10
+		search_filters={}
+		prerequisite={focus=HAH_WS11A}
+		prerequisite={focus=HAH_WS11B}
+		prerequisite={focus=HAH_WS11C}
+		prerequisite={focus=HAH_WS11D}
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAH_WS12B"
+		}
+	}
+	shared_focus={	#Severing Puppet
+		id=HAH_WS12C #icon=
+		x=1 y=2 cost=2 relative_position_id=HAH_WS10
+		search_filters={}
+		prerequisite={focus=HAH_WS11A}
+		prerequisite={focus=HAH_WS11B}
+		prerequisite={focus=HAH_WS11C}
+		prerequisite={focus=HAH_WS11D}
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAH_WS12C"
+		}
+	}
+	shared_focus={	#Old Strains
+		id=HAH_WS12D #icon=
+		x=3 y=2 cost=2 relative_position_id=HAH_WS10
+		search_filters={}
+		prerequisite={focus=HAH_WS11A}
+		prerequisite={focus=HAH_WS11B}
+		prerequisite={focus=HAH_WS11C}
+		prerequisite={focus=HAH_WS11D}
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAH_WS12D"
+		}
+	}
+	shared_focus={	#Snuff Out Stars
+		id=HAH_WS13 #icon=
+		x=0 y=3 cost=2 relative_position_id=HAH_WS10
+		search_filters={}
+		prerequisite={focus=HAH_WS12A}
+		prerequisite={focus=HAH_WS12B}
+		prerequisite={focus=HAH_WS12C}
+		prerequisite={focus=HAH_WS12D}
+		ai_will_do={factor=4000}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus HAH_WS13"
 		}
 	}

@@ -373,6 +373,7 @@ add_namespace=HAH_evt_a03w
 		is_triggered_only=yes
 		option={
 			name=HAH_evt_a03w.001.a
+			add_stability=-0.2
 		}
 		option={
 			name=HAH_evt_C-FF_W-TY.r
