@@ -26,6 +26,8 @@ set_technology={
 }
 actually_fix_weapon_techs=yes
 set_rule={can_generate_female_aces=yes}
+HMS={puppet=MSN}
+set_cosmetic_tag=MSN_HMS_puppet
 set_popularities={fascism=40 communism=20 neutrality=22 democratic=18}
 set_politics={ruling_party=fascism}
 recruit_character=MSN_duchess_aurora

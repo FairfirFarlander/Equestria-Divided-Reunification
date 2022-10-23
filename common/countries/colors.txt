@@ -18,7 +18,7 @@ HWG={color=rgb{249 242 255}color_ui=rgb{249 242 255}}
 JTL={color=rgb{119 47 65}color_ui=rgb{119 47 65}}
 LAS={color=rgb{162 125 0}color_ui=rgb{162 125 0}}
 MSE={color=rgb{144 26 255}color_ui=rgb{144 26 255}}
-MSN={color=rgb{164 26 255}color_ui=rgb{164 26 255}}
+MSN={color=rgb{60 45 75}color_ui=rgb{60 45 75}}
 FRI={color=rgb{125 26 255}color_ui=rgb{125 26 255}}
 MWC={color=rgb{2 147 189}color_ui=rgb{2 147 189}}
 NIH={color=rgb{41 37 110}color_ui=rgb{41 37 110}}

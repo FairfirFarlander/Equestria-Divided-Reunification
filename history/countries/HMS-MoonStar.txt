@@ -50,6 +50,7 @@ recruit_character=HMS_white_wind
 recruit_character=HMS_trixie_lulamoon
 recruit_character=HMS_spike
 recruit_character=HMS_cadence
-#NOTES#
+###NOTES###
+#Puppeting handled in respective country files.
 #Chi la dura la vince#
 #Peachs (Sun) or Mangos (Moon) how about Apples?
