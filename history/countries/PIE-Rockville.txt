@@ -23,6 +23,7 @@ set_technology={
 }
 actually_fix_weapon_techs=yes
 set_rule={can_generate_female_aces=yes}
+HEB={puppet=PIE}
 set_popularities={fascism=57 communism=5 neutrality=31 democratic=7}
 set_politics={ruling_party=fascism}
 recruit_character=PIE_marble_pie

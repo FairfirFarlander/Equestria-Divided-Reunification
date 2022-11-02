@@ -427,10 +427,12 @@ add_namespace=HAH_evt_a03w
 		is_triggered_only=yes
 		option={
 			name=HAH_evt_a03w.031.a
+			set_country_flag=HAH_can_raid_neighbors
 		}
 		option={
 			name=HAH_evt_C-FF_W-TY.r
 			trigger={is_debug=yes}
+			clr_country_flag=HAH_can_raid_neighbors
 		}
 		immediate={log="[GetDateText]: [Root.GetName]: event HAH_evt_a03w.031"}
 	}

@@ -71,6 +71,7 @@
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS03"
 			#country_event=HAH_evt_a03w.031	#The Blockades Are Lifted, but Policing Increases	#After Raid
+			custom_effect_tooltip=HAH_XWS03_tooltip
 		}
 	}
 	shared_focus={	#Compensating for the Decrees

@@ -60,6 +60,7 @@ if={limit={not={has_dlc="Man the Guns"}}
 actually_fix_weapon_techs=yes
 set_convoys=4
 set_rule={can_generate_female_aces=yes}
+HWG={puppet=WTC}
 set_popularities={fascism=42 communism=19 neutrality=29 democratic=10}
 set_politics={ruling_party=fascism}	
 recruit_character=WTC_dashing_habidasher

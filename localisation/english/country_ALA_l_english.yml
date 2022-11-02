@@ -16,14 +16,14 @@ ALA: "Alamane"
  ALA_DEF: "Alamane"
  ALA_ADJ: "Macanae"
 ###Political Parties###
-ALA_fascism_party: "FAC"
- ALA_fascism_party_long: "FAC"
- ALA_communism_party: "COM"
-  ALA_communism_party_long: "COM"
- ALA_neutrality_party: "NEU"
-  ALA_neutrality_party_long: "NEU"
- ALA_democratic_party: "DEC"
-  ALA_democratic_party_long: "DEC"
+ALA_fascism_party: "GOAM"
+ ALA_fascism_party_long: "The Grey Order of Alamane and the Macanae"
+ ALA_communism_party: "PCPA"
+  ALA_communism_party_long: "Ponies Communist Party of Alamane"
+ ALA_neutrality_party: "DCAA"
+  ALA_neutrality_party_long: "The Diet of the Citizens of Prance and Albion\n"Dietem Civis Autem Alamane""
+ ALA_democratic_party: "EPH"
+  ALA_democratic_party_long: "Equestrians for the Preservation of Harmony"
 ###Ideas###
 ###National Focuses###
 ##Storyline Tree##

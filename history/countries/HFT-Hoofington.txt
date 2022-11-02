@@ -23,6 +23,7 @@ set_technology={
 }
 actually_fix_weapon_techs=yes
 set_rule={can_generate_female_aces=yes}
+HEB={puppet=HFT}
 set_popularities={fascism=32 communism=16 neutrality=45 democratic=7}
 set_politics={ruling_party=neutrality}
 recruit_character=HFT_orange

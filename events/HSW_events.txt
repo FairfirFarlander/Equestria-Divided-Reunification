@@ -5,11 +5,11 @@ add_namespace=HSW_evt_a11
 		is_triggered_only=yes
 		option={
 			name=HSW_evt_a11.001.a
-			country_event=HSW_evt_a11.002	#Stormwing Requests Our Integration
+			country_event=HSW_evt_a11.002	#Our Loyalties Betrayed
 		}
 		option={
 			name=HSW_evt_a11.001.b
-			country_event=HSW_evt_a11.003	#An Offered Wing
+			country_event=HSW_evt_a11.003	#Our Loyalties Questioned
 		}
 		option={
 			name=HSW_evt_C-FF_W-FF.r
@@ -17,17 +17,27 @@ add_namespace=HSW_evt_a11
 		}
 		immediate={log="[GetDateText]: [Root.GetName]: event HSW_evt_a11.001"}
 	}
-	country_event={	#Stormwing Requests Our Integration
+	country_event={	#Our Loyalties Betrayed
 		id=HSW_evt_a11.002
 		title=HSW_evt_a11.002.t	desc=HSW_evt_a11.002.d	#picture=
 		is_triggered_only=yes
 		option={
 			name=HSW_evt_a11.002.a
 			country_event=HSW_evt_a11.004
+			HSW={puppet=SWT}
+			#Add focus tree for puppet. Keep old focuses.
 		}
 		option={
 			name=HSW_evt_a11.002.b
 			country_event=HSW_evt_a11.005
+			HSW={
+				end_puppet=SWT
+				SWT={leave_faction=yes}
+				declare_war_on={
+					target=SWT
+					type=puppet_wargoal_focus
+				}
+			}
 		}
 		option={
 			name=HSW_evt_C-FF_W-FF.r
@@ -53,17 +63,12 @@ add_namespace=HSW_evt_a11
 		}
 		immediate={log="[GetDateText]: [Root.GetName]: event HSW_evt_a11.003"}
 	}
-	country_event={	#
+	country_event={	#The Chains of Allegiance
 		id=HSW_evt_a11.004
 		title=HSW_evt_a11.004.t	desc=HSW_evt_a11.004.d	#picture=
 		is_triggered_only=yes
 		option={
 			name=HSW_evt_a11.004.a
-			country_event=HSW_evt_a11.006
-		}
-		option={
-			name=HSW_evt_a11.004.b
-			country_event=HSW_evt_a11.007
 		}
 		option={
 			name=HSW_evt_C-FF_W-FF.r

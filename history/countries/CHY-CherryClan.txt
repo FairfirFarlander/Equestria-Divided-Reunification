@@ -24,6 +24,7 @@ set_technology={
 }
 actually_fix_weapon_techs=yes
 set_rule={can_generate_female_aces=yes}
+HEB={puppet=CHY}
 set_popularities={fascism=48 communism=23 neutrality=15 democratic=14}
 set_politics={ruling_party=fascism}
 recruit_character=CHY_cherry_jubilee

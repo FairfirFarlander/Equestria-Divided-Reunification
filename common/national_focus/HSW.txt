@@ -23,13 +23,15 @@ focus_tree={
 		id=EQD_HSW_03A #icon=
 		cost=7 x=-2 y=1 relative_position_id=EQD_S02
 		search_filters={}
+		allow_branch={tag=HSW}
 		prerequisite={focus=EQD_S02}
 		mutually_exclusive={focus=EQD_HSW_03B}
 		ai_will_do={factor=40}
 		will_lead_to_war_with=SWT
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus EQD_HSW_03A"
-			if={limit={
+			if={
+				limit={
 					SWT={
 						exists=yes
 						is_in_faction_with=HSW
@@ -43,6 +45,7 @@ focus_tree={
 		id=EQD_HSW_03B #icon=
 		cost=7 x=2 y=1 relative_position_id=EQD_S02
 		search_filters={}
+		allow_branch={tag=HSW}
 		prerequisite={focus=EQD_S02}
 		mutually_exclusive={focus=EQD_HSW_03A}
 		ai_will_do={factor=40}
