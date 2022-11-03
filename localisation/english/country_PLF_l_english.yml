@@ -5,6 +5,19 @@ PLF_GATHERING_STORM_DESC: ""
 ##Welcome Screen##
  EAW_WS_PLF: ""
   EAW_WS_PLF_desc: ""
+###Country Name###
+PLF: "Hayseed"
+ PLF_DEF: "the County of Hayseed"
+ PLF_ADJ: "Cajun"
+ PLF_fascism: "Hayseed State"
+  PLF_fascism_DEF: "the Nation-State of Hayseed"
+ PLF_communism: "PLF"
+  PLF_communism_DEF: "the Ponies Liberation Front"
+ PLF_hayseed_communism: "Hayseed Freestate"
+  PLF_hayseed_communism_DEF: "the Freestate of Hayseed"
+ PLF_democratic: "Baltimare Republic"
+  PLF_democratic_DEF: "the Republic of Baltimare"
+###Political Parties###
 ###Characters###
 ##Leaders##
 PLF_regional_defense_council: "Regional Defense Council"
@@ -23,34 +36,10 @@ PLF_regional_defense_council: "Regional Defense Council"
  PLF_ringo_jam: "Ringo Jam"
   PLF_rjam_poli_desc: ""
 ##Commanders##
-##Advisors##
+##Political Advisors##
+##Military Advisors##
  PLF_meadowbrook: "Meadowbrook"
   PLF_meadowbrook_advi_desc: ""
-###Country Name###
-PLF_fascism: "Hayseed"
- PLF_fascism_DEF: "The State of Hayseed"
- PLF_fascism_ADJ: "Cajun"
- PLF_communism: "PLF"
-  PLF_communism_DEF: "Ponies Liberation Front"
-  PLF_communism_ADJ: "Cajun"
- PLF_hayseed_communism: "Hayseed Freestate"
-  PLF_hayseed_communism_DEF: "The Freestate of Hayseed"
-  PLF_hayseed_communism_ADJ: "Cajun"
- PLF_neutrality: "Hayseed Province"
-  PLF_neutrality_DEF: "The Province of Hayseed"
-  PLF_neutrality_ADJ: "Cajun"
- PLF_democratic: "Baltimare Republic"
-  PLF_democratic_DEF: "The Republic of Baltimare"
-  PLF_democratic_ADJ: "Cajun"
-###Political Parties###
-PLF_fascism_party: "FAC"
- PLF_fascism_party_long: "FAC"
- PLF_communism_party: "COM"
-  PLF_communism_party_long: "COM"
- PLF_neutrality_party: "NEU"
-  PLF_neutrality_party_long: "NEU"
- PLF_democratic_party: "DEC"
-  PLF_democratic_party_long: "DEC"
 ###Ideas###
 ###National Focuses###
 ##Storyline Tree##

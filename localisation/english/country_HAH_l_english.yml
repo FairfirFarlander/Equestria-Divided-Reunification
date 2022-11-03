@@ -5,35 +5,36 @@ HAH_GATHERING_STORM_DESC: ""
 ##Welcome Screen##
  EAW_WS_HAH: ""
  EAW_WS_HAH_desc: ""
+###Country Name###
+HAH: "Hollow Shades"
+ HAH_DEF: "the County of Hollow Shades"
+ HAH_ADJ: "Hollow Shades"
+ HAH_happy: "Happy Hollow"
+ HAH_happy_DEF: "the County of Happy Hollow"
+ HAH_happy_ADJ: "Happy Hollow"
+###Political Parties###
 ###Characters###
 ##Leaders##
 HAH_misty_wisps: "Misty Wisps"
- HAH_mwisps_poli_desc: "§YPortrait By§!: Tiviyl"
+ HAH_mwisps_poli_desc: "$CRDC_art_tiviyl$"
  HAH_willow_branch: "Willow Branch"
-  HAH_wbranch_poli_desc: "§YPortrait By§!: Tiviyl"
+  HAH_wbranch_poli_desc: "$CRDC_art_tiviyl$"
 ##Commanders##
  HAH_fiddle_pick: "Fiddle Pick"
-  HAH_fpick_mili_desc: "§YPortrait By§!: Tiviyl"
+  HAH_fpick_mili_desc: "$CRDC_art_tiviyl$"
   HAH_fpick_stats: "§RAttack Skill§!: §Y3§!\n§YDefense Skill§!: §Y1§!\n§GPlanning Skill§!: §Y1§!\n§CLogistics Skill§!: §Y1§!"
  HAH_string_bow: "String Bow"
-  HAH_sbow_poli_desc: "§YPortrait By§!: Tiviyl"
-  HAH_sbow_mili_desc: "§YPortrait By§!: Tiviyl"
+  HAH_sbow_poli_desc: "$CRDC_art_tiviyl$"
+  HAH_sbow_mili_desc: "$HAH_sbow_poli_desc$"
   HAH_sbow_stats: "§RAttack Skill§!: §Y1§!\n§YDefense Skill§!: §Y3§!\n§GPlanning Skill§!: §Y1§!\n§CLogistics Skill§!: §Y1§!"
-##Advisors##
+##Political Advisors##
  HAH_boiled_apples: "Boiled Apples"
   HAH_bapples_advi_desc: ""
  HAH_word_spinner: "Word Spinner"
   HAH_wspinner_advi_desc: ""
  HAH_uncle_haystack: "Uncle Haystack"
   HAH_uhaystack_advi_desc: ""
-###Country Name###
-HAH: "Hollow Shades"
- HAH_DEF: "Hollow Shades"
- HAH_ADJ: "Hollow Shades"
- HAH_happy: "Happy Hollow"
-  HAH_happy_DEF: "Happy Hollow"
-  HAH_happy_ADJ: "Happy Hollow"
-###Political Parties###
+##Military Advisors##
 ###Ideas###
 ###Decisions###
 ##Gathering Materials##
@@ -213,14 +214,6 @@ HAH_evt_a03w.000.t: "Willow Storms Off"
    HAH_evt_a03w.051.a: ""
  HAH_WS0X: ""
   HAH_WS0X_desc: ""
- HAH_WS0X: ""
-  HAH_WS0X_desc: ""
- HAH_WS0X: ""
-  HAH_WS0X_desc: ""
- HAH_WS0X: ""
-  HAH_WS0X_desc: ""
- HAH_WS0X: ""
-  HAH_WS0X_desc: ""
   
 ##Willow Reworking##
 HAH_XWS00: "$HAH_WS00$"
@@ -235,20 +228,6 @@ HAH_XWS00: "$HAH_WS00$"
  HAH_XWS03: "$HAH_WS03$"
   HAH_XWS03_desc: "$HAH_WS03_desc$"
   HAH_XWS03_tooltip: ""
- HAH_XWS0X: ""
-  HAH_XWS0X_desc: ""
- HAH_XWS0X: ""
-  HAH_XWS0X_desc: ""
- HAH_XWS0X: ""
-  HAH_XWS0X_desc: ""
- HAH_XWS0X: ""
-  HAH_XWS0X_desc: ""
- HAH_XWS0X: ""
-  HAH_XWS0X_desc: ""
- HAH_XWS0X: ""
-  HAH_XWS0X_desc: ""
- HAH_XWS0X: ""
-  HAH_XWS0X_desc: ""
  HAH_XWS0X: ""
   HAH_XWS0X_desc: ""
 ##Economic Tree##

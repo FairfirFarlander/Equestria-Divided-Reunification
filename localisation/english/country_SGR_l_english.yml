@@ -5,11 +5,34 @@ SGR_GATHERING_STORM_DESC: ""
 ##Welcome Screen##
  EAW_WS_SGR: "[Root.GetNameDef] - Home of the Revolution"
   EAW_WS_SGR_desc: "For the longest time, what is now §YStalliongrad§! were different states and provinces of §YEquestria§!. Eventually, however, food shortages in the region resulted in §Rfamine§!, and the plead for help towards the §YEquestrian government§! was to no avail. As such, a revolution began to brew within the malnourished people in and around §Ythe City of Stalliongrad§!. In the year 995, §YStalliongrad declared its independence§! from Equestria, under the proud leadership of §Ythe Supreme Soviet§!, which included ponies such as our current General Secretary, §YAltidiya§!. §YEquestria§! attempted to quell the revolution through military force, but our spirit remained unbroken, and they eventually retreated. §YStalliongrad§! was safe, it was free.\n\nWith independence came greater responsibilities and problems, however. Our nation still suffers from food shortages and is at the risk of famine, only made worse by the attempts at collectivising our economy. We must make sure to fix this problem as soon as we can, or else we might face an actual §Rfamine§! and be responsible for the starvation of hundreds, if not thousands of ponies.\n\nTo make matters worse, §Ythe Supreme Soviet§! is in a struggle for leadership. Our old General Secretary, §YAltidiya§! is losing the favour of the Soviet in favour of two fellow revolutionaries, §YVasily§! and §YSinister§!, both of which have very different approaches on how to lead §YStalliongrad§! into the future and how to solve its problems.\n\nWith an election for a §Ynew General Secretary§! coming up, §YStalliongrad§! is holding on by a thread. The future of the §GHome and Bulwark of the Revolution§! is unknown and uncertain."
+###Country Name###
+SGR: "Severyana"
+ SGR_DEF: "the Region of Severyana"
+ SGR_ADJ: "Severyanian"
+SGR_fascism: "Svetlanic Vozhdestvo"
+ SGR_fascism_DEF: "Svetlanic Vozhdestvo"
+ SGR_fascism_ADJ: "Svetlanic"
+ SGR_communism: "Stalliongrad"
+  SGR_communism_DEF: "the Soviet Republic of Stalliongrad"
+  SGR_communism_ADJ: "Stalliongradian"
+ SGR_neutrality: "Severyana Tsardom"
+  SGR_neutrality_DEF: "the Severyana Tsardom"
+ SGR_democratic: "Severyana Republic"
+  SGR_democratic_DEF: "the Severyana Republic"
+###Political Parties###
+SGR_fascism_party: "SC"
+ SGR_fascism_party_long: "Star Children"
+ SGR_communism_party: "SCP"
+  SGR_communism_party_long: "Stalliongradian Communist Party"
+ SGR_neutrality_party: "SMTP"
+  SGR_neutrality_party_long: "Severyanian Monarchist Traditionalist Party"
+ SGR_democratic_party: "DSPS"
+  SGR_democratic_party_long: "Democratic Socialist Party of Stalliongrad"
 ###Characters###
 ##Leaders##
 SGR_ratibor_sventoslavich: "Ratibor Sventoslavich"
  SGR_rsventoslavich_poli_desc: ""
- SGR_altidiya: "Altidiya Revoltsova"
+ SGR_altidiya: "Altidiya"
   SGR_altidiya_poli_desc: ""
  SGR_peter_iv: "Peter IV"
   SGR_piv_poli_desc: ""
@@ -26,35 +49,10 @@ SGR_ratibor_sventoslavich: "Ratibor Sventoslavich"
   SGR_vpantsushenko_poli_desc: ""
   SGR_vpantsushenko_advi_desc: ""
 ##Commanders##
-##Advisors##
-###Country Name###
-SGR_fascism: "Svetlanic Vozhdestvo"
- SGR_fascism_DEF: "Svetlanic Vozhdestvo"
- SGR_fascism_ADJ: "Svetlanic"
- SGR_communism: "Stalliongrad"
-  SGR_communism_DEF: "Stalliongrad"
-  SGR_communism_ADJ: "Stalliongradian"
- SGR_neutrality: "Severyana Tsardom"
-  SGR_neutrality_DEF: "The Severyana Tsardom"
-  SGR_neutrality_ADJ: "Severyanian"
- SGR_democratic: "Severyana Republic"
-  SGR_democratic_DEF: "The Severyana Republic"
-  SGR_democratic_ADJ: "Severyanian"
-###Political Parties###
-SGR_fascism_party: "SC"
- SGR_fascism_party_long: "Star Children"
- SGR_communism_party: "SCP"
-  SGR_communism_party_long: "Stalliongradian Communist Party"
- SGR_neutrality_party: "SMTP"
-  SGR_neutrality_party_long: "Severyanian Monarchist Traditionalist Party"
- SGR_democratic_party: "DSPS"
-  SGR_democratic_party_long: "Democratic Socialist Party of Stalliongrad"
+##Political Advisors##
+##Military Advisors##
 ###Ideas###
 SGR_famine_0: "Risk of Famine"
  SGR_famine_0_desc: "Food shortages in [SGR.GetNameDef] have been a serious problem for decades. While the government has enacted great efforts to combat this issue, the ongoing crisis in Equestria has single-handedly reversed this in record time. Should the situation maintain it's course, the ponies confidence in the government may falter and their growing desperation drive them to extreme measures."
 ###National Focuses###
 ##Storyline Tree##
-#SGR_: ""
-# SGR__desc: ""
-# SGR_: ""
-#  SGR__desc: ""

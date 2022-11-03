@@ -15,7 +15,7 @@ characters={
 			desc="LAS_pchest_poli_desc"	ideology=stratocracy	#pcadesc
 			traits={anti_communist}
 		}
-				country_leader={
+		country_leader={
 			desc="WTC_gpony_poli_desc"
 			ideology=conservatism
 			traits={}

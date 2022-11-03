@@ -5,6 +5,11 @@ COT_GATHERING_STORM_DESC: ""
 ##Welcome Screen##
  EAW_WS_COT: ""
   EAW_WS_COT_desc: ""
+###Country Name###
+COT: "Southern Confederation"
+ COT_DEF: "the Confederation of Southern States"
+ COT_ADJ: "Southron"
+###Political Parties###
 ###Characters###
 ##Leaders##
 COT_jd_neighvis: "J.D. Neighvis"
@@ -12,7 +17,7 @@ COT_jd_neighvis: "J.D. Neighvis"
 ##Commanders##
  COT_stewed_apple: "Stewed Apple"   #Neighson E. Miles
   COT_sapple_mili_desc: ""
-  COT_sapple_chie_desc: ""
+  COT_sapple_chie_desc: "$COT_sapple_mili_desc$"
  COT_silverstar: "Silverstar"
   COT_silverstar_mili_desc: ""
  COT_apple_ale: "Apple Ale"
@@ -24,23 +29,6 @@ COT_jd_neighvis: "J.D. Neighvis"
  COT_burnside_fervor: "Burnside Fervor"
   COT_bfervor_mili_desc: ""
 ##Advisors##
-###Country Name###
-COT: "Southern Confederation"
- COT_DEF: "The Confederation of Southern States"
- COT_ADJ: "Southron"
-###Political Parties###
-COT_fascism_party: "FAC"
- COT_fascism_party_long: "FAC"
- COT_communism_party: "COM"
-  COT_communism_party_long: "COM"
- COT_neutrality_party: "NEU"
-  COT_neutrality_party_long: "NEU"
- COT_democratic_party: "DEC"
-  COT_democratic_party_long: "DEC"
 ###Ideas###
 ###National Focuses###
 ##Storyline Tree##
-#COT_: ""
-# COT__desc: ""
-# COT_: ""
-#  COT__desc: ""

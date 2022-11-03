@@ -5,6 +5,11 @@ PLT_GATHERING_STORM_DESC: ""
 ##Welcome Screen##
  EAW_WS_PLT: ""
   EAW_WS_PLT_desc: ""
+###Country Name###
+PLT: "Portland Province"
+ PLT_DEF: "the Province of Portland"
+ PLT_ADJ: "Portish"
+###Political Parties###
 ###Characters###
 ##Leaders##
 PLT_rael_grey: "Rael Grey"
@@ -14,20 +19,8 @@ PLT_rael_grey: "Rael Grey"
  PLT_thistle_tap: "Thistle Tap"
   PLT_ttap_poli_desc: ""
 ##Commanders##
-##Advisors##
-###Country Name###
-PLT: "Portland Province"
- PLT_DEF: "The Province of Portland"
- PLT_ADJ: "Portish"
-###Political Parties###
-PLT_fascism_party: "FAC"
- PLT_fascism_party_long: "FAC"
- PLT_communism_party: "COM"
-  PLT_communism_party_long: "COM"
- PLT_neutrality_party: "NEU"
-  PLT_neutrality_party_long: "NEU"
- PLT_democratic_party: "DEC"
-  PLT_democratic_party_long: "DEC"
+##Political Advisors##
+##Military Advisors##
 ###National Focuses###
 ##Storyline Tree##
 PLT_S00: "In the Shadow of Giants"

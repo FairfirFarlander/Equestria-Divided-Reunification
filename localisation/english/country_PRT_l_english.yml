@@ -5,28 +5,17 @@ PRT_GATHERING_STORM_DESC: ""
 ##Welcome Screen##
  EAW_WS_PRT: ""
   EAW_WS_PRT_desc: ""
+###Country Name###
+PRT: "Pirates Cove"
+ PRT_DEF: "the Pirates Cove"
+ PRT_ADJ: "Pirates"
+###Political Parties###
 ###Characters###
 ##Leaders##
 PRT_generic_pony: "Generic Pony"
  PRT_gpony_poli_desc: ""
 ##Commanders##
-##Advisors##
-###Country Name###
-PRT: "Pirates Cove"
- PRT_DEF: "The Pirates Cove"
- PRT_ADJ: "Pirates"
-###Political Parties###
-PRT_fascism_party: "FAC"
- PRT_fascism_party_long: "FAC"
- PRT_communism_party: "COM"
-  PRT_communism_party_long: "COM"
- PRT_neutrality_party: "NEU"
-  PRT_neutrality_party_long: "NEU"
- PRT_democratic_party: "DEC"
-  PRT_democratic_party_long: "DEC"
+##Political Advisors##
+##Military Advisors##
 ###National Focuses###
 ##Storyline Tree##
-#PRT_S0: ""
-# PRT_S0_desc: ""
-# PRT_S0: ""
-#  PRT_S0_desc: ""

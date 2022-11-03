@@ -191,7 +191,8 @@ characters={
 			slot=navy_chief
 			idea_token=VII_grima_chie
 			cost=100
-			traits={				navy_chief_maneuver_2}
+			traits={				navy_chief_maneuver_2
+			}
 		}
 		advisor={
 			slot=high_command

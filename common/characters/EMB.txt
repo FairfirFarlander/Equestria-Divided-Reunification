@@ -2,9 +2,7 @@ characters={
 	EMB_mother_nightshade={
 		name=EMB_mother_nightshade
 		portraits={
-			civilian={
-				large="gfx/leaders/EMB/EMB_mother_nightshade.dds"
-			}
+			civilian={large="gfx/leaders/EMB/EMB_mother_nightshade.dds"}
 		}
 		country_leader={
 			desc="EMB_mnightshade_poli_desc"
@@ -15,12 +13,8 @@ characters={
 	EMB_councilor_tyrennadus={
 		name=EMB_councilor_tyrennadus
 		portraits={
-			civilian={
-				large="gfx/leaders/EMB/EMB_councilor_tyrennadus.dds"
-			}
-			army={
-				large="gfx/leaders/EMB/EMB_councilor_tyrennadus.dds"
-			}
+			civilian={large="gfx/leaders/EMB/EMB_councilor_tyrennadus.dds"}
+			army={large="gfx/leaders/EMB/EMB_councilor_tyrennadus.dds"}
 		}
 		country_leader={
 			desc="EMB_ctyrennadus_poli_desc"
@@ -43,9 +37,7 @@ characters={
 	EMB_queen_narratek={
 		name=EMB_queen_narratek
 		portraits={
-			civilian={
-				large="gfx/leaders/EMB/EMB_queen_narratek.dds"
-			}
+			civilian={large="gfx/leaders/EMB/EMB_queen_narratek.dds"}
 		}
 		country_leader={
 			desc="EMB_qnarratek_poli_desc"
@@ -56,9 +48,7 @@ characters={
 	EMB_aetanae_krix={	#Willow
 		name=EMB_aetanae_krix
 		portraits={
-			civilian={
-				large="gfx/leaders/EMB/EMB_queen_narratek_old.dds"
-			}
+			civilian={large="gfx/leaders/EMB/EMB_queen_narratek_old.dds"}
 		}
 		country_leader={
 			desc="EMB_akrix_poli_desc"
@@ -69,9 +59,7 @@ characters={
 	EMB_hithax_ballas={
 		name=EMB_hithax_ballas
 		portraits={
-			army={
-				large="gfx/leaders/EMB/EMB_councilor_tyrennadus_old.dds"
-			}
+			army={large="gfx/leaders/EMB/EMB_councilor_tyrennadus_old.dds"}
 		}
 		#corps_commander={	#Done in focus EMB_MM01
 		#	desc="EMB_hballas_mili_desc"
@@ -89,9 +77,7 @@ characters={
 	EMB_lavender_opal={
 		name=EMB_lavender_opal
 		portraits={
-			army={
-				large="gfx/leaders/EMB/EMB_mother_nightshade_old.dds"
-			}
+			army={large="gfx/leaders/EMB/EMB_mother_nightshade_old.dds"}
 		}
 		#corps_commander={
 		#	desc="EMB_lopal_mili_desc"

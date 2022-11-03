@@ -5,6 +5,11 @@ SOY_GATHERING_STORM_DESC: ""
 ##Welcome Screen##
  EAW_WS_SOY: ""
   EAW_WS_SOY_desc: ""
+###Country Name###
+SOY: "Soryth"
+ SOY_DEF: "the Queendom of Soryth"
+ SOY_ADJ: "Sorythling"
+###Political Parties###
 ###Characters###
 ##Leaders##
 SOY_yaria: "Queen Yaria"
@@ -12,24 +17,8 @@ SOY_yaria: "Queen Yaria"
 ##Commanders##
  SOY_venyx: "Venyx"
   SOY_venyx_mili_desc: ""
-##Advisors##
-###Country Name###
-SOY: "Soryth"
- SOY_DEF: "The Queendom of Soryth"
- SOY_ADJ: "Sorythling"
-###Political Parties###
-SOY_fascism_party: "FAC"
- SOY_fascism_party_long: "FAC"
- SOY_communism_party: "COM"
-  SOY_communism_party_long: "COM"
- SOY_neutrality_party: "NEU"
-  SOY_neutrality_party_long: "NEU"
- SOY_democratic_party: "DEC"
-  SOY_democratic_party_long: "DEC"
+##Political Advisors##
+##Military Advisors##
 ###Ideas##
 ###National Focuses###
 ##Storyline Tree##
-#SOY_: ""
-# SOY__desc: ""
-# SOY_: ""
-#  SOY__desc: ""

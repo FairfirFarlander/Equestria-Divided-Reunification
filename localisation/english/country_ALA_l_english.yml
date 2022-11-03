@@ -5,15 +5,9 @@ ALA_GATHERING_STORM_DESC: ""
 ##Welcome Screen##
  EAW_WS_ALA: ""
   EAW_WS_ALA_desc: ""
-###Characters###
-##Leaders##
-ALA_almond_tree: "Almond Tree"
- ALA_atree_poli_desc: ""
-##Commanders##
-##Advisors##
 ###Country Name###
 ALA: "Alamane"
- ALA_DEF: "Alamane"
+ ALA_DEF: "the County of Alamane"
  ALA_ADJ: "Macanae"
 ###Political Parties###
 ALA_fascism_party: "GOAM"
@@ -24,10 +18,13 @@ ALA_fascism_party: "GOAM"
   ALA_neutrality_party_long: "The Diet of the Citizens of Prance and Albion\n"Dietem Civis Autem Alamane""
  ALA_democratic_party: "EPH"
   ALA_democratic_party_long: "Equestrians for the Preservation of Harmony"
+###Characters###
+##Leaders##
+ALA_almond_tree: "Almond Tree"
+ ALA_atree_poli_desc: ""
+##Commanders##
+##Political Advisors##
+##Military Advisors##
 ###Ideas###
 ###National Focuses###
 ##Storyline Tree##
-#ALA_: ""
-# ALA__desc: ""
-# ALA_: ""
-#  ALA__desc: ""

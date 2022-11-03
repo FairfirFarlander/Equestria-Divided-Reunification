@@ -5,39 +5,12 @@ EMB_GATHERING_STORM_DESC: ""
 ##Welcome Screen##
  EAW_WS_EMB: "The Communes of Ember - The Children of the First Queen"
   EAW_WS_EMB_desc: "It is nothing odd for one or even small collections of changelings to leave the changeling lands.  Whether it was to fleed, conquer new lands, or to even flee the tyranny of their homelands.  Many brave changelings have made the long journey across the continent.  The ones who make up this small little commune are no different.  No one seems to really know what hive they came from originally, or when they exactly came to the southern jungles.  What was known of them before the Great Dividing, portrayed them as a rather peaceful group of changelings.  As a group who partook in magic and ideas that were not so welcomed in the Changeling Lands.  They rarely left the jungles they called home.  So fairly few actually know about their existence.  Those who did know of them knew very little.  It was known that they had at least two villages deep within the jungle.  However no one seemed to be able to figure out just how large these villages were or where they were.  It was also known that they would trade potions to the neighboring towns for supplies.  Their skills in alchemy helped to drive away many sicknesses in the region.\n\nAs Equestria began to fall into dark clutches of chaos, this group of changelings found themselves surrounded by madness as Equestria began to fracture.  The changelings wanted to help those around them and began traveling to some of the nearby towns more frequently rendering what medical aid they could.  Riots continued to rage, becoming more and more violent in the towns and cities surrounding them.  Many of the leaders in the commune began to fear the worst was to come soon, and ordered the villages to be fortified and expanded.  However, they knew the task would not be easy.  Then an idea came to the idea of one of the oldest drones of the commune’s leadership.\n\nThese changelings had dug out and already had been using underground tunnels for traversing the jungles.  A safe underway passage to avoid the dangers and heat of the jungle.  Knowing this, and weighing their options the village leaders gave the order.  Mass construction efforts were undertaken to ensure the safety of those who called the commune home.  The tunnels were quickly expanded as Equestria began to divide into smaller nations.  The villages of the commune were moved into the tunnels, which quickly were becoming larger and larger by the day.  They worked with a religious fervor. They carved new homes, roads, and eventually whole new villages into the stone of the tunnels.  This new life in the underways may help them in the short term, but the leaders of the commune know the surrounding nations may very well come for them.  They will have to fortify even more, and even lash out if need be.  The question is, who will be the leaders to lead them through the coming storms?"
-###Characters###
-##Leaders##
-EMB_mother_nightshade: "Mother Nightshade"
- EMB_mnightshade_poli_desc: "§LPortrait§! by: §CTiviyl§!"
- EMB_mnightshade_mili_desc: "§YBorn§!: \n\n§YBiography§!: \n\n§YPortrait§! by: §CTiviyl§!"
- EMB_councilor_tyrennadus: "Councilor Tyrennadus"
-  EMB_ctyrennadus_poli_desc: "§LPortrait§! by: §CTiviyl§!"
-  EMB_ctyrennadus_mili_desc: "§YBorn§!: \n\n§YBiography§!: \n\n§YPortrait§! by: §CTiviyl§!"
- EMB_queen_narratek: "Queen Narratek"
-  EMB_qnarratek_poli_desc: "§LPortrait§! by: §CTiviyl§!"
- EMB_aetanae_krix: "Aetanae Krix"
-  EMB_akrix_poli_desc: "§LPortrait§! by: §CTiviyl§!"
-##Commanders##
- EMB_hithax_ballas: "Hithax Ballas"
-  EMB_hballas_mili_desc: "§LPortrait§! by: §CTiviyl§!"
-  EMB_hithax_ballas_stats: "§RAttack Skill§!: §Y1§!\n§YDefense Skill§!: §Y1§!\n§GPlanning Skill§!: §Y2§!\n§CLogistics Skill§!: §Y2§!\n\n"
- EMB_lavender_opal: "Lavender Opal"
-  EMB_lopal_mili_desc: "§LPortrait§! by: §CTiviyl§!"
-  EMB_lavender_opal_stats: "§RAttack Skill§!: §Y1§!\n§YDefense Skill§!: §Y2§!\n§GPlanning Skill§!: §Y1§!\n§CLogistics Skill§!: §Y2§!\n\n"
-##Advisors##
 ###Country Name###
 EMB_fascism: "Jungle Changelings"
- EMB_fascism_DEF: "The Changelings of the Jungle"
+ EMB_fascism_DEF: "the Changelings of the Jungle"
  EMB_fascism_ADJ: "Changelings"
  EMB_communism: "Communes of Ember"
-  EMB_communism_DEF: "The Communes of Ember"
-  EMB_communism_ADJ: "Changelings"
- EMB_neutrality: "Jungle Changelings"
-  EMB_neutrality_DEF: "The Changelings of the Jungle"
-  EMB_neutrality_ADJ: "Changelings"
- EMB_democratic: "Jungle Changelings"
-  EMB_democratic_DEF: "The Changelings of the Jungle"
-  EMB_democratic_ADJ: "Changelings"
+  EMB_communism_DEF: "the Communes of Ember"
 ###Political Parties###
 EMB_fascism_party: "CFQ"
  EMB_fascism_party_long: "Children Of The First Queen"
@@ -47,12 +20,32 @@ EMB_fascism_party: "CFQ"
   EMB_neutrality_party_long: "Royal Return"
  EMB_democratic_party: "VUW"
   EMB_democratic_party_long: "Voices of The Under Way"
+###Characters###
+##Leaders##
+EMB_mother_nightshade: "Mother Nightshade"
+ EMB_mnightshade_poli_desc: "§YBorn§!: \n\n§YBiography§!: \n\n$CRED_art_tiviyl$"
+ EMB_mnightshade_mili_desc: "$EMB_mnightshade_poli_desc$"
+ EMB_councilor_tyrennadus: "Councilor Tyrennadus"
+  EMB_ctyrennadus_poli_desc: "§YBorn§!: \n\n§YBiography§!: \n\n$CRED_art_tiviyl$"
+  EMB_ctyrennadus_mili_desc: "$EMB_ctyrennadus_poli_desc$"
+ EMB_queen_narratek: "Queen Narratek"
+  EMB_qnarratek_poli_desc: "§YBorn§!: \n\n§YBiography§!: \n\n$CRED_art_tiviyl$"
+ EMB_aetanae_krix: "Aetanae Krix"
+  EMB_akrix_poli_desc: "§YBorn§!: \n\n§YBiography§!: \n\n$CRED_art_tiviyl$"
+##Commanders##
+ EMB_hithax_ballas: "Hithax Ballas"
+  EMB_hballas_mili_desc: "$CRED_art_tiviyl$"
+  EMB_hithax_ballas_stats: "§RAttack Skill§!: §Y1§!\n§YDefense Skill§!: §Y1§!\n§GPlanning Skill§!: §Y2§!\n§CLogistics Skill§!: §Y2§!\n\n"
+ EMB_lavender_opal: "Lavender Opal"
+  EMB_lopal_mili_desc: "$CRED_art_tiviyl$"
+  EMB_lavender_opal_stats: "§RAttack Skill§!: §Y1§!\n§YDefense Skill§!: §Y2§!\n§GPlanning Skill§!: §Y1§!\n§CLogistics Skill§!: §Y2§!\n\n"
+##Advisors##
 ###Ideas###
 EMB_ember_expanded: "The Fruit of Our Embers"
 ###National Focuses###
 ##Credits Tree##
 EMB_CW: "Focus Tree Credits"
- EMB_CW_desc: "§gCredits§!: §LWritten§! by §CTiviyl§!, §LCoded§! by §CFairfir§!"#Co-Coded by Farlander and Tiviyl
+ EMB_CW_desc: "§gCredits§!: $CRDT_tiviy_fairf$" #Co-Coded by Farlander and Tiviyl
 ##(Initial) Story Tree##
 EMB_S00: "Dealing with the Outside"
  EMB_S00_desc: "In the years since the rulers of the ponies vanished this land has become a more brutal and unforgiving place by the day. In the past we were content with hiding within the jungle, but these dark times force us to act to protect our commune. The Council of Ember will be gathering in the coming week to decide on how our drones will be kept safe from surface dwellers and their wars."

@@ -5,25 +5,17 @@ CYE_GATHERING_STORM_DESC: ""
 ##Welcome Screen##
  EAW_WS_CYE: ""
   EAW_WS_CYE_desc: ""
+###Country Name###
+CYE: "Cease Your Existance"
+ CYE_DEF: "to Cease Your Existance"
+ CYE_ADJ: "CEASE!!!"
+###Political Parties###
 ###Characters###
 ##Leaders##
 CYE_voidwalker: "§R...§!"
  CYE_nihappens_desc: "§RYou're not supposed to be here.§!"
-##Commanders##
-##Advisors##
-###Country Name###
-CYE: "Cease Your Existance"
- CYE_DEF: "Cease Your Existance"
- CYE_ADJ: "CEASE!!!"
-###Political Parties###
-CYE_fascism_party: ""
- CYE_fascism_party_long: ""
- CYE_communism_party: ""
-  CYE_communism_party_long: ""
- CYE_neutrality_party: ""
-  CYE_neutrality_party_long: ""
- CYE_democratic_party: ""
-  CYE_democratic_party_long: ""
+##Political Advisors##
+##Military Advisors##
 ###Ideas###
 CYE_nerf_me_harder:0""
 ###National Focuses###

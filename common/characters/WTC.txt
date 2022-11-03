@@ -2,9 +2,7 @@ characters={
 	WTC_dashing_habidasher={
 		name=WTC_dashing_habidasher
 		portraits={
-			civilian={
-				large="gfx/leaders/WTC/WTC_dashing_habidasher.dds"
-			}
+			civilian={large="gfx/leaders/WTC/WTC_dashing_habidasher.dds"}
 		}
 		country_leader={
 			desc="WTC_dhabidasher_poli_desc"
@@ -45,9 +43,7 @@ characters={
 	WTC_eloi_path={
 		name=WTC_eloi_path
 		portraits={
-			civilian={
-				small="gfx/leaders/WTC/small/WTC_eloi_path_small.dds"
-			}
+			civilian={small="gfx/leaders/WTC/small/WTC_eloi_path_small.dds"}
 		}
 		advisor={
 			slot=political_advisor
@@ -58,9 +54,7 @@ characters={
 	WTC_saddle_arabian_mercenary={
 		name=WTC_saddle_arabian_mercenary
 		portraits={
-			civilian={
-				small="gfx/leaders/WTC/small/WTC_saddle_arabian_small.dds"
-			}
+			civilian={small="gfx/leaders/WTC/small/WTC_saddle_arabian_small.dds"}
 		}
 		advisor={
 			slot=political_advisor
@@ -71,9 +65,7 @@ characters={
 	WTC_zebrican_mercenary={
 		name=WTC_zebrican_mercenary
 		portraits={
-			civilian={
-				small="gfx/leaders/WTC/small/WTC_zebrican_mercenary_small.dds"
-			}
+			civilian={small="gfx/leaders/WTC/small/WTC_zebrican_mercenary_small.dds"}
 		}
 		advisor={
 			slot=political_advisor

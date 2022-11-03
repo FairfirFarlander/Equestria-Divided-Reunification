@@ -3,9 +3,7 @@ characters={
 		name=FLY_cherry_jam
 		gender=female
 		portraits={
-			civilian={
-				large="gfx/leaders/Pony/portrait_pony_generic_5.dds"
-			}
+			civilian={large="gfx/leaders/Pony/portrait_pony_generic_5.dds"}
 		}
 		country_leader={
 			desc="FLY_cjam_poli_desc"

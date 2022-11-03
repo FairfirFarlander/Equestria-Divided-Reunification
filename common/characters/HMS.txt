@@ -3,12 +3,8 @@ characters={
 		name=HMS_twilight_sparkle
 		gender=female
 		portraits={
-			civilian={
-				large="gfx/leaders/HMS/HMS_twilight_sparkle.dds"
-			}
-			army={
-				large="gfx/leaders/HMS/HMS_twilight_sparkle.dds"
-			}
+			civilian={large="gfx/leaders/HMS/HMS_twilight_sparkle.dds"}
+			army={large="gfx/leaders/HMS/HMS_twilight_sparkle.dds"}
 		}
 		country_leader={
 			desc="HMS_tsparkle_poli_desc"
@@ -33,9 +29,7 @@ characters={
 	HMS_frail_lance={
 		name=HMS_frail_lance
 		portraits={
-			civilian={
-				large="gfx/leaders/Pony/portrait_pony_generic_navy_10.dds"
-			}
+			civilian={large="gfx/leaders/Pony/portrait_pony_generic_navy_10.dds"}
 		}
 		country_leader={
 			desc="HMS_flance_poli_desc"

@@ -5,26 +5,18 @@ NIH_GATHERING_STORM_DESC: ""
 ##Welcome Screen##
  EAW_WS_NIH: ""
   EAW_WS_NIH_desc: ""
-###Characters###
-##Leaders##
-NIH_cursed_fate: "Cursed Fate"
- NIH_cfate_poli_desc: "§YPortrait By§!: Tiviyl"
- NIH_cfate_mili_desc: "§YPortrait By§!: Tiviyl"
-##Commanders##
-##Advisors##
 ###Country Name###
-NIH_fascism: "The Acorange City Brigade"
- NIH_fascism_DEF: "The Protectorate of Trottingham"
- NIH_fascism_ADJ: "Acorange"
+NIH: "Acorange"
+ NIH_DEF: "the County of Acorange"
+ NIH_ADJ: "Acorniaii"
+NIH_fascism: "Acorange Governate" #Acorange City Brigade
+ NIH_fascism_DEF: "the Military Governate of Acorange"
  NIH_communism: "TRNSR"
-  NIH_communism_DEF: "The Red North Star Republic"
-  NIH_communism_ADJ: "Acorange"
- NIH_neutrality: "The Acorange Hold Out"
-  NIH_neutrality_DEF: "The Acorange Hold Out" 
-  NIH_neutrality_ADJ: "Acorange"
+  NIH_communism_DEF: "the Red North Star Republic"
+ NIH_neutrality: "Acorange Hold-Out"
+  NIH_neutrality_DEF: "the Acorange Hold Out"
  NIH_democratic: "The North Star Republic"
-  NIH_democratic_DEF: "The Republic of The Northern Star"
-  NIH_democratic_ADJ: "Acorange"
+  NIH_democratic_DEF: "the Republic of the Northern Star"
 ###Political Parties###
 NIH_fascism_party: "ETM"
  NIH_fascism_party_long: "Eye Of The Moon"
@@ -34,9 +26,13 @@ NIH_fascism_party: "ETM"
   NIH_neutrality_party_long: "Council of Officers"
  NIH_democratic_party: "TNL"
   NIH_democratic_party_long: "Ponies Of The North Star"
+###Characters###
+##Leaders##
+NIH_cursed_fate: "Cursed Fate"
+ NIH_cfate_poli_desc: "$CRDC_art_tiviyl$"
+ NIH_cfate_mili_desc: "$CRDC_art_tiviyl$"
+##Commanders##
+##Political Advisors##
+##Military Advisors##
 ###National Focuses###
-#Storyline Tree##
-#TRT_: ""
-# TRT__desc: ""
-# TRT_: ""
-#  TRT__desc: ""
+##Storyline Tree##

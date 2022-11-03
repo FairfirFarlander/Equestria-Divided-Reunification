@@ -5,29 +5,18 @@ MSE_GATHERING_STORM_DESC: ""
 ##Welcome Screen##
  EAW_WS_MSE: ""
   EAW_WS_MSE_desc: ""
+###Country Name###
+MSE: "Strakoma"
+ MSE_DEF: "the Slave State of Strakoma"
+ MSE_ADJ: "Stratish"
+###Political Parties###
 ###Characters###
 ##Leaders##
 MSE_generic_pony: "Generic pony"
  MSE_generic_pony_desc: ""
 ##Commanders##
-##Advisors##
-###Country Name###
-MSE: "Strakoma"
- MSE_DEF: "The Slave State of Strakoma"
- MSE_ADJ: "Stratish"
-###Political Parties###
-#MSE_fascism_party: "CCU"
-# MSE_fascism_party_long: "Canterlot Council of Unicorns"
-# MSE_communism_party: "REB"
-#  MSE_communism_party_long: "Rebels"
-# MSE_neutrality_party: "MR"
-#  MSE_neutrality_party_long: "Monarchist Rule"
-# MSE_democratic_party: "HAR"
-#  MSE_democratic_party_long: "Harmonists"
+##Political Advisors##
+##Military Advisors##
 ###Ideas###
 ###National Focuses###
 ##Storyline Tree##
-#MSE_: ""
-# MSE__desc: ""
-# MSE_: ""
-#  MSE__desc: ""

@@ -23,9 +23,7 @@ characters={
 		name=CRL_arctic_lily
 		gender=female
 		portraits={
-			civilian={
-				large="gfx/leaders/CRY/ArcticLily.tga"
-			}
+			civilian={large="gfx/leaders/CRY/ArcticLily.tga"}
 		}
 		country_leader={
 			desc="CRL_alily_poli_desc"
@@ -35,9 +33,7 @@ characters={
 	CRL_disputed={
 		name=CRL_disputed
 		portraits={
-			civilian={
-				large="gfx/leaders/leader_unknown.dds"
-			}
+			civilian={large="gfx/leaders/leader_unknown.dds"}
 		}
 		country_leader={
 			desc="CRL_disputed_poli_desc"
@@ -47,9 +43,7 @@ characters={
 	CRL_sombra={
 		name=CRL_sombra
 		portraits={
-			civilian={
-				large="GFX_SombraPortrait"
-			}
+			civilian={large="GFX_SombraPortrait"}
 			army={
 				large="GFX_SombraPortrait"
 				small="GFX_idea_sombra_leader"
@@ -286,9 +280,7 @@ characters={
 	CRL_dust_snowfall={
 		name=dust_snowfall
 		portraits={
-			civilian={
-				small="GFX_idea_dust_snowfall"
-			}
+			civilian={small="GFX_idea_dust_snowfall"}
 		}
 		advisor={
 			slot=political_advisor
@@ -299,9 +291,7 @@ characters={
 	CRL_lake_frost={
 		name=lake_frost
 		portraits={
-			army={
-				small="GFX_idea_lake_frost"
-			}
+			army={small="GFX_idea_lake_frost"}
 		}
 		advisor={
 			slot=theorist

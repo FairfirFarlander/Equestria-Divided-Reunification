@@ -3,9 +3,7 @@ characters={
 		name=HFT_orange
 		gender=female
 		portraits={
-			civilian={
-				large="gfx/leaders/HFT/HFT_orange.dds"
-			}
+			civilian={large="gfx/leaders/HFT/HFT_orange.dds"}
 		}
 		country_leader={
 			desc="HFT_orange_poli_desc"
@@ -45,9 +43,7 @@ characters={
 		name=HFT_trixie_lulamoon
 		gender=female
 		portraits={
-			civilian={
-				large="gfx/leaders/HMS/HMS_trixie_lulamoon.dds"
-			}
+			civilian={large="gfx/leaders/HMS/HMS_trixie_lulamoon.dds"}
 			army={
 				large="gfx/leaders/HMS/HMS_trixie_lulamoon.dds"
 				small="GFX_idea_unknown_advisor"

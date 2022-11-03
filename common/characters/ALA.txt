@@ -3,9 +3,7 @@ characters={
 		name=ALA_almond_tree
 		gender=female
 		portraits={
-			civilian={
-				large="gfx/leaders/Pony/portrait_pony_generic_4.dds"
-			}
+			civilian={large="gfx/leaders/Pony/portrait_pony_generic_4.dds"}
 		}
 		country_leader={
 			desc="ALA_atree_poli_desc"

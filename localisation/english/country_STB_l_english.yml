@@ -5,29 +5,16 @@ STB_GATHERING_STORM_DESC: ""
 ##Welcome Screen##
  EAW_WS_STB: ""
   EAW_WS_STB_desc: ""
-###Characters###
-##Leaders##
-STB_iris_kelly: "Iris Kelly"
- STB_ikelly_poli_desc: ""
- STB_mabel_corne: "Mabel Corne"
-  STB_mcorne_poli_desc: ""
- STB_smokey_dust: "Smokey Dust"
-  STB_sdust_poli_desc: ""
-##Commanders##
-##Advisors##
 ###Country Name###
+STB: "Stableside"
+ STB_DEF: "the County of Stableside"
+ STB_ADJ: "Sco'bi"
 STB_fascism: "Stableside Trading Company"
- STB_fascism_DEF: "The Trading Company of Stableside"
- STB_fascism_ADJ: "Sco'bi"
+ STB_fascism_DEF: "the Trading Company of Stableside"
  STB_communism: "Republic of Stableside"
-  STB_communism_DEF: "The Socialist Republic of Stableside"
-  STB_communism_ADJ: "Sco'bi"
- STB_neutrality: "Stableside Province"
-  STB_neutrality_DEF: "The Province of Stableside"
-  STB_neutrality_ADJ: "Sco'bi"
+  STB_communism_DEF: "the Socialist Republic of Stableside"
  STB_democratic: "Republic of Stableside"
-  STB_democratic_DEF: "The Republic of Stableside"
-  STB_democratic_ADJ: "Sco'bi"
+  STB_democratic_DEF: "the Republic of Stableside"
 ###Political Parties###
 STB_fascism_party: "STC"
  STB_fascism_party_long: "Shareholders Trading Council"
@@ -37,10 +24,17 @@ STB_fascism_party: "STC"
   STB_neutrality_party_long: "Council of Mayors"
  STB_democratic_party: "HCP"
   STB_democratic_party_long: "Harmonist Colonist Party"
+###Characters###
+##Leaders##
+STB_iris_kelly: "Iris Kelly"
+ STB_ikelly_poli_desc: ""
+ STB_mabel_corne: "Mabel Corne"
+  STB_mcorne_poli_desc: ""
+ STB_smokey_dust: "Smokey Dust"
+  STB_sdust_poli_desc: ""
+##Commanders##
+##Political Advisors##
+##Military Advisors##
 ###Ideas###
 ###National Focuses###
 ##Storyline Tree##
-#STB_: ""
-# STB__desc: ""
-# STB_: ""
-#  STB__desc: ""

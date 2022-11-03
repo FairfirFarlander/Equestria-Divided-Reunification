@@ -7,25 +7,16 @@ SWT_GATHERING_STORM_DESC: ""
   EAW_WS_SWT_desc: ""
 ###Characters###
 ##Leaders##
+SWT_generic_pony: "Generic Pony"
+ SWT_gpony_poli_desc: ""
 ##Commanders##
-##Advisors##
+##Political Advisors##
+##Military Advisors##
 ###Country Name###
-SWT: "The Northern Pegisus Territory"
- SWT_DEF: "The Northern Pegisus Territory"
- SWT_ADJ: "TNorthern Pegusi"
+SWT: "Northern Pegasus Territory"
+ SWT_DEF: "the Northern Pegasus Territory"
+ SWT_ADJ: "Peligasi"
 ###Poltitical Parties###
-SWT_fascism_party: "FAC"
- SWT_fascism_party_long: "FAC"
- SWT_communism_party: "COM"
-  SWT_communism_party_long: "COM"
- SWT_neutrality_party: "NEU"
-  SWT_neutrality_party_long: "NEU"
- SWT_democratic_party: "DEC"
-  SWT_democratic_party_long: "DEC"
 ###Ideas###
 ###National Focuses###
 ##Storyline Tree##
-#SWT_: ""
-# SWT__desc: ""
-# SWT_: ""
-#  SWT__desc: ""

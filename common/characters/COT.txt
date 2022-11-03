@@ -2,8 +2,7 @@ characters={
 	COT_jd_neighvis={
 		name=COT_jd_neighvis
 		portraits={
-			civilian={
-				large="gfx/leaders/SCS/JDavis.tga"			}		}
+			civilian={large="gfx/leaders/SCS/JDavis.tga"}		}
 		country_leader={
 			desc="COT_jdneighvis_poli_desc"
 			ideology=centrism	#neighvis_desc

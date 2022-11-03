@@ -5,6 +5,19 @@ VHT_GATHERING_STORM_DESC: ""
 ##Welcome Screen##
  EAW_WS_VHT: ""
   EAW_WS_VHT_desc: ""
+###Country Name###
+VHT: "Vanhoover"
+ VHT_DEF: "the County of Vanhoover"
+ VHT_ADJ: "Hoovarian"
+VHT_fascism: "House Vanhoover"
+ VHT_fascism_DEF: "the House of Vanhoover"
+ VHT_communism: "Vanhoover Commune"
+  VHT_communism_DEF: "the Commune of Vanhoover"
+ VHT_neutrality: "Vanhoover Republic"
+  VHT_neutrality_DEF: "the Republic of Vanhoover"
+ VHT_democratic: "Vanhoover Republic"
+  VHT_democratic_DEF: "the Democratic Republic of Vanhoover"
+###Political Parties###
 ###Characters###
 ##Leaders##
 VHT_strawberry_snowflake: "Strawberry Snowflake"
@@ -12,38 +25,13 @@ VHT_strawberry_snowflake: "Strawberry Snowflake"
 ##Commanders##
  VHT_indigo_skies: "Indigo Skies"
   VHT_iskies_mili_desc: ""
- VHT_crimson_hoof: "Crimson Hoof"
-  VHT_choof_mili_desc: ""
- VHT_moonlight_elegy: "Moonlight Elegy"
-  VHT_melegy_mili_desc: ""
- VHT_lavender_blossom: "Lavender Blossom"
-  VHT_lblossom_mili_desc: ""
-##Advisors##
-###Country Name###
-VHT_fascism: "House Vanhoover"
- VHT_fascism_DEF: "The House of Vanhoover"
- VHT_fascism_ADJ: "Vanhoovan"
- VHT_communism: "Vanhoover Commune"
-  VHT_communism_DEF: "The Commune of Vanhoover"
-  VHT_communism_ADJ: "Vanhoovan"
- VHT_neutrality: "Vanhoover Republic"
-  VHT_neutrality_DEF: "The Republic of Vanhoover" 
-  VHT_neutrality_ADJ: "Vanhoovan"
- VHT_democratic: "Vanhoover Republic"
-  VHT_democratic_DEF: "The Democratic Republic of Vanhoover"
-  VHT_democratic_ADJ: "Vanhoovan"
-###Political Parties###
-VHT_fascism_party: "FAC"
- VHT_fascism_party_long: "FAC"
- VHT_communism_party: "COM"
-  VHT_communism_party_long: "COM"
- VHT_neutrality_party: "NEU"
-  VHT_neutrality_party_long: "NEU"
- VHT_democratic_party: "DEC"
-  VHT_democratic_party_long: "DEC"
+  VHT_crimson_hoof: "Crimson Hoof"
+   VHT_choof_mili_desc: ""
+  VHT_moonlight_elegy: "Moonlight Elegy"
+   VHT_melegy_mili_desc: ""
+  VHT_lavender_blossom: "Lavender Blossom"
+   VHT_lblossom_mili_desc: ""
+##Political Advisors##
+##Military Advisors##
 ###National Focuses###
 ##Storyline Tree##
-#VHT_: ""
-# VHT__desc: ""
-# VHT_: ""
-#  VHT__desc: ""

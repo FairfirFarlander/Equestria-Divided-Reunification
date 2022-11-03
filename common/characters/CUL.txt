@@ -3,12 +3,8 @@ characters={
 		name=CUL_the_laughing_mare
 		gender=female
 		portraits={
-			civilian={
-				large="gfx/leaders/CUL/CUL_the_laughing_mare_poli.dds"
-			}
-			army={
-				large="gfx/leaders/CUL/CUL_the_laughing_mare_mili.dds"
-			}
+			civilian={large="gfx/leaders/CUL/CUL_the_laughing_mare_poli.dds"}
+			army={large="gfx/leaders/CUL/CUL_the_laughing_mare_mili.dds"}
 		}
 		country_leader={
 			desc="CUL_tlmare_poli_desc"
@@ -38,9 +34,7 @@ characters={
 	CUL_unknown_melody={
 		name=CUL_unknown_melody
 		portraits={
-			civilian={
-				large="gfx/leaders/leader_unknown.dds"
-			}
+			civilian={large="gfx/leaders/leader_unknown.dds"}
 		}
 		country_leader={
 			desc="CUL_umelody_poli_desc"
@@ -51,9 +45,7 @@ characters={
 	CUL_cranky_doodle={
 		name=CUL_cranky_doodle
 		portraits={
-			civilian={
-				small="GFX_idea_unknown_advisor"
-			}
+			civilian={small="GFX_idea_unknown_advisor"}
 		}
 		advisor={
 			slot=political_advisor
@@ -65,9 +57,7 @@ characters={
 		name=CUL_derpy_hooves
 		gender=female
 		portraits={
-			civilian={
-				small="GFX_idea_unknown_advisor"
-			}
+			civilian={small="GFX_idea_unknown_advisor"}
 			army={
 				large="gfx/leaders/CUL/CUL_derpy_hooves.dds"
 				small="GFX_idea_unknown_advisor"

@@ -5,28 +5,17 @@ FLY_GATHERING_STORM_DESC: ""
 ##Welcome Screen##
  EAW_WS_FLY: ""
   EAW_WS_FLY_desc: ""
+###Country Name###
+FLY: "Fillydelphia Province"
+ FLY_DEF: "the Province of Fillydelphia"
+ FLY_ADJ: "Filleian"
+###Political Parties###
 ###Characters###
 ##Leaders##
 FLY_cherry_jam: "Cherry Jam"
  FLY_cjam_poli_desc: ""
 ##Commanders##
-##Advisors##
-###Country Name###
-FLY: "Fillydelphia Province"
- FLY_DEF: "The Province of Fillydelphia"
- FLY_ADJ: "Filleian"
-###Political Parties###
-FLY_fascism_party: "FAC"
- FLY_fascism_party_long: "FAC"
- FLY_communism_party: "COM"
-  FLY_communism_party_long: "COM"
- FLY_neutrality_party: "NEU"
-  FLY_neutrality_party_long: "NEU"
- FLY_democratic_party: "DEC"
-  FLY_democratic_party_long: "DEC"
+##Political Advisors##
+##Military Advisors##
 ###National Focuses###
 ##Storyline Tree##
-#FLY_: ""
-# FLY__desc: ""
-# FLY_: ""
-#  FLY__desc: ""

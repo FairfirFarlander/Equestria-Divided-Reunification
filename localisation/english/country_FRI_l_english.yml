@@ -1,33 +1,22 @@
 ﻿l_english:
 ###Introduction###
 ##Bookmark##
-MSN_GATHERING_STORM_DESC: ""
+FRI_GATHERING_STORM_DESC: ""
 ##Welcome Screen##
  EAW_WS_FRI: ""
   EAW_WS_FRI_desc: ""
+###Country Name###
+FRI: "Friesland"
+ FRI_DEF: "the Slave State of Friesland"
+ FRI_ADJ: "Frieslandi"
+###Political Parties###
 ###Characters###
 ##Leaders##
 FRI_generic_pony: "Generic pony"
  FRI_generic_pony_desc: ""
 ##Commanders##
-##Advisors##
-###Country Name###
-FRI: "Friesland"
- FRI_DEF: "The Slave State of Friesland"
- FRI_ADJ: "Frieslandi"
-###Political Parties###
-#FRI_fascism_party: "CCU"
-# FRI_fascism_party_long: "Canterlot Council of Unicorns"
-# FRI_communism_party: "REB"
-#  FRI_communism_party_long: "Rebels"
-# FRI_neutrality_party: "MR"
-#  FRI_neutrality_party_long: "Monarchist Rule"
-# FRI_democratic_party: "HAR"
-#  FRI_democratic_party_long: "Harmonists"
+##Political Advisors##
+##Military Advisors##
 ###Ideas###
 ###National Focuses###
 ##Storyline Tree##
-#FRI_: ""
-# FRI__desc: ""
-# FRI_: ""
-#  FRI__desc: ""

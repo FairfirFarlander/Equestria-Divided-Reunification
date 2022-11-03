@@ -5,33 +5,26 @@ WTC_GATHERING_STORM_DESC: ""
 ##Welcome Screen##
  EAW_WS_WTC: ""
   EAW_WS_WTC_desc: ""
-###Characters###
-##Leaders##
-WTC_dashing_habidasher: "Dashing Habidasher"
- WTC_dhabidasher_poli_desc: "§YPortrait By§!: Tiviyl"
- WTC_alicia_habidasher: "Alicia Habidasher"
-  WTC_ahabidasher_poli_desc: "§YPortrait By§!: Tiviyl"
-  WTC_ahabidasher_advi_desc: "§YPortrait By§!: Tiviyl"
-#Advisors#
- WTC_eloi_path: "Eloi Path"
-  WTC_epath_advi_desc: "§YArtwork By§!: byLisboa\n§YAdvisorfication By§!: Tiviyl"
- WTC_zebrican_mercenary: "Zebrican Mercenary"
-  WTC_zmercenary_advi_desc: "§YArtwork By§!: byLisboa\n§YAdvisorfication By§!: Tiviyl"
- WTC_saddle_arabian_mercenary: "Saddle Arabian Mercenary"
-  WTC_samercenary_advi_desc: "§YArtwork By§!: byLisboa\n§YAdvisorfication By§!: Tiviyl"
 ###Country Name###
 WTC: "Manehattan Trading Company"
  WTC_DEF: "The Manehattan Trading Company"
  WTC_ADJ: "Maneglendi"
 ###Political Parties###
-WTC_fascism_party: "FAC"
- WTC_fascism_party_long: "FAC"
- WTC_communism_party: "COM"
-  WTC_communism_party_long: "COM"
- WTC_neutrality_party: "NEU"
-  WTC_neutrality_party_long: "NEU"
- WTC_democratic_party: "DEC"
-  WTC_democratic_party_long: "DEC"
+###Characters###
+##Leaders##
+WTC_dashing_habidasher: "Dashing Habidasher"
+ WTC_dhabidasher_poli_desc: "$CRDC_art_tiviyl$"
+ WTC_alicia_habidasher: "Alicia Habidasher"
+  WTC_ahabidasher_poli_desc: "$CRDC_art_tiviyl$"
+  WTC_ahabidasher_advi_desc: "$CRDC_art_tiviyl$"
+##Political Advisors##
+##Military Advisors##
+ WTC_eloi_path: "Eloi Path"
+  WTC_epath_advi_desc: "$CRDC_bylis_tiviy$"
+ WTC_zebrican_mercenary: "Zebrican Mercenary"
+  WTC_zmercenary_advi_desc: "$CRDC_bylis_tiviy$"
+ WTC_saddle_arabian_mercenary: "Saddle Arabian Mercenary"
+  WTC_samercenary_advi_desc: "$CRDC_bylis_tiviy$"
 ###Ideas###
 WTC_no_army: "No Standing Army"
  WTC_no_army_desc: "[WTC.GetNameDef] "

@@ -3,12 +3,8 @@ characters={
 		name=CHY_cherry_jubilee
 		gender=female
 		portraits={
-			civilian={
-				large="gfx/leaders/CHY/CHY_cherry_jubilee.dds"
-			}
-			army={
-				large="gfx/leaders/CHY/CHY_cherry_jubilee.dds"
-			}
+			civilian={large="gfx/leaders/CHY/CHY_cherry_jubilee.dds"}
+			army={large="gfx/leaders/CHY/CHY_cherry_jubilee.dds"}
 		}
 		country_leader={
 			desc="CHY_cjubilee_poli_desc"

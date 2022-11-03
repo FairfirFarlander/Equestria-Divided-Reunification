@@ -5,27 +5,12 @@ HFT_GATHERING_STORM_DESC: ""
 ##Welcome Screen##
  EAW_WS_HFT: ""
   EAW_WS_HFT_desc: ""
-###Characters###
-##Leaders##
-HFT_orange: "Madam Orange"
- HFT_orange_poli_desc: ""
- HFT_trixie_lulamoon: "Trixie Lulamoon"
-  HFT_tlulamoon_poli_desc: ""
-  HFT_tlulamoon_mili_desc: ""
-##Commanders##
- HFT_orange_grove: "Orange Grove"
-  HFT_ogrove_mili_desc: ""
-##Advisors##
 ###Country Name###
 HFT: "Hoofington"
- HFT_DEF: "Hoofington"
+ HFT_DEF: "the County of Hoofington"
  HFT_ADJ: "Hayfolk"
- HFT_fascism: "Hoofington Protectorate"
-  HFT_fascism_DEF: "The Protectorate of Hoofington"
-  HFT_fascism_ADJ: "Hayfolk"
  HFT_neutrality: "Hoofington Province"
-  HFT_neutrality_DEF: "The Province of Hoofington"
-  HFT_neutrality_ADJ: "Hayfolk"
+  HFT_neutrality_DEF: "the Province of Hoofington"
 ###Political Parties###
 HFT_fascism_party: "CEIS"
  HFT_fascism_party_long: "Celestial Inquisition"
@@ -35,10 +20,18 @@ HFT_fascism_party: "CEIS"
   HFT_neutrality_party_long: "Clan Orange"
  HFT_democratic_party: "OYGIDNI"
   HFT_democratic_party_long: "OrangeyagladIdidn'tnameit?"
+###Characters###
+##Leaders##
+HFT_orange: "Madam Orange"
+ HFT_orange_poli_desc: ""
+ HFT_trixie_lulamoon: "Trixie Lulamoon"
+  HFT_tlulamoon_poli_desc: ""
+  HFT_tlulamoon_mili_desc: "$HFT_tlulamoon_poli_desc$"
+##Commanders##
+ HFT_orange_grove: "Orange Grove"
+  HFT_ogrove_mili_desc: ""
+##Political Advisors##
+##Military Advisors##
 ###Ideas###
 ###National Focuses###
 ##Storyline Tree##
-#HFT_: ""
-# HFT__desc: ""
-# HFT_: ""
-#  HFT__desc: ""

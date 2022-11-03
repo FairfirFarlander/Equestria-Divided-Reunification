@@ -46,25 +46,19 @@ characters={
 	HAH_boiled_apples={	#See Focus Tree
 		name=HAH_boiled_apples
 		portraits={
-			civilian={
-				small="gfx/interface/ideas/idea_unknown_advisor.dds"
-			}
+			civilian={small="gfx/interface/ideas/idea_unknown_advisor.dds"}
 		}
 	}
 	HAH_word_spinner={	#See Focus Tree
 		name=HAH_word_spinner
 		portraits={
-			civilian={
-				small="gfx/interface/ideas/idea_unknown_advisor.dds"
-			}
+			civilian={small="gfx/interface/ideas/idea_unknown_advisor.dds"}
 		}
 	}
 	HAH_uncle_haystack={	#See Focus Tree
 		name=HAH_uncle_haystack
 		portraits={
-			civilian={
-				small="gfx/interface/ideas/idea_unknown_advisor.dds"
-			}
+			civilian={small="gfx/interface/ideas/idea_unknown_advisor.dds"}
 		}
 	}
 }
