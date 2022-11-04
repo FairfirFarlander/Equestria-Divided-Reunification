@@ -19,8 +19,8 @@ focus_tree={
 	shared_focus=EDR_A05
 }
 #Legacy Focus Tree
-	shared_focus={		#The Portward Campaign
-		id=EQD_HSW_03A #icon=
+	shared_focus={		#The Typhoon Plan - The Portward Campaign
+		id=EQD_HSW_03A icon=GFX_goal_water
 		cost=7 x=-2 y=1 relative_position_id=EQD_S02
 		search_filters={}
 		allow_branch={tag=HSW}
@@ -41,8 +41,8 @@ focus_tree={
 			}
 		}
 	}
-	shared_focus={		#The Skystar Campaign
-		id=EQD_HSW_03B #icon=
+	shared_focus={		#Opperation Torrent - The Skystar Campaign
+		id=EQD_HSW_03B icon=GFX_goal_air
 		cost=7 x=2 y=1 relative_position_id=EQD_S02
 		search_filters={}
 		allow_branch={tag=HSW}

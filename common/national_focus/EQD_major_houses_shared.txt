@@ -21,7 +21,7 @@ focus_tree={
 		modifier={add=3 tag=CUL} modifier={add=3 tag=HEB}
 		modifier={add=3 tag=HEF} modifier={add=3 tag=HMS}
 		modifier={add=3 tag=HSW} modifier={add=3 tag=HWG}
-		modifier={add=20 is_debug=yes}
+		modifier={add=1 is_debug=yes}
 	}
 	continuous_focus_position={x=10 y=-400}
 	shared_focus=EQD_S00

@@ -1,0 +1,55 @@
+focus_tree={
+	id=ALA country={factor=0 modifier={add=3 tag=ALA}}
+	continuous_focus_position={x=1 y=-400}
+#	shared_focus=EQD_S00
+	shared_focus=ALA_I00
+#	shared_focus=EDR_L05
+#	shared_focus=EDR_N05
+#	shared_focus=EDR_A05
+}
+focus_tree={
+	id=ALA_debug country={factor=0 modifier={add=4 tag=ALA is_debug=yes}}
+	continuous_focus_position={x=1 y=-400}
+#	shared_focus=EQD_S00
+	shared_focus=ALA_I00
+#	shared_focus=EDR_L05
+#	shared_focus=EDR_N05
+#	shared_focus=EDR_A05
+}
+#Industrial Focus Tree
+	shared_focus={		#
+		id=ALA_I00 #icon=
+		cost=7 x=0 y=0
+		search_filters={FOCUS_FILTER_INDUSTRY}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus ALA_I00"
+			add_tech_bonus={
+				name=ALA_I00_research_bonus
+				bonus=1.5 uses=1
+				category=industry
+			}
+		}
+	}
+	shared_focus={		#
+		id=ALA_I01A #icon=
+		cost=7 x=-1 y=1 relative_position_id=ALA_I00
+		search_filters={FOCUS_FILTER_INDUSTRY}
+		prerequisite={focus=ALA_I00}
+		mutually_exclusive={focus=ALA_I01B}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus ALA_I01A"
+		}
+	}
+	shared_focus={		#
+		id=ALA_I01B #icon=
+		cost=7 x=1 y=1 relative_position_id=ALA_I00
+		search_filters={FOCUS_FILTER_INDUSTRY}
+		prerequisite={focus=ALA_I00}
+		mutually_exclusive={focus=ALA_I01A}
+		ai_will_do={factor=40}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus ALA_I01B"
+		}
+	}
