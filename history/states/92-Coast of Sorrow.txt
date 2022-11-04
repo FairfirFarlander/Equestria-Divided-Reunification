@@ -3,7 +3,6 @@ state={	#EDRSTATE
 	name="STATE_92"
 	manpower=61590
 	state_category=pastoral
-	buildings_max_level_factor=1
 	provinces={619 3623 3627 6561 6604 6611 6647 9591 9608 11522 11574 11577}
 	history={
 		owner=HEB

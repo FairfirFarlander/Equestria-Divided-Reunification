@@ -48,7 +48,11 @@ generic_CL_template=yes
 generic_DD_template=yes
 starting_train_buffer=0
 set_convoys=13
-set_rule={can_generate_female_aces=yes}
+set_rule={
+	can_generate_female_aces=yes
+	can_generate_female_unit_leaders=yes
+	can_generate_female_country_leaders=yes
+}
 set_popularities={fascism=13 communism=11 neutrality=67 democratic=9}
 set_politics={ruling_party=neutrality}
 recruit_character=ALA_almond_tree

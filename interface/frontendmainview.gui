@@ -47,12 +47,12 @@ guiTypes={
 		animation_time=1000
 		size={width=256 height=768}
 		Orientation=lower_right
-		#ButtonType={
-		#	name="achievements_button"
-		#	position={x=-50 y=25}
-		#	quadTextureSprite="achievements"
-		#	pdx_tooltip="MENU_ACHIEVEMENTS"
-		#}
+		ButtonType={
+			name="achievements_button"
+			position={x=-50 y=25}
+			quadTextureSprite="achievements"
+			pdx_tooltip="MENU_ACHIEVEMENTS"
+		}
 		iconType={
 			name="frontend_dev_logo"
 			spriteType="GFX_frontend_dev_logo"
@@ -74,7 +74,7 @@ guiTypes={
 		iconType={
 			name="frontend_game_version"
 			spriteType="GFX_frontend_game_version"
-			position={x=-17 y=-101}
+			position={x=-17 y=-142}
 		}
 		containerWindowType={
 			name="mainmenu_panel_bottom_background"
@@ -170,7 +170,7 @@ guiTypes={
 		iconType={
 			name="frontend_game_version"
 			spriteType="GFX_frontend_game_version"
-			position={x=-17 y=-101}
+			position={x=-17 y=-142}
 		}
 		containerWindowType={
 			name="mainmenu_panel_bottom_background"
@@ -283,14 +283,14 @@ guiTypes={
 			pdx_tooltip="EAW_MENU_STEAMWORKSHOP"
 			web_link="https://steamcommunity.com/sharedfiles/filedetails/?id=1826643372"
 		}
-		#ButtonType={	#EAW @VK
-		#	name="twitter_button"
-		#	position={x=140 y=388}
-		#	quadTextureSprite="eaw_vk"
-		#	clicksound=click_default
-		#	pdx_tooltip="EAW_MENU_VK"
-		#	web_link="https://vk.com/equestria_at_war"
-		#}
+		ButtonType={	#EAW @VK
+			name="twitter_button"
+			position={x=140 y=388}
+			quadTextureSprite="eaw_vk"
+			clicksound=click_default
+			pdx_tooltip="EAW_MENU_VK"
+			web_link="https://vk.com/equestria_at_war"
+		}
 		ButtonType={	#Wiki
 			name="eaw_wiki_button"
 			position={x=180 y=388}

@@ -3,7 +3,6 @@ state={	#EDRSTATE
 	name="STATE_175"
 	manpower=95312
 	state_category=rural
-	buildings_max_level_factor=1
 	provinces={289 323 700 3668 4463 4477 4545 6293 6701 9241 9323 9351 10454 11241 12434 13180}
 	history={
 		owner=SWT

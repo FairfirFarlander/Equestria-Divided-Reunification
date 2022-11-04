@@ -7,13 +7,13 @@
 #Southeast (Jungle) VCs
  #Southern Colonies
   #VICTORY_POINTS_668: "Portland"#
-  VICTORY_POINTS_9497: "Narmina" #Moved to Focus
+  #VICTORY_POINTS_9497: "Narmina" #Remnant of EMB moved to focus
   #VICTORY_POINTS_9572: "Galloprey"#
   #VICTORY_POINTS_586: "Stableside"#
  #Forbidden Jungle
-  VICTORY_POINTS_10023: "Village of Ember"
+  #VICTORY_POINTS_10023: "Village of Ember" #Remnant of EMB
   VICTORY_POINTS_7166: "Yakima" #Yakima Firing Range (The Mackie [Battletech])
-  VICTORY_POINTS_336: "Riversend"
+  #VICTORY_POINTS_336: "Riversend" #Remnant of EMB
   #VICTORY_POINTS_11264: "Mareidian"#
   #VICTORY_POINTS_405: "Saltmane"#
   #VICTORY_POINTS_8622: "Tenochtitlan"#
@@ -26,15 +26,15 @@
   #VICTORY_POINTS_11499: "Saltlickingham"#
   #VICTORY_POINTS_963: "New Horseleans"#
   #VICTORY_POINTS_13011: "Baltimare"#
-  VICTORY_POINTS_11531: "Fort Golden"
+  #VICTORY_POINTS_11531: "Fort Golden"  #Removed
 
 #Unorganized Sort
  #Starswirl Valley
   VICTORY_POINTS_11052: "Oversticht"
-  VICTORY_POINTS_3898: "Leywarden"
+  #VICTORY_POINTS_3898: "Leywarden" #EAW named it
   VICTORY_POINTS_6598: "Happy Hollow"
  #Changed Unorganized
-  VICTORY_POINTS_13097: "Redheart's Refuge"
+  #VICTORY_POINTS_13097: "Redheart's Refuge"    #Removed due to Peachville
   VICTORY_POINTS_11672: "Old Cloudsdale"
   VICTORY_POINTS_9741: "Old Ponyville"
  #Lush Central Plain
@@ -44,4 +44,4 @@
  #Las Pegasus
  #VICTORY_POINTS_69: "Las Pegasus"#
  #Stalliongrad 
- VICTORY_POINTS_2448: "St.Petershoof"
+ #VICTORY_POINTS_2448: "St.Petershoof"  #Petershoof the nation no longer exists.

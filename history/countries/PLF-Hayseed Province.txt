@@ -47,7 +47,7 @@ if={limit={not={has_dlc="Man the Guns"}}
 }
 actually_fix_weapon_techs=yes
 set_convoys=3
-set_rule={can_generate_female_aces=yes}
+set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
 set_popularities={fascism=11 communism=49 neutrality=32 democratic=8}
 set_politics={ruling_party=communism}
 recruit_character=PLF_regional_defense_council

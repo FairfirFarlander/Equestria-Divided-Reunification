@@ -59,7 +59,7 @@ if={limit={has_dlc="La Resistance"}
 }
 starting_train_buffer=3
 set_convoys=2
-set_rule={can_generate_female_aces=yes}
+set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
 set_popularities={fascism=4 communism=7 neutrality=85 democratic=4}
 set_politics={ruling_party=neutrality}
 recruit_character=SOY_yaria

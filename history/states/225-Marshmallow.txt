@@ -3,7 +3,6 @@ state={	#EDRSTATE
 	name="STATE_225"
 	manpower=630492
 	state_category=large_town
-	buildings_max_level_factor=1
 	provinces={159 200 3150 3373 9284 9405 11055 11136 11267 11334 11382}
 	history={
 		owner=SGR

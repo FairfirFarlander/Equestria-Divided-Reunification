@@ -15,7 +15,7 @@ set_technology={
 }
 actually_fix_weapon_techs=yes
 set_convoys=8
-set_rule={can_generate_female_aces=yes}
+set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
 set_popularities={fascism=8 communism=30 neutrality=17 democratic=45}
 set_politics={ruling_party=democratic}
 #recruit_character=JUN_ahuizotl

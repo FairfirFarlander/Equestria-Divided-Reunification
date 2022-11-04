@@ -38,7 +38,6 @@ if={limit={has_dlc="Man the Guns"}
 		early_ship_hull_cruiser=1
 		basic_battery=1
 		basic_depth_charges=1
-		basic_secondary_battery=1
 		basic_torpedo=1
 		mtg_transport=1
 	}
@@ -54,7 +53,7 @@ actually_fix_weapon_techs=yes
 generic_CL_template=yes
 generic_DD_template=yes
 set_convoys=11
-set_rule={can_generate_female_aces=yes}
+set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
 create_faction=Earthborn
 add_to_faction=CHY
 add_to_faction=HFT

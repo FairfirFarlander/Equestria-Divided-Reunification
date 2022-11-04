@@ -3,7 +3,6 @@ state={	#EDRSTATE
 	name="STATE_240"
 	manpower=130550
 	state_category=rural
-	buildings_max_level_factor=1
 	provinces={6330 6355 6386 9384}
 	resources={aluminium=4 tungsten=3 steel=5}
 	history={

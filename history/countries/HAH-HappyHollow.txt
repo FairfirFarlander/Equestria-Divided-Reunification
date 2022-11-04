@@ -27,7 +27,7 @@ set_technology={
 }
 actually_fix_weapon_techs=yes
 set_convoys=2
-set_rule={can_generate_female_aces=yes}
+set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
 HMS={puppet=HAH}
 set_popularities={fascism=40 communism=19 neutrality=22 democratic=19}
 set_politics={ruling_party=fascism}

@@ -3,7 +3,6 @@ state={	#EDRSTATE
 	name="STATE_96"
 	manpower=146800
 	state_category=rural
-	buildings_max_level_factor=1
 	provinces={3045 3182 6050 6127 6209 9251 9329 9362 9406 11040 11147 11163 11231 11278 11311 11327 13095 13098}
 	history={	#McColts
 		owner=MWC

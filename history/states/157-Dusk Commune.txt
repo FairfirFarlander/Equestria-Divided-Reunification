@@ -3,7 +3,6 @@ state={	#EDRSTATE
 	name="STATE_157"
 	manpower=332800	#322800
 	state_category=town
-	buildings_max_level_factor=1
 	provinces={109 219 351 385 6009 6335 6384 7003 9285 9314 9397 11270 11299 11332}
 	resources={steel=9}
 	history={

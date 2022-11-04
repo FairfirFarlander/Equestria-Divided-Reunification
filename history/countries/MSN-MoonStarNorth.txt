@@ -25,7 +25,7 @@ set_technology={
 	tech_unicorn_ms=1
 }
 actually_fix_weapon_techs=yes
-set_rule={can_generate_female_aces=yes}
+set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
 HMS={puppet=MSN}
 set_cosmetic_tag=MSN_HMS_puppet
 set_popularities={fascism=40 communism=20 neutrality=22 democratic=18}

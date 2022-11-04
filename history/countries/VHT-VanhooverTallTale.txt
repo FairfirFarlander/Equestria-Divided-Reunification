@@ -38,7 +38,6 @@ if={limit={has_dlc="Man the Guns"}
 		early_ship_hull_cruiser=1
 		basic_battery=1
 		basic_depth_charges=1
-		basic_secondary_battery=1
 		basic_torpedo=1
 		mtg_transport=1
 	}
@@ -56,7 +55,7 @@ generic_CA_template=yes
 generic_CL_template=yes
 generic_DD_template=yes
 set_convoys=6
-set_rule={can_generate_female_aces=yes}
+set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
 set_popularities={fascism=18 communism=67 neutrality=6 democratic=9}
 set_politics={
 	ruling_party=communism	last_election="1005.09.09"

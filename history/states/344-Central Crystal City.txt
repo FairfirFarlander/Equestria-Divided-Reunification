@@ -3,7 +3,6 @@ state={	#EDRSTATE
 	name="STATE_344"
 	manpower=3300667
 	state_category=megalopolis
-	buildings_max_level_factor=1
 	provinces={489}
 	history={
 		owner=CRL

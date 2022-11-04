@@ -18,7 +18,7 @@ set_technology={
 }
 actually_fix_weapon_techs=yes
 set_convoys=2
-set_rule={can_generate_female_aces=yes}
+set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
 set_popularities={fascism=13 communism=42 neutrality=24 democratic=21}
 set_politics={ruling_party=communism}
 recruit_character=EMB_mother_nightshade

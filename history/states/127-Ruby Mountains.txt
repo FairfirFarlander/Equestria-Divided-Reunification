@@ -4,7 +4,6 @@ state={	#EDRSTATE
 	manpower=1	#13001
 	state_category=wasteland
 	impassable=yes
-	buildings_max_level_factor=1
 	provinces={979 10685 11874 12276 12456 13162}
 	resources={crystals=10}
 	history={

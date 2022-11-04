@@ -3,7 +3,6 @@ state={
 	name="STATE_241"
 	manpower=20790
 	state_category=enclave
-	buildings_max_level_factor=1
 	provinces={3082 6079}
 	history={
 		owner=GRF

@@ -4,7 +4,6 @@ state={	#EDRSTATE
 	manpower=33800
 	state_category=pastoral
 	impassable=yes
-	buildings_max_level_factor=1
 	provinces={77 114 3005 3007 3070 3128 3136 3262 3476 4109 4178 6093 6147 6160 7096 9500 11548 11965 13099}
 	resources={tungsten=24 steel=16 crystals=5}
 	history={

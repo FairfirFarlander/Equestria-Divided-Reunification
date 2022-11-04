@@ -45,14 +45,13 @@ if={limit={not={has_dlc="Man the Guns"}}
 		early_ship_hull_cruiser=1
 		basic_battery=1
 		basic_depth_charges=1
-		basic_secondary_battery=1
 		basic_torpedo=1
 		mtg_transport=1
 	}
 }
 actually_fix_weapon_techs=yes
 set_convoys=17
-set_rule={can_generate_female_aces=yes}
+set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
 set_popularities={fascism=7 communism=9 neutrality=65 democratic=19}
 set_politics={ruling_party=neutrality}
 recruit_character=MWC_rose_petal

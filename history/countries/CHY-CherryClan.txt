@@ -23,7 +23,7 @@ set_technology={
 	pre_gw_artillery=1
 }
 actually_fix_weapon_techs=yes
-set_rule={can_generate_female_aces=yes}
+set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
 HEB={puppet=CHY}
 set_popularities={fascism=48 communism=23 neutrality=15 democratic=14}
 set_politics={ruling_party=fascism}

@@ -3,7 +3,6 @@ state={	#EDRSTATE
 	name="STATE_333"
 	manpower=3900
 	state_category=tiny_island
-	buildings_max_level_factor=1
 	provinces={6070 9176}
 	history={
 		owner=SGR

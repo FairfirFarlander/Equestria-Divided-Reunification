@@ -25,7 +25,7 @@ set_technology={
 	tech_unicorn=1
 }
 actually_fix_weapon_techs=yes
-set_rule={can_generate_female_aces=yes}
+set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
 starting_train_buffer=1
 set_convoys=8
 set_popularities={fascism=8 communism=17 neutrality=30 democratic=45}

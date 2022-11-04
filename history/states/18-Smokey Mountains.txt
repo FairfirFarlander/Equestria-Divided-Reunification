@@ -4,7 +4,6 @@ state={	#EDRSTATE
 	manpower=34900
 	state_category=wasteland
 	impassable=yes
-	buildings_max_level_factor=1
 	provinces={1752 1870 3719 4759 4772 6722 7877 10709 12566 12685}
 	resources={steel=3}	#tungsten=10 chromium=3
 	history={	#McColts - Zebrica Killed yoooooou. :(

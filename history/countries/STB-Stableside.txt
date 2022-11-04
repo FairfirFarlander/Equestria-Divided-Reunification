@@ -37,7 +37,7 @@ actually_fix_weapon_techs=yes
 generic_CL_template=yes
 generic_DD_template=yes
 set_convoys=10
-set_rule={can_generate_female_aces=yes}
+set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
 set_popularities={fascism=18 communism=26 neutrality=30 democratic=26}
 set_politics={ruling_party=neutrality}
 recruit_character=STB_iris_kelly

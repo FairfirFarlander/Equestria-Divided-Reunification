@@ -35,7 +35,6 @@ if={limit={has_dlc="Man the Guns"}
 		early_ship_hull_cruiser=1
 		basic_battery=1
 		basic_depth_charges=1
-		basic_secondary_battery=1
 		basic_torpedo=1
 		mtg_transport=1
 	}
@@ -49,7 +48,7 @@ if={limit={not={has_dlc="Man the Guns"}}
 }
 actually_fix_weapon_techs=yes
 set_convoys=13
-set_rule={can_generate_female_aces=yes}
+set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
 set_popularities={fascism=78 communism=7 neutrality=9 democratic=6}
 set_politics={ruling_party=fascism}
 recruit_character=LAS_pine_chest

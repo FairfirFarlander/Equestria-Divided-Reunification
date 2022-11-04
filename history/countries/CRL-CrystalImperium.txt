@@ -24,7 +24,7 @@ set_technology={
 	tech_unicorn_ms=1
 }
 actually_fix_weapon_techs=yes
-set_rule={can_generate_female_aces=yes}
+set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
 set_popularities={fascism=52 communism=22 neutrality=21 democratic=5}
 set_politics={ruling_party=fascism}
 recruit_character=CRL_radiant_hope

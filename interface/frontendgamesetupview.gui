@@ -705,6 +705,7 @@ guiTypes={
 			maxWidth=340
 			maxHeight=48	
 			format=centre
+			vertical_alignment=center
 		}
 		containerWindowType={
 			name="spirit"
@@ -809,9 +810,9 @@ guiTypes={
 		}
 		instantTextBoxType={
 			name="EDR_southeastregion"
-			position={x=226 y=260}
+			position={x=225 y=260}
 			font="hoi_16mbs"
-			text="| Myths From The Jungle                                                      |"
+			text="| Myths From The Jungle                                                     |"
 			maxWidth=310
 			maxHeight=15
 			fixedsize=yes
@@ -853,10 +854,10 @@ guiTypes={
 		}
 		instantTextBoxType={
 			name="EDR_westerncorridor"
-			position={x=25 y=372}
+			position={x=18 y=372}
 			font="hoi_16mbs"
-			text="Wings of the Phoenix"
-			maxWidth=200
+			text="| Wings of the Phoenix      |"
+			maxWidth=152
 			maxHeight=15
 			fixedsize=yes
 			format=left
@@ -864,10 +865,10 @@ guiTypes={
 		}
 		instantTextBoxType={
 			name="EDR_westernregion"
-			position={x=180 y=372}
+			position={x=174 y=372}
 			font="hoi_16mbs"
-			text="Tides of the West"
-			maxWidth=200
+			text="| Tides of the West             |"
+			maxWidth=153
 			maxHeight=15
 			fixedsize=yes
 			format=left
@@ -875,10 +876,10 @@ guiTypes={
 		}
 		instantTextBoxType={
 			name="EDR_chaotic"
-			position={x=335 y=372}
+			position={x=329 y=372}
 			font="hoi_16mbs"
-			text="Chaos and Disorder"
-			maxWidth=200
+			text="| Chaos and Disorder                            |"
+			maxWidth=206
 			maxHeight=15
 			fixedsize=yes
 			format=left
@@ -895,7 +896,6 @@ guiTypes={
 			format=left
 			Orientation="UPPER_LEFT"
 		}
-		
 		instantTextBoxType={
 			name="Update2Name"
 			position={x=699 y=260}
@@ -907,7 +907,6 @@ guiTypes={
 			format=left
 			Orientation="UPPER_LEFT"
 		}
-		
 		instantTextBoxType={
 			name="Update3Name"
 			position={x=805 y=260}
@@ -919,7 +918,6 @@ guiTypes={
 			format=left
 			Orientation="UPPER_LEFT"
 		}
-		
 		instantTextBoxType={
 			name="Update4Name"
 			position={x=540 y=315}
@@ -931,7 +929,6 @@ guiTypes={
 			format=left
 			Orientation="UPPER_LEFT"
 		}
-		
 		instantTextBoxType={
 			name="Update5Name"
 			position={x=905 y=315}
@@ -943,7 +940,6 @@ guiTypes={
 			format=left
 			Orientation="UPPER_LEFT"
 		}
-		
 		instantTextBoxType={
 			name="Update6Name"
 			position={x=685 y=315}
@@ -955,7 +951,6 @@ guiTypes={
 			format=left
 			Orientation="UPPER_LEFT"
 		}
-		
 		instantTextBoxType={
 			name="Update7Name"
 			position={x=1115 y=315}
@@ -967,7 +962,6 @@ guiTypes={
 			format=left
 			Orientation="UPPER_LEFT"
 		}
-		
 		instantTextBoxType={
 			name="Update8Name"
 			position={x=540 y=372}
@@ -979,7 +973,6 @@ guiTypes={
 			format=left
 			Orientation="UPPER_LEFT"
 		}
-		
 		instantTextBoxType={
 			name="Update9Name"
 			position={x=905 y=372}
@@ -991,7 +984,6 @@ guiTypes={
 			format=left
 			Orientation="UPPER_LEFT"
 		}
-		
 		instantTextBoxType={
 			name="Update10Name"
 			position={x=1010 y=372}
@@ -1002,12 +994,6 @@ guiTypes={
 			fixedsize=yes
 			format=left
 			Orientation="UPPER_LEFT"
-		}
-		iconType={
-			name="RandomCountry"
-			spriteType="GFX_icon_unknown"
-			position={x=1153 y=364}
-			alwaystransparent=yes
 		}
 	}
 	containerWindowType={
@@ -1243,6 +1229,134 @@ guiTypes={
 			position={x=365 y=18}
 			quadTextureSprite="GFX_generic_checkbox"
 			clicksound=click_checkbox
+		}
+	}
+	containerWindowType={
+		name="gamesetup_pick_random_country_window"
+		position={x=-250 y=-200}
+		show_position={x=-150 y=-300}
+		hide_position={x=-150 y=10}
+		size={width=500 height=400}
+		Orientation=center
+		moveable=yes
+		fade_time=500
+		fade_type=linear
+		clipping=no
+		background={
+			name="Background"
+			quadTextureSprite="GFX_tiled_window2_1b_border"
+		}
+		containerWindowType={
+			name="window_title_bar"
+			position={x=0 y=15}
+			size={width=500 height=40}
+			instantTextboxType={
+				name="window_title"
+				position={x=-250 y=-19}
+				font="hoi_36header"
+				text="PICK_RANDOM_COUNTRY_TITLE"
+				maxWidth=500
+				maxHeight=36
+				format=center
+				Orientation="CENTER"
+			}
+		}
+		containerWindowType={
+			name="scrollable_container"
+			position={x=0 y=56}
+			size={width=100%% height=100%%}
+			margin={top=0 bottom=0 right=26 left=15}
+			verticalScrollbar="right_vertical_slider"
+			scroll_wheel_factor=40
+			smooth_scrolling=yes
+			background={
+				name="Background"
+				quadTextureSprite="GFX_tiled_window_transparent"
+			}
+			instantTextBoxType={
+				position={x=40 y=15}
+				name="include_interesting_majors_text"
+				font="hoi_18mbs"
+				maxWidth=370
+				maxHeight=16
+				text="FE_INTERESTING_MAJORS"
+				pdx_tooltip="FE_INTERESTING_MAJORS_TOOLTIP"
+				format=left
+				fixedsize=yes
+			}
+			checkboxType={
+				name="include_interesting_majors_cb"
+				position={x=300 y=10}
+				quadTextureSprite="GFX_generic_checkbox"
+				clicksound=click_checkbox
+			}
+			instantTextBoxType={
+				position={x=40 y=45}
+				name="include_interesting_minors_text"
+				font="hoi_18mbs"
+				maxWidth=370
+				maxHeight=16
+				text="FE_INTERESTING_MINORS"
+				pdx_tooltip="FE_INTERESTING_MINORS_TOOLTIP"
+				format=left
+				fixedsize=yes
+			}
+			checkboxType={
+				name="include_interesting_minors_cb"
+				position={x=300 y=40}
+				quadTextureSprite="GFX_generic_checkbox"
+				clicksound=click_checkbox
+			}
+			instantTextBoxType={
+				position={x=40 y=75}
+				name="include_other_countries_text"
+				font="hoi_18mbs"
+				maxWidth=370
+				maxHeight=16
+				text="FE_OTHER_COUNTRIES"
+				pdx_tooltip="FE_OTHER_COUNTRIES_TOOLTIP"
+				format=left
+				fixedsize=yes
+			}
+			checkboxType={
+				name="include_other_countries_cb"
+				position={x=300 y=70}
+				quadTextureSprite="GFX_generic_checkbox"
+				clicksound=click_checkbox
+			}
+		}
+		containerWindowType={
+			name="button_bar"
+			position={x=15 y=340}
+			size={width=460 height=40}
+			buttonType={
+				name="close_button"
+				position={x=10 y=-40}
+				quadTextureSprite="GFX_button_123x34"
+				orientation="LOWER_LEFT"
+				buttonText="RANDOMIZE_COUNTRY_BACK"
+				buttonFont="hoi_18mbs"
+				clicksound=click_default
+			}
+			instantTextBoxType={
+				position={x=0 y=7}
+				name="error_text"
+				font="hoi_16mbs"
+				maxWidth=460
+				maxHeight=32
+				text=""
+				format=center
+				fixedsize=yes
+			}
+			buttonType={
+				name="pick_random_button"
+				position={x=-135 y=-40}
+				quadTextureSprite="GFX_button_123x34"
+				orientation="LOWER_RIGHT"
+				buttonText="RANDOMIZE_COUNTRY_PICK"
+				buttonFont="hoi_18mbs"
+				clicksound=click_default
+			}
 		}
 	}
 	containerWindowType={
@@ -1885,6 +1999,17 @@ guiTypes={
 				position={x=40 y=58}
 				quadTextureSprite="GFX_button_261x34"
 				buttonText="FE_INTERESTING_COUNTRIES"
+				buttonFont="hoi_20b"
+				Orientation="UPPER_LEFT"
+				clicksound=click_default
+				oversound=ui_menu_over
+				shortcut="i"
+			}
+			ButtonType={
+				name="randomize_country_button"
+				position={x=40 y=75}
+				quadTextureSprite="GFX_button_261x34"
+				buttonText="FE_RANDOMIZE_COUNTRY"
 				buttonFont="hoi_20b"
 				Orientation="UPPER_LEFT"
 				clicksound=click_default

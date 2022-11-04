@@ -41,7 +41,6 @@ if={limit={has_dlc="Man the Guns"}
 		early_ship_hull_cruiser=1
 		basic_battery=1
 		basic_depth_charges=1
-		basic_secondary_battery=1
 		basic_torpedo=1
 		mtg_transport=1
 	}
@@ -59,7 +58,7 @@ if={
 	create_intelligence_agency=yes
 }
 set_convoys=8
-set_rule={can_generate_female_aces=yes}
+set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
 create_faction=WhiteGold
 add_to_faction=WTC
 set_popularities={fascism=66 communism=12 neutrality=13 democratic=9}

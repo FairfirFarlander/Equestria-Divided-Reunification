@@ -3,7 +3,6 @@ state={	#EDRSTATE
 	name="STATE_145"
 	manpower=30550
 	state_category=pastoral
-	buildings_max_level_factor=1
 	provinces={3325 3341 6066 6389 9038 9083 9435 11065 11126 11409}
 	resources={crystals=5}
 	history={
