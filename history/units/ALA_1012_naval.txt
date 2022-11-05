@@ -1,0 +1,65 @@
+units={
+	fleet={
+		name="The Royal Navy"
+		naval_base=3920
+		task_force={
+			name="Horseleans Squadron"
+			location=3920
+			ship={
+				name="AS Bellflower"
+				definition=light_cruiser
+				equipment={
+					ship_hull_cruiser_1={
+						amount=1
+						owner=ALA
+						version_name="Norpone 08' Class"
+					}
+				}
+			}
+			ship={
+				name="AS Lavender"
+				definition=destroyer
+				equipment={
+					ship_hull_light_1={
+						amount=1
+						owner=ALA
+						version_name="Prancing 07' Class"
+					}
+				}
+			}
+			ship={
+				name="AS Ageratum"
+				definition=destroyer
+				equipment={
+					ship_hull_light_1={
+						amount=1
+						owner=ALA
+						version_name="Prancing 07' Class"
+					}
+				}
+			}
+			ship={
+				name="AS Periwinkle"
+				definition=destroyer
+				equipment={
+					ship_hull_light_1={
+						amount=1
+						owner=ALA
+						version_name="Prancing 07' Class"
+					}
+				}
+			}
+			ship={
+				name="AS Columbine"
+				definition=destroyer
+				equipment={
+					ship_hull_light_1={
+						amount=1
+						owner=ALA
+						version_name="Prancing 07' Class"
+					}
+				}
+			}
+		}
+	}
+}
