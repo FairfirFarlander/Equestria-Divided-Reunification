@@ -1,13 +1,7 @@
 division_template={
-	name="Ponies of Fortune"	#divisions_name_group=#
-	priority=0	template_counter=18
-	regiments={
-		infantry={x=0 y=0}
-	}
-}
-division_template={
-	name="Whitegold Militia"	#divisions_name_group=#
-	template_counter=58
+	name="Ponies of Fortune"
+	priority=0
+	template_counter=18
 	regiments={
 		infantry={x=0 y=0}
 		infantry={x=0 y=1}
@@ -15,81 +9,129 @@ division_template={
 	}
 }
 division_template={
-	name="Arquebusiers"	#divisions_name_group=#
-	is_locked=yes	template_counter=16
+	name="Whitegold Militia"
+	template_counter=58
 	regiments={
-		infantry={x=0 y=0}
-		infantry={x=0 y=1}
+		infantry={x=0 y=0}	infantry={x=1 y=0}
+		infantry={x=0 y=1}	infantry={x=1 y=1}
+		infantry={x=0 y=2}
+	}
+}
+division_template={
+	name="Arquebusiers"
+	is_locked=yes
+	force_allow_recruiting=yes
+	division_cap=6
+	template_counter=16
+	regiments={
+		infantry={x=0 y=0}	infantry={x=1 y=0}
+		infantry={x=0 y=1}	infantry={x=1 y=1}
+	}
+	support={
+		artillery={x=0 y=0}
+	}
+}
+division_template={
+	name="Praetor Guard"
+	is_locked=yes
+	force_allow_recruiting=yes
+	division_cap=1
+	priority=2
+	template_counter=39
+	override_model=commonwealth_gfx_infantry_entity
+	regiments={
+		infantry={x=0 y=0}	pegasi={x=1 y=0}
+		infantry={x=0 y=1}	pegasi={x=1 y=1}
 	}
 	support={
 		unicorn_company={x=0 y=0}
 		artillery={x=0 y=1}
 	}
 }
-division_template={
-	name="Praetor Guard"	#divisions_name_group=#
-	is_locked=yes	priority=2	template_counter=39
-	regiments={
-		infantry={x=0 y=0}	pegasi={x=1 y=0}
-		infantry={x=0 y=1}
-	}
-	support={
-		unicorn_company={x=0 y=0}
-	}
-}
 units={
-	division={	#Canterbury#
+	division={	#Canterbury
 		name="Patrolponies of Canterbury"
-		location=6996	division_template="Ponies of Fortune"
-		start_experience_factor=0.1	start_equipment_factor=0.5
-		force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
+		location=6996
+		division_template="Ponies of Fortune"
+		start_experience_factor=0.1
+		start_equipment_factor=0.5
+		force_equipment_variants={
+			melee_equipment_0={owner="HWG" creator="HWG"}
+		}
 	}
-	division={	#Bridlepolis#
+	division={	#Bridlepolis
 		name="Guilders of Mareland"
-		location=6812	division_template="Ponies of Fortune"
-		start_experience_factor=0.26	start_equipment_factor=0.7
-		force_equipment_variants={melee_equipment_1={owner="HWG" creator="EQS"}}
+		location=6812
+		division_template="Ponies of Fortune"
+		start_experience_factor=0.26
+		start_equipment_factor=0.7
+		force_equipment_variants={
+			melee_equipment_1={owner="HWG" creator="EQS"}
+		}
 	}
-	division={	#Summerfield#
+	division={	#Summerfield
 		name="Tradesguard of Freeside"
-		location=874	division_template="Ponies of Fortune"
-		start_experience_factor=0.14	start_equipment_factor=0.55
-		force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
+		location=874
+		division_template="Ponies of Fortune"
+		start_experience_factor=0.14
+		start_equipment_factor=0.55
+		force_equipment_variants={
+			melee_equipment_0={owner="HWG" creator="HWG"}
+		}
 	}
-	division={	#Dappleshore#
+	division={	#Dappleshore
 		name="Freebooters of the Poninsula"
-		location=4080	division_template="Ponies of Fortune"
-		start_experience_factor=0.22	start_equipment_factor=0.65
-		force_equipment_variants={melee_equipment_0={owner="HWG" creator="EQS"}}
+		location=4080
+		division_template="Ponies of Fortune"
+		start_experience_factor=0.22
+		start_equipment_factor=0.65
+		force_equipment_variants={
+			melee_equipment_0={owner="HWG" creator="EQS"}
+		}
 	}
-	division={	#Hayston#
+	division={	#Hayston
 		name="Militia of the Overcity"
-		location=6734	division_template="Whitegold Militia"
-		start_experience_factor=0.18	start_equipment_factor=0.85
-		force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
+		location=6734
+		division_template="Whitegold Militia"
+		start_experience_factor=0.18
+		start_equipment_factor=0.85
+		force_equipment_variants={
+			melee_equipment_0={owner="HWG" creator="HWG"}
+		}
 	}
-	division={	#Bronclyn#
+	division={	#Bronclyn
 		name="Militia of the Undercity"
-		location=11710	division_template="Whitegold Militia"
-		start_experience_factor=0.26	start_equipment_factor=0.95
-		force_equipment_variants={melee_equipment_0={owner="HWG" creator="HWG"}}
+		location=11710
+		division_template="Whitegold Militia"
+		start_experience_factor=0.26
+		start_equipment_factor=0.95
+		force_equipment_variants={
+			melee_equipment_0={owner="HWG" creator="HWG"}
+		}
 	}
-	division={	#Manehattan#
+	division={	#Manehattan
 		name="Arqueteers of Manehattan"
-		location=758	division_template="Arquebusiers"
-		start_experience_factor=0.1	start_equipment_factor=1.0
-		force_equipment_variants={melee_equipment_1={owner="HWG" creator="HWG"}}
+		location=758
+		division_template="Arquebusiers"
+		start_experience_factor=0.1
+		start_equipment_factor=1.0
+		force_equipment_variants={
+			melee_equipment_1={owner="HWG" creator="HWG"}
+		}
 	}
-	division={	#Manehattan#
+	division={	#Manehattan
 		name="Ivory Tower Praetor Guard"
-		location=758	division_template="Praetor Guard"
-		start_experience_factor=1	start_equipment_factor=1.0
-		force_equipment_variants={melee_equipment_1={owner="HWG" creator="HWG"}}
+		location=758
+		division_template="Praetor Guard"
+		start_experience_factor=1
+		start_equipment_factor=1.0
+		force_equipment_variants={
+			melee_equipment_1={owner="HWG" creator="HWG"}
+		}
 	}
 }
-air_wings={		#House Whitegold Airforce (HWGAF)#
-	#Manehattan#
-	75={
+air_wings={		#House Whitegold Airforce (HWGAF)
+	75={	#Manehattan
 		fighter_equipment_0={owner="HWG" amount=48}
 		tac_bomber_equipment_0={owner="HWG"	amount=12}
 		strat_bomber_equipment_1={owner="HWG" amount=3}

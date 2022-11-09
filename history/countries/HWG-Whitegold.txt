@@ -2,8 +2,13 @@ capital=75
 oob="HWG_1012"
 if={
 	limit={has_dlc="Man the Guns"}
-	set_naval_oob="HWG_07_naval"
-	else={set_naval_oob="HWG_07_naval_legacy"}
+	set_naval_oob="HWG_1012_naval"
+	else={set_naval_oob="HWG_1012_naval_legacy"}
+}
+if={
+	limit={has_dlc="By Blood Alone"}
+	set_air_oob="HWG_1012_air"
+	else={set_air_oob="HWG_1012_air_legacy"}
 }
 set_research_slots=3
 set_stability=0.4 set_war_support=0.08
@@ -122,9 +127,10 @@ if={
 		}
 	}
 }
-if={limit={has_dlc="Man the Guns"}
+if={
+	limit={has_dlc="Man the Guns"}
 	create_equipment_variant={	#Heavy Cruiser AR1-EN1 MG2-SG3#
-		name="Belle 1003 Class"
+		name="Belle 03' Class"
 		type=ship_hull_cruiser_1
 		modules={
 			fixed_ship_battery_slot=ship_medium_battery_1
@@ -132,15 +138,15 @@ if={limit={has_dlc="Man the Guns"}
 			fixed_ship_fire_control_system_slot=empty
 			fixed_ship_radar_slot=empty
 			fixed_ship_engine_slot=cruiser_ship_engine_1
-			fixed_ship_armor_slot=ship_armor_cruiser_1
 			fixed_ship_secondaries_slot=ship_secondaries_1
+			fixed_ship_armor_slot=ship_armor_cruiser_1
 			mid_1_custom_slot=ship_secondaries_1
 			mid_2_custom_slot=ship_secondaries_1
 			rear_1_custom_slot=ship_medium_battery_1
 		}
 	}
 	create_equipment_variant={	#Light Cruiser AR1-EN1 LG3#
-		name="Auditor 1003 Class"
+		name="Auditor 03' Class"
 		type=ship_hull_cruiser_1
 		modules={
 			fixed_ship_battery_slot=ship_light_medium_battery_1
@@ -148,15 +154,15 @@ if={limit={has_dlc="Man the Guns"}
 			fixed_ship_fire_control_system_slot=empty
 			fixed_ship_radar_slot=empty
 			fixed_ship_engine_slot=cruiser_ship_engine_1
-			fixed_ship_armor_slot=ship_armor_cruiser_1
 			fixed_ship_secondaries_slot=empty
+			fixed_ship_armor_slot=ship_armor_cruiser_1
 			mid_1_custom_slot=ship_light_medium_battery_1
 			mid_2_custom_slot=ship_secondaries_1
 			rear_1_custom_slot=ship_light_medium_battery_1
 		}
 	}
 	create_equipment_variant={	#Torpedo Destroyer#
-		name="Investor 1005 Class"
+		name="Investor 05' Class"
 		type=ship_hull_light_1
 		modules={
 			fixed_ship_battery_slot=ship_light_battery_1
@@ -170,7 +176,7 @@ if={limit={has_dlc="Man the Guns"}
 		}
 	}
 	create_equipment_variant={	#Destroyer#
-		name="Surveyor 1003 Class"
+		name="Surveyor 03' Class"
 		type=ship_hull_light_1
 		modules={
 			fixed_ship_battery_slot=ship_light_battery_1
@@ -183,46 +189,46 @@ if={limit={has_dlc="Man the Guns"}
 			rear_1_custom_slot=empty
 		}
 	}
-}
-if={limit={not={has_dlc="Man the Guns"}}
-	create_equipment_variant={	#Heavy Cruiser#
-		name="Belle 1003 Class"
-		type=heavy_cruiser_1
-		upgrades={
-			ship_reliability_upgrade=0
-			ship_engine_upgrade=0
-			ship_armor_upgrade=0
-			ship_gun_upgrade=0
+	else={
+		create_equipment_variant={
+			name="Belle 03' Class"
+			type=heavy_cruiser_1
+			upgrades={
+				ship_reliability_upgrade=0
+				ship_engine_upgrade=0
+				ship_armor_upgrade=0
+				ship_gun_upgrade=0
+			}
 		}
-	}
-	create_equipment_variant={	#Light Cruiser#
-		name="Auditor 1003 Class"
-		type=light_cruiser_1
-		upgrades={
-			ship_reliability_upgrade=1
-			ship_engine_upgrade=0
-			ship_gun_upgrade=1
-			ship_anti_air_upgrade=0
+		create_equipment_variant={
+			name="Auditor 03' Class"
+			type=light_cruiser_1
+			upgrades={
+				ship_reliability_upgrade=1
+				ship_engine_upgrade=0
+				ship_gun_upgrade=1
+				ship_anti_air_upgrade=0
+			}
 		}
-	}
-	create_equipment_variant={	#Light-Medium Destroyer#
-		name="Investor 1005 Class"
-		type=destroyer_1
-		upgrades={
-			ship_torpedo_upgrade=1
-			destroyer_engine_upgrade=0
-			ship_ASW_upgrade=0
-			ship_anti_air_upgrade=0
+		create_equipment_variant={	#Light-Medium Destroyer#
+			name="Investor 05' Class"
+			type=destroyer_1
+			upgrades={
+				ship_torpedo_upgrade=1
+				destroyer_engine_upgrade=0
+				ship_ASW_upgrade=0
+				ship_anti_air_upgrade=0
+			}
 		}
-	}
-	create_equipment_variant={	#Destroyer#
-		name="Surveyor 1003 Class"
-		type=destroyer_1
-		upgrades={
-			ship_torpedo_upgrade=0
-			destroyer_engine_upgrade=0
-			ship_ASW_upgrade=0
-			ship_anti_air_upgrade=0
+		create_equipment_variant={	#Destroyer#
+			name="Surveyor 03' Class"
+			type=destroyer_1
+			upgrades={
+				ship_torpedo_upgrade=0
+				destroyer_engine_upgrade=0
+				ship_ASW_upgrade=0
+				ship_anti_air_upgrade=0
+			}
 		}
 	}
 }
@@ -230,8 +236,10 @@ create_equipment_variant={	#Aircraft#
 	name="Chelangel UM06-9"	#Neighchelangelo - Ultramarine 06' V9#
 	type=tac_bomber_equipment_1
 	upgrades={
-		plane_tac_bomb_upgrade=0	plane_range_upgrade=1
-		plane_engine_upgrade=0	plane_reliability_upgrade=0
+		plane_tac_bomb_upgrade=0
+		plane_range_upgrade=1
+		plane_engine_upgrade=0
+		plane_reliability_upgrade=0
 	}
 }
 #NOTES#
