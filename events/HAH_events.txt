@@ -323,7 +323,7 @@ add_namespace=HAH_evt_a02
 		option={
 			name=HAH_evt_a02.111.b
 			set_country_flag=HAH_willow_in_charge
-			country_event=HAH_evt_a03w.000
+			country_event=HAH_EWS3.0000
 		}
 		option={
 			name=HAH_evt_C-FF_W-TY.r
@@ -350,115 +350,139 @@ add_namespace=HAH_evt_a03m
 		immediate={log="[GetDateText]: [Root.GetName]: event HAH_evt_a03m.000"}
 	}
 add_namespace=HAH_evt_a03w
+add_namespace=HAH_EWS3
 	country_event={		#Willow Storms Off
-		id=HAH_evt_a03w.000
-		title=HAH_evt_a03w.000.t	desc=HAH_evt_a03w.000.d	#picture=
+		id=HAH_EWS3.0000
+		title=HAH_EWS3.0000.t
+		desc=HAH_EWS3.0000.d
 		is_triggered_only=yes
 		option={
-			name=HAH_evt_a03w.000.a
+			name=HAH_EWS3.0000.a
 			load_focus_tree={
 				tree=HAH_willow
 				keep_completed=yes
 			}
 		}
 		option={
-			name=HAH_evt_C-FF_W-TY.r
+			name=CRDT_tiviy_fairf
 			trigger={is_debug=yes}
 		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_evt_a03w.000"}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0000"}
 	}
 	country_event={		#Storming of the Factory
-		id=HAH_evt_a03w.001
-		title=HAH_evt_a03w.001.t	desc=HAH_evt_a03w.001.d	#picture=
+		id=HAH_EWS3.0001
+		title=HAH_EWS3.0001.t
+		desc=HAH_EWS3.0001.d
 		is_triggered_only=yes
 		option={
-			name=HAH_evt_a03w.001.a
+			name=HAH_EWS3.0001.a
+			country_event=HAH_EWS3.0002
+		}
+		option={
+			name=CRDT_tiviy_fairf
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0001"}
+	}
+	country_event={		#Storming of the Factory
+		id=HAH_EWS3.0002
+		title=HAH_EWS3.0002.t
+		desc=HAH_EWS3.0002.d
+		is_triggered_only=yes
+		option={
+			name=HAH_EWS3.0002.a
 			add_stability=-0.2
 		}
 		option={
-			name=HAH_evt_C-FF_W-TY.r
+			name=CRDT_tiviy_fairf
 			trigger={is_debug=yes}
 		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_evt_a03w.001"}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0002"}
 	}
 	country_event={		#Swift and Quick Moves
-		id=HAH_evt_a03w.011
-		title=HAH_evt_a03w.011.t	desc=HAH_evt_a03w.011.d	#picture=
+		id=HAH_EWS3.0011
+		title=HAH_EWS3.0011.t
+		desc=HAH_EWS3.0011.d
 		is_triggered_only=yes
 		option={
-			name=HAH_evt_a03w.011.a
+			name=HAH_EWS3.0011.a
 		}
 		option={
-			name=HAH_evt_C-FF_W-TY.r
+			name=CRDT_tiviy_fairf
 			trigger={is_debug=yes}
 		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_evt_a03w.011"}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0011"}
 	}
 	country_event={		#The Inquisition Sanctions Us
-		id=HAH_evt_a03w.012
-		title=HAH_evt_a03w.012.t	desc=HAH_evt_a03w.012.d	#picture=
+		id=HAH_EWS3.0012
+		title=HAH_EWS3.0012.t
+		desc=HAH_EWS3.0012.d
 		is_triggered_only=yes
 		option={
-			name=HAH_evt_a03w.012.a
+			name=HAH_EWS3.0012.a
 			add_ideas=HAH_inquisition_sanctions
 		}
 		option={
-			name=HAH_evt_C-FF_W-TY.r
+			name=CRDT_tiviy_fairf
 			trigger={is_debug=yes}
 		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_evt_a03w.012"}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0012"}
 	}
 	country_event={		#Morning Dew's Personal Meeting with Willow
-		id=HAH_evt_a03w.013
-		title=HAH_evt_a03w.013.t	desc=HAH_evt_a03w.013.d	#picture=
+		id=HAH_EWS3.0013
+		title=HAH_EWS3.0013.t
+		desc=HAH_EWS3.0013.d
 		is_triggered_only=yes
 		option={
-			name=HAH_evt_a03w.013.a
+			name=HAH_EWS3.0013.a
 		}
 		option={
-			name=HAH_evt_C-FF_W-TY.r
+			name=CRDT_tiviy_fairf
 			trigger={is_debug=yes}
 		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_evt_a03w.013"}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0013"}
 	}
 	country_event={		#The Blockades Are Lifted, but Policing Increases
-		id=HAH_evt_a03w.031
-		title=HAH_evt_a03w.031.t	desc=HAH_evt_a03w.031.d	#picture=
+		id=HAH_EWS3.0031
+		title=HAH_EWS3.0031.t
+		desc=HAH_EWS3.0031.d
 		is_triggered_only=yes
 		option={
-			name=HAH_evt_a03w.031.a
+			name=HAH_EWS3.0031.a
 			set_country_flag=HAH_can_raid_neighbors
 		}
 		option={
-			name=HAH_evt_C-FF_W-TY.r
+			name=CRDT_tiviy_fairf
 			trigger={is_debug=yes}
 			clr_country_flag=HAH_can_raid_neighbors
 		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_evt_a03w.031"}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0031"}
 	}
 	country_event={		#The Policing Finally Lessens
-		id=HAH_evt_a03w.041
-		title=HAH_evt_a03w.041.t	desc=HAH_evt_a03w.041.d	#picture=
+		id=HAH_EWS3.0041
+		title=HAH_EWS3.0041.t
+		desc=HAH_EWS3.0041.d
 		is_triggered_only=yes
 		option={
-			name=HAH_evt_a03w.041.a
+			name=HAH_EWS3.0041.a
 		}
 		option={
-			name=HAH_evt_C-FF_W-TY.r
+			name=CRDT_tiviy_fairf
 			trigger={is_debug=yes}
 		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_evt_a03w.041"}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0041"}
 	}
 	country_event={		#Going to Canterlot not as a Servant, but a Leader
-		id=HAH_evt_a03w.051
-		title=HAH_evt_a03w.051.t	desc=HAH_evt_a03w.051.d	#picture=
+		id=HAH_EWS3.0051
+		title=HAH_EWS3.0051.t
+		desc=HAH_EWS3.0051.d
 		is_triggered_only=yes
 		option={
-			name=HAH_evt_a03w.051.a
+			name=HAH_EWS3.0051.a
 		}
 		option={
-			name=HAH_evt_C-FF_W-TY.r
+			name=CRDT_tiviy_fairf
 			trigger={is_debug=yes}
 		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_evt_a03w.051"}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0051"}
 	}

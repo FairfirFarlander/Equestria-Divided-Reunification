@@ -12,10 +12,11 @@ CRDC_art_bylisboa: "§YArtwork By§!: byLisboa"
 ##Decisions##
 CRDT_wri_tiviyl: "§LWritten§! by §CTiviyl§!"
  CRDT_cod_fairfir: "§LCoded§! by §CFairfir§!"
+##Events##
 ##Combos##
 CRDC_bylis_soren: "$CRED_art_libsboa$\n$CRED_res_sorencer$"
  CRDC_ruhje_soren: "$CRED_art_ruhje$\n$CRED_res_sorencer$"
  CRDC_lionh_soren: "$CRED_art_lionhearcartoon$\n$CRED_res_sorencer$"
  CRDC_poory_fujin_soren: "$CRDC_art_pooryarrickda$\n$CRDC_pre_fujin777$\n$CRDC_res_sorencer$"
  CRDC_bylis_tiviy: "$CRED_art_libsboa$\n$CRED_ref_tiviyl$"
- CRDT_tiviy_fairf: "$CRDT_wri_tiviyl$,$CRDT_cod_fairfir$"
+ CRDT_tiviy_fairf: "$CRDT_wri_tiviyl$, $CRDT_cod_fairfir$"

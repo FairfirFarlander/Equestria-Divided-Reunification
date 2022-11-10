@@ -30,9 +30,8 @@ focus_tree={	#DEBUG
 	continuous_focus_position={x=1200 y=-350}
 	#shared_focus=EQD_S00
 	#shared_focus=HSW_calm_before_the_storm
-	#shared_focus=HAH_S00
-	shared_focus=HAH_XWS00
-	shared_focus=HAH_WS00
+	shared_focus=HAH_S00
+	shared_focus=HAH_WS300
 	shared_focus=HAH_I00
 	shared_focus=HAH_M00
 	#shared_focus=EDR_I00
