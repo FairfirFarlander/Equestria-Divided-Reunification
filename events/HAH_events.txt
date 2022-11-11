@@ -406,6 +406,7 @@ add_namespace=HAH_EWS3
 		is_triggered_only=yes
 		option={
 			name=HAH_EWS3.0011.a
+			country_event=HAH_EWS3.0012
 		}
 		option={
 			name=CRDT_tiviy_fairf
@@ -413,14 +414,13 @@ add_namespace=HAH_EWS3
 		}
 		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0011"}
 	}
-	country_event={		#The Inquisition Sanctions Us
+	country_event={		#Swift and Quick Moves
 		id=HAH_EWS3.0012
 		title=HAH_EWS3.0012.t
 		desc=HAH_EWS3.0012.d
 		is_triggered_only=yes
 		option={
 			name=HAH_EWS3.0012.a
-			add_ideas=HAH_inquisition_sanctions
 		}
 		option={
 			name=CRDT_tiviy_fairf
@@ -428,19 +428,76 @@ add_namespace=HAH_EWS3
 		}
 		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0012"}
 	}
-	country_event={		#Morning Dew's Personal Meeting with Willow
+	country_event={		#The Inquisition Sanctions Us
 		id=HAH_EWS3.0013
 		title=HAH_EWS3.0013.t
 		desc=HAH_EWS3.0013.d
 		is_triggered_only=yes
 		option={
 			name=HAH_EWS3.0013.a
+			add_ideas=HAH_inquisition_sanctions
+			HMS={
+				add_opinion_modifier={
+					target=HAH
+					modifier=HAH_inquisitorial_sanction_opinion
+				}
+				end_puppet=HAH
+				HAH={leave_faction=yes}
+				give_guaruntee=HAH
+			}
+			MSN={
+				if={
+					limit={
+						MSN={is_in_faction_with=HMS}
+					}
+					add_opinion_modifier={
+						target=HAH
+						modifier=HAH_inquisitorial_sanction_opinion
+					}
+				}
+			}
+			MSE={
+				if={
+					limit={
+						MSE={is_in_faction_with=HMS}
+					}
+					add_opinion_modifier={
+						target=HAH
+						modifier=HAH_inquisitorial_sanction_opinion
+					}
+				}
+			}
+			FRI={
+				if={
+					limit={
+						FRI={is_in_faction_with=HMS}
+					}
+					add_opinion_modifier={
+						target=HAH
+						modifier=HAH_inquisitorial_sanction_opinion
+					}
+				}
+			}
 		}
 		option={
 			name=CRDT_tiviy_fairf
 			trigger={is_debug=yes}
 		}
 		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0013"}
+	}
+	country_event={		#Morning Dew's Personal Meeting with Willow
+		id=HAH_EWS3.0014
+		title=HAH_EWS3.0014.t
+		desc=HAH_EWS3.0014.d
+		is_triggered_only=yes
+		option={
+			name=HAH_EWS3.0014.a
+		}
+		option={
+			name=CRDT_tiviy_fairf
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0014"}
 	}
 	country_event={		#The Blockades Are Lifted, but Policing Increases
 		id=HAH_EWS3.0031

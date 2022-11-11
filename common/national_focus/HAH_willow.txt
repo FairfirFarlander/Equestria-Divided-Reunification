@@ -15,12 +15,12 @@
 	}
 	shared_focus={	#Under New Management
 		id=HAH_WS301 icon=GFX_zebra_question
-		x=0 y=1 cost=0.2 relative_position_id=HAH_WS300
+		x=0 y=1 cost=7 relative_position_id=HAH_WS300
 		search_filters={}
 		prerequisite={focus=HAH_WS300}
 		select_effect={
 			country_event=HAH_EQS3.0011	#Swift and Quick Moves
-			country_event=HAH_EQS3.0012	#The Inquisition Sanctions Us
+			country_event={id=HAH_EQS3.0013 days=30}	#The Inquisition Sanctions Us
 		}
 		ai_will_do={factor=4000}
 		completion_reward={
