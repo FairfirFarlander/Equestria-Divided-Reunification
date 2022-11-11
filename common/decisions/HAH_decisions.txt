@@ -100,6 +100,10 @@ HAH_border_wars={
 		icon=border_war
 		fire_only_once=yes
 		available={
+			OR={
+				has_completed_focus=HAH_WS303
+				is_debug=yes
+			}
 			has_war=no
 			has_full_control_of_state=40
 			divisions_in_state={
@@ -109,17 +113,17 @@ HAH_border_wars={
 		}
 		visible={
 			OR={
-				has_completed_focus=HAH_S00
+				has_completed_focus=HAH_WS303
 				is_debug=yes
 			}
 			NOT={owns_state=186}
 			owns_state=40
-			#40={
-			#	owner={can_have_border_war_with_ROOT=yes}
-			#}
 		}
 		highlight_states={
-			highlight_states_trigger={state=40}
+			highlight_state_targets={
+				state=40
+				state=186
+			}
 		}
 		complete_effect={
 			start_border_war={

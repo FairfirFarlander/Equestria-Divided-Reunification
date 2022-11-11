@@ -26,14 +26,14 @@
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS301"
 			hidden_effect={
-				country_event=HAH_EQS3.0013	#Morning Dew's Personal Meeting with Willow
+				country_event=HAH_EQS3.0014	#Morning Dew's Personal Meeting with Willow
 			}
 			custom_effect_tooltip=HAH_WS301_tooltip
 		}
 	}
 	shared_focus={	#Increasing Data Collection and Testing
 		id=HAH_WS302A icon=GFX_TBK_ales_paper
-		x=-1 y=1 cost=0.2 relative_position_id=HAH_WS301
+		x=-1 y=1 cost=0.2 relative_position_id=HAH_WS301	#4
 		search_filters={}
 		prerequisite={focus=HAH_WS301}
 		ai_will_do={factor=4000}
@@ -48,7 +48,7 @@
 	}
 	shared_focus={	#Increasing Production of the Factory
 		id=HAH_WS302B icon=GFX_goal_TRO_Optimise_Wartime_Production
-		x=1 y=1 cost=0.2 relative_position_id=HAH_WS301
+		x=1 y=1 cost=0.2 relative_position_id=HAH_WS301	#4
 		search_filters={}
 		prerequisite={focus=HAH_WS301}
 		ai_will_do={factor=4000}
