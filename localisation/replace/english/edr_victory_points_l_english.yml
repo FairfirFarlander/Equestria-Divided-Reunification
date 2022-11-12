@@ -32,7 +32,8 @@
  #Starswirl Valley
   VICTORY_POINTS_11052: "Oversticht"
   #VICTORY_POINTS_3898: "Leywarden" #EAW named it
-  VICTORY_POINTS_6598: "Happy Hollow"
+  #VICTORY_POINTS_6598: "Happy Hollow"
+  #VICTORY_POINTS_575: "Foal's Gold Mine"
  #Changed Unorganized
   #VICTORY_POINTS_13097: "Redheart's Refuge"    #Removed due to Peachville
   VICTORY_POINTS_11672: "Old Cloudsdale"

@@ -1,7 +1,7 @@
 #Story Tree Willow
 	shared_focus={	#Willow Takes His Stand
 		id=HAH_WS300 icon=GFX_COS_Ferrer_Coup
-		x=0 y=0 cost=0.2 #8
+		x=0 y=0 cost=0.2 #1
 		offset={
 			x=8
 			trigger={is_debug=yes}
@@ -15,7 +15,7 @@
 	}
 	shared_focus={	#Under New Management
 		id=HAH_WS301 icon=GFX_zebra_question
-		x=0 y=1 cost=7 relative_position_id=HAH_WS300
+		x=0 y=1 cost=7 relative_position_id=HAH_WS300	#8
 		search_filters={}
 		prerequisite={focus=HAH_WS300}
 		select_effect={
@@ -64,41 +64,71 @@
 		}
 	}
 	shared_focus={	#Compensating for the Decrees
-		id=HAH_WS303A #icon=
-		x=-2 y=2 cost=0.2 relative_position_id=HAH_WS301
+		id=HAH_WS303A icon=GFX_goal_generic_hospitals
+		x=-2 y=2 cost=4 relative_position_id=HAH_WS301
 		search_filters={}
 		prerequisite={focus=HAH_WS302A}
 		prerequisite={focus=HAH_WS302B}
 		ai_will_do={factor=4000}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS303A"
+			add_tech_bonus={
+				name=hospital_tech_bonus
+				bonus=1
+				uses=2
+				category=hospital_tech
+			}
 		}
 	}
 	shared_focus={	#Purchasing a Train
-		id=HAH_WS303B #icon=
-		x=0 y=2 cost=0.2 relative_position_id=HAH_WS301
+		id=HAH_WS303B icon=GFX_goal_rct_train
+		x=0 y=2 cost=4 relative_position_id=HAH_WS301
 		search_filters={}
 		prerequisite={focus=HAH_WS302A}
 		prerequisite={focus=HAH_WS302B}
 		ai_will_do={factor=4000}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS303B"
+			HAH={
+				set_technology={basic_train=1}
+			}
+			add_equipment_to_stockpile={
+				type=train_equipment_1
+				amount=1
+				producer=EQS
+			}
 		}
 	}
 	shared_focus={	#More Than Just Foal's Gold
-		id=HAH_WS303C #icon=
-		x=2 y=2 cost=0.2 relative_position_id=HAH_WS301
+		id=HAH_WS303C icon=GFX_goal_generic_crystals
+		x=2 y=2 cost=4 relative_position_id=HAH_WS301
 		search_filters={}
 		prerequisite={focus=HAH_WS302A}
 		prerequisite={focus=HAH_WS302B}
 		ai_will_do={factor=4000}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS303C"
+			add_resource={
+				type=crystals
+				amount=4
+				state=40
+			}
+			add_victory_points={
+				province=575
+				value=1
+			}
+			hidden_effect={
+				set_province_name={
+					id=575
+					name=HAH_foals_gold_mine
+				}
+			}
+			custom_effect_tooltip=HAH_WS303C_tooltip
 		}
 	}
 	shared_focus={	#Called to Canterlot
-		id=HAH_WS304 #icon=
-		x=0 y=3 cost=0.2 relative_position_id=HAH_WS301
+		id=HAH_WS304 icon=GFX_goal_eqs_canterlot
+		x=0 y=3 cost=4 relative_position_id=HAH_WS301
 		search_filters={}
 		prerequisite={focus=HAH_WS303A}
 		prerequisite={focus=HAH_WS303B}
@@ -112,23 +142,30 @@
 		}
 	}
 	shared_focus={	#Connections
-		id=HAH_WS305A #icon=
+		id=HAH_WS305A icon=GFX_goal_magical_weapon_focus
 		x=-1 y=1 cost=0.2 relative_position_id=HAH_WS304
 		search_filters={}
 		prerequisite={focus=HAH_WS304}
 		ai_will_do={factor=4000}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS305A"
+			HAH={
+				set_technology={magical_weapons=1}
+			}
 		}
 	}
 	shared_focus={	#Tranquil State
-		id=HAH_WS305B #icon=
+		id=HAH_WS305B icon=GFX_goal_UESR_TNO_happy_pone
 		x=1 y=1 cost=0.2 relative_position_id=HAH_WS304
 		search_filters={}
 		prerequisite={focus=HAH_WS304}
 		ai_will_do={factor=4000}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS305B"
+			swap_ideas={
+				remove_idea=HAH_slave_state
+				add_idea=HAH_tranquil_state
+			}
 		}
 	}
 	shared_focus={	#Letters from Canterlot

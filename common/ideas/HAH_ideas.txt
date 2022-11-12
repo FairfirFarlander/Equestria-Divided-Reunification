@@ -6,8 +6,13 @@ ideas={
 				military_leader_cost_factor=40
 			}
 		}
+		HAH_slave_state={
+			picture=pony_enslaved
+			modifier={
+			}
+		}
 		HAH_inquisition_impatience={
-			#picture=
+			picture=outdated_industry
 			modifier={
 				stability_weekly=-0.003
 			}
@@ -70,6 +75,11 @@ ideas={
 					encryption=-1
 					weekly_manpower=-6
 				}
+			}
+		}
+		HAH_tranquil_state={
+			#picture=
+			modifier={
 			}
 		}
 	}
