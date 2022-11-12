@@ -400,41 +400,41 @@ add_namespace=HAH_EWS3
 		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0002"}
 	}
 	country_event={		#Swift and Quick Moves
-		id=HAH_EWS3.0011
-		title=HAH_EWS3.0011.t
-		desc=HAH_EWS3.0011.d
+		id=HAH_EWS3.0101
+		title=HAH_EWS3.0101.t
+		desc=HAH_EWS3.0101.d
 		is_triggered_only=yes
 		option={
-			name=HAH_EWS3.0011.a
-			country_event=HAH_EWS3.0012
+			name=HAH_EWS3.0101.a
+			country_event=HAH_EWS3.0102
 		}
 		option={
 			name=CRDT_tiviy_fairf
 			trigger={is_debug=yes}
 		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0011"}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0101"}
 	}
 	country_event={		#Swift and Quick Moves
-		id=HAH_EWS3.0012
-		title=HAH_EWS3.0012.t
-		desc=HAH_EWS3.0012.d
+		id=HAH_EWS3.0102
+		title=HAH_EWS3.0102.t
+		desc=HAH_EWS3.0102.d
 		is_triggered_only=yes
 		option={
-			name=HAH_EWS3.0012.a
+			name=HAH_EWS3.0102.a
 		}
 		option={
 			name=CRDT_tiviy_fairf
 			trigger={is_debug=yes}
 		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0012"}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0102"}
 	}
 	country_event={		#The Inquisition Sanctions Us
-		id=HAH_EWS3.0013
-		title=HAH_EWS3.0013.t
-		desc=HAH_EWS3.0013.d
+		id=HAH_EWS3.0103
+		title=HAH_EWS3.0103.t
+		desc=HAH_EWS3.0103.d
 		is_triggered_only=yes
 		option={
-			name=HAH_EWS3.0013.a
+			name=HAH_EWS3.0103.a
 			add_ideas=HAH_inquisition_sanctions
 			HMS={
 				add_opinion_modifier={
@@ -442,104 +442,429 @@ add_namespace=HAH_EWS3
 					modifier=HAH_inquisitorial_sanction_opinion
 				}
 				end_puppet=HAH
-				HAH={leave_faction=yes}
-				give_guaruntee=HAH
 			}
+			HAH={leave_faction=yes}
 			MSN={
-				if={
-					limit={
-						MSN={is_in_faction_with=HMS}
-					}
-					add_opinion_modifier={
-						target=HAH
-						modifier=HAH_inquisitorial_sanction_opinion
-					}
+				add_opinion_modifier={
+					target=HAH
+					modifier=HAH_inquisitorial_sanction_opinion
 				}
 			}
 			MSE={
-				if={
-					limit={
-						MSE={is_in_faction_with=HMS}
-					}
-					add_opinion_modifier={
-						target=HAH
-						modifier=HAH_inquisitorial_sanction_opinion
-					}
+				add_opinion_modifier={
+					target=HAH
+					modifier=HAH_inquisitorial_sanction_opinion
 				}
 			}
 			FRI={
-				if={
-					limit={
-						FRI={is_in_faction_with=HMS}
-					}
-					add_opinion_modifier={
-						target=HAH
-						modifier=HAH_inquisitorial_sanction_opinion
-					}
+				add_opinion_modifier={
+					target=HAH
+					modifier=HAH_inquisitorial_sanction_opinion
 				}
 			}
+			country_event={id=HAH_EWS3.0201 days=35}	#Canterlot Demands More Drastic Tests
 		}
 		option={
 			name=CRDT_tiviy_fairf
 			trigger={is_debug=yes}
 		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0013"}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0103"}
 	}
 	country_event={		#Morning Dew's Personal Meeting with Willow
-		id=HAH_EWS3.0014
-		title=HAH_EWS3.0014.t
-		desc=HAH_EWS3.0014.d
+		id=HAH_EWS3.0104
+		title=HAH_EWS3.0104.t
+		desc=HAH_EWS3.0104.d
 		is_triggered_only=yes
 		option={
-			name=HAH_EWS3.0014.a
+			name=HAH_EWS3.0104.a
 		}
 		option={
 			name=CRDT_tiviy_fairf
 			trigger={is_debug=yes}
 		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0014"}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0104"}
 	}
-	country_event={		#The Blockades Are Lifted, but Policing Increases
-		id=HAH_EWS3.0031
-		title=HAH_EWS3.0031.t
-		desc=HAH_EWS3.0031.d
+	country_event={		#Canterlot Demands More Drastic Tests
+		id=HAH_EWS3.0201
+		title=HAH_EWS3.0201.t
+		desc=HAH_EWS3.0201.d
 		is_triggered_only=yes
 		option={
-			name=HAH_EWS3.0031.a
+			name=HAH_EWS3.0201.a
 			set_country_flag=HAH_can_raid_neighbors
 		}
 		option={
 			name=CRDT_tiviy_fairf
 			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0201"}
+	}
+	country_event={		#Hollow Shades Takes Winsom Falls
+		id=HAH_EWS3.0202
+		title=HAH_EWS3.0202.t
+		desc=HAH_EWS3.0202.d
+		is_triggered_only=yes
+		option={
+			name=HAH_EWS3.0202.a
+			add_political_power=100
+			add_war_support=0.05
+			ROOT={transfer_state=186}
+			if={
+				limit={
+					NOT={has_country_flag=HAH_tranquil_blooded}
+				}
+				country_event={id=HAH_EWS3.0216 days=5}	#The Blockades Are Lifted, but Policing Increases
+				else={
+					country_event=HAH_EWS3.0217	#The Notation of Zeal
+				}
+			}
+		}
+		option={
+			name=CRDT_tiviy_fairf
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0202"}
+	}
+	country_event={		#Winsom Falls Has Fallen
+		id=HAH_EWS3.0203
+		title=HAH_EWS3.0203.t
+		desc=HAH_EWS3.0203.d
+		is_triggered_only=yes
+		option={
+			name=HAH_EWS3.0203.a
+			add_political_power=-50
+		}
+		option={
+			name=CRDT_tiviy_fairf
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0203"}
+	}
+	country_event={		#Winsom Falls Repelled Us
+		id=HAH_EWS3.0204
+		title=HAH_EWS3.0204.t
+		desc=HAH_EWS3.0204.d
+		is_triggered_only=yes
+		option={
+			name=HAH_EWS3.0204.a
+			add_political_power=-50
+			if={
+				limit={
+					NOT={has_country_flag=HAH_tranquil_blooded}
+				}
+				country_event={id=HAH_EWS3.0216 days=5}	#The Blockades Are Lifted, but Policing Increases
+				else={
+					country_event=HAH_EWS3.0217	#The Notation of Zeal
+				}
+			}
+		}
+		option={
+			name=CRDT_tiviy_fairf
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0204"}
+	}
+	country_event={		#Winsom Falls Stands
+		id=HAH_EWS3.0205
+		title=HAH_EWS3.0205.t
+		desc=HAH_EWS3.0205.d
+		is_triggered_only=yes
+		option={
+			name=HAH_EWS3.0205.a
+			add_political_power=50
+		}
+		option={
+			name=CRDT_tiviy_fairf
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0205"}
+	}
+	country_event={		#Hollow Shades Raids Flower Wreath
+		id=HAH_EWS3.0206
+		title=HAH_EWS3.0206.t
+		desc=HAH_EWS3.0206.d
+		is_triggered_only=yes
+		option={
+			name=HAH_EWS3.0206.a
+			add_political_power=150
+			add_war_support=0.05
+			if={
+				limit={
+					NOT={has_country_flag=HAH_tranquil_blooded}
+				}
+				country_event={id=HAH_EWS3.0216 days=5}	#The Blockades Are Lifted, but Policing Increases
+				else={
+					country_event=HAH_EWS3.0217	#The Notation of Zeal
+				}
+			}
+		}
+		option={
+			name=CRDT_tiviy_fairf
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0206"}
+	}
+	country_event={		#Flower Wreath Has Been Raided
+		id=HAH_EWS3.0207
+		title=HAH_EWS3.0207.t
+		desc=HAH_EWS3.0207.d
+		is_triggered_only=yes
+		option={
+			name=HAH_EWS3.0207.a
+			add_political_power=-50
+		}
+		option={
+			name=CRDT_tiviy_fairf
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0207"}
+	}
+	country_event={		#Flower Wreath Repelled Us
+		id=HAH_EWS3.0208
+		title=HAH_EWS3.0208.t
+		desc=HAH_EWS3.0208.d
+		is_triggered_only=yes
+		option={
+			name=HAH_EWS3.0208.a
+			add_political_power=-50
+			if={
+				limit={
+					NOT={has_country_flag=HAH_tranquil_blooded}
+				}
+				country_event={id=HAH_EWS3.0216 days=5}	#The Blockades Are Lifted, but Policing Increases
+				else={
+					country_event=HAH_EWS3.0217	#The Notation of Zeal
+				}
+			}
+		}
+		option={
+			name=CRDT_tiviy_fairf
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0208"}
+	}
+	country_event={		#Flower Wreath Stands
+		id=HAH_EWS3.0209
+		title=HAH_EWS3.0209.t
+		desc=HAH_EWS3.0209.d
+		is_triggered_only=yes
+		option={
+			name=HAH_EWS3.0209.a
+			add_political_power=50
+		}
+		option={
+			name=CRDT_tiviy_fairf
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0209"}
+	}
+	country_event={		#Hollow Shades Takes Fetlock Twist
+		id=HAH_EWS3.0210
+		title=HAH_EWS3.0210.t
+		desc=HAH_EWS3.0210.d
+		is_triggered_only=yes
+		option={
+			name=HAH_EWS3.0210.a
+			add_political_power=100
+			add_war_support=0.05
+			ROOT={transfer_state=182}
+			if={
+				limit={
+					NOT={has_country_flag=HAH_tranquil_blooded}
+				}
+				country_event={id=HAH_EWS3.0216 days=5}	#The Blockades Are Lifted, but Policing Increases
+				else={
+					country_event=HAH_EWS3.0217	#The Notation of Zeal
+				}
+			}
+		}
+		option={
+			name=CRDT_tiviy_fairf
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0210"}
+	}
+	country_event={		#Fetlock Twist Has Fallen
+		id=HAH_EWS3.0211
+		title=HAH_EWS3.0211.t
+		desc=HAH_EWS3.0211.d
+		is_triggered_only=yes
+		option={
+			name=HAH_EWS3.0211.a
+			add_political_power=-50
+			if={
+				limit={
+					HMS={owns_state=182}
+				}
+				add_war_support=-0.05
+			}
+		}
+		option={
+			name=CRDT_tiviy_fairf
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0211"}
+	}
+	country_event={		#Fetlock Twist Repelled Us
+		id=HAH_EWS3.0212
+		title=HAH_EWS3.0212.t
+		desc=HAH_EWS3.0212.d
+		is_triggered_only=yes
+		option={
+			name=HAH_EWS3.0212.a
+			add_political_power=-50
+			if={
+				limit={
+					NOT={has_country_flag=HAH_tranquil_blooded}
+				}
+				country_event={id=HAH_EWS3.0216 days=5}	#The Blockades Are Lifted, but Policing Increases
+				else={
+					country_event=HAH_EWS3.0217	#The Notation of Zeal
+				}
+			}
+		}
+		option={
+			name=CRDT_tiviy_fairf
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0212"}
+	}
+	country_event={		#Fetlock Twist Stands
+		id=HAH_EWS3.0213
+		title=HAH_EWS3.0213.t
+		desc=HAH_EWS3.0213.d
+		is_triggered_only=yes
+		option={
+			name=HAH_EWS3.0213.a
+			add_political_power=50
+			if={
+				limit={
+					HMS={owns_state=182}
+				}
+				add_war_support=0.05
+			}
+		}
+		option={
+			name=CRDT_tiviy_fairf
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0213"}
+	}
+	country_event={		#Our Test Is Cancelled
+		id=HAH_EWS3.0214
+		title=HAH_EWS3.0214.t
+		desc=HAH_EWS3.0214.d
+		is_triggered_only=yes
+		option={
+			name=HAH_EWS3.0214.a
+			if={
+				limit={
+					NOT={has_country_flag=HAH_tranquil_blooded}
+				}
+				country_event={id=HAH_EWS3.0218 days=3}	#The Test is Exempted
+			}
+			else={
+				country_event=HAH_EWS3.0217	#The Notation of Zeal
+			}
+		}
+		option={
+			name=CRDT_tiviy_fairf
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0214"}
+	}
+	country_event={		#The Madponies Have Retreated?
+		id=HAH_EWS3.0215
+		title=HAH_EWS3.0215.t
+		desc=HAH_EWS3.0215.d
+		is_triggered_only=yes
+		option={
+			name=HAH_EWS3.0215.a
+			add_political_power=25
+		}
+		option={
+			name=CRDT_tiviy_fairf
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0215"}
+	}
+	country_event={		#The Blockades Are Lifted, but Policing Increases
+		id=HAH_EWS3.0216
+		title=HAH_EWS3.0216.t
+		desc=HAH_EWS3.0216.d
+		is_triggered_only=yes
+		option={
+			name=HAH_EWS3.0216.a
+			swap_ideas={
+				remove_idea=HAH_inquisition_sanctions
+				add_idea=HAH_closely_watched
+			}
+			set_country_flag=HAH_tranquil_blooded
+			country_event={id=HAH_EWS3.0301 days=90}
+		}
+		option={
+			name=CRDT_tiviy_fairf
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0216"}
+	}
+	country_event={		#The Notation of Zeal
+		id=HAH_EWS3.0217
+		title=HAH_EWS3.0217.t
+		desc=HAH_EWS3.0217.d
+		is_triggered_only=yes
+		option={
+			name=HAH_EWS3.0217.a
+			set_country_flag=HAH_zeal_noted
 			clr_country_flag=HAH_can_raid_neighbors
 		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0031"}
+		option={
+			name=CRDT_tiviy_fairf
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0217"}
+	}
+	country_event={		#The Test is Exempt
+		id=HAH_EWS3.0218
+		title=HAH_EWS3.0218.t
+		desc=HAH_EWS3.0218.d
+		is_triggered_only=yes
+		option={
+			name=HAH_EWS3.0218.a
+			set_country_flag=HAH_tranquil_blooded
+			country_event={id=HAH_EWS3.0216 days=3}
+		}
+		option={
+			name=CRDT_tiviy_fairf
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0218"}
 	}
 	country_event={		#The Policing Finally Lessens
-		id=HAH_EWS3.0041
-		title=HAH_EWS3.0041.t
-		desc=HAH_EWS3.0041.d
+		id=HAH_EWS3.0301
+		title=HAH_EWS3.0219.t
+		desc=HAH_EWS3.0219.d
 		is_triggered_only=yes
 		option={
-			name=HAH_EWS3.0041.a
+			name=HAH_EWS3.0219.a
 		}
 		option={
 			name=CRDT_tiviy_fairf
 			trigger={is_debug=yes}
 		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0041"}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0219"}
 	}
 	country_event={		#Going to Canterlot not as a Servant, but a Leader
-		id=HAH_EWS3.0051
-		title=HAH_EWS3.0051.t
-		desc=HAH_EWS3.0051.d
+		id=HAH_EWS3.0401
+		title=HAH_EWS3.0401.t
+		desc=HAH_EWS3.0401.d
 		is_triggered_only=yes
 		option={
-			name=HAH_EWS3.0051.a
+			name=HAH_EWS3.0401.a
 		}
 		option={
 			name=CRDT_tiviy_fairf
 			trigger={is_debug=yes}
 		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0051"}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0401"}
 	}

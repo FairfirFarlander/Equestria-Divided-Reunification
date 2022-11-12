@@ -96,13 +96,15 @@ HAH_bread_and_circuses={	#Bread and Circuses
 	}
 }
 HAH_border_wars={
-	HAH_infighting={
+	HAH_border_war_winsome_falls={
 		icon=border_war
 		fire_only_once=yes
 		available={
 			OR={
 				has_completed_focus=HAH_WS303
-				is_debug=yes
+				hidden_trigger={
+					is_debug=yes
+				}
 			}
 			has_war=no
 			has_full_control_of_state=40
@@ -121,7 +123,6 @@ HAH_border_wars={
 		}
 		highlight_states={
 			highlight_state_targets={
-				state=40
 				state=186
 			}
 		}
@@ -131,16 +132,116 @@ HAH_border_wars={
 				attacker={
 					state=40
 					num_provinces=4
-					#on_win=
-					#on_lose=
-					#on_cancel=
+					on_win=HAH_EWS3.0202
+					on_lose=HAH_EWS3.0204
+					on_cancel=HAH_EWS3.0217
 				}
 				defender={
 					state=186
 					num_provinces=4
-					#on_win=
-					#on_lose=
-					#on_cancel=
+					on_win=HAH_EWS3.0105
+					on_lose=HAH_EWS3.0106
+					on_cancel=HAH_EWS3.0218
+				}
+			}
+		}
+	}
+	HAH_border_war_flower_wreath={
+		icon=border_war
+		fire_only_once=yes
+		available={
+			OR={
+				has_completed_focus=HAH_WS303
+				hidden_trigger={
+					is_debug=yes
+				}
+			}
+			has_war=no
+			has_full_control_of_state=40
+			divisions_in_state={
+				state=40
+				size>0
+			}
+		}
+		visible={
+			OR={
+				has_completed_focus=HAH_WS303
+				is_debug=yes
+			}
+			NOT={owns_state=223}
+			owns_state=40
+		}
+		highlight_states={
+			highlight_state_targets={
+				state=223
+			}
+		}
+		complete_effect={
+			start_border_war={
+				change_state_after_war=no
+				attacker={
+					state=40
+					num_provinces=4
+					on_win=HAH_EWS3.0206
+					on_lose=HAH_EWS3.0208
+					on_cancel=HAH_EWS3.0217
+				}
+				defender={
+					state=223
+					num_provinces=4
+					on_win=HAH_EWS3.0207
+					on_lose=HAH_EWS3.0209
+					on_cancel=HAH_EWS3.0218
+				}
+			}
+		}
+	}
+	HAH_border_war_fetlock_twist={
+		icon=border_war
+		fire_only_once=yes
+		available={
+			OR={
+				has_completed_focus=HAH_WS303
+				hidden_trigger={
+					is_debug=yes
+				}
+			}
+			has_war=no
+			has_full_control_of_state=40
+			divisions_in_state={
+				state=40
+				size>0
+			}
+		}
+		visible={
+			OR={
+				has_completed_focus=HAH_WS303
+				is_debug=yes
+			}
+			NOT={owns_state=182}
+			owns_state=40
+		}
+		highlight_states={
+			highlight_state_targets={
+				state=182
+			}
+		}
+		complete_effect={
+			start_border_war={
+				change_state_after_war=no
+				attacker={
+					state=40
+					num_provinces=4
+					on_win=HAH_EWS3.0210
+					on_lose=HAH_EWS3.0212
+					on_cancel=HAH_EWS3.0214
+				}
+				defender={
+					state=182
+					num_provinces=4
+					on_win=HAH_EWS3.0211
+					on_lose=HAH_EWS3.0213
+					on_cancel=HAH_EWS3.0218
 				}
 			}
 		}
