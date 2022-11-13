@@ -509,6 +509,7 @@ add_namespace=HAH_EWS3
 			add_political_power=100
 			add_war_support=0.05
 			ROOT={transfer_state=186}
+			clr_country_flag=HAH_border_war_in_progress
 			if={
 				limit={
 					NOT={has_country_flag=HAH_tranquil_blooded}
@@ -548,6 +549,7 @@ add_namespace=HAH_EWS3
 		option={
 			name=HAH_EWS3.0204.a
 			add_political_power=-50
+			clr_country_flag=HAH_border_war_in_progress
 			if={
 				limit={
 					NOT={has_country_flag=HAH_tranquil_blooded}
@@ -588,6 +590,7 @@ add_namespace=HAH_EWS3
 			name=HAH_EWS3.0206.a
 			add_political_power=150
 			add_war_support=0.05
+			clr_country_flag=HAH_border_war_in_progress
 			if={
 				limit={
 					NOT={has_country_flag=HAH_tranquil_blooded}
@@ -627,6 +630,7 @@ add_namespace=HAH_EWS3
 		option={
 			name=HAH_EWS3.0208.a
 			add_political_power=-50
+			clr_country_flag=HAH_border_war_in_progress
 			if={
 				limit={
 					NOT={has_country_flag=HAH_tranquil_blooded}
@@ -668,6 +672,7 @@ add_namespace=HAH_EWS3
 			add_political_power=100
 			add_war_support=0.05
 			ROOT={transfer_state=182}
+			clr_country_flag=HAH_border_war_in_progress
 			if={
 				limit={
 					NOT={has_country_flag=HAH_tranquil_blooded}
@@ -713,6 +718,7 @@ add_namespace=HAH_EWS3
 		option={
 			name=HAH_EWS3.0212.a
 			add_political_power=-50
+			clr_country_flag=HAH_border_war_in_progress
 			if={
 				limit={
 					NOT={has_country_flag=HAH_tranquil_blooded}
@@ -757,6 +763,7 @@ add_namespace=HAH_EWS3
 		is_triggered_only=yes
 		option={
 			name=HAH_EWS3.0214.a
+			clr_country_flag=HAH_border_war_in_progress
 			if={
 				limit={
 					NOT={has_country_flag=HAH_tranquil_blooded}
@@ -795,12 +802,24 @@ add_namespace=HAH_EWS3
 		is_triggered_only=yes
 		option={
 			name=HAH_EWS3.0216.a
-			swap_ideas={
-				remove_idea=HAH_inquisition_sanctions
-				add_idea=HAH_closely_watched
+			if={
+				limit={has_dlc="La Resistance"}
+				swap_ideas={
+					remove_idea=HAH_inquisition_sanctions
+					add_idea=HAH_closely_watched_lar
+				}
+			}
+			else={
+				swap_ideas={
+					remove_idea=HAH_inquisition_sanctions
+					add_idea=HAH_closely_watched
+				}
 			}
 			set_country_flag=HAH_tranquil_blooded
-			country_event={id=HAH_EWS3.0301 days=90}
+			clr_country_flag=HAH_can_raid_neighbors
+			hidden_effect={
+				country_event={id=HAH_EWS3.0301 days=90}	#The Policing Finally Lessens
+			}
 		}
 		option={
 			name=CRDT_tiviy_fairf
@@ -832,7 +851,7 @@ add_namespace=HAH_EWS3
 		option={
 			name=HAH_EWS3.0218.a
 			set_country_flag=HAH_tranquil_blooded
-			country_event={id=HAH_EWS3.0216 days=3}
+			country_event={id=HAH_EWS3.0216 days=3}	#The Blockades Are Lifted, but Policing Increases
 		}
 		option={
 			name=CRDT_tiviy_fairf
@@ -842,17 +861,17 @@ add_namespace=HAH_EWS3
 	}
 	country_event={		#The Policing Finally Lessens
 		id=HAH_EWS3.0301
-		title=HAH_EWS3.0219.t
-		desc=HAH_EWS3.0219.d
+		title=HAH_EWS3.0301.t
+		desc=HAH_EWS3.0301.d
 		is_triggered_only=yes
 		option={
-			name=HAH_EWS3.0219.a
+			name=HAH_EWS3.0301.a
 		}
 		option={
 			name=CRDT_tiviy_fairf
 			trigger={is_debug=yes}
 		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0219"}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0301"}
 	}
 	country_event={		#Going to Canterlot not as a Servant, but a Leader
 		id=HAH_EWS3.0401
@@ -861,10 +880,25 @@ add_namespace=HAH_EWS3
 		is_triggered_only=yes
 		option={
 			name=HAH_EWS3.0401.a
+			country_event=HAH_EWS3.0402
 		}
 		option={
 			name=CRDT_tiviy_fairf
 			trigger={is_debug=yes}
 		}
 		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0401"}
+	}
+	country_event={		#Going to Canterlot not as a Servant, but a Leader
+		id=HAH_EWS3.0402
+		title=HAH_EWS3.0402.t
+		desc=HAH_EWS3.0402.d
+		is_triggered_only=yes
+		option={
+			name=HAH_EWS3.0402.a
+		}
+		option={
+			name=CRDT_tiviy_fairf
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0402"}
 	}

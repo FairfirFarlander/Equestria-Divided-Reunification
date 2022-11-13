@@ -25,6 +25,12 @@ HAH_border_wars={
 	priority=3
 	allowed={tag=HAH}
 	visible={
-		is_debug=yes
+		OR={
+			AND={
+				has_country_flag=HAH_can_raid_neighbors
+				NOT={has_country_flag=HAH_tranquil_blooded}
+			}
+			is_debug=yes
+		}
 	}
 }

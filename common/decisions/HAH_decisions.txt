@@ -99,9 +99,13 @@ HAH_border_wars={
 	HAH_border_war_winsome_falls={
 		icon=border_war
 		fire_only_once=yes
+		days_remove=14
 		available={
 			OR={
-				has_completed_focus=HAH_WS303
+				AND={
+					has_country_flag=HAH_can_raid_neighbors
+					NOT={has_country_flag=HAH_border_war_in_progress}
+				}
 				hidden_trigger={
 					is_debug=yes
 				}
@@ -115,18 +119,21 @@ HAH_border_wars={
 		}
 		visible={
 			OR={
-				has_completed_focus=HAH_WS303
-				is_debug=yes
+				AND={
+					NOT={owns_state=186}
+					owns_state=40
+				}
+				is_subject=yes
+				is_in_faction=yes
 			}
-			NOT={owns_state=186}
-			owns_state=40
 		}
 		highlight_states={
 			highlight_state_targets={
 				state=186
 			}
 		}
-		complete_effect={
+		complete_effect={set_country_flag=HAH_border_war_in_progress}
+		remove_effect={
 			start_border_war={
 				change_state_after_war=no
 				attacker={
@@ -145,13 +152,28 @@ HAH_border_wars={
 				}
 			}
 		}
+		cancel_trigger={
+			OR={
+				has_country_flag=HAH_tranquil_blooded
+				is_subject=yes
+				is_in_faction=yes
+			}
+		}
+		cancel_effect={
+			clr_country_flag=HAH_border_war_in_progress
+			country_event=HAH_EWS3.0216
+		}
 	}
 	HAH_border_war_flower_wreath={
 		icon=border_war
 		fire_only_once=yes
+		days_remove=14
 		available={
 			OR={
-				has_completed_focus=HAH_WS303
+				AND={
+					has_country_flag=HAH_can_raid_neighbors
+					NOT={has_country_flag=HAH_border_war_in_progress}
+				}
 				hidden_trigger={
 					is_debug=yes
 				}
@@ -165,18 +187,21 @@ HAH_border_wars={
 		}
 		visible={
 			OR={
-				has_completed_focus=HAH_WS303
-				is_debug=yes
+				AND={
+					NOT={owns_state=186}
+					owns_state=40
+				}
+				is_subject=yes
+				is_in_faction=yes
 			}
-			NOT={owns_state=223}
-			owns_state=40
 		}
 		highlight_states={
 			highlight_state_targets={
 				state=223
 			}
 		}
-		complete_effect={
+		complete_effect={set_country_flag=HAH_border_war_in_progress}
+		remove_effect={
 			start_border_war={
 				change_state_after_war=no
 				attacker={
@@ -195,13 +220,28 @@ HAH_border_wars={
 				}
 			}
 		}
+		cancel_trigger={
+			OR={
+				has_country_flag=HAH_tranquil_blooded
+				is_subject=yes
+				is_in_faction=yes
+			}
+		}
+		cancel_effect={
+			clr_country_flag=HAH_border_war_in_progress
+			country_event=HAH_EWS3.0216
+		}
 	}
 	HAH_border_war_fetlock_twist={
 		icon=border_war
 		fire_only_once=yes
+		days_remove=14
 		available={
 			OR={
-				has_completed_focus=HAH_WS303
+				AND={
+					has_country_flag=HAH_can_raid_neighbors
+					NOT={has_country_flag=HAH_border_war_in_progress}
+				}
 				hidden_trigger={
 					is_debug=yes
 				}
@@ -215,18 +255,21 @@ HAH_border_wars={
 		}
 		visible={
 			OR={
-				has_completed_focus=HAH_WS303
-				is_debug=yes
+				AND={
+					NOT={owns_state=186}
+					owns_state=40
+				}
+				is_subject=yes
+				is_in_faction=yes
 			}
-			NOT={owns_state=182}
-			owns_state=40
 		}
 		highlight_states={
 			highlight_state_targets={
 				state=182
 			}
 		}
-		complete_effect={
+		complete_effect={set_country_flag=HAH_border_war_in_progress}
+		remove_effect={
 			start_border_war={
 				change_state_after_war=no
 				attacker={
@@ -244,6 +287,17 @@ HAH_border_wars={
 					on_cancel=HAH_EWS3.0218
 				}
 			}
+		}
+		cancel_trigger={
+			OR={
+				has_country_flag=HAH_tranquil_blooded
+				is_subject=yes
+				is_in_faction=yes
+			}
+		}
+		cancel_effect={
+			clr_country_flag=HAH_border_war_in_progress
+			country_event=HAH_EWS3.0216
 		}
 	}
 }
