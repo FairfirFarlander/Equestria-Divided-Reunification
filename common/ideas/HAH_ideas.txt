@@ -9,6 +9,11 @@ ideas={
 		HAH_slave_state={
 			picture=pony_enslaved
 			modifier={
+				conscription_factor=-0.2
+				monthly_population=-0.1
+				consumer_goods_factor=-0.05
+				local_resources_factor=0.1
+				production_speed_buildings_factor=0.05
 			}
 		}
 		HAH_inquisition_impatience={
@@ -75,6 +80,11 @@ ideas={
 		HAH_tranquil_state={
 			#picture=
 			modifier={
+				conscription_factor=-0.05
+				monthly_population=-0.05
+				consumer_goods_factor=0.05
+				local_resources_factor=0.15
+				production_speed_buildings_factor=0.10
 			}
 		}
 	}

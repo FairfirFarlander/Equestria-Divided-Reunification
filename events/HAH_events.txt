@@ -442,8 +442,20 @@ add_namespace=HAH_EWS3
 					modifier=HAH_inquisitorial_sanction_opinion
 				}
 				end_puppet=HAH
+				diplomatic_relation={
+					country=HAH
+					relation=guarantee
+					active=yes
+				}
 			}
-			HAH={leave_faction=yes}
+			HAH={
+				leave_faction=yes
+				diplomatic_relation={
+					country=HMS
+					relation=guarantee
+					active=yes
+				}
+			}
 			MSN={
 				add_opinion_modifier={
 					target=HAH
@@ -462,7 +474,9 @@ add_namespace=HAH_EWS3
 					modifier=HAH_inquisitorial_sanction_opinion
 				}
 			}
-			country_event={id=HAH_EWS3.0201 days=35}	#Canterlot Demands More Drastic Tests
+			hidden_effect={
+				country_event={id=HAH_EWS3.0201 days=35}	#Canterlot Demands More Drastic Tests
+			}
 		}
 		option={
 			name=CRDT_tiviy_fairf
@@ -514,7 +528,9 @@ add_namespace=HAH_EWS3
 				limit={
 					NOT={has_country_flag=HAH_tranquil_blooded}
 				}
-				country_event={id=HAH_EWS3.0216 days=5}	#The Blockades Are Lifted, but Policing Increases
+				hidden_effect={
+					country_event={id=HAH_EWS3.0216 days=5}	#The Blockades Are Lifted, but Policing Increases
+				}
 				else={
 					country_event=HAH_EWS3.0217	#The Notation of Zeal
 				}
@@ -554,7 +570,9 @@ add_namespace=HAH_EWS3
 				limit={
 					NOT={has_country_flag=HAH_tranquil_blooded}
 				}
-				country_event={id=HAH_EWS3.0216 days=5}	#The Blockades Are Lifted, but Policing Increases
+				hidden_effect={
+					country_event={id=HAH_EWS3.0216 days=5}	#The Blockades Are Lifted, but Policing Increases
+				}
 				else={
 					country_event=HAH_EWS3.0217	#The Notation of Zeal
 				}
@@ -595,7 +613,9 @@ add_namespace=HAH_EWS3
 				limit={
 					NOT={has_country_flag=HAH_tranquil_blooded}
 				}
-				country_event={id=HAH_EWS3.0216 days=5}	#The Blockades Are Lifted, but Policing Increases
+				hidden_effect={
+					country_event={id=HAH_EWS3.0216 days=5}	#The Blockades Are Lifted, but Policing Increases
+				}
 				else={
 					country_event=HAH_EWS3.0217	#The Notation of Zeal
 				}
@@ -635,7 +655,9 @@ add_namespace=HAH_EWS3
 				limit={
 					NOT={has_country_flag=HAH_tranquil_blooded}
 				}
-				country_event={id=HAH_EWS3.0216 days=5}	#The Blockades Are Lifted, but Policing Increases
+				hidden_effect={
+					country_event={id=HAH_EWS3.0216 days=5}	#The Blockades Are Lifted, but Policing Increases
+				}
 				else={
 					country_event=HAH_EWS3.0217	#The Notation of Zeal
 				}
@@ -677,7 +699,9 @@ add_namespace=HAH_EWS3
 				limit={
 					NOT={has_country_flag=HAH_tranquil_blooded}
 				}
-				country_event={id=HAH_EWS3.0216 days=5}	#The Blockades Are Lifted, but Policing Increases
+				hidden_effect={
+					country_event={id=HAH_EWS3.0216 days=5}	#The Blockades Are Lifted, but Policing Increases
+				}
 				else={
 					country_event=HAH_EWS3.0217	#The Notation of Zeal
 				}
@@ -723,7 +747,9 @@ add_namespace=HAH_EWS3
 				limit={
 					NOT={has_country_flag=HAH_tranquil_blooded}
 				}
-				country_event={id=HAH_EWS3.0216 days=5}	#The Blockades Are Lifted, but Policing Increases
+				hidden_effect={
+					country_event={id=HAH_EWS3.0216 days=5}	#The Blockades Are Lifted, but Policing Increases
+				}
 				else={
 					country_event=HAH_EWS3.0217	#The Notation of Zeal
 				}
@@ -768,7 +794,9 @@ add_namespace=HAH_EWS3
 				limit={
 					NOT={has_country_flag=HAH_tranquil_blooded}
 				}
-				country_event={id=HAH_EWS3.0218 days=3}	#The Test is Exempted
+				hidden_effect={
+					country_event={id=HAH_EWS3.0218 days=3}	#The Test is Exempted
+				}
 			}
 			else={
 				country_event=HAH_EWS3.0217	#The Notation of Zeal
@@ -804,19 +832,51 @@ add_namespace=HAH_EWS3
 			name=HAH_EWS3.0216.a
 			if={
 				limit={has_dlc="La Resistance"}
-				swap_ideas={
-					remove_idea=HAH_inquisition_sanctions
-					add_idea=HAH_closely_watched_lar
-				}
+				remove_ideas=HAH_inquisition_sanctions
+				add_ideas=HAH_closely_watched_lar
 			}
 			else={
-				swap_ideas={
-					remove_idea=HAH_inquisition_sanctions
-					add_idea=HAH_closely_watched
-				}
+				remove_ideas=HAH_inquisition_sanctions
+				add_ideas=HAH_closely_watched
 			}
 			set_country_flag=HAH_tranquil_blooded
-			clr_country_flag=HAH_can_raid_neighbors
+			HAH={
+				diplomatic_relation={
+					country=HMS
+					relation=guarantee
+					active=no
+				}
+			}
+			HMS={
+				diplomatic_relation={
+					country=HAH
+					relation=guarantee
+					active=no
+				}
+				add_to_faction=HAH
+				remove_opinion_modifier={
+					target=HAH
+					modifier=HAH_inquisitorial_sanction_opinion
+				}
+			}
+			MSN={
+				remove_opinion_modifier={
+					target=HAH
+					modifier=HAH_inquisitorial_sanction_opinion
+				}
+			}
+			MSE={
+				remove_opinion_modifier={
+					target=HAH
+					modifier=HAH_inquisitorial_sanction_opinion
+				}
+			}
+			FRI={
+				remove_opinion_modifier={
+					target=HAH
+					modifier=HAH_inquisitorial_sanction_opinion
+				}
+			}
 			hidden_effect={
 				country_event={id=HAH_EWS3.0301 days=90}	#The Policing Finally Lessens
 			}
@@ -851,7 +911,9 @@ add_namespace=HAH_EWS3
 		option={
 			name=HAH_EWS3.0218.a
 			set_country_flag=HAH_tranquil_blooded
-			country_event={id=HAH_EWS3.0216 days=3}	#The Blockades Are Lifted, but Policing Increases
+			hidden_effect={
+				country_event={id=HAH_EWS3.0216 days=3}	#The Blockades Are Lifted, but Policing Increases
+			}
 		}
 		option={
 			name=CRDT_tiviy_fairf
@@ -895,10 +957,75 @@ add_namespace=HAH_EWS3
 		is_triggered_only=yes
 		option={
 			name=HAH_EWS3.0402.a
+			HMS={
+				add_opinion_modifier={
+					target=HAH
+					modifier=HAH_connections_opinion
+				}
+			}
 		}
 		option={
 			name=CRDT_tiviy_fairf
 			trigger={is_debug=yes}
 		}
 		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0402"}
+	}
+	country_event={		#A Broken Heart Leads to Tragedy
+		id=HAH_EWS3.0601
+		title=HAH_EWS3.0601.t
+		desc=HAH_EWS3.0601.d
+		is_triggered_only=yes
+		option={
+			name=HAH_EWS3.0601.a
+			country_event=HAH_EWS3.0602
+		}
+		option={
+			name=CRDT_tiviy_fairf
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0601"}
+	}
+	country_event={		#A Broken Heart Leads to Tragedy
+		id=HAH_EWS3.0602
+		title=HAH_EWS3.0602.t
+		desc=HAH_EWS3.0602.d
+		is_triggered_only=yes
+		option={
+			name=HAH_EWS3.0602.a
+		}
+		option={
+			name=CRDT_tiviy_fairf
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0602"}
+	}
+	country_event={		#Misty’s Will
+		id=HAH_EWS3.0603
+		title=HAH_EWS3.0603.t
+		desc=HAH_EWS3.0603.d
+		is_triggered_only=yes
+		option={
+			name=HAH_EWS3.0603.a
+			country_event=HAH_EWS3.0604
+		}
+		option={
+			name=CRDT_tiviy_fairf
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0603"}
+	}
+	country_event={		#Misty’s Will
+		id=HAH_EWS3.0604
+		title=HAH_EWS3.0604.t
+		desc=HAH_EWS3.0604.d
+		is_triggered_only=yes
+		option={
+			name=HAH_EWS3.0604.a
+			decrease_poverty=yes
+		}
+		option={
+			name=CRDT_tiviy_fairf
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0604"}
 	}
