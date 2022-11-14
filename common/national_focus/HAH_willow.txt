@@ -4,7 +4,30 @@
 		x=0 y=0 cost=1
 		offset={
 			x=8
-			trigger={is_debug=yes}
+			trigger={
+				is_debug=yes
+				NOT={has_country_flag=EDR_show_less_focuses}
+			}
+		}
+		allow_branch={
+			OR={
+				AND={
+					has_focus_tree=HAH_willow
+					NOT={
+						has_country_flag=HAH_willow_no_return
+						has_country_flag=EDR_show_less_focuses
+					}
+				}
+				AND={
+					is_debug=yes
+					NOT={
+						AND={
+							has_country_flag=HAH_willow_no_return
+							has_country_flag=EDR_show_less_focuses
+						}
+					}
+				}
+			}
 		}
 		select_effect={country_event=EDR_evt_gen.000}	#Event Verbosity
 		ai_will_do={factor=4000}
@@ -41,7 +64,8 @@
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS302A"
 			add_tech_bonus={
 				name=HAH_research_technology_bonus
-				bonus=0.5	uses=1
+				bonus=0.5
+				uses=1
 				category=computing_tech
 			}
 		}
@@ -170,7 +194,7 @@
 	}
 	shared_focus={	#Letters from Canterlot
 		id=HAH_WS306A icon=GFX_goal_new_treaty
-		x=-2 y=2 cost=0.2 relative_position_id=HAH_WS304
+		x=-2 y=2 cost=2 relative_position_id=HAH_WS304
 		search_filters={}
 		prerequisite={focus=HAH_WS305A}
 		prerequisite={focus=HAH_WS305B}
@@ -182,7 +206,7 @@
 	}
 	shared_focus={	#Guidance
 		id=HAH_WS306B icon=GFX_goal_improve_relations_pony_pony
-		x=0 y=2 cost=0.2 relative_position_id=HAH_WS304
+		x=0 y=2 cost=2 relative_position_id=HAH_WS304
 		search_filters={}
 		prerequisite={focus=HAH_WS305A}
 		prerequisite={focus=HAH_WS305B}
@@ -205,10 +229,11 @@
 	}
 	shared_focus={	#Stranger
 		id=HAH_WS306C icon=GFX_focus_generic_treaty
-		x=2 y=2 cost=0.2 relative_position_id=HAH_WS304
+		x=2 y=2 cost=2 relative_position_id=HAH_WS304
 		search_filters={}
 		prerequisite={focus=HAH_WS305A}
 		prerequisite={focus=HAH_WS305B}
+		available={has_completed_focus=HAH_WS306B}
 		ai_will_do={factor=4000}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS306C"
@@ -216,8 +241,8 @@
 		}
 	}
 	shared_focus={	#Reforms
-		id=HAH_WS307A #icon=
-		x=-3 y=1 cost=0.2 relative_position_id=HAH_WS306B
+		id=HAH_WS307A icon=GFX_goal_chn_economic_plan
+		x=-3 y=1 cost=5 relative_position_id=HAH_WS306B
 		search_filters={}
 		prerequisite={focus=HAH_WS306A}
 		prerequisite={focus=HAH_WS306B}
@@ -225,11 +250,12 @@
 		ai_will_do={factor=4000}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS307A"
+			add_ideas=HAH_reforms
 		}
 	}
 	shared_focus={	#A Cruel Decree
-		id=HAH_WS307B #icon=
-		x=-1 y=1 cost=0.2 relative_position_id=HAH_WS306B
+		id=HAH_WS307B icon=GFX_goal_treaty_fails
+		x=-1 y=1 cost=5 relative_position_id=HAH_WS306B
 		search_filters={}
 		prerequisite={focus=HAH_WS306A}
 		prerequisite={focus=HAH_WS306B}
@@ -237,11 +263,12 @@
 		ai_will_do={factor=4000}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS307B"
+			remove_ideas=HAH_nonunicorn_family_ban
 		}
 	}
 	shared_focus={	#Let Them Fly
-		id=HAH_WS307C #icon=
-		x=1 y=1 cost=0.2 relative_position_id=HAH_WS306B
+		id=HAH_WS307C icon=GFX_goal_generic_pony_pegasus
+		x=1 y=1 cost=5 relative_position_id=HAH_WS306B
 		search_filters={}
 		prerequisite={focus=HAH_WS306A}
 		prerequisite={focus=HAH_WS306B}
@@ -249,11 +276,27 @@
 		ai_will_do={factor=4000}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS307C"
+			if={
+				limit={
+					NOT={has_tech=tech_pegasi}
+				}
+				set_technology={
+					tech_pegasi=1
+				}
+			}
+			else={
+				add_tech_bonus={
+					name=HAH_fly_again_bonus
+					bonus=0.5
+					uses=1
+					category=pegasi_tech
+				}
+			}
 		}
 	}
 	shared_focus={	#Better Than
-		id=HAH_WS307D #icon=
-		x=3 y=1 cost=0.2 relative_position_id=HAH_WS306B
+		id=HAH_WS307D icon=GFX_goal_ELF_friendship
+		x=3 y=1 cost=5 relative_position_id=HAH_WS306B
 		search_filters={}
 		prerequisite={focus=HAH_WS306A}
 		prerequisite={focus=HAH_WS306B}
@@ -261,11 +304,12 @@
 		ai_will_do={factor=4000}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS307D"
+			remove_ideas=HAH_HMS_puppet
 		}
 	}
 	shared_focus={	#Dear Friend
-		id=HAH_WS308 #icon=
-		x=0 y=2 cost=0.2 relative_position_id=HAH_WS306B
+		id=HAH_WS308 icon=GFX_goal_ideology_harmonist
+		x=0 y=2 cost=5 relative_position_id=HAH_WS306B
 		search_filters={}
 		prerequisite={focus=HAH_WS307A}
 		prerequisite={focus=HAH_WS307B}
@@ -274,13 +318,36 @@
 		ai_will_do={factor=4000}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS308"
+			add_stability=0.1
+			add_war_support=0.03
+			country_event=HAH_EWS3.0801
 		}
 	}
 	shared_focus={	#Revenge Will Come
 		id=HAH_WS309 #icon=
-		x=0 y=1 cost=0.2 relative_position_id=HAH_WS308
+		x=0 y=1 cost=5 relative_position_id=HAH_WS308
+		offset={
+			y=-9
+			trigger={
+				OR={
+					AND={
+						NOT={is_debug=yes}
+						has_country_flag=EDR_show_less_focuses
+					}
+					AND={
+						is_debug=yes
+						has_country_flag=EDR_show_less_focuses
+					}
+				}
+			}
+		}
+		allow_branch={
+			OR={
+				has_country_flag=HAH_willow_no_return
+				is_debug=yes
+			}
+		}
 		search_filters={}
-		prerequisite={focus=HAH_WS308}
 		ai_will_do={factor=4000}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS309"

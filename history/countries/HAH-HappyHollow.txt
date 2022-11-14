@@ -8,6 +8,7 @@ add_ideas={
 	lack_of_scientists1 poverty1
 	HAH_HMS_puppet
 	HAH_slave_state
+	HAH_nonunicorn_family_ban
 	HAH_inquisition_impatience
 }
 if={

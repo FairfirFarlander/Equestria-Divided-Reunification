@@ -11,6 +11,8 @@ CRDC_art_bylisboa: "§YArtwork By§!: byLisboa"
  CRDC_ref_tiviyl: "§YReffitting By§!: Tiviyl"
 ##Decisions##
 CRDT_wri_tiviyl: "§LWritten§! by §CTiviyl§!"
+ CRDT_wri_cod_fairfir: "§LWritten§! and §LCoded§! by §CFairfir§!"
+  CRDT_wri_cod_fairfir_tooltip: "§LIf these entries feel like a stopgap, they likely are.\nMy writing is not that good.\n~FAIRFIR/FRLANDR§!"
  CRDT_cod_fairfir: "§LCoded§! by §CFairfir§!"
 ##Events##
 ##Combos##

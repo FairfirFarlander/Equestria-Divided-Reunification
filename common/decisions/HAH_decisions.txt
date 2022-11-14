@@ -15,7 +15,7 @@ HAH_gathering_materials={
 			log="[GetDateText]: [Root.GetName]: decision complete HAH_dummy"
 			add_to_variable={HAH_back_to_business=1}
 			clr_country_flag=HAH_ima_gathering_shiz
-			country_event={id=HAH_evt_a01.023 days=28}	#Letter to an Old Friend
+			country_event={id=HAH_ES1.0203 days=28}	#Letter to an Old Friend
 		}
 	}
 	HAH_gather_two={	#Shipping the Equipment Here
@@ -30,7 +30,7 @@ HAH_gathering_materials={
 			log="[GetDateText]: [Root.GetName]: decision complete HAH_dummy"
 			add_to_variable={HAH_back_to_business=1}
 			clr_country_flag=HAH_ima_gathering_shiz
-			country_event={id=HAH_evt_a01.024 days=28}	#Shipping the Equipment Here
+			country_event={id=HAH_ES1.0204 days=28}	#Shipping the Equipment Here
 		}
 	}
 	HAH_gather_three={	#Acquiring the Proper Ingredeints
@@ -45,7 +45,7 @@ HAH_gathering_materials={
 			log="[GetDateText]: [Root.GetName]: decision complete HAH_dummy"
 			add_to_variable={HAH_back_to_business=1}
 			clr_country_flag=HAH_ima_gathering_shiz
-			country_event={id=HAH_evt_a01.025 days=28}	#Acquiring the Proper Ingredients
+			country_event={id=HAH_ES1.0205 days=28}	#Acquiring the Proper Ingredients
 		}
 	}
 	HAH_gather_four={	#Acquiring the Most Important Ingredient
@@ -60,7 +60,7 @@ HAH_gathering_materials={
 			log="[GetDateText]: [Root.GetName]: decision complete HAH_dummy"
 			add_to_variable={HAH_back_to_business=1}
 			clr_country_flag=HAH_ima_gathering_shiz
-			country_event={id=HAH_evt_a01.026 days=28}	#Acquiring the Most Important Ingredient
+			country_event={id=HAH_ES1.0206 days=28}	#Acquiring the Most Important Ingredient
 		}
 	}
 }

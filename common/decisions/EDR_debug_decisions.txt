@@ -1,15 +1,18 @@
 EDR_debug_decisions={
 	EDR_show_not_tell={
 		#icon=
+		visible={is_debug=yes}
 		available={hidden_trigger={always=no}}
 	}
 	miller_flour={
 		#icon=
+		visible={is_debug=yes}
 		complete_effect={one_random_arms_factory=yes}
 	}
 	dockyard_please={
 		#icon=
 		visible={
+			is_debug=yes
 			num_of_available_naval_factories<1
 			any_owned_state={is_coastal=yes}
 		}
@@ -17,6 +20,7 @@ EDR_debug_decisions={
 	}
 	gimmie_dreadnut={
 		#icon=
+		visible={is_debug=yes}
 		complete_effect={
 			if={limit={has_dlc="Man the Guns"}
 				set_technology={pre_dreadnoughts=1}
@@ -26,7 +30,49 @@ EDR_debug_decisions={
 			}
 		}
 	}
-	
+	EDR_toggle_minors_visiblity_on={
+		visible={
+			is_debug=yes
+			NOT={has_global_flag=EDR_toggle_minors_visiblity}
+		}
+		complete_effect={
+			log="[GetDateText]: [Root.GetName]: decision EDR_toggle_minors_visiblity_on"
+			set_global_flag=EDR_toggle_minors_visiblity
+		}
+	}
+	EDR_toggle_minors_visiblity_off={
+		visible={
+			is_debug=yes
+			has_global_flag=EDR_toggle_minors_visiblity
+		}
+		complete_effect={
+			log="[GetDateText]: [Root.GetName]: decision EDR_toggle_minors_visiblity_off"
+			clr_global_flag=EDR_toggle_minors_visiblity
+		}
+	}
+	EDR_show_less_focuses={	#Show Less Focuses
+		#icon=
+		visible={
+			NOT={has_country_flag=EDR_show_less_focuses}
+		}
+		complete_effect={
+			log="[GetDateText]: [Root.GetName]: decision EDR_show_less_focuses"
+			set_country_flag=EDR_show_less_focuses
+			mark_focus_tree_layout_dirty=yes
+		}
+	}
+	EDR_show_more_focuses={	#Show More Focuses
+		#icon=
+		visible={
+			has_country_flag=EDR_show_less_focuses
+			is_debug=yes
+		}
+		complete_effect={
+			log="[GetDateText]: [Root.GetName]: decision EDR_show_less_focuses"
+			clr_country_flag=EDR_show_less_focuses
+			mark_focus_tree_layout_dirty=yes
+		}
+	}
 }
 EDR_debug_toggle_minors_decisions={
 	EDR_major_restricted_land_decisions_on={

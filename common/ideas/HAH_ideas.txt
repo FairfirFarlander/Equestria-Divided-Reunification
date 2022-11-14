@@ -1,9 +1,13 @@
 ideas={
 	country={
 		HAH_HMS_puppet={
-			picture=hmsidea
+			picture=TEM_nightmare_moon
 			modifier={
 				military_leader_cost_factor=40
+			}
+			research_bonus={
+				race_tech=-0.25
+				unicorn_tech=0.45
 			}
 		}
 		HAH_slave_state={
@@ -14,6 +18,12 @@ ideas={
 				consumer_goods_factor=-0.05
 				local_resources_factor=0.1
 				production_speed_buildings_factor=0.05
+			}
+		}
+		HAH_nonunicorn_family_ban={
+			#picture=
+			modifier={
+				monthly_population=-0.66
 			}
 		}
 		HAH_inquisition_impatience={
@@ -85,6 +95,12 @@ ideas={
 				consumer_goods_factor=0.05
 				local_resources_factor=0.15
 				production_speed_buildings_factor=0.10
+			}
+		}
+		HAH_reforms={
+			#picture=
+			modifier={
+				stability_weekly=0.007
 			}
 		}
 	}

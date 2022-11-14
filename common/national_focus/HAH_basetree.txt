@@ -2,12 +2,26 @@
 	shared_focus={	#Under Their Domain
 		id=HAH_S00 icon=GFX_goal_authoritarian
 		x=0 y=0 cost=1
+		allow_branch={
+			OR={
+				has_focus_tree=HAH
+				AND={
+					is_debug=yes
+					NOT={
+						AND={
+							has_country_flag=HAH_willow_in_charge
+							has_country_flag=EDR_show_less_focuses
+						}
+					}
+				}
+			}
+		}
 		search_filters={}
 		select_effect={country_event=EDR_evt_gen.000}	#Event Verbosity
 		ai_will_do={factor=80}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_S00"
-			country_event=HAH_evt_a01.001	#Rules of Dominion
+			country_event=HAH_ES1.0001	#Rules of Dominion
 		}
 	}
 	shared_focus={	#A Demand for Timber and Stone
@@ -65,7 +79,7 @@
 		ai_will_do={factor=80}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_S02"
-			country_event=HAH_evt_a01.021	#Back to Business
+			country_event=HAH_ES1.0201	#Back to Business
 			set_variable={HAH_back_to_business=0}
 		}
 	}
@@ -82,7 +96,7 @@
 			add_to_variable={HAH_back_to_business=1}
 			if={
 				limit={check_variable={HAH_back_to_business=4}}
-				country_event={id=HAH_evt_a01.022 days=7}	#The Luxuries of The Capital
+				country_event={id=HAH_ES1.0202 days=7}	#The Luxuries of The Capital
 			}
 		}
 	}
@@ -94,11 +108,11 @@
 		ai_will_do={factor=60}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_D03B"
-			country_event=HAH_evt_a01.032	#Bread and Circuses
+			country_event=HAH_ES1.0302	#Bread and Circuses
 			add_to_variable={HAH_back_to_business=1}
 			if={
 				limit={check_variable={HAH_back_to_business=4}}
-				country_event={id=HAH_evt_a01.022 days=7}	#The Luxuries of The Capital
+				country_event={id=HAH_ES1.0202 days=7}	#The Luxuries of The Capital
 			}
 		}
 	}
@@ -116,7 +130,7 @@
 			add_to_variable={HAH_back_to_business=1}
 			if={
 				limit={check_variable={HAH_back_to_business=4}}
-				country_event={id=HAH_evt_a01.022 days=7}	#The Luxuries of The Capital
+				country_event={id=HAH_ES1.0202 days=7}	#The Luxuries of The Capital
 			}
 		}
 	}
@@ -128,11 +142,11 @@
 		ai_will_do={factor=20}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_D03D"
-			country_event=HAH_evt_a01.035	#A Ball
+			country_event=HAH_ES1.0305	#A Ball
 			add_to_variable={HAH_back_to_business=1}
 			if={
 				limit={check_variable={HAH_back_to_business=4}}
-				country_event={id=HAH_evt_a01.022 days=7}	#The Luxuries of The Capital
+				country_event={id=HAH_ES1.0202 days=7}	#The Luxuries of The Capital
 			}
 		}
 	}
@@ -145,7 +159,7 @@
 		ai_will_do={factor=80}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_S04A"
-			country_event=HAH_evt_a01.041
+			country_event=HAH_ES1.0401
 		}
 	}
 	shared_focus={	#Toil and Trouble
@@ -160,7 +174,7 @@
 		ai_will_do={factor=80}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_S04B"
-			country_event=HAH_evt_a01.042
+			country_event=HAH_ES1.042
 		}
 	}
 	shared_focus={	#Willow's Solution
@@ -172,7 +186,7 @@
 		ai_will_do={factor=80}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_S05"
-			country_event=HAH_evt_a01.051
+			country_event=HAH_ES1.0501
 			set_variable={HAH_grand_masquerade=0}
 		}
 	}
@@ -184,7 +198,7 @@
 		ai_will_do={factor=80}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_S06A"
-			country_event=HAH_evt_a02.061
+			country_event=HAH_ES2.0601
 		}
 	}
 	shared_focus={	#To Protect Those Who Are Yet to be Tested On
@@ -195,7 +209,7 @@
 		ai_will_do={factor=80}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_S06B"
-			country_event=HAH_evt_a02.062
+			country_event=HAH_ES2.0602
 		}
 	}
 	shared_focus={	#The Masks
@@ -207,11 +221,11 @@
 		ai_will_do={factor=80}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_S07A"
-			country_event=HAH_evt_a02.071
+			country_event=HAH_ES2.0701
 			add_to_variable={HAH_grand_masquerade=1}
 			if={
 				limit={check_variable={HAH_grand_masquerade=3}}
-				country_event=HAH_evt_a02.074	#The Grand Masquerade
+				country_event=HAH_ES2.0704	#The Grand Masquerade
 			}
 		}
 	}
@@ -231,7 +245,7 @@
 			add_to_variable={HAH_grand_masquerade=1}
 			if={
 				limit={check_variable={HAH_grand_masquerade=3}}
-				country_event=HAH_evt_a02.074	#The Grand Masquerade
+				country_event=HAH_ES2.0704	#The Grand Masquerade
 			}
 		}
 	}
@@ -256,7 +270,7 @@
 			add_to_variable={HAH_grand_masquerade=1}
 			if={
 				limit={check_variable={HAH_grand_masquerade=3}}
-				country_event=HAH_evt_a02.074	#The Grand Masquerade
+				country_event=HAH_ES2.0704	#The Grand Masquerade
 			}
 		}
 	}
@@ -270,7 +284,7 @@
 		ai_will_do={factor=80}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_S08"
-			country_event=HAH_evt_a02.081
+			country_event=HAH_ES2.0801
 			custom_effect_tooltip=HAH_S08_tooltip
 		}
 	}
@@ -293,7 +307,7 @@
 		ai_will_do={factor=80}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_S09B"
-			country_event=HAH_evt_a02.092	#Farming Poison Joke
+			country_event=HAH_ES2.0902	#Farming Poison Joke
 		}
 	}
 	shared_focus={	#The Bobbies
@@ -304,7 +318,7 @@
 		ai_will_do={factor=80}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_S09C"
-			country_event=HAH_evt_a02.093	#The Bobbies
+			country_event=HAH_ES2.0903	#The Bobbies
 			load_oob="HAH_S09C_bobbies_division"
 		}
 	}
@@ -345,7 +359,7 @@
 		ai_will_do={factor=80}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_S10A"
-			country_event=HAH_evt_a02.101	#Project Flu Season
+			country_event=HAH_ES2.1001	#Project Flu Season
 		}
 	}
 	shared_focus={	#Let The Testing Begin
@@ -360,7 +374,7 @@
 		ai_will_do={factor=80}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_S10B"
-			country_event=HAH_evt_a02.102	#The Tranquil Ponies
+			country_event=HAH_ES2.1002	#The Tranquil Ponies
 		}
 	}
 	shared_focus={	#The Inquisition's Scientists
@@ -372,6 +386,6 @@
 		ai_will_do={factor=80}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_S11"
-			country_event=HAH_evt_a02.111	#The Choice
+			country_event=HAH_ES2.1101	#The Choice
 		}
 	}

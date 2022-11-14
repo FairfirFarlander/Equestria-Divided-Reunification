@@ -4,7 +4,10 @@
 		x=8 y=0 cost=5
 		offset={
 			x=8
-			trigger={is_debug=yes}
+			trigger={
+				is_debug=yes
+				NOT={has_country_flag=EDR_show_less_focuses}
+			}
 		}
 		search_filters={FOCUS_FILTER_INDUSTRY}
 		ai_will_do={factor=40}

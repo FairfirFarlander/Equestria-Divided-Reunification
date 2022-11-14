@@ -1,22 +1,23 @@
 EDR_debug_decisions={
 	#icon=
-	priority=4
-	visible={is_debug=yes}
+	priority=13
 }
 EDR_debug_toggle_minors_decisions={
 	#icon=
-	priority=3
+	priority=12
 	visible={
 		is_debug=yes
-		not={has_global_flag=EDR_no_minors}
+		has_global_flag=EDR_toggle_minors_visiblity
+		NOT={has_global_flag=EDR_no_minors}
 	}
 }
 EDR_debug_HEB_land_decisions={
 	#icon=
-	priority=2
+	priority=11
 	visible={
 		is_debug=yes
 		not={has_global_flag=EDR_no_minors}
+		has_global_flag=EDR_toggle_minors_visiblity
 		or={
 			and={
 				tag=HEB
@@ -28,10 +29,11 @@ EDR_debug_HEB_land_decisions={
 }
 EDR_debug_HEF_land_decisions={
 	#icon=
-	priority=2
+	priority=11
 	visible={
 		is_debug=yes
 		not={has_global_flag=EDR_no_minors}
+		has_global_flag=EDR_toggle_minors_visiblity
 		or={
 			and={
 				tag=HEF
@@ -43,10 +45,11 @@ EDR_debug_HEF_land_decisions={
 }
 EDR_debug_HMS_land_decisions={
 	#icon=
-	priority=2
+	priority=11
 	visible={
 		is_debug=yes
 		not={has_global_flag=EDR_no_minors}
+		has_global_flag=EDR_toggle_minors_visiblity
 		or={
 			and={
 				tag=HMS
@@ -58,10 +61,11 @@ EDR_debug_HMS_land_decisions={
 }
 EDR_debug_HSW_land_decisions={
 	#icon=
-	priority=2
+	priority=11
 	visible={
 		is_debug=yes
 		not={has_global_flag=EDR_no_minors}
+		has_global_flag=EDR_toggle_minors_visiblity
 		or={
 			and={
 				tag=HSW
@@ -73,10 +77,11 @@ EDR_debug_HSW_land_decisions={
 }
 EDR_debug_HWG_land_decisions={
 	#icon=
-	priority=2
+	priority=11
 	visible={
 		is_debug=yes
 		not={has_global_flag=EDR_no_minors}
+		has_global_flag=EDR_toggle_minors_visiblity
 		or={
 			and={
 				tag=HWG
@@ -88,10 +93,11 @@ EDR_debug_HWG_land_decisions={
 }
 EDR_debug_SGR_land_decisions={
 	#icon=
-	priority=2
+	priority=11
 	visible={
 		is_debug=yes
 		not={has_global_flag=EDR_no_minors}
+		has_global_flag=EDR_toggle_minors_visiblity
 		or={
 			and={
 				tag=SGR
@@ -103,10 +109,11 @@ EDR_debug_SGR_land_decisions={
 }
 EDR_debug_FLY_land_decisions={
 	#icon=
-	priority=2
+	priority=11
 	visible={
 		is_debug=yes
 		not={has_global_flag=EDR_no_minors}
+		has_global_flag=EDR_toggle_minors_visiblity
 		or={
 			and={
 				tag=HLY
