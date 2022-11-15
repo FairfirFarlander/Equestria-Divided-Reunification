@@ -4,7 +4,7 @@ characters={
 		gender=female
 		portraits={
 			civilian={
-				large="gfx/leaders/Pony/portrait_pony_generic_2.dds"
+				large="GFX_portrait_pony_generic_2"
 			}
 		}
 		country_leader={
@@ -17,7 +17,7 @@ characters={
 		name=MWC_mulberry_wine
 		portraits={
 			civilian={
-				large="gfx/leaders/Pony/portrait_pony_generic_land_4.dds"
+				large="GFX_portrait_pony_generic_land_4"
 			}
 		}
 		country_leader={
@@ -31,7 +31,7 @@ characters={
 		gender=female
 		portraits={
 			civilian={
-				large="gfx/leaders/Pony/portrait_pony_generic_3.dds"
+				large="GFX_portrait_pony_generic_3"
 			}
 		}
 		country_leader={
@@ -44,7 +44,8 @@ characters={
 		name=MWC_maple_leaf
 		portraits={
 			civilian={
-				large="gfx/leaders/Pony/portrait_pony_generic_navy_4.dds"
+				large="GFX_portrait_pony_generic_navy_4"
+				small="GFX_portrait_pony_generic_navy_4_small"
 			}
 		}
 		country_leader={
@@ -58,8 +59,8 @@ characters={
 		gender=female
 		portraits={
 			army={
-				large="gfx/leaders/Pony/portrait_pony_generic_land_8.dds"
-				small="GFX_idea_unknown_advisor"
+				large="GFX_portrait_eqs_pony_generic_13"
+				small="GFX_portrait_eqs_pony_generic_13_small"
 			}
 		}
 		corps_commander={
@@ -81,8 +82,8 @@ characters={
 		gender=female
 		portraits={
 			army={
-				large="gfx/leaders/Pony/portrait_pony_generic_land_9.dds"
-				small="GFX_idea_unknown_advisor"
+				large="GFX_portrait_eqs_pony_generic_18"
+				small="GFX_portrait_eqs_pony_generic_18_small"
 			}
 		}
 		corps_commander={
@@ -100,8 +101,8 @@ characters={
 		gender=female
 		portraits={
 			army={
-				large="gfx/leaders/Pony/portrait_pony_generic_navy_6.dds"
-				small="GFX_idea_unknown_advisor"
+				large="GFX_portrait_pony_generic_navy_6"
+				small="GFX_portrait_pony_generic_navy_6_small"
 			}
 		}
 		navy_leader={

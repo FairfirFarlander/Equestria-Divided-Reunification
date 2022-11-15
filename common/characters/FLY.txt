@@ -3,7 +3,7 @@ characters={
 		name=FLY_cherry_jam
 		gender=female
 		portraits={
-			civilian={large="gfx/leaders/Pony/portrait_pony_generic_5.dds"}
+			civilian={large="GFX_portrait_pony_generic_5"}
 		}
 		country_leader={
 			desc="FLY_cjam_poli_desc"
@@ -11,17 +11,17 @@ characters={
 			traits={}
 		}
 		country_leader={
-			desc="WTC_gpony_poli_desc"
+			desc="FLY_cjam_poli_desc"
 			ideology=conservatism
 			traits={}
 		}
 		country_leader={
-			desc="WTC_gpony_poli_desc"
+			desc="FLY_cjam_poli_desc"
 			ideology=democratic_socialism
 			traits={}
 		}
 		country_leader={
-			desc="WTC_gpony_poli_desc"
+			desc="FLY_cjam_poli_desc"
 			ideology=despotism
 			traits={}
 		}

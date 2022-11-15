@@ -3,7 +3,10 @@ characters={
 		name=HFT_orange
 		gender=female
 		portraits={
-			civilian={large="gfx/leaders/HFT/HFT_orange.dds"}
+			civilian={
+				large="GFX_HFT_orange"
+				small="GFX_idea_HFT_orange"
+			}
 		}
 		country_leader={
 			desc="HFT_orange_poli_desc"
@@ -11,12 +14,12 @@ characters={
 			traits={}
 		}
 		country_leader={
-			desc="WTC_gpony_poli_desc"
+			desc="HFT_orange_poli_desc"
 			ideology=conservatism
 			traits={}
 		}
 		country_leader={
-			desc="WTC_gpony_poli_desc"
+			desc="HFT_orange_poli_desc"
 			ideology=democratic_socialism
 			traits={}
 		}
@@ -25,8 +28,8 @@ characters={
 		name=HFT_orange_grove
 		portraits={
 			army={
-				large="gfx/leaders/Pony/portrait_pony_generic_7.dds"
-				small="GFX_idea_unknown_advisor"
+				large="GFX_portrait_eqs_pony_generic_15"
+				small="GFX_portrait_eqs_pony_generic_15_small"
 			}
 		}
 		corps_commander={
@@ -43,10 +46,13 @@ characters={
 		name=HFT_trixie_lulamoon
 		gender=female
 		portraits={
-			civilian={large="gfx/leaders/HMS/HMS_trixie_lulamoon.dds"}
+			civilian={
+				large="GFX_HMS_trixie_lulamoon"
+				small="GFX_idea_HMS_trixie_lulamoon"
+			}
 			army={
-				large="gfx/leaders/HMS/HMS_trixie_lulamoon.dds"
-				small="GFX_idea_unknown_advisor"
+				large="GFX_HMS_trixie_lulamoon"
+				small="GFX_idea_HMS_trixie_lulamoon"
 			}
 		}
 		country_leader={

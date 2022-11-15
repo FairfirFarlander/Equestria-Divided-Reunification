@@ -3,8 +3,14 @@ characters={
 		name=CUL_the_laughing_mare
 		gender=female
 		portraits={
-			civilian={large="gfx/leaders/CUL/CUL_the_laughing_mare_poli.dds"}
-			army={large="gfx/leaders/CUL/CUL_the_laughing_mare_mili.dds"}
+			civilian={
+				large="GFX_CUL_the_laughing_mare_poli"
+				small="GFX_idea_CUL_the_laughing_mare_poli"
+			}
+			army={
+				large="GFX_CUL_the_laughing_mare_mili"
+				small="GFX_idea_CUL_the_laughing_mare_mili"
+			}
 		}
 		country_leader={
 			desc="CUL_tlmare_poli_desc"
@@ -45,7 +51,7 @@ characters={
 	CUL_cranky_doodle={
 		name=CUL_cranky_doodle
 		portraits={
-			civilian={small="GFX_idea_unknown_advisor"}
+			civilian={small="GFX_idea_CUL_cranky_doodle"}
 		}
 		advisor={
 			slot=political_advisor
@@ -57,10 +63,10 @@ characters={
 		name=CUL_derpy_hooves
 		gender=female
 		portraits={
-			civilian={small="GFX_idea_unknown_advisor"}
+			civilian={small="GFX_idea_CUL_derpy_hooves"}
 			army={
-				large="gfx/leaders/CUL/CUL_derpy_hooves.dds"
-				small="GFX_idea_unknown_advisor"
+				large="GFX_CUL_derpy_hooves"
+				small="GFX_idea_CUL_derpy_hooves"
 			}
 		}
 		corps_commander={
@@ -86,11 +92,11 @@ characters={
 		gender=female
 		portraits={
 			civilian={
-				small="GFX_idea_unknown_advisor"
+				small="GFX_idea_CUL_lyra_heartstrings"
 			}
 			army={
-				large="gfx/leaders/CUL/CUL_lyra_heartstrings.dds"
-				small="GFX_idea_unknown_advisor"
+				large="GFX_CUL_lyra_heartstrings"
+				small="GFX_idea_CUL_lyra_heartstrings"
 			}
 		}
 		corps_commander={
@@ -116,8 +122,8 @@ characters={
 		gender=female
 		portraits={
 			army={
-				large="gfx/leaders/CUL/CUL_surprise.dds"
-				small="GFX_idea_unknown_advisor"
+				large="GFX_CUL_surprise"
+				small="GFX_idea_CUL_surprise"
 			}
 		}
 		corps_commander={
@@ -135,8 +141,8 @@ characters={
 		gender=female
 		portraits={
 			army={
-				large="gfx/leaders/CUL/CUL_screwball.dds"
-				small="GFX_idea_unknown_advisor"
+				large="GFX_CUL_screwball"
+				small="GFX_idea_CUL_screwball"
 			}
 		}
 		corps_commander={
@@ -161,8 +167,8 @@ characters={
 		name=CUL_pokey_pierce
 		portraits={
 			army={
-				large="gfx/leaders/CUL/CUL_pokey_pierce.dds"
-				small="GFX_idea_unknown_advisor"
+				large="GFX_CUL_pokey_pierce"
+				small="GFX_idea_CUL_pokey_pierce"
 			}
 		}
 		corps_commander={

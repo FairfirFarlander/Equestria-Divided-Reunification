@@ -3,8 +3,14 @@ characters={
 		name=HMS_twilight_sparkle
 		gender=female
 		portraits={
-			civilian={large="gfx/leaders/HMS/HMS_twilight_sparkle.dds"}
-			army={large="gfx/leaders/HMS/HMS_twilight_sparkle.dds"}
+			civilian={
+				large="GFX_HMS_twilight_sparkle"
+				small="GFX_idea_HMS_twilight_sparkle"
+			}
+			army={
+				large="GFX_HMS_twilight_sparkle"
+				small="GFX_idea_HMS_twilight_sparkle"
+			}
 		}
 		country_leader={
 			desc="HMS_tsparkle_poli_desc"
@@ -29,7 +35,10 @@ characters={
 	HMS_frail_lance={
 		name=HMS_frail_lance
 		portraits={
-			civilian={large="gfx/leaders/Pony/portrait_pony_generic_navy_10.dds"}
+			civilian={
+				large="GFX_portrait_pony_generic_navy_10"
+				small="GFX_portrait_pony_generic_navy_10_small"
+			}
 		}
 		country_leader={
 			desc="HMS_flance_poli_desc"
@@ -41,11 +50,12 @@ characters={
 		name=HMS_shining_armor
 		portraits={
 			civilian={
-				large="gfx/leaders/HMS/HMS_shining_armor.dds"
+				large="GFX_HMS_shining_armor"
+				small="GFX_idea_HMS_shining_armor"
 			}
 			army={
-				large="gfx/leaders/HMS/HMS_shining_armor.dds"
-				small="GFX_idea_unknown_advisor"
+				large="GFX_HMS_shining_armor"
+				small="GFX_idea_HMS_shining_armor"
 			}
 		}
 		country_leader={
@@ -73,7 +83,8 @@ characters={
 		gender=female
 		portraits={
 			civilian={
-				large="gfx/leaders/Pony/portrait_pony_generic_navy_7.dds"
+				large="GFX_portrait_pony_generic_navy_7"
+				small="GFX_portrait_pony_generic_navy_7_small"
 			}
 		}
 		country_leader={
@@ -82,13 +93,33 @@ characters={
 			traits={}
 		}
 	}
+	HMS_cadence={
+		name=HMS_cadence
+		gender=female
+		portraits={
+			civilian={
+				large="GFX_HMS_cadence"
+				small="GFX_idea_HMS_cadence"
+			}
+		}
+		country_leader={
+			desc="HMS_cadence_poli_desc"
+			ideology=despotism
+			traits={}
+		}
+		advisor={
+			slot=political_advisor
+			idea_token=HMS_cadence_advi
+			traits={}
+		}
+	}
 	HMS_trixie_lulamoon={
 		name=HMS_trixie_lulamoon
 		gender=female
 		portraits={
 			army={
-				large="gfx/leaders/HMS/HMS_trixie_lulamoon.dds"
-				small="GFX_idea_unknown_advisor"
+				large="GFX_HMS_trixie_lulamoon_alt"
+				small="GFX_idea_HMS_trixie_lulamoon_alt"
 			}
 		}
 		corps_commander={
@@ -108,8 +139,8 @@ characters={
 		name=HMS_spike
 		portraits={
 			army={
-				large="gfx/leaders/HMS/HMS_spike.dds"
-				small="GFX_idea_unknown_advisor"
+				large="GFX_HMS_spike"
+				small="GFX_idea_HMS_spike"
 			}
 		}
 		corps_commander={
@@ -120,26 +151,6 @@ characters={
 			planning_skill=1
 			logistics_skill=1
 			traits={dragon_race_trait}	#Add trait that reduces command to 1.#
-		}
-	}
-	HMS_cadence={
-		name=HMS_cadence
-		gender=female
-		portraits={
-			civilian={
-				large="gfx/leaders/HMS/HMS_cadence.dds"
-				small="GFX_idea_unknown_advisor"
-			}
-		}
-		country_leader={
-			desc="HMS_cadence_poli_desc"
-			ideology=despotism
-			traits={}
-		}
-		advisor={
-			slot=political_advisor
-			idea_token=HMS_cadence_advi
-			traits={}
 		}
 	}
 }

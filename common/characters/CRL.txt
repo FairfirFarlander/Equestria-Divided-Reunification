@@ -4,8 +4,8 @@ characters={
 		gender=female
 		portraits={
 			civilian={
-				large="gfx/leaders/CRY/RadiantHope.tga"
-				#small="gfx/interface/ideas/CRY_radiant_hope_idea.dds"
+				large="GFX_CRL_radiant_hope"
+				#small="GFX_idea_CRL_radiant_hope"
 			}
 		}
 		country_leader={	#POLITICS_RADIANTHOPE_DESC
@@ -14,7 +14,7 @@ characters={
 			traits={democratic_sympathies}
 		}
 		country_leader={
-			desc="WTC_gpony_poli_desc"
+			desc="CRL_rhope_poli_desc"
 			ideology=conservatism
 			traits={}
 		}

@@ -3,7 +3,14 @@ characters={
 		name=MSN_duchess_aurora
 		gender=female
 		portraits={
-			civilian={large="gfx/leaders/MSN/MSN_duchess_aurora.dds"}
+			civilian={
+				large="GFX_MSN_duchess_aurora"
+				small="GFX_idea_MSN_duchess_aurora"
+			}
+			army={
+				large="GFX_MSN_duchess_aurora"
+				small="GFX_idea_MSN_duchess_aurora"
+			}
 		}
 		country_leader={
 			desc="MSN_daurora"
@@ -15,7 +22,10 @@ characters={
 		name=MSN_generic_pony
 		gender=female
 		portraits={
-			civilian={large="gfx/leaders/leader_unknown.dds"}
+			civilian={
+				large="GFX_portrait_eqs_pony_generic_21"
+				small="GFX_portrait_eqs_pony_generic_21_small"
+			}
 		}
 		country_leader={
 			desc="MSN_gpony_poli_desc"

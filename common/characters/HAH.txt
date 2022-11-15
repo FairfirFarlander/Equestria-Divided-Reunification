@@ -2,7 +2,10 @@ characters={
 	HAH_misty_wisps={
 		name=HAH_misty_wisps
 		portraits={
-			civilian={large="gfx/leaders/HAH/HAH_misty_wisps.dds"}
+			civilian={
+				large="GFX_HAH_misty_wisps"
+				small="GFX_idea_HAH_misty_wisps"
+			}
 		}
 		country_leader={	#Can switch to neofeudal
 			desc="HAH_mwisps_poli_desc"
@@ -18,7 +21,10 @@ characters={
 	HAH_willow_branch={
 		name=HAH_willow_branch
 		portraits={
-			civilian={large="gfx/leaders/HAH/HAH_willow_branch.dds"}
+			civilian={
+				large="GFX_HAH_willow_branch"
+				small="GFX_idea_HAH_willow_branch"
+			}
 		}
 		country_leader={
 			desc="HAH_wbranch_poli_desc"
@@ -29,13 +35,23 @@ characters={
 	HAH_fiddle_pick={	#See Focus Tree
 		name=HAH_fiddle_pick
 		portraits={
-			army={large="gfx/leaders/HAH/HAH_fiddle_pick.dds"}
+			army={
+				large="GFX_HAH_fiddle_pick"
+				small="GFX_idea_HAH_fiddle_pick"
+			}
 		}
 	}
 	HAH_string_bow={	#See Focus Tree
 		name=HAH_string_bow
 		portraits={
-			army={large="gfx/leaders/HAH/HAH_string_bow.dds"}
+			civilian={
+				large="GFX_HAH_string_bow"
+				small="GFX_idea_HAH_string_bow"
+			}
+			army={
+				large="GFX_HAH_string_bow"
+				small="GFX_idea_HAH_string_bow"
+			}
 		}
 		country_leader={
 			desc="HAH_sbow_poli_desc"
@@ -46,19 +62,19 @@ characters={
 	HAH_boiled_apples={	#See Focus Tree
 		name=HAH_boiled_apples
 		portraits={
-			civilian={small="gfx/interface/ideas/idea_unknown_advisor.dds"}
+			civilian={small="GFX_idea_unknown_advisor"}
 		}
 	}
 	HAH_word_spinner={	#See Focus Tree
 		name=HAH_word_spinner
 		portraits={
-			civilian={small="gfx/interface/ideas/idea_unknown_advisor.dds"}
+			civilian={small="GFX_idea_unknown_advisor"}
 		}
 	}
 	HAH_uncle_haystack={	#See Focus Tree
 		name=HAH_uncle_haystack
 		portraits={
-			civilian={small="gfx/interface/ideas/idea_unknown_advisor.dds"}
+			civilian={small="GFX_idea_unknown_advisor"}
 		}
 	}
 }

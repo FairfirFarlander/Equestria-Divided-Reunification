@@ -4,7 +4,7 @@ characters={
 		gender=female
 		portraits={
 			civilian={
-				large="gfx/leaders/leader_unknown.dds"
+				large="GFX_portrait_eqs_pony_generic_26"
 			}
 		}
 		country_leader={
@@ -13,17 +13,17 @@ characters={
 			traits={}
 		}
 		country_leader={
-			desc="WTC_gpony_poli_desc"
+			desc="MSE_gpony_poli_desc"
 			ideology=conservatism
 			traits={}
 		}
 		country_leader={
-			desc="WTC_gpony_poli_desc"
+			desc="MSE_gpony_poli_desc"
 			ideology=democratic_socialism
 			traits={}
 		}
 		country_leader={
-			desc="WTC_gpony_poli_desc"
+			desc="MSE_gpony_poli_desc"
 			ideology=despotism
 			traits={}
 		}

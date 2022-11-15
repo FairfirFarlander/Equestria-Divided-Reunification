@@ -3,10 +3,12 @@ characters={
 		name=THA_argent_end
 		portraits={
 			civilian={
-				large="gfx/leaders/THA/THA_argent_end.dds"
+				large="GFX_THA_argent_end"
+				small="GFX_idea_THA_argent_end"
 			}
 			army={
-				large="gfx/leaders/THA/THA_argent_end.dds"
+				large="GFX_THA_argent_end"
+				small="GFX_idea_THA_argent_end"
 			}
 		}
 		country_leader={
@@ -16,7 +18,7 @@ characters={
 			traits={}
 		}
 		country_leader={
-			desc="WTC_gpony_poli_desc"
+			desc="THA_aend_poli_desc"
 			ideology=democratic_socialism
 			traits={}
 		}
@@ -34,12 +36,12 @@ characters={
 		name=THA_auburn_peak
 		portraits={
 			civilian={
-				large="gfx/leaders/THA/THA_auburn_peak.dds"
-				small="GFX_idea_unknown_advisor"
+				large="GFX_THA_auburn_peak"
+				small="GFX_idea_THA_auburn_peak"
 			}
 			army={
-				large="gfx/leaders/THA/THA_auburn_peak.dds"
-				small="GFX_idea_unknown_advisor"
+				large="GFX_THA_auburn_peak"
+				small="GFX_idea_THA_auburn_peak"
 			}
 		}
 		country_leader={
@@ -68,8 +70,8 @@ characters={
 		gender=female
 		portraits={
 			civilian={
-				large="gfx/leaders/leader_unknown.dds"
-				small="GFX_idea_unknown_advisor"
+				large="GFX_portrait_eqs_pony_generic_23"
+				small="GFX_portrait_eqs_pony_generic_23_small"
 			}
 		}
 		country_leader={

@@ -4,11 +4,11 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/LSP/pinechest.tga"
-				small="gfx/interface/ideas/Advisors/LSP/LSP_pine_chest.tga"
+				small="GFX_idea_LSP_Pine_Chest"
 			}
 			army={
 				large="gfx/leaders/LSP/pinechest.tga"
-				small="gfx/interface/ideas/Advisors/LSP/LSP_pine_chest.tga"
+				small="GFX_idea_LSP_Pine_Chest"
 			}
 		}
 		country_leader={
@@ -16,17 +16,17 @@ characters={
 			traits={anti_communist}
 		}
 		country_leader={
-			desc="WTC_gpony_poli_desc"
+			desc="LAS_pchest_poli_desc"
 			ideology=conservatism
 			traits={}
 		}
 		country_leader={
-			desc="WTC_gpony_poli_desc"
+			desc="LAS_pchest_poli_desc"
 			ideology=democratic_socialism
 			traits={}
 		}
 		country_leader={
-			desc="WTC_gpony_poli_desc"
+			desc="LAS_pchest_poli_desc"
 			ideology=despotism
 			traits={}
 		}

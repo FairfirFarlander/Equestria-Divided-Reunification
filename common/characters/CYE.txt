@@ -10,17 +10,17 @@ characters={
 			traits={}
 		}
 		country_leader={
-			desc="WTC_gpony_poli_desc"
+			desc="CYE_nihappens_desc"
 			ideology=conservatism
 			traits={}
 		}
 		country_leader={
-			desc="WTC_gpony_poli_desc"
+			desc="CYE_nihappens_desc"
 			ideology=democratic_socialism
 			traits={}
 		}
 		country_leader={
-			desc="WTC_gpony_poli_desc"
+			desc="CYE_nihappens_desc"
 			ideology=fascism_ideology
 			traits={}
 		}

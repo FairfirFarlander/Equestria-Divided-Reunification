@@ -2,7 +2,10 @@ characters={
 	WTC_dashing_habidasher={
 		name=WTC_dashing_habidasher
 		portraits={
-			civilian={large="gfx/leaders/WTC/WTC_dashing_habidasher.dds"}
+			civilian={
+				large="GFX_WTC_dashing_habidasher"
+				small="GFX_idea_WTC_dashing_habidasher"
+			}
 		}
 		country_leader={
 			desc="WTC_dhabidasher_poli_desc"
@@ -10,12 +13,12 @@ characters={
 			traits={}
 		}
 		country_leader={
-			desc="WTC_gpony_poli_desc"
+			desc="WTC_dhabidasher_poli_desc"
 			ideology=conservatism
 			traits={}
 		}
 		country_leader={
-			desc="WTC_gpony_poli_desc"
+			desc="WTC_dhabidasher_poli_desc"
 			ideology=democratic_socialism
 			traits={}
 		}
@@ -24,8 +27,8 @@ characters={
 		name=WTC_alicia_habidasher
 		portraits={
 			civilian={
-				large="gfx/leaders/WTC/WTC_alicia_habidasher.dds"
-				small="gfx/leaders/WTC/small/WTC_alicia_habidasher_small.dds"
+				large="GFX_WTC_alicia_habidasher"
+				small="GFX_idea_WTC_alicia_habidasher"
 			}
 		}
 		country_leader={
@@ -43,7 +46,10 @@ characters={
 	WTC_eloi_path={
 		name=WTC_eloi_path
 		portraits={
-			civilian={small="gfx/leaders/WTC/small/WTC_eloi_path_small.dds"}
+			civilian={
+				large="GFX_WTC_eloi_path"
+				small="GFX_idea_WTC_eloi_path"
+			}
 		}
 		advisor={
 			slot=political_advisor
@@ -54,7 +60,10 @@ characters={
 	WTC_saddle_arabian_mercenary={
 		name=WTC_saddle_arabian_mercenary
 		portraits={
-			civilian={small="gfx/leaders/WTC/small/WTC_saddle_arabian_small.dds"}
+			civilian={
+				large="GFX_WTC_saddle_arabia_mercenary"
+				small="GFX_idea_WTC_saddle_arabian_mercenary"
+			}
 		}
 		advisor={
 			slot=political_advisor
@@ -65,7 +74,10 @@ characters={
 	WTC_zebrican_mercenary={
 		name=WTC_zebrican_mercenary
 		portraits={
-			civilian={small="gfx/leaders/WTC/small/WTC_zebrican_mercenary_small.dds"}
+			civilian={
+				large="GFX_WTC_zebrican_mercenary"
+				small="GFX_idea_WTC_zebrican_mercenary"
+			}
 		}
 		advisor={
 			slot=political_advisor

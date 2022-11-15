@@ -3,8 +3,14 @@ characters={
 		name=CHY_cherry_jubilee
 		gender=female
 		portraits={
-			civilian={large="gfx/leaders/CHY/CHY_cherry_jubilee.dds"}
-			army={large="gfx/leaders/CHY/CHY_cherry_jubilee.dds"}
+			civilian={
+				large="GFX_CHY_cherry_jubilee"
+				small="GFX_idea_CHY_cherry_jubilee"
+			}
+			army={
+				large="GFX_CHY_cherry_jubilee"
+				small="GFX_idea_CHY_cherry_jubilee"
+			}
 		}
 		country_leader={
 			desc="CHY_cjubilee_poli_desc"
@@ -12,17 +18,17 @@ characters={
 			traits={}
 		}
 		country_leader={
-			desc="WTC_gpony_poli_desc"
+			desc="CHY_cjubilee_poli_desc"
 			ideology=conservatism
 			traits={}
 		}
 		country_leader={
-			desc="WTC_gpony_poli_desc"
+			desc="CHY_cjubilee_poli_desc"
 			ideology=democratic_socialism
 			traits={}
 		}
 		country_leader={
-			desc="WTC_gpony_poli_desc"
+			desc="CHY_cjubilee_poli_desc"
 			ideology=despotism
 			traits={}
 		}

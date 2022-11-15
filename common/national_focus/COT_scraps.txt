@@ -48,13 +48,13 @@
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus COT_griffonrelations"
 			#country_event=COTact1.6A	#Wingbardian Volunteers
-			create_corps_commander={	#TalonSparrow name by Pax
-				name="William Talonsparrow"	#id=	#desc=""
-				picture="Talonferro.dds"	#female=yes
-				traits={harsh_leader bleeding_heart griffon_race_trait}
-				skill=3	attack_skill=3	defense_skill=2
-				planning_skill=2	logistics_skill=1
-			}
+			#create_corps_commander={	#TalonSparrow name by Pax
+			#	name="William Talonsparrow"	#id=	#desc=""
+			#	picture="GFX_portrait_griffon_generic_land_12"	#female=yes
+			#	traits={harsh_leader bleeding_heart griffon_race_trait}
+			#	skill=3	attack_skill=3	defense_skill=2
+			#	planning_skill=2	logistics_skill=1
+			#}
 			hidden_effect={load_oob="COT_taliaferro"}
 		}
 	}

@@ -4,10 +4,12 @@ characters={
 		gender=female
 		portraits={
 			civilian={
-				large="gfx/leaders/HSW/HSW_rainbow_dash.dds"
+				large="GFX_HSW_rainbow_dash"
+				small="GFX_idea_HSW_rainbow_dash"
 			}
 			army={
-				large="gfx/leaders/HSW/HSW_rainbow_dash.dds"
+				large="GFX_HSW_rainbow_dash"
+				small="GFX_idea_HSW_rainbow_dash"
 			}
 		}
 		country_leader={
@@ -33,7 +35,8 @@ characters={
 		name=HSW_storm_mayhem
 		portraits={
 			civilian={
-				large="gfx/leaders/Pony/portrait_pony_generic_navy_15.dds"
+				large="GFX_portrait_pony_generic_navy_15"
+				small="GFX_portrait_pony_generic_navy_15_small"
 			}
 		}
 		country_leader={
@@ -46,7 +49,8 @@ characters={
 		name=HSW_steel_wings
 		portraits={
 			civilian={
-				large="gfx/leaders/Pony/portrait_pony_generic_navy_1.dds"
+				large="GFX_portrait_pony_generic_navy_1"
+				small="GFX_portrait_pony_generic_navy_1_small"
 			}
 		}
 		country_leader={
@@ -60,7 +64,8 @@ characters={
 		gender=female
 		portraits={
 			civilian={
-				large="gfx/leaders/Pony/portrait_pony_generic_navy_5.dds"
+				large="GFX_portrait_pony_generic_navy_5"
+				small="GFX_portrait_pony_generic_navy_5_small"
 			}
 		}
 		country_leader={
@@ -73,8 +78,8 @@ characters={
 		name=HSW_soarin
 		portraits={
 			army={
-				large="gfx/leaders/HSW/HSW_soarin.dds"
-				small="GFX_idea_unknown_advisor"
+				large="GFX_HSW_soarin"
+				small="GFX_idea_HSW_soarin"
 			}
 		}
 		corps_commander={	#wing commander
@@ -96,8 +101,8 @@ characters={
 		gender=female
 		portraits={
 			army={
-				large="gfx/leaders/HSW/HSW_spitfire.dds"
-				small="GFX_idea_unknown_advisor"
+				large="GFX_HSW_spitfire"
+				small="GFX_idea_HSW_spitfire"
 			}
 		}
 		corps_commander={	#wing commander
@@ -119,8 +124,8 @@ characters={
 		gender=female
 		portraits={
 			army={
-				large="gfx/leaders/HSW/HSW_scootaloo.dds"
-				small="GFX_idea_unknown_advisor"
+				large="GFX_HSW_scootaloo"
+				small="GFX_idea_HSW_scootaloo"
 			}
 		}
 		corps_commander={

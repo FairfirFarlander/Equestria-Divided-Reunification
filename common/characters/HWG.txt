@@ -4,10 +4,12 @@ characters={
 		gender=female
 		portraits={
 			civilian={
-				large="gfx/leaders/HWG/HWG_rarity.dds"
+				large="GFX_HWG_rarity"
+				small="GFX_idea_HWG_rarity"
 			}
 			army={
-				large="gfx/leaders/HWG/HWG_rarity.dds"
+				large="GFX_HWG_rarity"
+				small="GFX_idea_HWG_rarity"
 			}
 		}
 		country_leader={
@@ -33,7 +35,8 @@ characters={
 		name=HWG_shooter_mark
 		portraits={
 			civilian={
-				large="gfx/leaders/Pony/portrait_pony_generic_navy_4.dds"
+				large="GFX_portrait_pony_generic_navy_4"
+				small="GFX_portrait_pony_generic_navy_4_small"
 			}
 		}
 		country_leader={
@@ -47,12 +50,12 @@ characters={
 		gender=female
 		portraits={
 			civilian={
-				large="gfx/leaders/HWG/HWG_fleur_de_lis.dds"
-				small="GFX_idea_unknown_advisor"
+				large="GFX_HWG_fleur_de_lis"
+				small="GFX_idea_HWG_fleur_de_lis"
 			}
 			army={
-				large="gfx/leaders/HWG/HWG_fleur_de_lis.dds"
-				small="GFX_idea_unknown_advisor"
+				large="GFX_HWG_fleur_de_lis"
+				small="GFX_idea_HWG_fleur_de_lis"
 			}
 		}
 		country_leader={
@@ -121,12 +124,12 @@ characters={
 		gender=female	#--Farlander shrugged-- ~FF#
 		portraits={
 			civilian={
-				large="gfx/leaders/HWG/HWG_clair_de_lune.dds"
-				small="GFX_idea_unknown_advisor"
+				large="GFX_HWG_clair_de_lune"
+				small="GFX_idea_HWG_clair_de_lune"
 			}
 			army={
-				large="gfx/leaders/HWG/HWG_clair_de_lune.dds"
-				small="GFX_idea_unknown_advisor"
+				large="GFX_HWG_clair_de_lune"
+				small="GFX_idea_HWG_clair_de_lune"
 			}
 		}
 		corps_commander={
@@ -143,8 +146,8 @@ characters={
 		name=HWG_mashed_potato
 		portraits={
 			army={
-				large="gfx/leaders/HWG/HWG_mashed_potato.dds"
-				small="GFX_idea_unknown_advisor"
+				large="GFX_HWG_mashed_potato"
+				small="GFX_idea_HWG_mashed_potato"
 			}
 		}
 		corps_commander={
@@ -162,8 +165,8 @@ characters={
 		gender=female
 		portraits={
 			army={
-				large="gfx/leaders/Pony/portrait_pony_generic_navy_7.dds"
-				small="GFX_idea_unknown_advisor"
+				large="GFX_portrait_pony_generic_navy_7"
+				small="GFX_portrait_pony_generic_navy_7_small"
 			}
 		}
 		navy_leader={
@@ -213,7 +216,8 @@ characters={
 		gender=female
 		portraits={
 			civilian={
-				small="GFX_idea_unknown_advisor"
+				large="GFX_HWG_diamond_tiara"
+				small="GFX_idea_HWG_diamond_tiara"
 			}
 		}
 		advisor={
@@ -228,7 +232,8 @@ characters={
 		gender=female
 		portraits={
 			civilian={
-				small="GFX_idea_unknown_advisor"
+				large="GFX_HWG_sweetie_belle"
+				small="GFX_idea_HWG_sweetie_belle"
 			}
 		}
 		advisor={
@@ -238,14 +243,16 @@ characters={
 			traits={known_pony}
 		}
 	}
-	HWG_nighthooves={
-		name=HWG_nighthooves
+	HWG_octavia={	#nighthooves
+		name=HWG_octavia
 		portraits={
 			civilian={
-				small="GFX_idea_unknown_advisor"
+				large="GFX_HWG_octavia"
+				small="GFX_idea_HWG_octavia"
 			}
 			army={
-				small="GFX_idea_unknown_advisor"
+				large="GFX_HWG_octavia"
+				small="GFX_idea_HWG_octavia"
 			}
 		}
 		#advisor={
@@ -267,7 +274,8 @@ characters={
 		name=HWG_whispy_locks
 		portraits={
 			civilian={
-				small="GFX_idea_unknown_advisor"
+				large="GFX_HWG_whispy_locks"
+				small="GFX_idea_HWG_whispy_locks"
 			}
 		}
 		advisor={
@@ -280,7 +288,8 @@ characters={
 		name=HWG_lemon_meringue
 		portraits={
 			civilian={
-				small="GFX_idea_unknown_advisor"
+				large="GFX_HWG_lemon_meringue"
+				small="GFX_idea_HWG_lemon_meringue"
 			}
 		}
 		advisor={
@@ -293,7 +302,8 @@ characters={
 		name=HWG_prim_n_proper
 		portraits={
 			civilian={
-				small="GFX_idea_unknown_advisor"
+				large="GFX_HWG_prim_n_proper"
+				small="GFX_idea_HWG_prim_n_proper"
 			}
 		}
 		advisor={
@@ -306,7 +316,8 @@ characters={
 		name=HWG_straight_arrow
 		portraits={
 			civilian={
-				small="GFX_idea_unknown_advisor"
+				large="GFX_HWG_straight_arrow"
+				small="GFX_idea_HWG_straight_arrow"
 			}
 		}
 		advisor={

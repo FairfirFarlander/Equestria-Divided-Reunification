@@ -66,11 +66,11 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/TEM/TEM_Tailcoatl.tga"
-				small="gfx/interface/ideas/Advisors/TEM/TEM_Tailcoatl.tga"
+				small="GFX_idea_TEM_Tailcoatl"
 			}
 			army={
 				large="gfx/leaders/TEM/TEM_Tailcoatl.tga"
-				small="gfx/interface/ideas/Advisors/TEM/TEM_Tailcoatl.tga"
+				small="GFX_idea_TEM_Tailcoatl"
 			}
 		}
 		country_leader={
@@ -96,7 +96,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/TEM/TEM_tenoch.tga"
-				small="gfx/interface/ideas/Advisors/TEM/TEM_tenoch.tga"
+				small="GFX_idea_TEM_Tenoch"
 			}
 		}
 		corps_commander={

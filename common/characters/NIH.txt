@@ -3,11 +3,12 @@ characters={
 		name=NIH_cursed_fate
 		portraits={
 			civilian={
-				large="gfx/leaders/NIH/NIH_cursed_fate.dds"
+				large="GFX_NIH_cursed_fate"
+				small="GFX_idea_NIH_cursed_fate"
 			}
 			army={
 				large="gfx/leaders/NIH/NIH_cursed_fate.dds"
-				small="GFX_idea_unknown_advisor"
+				small="GFX_idea_NIH_cursed_fate"
 			}
 		}
 		country_leader={
@@ -16,17 +17,17 @@ characters={
 			traits={}
 		}
 		country_leader={
-			desc="WTC_gpony_poli_desc"
+			desc="NIH_cfate_poli_desc"
 			ideology=conservatism
 			traits={}
 		}
 		country_leader={
-			desc="WTC_gpony_poli_desc"
+			desc="NIH_cfate_poli_desc"
 			ideology=democratic_socialism
 			traits={}
 		}
 		country_leader={
-			desc="WTC_gpony_poli_desc"
+			desc="NIH_cfate_poli_desc"
 			ideology=fascism_ideology
 			traits={}
 		}

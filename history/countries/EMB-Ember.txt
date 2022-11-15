@@ -22,7 +22,7 @@ set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	
 set_popularities={fascism=13 communism=42 neutrality=24 democratic=21}
 set_politics={ruling_party=communism}
 recruit_character=EMB_mother_nightshade
-recruit_character=EMB_councilor_tyrennadus
+recruit_character=EMB_councillor_tyrennadus
 recruit_character=EMB_queen_narratek
 recruit_character=EMB_aetanae_krix
 recruit_character=EMB_hithax_ballas	#Remove after testing

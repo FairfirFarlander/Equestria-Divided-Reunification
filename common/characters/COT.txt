@@ -9,17 +9,17 @@ characters={
 			traits={}
 		}
 		country_leader={
-			desc="WTC_gpony_poli_desc"
+			desc="COT_jdneighvis_poli_desc"
 			ideology=conservatism
 			traits={}
 		}
 		country_leader={
-			desc="WTC_gpony_poli_desc"
+			desc="COT_jdneighvis_poli_desc"
 			ideology=democratic_socialism
 			traits={}
 		}
 		country_leader={
-			desc="WTC_gpony_poli_desc"
+			desc="COT_jdneighvis_poli_desc"
 			ideology=fascism_ideology
 			traits={}
 		}
@@ -166,6 +166,24 @@ characters={
 				trait_cautious
 				artillery_expert
 			}
+		}
+	}
+	COT_william_b_talonsparrow={	#TalonSparrow name by Pax
+		name=COT_talonsparrow	#Based off of the 23rd Virginia - Major General/Brigadier General William B. Taliaferro
+		portraits={
+			army={
+				large="GFX_portrait_griffon_generic_land_12"
+				small="GFX_portrait_griffon_generic_land_12_small"
+			}
+		}
+		corps_commander={	#William B. Talonsparrow
+			desc="COT_wbtalonsparrow"
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			traits={harsh_leader bleeding_heart griffon_race_trait}
 		}
 	}
 }

@@ -3,7 +3,7 @@ characters={
 		name=FRI_generic_pony
 		gender=female
 		portraits={
-			civilian={large="gfx/leaders/leader_unknown.dds"}
+			civilian={large="GFX_portrait_eqs_pony_generic_14"}
 		}
 		country_leader={
 			desc="FRI_gpony_poli_desc"
@@ -11,17 +11,17 @@ characters={
 			traits={}
 		}
 		country_leader={
-			desc="WTC_gpony_poli_desc"
+			desc="FRI_gpony_poli_desc"
 			ideology=conservatism
 			traits={}
 		}
 		country_leader={
-			desc="WTC_gpony_poli_desc"
+			desc="FRI_gpony_poli_desc"
 			ideology=democratic_socialism
 			traits={}
 		}
 		country_leader={
-			desc="WTC_gpony_poli_desc"
+			desc="FRI_gpony_poli_desc"
 			ideology=despotism
 			traits={}
 		}

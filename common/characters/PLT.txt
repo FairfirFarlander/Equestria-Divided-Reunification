@@ -4,7 +4,8 @@ characters={
 		gender=female
 		portraits={
 			civilian={
-				large="gfx/leaders/Pony/portrait_pony_generic_navy_14.dds"
+				large="GFX_portrait_eqs_pony_generic_16"
+				small="GFX_portrait_eqs_pony_generic_16_small"
 			}
 		}
 		country_leader={
@@ -22,7 +23,8 @@ characters={
 		name=PLT_willie_hoofard_tuft
 		portraits={
 			civilian={
-				large="gfx/leaders/Pony/portrait_pony_generic_land_3.dds"
+				large="GFX_portrait_pony_generic_land_3"
+				small="GFX_portrait_pony_generic_land_3_small"
 			}
 		}
 		country_leader={
@@ -35,7 +37,8 @@ characters={
 		name=PLT_thistle_tap
 		portraits={
 			civilian={
-				large="gfx/leaders/Pony/portrait_pony_generic_land_11.dds"
+				large="GFX_portrait_pony_generic_land_11"
+				small="GFX_portrait_pony_generic_land_11_small"
 			}
 		}
 		country_leader={

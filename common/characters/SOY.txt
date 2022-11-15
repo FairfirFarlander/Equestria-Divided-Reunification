@@ -4,7 +4,7 @@ characters={
 		gender=female
 		portraits={
 			civilian={
-				large="gfx/leaders/SOY/SOY_Yaria.dds"
+				large="GFX_SOY_yaria"
 				small="GFX_idea_CHN_queen_yaria"
 			}
 		}
@@ -14,17 +14,17 @@ characters={
 			traits={queen_yaria}
 		}
 		country_leader={
-			desc="WTC_gpony_poli_desc"
+			desc="chn_queen_yaria_desc"
 			ideology=conservatism
 			traits={}
 		}
 		country_leader={
-			desc="WTC_gpony_poli_desc"
+			desc="chn_queen_yaria_desc"
 			ideology=democratic_socialism
 			traits={}
 		}
 		country_leader={
-			desc="WTC_gpony_poli_desc"
+			desc="chn_queen_yaria_desc"
 			ideology=fascism_ideology
 			traits={}
 		}

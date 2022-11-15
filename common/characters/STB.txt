@@ -4,7 +4,8 @@ characters={
 		gender=female
 		portraits={
 			civilian={
-				large="gfx/leaders/Pony/portrait_pony_generic_navy_13.dds"
+				large="GFX_portrait_pony_generic_navy_13"
+				small="GFX_portrait_pony_generic_navy_13_small"
 			}
 		}
 		country_leader={
@@ -18,7 +19,8 @@ characters={
 		gender=female
 		portraits={
 			civilian={
-				large="gfx/leaders/Pony/portrait_pony_generic_land_8.dds"
+				large="GFX_portrait_pony_generic_land_8"
+				small="GFX_portrait_pony_generic_land_8_small"
 			}
 		}
 		country_leader={
@@ -31,7 +33,8 @@ characters={
 		name=STB_smokey_dust
 		portraits={
 			civilian={
-				large="gfx/leaders/Pony/portrait_pony_generic_navy_8.dds"
+				large="GFX_portrait_pony_generic_navy_8"
+				small="GFX_portrait_pony_generic_navy_8_small"
 			}
 		}
 		country_leader={
@@ -40,7 +43,7 @@ characters={
 			traits={}
 		}
 		country_leader={
-			desc="WTC_gpony_poli_desc"
+			desc="STB_sdust_poli_desc"
 			ideology=conservatism
 			traits={}
 		}

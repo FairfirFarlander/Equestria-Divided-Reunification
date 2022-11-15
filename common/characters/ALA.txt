@@ -3,7 +3,7 @@ characters={
 		name=ALA_almond_tree
 		gender=female
 		portraits={
-			civilian={large="gfx/leaders/Pony/portrait_pony_generic_4.dds"}
+			civilian={large="GFX_portrait_pony_generic_4"}
 		}
 		country_leader={
 			desc="ALA_atree_poli_desc"
@@ -11,17 +11,17 @@ characters={
 			traits={}
 		}
 		country_leader={
-			desc="WTC_gpony_poli_desc"
+			desc="ALA_atree_poli_desc"
 			ideology=conservatism
 			traits={}
 		}
 		country_leader={
-			desc="WTC_gpony_poli_desc"
+			desc="ALA_atree_poli_desc"
 			ideology=democratic_socialism
 			traits={}
 		}
 		country_leader={
-			desc="WTC_gpony_poli_desc"
+			desc="ALA_atree_poli_desc"
 			ideology=fascism_ideology
 			traits={}
 		}

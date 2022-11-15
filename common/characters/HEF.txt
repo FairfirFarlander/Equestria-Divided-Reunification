@@ -3,8 +3,14 @@ characters={
 		name=HEF_lady_fluttershy
 		gender=female
 		portraits={
-			civilian={large="gfx/leaders/HEF/HEF_lady_fluttershy.dds"}
-			army={large="gfx/leaders/HEF/HEF_lady_fluttershy.dds"}
+			civilian={
+				large="GFX_HEF_lady_fluttershy"
+				small="GFX_idea_HEF_lady_fluttershy"
+			}
+			army={
+				large="GFX_HEF_lady_fluttershy"
+				small="GFX_idea_HEF_lady_fluttershy"
+			}
 		}
 		country_leader={
 			desc="HEF_lfluttershy_poli_desc"
@@ -61,7 +67,7 @@ characters={
 		name=HEF_flower_seed
 		gender=female
 		portraits={
-			civilian={large="gfx/leaders/Pony/portrait_pony_generic_6.dds"}
+			civilian={large="GFX_portrait_eqs_pony_generic_14"}
 		}
 		country_leader={
 			desc="HEF_fseed_poli_desc"
