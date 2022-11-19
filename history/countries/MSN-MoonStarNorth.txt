@@ -20,9 +20,10 @@ set_technology={
 	pony_race=1
 	penal_infantry=1
 	melee_weapons=1
+	melee_weapons1=1
 	tech_support=1
-	tech_unicorn=1
-	tech_unicorn_ms=1
+	tech_pegasi=1
+	#tech_knights=1	#Later
 }
 actually_fix_weapon_techs=yes
 set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
