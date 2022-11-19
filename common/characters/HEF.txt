@@ -24,13 +24,13 @@ characters={
 			defense_skill=1
 			planning_skill=1
 			logistics_skill=1
-			traits={pony_race_trait}	#Add 3 more#
+			traits={pony_race_trait}
 		}
 	}
 	HEF_red_leaves={
 		name=HEF_red_leaves
 		portraits={
-			civilian={large="gfx/leaders/Pony/portrait_pony_generic_land_4.dds"}
+			civilian={large="GFX_portrait_pony_generic_land_4"}
 		}
 		country_leader={
 			desc="HEF_rleaves_poli_desc"
@@ -60,7 +60,7 @@ characters={
 			defense_skill=1
 			planning_skill=1
 			logistics_skill=1
-			traits={pony_race_trait}	#Add 3 more#
+			traits={pony_race_trait}
 		}
 	}
 	HEF_flower_seed={

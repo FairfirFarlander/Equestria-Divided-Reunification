@@ -1,7 +1,7 @@
 focus_tree={
 	id=EDR_generic_focus_tree
 	country={factor=2}
-	continuous_focus_position={x=60 y=60}
+	continuous_focus_position={x=60 y=-400}
 	shared_focus=EDR_I00
 	shared_focus=EDR_L05
 	shared_focus=EDR_N05
@@ -319,15 +319,27 @@ focus_tree={
 			add_research_slot=1
 		}
 	}
-#Army Tree
-	shared_focus={		#Recover Lost Weaponry
+#Land Tree
+	shared_focus={	#Recover Lost Weaponry
 		id=EDR_L05 icon=GFX_focus_indy_swing_the_sword
+		x=-10
+		y=5
+		cost=4
 		search_filters={FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_RESEARCH}
-		x=-10 y=5 cost=4 ai_will_do={factor=40}
-		bypass={AND={has_tech=melee_weapons1 has_tech=pre_gw_artillery}}
+		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus EDR_L05"
-			add_equipment_to_stockpile={type=melee_equipment_0 amount=220 producer=EQS}
+			add_equipment_to_stockpile={
+				type=melee_equipment_0
+				amount=220
+				producer=EQS
+			}
+			add_equipment_to_stockpile={
+				type=melee_equipment_1
+				amount=20
+				producer=EQS
+			}
+			custom_effect_tooltip=EDR_L05_tooltip
 		}
 	}
 	shared_focus={		#Restructure the Chain of Command
@@ -344,13 +356,14 @@ focus_tree={
 			}
 		}
 	}
-	shared_focus={		#Seek Out Equestrian Weapons Caches
+	shared_focus={	#Seek Out Equestrian Weapons Caches
 		id=EDR_L06B icon=GFX_goal_generic_military_equipment
 		relative_position_id=EDR_L05
 		x=-1 y=1 cost=7 ai_will_do={factor=40}
 		prerequisite={focus=EDR_L05}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus EDR_L06B"
+			custom_effect_tooltip=EDR_L06B_tooltip
 		}
 	}
 	shared_focus={		#Rekindle The Old Foundaries
