@@ -41,13 +41,13 @@ EDR_debug_HEF_land_decisions: "[HEF.Getflag] §gDebug§!: §YToggle§! Everfree 
  HEF_res_WTC: "§gDebug§! §GRestore§! [WTC.getname] [WTC.getflag].\n§RRemove§! cores for [HEF.getname]/[HWG.getname] [HEF.getflag][HWG.getflag]."
  HEF_rev_WTC: "§gDebug§! §RRemove§! [WTC.getname] [WTC.getflag].\n§YAnnex§!/§Gcore§! to [HEF.getname]/[HWG.getname] [HEF.getflag][HWG.getflag]."
 ##MoonStar Minor Visibility##
-EDR_debug_HMS_land_decisions: "[HMS.Getflag] §gDebug§!: §YToggle§! MoonStar Minors [HAH.Getflag][MSE.Getflag][MSN.Getflag][FRI.Getflag]"
+EDR_debug_HMS_land_decisions: "[HMS.Getflag] §gDebug§!: §YToggle§! MoonStar Minors [HAH.Getflag][MSE.Getflag][NEF.Getflag][FRI.Getflag]"
  HMS_res_HAH: "§gDebug§! §GRestore§! [HAH.getname] [HAH.getflag].\n§RRemove§! cores for [HMS.getname] [HMS.getflag]."
  HMS_rev_HAH: "§gDebug§! §RRemove§! [HAH.getname] [HAH.getflag].\n§YAnnex§! and §Gcore§! to [HMS.getname] [HMS.getflag]."
  HMS_res_MSE: "§gDebug§! §GRestore§! [MSE.getname] [MSE.getflag].\n§RRemove§! cores for [HMS.getname] [HMS.getflag]."
  HMS_rev_MSE: "§gDebug§! §RRemove§! [MSE.getname] [MSE.getflag].\n§YAnnex§! and §Gcore§! to [HMS.getname] [HMS.getflag]."
- HMS_res_MSN: "§gDebug§! §GRestore§! [MSN.getname] [MSN.getflag].\n§RRemove§! cores for [HMS.getname] [HMS.getflag]."
- HMS_rev_MSN: "§gDebug§! §RRemove§! [MSN.getname] [MSN.getflag].\n§YAnnex§! and §Gcore§! to [HMS.getname] [HMS.getflag]."
+ HMS_res_NEF: "§gDebug§! §GRestore§! [NEF.getname] [NEF.getflag].\n§RRemove§! cores for [HMS.getname] [HMS.getflag]."
+ HMS_rev_NEF: "§gDebug§! §RRemove§! [NEF.getname] [NEF.getflag].\n§YAnnex§! and §Gcore§! to [HMS.getname] [HMS.getflag]."
  HMS_res_FRI: "§gDebug§! §GRestore§! [FRI.getname] [FRI.getflag].\n§RRemove§! cores for [HMS.getname] [HMS.getflag]."
  HMS_rev_FRI: "§gDebug§! §RRemove§! [FRI.getname] [FRI.getflag].\n§YAnnex§! and §Gcore§! to [HMS.getname] [HMS.getflag]."
 ##Stormwing Minor Visibility##

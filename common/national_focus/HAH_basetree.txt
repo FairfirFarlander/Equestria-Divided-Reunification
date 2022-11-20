@@ -9,7 +9,10 @@
 					is_debug=yes
 					NOT={
 						AND={
-							has_country_flag=HAH_willow_in_charge
+							OR={
+								has_country_flag=HAH_willow_in_charge
+								has_country_flag=HAH_willow_no_return
+							}
 							has_country_flag=EDR_show_less_focuses
 						}
 					}
@@ -238,7 +241,7 @@
 		ai_will_do={factor=80}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_S07B"
-			MSN={add_opinion_modifier={target=HAH modifier=moonstar_seeth_opinion}}
+			NEF={add_opinion_modifier={target=HAH modifier=moonstar_seeth_opinion}}
 			MSE={add_opinion_modifier={target=HAH modifier=moonstar_seeth_opinion}}
 			FRI={add_opinion_modifier={target=HAH modifier=moonstar_seeth_opinion}}
 			add_stability=0.02

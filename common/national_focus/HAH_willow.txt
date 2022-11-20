@@ -59,7 +59,7 @@
 		x=-1 y=1 cost=5 relative_position_id=HAH_WS301
 		search_filters={}
 		prerequisite={focus=HAH_WS301}
-		ai_will_do={factor=4000}
+		ai_will_do={factor=160}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS302A"
 			add_tech_bonus={
@@ -75,7 +75,7 @@
 		x=1 y=1 cost=5 relative_position_id=HAH_WS301
 		search_filters={}
 		prerequisite={focus=HAH_WS301}
-		ai_will_do={factor=4000}
+		ai_will_do={factor=160}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS302B"
 			40={
@@ -93,7 +93,7 @@
 		search_filters={}
 		prerequisite={focus=HAH_WS302A}
 		prerequisite={focus=HAH_WS302B}
-		ai_will_do={factor=4000}
+		ai_will_do={factor=160}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS303A"
 			add_tech_bonus={
@@ -110,7 +110,7 @@
 		search_filters={}
 		prerequisite={focus=HAH_WS302A}
 		prerequisite={focus=HAH_WS302B}
-		ai_will_do={factor=4000}
+		ai_will_do={factor=160}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS303B"
 			HAH={
@@ -129,7 +129,7 @@
 		search_filters={}
 		prerequisite={focus=HAH_WS302A}
 		prerequisite={focus=HAH_WS302B}
-		ai_will_do={factor=4000}
+		ai_will_do={factor=160}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS303C"
 			add_resource={
@@ -170,7 +170,7 @@
 		x=-1 y=1 cost=5 relative_position_id=HAH_WS304
 		search_filters={}
 		prerequisite={focus=HAH_WS304}
-		ai_will_do={factor=4000}
+		ai_will_do={factor=80}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS305A"
 			HAH={
@@ -183,7 +183,7 @@
 		x=1 y=1 cost=5 relative_position_id=HAH_WS304
 		search_filters={}
 		prerequisite={focus=HAH_WS304}
-		ai_will_do={factor=4000}
+		ai_will_do={factor=80}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS305B"
 			swap_ideas={
@@ -198,7 +198,7 @@
 		search_filters={}
 		prerequisite={focus=HAH_WS305A}
 		prerequisite={focus=HAH_WS305B}
-		ai_will_do={factor=4000}
+		ai_will_do={factor=160}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS306A"
 			country_event=HAH_EWS3.0601	#A Broken Heart Leads to Tragedy
@@ -211,7 +211,7 @@
 		prerequisite={focus=HAH_WS305A}
 		prerequisite={focus=HAH_WS305B}
 		available={has_completed_focus=HAH_WS306A}
-		ai_will_do={factor=4000}
+		ai_will_do={factor=160}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS306B"
 			add_advisor_role={
@@ -234,7 +234,7 @@
 		prerequisite={focus=HAH_WS305A}
 		prerequisite={focus=HAH_WS305B}
 		available={has_completed_focus=HAH_WS306B}
-		ai_will_do={factor=4000}
+		ai_will_do={factor=160}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS306C"
 			country_event=HAH_EWS3.0603
@@ -247,7 +247,7 @@
 		prerequisite={focus=HAH_WS306A}
 		prerequisite={focus=HAH_WS306B}
 		prerequisite={focus=HAH_WS306C}
-		ai_will_do={factor=4000}
+		ai_will_do={factor=160}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS307A"
 			add_ideas=HAH_reforms
@@ -260,7 +260,7 @@
 		prerequisite={focus=HAH_WS306A}
 		prerequisite={focus=HAH_WS306B}
 		prerequisite={focus=HAH_WS306C}
-		ai_will_do={factor=4000}
+		ai_will_do={factor=160}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS307B"
 			remove_ideas=HAH_nonunicorn_family_ban
@@ -273,7 +273,7 @@
 		prerequisite={focus=HAH_WS306A}
 		prerequisite={focus=HAH_WS306B}
 		prerequisite={focus=HAH_WS306C}
-		ai_will_do={factor=4000}
+		ai_will_do={factor=160}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS307C"
 			if={
@@ -301,7 +301,7 @@
 		prerequisite={focus=HAH_WS306A}
 		prerequisite={focus=HAH_WS306B}
 		prerequisite={focus=HAH_WS306C}
-		ai_will_do={factor=4000}
+		ai_will_do={factor=160}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS307D"
 			remove_ideas=HAH_HMS_puppet
@@ -324,7 +324,7 @@
 		}
 	}
 	shared_focus={	#Revenge Will Come
-		id=HAH_WS309 #icon=
+		id=HAH_WS309 icon=GFX_goal_EQS_TNO_journal
 		x=0 y=1 cost=5 relative_position_id=HAH_WS308
 		offset={
 			y=-9
@@ -344,58 +344,122 @@
 		allow_branch={
 			OR={
 				has_country_flag=HAH_willow_no_return
-				is_debug=yes
+				AND={
+					is_debug=yes
+					NOT={
+						has_country_flag=HAH_willow_no_return
+						has_country_flag=EDR_show_less_focuses
+					}
+				}
 			}
 		}
 		search_filters={}
 		ai_will_do={factor=4000}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS309"
+			add_tech_bonus={
+				name=HAH_WS309_bonus
+				bonus=1
+				uses=1
+				category=cat_production
+			}
+			add_ideas=HAH_willows_plans
 		}
 	}
 	shared_focus={	#Hollow Defenders
-		id=HAH_WS310A #icon=
-		x=-3 y=1 cost=0.2 relative_position_id=HAH_WS309
+		id=HAH_WS310A icon=GFX_goal_generic_pony_volunteer
+		x=-3 y=1 cost=5 relative_position_id=HAH_WS309
 		search_filters={}
 		prerequisite={focus=HAH_WS309}
-		ai_will_do={factor=4000}
+		ai_will_do={factor=80}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS310A"
+			custom_effect_tooltip=HAH_WS310A_tooltip
+			hidden_effect={load_oob="HAH_WS310A_royal_guard"}
 		}
 	}
 	shared_focus={	#Barn Fire
-		id=HAH_WS310B #icon=
-		x=-1 y=1 cost=0.2 relative_position_id=HAH_WS309
+		id=HAH_WS310B icon=GFX_goal_fire
+		x=-1 y=1 cost=5 relative_position_id=HAH_WS309
 		search_filters={}
 		prerequisite={focus=HAH_WS309}
-		ai_will_do={factor=4000}
+		ai_will_do={factor=80}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS310B"
+			add_ideas=HAH_flamethrowers
 		}
 	}
 	shared_focus={	#Rosie Project
-		id=HAH_WS310C #icon=
-		x=1 y=1 cost=0.2 relative_position_id=HAH_WS309
+		id=HAH_WS310C icon=GFX_goal_generic_army_tank_2
+		x=1 y=1 cost=5 relative_position_id=HAH_WS309
 		search_filters={}
 		prerequisite={focus=HAH_WS309}
-		ai_will_do={factor=4000}
+		ai_will_do={factor=80}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS310C"
+			add_tech_bonus={
+				name=anti_tank_bonus
+				bonus=0.5
+				uses=1
+				category=cat_anti_tank
+			}
+			if={
+				limit={has_tech=gwtank}
+				add_tech_bonus={
+					name=light_tank_bonus
+					bonus=0.5
+					uses=1
+					category=cat_light_armor
+				}
+			}
+			if_else={
+				limit={has_dlc="No Step Back"}
+				set_technology={
+					gwtank_chassis=1
+				}
+			}
+			else={
+				set_technology={
+					gwtank=1
+				}
+			}
+			if={
+				limit={has_dlc="No Step Back"}
+				create_equipment_variant={
+					name="Rosie Tank"
+					type=light_tank_chassis_0
+					parent_version=0
+					modules={
+						main_armament_slot=tank_heavy_machine_gun
+						special_type_slot_1=secondary_turret_hmg
+					}
+					icon="gfx/interface/technologies/EQS_armoured_tractor.dds"
+				}
+			}
+			custom_effect_tooltip=HAH_WS310C_tooltip
+			hidden_effect={load_oob="HAH_WS310C_rosie_project_nsb"}
 		}
 	}
 	shared_focus={	#Raining Mists
-		id=HAH_WS310D #icon=
-		x=3 y=1 cost=0.2 relative_position_id=HAH_WS309
+		id=HAH_WS310D icon=GFX_goal_Chemical_Death_4
+		x=3 y=1 cost=5 relative_position_id=HAH_WS309
 		search_filters={}
 		prerequisite={focus=HAH_WS309}
-		ai_will_do={factor=4000}
+		ai_will_do={factor=80}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS310D"
+			add_tech_bonus={
+				name=infantry_weapons_bonus
+				bonus=0.25
+				uses=1
+				category=artillery
+			}
+			add_ideas=HAH_weaponized_tranquility
 		}
 	}
 	shared_focus={	#Rally Tranquil
-		id=HAH_WS311A #icon=
-		x=-3 y=2 cost=0.2 relative_position_id=HAH_WS309
+		id=HAH_WS311A icon=GFX_goal_revolution_pony
+		x=-3 y=2 cost=5 relative_position_id=HAH_WS309
 		search_filters={}
 		prerequisite={focus=HAH_WS310A}
 		prerequisite={focus=HAH_WS310B}
@@ -404,57 +468,96 @@
 		ai_will_do={factor=4000}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS311A"
+			add_ideas=all_adults_serve
+			add_ideas=HAH_rally_tranquil
 		}
 	}
 	shared_focus={	#Longer Welcome
-		id=HAH_WS311B #icon=
-		x=-1 y=2 cost=0.2 relative_position_id=HAH_WS309
+		id=HAH_WS311B icon=GFX_focus_generic_anti_fascist_diplomacy
+		x=-1 y=2 cost=5 relative_position_id=HAH_WS309
 		search_filters={}
 		prerequisite={focus=HAH_WS310A}
 		prerequisite={focus=HAH_WS310B}
 		prerequisite={focus=HAH_WS310C}
 		prerequisite={focus=HAH_WS310D}
-		ai_will_do={factor=4000}
+		ai_will_do={factor=160}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS311B"
+			if={
+				limit={has_dlc="La Resistance"}
+				add_ideas=HAH_no_inquisitors_lar
+			}
+			else={
+				add_ideas=HAH_no_inquisitors
+			}
+			every_possible_country={
+				limit={is_in_faction_with=HMS}
+				add_opinion_modifier={
+					target=HAH
+					modifier=distrustful_relations
+				}
+			}
 		}
 	}
 	shared_focus={	#Severing Puppet
-		id=HAH_WS311C #icon=
-		x=1 y=2 cost=0.2 relative_position_id=HAH_WS309
+		id=HAH_WS311C icon=GFX_goal_skull_treaty2
+		x=1 y=2 cost=5 relative_position_id=HAH_WS309
 		search_filters={}
 		prerequisite={focus=HAH_WS310A}
 		prerequisite={focus=HAH_WS310B}
 		prerequisite={focus=HAH_WS310C}
 		prerequisite={focus=HAH_WS310D}
-		ai_will_do={factor=4000}
+		ai_will_do={factor=160}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS311C"
+			HMS={
+				remove_opinion_modifier={
+					target=HAH
+					modifier=distrustful_relations
+				}
+			}
+			HMS={
+				add_opinion_modifier={
+					target=HAH
+					modifier=hostility
+				}
+			}
+			add_ideas=closed_economy
+			add_ideas=HAH_rightfully_ours
 		}
 	}
 	shared_focus={	#Old Strains
-		id=HAH_WS311D #icon=
-		x=3 y=2 cost=0.2 relative_position_id=HAH_WS309
+		id=HAH_WS311D icon=GFX_Poison_Joke_Focus
+		x=3 y=2 cost=5 relative_position_id=HAH_WS309
 		search_filters={}
 		prerequisite={focus=HAH_WS310A}
 		prerequisite={focus=HAH_WS310B}
 		prerequisite={focus=HAH_WS310C}
 		prerequisite={focus=HAH_WS310D}
-		ai_will_do={factor=4000}
+		ai_will_do={factor=160}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS311D"
+			every_possible_country={
+				limit={is_in_faction_with=HMS}
+				add_timed_idea={
+					idea=HAH_tainted_water
+					days=30
+				}
+			}
 		}
 	}
 	shared_focus={	#Snuff Out Stars
-		id=HAH_WS312 #icon=
-		x=0 y=3 cost=0.2 relative_position_id=HAH_WS309
+		id=HAH_WS312 icon=GFX_goal_EQS_TNO_horned_traitors
+		x=0 y=3 cost=8 relative_position_id=HAH_WS309
 		search_filters={}
 		prerequisite={focus=HAH_WS311A}
 		prerequisite={focus=HAH_WS311B}
 		prerequisite={focus=HAH_WS311C}
 		prerequisite={focus=HAH_WS311D}
 		ai_will_do={factor=4000}
+		will_lead_to_war_with=HMS
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_WS312"
+			country_event=HAH_EWS3.1201
 		}
 	}

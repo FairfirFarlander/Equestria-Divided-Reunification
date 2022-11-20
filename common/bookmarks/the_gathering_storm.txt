@@ -444,8 +444,8 @@ bookmarks={
 			focuses={}
 		}
 		#Lords of the Marches (Row Two)
-		"MSN"={	#Neighagra
-			history="MSN_GATHERING_STORM_DESC"
+		"NEF"={	#Neighagra
+			history="NEF_GATHERING_STORM_DESC"
 			ideology=fascism	minor=yes
 			ideas={}
 			focuses={}

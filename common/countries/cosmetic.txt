@@ -1984,4 +1984,4 @@ ZAR_WORM_ending = {
 }
 
 #EDR
-MSN_HMS_puppet={color=rgb{164 26 255}color_ui=rgb{164 26 255}}
+NEF_HMS_puppet={color=rgb{164 26 255}color_ui=rgb{164 26 255}}

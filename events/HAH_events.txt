@@ -456,7 +456,7 @@ add_namespace=HAH_EWS3
 					active=yes
 				}
 			}
-			MSN={
+			NEF={
 				add_opinion_modifier={
 					target=HAH
 					modifier=HAH_inquisitorial_sanction_opinion
@@ -873,7 +873,7 @@ add_namespace=HAH_EWS3
 					modifier=HAH_inquisitorial_sanction_opinion
 				}
 			}
-			MSN={
+			NEF={
 				remove_opinion_modifier={
 					target=HAH
 					modifier=HAH_inquisitorial_sanction_opinion
@@ -1122,4 +1122,32 @@ add_namespace=HAH_EWS3
 			trigger={is_debug=yes}
 		}
 		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0805"}
+	}
+	country_event={		#The Hour Has Come
+		id=HAH_EWS3.1201
+		title=HAH_EWS3.1201.t
+		desc=HAH_EWS3.1201.d
+		is_triggered_only=yes
+		option={
+			name=HAH_EWS3.1201.a
+			HAH={
+				declare_war_on={
+					target=HMS
+					type=annex_everything
+				}
+			}
+			add_corps_commander_role={
+				character=HAH_willow_branch
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=3
+				logistics_skill=2
+			}
+		}
+		option={
+			name=CRDT_tiviy_fairf
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.1201"}
 	}

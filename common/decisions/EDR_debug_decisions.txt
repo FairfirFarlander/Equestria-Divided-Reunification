@@ -973,45 +973,45 @@ EDR_debug_HMS_land_decisions={
 			}
 		}
 	}
-	HMS_res_MSN={
+	HMS_res_NEF={
 		#icon=
-		visible={not={country_exists=MSN}}
+		visible={not={country_exists=NEF}}
 		fire_only_once=no
 		complete_effect={
 			56={
-				add_core_of=MSN
+				add_core_of=NEF
 				remove_core_of=HMS
-				transfer_state_to=MSN
+				transfer_state_to=NEF
 			}
 			102={
-				add_core_of=MSN
+				add_core_of=NEF
 				remove_core_of=HMS
-				transfer_state_to=MSN
+				transfer_state_to=NEF
 			}
 			183={
-				add_core_of=MSN
+				add_core_of=NEF
 				remove_core_of=HMS
-				transfer_state_to=MSN
+				transfer_state_to=NEF
 			}
 		}
 	}
-	HMS_rev_MSN={
+	HMS_rev_NEF={
 		#icon=
-		visible={country_exists=MSN}
+		visible={country_exists=NEF}
 		fire_only_once=no
 		complete_effect={
 			56={
-				remove_core_of=MSN
+				remove_core_of=NEF
 				add_core_of=HMS
 				transfer_state_to=HMS
 			}
 			102={
-				remove_core_of=MSN
+				remove_core_of=NEF
 				add_core_of=HMS
 				transfer_state_to=HMS
 			}
 			183={
-				remove_core_of=MSN
+				remove_core_of=NEF
 				add_core_of=HMS
 				transfer_state_to=HMS
 			}

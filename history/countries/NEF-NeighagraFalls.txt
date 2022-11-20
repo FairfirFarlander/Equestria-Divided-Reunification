@@ -1,5 +1,5 @@
 capital=56
-oob="MSN_1012"
+oob="NEF_1012"
 set_research_slots=2
 set_stability=0.36 set_war_support=0.14
 add_ideas={
@@ -27,11 +27,11 @@ set_technology={
 }
 actually_fix_weapon_techs=yes
 set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
-HMS={puppet=MSN}
-set_cosmetic_tag=MSN_HMS_puppet
+HMS={puppet=NEF}
+set_cosmetic_tag=NEF_HMS_puppet
 set_popularities={fascism=40 communism=20 neutrality=22 democratic=18}
 set_politics={ruling_party=fascism}
-recruit_character=MSN_duchess_aurora
-recruit_character=MSN_generic_pony
+recruit_character=NEF_duchess_aurora
+recruit_character=NEF_generic_pony
 #NOTES#
-#Stab/WarS are based off of 18(12)-18(14)/50. MSN is 14.
+#Stab/WarS are based off of 18(12)-18(14)/50. NEF is 14.

@@ -1,25 +1,25 @@
 characters={
-	MSN_duchess_aurora={
-		name=MSN_duchess_aurora
+	NEF_duchess_aurora={
+		name=NEF_duchess_aurora
 		gender=female
 		portraits={
 			civilian={
-				large="GFX_MSN_duchess_aurora"
-				small="GFX_idea_MSN_duchess_aurora"
+				large="GFX_NEF_duchess_aurora"
+				small="GFX_idea_NEF_duchess_aurora"
 			}
 			army={
-				large="GFX_MSN_duchess_aurora"
-				small="GFX_idea_MSN_duchess_aurora"
+				large="GFX_NEF_duchess_aurora"
+				small="GFX_idea_NEF_duchess_aurora"
 			}
 		}
 		country_leader={
-			desc="MSN_daurora"
+			desc="NEF_daurora"
 			ideology=fascism_ideology
 			traits={}
 		}
 	}
-	MSN_generic_pony={
-		name=MSN_generic_pony
+	NEF_generic_pony={
+		name=NEF_generic_pony
 		gender=female
 		portraits={
 			civilian={
@@ -28,17 +28,17 @@ characters={
 			}
 		}
 		country_leader={
-			desc="MSN_gpony_poli_desc"
+			desc="NEF_gpony_poli_desc"
 			ideology=conservatism
 			traits={}
 		}
 		country_leader={
-			desc="MSN_gpony_poli_desc"
+			desc="NEF_gpony_poli_desc"
 			ideology=marxism
 			traits={}
 		}
 		country_leader={
-			desc="MSN_gpony_poli_desc"
+			desc="NEF_gpony_poli_desc"
 			ideology=despotism
 			traits={}
 		}

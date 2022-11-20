@@ -419,14 +419,14 @@ spritetypes={
 		name="GFX_idea_HWG_whispy_locks"
 		textureFile="gfx/interface/ideas/Advisors/HWG/HWG_whispy_locks.dds"
 	}
-##MSN##
+##NEF##
 	spritetype={
-		name="GFX_MSN_duchess_aurora"
-		textureFile="gfx/leaders/MSN/MSN_duchess_aurora.dds"
+		name="GFX_NEF_duchess_aurora"
+		textureFile="gfx/leaders/NEF/NEF_duchess_aurora.dds"
 	}
 	spritetype={
-		name="GFX_idea_MSN_duchess_aurora"
-		textureFile="gfx/interface/ideas/Advisors/MSN/MSN_duchess_aurora.dds"
+		name="GFX_idea_NEF_duchess_aurora"
+		textureFile="gfx/interface/ideas/Advisors/NEF/NEF_duchess_aurora.dds"
 	}
 ##NIH##
 	spritetype={

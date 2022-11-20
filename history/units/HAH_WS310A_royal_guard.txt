@@ -1,0 +1,29 @@
+division_template={
+	name="Hollow Guard"
+	priority=2
+	template_counter=39
+	regiments={
+		infantry={x=0 y=0}
+		infantry={x=0 y=1}
+		infantry={x=0 y=2}
+		infantry={x=0 y=3}
+	}
+	support={
+		military_police={x=0 y=0}
+		recon={x=0 y=1}
+	}
+}
+units={
+	division={	#Hollow Shades#
+		name="Hollow Guard"
+		location=6598	division_template="Hollow Guard"
+		start_experience_factor=0.75
+		start_equipment_factor=1
+		force_equipment_variants={
+			melee_equipment_1={
+				owner="HAH"
+				creator="HAH"
+			}
+		}
+	}
+}

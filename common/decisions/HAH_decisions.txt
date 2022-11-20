@@ -146,8 +146,8 @@ HAH_border_wars={
 				defender={
 					state=186
 					num_provinces=4
-					on_win=HAH_EWS3.0105
-					on_lose=HAH_EWS3.0106
+					on_win=HAH_EWS3.0205
+					on_lose=HAH_EWS3.0206
 					on_cancel=HAH_EWS3.0218
 				}
 			}

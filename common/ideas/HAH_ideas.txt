@@ -103,6 +103,58 @@ ideas={
 				stability_weekly=0.007
 			}
 		}
+		HAH_willows_plans={
+			#picture=
+			modifier={
+				production_speed_buildings_factor=0.1
+				production_factory_max_efficiency_factor=0.1
+			}
+		}
+		HAH_flamethrowers={
+			#picture=
+			modifier={
+				army_infantry_attack_factor=0.05
+				army_strength_factor=-0.1
+			}
+		}
+		HAH_weaponized_tranquility={
+			#picture
+			modifier={
+				army_artillery_attack_factor=0.1
+			}
+		}
+		HAH_rally_tranquil={
+			#picture
+			modifier={
+				training_time_factor=-0.3
+			}
+		}
+		HAH_no_inquisitors_lar={
+			#picture
+			modifier={
+				encryption_factor=0.1
+			}
+		}
+		HAH_no_inquisitors={
+			#picture
+			modifier={
+				encryption=1
+			}
+		}
+		HAH_rightfully_ours={
+			#picture
+			modifier={
+				recruitable_population=0.1
+				production_factory_efficiency_gain_factor=0.1
+			}
+		}
+		HAH_tainted_water={
+			#picture
+			modifier={
+				army_morale_factor=-0.2
+				army_org_factor=-0.2
+			}
+		}
 	}
 	hidden_ideas={
 		HAH_M01C_temp_melee_bonus={

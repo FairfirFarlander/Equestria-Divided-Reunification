@@ -1,0 +1,24 @@
+﻿l_english:
+###Introduction###
+##Bookmark##
+NEF_GATHERING_STORM_DESC: ""
+##Welcome Screen##
+ EAW_WS_NEF: ""
+  EAW_WS_NEF_desc: ""
+###Characters###
+##Leaders##
+NEF_duchess_aurora: "Duchess Aurora"
+ NEF_daurora_poli_desc: "§LPortrait§! by: §CTiviyl§!"
+ NEF_generic_pony: "Generic pony"
+  NEF_generic_pony_desc: ""
+##Commanders##
+##Political Advisors##
+##Military Advisors##
+###Country Name###
+NEF: "Neighagra"
+ NEF_DEF: "the Slave State of Neighagra"
+ NEF_ADJ: "Neighagran"
+###Political Parties###
+###Ideas###
+###National Focuses###
+##Storyline Tree##

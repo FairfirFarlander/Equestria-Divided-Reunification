@@ -38,18 +38,18 @@ units={
 		name="Trotterfield Militia"
 		location=9208	division_template="Provincial Militia"
 		start_experience_factor=0.02	start_equipment_factor=0.55
-		force_equipment_variants={melee_equipment_0={owner="MSN" creator="HMS"}}
+		force_equipment_variants={melee_equipment_0={owner="NEF" creator="HMS"}}
 	}
 	division={	#Deepfall Forests#
 		name="Repentia Trosylvania"
 		location=3044	division_template="Regiment Repentia"
 		start_experience_factor=0.06	start_equipment_factor=0.65
-		force_equipment_variants={melee_equipment_0={owner="MSN" creator="HMS"}}
+		force_equipment_variants={melee_equipment_0={owner="NEF" creator="HMS"}}
 	}
 	division={	#Neighagra Falls#
 		name="Repentia Neighagra"
 		location=6165	division_template="Regiment Repentia"
 		start_experience_factor=0.04	start_equipment_factor=0.6
-		force_equipment_variants={melee_equipment_0={owner="MSN" creator="HMS"}}
+		force_equipment_variants={melee_equipment_0={owner="NEF" creator="HMS"}}
 	}
 }
