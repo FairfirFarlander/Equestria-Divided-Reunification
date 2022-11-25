@@ -9,6 +9,7 @@ state={	#EDRSTATE
 		add_core_of=MWC
 		victory_points={2064 10}
 		victory_points={6311 5}
+		victory_points={11380 1}
 		buildings={
 			infrastructure=1
 			industrial_complex=1

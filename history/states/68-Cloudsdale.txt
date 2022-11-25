@@ -1,13 +1,13 @@
 state={	#EDRSTATE
 	id=68
 	name="STATE_68"
-	manpower=20124	#100620
+	manpower=20124	#848900,503100,100620
 	state_category=pastoral
 	provinces={744 746 3485 3743 3959 3961 6666 6731 9548 9563 9603 9672 9909 11672}
 	history={
 		owner=HSW
 		add_core_of=HSW
-		victory_points={11672 3}	#10
+		victory_points={11672 3}	#15
 		buildings={
 			infrastructure=2
 		}

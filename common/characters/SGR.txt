@@ -88,7 +88,7 @@ characters={
 			ledger=army
 			cost=100
 			idea_token=SGR_nlunin_theo
-			traits={military_theorist}
+			traits={military_theorist alt_army_chief_reform_2}
 		}
 	}
 	SGR_sinister_serov={
