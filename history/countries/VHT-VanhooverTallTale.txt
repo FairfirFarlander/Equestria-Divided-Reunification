@@ -1,53 +1,82 @@
 capital=14
 oob="VHT_1012"
-#if={
-#	limit={has_dlc="Man the Guns"}
-#	set_naval_oob="VHT_1007_naval"
-#	else={set_naval_oob="VHT_1007_naval_legacy"}
-#}#
 set_research_slots=2
-set_stability=0.65 set_war_support=0.36
+set_stability=0.65
+set_war_support=0.36
 add_ideas={
-	volunteer_only export_focus civilian_economy
-	better_science_base outdated_industry
-	lack_of_scientists2 poverty5
+	better_science_base
+	outdated_industry
+	lack_of_scientists2
+	poverty5
 	#VHT_vanguard_untrained#
-}
-if={
-	limit={has_dlc="No Step Back"}
-	add_ideas={
-		traditionalism_academy_spirit
-		doctrinal_orthodoxy_spirit
-		disdain_for_the_digging_spirit
-	}
-	else={add_ideas={EQS_bad_tanks}}
 }
 set_technology={
 	pony_race=1
 	melee_weapons=1
 	melee_weapons1=1
+	infantry_weapons=1
+	motorised_infantry=1
+	marines=1
 	tech_support=1
+	basic_train=1
 	pre_gw_artillery=1
-	early_fighter=1
 	tech_pegasi=1
 }
 actually_fix_weapon_techs=yes
 if={limit={has_dlc="Man the Guns"}
+	#set_naval_oob="VHT_1012_naval"
 	set_technology={
 		early_ship_hull_light=1
-		early_ship_hull_cruiser=1
-		basic_battery=1
 		basic_depth_charges=1
+		early_ship_hull_cruiser=1
+		early_ship_hull_heavy=1
+		basic_battery=1
 		basic_torpedo=1
 		mtg_transport=1
 	}
+	else={
+		#set_naval_oob="VHT_1007_naval_legacy"
+		set_technology={
+			early_destroyer=1
+			early_light_cruiser=1
+			early_heavy_cruiser=1
+			early_battlecruiser=1
+			early_battleship=1
+			transport=1
+		}
+	}
 }
-if={limit={not={has_dlc="Man the Guns"}}
+if={limit={has_dlc="No Step Back"}
 	set_technology={
-		early_destroyer=1
-		early_light_cruiser=1
-		early_heavy_cruiser=1
-		transport=1
+		gwtank=1
+	}
+	add_ideas={
+		traditionalism_academy_spirit
+		doctrinal_orthodoxy_spirit
+		disdain_for_the_digging_spirit
+	}
+	create_equipment_variant={
+		name="EarlyLightTank"
+		type=light_tank_chassis_0
+		parent_version=0
+		icon="gfx/interface/technologies/gwtank.dds"
+		modules={
+			main_armament_slot=tank_heavy_machine_gun
+			turret_type_slot=tank_light_one_man_tank_turret
+			suspension_type_slot=tank_bogie_suspension
+			armor_type_slot=tank_riveted_armor
+			engine_type_slot=tank_gasoline_engine
+		}
+		upgrades={
+			tank_nsb_engine_upgrade=1
+			tank_nsb_armor_upgrade=1
+		}
+	}
+	else={
+		set_technology={
+			gwtank_chassis=1
+		}
+		add_ideas={EQS_bad_tanks}
 	}
 }
 actually_fix_weapon_techs=yes
@@ -56,15 +85,34 @@ generic_CL_template=yes
 generic_DD_template=yes
 set_convoys=6
 set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
-set_popularities={fascism=18 communism=67 neutrality=6 democratic=9}
-set_politics={
-	ruling_party=communism	last_election="1005.09.09"
-	election_frequency=24	elections_allowed=yes
+set_popularities={
+	fascism=6
+	communism=71
+	neutrality=2
+	democratic=21
 }
+set_politics={ruling_party=communism}
+recruit_character=VHT_dust_hoover
 recruit_character=VHT_strawberry_snowflake
-recruit_character=VHT_indigo_skies
-recruit_character=VHT_crimson_hoof
+recruit_character=VHT_winter_turnip
+recruit_character=VHT_sunset_punch
+recruit_character=VHT_sun_water
+recruit_character=VHT_amity_blossom
+recruit_character=VHT_spoiled_mane
+recruit_character=VHT_turbine_whirl
+recruit_character=VHT_gleb
 recruit_character=VHT_moonlight_elegy
 recruit_character=VHT_lavender_blossom
+recruit_character=VHT_indigo_skies
+recruit_character=VHT_crimson_hoof
+recruit_character=VHT_saffron
+recruit_character=VHT_kuznetsov
+recruit_character=VHT_paradox
 #NOTES#
 #64 Convoys
+#Add 3 Battleships
+#Add 1 Heavy Cruiser
+#Add 5 Destroyers
+#last_election="1005.09.09"	election_frequency=24	elections_allowed=yes
+#give them EQS gw_artillery at oob start.
+#tech bonuses for interwar_antitank early_fighter

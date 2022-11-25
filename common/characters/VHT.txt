@@ -1,4 +1,36 @@
 characters={
+	VHT_dust_hoover={
+		name=VHT_dust_hoover
+		portraits={
+			civilian={
+				large="gfx/leaders/VAN/Admiral.tga"
+				small="GFX_idea_EQS_dust_hoover"
+			}
+			army={
+				large="gfx/leaders/VAN/Admiral.tga"
+				small="GFX_idea_EQS_dust_hoover"
+			}
+		}
+		country_leader={
+			desc="VHT_dhoover_poli_desc"
+			ideology=leninism
+			traits={}
+		}
+		field_marshal={
+			desc="TAG_SNA_mili_desc"
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+			traits={
+				pony_race_trait
+				expert_delegator
+				naval_invader
+				naval_liason
+			}
+		}
+	}
 	VHT_strawberry_snowflake={
 		name=VHT_strawberry_snowflake
 		gender=female
@@ -12,63 +44,133 @@ characters={
 			ideology=leninism
 			traits={rural_populist}
 		}
-		country_leader={
-			desc="WTC_gpony_poli_desc"
-			ideology=conservatism
-			traits={}
-		}
-		country_leader={
-			desc="WTC_gpony_poli_desc"
-			ideology=fascism_ideology
-			traits={}
-		}
-		country_leader={
-			desc="WTC_gpony_poli_desc"
-			ideology=despotism
-			traits={}
-		}
 	}
-	VHT_indigo_skies={
-		name=VHT_indigo_skies
+	VHT_winter_turnip={
+		name=VHT_winter_turnip
 		gender=female
 		portraits={
-			army={
-				large="GFX_portrait_pony_generic_land_1"
-				small="GFX_portrait_pony_generic_land_1_small"
-			}
+			civilian={large="gfx/leaders/VAN/Winter_Turnip.tga"}
 		}
-		corps_commander={
-			desc="VHT_iskies_mili_desc"
-			skill=1
-			attack_skill=2
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=2
-			traits={
-				thestral_race_trait
-				air_force_commander
-				commissar_general
-			}
+		country_leader={
+			desc="VHT_wturnip_poli_desc"
+			ideology=leninism
+			traits={veteran_communist}
 		}
 	}
-	VHT_crimson_hoof={
-		name=VHT_crimson_hoof
+	VHT_sunset_punch={
+		name=VHT_sunset_punch
+		gender=female
 		portraits={
+			civilian={large="gfx/leaders/Pony/portrait_pony_generic_3.dds"}
+		}
+		country_leader={
+			desc="VHT_spunch_poli_desc"
+			ideology=alicornrule
+			traits={}
+		}
+	}
+	VHT_sun_water={
+		name=VHT_sun_water
+		portraits={
+			civilian={large="GFX_portrait_pony_generic_navy_3"}
+		}
+		country_leader={
+			desc="VHT_swater_poli_desc"
+			ideology=harmonic_constitutionalism
+			traits={}
+		}
+	}
+	VHT_amity_blossom={
+		name=VHT_amity_blossom
+		gender=female
+		portraits={
+			civilian={large="GFX_portrait_pony_generic_4"}
+		}
+		country_leader={
+			desc="VHT_SNA_poli_desc"
+			ideology=fascism_ideology
+			traits={armaments_organizer}
+		}
+	}
+	VHT_spoiled_mane={
+		name=VHT_spoiled_mane
+		gender=female
+		portraits={
+			civilian={large="GFX_portrait_pony_generic_6"}
+		}
+		country_leader={
+			desc="VHT_SNA_poli_desc"
+			ideology=despotism
+			traits={reluctant_interventionist}
+		}
+	}
+	VHT_turbine_whirl={
+		name=VHT_turbine_whirl
+		gender=female
+		portraits={
+			civilian={
+				large="gfx/leaders/VAN/Turbine.tga"
+				small="gfx/interface/ideas/Advisors/VAN/VAN_turbine.tga"
+			}
 			army={
-				large="GFX_portrait_pony_generic_land_4"
-				small="GFX_portrait_pony_generic_land_4_small"
+				large="gfx/leaders/VAN/Turbine.tga"
+				small="gfx/interface/ideas/Advisors/VAN/VAN_turbine.tga"
 			}
 		}
 		corps_commander={
-			desc="VHT_choof_mili_desc"
-			skill=1
-			attack_skill=1
+			desc="VHT_twhirl_mili_desc"
+			skill=4
+			attack_skill=2
 			defense_skill=3
-			planning_skill=1
-			logistics_skill=1
+			planning_skill=4
+			logistics_skill=4
 			traits={
 				pony_race_trait
+				trait_focused
+				media_personality
+				naval_liason
 			}
+		}
+		advisor={
+			slot=political_advisor
+			idea_token=VHT_twhirl_advi
+			allowed={original_tag=VHT}
+			#availiable={has_completed_focus=VHT_promote_captain_twhirl}
+			traits={military_pioneer}
+		}
+	}
+	VHT_gleb={
+		name=VHT_gleb
+		portraits={
+			civilian={
+				large="gfx/leaders/VAN/Gleb.tga"
+				small="gfx/interface/ideas/Advisors/VAN/VAN_gleb.tga"
+			}
+			army={
+				large="gfx/leaders/VAN/Gleb.tga"
+				small="gfx/interface/ideas/Advisors/VAN/VAN_gleb.tga"
+			}
+		}
+		corps_commander={
+			desc="VHT_gleb_mili_desc"
+			skill=3
+			attack_skill=1
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			traits={
+				pony_race_trait
+				commando
+				infantry_officer
+				naval_invader
+			}
+		}
+		advisor={
+			slot=political_advisor
+			idea_token=VHT_gleb_advi
+			allowed={original_tag=VHT}
+			#availiable={has_completed_focus=VHT_promote_captain_gleb}
+			traits={marine_general}
 		}
 	}
 	VHT_moonlight_elegy={
@@ -76,8 +178,8 @@ characters={
 		gender=female
 		portraits={
 			army={
-				large="GFX_portrait_pony_generic_land_10"
-				small="GFX_portrait_pony_generic_land_10_small"
+				large="gfx/leaders/Pony/portrait_eqs_pony_generic_8.dds"
+				small="GFX_portrait_eqs_pony_generic_8_small"
 			}
 		}
 		corps_commander={
@@ -99,8 +201,8 @@ characters={
 		gender=female
 		portraits={
 			army={
-				large="GFX_portrait_eqs_pony_generic_22"
-				small="GFX_portrait_eqs_pony_generic_22_small"
+				large="gfx/leaders/Pony/portrait_pony_generic_navy_7.dds"
+				small="GFX_portrait_pony_generic_navy_7_small"
 			}
 		}
 		corps_commander={
@@ -115,6 +217,94 @@ characters={
 				harsh_leader
 				infantry_leader
 			}
+		}
+	}
+	VHT_indigo_skies={
+		name=VHT_indigo_skies
+		gender=female
+		portraits={
+			army={
+				large="GFX_portrait_pony_generic_land_10"
+				small="GFX_portrait_pony_generic_land_10_small"
+			}
+		}
+		corps_commander={
+			desc="VHT_iskies_mili_desc"
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			traits={
+				thestral_race_trait
+				air_force_commander
+				commissar_general
+			}
+		}
+	}
+	VHT_crimson_hoof={
+		name=VHT_crimson_hoof
+		portraits={
+			army={
+				large="GFX_portrait_eqs_pony_generic_22"
+				small="GFX_portrait_eqs_pony_generic_22_small"
+			}
+		}
+		corps_commander={
+			desc="VHT_choof_mili_desc"
+			skill=1
+			attack_skill=1
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=1
+			traits={
+				pony_race_trait
+			}
+		}
+	}
+	VHT_saffron={
+		name=VHT_rough_shine
+		#gender=female
+		portraits={
+			civilian={small="GFX_idea_unknown_advisor"}
+		}
+		advisor={
+			slot=political_advisor
+			idea_token=VHT_saffron_advi
+			allowed={original_tag=VHT}
+			availiable={has_completed_focus=VHT_meet_unions}
+			traits={ambitious_union_boss_2}
+			ai_will_do={factor=1}
+		}
+	}
+	VHT_kuznetsov={
+		name=VHT_prance_shine
+		#gender=female
+		portraits={
+			civilian={small="GFX_idea_unknown_advisor"}
+		}
+		advisor={
+			slot=political_advisor
+			idea_token=VHT_kuznetsov_advi
+			allowed={original_tag=VHT}
+			availiable={has_completed_focus=VHT_meet_unions}
+			traits={prince_of_terror}
+			ai_will_do={factor=1}
+		}
+	}
+	VHT_paradox={
+		name=VHT_parcel_honey
+		#gender=female
+		portraits={
+			civilian={small="GFX_idea_unknown_advisor"}
+		}
+		advisor={
+			slot=political_advisor
+			idea_token=VHT_paradox_advi
+			allowed={original_tag=VHT}
+			availiable={has_completed_focus=VHT_buereacrat}
+			traits={administrative_genius}
+			ai_will_do={factor=1}
 		}
 	}
 }

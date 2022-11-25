@@ -4,8 +4,8 @@ focus_tree={
 	default=no
 	shared_focus=VAN_The_Calm_Revolution
 	shared_focus=VAN_Defense_Of_The_Commune
-	shared_focus=EDR_I00
-	shared_focus=EDR_L05
-	shared_focus=EDR_N05
-	shared_focus=EDR_A05
+#	shared_focus=EDR_I00
+#	shared_focus=EDR_L05
+#	shared_focus=EDR_N05
+#	shared_focus=EDR_A05
 }
