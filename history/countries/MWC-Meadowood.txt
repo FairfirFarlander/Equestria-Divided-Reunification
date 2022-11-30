@@ -54,6 +54,7 @@ set_convoys=17
 set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
 set_popularities={fascism=7 communism=9 neutrality=65 democratic=19}
 set_politics={ruling_party=neutrality}
+set_country_flag=EDR_is_equestrian_breakaway
 recruit_character=MWC_rose_petal
 recruit_character=MWC_mulberry_wine
 recruit_character=MWC_honey_dew

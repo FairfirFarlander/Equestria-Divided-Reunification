@@ -61,7 +61,8 @@ set_convoys=4
 set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
 HWG={puppet=WTC}
 set_popularities={fascism=42 communism=19 neutrality=29 democratic=10}
-set_politics={ruling_party=fascism}	
+set_politics={ruling_party=fascism}
+set_country_flag=EDR_is_equestrian_breakaway
 recruit_character=WTC_dashing_habidasher
 recruit_character=WTC_alicia_habidasher
 recruit_character=WTC_eloi_path

@@ -54,6 +54,7 @@ set_convoys=3
 set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
 set_popularities={fascism=11 communism=32 neutrality=49 democratic=8}
 set_politics={ruling_party=neutrality}
+set_country_flag=EDR_is_equestrian_breakaway
 recruit_character=THA_argent_end
 #NOTES#
 #The first great first fruit war. Fighting for Mangoes! EEEEEEE!

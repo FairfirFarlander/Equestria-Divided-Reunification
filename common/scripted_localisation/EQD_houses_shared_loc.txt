@@ -89,7 +89,26 @@
 		text={trigger={tag=HWG}localization_key=EQD_S02_HWG_desc}
 		text={localization_key=EQD_S02_GENERIC_desc}
 	}
-	
+	defined_text={
+		name=GetEQD_S269_SLOC
+		text={trigger={tag=CUL}localization_key=EQD_S269_CUL}
+		text={trigger={tag=HEB}localization_key=EQD_S269_HEB}
+		text={trigger={tag=HEF}localization_key=EQD_S269_HEF}
+		text={trigger={tag=HMS}localization_key=EQD_S269_HMS}
+		text={trigger={tag=HSW}localization_key=EQD_S269_HSW}
+		text={trigger={tag=HWG}localization_key=EQD_S269_HWG}
+		text={localization_key=EQD_S269_GENERIC}
+	}
+	defined_text={
+		name=GetEQD_S269_desc_SLOC
+		text={trigger={tag=CUL}localization_key=EQD_S269_CUL_desc}
+		text={trigger={tag=HEB}localization_key=EQD_S269_HEB_desc}
+		text={trigger={tag=HEF}localization_key=EQD_S269_HEF_desc}
+		text={trigger={tag=HMS}localization_key=EQD_S269_HMS_desc}
+		text={trigger={tag=HSW}localization_key=EQD_S269_HSW_desc}
+		text={trigger={tag=HWG}localization_key=EQD_S269_HWG_desc}
+		text={localization_key=EQD_S269_GENERIC_desc}
+	}
 	
 	
 	

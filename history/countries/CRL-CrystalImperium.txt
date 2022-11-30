@@ -27,6 +27,7 @@ actually_fix_weapon_techs=yes
 set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
 set_popularities={fascism=52 communism=22 neutrality=21 democratic=5}
 set_politics={ruling_party=fascism}
+set_country_flag=EDR_is_equestrian_breakaway
 recruit_character=CRL_radiant_hope
 recruit_character=CRL_arctic_lily
 recruit_character=CRL_disputed

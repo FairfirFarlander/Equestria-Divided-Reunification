@@ -9,10 +9,10 @@ CUL_GATHERING_STORM_DESC: ""
 CUL: "Cult of Laughter"
  CUL_DEF: "The Cult of Laughter"
  CUL_ADJ: "Cultists"
- CUL_laughter: "Realm of Laughter"
-  CUL_laughter_DEF: "the Realm of Laughter"
+ CUL_EQS: "Realm of Laughter"
+  CUL_EQS_DEF: "the Realm of Laughter"
 ###Factions###
-Laughter_Hegemony: "Hegemony of Laughter"
+CUL_EQS_faction: "Theatre of Joy"
 ###Political Parties###
 CUL_fascism_party: "TWR"
  CUL_fascism_party_long: "The Worshippers"

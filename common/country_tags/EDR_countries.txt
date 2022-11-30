@@ -1,4 +1,5 @@
 ALA="countries/Alamane.txt"
+ALI="countries/Albion.txt"
 BCK="countries/Buckcastle.txt"
 CHY="countries/CherryClan.txt"
 COT="countries/ConfederationTrotsas.txt"

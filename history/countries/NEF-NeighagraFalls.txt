@@ -31,6 +31,7 @@ HMS={puppet=NEF}
 set_cosmetic_tag=NEF_HMS_puppet
 set_popularities={fascism=40 communism=20 neutrality=22 democratic=18}
 set_politics={ruling_party=fascism}
+set_country_flag=EDR_is_equestrian_breakaway
 recruit_character=NEF_duchess_aurora
 recruit_character=NEF_generic_pony
 #NOTES#

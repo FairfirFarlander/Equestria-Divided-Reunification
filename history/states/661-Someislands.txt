@@ -7,6 +7,7 @@ state={	#EDRSTATE
 	history={
 		owner=ALA
 		add_core_of=SGR
+		add_core_of=ALI
 		add_claim_by=ALA
 		victory_points={10395 1}
 	}

@@ -26,6 +26,7 @@ set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	
 HEB={puppet=HFT}
 set_popularities={fascism=32 communism=16 neutrality=45 democratic=7}
 set_politics={ruling_party=neutrality}
+set_country_flag=EDR_is_equestrian_breakaway
 recruit_character=HFT_orange
 recruit_character=HFT_orange_grove
 #recruit_character=HFT_trixie_lulamoon

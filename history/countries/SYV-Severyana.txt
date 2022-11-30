@@ -53,6 +53,7 @@ set_convoys=7
 set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
 set_popularities={fascism=10 communism=20 neutrality=27 democratic=43}
 set_politics={ruling_party=democratic}
+set_country_flag=EDR_is_equestrian_breakaway
 recruit_character=SYV_ratibor_sventoslavich
 recruit_character=SYV_peter_iv
 recruit_character=SYV_caramelka_sladkaya

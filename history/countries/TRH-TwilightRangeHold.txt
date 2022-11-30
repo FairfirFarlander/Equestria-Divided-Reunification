@@ -40,5 +40,6 @@ set_convoys=3
 set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
 set_popularities={fascism=32 communism=29 neutrality=31 democratic=8}
 set_politics={ruling_party=fascism}
+set_country_flag=EDR_is_equestrian_breakaway
 recruit_character=THA_auburn_peak
 #NOTES#

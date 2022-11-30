@@ -1,12 +1,12 @@
-focus_tree={
-	id=ALA country={factor=0 modifier={add=3 tag=ALA}}
-	continuous_focus_position={x=1 y=-400}
+#focus_tree={
+#	id=ALA country={factor=0 modifier={add=3 tag=ALA}}
+#	continuous_focus_position={x=1 y=-400}
 #	shared_focus=EQD_S00
-	shared_focus=ALA_I00
+#	shared_focus=ALA_I00
 #	shared_focus=EDR_L05
 #	shared_focus=EDR_N05
 #	shared_focus=EDR_A05
-}
+#}
 focus_tree={
 	id=ALA_debug country={factor=0 modifier={add=4 tag=ALA is_debug=yes}}
 	continuous_focus_position={x=1 y=-400}

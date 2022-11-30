@@ -48,6 +48,7 @@ set_convoys=11
 set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
 set_popularities={fascism=44 communism=7 neutrality=26 democratic=23}
 set_politics={ruling_party=fascism}
+set_country_flag=EDR_is_equestrian_breakaway
 recruit_character=VII_ember
 recruit_character=VII_ruby
 recruit_character=VII_torch

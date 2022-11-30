@@ -54,12 +54,13 @@ generic_CL_template=yes
 generic_DD_template=yes
 set_convoys=11
 set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
-create_faction=Earthborn
+create_faction=HEB_faction
 add_to_faction=CHY
 add_to_faction=HFT
 add_to_faction=PIE
 set_popularities={fascism=85 communism=0 neutrality=15 democratic=0}
 set_politics={ruling_party=fascism}
+set_country_flag=EDR_is_equestrian_breakaway
 recruit_character=HEB_applejack
 recruit_character=HEB_jack_trader
 recruit_character=HEB_magia_saviour

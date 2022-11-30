@@ -53,6 +53,7 @@ set_politics={
 	ruling_party=neutrality	last_election="1008.11.11"
 	election_frequency=48	elections_allowed=yes
 }
+set_country_flag=EDR_is_equestrian_breakaway
 recruit_character=TRT_rapid_fire
 recruit_character=TRT_teddy_hoosevelt
 recruit_character=TRT_harshwhinny

@@ -46,6 +46,7 @@ set_convoys=15
 set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
 set_popularities={democratic=5 fascism=3 communism=91 neutrality=1}
 set_politics={ruling_party=communism}
+set_country_flag=EDR_is_equestrian_breakaway
 recruit_character=SGR_ratibor_sventoslavich
 recruit_character=SGR_vasiliy_pantsushenko
 recruit_character=SGR_altidiya

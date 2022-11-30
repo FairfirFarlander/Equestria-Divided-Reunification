@@ -1,0 +1,11 @@
+EDR_equestrian_minors_reunification={
+	#icon=
+	priority=3
+	allowed={has_country_flag=EDR_is_equestrian_breakaway}
+	visible={
+		or={
+			has_global_flag=EDR_equestria_reunited
+			is_debug=yes
+		}
+	}
+}

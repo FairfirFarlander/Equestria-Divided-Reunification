@@ -30,6 +30,7 @@ starting_train_buffer=1
 set_convoys=8
 set_popularities={fascism=8 communism=17 neutrality=30 democratic=45}
 set_politics={ruling_party=neutrality}
+set_country_flag=EDR_is_equestrian_breakaway
 recruit_character=BCK_rockfeller
 recruit_character=BCK_syndicate_council
 recruit_character=BCK_merry_wreath

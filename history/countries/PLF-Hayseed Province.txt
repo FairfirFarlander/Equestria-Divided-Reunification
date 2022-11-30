@@ -50,6 +50,7 @@ set_convoys=3
 set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
 set_popularities={fascism=11 communism=49 neutrality=32 democratic=8}
 set_politics={ruling_party=communism}
+set_country_flag=EDR_is_equestrian_breakaway
 recruit_character=PLF_regional_defense_council
 recruit_character=PLF_lavender_berry
 recruit_character=PLF_golden_delicious

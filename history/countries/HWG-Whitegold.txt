@@ -68,6 +68,7 @@ create_faction=WhiteGold
 add_to_faction=WTC
 set_popularities={fascism=66 communism=12 neutrality=13 democratic=9}
 set_politics={ruling_party=fascism}
+set_country_flag=EDR_is_equestrian_breakaway
 recruit_character=HWG_rarity
 recruit_character=HWG_shooter_mark
 recruit_character=HWG_fleur_de_lis

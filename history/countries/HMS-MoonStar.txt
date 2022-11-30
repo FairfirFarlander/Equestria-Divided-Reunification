@@ -43,6 +43,7 @@ add_to_faction=MSE
 add_to_faction=FRI
 set_popularities={fascism=60 communism=10 neutrality=25 democratic=5}
 set_politics={ruling_party=fascism}
+set_country_flag=EDR_is_equestrian_breakaway
 recruit_character=HMS_twilight_sparkle
 recruit_character=HMS_frail_lance
 recruit_character=HMS_shining_armor

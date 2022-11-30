@@ -25,11 +25,12 @@ focus_tree={
 	}
 	continuous_focus_position={x=10 y=-400}
 	shared_focus=EQD_S00
+	shared_focus=EQD_S269
 	#shared_focus=HSW_calm_before_the_storm
-	shared_focus=EDR_I00
-	shared_focus=EDR_L05
-	shared_focus=EDR_N05
-	shared_focus=EDR_A05
+	#shared_focus=EDR_I00
+	#shared_focus=EDR_L05
+	#shared_focus=EDR_N05
+	#shared_focus=EDR_A05
 }
 	shared_focus={		#From the Ashes of Eques
 		id=EQD_S00 icon=GFX_goal_generic_demand_territory
@@ -96,5 +97,146 @@ focus_tree={
 			log="[GetDateText]: [Root.GetName]: focus EQD_S02"
 			add_war_support=0.15
 			add_threat=1
+		}
+	}
+	shared_focus={	#Reunification
+		id=EQD_S269 #icon=
+		x=0 y=4 cost=10	relative_position_id=EQD_S00
+		search_filters={}
+		available={
+			custom_trigger_tooltip={
+				tooltip=EQD_S269_trigger_tooltip
+				CUL={
+					or={
+						exists=no
+						is_subject_of=ROOT
+						is_ai=no
+					}
+				}
+				HEB={
+					or={
+						exists=no
+						is_subject_of=ROOT
+						is_ai=no
+					}
+				}
+				HEF={
+					or={
+						exists=no
+						is_subject_of=ROOT
+						is_ai=no
+					}
+				}
+				HMS={
+					or={
+						exists=no
+						is_subject_of=ROOT
+						is_ai=no
+					}
+				}
+				HSW={
+					or={
+						exists=no
+						is_subject_of=ROOT
+						is_ai=no
+					}
+				}
+				HWG={
+					or={
+						exists=no
+						is_subject_of=ROOT
+						is_ai=no
+					}
+				}
+			}
+		}
+		ai_will_do={factor=160}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EQD_S269"
+			custom_effect_tooltip=EQD_S269_effect_tooltip
+			hidden_effect={
+				annex_country={
+					target=CUL
+					transfer_troops=yes
+				}
+				annex_country={
+					target=HEB
+					transfer_troops=yes
+				}
+				annex_country={
+					target=HEF
+					transfer_troops=yes
+				}
+				annex_country={
+					target=HMS
+					transfer_troops=yes
+				}
+				annex_country={
+					target=HSW
+					transfer_troops=yes
+				}
+				annex_country={
+					target=HWG
+					transfer_troops=yes
+				}
+				every_state={
+					limit={
+						OR={
+							is_core_of=CUL
+							is_core_of=HEB
+							is_core_of=HEF
+							is_core_of=HMS
+							is_core_of=HSW
+							is_core_of=HWG
+						}
+					}
+					hidden_effect={
+						remove_core_of=CUL
+						remove_core_of=HEB
+						remove_core_of=HEF
+						remove_core_of=HMS
+						remove_core_of=HSW
+						remove_core_of=HWG
+					}
+					add_core_of=ROOT
+				}
+			}
+			if={
+				limit={original_tag=CUL}
+				set_cosmetic_tag=CUL_EQS
+			}
+			if={
+				limit={original_tag=HEB}
+				set_cosmetic_tag=HEB_EQS
+			}
+			if={
+				limit={original_tag=HEF}
+				set_cosmetic_tag=HEF_EQS
+			}
+			if={
+				limit={original_tag=HMS}
+				set_cosmetic_tag=HMS_EQS
+			}
+			if={
+				limit={original_tag=HSW}
+				set_cosmetic_tag=HSW_EQS
+			}
+			if={
+				limit={original_tag=HWG}
+				set_cosmetic_tag=HWG_EQS
+			}
+			custom_effect_tooltip=EQD_S269_effect_tooltip_2
+			set_global_flag=EDR_equestria_reunified
+			set_country_flag=EDR_equestrian_minors_reunification
+		}
+	}
+	shared_focus={	#Reunification
+		id=EQD_S270 #icon=
+		x=0 y=1 cost=10	relative_position_id=EQD_S269
+		prerequisite={focus=EQD_S269}
+		search_filters={}
+		ai_will_do={factor=160}
+		completion_reward={
+			log="[GetDateText]: [Root.GetName]: focus EQD_S270"
 		}
 	}

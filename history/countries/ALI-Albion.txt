@@ -1,10 +1,5 @@
 capital=525
-oob="ALA_1012"
-if={
-	limit={has_dlc="Man the Guns"}
-	set_naval_oob="ALA_1012_naval"
-	else={set_naval_oob="ALA_1012_naval_legacy"}
-}
+#oob="ALI_1012"
 set_research_slots=2
 set_stability=0.36
 set_war_support=0.12
@@ -64,7 +59,7 @@ set_popularities={
 }
 set_politics={ruling_party=neutrality}
 set_country_flag=EDR_is_equestrian_breakaway
-recruit_character=ALA_almond_tree
+recruit_character=ALI_edgar_alba	#Edgar Allen Poe - The Disowned Duke
 if={
 	limit={has_dlc="Man the Guns"}
 	create_equipment_variant={

@@ -8,6 +8,8 @@ state={	#EDRSTATE
 		owner=SGR	#SYV
 		add_core_of=SGR
 		#add_core_of=SYV
+		add_core_of=ALI
+		add_claim_by=ALA
 		buildings={
 			infrastructure=1
 		}
