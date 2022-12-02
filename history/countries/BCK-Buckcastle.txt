@@ -4,7 +4,7 @@ set_research_slots=2
 set_stability=0.6
 set_war_support=0.17
 add_ideas={
-	pre_industrial_society
+	agrarian_society4
 	lack_of_scientists3
 	poverty3
 	BCK_Bountiful_Harvests
@@ -14,7 +14,6 @@ set_technology={
 	pony_race=1
 	melee_weapons=1
 	tech_support=1
-	pre_gw_artillery=1
 	tech_pony_misc=1
 }
 if={
@@ -24,7 +23,9 @@ if={
 		doctrinal_orthodoxy_spirit
 		disdain_for_the_digging_spirit
 	}
-	else={add_ideas={EQS_bad_tanks}}
+	else={
+		add_ideas={EQS_bad_tanks}
+	}
 }
 actually_fix_weapon_techs=yes
 set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}

@@ -11,6 +11,7 @@ add_ideas={
 set_technology={
 	pony_race=1
 	melee_weapons=1
+	melee_weapons1=1
 	tech_support=1
 	pre_gw_artillery=1
 }
@@ -21,7 +22,9 @@ if={
 		doctrinal_orthodoxy_spirit
 		disdain_for_the_digging_spirit
 	}
-	else={add_ideas={EQS_bad_tanks}}
+	else={
+		add_ideas={EQS_bad_tanks}
+	}
 }
 actually_fix_weapon_techs=yes
 set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}

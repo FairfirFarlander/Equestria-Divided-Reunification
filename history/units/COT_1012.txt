@@ -18,53 +18,20 @@ division_template={
 	}
 }
 units={
-	division={	#Horston#
-		name="Whooves of Horston"
-		location=3663
-		division_template="State Militia"
-		start_experience_factor=0.1
-		start_equipment_factor=0.9
-		force_equipment_variants={melee_equipment_0={owner="COT" creator="COT"}}
-	}
-	division={	#Canter Creek#
-		name="Lodgers of Canter Creek"
-		location=4535
-		division_template="State Militia"
-		start_experience_factor=0.14
-		start_equipment_factor=0.7
-		force_equipment_variants={melee_equipment_1={owner="COT" creator="COT"}}
-	}
-	division={	#San Manetonio#
-		name="Amigos de San Manetonio"
-		location=11754
-		division_template="State Militia"
-		start_experience_factor=0.1
-		start_equipment_factor=1
-		force_equipment_variants={melee_equipment_0={owner="COT" creator="COT"}}
-	}
-	division={	#Trotgaron#
-		name="Trotting Gorons of the Wood"
-		location=3937
-		division_template="State Militia"
-		start_experience_factor=0.1
-		start_equipment_factor=0.9
-		force_equipment_variants={melee_equipment_1={owner="COT" creator="COT"}}
-	}
-	division={	#Haystin#
-		name="Haystin Haystackers"
-		location=1643
-		division_template="State Militia"
-		start_experience_factor=0.1
-		start_equipment_factor=0.8
-		force_equipment_variants={melee_equipment_1={owner="COT" creator="COT"}}
-	}
+#Missing Divisions
+	#Lodgers of Canter Creek
+	#Amigos de San Manetonio
+	#Trotting Gorons of the Wood
+	#Haystin Haystackers
 	division={	#Haystin#
 		name="6th North Trotsas 'Apple Buckers'"
 		location=1643
 		division_template="State Infantry Regiment"
 		start_experience_factor=0.26
 		start_equipment_factor=0.85
-		force_equipment_variants={melee_equipment_0={owner="COT" creator="EQS"}}
+		force_equipment_variants={
+			melee_equipment_0={owner="COT" creator="EQS"}
+		}
 	}
 	division={	#San Manetonio#
 		name="2nd South Trotsas"
@@ -72,7 +39,9 @@ units={
 		division_template="State Infantry Regiment"
 		start_experience_factor=0.18
 		start_equipment_factor=0.9
-		force_equipment_variants={melee_equipment_0={owner="COT" creator="EQS"}}
+		force_equipment_variants={
+			melee_equipment_0={owner="COT" creator="EQS"}
+		}
 	}
 	division={	#Trotgaron - Former Rosemarin#
 		name="13th Rosemarin 'Greybacks'"
@@ -80,7 +49,29 @@ units={
 		division_template="State Infantry Regiment"
 		start_experience_factor=0.3
 		start_equipment_factor=0.75
-		force_equipment_variants={melee_equipment_1={owner="COT" creator="EQS"}}
+		force_equipment_variants={
+			melee_equipment_1={owner="COT" creator="EQS"}
+		}
+	}
+	division={	#North Trotsas#
+		name="7th North Trotsas"
+		location=6998
+		division_template="State Infantry Regiment"
+		start_experience_factor=0.1
+		start_equipment_factor=0.8
+		force_equipment_variants={
+			melee_equipment_0={owner="COT" creator="EQS"}
+		}
+	}
+	division={	#Horston#
+		name="3rd South Trotsas 'Whoovers'"
+		location=3663
+		division_template="State Infantry Regiment"
+		start_experience_factor=0.26
+		start_equipment_factor=0.85
+		force_equipment_variants={
+			melee_equipment_0={owner="COT" creator="EQS"}
+		}
 	}
 	division={	#Canter Creek - Former Hoofington#
 		name="12th Hoofington 'Steelbreakers'"
@@ -88,7 +79,9 @@ units={
 		division_template="State Infantry Regiment"
 		start_experience_factor=0.3
 		start_equipment_factor=0.8
-		force_equipment_variants={melee_equipment_1={owner="COT" creator="EQS"}}
+		force_equipment_variants={
+			melee_equipment_1={owner="COT" creator="EQS"}
+		}
 	}
 	division={	#South Trotsas - Former Fort Mourn#
 		name="10th Fort Mourn 'Stonehenge'"
@@ -96,6 +89,8 @@ units={
 		division_template="State Infantry Regiment"
 		start_experience_factor=0.3
 		start_equipment_factor=0.6
-		force_equipment_variants={melee_equipment_1={owner="COT" creator="COT"}}
+		force_equipment_variants={
+			melee_equipment_1={owner="COT" creator="COT"}
+		}
 	}
 }

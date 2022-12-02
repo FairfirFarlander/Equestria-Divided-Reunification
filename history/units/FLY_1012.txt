@@ -1,12 +1,15 @@
 division_template={
-	name="Provincial Militia"	#divisions_name_group=#
-	priority=0	template_counter=7
+	name="Provincial Militia"
+	priority=0
+	template_counter=7
 	regiments={
 		infantry={x=0 y=0}
+		infantry={x=0 y=1}
+		infantry={x=0 y=2}
 	}
 }
 division_template={
-	name="Guardspony Regiment"	#divisions_name_group=#
+	name="Guardspony Regiment"
 	template_counter=58
 	regiments={
 		infantry={x=0 y=0}
@@ -16,19 +19,24 @@ division_template={
 	}
 }
 division_template={
-	name="Arquebusiers"	#divisions_name_group=#
-	is_locked=yes	template_counter=3
+	name="Arquebusiers"
+	is_locked=yes
+	force_allow_recruiting=yes
+	division_cap=4
+	template_counter=3
 	regiments={
 		infantry={x=0 y=0}
 		infantry={x=0 y=1}
+		infantry={x=0 y=2}
 	}
 	support={
 		artillery={x=0 y=0}
 	}
 }
 division_template={
-	name="Military Police Regiment"	#divisions_name_group=#
-	is_locked=yes	priority=2	template_counter=51
+	name="Military Police Regiment"
+	priority=2
+	template_counter=51
 	regiments={
 		infantry={x=0 y=0}
 		infantry={x=0 y=1}
@@ -40,51 +48,53 @@ division_template={
 }
 units={
 	division={	#Clear Skies#
-		name="Clear Skies Militia"
-		location=3953	division_template="Provincial Militia"
-		start_experience_factor=0.1	start_equipment_factor=0.75
-		force_equipment_variants={melee_equipment_0={owner="FLY" creator="FLY"}}
-	}
-	division={	#Mustangia#
-		name="Neighton Militia"
-		location=3887	division_template="Provincial Militia"
-		start_experience_factor=0.1	start_equipment_factor=0.75
-		force_equipment_variants={melee_equipment_0={owner="FLY" creator="FLY"}}
-	}
-	division={	#Sunny Shore#
-		name="Sunny Shoals Militia"
-		location=11684	division_template="Provincial Militia"
-		start_experience_factor=0.1	start_equipment_factor=0.75
-		force_equipment_variants={melee_equipment_0={owner="FLY" creator="FLY"}}
-	}
-	division={	#Clear Skies#
 		name="1st Delphian Guard"
-		location=879	division_template="Guardspony Regiment"
-		start_experience_factor=0.1	start_equipment_factor=0.75
-		force_equipment_variants={melee_equipment_0={owner="FLY" creator="FLY"}}
+		location=879
+		division_template="Guardspony Regiment"
+		start_experience_factor=0.1
+		start_equipment_factor=0.75
+		force_equipment_variants={
+			melee_equipment_0={owner="FLY" creator="FLY"}
+		}
 	}
 	division={	#Sunny Shore#
 		name="2nd Delphian Guard"
-		location=3735	division_template="Guardspony Regiment"
-		start_experience_factor=0.1	start_equipment_factor=0.75
-		force_equipment_variants={melee_equipment_0={owner="FLY" creator="FLY"}}
+		location=3735
+		division_template="Guardspony Regiment"
+		start_experience_factor=0.1
+		start_equipment_factor=0.75
+		force_equipment_variants={
+			melee_equipment_0={owner="FLY" creator="FLY"}
+		}
 	}
 	division={	#Mustangia#
 		name="3rd Delphian Guard"
-		location=752	division_template="Guardspony Regiment"
-		start_experience_factor=0.1	start_equipment_factor=0.75
-		force_equipment_variants={melee_equipment_0={owner="FLY" creator="FLY"}}
+		location=752
+		division_template="Guardspony Regiment"
+		start_experience_factor=0.1
+		start_equipment_factor=0.75
+		force_equipment_variants={
+			melee_equipment_0={owner="FLY" creator="FLY"}
+		}
 	}
 	division={	#Fillydelphia#
 		name="1st Delphian Musketeers"
-		location=950	division_template="Arquebusiers"
-		start_experience_factor=0.1	start_equipment_factor=0.75
-		force_equipment_variants={melee_equipment_0={owner="FLY" creator="FLY"}}
+		location=950
+		division_template="Arquebusiers"
+		start_experience_factor=0.1
+		start_equipment_factor=0.75
+		force_equipment_variants={
+			melee_equipment_0={owner="FLY" creator="FLY"}
+		}
 	}
 	division={	#Fillydelphia#
 		name="Fillydelphian Special MP Unit"
-		location=950	division_template="Military Police Regiment"
-		start_experience_factor=0.1	start_equipment_factor=0.75
-		force_equipment_variants={melee_equipment_0={owner="FLY" creator="FLY"}}
+		location=950
+		division_template="Military Police Regiment"
+		start_experience_factor=0.1
+		start_equipment_factor=0.75
+		force_equipment_variants={
+			melee_equipment_0={owner="FLY" creator="FLY"}
+		}
 	}
 }

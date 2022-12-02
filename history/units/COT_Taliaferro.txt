@@ -1,6 +1,7 @@
 division_template={
-	name="Volunteer Regiment"	#divisions_name_group=#
-	is_locked=yes	priority=2	#template_counter=#
+	name="Volunteer Regiment"
+	is_locked=yes
+	priority=2
 	regiments={
 		infantry={x=0 y=0}	infantry={x=1 y=0}
 		infantry={x=0 y=1}	infantry={x=1 y=1}
@@ -9,8 +10,12 @@ division_template={
 units={
 	division={		#San Manetonio - Wingbardian Volunteers
 		name="23rd Wingpoli 'Talonsparrow's Brigade'"
-		location=11754	division_template="Volunteer Regiment"
-		start_experience_factor=0.75	start_equipment_factor=1
-		force_equipment_variants={infantry_equipment_0={owner="COT" creator="WNG"}}
+		location=11754
+		division_template="Volunteer Regiment"
+		start_experience_factor=0.75
+		start_equipment_factor=1
+		force_equipment_variants={
+			infantry_equipment_0={owner="COT" creator="WNG"}
+		}
 	}
 }
