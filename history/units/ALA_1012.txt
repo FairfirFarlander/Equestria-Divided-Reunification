@@ -4,24 +4,28 @@ division_template={
 	template_counter=7
 	regiments={
 		infantry={x=0 y=0}
+		infantry={x=0 y=1}
+		infantry={x=0 y=2}
 	}
 }
 division_template={
 	name="Infantry Levies"
 	template_counter=58
 	regiments={
-		infantry={x=0 y=0}
-		infantry={x=0 y=1}
-		infantry={x=0 y=2}
+		infantry={x=0 y=0}	infantry={x=1 y=0}
+		infantry={x=0 y=1}	infantry={x=1 y=1}
 	}
 }
 division_template={
 	name="Arquebusiers"
 	is_locked=yes
-	template_counter=3
+	force_allow_recruiting=yes
+	division_cap=4
+	template_counter=16
 	regiments={
 		infantry={x=0 y=0}
 		infantry={x=0 y=1}
+		infantry={x=0 y=2}
 	}
 	support={
 		artillery={x=0 y=0}
@@ -29,50 +33,25 @@ division_template={
 }
 division_template={
 	name="Winged Dragoons"
+	is_locked=yes
+	force_allow_recruiting=yes
+	division_cap=1
 	priority=2
 	template_counter=37
 	regiments={
 		pegasi={x=0 y=0}
 		pegasi={x=0 y=1}
+		pegasi={x=0 y=2}
 	}
 	support={
 		recon={x=0 y=0}
+		artillery={x=0 y=1}
 	}
 }
 units={
-	division={	#Somland#
-		name="Somland Militia"
-		location=10395
-		division_template="Provincial Militia"
-		start_experience_factor=0.18
-		start_equipment_factor=0.6
-		force_equipment_variants={
-			melee_equipment_0={owner="ALA" creator="ALA"}
-		}
-	}
-	division={	#Quiet Expanse#
-		name="Lesnoye Militia"
+	division={	#Lesnoye#
+		name="Lesnoye Levy"
 		location=12070
-		division_template="Provincial Militia"
-		start_experience_factor=0.1
-		start_equipment_factor=0.5
-		force_equipment_variants={
-			melee_equipment_0={owner="ALA" creator="ALA"}
-		}
-	}
-	division={	#Magical Plateau#
-		name="Mythica Militia"
-		location=784
-		division_template="Provincial Militia"
-		start_experience_factor=0.14
-		start_equipment_factor=0.55
-		force_equipment_variants={
-			melee_equipment_0={owner="ALA" creator="ALA"}
-		}
-	}
-	division={	#Albion#
-		name="Forost Vaulden Levy"
-		location=10359
 		division_template="Infantry Levies"
 		start_experience_factor=0.14
 		start_equipment_factor=0.8
@@ -86,6 +65,16 @@ units={
 		division_template="Infantry Levies"
 		start_experience_factor=0.1
 		start_equipment_factor=0.75
+		force_equipment_variants={
+			melee_equipment_0={owner="ALA" creator="ALA"}
+		}
+	}
+	division={	#Mythica#
+		name="Mythica Levy"
+		location=784
+		division_template="Infantry Levies"
+		start_experience_factor=0.18
+		start_equipment_factor=0.7
 		force_equipment_variants={
 			melee_equipment_0={owner="ALA" creator="ALA"}
 		}

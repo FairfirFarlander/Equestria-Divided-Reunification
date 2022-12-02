@@ -1,62 +1,51 @@
 division_template={
-	name="Provincial Militia"	#divisions_name_group=#
-	priority=0	template_counter=3
+	name="Provincial Militia"
+	priority=0
+	template_counter=3
 	regiments={
+		infantry={x=0 y=0}
+		infantry={x=0 y=0}
 		infantry={x=0 y=0}
 	}
 }
 division_template={
-	name="Ponies-at-Arms"	#divisions_name_group=#
+	name="Ponies-at-Arms"
 	template_counter=59
 	regiments={
-		infantry={x=0 y=0}
-		infantry={x=0 y=1}
+		infantry={x=0 y=0}	infantry={x=1 y=0}
+		infantry={x=0 y=1}	infantry={x=1 y=1}
 		infantry={x=0 y=2}
 	}
 }
-division_template={
-	name="Pegasi Auxilia"	#divisions_name_group=#
-	regiments={
-		pegasi={x=0 y=0}
-		pegasi={x=0 y=1}
-		pegasi={x=0 y=2}
-	}
-}
 units={
-	division={	#Dodge Junction#
-		name="Dodge Militia"
-		location=11427	division_template="Provincial Militia"
-		start_experience_factor=0.06	start_equipment_factor=0.8
-		force_equipment_variants={melee_equipment_0={owner="CHY" creator="CHY"}}
-	}
-	division={	#Macintosh Hills#
-		name="Macintosh Hills Militia"
-		location=3592	division_template="Provincial Militia"
-		start_experience_factor=0.08	start_equipment_factor=0.5
-		force_equipment_variants={melee_equipment_0={owner="CHY" creator="CHY"}}
-	}
-	division={	#Sires Hollow#
-		name="Sires Hollow Militia"
-		location=11627	division_template="Provincial Militia"
-		start_experience_factor=0.08	start_equipment_factor=0.6
-		force_equipment_variants={melee_equipment_0={owner="CHY" creator="CHY"}}
-	}
 	division={	#Even#
 		name="Cherry Arms Brigade I"
-		location=6720	division_template="Ponies-at-Arms"
-		start_experience_factor=0.1	start_equipment_factor=0.8
-		force_equipment_variants={melee_equipment_0={owner="CHY" creator="CHY"}}
+		location=6720
+		division_template="Ponies-at-Arms"
+		start_experience_factor=0.1
+		start_equipment_factor=0.8
+		force_equipment_variants={
+			melee_equipment_0={owner="CHY" creator="CHY"}
+		}
 	}
 	division={	#Sires Hollow#
 		name="Cherry Arms Brigade II"
-		location=11427	division_template="Ponies-at-Arms"
-		start_experience_factor=0.1	start_equipment_factor=0.8
-		force_equipment_variants={melee_equipment_0={owner="CHY" creator="CHY"}}
+		location=11427
+		division_template="Ponies-at-Arms"
+		start_experience_factor=0.1
+		start_equipment_factor=0.8
+		force_equipment_variants={
+			melee_equipment_0={owner="CHY" creator="CHY"}
+		}
 	}
 	division={	#Sires Hollow#
-		name="Cherry Auxilia Brigade I"
-		location=11627	division_template="Pegasi Auxilia"
-		start_experience_factor=0.1	start_equipment_factor=0.8
-		force_equipment_variants={melee_equipment_0={owner="CHY" creator="CHY"}}
+		name="Cherry Arms Brigade III"
+		location=11627
+		division_template="Ponies-at-Arms"
+		start_experience_factor=0.1
+		start_equipment_factor=0.8
+		force_equipment_variants={
+			melee_equipment_0={owner="CHY" creator="CHY"}
+		}
 	}
 }

@@ -13,12 +13,15 @@ on_actions={	#The "f_" is used to make this run AFTER eaw's on_actions that scre
 							original_tag=WTC
 						}
 					}
+					remove_ideas=proper_science_base
 					add_ideas=big_science_base
 					adjust_research_modifier=yes
 				}
 				if={
 					limit={
 						OR={
+							original_tag=ALA
+							original_tag=ALI
 							original_tag=BCK
 							original_tag=CHY
 							original_tag=HAH
@@ -38,13 +41,13 @@ on_actions={	#The "f_" is used to make this run AFTER eaw's on_actions that scre
 							original_tag=VHT
 						}
 					}
+					remove_ideas=proper_science_base
 					add_ideas=better_science_base
 					adjust_research_modifier=yes
 				}
 				if={
 					limit={
 						OR={
-							original_tag=ALA
 							original_tag=CUL
 							original_tag=CYE
 							original_tag=EMB
@@ -60,6 +63,7 @@ on_actions={	#The "f_" is used to make this run AFTER eaw's on_actions that scre
 							original_tag=VII
 						}
 					}
+					remove_ideas=proper_science_base
 					add_ideas=poor_science_base
 					adjust_research_modifier=yes
 				}

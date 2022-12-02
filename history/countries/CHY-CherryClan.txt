@@ -1,11 +1,18 @@
 capital=22
 oob="CHY_1012"
 set_research_slots=2
-set_stability=0.8 set_war_support=0.02
+set_stability=0.8
+set_war_support=0.02
 add_ideas={
-	volunteer_only export_focus civilian_economy
-	better_science_base pre_industrial_society
-	lack_of_scientists3 poverty3
+	pre_industrial_society3
+	lack_of_scientists3
+	poverty4
+}
+set_technology={
+	pony_race=1
+	melee_weapons=1
+	tech_support=1
+	pre_gw_artillery=1
 }
 if={
 	limit={has_dlc="No Step Back"}
@@ -16,16 +23,26 @@ if={
 	}
 	else={add_ideas={EQS_bad_tanks}}
 }
-set_technology={
-	pony_race=1
-	melee_weapons=1
-	tech_support=1
-	pre_gw_artillery=1
-}
 actually_fix_weapon_techs=yes
 set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
-HEB={puppet=CHY}
-set_popularities={fascism=48 communism=23 neutrality=15 democratic=14}
+if={
+	limit={has_dlc="Death or Dishonor"}
+	HEB={
+		set_autonomy={
+			target=CHY
+			autonomy_state=autonomy_satellite
+		}
+	}
+	else={
+		HEB={puppet=CHY}
+	}
+}
+set_popularities={
+	fascism=48
+	communism=23
+	neutrality=15
+	democratic=14
+}
 set_politics={ruling_party=fascism}
 set_country_flag=EDR_is_equestrian_breakaway
 recruit_character=CHY_cherry_jubilee

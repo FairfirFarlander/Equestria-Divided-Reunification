@@ -13,3 +13,17 @@ add_namespace=EDR_evt_gen
 		}
 		immediate={log="[GetDateText]: [Root.GetName]: event EDR_evt_gen.000"}
 	}
+add_namespace=EDR_E0
+	country_event={	#War Warning Event
+		id=EDR_E0.0001
+		title=EDR_E0.0001.t
+		desc=EDR_E0.0001.d
+		#picture=
+		is_triggered_only=yes
+		option={name=EDR_E0.0001.a}
+		option={
+			name=EDR_E0.0001.b
+			trigger={is_debug=yes}
+		}
+		immediate={log="[GetDateText]: [Root.GetName]: event EDR_E0.0001"}
+	}

@@ -1,23 +1,12 @@
-capital=525
-#oob="ALI_1012"
+set_capital={state=525}
+oob="ALI_spawn"
 set_research_slots=2
 set_stability=0.36
 set_war_support=0.12
 add_ideas={
-	agrarian_society
+	pre_industrial_society2
 	lack_of_scientists3
 	poverty2
-}
-if={
-	limit={has_dlc="No Step Back"}
-	add_ideas={
-		traditionalism_academy_spirit
-		doctrinal_orthodoxy_spirit
-		disdain_for_the_digging_spirit
-	}
-	else={
-		add_ideas={EQS_bad_tanks}
-	}
 }
 set_technology={
 	pony_race=1
@@ -25,6 +14,7 @@ set_technology={
 	melee_weapons1=1
 	tech_support=1
 	tech_recon=1
+	pre_gw_artillery=1
 	tech_pegasi=1
 }
 if={
@@ -35,46 +25,13 @@ if={
 		basic_battery=1
 		mtg_transport=1
 	}
-	else={
-		set_technology={
-			early_destroyer=1
-			early_light_cruiser=1
-			transport=1
-		}
-	}
-}
-actually_fix_weapon_techs=yes
-starting_train_buffer=0
-set_convoys=13
-set_rule={
-	can_generate_female_aces=yes
-	can_generate_female_unit_leaders=yes
-	can_generate_female_country_leaders=yes
-}
-set_popularities={
-	fascism=13
-	communism=11
-	neutrality=67
-	democratic=9
-}
-set_politics={ruling_party=neutrality}
-set_country_flag=EDR_is_equestrian_breakaway
-recruit_character=ALI_edgar_alba	#Edgar Allen Poe - The Disowned Duke
-if={
-	limit={has_dlc="Man the Guns"}
 	create_equipment_variant={
 		name="Norpone 08' Class"
 		type=ship_hull_cruiser_1
 		modules={
 			fixed_ship_battery_slot=ship_light_medium_battery_1
-			fixed_ship_anti_air_slot=empty
-			fixed_ship_fire_control_system_slot=empty
-			fixed_ship_radar_slot=empty
 			fixed_ship_engine_slot=cruiser_ship_engine_1
-			fixed_ship_secondaries_slot=empty
 			fixed_ship_armor_slot=ship_armor_cruiser_1
-			mid_1_custom_slot=empty
-			mid_2_custom_slot=empty
 			rear_1_custom_slot=ship_light_medium_battery_1
 		}
 	}
@@ -83,16 +40,15 @@ if={
 		type=ship_hull_light_1
 		modules={
 			fixed_ship_battery_slot=ship_light_battery_1
-			fixed_ship_anti_air_slot=empty
-			fixed_ship_fire_control_system_slot=empty
-			fixed_ship_radar_slot=empty
-			fixed_ship_torpedo_slot=empty
 			fixed_ship_engine_slot=light_ship_engine_1
-			mid_1_custom_slot=empty
-			rear_1_custom_slot=empty
 		}
 	}
 	else={
+		set_technology={
+			early_destroyer=1
+			early_light_cruiser=1
+			transport=1
+		}
 		create_equipment_variant={
 			name="Norpone 08' Class"
 			type=light_cruiser_1
@@ -115,4 +71,32 @@ if={
 		}
 	}
 }
+if={
+	limit={has_dlc="No Step Back"}
+	add_ideas={
+		traditionalism_academy_spirit
+		doctrinal_orthodoxy_spirit
+		disdain_for_the_digging_spirit
+	}
+	else={
+		add_ideas={EQS_bad_tanks}
+	}
+}
+actually_fix_weapon_techs=yes
+starting_train_buffer=1
+set_convoys=13
+set_rule={
+	can_generate_female_aces=yes
+	can_generate_female_unit_leaders=yes
+	can_generate_female_country_leaders=yes
+}
+set_popularities={
+	fascism=11
+	communism=9
+	neutrality=67
+	democratic=13
+}
+set_politics={ruling_party=neutrality}
+set_country_flag=EDR_is_equestrian_breakaway
+recruit_character=ALI_edgar_alba	#Edgar Allen Poe - The Disowned Duke
 #NOTES#
