@@ -1,13 +1,7 @@
 division_template={
-	name="Everfree Militia"	#divisions_name_group=#
-	priority=0	template_counter=24
-	regiments={
-		infantry={x=0 y=0}
-	}
-}
-division_template={
-	name="Tribal Warband"	#divisions_name_group=#
-	template_counter=40
+	name="Tribal Warparty"
+	priority=0
+	template_counter=24
 	regiments={
 		infantry={x=0 y=0}
 		infantry={x=0 y=1}
@@ -15,11 +9,22 @@ division_template={
 	}
 }
 division_template={
-	name="Ursa Handlers"	#divisions_name_group=#
-	is_locked=yes	priority=1	template_counter=19
+	name="Tribal Warband"
+	template_counter=40
+	regiments={
+		infantry={x=0 y=0}	infantry={x=1 y=0}
+		infantry={x=0 y=1}	infantry={x=1 y=1}
+	}
+}
+division_template={
+	name="Ursa Handlers"
+	is_locked=yes
+	priority=1
+	template_counter=19
 	regiments={
 		infantry={x=0 y=0}
 		infantry={x=0 y=1}
+		infantry={x=0 y=2}
 	}
 	support={
 		ursas={x=0 y=0}
@@ -28,27 +33,42 @@ division_template={
 units={	#Dragon Units: Ruby, Sapphire, Emerald, Onyx, and Amethyst Warbands
 	division={
 		name="Children of the Forest Tribe"
-		location=3534	division_template="Tribal Warband"
-		start_experience_factor=0.55	start_equipment_factor=0.9
+		location=3534
+		division_template="Tribal Warparty"
+		start_experience_factor=0.55
+		start_equipment_factor=0.9
+		melee_equipment_0={owner="HEF" creator="HEF"}
 	}
 	division={
 		name="Old Oak Tribe"
-		location=3579	division_template="Tribal Warband"
-		start_experience_factor=0.75	start_equipment_factor=0.9
+		location=3579
+		division_template="Tribal Warparty"
+		start_experience_factor=0.75
+		start_equipment_factor=0.9
+		melee_equipment_0={owner="HEF" creator="HEF"}
 	}
 	division={
 		name="Her Watchful Eyes Tribe"
-		location=11723	division_template="Tribal Warband"
-		start_experience_factor=0.75	start_equipment_factor=0.9
+		location=11723
+		division_template="Tribal Warparty"
+		start_experience_factor=0.75
+		start_equipment_factor=0.9
+		melee_equipment_0={owner="HEF" creator="HEF"}
 	}
 	division={
 		name="Nature's Fury Tribe"
-		location=9629	division_template="Tribal Warband"
-		start_experience_factor=1	start_equipment_factor=0.9
+		location=9629
+		division_template="Tribal Warparty"
+		start_experience_factor=1
+		start_equipment_factor=0.9
+		melee_equipment_0={owner="HEF" creator="HEF"}
 	}
 	division={
 		name="Bear Tooth Tribe"
-		location=6599	division_template="Ursa Handlers"
-		start_experience_factor=0.75	start_equipment_factor=0.7
+		location=6599
+		division_template="Ursa Handlers"
+		start_experience_factor=0.75
+		start_equipment_factor=0.7
+		melee_equipment_0={owner="HEF" creator="HEF"}
 	}
 }

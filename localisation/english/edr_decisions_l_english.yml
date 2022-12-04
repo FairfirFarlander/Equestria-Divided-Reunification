@@ -1,7 +1,14 @@
 ﻿l_english:
-###Debug###
+###Debug Decisions###
 EDR_debug_decisions: "§gDebug Decisions§!"
  EDR_show_not_tell: "§CC§!§LL§!§WW§!§BB§!§GG§!§RR§!§bb§!§gg§!§YY§!§HH§!§TT§!§OO§!§00§!§11§!§22§!§33§!§44§!§55§!§66§!§77§!§88§!§99§!§tt§!"
+ miller_flour: "§gDebug§!: §GAdd§! §Y1§! random §7Military Factory§!"
+ dockyard_please: "§gDebug§!: §GAdd§! §Y1§! random §3Naval Dockyard§!"
+ gimmie_dreadnut: "§gDebug§!: §GUnlock§! §YPre-Dreadnaught Ships§! Tech"
+ EDR_toggle_minors_visiblity_on: "§gDebug§!: §GActivate§! Eques visibility decisions for minors."
+ EDR_toggle_minors_visiblity_off: "§gDebug§!: §RDeactivate§! Eques visibility decisions for minors."
+ EDR_show_less_focuses: "Show Less Focuses"
+ EDR_show_more_focuses: "Show More Focuses"
 ##Earthborn Minor Visibility##
 ###Land Decisions###
 ##Toggle Land Visibility for Minors##
@@ -80,3 +87,10 @@ EDR_debug_SGR_land_decisions: "[SGR.Getflag] §gDebug§!: §YToggle§! Stalliong
 EDR_debug_FLY_land_decisions: "[FLY.Getflag] §gDebug§!: §YToggle§! Fillydelphian Freeside [FSH.Getflag]"
  FLY_res_FSH: "§gDebug§! §GRestore§! [FSH.getname] [FSH.getflag].\n§RRemove§! cores for [FLY.getname] [FLY.getflag]."
  FLY_rev_FSH: "§gDebug§! §RRemove§! [FSH.getname] [FSH.getflag].\n§YAnnex§! and §Gcore§! to [FLY.getname] [FLY.getflag]."
+###Equestrian Reunification###
+EDR_equestrian_minors_reunification: "Equestrian Reunification: The Wayward Children"
+ EDR_equestrian_minors_reunification_desc: ""
+ EDR_show_more_attack_minor: "Show Unavailable Reconquests"
+ EDR_show_less_attack_minor: "Hide Unavailable Reconquests"
+ EDR_attack_minor: "Reconquer [FROM.GetNameDef]"
+ EDR_core_minor: "Reconcile with the [FROM.GetAdjective]"

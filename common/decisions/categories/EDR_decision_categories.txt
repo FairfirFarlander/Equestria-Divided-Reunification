@@ -1,5 +1,5 @@
 EDR_equestrian_minors_reunification={
-	#icon=
+	icon=GFX_decision_category_broken_equestria
 	priority=3
 	allowed={has_country_flag=EDR_is_equestrian_breakaway}
 	visible={
@@ -7,5 +7,11 @@ EDR_equestrian_minors_reunification={
 			has_global_flag=EDR_equestria_reunited
 			is_debug=yes
 		}
+	}
+}
+EDR_timeline_missions={
+	priority=4
+	visible={
+		is_debug=yes
 	}
 }

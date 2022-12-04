@@ -1,54 +1,60 @@
 division_template={
-	name="Clan Militia"	#divisions_name_group=#
-	is_locked=no	priority=0	template_counter=3
-	regiments={
-		infantry={x=0 y=0}
-	}
-}
-division_template={
-	name="Yeopony Brigade"	#divisions_name_group=#
-	is_locked=no	priority=1	template_counter=59
+	name="Clan Militia"
+	template_counter=3
 	regiments={
 		infantry={x=0 y=0}
 		infantry={x=0 y=1}
 		infantry={x=0 y=2}
 	}
 }
+division_template={
+	name="Yeopony Brigade"
+	template_counter=59
+	regiments={
+		infantry={x=0 y=0}	infantry={x=1 y=0}
+		infantry={x=0 y=1}	infantry={x=1 y=1}
+		infantry={x=0 y=2}
+	}
+}
 units={
 	division={	#Trotland#
 		name="Trotland Militia"
-		location=11399	division_template="Clan Militia"
-		start_experience_factor=0.06	start_equipment_factor=0.65
-		force_equipment_variants={melee_equipment_0={owner="HFT" creator="HFT"}}
+		location=11399
+		division_template="Clan Militia"
+		start_experience_factor=0.06
+		start_equipment_factor=0.65
+		force_equipment_variants={
+			melee_equipment_0={owner="HFT" creator="HFT"}
+		}
 	}
 	division={	#Ghastly Gorge#
 		name="Ghastly Gorge Militia"
-		location=773	division_template="Clan Militia"
-		start_experience_factor=0.08	start_equipment_factor=0.7
-		force_equipment_variants={melee_equipment_0={owner="HFT" creator="HFT"}}
+		location=773
+		division_template="Clan Militia"
+		start_experience_factor=0.08
+		start_equipment_factor=0.7
+		force_equipment_variants={
+			melee_equipment_0={owner="HFT" creator="HFT"}
+		}
 	}
 	division={	#Summerdale#
 		name="Summerdale Militia"
-		location=6789	division_template="Clan Militia"
-		start_experience_factor=0.08	start_equipment_factor=0.7
-		force_equipment_variants={melee_equipment_0={owner="HFT" creator="HFT"}}
-	}
-	division={	#Boring Fields#
-		name="Boring Militia"
-		location=11593	division_template="Clan Militia"
-		start_experience_factor=0.1	start_equipment_factor=0.75
-		force_equipment_variants={melee_equipment_0={owner="HFT" creator="HFT"}}
-	}
-	division={	#Star Forest#
-		name="Hoof City Militia"
-		location=782	division_template="Clan Militia"
-		start_experience_factor=0.08	start_equipment_factor=0.4
-		force_equipment_variants={melee_equipment_0={owner="HFT" creator="HFT"}}
+		location=6789
+		division_template="Clan Militia"
+		start_experience_factor=0.08
+		start_equipment_factor=0.7
+		force_equipment_variants={
+			melee_equipment_0={owner="HFT" creator="HFT"}
+		}
 	}
 	division={	#Star Forest#
 		name="Orange Clan Warband"
-		location=782	division_template="Yeopony Brigade"
-		start_experience_factor=0.22	start_equipment_factor=0.9
-		force_equipment_variants={melee_equipment_0={owner="HFT" creator="HFT"}}
+		location=782
+		division_template="Yeopony Brigade"
+		start_experience_factor=0.22
+		start_equipment_factor=0.9
+		force_equipment_variants={
+			melee_equipment_0={owner="HFT" creator="HFT"}
+		}
 	}
 }

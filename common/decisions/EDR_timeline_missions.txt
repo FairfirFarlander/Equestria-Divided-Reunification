@@ -1,0 +1,19 @@
+EDR_timeline_missions={
+	EDR_HEB_COT_leadup_1013={
+		activation={
+			has_start_date<1012.01.02
+			HEB={is_ai=yes}
+		}
+		days_mission_timeout=300
+		timeout_effect={
+			log="[GetDateText]: [Root.GetName]: mission EDR_HEB_COT_war_1013"
+			set_global_flag=EDR_HEB_COT_war_1013
+			COT={
+				limit={
+					NOT={is_ai=yes}
+				}
+				country_event=EDR_HEB_COT_leadup_1013
+			}
+		}
+	}
+}

@@ -1,20 +1,12 @@
 capital=188
 oob="FRI_1012"
 set_research_slots=2
-set_stability=0.38 set_war_support=0.12
+set_stability=0.38
+set_war_support=0.12
 add_ideas={
-	volunteer_only export_focus civilian_economy
-	poor_science_base agrarian_society
-	lack_of_scientists2 poverty4
-}
-if={
-	limit={has_dlc="No Step Back"}
-	add_ideas={
-		traditionalism_academy_spirit
-		doctrinal_orthodoxy_spirit
-		disdain_for_the_digging_spirit
-	}
-	else={add_ideas={EQS_bad_tanks}}
+	agrarian_society
+	lack_of_scientists2
+	poverty4
 }
 set_technology={
 	pony_race=1
@@ -24,9 +16,31 @@ set_technology={
 	tech_unicorn=1
 	tech_unicorn_th=1
 }
+if={
+	limit={has_dlc="No Step Back"}
+	add_ideas={
+		traditionalism_academy_spirit
+		doctrinal_orthodoxy_spirit
+		disdain_for_the_digging_spirit
+	}
+	else={
+		add_ideas={EQS_bad_tanks}
+	}
+}
 actually_fix_weapon_techs=yes
 set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
-HMS={puppet=FRI}
+if={
+	limit={has_dlc="Death or Dishonor"}
+	HMS={
+		set_autonomy={
+			target=FRI
+			autonomy_state=autonomy_satellite
+		}
+	}
+	else={
+		HMS={puppet=FRI}
+	}
+}
 set_popularities={fascism=40 communism=18 neutrality=20 democratic=22}
 set_politics={ruling_party=fascism}
 set_country_flag=EDR_is_equestrian_breakaway

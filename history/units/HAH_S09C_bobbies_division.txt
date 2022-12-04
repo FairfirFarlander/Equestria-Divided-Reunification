@@ -1,6 +1,8 @@
 division_template={
-	name="Bobbies"	#divisions_name_group=#
-	is_locked=yes	priority=0	template_counter=8
+	name="Bobbies"
+	is_locked=yes
+	priority=0
+	template_counter=8
 	regiments={
 		infantry={x=0 y=0}
 		infantry={x=0 y=1}
@@ -13,8 +15,12 @@ division_template={
 units={
 	division={	#Hollow Shades#
 		name="The First Bobbies"
-		location=6598	division_template="Bobbies"
-		start_experience_factor=0.1	start_equipment_factor=1
-		force_equipment_variants={melee_equipment_0={owner="HAH" creator="HAH"}}
+		location=6598
+		division_template="Bobbies"
+		start_experience_factor=0.1
+		start_equipment_factor=1
+		force_equipment_variants={
+			melee_equipment_0={owner="HAH" creator="HAH"}
+		}
 	}
 }

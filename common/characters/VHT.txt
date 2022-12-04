@@ -272,7 +272,7 @@ characters={
 			slot=political_advisor
 			idea_token=VHT_saffron_advi
 			allowed={original_tag=VHT}
-			availiable={has_completed_focus=VHT_meet_unions}
+			#availiable={has_completed_focus=VHT_meet_unions}
 			traits={ambitious_union_boss_2}
 			ai_will_do={factor=1}
 		}
@@ -287,7 +287,7 @@ characters={
 			slot=political_advisor
 			idea_token=VHT_kuznetsov_advi
 			allowed={original_tag=VHT}
-			availiable={has_completed_focus=VHT_meet_unions}
+			#availiable={has_completed_focus=VHT_meet_unions}
 			traits={prince_of_terror}
 			ai_will_do={factor=1}
 		}
@@ -302,7 +302,7 @@ characters={
 			slot=political_advisor
 			idea_token=VHT_paradox_advi
 			allowed={original_tag=VHT}
-			availiable={has_completed_focus=VHT_buereacrat}
+			#availiable={has_completed_focus=VHT_buereacrat}
 			traits={administrative_genius}
 			ai_will_do={factor=1}
 		}

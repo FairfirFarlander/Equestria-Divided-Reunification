@@ -16,7 +16,8 @@ division_template={
 units={
 	division={	#Hollow Shades#
 		name="Hollow Guard"
-		location=6598	division_template="Hollow Guard"
+		location=6598
+		division_template="Hollow Guard"
 		start_experience_factor=0.75
 		start_equipment_factor=1
 		force_equipment_variants={
