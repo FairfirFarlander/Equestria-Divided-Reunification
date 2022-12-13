@@ -173,3 +173,122 @@ WTC_purchase_technology={
 		}
 	}
 }
+EDRG_oob={
+	WTC_Rmerc={	#Recruit More Mercenary Company
+		#icon=
+		visible={tag=WTC}
+		cost=WTC_merc_cost
+		days_re_enable=30
+		ai_will_do={
+			base=0
+			modifier={
+				add=3
+				check_variable={WTC_merc_cap>6}
+				#has_completed_focus=
+			}
+		}
+		complete_effect={
+			log="[GetDateText]: [Root.GetName]: decision WTC_Rmerc"
+			add_to_variable={
+				var=WTC_merc_cap
+				value=1
+				tooltip=WTC_merc_cap_add
+			}
+			hidden_effect={
+				set_division_template_cap={
+					division_template="Mercenary Brigade"
+					division_cap=WTC_merc_cap
+				}
+			}
+		}
+	}
+	WTC_Emerc={	#Expand Mercenary Company Size
+		#icon=
+		visible={
+			tag=WTC
+			check_variable={WTC_merc_cost<10}
+		}
+		custom_cost_trigger={has_army_experience>4}
+		custom_cost_text=WTC_Emerc_req
+		days_re_enable=60
+		ai_will_do={
+			base=3
+			modifier={
+				add=-3
+				check_variable={WTC_merc_cap>5}
+			}
+			modifier={
+				add=4
+				check_variable={WTC_merc_cap>5}
+				check_variable={WTC_merc_cap<10}
+				OR={
+					has_war_with=CUL
+					has_war_with=HEB
+					has_war_with=HEF
+					has_war_with=HMS
+					has_war_with=HSW
+					has_war_with=HWG
+				}
+			}
+		}
+		complete_effect={
+			log="[GetDateText]: [Root.GetName]: decision WTC_Emerc"
+			add_to_variable={
+				var=WTC_merc_cost
+				value=1
+				tooltip=WTC_merc_cost_add
+			}
+			hidden_effect={
+				army_experience=-5
+				if={
+					limit={
+						check_variable={WTC_merc_cost<7}
+					}
+					add_units_to_division_template={
+						template_name="Mercenary Brigade"
+						regiments={infantry=1}
+					}
+				}
+				if={
+					limit={
+						check_variable={WTC_merc_cost>6}
+						check_variable={WTC_merc_cost<10}
+					}
+					add_units_to_division_template={
+						template_name="Mercenary Brigade"
+						regiments={infantry=2}
+					}
+				}
+			}
+		}
+	}
+	WTC_Emerc_art={	#Enlargen Mercenary Company with Artillery
+		#icon=
+		visible={
+			tag=WTC
+			NOT={has_country_flag=WTC_Emerc_art_added}
+		}
+		custom_cost_trigger={has_army_experience>4}
+		custom_cost_text=WTC_Emerc_art_req
+		days_re_enable=30
+		fire_only_once=yes
+		ai_will_do={
+			base=0
+			modifier={
+				add=2
+				num_of_military_factories>6
+			}
+		}
+		complete_effect={
+			log="[GetDateText]: [Root.GetName]: decision WTC_Emerc_art"
+			custom_effect_tooltip=WTC_Emerc_art_tooltip
+			set_country_flag=WTC_Emerc_art_added
+			hidden_effect={
+				add_units_to_division_template={
+					template_name="Mercenary Brigade"
+					regiments={artillery_brigade=0}
+				}
+			}
+		}
+	}
+}

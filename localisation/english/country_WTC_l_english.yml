@@ -12,11 +12,11 @@ WTC: "Manehattan Trading Company"
 ###Political Parties###
 ###Characters###
 ##Leaders##
-WTC_dashing_habidasher: "Dashing Habidasher"
- WTC_dhabidasher_poli_desc: "$CRDC_art_tiviyl$"
- WTC_alicia_habidasher: "Alicia Habidasher"
-  WTC_ahabidasher_poli_desc: "$CRDC_art_tiviyl$"
-  WTC_ahabidasher_advi_desc: "$CRDC_art_tiviyl$"
+WTC_dashing_habbidasher: "Dashing Habidasher"
+ WTC_dhabbidasher_poli_desc: "$CRDC_art_tiviyl$"
+ WTC_alicia_habbidasher: "Alicia Habidasher"
+  WTC_ahabbidasher_poli_desc: "$CRDC_art_tiviyl$"
+  WTC_ahabbidasher_advi_desc: "$CRDC_art_tiviyl$"
 ##Political Advisors##
 ##Military Advisors##
  WTC_eloi_path: "Eloi Path"
@@ -51,6 +51,18 @@ WTC_purchase_technology: "[WTC.GetName] Aquistiions"
   WTC_GRI_rifles_req_blocked: "£pol_power  §R15§! £convoy_texticon  §R10§!"
   WTC_GRI_rifles_req: "£pol_power  §Y15§! £convoy_texticon  §Y10§!"
   WTC_GRI_rifles_rev_tip: "§LThe §Y[WTC.GetName]§! will receive §Y[GRI.GetAdjective] $GRI_infantry_equipment_0$ rifles§!.\n\nNOTE: You can only select this decision three times.§!"
+##Recruit Soldiers (EDRG_oob)##
+WTC_Rmerc: "Expand More Mercenary Companies"
+ WTC_Rmerc_desc: ""
+  WTC_merc_cap_add: "Raises the division cap of §YMercenary Brigade§! by §G1§!. The current division cap is §Y[?WTC_merc_cap]§!."
+ WTC_Emerc: "Enlargen Mercenary Company Size"
+  WTC_Emerc_req_blocked: "£army_experience  §R5§!"
+  WTC_Emerc_req: "£army_experience  §Y5§!"
+  WTC_merc_cost_add: "Expands the §YMercenary Brigade§! divisions by adding an §7infantry battalion§!.\nThe current amount of §7infantry battalions§! is §Y[?WTC_merc_cost]§!."
+ WTC_Emerc_art: "Enlargen Mercenary Company With Artillery"
+  WTC_Emerc_art_req_blocked: "$WTC_Emerc_req_blocked$"
+  WTC_Emerc_art_req: "$WTC_Emerc_req$"
+  WTC_Emerc_art_tooltip: "Expands the §YMercenary Brigade§! divisions by adding an §8artillery battalion§!."
 ###National Focuses###
 ##Storyline Tree##
 WTC_S00: "A Company Controlled From Afar"

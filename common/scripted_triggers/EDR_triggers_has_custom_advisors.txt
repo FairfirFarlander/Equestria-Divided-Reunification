@@ -2,6 +2,7 @@ country_with_custom_advisors={
 	OR={
 		#EDR
 		original_tag=ALA
+		original_tag=ALI
 		original_tag=BCK
 		original_tag=CHY
 		original_tag=COT

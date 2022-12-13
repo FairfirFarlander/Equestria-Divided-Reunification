@@ -1,44 +1,44 @@
 characters={
-	WTC_dashing_habidasher={
-		name=WTC_dashing_habidasher
+	WTC_dashing_habbidasher={
+		name=WTC_dashing_habbidasher
 		portraits={
 			civilian={
-				large="GFX_WTC_dashing_habidasher"
-				small="GFX_idea_WTC_dashing_habidasher"
+				large="GFX_WTC_dashing_habbidasher"
+				small="GFX_idea_WTC_dashing_habbidasher"
 			}
 		}
 		country_leader={
-			desc="WTC_dhabidasher_poli_desc"
+			desc="WTC_dhabbidasher_poli_desc"
 			ideology=plutocracy
 			traits={}
 		}
 		country_leader={
-			desc="WTC_dhabidasher_poli_desc"
+			desc="WTC_dhabbidasher_poli_desc"
 			ideology=conservatism
 			traits={}
 		}
 		country_leader={
-			desc="WTC_dhabidasher_poli_desc"
+			desc="WTC_dhabbidasher_poli_desc"
 			ideology=democratic_socialism
 			traits={}
 		}
 	}
-	WTC_alicia_habidasher={
-		name=WTC_alicia_habidasher
+	WTC_alicia_habbidasher={
+		name=WTC_alicia_habbidasher
 		portraits={
 			civilian={
-				large="GFX_WTC_alicia_habidasher"
-				small="GFX_idea_WTC_alicia_habidasher"
+				large="GFX_WTC_alicia_habbidasher"
+				small="GFX_idea_WTC_alicia_habbidasher"
 			}
 		}
 		country_leader={
-			desc="WTC_ahabidasher_poli_desc"
+			desc="WTC_ahabbidasher_poli_desc"
 			ideology=despotism	#Temp
 			traits={}
 		}
 		advisor={
 			slot=political_advisor
-			idea_token=WTC_ahabidasher_advi
+			idea_token=WTC_ahabbidasher_advi
 			traits={}
 		}
 	}

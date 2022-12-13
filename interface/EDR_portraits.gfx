@@ -283,7 +283,7 @@ spritetypes={
 	}
 	spritetype={
 		name="GFX_HMS_trixie_lulamoon_alt"
-		textureFile="gfx/leaders/HMS/HMS_trixie_lulamoon_alte.dds"
+		textureFile="gfx/leaders/HMS/HMS_trixie_lulamoon_alt.dds"
 	}
 	spritetype={
 		name="GFX_idea_HMS_trixie_lulamoon_alt"
@@ -495,20 +495,20 @@ spritetypes={
 	}
 ##WTC##
 	spritetype={
-		name="GFX_WTC_alicia_habidasher"
-		textureFile="gfx/leaders/WTC/WTC_alicia_habidasher.dds"
+		name="GFX_WTC_alicia_habbidasher"
+		textureFile="gfx/leaders/WTC/WTC_alicia_habbidasher.dds"
 	}
 	spritetype={
-		name="GFX_idea_WTC_alicia_habidasher"
-		textureFile="gfx/interface/ideas/Advisors/WTC/WTC_alicia_habidasher.dds"
+		name="GFX_idea_WTC_alicia_habbidasher"
+		textureFile="gfx/interface/ideas/Advisors/WTC/WTC_alicia_habbidasher.dds"
 	}
 	spritetype={
-		name="GFX_WTC_dashing_habidasher"
-		textureFile="gfx/leaders/WTC/WTC_dashing_habidasher.dds"
+		name="GFX_WTC_dashing_habbidasher"
+		textureFile="gfx/leaders/WTC/WTC_dashing_habbidasher.dds"
 	}
 	spritetype={
-		name="GFX_idea_WTC_dashing_habidasher"
-		textureFile="gfx/interface/ideas/Advisors/WTC/WTC_dashing_habidasher.dds"
+		name="GFX_idea_WTC_dashing_habbidasher"
+		textureFile="gfx/interface/ideas/Advisors/WTC/WTC_dashing_habbidasher.dds"
 	}
 	spritetype={
 		name="GFX_WTC_eloi_path"

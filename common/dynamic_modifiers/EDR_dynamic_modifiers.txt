@@ -1,0 +1,21 @@
+THA_capital_hold={
+	enable={
+		owner={original_tag=THA}
+	}
+	local_supplies=THA.THA_capital_hold_local_supplies
+	local_building_slots=THA.THA_capital_hold_building_slots
+}
+THA_westhold={
+	enable={
+		owner={original_tag=THA}
+	}
+	local_supplies=THA.THA_westhold_local_supplies
+	local_building_slots=THA.THA_westhold_building_slots
+}
+THA_holds={
+	enable={
+		owner={original_tag=THA}
+	}
+	local_supplies=THA.THA_holds_local_supplies
+	local_building_slots=THA.THA_holds_building_slots
+}

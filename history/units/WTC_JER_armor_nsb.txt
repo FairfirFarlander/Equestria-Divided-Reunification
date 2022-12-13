@@ -1,6 +1,6 @@
 division_template={
-	name="Light Armor Unit"	#divisions_name_group=#
-	is_locked=yes	#template_counter=#
+	name="Light Armor Unit"
+	is_locked=yes
 	regiments={
 		light_armor={x=0 y=0}	infantry={x=1 y=0}
 		light_armor={x=0 y=1}	infantry={x=1 y=1}
@@ -8,8 +8,8 @@ division_template={
 	}
 }
 division_template={
-	name="Heavy Armor Unit"	#divisions_name_group=#
-	is_locked=yes	#template_counter=#
+	name="Heavy Armor Unit"
+	is_locked=yes
 	regiments={
 		heavy_armor={x=0 y=0}	infantry={x=1 y=0}
 								infantry={x=1 y=1}
@@ -19,18 +19,36 @@ division_template={
 units={
 	division={	#Baltimare
 		name="Aqueitain Light Horse"
-		location=13011	division_template="Light Armor Unit"
+		location=13011
+		division_template="Light Armor Unit"
 		start_experience_factor=0.02
 		start_equipment_factor=1
-		force_equipment_variants={melee_equipment_1={owner="WTC" creator="HWG"}}
-		force_equipment_variants={light_tank_chassis_0={owner="WTC" creator="JER" version_name="Dassault Prot. Cannon"}}
+		force_equipment_variants={
+			melee_equipment_1={owner="WTC" creator="HWG"}
+		}
+		force_equipment_variants={
+			light_tank_chassis_0={
+				owner="WTC"
+				creator="JER"
+				version_name="Dassault Prot. Cannon"
+			}
+		}
 	}
 	division={	#Baltimare
 		name="Coltjun Aquarium Builders"
-		location=13011	division_template="Heavy Armor Unit"
+		location=13011
+		division_template="Heavy Armor Unit"
 		start_experience_factor=0.02
 		start_equipment_factor=1
-		force_equipment_variants={melee_equipment_1={owner="WTC" creator="HWG"}}
-		force_equipment_variants={heavy_tank_chassis_0={owner="WTC" creator="JER" version_name="Dassault Gros"}}
+		force_equipment_variants={
+			melee_equipment_1={owner="WTC" creator="HWG"}
+		}
+		force_equipment_variants={
+			heavy_tank_chassis_0={
+				owner="WTC"
+				creator="JER"
+				version_name="Dassault Gros"
+			}
+		}
 	}
 }

@@ -15,3 +15,9 @@ EDR_timeline_missions={
 		is_debug=yes
 	}
 }
+EDRG_oob={
+	priority=2
+	visible={
+		is_debug=yes
+	}
+}

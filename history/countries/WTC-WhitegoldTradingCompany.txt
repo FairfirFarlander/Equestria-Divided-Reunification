@@ -1,24 +1,12 @@
 capital=13
 oob="WTC_1012"
-#if={
-#	limit={has_dlc="Man the Guns"}
-#	set_naval_oob="WTC_07_naval"
-#	else={set_naval_oob="WTC_07_naval_legacy"}
-#}
-79={	#Yakima/Cuetzpalliztli#
-	start_resistance=yes	set_compliance=61
-	set_resistance=13	set_garrison_strength=0.40
-}
-352={	#Saltmane/Itzomitl Coast#
-	start_resistance=yes	set_compliance=61
-	set_resistance=7	set_garrison_strength=0.60
-}
 set_research_slots=2
-set_stability=0.4 set_war_support=0.08
+set_stability=0.4
+set_war_support=0.08
 add_ideas={
-	volunteer_only export_focus civilian_economy
-	big_science_base outdated_industry
-	lack_of_scientists3 poverty5
+	outdated_industry
+	lack_of_scientists3
+	poverty5
 	WTC_no_army
 }
 if={
@@ -28,7 +16,9 @@ if={
 		doctrinal_orthodoxy_spirit
 		disdain_for_the_digging_spirit
 	}
-	else={add_ideas={EQS_bad_tanks}}
+	else={
+		add_ideas={EQS_bad_tanks}
+	}
 }
 set_technology={
 	pony_race=1
@@ -39,32 +29,137 @@ set_technology={
 	tech_support=1
 	tech_unicorn=1
 }
-if={limit={has_dlc="Man the Guns"}
+if={
+	limit={has_dlc="Man the Guns"}
 	set_technology={
 		early_ship_hull_light=1
+		basic_depth_charges=1
 		early_ship_hull_cruiser=1
 		basic_battery=1
 		basic_depth_charges=1
 		basic_torpedo=1
 		mtg_transport=1
 	}
-}
-if={limit={not={has_dlc="Man the Guns"}}
-	set_technology={
-		early_destroyer=1
-		early_light_cruiser=1
-		transport=1
+	create_equipment_variant={
+		name="Ardent Class (M)"
+		type=ship_hull_light_1
+		modules={
+			fixed_ship_battery_slot=ship_light_battery_1
+			fixed_ship_anti_air_slot=ship_anti_air_1
+			fixed_ship_engine_slot=light_ship_engine_1
+			mid_1_custom_slot=ship_torpedo_1
+			rear_1_custom_slot=ship_depth_charge_1
+		}
+	}
+	create_equipment_variant={
+		name="Emerald Class (M)"
+		type=ship_hull_cruiser_1
+		modules={
+			fixed_ship_battery_slot=ship_light_medium_battery_1
+			fixed_ship_anti_air_slot=ship_anti_air_1
+			fixed_ship_engine_slot=cruiser_ship_engine_1
+			fixed_ship_armor_slot=ship_armor_cruiser_1
+			mid_1_custom_slot=ship_torpedo_1
+			rear_1_custom_slot=ship_depth_charge_1
+		}
+	}
+	create_equipment_variant={
+		name="Canterlot Class (M)"
+		type=ship_hull_cruiser_1
+		modules={
+			fixed_ship_battery_slot=ship_medium_battery_1
+			fixed_ship_anti_air_slot=ship_anti_air_1
+			fixed_ship_fire_control_system_slot=ship_fire_control_system_0
+			fixed_ship_engine_slot=cruiser_ship_engine_1
+			fixed_ship_secondaries_slot=ship_secondaries_1
+			mid_2_custom_slot=ship_torpedo_1
+			rear_1_custom_slot=ship_medium_battery_1
+		}
+	}
+	set_naval_oob="WTC_1012_naval"
+	else={
+		set_technology={
+			early_destroyer=1
+			early_light_cruiser=1
+			early_heavy_cruiser=1
+			transport=1
+		}
+		create_equipment_variant={
+			name="Ardent Class"
+			type=destroyer_1
+			upgrades={
+				destroyer_engine_upgrade=1
+			}
+		}
+		create_equipment_variant={
+			name="Emerald Class"
+			type=light_cruiser_1
+			upgrades={
+				ship_reliability_upgrade=1
+				ship_engine_upgrade=2
+			}
+		}
+		create_equipment_variant={
+			name="Canterlot Class"
+			type=heavy_cruiser_1
+			upgrades={
+				ship_reliability_upgrade=2
+				ship_gun_upgrade=3
+				ship_engine_upgrade=2
+			}
+		}
+		set_naval_oob="WTC_1012_naval_legacy"
 	}
 }
 actually_fix_weapon_techs=yes
 set_convoys=4
 set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
-HWG={puppet=WTC}
-set_popularities={fascism=42 communism=19 neutrality=29 democratic=10}
+set_variable={WTC_merc_cap=2}
+set_variable={WTC_merc_cost=3}
+clamp_variable={
+	var=WTC_merc_cap
+	min=0
+	max=24
+}
+clamp_variable={
+	var=WTC_merc_cost
+	min=1
+	max=9
+}
+79={	#Yakima/Cuetzpalliztli#
+	start_resistance=yes
+	set_garrison_strength=1
+	set_resistance=13
+	set_compliance=26
+}
+352={	#Saltmane/Itzomitl Coast#
+	start_resistance=yes
+	set_garrison_strength=1
+	set_resistance=7
+	set_compliance=26
+}
+if={
+	limit={has_dlc="Death or Dishonor"}
+	HWG={
+		set_autonomy={
+			autonomous_state=autonomy_satellite
+			target=WTC
+		}
+	}
+	else={
+		HWG={puppet=WTC}
+	}
+}
+set_popularities={
+	fascism=42
+	communism=19
+	neutrality=29
+	democratic=10
+}
 set_politics={ruling_party=fascism}
 set_country_flag=EDR_is_equestrian_breakaway
-recruit_character=WTC_dashing_habidasher
-recruit_character=WTC_alicia_habidasher
+recruit_character=WTC_dashing_habbidasher
+recruit_character=WTC_alicia_habbidasher
 recruit_character=WTC_eloi_path
 recruit_character=WTC_zebrican_mercenary
 recruit_character=WTC_saddle_arabian_mercenary

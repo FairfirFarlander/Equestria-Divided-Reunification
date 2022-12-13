@@ -1,11 +1,12 @@
 capital=30
 oob="THA_1012"
 set_research_slots=2
-set_stability=0.23 set_war_support=0.11
+set_stability=0.23
+set_war_support=0.11
 add_ideas={
-	volunteer_only limited_exports isolation
-	poor_science_base agrarian_society
-	no_lack_of_scientists no_poverty
+	limited_exports
+	isolation
+	agrarian_society
 	THA_Ancestor_Guidance
 	THA_Warrior_Culture_Traditions
 }
@@ -16,15 +17,9 @@ if={
 		doctrinal_orthodoxy_spirit
 		disdain_for_the_digging_spirit
 	}
-	else={add_ideas={EQS_bad_tanks}}
-}
-add_offsite_building={
-	type=industrial_complex
-	level=1
-}
-add_offsite_building={
-	type=arms_factory
-	level=1
+	else={
+		add_ideas={EQS_bad_tanks}
+	}
 }
 set_technology={
 	pony_race=1
@@ -52,7 +47,38 @@ actually_fix_weapon_techs=yes
 generic_DD_template=yes
 set_convoys=3
 set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
-set_popularities={fascism=11 communism=32 neutrality=49 democratic=8}
+add_offsite_building={
+	type=industrial_complex
+	level=1
+}
+add_offsite_building={
+	type=arms_factory
+	level=1
+}
+set_variable={THA.THA_capital_hold_local_supplies=0}
+set_variable={THA.THA_capital_hold_building_slots=1}
+set_variable={THA.THA_westhold_local_supplies=1}
+set_variable={THA.THA_westhold_building_slots=1}
+set_variable={THA.THA_holds_local_supplies=5}
+set_variable={THA.THA_holds_building_slots=0}
+17={	#Badlands
+	add_dynamic_modifier={modifier=THA_holds}
+}
+30={	#Ayacachtli
+	add_dynamic_modifier={modifier=THA_capital_hold}
+}
+35={	#Macintosh Mountains
+	add_dynamic_modifier={modifier=THA_westhold}
+}
+37={	#Scale Mountains
+	add_dynamic_modifier={modifier=THA_holds}
+}
+set_popularities={
+	fascism=11
+	communism=32
+	neutrality=49
+	democratic=8
+}
 set_politics={ruling_party=neutrality}
 set_country_flag=EDR_is_equestrian_breakaway
 recruit_character=THA_argent_end

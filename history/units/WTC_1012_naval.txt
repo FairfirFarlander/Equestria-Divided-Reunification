@@ -1,0 +1,43 @@
+units={
+	fleet={
+		name="The Habbidasher Fleet"
+		naval_base=13011
+		task_force={
+			name="Tradewind Squadron"
+			location=13011
+			ship={
+				name="HTC Hatter"
+				definition=destroyer
+				equipment={
+					ship_hull_light_1={
+						amount=1
+						owner=WTC
+						version_name="Ardent Class (M)"
+					}
+				}
+			}
+			ship={
+				name="HTC March Hare"
+				definition=destroyer
+				equipment={
+					ship_hull_light_1={
+						amount=1
+						owner=WTC
+						version_name="Ardent Class (M)"
+					}
+				}
+			}
+			ship={
+				name="HTC Dormouse"
+				definition=destroyer
+				equipment={
+					ship_hull_light_1={
+						amount=1
+						owner=WTC
+						version_name="Ardent Class (M)"
+					}
+				}
+			}
+		}
+	}
+}
