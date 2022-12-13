@@ -37,6 +37,32 @@ THA_argent_end: "Argent End"
 ##Commanders##
 ##Political Advisors##
 ##Military Advisors##
+###Ideas###
+###Decisions###
+##Recruit Soldiers (EDRG_oob)##
+THA_Ecarl: "Enlargen Huscarl Size"
+ THA_Ecarl_req_blocked: "£army_experience  §R5§!"
+ THA_Ecarl_req: "£army_experience  §Y5§!"
+ THA_carl_cost_add: "Expands the §YHuscarl§! divisions by adding an §7infantry battalion§!.\nThe current amount of §7infantry battalions§! is §Y[?THA_carl_cost]§!."
+ THA_Ecarl_art: "Enlargen Huscarls With Artillery"
+  THA_Ecarl_art_added: "§YHuscarls§! has an §8artillery company§!."
+  THA_Ecarl_art_req_blocked: "$THA_Ecarl_req_blocked$"
+  THA_Ecarl_art_req: "$THA_Ecarl_req$"
+  THA_Ecarl_art_tooltip: "Expands the §YHuscarl§! divisions by adding an §8artillery battalion§!."
+ THA_Eegrd: "Enlargen End Guard Size"
+  THA_Eegrd_req_blocked: "£army_experience  §R5§!"
+  THA_Eegrd_req: "£army_experience  §Y5§!"
+  THA_egrd_cost_add: "Expands the §YEnd Guard§! divisions by adding an §4pegasi battalion§!.\nThe current amount of §4pegasi battalions§! is §Y[?THA_egrd_cost]§!."
+ THA_Eegrd_supart: "Enlargen End Guard With Support Artillery"
+  THA_Eegrd_supart_added: "§YEnd Guard§! has an §8artillery company§!."
+  THA_Eegrd_supart_req_blocked: "$THA_Eegrd_req_blocked$"
+  THA_Eegrd_supart_req: "$THA_Eegrd_req$"
+  THA_Eegrd_supart_tooltip: "Expands the §YEnd Guard§! divisions by adding an §8artillery support company§!."
+ THA_Eegrd_motart: "Enlargen End Guard With Motorized Artillery"
+  THA_Eegrd_motart_added: "§YEnd Guard§! has an §8artillery battalion§!."
+  THA_Eegrd_motart_req_blocked: "$THA_Eegrd_req_blocked$"
+  THA_Eegrd_motart_req: "$THA_Eegrd_req$"
+  THA_Eegrd_motart_tooltip: "Expands the §YEnd Guard§! divisions by adding a §8motorized artillery battalion§!."
 ###National Focuses###
 #Initial Story Tree
 THA_S00: "The Mountain Stands Strong"

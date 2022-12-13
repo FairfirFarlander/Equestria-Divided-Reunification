@@ -94,3 +94,5 @@ EDR_equestrian_minors_reunification: "Equestrian Reunification: The Wayward Chil
  EDR_show_less_attack_minor: "Hide Unavailable Reconquests"
  EDR_attack_minor: "Reconquer [FROM.GetNameDef]"
  EDR_core_minor: "Reconcile with the [FROM.GetAdjective]"
+###Reunification: Template Additions###
+EDRG_oob: "Equeestrian Reunification: Division Additions"

@@ -177,6 +177,10 @@ EDRG_oob={
 	WTC_Rmerc={	#Recruit More Mercenary Company
 		#icon=
 		visible={tag=WTC}
+		available={
+			tag=WTC
+			#has_country_flag=THA_
+		}
 		cost=WTC_merc_cost
 		days_re_enable=30
 		ai_will_do={
@@ -185,6 +189,10 @@ EDRG_oob={
 				add=3
 				check_variable={WTC_merc_cap>6}
 				#has_completed_focus=
+			}
+			modifier={
+				add=-3
+				check_variable={WTC_merc_cap>24}
 			}
 		}
 		complete_effect={
@@ -206,7 +214,11 @@ EDRG_oob={
 		#icon=
 		visible={
 			tag=WTC
-			check_variable={WTC_merc_cost<10}
+			check_variable={WTC_merc_cost<9}
+		}
+		available={
+			tag=WTC
+			check_variable={WTC_merc_cost<9}
 		}
 		custom_cost_trigger={has_army_experience>4}
 		custom_cost_text=WTC_Emerc_req
@@ -265,6 +277,10 @@ EDRG_oob={
 	WTC_Emerc_art={	#Enlargen Mercenary Company with Artillery
 		#icon=
 		visible={
+			tag=WTC
+			NOT={has_country_flag=WTC_Emerc_art_added}
+		}
+		available={
 			tag=WTC
 			NOT={has_country_flag=WTC_Emerc_art_added}
 		}

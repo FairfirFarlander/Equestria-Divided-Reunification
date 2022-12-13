@@ -1,5 +1,7 @@
 division_template={
 	name="Ponies of Fortune"
+	is_locked=yes
+	force_allow_recruiting=yes
 	priority=0
 	template_counter=18
 	regiments={
