@@ -1,12 +1,15 @@
 division_template={
-	name="Provincial Pony Militia"	#divisions_name_group=#
-	priority=0	template_counter=59
+	name="Provincial Pony Militia"
+	priority=0
+	template_counter=59
 	regiments={
-		infantry={x=0 y=0}
+		militia={x=0 y=0}
+		militia={x=0 y=1}
+		militia={x=0 y=2}
 	}
 }
 division_template={
-	name="Dragon Warband"	#divisions_name_group=#
+	name="Dragon Warband"
 	is_locked=yes
 	regiments={
 		light_dragons={x=0 y=0}
@@ -15,21 +18,33 @@ division_template={
 units={
 	division={	#Port Starswirl#
 		name="Port Starswirl Militia"
-		location=11755	division_template="Provincial Pony Militia"
-		start_experience_factor=0.04	start_equipment_factor=0.4
-		force_equipment_variants={melee_equipment_1={owner="VII" creator="EQS"}}
+		location=11755
+		division_template="Provincial Pony Militia"
+		start_experience_factor=0.04
+		start_equipment_factor=0.4
+		force_equipment_variants={
+			melee_equipment_1={owner="VII" creator="EQS"}
+		}
 	}
 	division={	#Dragon's Retreat#
 		name="Dragon's Retreat Militia"
-		location=4913	division_template="Provincial Pony Militia"
-		start_experience_factor=0.02	start_equipment_factor=0.2
-		force_equipment_variants={melee_equipment_0={owner="VII" creator="EQS"}}
+		location=4913
+		division_template="Provincial Pony Militia"
+		start_experience_factor=0.02
+		start_equipment_factor=0.2
+		force_equipment_variants={
+			melee_equipment_0={owner="VII" creator="EQS"}
+		}
 	}
 	division={	#The Mountain#
 		name="Welps of the Mountain"
-		location=13071	division_template="Dragon Warband"
-		start_experience_factor=0.08	start_equipment_factor=0.8
-		force_equipment_variants={dragon_equipment_0={owner="VII" creator="VII"}}
+		location=13071
+		division_template="Dragon Warband"
+		start_experience_factor=0.08
+		start_equipment_factor=0.8
+		force_equipment_variants={
+			dragon_equipment_0={owner="VII" creator="VII"}
+		}
 	}
 }
 instant_effect={

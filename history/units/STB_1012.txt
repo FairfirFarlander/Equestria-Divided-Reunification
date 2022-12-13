@@ -1,13 +1,18 @@
 division_template={
-	name="Provincial Militia"	#divisions_name_group=#
-	is_locked=yes	priority=0	template_counter=3
+	name="Provincial Militia"
+	is_locked=yes
+	priority=0
+	template_counter=3
 	regiments={
-		infantry={x=0 y=0}
+		militia={x=0 y=0}
+		militia={x=0 y=1}
+		militia={x=0 y=2}
 	}
 }
 division_template={
-	name="Coastal Conscripts"	#divisions_name_group=#
-	is_locked=yes	template_counter=40
+	name="Coastal Conscripts"
+	is_locked=yes
+	template_counter=40
 	regiments={
 		infantry={x=0 y=0}
 		infantry={x=0 y=1}
@@ -17,32 +22,52 @@ division_template={
 units={
 	division={	#Sirius#
 		name="Galloprey Militia"
-		location=9572	division_template="Provincial Militia"
-		start_experience_factor=0.1	start_equipment_factor=0.75
-		force_equipment_variants={melee_equipment_0={owner="STB" creator="EQS"}}
+		location=9572
+		division_template="Provincial Militia"
+		start_experience_factor=0.1
+		start_equipment_factor=0.75
+		force_equipment_variants={
+			melee_equipment_0={owner="STB" creator="EQS"}
+		}
 	}
 	division={	#Stableside#
 		name="Stableside Militia"
-		location=586	division_template="Provincial Militia"
-		start_experience_factor=0.1	start_equipment_factor=0.75
-		force_equipment_variants={melee_equipment_0={owner="STB" creator="EQS"}}
+		location=586
+		division_template="Provincial Militia"
+		start_experience_factor=0.1
+		start_equipment_factor=0.75
+		force_equipment_variants={
+			melee_equipment_0={owner="STB" creator="EQS"}
+		}
 	}
 	division={	#Comet Province#
 		name="Comet Cape Militia"
-		location=9630	division_template="Provincial Militia"
-		start_experience_factor=0.1	start_equipment_factor=0.75
-		force_equipment_variants={melee_equipment_0={owner="STB" creator="EQS"}}
+		location=9630
+		division_template="Provincial Militia"
+		start_experience_factor=0.1
+		start_equipment_factor=0.75
+		force_equipment_variants={
+			melee_equipment_0={owner="STB" creator="EQS"}
+		}
 	}
 	division={	#Sirius#
 		name="Border Guards"
-		location=982	division_template="Coastal Conscripts"
-		start_experience_factor=0.1	start_equipment_factor=0.75
-		force_equipment_variants={melee_equipment_0={owner="STB" creator="EQS"}}
+		location=982
+		division_template="Coastal Conscripts"
+		start_experience_factor=0.1
+		start_equipment_factor=0.75
+		force_equipment_variants={
+			melee_equipment_0={owner="STB" creator="EQS"}
+		}
 	}
 	division={	#Stableside#
 		name="Border Guards"
-		location=6680	division_template="Coastal Conscripts"
-		start_experience_factor=0.1	start_equipment_factor=0.75
-		force_equipment_variants={melee_equipment_0={owner="STB" creator="EQS"}}
+		location=6680
+		division_template="Coastal Conscripts"
+		start_experience_factor=0.1
+		start_equipment_factor=0.75
+		force_equipment_variants={
+			melee_equipment_0={owner="STB" creator="EQS"}
+		}
 	}
 }

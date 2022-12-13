@@ -1,36 +1,53 @@
 division_template={
-	name="Thestral Levy"	#divisions_name_group=#
-	is_locked=yes	priority=0	template_counter=3
+	name="Thestral Levy"
+	is_locked=yes
+	priority=0
+	template_counter=3
 	regiments={
-		infantry={x=0 y=0}
+		militia={x=0 y=0}
+		militia={x=0 y=1}
+		militia={x=0 y=2}
 	}
 }
 division_template={
-	name="Huscarls"	#divisions_name_group=#
+	name="Huscarls"
 	template_counter=38
 	regiments={
-		infantry={x=0 y=0}
-		infantry={x=0 y=1}
+		infantry={x=0 y=0}	infantry={x=1 y=0}
+		infantry={x=0 y=1}	infantry={x=1 y=1}
 	}
 }
 division_template={
-	name="End Guard"	#divisions_name_group=#
-	is_locked=yes	priority=2	template_counter=39
+	name="End Guard"
+	is_locked=yes
+	priority=2
+	template_counter=39
 	regiments={
 		pegasi={x=0 y=0}
+		pegasi={x=0 y=1}
+		pegasi={x=0 y=2}
+		pegasi={x=0 y=3}
 	}
 }
 units={
-	division={		#Twilight Range#
+	division={	#Twilight Range#
 		name="Twilight Range Huscarls"
-		location=3722	division_template="Huscarls"
-		start_experience_factor=0.75	start_equipment_factor=1
-		force_equipment_variants={melee_equipment_0={owner="TRH" creator="TRH"}}
+		location=3722
+		division_template="Huscarls"
+		start_experience_factor=0.75
+		start_equipment_factor=1
+		force_equipment_variants={
+			melee_equipment_0={owner="TRH" creator="TRH"}
+		}
 	}
-	division={		#Twilight Range#
+	division={	#Twilight Range#
 		name="Auburn Guard"
-		location=3722	division_template="End Guard"
-		start_experience_factor=0.75	start_equipment_factor=1
-		force_equipment_variants={melee_equipment_0={owner="TRH" creator="TRH"}}
+		location=3722
+		division_template="End Guard"
+		start_experience_factor=0.75
+		start_equipment_factor=1
+		force_equipment_variants={
+			melee_equipment_0={owner="TRH" creator="TRH"}
+		}
 	}
 }
