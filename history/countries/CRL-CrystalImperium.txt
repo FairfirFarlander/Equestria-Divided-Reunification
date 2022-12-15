@@ -1,11 +1,12 @@
 capital=344
 oob="CRL_1012"
 set_research_slots=3
-set_stability=0.50 set_war_support=0.3
+set_stability=0.50
+set_war_support=0.3
 add_ideas={
-	volunteer_only export_focus civilian_economy
-	big_science_base outdated_industry
-	lack_of_scientists3 poverty3
+	outdated_industry
+	lack_of_scientists3
+	poverty3
 	royal_family
 	sombra_threat
 }
@@ -18,14 +19,42 @@ set_technology={
 	tech_engineers=1
 	tech_military_police=1
 	pre_gw_artillery=1
-	gwtank=1
-	early_fighter=1
 	tech_unicorn=1
 	tech_unicorn_ms=1
 }
+if={
+	limit={has_dlc="No Step Back"}
+	set_technology={
+		gwtank_chassis=1
+	}
+	else={
+		set_technology={
+			gwtank=1
+		}
+	}
+}
+if={
+	limit={has_dlc="By Blood Alone"}
+	set_technology={
+		iw_small_airframe=1
+		early_bombs=1
+		aa_lmg=1
+		engines_1=1
+	}
+	else={
+		set_technology={
+			early_fighter=1
+		}
+	}
+}
 actually_fix_weapon_techs=yes
 set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
-set_popularities={fascism=52 communism=22 neutrality=21 democratic=5}
+set_popularities={
+	fascism=52
+	communism=22
+	neutrality=21
+	democratic=5
+}
 set_politics={ruling_party=fascism}
 set_country_flag=EDR_is_equestrian_breakaway
 recruit_character=CRL_radiant_hope

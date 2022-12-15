@@ -1,27 +1,14 @@
 capital=28
 oob="PLF_1012"
-#if={
-#	limit={has_dlc="Man the Guns"}
-#	set_naval_oob="PLF_1007_naval"
-#	else={set_naval_oob="PLF_1007_naval_legacy"}
-#}
 set_research_slots=2
-set_stability=0.23 set_war_support=0.11
+set_stability=0.23
+set_war_support=0.11
 add_ideas={
-	volunteer_only export_focus civilian_economy
-	better_science_base agrarian_society
-	lack_of_scientists2 poverty4
+	agrarian_society
+	lack_of_scientists2
+	poverty4
 	PLF_Anarchist_Breeding_Ground
 	PLF_Mass_unrest
-}
-if={
-	limit={has_dlc="No Step Back"}
-	add_ideas={
-		traditionalism_academy_spirit
-		doctrinal_orthodoxy_spirit
-		disdain_for_the_digging_spirit
-	}
-	else={add_ideas={EQS_bad_tanks}}
 }
 set_technology={
 	pony_race=1
@@ -32,23 +19,44 @@ set_technology={
 	tech_pegasi=1
 	tech_unicorn=1
 }
-if={limit={has_dlc="Man the Guns"}
+if={
+	limit={has_dlc="Man the Guns"}
 	set_technology={
 		early_ship_hull_light=1
 		basic_battery=1
+		basic_depth_charges=1
+		basic_torpedo=1
 		mtg_transport=1
 	}
+	#set_naval_oob="PLF_1007_naval"
+	else={
+		set_technology={
+			early_destroyer=1
+			transport=1
+		}
+		#set_naval_oob="PLF_1007_naval_legacy"
+	}
 }
-if={limit={not={has_dlc="Man the Guns"}}
-	set_technology={
-		early_destroyer=1
-		transport=1
+if={
+	limit={has_dlc="No Step Back"}
+	add_ideas={
+		traditionalism_academy_spirit
+		doctrinal_orthodoxy_spirit
+		disdain_for_the_digging_spirit
+	}
+	else={
+		add_ideas={EQS_bad_tanks}
 	}
 }
 actually_fix_weapon_techs=yes
 set_convoys=3
 set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
-set_popularities={fascism=11 communism=49 neutrality=32 democratic=8}
+set_popularities={
+	fascism=11
+	communism=49
+	neutrality=32
+	democratic=8
+}
 set_politics={ruling_party=communism}
 set_country_flag=EDR_is_equestrian_breakaway
 recruit_character=PLF_regional_defense_council

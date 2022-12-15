@@ -88,11 +88,11 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/EQS/Prez-PM_Pants.tga"
-				small="GFX_idea_fancy_pants"
+				small="GFX_idea_EQS_fancy_pants"
 			}
 			army={
 				large="gfx/leaders/EQS/Prez-PM_Pants.tga"
-				small="GFX_idea_fancy_pants"
+				small="GFX_idea_EQS_fancy_pants"
 			}
 		}
 		country_leader={
@@ -243,8 +243,8 @@ characters={
 			traits={known_pony}
 		}
 	}
-	HWG_octavia={	#nighthooves
-		name=HWG_octavia
+	HWG_octavia_melody={	#Octavia Melody/Nighthooves
+		name=HWG_octavia_melody
 		portraits={
 			civilian={
 				large="GFX_HWG_octavia"
@@ -257,7 +257,7 @@ characters={
 		}
 		#advisor={
 		#	slot=political_advisor
-		#	idea_token=HWG_nighthooves_advi
+		#	idea_token=HWG_omelody_advi
 		#	available={has_intelligence_agency=yes}
 		#	visible={has_dlc="La Resistance"}
 		#	traits={head_of_intelligence}
@@ -265,7 +265,7 @@ characters={
 		advisor={
 			slot=high_command
 			ledger=army
-			idea_token=HWG_nighthooves_high
+			idea_token=HWG_omelody_high
 			cost=50
 			traits={}
 		}

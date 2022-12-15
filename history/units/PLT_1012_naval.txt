@@ -1,0 +1,47 @@
+units={
+	fleet={
+		name="Portlander Home Fleet"
+		naval_base=668
+		task_force={
+			name="Customs and Rescue Detachment"
+			location=668	#Portland
+			ship={	#Destroyers
+				name="PNS Salmon"
+				definition=destroyer
+				equipment={
+					ship_hull_light_1={
+						amount=1
+						owner=PLT
+						version_name="Fjordwater 992 Class"
+					}
+				}
+			}
+			ship={
+				name="PNS Trout"
+				definition=destroyer
+				equipment={
+					ship_hull_light_1={
+						amount=1
+						owner=PLT
+						version_name="Fjordwater 992 Class"
+					}
+				}
+			}
+		}
+		task_force={
+			name="Portland Defense Squadorn"
+			location=668	#Portland
+			ship={	#Light Cruisers
+				name="PNS Pike"
+				definition=light_cruiser
+				equipment={
+					ship_hull_cruiser_1={
+						amount=1
+						owner=PLT
+						version_name="Archipelago 996 Class"
+					}
+				}
+			}
+		}
+	}
+}

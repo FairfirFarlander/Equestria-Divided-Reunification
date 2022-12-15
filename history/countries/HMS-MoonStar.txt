@@ -1,11 +1,12 @@
 capital=3
 oob="HMS_1012"
 set_research_slots=3
-set_stability=0.44 set_war_support=0.10
+set_stability=0.44
+set_war_support=0.10
 add_ideas={
-	volunteer_only export_focus civilian_economy
-	proper_science_base outdated_industry
-	lack_of_scientists3 poverty2
+	outdated_industry
+	lack_of_scientists3
+	poverty2
 	HMS_idea
 	HMS_sunandmoon
 	HMS_unicornrace
@@ -18,7 +19,9 @@ if={
 		doctrinal_orthodoxy_spirit
 		disdain_for_the_digging_spirit
 	}
-	else={add_ideas={EQS_bad_tanks}}
+	else={
+		add_ideas={EQS_bad_tanks}
+	}
 }
 set_technology={
 	pony_race=1
@@ -41,7 +44,12 @@ add_to_faction=HAH
 add_to_faction=NEF
 add_to_faction=MSE
 add_to_faction=FRI
-set_popularities={fascism=60 communism=10 neutrality=25 democratic=5}
+set_popularities={
+	fascism=60
+	communism=10
+	neutrality=25
+	democratic=5
+}
 set_politics={ruling_party=fascism}
 set_country_flag=EDR_is_equestrian_breakaway
 recruit_character=HMS_twilight_sparkle

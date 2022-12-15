@@ -4,7 +4,7 @@ units={
 		naval_base=11710
 		task_force={
 			name="Gold Squadron"
-			location=11710		#Manehattan
+			location=11710	#Manehattan
 			#Heavy Cruisers
 			ship={
 				name="HMNS Diamond"
@@ -13,7 +13,7 @@ units={
 					ship_hull_cruiser_1={
 						amount=1
 						owner=HWG
-						version_name="Belle 03' Class"
+						version_name="Belle 06' Class (Canterlot R)"
 					}
 				}
 			}
@@ -24,7 +24,7 @@ units={
 					ship_hull_light_1={
 						amount=1
 						owner=HWG
-						version_name="Investor 05' Class"
+						version_name="Investor 05' Class (Ardent M)"
 					}
 				}
 			}
@@ -35,7 +35,7 @@ units={
 					ship_hull_light_1={
 						amount=1
 						owner=HWG
-						version_name="Investor 05' Class"
+						version_name="Investor 05' Class (Ardent M)"
 					}
 				}
 			}
@@ -46,7 +46,7 @@ units={
 					ship_hull_light_1={
 						amount=1
 						owner=HWG
-						version_name="Investor 05' Class"
+						version_name="Investor 05' Class (Ardent M)"
 					}
 				}
 			}
@@ -57,14 +57,14 @@ units={
 					ship_hull_light_1={
 						amount=1
 						owner=HWG
-						version_name="Investor 05' Class"
+						version_name="Investor 05' Class (Ardent M)"
 					}
 				}
 			}
 		}
 		task_force={
 			name="White Squadron"
-			location=13011		#Baltimare
+			location=13011	#Baltimare
 			ship={
 				name="HMNS Surveyor"
 				definition=light_cruiser
@@ -72,7 +72,7 @@ units={
 					ship_hull_cruiser_1={
 						amount=1
 						owner=HWG
-						version_name="Auditor 03' Class"
+						version_name="Auditor 03' Class (Emerald M)"
 					}
 				}
 			}
@@ -84,7 +84,7 @@ units={
 					ship_hull_light_1={
 						amount=1
 						owner=HWG
-						version_name="Surveyor 03' Class"
+						version_name="Surveyor 03' Class (Ardent M)"
 					}
 				}
 			}

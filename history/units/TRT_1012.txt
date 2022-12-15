@@ -13,7 +13,7 @@ division_template={
 	regiments={
 		infantry={x=0 y=0}	infantry={x=1 y=0}
 		infantry={x=0 y=1}	infantry={x=1 y=1}
-		infantry={x=0 y=2}	infantry={x=1 y=2}
+		infantry={x=0 y=2}
 	}
 }
 division_template={
@@ -50,28 +50,5 @@ units={
 		force_equipment_variants={
 			infantry_equipment_0={owner="TRT" creator="EQS"}
 		}
-	}
-}
-air_wings={		#Royal Equestrian Airforce (REAF)
-	#Trottingham
-	67={fighter_equipment_0={owner="EQS" amount=35}}
-	67={tac_bomber_equipment_0={owner="EQS"	amount=15}}
-}
-instant_effect={
-	add_equipment_production={
-		equipment={type=melee_equipment_0 creator="TRT"}
-		requested_factories=2 progress=0.75 efficiency=10
-	}
-	add_equipment_production={
-		equipment={type=melee_equipment_1 creator="TRT"}
-		requested_factories=1 progress=0.75 efficiency=30
-	}
-	add_equipment_production={
-		equipment={type=support_equipment_1	creator="TRT"}
-		requested_factories=1 progress=0.75 efficiency=90
-	}
-	add_equipment_production={
-		equipment={type=artillery_equipment_0 creator="TRT"}
-		requested_factories=1 progress=0.75 efficiency=20
 	}
 }

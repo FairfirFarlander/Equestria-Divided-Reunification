@@ -1,12 +1,14 @@
 division_template={
-	name="Acornage Defence Militia"	#divisions_name_group=#
+	name="Acornage Defence Militia"
 	priority=0	template_counter=3
 	regiments={
-		infantry={x=0 y=0}
+		militia={x=0 y=0}
+		militia={x=0 y=1}
+		militia={x=0 y=2}
 	}
 }
 division_template={
-	name="Guard Infantry Division"	#divisions_name_group=#
+	name="Guard Infantry Division"
 	template_counter=5
 	regiments={
 		infantry={x=0 y=0}	infantry={x=1 y=0}
@@ -14,19 +16,24 @@ division_template={
 	}
 }
 division_template={
-	name="Lunar Guard Regiment"	#divisions_name_group=#
-	is_locked=yes	priority=2	template_counter=9
+	name="Lunar Guard Regiment"
+	is_locked=yes
+	priority=2
+	template_counter=9
 	regiments={
 		pegasi={x=0 y=0}
 		pegasi={x=0 y=1}
+		pegasi={x=0 y=2}
 	}
 	support={
 		recon={x=0 y=0}
 	}
 }
 division_template={
-	name="Bodyguard Detachment"	#divisions_name_group=#
-	is_locked=yes	priority=2	template_counter=16
+	name="Bodyguard Detachment"
+	is_locked=yes
+	priority=2
+	template_counter=16
 	regiments={
 		infantry={x=0 y=0}	pegasi={x=1 y=0}
 		infantry={x=0 y=1}
@@ -38,38 +45,62 @@ division_template={
 units={
 	division={	#Acornage#
 		name="Ember Keeper's Militia"
-		location=748	division_template="Acornage Defence Militia"
-		start_experience_factor=0.1	start_equipment_factor=0.75
-		force_equipment_variants={melee_equipment_0={owner="NIH" creator="NIH"}}
+		location=748
+		division_template="Acornage Defence Militia"
+		start_experience_factor=0.1
+		start_equipment_factor=0.75
+		force_equipment_variants={
+			melee_equipment_0={owner="NIH" creator="NIH"}
+		}
 	}
 	division={	#Western Featherfall Dale#
 		name="Featherfall Dale Militia"
-		location=3653	division_template="Acornage Defence Militia"
-		start_experience_factor=0.1	start_equipment_factor=0.75
-		force_equipment_variants={melee_equipment_0={owner="NIH" creator="NIH"}}
+		location=3653
+		division_template="Acornage Defence Militia"
+		start_experience_factor=0.1
+		start_equipment_factor=0.75
+		force_equipment_variants={
+			melee_equipment_0={owner="NIH" creator="NIH"}
+		}
 	}
 	division={	#Acornage#
 		name="58th 'Nyx' Division"
-		location=6721	division_template="Guard Infantry Division"
-		start_experience_factor=0.3	start_equipment_factor=0.75
-		force_equipment_variants={melee_equipment_0={owner="NIH" creator="NIH"}}
+		location=6721
+		division_template="Guard Infantry Division"
+		start_experience_factor=0.3
+		start_equipment_factor=0.75
+		force_equipment_variants={
+			melee_equipment_0={owner="NIH" creator="NIH"}
+		}
 	}
 	division={	#Acornage#
 		name="70th 'Acornage' Division"
-		location=6763	division_template="Guard Infantry Division"
-		start_experience_factor=0.39	start_equipment_factor=0.8
-		force_equipment_variants={melee_equipment_0={owner="NIH" creator="NIH"}}
+		location=6763
+		division_template="Guard Infantry Division"
+		start_experience_factor=0.39
+		start_equipment_factor=0.8
+		force_equipment_variants={
+			melee_equipment_0={owner="NIH" creator="NIH"}
+		}
 	}
 	division={	#Western Featherfall Dale#
 		name="33rd Lunar Guard"
-		location=731	division_template="Lunar Guard Regiment"
-		start_experience_factor=0.3	start_equipment_factor=0.8
-		force_equipment_variants={melee_equipment_1={owner="NIH" creator="EQS"}}
+		location=731
+		division_template="Lunar Guard Regiment"
+		start_experience_factor=0.3
+		start_equipment_factor=0.8
+		force_equipment_variants={
+			melee_equipment_1={owner="NIH" creator="EQS"}
+		}
 	}
 	division={	#Acornage#
 		name="Prince Blueblood's Guard"
-		location=748	division_template="Bodyguard Detachment"
-		start_experience_factor=0.57	start_equipment_factor=0.95
-		force_equipment_variants={infantry_equipment_0={owner="NIH" creator="EQS"}}
+		location=748
+		division_template="Bodyguard Detachment"
+		start_experience_factor=0.57
+		start_equipment_factor=0.95
+		force_equipment_variants={
+			infantry_equipment_0={owner="NIH" creator="EQS"}
+		}
 	}
 }

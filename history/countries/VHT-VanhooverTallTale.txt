@@ -4,7 +4,6 @@ set_research_slots=2
 set_stability=0.65
 set_war_support=0.36
 add_ideas={
-	better_science_base
 	outdated_industry
 	lack_of_scientists2
 	poverty5
@@ -23,8 +22,8 @@ set_technology={
 	tech_pegasi=1
 }
 actually_fix_weapon_techs=yes
-if={limit={has_dlc="Man the Guns"}
-	#set_naval_oob="VHT_1012_naval"
+if={
+	limit={has_dlc="Man the Guns"}
 	set_technology={
 		early_ship_hull_light=1
 		basic_depth_charges=1
@@ -34,8 +33,8 @@ if={limit={has_dlc="Man the Guns"}
 		basic_torpedo=1
 		mtg_transport=1
 	}
+	#set_naval_oob="VHT_1012_naval"
 	else={
-		#set_naval_oob="VHT_1007_naval_legacy"
 		set_technology={
 			early_destroyer=1
 			early_light_cruiser=1
@@ -44,11 +43,13 @@ if={limit={has_dlc="Man the Guns"}
 			early_battleship=1
 			transport=1
 		}
+		#set_naval_oob="VHT_1007_naval_legacy"
 	}
 }
-if={limit={has_dlc="No Step Back"}
+if={
+	limit={has_dlc="No Step Back"}
 	set_technology={
-		gwtank=1
+		gwtank_chassis=1
 	}
 	add_ideas={
 		traditionalism_academy_spirit
@@ -74,7 +75,7 @@ if={limit={has_dlc="No Step Back"}
 	}
 	else={
 		set_technology={
-			gwtank_chassis=1
+			gwtank=1
 		}
 		add_ideas={EQS_bad_tanks}
 	}

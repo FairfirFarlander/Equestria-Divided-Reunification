@@ -41,7 +41,12 @@ if={
 		HMS={puppet=FRI}
 	}
 }
-set_popularities={fascism=40 communism=18 neutrality=20 democratic=22}
+set_popularities={
+	fascism=40
+	communism=18
+	neutrality=20
+	democratic=22
+}
 set_politics={ruling_party=fascism}
 set_country_flag=EDR_is_equestrian_breakaway
 recruit_character=FRI_generic_pony

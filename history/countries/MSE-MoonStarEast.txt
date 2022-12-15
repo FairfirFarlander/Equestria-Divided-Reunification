@@ -1,11 +1,12 @@
 capital=226
 oob="MSE_1012"
 set_research_slots=2
-set_stability=0.37 set_war_support=0.13
+set_stability=0.37
+set_war_support=0.13
 add_ideas={
-	volunteer_only export_focus civilian_economy
-	poor_science_base agrarian_society
-	lack_of_scientists3 poverty4
+	agrarian_society
+	lack_of_scientists3
+	poverty4
 }
 if={
 	limit={has_dlc="No Step Back"}
@@ -14,7 +15,9 @@ if={
 		doctrinal_orthodoxy_spirit
 		disdain_for_the_digging_spirit
 	}
-	else={add_ideas={EQS_bad_tanks}}
+	else={
+		add_ideas={EQS_bad_tanks}
+	}
 }
 set_technology={
 	pony_race=1
@@ -27,7 +30,12 @@ set_technology={
 actually_fix_weapon_techs=yes
 set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
 HMS={puppet=MSE}
-set_popularities={fascism=40 communism=22 neutrality=18 democratic=20}
+set_popularities={
+	fascism=40
+	communism=22
+	neutrality=18
+	democratic=20
+}
 set_politics={ruling_party=fascism}
 set_country_flag=EDR_is_equestrian_breakaway
 recruit_character=MSE_generic_pony

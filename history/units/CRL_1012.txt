@@ -1,13 +1,15 @@
 ﻿division_template={
-	name="Provincial Militia"	#divisions_name_group=#
-	priority=0	template_counter=3
+	name="Provincial Militia"
+	priority=0
+	template_counter=3
 	regiments={
-		infantry={x=0 y=0}
-		infantry={x=0 y=1}
+		militia={x=0 y=0}
+		militia={x=0 y=1}
+		militia={x=0 y=2}
 	}
 }
 division_template={
-	name="Crystal Legion"	#divisions_name_group=#
+	name="Crystal Legion"
 	template_counter=9
 	regiments={
 		infantry={x=0 y=0}	infantry={x=1 y=0}
@@ -21,11 +23,15 @@ division_template={
 }
 division_template={
 	name="Crystal Royal Guard"
-	is_locked=yes	priority=2	template_counter=5
+	is_locked=yes
+	force_allow_recruiting=yes
+	priority=2
+	template_counter=5
 	regiments={
 		infantry={x=0 y=0}
 		infantry={x=0 y=1}
 		infantry={x=0 y=2}
+		infantry={x=0 y=3}
 	}
 	support={
 		recon={x=0 y=0}
@@ -35,104 +41,172 @@ division_template={
 units={
 	division={	#Evergreen#
 		name="Evergreen Militia"
-		location=9275	division_template="Provincial Militia"
-		start_experience_factor=0.1	start_equipment_factor=0.75
-		force_equipment_variants={melee_equipment_0={owner="CRL" creator="CRL"}}
+		location=9275
+		division_template="Provincial Militia"
+		start_experience_factor=0.1
+		start_equipment_factor=0.75
+		force_equipment_variants={
+			melee_equipment_0={owner="CRL" creator="CRL"}
+		}
 	}
 	division={	#Jade Hills#
 		name="Whinnypeg Militia"
-		location=10448	division_template="Provincial Militia"
-		start_experience_factor=0.1	start_equipment_factor=0.75
-		force_equipment_variants={melee_equipment_0={owner="CRL" creator="CRL"}}
+		location=10448
+		division_template="Provincial Militia"
+		start_experience_factor=0.1
+		start_equipment_factor=0.75
+		force_equipment_variants={
+			melee_equipment_0={owner="CRL" creator="CRL"}
+		}
 	}
 	division={	#Emerald Piedmont#
 		name="Canterine Militia"
-		location=9164	division_template="Provincial Militia"
-		start_experience_factor=0.1	start_equipment_factor=0.75
-		force_equipment_variants={melee_equipment_0={owner="CRL" creator="CRL"}}
+		location=9164
+		division_template="Provincial Militia"
+		start_experience_factor=0.1
+		start_equipment_factor=0.75
+		force_equipment_variants={
+			melee_equipment_0={owner="CRL" creator="CRL"}
+		}
 	}
 	division={	#Quebuck#
 		name="Quebuck Militia"
-		location=304	division_template="Provincial Militia"
-		start_experience_factor=0.1	start_equipment_factor=0.75
-		force_equipment_variants={melee_equipment_0={owner="CRL" creator="CRL"}}
+		location=304
+		division_template="Provincial Militia"
+		start_experience_factor=0.1
+		start_equipment_factor=0.75
+		force_equipment_variants={
+			melee_equipment_0={owner="CRL" creator="CRL"}
+		}
 	}
 	division={	#Selenite Divide#
 		name="Snowybury Militia"
-		location=11109	division_template="Provincial Militia"
-		start_experience_factor=0.1	start_equipment_factor=0.75
-		force_equipment_variants={melee_equipment_0={owner="CRL" creator="CRL"}}
+		location=11109
+		division_template="Provincial Militia"
+		start_experience_factor=0.1
+		start_equipment_factor=0.75
+		force_equipment_variants={
+			melee_equipment_0={owner="CRL" creator="CRL"}
+		}
 	}
 	division={	#Hearth's Warming Field#
 		name="Hearthome Militia"
-		location=3511	division_template="Provincial Militia"
-		start_experience_factor=0.1	start_equipment_factor=0.75
-		force_equipment_variants={melee_equipment_0={owner="CRL" creator="CRL"}}
+		location=3511
+		division_template="Provincial Militia"
+		start_experience_factor=0.1
+		start_equipment_factor=0.75
+		force_equipment_variants={
+			melee_equipment_0={owner="CRL" creator="CRL"}
+		}
 	}
 	division={	#Eloll Tundra#
 		name="Rubrum Militia"
-		location=3305	division_template="Provincial Militia"
-		start_experience_factor=0.1	start_equipment_factor=0.75
-		force_equipment_variants={melee_equipment_0={owner="CRL" creator="CRL"}}
+		location=3305
+		division_template="Provincial Militia"
+		start_experience_factor=0.1
+		start_equipment_factor=0.75
+		force_equipment_variants={
+			melee_equipment_0={owner="CRL" creator="CRL"}
+		}
 	}
 	division={	#Milky Plain#
 		name="Porridge Town Militia"
-		location=9477	division_template="Provincial Militia"
-		start_experience_factor=0.1	start_equipment_factor=0.75
-		force_equipment_variants={melee_equipment_0={owner="CRL" creator="CRL"}}
+		location=9477
+		division_template="Provincial Militia"
+		start_experience_factor=0.1
+		start_equipment_factor=0.75
+		force_equipment_variants={
+			melee_equipment_0={owner="CRL" creator="CRL"}
+		}
 	}
 	division={	#Evergreen#
 		name="Quebuck Legion"
-		location=509	division_template="Crystal Legion"
-		start_experience_factor=0.1	start_equipment_factor=0.75
-		force_equipment_variants={melee_equipment_0={owner="CRL" creator="CRL"}}
+		location=509
+		division_template="Crystal Legion"
+		start_experience_factor=0.1
+		start_equipment_factor=0.75
+		force_equipment_variants={
+			melee_equipment_0={owner="CRL" creator="CRL"}
+		}
 	}
 	division={	#Shiny Bound#
 		name="Hedgewards Legion"
-		location=9246	division_template="Crystal Legion"
-		start_experience_factor=0.1	start_equipment_factor=0.75
-		force_equipment_variants={melee_equipment_0={owner="CRL" creator="CRL"}}
+		location=9246
+		division_template="Crystal Legion"
+		start_experience_factor=0.1
+		start_equipment_factor=0.75
+		force_equipment_variants={
+			melee_equipment_0={owner="CRL" creator="CRL"}
+		}
 	}
 	division={	#Shiny Bound#
 		name="Equestrian Foreign Legion"
-		location=9236	division_template="Crystal Legion"
-		start_experience_factor=0.1	start_equipment_factor=0.75
-		force_equipment_variants={melee_equipment_0={owner="CRL" creator="CRL"}}
+		location=9236
+		division_template="Crystal Legion"
+		start_experience_factor=0.1
+		start_equipment_factor=0.75
+		force_equipment_variants={
+			melee_equipment_0={owner="CRL" creator="CRL"}
+		}
 	}
 	division={	#Archer Field#
 		name="Ponytown Legion"
-		location=11424	division_template="Crystal Legion"
-		start_experience_factor=0.1	start_equipment_factor=0.75
-		force_equipment_variants={melee_equipment_0={owner="CRL" creator="CRL"}}
+		location=11424
+		division_template="Crystal Legion"
+		start_experience_factor=0.1
+		start_equipment_factor=0.75
+		force_equipment_variants={
+			melee_equipment_0={owner="CRL" creator="CRL"}
+		}
 	}
 	division={	#Eloll Tundra#
 		name="Crystal City Legion"
-		location=6047	division_template="Crystal Legion"
-		start_experience_factor=0.1	start_equipment_factor=0.75
-		force_equipment_variants={melee_equipment_0={owner="CRL" creator="CRL"}}
+		location=6047
+		division_template="Crystal Legion"
+		start_experience_factor=0.1
+		start_equipment_factor=0.75
+		force_equipment_variants={
+			melee_equipment_0={owner="CRL" creator="CRL"}
+		}
 	}
 	division={	#Rainbow Falls#
 		name="Rainbow Falls Legion"
-		location=9437	division_template="Crystal Legion"
-		start_experience_factor=0.1	start_equipment_factor=0.75
-		force_equipment_variants={melee_equipment_0={owner="CRL" creator="CRL"}}
+		location=9437
+		division_template="Crystal Legion"
+		start_experience_factor=0.1
+		start_equipment_factor=0.75
+		force_equipment_variants={
+			melee_equipment_0={owner="CRL" creator="CRL"}
+		}
 	}
 	division={	#Crystal City Centre#
 		name="Radiant Guard"
-		location=489	division_template="Crystal Royal Guard"
-		start_experience_factor=0.1	start_equipment_factor=0.75
-		force_equipment_variants={melee_equipment_0={owner="CRL" creator="CRL"}}
+		location=489
+		division_template="Crystal Royal Guard"
+		start_experience_factor=0.1
+		start_equipment_factor=0.75
+		force_equipment_variants={
+			melee_equipment_0={owner="CRL" creator="CRL"}
+		}
 	}
 	division={	#Rainbow Falls#
 		name="Rainbow Guard"
-		location=9485	division_template="Crystal Royal Guard"
-		start_experience_factor=0.1	start_equipment_factor=0.75
-		force_equipment_variants={melee_equipment_0={owner="CRL" creator="CRL"}}
+		location=9485
+		division_template="Crystal Royal Guard"
+		start_experience_factor=0.1
+		start_equipment_factor=0.75
+		force_equipment_variants={
+			melee_equipment_0={owner="CRL" creator="CRL"}
+		}
 	}
 	division={	#Rainbow Falls#
 		name="Ponytown Guard"
-		location=9150	division_template="Crystal Royal Guard"
-		start_experience_factor=0.1	start_equipment_factor=0.75
-		force_equipment_variants={melee_equipment_0={owner="CRL" creator="CRL"}}
+		location=9150
+		division_template="Crystal Royal Guard"
+		start_experience_factor=0.1
+		start_equipment_factor=0.75
+		force_equipment_variants={
+			melee_equipment_0={owner="CRL" creator="CRL"}
+		}
 	}
 }

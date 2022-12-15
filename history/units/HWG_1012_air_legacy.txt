@@ -1,0 +1,16 @@
+air_wings={		#House Whitegold Airforce (HWGAF)
+	75={	#Manehattan
+		medium_airship_equipment_0={
+			owner="HWG"
+			amount=12
+			creator=HWG
+			version_name="Chelangel UM06-9"
+		}
+		heavy_airship_equipment_0={
+			owner="HWG"
+			amount=3
+			creator=HWG
+			version_name="Diamond UM04-2"
+		}
+	}
+}

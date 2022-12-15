@@ -1,20 +1,25 @@
 division_template={
-	name="Provincial Militia"	#divisions_name_group=#
-	priority=0	template_counter=3
+	name="Provincial Militia"
+	priority=0
+	template_counter=3
 	regiments={
-		infantry={x=0 y=0}
+		militia={x=0 y=0}
+		militia={x=0 y=1}
+		militia={x=0 y=2}
 	}
 }
 division_template={
-	name="Regiment Repentia"	#divisions_name_group=#
+	name="Regiment Repentia"
 	regiments={
 		penal_battalion={x=0 y=0}
 		penal_battalion={x=0 y=1}
+		penal_battalion={x=0 y=2}
 	}
 }
 division_template={
-	name="Legionarie Detachment"	#divisions_name_group=#
-	is_locked=yes	template_counter=9
+	name="Legionarie Detachment"
+	is_locked=yes
+	template_counter=9
 	regiments={
 		infantry={x=0 y=0}	infantry={x=1 y=0}
 		infantry={x=0 y=1}	infantry={x=1 y=1}
@@ -36,20 +41,32 @@ division_template={
 units={
 	division={	#Trotterfield#
 		name="Trotterfield Militia"
-		location=9208	division_template="Provincial Militia"
-		start_experience_factor=0.02	start_equipment_factor=0.55
-		force_equipment_variants={melee_equipment_0={owner="NEF" creator="HMS"}}
+		location=9208
+		division_template="Provincial Militia"
+		start_experience_factor=0.02
+		start_equipment_factor=0.55
+		force_equipment_variants={
+			melee_equipment_0={owner="NEF" creator="HMS"}
+		}
 	}
 	division={	#Deepfall Forests#
 		name="Repentia Trosylvania"
-		location=3044	division_template="Regiment Repentia"
-		start_experience_factor=0.06	start_equipment_factor=0.65
-		force_equipment_variants={melee_equipment_0={owner="NEF" creator="HMS"}}
+		location=3044
+		division_template="Regiment Repentia"
+		start_experience_factor=0.06
+		start_equipment_factor=0.65
+		force_equipment_variants={
+			melee_equipment_0={owner="NEF" creator="HMS"}
+		}
 	}
 	division={	#Neighagra Falls#
 		name="Repentia Neighagra"
-		location=6165	division_template="Regiment Repentia"
-		start_experience_factor=0.04	start_equipment_factor=0.6
-		force_equipment_variants={melee_equipment_0={owner="NEF" creator="HMS"}}
+		location=6165
+		division_template="Regiment Repentia"
+		start_experience_factor=0.04
+		start_equipment_factor=0.6
+		force_equipment_variants={
+			melee_equipment_0={owner="NEF" creator="HMS"}
+		}
 	}
 }

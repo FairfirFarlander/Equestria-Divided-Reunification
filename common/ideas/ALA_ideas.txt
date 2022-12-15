@@ -1,5 +1,12 @@
 ideas={
 	country={
+		ALA_winged_dragoons1={
+			picture=nimbusia_blue
+			modifier={
+				modifier_army_sub_unit_pegasi_attack_factor=0.1
+				special_forces_cap=-0.20
+			}
+		}
 	}
 #TECHNOLOGY
 	industrial_concern={

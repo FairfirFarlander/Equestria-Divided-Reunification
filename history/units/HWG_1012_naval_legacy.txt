@@ -4,21 +4,89 @@ units={
 		name="Fleet of the Mistress"
 		naval_base=11710
 		task_force={
-			name="Gold Squadron" location=11710		#Manehattan
-			#Heavy Cruisers
-			ship={name="HMNS Diamond" definition=light_cruiser equipment={heavy_cruiser_1={amount=1 owner=HWG version_name="Belle 1003 Class"}}}
-			#Destroyers
-			ship={name="HMNS Profiteer" definition=destroyer equipment={early_destroyer={amount=1 owner=HWG version_name="Investor 1005 Class"}}}
-			ship={name="HMNS Investor" definition=destroyer equipment={early_destroyer={amount=1 owner=HWG version_name="Investor 1005 Class"}}}
-			ship={name="HMNS Collector" definition=destroyer equipment={early_destroyer={amount=1 owner=HWG version_name="Investor 1005 Class"}}}
-			ship={name="HMNS Nickelback" definition=destroyer equipment={destroyer_1={amount=1 owner=HWG version_name="Investor 1005 Class"}}}
+			name="Gold Squadron"
+			location=11710	#Manehattan
+			ship={	#Heavy Cruisers
+				name="HMNS Diamond"
+				definition=light_cruiser
+				equipment={
+					heavy_cruiser_1={
+						amount=1
+						owner=HWG
+						version_name="Belle 06' Class (Canterlot R)"
+					}
+				}
+			}
+			ship={	#Destroyers
+				name="HMNS Profiteer"
+				definition=destroyer
+				equipment={
+					early_destroyer={
+						amount=1
+						owner=HWG
+						version_name="Investor 05' Class (Ardent M)"
+					}
+				}
+			}
+			ship={
+				name="HMNS Investor"
+				definition=destroyer
+				equipment={
+					early_destroyer={
+						amount=1
+						owner=HWG
+						version_name="Investor 05' Class (Ardent M)"
+					}
+				}
+			}
+			ship={
+				name="HMNS Collector"
+				definition=destroyer
+				equipment={
+					early_destroyer={
+						amount=1
+						owner=HWG
+						version_name="Investor 05' Class (Ardent M)"
+					}
+				}
+			}
+			ship={
+				name="HMNS Nickelback"
+				definition=destroyer
+				equipment={
+					destroyer_1={
+						amount=1
+						owner=HWG
+						version_name="Investor 05' Class (Ardent M)"
+					}
+				}
+			}
 		}
 		task_force={
-			name="White Squadron" location=13011		#Baltimare		
-			#Light Cruisers
-			ship={name="HMNS Surveyor" definition=light_cruiser equipment={light_cruiser_1={amount=1 owner=HWG version_name="Auditor 1003 Class"}}}
-			#Destroyers
-			ship={name="HMNS Stockholder" definition=destroyer equipment={destroyer_1={amount=1 owner=HWG version_name="Surveyor 1003 Class"}}}
+			name="White Squadron"
+			location=13011	#Baltimare
+			ship={	#Light Cruisers
+				name="HMNS Surveyor"
+				definition=light_cruiser
+				equipment={
+					light_cruiser_1={
+						amount=1
+						owner=HWG
+						version_name="Auditor 03' Class (Emerald M)"
+					}
+				}
+			}
+			ship={	#Destroyers
+				name="HMNS Stockholder"
+				definition=destroyer
+				equipment={
+					destroyer_1={
+						amount=1
+						owner=HWG
+						version_name="Surveyor 03' Class (Ardent M)"
+					}
+				}
+			}
 		}
 	}
 }

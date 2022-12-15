@@ -37,7 +37,9 @@ units={	#Dragon Units: Ruby, Sapphire, Emerald, Onyx, and Amethyst Warbands
 		division_template="Tribal Warparty"
 		start_experience_factor=0.55
 		start_equipment_factor=0.9
-		melee_equipment_0={owner="HEF" creator="HEF"}
+		force_equipment_variants={
+			melee_equipment_0={owner="HEF" creator="HEF"}
+		}
 	}
 	division={
 		name="Old Oak Tribe"
@@ -45,7 +47,9 @@ units={	#Dragon Units: Ruby, Sapphire, Emerald, Onyx, and Amethyst Warbands
 		division_template="Tribal Warparty"
 		start_experience_factor=0.75
 		start_equipment_factor=0.9
-		melee_equipment_0={owner="HEF" creator="HEF"}
+		force_equipment_variants={
+			melee_equipment_0={owner="HEF" creator="HEF"}
+		}
 	}
 	division={
 		name="Her Watchful Eyes Tribe"
@@ -53,7 +57,9 @@ units={	#Dragon Units: Ruby, Sapphire, Emerald, Onyx, and Amethyst Warbands
 		division_template="Tribal Warparty"
 		start_experience_factor=0.75
 		start_equipment_factor=0.9
-		melee_equipment_0={owner="HEF" creator="HEF"}
+		force_equipment_variants={
+			melee_equipment_0={owner="HEF" creator="HEF"}
+		}
 	}
 	division={
 		name="Nature's Fury Tribe"
@@ -61,7 +67,9 @@ units={	#Dragon Units: Ruby, Sapphire, Emerald, Onyx, and Amethyst Warbands
 		division_template="Tribal Warparty"
 		start_experience_factor=1
 		start_equipment_factor=0.9
-		melee_equipment_0={owner="HEF" creator="HEF"}
+		force_equipment_variants={
+			melee_equipment_0={owner="HEF" creator="HEF"}
+		}
 	}
 	division={
 		name="Bear Tooth Tribe"
@@ -69,6 +77,8 @@ units={	#Dragon Units: Ruby, Sapphire, Emerald, Onyx, and Amethyst Warbands
 		division_template="Ursa Handlers"
 		start_experience_factor=0.75
 		start_equipment_factor=0.7
-		melee_equipment_0={owner="HEF" creator="HEF"}
+		force_equipment_variants={
+			melee_equipment_0={owner="HEF" creator="HEF"}
+		}
 	}
 }

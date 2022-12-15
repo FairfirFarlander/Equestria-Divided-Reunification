@@ -1,12 +1,15 @@
 division_template={
-	name="Provincial Militia"	#divisions_name_group=#
-	priority=0	template_counter=3
+	name="Provincial Militia"
+	priority=0
+	template_counter=3
 	regiments={
-		infantry={x=0 y=0}
+		militia={x=0 y=0}
+		militia={x=0 y=1}
+		militia={x=0 y=2}
 	}
 }
 division_template={
-	name="Legionarie Detachment"	#divisions_name_group=#
+	name="Legionarie Detachment"
 	template_counter=9
 	regiments={
 		infantry={x=0 y=0}	infantry={x=1 y=0}
@@ -15,7 +18,11 @@ division_template={
 }
 division_template={
 	name="Royal Guard"
-	is_locked=yes	priority=2	template_counter=5
+	is_locked=yes
+	force_allow_recruiting=yes
+	division_cap=3
+	priority=2
+	template_counter=5
 	regiments={
 		infantry={x=0 y=0}
 		infantry={x=0 y=1}
@@ -28,56 +35,92 @@ division_template={
 units={
 	division={	#Bitterberry#
 		name="Bitterberry Militia"
-		location=11100	division_template="Provincial Militia"
-		start_experience_factor=0.06	start_equipment_factor=0.65
-		force_equipment_variants={melee_equipment_0={owner="HMS" creator="HMS"}}
+		location=11100
+		division_template="Provincial Militia"
+		start_experience_factor=0.06
+		start_equipment_factor=0.65
+		force_equipment_variants={
+			melee_equipment_0={owner="HMS" creator="HMS"}
+		}
 	}
 	division={	#Riverpool#
 		name="Riverpool Militia"
-		location=6864	division_template="Provincial Militia"
-		start_experience_factor=0.02	start_equipment_factor=0.55
-		force_equipment_variants={melee_equipment_0={owner="HMS" creator="HMS"}}
+		location=6864
+		division_template="Provincial Militia"
+		start_experience_factor=0.02
+		start_equipment_factor=0.55
+		force_equipment_variants={
+			melee_equipment_0={owner="HMS" creator="HMS"}
+		}
 	}
 	division={	#Bales#
 		name="Belltown Militia"
-		location=3162	division_template="Provincial Militia"
-		start_experience_factor=0.04	start_equipment_factor=0.6
-		force_equipment_variants={melee_equipment_0={owner="HMS" creator="HMS"}}
+		location=3162
+		division_template="Provincial Militia"
+		start_experience_factor=0.04
+		start_equipment_factor=0.6
+		force_equipment_variants={
+			melee_equipment_0={owner="HMS" creator="HMS"}
+		}
 	}
 	division={	#Wolfthorn#
 		name="Wolfthorn Militia"
-		location=124	division_template="Provincial Militia"
-		start_experience_factor=0	start_equipment_factor=0.5
-		force_equipment_variants={melee_equipment_0={owner="HMS" creator="HMS"}}
+		location=124
+		division_template="Provincial Militia"
+		start_experience_factor=0
+		start_equipment_factor=0.5
+		force_equipment_variants={
+			melee_equipment_0={owner="HMS" creator="HMS"}
+		}
 	}
 	division={	#Umberfoal#
 		name="Umberfoal Militia"
-		location=389	division_template="Provincial Militia"
-		start_experience_factor=0.02	start_equipment_factor=0.55
-		force_equipment_variants={melee_equipment_0={owner="HMS" creator="HMS"}}
+		location=389
+		division_template="Provincial Militia"
+		start_experience_factor=0.02
+		start_equipment_factor=0.55
+		force_equipment_variants={
+			melee_equipment_0={owner="HMS" creator="HMS"}
+		}
 	}
 	division={	#Canterlot#
 		name="Legio I 'Wisdom'"
-		location=179	division_template="Legionarie Detachment"
-		start_experience_factor=0.26	start_equipment_factor=0.9
-		force_equipment_variants={melee_equipment_0={owner="HMS" creator="HMS"}}
+		location=179
+		division_template="Legionarie Detachment"
+		start_experience_factor=0.26
+		start_equipment_factor=0.9
+		force_equipment_variants={
+			melee_equipment_0={owner="HMS" creator="HMS"}
+		}
 	}
 	division={	#Alicorn Sister Plains#
 		name="Legio II 'Vigilance'"
-		location=6023	division_template="Legionarie Detachment"
-		start_experience_factor=0.1	start_equipment_factor=0.6
-		force_equipment_variants={melee_equipment_0={owner="HMS" creator="HMS"}}
+		location=6023
+		division_template="Legionarie Detachment"
+		start_experience_factor=0.1
+		start_equipment_factor=0.6
+		force_equipment_variants={
+			melee_equipment_0={owner="HMS" creator="HMS"}
+		}
 	}
 	division={	#Whinnyapolis#
 		name="Legio III 'Courage'"
-		location=9887	division_template="Legionarie Detachment"
-		start_experience_factor=0.22	start_equipment_factor=0.8
-		force_equipment_variants={melee_equipment_0={owner="HMS" creator="HMS"}}
+		location=9887
+		division_template="Legionarie Detachment"
+		start_experience_factor=0.22
+		start_equipment_factor=0.8
+		force_equipment_variants={
+			melee_equipment_0={owner="HMS" creator="HMS"}
+		}
 	}
 	division={	#Phlox Flower Plain River#
 		name="Legio IV 'Strength'"
-		location=3380	division_template="Legionarie Detachment"
-		start_experience_factor=0.18	start_equipment_factor=0.7
-		force_equipment_variants={melee_equipment_0={owner="HMS" creator="HMS"}}
+		location=3380
+		division_template="Legionarie Detachment"
+		start_experience_factor=0.18
+		start_equipment_factor=0.7
+		force_equipment_variants={
+			melee_equipment_0={owner="HMS" creator="HMS"}
+		}
 	}
 }

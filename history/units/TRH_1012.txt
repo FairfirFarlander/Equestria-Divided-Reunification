@@ -51,3 +51,21 @@ units={
 		}
 	}
 }
+instant_effect={
+	add_equipment_production={
+		equipment={type=melee_equipment_0 creator="TRT"}
+		requested_factories=2 progress=0.75 efficiency=10
+	}
+	add_equipment_production={
+		equipment={type=melee_equipment_1 creator="TRT"}
+		requested_factories=1 progress=0.75 efficiency=30
+	}
+	add_equipment_production={
+		equipment={type=support_equipment_1	creator="TRT"}
+		requested_factories=1 progress=0.75 efficiency=90
+	}
+	add_equipment_production={
+		equipment={type=artillery_equipment_0 creator="TRT"}
+		requested_factories=1 progress=0.75 efficiency=20
+	}
+}

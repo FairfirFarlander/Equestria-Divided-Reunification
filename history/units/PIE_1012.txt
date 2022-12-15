@@ -1,12 +1,15 @@
 division_template={
-	name="Provincial Militia"	#divisions_name_group=#
-	priority=0	template_counter=3
+	name="Provincial Militia"
+	priority=0
+	template_counter=3
 	regiments={
-		infantry={x=0 y=0}
+		militia={x=0 y=0}
+		militia={x=0 y=1}
+		militia={x=0 y=2}
 	}
 }
 division_template={
-	name="Ponies-at-Arms"	#divisions_name_group=#
+	name="Ponies-at-Arms"
 	template_counter=59
 	regiments={
 		infantry={x=0 y=0}
@@ -17,38 +20,62 @@ division_template={
 units={
 	division={	#Rockfarms#
 		name="Rock Farm Militia"
-		location=11029	division_template="Provincial Militia"
-		start_experience_factor=0.06	start_equipment_factor=0.6
-		force_equipment_variants={melee_equipment_0={owner="PIE" creator="PIE"}}
+		location=11029
+		division_template="Provincial Militia"
+		start_experience_factor=0.06
+		start_equipment_factor=0.6
+		force_equipment_variants={
+			melee_equipment_0={owner="PIE" creator="PIE"}
+		}
 	}
 	division={	#Carrottop#
 		name="Carrottop Militia"
-		location=9457	division_template="Provincial Militia"
-		start_experience_factor=0.06	start_equipment_factor=0.4
-		force_equipment_variants={melee_equipment_0={owner="PIE" creator="PIE"}}
+		location=9457
+		division_template="Provincial Militia"
+		start_experience_factor=0.06
+		start_equipment_factor=0.4
+		force_equipment_variants={
+			melee_equipment_0={owner="PIE" creator="PIE"}
+		}
 	}
 	division={	#Rockville#
 		name="Rockville Militia"
-		location=11511	division_template="Provincial Militia"
-		start_experience_factor=0.04	start_equipment_factor=0.5
-		force_equipment_variants={melee_equipment_0={owner="PIE" creator="PIE"}}
+		location=11511
+		division_template="Provincial Militia"
+		start_experience_factor=0.04
+		start_equipment_factor=0.5
+		force_equipment_variants={
+			melee_equipment_0={owner="PIE" creator="PIE"}
+		}
 	}
 	division={	#Rockville#
 		name="Pie Clan Arms Brigade"
-		location=11511	division_template="Ponies-at-Arms"
-		start_experience_factor=0.1	start_equipment_factor=0.5
-		force_equipment_variants={melee_equipment_0={owner="PIE" creator="HEB"}}
+		location=11511
+		division_template="Ponies-at-Arms"
+		start_experience_factor=0.1
+		start_equipment_factor=0.5
+		force_equipment_variants={
+			melee_equipment_0={owner="PIE" creator="HEB"}
+		}
 	}
 	division={	#Rockville#
 		name="Peach Clan Arms Brigade"
-		location=11511	division_template="Ponies-at-Arms"
-		start_experience_factor=0.1	start_equipment_factor=0.5
-		force_equipment_variants={melee_equipment_0={owner="PIE" creator="HEB"}}
+		location=11511
+		division_template="Ponies-at-Arms"
+		start_experience_factor=0.1
+		start_equipment_factor=0.5
+		force_equipment_variants={
+			melee_equipment_0={owner="PIE" creator="HEB"}
+		}
 	}
 	division={	#Rockville#
 		name="Apricot Clan Brigade"
-		location=11511	division_template="Ponies-at-Arms"
-		start_experience_factor=0.1	start_equipment_factor=0.5
-		force_equipment_variants={melee_equipment_0={owner="PIE" creator="HEB"}}
+		location=11511
+		division_template="Ponies-at-Arms"
+		start_experience_factor=0.1
+		start_equipment_factor=0.5
+		force_equipment_variants={
+			melee_equipment_0={owner="PIE" creator="HEB"}
+		}
 	}
 }

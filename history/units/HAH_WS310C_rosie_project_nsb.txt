@@ -14,10 +14,7 @@ units={
 		start_experience_factor=0.1
 		start_equipment_factor=1
 		force_equipment_variants={
-			light_tank_chassis_0={
-				owner="HAH"
-				version_name="Rosie Tank"
-			}
+			light_tank_chassis_0={owner="HAH"	version_name="Rosie Tank"}
 		}
 	}
 }

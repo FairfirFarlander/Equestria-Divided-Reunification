@@ -1,11 +1,15 @@
 capital=262
 #oob="SOY_1012"
 set_research_slots=3
-set_stability=0.85 set_war_support=0.15
+set_stability=0.85
+set_war_support=0.15
 add_ideas={
-	limited_conscription limited_exports low_economic_mobilisation
-	proper_science_base outdated_industry
-	lack_of_scientists3 poverty5
+	limited_conscription
+	limited_exports
+	low_economic_mobilisation
+	outdated_industry
+	lack_of_scientists3
+	poverty5
 }
 set_technology={
 	changeling_race=1
@@ -23,44 +27,285 @@ set_technology={
 	gw_artillery=1
 	interwar_antiair=1
 	interwar_antitank=1
-	early_fighter=1
-	CAS1=1
-	early_bomber=1
 	fuel_silos=1
 	synth_oil_experiments=1
 	fuel_refining=1
 	tech_jager=1
 }
-actually_fix_weapon_techs=yes
-if={limit={NOT={has_dlc="No Step Back"}}
+if={
+	limit={has_dlc="Man the Guns"}
 	set_technology={
-		gwtank=1
-		basic_light_tank=1
-		improved_light_tank=1
-		basic_heavy_tank=1
+		early_ship_hull_light=1
+		basic_depth_charges=1
+		early_ship_hull_cruiser=1
+		early_ship_hull_heavy=1
+		early_ship_hull_submarine=1
+		basic_battery=1
+		basic_torpedo=1
+		mtg_transport=1
+		basic_naval_mines=1
+		submarine_mine_laying=1
+		#cruiser_submarines=1
+		pre_dreadnoughts=1
 	}
+	create_equipment_variant={
+		name="Type II Class"
+		name_group=CHN_SS_HISTORICAL
+		type=ship_hull_submarine_1
+		modules={
+			fixed_ship_torpedo_slot=ship_torpedo_sub_1
+			fixed_ship_engine_slot=sub_ship_engine_1
+			rear_1_custom_slot=ship_torpedo_sub_1
+		}
+	}
+	create_equipment_variant={
+		name="Type 991 Class"
+		name_group=CHN_DD_HISTORICAL
+		type=ship_hull_light_1
+		modules={
+			fixed_ship_battery_slot=ship_light_battery_1
+			fixed_ship_anti_air_slot=ship_anti_air_1
+			fixed_ship_engine_slot=light_ship_engine_1
+			fixed_ship_torpedo_slot=ship_torpedo_1
+			mid_1_custom_slot=ship_mine_layer_1
+			rear_1_custom_slot=ship_depth_charge_1
+		}
+	}
+	create_equipment_variant={
+		name="Sezemoid Class"
+		name_group=CHN_CL_HISTORICAL
+		type=ship_hull_cruiser_1
+		modules={
+			fixed_ship_battery_slot=ship_light_medium_battery_1
+			fixed_ship_anti_air_slot=ship_anti_air_1
+			fixed_ship_fire_control_system_slot=ship_fire_control_system_0
+			fixed_ship_engine_slot=cruiser_ship_engine_2
+			fixed_ship_armor_slot=ship_armor_cruiser_1
+			mid_1_custom_slot=ship_mine_layer_1
+			mid_2_custom_slot=ship_mine_layer_1
+			rear_1_custom_slot=ship_mine_layer_1
+		}
+	}
+	create_equipment_variant={
+		name="Queen Class"
+		name_group=CHN_BB_BC_HISTORICAL
+		type=ship_hull_pre_dreadnought
+		modules={
+			fixed_ship_battery_slot=ship_heavy_battery_1
+			fixed_ship_anti_air_slot=ship_anti_air_1
+			fixed_ship_fire_control_system_slot=ship_fire_control_system_0
+			fixed_ship_engine_slot=heavy_ship_engine_1
+			fixed_ship_secondaries_slot=ship_secondaries_1
+			fixed_ship_armor_slot=ship_armor_bb_1
+			front_1_custom_slot=ship_anti_air_1
+			mid_1_custom_slot=ship_secondaries_1
+		}
+	}
+	#set_naval_oob="SGR_1012_naval"
 	else={
 		set_technology={
-			gwtank_chassis=1
-			basic_light_tank_chassis=1
-			improved_light_tank_chassis=1
-			basic_medium_tank_chassis=1
-			basic_heavy_tank_chassis=1
-			armor_tech_1=1
-			engine_tech_1=1
+			early_destroyer=1
+			early_light_cruiser=1
+			early_heavy_cruiser=1
+			early_submarine=1
+			transport=1
+			#cruiser_submarines_nomtg=1
+			pre_dreadnoughts_nomtg=1
 		}
+		create_equipment_variant={
+			name="AG Class"
+			name_group=STG_SS_HISTORICAL
+			type=submarine_1
+		}
+		create_equipment_variant={
+			name="Orfey Class"
+			name_group=STG_DD_HISTORICAL
+			type=destroyer_1
+		}
+		create_equipment_variant={
+			name="Fidonisi Class"
+			name_group=STG_DD_HISTORICAL
+			type=destroyer_1
+			upgrades={
+				ship_torpedo_upgrade=1
+			}
+		}
+		create_equipment_variant={
+			name="Altidiya Class"
+			name_group=STG_CL_HISTORICAL
+			type=light_cruiser_1
+			upgrades={
+				ship_gun_upgrade=1
+			}
+		}
+		create_equipment_variant={
+			name="Potemki Class"
+			name_group=STG_BB_BC_HISTORICAL
+			type=pre_dreadnought_nomtg
+		}
+		#set_naval_oob="SGR_1012_naval_legacy"
 	}
 }
 if={limit={has_dlc="La Resistance"}
 	set_technology={
 		armored_car1=1
-		scout_plane1=1
 	}
 }
+if={
+	limit={has_dlc="No Step Back"}
+	set_technology={
+		gwtank_chassis=1
+		basic_light_tank_chassis=1
+		basic_medium_tank_chassis=1
+		basic_heavy_tank_chassis=1
+		armor_tech_1=1
+		engine_tech_1=1
+	}
+	create_equipment_variant={
+		name="Leichttraktor"
+		type=light_tank_chassis_0
+		icon="gfx/interface/technologies/gwtank.dds"
+		modules={
+			main_armament_slot=tank_small_cannon
+			turret_type_slot=tank_light_three_man_tank_turret
+			suspension_type_slot=tank_christie_suspension
+			armor_type_slot=tank_riveted_armor
+			engine_type_slot=tank_gasoline_engine
+			special_type_slot_1=tank_radio_1
+		}
+		upgrades={
+			tank_nsb_engine_upgrade=2
+			tank_nsb_armor_upgrade=2
+		}
+	}
+	create_equipment_variant={
+		name="A7V"
+		type=medium_tank_chassis_0
+		icon="gfx/interface/technologies/CHN_A7V.dds"
+		modules={
+			main_armament_slot=tank_small_cannon
+			turret_type_slot=tank_medium_fixed_superstructure_turret
+			suspension_type_slot=tank_bogie_suspension
+			armor_type_slot=tank_riveted_armor
+			engine_type_slot=tank_gasoline_engine
+			special_type_slot_1=additional_machine_guns
+		}
+		upgrades={
+			tank_nsb_engine_upgrade=4
+			tank_nsb_armor_upgrade=3
+		}
+	}
+	else={
+		set_technology={
+			gwtank=1
+			basic_light_tank=1
+			improved_light_tank=1
+			basic_heavy_tank=1
+		}
+		create_equipment_variant={
+			name="Leichttraktor"
+			type=gw_tank_equipment
+			icon="gfx/interface/technologies/gwtank.dds"
+			upgrades={
+				tank_reliability_upgrade=3
+				tank_engine_upgrade=4
+				tank_armor_upgrade=2
+				tank_gun_upgrade=0
+			}
+		}
+		create_equipment_variant={
+			name="A7V"
+			type=gw_tank_equipment
+			icon="gfx/interface/technologies/CHN_A7V.dds"
+			upgrades={
+				tank_reliability_upgrade=5
+				tank_engine_upgrade=2
+				tank_armor_upgrade=3
+				tank_gun_upgrade=3
+			}
+		}
+	}
+}
+if={
+	limit={has_dlc="By Blood Alone"}
+	set_technology={
+		iw_small_airframe=1
+		iw_medium_airframe=1
+		early_bombs=1
+		aa_lmg=1
+		engines_1=1
+	}
+	create_equipment_variant={
+		name="Vs.50"
+		type=small_plane_cas_airframe_0
+		icon="GFX_CHN_early_fighter_medium"
+		modules={
+			fixed_main_weapon_slot=bomb_locks
+			engine_type_slot=engine_1_1x
+		}
+	}
+	create_equipment_variant={
+		name="Vs.123"
+		type=small_plane_cas_airframe_0
+		icon="GFX_CHN_early_fighter_medium"
+		modules={
+			fixed_main_weapon_slot=bomb_locks
+			fixed_auxiliary_weapon_slot_1=light_mg_2x
+			engine_type_slot=engine_1_1x
+		}
+	}
+	create_equipment_variant={
+		name="Sv.51"
+		type=small_plane_airframe_0
+		icon="GFX_CHN_early_fighter_medium"
+		modules={
+			fixed_main_weapon_slot=light_mg_2x
+			engine_type_slot=engine_1_1x
+		}
+	}
+	create_equipment_variant={
+		name="UWA.23"
+		type=medium_plane_airframe_0
+		icon="GFX_CHN_early_bomber_medium"
+		modules={
+			fixed_main_weapon_slot=medium_bomb_bay
+			engine_type_slot=engine_1_2x
+			special_type_slot_1=lmg_defense_turret
+		}
+	}
+	else={
+		set_technology={
+			early_fighter=1
+			CAS1=1
+			early_bomber=1
+		}
+		create_equipment_variant={
+			name="Sv.51"
+			type=fighter_equipment_0
+			icon="GFX_CHN_early_fighter_medium"
+		}
+		create_equipment_variant={
+			name="Vs.123"
+			type=CAS_equipment_1
+			icon="GFX_CHN_early_fighter_medium"
+		}
+		create_equipment_variant={
+			name="UWA.23"
+			type=tac_bomber_equipment_0
+			icon="GFX_CHN_early_bomber_medium"
+		}
+	}
+}
+actually_fix_weapon_techs=yes
 starting_train_buffer=3
 set_convoys=2
 set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
-set_popularities={fascism=4 communism=7 neutrality=85 democratic=4}
+set_popularities={
+	fascism=4
+	communism=7
+	neutrality=85
+	democratic=4
+}
 set_politics={ruling_party=neutrality}
 recruit_character=SOY_yaria
 recruit_character=SOY_venyx

@@ -1,11 +1,14 @@
 capital=136
 oob="NIH_1012"
 set_research_slots=2
-set_stability=0.45 set_war_support=0.15
+set_stability=0.45
+set_war_support=0.15
 add_ideas={
-	volunteer_only closed_economy isolation
-	better_science_base outdated_industry
-	lack_of_scientists2 poverty1
+	closed_economy
+	isolation
+	outdated_industry
+	lack_of_scientists2
+	poverty1
 	NIH_night_guard_divisions
 	NIH_last_of_the_line
 	NIH_the_bitter_cold
@@ -17,7 +20,9 @@ if={
 		doctrinal_orthodoxy_spirit
 		disdain_for_the_digging_spirit
 	}
-	else={add_ideas={EQS_bad_tanks}}
+	else={
+		add_ideas={EQS_bad_tanks}
+	}
 }
 set_technology={
 	pony_race=1
@@ -32,7 +37,12 @@ set_technology={
 actually_fix_weapon_techs=yes
 add_manpower=5000
 set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
-set_popularities={fascism=36 communism=4 neutrality=45 democratic=15}
+set_popularities={
+	fascism=36
+	communism=4
+	neutrality=45
+	democratic=15
+}
 set_politics={ruling_party=neutrality}
 set_country_flag=EDR_is_equestrian_breakaway
 recruit_character=NIH_cursed_fate

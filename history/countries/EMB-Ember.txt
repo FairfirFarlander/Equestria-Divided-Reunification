@@ -1,14 +1,16 @@
 capital=319
 oob="EMB_1012"
 set_research_slots=2
-set_stability=0.46 set_war_support=0.07
+set_stability=0.46
+set_war_support=0.07
 add_ideas={
 	EMB_Under_Cities
 	EMB_Church_Of_The_First_Queen
-	volunteer_only limited_exports isolation
-	poor_science_base communal_society
-	lack_of_scientists2 poverty4
-	EQS_bad_tanks
+	limited_exports
+	isolation
+	communal_society
+	lack_of_scientists2
+	poverty4
 }
 set_technology={
 	changeling_race=1
@@ -19,7 +21,12 @@ set_technology={
 actually_fix_weapon_techs=yes
 set_convoys=2
 set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
-set_popularities={fascism=13 communism=42 neutrality=24 democratic=21}
+set_popularities={
+	fascism=13
+	communism=42
+	neutrality=24
+	democratic=21
+}
 set_politics={ruling_party=communism}
 recruit_character=EMB_mother_nightshade
 recruit_character=EMB_councillor_tyrennadus

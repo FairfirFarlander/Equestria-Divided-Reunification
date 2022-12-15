@@ -1,10 +1,16 @@
 capital=1195
 #oob="PRT_1012"
-set_research_slots=1 set_stability=0.76 set_war_support=0.76
+set_research_slots=1
+set_stability=0.76
+set_war_support=0.76
 add_ideas={
-	volunteer_only export_focus civilian_economy
-	better_science_base agrarian_society
-	lack_of_scientists2 poverty4
+	agrarian_society
+	lack_of_scientists2
+	poverty4
+}
+set_technology={
+	melee_weapons=1
+	pony_race=1
 }
 if={
 	limit={has_dlc="No Step Back"}
@@ -13,17 +19,20 @@ if={
 		doctrinal_orthodoxy_spirit
 		disdain_for_the_digging_spirit
 	}
-	else={add_ideas={EQS_bad_tanks}}
-}
-set_technology={
-	melee_weapons=1
-	pony_race=1
+	else={
+		add_ideas={EQS_bad_tanks}
+	}
 }
 actually_fix_weapon_techs=yes
 set_convoys=3
 set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
-set_popularities={fascism=12 communism=17 neutrality=30 democratic=41}
+set_popularities={
+	fascism=12
+	communism=17
+	neutrality=30
+	democratic=41
+}
 set_politics={ruling_party=democratic}
 set_country_flag=EDR_is_equestrian_breakaway
 recruit_character=PRT_generic_pony
-#Notes#
+###NOTES###

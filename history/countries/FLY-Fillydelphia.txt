@@ -1,7 +1,8 @@
 capital=12
 oob="FLY_1012"
 set_research_slots=2
-set_stability=0.23 set_war_support=0.11
+set_stability=0.23
+set_war_support=0.11
 add_ideas={
 	pre_industrial_society
 	lack_of_scientists3

@@ -42,7 +42,9 @@ units={
 instant_effect={
 	add_equipment_production={
 		equipment={type=melee_equipment_0 creator="PLT"}
-		requested_factories=1 progress=0.96 efficiency=28
+		requested_factories=1
+		progress=0.96
+		efficiency=28
 	}
 	add_equipment_to_stockpile={
 		type=melee_equipment_1
