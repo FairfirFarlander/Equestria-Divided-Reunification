@@ -8,14 +8,18 @@ HAH_gathering_materials={
 		fire_only_once=yes
 		days_remove=28
 		complete_effect={
-			log="[GetDateText]: [Root.GetName]: decision HAH_dummy"
+			log="[GetDateText]: [Root.GetName]: decision HAH_gather_one"
 			set_country_flag=HAH_ima_gathering_shiz
+			add_to_variable={HAH_back_to_business=1}
+			country_event={id=HAH_ES1.0203 days=14}	#Letter to an Old Friend
 		}
 		remove_effect={
-			log="[GetDateText]: [Root.GetName]: decision complete HAH_dummy"
-			add_to_variable={HAH_back_to_business=1}
+			log="[GetDateText]: [Root.GetName]: decision complete HAH_gather_one"
 			clr_country_flag=HAH_ima_gathering_shiz
-			country_event={id=HAH_ES1.0203 days=28}	#Letter to an Old Friend
+			if={
+				limit={check_variable={HAH_back_to_business=4}}
+				country_event=HAH_ES1.0202	#The Luxuries of The Capital
+			}
 		}
 	}
 	HAH_gather_two={	#Shipping the Equipment Here
@@ -23,14 +27,18 @@ HAH_gathering_materials={
 		fire_only_once=yes
 		days_remove=28
 		complete_effect={
-			log="[GetDateText]: [Root.GetName]: decision HAH_dummy"
+			log="[GetDateText]: [Root.GetName]: decision HAH_gather_two"
 			set_country_flag=HAH_ima_gathering_shiz
+			add_to_variable={HAH_back_to_business=1}
+			country_event={id=HAH_ES1.0204 days=14}	#Shipping the Equipment Here
 		}
 		remove_effect={
-			log="[GetDateText]: [Root.GetName]: decision complete HAH_dummy"
-			add_to_variable={HAH_back_to_business=1}
+			log="[GetDateText]: [Root.GetName]: decision complete HAH_gather_two"
 			clr_country_flag=HAH_ima_gathering_shiz
-			country_event={id=HAH_ES1.0204 days=28}	#Shipping the Equipment Here
+			if={
+				limit={check_variable={HAH_back_to_business=4}}
+				country_event=HAH_ES1.0202	#The Luxuries of The Capital
+			}
 		}
 	}
 	HAH_gather_three={	#Acquiring the Proper Ingredeints
@@ -38,14 +46,18 @@ HAH_gathering_materials={
 		fire_only_once=yes
 		days_remove=28
 		complete_effect={
-			log="[GetDateText]: [Root.GetName]: decision HAH_dummy"
+			log="[GetDateText]: [Root.GetName]: decision HAH_gather_three"
 			set_country_flag=HAH_ima_gathering_shiz
+			add_to_variable={HAH_back_to_business=1}
+			country_event={id=HAH_ES1.0205 days=14}	#Acquiring the Proper Ingredients
 		}
 		remove_effect={
-			log="[GetDateText]: [Root.GetName]: decision complete HAH_dummy"
-			add_to_variable={HAH_back_to_business=1}
+			log="[GetDateText]: [Root.GetName]: decision complete HAH_gather_three"
 			clr_country_flag=HAH_ima_gathering_shiz
-			country_event={id=HAH_ES1.0205 days=28}	#Acquiring the Proper Ingredients
+			if={
+				limit={check_variable={HAH_back_to_business=4}}
+				country_event=HAH_ES1.0202	#The Luxuries of The Capital
+			}
 		}
 	}
 	HAH_gather_four={	#Acquiring the Most Important Ingredient
@@ -53,14 +65,18 @@ HAH_gathering_materials={
 		fire_only_once=yes
 		days_remove=28
 		complete_effect={
-			log="[GetDateText]: [Root.GetName]: decision HAH_dummy"
+			log="[GetDateText]: [Root.GetName]: decision HAH_gather_four"
 			set_country_flag=HAH_ima_gathering_shiz
+			add_to_variable={HAH_back_to_business=1}
+			country_event={id=HAH_ES1.0206 days=14}	#Acquiring the Most Important Ingredient
 		}
 		remove_effect={
-			log="[GetDateText]: [Root.GetName]: decision complete HAH_dummy"
-			add_to_variable={HAH_back_to_business=1}
+			log="[GetDateText]: [Root.GetName]: decision complete HAH_gather_four"
 			clr_country_flag=HAH_ima_gathering_shiz
-			country_event={id=HAH_ES1.0206 days=28}	#Acquiring the Most Important Ingredient
+			if={
+				limit={check_variable={HAH_back_to_business=4}}
+				country_event=HAH_ES1.0202	#The Luxuries of The Capital
+			}
 		}
 	}
 }
