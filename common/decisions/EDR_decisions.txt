@@ -70,7 +70,7 @@ EDR_equestrian_minors_reunification={
 		}
 		cost=70
 		targets={ALA ALI BCK CHY COT CRL CUL EMB FLY FRI FSH HAH HEB HEF HFT HMS HSW HWG JTL LAS MSE MWC NEF NIH PIE PLF PLT PRT SGR STB SWT SYV THA TRH TRT VHT VII WTC}
-		target_dynamic=yes
+		targets_dynamic=yes
 		target_non_existing=yes
 		target_trigger={
 			NOT={

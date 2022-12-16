@@ -87,6 +87,11 @@ EDR_debug_SGR_land_decisions: "[SGR.Getflag] §gDebug§!: §YToggle§! Stalliong
 EDR_debug_FLY_land_decisions: "[FLY.Getflag] §gDebug§!: §YToggle§! Fillydelphian Freeside [FSH.Getflag]"
  FLY_res_FSH: "§gDebug§! §GRestore§! [FSH.getname] [FSH.getflag].\n§RRemove§! cores for [FLY.getname] [FLY.getflag]."
  FLY_rev_FSH: "§gDebug§! §RRemove§! [FSH.getname] [FSH.getflag].\n§YAnnex§! and §Gcore§! to [FLY.getname] [FLY.getflag]."
+###Timeline Missions###
+EDR_timeline_missions: "Equestria Divided Reunification Timeline"
+ EDR_BCK_civil_war_leadup_1012: "[BCK.GetFlag] The Castlering Incident [BCK.GetFlag]"
+ EDR_PLT_WTC_leadup_1012: "[WTC.GetFlag] The Baltimare Spring [PLF.GetFlag]"
+ EDR_HEB_COT_leadup_1013: "[COT.GetFlag] The Second Southron War [HEB.GetFlag]"
 ###Equestrian Reunification###
 EDR_equestrian_minors_reunification: "Equestrian Reunification: The Wayward Children"
  EDR_equestrian_minors_reunification_desc: ""

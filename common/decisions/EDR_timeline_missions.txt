@@ -1,18 +1,83 @@
 EDR_timeline_missions={
-	EDR_HEB_COT_leadup_1013={
-		activation={
-			has_start_date<1012.01.02
-			HEB={is_ai=yes}
+	EDR_BCK_civil_war_leadup_1012={
+		icon=GFX_decision_crossed_swords
+		#allowed={
+		#	PLF={is_ai=yes}
+		#}
+		activation={always=yes}
+		available={always=no}
+		days_mission_timeout=140	#Time it for October 31st
+		complete_effect={log="That isn't possible! AAAAAAHHHH!!!"}
+		timeout_effect={
+			log="[GetDateText]: [Root.GetName]: mission EDR_BCK_civil_war_leadup_1012"
+			set_global_flag=EDR_BCK_civil_war_1012
+			BCK={
+				if={
+					limit={
+						NOT={is_ai=yes}
+					}
+					country_event=EDR_BCK_civil_war_leadup_1012.01
+				}
+			}
 		}
-		days_mission_timeout=300
+	}
+	EDR_PLT_WTC_leadup_1012={
+		icon=GFX_decision_crossed_swords
+		#allowed={
+		#	PLF={is_ai=yes}
+		#}
+		activation={always=yes}
+		available={always=no}
+		days_mission_timeout=300	#Time it for October 31st
+		complete_effect={log="That isn't possible! AAAAAAHHHH!!!"}
+		timeout_effect={
+			log="[GetDateText]: [Root.GetName]: mission EDR_PLT_WTC_leadup_1012"
+			set_global_flag=EDR_PLT_WTC_war_1012
+			WTC={
+				if={
+					limit={
+						NOT={is_ai=yes}
+					}
+					country_event=EDR_PLT_WTC_leadup_1012.01
+				}
+			}
+			PLF={
+				if={
+					limit={
+						NOT={is_ai=yes}
+					}
+					country_event=EDR_PLT_WTC_leadup_1012.01
+				}
+			}
+		}
+	}
+	EDR_HEB_COT_leadup_1013={
+		icon=GFX_decision_crossed_swords
+		#allowed={
+		#	HEB={is_ai=yes}
+		#}
+		activation={always=yes}
+		available={always=no}
+		days_mission_timeout=420	#Time it for April 12th
+		complete_effect={log="That isn't possible! AAAAAAHHHH!!!"}
 		timeout_effect={
 			log="[GetDateText]: [Root.GetName]: mission EDR_HEB_COT_war_1013"
 			set_global_flag=EDR_HEB_COT_war_1013
 			COT={
-				limit={
-					NOT={is_ai=yes}
+				if={
+					limit={
+						NOT={is_ai=yes}
+					}
+					country_event=EDR_HEB_COT_leadup_1013.01
 				}
-				country_event=EDR_HEB_COT_leadup_1013
+			}
+			HEB={
+				if={
+					limit={
+						NOT={is_ai=yes}
+					}
+					country_event=EDR_HEB_COT_leadup_1013.01
+				}
 			}
 		}
 	}
