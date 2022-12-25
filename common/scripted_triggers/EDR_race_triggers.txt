@@ -24,7 +24,7 @@ uses_pony_EQS_portraits = {
 		original_tag=LAS
 		original_tag=MSE
 		original_tag=MWC
-		original_tag=NEF
+		original_tag=TRS
 		original_tag=NIH
 		original_tag=PIE
 		original_tag=PLF
@@ -55,7 +55,7 @@ uses_thestral_portraits = {
 	original_tag=NIH
 	original_tag=FSH
 	original_tag=TRH
-	original_tag=NEF
+	original_tag=TRS
 }
 uses_changeling_portraits = {
 	OR = {
@@ -113,7 +113,7 @@ is_country_main_culture_equestrian = {
 		original_tag=LAS
 		original_tag=MSE
 		original_tag=MWC
-		original_tag=NEF
+		original_tag=TRS
 		original_tag=NIH
 		original_tag=PIE
 		original_tag=PLF
@@ -196,7 +196,7 @@ is_state_main_culture_equestrian = {
 		is_in_array={state_original_cores=LAS}
 		is_in_array={state_original_cores=MSE}
 		is_in_array={state_original_cores=MWC}
-		is_in_array={state_original_cores=NEF}
+		is_in_array={state_original_cores=TRS}
 		is_in_array={state_original_cores=NIH}
 		is_in_array={state_original_cores=PIE}
 		is_in_array={state_original_cores=PLF}
@@ -262,7 +262,7 @@ is_operative_main_culture_equestrian = {
 		has_nationality=LAS
 		has_nationality=MSE
 		has_nationality=MWC
-		has_nationality=NEF
+		has_nationality=TRS
 		has_nationality=NIH
 		has_nationality=PIE
 		has_nationality=PLF

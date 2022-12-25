@@ -2367,7 +2367,7 @@ MWC={
 		}
 	}
 }
-NEF={
+TRS={
 	army={
 		male={
 			"GFX_portrait_eqs_pony_generic_1"

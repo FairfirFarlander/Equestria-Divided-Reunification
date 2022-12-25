@@ -1,7 +1,7 @@
 #EDR
-NEF_HMS_puppet={
-	color=rgb{164 26 255}
-	color_ui=rgb{164 26 255}
+TRS_HMS_puppet={
+	color=rgb{153 102 204}
+	color_ui=rgb{153 122 184}
 }
 HEB_EQS={
 	color=rgb{133 203 97}

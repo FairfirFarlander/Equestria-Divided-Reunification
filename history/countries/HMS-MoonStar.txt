@@ -41,7 +41,7 @@ if={
 set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
 create_faction=MoonandStar
 add_to_faction=HAH
-add_to_faction=NEF
+add_to_faction=TRS
 add_to_faction=MSE
 add_to_faction=FRI
 set_popularities={

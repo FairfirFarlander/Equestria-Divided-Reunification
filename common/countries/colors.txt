@@ -18,7 +18,6 @@ HWG={color=rgb{249 242 255}color_ui=rgb{249 242 255}}
 JTL={color=rgb{119 47 65}color_ui=rgb{119 47 65}}
 LAS={color=rgb{162 125 0}color_ui=rgb{162 125 0}}
 MSE={color=rgb{144 26 255}color_ui=rgb{144 26 255}}
-NEF={color=rgb{60 45 75}color_ui=rgb{60 45 75}}
 FRI={color=rgb{125 26 255}color_ui=rgb{125 26 255}}
 MWC={color=rgb{2 147 189}color_ui=rgb{2 147 189}}
 NIH={color=rgb{41 37 110}color_ui=rgb{41 37 110}}
@@ -34,6 +33,7 @@ SWT={color=rgb{214 254 244}color_ui=rgb{214 254 244}}
 SYV={color=rgb{252 160 254}color_ui=rgb{252 160 254}}
 THA={color=rgb{0 0 102}color_ui=rgb{0 0 102}}
 TRH={color=rgb{36 36 154}color_ui=rgb{36 36 154}}
+TRS={color=rgb{130 130 130}color_ui=rgb{80 70 150}}
 TRT={color=rgb{217 253 106}color_ui=rgb{217 253 106}}
 VHT={color=rgb{203 41 41}color_ui=rgb{203 41 41}}
 VII={color=rgb{22 167 209}color_ui=rgb{22 167 209}}

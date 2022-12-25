@@ -456,7 +456,7 @@ add_namespace=HAH_EWS3
 					active=yes
 				}
 			}
-			NEF={
+			TRS={
 				add_opinion_modifier={
 					target=HAH
 					modifier=HAH_inquisitorial_sanction_opinion
@@ -873,7 +873,7 @@ add_namespace=HAH_EWS3
 					modifier=HAH_inquisitorial_sanction_opinion
 				}
 			}
-			NEF={
+			TRS={
 				remove_opinion_modifier={
 					target=HAH
 					modifier=HAH_inquisitorial_sanction_opinion

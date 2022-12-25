@@ -7,6 +7,9 @@ HAH_gathering_materials={
 		#icon=
 		fire_only_once=yes
 		days_remove=28
+		available={
+			NOT={has_country_flag=HAH_ima_gathering_shiz}
+		}
 		complete_effect={
 			log="[GetDateText]: [Root.GetName]: decision HAH_gather_one"
 			set_country_flag=HAH_ima_gathering_shiz
@@ -26,6 +29,9 @@ HAH_gathering_materials={
 		#icon=
 		fire_only_once=yes
 		days_remove=28
+		available={
+			NOT={has_country_flag=HAH_ima_gathering_shiz}
+		}
 		complete_effect={
 			log="[GetDateText]: [Root.GetName]: decision HAH_gather_two"
 			set_country_flag=HAH_ima_gathering_shiz
@@ -45,6 +51,9 @@ HAH_gathering_materials={
 		#icon=
 		fire_only_once=yes
 		days_remove=28
+		available={
+			NOT={has_country_flag=HAH_ima_gathering_shiz}
+		}
 		complete_effect={
 			log="[GetDateText]: [Root.GetName]: decision HAH_gather_three"
 			set_country_flag=HAH_ima_gathering_shiz
@@ -64,6 +73,9 @@ HAH_gathering_materials={
 		#icon=
 		fire_only_once=yes
 		days_remove=28
+		available={
+			NOT={has_country_flag=HAH_ima_gathering_shiz}
+		}
 		complete_effect={
 			log="[GetDateText]: [Root.GetName]: decision HAH_gather_four"
 			set_country_flag=HAH_ima_gathering_shiz
