@@ -8,6 +8,7 @@ TRS_GATHERING_STORM_DESC: ""
 ###Characters###
 ##Leaders##
 TRS_duchess_aurora: "Duchess Aurora"
+ TRS_lady_aurora: "Lady Aurora"
  TRS_daurora_poli_desc: "§LPortrait§! by: §CTiviyl§!"
  TRS_generic_pony: "Generic pony"
   TRS_generic_pony_desc: ""
@@ -19,7 +20,7 @@ TRS: "Trotsylvania"
  TRS_DEF: "the Dutchy of Trotsylvania"
  TRS_ADJ: "Trotsylvanian"
  TRS_HMS_puppet: "Neighgara-Trotsylvania"
-  TRS_DEF: "the Dutchy of Neighgara-Trotsylvania"
+  TRS_HMS_puppet_DEF: "the Dutchy of Neighgara-Trotsylvania"
 ###Political Parties###
 ###Ideas###
 ###National Focuses###

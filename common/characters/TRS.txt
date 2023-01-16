@@ -1,6 +1,6 @@
 characters={
 	TRS_duchess_aurora={
-		name=TRS_duchess_aurora
+		name=TRS_lady_aurora
 		gender=female
 		portraits={
 			civilian={

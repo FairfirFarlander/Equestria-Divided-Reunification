@@ -12,8 +12,8 @@ HAH={color=rgb{210 36 170}color_ui=rgb{210 36 170}}
 HEB={color=rgb{255 136 77}color_ui=rgb{255 136 77}}
 HEF={color=rgb{0 128 0}color_ui=rgb{0 128 0}}
 HFT={color=rgb{238 184 67}color_ui=rgb{238 184 67}}
-HMS={color=rgb{209 26 255}color_ui=rgb{209 26 255}}
-HSW={color=rgb{179 179 255}color_ui=rgb{179 179 255}}
+HMS={color=rgb{209 26 255}color_ui=rgb{177 62 155}}	#209 26 255	#185 98 171
+HSW={color=rgb{153 204 255}color_ui=rgb{0 179 254}}	#179 179 255
 HWG={color=rgb{249 242 255}color_ui=rgb{249 242 255}}
 JTL={color=rgb{119 47 65}color_ui=rgb{119 47 65}}
 LAS={color=rgb{162 125 0}color_ui=rgb{162 125 0}}
