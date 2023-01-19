@@ -1,0 +1,24 @@
+#HAH Gathering Materials
+	defined_text={
+		name=GetHAH_gathering_mah_shitz_SLOC
+		text={
+			trigger={check_variable={HAH_back_to_business=0}}
+			localization_key=HAH_gathering_mah_shitz_0
+		}
+		text={
+			trigger={check_variable={HAH_back_to_business=1}}
+			localization_key=HAH_gathering_mah_shitz_1
+		}
+		text={
+			trigger={check_variable={HAH_back_to_business=2}}
+			localization_key=HAH_gathering_mah_shitz_2
+		}
+		text={
+			trigger={check_variable={HAH_back_to_business=3}}
+			localization_key=HAH_gathering_mah_shitz_3
+		}
+		text={
+			trigger={check_variable={HAH_back_to_business=4}}
+			localization_key=HAH_gathering_mah_shitz_4
+		}
+	}

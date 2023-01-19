@@ -1,0 +1,20 @@
+﻿l_english:
+###Introduction###
+##Bookmark##
+CLD_GATHERING_STORM_DESC: ""
+##Welcome Screen##
+ EAW_WS_CLD: ""
+  EAW_WS_CLD_desc: ""
+###Country Name###
+CLD: "Cloudsdale"
+ CLD_DEF: "the Holdout of Cloudsdale"
+ CLD_ADJ: "Cloudsdali"
+###Political Parties###
+###Characters###
+##Leaders##
+##Commanders##
+##Political Advisors##
+##Military Advisors##
+###Ideas###
+###National Focuses###
+##Storyline Tree##

@@ -1,0 +1,23 @@
+﻿l_english:
+###Introduction###
+##Bookmark##
+TFL_GATHERING_STORM_DESC: ""
+##Welcome Screen##
+ EAW_WS_TFL: ""
+  EAW_WS_TFL_desc: ""
+###Country Name###
+TFL: "Orshab"
+ TFL_DEF: "the County of Orshab"
+ TFL_ADJ: "Orshabi"
+ TFL_neutrality: "Foreign Legion Lands"
+  TFL_neutrality_DEF: "the Lands of the Foreign Legion"
+  TFL_neutrality_ADJ: "Legionaries"
+###Political Parties###
+###Characters###
+##Leaders##
+##Commanders##
+##Political Advisors##
+##Military Advisors##
+###Ideas###
+###National Focuses###
+##Storyline Tree##

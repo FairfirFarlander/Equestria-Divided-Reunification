@@ -2,10 +2,12 @@ ALA={color=rgb{204 255 204}color_ui=rgb{204 255 204}}
 ALI={color=rgb{204 255 204}color_ui=rgb{204 255 204}}
 BCK={color=rgb{122 80 128}color_ui=rgb{122 80 128}}
 CHY={color=rgb{204 11 64}color_ui=rgb{204 11 64}}
+CLD={color=rgb{63 172 228}color_ui=rgb{63 172 228}}
 COT={color=rgb{157 147 130}color_ui=rgb{157 147 130}}
 CRL={color=rgb{213 166 240}color_ui=rgb{213 166 240}}
 CUL={color=rgb{101 1 36}color_ui=rgb{101 1 36}}
 EMB={color=rgb{130 15 15}color_ui=rgb{130 15 15}}
+FAI={color=rgb{66 77 120}color_ui=rgb{66 77 120}}
 FLY={color=rgb{137 132 234}color_ui=rgb{137 132 234}}
 FSH={color=rgb{178 72 171}color_ui=rgb{178 72 171}}
 HAH={color=rgb{210 36 170}color_ui=rgb{210 36 170}}
@@ -31,6 +33,7 @@ STB={color=rgb{166 208 53}color_ui=rgb{166 208 53}}
 #STP={color=rgb{55 129 12}color_ui=rgb{55 129 12}}
 SWT={color=rgb{214 254 244}color_ui=rgb{214 254 244}}
 SYV={color=rgb{252 160 254}color_ui=rgb{252 160 254}}
+TFL={color=rgb{199 228 187}color_ui=rgb{199 228 187}}
 THA={color=rgb{0 0 102}color_ui=rgb{0 0 102}}
 TRH={color=rgb{36 36 154}color_ui=rgb{36 36 154}}
 TRS={color=rgb{130 130 130}color_ui=rgb{80 70 150}}

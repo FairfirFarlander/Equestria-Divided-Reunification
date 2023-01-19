@@ -36,5 +36,4 @@ focus_tree={	#DEBUG
 	#shared_focus=EDR_N05
 	#shared_focus=EDR_A05
 }
-
-If you're still developing a tree and don't want players to see it in a normal game (IE: No debug mode), 
+#If you're still developing a tree and don't want players to see it in a normal game (IE: No debug mode), use is_debug=yes as a weight.

@@ -3,6 +3,7 @@ oob="HSW_1012"
 set_research_slots=2
 set_stability=0.7 set_war_support=0.06
 add_ideas={
+	limited_conscription
 	limited_exports
 	low_economic_mobilisation
 	pre_industrial_society
