@@ -18,6 +18,31 @@ characters={
 			traits={}
 		}
 	}
+	TRS_mystical_phantasm={
+		name=TRS_mystical_phantasm
+		portraits={
+			civilian={
+				large="GFX_TRS_mystical_phantasm"
+				small="GFX_idea_TRS_mystical_phantasm"
+			}
+			army={
+				large="GFX_TRS_mystical_phantasm"
+				small="GFX_idea_TRS_mystical_phantasm"
+			}
+		}
+		country_leader={
+			desc="TRS_mphantasm"
+			ideology=fascism_ideology
+			traits={}
+		}
+		advisor={
+			slot=political_advisor
+			cost=150
+			idea_token=TRS_mphantasm_advi
+			available={has_country_flag=TRS_S05_unlock_advisors}
+			traits={}
+		}
+	}
 	TRS_generic_pony={
 		name=TRS_generic_pony
 		gender=female

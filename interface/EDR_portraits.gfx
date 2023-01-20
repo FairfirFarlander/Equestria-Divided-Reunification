@@ -433,6 +433,14 @@ spritetypes={
 		name="GFX_idea_TRS_duchess_aurora"
 		textureFile="gfx/interface/ideas/Advisors/TRS/TRS_duchess_aurora.dds"
 	}
+	spritetype={
+		name="GFX_TRS_mystical_phantasm"
+		textureFile="gfx/leaders/TRS/TRS_mystical_phantasm.dds"
+	}
+	spritetype={
+		name="GFX_idea_TRS_mystical_phantasm"
+		textureFile="gfx/interface/ideas/Advisors/TRS/TRS_mystical_phantasm.dds"
+	}
 ##NIH##
 	spritetype={
 		name="GFX_NIH_cursed_fate"

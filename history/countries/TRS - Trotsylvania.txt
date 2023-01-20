@@ -60,6 +60,7 @@ set_popularities={
 set_politics={ruling_party=fascism}
 set_country_flag=EDR_is_equestrian_breakaway
 recruit_character=TRS_duchess_aurora
+recruit_character=TRS_mystical_phantasm
 recruit_character=TRS_generic_pony
 ###NOTES###
 #Stab/WarS are based off of 18(12)-18(14)/50. TRS is 14.

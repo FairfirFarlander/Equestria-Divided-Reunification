@@ -28,6 +28,7 @@ defined_text={#Country
 	text={trigger={original_tag=SWT}localization_key=EAW_WS_SWT}
 	text={trigger={original_tag=SYV}localization_key=EAW_WS_SYV}
 	text={trigger={original_tag=THA}localization_key=EAW_WS_THA}
+	text={trigger={original_tag=TRS}localization_key=EAW_WS_TRS}
 	text={trigger={original_tag=TRT}localization_key=EAW_WS_TRT}
 	text={trigger={original_tag=VHT}localization_key=EAW_WS_VHT}
 	text={trigger={original_tag=VII}localization_key=EAW_WS_VII}
@@ -413,6 +414,7 @@ defined_text={
 	text={trigger={original_tag=SWT}localization_key=EAW_WS_SWT_desc}
 	text={trigger={original_tag=SYV}localization_key=EAW_WS_SYV_desc}
 	text={trigger={original_tag=THA}localization_key=EAW_WS_THA_desc}
+	text={trigger={original_tag=TRS}localization_key=EAW_WS_TRS_desc}
 	text={trigger={original_tag=TRT}localization_key=EAW_WS_TRT_desc}
 	text={trigger={original_tag=VHT}localization_key=EAW_WS_VHT_desc}
 	text={trigger={original_tag=VII}localization_key=EAW_WS_VII_desc}

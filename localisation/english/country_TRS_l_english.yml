@@ -4,12 +4,12 @@
 TRS_GATHERING_STORM_DESC: ""
 ##Welcome Screen##
  EAW_WS_TRS: ""
-  EAW_WS_TRS_desc: ""
+  EAW_WS_TRS_desc: "The great mountains of Neighgra bore witness to some of the most intense fighting during the second Crystalen War. Now this blood soaked land is a new nation, held together by little more than stubbornness of a dying royal line and the influence of Canterlot. When Canterlot went on its many conquests, the dying thestral clans of the area swore their loyalty to Canterlot in the hopes that they would gain some semblance of their old power over the land. Led by the few nobility left amongst them, the ever shrinking thestral force marched alongside Canterlot. Bringing with them a unyielding fury built out of desperation for survival. Once order was brought to the region and the dust of war settled, Canterlot granted the thestral’s their request. A new nation was to be formed, the Duchy Of Trotsylvania. However, this gift from the old capital came at a cost. This new thestral kingdom was to be little more than a satellite state for Canterlot, its word is law in these lands. However, the mare who sits upon the Trotsylvanian throne has plans to possibly change that. She wishes to see the lands of her forbearers return to some symbol of greatness; to maybe be seen as worthy enough to be compared to the old clans or possibly seen as an equal to Canterlot. But a long road lies ahead of her. Will she be able to lead this relic of a nation through these dark and modern times? Only time may tell what fate has in store for this mysterious dutches and her shell of a kingdom."
 ###Characters###
 ##Leaders##
 TRS_duchess_aurora: "Duchess Aurora"
  TRS_lady_aurora: "Lady Aurora"
- TRS_daurora_poli_desc: "§LPortrait§! by: §CTiviyl§!"
+ TRS_daurora_poli_desc: "§LPortrait§! by: §CTiviyl§!\n\nThe mysterious thestral mare, who almost seems to haunt the small palace she resides within. She commands a powerful presence wherever she goes. Her almost ghostly white fur and red eyes either bewitching or terrifying any who gaze upon her. Until recent years very few ponies outside of the nobility had seen her often. However, things have changed. After her and her small collection of guards ponies sided with Canterlot during their invasion into the region, she finds herself in control. With the blessings of Canterlot the duchess plans on reclaiming the glory of what is left of her small clan. However, being the last of her royal line and the thestral population declining in the region with each passing day, she will have to work hard to achieve her goals. But just what are the goals of this mysterious mare and will they lead her down a path that will put her at odds with Canterlot?"
  TRS_generic_pony: "Generic pony"
   TRS_generic_pony_desc: ""
 ##Commanders##
