@@ -1,0 +1,317 @@
+﻿#Equestria Divided: Reunification
+
+#LEAD DEVELOPERS
+Farlander
+Tiviyl
+
+#CONTRIBUTORS
+Sir Merrick
+
+
+#Equestria At War for Hearts of Iron IV
+
+#LEAD DEVELOPERS
+Scroup
+Cyrus
+Featherus
+Yard1
+Jaspy
+
+#CONTRIBUTORS
+AAAAAAH
+Acryliks
+Adagio
+Agatha
+Algol
+Angriest Bird
+Antares
+AppleAle
+AquaMuro
+ArcaneTesla
+Archivator-RUS
+Arcus
+Arcy
+Ardent Custodian
+Arvidus
+Augenis
+Avi Skytracer
+Axidant
+Baron
+Best Wizard
+Big Bruddah
+Bipen
+Brandon
+BunnyShrubby
+Carvor
+Cataline
+catnapper
+Cazzym
+Cherrypone
+cijik
+Cinder Script
+Cody MacArthur
+Cofido
+Computational Pragmatist
+Couatl
+CowsRTasty
+Crazy Water
+Cunard
+Cwop
+Cynewulf
+Damiyan
+Danielle
+Danior5
+DarthRiki01
+DeerTrax
+Didicody
+dingosupastar
+Dr. Gilderoy
+Dr. Njitram
+DraconianHorizons
+Dunkle
+Dzhasa
+Echo
+Egil
+EmpressBridle
+Feitanakin
+Fetti
+Feveros
+Fiaura
+Fin
+Finland
+Flake
+Flying Dutchpony
+Franz Libkind
+Freudensonne von Zwielicht
+Gara-The-Author
+gdvp111
+Gearheart
+gelter
+Gereval
+Gladi
+Goldenwing
+GonzaloIrkatan
+Gorkamorka
+GrandPri
+GreatPretender
+Guidrion
+HappyNTH
+Hellstorm12
+Honcho
+Husarz aka Luna
+Hysterical Fox
+idenr
+Ignacio
+Илларион
+Imit4tor
+Indyclone77
+Jimo
+jnzsblzs
+John Baggins
+JustAnotherPonyGuy
+Kajko
+Kaltrop
+Kam
+kelKessel
+King_Wilson
+Kingston
+kirasunnight
+Knifepony
+Knoster
+Kuche
+Lappi
+Leo the Pone
+Lerri
+Lilian
+LiteFire
+Lovenought
+lukeskylicker
+Lumi
+Lunar_Explorator
+Lunu
+Mageytash
+Mara
+MarkipOOn
+Mass
+Mayfly
+Memerskai
+Miltonian
+Mindhawk
+MiszczTheMaste
+MonAx
+Moonatik
+Motley
+Mr. Garion
+Mr. PumzA
+Murena
+Murp
+MustaphaTR
+Myxine
+Nagerleral
+Nathaneal
+NavyMongoose
+NCBlizzard
+Neitherman83
+Nico
+Nidwt
+Niezow
+NuclearWaffles
+Nyatta
+Okami Wolf
+Orion
+Orwell
+Patriotic Pony
+Peko
+Pipsqueak
+Podrick Equus
+porto
+Printik
+Professional Horse
+Psody
+Rafomom
+RainyDay
+Raminy
+Rampant_Dot
+Raptor_Jesus
+Rari
+Red Spark
+Redheart
+Resonant Tonality
+Rich May
+Riley Vinchers
+Rokim21
+Romeo Man
+Rugar
+RyanManDraws
+Sadsaltan
+Sbadkins4 'The Captain'
+Scars
+Sciv888
+Scorg
+SerPounce
+Sesek1
+Shade
+Shalax
+Shalupon
+Shepard
+Sinister
+Snowlet
+Sosninsky
+Sovietych
+Sparkplug
+StanislavivBall
+StDeadRa
+Stemis
+Sunrise
+Sweet Chrysalis
+TechnocommieSparkle();
+Tek
+Telly
+Tempest
+TerrihbahSpehlar
+Thane of Kovdor
+ThatZealousOne
+The 24th Pegasus
+The Infinity Pizza
+The Storm Within
+The_Laundry
+The_Suspect
+TheFuego
+TheGreatPretender
+Thor
+Thymos
+Tiddo
+Twotail813
+Tzyca
+Udy
+Unknown aka Anja
+Upevig
+ValenceWubs
+Valmoric
+Vanilla Swirl
+Vasily
+Venva
+Vexili
+Vizor
+VoidTemplar
+vren55
+weasel1721
+Wells
+Wes
+Wondermane
+Xilg
+Yankee
+yastrom
+ziad5241
+Zimbabwe Salt Co.
+
+#ADDITIONAL ART BY:
+Adagiostring
+Angelo Person
+Ardail
+Aselita Selter
+Assasinmonkey
+Crowseph-Crowstar
+Devinian
+El_Mutanto
+Etherium Apex
+Hetman80
+Itsay
+Jowybean
+Judgement
+Jung yeoll Kim
+Kaiser Sauce
+Kenneth Camaro
+Leo the Pony
+LuxLoser
+Marcus Oriente
+Melcom Lek
+Plainoasis
+PrincessSaros
+Robin Tran
+Setharu
+Stephen Najarian
+Sycreon
+Tsurime
+Lamp
+RyansPlace
+Tallcastle
+Ringwraith
+Yeet
+/u/Goered_Out_Of_My_
+
+#MUSIC BY:
+Acryliks
+Aida Vedischeva
+Armesto
+Artem Yegorov
+Carbon Maestro
+Dashite Song
+David Larsen
+Deceased Superior Technician
+DrDissonance1
+LoreRD
+Neighsayer
+Not a Clever Pony
+Radiarc
+Resonant Tonality
+Zykrath
+
+#SPECIAL THANKS TO:
+Lauren Faust
+Hasbro
+DHX Media
+Paradox Interactive
+Paradox Development Studio
+Greatexperiment
+Eight Years' War of Resistance
+Kaiserreich Team
+ThePinkPanzer
+Cherios
+Thinking Waffle
+Xelacient
+starwarsfan541
+Lemur
+HoI 4 Modding Coop
+All artists and creators whose work has been used
+Our wonderful community

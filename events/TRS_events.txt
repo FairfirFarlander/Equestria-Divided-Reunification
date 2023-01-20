@@ -1,0 +1,220 @@
+add_namespace = TRS_ES
+	country_event = {	#The Lower Houses Show Their Support
+		id = TRS_ES.0001
+		title = TRS_ES.0001.t
+		desc = TRS_ES.0001.d
+		#picture = 
+		is_triggered_only = yes
+		option = { name = TRS_ES.0001.a }
+		option = {
+			name = TRS_ES.0001.r
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event TRS_ES.0001" }
+	}
+	country_event = {	#A Grand Feast
+		id = TRS_ES.0101
+		title = TRS_ES.0101.t
+		desc = TRS_ES.0101.d
+		#picture = 
+		is_triggered_only = yes
+		option = { name = TRS_ES.0101.a }
+		option = {
+			name = TRS_ES.0001.r
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event TRS_ES.0101" }
+	}
+	country_event = {	#The Gathering of the High Nobility
+		id = TRS_ES.0102
+		title = TRS_ES.0102.t
+		desc = TRS_ES.0102.d
+		#picture = 
+		is_triggered_only = yes
+		option = {
+			name = TRS_ES.0102.a
+			country_event = TRS_ES.0103
+		}
+		option = {
+			name = TRS_ES.0001.r
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event TRS_ES.0102" }
+	}
+	country_event = {	#Her Lavander Eminence
+		id = TRS_ES.0103
+		title = TRS_ES.0103.t
+		desc = TRS_ES.0103.d
+		#picture = 
+		is_triggered_only = yes
+		option = { name = TRS_ES.0103.a }
+		option = {
+			name = TRS_ES.0001.r
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event TRS_ES.0103" }
+	}
+	country_event = {	#The Crowning of Aurora
+		id = TRS_ES.0201
+		title = TRS_ES.0201.t
+		desc = TRS_ES.0201.d
+		#picture = 
+		is_triggered_only = yes
+		option = {
+			name = TRS_ES.0201.a
+			country_event = TRS_ES.0202
+		}
+		option = {
+			name = TRS_ES.0001.r
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event TRS_ES.0201" }
+	}
+	country_event = {	#The Crowning of Aurora
+		id = TRS_ES.0202
+		title = TRS_ES.0202.t
+		desc = TRS_ES.0202.d
+		#picture = 
+		is_triggered_only = yes
+		option = {
+			name = TRS_ES.0202.a
+			country_event = TRS_ES.0203
+		}
+		option = {
+			name = TRS_ES.0001.r
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event TRS_ES.0202" }
+	}
+	country_event = {	#The Crowning of Aurora
+		id = TRS_ES.0203
+		title = TRS_ES.0203.t
+		desc = TRS_ES.0203.d
+		#picture = 
+		is_triggered_only = yes
+		option = {
+			name = TRS_ES.0203.a
+			add_stability = 0.1
+			set_cosmetic_tag = TRS_HMS_duchy
+			TRS_duchess_aurora = { set_character_name = TRS_duchess_aurora }
+			swap_ideas = {
+				remove_idea = TRS_blood_throne_1
+				add_idea = TRS_blood_throne_2
+			}
+		}
+		option = {
+			name = TRS_ES.0001.r
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event TRS_ES.0203" }
+	}
+	country_event = {	#The March of the Silver Army
+		id = TRS_ES.0301
+		title = TRS_ES.0301.t
+		desc = TRS_ES.0301.d
+		#picture = 
+		is_triggered_only = yes
+		option = { name = TRS_ES.0301.a }
+		option = {
+			name = TRS_ES.0001.r
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event TRS_ES.0301" }
+	}
+	country_event = {	#The Inquisition Comes To The Duchy
+		id = TRS_ES.0501
+		title = TRS_ES.0501.t
+		desc = TRS_ES.0501.d
+		#picture = 
+		is_triggered_only = yes
+		option = {
+			name = TRS_ES.0501.a
+			country_event = TRS_ES.0502
+		}
+		option = {
+			name = TRS_ES.0001.r
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event TRS_ES.0501" }
+	}
+	country_event = {	#The Inquisition Comes To The Duchy
+		id = TRS_ES.0502
+		title = TRS_ES.0502.t
+		desc = TRS_ES.0502.d
+		#picture = 
+		is_triggered_only = yes
+		option = {
+			name = TRS_ES.0502.a
+			country_event = TRS_ES.0503
+		}
+		option = {
+			name = TRS_ES.0001.r
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event TRS_ES.0502" }
+	}
+	country_event = {	#The Inquisition Comes To The Duchy
+		id = TRS_ES.0503
+		title = TRS_ES.0503.t
+		desc = TRS_ES.0503.d
+		#picture = 
+		is_triggered_only = yes
+		option = { name = TRS_ES.0503.a }
+		option = {
+			name = TRS_ES.0001.r
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event TRS_ES.0503" }
+	}
+	country_event = {	#
+		id = TRS_ES.0601
+		title = TRS_ES.0601.t
+		desc = TRS_ES.0601.d
+		#picture = 
+		is_triggered_only = yes
+		option = { name = TRS_ES.0601.a }
+		option = {
+			name = TRS_ES.0001.r
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event TRS_ES.0601" }
+	}
+	country_event = {	#
+		id = TRS_ES.0602
+		title = TRS_ES.0602.t
+		desc = TRS_ES.0602.d
+		#picture = 
+		is_triggered_only = yes
+		option = { name = TRS_ES.0602.a }
+		option = {
+			name = TRS_ES.0001.r
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event TRS_ES.0602" }
+	}
+	country_event = {	#
+		id = TRS_ES.0603
+		title = TRS_ES.0603.t
+		desc = TRS_ES.0603.d
+		#picture = 
+		is_triggered_only = yes
+		option = { name = TRS_ES.0603.a }
+		option = {
+			name = TRS_ES.0001.r
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event TRS_ES.0603" }
+	}
+	country_event = {	#
+		id = TRS_ES.0604
+		title = TRS_ES.0604.t
+		desc = TRS_ES.0604.d
+		#picture = 
+		is_triggered_only = yes
+		option = { name = TRS_ES.0604.a }
+		option = {
+			name = TRS_ES.0001.r
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event TRS_ES.0604" }
+	}

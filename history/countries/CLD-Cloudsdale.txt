@@ -5,6 +5,7 @@ set_stability=0.5
 set_war_support=0.2
 add_ideas={
 	service_by_requirement
+	outlaw_economy
 	limited_exports
 	agrarian_society
 	lack_of_scientists3

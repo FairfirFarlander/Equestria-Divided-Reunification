@@ -9,9 +9,13 @@ FAI_GATHERING_STORM_DESC: ""
 FAI: "Pondesa"
  FAI_DEF: "the County of Pondesa"
  FAI_ADJ: "Ponderosi"
+ FAI_greater: "Greater Pondesa"
+  FAI_greater_DEF: "the Greater Region of Pondesa"
 ###Political Parties###
 ###Characters###
 ##Leaders##
+FAI_poppy_seed: "Poppy Seed"
+ FAI_pseed_poli_desc: ""
 ##Commanders##
 ##Political Advisors##
 ##Military Advisors##

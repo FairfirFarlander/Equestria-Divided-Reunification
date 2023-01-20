@@ -1,0 +1,13 @@
+division_template={
+	name="Royal Knights"
+	is_locked=yes
+	force_allow_recruiting=yes
+	division_cap=1
+	priority=2
+	template_counter=70
+	regiments={
+		knight={x=0 y=0}
+		knight={x=0 y=1}
+		knight={x=0 y=2}
+	}
+}

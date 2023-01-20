@@ -132,6 +132,11 @@ spritetypes={
 		name="GFX_idea_EMB_queen_narratek"
 		textureFile="gfx/interface/ideas/Advisors/EMB/EMB_queen_narratek.dds"
 	}
+##FAI##
+	spritetype={
+		name="GFX_FAI_poppy_seed"
+		textureFile="gfx/leaders/FAI/FAI_poppy_seed.dds"
+	}
 ##HAH##
 	spritetype={
 		name="GFX_HAH_misty_wisps"

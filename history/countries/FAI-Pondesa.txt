@@ -5,6 +5,7 @@ set_stability=0.5
 set_war_support=0.2
 add_ideas={
 	service_by_requirement
+	outlaw_economy
 	limited_exports
 	agrarian_society
 	lack_of_scientists3
@@ -22,8 +23,18 @@ set_popularities={
 	communism=2
 	neutrality=76
 	democratic=7
-}	#anarchism
+}
 set_politics={ruling_party=neutrality}
 set_country_flag=EDR_is_equestrian_breakaway
-#recruit_character=
+recruit_character=FAI_poppy_seed
 ###NOTES###
+#Pondesa
+#At the End of Their Focus Tree
+#Something that helps their neighbors
+#Focus (Temporary Deals with [Our/The] Devils) and Event to neighbors
+#Salesman (Clergyman) gives news and business offer
+#"Stay out of our borders and we'll sell you weapons".
+#Neighbors can buy weapons for political power.
+#*FF Add an non-aggression pact for the nearby majors? Mainly Stormwing.
+#	Stockpile limited (Cooldown).
+#	Add a chance for neighbors to refuse the tradedeal (HMS sees them as heretics, HSW sees them as rebels, etc...)

@@ -1,7 +1,42 @@
 ideas={
 	country={
+		TRS_blood_throne={
+			picture=STW_absentee
+			modifier={
+				political_power_factor=-0.5
+			}
+		}
+		TRS_blood_throne_1={
+			picture=STW_absentee
+			modifier={
+				political_power_factor=-0.5
+				stability_factor=-0.2
+				neutrality_drift=0.05
+			}
+		}
+		TRS_blood_throne_2={
+			picture=EQS_TNO_pretender_idea
+			modifier={
+				political_power_factor=-0.15
+			}
+		}
+		TRS_blood_throne_3={
+			picture=EQS_TNO_pretender_idea
+			modifier={
+				political_power_gain=0.25
+			}
+		}
+		TRS_trotsylvania={
+			picture=GRW_post_war_desolation
+			modifier={
+				weekly_manpower=-13
+			}
+			research_bonus={
+				unicorn_tech=-0.1
+			}
+		}
 		TRS_olden_ways={
-			#picture=
+			picture=warrior_pony
 			equipment_bonus={
 				infantry_equipment={
 					build_cost_ic=0.075

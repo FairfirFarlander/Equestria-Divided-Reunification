@@ -1,11 +1,15 @@
 #EDR
-TRS_HMS_puppet={
-	color=rgb{153 102 204}
-	color_ui=rgb{153 122 184}
+TRS_HMS_puppet = {
+	color = rgb { 153 102 204 }
+	color_ui = rgb { 153 122 184 }
 }
-HEB_EQS={
-	color=rgb{133 203 97}
-	color_ui=rgb{133 203 97}
+TRS_HMS_duchy = {
+	color = rgb { 153 102 204 }
+	color_ui = rgb { 153 122 184 }
+}
+HEB_EQS = {
+	color = rgb { 133 203 97 }
+	color_ui = rgb { 133 203 97 }
 }
 #EAW
 FAT_Monarchy = {

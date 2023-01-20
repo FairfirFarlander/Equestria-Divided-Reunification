@@ -1,0 +1,28 @@
+characters = {
+	FAI_poppy_seed = {
+		name = FAI_poppy_seed
+		portraits = {
+			civilian = { large = "GFX_FAI_poppy_seed" }
+		}
+		country_leader = {
+			desc = "FAI_pseed_poli_desc"
+			ideology = holy_order_f
+			traits = {}
+		}
+		country_leader = {
+			desc = "FAI_pseed_poli_desc"
+			ideology = conservatism
+			traits = {}
+		}
+		country_leader = {
+			desc = "FAI_pseed_poli_desc"
+			ideology = democratic_socialism
+			traits = {}
+		}
+		country_leader = {
+			desc = "FAI_pseed_poli_desc"
+			ideology = anarchism
+			traits = {}
+		}
+	}
+}
