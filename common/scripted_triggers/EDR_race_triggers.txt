@@ -7,9 +7,11 @@ uses_pony_EQS_portraits = {
 		original_tag=ALI
 		original_tag=BCK
 		original_tag=CHY
+		original_tag=CLD
 		original_tag=COT
 		original_tag=CRL
 		original_tag=CUL
+		original_tag=FAI
 		original_tag=FLY
 		original_tag=FRI
 		original_tag=FSH
@@ -24,7 +26,6 @@ uses_pony_EQS_portraits = {
 		original_tag=LAS
 		original_tag=MSE
 		original_tag=MWC
-		original_tag=TRS
 		original_tag=NIH
 		original_tag=PIE
 		original_tag=PLF
@@ -34,8 +35,10 @@ uses_pony_EQS_portraits = {
 		original_tag=STB
 		original_tag=SWT
 		original_tag=SYV
+		original_tag=TFL
 		original_tag=THA
 		original_tag=TRH
+		original_tag=TRS
 		original_tag=TRT
 		original_tag=VHT
 		original_tag=WTC
@@ -51,9 +54,9 @@ uses_pony_STG_portraits = {
 	original_tag=SGR
 }
 uses_thestral_portraits = {
-	original_tag=THA
-	original_tag=NIH
 	original_tag=FSH
+	original_tag=NIH
+	original_tag=THA
 	original_tag=TRH
 	original_tag=TRS
 }
@@ -63,8 +66,8 @@ uses_changeling_portraits = {
 		original_tag = CCN
 		original_tag = NCH
 		original_tag = MAN
-		original_tag=SOY
 		original_tag=EMB
+		original_tag=SOY
 	}
 }
 uses_dragon_portraits = {
@@ -96,9 +99,11 @@ is_country_main_culture_equestrian = {
 		original_tag=ALI
 		original_tag=BCK
 		original_tag=CHY
+		original_tag=CLD
 		original_tag=COT
 		original_tag=CRL
 		original_tag=CUL
+		original_tag=FAI
 		original_tag=FLY
 		original_tag=FRI
 		original_tag=FSH
@@ -123,6 +128,7 @@ is_country_main_culture_equestrian = {
 		original_tag=STB
 		original_tag=SWT
 		original_tag=SYV
+		original_tag=TFL
 		original_tag=THA
 		original_tag=TRH
 		original_tag=TRT
@@ -179,9 +185,11 @@ is_state_main_culture_equestrian = {
 		is_in_array={state_original_cores=ALI}
 		is_in_array={state_original_cores=BCK}
 		is_in_array={state_original_cores=CHY}
+		is_in_array={state_original_cores=CLD}
 		is_in_array={state_original_cores=COT}
 		is_in_array={state_original_cores=CRL}
 		is_in_array={state_original_cores=CUL}
+		is_in_array={state_original_cores=FAI}
 		is_in_array={state_original_cores=FLY}
 		is_in_array={state_original_cores=FRI}
 		is_in_array={state_original_cores=FSH}
@@ -206,6 +214,7 @@ is_state_main_culture_equestrian = {
 		is_in_array={state_original_cores=STB}
 		is_in_array={state_original_cores=SWT}
 		is_in_array={state_original_cores=SYV}
+		is_in_array={state_original_cores=TFL}
 		is_in_array={state_original_cores=THA}
 		is_in_array={state_original_cores=TRH}
 		is_in_array={state_original_cores=TRT}
@@ -245,9 +254,11 @@ is_operative_main_culture_equestrian = {
 		has_nationality=ALI
 		has_nationality=BCK
 		has_nationality=CHY
+		has_nationality=CLD
 		has_nationality=COT
 		has_nationality=CRL
 		has_nationality=CUL
+		has_nationality=FAI
 		has_nationality=FLY
 		has_nationality=FRI
 		has_nationality=FSH
@@ -272,6 +283,7 @@ is_operative_main_culture_equestrian = {
 		has_nationality=STB
 		has_nationality=SWT
 		has_nationality=SYV
+		has_nationality=TFL
 		has_nationality=THA
 		has_nationality=TRH
 		has_nationality=TRT

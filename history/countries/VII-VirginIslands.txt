@@ -10,7 +10,6 @@ add_ideas={
 }
 set_technology={
 	dragon_race=1
-	griffon_race=1
 	melee_weapons=1
 	melee_weapons1=1
 	tech_support=1
