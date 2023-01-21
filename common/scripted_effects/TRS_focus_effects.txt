@@ -1,0 +1,81 @@
+TRS_M04C_effect = {
+	custom_effect_tooltip = TRS_M04C_effect_tooltip
+	hidden_effect = {
+		56 = {
+			add_building_construction = {
+				type = bunker
+				province = 6163
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 9167
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 67
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 9226
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 3193
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 192
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 3179
+				level = 1
+				instant_build = yes
+			}
+		}
+		102 = {
+			add_building_construction = {
+				type = bunker
+				province = 148
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 173
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 3044
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 6067
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 118
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}

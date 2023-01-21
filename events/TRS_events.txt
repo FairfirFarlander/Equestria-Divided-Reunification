@@ -166,20 +166,23 @@ add_namespace = TRS_ES
 		}
 		immediate = { log = "[GetDateText]: [Root.GetName]: event TRS_ES.0503" }
 	}
-	country_event = {	#
+	country_event = {	#A Meeting With Inquisitor Swirl
 		id = TRS_ES.0601
 		title = TRS_ES.0601.t
 		desc = TRS_ES.0601.d
 		#picture = 
 		is_triggered_only = yes
-		option = { name = TRS_ES.0601.a }
+		option = {
+			name = TRS_ES.0601.a
+			country_event = TRS_ES.0602
+		}
 		option = {
 			name = TRS_ES.0001.r
 			trigger = { is_debug = yes }
 		}
 		immediate = { log = "[GetDateText]: [Root.GetName]: event TRS_ES.0601" }
 	}
-	country_event = {	#
+	country_event = {	#A Meeting With Inquisitor Swirl
 		id = TRS_ES.0602
 		title = TRS_ES.0602.t
 		desc = TRS_ES.0602.d
@@ -192,20 +195,23 @@ add_namespace = TRS_ES
 		}
 		immediate = { log = "[GetDateText]: [Root.GetName]: event TRS_ES.0602" }
 	}
-	country_event = {	#
+	country_event = {	#A Meeting With Inquisitor Phantasm
 		id = TRS_ES.0603
 		title = TRS_ES.0603.t
 		desc = TRS_ES.0603.d
 		#picture = 
 		is_triggered_only = yes
-		option = { name = TRS_ES.0603.a }
+		option = {
+			name = TRS_ES.0603.a
+			country_event = TRS_ES.0604
+		}
 		option = {
 			name = TRS_ES.0001.r
 			trigger = { is_debug = yes }
 		}
 		immediate = { log = "[GetDateText]: [Root.GetName]: event TRS_ES.0603" }
 	}
-	country_event = {	#
+	country_event = {	#A Meeting With Inquisitor Phantasm
 		id = TRS_ES.0604
 		title = TRS_ES.0604.t
 		desc = TRS_ES.0604.d
