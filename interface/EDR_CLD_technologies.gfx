@@ -1,0 +1,31 @@
+spriteTypes={
+##Aircraft##
+	SpriteType={
+		name="GFX_CLD_airships1_medium"
+		texturefile="gfx/interface/technologies/NIM_cloud_carrier.dds"
+	}
+	SpriteType={
+		name="GFX_CLD_airship_airframes_medium"
+		texturefile="gfx/interface/technologies/NIM_cloud_carrier.dds"
+	}
+	SpriteType={
+		name="GFX_CLD_medium_airship_equipment_0_medium"
+		texturefile="gfx/interface/technologies/NIM_cloud_carrier.dds"
+	}
+	SpriteType={
+		name="GFX_CLD_medium_airship_airframe_0_medium"
+		texturefile="gfx/interface/technologies/NIM_cloud_carrier.dds"
+	}
+	SpriteType={
+		name="GFX_CLD_heavy_airship_equipment_0_medium"
+		texturefile="gfx/interface/technologies/NIM_cloud_carrier.dds"
+	}
+	SpriteType={
+		name="GFX_CLD_large_airship_airframe_0_medium"
+		texturefile="gfx/interface/technologies/NIM_cloud_carrier.dds"
+	}
+	SpriteType={
+		name="GFX_CLD_maritime_airship_2_medium"
+		texturefile="gfx/interface/technologies/NIM_cloud_carrier.dds"
+	}
+}

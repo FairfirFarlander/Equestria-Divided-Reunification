@@ -1,7 +1,9 @@
 bookmarks={
 	bookmark={
-		name="GATHERING_STORM_NAME"	desc="GATHERING_STORM_DESC"
-		date=1012.1.1.06	picture="GFX_select_date_1936"
+		name="GATHERING_STORM_NAME"
+		desc="GATHERING_STORM_DESC"
+		date=1007.1.1.12	#Year/Month/Day/Hour
+		picture="GFX_select_date_1936"
 		default_country="HMS"	default=yes
 		#Equs (Top-Row)
 		"HMS"={	#House Moon and Star

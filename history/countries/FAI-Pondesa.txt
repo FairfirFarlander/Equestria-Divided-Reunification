@@ -1,5 +1,5 @@
 capital=95
-#oob="FAI_1012"
+oob="FAI_07"
 set_research_slots=2
 set_stability=0.5
 set_war_support=0.2

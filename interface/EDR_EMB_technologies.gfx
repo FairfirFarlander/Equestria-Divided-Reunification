@@ -1,51 +1,6 @@
 spriteTypes={
-	#EMB_infantry#
-	spriteType={	#Primative_Weapons#
-		name="GFX_EMB_melee_weapons1_medium"
-		texturefile="gfx/interface/technologies/CHN_musket.dds"
-	}
-	spriteType={	#Infantry_Weapons#
-		name="GFX_EMB_infantry_weapons_medium"
-		texturefile="gfx/interface/technologies/CHN_infantry_equipment_1.dds"
-	}
+##Motorised##
 	spriteType={
-		name="GFX_EMB_infantry_weapons1_medium"
-		texturefile="gfx/interface/technologies/CHN_infantry_equipment_2.dds"
-	}
-	spriteType={
-		name="GFX_EMB_improved_infantry_weapons_medium"
-		texturefile="gfx/interface/technologies/CHN_infantry_equipment_3.dds"
-	}
-	spriteType={
-		name="GFX_EMB_advanced_infantry_weapons_medium"
-		texturefile="gfx/interface/technologies/CHN_infantry_equipment_4.dds"
-	}
-	spriteType={
-		name="GFX_EMB_advanced_infantry_weapons_b_medium"
-		texturefile="gfx/interface/technologies/CHN_infantry_equipment_5.dds"
-	}
-	spriteType={
-		name="GFX_EMB_advanced_infantry_weapons_e_medium"
-		texturefile="gfx/interface/technologies/CHN_infantry_equipment_6.dds"
-	}
-	spriteType={	#Magical_Weapons#
-		name="GFX_EMB_magical_weapons_medium"
-		texturefile="gfx/interface/technologies/CHN_magical_equipment_1.dds"
-	}
-	spriteType={
-		name="GFX_EMB_magical_weapons1_medium"
-		texturefile="gfx/interface/technologies/CHN_magical_equipment_2.dds"
-	}
-	spriteType={
-		name="GFX_EMB_magical_weapons2_medium"
-		texturefile="gfx/interface/technologies/CHN_magical_equipment_3.dds"
-	}
-	spriteType={
-		name="GFX_EMB_magical_weapons3_medium"
-		texturefile="gfx/interface/technologies/CHN_magical_equipment_4.dds"
-	}
-	#EMB_motorized-mechanized#
-	spriteType={	#Motorized#
 		name="GFX_EMB_motorised_infantry_medium"
 		texturefile="gfx/interface/technologies/NCH_improir.dds"
 	}
@@ -57,7 +12,7 @@ spriteTypes={
 		name="GFX_EMB_motorized_rocket_unit_medium"
 		texturefile="gfx/interface/technologies/arm_GER_motorized_rocket_equipment_Sdkfz4.dds"
 	}
-	spriteType={	#Mechanized#
+	spriteType={
 		name="GFX_EMB_mechanised_infantry_medium"
 		texturefile="gfx/interface/technologies/NCH_trupai_1.dds"
 	}
@@ -77,7 +32,7 @@ spriteTypes={
 		name="GFX_EMB_mechanised_infantry_b_medium"
 		texturefile="gfx/interface/technologies/NCH_athchoirithe.dds"
 	}
-	spriteType={	#Amtracks#
+	spriteType={
 		name="GFX_EMB_amphibious_mechanized_infantry_medium"
 		texturefile="gfx/interface/technologies/NCH_oibri.dds"
 	}
@@ -97,7 +52,8 @@ spriteTypes={
 		name="GFX_EMB_amphibious_mechanized_infantry_5_medium"
 		texturefile="gfx/interface/technologies/NCH_bo_mhara.dds"
 	}
-	spriteType={	#Armoured Cars#
+##Armoured Cars##
+	spriteType={
 		name="GFX_EMB_armored_car1_medium"
 		texturefile="gfx/interface/technologies/NCH_freamshail.dds"
 	}

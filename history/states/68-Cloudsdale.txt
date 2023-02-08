@@ -10,6 +10,7 @@ state={	#EDRSTATE
 		victory_points={11672 3}	#15
 		buildings={
 			infrastructure=2
+			arms_factory=1
 		}
 	}
 }

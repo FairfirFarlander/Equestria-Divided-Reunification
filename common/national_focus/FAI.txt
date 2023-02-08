@@ -1,0 +1,485 @@
+focus_tree = {
+	id = FAI
+	country = {
+		factor = 0
+		modifier = {
+			tag = FAI
+			add = 3
+		}
+	}
+	continuous_focus_position = { x = 10 y = -400 }
+	shared_focus = FAI_S00
+}
+focus_tree = {
+	id = FAI_debug
+	country = {
+		factor = 0
+		modifier = {
+			is_debug = yes
+			tag = FAI
+			add = 5
+		}
+	}
+	continuous_focus_position = { x = 10 y = -400 }
+	shared_focus = FAI_S00
+}
+##StoryTree
+	shared_focus = {	#What We Must Do to Survive
+		id = FAI_S00
+		#icon = 
+		x = 0 y = 0 cost = 1
+		search_filters = {  }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: focus FAI_S00"
+			custom_effect_tooltip = FAI_S00_effect_tooltip
+		}
+	}
+	shared_focus = {	#Firing Up Old Factories
+		id = FAI_S01A
+		#icon = 
+		x = -1 y = 1 cost = 2 relative_position_id = FAI_S00
+		search_filters = {  }
+		prerequisite = { focus = FAI_S00 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: focus FAI_S01A"
+			99 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	shared_focus = {	#The Guns of the Congregation
+		id = FAI_S01B
+		#icon = 
+		x = 1 y = 1 cost = 2 relative_position_id = FAI_S00
+		search_filters = {  }
+		prerequisite = { focus = FAI_S00 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: focus FAI_S01B"
+			95 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	shared_focus = {	#Radios in Every Home and On Every Street Corner
+		id = FAI_S02A
+		#icon = 
+		x = 0 y = 1 cost = 5 relative_position_id = FAI_S01A
+		search_filters = {  }
+		prerequisite = { focus = FAI_S01A }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: focus FAI_S02A"
+			set_technology = {
+				radio = 1
+			}
+		}
+	}
+	shared_focus = {	#Homegrown Innovations
+		id = FAI_S02B
+		#icon = 
+		x = 0 y = 1 cost = 5 relative_position_id = FAI_S01B
+		search_filters = {  }
+		prerequisite = { focus = FAI_S01B }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: focus FAI_S02B"
+			add_tech_bonus = {
+				name = infantry_bonus
+				category = infantry_weapons
+				bonus = 1
+				uses = 1
+			}
+		}
+	}
+	shared_focus = {	#Boosting the Signal
+		id = FAI_S03A
+		#icon = 
+		x = -2 y = 3 cost = 5 relative_position_id = FAI_S00
+		search_filters = {  }
+		prerequisite = { focus = FAI_S02A }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: focus FAI_S03A"
+			CLD = {
+				add_ideas = FAI_radio_preacher
+			}
+			TFL = {
+				add_ideas = FAI_radio_preacher
+			}
+		}
+	}
+	shared_focus = {	#They'll Come Loud and They'll Come Fast
+		id = FAI_S03B
+		#icon = 
+		x = 0 y = 3 cost = 5 relative_position_id = FAI_S00
+		search_filters = {  }
+		prerequisite = { focus = FAI_S02A }
+		prerequisite = { focus = FAI_S02B }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: focus FAI_S03B"
+			if = {
+				limit = { has_idea = FAI_rifle_by_side }
+				add_ideas = FAI_vigilant_flock
+				else = {
+					add_ideas = FAI_vigilance_at_home
+				}
+			}
+		}
+	}
+	shared_focus = {	#Keep A Rifle By Your Side
+		id = FAI_S03C
+		#icon = 
+		x = 2 y = 3 cost = 5 relative_position_id = FAI_S00
+		search_filters = {  }
+		prerequisite = { focus = FAI_S02A }
+		prerequisite = { focus = FAI_S02B }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: focus FAI_S03C"
+			if = {
+				limit = { has_idea = FAI_vigilance_at_home }
+				add_ideas = FAI_vigilant_flock
+				else = {
+					add_ideas = FAI_rifle_by_side
+				}
+			}
+		}
+	}
+	shared_focus = {	#The Sharing of Poppy's Knowledge
+		id = FAI_S04A
+		#icon = 
+		x = 0 y = 2 cost = 5 relative_position_id = FAI_S02A
+		search_filters = {  }
+		prerequisite = { focus = FAI_S03A }
+		prerequisite = { focus = FAI_S03B }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: focus FAI_S04A"
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				category = cat_grand_battle_plan
+				cost_reduction = 0.82
+				uses = 1
+			}
+		}
+	}
+	shared_focus = {	#To Let the Faithful Be Closer to the Sisters
+		id = FAI_S04B
+		#icon = 
+		x = 0 y = 2 cost = 5 relative_position_id = FAI_S02B
+		search_filters = {  }
+		prerequisite = { focus = FAI_S03B }
+		prerequisite = { focus = FAI_S03C }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: focus FAI_S04B"
+			95 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_dlc = "By Blood Alone" }
+				set_technology = { iw_small_airframe = 1 }
+				generic_early_fighter = yes
+				add_equipment_to_stockpile = {
+					type = small_plane_airframe_0
+					variant_name = "Early Fighter"
+					amount = 30
+				}
+				else = {
+					set_technology = { early_fighter = 1 }
+					add_equipment_to_stockpile = {
+						type = fighter_equipment_1
+						amount 30
+					}
+				}
+			}
+		}
+	}
+	shared_focus = {	#The Sisters' Most Devoted Servants
+		id = FAI_S05
+		#icon = 
+		x = 0 y = 2 cost = 5 relative_position_id = FAI_S03B
+		search_filters = {  }
+		prerequisite = { focus = FAI_S04A }
+		prerequisite = { focus = FAI_S04B }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: focus FAI_S05"
+			hidden_effect = { load_oob = FAI_S05_royal_guard }
+			custom_effect_tooltip = FAI_S05_effect_tooltip
+		}
+	}
+	shared_focus = {	#The Sinners to Our South
+		id = FAI_S06A
+		#icon = 
+		x = -1 y = 1 cost = 5 relative_position_id = FAI_S05
+		search_filters = {  }
+		prerequisite = { focus = FAI_S05 }
+		available = { is_subject = no }
+		bypass = {
+			TFL = {
+				OR = {
+					has_war_with = ROOT
+					OR = {
+						exists = no
+						is_subject_of = ROOT 
+						is_in_faction_with = ROOT
+					}
+				}
+			}
+		}
+		will_lead_to_war_with = TFL
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: focus FAI_S06A"
+			create_wargoal = {
+				type = annex_everything
+				target = TFL
+			}
+		}
+	}
+	shared_focus = {	#The Heathens to the East
+		id = FAI_S06B
+		#icon = 
+		x = 1 y = 1 cost = 5 relative_position_id = FAI_S05
+		search_filters = {  }
+		prerequisite = { focus = FAI_S05 }
+		available = { is_subject = no }
+		bypass = {
+			CLD = {
+				OR = {
+					has_war_with = ROOT
+					OR = {
+						exists = no
+						is_subject_of = ROOT 
+						is_in_faction_with = ROOT
+					}
+				}
+			}
+		}
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: focus FAI_S06B"
+			create_wargoal = {
+				type = annex_everything
+				target = CLD
+			}
+		}
+	}
+	shared_focus = {	#A New Use for the Tools of Sinners
+		id = FAI_S07A
+		#icon = 
+		x = 0 y = 1 cost = 5 relative_position_id = FAI_S06A
+		search_filters = {  }
+		prerequisite = { focus = FAI_S06A }
+		available = {
+			TFL = {
+				OR = {
+					exists = no
+					AND = {
+						exists = yes
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+		bypass = {
+			TFL = { exists = no }
+			119 = {
+				is_core_of = TFL
+				NOT = { owns_or_subject_of = yes }
+			}
+			114 = {
+				is_core_of = TFL
+				NOT = { owns_or_subject_of = yes }
+			}
+		}
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: focus FAI_S07A"
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+				producer = TFL
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 200
+				producer = TFL
+			}
+			if = {
+				limit = { has_dlc = "No Step Back" }
+				set_technology = { gwtank_chassis = 1 }
+				create_equipment_variant={
+					name="M1-13 Applesauce (S)"
+					type=light_tank_chassis_0
+					modules={
+						main_armament_slot=tank_heavy_machine_gun
+						turret_type_slot=tank_light_one_man_tank_turret
+						suspension_type_slot=tank_bogie_suspension
+						armor_type_slot=tank_riveted_armor
+						engine_type_slot=tank_gasoline_engine
+					}
+				}
+				hidden_effect = { set_oob = FAI_S07A_TFL_tank_nsb }
+				else = {
+					set_technology = { gwtank = 1 }
+					hidden_effect = { set_oob = FAI_S07A_TFL_tank }
+				}
+			}
+			custom_effect_tooltip = FAI_S07A_effect_tooltip
+		}
+	}
+	shared_focus = {	#The Hedonistic Gift
+		id = FAI_S07B
+		#icon = 
+		x = 0 y = 1 cost = 5 relative_position_id = FAI_S06B
+		search_filters = {  }
+		prerequisite = { focus = FAI_S06B }
+		bypass = {
+			CLD = { exists = no }
+			68 = {
+				is_core_of = CLD
+				NOT = { owns_or_subject_of = yes }
+			}
+			101 = {
+				is_core_of = CLD
+				NOT = { owns_or_subject_of = yes }
+			}
+		}
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: focus FAI_S07B"
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = CLD
+			}
+			if = {
+				limit = { has_dlc = "By Blood Alone" }
+				set_technology = {
+					iw_small_airframe = 1
+					basic_small_airframe = 1
+					early_bombs = 1
+					aa_lmg = 1
+					engines_1 = 1
+					engines_2 = 1
+				}
+				create_equipment_variant = {
+					name = "Hawker Hurricane (CAS)"
+					type = small_plane_airframe_1
+					modules = {
+						fixed_main_weapon_slot = bomb_locks
+						fixed_auxiliary_weapon_slot_1 = light_mg_4x
+						engine_type_slot = engine_2_1x
+					}
+				}
+				else = {
+					set_technology = {
+						early_fighter = 1
+						CAS1 = 1
+					}
+				}
+			}
+		}
+	}
+	shared_focus = {	#To Deal with the Heathens and Sinners
+		id = FAI_S08
+		#icon = 
+		x = 0 y = 3 cost = 5 relative_position_id = FAI_S05
+		search_filters = {  }
+		prerequisite = { focus = FAI_S07A }
+		prerequisite = { focus = FAI_S07B }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: focus FAI_S08"
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = CLD
+						is_core_of = TFL
+					}
+				}
+				remove_core_of = CLD
+				remove_core_of = TFL
+				add_core_of = FAI
+				add_manpower = -5000
+			}
+		}
+	}
+	shared_focus = {	#The One True Home for the Faithful
+		id = FAI_S09
+		#icon = 
+		x = 0 y = 1 cost = 5 relative_position_id = FAI_S08
+		search_filters = {  }
+		prerequisite = { focus = FAI_S08 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: focus FAI_S09"
+			set_cosmetic_tag = FAI_greater
+			add_ideas = closed_economy
+			add_stability=0.2
+		}
+	}
+	shared_focus = {	#Heaven's Gates
+		id = FAI_S10
+		#icon = 
+		x = 0 y = 1 cost = 5 relative_position_id = FAI_S09
+		search_filters = {  }
+		prerequisite = { focus = FAI_S09 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: focus FAI_S10"
+			99 = {
+				add_building_construction = {
+					type = bunker
+					province = 11414
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 1655
+					level = 1
+					instant_build = yes
+				}
+			}
+			68 = {
+				add_building_construction = {
+					type = bunker
+					province = 3961
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	shared_focus = {	#
+		id = FAI_S0
+		#icon = 
+		x = 0 y = 2 cost = 5 relative_position_id = FAI_S0
+		search_filters = {  }
+		#prerequisite = { focus = FAI_ }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: focus FAI_S0"
+		}
+	}

@@ -1,3 +1,3 @@
 graphical_culture=commonwealth_gfx
-graphical_culture_2d=eastern_european_2d
+graphical_culture_2d=equestrian_2d
 color={50 141 61}

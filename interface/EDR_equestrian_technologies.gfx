@@ -1,0 +1,842 @@
+spriteTypes = {
+##Generic Advisors##
+	spriteType = {
+		name = "GFX_idea_generic_communist_revolutionary_equestrian_2d"
+		texturefile = "gfx/interface/ideas/idea_unknown_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_democratic_reformer_equestrian_2d"
+		texturefile = "gfx/interface/ideas/idea_unknown_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_fascist_demagogue_equestrian_2d"
+		texturefile = "gfx/interface/ideas/idea_unknown_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_captain_of_industry_equestrian_2d"
+		texturefile = "gfx/interface/ideas/idea_unknown_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_fortification_engineer_equestrian_2d"
+		texturefile = "gfx/interface/ideas/idea_unknown_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_war_industrialist_equestrian_2d"
+		texturefile = "gfx/interface/ideas/idea_unknown_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_army_chief_off_equestrian_2d"
+		texturefile = "gfx/interface/ideas/idea_unknown_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_army_chief_def_equestrian_2d"
+		texturefile = "gfx/interface/ideas/idea_unknown_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_navy_chief_decisive_bat_equestrian_2d"
+		texturefile = "gfx/interface/ideas/idea_unknown_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_navy_anti_submarine_equestrian_2d"
+		texturefile = "gfx/interface/ideas/idea_unknown_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_air_close_air_sup_equestrian_2d"
+		texturefile = "gfx/interface/ideas/idea_unknown_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_army_art_equestrian_2d"
+		texturefile = "gfx/interface/ideas/idea_unknown_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_army_log_equestrian_2d"
+		texturefile = "gfx/interface/ideas/idea_unknown_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_navy_fleet_log_equestrian_2d"
+		texturefile = "gfx/interface/ideas/idea_unknown_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_air_air_combat_trainer_equestrian_2d"
+		texturefile = "gfx/interface/ideas/idea_unknown_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_military_theorist_equestrian_2d"
+		texturefile = "gfx/interface/ideas/idea_unknown_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_naval_theorist_equestrian_2d"
+		texturefile = "gfx/interface/ideas/idea_unknown_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_air_warfare_theorist_equestrian_2d"
+		texturefile = "gfx/interface/ideas/idea_unknown_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_air_chief_all_weather_equestrian_2d"
+		texturefile = "gfx/interface/ideas/idea_unknown_advisor.dds"
+	}
+##Infantry Weapons##
+	spriteType = {
+		name = "GFX_equestrian_2d_melee_weapons_medium"
+		texturefile = "gfx/interface/technologies/EQS_melee_weapons.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_melee_weapons1_medium"
+		texturefile = "gfx/interface/technologies/EQS_melee_weapons1.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/EQS_infantry_equipment_0.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/EQS_infantry_equipment_1.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/EQS_infantry_equipment_2.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/EQS_infantry_equipment_3.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_advanced_infantry_weapons_b_medium"
+		texturefile = "gfx/interface/technologies/EQS_infantry_equipment_4.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_advanced_infantry_weapons_e_medium"
+		texturefile = "gfx/interface/technologies/EQS_infantry_equipment_5.dds"
+	}
+##Magical Weapons##
+	spriteType = {
+		name = "GFX_equestrian_2d_magical_weapons_medium"
+		texturefile = "gfx/interface/technologies/EQS_magical_equipment_1.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_magical_weapons1_medium"
+		texturefile = "gfx/interface/technologies/EQS_magical_equipment_2.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_magical_weapons2_medium"
+		texturefile = "gfx/interface/technologies/EQS_magical_equipment_3.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_magical_weapons3_medium"
+		texturefile = "gfx/interface/technologies/EQS_magical_equipment_4.dds"
+	}
+##Motorized##
+	spriteType = {
+		name = "GFX_equestrian_2d_motorised_infantry_medium"
+		texturefile = "gfx/interface/technologies/EQS_motorized_equipment_1.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/EQS_motorized_equipment_1.dds"
+	}
+##Armoured Cars##
+	spriteType = {
+		name = "GFX_equestrian_2d_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/eng_armored_car_equipment_1.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/eng_armored_car_equipment_2.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/eng_armored_car_equipment_3.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/eng_armored_car_at_equipment.dds"
+	}
+##Support Equipment##
+	SpriteType = {
+		name = "GFX_equestrian_2d_tech_support_medium"
+		texturefile = "gfx/interface/technologies/EQS_support_equipment_1.tga"
+	}
+##Trains##
+	spriteType = {
+		name = "GFX_equestrian_2d_basic_train_medium"
+		texturefile = "gfx/interface/technologies/ENG_train_equipment_1.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_wartime_train_medium"
+		texturefile = "gfx/interface/technologies/ENG_train_equipment_2.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_railway_gun_medium"
+		texturefile = "gfx/interface/technologies/ENG_railway_gun.dds"
+	}
+##Tanks##
+	spriteType = {
+		name = "GFX_equestrian_2d_amphibious_tank_medium"
+		texturefile = "gfx/interface/technologies/EQS_amphibious_tank.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_amphibious_tank_2_medium"
+		texturefile = "gfx/interface/technologies/EQS_amphibious_tank2.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_amphibious_tank_3_medium"
+		texturefile = "gfx/interface/technologies/EQS_amphibious_tank3.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_amphibious_tank_4_medium"
+		texturefile = "gfx/interface/technologies/EQS_amphibious_tank3.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_amphibious_tank_5_medium"
+		texturefile = "gfx/interface/technologies/EQS_amphibious_tank3.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_gwtank_medium"
+		texturefile = "gfx/interface/technologies/EQS_armoured_tractor.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_improved_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/EQS_cromwell.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_basic_light_tank_medium"
+		texturefile = "gfx/interface/technologies/EQS_breezie_n.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_improved_light_tank_medium"
+		texturefile = "gfx/interface/technologies/EQS_muletilda_n.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_advanced_light_tank_medium"
+		texturefile = "gfx/interface/technologies/EQS_cmcrusader.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_advanced_light_tank_a_medium"
+		texturefile = "gfx/interface/technologies/EQS_scorpion_light_tank.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_advanced_light_tank_b_medium"
+		texturefile = "gfx/interface/technologies/EQS_a46.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_basic_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/EQS_timberwolf.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_advanced_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/EQS_comet.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_main_battle_tank_medium"
+		texturefile = "gfx/interface/technologies/EQS_modern_tank.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_main_battle_tank_a_medium"
+		texturefile = "gfx/interface/technologies/EQS_centurion_mk3.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_main_battle_tank_b_medium"
+		texturefile = "gfx/interface/technologies/EQS_centurion_mk5.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_main_battle_tank_c_medium"
+		texturefile = "gfx/interface/technologies/EQS_centurion_mk6.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_main_battle_tank_d_medium"
+		texturefile = "gfx/interface/technologies/EQS_centurion_mk10.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_main_battle_tank_e_medium"
+		texturefile = "gfx/interface/technologies/EQS_centurion_t95.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_improved_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/EQS_churchill.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_advanced_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/EQS_black_prince.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_basic_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/EQS_independent.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_super_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/EQS_tortoise.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_super_heavy_tank_a_medium"
+		texturefile = "gfx/interface/technologies/EQS_conqueror.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_super_heavy_tank_b_medium"
+		texturefile = "gfx/interface/technologies/EQS_fv215.dds"
+	}
+#NSB Tanks
+	spriteType = {
+		name = "GFX_equestrian_2d_gwtank_chassis_medium"
+		texturefile = "gfx/interface/technologies/EQS_armoured_tractor.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_basic_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/EQS_breezie_n.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_improved_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/EQS_muletilda_n.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_advanced_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/EQS_cmcrusader.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_semi_modern_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/EQS_scorpion_light_tank.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_modern_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/EQS_a46.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_amphibious_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/EQS_amphibious_tank.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_basic_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/EQS_timberwolf.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_improved_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/EQS_cromwell.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_advanced_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/EQS_comet.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_basic_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/EQS_independent.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_improved_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/EQS_churchill.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_advanced_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/EQS_black_prince.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_super_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/EQS_tortoise.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_super_heavy_tank_chassis_b_medium"
+		texturefile = "gfx/interface/technologies/EQS_conqueror.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_super_heavy_tank_chassis_c_medium"
+		texturefile = "gfx/interface/technologies/EQS_fv215.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_main_battle_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/EQS_modern_tank.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_main_battle_tank_chassis_b_medium"
+		texturefile = "gfx/interface/technologies/EQS_centurion_mk5.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_main_battle_tank_chassis_c_medium"
+		texturefile = "gfx/interface/technologies/EQS_centurion_t95.dds"
+	}
+##Naval Sprites##
+	spriteType = {
+		name = "GFX_equestrian_2d_early_submarine_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_submarine1.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_early_ship_hull_submarine_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_submarine1.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_basic_submarine_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_submarine2.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_basic_ship_hull_submarine_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_submarine2.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_improved_submarine_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_submarine3.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_improved_ship_hull_submarine_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_submarine3.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_advanced_submarine_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_submarine4.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_advanced_ship_hull_submarine_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_submarine4.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_early_destroyer_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_destroyer1.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_early_ship_hull_light_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_destroyer1.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_basic_destroyer_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_destroyer2.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_basic_ship_hull_light_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_destroyer2.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_improved_destroyer_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_destroyer3.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_improved_ship_hull_light_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_destroyer3.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_advanced_destroyer_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_destroyer4.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_advanced_ship_hull_light_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_destroyer4.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_early_light_cruiser_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_light_cruiser1.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_early_ship_hull_cruiser_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_light_cruiser1.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_ship_hull_cruiser_1_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_light_cruiser1.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_basic_light_cruiser_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_light_cruiser2.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_ship_hull_cruiser_2_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_light_cruiser2.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_improved_light_cruiser_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_light_cruiser3.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_ship_hull_cruiser_3_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_light_cruiser3.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_advanced_light_cruiser_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_light_cruiser4.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_ship_hull_cruiser_4_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_light_cruiser4.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_early_light_cruiser_capital_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_heavy_cruiser1.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_early_heavy_cruiser_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_heavy_cruiser1.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_ship_hull_cruiser_1_capital_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_heavy_cruiser1.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_basic_light_cruiser_capital_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_heavy_cruiser2.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_basic_heavy_cruiser_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_heavy_cruiser2.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_basic_ship_hull_cruiser_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_heavy_cruiser2.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_ship_hull_cruiser_2_capital_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_heavy_cruiser2.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_improved_light_cruiser_capital_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_heavy_cruiser3.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_improved_heavy_cruiser_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_heavy_cruiser3.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_improved_ship_hull_cruiser_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_heavy_cruiser3.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_ship_hull_cruiser_3_capital_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_heavy_cruiser3.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_advanced_light_cruiser_capital_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_heavy_cruiser4.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_advanced_heavy_cruiser_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_heavy_cruiser4.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_advanced_ship_hull_cruiser_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_heavy_cruiser4.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_ship_hull_cruiser_4_capital_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_heavy_cruiser4.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_early_battlecruiser_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_battlecruiser1.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_basic_battlecruiser_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_battlecruiser2.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_early_battleship_medium"
+		texturefile = "gfx/interface/technologies/ships/custom_ships/EQS_battleship1.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_early_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/ships/custom_ships/EQS_battleship1.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_basic_battleship_medium"
+		texturefile = "gfx/interface/technologies/ships/custom_ships/EQS_battleship2.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_basic_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/ships/custom_ships/EQS_battleship2.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_improved_battleship_medium"
+		texturefile = "gfx/interface/technologies/ships/custom_ships/EQS_battleship3.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_improved_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/ships/custom_ships/EQS_battleship3.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_advanced_battleship_medium"
+		texturefile = "gfx/interface/technologies/ships/custom_ships/EQS_battleship4.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_advanced_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/ships/custom_ships/EQS_battleship4.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_heavy_battleship_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_heavy_battleship1.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_ship_hull_super_heavy_1_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_heavy_battleship1.dds"
+	}
+		
+	spriteType = {
+		name = "GFX_equestrian_2d_heavy_battleship2_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_heavy_battleship2.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_ship_hull_carrier_conversion_ca_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_carrier_conversion_ca.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_early_light_carrier_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_carrier_conversion_ca.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_early_carrier_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_carrier1.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_early_ship_hull_carrier_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_carrier1.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_early_light_carrier_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_carrier_conversion_ca.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_basic_carrier_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_carrier2.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_basic_ship_hull_carrier_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_carrier2.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_improved_carrier_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_carrier3.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_improved_ship_hull_carrier_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_carrier3.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_advanced_carrier_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_carrier4.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_advanced_ship_hull_carrier_medium"
+		texturefile = "gfx/interface/technologies/ships/ENG_carrier4.dds"
+	}
+##Aircraft##
+	spriteType = {
+		name = "GFX_equestrian_2d_airships1_medium"
+		texturefile = "gfx/interface/technologies/aircraft/airship_light.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_airship_airframes_medium"
+		texturefile = "gfx/interface/technologies/aircraft/airship_light.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_medium_airship_equipment_0_medium"
+		texturefile = "gfx/interface/technologies/aircraft/airship_light.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_medium_airship_airframe_0_medium"
+		texturefile = "gfx/interface/technologies/aircraft/airship_light.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_heavy_airship_equipment_0_medium"
+		texturefile = "gfx/interface/technologies/aircraft/airship_heavy.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_large_airship_airframe_0_medium"
+		texturefile = "gfx/interface/technologies/aircraft/airship_heavy.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_maritime_airship_2_medium"
+		texturefile = "gfx/interface/technologies/aircraft/airship_maritime.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_CAS1_medium"
+		texturefile = "gfx/interface/technologies/EQS_hurricane_mk5.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_CAS2_medium"
+		texturefile = "gfx/interface/technologies/ENG_CAS2.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_CAS3_medium"
+		texturefile = "gfx/interface/technologies/ENG_CAS3.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/ENG_early_fighter.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_fighter1_medium"
+		texturefile = "gfx/interface/technologies/ENG_fighter1.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_fighter2_medium"
+		texturefile = "gfx/interface/technologies/ENG_fighter2.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_fighter3_medium"
+		texturefile = "gfx/interface/technologies/ENG_fighter3.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_jet_fighter1_medium"
+		texturefile = "gfx/interface/technologies/ENG_jet_fighter1.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_jet_fighter2_medium"
+		texturefile = "gfx/interface/technologies/ENG_jet_fighter2.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_jet_fighter_a_medium"
+		texturefile = "gfx/interface/technologies/EQS_jet_fighter3.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/EQS_naval_bomber1.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/EQS_naval_bomber2.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/EQS_naval_bomber3.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_heavy_fighter1_medium"
+		texturefile = "gfx/interface/technologies/EQS_blenheim.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_heavy_fighter2_medium"
+		texturefile = "gfx/interface/technologies/EQS_beaufighter.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_heavy_fighter3_medium"
+		texturefile = "gfx/interface/technologies/EQS_mosquito_1.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_early_bomber_medium"
+		texturefile = "gfx/interface/technologies/EQS_early_bomber.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/EQS_wellington.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/ENG_tactical_bomber2.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_tactical_bomber3_medium"
+		texturefile = "gfx/interface/technologies/EQS_mosquito_2.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_jet_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/EQS_venom.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_jet_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/EQS_canberra.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_jet_tactical_bomber_a_medium"
+		texturefile = "gfx/interface/technologies/EQS_avro_vulcan.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/EQS_halifax.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_strategic_bomber2_medium"
+		texturefile = "gfx/interface/technologies/EQS_lancaster.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_strategic_bomber3_medium"
+		texturefile = "gfx/interface/technologies/ENG_strategic_bomber3.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_jet_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/EQS_valiant.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_jet_strategic_bomber_a_medium"
+		texturefile = "gfx/interface/technologies/EQS_victor_bomber.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_jet_heavy_strategic_bomber_a_medium"
+		texturefile = "gfx/interface/technologies/aircraft/EQS_jet_heavy_strat_bomber.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_scout_plane1_medium"
+		texturefile = "gfx/interface/technologies/eng_scout_plane_1.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_scout_plane2_medium"
+		texturefile = "gfx/interface/technologies/eng_scout_plane_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_equestrian_2d_iw_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/ENG_early_fighter.dds"
+	}
+	SpriteType = {
+		name = "GFX_equestrian_2d_basic_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/ENG_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_equestrian_2d_improved_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/ENG_fighter2.dds"
+	}
+	SpriteType = {
+		name = "GFX_equestrian_2d_advanced_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/ENG_fighter3.dds"
+	}
+	SpriteType = {
+		name = "GFX_equestrian_2d_modern_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/ENG_jet_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_equestrian_2d_modern_small_airframe_2_medium"
+		texturefile = "gfx/interface/technologies/EQS_jet_fighter3.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_modern_small_airframe_2_medium"
+		texturefile = "gfx/interface/technologies/EQS_jet_fighter3.dds"
+	}
+	SpriteType = {
+		name = "GFX_commonwealth_2d_iw_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/EQS_early_bomber.dds"
+	}
+	SpriteType = {
+		name = "GFX_commonwealth_2d_basic_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/EQS_wellington.dds"
+	}
+	SpriteType = {
+		name = "GFX_commonwealth_2d_improved_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/ENG_tactical_bomber2.dds"
+	}
+	SpriteType = {
+		name = "GFX_commonwealth_2d_advanced_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/EQS_mosquito_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_commonwealth_2d_modern_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/EQS_venom.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_modern_medium_airframe_2_medium"
+		texturefile = "gfx/interface/technologies/EQS_avro_vulcan.dds"
+	}
+	SpriteType = {
+		name = "GFX_commonwealth_2d_basic_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/EQS_halifax.dds"
+	}
+	SpriteType = {
+		name = "GFX_commonwealth_2d_improved_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/EQS_lancaster.dds"
+	}
+	SpriteType = {
+		name = "GFX_commonwealth_2d_advanced_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/ENG_strategic_bomber3.dds"
+	}
+	SpriteType = {
+		name = "GFX_commonwealth_2d_modern_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/EQS_valiant.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_modern_large_airframe_2_medium"
+		texturefile = "gfx/interface/technologies/EQS_victor_bomber.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_2d_super_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/aircraft/EQS_jet_heavy_strat_bomber.dds"
+	}
+}
