@@ -10,6 +10,14 @@ CLD: "Cloudsdale"
  CLD_DEF: "the Holdout of Cloudsdale"
  CLD_ADJ: "Cloudsdali"
 ###Political Parties###
+CLD_fascism_party: "Stormwings"
+ CLD_fascism_party_long: "The Stormwings of Cloudsdale"
+ CLD_communism_party: ""
+  CLD_communism_party_long: ""
+ CLD_neutrality_party: "City Council"
+  CLD_neutrality_party_long: "The City Council of Cloudsdale"
+ CLD_democratic_party: "Wonderbolt Remnant"
+  CLD_democratic_party_long: "The Wonderbolt Remnant of Cloudsdale"
 ###Characters###
 ##Leaders##
 ##Commanders##

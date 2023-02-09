@@ -30,6 +30,7 @@ set_technology={
 	interwar_antitank=1
 	fuel_silos=1
 	trench_warfare=1
+	tech_pegasi=1
 }
 if={
 	limit={has_dlc="Man the Guns"}
@@ -199,12 +200,13 @@ if={
 actually_fix_weapon_techs=yes
 set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
 set_popularities={
-	fascism=15
+	fascism=7
 	communism=2
-	neutrality=76
-	democratic=7
+	neutrality=15
+	democratic=76
 }	#anarchism
-set_politics={ruling_party=neutrality}
+set_politics={ruling_party=democratic}
 set_country_flag=EDR_is_equestrian_breakaway
-#recruit_character=
+recruit_character=CLD_wonderbolt_remnant
 ###NOTES###
+#Spirit of 76'

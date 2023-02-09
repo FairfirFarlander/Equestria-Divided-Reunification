@@ -1,7 +1,7 @@
 state={	#EDRSTATE
 	id=139
 	name="STATE_139"
-	manpower=102210
+	manpower=52210
 	state_category=pastoral
 	provinces={4531 6220 7626 8014 10448 11259 12437 13304 13307 13309}
 	history={
