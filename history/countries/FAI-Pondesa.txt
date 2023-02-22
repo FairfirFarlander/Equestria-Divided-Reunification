@@ -1,10 +1,10 @@
 capital=95
 oob="FAI_07"
 set_research_slots=2
-set_stability=0.5
-set_war_support=0.2
+set_stability=0.52
+set_war_support=0.24
 add_ideas={
-	service_by_requirement
+	extensive_conscription
 	outlaw_economy
 	limited_exports
 	agrarian_society
@@ -27,6 +27,7 @@ set_popularities={
 set_politics={ruling_party=neutrality}
 set_country_flag=EDR_is_equestrian_breakaway
 recruit_character=FAI_poppy_seed
+recruit_character=FAI_meringue
 ###NOTES###
 #Pondesa
 #At the End of Their Focus Tree

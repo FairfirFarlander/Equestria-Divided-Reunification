@@ -207,7 +207,7 @@ focus_tree = {
 					set_technology = { early_fighter = 1 }
 					add_equipment_to_stockpile = {
 						type = fighter_equipment_1
-						amount 30
+						amount = 30
 					}
 				}
 			}

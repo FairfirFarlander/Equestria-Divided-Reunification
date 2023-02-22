@@ -137,6 +137,14 @@ spritetypes={
 		name="GFX_FAI_poppy_seed"
 		textureFile="gfx/leaders/FAI/FAI_poppy_seed.dds"
 	}
+	spritetype={
+		name="GFX_FAI_meringue"
+		textureFile="gfx/leaders/FAI/FAI_meringue.dds"
+	}
+	spritetype={
+		name="GFX_idea_FAI_meringue"
+		textureFile="gfx/interface/ideas/Advisors/FAI/FAI_meringue.dds"
+	}
 ##HAH##
 	spritetype={
 		name="GFX_HAH_misty_wisps"
