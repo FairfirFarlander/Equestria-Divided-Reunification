@@ -7,7 +7,6 @@ state={	#EDRSTATE
 	history={
 		owner=HEB
 		add_core_of=HEB
-		add_claim_by=COT
 		buildings={
 			infrastructure=1
 		}

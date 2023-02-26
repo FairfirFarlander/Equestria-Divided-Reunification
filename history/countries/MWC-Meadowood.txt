@@ -95,6 +95,12 @@ recruit_character=MWC_maple_leaf
 recruit_character=MWC_apple_cider
 recruit_character=MWC_mist_feather
 recruit_character=MWC_anna_taylor
+set_power_balance = {
+	id = MWC_hoofcolt_bop
+	left_side = MWC_left
+	right_side = MWC_right
+	set_value = 0
+}
 ###NOTES###
 #Add Hofffield and McColt Civil War here
 #Add Hoofield and Mccolt soon.

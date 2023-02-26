@@ -1,0 +1,192 @@
+add_namespace = EDRG_EW1
+	country_event = {	#A Pearn Harbor COT
+		id = EDRG_EW1.01
+		title = EDRG_EW1.01.t
+		desc = EDRG_EW1.01.d
+		#picture = 
+		fire_only_once = yes
+		trigger = {
+			date > 1007.01.08
+		}
+		option = {	#
+			name = EDRG_EW1.01.a
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event EDRG_EW1.01" }
+	}
+	country_event = {	#A Pearn Harbor HEB
+		id = EDRG_EW1.01
+		title = EDRG_EW1.01.t
+		desc = EDRG_EW1.01.d
+		#picture = 
+		fire_only_once = yes
+		trigger = {
+			date > 1007.01.08
+		}
+		option = {	#
+			name = EDRG_EW1.01.a
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event EDRG_EW1.01" }
+	}
+	country_event = {	#Earthborn Demands Fort Mourn HEB then COT
+		id = EDRG_EW1.03
+		title = EDRG_EW1.03.t
+		desc = EDRG_EW1.03.d
+		#picture = 
+		fire_only_once = yes
+		trigger = {
+			date > 1007.01.30
+		}
+		option = {	#
+			name = EDRG_EW1.03.a
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event EDRG_EW1.03" }
+	}
+	country_event = {	#Apoint a New Siege Commander HEB
+		id = EDRG_EW1.04
+		title = EDRG_EW1.04.t
+		desc = EDRG_EW1.04.d
+		#picture = 
+		fire_only_once = yes
+		trigger = {
+			date > 1007.02.24
+		}
+		option = {	#
+			name = EDRG_EW1.04.a
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event EDRG_EW1.04" }
+	}
+	country_event = {	#A New Face' Demands COT
+		id = EDRG_EW1.05
+		title = EDRG_EW1.05.t
+		desc = EDRG_EW1.05.d
+		#picture = 
+		fire_only_once = yes
+		trigger = {
+			date > 1007.02.31
+		}
+		option = {	#
+			name = EDRG_EW1.05.a
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event EDRG_EW1.05" }
+	}
+	country_event = {	#Supply Event? COT
+		id = EDRG_EW1.06
+		title = EDRG_EW1.06.t
+		desc = EDRG_EW1.06.d
+		#picture = 
+		fire_only_once = yes
+		trigger = {
+			date > 1007.04.03
+		}
+		option = {	#
+			name = EDRG_EW1.06.a
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event EDRG_EW1.06" }
+	}
+	country_event = {	#Supply Event? HEB
+		id = EDRG_EW1.07
+		title = EDRG_EW1.07.t
+		desc = EDRG_EW1.07.d
+		#picture = 
+		fire_only_once = yes
+		trigger = {
+			date > 1007.04.05
+		}
+		option = {	#
+			name = EDRG_EW1.07.a
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event EDRG_EW1.07" }
+	}
+	country_event = {	#To Siege Event HEB
+		id = EDRG_EW1.08
+		title = EDRG_EW1.08.t
+		desc = EDRG_EW1.08.d
+		#picture = 
+		fire_only_once = yes
+		trigger = {
+			date > 1007.04.08
+		}
+		option = {	#
+			name = EDRG_EW1.08.a
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event EDRG_EW1.08" }
+	}
+	country_event = {	#Ultimatum HEB
+		id = EDRG_EW1.09
+		title = EDRG_EW1.09.t
+		desc = EDRG_EW1.09.d
+		#picture = 
+		fire_only_once = yes
+		trigger = {
+			date > 1007.04.10
+		}
+		option = {	#
+			name = EDRG_EW1.09.a
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event EDRG_EW1.09" }
+	}
+	country_event = {	#Reply and response COT
+		id = EDRG_EW1.010
+		title = EDRG_EW1.010.t
+		desc = EDRG_EW1.010.d
+		#picture = 
+		fire_only_once = yes
+		trigger = {
+			date > 1007.04.11
+		}
+		option = {	#
+			name = EDRG_EW1.010.a
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event EDRG_EW1.010" }
+	}
+	country_event = {		#PLF Company War
+		id = EDRG_EW1.11
+		title = EDRG_EW1.11.t
+		desc = EDRG_EW1.11.d
+		#picture = 
+		fire_only_once = yes
+		is_triggered_only = yes
+		option = {
+			name = EDRG_EW1.11.a
+			PLF = {
+				hidden_effect = {
+					13 = { add_claim_by = PREV }
+					create_wargoal = {
+						type = take_claimed_state
+						target = 13.owner
+						generator = { 13 }
+					}
+				}
+				declare_war_on = {
+					type = take_claimed_state
+					target = 13.owner
+					generator = { 13 }
+				}
+				13 = { add_to_PREV_potential_cores = yes }
+			}
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event EDRG_EW1.11" }
+	}
+	country_event = {		#Buckcastle Civil War
+		id = EDRG_EW1.21
+		title = EDRG_EW1.21.t
+		desc = EDRG_EW1.21.d
+		#picture = 
+		fire_only_once = yes
+		is_triggered_only = yes
+		option = {
+			name = EDRG_EW1.21.a
+			hidden_effect = {
+				create_wargoal = {
+					type = civil_war
+					target = KCB
+				}
+			}
+			declare_war_on = {
+				type = take_state
+				target = KCB
+			}
+			KCB = { add_to_ROOT_potential_cores = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event EDRG_EW1.21" }
+	}

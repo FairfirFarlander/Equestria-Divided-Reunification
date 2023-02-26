@@ -9,7 +9,6 @@ state={	#EDRSTATE
 		owner=HEB
 		add_core_of=HEB
 		#add_core_of=BUF
-		add_claim_by=COT
 		victory_points={3631 3}
 		victory_points={11580 1}
 		buildings={

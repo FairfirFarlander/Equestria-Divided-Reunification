@@ -1,0 +1,40 @@
+add_namespace = EDRG_NW1
+	news_event = {	#The Confederate Earthborn War
+		id = EDRG_NW1.01
+		title = EDRG_NW1.01.t
+		desc = EDRG_NW1.01.d
+		picture = GFX_news_ponies_last_stand
+		fire_only_once = yes
+		trigger = {
+			date > 1007.04.12
+			has_global_flag = COT_HEB_war_one
+		}
+		major = yes
+		option = {	#Confederate Response
+			name = EDRG_NW1.01.a
+			trigger = { tag = COT }
+		}
+		option = {	#Earthborn Response
+			name = EDRG_NW1.01.b
+			trigger = { tag = HEB }
+		}
+		option = {	#Equestrian Response
+			name = EDRG_NW1.01.c
+			trigger = {
+				NOT = {
+					OR = {
+						tag = COT
+						tag = HEB
+					}
+				}
+				is_equestrian_continent_country = yes
+			}
+		}
+		option = {	#World Response
+			name = EDRG_NW1.01.e
+			trigger = { is_equestrian_continent_country = no }
+		}
+		immediate = {
+			log = "[GetDateText]: [Root.GetName]: news EDRG_NW1.01"
+		}
+	}

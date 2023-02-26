@@ -1,0 +1,30 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {	#Wars with all minors.
+				limit = {
+					NOT = {
+						has_game_rule = {
+							rule = EDR_equestrian_minors_status
+							option = EDR_NO_MINORS
+						}
+					}
+				}
+				PLF = {
+					country_event = {
+						id = EDRG_EW1.11
+						days = 265
+						random = 720
+					}
+				}
+				BCK = {
+					country_event = {
+						id = EDRG_EW1.21
+						days = 140
+						random = 360
+					}
+				}
+			}
+		}
+	}
+}

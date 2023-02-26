@@ -8,7 +8,6 @@ state={	#EDRSTATE
 	history={
 		owner=CHY
 		add_core_of=CHY
-		add_claim_by=COT
 		victory_points={3592 1}
 	}
 }
