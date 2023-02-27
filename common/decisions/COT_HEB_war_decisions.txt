@@ -207,6 +207,6 @@ COT_HEB_war_two = {
 		}
 	}
 }
-COT_HEB_war_two = {
+COT_HEB_war_three = {
 	
 }

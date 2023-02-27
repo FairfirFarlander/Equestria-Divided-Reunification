@@ -1,9 +1,2134 @@
 focus_tree={
-	id=COT country={factor=0 modifier={add=3 tag=COT}}
-	continuous_focus_position={x=40 y=950}
+	id=COT
+	country={
+		factor=0
+		modifier={
+			tag=COT
+			add=3
+		}
+	}
+	continuous_focus_position={ x=60 y=1340 }
 	shared_focus=COT_constitutional_convention
-	shared_focus=COT_grand_army_of_the_confederacy
-	shared_focus=COT_naval_air
-	shared_focus=COT_the_southern_economy 
+	shared_focus=COT_M00
+	shared_focus=COT_AN00
+	shared_focus=COT_I00 
 	#shared_focus=COT_big_apple
 }
+#NOTES - Check all country flags via events for porting
+##Political Tree##
+	shared_focus = {
+		id = COT_constitutional_convention
+		icon = GFX_focus_generic_the_giant_wakes
+		x = 0 y = 0 cost = 10 ai_will_do = { factor = 10 }
+		select_effect = {
+			country_event = { id = scs.15 days = 6 random = 48 }
+			country_event = { id = scs.23 days = 30 random = 240 }#events about Rockhoof
+			country_event = { id = scs.24 days = 55 random = 240 }#events about Rockhoof
+			country_event = { id = scs.25 days = 80 random = 240 }#events about Rockhoof
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_constitutional_convention"
+			hidden_effect = {
+				country_event = { id = scs.20 }
+			}
+			custom_effect_tooltip = SCS_will_draft_constitution
+		}
+	}
+	shared_focus = {
+		id = COT_the_first_election
+		icon = GFX_goal_generic_elections
+		relative_position_id = COT_constitutional_convention
+		x = 0 y = 1 cost = 5
+		prerequisite = { focus = COT_constitutional_convention }
+		available = { has_country_flag = SCS_election_flag }
+		bypass = { has_country_flag = SCS_election_flag }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_the_first_election"
+			custom_effect_tooltip = SCS_election_will_bypass
+		}
+	}
+	shared_focus = {
+		id = COT_coltlumbia_victory
+		icon = GFX_goal_liberty
+		relative_position_id = COT_the_first_election
+		x = -2 y = 1 cost = 5
+		prerequisite = { focus = COT_the_first_election }
+		mutually_exclusive = { focus = COT_southern_democrat_victory }
+		available = { has_country_flag = SCS_coltlumbia_win }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_coltlumbia_victory"
+			custom_effect_tooltip = SCS_will_unlock_new_focuses
+			hidden_effect = {
+				load_focus_tree = {
+					tree = SCS_focus_coltlumbia
+					keep_completed = yes
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_southern_democrat_victory
+		icon = GFX_goal_EEA
+		relative_position_id = COT_the_first_election
+		x = 2 y = 1 cost = 5
+		prerequisite = { focus = COT_the_first_election }
+		mutually_exclusive = { focus = COT_coltlumbia_victory }
+		available = { has_country_flag = SCS_sdem_win }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_southern_democrat_victory"
+			custom_effect_tooltip = SCS_will_unlock_new_focuses
+			hidden_effect = {
+				load_focus_tree = {
+					tree = SCS_focus_southern_democrats
+					keep_completed = yes
+				}
+			}
+		}
+	}
+##Economic Tree##
+	shared_focus = {
+		id = COT_I00
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 15 y = 0 cost = 1 relative_position_id = COT_constitutional_convention
+		offset = {
+			x = -3
+			trigger = { has_completed_focus = COT_I01A }
+		}
+		offset = {
+			x = -2
+			trigger = {
+				OR = {
+					has_completed_focus = COT_I01B
+					has_completed_focus = COT_I01C
+				}
+			}
+		}
+		offset = {
+			x = -1
+			trigger = {
+				OR = {
+					has_completed_focus = COT_I03A
+					has_completed_focus = COT_I03B
+				}
+			}
+		}
+		bypass = { has_country_flag = SCS_finished_convention }
+		available = { has_country_flag = SCS_finished_convention }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_I00"
+			custom_effect_tooltip = SCS_eco_will_bypass
+		}
+	}
+	shared_focus = {
+		id = COT_I01A
+		icon = GFX_goal_bag_of_money_pony
+		x = -3 y = 1 cost = 5 relative_position_id = COT_I00
+		offset = {
+			x = 3
+			trigger = { has_completed_focus = COT_I01A }
+		}
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_completed_focus = COT_I01B
+					has_completed_focus = COT_I01C
+				}
+			}
+		}
+		prerequisite = { focus = COT_I00 }
+		available = { has_country_flag = SCS_unregulated }
+		mutually_exclusive = {
+			focus = COT_I01B
+			focus = COT_I01C
+		}
+		ai_will_do = { factor = 10 }
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_RESEARCH
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_I01A"
+			add_tech_bonus = {
+				name = industrial_bonus
+				category = industry
+				bonus = 1
+				uses = 1
+			}
+			add_ideas = SCS_barons_power
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	shared_focus = {
+		id = COT_I01B
+		icon = GFX_goal_constitutional_guarantees
+		x = 0 y = 1 cost = 5 relative_position_id = COT_I00
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_completed_focus = COT_I01A
+					has_completed_focus = COT_I01C
+				}
+			}
+		}
+		prerequisite = { focus = COT_I00 }
+		available = { has_country_flag = SCS_middle_ground }
+		mutually_exclusive = {
+			focus = COT_I01A
+			focus = COT_I01C
+		}
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_I01B"
+			add_tech_bonus = {
+				name = industrial_bonus
+				category = industry
+				bonus = 1
+				uses = 1
+			}
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	shared_focus = {
+		id = COT_I01C
+		icon = GFX_goal_state_economy
+		x = 3 y = 1 cost = 5 relative_position_id = COT_I00
+		offset = {
+			x = -3
+			trigger = { has_completed_focus = COT_I01C }
+		}
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_completed_focus = COT_I01A
+					has_completed_focus = COT_I01B
+				}
+			}
+		}
+		prerequisite = { focus = COT_I00 }
+		available = { has_country_flag = SCS_state_control }
+		mutually_exclusive = {
+			focus = COT_I01A
+			focus = COT_I01B
+		}
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_I01C"
+			add_tech_bonus = {
+				name = industrial_bonus
+				category = industry
+				bonus = 1
+				uses = 1
+			}
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	shared_focus = {
+		id = COT_I02A
+		icon = GFX_goal_apple_icon
+		x = -7 y = 2 cost = 5 relative_position_id = COT_I00
+		offset = {
+			x = 3
+			trigger = { has_completed_focus = COT_I01A }
+		}
+		offset = {
+			x = 2
+			trigger = {
+				OR = {
+					has_completed_focus = COT_I01B
+					has_completed_focus = COT_I01C
+				}
+			}
+		}
+		offset = {
+			x = 1
+			trigger = {
+				OR = {
+					has_completed_focus = COT_I03A
+					has_completed_focus = COT_I03B
+				}
+			}
+		}
+		prerequisite = {
+			focus = COT_I01A
+			focus = COT_I01B
+			focus = COT_I01C
+		}
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_I02A"
+			add_tech_bonus = {
+				name = industrial_bonus
+				category = excavation_tech
+				technology = tech_pony_misc
+				technology = tech_pony_misc3
+				bonus = 1
+				uses = 2
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_I02B
+		icon = GFX_goal_free_market
+		x = -1 y = 1 cost = 5 relative_position_id = COT_I01A
+		prerequisite = { focus = COT_I01A }
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_I02B"
+			add_tech_bonus = {
+				name = industrial_bonus
+				category = industry
+				bonus = 1
+				uses = 1
+			}
+			add_tech_bonus = {
+				name = electronics_bonus
+				category = electronics
+				bonus = 1
+				uses = 1
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_I02C
+		icon = GFX_goal_generic_construct_infrastructure
+		x = -2 y = 2 cost = 5 relative_position_id = COT_I00
+		offset = {
+			x = 3
+			trigger = { has_completed_focus = COT_I01A }
+		}
+		prerequisite = {
+			focus = COT_I01A
+			focus = COT_I01B
+		}
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_I02C"
+			build_railway = {
+				level = 1
+				start_province = 1643
+				target_province = 3663
+				build_only_on_allied = yes
+			}
+			build_railway = {
+				level = 1
+				start_province = 3663
+				target_province = 9606
+				build_only_on_allied = yes
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_I02D
+		icon = GFX_goal_chn_economic_plan
+		x = 0 y = 1 cost = 5 relative_position_id = COT_I01B
+		prerequisite = { focus = COT_I01B }
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_I02D"
+			add_tech_bonus = {
+				name = industrial_bonus
+				category = industry
+				bonus = 1
+				uses = 1
+			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				category = excavation_tech
+				bonus = 1
+				uses = 1
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_I02E
+		icon = GFX_goal_forced_inf
+		x = 2 y = 2 cost = 5 relative_position_id = COT_I00
+		offset = {
+			x = -3
+			trigger = { has_completed_focus = COT_I01C }
+		}
+		prerequisite = {
+			focus = COT_I01B
+			focus = COT_I01C
+		}
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_I02E"
+			build_railway = {
+				level = 1
+				start_province = 1643
+				target_province = 3663
+				build_only_on_allied = yes
+			}
+			build_railway = {
+				level = 1
+				start_province = 3663
+				target_province = 9606
+				build_only_on_allied = yes
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_I02F
+		icon = GFX_goal_economic_control
+		x = 1 y = 1 cost = 5 relative_position_id = COT_I01C
+		prerequisite = { focus = COT_I01C }
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_I02F"
+			add_tech_bonus = {
+				name = industrial_bonus
+				category = industry
+				bonus = 1
+				uses = 1
+			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				category = construction_tech
+				bonus = 1
+				uses = 1
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_I02G
+		icon = GFX_goal_oil_derrick
+		x = 7 y = 2 cost = 5 relative_position_id = COT_I00
+		offset = {
+			x = -3
+			trigger = { has_completed_focus = COT_I01C }
+		}
+		offset = {
+			x = -2
+			trigger = {
+				OR = {
+					has_completed_focus = COT_I01A
+					has_completed_focus = COT_I01B
+				}
+			}
+		}
+		offset = {
+			x = -1
+			trigger = {
+				OR = {
+					has_completed_focus = COT_I03F
+					has_completed_focus = COT_I03G
+				}
+			}
+		}
+		prerequisite = {
+			focus = COT_I01A
+			focus = COT_I01B
+			focus = COT_I01C
+		}
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_I02G"
+			add_tech_bonus = {
+				name = industrial_bonus
+				category = excavation_tech
+				category = synth_resources
+				bonus = 1
+				uses = 1
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_I03A
+		icon = GFX_focus_indy_agriculture
+		x = -1 y = 1 cost = 5 relative_position_id = COT_I02A
+		offset = {
+			x = 1
+			trigger = { has_completed_focus = COT_I03A }
+		}
+		allow_branch = {
+			NOT = { has_completed_focus = COT_I03B }
+		}
+		prerequisite = { focus = COT_I02A }
+		mutually_exclusive = { focus = COT_I03B }
+		available = { has_completed_focus = COT_I01A }
+		ai_will_do = { factor = 8 }
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_STABILITY
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_I03A"
+			custom_effect_tooltip = SCS_increase_royalists_by_5
+			hidden_effect = { add_5_royalism = yes }
+			swap_ideas = {
+				remove_idea = SCS_barons_power
+				add_idea = SCS_barons_power_apple1
+			}
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	shared_focus = {
+		id = COT_I03B
+		icon = GFX_focus_indy_agriculture_2
+		x = 1 y = 1 cost = 5 relative_position_id = COT_I02A
+		offset = {
+			x = -1
+			trigger = { has_completed_focus = COT_I03B }
+		}
+		allow_branch = {
+			NOT = { has_completed_focus = COT_I03A }
+		}
+		prerequisite = { focus = COT_I02A }
+		mutually_exclusive = { focus = COT_I03A }
+		available = {
+			or = {
+				has_completed_focus = COT_I01B
+				has_completed_focus = COT_I01C
+			}
+		}
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_I03B"
+			custom_effect_tooltip = SCS_decrease_royalists_by_5
+			hidden_effect = { remove_5_royalism = yes }
+			add_stability = 0.10
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	shared_focus = {
+		id = COT_I03C
+		icon = GFX_IRE_medium_industry
+		x = 0 y = 1 cost = 2.9 relative_position_id = COT_I02C
+		offset = {
+			x = -1
+			trigger = { has_completed_focus = COT_I01A }
+		}
+		prerequisite = { focus = COT_I02C }
+		prerequisite = {
+			focus = COT_I02B
+			focus = COT_I02D
+		}
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_I03C"
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = colt_arms
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_I03D
+		icon = GFX_focus_research
+		x = 0 y = 3 cost = 5 relative_position_id = COT_I00
+		offset = {
+			x = 2
+			trigger = { has_completed_focus = COT_I01A }
+		}
+		offset = {
+			x = -2
+			trigger = { has_completed_focus = COT_I01C }
+		}
+		prerequisite = {
+			focus = COT_I02B
+			focus = COT_I02D
+			focus = COT_I02F
+		}
+		prerequisite = {
+			focus = COT_I02C
+			focus = COT_I02E
+		}
+		ai_will_do = { factor = 20 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_I03D"
+			add_research_slot = 1
+		}
+	}
+	shared_focus = {
+		id = COT_I03E
+		icon = GFX_IRE_heavy_industry
+		x = 0 y = 1 cost = 2.9 relative_position_id = COT_I02E
+		offset = {
+			x = 1
+			trigger = { has_completed_focus = COT_I01C }
+		}
+		prerequisite = { focus = COT_I02E }
+		prerequisite = {
+			focus = COT_I02F
+			focus = COT_I02D
+		}
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_I03E"
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = rearington_arms
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1 instant_build = yes
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_I03F
+		icon = GFX_goal_further_oil
+		x = -1 y = 1 cost = 5 relative_position_id = COT_I02G
+		offset = {
+			x = 1
+			trigger = { has_completed_focus = COT_I03F }
+		}
+		allow_branch = {
+			NOT = { has_completed_focus = COT_I03G }
+		}
+		prerequisite = { focus = COT_I02G }
+		available = { has_completed_focus = COT_I01A }
+		mutually_exclusive = { focus = COT_I03G }
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_I03F"
+			custom_effect_tooltip = SCS_increase_royalists_by_5
+			hidden_effect = { add_5_royalism = yes }
+			add_tech_bonus = {
+				name = industrial_bonus
+				category = excavation_tech
+				bonus = 1
+				uses = 1
+			}
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	shared_focus = {
+		id = COT_I03G
+		icon = GFX_goal_oil
+		x = 1 y = 1 cost = 5 relative_position_id = COT_I02G
+		offset = {
+			x = -1
+			trigger = { has_completed_focus = COT_I03G }
+		}
+		allow_branch = {
+			NOT = { has_completed_focus = COT_I03F }
+		}
+		prerequisite = { focus = COT_I02G }
+		available = {
+			or = {
+				has_completed_focus = COT_I01B
+				has_completed_focus = COT_I01C
+			}
+		}
+		mutually_exclusive = { focus = COT_I03F }
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_I03G"
+			custom_effect_tooltip = SCS_decrease_royalists_by_5
+			hidden_effect = { remove_5_royalism = yes }
+			add_tech_bonus = {
+				name = synth_bonus
+				category = synth_resources
+				bonus = 1
+				uses = 1
+			}
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	shared_focus = {
+		id = COT_I04A
+		icon = GFX_focus_AUS_agriculture
+		x = 0 y = 1 cost = 5 relative_position_id = COT_I03A
+		prerequisite = { focus = COT_I03A }
+		ai_will_do = { factor = 8 }
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_STABILITY
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_I04A"
+			swap_ideas = {
+				remove_idea = SCS_barons_power_apple1
+				add_idea = SCS_barons_power_apple2
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_I04B
+		icon = GFX_goal_BUF_gora
+		x = 0 y = 1 cost = 5 relative_position_id = COT_I03B
+		prerequisite = { focus = COT_I03B }
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_I04B"
+			44 = { add_manpower = 50000 }
+			21 = { add_manpower = 50000 }
+			23 = { add_manpower = 50000 }
+			43 = { add_manpower = 50000 }
+		}
+	}
+	shared_focus = {
+		id = COT_I04C
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 0 y = 3 cost = 5 relative_position_id = COT_I01A
+		offset = {
+			x = -1
+			trigger = { has_completed_focus = COT_I01A }
+		}
+		prerequisite = { focus = COT_I02B }
+		prerequisite = { focus = COT_I02C }
+		prerequisite = { focus = COT_I03D }
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_I04C"
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_I04D
+		icon = GFX_goal_document
+		x = 0 y = 2 cost = 5 relative_position_id = COT_I02D
+		prerequisite = { focus = COT_I02D }
+		prerequisite = {
+			focus = COT_I02C
+			focus = COT_I02E
+		}
+		prerequisite = { focus = COT_I03D }
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_I04D"
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_I04E
+		icon = GFX_goal_industrial_pony
+		x = 0 y = 3 cost = 5 relative_position_id = COT_I01C
+		offset = {
+			x = 1
+			trigger = { has_completed_focus = COT_I01C }
+		}
+		prerequisite = { focus = COT_I02E }
+		prerequisite = { focus = COT_I02F }
+		prerequisite = { focus = COT_I03D }
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_I04E"
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_I04F
+		icon = GFX_goal_GRF_northern_oil
+		x = 0 y = 2 cost = 5 relative_position_id = COT_I02G
+		prerequisite = {
+			focus = COT_I03F
+			focus = COT_I03G
+		}
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_I04F"
+			42 = { add_resource = { type = oil amount = 12 } }
+			20 = { add_resource = { type = oil amount = 12 } }
+		}
+	}
+	shared_focus = {
+		id = COT_I05A
+		icon = GFX_goal_coffee_exports
+		x = 0 y = 1 cost = 5 relative_position_id = COT_I04A
+		prerequisite = { focus = COT_I04A }
+		ai_will_do = { factor = 8 }
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_STABILITY
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_I05A"
+			swap_ideas = {
+				remove_idea = SCS_barons_power_apple2
+				add_idea = SCS_barons_power_apple3
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_I05B
+		icon = GFX_goal_agriculture
+		x = 0 y = 1 cost = 5 relative_position_id = COT_I04B
+		prerequisite = { focus = COT_I04B }
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_I05B"
+			44 = { add_extra_state_shared_building_slots = 2 }
+			71 = { add_extra_state_shared_building_slots = 2 }
+			42 = { add_extra_state_shared_building_slots = 2 }
+			20 = { add_extra_state_shared_building_slots = 2 }
+		}
+	}
+	shared_focus = {
+		id = COT_I05C
+		icon = GFX_goal_generic_construct_mil_factory
+		x = -1 y = 1 cost = 5 relative_position_id = COT_I04C
+		offset = {
+			x = 1
+			trigger = { has_completed_focus = COT_I01A }
+		}
+		prerequisite = { focus = COT_I04C }
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_I05C"
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_I05D
+		icon = GFX_focus_generic_industry_2
+		x = -2 y = 5 cost = 5 relative_position_id = COT_I00
+		offset = {
+			x = 3
+			trigger = { has_completed_focus = COT_I01A }
+		}
+		offset = {
+			x = 1
+			trigger = { has_completed_focus = COT_I01B }
+		}
+		prerequisite = {
+			focus = COT_I04C
+			focus = COT_I04D
+		}
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_I05D"
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_I05E
+		icon = GFX_goal_industry_air
+		x = 2 y = 5 cost = 5 relative_position_id = COT_I00
+		offset = {
+			x = -3
+			trigger = { has_completed_focus = COT_I01C }
+		}
+		offset = {
+			x = -1
+			trigger = { has_completed_focus = COT_I01B }
+		}
+		prerequisite = {
+			focus = COT_I04E
+			focus = COT_I04D
+		}
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_I05E"
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_I05F
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 1 y = 1 cost = 5 relative_position_id = COT_I04E
+		offset = {
+			x = -1
+			trigger = { has_completed_focus = COT_I01C }
+		}
+		prerequisite = { focus = COT_I04E }
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_I05F"
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_I05G
+		icon = GFX_goal_GRF_northern_oil
+		x = 0 y = 2 cost = 5 relative_position_id = COT_I03F
+		prerequisite = { focus = COT_I04F }
+		prerequisite = { focus = COT_I03F }
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_I05G"
+			47 = {
+				add_resource = { type = oil amount = 12 }
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_I05H
+		icon = GFX_focus_generic_rubber
+		x = 0 y = 2 cost = 5 relative_position_id = COT_I03G
+		prerequisite = { focus = COT_I04F }
+		prerequisite = { focus = COT_I03G }
+		ai_will_do = { factor = 8 }
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_RESEARCH
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_I05H"
+			add_tech_bonus = {
+				name = synth_bonus
+				technology = rubber_processing
+				technology = improved_rubber_processing
+				technology = advanced_rubber_processing
+				technology = modern_rubber_processing
+				bonus = 1
+				uses = 1
+			}
+			47 = {
+				add_resource = { type = rubber amount = 12 }
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_I06A
+		icon = GFX_goal_collaborate_local_elites_pony
+		x = 0 y = 1 cost = 5 relative_position_id = COT_I05A
+		prerequisite = { focus = COT_I05A }
+		ai_will_do = { factor = 8 }
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_MANPOWER
+			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_STABILITY
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_I06A"
+			swap_ideas = {
+				remove_idea = SCS_barons_power_apple3
+				add_idea = SCS_barons_power_apple4
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_I06B
+		icon = GFX_goal_appleloosa
+		x = 0 y = 1 cost = 5 relative_position_id = COT_I05B
+		prerequisite = { focus = COT_I05B }
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_I06B"
+			add_political_power = 100
+		}
+	}
+	shared_focus = {
+		id = COT_I06C
+		icon = GFX_focus_generic_industry_3
+		x = 0 y = 2 cost = 5 relative_position_id = COT_I04C
+		offset = {
+			x = 1
+			trigger = { has_completed_focus = COT_I01A }
+		}
+		prerequisite = { focus = COT_I05D }
+		prerequisite = { focus = COT_I05C }
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_I06C"
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_I06D
+		icon = GFX_goal_compassionaite_politics
+		x = 0 y = 2 cost = 5 relative_position_id = COT_I04D
+		prerequisite = { focus = COT_I04D }
+		prerequisite = { focus = COT_I05D }
+		prerequisite = { focus = COT_I05E }
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_I06D"
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_I06E
+		icon = GFX_focus_indy_industrial_tanks
+		x = 0 y = 2 cost = 5 relative_position_id = COT_I04E
+		offset = {
+			x = -1
+			trigger = { has_completed_focus = COT_I01C }
+		}
+		prerequisite = { focus = COT_I05F }
+		prerequisite = { focus = COT_I05E }
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_I06E"
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_I06F
+		icon = GFX_goal_GRF_northern_oil
+		x = 0 y = 1 cost = 5 relative_position_id = COT_I05G
+		prerequisite = { focus = COT_I05G }
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_I06F"
+			49 = {
+				add_resource = { type = oil amount = 12 }
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_I06G
+		icon = GFX_goal_generic_construction2
+		x = 0 y = 1 cost = 5 relative_position_id = COT_I05H
+		prerequisite = { focus = COT_I05H }
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_I06G"
+			47 = {
+				add_resource = { type = chromium amount = 14 }
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_I07
+		icon = GFX_focus_research
+		x = 0 y = 7 cost = 5 relative_position_id = COT_I00
+		prerequisite = {
+			focus = COT_I06D
+			focus = COT_I06C
+			focus = COT_I06E
+		}
+		ai_will_do = { factor = 20 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_I07"
+			add_research_slot = 1
+		}
+	}
+##Naval Tree##
+	shared_focus = {
+		id = COT_AN00
+		icon = GFX_goal_generic_navy_carrier
+		x = -16 y = 0 cost = 0.15 relative_position_id = COT_constitutional_convention
+		bypass = { has_country_flag = SCS_finished_convention }
+		available = { has_country_flag = SCS_finished_convention }
+		ai_will_do = { factor = 5 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_AN00"
+			custom_effect_tooltip = SCS_eco_will_bypass
+		}
+	}
+	shared_focus = {
+		id = COT_N01
+		icon = GFX_goal_dockyard_generic_psody
+		x = -3 y = 1 cost = 5 relative_position_id = COT_AN00
+		prerequisite = { focus = COT_AN00 }
+		available = { owns_state = 80 }
+		ai_will_do = { factor = 4 }
+		search_filters = {
+			FOCUS_FILTER_NAVY_BONUS
+			FOCUS_FILTER_INDUSTRY
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_N01"
+			navy_experience = 25
+			47 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_A01
+		icon = GFX_goal_eqs_airfields_south
+		x = 3 y = 1 cost = 5 relative_position_id = COT_AN00
+		prerequisite = { focus = COT_AN00 }
+		ai_will_do = { factor = 4 }
+		search_filters = { FOCUS_FILTER_AIRFORCE_BONUS }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_A01"
+			air_experience = 50
+		}
+	}
+	shared_focus = {
+		id = COT_N02A
+		icon = GFX_goal_generic_navy_submarine
+		x = -1 y = 1 cost = 5 relative_position_id = COT_N01
+		prerequisite = { focus = COT_N01 }
+		mutually_exclusive = { focus = COT_N02B }
+		ai_will_do = { factor = 4 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_N02A"
+			add_tech_bonus = {
+				name = ss_bonus
+				category = ss_tech
+				bonus = 1
+				uses = 2
+			}
+			add_tech_bonus = {
+				name = dd_bonus
+				category = dd_tech
+				bonus = 1
+				uses = 1
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_N02B
+		icon = GFX_goal_generic_navy_cruiser
+		x = 1 y = 1 cost = 5 relative_position_id = COT_N01
+		prerequisite = { focus = COT_N01 }
+		mutually_exclusive = { focus = COT_N02A }
+		available = { has_government = fascism }
+		ai_will_do = { factor = 4 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_N02B"
+			add_tech_bonus = {
+				name = cr_bonus
+				category = cl_tech
+				bonus = 1
+				uses = 2
+			}
+			add_tech_bonus = {
+				name = bb_bonus
+				category = bb_tech
+				bonus = 1
+				uses = 1
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_A02A
+		icon = GFX_goal_generic_build_airforce
+		x = -1 y = 1 cost = 5 relative_position_id = COT_A01
+		prerequisite = { focus = COT_A01 }
+		mutually_exclusive = { focus = COT_A02B }
+		ai_will_do = { factor = 4 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_A02A"
+			add_tech_bonus = {
+				name = fighter_bonus
+				category = heavy_air
+				bonus = 1
+				uses = 3
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_A02B
+		icon = GFX_goal_generic_air_fighter2
+		x = 1 y = 1 cost = 5 relative_position_id = COT_A01
+		prerequisite = { focus = COT_A01 }
+		mutually_exclusive = { focus = COT_A02A }
+		ai_will_do = { factor = 4 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_A02B"
+			add_tech_bonus = {
+				name = fighter_bonus
+				category = light_air
+				bonus = 1
+				uses = 3
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_N03
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 0 y = 2 cost = 5 relative_position_id = COT_N01
+		prerequisite = {
+			focus = COT_N02A
+			focus = COT_N02B
+		}
+		ai_will_do = { factor = 4 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_N03"
+			add_doctrine_cost_reduction = {
+				name = naval_doc_bonus
+				category = naval_doctrine
+				cost_reduction = 0.5
+				uses = 2
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_A03
+		icon = GFX_goal_generic_air_doctrine
+		x = -0 y = 2 cost = 5 relative_position_id = COT_A01
+		prerequisite = {
+			focus = COT_A02A
+			focus = COT_A02B
+		}
+		ai_will_do = { factor = 4 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_A03"
+			add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				category = air_doctrine
+				cost_reduction = 0.5
+				uses = 2
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_N04A
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = -1 y = 1 cost = 5 relative_position_id = COT_N03
+		prerequisite = { focus = COT_N03 }
+		available = { owns_state = 80 }
+		ai_will_do = { factor = 7 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_N04A"
+			80 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_N04B
+		icon = GFX_goal_generic_amphibious_assault
+		x = 1 y = 1 cost = 5 relative_position_id = COT_N03
+		prerequisite = { focus = COT_N03 }
+		ai_will_do = { factor = 4 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_N04B"
+			add_tech_bonus = {
+				name = marine_bonus
+				category = marine_tech
+				bonus = 1
+				uses = 2
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_A04A
+		icon = GFX_goal_generic_radar
+		x = -1 y = 1 cost = 5 relative_position_id = COT_A03
+		prerequisite = { focus = COT_A03 }
+		ai_will_do = { factor = 4 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_A04A"
+			add_tech_bonus = {
+				name = radar_bonus
+				category = radar_tech
+				bonus = 2
+				uses = 1
+			}
+			add_tech_bonus = {
+				name = electronics_bonus
+				category = electronics
+				bonus = 1
+				uses = 1
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_A04B
+		icon = GFX_goal_generic_air_production
+		x = 1 y = 1 cost = 5 relative_position_id = COT_A03
+		prerequisite = { focus = COT_A03 }
+		available = { owns_state = 20 }
+		ai_will_do = { factor = 4 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_A04B"
+			20 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_N05
+		icon = GFX_goal_generic_build_navy
+		x = 0 y = 2 cost = 5 relative_position_id = COT_N03
+		prerequisite = {
+			focus = COT_N04A
+			focus = COT_N04B
+		}
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_N05"
+			add_ideas = SCS_naval_prod_bonus
+		}
+	}
+	shared_focus = {
+		id = COT_A05
+		icon = GFX_goal_industry_air
+		x = 0 y = 2 cost = 5 relative_position_id = COT_A03
+		prerequisite = {
+			focus = COT_A04B
+			focus = COT_A04A
+		}
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_A05"
+			if = {
+				limit = { has_completed_focus = COT_A02B }
+				add_ideas = SCS_light_aircraft_prod_bonus
+			}
+			else_if = {
+				limit = { has_completed_focus = COT_A02A }
+				add_ideas = SCS_heavy_aircraft_prod_bonus
+			}
+			else = {
+				custom_effect_tooltip = SCS_depends_on_air
+			}
+		}
+	}
+##Army Tree##
+	shared_focus = {	#Grand Army of the Confederacy
+		id = COT_M00
+		icon = GFX_goal_officers
+		x = 0 y = 5 cost = 5 relative_position_id = COT_AN00
+		available = { has_country_flag = SCS_finished_convention }
+		ai_will_do = {
+			factor = 8
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+			FOCUS_FILTER_MANPOWER
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_M00"
+			army_experience = 15
+			add_ideas = SCS_more_volunteers
+			custom_effect_tooltip = SCS_will_spawn_troops
+			#hidden_effect = { load_oob = SCS_CW_volunteers }
+		}
+	}
+	shared_focus = {	#The Right to Bear Arms
+		id = COT_M01A
+		icon = GFX_goal_SCS_guns
+		x = -9 y = 1 cost = 5 relative_position_id = COT_M00
+		offset = {
+			x = 4
+			trigger = {
+				OR = {
+					has_completed_focus = COT_M01B
+					has_completed_focus = COT_M01C
+					has_completed_focus = COT_M01D
+				}
+			}
+		}
+		offset = {
+			x = 1
+			trigger = {
+				OR = {
+					has_completed_focus = COT_M02A
+					has_completed_focus = COT_M02B
+				}
+			}
+		}
+		allow_branch = {
+			NOT = { has_completed_focus = COT_M01E }
+		}
+		prerequisite = { focus = COT_M00 }
+		available = { has_country_flag = SCS_second_amendment }
+		ai_will_do = { factor = 8 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_M01A"
+			if = {
+				limit = { has_idea = SCS_more_vols_def }
+				swap_ideas = {
+					remove_idea = SCS_more_vols_def
+					add_idea = SCS_more_vols_guns_def
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = SCS_more_volunteers
+					add_idea = SCS_more_vols_guns
+				}
+			}
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	shared_focus = {	#Appoint Stewed Apple as General in Chief
+		id = COT_M01B
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		x = -4 y = 1 cost = 5 relative_position_id = COT_M00
+		offset = {
+			x = 4
+			trigger = { has_completed_focus = COT_M01B }
+		}
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_completed_focus = COT_M01C
+					has_completed_focus = COT_M01D
+				}
+			}
+		}
+		prerequisite = { focus = COT_M00 }
+		mutually_exclusive = {
+			focus = COT_M01C
+			focus = COT_M01D
+		}
+		ai_will_do = { factor = 8 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_M01B"
+			set_country_flag = COT_nemiles_hired
+			custom_effect_tooltip = COT_M01B_effect_tooltip
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	shared_focus = {	#Appoint Trotbert E. Neigh as General in Chief
+		id = COT_M01C
+		icon = GFX_goal_offensive_army
+		x = 0 y = 1 cost = 5 relative_position_id = COT_M00
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_completed_focus = COT_M01B
+					has_completed_focus = COT_M01D
+				}
+			}
+		}
+		prerequisite = { focus = COT_M00 }
+		mutually_exclusive = {
+			focus = COT_M01B
+			focus = COT_M01D
+		}
+		ai_will_do = { factor = 8 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_M01C"
+			set_country_flag = COT_teneigh_hired
+			custom_effect_tooltip = COT_M01C_effect_tooltip
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	shared_focus = {	#Appoint Stone Wall as General in Chief
+		id = COT_M01D
+		icon = GFX_goal_generic_defence
+		x = 4 y = 1 cost = 5 relative_position_id = COT_M00
+		offset = {
+			x = 4
+			trigger = { has_completed_focus = COT_M01D }
+		}
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_completed_focus = COT_M01B
+					has_completed_focus = COT_M01C
+				}
+			}
+		}
+		prerequisite = { focus = COT_M00 }
+		mutually_exclusive = {
+			focus = COT_M01C
+			focus = COT_M01B
+		}
+		ai_will_do = { factor = 8 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_M01D"
+			set_country_flag = COT_stone_wall_hired
+			custom_effect_tooltip = COT_M01D_effect_tooltip
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	shared_focus = {
+		id = COT_M01E
+		icon = GFX_goal_document
+		x = 9 y = 1 cost = 5 relative_position_id = COT_M00
+		offset = {
+			x = -4
+			trigger = {
+				OR = {
+					has_completed_focus = COT_M01B
+					has_completed_focus = COT_M01C
+					has_completed_focus = COT_M01D
+				}
+			}
+		}
+		offset = {
+			x = -1
+			trigger = {
+				OR = {
+					has_completed_focus = COT_M02I
+					has_completed_focus = COT_M02J
+				}
+			}
+		}
+		allow_branch = {
+			NOT = { has_completed_focus = COT_M01A }
+		}
+		prerequisite = { focus = COT_M00 }
+		available = { has_country_flag = SCS_confiscating_traitor_weapons }
+		ai_will_do = { factor = 8 }
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_M01E"
+			swap_ideas = {
+				remove_idea = SCS_more_volunteers
+				add_idea = SCS_more_vols_state
+			}
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	shared_focus = {
+		id = COT_M02A
+		icon = GFX_goal_conscription_pony
+		x = -1 y = 1 cost = 5 relative_position_id = COT_M01A
+		offset = {
+			x = 1
+			trigger = { has_completed_focus = COT_M02A }
+		}
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_completed_focus = COT_M02B
+					has_completed_focus = COT_M01E
+				}
+			}
+		}
+		prerequisite = { focus = COT_M01A }
+		mutually_exclusive = { focus = COT_M02B }
+		ai_will_do = {
+			factor = 8
+			modifier = {
+				factor = 0
+				or = {
+					has_tech = superior_firepower
+					has_tech = mobile_warfare
+					has_tech = grand_battle_plan
+					is_researching_technology = superior_firepower
+					is_researching_technology = mobile_warfare
+					is_researching_technology = grand_battle_plan
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_M02A"
+			add_doctrine_cost_reduction = {
+				name = cat_mass_assault
+				category = cat_mass_assault
+				cost_reduction = 0.5
+				uses = 2
+			}
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	shared_focus = {
+		id = COT_M02B
+		icon = GFX_goal_generic_cavalry
+		x = 1 y = 1 cost = 5 relative_position_id = COT_M01A
+		offset = {
+			x = -1
+			trigger = { has_completed_focus = COT_M02B }
+		}
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_completed_focus = COT_M02A
+					has_completed_focus = COT_M01E
+				}
+			}
+		}
+		prerequisite = { focus = COT_M01A }
+		mutually_exclusive = { focus = COT_M02A }
+		ai_will_do = {
+			factor = 8
+			modifier = {
+				factor = 0
+				or = {
+					has_tech = superior_firepower
+					has_tech = mass_assault
+					has_tech = grand_battle_plan
+					is_researching_technology = superior_firepower
+					is_researching_technology = mass_assault
+					is_researching_technology = grand_battle_plan
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_M02B"
+			add_doctrine_cost_reduction = {
+				name = cat_mobile_warfare
+				category = cat_mobile_warfare
+				cost_reduction = 0.5
+				uses = 2
+			}
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	shared_focus = {
+		id = COT_M02C
+		icon = GFX_goal_generic_special_forces
+		x = -1 y = 1 cost = 5 relative_position_id = COT_M01B
+		prerequisite = { focus = COT_M01B }
+		ai_will_do = { factor = 7 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_M02C"
+			add_tech_bonus = {
+				name = support_bonus
+				category = recon_tech
+				bonus = 1
+				uses = 2
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_M02D
+		icon = GFX_goal_generic_radar
+		x = 1 y = 1 cost = 5 relative_position_id = COT_M01B
+		prerequisite = { focus = COT_M01B }
+		ai_will_do = { factor = 7 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_M02D"
+			add_tech_bonus = {
+				name = radar_bonus
+				category = radar_tech
+				category = encryption_tech
+				category = decryption_tech
+				bonus = 1
+				uses = 2
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_M02E
+		icon = GFX_goal_rct_fancy_train
+		x = -1 y = 1 cost = 5 relative_position_id = COT_M01C
+		prerequisite = { focus = COT_M01C }
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_ARMY_BONUS }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_M02E"
+			add_ideas = SCS_take_initiative_idea
+		}
+	}
+	shared_focus = {
+		id = COT_M02F
+		icon = GFX_goal_riv_army
+		x = 1 y = 1 cost = 5 relative_position_id = COT_M01C
+		prerequisite = { focus = COT_M01C }
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_M02F"
+			add_ideas = SCS_great_volunteer_force
+		}
+	}
+	shared_focus = {
+		id = COT_M02G
+		icon = GFX_goal_anti_tank
+		x = -1 y = 1 cost = 5 relative_position_id = COT_M01D
+		prerequisite = { focus = COT_M01D }
+		ai_will_do = { factor = 7 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_M02G"
+			add_tech_bonus = {
+				name = cat_anti_tank_research
+				category = cat_anti_tank
+				category = cat_anti_air
+				bonus = 1
+				uses = 2
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_M02H
+		icon = GFX_focus_generic_support_the_left_right
+		x = 1 y = 1 cost = 5 relative_position_id = COT_M01D
+		prerequisite = { focus = COT_M01D }
+		ai_will_do = { factor = 8 }
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+			FOCUS_FILTER_ARMY_BONUS
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_M02H"
+			if = {
+				limit = { has_idea = SCS_more_vols_guns }
+				swap_ideas = {
+					remove_idea = SCS_more_vols_guns
+					add_idea = SCS_more_vols_guns_def
+				}
+			}
+			else_if = {
+				limit = { has_idea = SCS_more_vols_state }
+				swap_ideas = {
+					remove_idea = SCS_more_vols_state
+					add_idea = SCS_more_vols_state_def
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = SCS_more_volunteers
+					add_idea = SCS_more_vols_def
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_M02I
+		icon = GFX_goal_national_artillery
+		x = -1 y = 1 cost = 5 relative_position_id = COT_M01E
+		offset = {
+			x = 1
+			trigger = { has_completed_focus = COT_M02I }
+		}
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_completed_focus = COT_M02J
+					has_completed_focus = COT_M01A
+				}
+			}
+		}
+		prerequisite = { focus = COT_M01E }
+		mutually_exclusive = { focus = COT_M02J }
+		ai_will_do = {
+			factor = 8
+			modifier = {
+				factor = 0
+				or = {
+					has_tech = mass_assault
+					has_tech = mobile_warfare
+					has_tech = grand_battle_plan
+					is_researching_technology = mass_assault
+					is_researching_technology = mobile_warfare
+					is_researching_technology = grand_battle_plan
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_M02I"
+			add_doctrine_cost_reduction = {
+				name = cat_superior_firepower
+				category = cat_superior_firepower
+				cost_reduction = 0.5
+				uses = 2
+			}
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	shared_focus = {
+		id = COT_M02J
+		icon = GFX_goal_planning_bonus
+		x = 1 y = 1 cost = 5 relative_position_id = COT_M01E
+		offset = {
+			x = -1
+			trigger = { has_completed_focus = COT_M02J }
+		}
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_completed_focus = COT_M02I
+					has_completed_focus = COT_M01A
+				}
+			}
+		}
+		prerequisite = { focus = COT_M01E }
+		mutually_exclusive = { focus = COT_M02I }
+		ai_will_do = {
+			factor = 8
+			modifier = {
+				factor = 0
+				or = {
+					has_tech = mass_assault
+					has_tech = mobile_warfare
+					has_tech = superior_firepower
+					is_researching_technology = mass_assault
+					is_researching_technology = mobile_warfare
+					is_researching_technology = superior_firepower
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_M02J"
+			add_doctrine_cost_reduction = {
+				name = cat_grand_battle_plan
+				category = cat_grand_battle_plan
+				cost_reduction = 0.5
+				uses = 2
+			}
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	shared_focus = {
+		id = COT_M03A
+		icon = GFX_goal_generic_small_arms
+		x = -1 y = 1 cost = 5 relative_position_id = COT_M02A
+		prerequisite = { focus = COT_M02A }
+		ai_will_do = { factor = 7 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_M03A"
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				category = infantry_weapons
+				bonus = 1
+				uses = 2
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_M03B
+		icon = GFX_focus_indy_tanks_across_the_border
+		x = 0 y = 2 cost = 5 relative_position_id = COT_M01A
+		offset = {
+			x = 1
+			trigger = { has_completed_focus = COT_M02A }
+		}
+		offset = {
+			x = -1
+			trigger = { has_completed_focus = COT_M02B }
+		}
+		prerequisite = {
+			focus = COT_M02A
+			focus = COT_M02B
+		}
+		ai_will_do = { factor = 7 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_M03B"
+			add_tech_bonus = {
+				name = armor_bonus
+				category = armor
+				bonus = 1
+				uses = 1
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_M03C
+		icon = GFX_goal_generic_army_motorized
+		x = 1 y = 1 cost = 5 relative_position_id = COT_M02B
+		prerequisite = { focus = COT_M02B }
+		ai_will_do = { factor = 7 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_M03C"
+			add_tech_bonus = {
+				name = mot_bonus
+				category = motorized_equipment
+				bonus = 1
+				uses = 1
+			}
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				category = infantry_weapons
+				bonus = 1
+				uses = 1
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_M03D
+		icon = GFX_goal_revolution_pony
+		x = 0 y = 1 cost = 5 relative_position_id = COT_M02C
+		prerequisite = { focus = COT_M02C }
+		ai_will_do = { factor = 8 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_M03D"
+			add_ideas = SCS_breakthrough_bonus_idea
+		}
+	}
+	shared_focus = {
+		id = COT_M03E
+		icon = GFX_goal_generic_army_tanks
+		x = 0 y = 1 cost = 5 relative_position_id = COT_M02D
+		prerequisite = { focus = COT_M02D }
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_M03E"
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1 uses = 1
+				category = armor
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_M03F
+		icon = GFX_goal_nested_fortifications
+		x = 0 y = 1 cost = 5 relative_position_id = COT_M02E
+		prerequisite = { focus = COT_M02E }
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_ARMY_BONUS }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_M03F"
+			add_ideas = SCS_trenches_idea
+		}
+	}
+	shared_focus = {
+		id = COT_M03G
+		icon = GFX_focus_indy_swing_the_sword
+		x = 0 y = 1 cost = 5 relative_position_id = COT_M02F
+		prerequisite = { focus = COT_M02F }
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_ARMY_BONUS }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_M03G"
+			add_ideas = SCS_marse_morale
+		}
+	}
+	shared_focus = {
+		id = COT_M03H
+		icon = GFX_goal_national_arsenal
+		x = 0 y = 1 cost = 5 relative_position_id = COT_M02G
+		prerequisite = { focus = COT_M02G }
+		ai_will_do = { factor = 8 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_M03H"
+			add_ideas = SCS_fire_discipline
+		}
+	}
+	shared_focus = {
+		id = COT_M03I
+		icon = GFX_focus_healthcare_program
+		x = 0 y = 1 cost = 5 relative_position_id = COT_M02H
+		prerequisite = { focus = COT_M02H }
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_M03I"
+			add_tech_bonus = {
+				name = hospital_research
+				category = hospital_tech
+				bonus = 1
+				uses = 2
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_M03J
+		icon = GFX_goal_generic_army_artillery
+		x = -1 y = 1 cost = 5 relative_position_id = COT_M02I
+		prerequisite = { focus = COT_M02I }
+		ai_will_do = { factor = 7 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_M03J"
+			add_tech_bonus = {
+				name = arty_bonus
+				bonus = 1 uses = 2
+				category = artillery
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_M03K
+		icon = GFX_goal_magical_weapon_focus
+		x = 0 y = 2 cost = 5 relative_position_id = COT_M01E
+		offset = {
+			x = 1
+			trigger = { has_completed_focus = COT_M02I }
+		}
+		offset = {
+			x = -1
+			trigger = { has_completed_focus = COT_M02J }
+		}
+		prerequisite = {
+			focus = COT_M02I
+			focus = COT_M02J
+		}
+		ai_will_do = { factor = 7 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_M03K"
+			add_tech_bonus = {
+				name = magical_bonus
+				category = magical_tech
+				bonus = 1
+				uses = 2
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_M03L
+		icon = GFX_goal_generic_construction2
+		x = 1 y = 1 cost = 5 relative_position_id = COT_M02J
+		prerequisite = { focus = COT_M02J }
+		ai_will_do = { factor = 7 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_M03L"
+			add_tech_bonus = {
+				name = support_bonus
+				category = engineers_tech
+				bonus = 1
+				uses = 2
+			}
+		}
+	}
+	shared_focus = {
+		id = COT_M04A
+		icon = GFX_goal_scs
+		x = 0 y = 3 cost = 5 relative_position_id = COT_M01C
+		prerequisite = {
+			focus = COT_M03D
+			focus = COT_M03E
+			focus = COT_M03F
+			focus = COT_M03G
+			focus = COT_M03H
+			focus = COT_M03I
+		}
+		prerequisite = {
+			focus = COT_M03A
+			focus = COT_M03C
+			focus = COT_M03J
+			focus = COT_M03L
+		}
+		ai_will_do = { factor = 7 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_M04A"
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				category = land_doctrine
+				cost_reduction = 0.5
+				uses = 2
+			}
+		}
+	}
