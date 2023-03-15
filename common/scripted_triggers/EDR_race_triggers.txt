@@ -3,62 +3,71 @@ uses_pony_EQS_portraits = {
 		original_tag = EQS
 		original_tag = EQC
 		original_tag = PCB
-		original_tag=ALA
-		original_tag=ALI
-		original_tag=BCK
-		original_tag=CHY
-		original_tag=CLD
-		original_tag=COT
-		original_tag=CRL
-		original_tag=CUL
-		original_tag=FAI
-		original_tag=FLY
-		original_tag=FRI
-		original_tag=FSH
-		original_tag=HAH
-		original_tag=HEB
-		original_tag=HEF
-		original_tag=HFT
-		original_tag=HMS
-		original_tag=HSW
-		original_tag=HWG
-		original_tag=JTL
-		original_tag=LAS
-		original_tag=MSE
-		original_tag=MWC
-		original_tag=NIH
-		original_tag=PIE
-		original_tag=PLF
-		original_tag=PLT
-		original_tag=PRT
-		original_tag=SGR
-		original_tag=STB
-		original_tag=SWT
-		original_tag=SYV
-		original_tag=TFL
-		original_tag=THA
-		original_tag=TRH
-		original_tag=TRS
-		original_tag=TRT
-		original_tag=VHT
-		original_tag=WTC
+	#EDR =====================
+		original_tag = ALA
+		original_tag = ALI
+		original_tag = BCK
+		original_tag = CHY
+		original_tag = CLD
+		original_tag = COT
+		original_tag = CRL
+		original_tag = CUL
+		original_tag = FAI
+		original_tag = FLY
+		original_tag = FRI
+		original_tag = FSH
+		original_tag = HAH
+		original_tag = HEB
+		original_tag = HEF
+		original_tag = HFT
+		original_tag = HMS
+		original_tag = HSW
+		original_tag = HWG
+		original_tag = JTL
+		original_tag = LAS
+		original_tag = MSE
+		original_tag = MWC
+		original_tag = NIH
+		original_tag = PIE
+		original_tag = PLF
+		original_tag = PLT
+		original_tag = PRT
+		original_tag = SGR
+		original_tag = STB
+		original_tag = SWT
+		original_tag = SYV
+		original_tag = TFL
+		original_tag = THA
+		original_tag = TRH
+		original_tag = TRS
+		original_tag = TRT
+		original_tag = VHT
+		original_tag = WTC
 	}
 }
 uses_pony_CRY_portraits = {
-	original_tag = CRY
-	original_tag=CRL
+	OR = {
+		original_tag = CRY
+	#EDR =======================
+		original_tag = CRL
+	}
 }
 uses_pony_STG_portraits = {
-	original_tag = STG
-	original_tag=SYV
-	original_tag=SGR
+	OR = {
+		original_tag = STG
+	#EDR ========================
+		original_tag = SYV
+		original_tag = SGR
+	}
 }
 uses_thestral_portraits = {
-	original_tag=FSH
-	original_tag=NIH
-	original_tag=THA
-	original_tag=TRH
-	original_tag=TRS
+	OR = {
+		original_tag = FSH
+		original_tag = NIH
+		original_tag = THA
+		original_tag = TRH
+		original_tag = TRS
+	}
 }
 uses_changeling_portraits = {
 	OR = {
@@ -66,15 +75,17 @@ uses_changeling_portraits = {
 		original_tag = CCN
 		original_tag = NCH
 		original_tag = MAN
-		original_tag=EMB
-		original_tag=SOY
+	#EDR =====================
+		original_tag = EMB
+		original_tag = SOY
 	}
 }
 uses_dragon_portraits = {
 	OR = {
 		original_tag = DRG
 		original_tag = IDT
-		original_tag=VII
+	#EDR =====================
+		original_tag = VII
 	}
 }
 is_country_main_culture_equestrian = {
@@ -95,45 +106,46 @@ is_country_main_culture_equestrian = {
 		original_tag = ELF
 		original_tag = EQC
 		original_tag = PCB
-		original_tag=ALA
-		original_tag=ALI
-		original_tag=BCK
-		original_tag=CHY
-		original_tag=CLD
-		original_tag=COT
-		original_tag=CRL
-		original_tag=CUL
-		original_tag=FAI
-		original_tag=FLY
-		original_tag=FRI
-		original_tag=FSH
-		original_tag=HAH
-		original_tag=HEB
-		original_tag=HEF
-		original_tag=HFT
-		original_tag=HMS
-		original_tag=HSW
-		original_tag=HWG
-		original_tag=JTL
-		original_tag=LAS
-		original_tag=MSE
-		original_tag=MWC
-		original_tag=TRS
-		original_tag=NIH
-		original_tag=PIE
-		original_tag=PLF
-		original_tag=PLT
-		original_tag=PRT
-		original_tag=SGR
-		original_tag=STB
-		original_tag=SWT
-		original_tag=SYV
-		original_tag=TFL
-		original_tag=THA
-		original_tag=TRH
-		original_tag=TRT
-		original_tag=VHT
-		original_tag=WTC
+	#EDR ======================
+		original_tag = ALA
+		original_tag = ALI
+		original_tag = BCK
+		original_tag = CHY
+		original_tag = CLD
+		original_tag = COT
+		original_tag = CRL
+		original_tag = CUL
+		original_tag = FAI
+		original_tag = FLY
+		original_tag = FRI
+		original_tag = FSH
+		original_tag = HAH
+		original_tag = HEB
+		original_tag = HEF
+		original_tag = HFT
+		original_tag = HMS
+		original_tag = HSW
+		original_tag = HWG
+		original_tag = JTL
+		original_tag = LAS
+		original_tag = MSE
+		original_tag = MWC
+		original_tag = TRS
+		original_tag = NIH
+		original_tag = PIE
+		original_tag = PLF
+		original_tag = PLT
+		original_tag = PRT
+		original_tag = SGR
+		original_tag = STB
+		original_tag = SWT
+		original_tag = SYV
+		original_tag = TFL
+		original_tag = THA
+		original_tag = TRH
+		original_tag = TRT
+		original_tag = VHT
+		original_tag = WTC
 	}
 }
 is_country_main_culture_changeling = {
@@ -142,15 +154,17 @@ is_country_main_culture_changeling = {
 		original_tag = CCN
 		original_tag = MAN
 		original_tag = NCH
-		original_tag=SOY
-		original_tag=EMB
+	#EDR ==============================
+		original_tag = SOY
+		original_tag = EMB
 	}
 }
 is_country_main_culture_dragon = {
 	OR = {
 		original_tag = DRG
 		original_tag = IDT
-		original_tag=VII
+	#EDR ==============================
+		original_tag = VII
 	}
 }
 is_state_main_culture_changeling = {
@@ -159,8 +173,9 @@ is_state_main_culture_changeling = {
 		is_in_array = { state_original_cores = CCN }
 		is_in_array = { state_original_cores = MAN }
 		is_in_array = { state_original_cores = NCH }
-		is_in_array={state_original_cores=SOY}
-		is_in_array={state_original_cores=EMB}
+	#EDR ==============================================
+		is_in_array = { state_original_cores = SOY }
+		is_in_array = { state_original_cores = EMB }
 	}
 }
 is_state_main_culture_equestrian = {
@@ -181,45 +196,46 @@ is_state_main_culture_equestrian = {
 		is_in_array = { state_original_cores = ELF }
 		is_in_array = { state_original_cores = EQC }
 		is_in_array = { state_original_cores = PCB }
-		is_in_array={state_original_cores=ALA}
-		is_in_array={state_original_cores=ALI}
-		is_in_array={state_original_cores=BCK}
-		is_in_array={state_original_cores=CHY}
-		is_in_array={state_original_cores=CLD}
-		is_in_array={state_original_cores=COT}
-		is_in_array={state_original_cores=CRL}
-		is_in_array={state_original_cores=CUL}
-		is_in_array={state_original_cores=FAI}
-		is_in_array={state_original_cores=FLY}
-		is_in_array={state_original_cores=FRI}
-		is_in_array={state_original_cores=FSH}
-		is_in_array={state_original_cores=HAH}
-		is_in_array={state_original_cores=HEB}
-		is_in_array={state_original_cores=HEF}
-		is_in_array={state_original_cores=HFT}
-		is_in_array={state_original_cores=HMS}
-		is_in_array={state_original_cores=HSW}
-		is_in_array={state_original_cores=HWG}
-		is_in_array={state_original_cores=JTL}
-		is_in_array={state_original_cores=LAS}
-		is_in_array={state_original_cores=MSE}
-		is_in_array={state_original_cores=MWC}
-		is_in_array={state_original_cores=TRS}
-		is_in_array={state_original_cores=NIH}
-		is_in_array={state_original_cores=PIE}
-		is_in_array={state_original_cores=PLF}
-		is_in_array={state_original_cores=PLT}
-		is_in_array={state_original_cores=PRT}
-		is_in_array={state_original_cores=SGR}
-		is_in_array={state_original_cores=STB}
-		is_in_array={state_original_cores=SWT}
-		is_in_array={state_original_cores=SYV}
-		is_in_array={state_original_cores=TFL}
-		is_in_array={state_original_cores=THA}
-		is_in_array={state_original_cores=TRH}
-		is_in_array={state_original_cores=TRT}
-		is_in_array={state_original_cores=VHT}
-		is_in_array={state_original_cores=WTC}
+	#EDR =================================================
+		is_in_array = { state_original_cores = ALA }
+		is_in_array = { state_original_cores = ALI }
+		is_in_array = { state_original_cores = BCK }
+		is_in_array = { state_original_cores = CHY }
+		is_in_array = { state_original_cores = CLD }
+		is_in_array = { state_original_cores = COT }
+		is_in_array = { state_original_cores = CRL }
+		is_in_array = { state_original_cores = CUL }
+		is_in_array = { state_original_cores = FAI }
+		is_in_array = { state_original_cores = FLY }
+		is_in_array = { state_original_cores = FRI }
+		is_in_array = { state_original_cores = FSH }
+		is_in_array = { state_original_cores = HAH }
+		is_in_array = { state_original_cores = HEB }
+		is_in_array = { state_original_cores = HEF }
+		is_in_array = { state_original_cores = HFT }
+		is_in_array = { state_original_cores = HMS }
+		is_in_array = { state_original_cores = HSW }
+		is_in_array = { state_original_cores = HWG }
+		is_in_array = { state_original_cores = JTL }
+		is_in_array = { state_original_cores = LAS }
+		is_in_array = { state_original_cores = MSE }
+		is_in_array = { state_original_cores = MWC }
+		is_in_array = { state_original_cores = TRS }
+		is_in_array = { state_original_cores = NIH }
+		is_in_array = { state_original_cores = PIE }
+		is_in_array = { state_original_cores = PLF }
+		is_in_array = { state_original_cores = PLT }
+		is_in_array = { state_original_cores = PRT }
+		is_in_array = { state_original_cores = SGR }
+		is_in_array = { state_original_cores = STB }
+		is_in_array = { state_original_cores = SWT }
+		is_in_array = { state_original_cores = SYV }
+		is_in_array = { state_original_cores = TFL }
+		is_in_array = { state_original_cores = THA }
+		is_in_array = { state_original_cores = TRH }
+		is_in_array = { state_original_cores = TRT }
+		is_in_array = { state_original_cores = VHT }
+		is_in_array = { state_original_cores = WTC }
 	}
 }
 is_operative_main_culture_changeling = {
@@ -228,8 +244,9 @@ is_operative_main_culture_changeling = {
 		has_nationality = CCN
 		has_nationality = MAN
 		has_nationality = NCH
-		has_nationality=SOY
-		has_nationality=EMB
+	#EDR ==================================
+		has_nationality = SOY
+		has_nationality = EMB
 	}
 }
 is_operative_main_culture_equestrian = {
@@ -250,62 +267,63 @@ is_operative_main_culture_equestrian = {
 		has_nationality = ELF
 		has_nationality = EQC
 		has_nationality = PCB
-		has_nationality=ALA
-		has_nationality=ALI
-		has_nationality=BCK
-		has_nationality=CHY
-		has_nationality=CLD
-		has_nationality=COT
-		has_nationality=CRL
-		has_nationality=CUL
-		has_nationality=FAI
-		has_nationality=FLY
-		has_nationality=FRI
-		has_nationality=FSH
-		has_nationality=HAH
-		has_nationality=HEB
-		has_nationality=HEF
-		has_nationality=HFT
-		has_nationality=HMS
-		has_nationality=HSW
-		has_nationality=HWG
-		has_nationality=JTL
-		has_nationality=LAS
-		has_nationality=MSE
-		has_nationality=MWC
-		has_nationality=TRS
-		has_nationality=NIH
-		has_nationality=PIE
-		has_nationality=PLF
-		has_nationality=PLT
-		has_nationality=PRT
-		has_nationality=SGR
-		has_nationality=STB
-		has_nationality=SWT
-		has_nationality=SYV
-		has_nationality=TFL
-		has_nationality=THA
-		has_nationality=TRH
-		has_nationality=TRT
-		has_nationality=VHT
-		has_nationality=WTC
+	#EDR ==================================
+		has_nationality = ALA
+		has_nationality = ALI
+		has_nationality = BCK
+		has_nationality = CHY
+		has_nationality = CLD
+		has_nationality = COT
+		has_nationality = CRL
+		has_nationality = CUL
+		has_nationality = FAI
+		has_nationality = FLY
+		has_nationality = FRI
+		has_nationality = FSH
+		has_nationality = HAH
+		has_nationality = HEB
+		has_nationality = HEF
+		has_nationality = HFT
+		has_nationality = HMS
+		has_nationality = HSW
+		has_nationality = HWG
+		has_nationality = JTL
+		has_nationality = LAS
+		has_nationality = MSE
+		has_nationality = MWC
+		has_nationality = TRS
+		has_nationality = NIH
+		has_nationality = PIE
+		has_nationality = PLF
+		has_nationality = PLT
+		has_nationality = PRT
+		has_nationality = SGR
+		has_nationality = STB
+		has_nationality = SWT
+		has_nationality = SYV
+		has_nationality = TFL
+		has_nationality = THA
+		has_nationality = TRH
+		has_nationality = TRT
+		has_nationality = VHT
+		has_nationality = WTC
 	}
 }
 is_country_secondary_culture_changeling = {
-	always = no
+	#always = no
 	OR = {
-		original_tag=NIH
+		original_tag = NIH
 	}
 }
 is_country_secondary_culture_diamond_dog = {
-	always = no
+	#always = no
 	OR = {
-		original_tag=HWG
-		original_tag=ALA
+		original_tag = HWG
+		original_tag = ALA
 	}
 }
 is_country_secondary_culture_buffalo = {
-	always = no
+	#always = no
 	OR = {
 		original_tag=HEB
 	}
@@ -313,6 +331,7 @@ is_country_secondary_culture_buffalo = {
 is_country_secondary_culture_equestrian = {
 	OR = {
 		original_tag = MAN
-		original_tag=VII
+	#EDR ====================================
+		original_tag = VII
 	}
 }

@@ -40,12 +40,12 @@ if={
 	}
 }
 set_popularities={
-	fascism=57
-	communism=5
-	neutrality=31
-	democratic=7
+	fascism=31
+	communism=57
+	neutrality=7
+	democratic=5
 }
-set_politics={ruling_party=fascism}
+set_politics={ruling_party=communism}
 set_country_flag=EDR_is_equestrian_breakaway
 recruit_character=PIE_marble_pie
 recruit_character=PIE_sapphire_smiles

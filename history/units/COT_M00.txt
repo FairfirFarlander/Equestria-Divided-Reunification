@@ -1,0 +1,61 @@
+division_template={
+	name="Minutepony Volunteers"
+	priority=0
+	template_counter=3
+	regiments={
+		militia={x=0 y=0}
+		militia={x=0 y=1}
+		militia={x=0 y=2}
+	}
+}
+division_template={
+	name="Southron Regiment"
+	template_counter=54
+	regiments={
+		infantry={x=0 y=0}	infantry={x=1 y=0}
+		infantry={x=0 y=1}	infantry={x=1 y=1}
+		infantry={x=0 y=2}
+	}
+}
+units={
+	division={
+		name="Lodgers of Canter Creek"
+		location=1643	#VP - Canter Creek
+		division_template="Minutepony Volunteers"
+		start_experience_factor=0.26
+		start_equipment_factor=0.85
+		force_equipment_variants={
+			melee_equipment_1={owner="COT" creator="COT"}
+		}
+	}
+	division={
+		name="Amigos de San Manetonio"
+		location=11754	#San Manetonio - Central Trotsas
+		division_template="Minutepony Volunteers"
+		start_experience_factor=0.18
+		start_equipment_factor=0.9
+		force_equipment_variants={
+			melee_equipment_1={owner="COT" creator="COT"}
+		}
+	}
+	division={
+		name="Trotters of the Wood"
+		location=3937	#Trotgaron - Central Trotsas
+		division_template="Minutepony Volunteers"
+		start_experience_factor=0.3
+		start_equipment_factor=0.75
+		force_equipment_variants={
+			melee_equipment_1={owner="COT" creator="COT"}
+		}
+	}
+	division={
+		name="Haystin Haystackers"
+		location=6998	#Haystin - North Trotsas
+		division_template="Minutepony Volunteers"
+		start_experience_factor=0.1
+		start_equipment_factor=0.8
+		force_equipment_variants={
+			melee_equipment_1={owner="COT" creator="COT"}
+		}
+	}
+}

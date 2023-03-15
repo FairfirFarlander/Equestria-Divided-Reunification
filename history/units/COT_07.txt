@@ -1,0 +1,76 @@
+division_template = {
+	name = "Remnant Militia"
+	is_locked = yes
+	force_allow_recruiting = yes
+	division_cap = 3
+	priority = 0
+	template_counter = 3
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Buffalo Tribe"
+	is_locked = yes
+	priority = 2
+	template_counter = 36
+	regiments = {
+		irregular_infantry = { x = 0 y = 0 }	irregular_infantry = { x = 1 y = 0 }
+		irregular_infantry = { x = 0 y = 1 }	irregular_infantry = { x = 1 y = 1 }
+	}
+}
+units = {
+	division = {
+		name = "Ghosts of Dodge"	#Dodge City Exiles
+		location = 7668	#Arimaspi Territory
+		division_template = "Remnant Militia"
+		start_experience_factor = 0.75
+		start_equipment_factor = 0.55
+		force_equipment_variants = {
+			melee_equipment_1 = {
+				owner = "COT"
+				creator = "COT"
+			}
+		}
+	}
+	division = {
+		name = "The Coastal Roses"	#Rosemarin Exiles
+		location = 3663	#Horston - South Trotsas
+		division_template = "Remnant Militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+		force_equipment_variants = {
+			melee_equipment_1 = {
+				owner = "COT"
+				creator = "COT"
+			}
+		}
+	}
+	division = {
+		name = "Pinto Creek Militia"	#Pinto Creek Exiles
+		location = 9756	#North Trotsas
+		division_template = "Remnant Militia"
+		start_experience_factor = 0.14
+		start_equipment_factor = 0.7
+		force_equipment_variants = {
+			melee_equipment_0 = {
+				owner = "COT"
+				creator = "EQS"
+			}
+		}
+	}
+	division = {
+		name = "Thunderhoof Tribe"	#Buffalo Exiles
+		location = 4535	#VP - Canter Creek
+		division_template = "Buffalo Tribe"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+		force_equipment_variants = {
+			melee_equipment_0 = {
+				owner = "COT"
+				creator = "BUF"
+			}
+		}
+	}
+}

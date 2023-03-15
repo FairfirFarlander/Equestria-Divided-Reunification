@@ -1,25 +1,29 @@
-focus_tree={
-	id=COT
-	country={
-		factor=0
-		modifier={
-			tag=COT
-			add=3
+focus_tree = {
+	id = COT
+	country = {
+		factor = 0
+		modifier = {
+			tag = COT
+			add = 3
 		}
 	}
-	continuous_focus_position={ x=60 y=1340 }
-	shared_focus=COT_constitutional_convention
-	shared_focus=COT_M00
-	shared_focus=COT_AN00
-	shared_focus=COT_I00 
-	#shared_focus=COT_big_apple
+	continuous_focus_position = { x = 60 y = 1460 }
+	shared_focus = COT_S00
+	shared_focus = COT_M00
+	shared_focus = COT_AN00
+	shared_focus = COT_I00
+	shared_focus = COT_constitutional_convention
+	shared_focus = COT_you_happy_land
+	shared_focus = COT_rockhoof
+	shared_focus = COT_for_the_republic
+	#shared_focus = COT_big_apple
 }
 #NOTES - Check all country flags via events for porting
 ##Political Tree##
 	shared_focus = {
 		id = COT_constitutional_convention
 		icon = GFX_focus_generic_the_giant_wakes
-		x = 0 y = 0 cost = 10 ai_will_do = { factor = 10 }
+		x = -3 y = 4 cost = 10 ai_will_do = { factor = 10 }
 		select_effect = {
 			country_event = { id = scs.15 days = 6 random = 48 }
 			country_event = { id = scs.23 days = 30 random = 240 }#events about Rockhoof
@@ -89,13 +93,13 @@ focus_tree={
 	shared_focus = {
 		id = COT_I00
 		icon = GFX_goal_generic_positive_trade_relations
-		x = 15 y = 0 cost = 1 relative_position_id = COT_constitutional_convention
+		x = -15 y = 0 cost = 1 relative_position_id = COT_S00
 		offset = {
-			x = -3
+			x = 3
 			trigger = { has_completed_focus = COT_I01A }
 		}
 		offset = {
-			x = -2
+			x = 2
 			trigger = {
 				OR = {
 					has_completed_focus = COT_I01B
@@ -104,7 +108,7 @@ focus_tree={
 			}
 		}
 		offset = {
-			x = -1
+			x = 2
 			trigger = {
 				OR = {
 					has_completed_focus = COT_I03A
@@ -1110,7 +1114,7 @@ focus_tree={
 	shared_focus = {
 		id = COT_AN00
 		icon = GFX_goal_generic_navy_carrier
-		x = -16 y = 0 cost = 0.15 relative_position_id = COT_constitutional_convention
+		x = 10 y = 4 cost = 0.15 relative_position_id = COT_S00
 		bypass = { has_country_flag = SCS_finished_convention }
 		available = { has_country_flag = SCS_finished_convention }
 		ai_will_do = { factor = 5 }
@@ -1122,7 +1126,7 @@ focus_tree={
 	shared_focus = {
 		id = COT_N01
 		icon = GFX_goal_dockyard_generic_psody
-		x = -3 y = 1 cost = 5 relative_position_id = COT_AN00
+		x = -2 y = 1 cost = 5 relative_position_id = COT_AN00
 		prerequisite = { focus = COT_AN00 }
 		available = { owns_state = 80 }
 		ai_will_do = { factor = 4 }
@@ -1151,7 +1155,7 @@ focus_tree={
 	shared_focus = {
 		id = COT_A01
 		icon = GFX_goal_eqs_airfields_south
-		x = 3 y = 1 cost = 5 relative_position_id = COT_AN00
+		x = 2 y = 1 cost = 5 relative_position_id = COT_AN00
 		prerequisite = { focus = COT_AN00 }
 		ai_will_do = { factor = 4 }
 		search_filters = { FOCUS_FILTER_AIRFORCE_BONUS }
@@ -1412,7 +1416,32 @@ focus_tree={
 	shared_focus = {	#Grand Army of the Confederacy
 		id = COT_M00
 		icon = GFX_goal_officers
-		x = 0 y = 5 cost = 5 relative_position_id = COT_AN00
+		x = 18 y = 0 cost = 5 relative_position_id = COT_S00
+		offset = {
+			x = -4
+			trigger = {
+				OR = {
+					has_completed_focus = COT_M01B
+					has_completed_focus = COT_M01C
+					has_completed_focus = COT_M01D
+				}
+			}
+		}
+		offset = {
+			x = -5
+			trigger = { has_completed_focus = COT_M01A }
+		}
+		offset = {
+			x = -2
+			trigger = {
+				OR = {
+					has_completed_focus = COT_M02A
+					has_completed_focus = COT_M02B
+					has_completed_focus = COT_M02I
+					has_completed_focus = COT_M02J
+				}
+			}
+		}
 		available = { has_country_flag = SCS_finished_convention }
 		ai_will_do = {
 			factor = 8
@@ -1430,7 +1459,7 @@ focus_tree={
 			army_experience = 15
 			add_ideas = SCS_more_volunteers
 			custom_effect_tooltip = SCS_will_spawn_troops
-			#hidden_effect = { load_oob = SCS_CW_volunteers }
+			hidden_effect = { load_oob = COT_M00 }
 		}
 	}
 	shared_focus = {	#The Right to Bear Arms
@@ -1539,7 +1568,7 @@ focus_tree={
 		icon = GFX_goal_generic_defence
 		x = 4 y = 1 cost = 5 relative_position_id = COT_M00
 		offset = {
-			x = 4
+			x = -4
 			trigger = { has_completed_focus = COT_M01D }
 		}
 		allow_branch = {
@@ -2103,7 +2132,7 @@ focus_tree={
 		}
 	}
 	shared_focus = {
-		id = COT_M04A
+		id = COT_M04
 		icon = GFX_goal_scs
 		x = 0 y = 3 cost = 5 relative_position_id = COT_M01C
 		prerequisite = {
@@ -2123,7 +2152,7 @@ focus_tree={
 		ai_will_do = { factor = 7 }
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus COT_M04A"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_M04"
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				category = land_doctrine

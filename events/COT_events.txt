@@ -1,0 +1,115 @@
+add_namespace = COT_ES
+	country_event = {	#Memories of the Constitution
+		id = COT_ES.0001
+		title = COT_ES.0001.t
+		desc = COT_ES.0001.d
+		picture = GFX_event_generic_pony_diplomacy
+		is_triggered_only = yes
+		option = { name = COT_ES.0001.a }
+		option = {
+			name = COT_E0_CWT
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event COT_ES.0001" }
+	}
+	country_event = {	#First Ammendment
+		id = COT_ES.0002
+		title = COT_ES.0002.t
+		desc = COT_ES.0002.d
+		picture = GFX_event_pony_protest
+		is_triggered_only = yes
+		option = { name = COT_ES.0002.a }
+		option = {
+			name = COT_E0_CWT
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event COT_ES.0002" }
+	}
+	country_event = {	#Second Ammendment
+		id = COT_ES.0003
+		title = COT_ES.0003.t
+		desc = COT_ES.0003.d
+		picture = GFX_event_bazooka_team
+		is_triggered_only = yes
+		option = {
+			name = COT_ES.0003.a
+			set_country_flag = COT_second_ammendment_passed
+			add_stability = 0.05
+			add_political_power = 50
+			country_event = {
+				id = COT_ES.0004
+				days = 7
+			}
+		}
+		option = {
+			name = COT_ES.0003.b
+			set_country_flag = COT_second_ammendment_changed
+			add_stability = -0.1
+			add_political_power = -50
+			country_event = {
+				id = COT_ES.0005
+				days = 7
+			}
+		}
+		option = {
+			name = COT_E0_CWT
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event COT_ES.0003" }
+	}
+	country_event = {	#Third Ammendment
+		id = COT_ES.0004
+		title = COT_ES.0004.t
+		desc = COT_ES.0004.d
+		picture = GFX_event_appleloosa
+		is_triggered_only = yes
+		option = {
+			name = COT_ES.0004.a
+			set_country_flag = COT_I01A_unlocked
+			country_event = {
+				id = COT_ES.0005
+				days = 7
+			}
+		}
+		option = {
+			name = COT_ES.0004.b
+			set_country_flag = COT_I01B_unlocked
+			add_political_power = -30
+			add_ideas = SCS_moderate_regulation
+			country_event = {
+				id = COT_ES.0005
+				days = 7
+			}
+		}
+		option = {
+			name = COT_ES.0004.b
+			set_country_flag = COT_I01C_unlocked
+			add_stability = -0.05
+			add_political_power = -50
+			add_ideas = SCS_heavy_regulation
+			country_event = {
+				id = COT_ES.0005
+				days = 7
+			}
+		}
+		option = {
+			name = COT_E0_CWT
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event COT_ES.0004" }
+	}
+	country_event = {	#Memories of the Election
+		id = COT_ES.0005
+		title = COT_ES.0005.t
+		desc = COT_ES.0005.d
+		picture = GFX_event_the_vote
+		is_triggered_only = yes
+		option = {
+			name = COT_ES.0005.a
+		}
+		option = {
+			name = COT_E0_CWT
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event COT_ES.0004" }
+	}

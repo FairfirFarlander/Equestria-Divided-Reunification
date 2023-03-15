@@ -20,7 +20,7 @@
 			}
 		}
 		search_filters={}
-		select_effect={country_event=EDR_evt_gen.000}	#Event Verbosity
+		#select_effect={country_event=EDR_evt_gen.000}	#Event Verbosity
 		ai_will_do={factor=80}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_S00"

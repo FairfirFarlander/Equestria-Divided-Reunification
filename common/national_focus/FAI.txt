@@ -26,7 +26,7 @@ focus_tree = {
 ##StoryTree
 	shared_focus = {	#What We Must Do to Survive
 		id = FAI_S00
-		#icon = 
+		icon = GFX_goal_survival_first
 		x = 0 y = 0 cost = 1
 		search_filters = {  }
 		ai_will_do = { factor = 80 }
@@ -37,7 +37,7 @@ focus_tree = {
 	}
 	shared_focus = {	#Firing Up Old Factories
 		id = FAI_S01A
-		#icon = 
+		icon = GFX_goal_factory_complex
 		x = -1 y = 1 cost = 2 relative_position_id = FAI_S00
 		search_filters = {  }
 		prerequisite = { focus = FAI_S00 }
@@ -56,7 +56,7 @@ focus_tree = {
 	}
 	shared_focus = {	#The Guns of the Congregation
 		id = FAI_S01B
-		#icon = 
+		icon = GFX_goal_van_rifles
 		x = 1 y = 1 cost = 2 relative_position_id = FAI_S00
 		search_filters = {  }
 		prerequisite = { focus = FAI_S00 }
@@ -75,7 +75,7 @@ focus_tree = {
 	}
 	shared_focus = {	#Radios in Every Home and On Every Street Corner
 		id = FAI_S02A
-		#icon = 
+		icon = GFX_goal_radio
 		x = 0 y = 1 cost = 5 relative_position_id = FAI_S01A
 		search_filters = {  }
 		prerequisite = { focus = FAI_S01A }
@@ -89,7 +89,7 @@ focus_tree = {
 	}
 	shared_focus = {	#Homegrown Innovations
 		id = FAI_S02B
-		#icon = 
+		icon = GFX_goal_Arms_Export
 		x = 0 y = 1 cost = 5 relative_position_id = FAI_S01B
 		search_filters = {  }
 		prerequisite = { focus = FAI_S01B }
@@ -106,7 +106,7 @@ focus_tree = {
 	}
 	shared_focus = {	#Boosting the Signal
 		id = FAI_S03A
-		#icon = 
+		icon = GFX_goal_generic_radio_equipment
 		x = -2 y = 3 cost = 5 relative_position_id = FAI_S00
 		search_filters = {  }
 		prerequisite = { focus = FAI_S02A }
@@ -123,7 +123,7 @@ focus_tree = {
 	}
 	shared_focus = {	#They'll Come Loud and They'll Come Fast
 		id = FAI_S03B
-		#icon = 
+		icon = GFX_goal_revolution_pony
 		x = 0 y = 3 cost = 5 relative_position_id = FAI_S00
 		search_filters = {  }
 		prerequisite = { focus = FAI_S02A }
@@ -142,7 +142,7 @@ focus_tree = {
 	}
 	shared_focus = {	#Keep A Rifle By Your Side
 		id = FAI_S03C
-		#icon = 
+		icon = GFX_goal_generic_pony_volunteer
 		x = 2 y = 3 cost = 5 relative_position_id = FAI_S00
 		search_filters = {  }
 		prerequisite = { focus = FAI_S02A }
@@ -161,7 +161,7 @@ focus_tree = {
 	}
 	shared_focus = {	#The Sharing of Poppy's Knowledge
 		id = FAI_S04A
-		#icon = 
+		icon = GFX_goal_planning_bonus
 		x = 0 y = 2 cost = 5 relative_position_id = FAI_S02A
 		search_filters = {  }
 		prerequisite = { focus = FAI_S03A }
@@ -179,7 +179,7 @@ focus_tree = {
 	}
 	shared_focus = {	#To Let the Faithful Be Closer to the Sisters
 		id = FAI_S04B
-		#icon = 
+		icon = GFX_goal_POL_recon_aircraft
 		x = 0 y = 2 cost = 5 relative_position_id = FAI_S02B
 		search_filters = {  }
 		prerequisite = { focus = FAI_S03B }
@@ -215,7 +215,7 @@ focus_tree = {
 	}
 	shared_focus = {	#The Sisters' Most Devoted Servants
 		id = FAI_S05
-		#icon = 
+		icon = GFX_goal_UESR_TNO_sun_moon
 		x = 0 y = 2 cost = 5 relative_position_id = FAI_S03B
 		search_filters = {  }
 		prerequisite = { focus = FAI_S04A }
@@ -229,7 +229,7 @@ focus_tree = {
 	}
 	shared_focus = {	#The Sinners to Our South
 		id = FAI_S06A
-		#icon = 
+		icon = GFX_goal_GEA_guerilla_warfare
 		x = -1 y = 1 cost = 5 relative_position_id = FAI_S05
 		search_filters = {  }
 		prerequisite = { focus = FAI_S05 }
@@ -258,7 +258,7 @@ focus_tree = {
 	}
 	shared_focus = {	#The Heathens to the East
 		id = FAI_S06B
-		#icon = 
+		icon = GFX_goal_generic_pony_pegasus
 		x = 1 y = 1 cost = 5 relative_position_id = FAI_S05
 		search_filters = {  }
 		prerequisite = { focus = FAI_S05 }
@@ -286,7 +286,7 @@ focus_tree = {
 	}
 	shared_focus = {	#A New Use for the Tools of Sinners
 		id = FAI_S07A
-		#icon = 
+		icon = GFX_goal_generic_support_equipment
 		x = 0 y = 1 cost = 5 relative_position_id = FAI_S06A
 		search_filters = {  }
 		prerequisite = { focus = FAI_S06A }
@@ -350,7 +350,7 @@ focus_tree = {
 	}
 	shared_focus = {	#The Hedonistic Gift
 		id = FAI_S07B
-		#icon = 
+		icon = GFX_goal_generic_air_CAS_new
 		x = 0 y = 1 cost = 5 relative_position_id = FAI_S06B
 		search_filters = {  }
 		prerequisite = { focus = FAI_S06B }
@@ -403,7 +403,7 @@ focus_tree = {
 	}
 	shared_focus = {	#To Deal with the Heathens and Sinners
 		id = FAI_S08
-		#icon = 
+		icon = GFX_focus_indy_bound_by_blood
 		x = 0 y = 3 cost = 5 relative_position_id = FAI_S05
 		search_filters = {  }
 		prerequisite = { focus = FAI_S07A }
@@ -427,7 +427,7 @@ focus_tree = {
 	}
 	shared_focus = {	#The One True Home for the Faithful
 		id = FAI_S09
-		#icon = 
+		icon = GFX_goal_UESR_TNO_sun_moon
 		x = 0 y = 1 cost = 5 relative_position_id = FAI_S08
 		search_filters = {  }
 		prerequisite = { focus = FAI_S08 }
@@ -441,7 +441,7 @@ focus_tree = {
 	}
 	shared_focus = {	#Heaven's Gates
 		id = FAI_S10
-		#icon = 
+		icon = GFX_focus_man_claim_the_mandate_of_heaven
 		x = 0 y = 1 cost = 5 relative_position_id = FAI_S09
 		search_filters = {  }
 		prerequisite = { focus = FAI_S09 }

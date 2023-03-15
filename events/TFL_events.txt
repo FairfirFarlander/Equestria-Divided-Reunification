@@ -1,0 +1,37 @@
+add_namespace = TFL_ES
+	country_event = {	#One Final Call For Help
+		id = TFL_ES.0001
+		title = TFL_ES.0001.t
+		desc = TFL_ES.0001.d
+		#picture = 
+		is_triggered_only = yes
+		option = {
+			name = TFL_ES.0001.a
+		}
+		option = {
+			name = TFL_E0_CWT
+			trigger = {
+				is_debug = yes
+			}
+		}
+		immediate = {
+			log = "[GetDateText]: [Root.GetName]: event TFL_ES.0001"
+		}
+	}
+	country_event = {	#First Ammendment
+		id = TFL_ES.0002
+		title = TFL_ES.0002.t
+		desc = TFL_ES.0002.d
+		#picture = 
+		is_triggered_only = yes
+		option = {
+			name = TFL_ES.0002.a
+		}
+		option = {
+			name = TFL_E0_CWT
+			trigger = { is_debug = yes }
+		}
+		immediate = {
+			log = "[GetDateText]: [Root.GetName]: event TFL_ES.0002"
+		}
+	}

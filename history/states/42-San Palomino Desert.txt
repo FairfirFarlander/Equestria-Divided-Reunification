@@ -9,6 +9,6 @@ state={	#EDRSTATE
 	history={
 		owner=COT
 		add_core_of=COT
-		add_claim_by=HEB
+		set_demilitarized_zone=yes
 	}
 }

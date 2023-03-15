@@ -1,5 +1,5 @@
 division_template={
-	name="State Militia"
+	name="Citizen Militia"
 	priority=0
 	template_counter=3
 	regiments={

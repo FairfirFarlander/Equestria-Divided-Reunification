@@ -1,9 +1,9 @@
-capital=119
-#oob="TFL_1012"
-set_research_slots=2
-set_stability=0.5
-set_war_support=0.2
-add_ideas={
+capital = 119
+#oob = "TFL_1012"
+set_research_slots = 2
+set_stability = 0.5
+set_war_support = 0.2
+add_ideas = {
 	service_by_requirement
 	outlaw_economy
 	limited_exports
@@ -11,20 +11,31 @@ add_ideas={
 	lack_of_scientists3
 	poverty4
 }
-set_technology={
-	pony_race=1
-	melee_weapons=1
-	tech_support=1
+set_technology = {
+	pony_race = 1
+	melee_weapons = 1
+	tech_support = 1
 }
-actually_fix_weapon_techs=yes
-set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
-set_popularities={
-	fascism=15
-	communism=2
-	neutrality=76
-	democratic=7
+actually_fix_weapon_techs = yes
+set_rule = {
+	can_generate_female_aces = yes
+	can_generate_female_unit_leaders = yes
+	can_generate_female_country_leaders = yes
+}
+set_popularities = {
+	fascism = 61
+	communism = 3
+	neutrality = 18
+	democratic = 18
 }	#anarchism
-set_politics={ruling_party=neutrality}
-set_country_flag=EDR_is_equestrian_breakaway
-#recruit_character=
+set_politics = {
+	ruling_party = fascism
+}
+set_country_flag = EDR_is_equestrian_breakaway
+recruit_character = TFL_rain_dancer
+recruit_character = TFL_generic_pony
+recruit_character = TFL_buffalo_joe
+recruit_character = TFL_firespit
+recruit_character = TFL_yeehaw
 ###NOTES###
+#Years the Irish brigade was founded. 61 18 -Nonrelated 18 3

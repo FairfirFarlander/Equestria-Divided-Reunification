@@ -25,6 +25,7 @@ if={
 }
 set_technology={
 	pony_race=1
+	EDR_tech=1
 	penal_infantry=1
 	melee_weapons=1
 	melee_weapons1=1

@@ -44,7 +44,7 @@ country_with_custom_advisors={
 		original_tag=VHT
 		original_tag=VII
 		original_tag=WTC
-		#EAW
+	#EAW ========================
 		original_tag = HAU
 		original_tag = GRI
 		original_tag = FEA
@@ -145,5 +145,7 @@ country_with_custom_advisors={
 		original_tag = TRO
 		original_tag = ZAR
 		original_tag = WAR
+		original_tag = BLT
+		original_tag = CZR
 	}
 }

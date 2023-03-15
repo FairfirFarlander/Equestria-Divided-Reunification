@@ -1,5 +1,5 @@
 capital = 47
-oob = "COT_1012"
+oob = "COT_07"
 set_research_slots = 2
 set_stability = 0.49
 set_war_support = 0.16
@@ -19,7 +19,7 @@ set_technology = {
 	pre_gw_artillery = 1
 }
 if = {
-	limit = {has_dlc = "Man the Guns"}
+	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
 		early_ship_hull_light = 1
 		early_ship_hull_cruiser = 1
@@ -121,7 +121,7 @@ if = {
 	#	icon = "gfx/interface/technologies/ITA_basic_light_tank.dds"
 	#}
 	else = {
-		add_ideas = {EQS_bad_tanks}
+		add_ideas = { EQS_bad_tanks }
 		set_technology = {
 			gwtank = 1
 		}

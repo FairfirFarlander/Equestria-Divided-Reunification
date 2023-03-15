@@ -1,210 +1,55 @@
-focus_tree = {
-	id = SCS_focus_coltlumbia
-	country = {
-		factor = 0
-		modifier = {
-			add = 16
-			tag = SCS
-			has_country_flag = SCS_coltlumbia_win
-			NOT = {
-				has_government = fascism
-			}
-		}
-	}
-	default = no
-	continuous_focus_position = { x = 2500 y = 2500 }
-	focus = {
-		id = SCS_you_happy_land
+	shared_focus = {
+		id = COT_you_happy_land
 		icon = GFX_goal_support_democracy
-		x = 0
-		y = 1
-		cost = 5
-		relative_position_id = SCS_coltlumbia_victory
-		available = {
-			has_country_flag = SCS_coltlumbia_win
-		}
-		bypass = {
-		}
-		ai_will_do = {
-			factor = 14
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		x = 17 y = 7 cost = 5 relative_position_id = COT_S00
+		available = { has_country_flag = SCS_coltlumbia_win }
+		ai_will_do = { factor = 14 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_you_happy_land"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_you_happy_land"
 			add_political_power = 100
-			}
-			search_filters = { FOCUS_FILTER_POLITICAL }
+		}
 	}
-	focus = {
-		id = SCS_expose_rockhoof
+	shared_focus = {
+		id = COT_expose_rockhoof
 		icon = GFX_focus_generic_anti_fascist_diplomacy
-		x = -1
-		y = 1
-		cost = 2.9
-		relative_position_id = SCS_you_happy_land
-		prerequisite = {
-			focus = SCS_you_happy_land
-		}
-		available = {
-			has_country_flag = SCS_coltlumbia_win
-		}
-		bypass = {
-		}
-		ai_will_do = {
-			factor = 14
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		x = -1 y = 1 cost = 2.9 relative_position_id = COT_you_happy_land
+		prerequisite = { focus = COT_you_happy_land }
+		available = { has_country_flag = SCS_coltlumbia_win }
+		ai_will_do = { factor = 14 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_expose_rockhoof"
-			country_event = { id = scs.777 }
+			log = "[GetDateText]: [Root.GetName]: Focus COT_expose_rockhoof"
+			country_event = { id = COT.777 }
 			set_country_flag = SCS_rockhoof_neutralised
 		}
 	}
-	focus = {
-		id = SCS_tar_democrats_and_royalists
+	shared_focus = {
+		id = COT_tar_democrats_and_royalists
 		icon = GFX_goal_strike_harmony
-		x = 1
-		y = 1
-		cost = 2.9
-		relative_position_id = SCS_you_happy_land
-		prerequisite = {
-			focus = SCS_you_happy_land
-		}
-		available = {
-			has_country_flag = SCS_coltlumbia_win
-		}
-		bypass = {
-		}
-		ai_will_do = {
-			factor = 14
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		x = 1 y = 1 cost = 2.9 relative_position_id = COT_you_happy_land
+		prerequisite = { focus = COT_you_happy_land }
+		available = { has_country_flag = SCS_coltlumbia_win }
+		ai_will_do =  factor = 14 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_tar_democrats_and_royalists"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_tar_democrats_and_royalists"
 			add_popularity = {
 				ideology = democratic
 				popularity = -0.10
 			}
 			custom_effect_tooltip = SCS_decrease_royalists_by_10
-			hidden_effect = {
-				remove_10_royalism = yes
-			}
+			hidden_effect = { remove_10_royalism = yes }
 		}
 	}
-#	focus = {
-#		id = SCS_the_royalist_issue
-#		icon = GFX_goal_strike_harmony
-#		x = -2
-#		y = 1
-#		cost = 1.5
-#
-#		relative_position_id = SCS_you_happy_land
-#		mutually_exclusive = {
-#		}
-#		prerequisite = {
-#			focus = SCS_you_happy_land
-#		}
-#
-#		available = {
-#			has_country_flag = SCS_coltlumbia_win
-#		}
-#
-#		bypass = {
-#		}
-#
-#		cancel_if_invalid = yes
-#		continue_if_invalid = no
-#		available_if_capitulated = no
-#
-#		completion_reward = {
-#			country_event = { id = scs.23}
-#			custom_effect_tooltip = SCS_pp_vs_royal
-#			}
-#	}
-#	focus = {
-#		id = SCS_lawponies
-#		icon = GFX_goal_secret_agents
-#		x = 0
-#		y = 1
-#		cost = 1.5
-#
-#		relative_position_id = SCS_you_happy_land
-#		mutually_exclusive = {
-#		}
-#		prerequisite = {
-#			focus = SCS_you_happy_land
-#		}
-#
-#		available = {
-#			has_country_flag = SCS_coltlumbia_win
-#		}
-#
-#		bypass = {
-#		}
-#
-#		cancel_if_invalid = yes
-#		continue_if_invalid = no
-#		available_if_capitulated = no
-#
-#		completion_reward = {
-#			country_event = { id = scs.24}
-#			custom_effect_tooltip = SCS_pp_war_support
-#
-#			}
-#	}
-#	focus = {
-#		id = SCS_the_press
-#		icon = GFX_goal_big_news
-#		x = 2
-#		y = 1
-#		cost = 1.5
-#
-#		relative_position_id = SCS_you_happy_land
-#		mutually_exclusive = {
-#		}
-#		prerequisite = {
-#			focus = SCS_you_happy_land
-#		}
-#
-#		available = {
-#			has_country_flag = SCS_coltlumbia_win
-#		}
-#
-#		bypass = {
-#		}
-#
-#		cancel_if_invalid = yes
-#		continue_if_invalid = no
-#		available_if_capitulated = no
-#
-#		completion_reward = {
-#			country_event = { id = scs.25}
-#			custom_effect_tooltip = SCS_pp_vs_fascism
-#			}
-#	}
-	focus = {
-		id = SCS_total_isolation
+	shared_focus = {
+		id = COT_total_isolation
 		icon = GFX_goal_nested_fortifications
-		x = -3
-		y = 1
-		cost = 5
-		relative_position_id = SCS_expose_rockhoof
+		x = -3 y = 1 cost = 5 relative_position_id = COT_expose_rockhoof
 		mutually_exclusive = {
-			focus = SCS_extend_the_confederacy
-			focus = SCS_manifest_destiny
+			focus = COT_extend_the_confederacy
+			focus = COT_manifest_destiny
 		}
-		prerequisite = {
-			focus = SCS_expose_rockhoof
-		}
-		prerequisite = {
-			focus = SCS_tar_democrats_and_royalists
-		}
+		prerequisite = { focus = COT_expose_rockhoof }
+		prerequisite = { focus = COT_tar_democrats_and_royalists }
 		available = {
 		}
 		bypass = {
@@ -216,20 +61,20 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_total_isolation"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_total_isolation"
 			add_ideas = SCS_isolation
 			}
 			search_filters = { FOCUS_FILTER_ARMY_BONUS }
 	}
-	focus = {
-		id = SCS_build_dason_mixon_line
+	shared_focus = {
+		id = COT_build_dason_mixon_line
 		icon = GFX_goal_generic_construct_military
 		x = -1
 		y = 1
 		cost = 5
-		relative_position_id = SCS_total_isolation
+		relative_position_id = COT_total_isolation
 		prerequisite = {
-			focus = SCS_total_isolation
+			focus = COT_total_isolation
 		}
 		available = {
 			has_government = neutrality
@@ -243,7 +88,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_build_dason_mixon_line"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_build_dason_mixon_line"
 			if = {
 				limit = { controls_state = 49 }
 				49 = {
@@ -351,15 +196,15 @@ focus_tree = {
 			}
 			search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
-	focus = {
-		id = SCS_ready_to_fight
+	shared_focus = {
+		id = COT_ready_to_fight
 		icon = GFX_goal_SCS_guns
 		x = 0
 		y = 1
 		cost = 5
-		relative_position_id = SCS_build_dason_mixon_line
+		relative_position_id = COT_build_dason_mixon_line
 		prerequisite = {
-			focus = SCS_build_dason_mixon_line
+			focus = COT_build_dason_mixon_line
 		}
 		available = {
 			has_government = neutrality
@@ -373,20 +218,20 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_ready_to_fight"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_ready_to_fight"
 			add_ideas = SCS_ready_to_fight_idea
 			}
 			search_filters = { FOCUS_FILTER_MANPOWER }
 	}
-	focus = {
-		id = SCS_encourage_agriculture
+	shared_focus = {
+		id = COT_encourage_agriculture
 		icon = GFX_focus_AUS_agriculture
 		x = 1
 		y = 1
 		cost = 5
-		relative_position_id = SCS_total_isolation
+		relative_position_id = COT_total_isolation
 		prerequisite = {
-			focus = SCS_total_isolation
+			focus = COT_total_isolation
 		}
 		available = {
 			has_government = neutrality
@@ -400,7 +245,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_encourage_agriculture"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_encourage_agriculture"
 			every_owned_state = {
 				limit = {
 					is_core_of = SCS
@@ -411,15 +256,15 @@ focus_tree = {
 			}
 			search_filters = { FOCUS_FILTER_MANPOWER }
 	}
-	focus = {
-		id = SCS_encourage_industry
+	shared_focus = {
+		id = COT_encourage_industry
 		icon = GFX_focus_indy_tanks_across_the_border
 		x = 0
 		y = 1
 		cost = 5
-		relative_position_id = SCS_encourage_agriculture
+		relative_position_id = COT_encourage_agriculture
 		prerequisite = {
-			focus = SCS_encourage_agriculture
+			focus = COT_encourage_agriculture
 		}
 		available = {
 			has_government = neutrality
@@ -433,7 +278,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_encourage_industry"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_encourage_industry"
 			21 = {
 				add_building_construction = {
 					type = industrial_complex
@@ -450,16 +295,16 @@ focus_tree = {
 			}
 			search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
-	focus = {
-		id = SCS_dont_tread_on_us
+	shared_focus = {
+		id = COT_dont_tread_on_us
 		icon = GFX_dont_tread_on_me
 		x = 1
 		y = 1
 		cost = 5
-		relative_position_id = SCS_ready_to_fight
+		relative_position_id = COT_ready_to_fight
 		prerequisite = {
-			focus = SCS_encourage_industry
-			focus = SCS_ready_to_fight
+			focus = COT_encourage_industry
+			focus = COT_ready_to_fight
 		}
 		available = {
 			has_government = neutrality
@@ -473,7 +318,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_dont_tread_on_us"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_dont_tread_on_us"
 			swap_ideas = {
 				remove_idea = SCS_isolation
 				add_idea = SCS_isolation2
@@ -481,22 +326,22 @@ focus_tree = {
 			}
 			search_filters = { FOCUS_FILTER_ARMY_BONUS }
 	}
-	focus = {
-		id = SCS_extend_the_confederacy
+	shared_focus = {
+		id = COT_extend_the_confederacy
 		icon = GFX_goal_generic_major_alliance_pony
 		x = 0
 		y = 2
 		cost = 5
-		relative_position_id = SCS_you_happy_land
+		relative_position_id = COT_you_happy_land
 		mutually_exclusive = {
-			focus = SCS_total_isolation
-			focus = SCS_manifest_destiny
+			focus = COT_total_isolation
+			focus = COT_manifest_destiny
 		}
 		prerequisite = {
-			focus = SCS_expose_rockhoof
+			focus = COT_expose_rockhoof
 		}
 		prerequisite = {
-			focus = SCS_tar_democrats_and_royalists
+			focus = COT_tar_democrats_and_royalists
 		}
 		available = {
 			is_subject = no
@@ -510,20 +355,20 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_extend_the_confederacy"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_extend_the_confederacy"
 			create_faction = "Equestrian_Confederacy"
 			}
 			search_filters = { FOCUS_FILTER_POLITICAL }
 	}
-	focus = {
-		id = SCS_ally_las_pegasus
+	shared_focus = {
+		id = COT_ally_las_pegasus
 		icon = GFX_goal_improve_relations_pony_pony
 		x = -1
 		y = 1
 		cost = 5
-		relative_position_id = SCS_extend_the_confederacy
+		relative_position_id = COT_extend_the_confederacy
 		prerequisite = {
-			focus = SCS_extend_the_confederacy
+			focus = COT_extend_the_confederacy
 		}
 		available = {
 		}
@@ -536,21 +381,21 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_ally_las_pegasus"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_ally_las_pegasus"
 			LSP = {
 				country_event = scs.26
 			}
 			}
 	}
-	focus = {
-		id = SCS_ally_jun_or_ces
+	shared_focus = {
+		id = COT_ally_jun_or_ces
 		icon = GFX_goal_improve_relations_pony_pony
 		x = 1
 		y = 1
 		cost = 5
-		relative_position_id = SCS_extend_the_confederacy
+		relative_position_id = COT_extend_the_confederacy
 		prerequisite = {
-			focus = SCS_extend_the_confederacy
+			focus = COT_extend_the_confederacy
 		}
 		available = {
 			custom_trigger_tooltip = {
@@ -646,7 +491,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_ally_jun_or_ces"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_ally_jun_or_ces"
 			if = {
 				limit = {
 					JUN = { exists = yes }	#Always prefers to join with JUN rather than the explicitly pro-monarchist CES
@@ -674,35 +519,35 @@ focus_tree = {
 			}
 			}
 	}
-	focus = {
-		id = SCS_southern_economic_bloc
+	shared_focus = {
+		id = COT_southern_economic_bloc
 		icon = GFX_goal_Arms_Export
 		x = 0
 		y = 1
 		cost = 5
-		relative_position_id = SCS_ally_las_pegasus
+		relative_position_id = COT_ally_las_pegasus
 		prerequisite = {
-			focus = SCS_ally_las_pegasus
+			focus = COT_ally_las_pegasus
 		}
 		available = {
 			num_faction_members > 1
 		}
 		bypass = {
 			num_faction_members < 2
-			has_completed_focus = SCS_ally_jun_or_ces
+			has_completed_focus = COT_ally_jun_or_ces
 		}
 		ai_will_do = {
 			factor = 14
 			modifier = {
 				factor = 0.1
-				NOT = { has_completed_focus = SCS_ally_jun_or_ces }	####Invite both allies before giving bonus
+				NOT = { has_completed_focus = COT_ally_jun_or_ces }	####Invite both allies before giving bonus
 			}
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_southern_economic_bloc"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_southern_economic_bloc"
 			add_ideas = SCS_sec
 			if = {
 				limit = {
@@ -721,35 +566,35 @@ focus_tree = {
 			}
 			search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
-	focus = {
-		id = SCS_mutual_training
+	shared_focus = {
+		id = COT_mutual_training
 		icon = GFX_goal_chn_oppose_hitler_grey
 		x = 0
 		y = 1
 		cost = 5
-		relative_position_id = SCS_ally_jun_or_ces
+		relative_position_id = COT_ally_jun_or_ces
 		prerequisite = {
-			focus = SCS_ally_jun_or_ces
+			focus = COT_ally_jun_or_ces
 		}
 		available = {
 			num_faction_members > 1
 		}
 		bypass = {
 			num_faction_members < 2
-			has_completed_focus = SCS_ally_las_pegasus
+			has_completed_focus = COT_ally_las_pegasus
 		}
 		ai_will_do = {
 			factor = 14
 			modifier = {
 				factor = 0.1
-				NOT = { has_completed_focus = SCS_ally_las_pegasus }	####Invite both allies before giving bonus
+				NOT = { has_completed_focus = COT_ally_las_pegasus }	####Invite both allies before giving bonus
 			}
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_mutual_training"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_mutual_training"
 			add_ideas = SCS_shared_training
 			if = {
 				limit = {
@@ -768,18 +613,18 @@ focus_tree = {
 			}
 			search_filters = { FOCUS_FILTER_ARMY_BONUS }
 	}
-	focus = {
-		id = SCS_primus_inter_pares
+	shared_focus = {
+		id = COT_primus_inter_pares
 		icon = GFX_focus_indy_democratic_process
 		x = -1
 		y = 1
 		cost = 5
-		relative_position_id = SCS_mutual_training
+		relative_position_id = COT_mutual_training
 		prerequisite = {
-			focus = SCS_mutual_training
+			focus = COT_mutual_training
 		}
 		prerequisite = {
-			focus = SCS_southern_economic_bloc
+			focus = COT_southern_economic_bloc
 		}
 		available = {
 		}
@@ -792,27 +637,27 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_primus_inter_pares"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_primus_inter_pares"
 			add_ideas = SCS_primus_inter_pares_idea
 			}
 			search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 	}
-	focus = {
-		id = SCS_manifest_destiny
+	shared_focus = {
+		id = COT_manifest_destiny
 		icon = GFX_goal_generic_territory_or_war
 		x = 3
 		y = 1
 		cost = 5
-		relative_position_id = SCS_tar_democrats_and_royalists
+		relative_position_id = COT_tar_democrats_and_royalists
 		mutually_exclusive = {
-			focus = SCS_total_isolation
-			focus = SCS_extend_the_confederacy
+			focus = COT_total_isolation
+			focus = COT_extend_the_confederacy
 		}
 		prerequisite = {
-			focus = SCS_expose_rockhoof
+			focus = COT_expose_rockhoof
 		}
 		prerequisite = {
-			focus = SCS_tar_democrats_and_royalists
+			focus = COT_tar_democrats_and_royalists
 		}
 		available = {
 			has_war_support >0.70
@@ -826,20 +671,20 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_manifest_destiny"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_manifest_destiny"
 			add_ideas = SCS_aggression
 			}
 			search_filters = { FOCUS_FILTER_ARMY_BONUS }
 	}
-	focus = {
-		id = SCS_seize_rockville_strip
+	shared_focus = {
+		id = COT_seize_rockville_strip
 		icon = GFX_goal_offensive_army
 		x = -1
 		y = 1
 		cost = 5
-		relative_position_id = SCS_manifest_destiny
+		relative_position_id = COT_manifest_destiny
 		prerequisite = {
-			focus = SCS_manifest_destiny
+			focus = COT_manifest_destiny
 		}
 		available = {
 			OR = {
@@ -866,19 +711,19 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_seize_rockville_strip"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_seize_rockville_strip"
 			custom_effect_tooltip = SCS_rockville_strip
 			}
 	}
-	focus = {
-		id = SCS_aint_that_a_kick_in_the_head
+	shared_focus = {
+		id = COT_aint_that_a_kick_in_the_head
 		icon = GFX_goal_gambling
 		x = 0
 		y = 1
 		cost = 5
-		relative_position_id = SCS_seize_rockville_strip
+		relative_position_id = COT_seize_rockville_strip
 		prerequisite = {
-			focus = SCS_seize_rockville_strip
+			focus = COT_seize_rockville_strip
 		}
 		available = {
 			LSP = {
@@ -905,22 +750,22 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_aint_that_a_kick_in_the_head"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_aint_that_a_kick_in_the_head"
 			create_wargoal = {
 				type = annex_everything target = LSP
 			}
 			}
 			search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
-	focus = {
-		id = SCS_stabilise_southeast
+	shared_focus = {
+		id = COT_stabilise_southeast
 		icon = GFX_focus_generic_support_the_left_right
 		x = 1
 		y = 1
 		cost = 5
-		relative_position_id = SCS_manifest_destiny
+		relative_position_id = COT_manifest_destiny
 		prerequisite = {
-			focus = SCS_manifest_destiny
+			focus = COT_manifest_destiny
 		}
 		available = {
 		 custom_trigger_tooltip = {
@@ -1032,7 +877,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_stabilise_southeast"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_stabilise_southeast"
 			if = {
 				limit = {
 					NMS = {
@@ -1086,15 +931,15 @@ focus_tree = {
 			}
 			search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
-	focus = {
-		id = SCS_wish_i_was_in_baltimare
+	shared_focus = {
+		id = COT_wish_i_was_in_baltimare
 		icon = GFX_goal_broken_red_star
 		x = 0
 		y = 1
 		cost = 5
-		relative_position_id = SCS_stabilise_southeast
+		relative_position_id = COT_stabilise_southeast
 		prerequisite = {
-			focus = SCS_stabilise_southeast
+			focus = COT_stabilise_southeast
 		}
 		available = {
 			OR = {
@@ -1112,7 +957,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_wish_i_was_in_baltimare"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_wish_i_was_in_baltimare"
 			if = {
 				limit = {
 					owns_state = 13
@@ -1143,16 +988,16 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
-	focus = {
-		id = SCS_evict_the_dragons
+	shared_focus = {
+		id = COT_evict_the_dragons
 		icon = GFX_goal_solar_attack_drg
 		x = 1
 		y = 1
 		cost = 5
-		relative_position_id = SCS_aint_that_a_kick_in_the_head
+		relative_position_id = COT_aint_that_a_kick_in_the_head
 		prerequisite = {
-			focus = SCS_aint_that_a_kick_in_the_head
-			focus = SCS_wish_i_was_in_baltimare
+			focus = COT_aint_that_a_kick_in_the_head
+			focus = COT_wish_i_was_in_baltimare
 		}
 		available = {
 			DRG = {
@@ -1179,22 +1024,22 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_evict_the_dragons"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_evict_the_dragons"
 			create_wargoal = { type = annex_everything target = DRG}
 			}
 			search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
-	focus = {
-		id = SCS_southern_wind
+	shared_focus = {
+		id = COT_southern_wind
 		icon = GFX_goal_scs
 		x = 0
 		y = 1
 		cost = 5
-		relative_position_id = SCS_primus_inter_pares
+		relative_position_id = COT_primus_inter_pares
 		prerequisite = {
-			focus = SCS_dont_tread_on_us
-			focus = SCS_primus_inter_pares
-			focus = SCS_evict_the_dragons
+			focus = COT_dont_tread_on_us
+			focus = COT_primus_inter_pares
+			focus = COT_evict_the_dragons
 		}
 		available = {
 			has_country_flag = SCS_coltlumbia_win
@@ -1208,32 +1053,18 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_southern_wind"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_southern_wind"
 				add_ideas = SCS_southern_wind_idea
 			}
 			search_filters = { FOCUS_FILTER_ARMY_BONUS }
-		}
-}
-focus_tree = {
-	id = SCS_focus_coltlumbia_fascist
-	country = {
-		factor = 0
-		modifier = {
-			add = 16
-			tag = SCS
-			#has_country_flag = SCS_coltlumbia_win
-			has_government = fascism
-		}
 	}
-	default = no
-	continuous_focus_position = { x = 2500 y = 2500 }
-	focus = {
-		id = SCS_rockhoof
+	shared_focus = {
+		id = COT_rockhoof
 		icon = GFX_goal_support_fascism
-		x = 0
-		y = 1
+		x = 3
+		y = 3
 		cost = 5
-		relative_position_id = SCS_coltlumbia_victory
+		relative_position_id = COT_S00
 		available = {
 		}
 		bypass = {
@@ -1246,19 +1077,19 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_rockhoof"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_rockhoof"
 			custom_effect_tooltip = SCS_rockhoof_is_in_power
 			}
 	}
-	focus = {
-		id = SCS_marginalise_moderates
+	shared_focus = {
+		id = COT_marginalise_moderates
 		icon = GFX_focus_renounce_the_treaty_of_trianon
 		x = 0
 		y = 1
 		cost = 5
-		relative_position_id = SCS_rockhoof
+		relative_position_id = COT_rockhoof
 		prerequisite = {
-			focus = SCS_rockhoof
+			focus = COT_rockhoof
 		}
 		available = {
 		}
@@ -1271,19 +1102,19 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_marginalise_moderates"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_marginalise_moderates"
 			add_popularity = { ideology = neutrality popularity = -0.2}
 			}
 	}
-	focus = {
-		id = SCS_sideline_southern_democrats
+	shared_focus = {
+		id = COT_sideline_southern_democrats
 		icon = GFX_focus_indy_anti_democracy
 		x = -2
 		y = 1
 		cost = 5
-		relative_position_id = SCS_rockhoof
+		relative_position_id = COT_rockhoof
 		prerequisite = {
-			focus = SCS_rockhoof
+			focus = COT_rockhoof
 		}
 		available = {
 		}
@@ -1296,19 +1127,19 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_sideline_southern_democrats"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_sideline_southern_democrats"
 			add_popularity = { ideology = democratic popularity = -0.12}
 			}
 	}
-	focus = {
-		id = SCS_crush_the_royalists
+	shared_focus = {
+		id = COT_crush_the_royalists
 		icon = GFX_goal_crush_monarchy
 		x = 2
 		y = 1
 		cost = 5
-		relative_position_id = SCS_rockhoof
+		relative_position_id = COT_rockhoof
 		prerequisite = {
-			focus = SCS_rockhoof
+			focus = COT_rockhoof
 		}
 		available = {
 		}
@@ -1321,28 +1152,28 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_crush_the_royalists"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_crush_the_royalists"
 			custom_effect_tooltip = SCS_decrease_royalists_by_20
 			hidden_effect = {
 				remove_20_royalism = yes
 			}
 			}
 		}
-	focus = {
-		id = SCS_propaganda_drive
+	shared_focus = {
+		id = COT_propaganda_drive
 		icon = GFX_goal_press_barons
 		x = 1
 		y = 1
 		cost = 5
-		relative_position_id = SCS_sideline_southern_democrats
+		relative_position_id = COT_sideline_southern_democrats
 		prerequisite = {
-			focus = SCS_sideline_southern_democrats
+			focus = COT_sideline_southern_democrats
 		}
 		prerequisite = {
-			focus = SCS_marginalise_moderates
+			focus = COT_marginalise_moderates
 		}
 		prerequisite = {
-			focus = SCS_crush_the_royalists
+			focus = COT_crush_the_royalists
 		}
 		available = {
 		}
@@ -1355,27 +1186,27 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_propaganda_drive"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_propaganda_drive"
 			add_ideas = SCS_propaganda
 			set_country_flag = SCS_max_press_control
 			}
 			search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL }
 		}
-	focus = {
-		id = SCS_militarise_lawponies
+	shared_focus = {
+		id = COT_militarise_lawponies
 		icon = GFX_goal_secret_agents
 		x = 1
 		y = 1
 		cost = 5
-		relative_position_id = SCS_marginalise_moderates
+		relative_position_id = COT_marginalise_moderates
 		prerequisite = {
-			focus = SCS_sideline_southern_democrats
+			focus = COT_sideline_southern_democrats
 		}
 		prerequisite = {
-			focus = SCS_marginalise_moderates
+			focus = COT_marginalise_moderates
 		}
 		prerequisite = {
-			focus = SCS_crush_the_royalists
+			focus = COT_crush_the_royalists
 		}
 		available = {
 		}
@@ -1388,23 +1219,23 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_militarise_lawponies"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_militarise_lawponies"
 			add_ideas = SCS_militarised_lawponies
 			}
 			search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY_BONUS }
 		}
-	focus = {
-		id = SCS_control_secured
+	shared_focus = {
+		id = COT_control_secured
 		icon = GFX_goal_ideology_national_populist
 		x = 1
 		y = 1
 		cost = 5
-		relative_position_id = SCS_propaganda_drive
+		relative_position_id = COT_propaganda_drive
 		prerequisite = {
-			focus = SCS_propaganda_drive
+			focus = COT_propaganda_drive
 		}
 		prerequisite = {
-			focus = SCS_militarise_lawponies
+			focus = COT_militarise_lawponies
 		}
 		available = {
 		}
@@ -1417,22 +1248,22 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_control_secured"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_control_secured"
 			add_popularity = { ideology = fascism popularity = 0.1}
 			add_political_power = 100
 			add_stability = 0.10
 			}
 			search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 	}
-	focus = {
-		id = SCS_sea_to_shining_sea
+	shared_focus = {
+		id = COT_sea_to_shining_sea
 		icon = GFX_goal_generic_territory_or_war
 		x = 2
 		y = 1
 		cost = 5
-		relative_position_id = SCS_control_secured
+		relative_position_id = COT_control_secured
 		prerequisite = {
-			focus = SCS_control_secured
+			focus = COT_control_secured
 		}
 		available = {
 		 custom_trigger_tooltip = {
@@ -1524,7 +1355,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_sea_to_shining_sea"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_sea_to_shining_sea"
 			if = {
 				limit={
 				country_exists = CES
@@ -1568,15 +1399,15 @@ focus_tree = {
 			}
 			search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
-	focus = {
-		id = SCS_fash_rockville_strip
+	shared_focus = {
+		id = COT_fash_rockville_strip
 		icon = GFX_goal_offensive_army
 		x = -2
 		y = 1
 		cost = 5
-		relative_position_id = SCS_control_secured
+		relative_position_id = COT_control_secured
 		prerequisite = {
-			focus = SCS_control_secured
+			focus = COT_control_secured
 		}
 		available = {
 		}
@@ -1589,19 +1420,19 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_fash_rockville_strip"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_fash_rockville_strip"
 			custom_effect_tooltip = SCS_rockville_strip
 			}
 		}
-	focus = {
-		id = SCS_take_lsp
+	shared_focus = {
+		id = COT_take_lsp
 		icon = GFX_goal_gambling
 		x = 0
 		y = 1
 		cost = 5
-		relative_position_id = SCS_fash_rockville_strip
+		relative_position_id = COT_fash_rockville_strip
 		prerequisite = {
-			focus = SCS_fash_rockville_strip
+			focus = COT_fash_rockville_strip
 		}
 		available = {
 			any_neighbor_country = {
@@ -1637,23 +1468,23 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_take_lsp"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_take_lsp"
 			create_wargoal = { type = annex_everything target = LSP }
 			}
 			search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
-	focus = {
-		id = SCS_focus_on_lsp_steel
+	shared_focus = {
+		id = COT_focus_on_lsp_steel
 		icon = GFX_focus_generic_steel
 		x = -1
 		y = 1
 		cost = 5
-		relative_position_id = SCS_take_lsp
+		relative_position_id = COT_take_lsp
 		mutually_exclusive = {
-			focus = SCS_focus_on_tourism
+			focus = COT_focus_on_tourism
 		}
 		prerequisite = {
-			focus = SCS_take_lsp
+			focus = COT_take_lsp
 		}
 		available = {
 			owns_state = 66
@@ -1670,7 +1501,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_focus_on_lsp_steel"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_focus_on_lsp_steel"
 			66 = {
 				add_resource = {
 					type = steel
@@ -1686,18 +1517,18 @@ focus_tree = {
 			}
 			search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
-	focus = {
-		id = SCS_focus_on_tourism
+	shared_focus = {
+		id = COT_focus_on_tourism
 		icon = GFX_focus_gambling
 		x = 1
 		y = 1
 		cost = 5
-		relative_position_id = SCS_take_lsp
+		relative_position_id = COT_take_lsp
 		mutually_exclusive = {
-			focus = SCS_focus_on_lsp_steel
+			focus = COT_focus_on_lsp_steel
 		}
 		prerequisite = {
-			focus = SCS_take_lsp
+			focus = COT_take_lsp
 		}
 		available = {
 			owns_state = 66
@@ -1714,23 +1545,23 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_focus_on_tourism"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_focus_on_tourism"
 			add_ideas = SCS_gambling
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
 	}
-	focus = {
-		id = SCS_natives_work
+	shared_focus = {
+		id = COT_natives_work
 		icon = GFX_goal_slavery
 		x = -1
 		y = 1
 		cost = 5
-		relative_position_id = SCS_sea_to_shining_sea
+		relative_position_id = COT_sea_to_shining_sea
 		mutually_exclusive = {
-			focus = SCS_natives_fight
+			focus = COT_natives_fight
 		}
 		prerequisite = {
-			focus = SCS_sea_to_shining_sea
+			focus = COT_sea_to_shining_sea
 		}
 		available = {
 			OR = {
@@ -1751,23 +1582,23 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_natives_work"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_natives_work"
 			add_ideas = SCS_slave_labor
 			}
 			search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY }
 	}
-	focus = {
-		id = SCS_natives_fight
+	shared_focus = {
+		id = COT_natives_fight
 		icon = GFX_goal_strasserist_conscription
 		x = 1
 		y = 1
 		cost = 5
-		relative_position_id = SCS_sea_to_shining_sea
+		relative_position_id = COT_sea_to_shining_sea
 		mutually_exclusive = {
-			focus = SCS_natives_work
+			focus = COT_natives_work
 		}
 		prerequisite = {
-			focus = SCS_sea_to_shining_sea
+			focus = COT_sea_to_shining_sea
 		}
 		available = {
 			OR = {
@@ -1788,21 +1619,21 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_natives_fight"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_natives_fight"
 			add_ideas = SCS_native_soldiers
 			}
 			search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 	}
-	focus = {
-		id = SCS_develop_jungle
+	shared_focus = {
+		id = COT_develop_jungle
 		icon = GFX_goal_KTG_Jungle_Railroad
 		x = 1
 		y = 1
 		cost = 5
-		relative_position_id = SCS_natives_work
+		relative_position_id = COT_natives_work
 		prerequisite = {
-			focus = SCS_natives_fight
-			focus = SCS_natives_work
+			focus = COT_natives_fight
+			focus = COT_natives_work
 		}
 		available = {
 			owns_state = 30
@@ -1825,7 +1656,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_develop_jungle"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_develop_jungle"
 			add_political_power = -100
 			30 = {
 				add_extra_state_shared_building_slots = 2
@@ -1910,15 +1741,15 @@ focus_tree = {
 			}
 			search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
 	}
-	focus = {
-		id = SCS_existential_threats
+	shared_focus = {
+		id = COT_existential_threats
 		icon = GFX_goal_generic_dangerous_deal_pony_pony
 		x = -6
 		y = 1
 		cost = 5
-		relative_position_id = SCS_control_secured
+		relative_position_id = COT_control_secured
 		prerequisite = {
-			focus = SCS_control_secured
+			focus = COT_control_secured
 		}
 		available = {
 		}
@@ -1931,22 +1762,22 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_existential_threats"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_existential_threats"
 			add_stability = 0.10
 			add_war_support = 0.10
 			add_political_power = 50
 			}
 			search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY }
 		}
-	focus = {
-		id = SCS_CHN_oil_for_non_aggression_pact
+	shared_focus = {
+		id = COT_CHN_oil_for_non_aggression_pact
 		icon = GFX_goal_generic_changeling
 		x = -1
 		y = 1
 		cost = 5
-		relative_position_id = SCS_existential_threats
+		relative_position_id = COT_existential_threats
 		prerequisite = {
-			focus = SCS_existential_threats
+			focus = COT_existential_threats
 		}
 		available = {
 			NOT = {
@@ -1966,21 +1797,21 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_CHN_oil_for_non_aggression_pact"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_CHN_oil_for_non_aggression_pact"
 			CHN = {
 				country_event = scs.52
 			}
 			}
 	}
-	focus = {
-		id = SCS_prepare_for_northern_aggression
+	shared_focus = {
+		id = COT_prepare_for_northern_aggression
 		icon = GFX_goal_strike_harmony
 		x = 1
 		y = 1
 		cost = 5
-		relative_position_id = SCS_existential_threats
+		relative_position_id = COT_existential_threats
 		prerequisite = {
-			focus = SCS_existential_threats
+			focus = COT_existential_threats
 		}
 		available = {
 		}
@@ -1993,7 +1824,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_prepare_for_northern_aggression"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_prepare_for_northern_aggression"
 			custom_effect_tooltip = SCS_bonus_vs_NLREQS
 			custom_effect_tooltip = SCS_will_spawn_troops
 			hidden_effect = {
@@ -2004,18 +1835,18 @@ focus_tree = {
 			}
 			search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_ARMY_BONUS }
 	}
-	focus = {
-		id = SCS_fortify_the_border
+	shared_focus = {
+		id = COT_fortify_the_border
 		icon = GFX_goal_nested_fortifications
 		x = 1
 		y = 1
 		cost = 5
-		relative_position_id = SCS_CHN_oil_for_non_aggression_pact
+		relative_position_id = COT_CHN_oil_for_non_aggression_pact
 		prerequisite = {
-			focus = SCS_CHN_oil_for_non_aggression_pact
+			focus = COT_CHN_oil_for_non_aggression_pact
 		}
 		prerequisite = {
-			focus = SCS_prepare_for_northern_aggression
+			focus = COT_prepare_for_northern_aggression
 		}
 		available = {
 		}
@@ -2028,7 +1859,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_fortify_the_border"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_fortify_the_border"
 			if = {
 				limit = { controls_state = 49 }
 				49 = {
@@ -2136,15 +1967,15 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
-	focus = {
-		id = SCS_off_to_zebrica
+	shared_focus = {
+		id = COT_off_to_zebrica
 		icon = GFX_SIA_jungletraining
 		x = 6
 		y = 1
 		cost = 5
-		relative_position_id = SCS_control_secured
+		relative_position_id = COT_control_secured
 		prerequisite = {
-			focus = SCS_control_secured
+			focus = COT_control_secured
 		}
 		available = {##You need to be safe from getting stomped to do these
 			custom_trigger_tooltip = {
@@ -2209,20 +2040,20 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_off_to_zebrica"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_off_to_zebrica"
 			add_war_support = 0.10
 			}
 			search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 	}
-	focus = {
-		id = SCS_build_up_fleet
+	shared_focus = {
+		id = COT_build_up_fleet
 		icon = GFX_goal_battlefleet
 		x = -1
 		y = 1
 		cost = 5
-		relative_position_id = SCS_off_to_zebrica
+		relative_position_id = COT_off_to_zebrica
 		prerequisite = {
-			focus = SCS_off_to_zebrica
+			focus = COT_off_to_zebrica
 		}
 		available = {
 			any_owned_state = {
@@ -2238,7 +2069,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_build_up_fleet"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_build_up_fleet"
 			add_ideas = SCS_naval_buildup
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = SCS_naval_dude3
@@ -2255,15 +2086,15 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
-	focus = {
-		id = SCS_southern_cross_marines
+	shared_focus = {
+		id = COT_southern_cross_marines
 		icon = GFX_goal_generic_amphibious_assault
 		x = 1
 		y = 1
 		cost = 5
-		relative_position_id = SCS_off_to_zebrica
+		relative_position_id = COT_off_to_zebrica
 		prerequisite = {
-			focus = SCS_off_to_zebrica
+			focus = COT_off_to_zebrica
 		}
 		available = {
 		}
@@ -2276,7 +2107,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_southern_cross_marines"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_southern_cross_marines"
 			log = "[Root.GetName]: Focus no"#Auto-logging
 			add_tech_bonus = {
 				name = WNG_fanteria_marina_bonus
@@ -2287,47 +2118,19 @@ focus_tree = {
 				}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
-		}
-	#focus = {
-		#id = SCS_golden_circle_idea
-		#icon = GFX_goal_ces_palm
-		#x = 1
-		#y = 1
-		#cost = 5
-		#relative_position_id = SCS_build_up_fleet
-		#prerequisite = {
-			#focus = SCS_build_up_fleet
-		#}
-		#prerequisite = {
-			#focus = SCS_southern_cross_marines
-		#}
-		#available = {
-		#}
-		#bypass = {
-		#}
-		#ai_will_do = {
-			#factor = 14
-		#}
-		#cancel_if_invalid = yes
-		#continue_if_invalid = no
-		#available_if_capitulated = no
-		#completion_reward = {
-			#log = "[GetDateText]: [Root.GetName]: Focus SCS_golden_circle_idea"
-			##custom_effect_tooltip = SCS_golden_circle_stuff
-			#}
-	#}
-	focus = {
-		id = SCS_stage_maine_explosion
+	}
+	shared_focus = {
+		id = COT_stage_maine_explosion
 		icon = GFX_goal_italy_tripoli_explosives_factory
 		x = -1
 		y = 1
 		cost = 5
-		relative_position_id = SCS_southern_cross_marines
+		relative_position_id = COT_southern_cross_marines
 		prerequisite = {
-			focus = SCS_southern_cross_marines
+			focus = COT_southern_cross_marines
 		}
         prerequisite = {
-			focus = SCS_build_up_fleet
+			focus = COT_build_up_fleet
 		}
 		available = {
 		}
@@ -2340,21 +2143,21 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_golden_circle_idea"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_golden_circle_idea"
 				country_event = {
-					id = scs.91
+					id = COT.91
 				}
 			}
 	}
-	focus = {
-		id = SCS_invade_trotico
+	shared_focus = {
+		id = COT_invade_trotico
 		icon = GFX_SIA_jungletraining
 		x = 0
 		y = 1
 		cost = 5
-		relative_position_id = SCS_stage_maine_explosion
+		relative_position_id = COT_stage_maine_explosion
 		prerequisite = {
-			focus = SCS_stage_maine_explosion
+			focus = COT_stage_maine_explosion
 		}
 		available = {
 			has_country_flag = SCS_maine_exploded
@@ -2369,22 +2172,22 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_golden_circle_idea"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_golden_circle_idea"
 				declare_war_on = {
 					target = PCB
 					type = annex_everything
 				}
 			}
 	}
-	focus = {
-		id = SCS_develop_trotico
+	shared_focus = {
+		id = COT_develop_trotico
 		icon = GFX_goal_generic_lau_industry
 		x = -1
 		y = 1
 		cost = 5
-		relative_position_id = SCS_invade_trotico
+		relative_position_id = COT_invade_trotico
 		prerequisite = {
-			focus = SCS_invade_trotico
+			focus = COT_invade_trotico
 		}
 		available = {
 			owns_state = 1193
@@ -2399,7 +2202,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_golden_circle_idea"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_golden_circle_idea"
 				1193 = {
 					add_building_construction = {
 					type = arms_factory
@@ -2427,15 +2230,15 @@ focus_tree = {
 				custom_effect_tooltip = SCS_unlocks_dev
 			}
 	}
-	focus = {
-		id = SCS_conscript_from_trotico
+	shared_focus = {
+		id = COT_conscript_from_trotico
 		icon = GFX_goal_generic_pony_soldier
 		x = 1
 		y = 1
 		cost = 5
-		relative_position_id = SCS_invade_trotico
+		relative_position_id = COT_invade_trotico
 		prerequisite = {
-			focus = SCS_invade_trotico
+			focus = COT_invade_trotico
 		}
 		available = {
 			owns_state = 1193
@@ -2450,77 +2253,24 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_golden_circle_idea"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_golden_circle_idea"
                 PCB = { add_to_ROOT_potential_original_cores = yes }
 				#add_manpower = 20000
 				#custom_effect_tooltip = SCS_unlocks_conscription
 			}
 	}
-	#focus = {
-		#id = SCS_begin_the_island_hop
-		#icon = GFX_goal_planning_bonus
-		#x = 0
-		#y = 2
-		#cost = 5
-		#relative_position_id = SCS_invade_trotico
-		#prerequisite = {
-			#focus = SCS_develop_trotico
-			#focus = SCS_conscript_from_trotico
-		#}
-		#available = {
-			#owns_state = 1193
-			#owns_state = 1194
-		#}
-		#bypass = {
-		#}
-		#ai_will_do = {
-			#factor = 14
-		#}
-		#cancel_if_invalid = yes
-		#continue_if_invalid = no
-		#available_if_capitulated = no
-		#completion_reward = {
-			#log = "[GetDateText]: [Root.GetName]: Focus SCS_golden_circle_idea"
-			#}
-	#}
-	#focus = {
-		#id = SCS_the_summer_isles
-		#icon = GFX_goal_support_equestria
-		#x = -3
-		#y = 1
-		#cost = 5
-		#relative_position_id = SCS_begin_the_island_hop
-		#prerequisite = {
-			#focus = SCS_begin_the_island_hop
-		#}
-		#available = {
-			#owns_state = 1193
-			#owns_state = 1194
-		#}
-		#bypass = {
-		#}
-		#ai_will_do = {
-			#factor = 14
-		#}
-		#cancel_if_invalid = yes
-		#continue_if_invalid = no
-		#available_if_capitulated = no
-		#completion_reward = {
-			#log = "[GetDateText]: [Root.GetName]: Focus SCS_golden_circle_idea"
-		#}
-	#}
-	focus = {
-		id = SCS_les_meridiennes
+	shared_focus = {
+		id = COT_les_meridiennes
 		icon = GFX_goal_jer_kill_republicanism
 		x = -1
 		y = 1
 		cost = 5
-		relative_position_id = SCS_conscript_from_trotico
+		relative_position_id = COT_conscript_from_trotico
 		prerequisite = {
-			focus = SCS_develop_trotico
+			focus = COT_develop_trotico
 		}
         prerequisite = {
-			focus = SCS_conscript_from_trotico
+			focus = COT_conscript_from_trotico
 		}
 		available = {
 			owns_state = 1193
@@ -2536,150 +2286,20 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_golden_circle_idea"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_golden_circle_idea"
 				declare_war_on = {
 					target = MER
 					type = annex_everything
 				}
 			}
 	}
-	#focus = {
-		#id = SCS_drive_out_the_seaponies
-		#icon = GFX_goal_HIP_seapony
-		#x = 1
-		#y = 1
-		#cost = 5
-		#relative_position_id = SCS_begin_the_island_hop
-		#prerequisite = {
-			#focus = SCS_begin_the_island_hop
-		#}
-		#available = {
-			#owns_state = 1193
-			#owns_state = 1194
-		#}
-		#bypass = {
-		#}
-		#ai_will_do = {
-			#factor = 14
-		#}
-		#cancel_if_invalid = yes
-		#continue_if_invalid = no
-		#available_if_capitulated = no
-		#completion_reward = {
-			#log = "[GetDateText]: [Root.GetName]: Focus SCS_golden_circle_idea"
-		#}
-	#}
-	#focus = {
-		#id = SCS_talk_with_wingbardy
-		#icon = GFX_focus_wng_flag
-		#x = 3
-		#y = 1
-		#cost = 5
-		#relative_position_id = SCS_begin_the_island_hop
-		#prerequisite = {
-			#focus = SCS_begin_the_island_hop
-		#}
-		#available = {
-			#owns_state = 1193
-			#owns_state = 1194
-		#}
-		#bypass = {
-		#}
-		#ai_will_do = {
-			#factor = 14
-		#}
-		#cancel_if_invalid = yes
-		#continue_if_invalid = no
-		#available_if_capitulated = no
-		#completion_reward = {
-			#log = "[GetDateText]: [Root.GetName]: Focus SCS_golden_circle_idea"
-		#}
-	#}
-	#focus = {
-		#id = SCS_invade_abyssinia
-		#icon = GFX_goal_america_goal_sabo_tabby
-		#x = 0
-		#y = 2
-		#cost = 5
-		#relative_position_id = SCS_begin_the_island_hop
-		#prerequisite = {
-			#focus = SCS_the_summer_isles
-			#focus = SCS_les_meridiennes
-			#focus = SCS_drive_out_the_seaponies
-			#focus = SCS_talk_with_wingbardy
-		#}
-		#available = {
-			#owns_state = 1193
-			#owns_state = 1194
-		#}
-		#bypass = {
-		#}
-		#ai_will_do = {
-			#factor = 14
-		#}
-		#cancel_if_invalid = yes
-		#continue_if_invalid = no
-		#available_if_capitulated = no
-		#completion_reward = {
-			#log = "[GetDateText]: [Root.GetName]: Focus SCS_golden_circle_idea"
-		#}
-	#}
-	#focus = {
-		#id = SCS_empire_of_liberty
-		#icon = GFX_goal_scs
-		#x = 1
-		#y = 1
-		#cost = 5
-		#relative_position_id = SCS_focus_on_tourism
-		#prerequisite = {
-			#focus = SCS_focus_on_lsp_steel
-			#focus = SCS_focus_on_tourism
-		#}
-		#prerequisite = {
-			#focus = SCS_golden_circle_idea
-		#}
-		#prerequisite = {
-			#focus = SCS_develop_jungle
-		#}
-		#prerequisite = {
-			#focus = SCS_fortify_the_border
-		#}
-		#available = {
-		#}
-		#bypass = {
-		#}
-		#ai_will_do = {
-			#factor = 20
-		#}
-		#cancel_if_invalid = yes
-		#continue_if_invalid = no
-		#available_if_capitulated = no
-		#completion_reward = {
-			#log = "[GetDateText]: [Root.GetName]: Focus SCS_empire_of_liberty"
-			#add_ideas = SCS_empire_idea
-			#}
-			#search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_MANPOWER }
-	#}
-}
-focus_tree = {
-	id = SCS_focus_southern_democrats
-	country = {
-		factor = 0
-		modifier = {
-			add = 16
-			tag = SCS
-			has_country_flag = SCS_sdem_win
-		}
-	}
-	default = no
-	continuous_focus_position = { x = 2500 y = 2500 }
-	focus = {
-		id = SCS_for_the_republic
+	shared_focus = {
+		id = COT_for_the_republic
 		icon = GFX_focus_indy_democratic_process
-		x = 0
-		y = 1
+		x = -20
+		y = 4
 		cost = 5
-		relative_position_id = SCS_coltlumbia_victory
+		relative_position_id = COT_S00
 		available = {
 		}
 		bypass = {
@@ -2691,20 +2311,20 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_for_the_republic"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_for_the_republic"
 			add_political_power = 100
 			}
 			search_filters = { FOCUS_FILTER_POLITICAL }
 	}
-	focus = {
-		id = SCS_absorb_loyalists
+	shared_focus = {
+		id = COT_absorb_loyalists
 		icon = GFX_goal_generic_harmony
 		x = 1
 		y = 1
 		cost = 5
-		relative_position_id = SCS_for_the_republic
+		relative_position_id = COT_for_the_republic
 		prerequisite = {
-			focus = SCS_for_the_republic
+			focus = COT_for_the_republic
 		}
 		available = {
 		}
@@ -2717,7 +2337,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_absorb_loyalists"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_absorb_loyalists"
 			add_popularity = { ideology = democratic popularity = 0.10}
 			custom_effect_tooltip = SCS_decrease_royalists_by_10
 			hidden_effect = {
@@ -2725,15 +2345,15 @@ focus_tree = {
 			}
 			}
 	}
-	focus = {
-		id = SCS_coltlumbia_scandal
+	shared_focus = {
+		id = COT_coltlumbia_scandal
 		icon = GFX_goal_foreign_diplomacy
 		x = -1
 		y = 1
 		cost = 5
-		relative_position_id = SCS_for_the_republic
+		relative_position_id = COT_for_the_republic
 		prerequisite = {
-			focus = SCS_for_the_republic
+			focus = COT_for_the_republic
 		}
 		available = {
 		}
@@ -2746,23 +2366,23 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_coltlumbia_scandal"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_coltlumbia_scandal"
 			add_popularity = { ideology = neutrality popularity = -0.20}
 			add_popularity = { ideology = fascism popularity = -0.10}
 			}
 		}
-	focus = {
-		id = SCS_liberty_throughout_equestria
+	shared_focus = {
+		id = COT_liberty_throughout_equestria
 		icon = GFX_goal_generic_national_unity_horseshoe
 		x = -1
 		y = 1
 		cost = 5
-		relative_position_id = SCS_absorb_loyalists
+		relative_position_id = COT_absorb_loyalists
 		prerequisite = {
-			focus = SCS_absorb_loyalists
+			focus = COT_absorb_loyalists
 		}
 		prerequisite = {
-			focus = SCS_coltlumbia_scandal
+			focus = COT_coltlumbia_scandal
 		}
 		available = {
 			is_subject = no
@@ -2776,20 +2396,20 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_liberty_throughout_equestria"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_liberty_throughout_equestria"
 			create_faction = "Republican_Confederacy"
 			}
 			search_filters = { FOCUS_FILTER_POLITICAL }
 	}
-	focus = {
-		id = SCS_reach_to_the_east
+	shared_focus = {
+		id = COT_reach_to_the_east
 		icon = GFX_goal_molotov_ribbentrop_pact_pony
 		x = 1
 		y = 1
 		cost = 5
-		relative_position_id = SCS_liberty_throughout_equestria
+		relative_position_id = COT_liberty_throughout_equestria
 		prerequisite = {
-			focus = SCS_liberty_throughout_equestria
+			focus = COT_liberty_throughout_equestria
 		}
 		available = {
 			custom_trigger_tooltip = {
@@ -2885,7 +2505,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_reach_to_the_east"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_reach_to_the_east"
 			if = {
 				limit = {
 					JUN = { exists = yes }
@@ -2912,15 +2532,15 @@ focus_tree = {
 			}
 			}
 	}
-	focus = {
-		id = SCS_oil_for_rubber
+	shared_focus = {
+		id = COT_oil_for_rubber
 		icon = GFX_goal_trade_oil_pony_pony
 		x = 0
 		y = 1
 		cost = 5
-		relative_position_id = SCS_reach_to_the_east
+		relative_position_id = COT_reach_to_the_east
 		prerequisite = {
-			focus = SCS_reach_to_the_east
+			focus = COT_reach_to_the_east
 		}
 		available = {
 			OR = {
@@ -2943,7 +2563,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_oil_for_rubber"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_oil_for_rubber"
 			custom_effect_tooltip = SCS_oil_rubber_tooltip
 			if = {
 				limit = {
@@ -2973,15 +2593,15 @@ focus_tree = {
 			}
 	    }
 	}
-	focus = {
-		id = SCS_the_wildcard
+	shared_focus = {
+		id = COT_the_wildcard
 		icon = GFX_goal_molotov_ribbentrop_pact_pony
 		x = -1
 		y = 1
 		cost = 5
-		relative_position_id = SCS_liberty_throughout_equestria
+		relative_position_id = COT_liberty_throughout_equestria
 		prerequisite = {
-			focus = SCS_liberty_throughout_equestria
+			focus = COT_liberty_throughout_equestria
 		}
 		available = {
 			LSP = { exists = yes }
@@ -3001,21 +2621,21 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_the_wildcard"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_the_wildcard"
 			LSP = {
 				country_event = scs.26
 			}
 			}
 	}
-	focus = {
-		id = SCS_LSP_mutual_defense_trade_agreement
+	shared_focus = {
+		id = COT_LSP_mutual_defense_trade_agreement
 		icon = GFX_focus_indy_card_tricks
 		x = 0
 		y = 1
 		cost = 5
-		relative_position_id = SCS_the_wildcard
+		relative_position_id = COT_the_wildcard
 		prerequisite = {
-			focus = SCS_the_wildcard
+			focus = COT_the_wildcard
 		}
 		available = {
 			is_in_faction_with = LSP
@@ -3032,25 +2652,25 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_LSP_mutual_defense_trade_agreement"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_LSP_mutual_defense_trade_agreement"
 			LSP = {
 				country_event = scs.34
 			}
 			custom_effect_tooltip = SCS_LSP_trade_deal_tooltip
 			}
 	}
-	focus = {
-		id = SCS_economic_miracle
+	shared_focus = {
+		id = COT_economic_miracle
 		icon = GFX_goal_free_market
 		x = 1
 		y = 1
 		cost = 5
-		relative_position_id = SCS_LSP_mutual_defense_trade_agreement
+		relative_position_id = COT_LSP_mutual_defense_trade_agreement
 		prerequisite = {
-			focus = SCS_LSP_mutual_defense_trade_agreement
+			focus = COT_LSP_mutual_defense_trade_agreement
 		}
 		prerequisite = {
-			focus = SCS_oil_for_rubber
+			focus = COT_oil_for_rubber
 		}
 		available = {
 		}
@@ -3060,7 +2680,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_economic_miracle"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_economic_miracle"
 			add_ideas = SCS_economic_miracle_idea
 			custom_effect_tooltip = SCS_miracle_tooltip
 			hidden_effect = {
@@ -3074,15 +2694,15 @@ focus_tree = {
 			}
 			search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
-	focus = {
-		id = SCS_seperate_but_equal
+	shared_focus = {
+		id = COT_seperate_but_equal
 		icon = GFX_goal_Equestria_Southern_States_Alliance
 		x = -4
 		y = 1
 		cost = 5
-		relative_position_id = SCS_liberty_throughout_equestria
+		relative_position_id = COT_liberty_throughout_equestria
 		prerequisite = {
-			focus = SCS_liberty_throughout_equestria
+			focus = COT_liberty_throughout_equestria
 		}
 		available = {
 			eqs_civil_war_ended = yes
@@ -3128,7 +2748,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_seperate_but_equal"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_seperate_but_equal"
 			if = {
 				limit = {
 					EQS = {
@@ -3147,15 +2767,15 @@ focus_tree = {
 			custom_effect_tooltip = SCS_sbe_tooltip
 			}
 	}
-	focus = {
-		id = SCS_states_rights
+	shared_focus = {
+		id = COT_states_rights
 		icon = GFX_goal_document
 		x = -1
 		y = 1
 		cost = 5
-		relative_position_id = SCS_seperate_but_equal
+		relative_position_id = COT_seperate_but_equal
 		prerequisite = {
-			focus = SCS_seperate_but_equal
+			focus = COT_seperate_but_equal
 		}
 		available = {
 			eqs_civil_war_ended = yes
@@ -3201,7 +2821,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_states_rights"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_states_rights"
 			if = {
 				limit = {
 					EQS = {
@@ -3220,15 +2840,15 @@ focus_tree = {
 			custom_effect_tooltip = SCS_states_rights_tooltip
 			}
 	}
-	focus = {
-		id = SCS_EQS_trade_deal
+	shared_focus = {
+		id = COT_EQS_trade_deal
 		icon = GFX_goal_generic_positive_trade_relations
 		x = 1
 		y = 1
 		cost = 5
-		relative_position_id = SCS_seperate_but_equal
+		relative_position_id = COT_seperate_but_equal
 		prerequisite = {
-			focus = SCS_seperate_but_equal
+			focus = COT_seperate_but_equal
 		}
 		available = {
 			eqs_civil_war_ended = yes
@@ -3274,7 +2894,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_EQS_trade_deal"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_EQS_trade_deal"
 			if = {
 				limit = {
 					EQS = {
@@ -3293,18 +2913,18 @@ focus_tree = {
 			custom_effect_tooltip = SCS_EQS_trade_tooltip
 		}
 	}
-	focus = {
-		id = SCS_faithful_to_her_trust
+	shared_focus = {
+		id = COT_faithful_to_her_trust
 		icon = GFX_goal_eqc_royal_visit
 		x = 1
 		y = 1
 		cost = 5
-		relative_position_id = SCS_states_rights
+		relative_position_id = COT_states_rights
 		prerequisite = {
-			focus = SCS_states_rights
+			focus = COT_states_rights
 		}
 		prerequisite = {
-			focus = SCS_EQS_trade_deal
+			focus = COT_EQS_trade_deal
 		}
 		available = {
 			eqs_civil_war_ended = yes
@@ -3350,7 +2970,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_faithful_to_her_trust"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_faithful_to_her_trust"
 			if = {
 				limit = {
 					EQS = {
@@ -3369,15 +2989,15 @@ focus_tree = {
 			custom_effect_tooltip = SCS_visit_tooltip
 			}
 	}
-	focus = {
-		id = SCS_threats_to_liberty
+	shared_focus = {
+		id = COT_threats_to_liberty
 		icon = GFX_goal_SCS_guns
 		x = 4
 		y = 1
 		cost = 5
-		relative_position_id = SCS_liberty_throughout_equestria
+		relative_position_id = COT_liberty_throughout_equestria
 		prerequisite = {
-			focus = SCS_liberty_throughout_equestria
+			focus = COT_liberty_throughout_equestria
 		}
 		available = {
 			NOT = {
@@ -3406,7 +3026,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_threats_to_liberty"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_threats_to_liberty"
 			add_war_support = 0.20
 			custom_effect_tooltip = SCS_will_spawn_troops
 			hidden_effect = {
@@ -3415,18 +3035,18 @@ focus_tree = {
 			}
 			search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT }
 	}
-	focus = {
-		id = SCS_stay_out_of_it
+	shared_focus = {
+		id = COT_stay_out_of_it
 		icon = GFX_focus_rom_abdicate
 		x = -1
 		y = 1
 		cost = 5
-		relative_position_id = SCS_threats_to_liberty
+		relative_position_id = COT_threats_to_liberty
 		mutually_exclusive = {
-			focus = SCS_support_EQS
+			focus = COT_support_EQS
 		}
 		prerequisite = {
-			focus = SCS_threats_to_liberty
+			focus = COT_threats_to_liberty
 		}
 		available = {
 		}
@@ -3439,20 +3059,20 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_stay_out_of_it"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_stay_out_of_it"
 			add_ideas = SCS_isolation
 			}
 			search_filters = { FOCUS_FILTER_ARMY_BONUS }
 		}
-	focus = {
-		id = SCS_hunker_down
+	shared_focus = {
+		id = COT_hunker_down
 		icon = GFX_goal_generic_defence
 		x = 0
 		y = 1
 		cost = 5
-		relative_position_id = SCS_stay_out_of_it
+		relative_position_id = COT_stay_out_of_it
 		prerequisite = {
-			focus = SCS_stay_out_of_it
+			focus = COT_stay_out_of_it
 		}
 		available = {
 		}
@@ -3465,7 +3085,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_hunker_down"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_hunker_down"
 			swap_ideas = {
 				remove_idea = SCS_isolation
 				add_idea = SCS_isolation2
@@ -3473,18 +3093,18 @@ focus_tree = {
 			}
 			search_filters = { FOCUS_FILTER_ARMY_BONUS }
 	}
-	focus = {
-		id = SCS_support_EQS
+	shared_focus = {
+		id = COT_support_EQS
 		icon = GFX_goal_celestia_raising_the_sun
 		x = 1
 		y = 1
 		cost = 5
-		relative_position_id = SCS_threats_to_liberty
+		relative_position_id = COT_threats_to_liberty
 		mutually_exclusive = {
-			focus = SCS_stay_out_of_it
+			focus = COT_stay_out_of_it
 		}
 		prerequisite = {
-			focus = SCS_threats_to_liberty
+			focus = COT_threats_to_liberty
 		}
 		available = {
 			NOT = {
@@ -3504,22 +3124,22 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_support_EQS"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_support_EQS"
 			custom_effect_tooltip = SCS_sends_guns
 			EQS = {
 				country_event = scs.48
 			}
 			}
 	}
-	focus = {
-		id = SCS_the_southern_volunteers
+	shared_focus = {
+		id = COT_the_southern_volunteers
 		icon = GFX_focus_military_derpy
 		x = 0
 		y = 1
 		cost = 5
-		relative_position_id = SCS_support_EQS
+		relative_position_id = COT_support_EQS
 		prerequisite = {
-			focus = SCS_support_EQS
+			focus = COT_support_EQS
 		}
 		available = {
 			NOT = {
@@ -3535,7 +3155,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_the_southern_volunteers"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_the_southern_volunteers"
 			custom_effect_tooltip = SCS_gives_EQS_troops
 			EQS = {
 				country_event = scs.49
@@ -3544,22 +3164,22 @@ focus_tree = {
 			}
 			search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
-	focus = {
-		id = SCS_today_tomorrow_forever
+	shared_focus = {
+		id = COT_today_tomorrow_forever
 		icon = GFX_goal_scs
 		x = -5
 		y = 1
 		cost = 5
-		relative_position_id = SCS_the_southern_volunteers
+		relative_position_id = COT_the_southern_volunteers
 		prerequisite = {
-			focus = SCS_faithful_to_her_trust
+			focus = COT_faithful_to_her_trust
 		}
 		prerequisite = {
-			focus = SCS_economic_miracle
+			focus = COT_economic_miracle
 		}
 		prerequisite = {
-			focus = SCS_hunker_down
-			focus = SCS_the_southern_volunteers
+			focus = COT_hunker_down
+			focus = COT_the_southern_volunteers
 		}
 		available = {
 		}
@@ -3572,9 +3192,8 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus SCS_today_tomorrow_forever"
+			log = "[GetDateText]: [Root.GetName]: Focus COT_today_tomorrow_forever"
 			add_ideas = SCS_hup_idea
 		}
 		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_STABILITY }
 	}
-}

@@ -5,904 +5,261 @@ bookmarks={
 		date=1007.1.1.12	#Year/Month/Day/Hour
 		picture="GFX_select_date_1936"
 		default_country="HMS"	default=yes
-		#Equs (Top-Row)
-		"HMS"={	#House Moon and Star
-			history="HMS_GATHERING_STORM_DESC"
-			ideology=fascism
-			ideas={HMS_idea}
-			focuses={}
-		}
-		"HEB"={	#House Earthborn
-			history="HEB_GATHERING_STORM_DESC"
-			ideology=fascism
-			ideas={HEB_idea}
-			focuses={}
-		}
-		"CRL"={	#Crystal Empire
-			history="CRL_GATHERING_STORM_DESC"
-			ideology=neutrality
-			ideas={}
-			focuses={
-				CRY_comrevolution
-				CRY_oldking
-			}
-		}
-		#Griffonia (Top-Row)
-		"GRI"={	#Griffonian Empire
-			history="GRI_GATHERING_STORM_DESC"
-			ideology=neutrality
-			ideas={
-				GRI_bureaucracy
-				GRI_land_thougth
-				CHN_GRI_Attache_For_GRI
-			}
-			focuses={
-				GRI_emperor_passed
-				GRI_eros
-				GRI_eagleclaw
-			}
-		}
-		"JER"={	#Kingdom of Aquileia
-			history="JER_GATHERING_STORM_DESC"
-			ideology=neutrality
-			ideas={
-				JER_memories 
-				JER_legacy_of_coltbert
-			}
-			focuses={
-				JER_state_of_aquileia
-				JER_fight_for_freedom
-				JER_liberal_industry
-			}
-		}
-		#Zebrica (Top-Row)
-		"HIP"={	#Hippogriffia
-			history="HIP_GATHERING_STORM_DESC"
-			ideology=democratic
-			ideas={
-				HIP_divided_society_5
-				HIP_royal_line_of_novo
-			}
-			focuses={
-				HIP_harmony_above_all
-				HIP_hippogriffia_first
-				HIP_the_triumphant_revolution
-			}
-		}
-		"CTH"={	#Colthaginian Republic
-			history="CTH_GATHERING_STORM_DESC"
-			ideology=fascism
-			ideas={
-				CTH_political_instability
-				CTH_army_of_merceneries
-			}
-			focuses={
-				CTH_one_sufrit_above_all
-				CTH_battlecry_of_freedom
-				CTH_form_the_junta
-			}
-		}
-		#Eques (Bottom-Row)
-		"OLE"={	#Kingdom of Olenia
-			history="OLE_GATHERING_STORM_DESC"
-			ideology=neutrality
-			ideas={
-				OLE_currupt_government
-				OLE_raising_dissent
-			}
-			focuses={
-				OLE_proclaim_deers_republic
-				OLE_squash_the_bugs
-				OLE_new_vikings
-			}
-		}
-		"CHN"={	#Changeling Lands
-			history="CHN_GATHERING_STORM_DESC"
-			ideology=fascism
-			ideas={
+		"CHN"={
+			history = "CHN_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
 				canterlot_defeat
 				political_divisions
 				CHN_GRI_Attache_For_CHN
 			}
-			focuses={
+			focuses = {
 				unite_the_people
 				Chrysalis
 				demand_equestria
 			}
 		}
-		"SGR"={	#Stalliongrad
-			history="SGR_GATHERING_STORM_DESC"
-			ideology=communism
-			ideas={
+		"HSW"={
+			history = "HSW_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {HSW_idea}
+			focuses = {}
+		}
+		"HMS"={
+			history = "HMS_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {HMS_idea}
+			focuses = {}
+		}
+		"CRL"={
+			history = "CRL_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {}
+			focuses = {
+				CRY_comrevolution
+				CRY_oldking
+			}
+		}
+		"SGR"={
+			history = "SGR_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
 				severe_famine
 				incomplete_industrialization
 			}
-			focuses={
+			focuses = {
 				vasya_2
 				the_palace
 				manifesto_of_materialism
 			}
 		}
-		#Griffonia (Bottom-Row)
-		"WNG"={	#Kingdom of Wingbardy
-			history="WNG_GATHERING_STORM_DESC"
-			ideology=neutrality
-			ideas={
-				WNG_garibald_talonuel_iii
-				WNG_political_deadlock
-				WNG_outdated_army
+		"GRI"={
+			history = "GRI_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				GRI_bureaucracy
+				GRI_land_thougth
+				CHN_GRI_Attache_For_GRI
 			}
-			focuses={
-				WNG_prepare_the_counterrevolution
-				WNG_declare_martial_law
-				WNG_meet_with_beakolini
+			focuses = {
+				GRI_emperor_passed
+				GRI_eros
+				GRI_eagleclaw
 			}
 		}
-		"RCT"={	#River Republic
-			history="RCT_GATHERING_STORM_DESC"
-			ideology=democratic
-			ideas={
+		"RCT"={
+			history = "RCT_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
 				RCT_city_of_three_rivers
 				RCT_unstable_government
 				RIV_member_state
 			}
-			focuses={
+			focuses = {
 				RCT_equestria_of_the_east
 				RCT_phoenix_programme
 				RCT_fabian_strategy
 			}
 		}
-		#Zebrica (Bottom-Row)
-		"BAT"={	#Chiropterra
-			history="BAT_GATHERING_STORM_DESC"
-			ideology=fascism
-			ideas={
+		"OLE"={
+			history = "OLE_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				OLE_currupt_government
+				OLE_raising_dissent
+			}
+			focuses = {
+				OLE_proclaim_deers_republic
+				OLE_squash_the_bugs
+				OLE_new_vikings
+			}
+		}
+		"HEB"={
+			history = "HEB_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {HEB_idea}
+			focuses = {}
+		}
+		"CUL"={
+			history = "CUL_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {CUL_idea}
+			focuses = {}
+		}
+		"HEF"={
+			history = "HEF_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {HEF_idea}
+			focuses = {}
+		}
+		"HWG"={
+			history = "HWG_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {HWG_idea}
+			focuses = {}
+		}
+		"BAT"={
+			history = "BAT_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
 				BAT_bitter_remnants
 				BAT_army_with_a_state
 				BAT_slavery
 			}
-			focuses={
+			focuses = {
 				BAT_the_hour_is_upon_us
 				BAT_intensify_efforts
 				BAT_final_preperations
 			}
 		}
-		"CTL"={	#Yarildom of Chital
-			history="CTL_GATHERING_STORM_DESC"
-			ideology=neutrality
-			ideas={
-				CTL_native_resistance 
-				CTL_axis_of_chital
-				CTL_inland_neglect
+		"HIP"={
+			history = "HIP_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				HIP_divided_society_5
+				HIP_royal_line_of_novo
 			}
-			focuses={
-				CTL_the_new_democracy
-				CTL_a_return_to_tradition
-				CTL_establish_the_council_of_six
-			}
-		}
-		#Titans of The East (Row One)
-		"HWG"={	#House Whitegold
-			history="HWG_GATHERING_STORM_DESC"
-			ideology=fascism	minor=yes
-			ideas={HWG_idea}
-			focuses={}
-		}
-		"TRT"={	#Trottingham Remnants
-			history="TRT_GATHERING_STORM_DESC"
-			ideology=neutrality	minor=yes
-			ideas={}
-			focuses={}
-		}
-		"ALA"={	#Alamane
-			history="ALA_GATHERING_STORM_DESC"
-			ideology=neutrality	minor=yes
-			ideas={}
-			focuses={}
-		}
-		"FLY"={	#Fillydelphia Province
-			history="FLY_GATHERING_STORM_DESC"
-			ideology=fascism	minor=yes
-			ideas={}
-			focuses={}
-		}
-		#Myths From The Jungle (Row One)
-		"PLF"={	#Ponies Liberation Front
-			history="PLF_GATHERING_STORM_DESC"
-			ideology=communism	minor=yes
-			ideas={}
-			focuses={}
-		}
-		"WTC"={	#Manehattan Trading Company
-			history="WTC_GATHERING_STORM_DESC"
-			ideology=fascism	minor=yes
-			ideas={}
-			focuses={}
-		}
-		"THA"={	#Lunar Holds
-			history="THA_GATHERING_STORM_DESC"
-			ideology=neutrality	minor=yes
-			ideas={}
-			focuses={}
-		}
-		"JTL"={	#Jungle League
-			history="JTL_GATHERING_STORM_DESC"
-			ideology=democratic	minor=yes
-			ideas={}
-			focuses={}
-		}
-		"PLT"={	#Portland
-			history="PLT_GATHERING_STORM_DESC"
-			ideology=democratic	minor=yes
-			ideas={}
-			focuses={}
-		}
-		"STB"={	#Stableside
-			history="STB_GATHERING_STORM_DESC"
-			ideology=neutrality	minor=yes
-			ideas={}
-			focuses={}
-		}
-		#Path to Zebrica (Row One)
-		"TBK"={	#Republic of Tobuck
-			history="TBK_GATHERING_STORM_DESC"
-			ideology=neutrality	minor=yes
-			ideas={
-				TBK_fake_republic
-				TBK_warlord_reliance
-				TBK_zarantian_loyalism
-			}
-			focuses={
-				TBK_art_of_the_deal
-				TBK_vasile_start
-				TBK_new_tobuck
+			focuses = {
+				HIP_harmony_above_all
+				HIP_hippogriffia_first
+				HIP_the_triumphant_revolution
 			}
 		}
-		"ZAR"={	#Zarantia
-			history="ZAR_GATHERING_STORM_DESC"
-			ideology=democratic	minor=yes
-			ideas={
-				ZAR_the_desert_tribes
-				ZAR_great_confederacy
-				ZAR_trans_zebharan_caravans
-			}
-			focuses={
-				ZAR_i_am_mekiouzza
-				ZAR_the_tribe_of_tribes
-				ZAR_the_city_regained
-			}
-		}
-		"WAR"={	#Kingdom of Warzena
-			history="WAR_GATHERING_STORM_DESC"
-			ideology=democratic	minor=yes
-			ideas={
-				WAR_fervent_civil_unrest
-				WAR_hippogriffian_aid
-				WAR_devastated_economy
-			}
-			focuses={
-				WAR_faith_in_king
-				WAR_rebuilding_complete
-				WAR_warzena_is_not_yet_lost
-			}
-		}
-		#Two Eagles (Row One)
-		"FRN"={	#County of Francistria
-			history="FRN_GATHERING_STORM_DESC"
-			ideology=neutrality	minor=yes
-			ideas={
-				FRN_fascists_1
-				FRN_baguettes_1
-				FRN_noble_council
-			}
-			focuses={
-				FRN_allies_not_subjects
-				FRN_for_the_fatherland
-				FRN_rise_of_the_downtrodden
-			}
-		}
-		"TAL"={	#Duchy of Talouse
-			history="TAL_GATHERING_STORM_DESC"
-			ideology=democratic	minor=yes
-			ideas={
-				TAL_duchess_ginerva
-				TAL_coal_clause
-				TAL_declining_economy
-			}
-			focuses={
-				TAL_proclaim_to_be_economic_powerhouse
-				TAL_abolish_monarchy_FLT
-				TAL_restore_cult
-			}
-		}
-		#In The Shadow of Mountains (Row One)
-		"HLQ"={	#Ordensstaat Hellquill
-			history="HLQ_GATHERING_STORM_DESC"
-			ideology=neutrality	minor=yes
-			ideas={
-				HLQ_knights_1
-				HLQ_reformists
-				HLQ_pony_minorities
-			}
-			focuses={
-				HLQ_siegfrieds_retirement
-				HLQ_groverist_takeover
-				HLQ_the_coup_of_national_salvation
-			}
-		}
-		"LNS"={	#County of Longsword
-			history="LNS_GATHERING_STORM_DESC"
-			ideology=fascism	minor=yes
-			ideas={
-				LNS_race_war
-			}
-			focuses={
-				LSC_constitutional_convention
-				LSM_zeltstadt_meeting
-				LSC_hellquill_harcom
-			}
-		}
-		"WIT"={	#Kingdom of Wittenland
-			history="WIT_GATHERING_STORM_DESC"
-			ideology=democratic	minor=yes
-			ideas={
-				WIT_unicorn_parties
-				RIV_member_state
-			}
-			focuses={
-				WIT_next_stage
-				WIT_merchant_queen
-				WIT_back_to_good_old_days
-			}
-		}
-		"BAR"={	#Barrad Magocracy
-			history="BAR_GATHERING_STORM_DESC"
-			ideology=fascism	minor=yes
-			ideas={
-				BAR_pentarchy
-				BAR_wittenland_witchhunters
-			}
-			focuses={
-				BAR_hunting_party
-				BAR_herold
-				BAR_avaiting_bright_future
-			}
-		}
-		"OLV"={	#Austurland
-			history="OLV_GATHERING_STORM_DESC"
-			ideology=neutrality	minor=yes
-			ideas={
-				primitive_economy
-			}
-			focuses={
-				OLV_rule_of_the_law
-				OLV_rule_of_the_crown
-				OLV_rule_of_the_strongest
-			}
-		}
-		"BAK"={	#Bakaran Republic
-			history="BAK_GATHERING_STORM_DESC"
-			ideology=democratic	minor=yes
-			ideas={
-				BAK_shipbuilding
-				BAK_bastion_of_democracy
-				BAK_elections
-			}
-			focuses={
-				BAK_communists_win
-				BAK_admirality_takeover
-				BAK_harmony_win
-			}
-		}
-		"ZES"={	#Kasa Free State
-			history="ZES_GATHERING_STORM_DESC"
-			ideology=democratic	minor=yes
-			ideas={
-				ZES_ideals_of_freedom_idea
-				ZES_xatisa
-				ZES_military_blocked
-			}
-			focuses={
-				ZES_council_convenes
-				ZES_council_disbands
-				ZES_election
-			}
-		}
-		"EQC"={	#Commonwealth of New Mareland
-			history="EQC_GATHERING_STORM_DESC"
-			ideology=democratic	minor=yes
-			ideas={
+		"EQC"={
+			minor = yes
+			history = "EQC_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
 				EQC_great_depression_1
 				EQC_griffon_minorities1
+				equestrian_overlord
 			}
-			focuses={
+			focuses = {
+				EQC_royal_visit
 				EQC_the_election
 				EQC_nmac_spirit
 			}
 		}
-		#For Clan and Country (Row Two)
-		"COT"={	#Trotsas Province
-			history="COT_GATHERING_STORM_DESC"
-			ideology=neutrality	minor=yes
-			ideas={}
-			focuses={}
-		}
-		"HFT"={	#Hoofington Province
-			history="HFT_GATHERING_STORM_DESC"
-			ideology=neutrality	minor=yes
-			ideas={}
-			focuses={}
-		}
-		"PIE"={	#Rockville Province
-			history="PIE_GATHERING_STORM_DESC"
-			ideology=fascism	minor=yes
-			ideas={}
-			focuses={}
-		}
-		"CHY"={	#Cherry Clan
-			history="CHY_GATHERING_STORM_DESC"
-			ideology=fascism	minor=yes
-			ideas={}
-			focuses={}
-		}
-		#Lords of the Marches (Row Two)
-		"TRS"={	#Neighagra
-			history="TRS_GATHERING_STORM_DESC"
-			ideology=fascism	minor=yes
-			ideas={}
-			focuses={}
-		}
-		"FRI"={	#Friesland
-			history="FRI_GATHERING_STORM_DESC"
-			ideology=fascism	minor=yes
-			ideas={}
-			focuses={}
-		}
-		"MSE"={	#Strakoma
-			history="MSE_GATHERING_STORM_DESC"
-			ideology=fascism	minor=yes
-			ideas={}
-			focuses={}
-		}
-		#Of Gods and Mortals (Row Two)
-		"HAH"={	#Hollow Shades
-			history="HAH_GATHERING_STORM_DESC"
-			ideology=fascism	minor=yes
-			ideas={}
-			focuses={}
-		}
-		"HEF"={	#House Everfree
-			history="HEF_GATHERING_STORM_DESC"
-			ideology=fascism	minor=yes
-			ideas={HEF_idea}
-			focuses={}
-		}
-		"BCK"={	#Buckcastle Province
-			history="BCK_GATHERING_STORM_DESC"
-			ideology=neutrality	minor=yes
-			ideas={}
-			focuses={}
-		}
-		#Republican Dream (Row Two)
-		"FAT"={	#Griffonian Republic
-			history="FAT_GATHERING_STORM_DESC"
-			ideology=neutrality	minor=yes
+		"COT"={	#Southern Confederation
+			minor = yes
+			history = "COT_GATHERING_STORM_DESC"
+			ideology = neutrality
 			ideas={
-				FAT_republican_struggle
-				FAT_The_Cloudburian_Minority_idea
-				FAT_unruly_army_idea
 			}
 			focuses={
-				FST_new_dawn_for_the_republic
-			    FAT_radicalize_the_party
-				FAT_the_iron_marshal
+				COT_M04
+				COT_M00
+				COT_I02G
 			}
 		}
-		"GRF"={	#Nova Griffonia
-			history="GRF_GATHERING_STORM_DESC"
-			ideology=neutrality	minor=yes
+		"CLD"={	#Cloudsdale
+			minor = yes
+			history = "CLD_GATHERING_STORM_DESC"
+			ideology = democratic
 			ideas={
+			}
+			focuses={
+			}
+		}
+		"TFL"={	#The Thirteenth Legion
+			history = "TFL_GATHERING_STORM_DESC"
+			ideology = fascism
+			minor = yes
+			ideas={
+			}
+			focuses={
+			}
+		}
+		"FAI"={	#Ponderosa
+			minor = yes
+			history = "FAI_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas={
+			}
+			focuses={
+				FAI_S10
+				FAI_S05
+				FAI_S03C
+			}
+		}
+		"EMB"={	#Communes of Ember
+			history = "EMB_GATHERING_STORM_DESC"
+			ideology = communism
+			minor = yes
+			ideas={
+				EMB_Under_Cities
+			}
+			focuses={
+				EMB_M00
+				EMB_MM02A
+				EMB_MM04B
+			}
+		}
+		"TRS"={	#Neighagra
+			minor = yes
+			history = "TRS_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas={
+				TRS_blood_throne
+				TRS_trotsylvania
+				TRS_olden_ways
+			}
+			focuses={
+				TRS_S02
+				TRS_M04D
+				TRS_M04C
+			}
+		}
+		"HAH"={	#Hollow Shades
+			minor = yes
+			history = "HAH_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas={
+				HAH_HMS_puppet
+				HAH_slave_state
+				HAH_inquisition_impatience
+			}
+			focuses={
+				HAH_WS304
+				HAH_D03C
+				HAH_I04
+			}
+		}
+		"GRF"={
+			minor = yes
+			history = "GRF_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
 				GRF_colonial_economy
 				GRF_falcons_of_griffinstone
 				GRF_militias
 			}
-			focuses={
+			focuses = {
 				GRF_new_economy
 				GRF_highhill_junta
 				GRF_free_elections
 			}
 		}
-		#Herzland (Row Two)
-		"ANG"={	#Barony of Angriver
-			history="ANG_GATHERING_STORM_DESC"
-			ideology=neutrality	minor=yes
-			ideas={
-				ANG_anarchists
-				ANG_cults
-				ANG_underdeveloped_economy
-			}
-			focuses={
-				ANG_loyal_nobility
-				ANG_local_councils
-				ANG_stronghold_of_republicanism
-			}
-		}
-		"BRZ"={	#County of Bronzehill
-			history="BRZ_GATHERING_STORM_DESC"
-			ideology=neutrality	minor=yes
-			ideas={
-				BRZ_imperial_industry
-				BRZ_pacifism1
-			}
-			focuses={
-				BRZ_spoticus_league
-				BRZ_support_the_imperial_loyalty_legue
-				BRZ_return_of_the_emperor
-			}
-		}
-		"YAL"={	#Yale Rectorate
-			history="YAL_GATHERING_STORM_DESC"
-			ideology=neutrality	minor=yes
-			ideas={
-				YAL_societal_divide1
-			}
-			focuses={
-				YAL_the_great_yale_archives
-				YAL_delve_deeper
-				YAL_to_the_barricades
-			}
-		}
-		"TRD"={	#Skyfall Trade Federation
-			history="TRD_GATHERING_STORM_DESC"
-			ideology=neutrality	minor=yes
-			ideas={
-				TRD_the_iron_chancellor
-				TRD_the_riches_of_skyfall
-				TRD_social_inequality
-			}
-			focuses={
-				TRD_the_trade_union_congress
-				TRD_bow_to_the_empire
-				TRD_the_death_of_guichard_2
-			}
-		}
-		"FEA"={	#Grand Duchy of Feathisia
-			history="FEA_GATHERING_STORM_DESC"
-			ideology=neutrality	minor=yes
-			ideas={
-				FEA_crashed_economy
-				FEA_beloved_monarch
-				FEA_danger_in_the_coalition
-			}
-			focuses={
-				FEA_economy
-				FEA_governmental_reorganization
-				FEA_new_government
-			}
-		}
-		#Burning Sea (Row Two)
-		"GRU"={	#Free Towns of Gryphus
-			history="GRU_GATHERING_STORM_DESC"
-			ideology=neutrality	minor=yes
-			ideas={
-				GRU_knightly_orders
-				GRU_southcont_company
-			}
-			focuses={
-				GRU_the_company_takes_over
-				GRU_the_council_holds
-				GRU_the_knights_resurgent
-			}
-		}
-		"SIC"={	#Federated Parishes of Sicameon
-			history="SIC_GATHERING_STORM_DESC"
-			ideology=democratic	minor=yes
-			ideas={
-				SIC_peasant_republic
-				SIC_militia_dependence
-				SIC_constitutionalized_decentralization
-			}
-			focuses={
-				SIC_tradition_triumphs
-				SIC_red_cascade
-				SIC_winning_rigged_lottery
-			}
-		}
-		"MIT"={	#Republic of Asterion
-			history="MIT_GATHERING_STORM_DESC"
-			ideology=democratic	minor=yes
-			ideas={
-				MIT_militaryindustrialcomplex
-				MIT_neveragain
-				MIT_divided_society
-			}
-			focuses={
-				MIT_democratic_victory
-				MIT_coalition_victory
-				MIT_historic_claims
-			}
-		}
-		"CYA"={	#County of Cyanolisia
-			history="CYA_GATHERING_STORM_DESC"
-			ideology=neutrality	minor=yes
-			ideas={
-				CYA_direct_rule_from_evosmoshafen
-				CYA_minotaurian_outback
-				CYA_minotaurian_indigenes
-			}
-			focuses={
-				CYA_the_generalissimo
-				CYA_admiral
-				CYA_the_group_of_twenty
-			}
-		}
-		#Northern Lights (Row Two)
-		"VED"={	#Kingdom of Vedina
-			history="VED_GATHERING_STORM_DESC"
-			ideology=democratic	minor=yes
-			ideas={
-				VED_Chivalry_Knights_idea
-			}
-			focuses={
-				VED_Harmoy_Princess
-				VED_Neutral_Princess
-				VED_Evil_Princess
-			}
-		}
-		"SRS"={	#Socialist Republic of Skynavia
-			history="SRS_GATHERING_STORM_DESC"
-			ideology=communism	minor=yes
-			ideas={
-				SRS_communalist_problems
-				SRS_skynavian_egalitarianism
-				SRS_internationalist_problems
-			}
-			focuses={
-				SRS_the_1007_conference_of_the_usrf
-				SRS_beginning_of_the_end
-				SRS_a_united_griffonia
-			}
-		}
-		#Wings of the Phoenix (Row Three)
-		"HSW"={	#House Stormwing
-			history="HSW_GATHERING_STORM_DESC"
-			ideology=fascism	minor=yes
-			ideas={HSW_idea}
-			focuses={}
-		}
-		"MWC"={	#Meadowood Confederation
-			history="MWC_GATHERING_STORM_DESC"
-			ideology=neutrality	minor=yes
-			ideas={}
-			focuses={}
-		}
-		"LAS"={	#LasAetherius
-			history="LAS_GATHERING_STORM_DESC"
-			ideology=neutrality	minor=yes
-			ideas={}
-			focuses={}
-		}
-		#Tides of the West (Row Three)
-		"VHT"={	#Vanhoover Commune
-			history="VHT_GATHERING_STORM_DESC"
-			ideology=communism	minor=yes
-			ideas={}
-			focuses={}
-		}
-		"SWT"={	#Stormwing Territories
-			history="SWT_GATHERING_STORM_DESC"
-			ideology=neutrality	minor=yes
-			ideas={}
-			focuses={}
-		}
-		"NIH"={	#Acornage Holdout
-			history="NIH_GATHERING_STORM_DESC"
-			ideology=neutrality	minor=yes
-			ideas={}
-			focuses={}
-		}
-		#Chaos and Disorder (Row Three)
-		"STL"={	#Our Town/Starlight's Town
-			history="STL_GATHERING_STORM_DESC"
-			ideology=communism	minor=yes
-			ideas={}
-			focuses={}
-		}
-		"EMB"={	#Communes of Ember
-			history="EMB_GATHERING_STORM_DESC"
-			ideology=communism	minor=yes
-			ideas={}
-			focuses={}
-		}
-		"VII"={	#Virgin Islands/Dragon Isles
-			history="VII_GATHERING_STORM_DESC"
-			ideology=fascism	minor=yes
-			ideas={}
-			focuses={}
-		}
-		"PRT"={	#Pirates Cove
-			history="PRT_GATHERING_STORM_DESC"
-			ideology=fascism	minor=yes
-			ideas={}
-			focuses={}
-		}
-		#Brothers' Feud (Row Three)
-		"YAK"={	#Kingdom of Yakyakistan
-			history="YAK_GATHERING_STORM_DESC"
-			ideology=democratic	minor=yes
-			ideas={
-				YAK_resilience
-			}
-			focuses={
-				YAK_elder_council
-				YAK_reintegrate_jakiclan
-				YAK_harmony_win
-			}
-		}
-		"JAK"={	#Jaki-Clan
-			history="JAK_GATHERING_STORM_DESC"
-			ideology=neutrality	minor=yes
-			ideas={
-				YAK_resilience
-				JAK_angry_jaks
-			}
-			focuses={
-				JAK_attack_yaks
-				JAK_true_king
-				JAK_jaktopia
-			}
-		}
-		#Herzland (Row Three)
-		"ROU"={	#Free City of Romau
-			history="ROU_GATHERING_STORM_DESC"
-			ideology=neutrality	minor=yes
-			ideas={
-				ROU_eyr_archonate
-				ROU_free_city
-				ROU_church_dominated_education
-			}
-			focuses={
-				ROU_fight_for_romau
-				ROU_the_holy_state
-				ROU_the_republicans
-			}
-		}
-		"FEZ"={	#Township of Fezera
-			history="FEZ_GATHERING_STORM_DESC"
-			ideology=neutrality	minor=yes
-			ideas={
-				poverty1
-				FEZ_criminal_haven
-			}
-			focuses={
-				FEZ_smugglers
-				FEZ_siding_maf
-				FEZ_good
-			}
-		}
-		"FLO"={	#City of Flowena
-			history="FLO_GATHERING_STORM_DESC"
-			ideology=neutrality	minor=yes
-			ideas={
-				flowena_holidays
-				flowena_banks
-				flowena_militia
-			}
-			focuses={
-				FLO_new_year
-				FLO_general_strike
-				FLO_brotherly_reason
-			}
-		}
-		"HAU"={	#Haukland
-			history="HAU_GATHERING_STORM_DESC"
-			ideology=neutrality	minor=yes
-			ideas={
-				HAU_trading_crossroads
-				HAU_airforce_with_a_state
-			}
-			focuses={
-				HAU_dragonlord
-				HAU_bridge_the_archipelago
-				HAU_branching_out
-			}
-		}
-		"PYT"={	#Greifenmarschen
-			history="PYT_GATHERING_STORM_DESC"
-			ideology=neutrality	minor=yes
-			ideas={
-				PYT_the_peasant_republic
-				PYT_the_peasant_army
-				PYT_rural_economy
-			}
-			focuses={
-				PYT_the_national_republic
-				PYT_the_peoples_republic
-				PYT_harmony_prevails
-			}
-		}
-		#Breadcrumbs (Row Three)
-		"BRF"={	#Kingdom of Brodfeld
-			history="BRF_GATHERING_STORM_DESC"
-			ideology=neutrality	minor=yes
-			ideas={
-				prywhen_civil_war
-				GRW_risk_of_famine
-			}
-			focuses={
-				BRF_king_and_country
-				BRF_free_freedom
-				BRF_humble_opinion
-			}
-		}
-		"BAN"={	#Blackrock's Bandits
-			history="BAN_GATHERING_STORM_DESC"
-			ideology=fascism	minor=yes
-			ideas={
-				BAN_lawless_land
-				BAN_economic_wasteland
-				BAN_blackrocks_army
-			}
-			focuses={
-				BAN_bandit_kingdom_of_the_south
-			 	BAN_young_countess
-				BAN_true_equality
-			}
-		}
-		#Riverlands (Row Three)
-		"LCT"={	#Lake City
-			history="LCT_GATHERING_STORM_DESC"
-			ideology=neutrality	minor=yes
-			ideas={
-				LCT_defenders_of_the_east
-				LCT_guilds
-				LCT_rising_militarism
-			}
-			focuses={
-				LCT_princely_restoration
-				LCT_river_empire
-				LCT_curtail_the_militery
-			}
-		}
-		"NIM"={	#Nimbusia
-			history="NIM_GATHERING_STORM_DESC"
-			ideology=neutrality	minor=yes
-			ideas={
-				NIM_caste_system
-				NIM_warrior_society
-				NIM_trials_of_the_cyclone
-			}
-			focuses={
-				NIM_choose_harmony
-				NIM_choose_neutrality
-				NIM_choose_fascism
-			}
-		}
-		"DMT"={	#Diamond Mountain
-			history="DMT_GATHERING_STORM_DESC"
-			ideology=fascism	minor=yes
-			ideas={
-				DMT_revanchism
-				DMT_slavery1
-				DMT_slave_army1
-			}
-			focuses={
-				DMT_in_the_hall_of_the_mountain_king
-				DMT_the_free_mountain
-				DMT_crystals_for_the_warlock_engineers
-			}
-		}
-		#Random Slot
-		"SOL"={	#Random
-			history="RANDOM_GATHERING_STORM_DESC"
-			ideology=neutrality	minor=yes
-		}
-		#"SOY"={	#Soryth
-		#	history="SOY_GATHERING_STORM_DESC"
-		#	ideology=neutrality	minor=yes
-		#	ideas={}
-		#	focuses={}
-		#}
 		effect={
 			randomize_weather=22345 #Obligatory in every bookmark!
 			#123={rain_light=yes}

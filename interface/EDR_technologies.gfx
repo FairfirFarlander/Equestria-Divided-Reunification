@@ -1,0 +1,23 @@
+spriteTypes = {
+##Warwagons
+	spriteType = {
+		name = "GFX_warwagon_medium"
+		texturefile = "gfx/interface/technologies/warwagon_equipment_0.dds"
+	}
+	spriteType = {
+		name = "GFX_unit_warwagon_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/warwagon_icon.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_warwagon_icon_medium_white"		
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_warwagon_icon.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_warwagon_icon_small"
+		texturefile = "gfx/texticons/unit_warwagon_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+}

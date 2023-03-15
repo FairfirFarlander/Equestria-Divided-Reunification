@@ -14,6 +14,7 @@ raiding_category = {
 		#EDR Nations
 			original_tag = CLD
 			original_tag = FAI
+			original_tag = TFL
 		}
 	}
 
@@ -81,6 +82,12 @@ raiding_category = {
 				original_tag = FAI
 				has_government = neutrality
 				has_completed_focus = FAI_S00
+				NOT = { is_puppet = yes }
+			}
+			AND = {
+				original_tag = TFL
+				has_government = fascism
+				has_completed_focus = TFL_S01
 				NOT = { is_puppet = yes }
 			}
 		}

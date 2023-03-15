@@ -480,6 +480,31 @@ spritetypes={
 		name="GFX_SOY_yaria"
 		textureFile="gfx/leaders/SOY/SOY_yaria.dds"
 	}
+##TFL##
+	spritetype={
+		name="GFX_TFL_buffalo_joe"
+		textureFile="gfx/leaders/TFL/TFL_buffalo_joe.dds"
+	}
+	spritetype={
+		name="GFX_idea_TFL_buffalo_joe"
+		textureFile="gfx/interface/ideas/Advisors/TFL/TFL_buffalo_joe.dds"
+	}
+	spritetype={
+		name="GFX_TFL_firespit"
+		textureFile="gfx/leaders/TFL/TFL_firespit.dds"
+	}
+	spritetype={
+		name="GFX_idea_TFL_firespit"
+		textureFile="gfx/interface/ideas/Advisors/TFL/TFL_firespit.dds"
+	}
+	spritetype={
+		name="GFX_TFL_yeehaw"
+		textureFile="gfx/leaders/TFL/TFL_yeehaw.dds"
+	}
+	spritetype={
+		name="GFX_idea_TFL_yeehaw"
+		textureFile="gfx/interface/ideas/Advisors/TFL/TFL_yeehaw.dds"
+	}
 ##THA##
 	spritetype={
 		name="GFX_THA_argent_end"

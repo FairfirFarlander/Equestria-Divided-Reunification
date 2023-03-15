@@ -129,12 +129,13 @@ COT_HEB_war_two = {
 					COT = { add_to_PREV_potential_cores = yes }
 				}
 			}
+			42 = { set_demilitarized_zone = yes }
+			78 = { set_demilitarized_zone = yes }
 		}
 		timeout_effect = {
 			log = "[GetDateText]: The [COT.GetAdjective] - [HEB.GetAdjective] war has ground to a stalemate!"
 			set_global_flag = COT_HEB_war_two_end
 			add_political_power = -200
-			HEB = { white_peace = COT }
 			if = {
 				limit = {
 					91 = { is_controlled_by = COT }
@@ -194,6 +195,18 @@ COT_HEB_war_two = {
 					transfer_state = 43
 				}
 			}
+			if = {
+				limit = {
+					44 = { is_controlled_by = HEB }
+					NOT = {
+						51 = { is_controlled_by = HEB }
+					}
+				}
+				HEB = { add_political_power = 50 }
+			}
+			HEB = { white_peace = COT }
+			42 = { set_demilitarized_zone=yes }
+			78 = { set_demilitarized_zone=yes }
 		}
 	}
 	dummy_warior = {

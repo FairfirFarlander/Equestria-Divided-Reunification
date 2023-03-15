@@ -1,0 +1,33 @@
+ideas = {
+	country = {
+		TFL_no_supply = {
+			#picture = 
+			modifier = {
+				army_attack_factor = -0.2
+				army_defence_factor = -0.2
+			}
+		}
+		TFL_operational_reassurances = {
+			#picture = 
+			modifier = {
+				stability_weekly = 0.007
+			}
+		}
+	}
+	industrial_concern = {
+		TFL_stallion_co = {
+			picture = company_pile_of_guns
+			allowed = { original_tag = TFL }
+			#available = { has_completed_focus = TFL_ }
+			research_bonus = { industry = 0.15 }
+			traits = { construction_company }
+		}
+		TFL_hoofgard_electric = {
+			#picture = 
+			allowed = { original_tag = TFL }
+			#available = { has_completed_focus = TFL_ }
+			research_bonus = { electronics = 0.15 }
+			traits = { electronics_concern }
+		}
+	}
+}

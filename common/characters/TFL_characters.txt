@@ -1,0 +1,101 @@
+characters = {
+	TFL_rain_dancer = {
+		name = TFL_rain_dancer
+		gender = female
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_eqs_pony_generic_18"
+				small = "GFX_portrait_eqs_pony_generic_18_small"
+			}
+		}
+		country_leader = {
+			desc = "TFL_rdancer_poli_desc"
+			ideology = fascism_ideology
+		}
+	}
+	TFL_generic_pony = {
+		name = TFL_generic_pony
+		gender = female
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_eqs_pony_generic_18"
+				small = "GFX_portrait_eqs_pony_generic_18_small"
+			}
+		}
+		country_leader = {
+			desc = "TFL_gpony_poli_desc"
+			ideology = conservatism
+		}
+		country_leader = {
+			desc = "TFL_gpony_poli_desc"
+			ideology = democratic_socialism
+		}
+		country_leader = {
+			desc = "TFL_gpony_poli_desc"
+			ideology = despotism
+		}
+	}
+	TFL_buffalo_joe = {
+		name = TFL_buffalo_joe
+		gender = female
+		portraits = {
+			civilian = {
+				large = "GFX_TFL_buffalo_joe"
+				small = "GFX_idea_TFL_buffalo_joe"
+			}
+		}
+		corps_commander = {
+			desc = "TFL_bjoe_mili_desc"
+			traits = {
+				buffalo_race_trait
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	TFL_firespit = {
+		name = TFL_firespit
+		gender = female
+		portraits = {
+			civilian = {
+				large = "GFX_TFL_firespit"
+				small = "GFX_idea_TFL_firespit"
+			}
+		}
+		corps_commander = {
+			desc = "TFL_firespit_mili_desc"
+			traits = {
+				pony_race_trait
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	TFL_yeehaw = {
+		name = TFL_yeehaw
+		gender = female
+		portraits = {
+			civilian = {
+				large = "GFX_TFL_yeehaw"
+				small = "GFX_idea_TFL_yeehaw"
+			}
+		}
+		corps_commander = {
+			desc = "TFL_yeehaw_mili_desc"
+			traits = {
+				pony_race_trait
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

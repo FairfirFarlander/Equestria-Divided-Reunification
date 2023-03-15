@@ -369,7 +369,7 @@ military_training_category = {
 		available = {
 			NOT = {
 				ai_has_role_template=infantry
-				EDR_is_EDR_nation=yes
+				is_EDR_nation=yes
 			}
 		}
 		visible = {
@@ -388,7 +388,7 @@ military_training_category = {
 		icon = rifles
 		available = {
 			has_tech = tech_military_police
-			NOT={EDR_is_EDR_nation=yes}
+			NOT={is_EDR_nation=yes}
 		}
 		visible = {
 			is_ai = yes
@@ -410,7 +410,7 @@ military_training_category = {
 				has_tech = gwtank
 				has_tech = gwtank_chassis
 			}
-			NOT={EDR_is_EDR_nation=yes}
+			NOT={is_EDR_nation=yes}
 		}
 		visible = {
 			is_ai = yes
@@ -433,7 +433,7 @@ military_training_category = {
 				has_tech = basic_medium_tank_chassis
 				has_tech = basic_medium_tank
 			}
-			NOT={EDR_is_EDR_nation=yes}
+			NOT={is_EDR_nation=yes}
 		}
 		visible = {
 			is_ai = yes
@@ -456,7 +456,7 @@ military_training_category = {
 				has_tech = basic_medium_tank_chassis
 				has_tech = basic_medium_tank
 			}
-			NOT={EDR_is_EDR_nation=yes}
+			NOT={is_EDR_nation=yes}
 		}
 		visible = {
 			is_ai = yes

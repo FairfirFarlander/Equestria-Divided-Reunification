@@ -1,318 +1,324 @@
-﻿ALLSWE_tribal_regiment={
-	name="Tribal Regiment"
-	for_countries={JTL PLT WTC}
-	can_use={has_country_flag=EDR_SWE_tribals_trained}
-	division_types={"infantry"}
-	fallback_name="Tribal Regiment"
-	ordered={
-		1={"1st Ichtaca Regiment"}#16_spawn
-		2={"1st Teoxima Regiment"}#16_spawn
-		3={"1st Tochtli Regiment"}#16_spawn
+﻿ALLSWE_tribal_regiment = {
+	name = "Tribal Regiment"
+	for_countries = { JTL PLT WTC  }
+	can_use = {
+		has_country_flag = EDR_SWE_tribals_trained
+	}
+	division_types = { "infantry"  }
+	fallback_name = "Tribal Regiment"
+	ordered = {
+		1 = { "1st Ichtaca Regiment"  }		#16_spawn
+		2 = { "1st Teoxima Regiment"  }		#16_spawn
+		3 = { "1st Tochtli Regiment"  }		#16_spawn
 	}
 }
-ALLSWE_tzinacantli_warriors={
-	name="Tzinacantli Warriors"
-	for_countries={PLF JTL PLT WTC}
-	can_use={has_country_flag=EDR_SWE_tzinacantli_recruited}
-	division_types={"infantry"}
-	fallback_name="%s Tzinacantli Warriors"
-	ordered={
+ALLSWE_tzinacantli_warriors = {
+	name = "Tzinacantli Warriors"
+	for_countries = { PLF JTL PLT WTC  }
+	can_use = {
+		has_country_flag = EDR_SWE_tzinacantli_recruited
+	}
+	division_types = { "infantry"  }
+	fallback_name = "%s Tzinacantli Warriors"
+	ordered = {
 	}
 }
-EMB_warband_east={
-	name="Eastern Tribal Warbands"
-	for_countries={EMB}
-	can_use={has_country_flag=EMB_recruited_warbands}
-	division_types={"infantry"}
-	fallback_name="Tribal Warband"
-	ordered={
-		1={"Xipil Warband"}#16
-		2={"Ihuicayah Warband"}#16
-		3={"Nenecotzin Warband"}#16
-		4={"Teixochitl Warband"}#16
-		5={"Xochitl Warband"}#16
-		6={"Chipatzal Warband"}#24
-		7={"Ahuilizhuitl Warband"}#24
-		8={"Mazapil Warband"}#24
-		9={"Tlazopilli Warband"}#348
-		10={"Coaxoch Warband"}#88
-		11={"Ueman Warband"}#352
-		12={"Ichtaca Warband"}#90
-		13={"Huitzilli Warband"}#82
-		14={"Axapilli Warband"}#82
-		15={"Itzhuitl Warband"}#82
+EMB_warband_east = {
+	name = "Eastern Tribal Warbands"
+	for_countries = { EMB  }
+	can_use = {
+		has_country_flag = EMB_recruited_warbands
+	}
+	division_types = { "infantry"  }
+	fallback_name = "Tribal Warband"
+	ordered = {
+		1 = { "Xipil Warband"  }			#16
+		2 = { "Ihuicayah Warband"  }		#16
+		3 = { "Nenecotzin Warband"  }		#16
+		4 = { "Teixochitl Warband"  }		#16
+		5 = { "Xochitl Warband"  }			#16
+		6 = { "Chipatzal Warband"  }		#24
+		7 = { "Ahuilizhuitl Warband"  }		#24
+		8 = { "Mazapil Warband"  }			#24
+		9 = { "Tlazopilli Warband"  }		#348
+		10 = { "Coaxoch Warband"  }			#88
+		11 = { "Ueman Warband"  }			#352
+		12 = { "Ichtaca Warband"  }			#90
+		13 = { "Huitzilli Warband"  }		#82
+		14 = { "Axapilli Warband"  }		#82
+		15 = { "Itzhuitl Warband"  }		#82
 	}
 }
-EMB_warband_west={
-	name="Western Tribal Warbands"
-	for_countries={EMB}
-	can_use={has_country_flag=EMB_recruited_warbands}
-	division_types={"infantry"}
-	fallback_name="Tribal Warband"
-	ordered={
-		1={"Coyotl Warband"}#32
-		2={"Ixpil Warband"}#32
-		3={"Tonalquetzal Warband"}#32
-		4={"Mazatl Warband"}#26
-		5={"Huexaual Warband"}#81
-		6={"Ahuiliztli Warband"}#33
-		7={"Tlatic Warband"}#33
-		8={"Uetzmixtli Warband"}#33
-		9={"Yayauhxochitl Warband"}#351
-		10={"Xiloxaual Warband"}#351
-		11={"Teyahua Warband"}#351
+EMB_warband_west = {
+	name = "Western Tribal Warbands"
+	for_countries = { EMB }
+	can_use = { has_country_flag = EMB_recruited_warbands }
+	division_types = { "infantry" }
+	fallback_name = "Tribal Warband"
+	ordered = {
+		1 = { "Coyotl Warband" }			#32
+		2 = { "Ixpil Warband" }				#32
+		3 = { "Tonalquetzal Warband" }		#32
+		4 = { "Mazatl Warband" }			#26
+		5 = { "Huexaual Warband" }			#81
+		6 = { "Ahuiliztli Warband" }		#33
+		7 = { "Tlatic Warband" }			#33
+		8 = { "Uetzmixtli Warband" }		#33
+		9 = { "Yayauhxochitl Warband" }		#351
+		10 = { "Xiloxaual Warband" }		#351
+		11 = { "Teyahua Warband" }			#351
 	}
 }
-EMB_warparty={
-	name="Tribal War Parties"
-	for_countries={EMB}
-	can_use={always=yes}
-	division_types={"infantry"}
-	fallback_name="Tribal War Party"
-	ordered={
-		1={"Nopaltzin War Party"}#36
-		2={"Xidira War Party"}#36
-		3={"Teicotl War Party"}#25
-		4={"Patli War Party"}#25
-		5={"Coszcatzin War Party"}#353
-		6={"Necalcuintli War Party"}#79
-		7={"Namametl War Party"}#79
-		8={"Citlalli War Party"}#350
-		9={"Ezmapichtli War Party"}#52
-		10={"Ozomahuatl War Party"}#52
-		11={"Xiomina War Party"}#31
+EMB_warparty = {
+	name = "Tribal War Parties"
+	for_countries = { EMB }
+	can_use = { always = yes }
+	division_types = { "infantry" }
+	fallback_name = "Tribal War Party"
+	ordered = {
+		1 = { "Nopaltzin War Party" }		#36
+		2 = { "Xidira War Party" }			#36
+		3 = { "Teicotl War Party" }			#25
+		4 = { "Patli War Party" }			#25
+		5 = { "Coszcatzin War Party" }		#353
+		6 = { "Necalcuintli War Party" }	#79
+		7 = { "Namametl War Party" }		#79
+		8 = { "Citlalli War Party" }		#350
+		9 = { "Ezmapichtli War Party" }		#52
+		10 = { "Ozomahuatl War Party" }		#52
+		11 = { "Xiomina War Party" }		#31
 	}
 }
-JTL_neighuatl_warriors={
-	name="Neighuatl Warriors"
-	for_countries={JTL}
-	can_use={always=yes}
-	division_types={"infantry"}
-	fallback_name="Neighuatl Warriors"
-	ordered={
-		1={"Coatl Warriors"}#16_spawn
-		2={"Xonacatl Warriors"}#16_spawn
-		3={"Mahuiztiquez Warriors"}#16_spawn
+JTL_neighuatl_warriors = {
+	name = "Neighuatl Warriors"
+	for_countries = { JTL }
+	can_use = { always = yes }
+	division_types = { "infantry" }
+	fallback_name = "Neighuatl Warriors"
+	ordered = {
+		1 = { "Coatl Warriors" }			#16_spawn
+		2 = { "Xonacatl Warriors" }			#16_spawn
+		3 = { "Mahuiztiquez Warriors" }		#16_spawn
 	}
 }
-JTL_thestral_warparty={
-	name="Thestral Tribe War Parties"
-	for_countries={JTL}
-	can_use={always=yes}
-	division_types={"infantry"}
-	fallback_name="Tribal War Party"
-	ordered={
-		1={"Eloxopa War Party"}#35
-		2={"Tezcacoatl War Party"}#35
+JTL_thestral_warparty = {
+	name = "Thestral Tribe War Parties"
+	for_countries = { JTL }
+	can_use = { always = yes }
+	division_types = { "infantry" }
+	fallback_name = "Tribal War Party"
+	ordered = {
+		1 = { "Eloxopa War Party" }			#35
+		2 = { "Tezcacoatl War Party" }		#35
 	}
 }
-JTL_tonaltzintli_chosen={
-	name="Tonaltzintli Chosen"
-	for_countries={JTL}
-	can_use={has_country_flag=JTL_tonaltzintli_joins}
-	division_types={"infantry"}
-	fallback_name="%s Tonaltzintli Chosen"
-	ordered={
+JTL_tonaltzintli_chosen = {
+	name = "Tonaltzintli Chosen"
+	for_countries = { JTL }
+	can_use = { has_country_flag = JTL_tonaltzintli_joins }
+	division_types = { "infantry" }
+	fallback_name = "%s Tonaltzintli Chosen"
+	ordered = {
 	}
 }
-JTL_warband_east={
-	name="Eastern Tribal Warbands"
-	for_countries={JTL}
-	can_use={always=yes}
-	division_types={"infantry"}
-	fallback_name="Tribal Warband"
-	ordered={
-		1={"Xipil Warband"}#16
-		2={"Ihuicayah Warband"}#16
-		3={"Nenecotzin Warband"}#16
-		4={"Teixochitl Warband"}#16
-		5={"Xochitl Warband"}#16
-		6={"Chipatzal Warband"}#24
-		7={"Ahuilizhuitl Warband"}#24
-		8={"Mazapil Warband"}#24
-		9={"Tlazopilli Warband"}#348
-		10={"Coaxoch Warband"}#88
-		11={"Ueman Warband"}#352
-		12={"Ichtaca Warband"}#90
-		13={"Huitzilli Warband"}#82
-		14={"Axapilli Warband"}#82
-		15={"Itzhuitl Warband"}#82
+JTL_warband_east = {
+	name = "Eastern Tribal Warbands"
+	for_countries = { JTL }
+	can_use = { always = yes }
+	division_types = { "infantry" }
+	fallback_name = "Tribal Warband"
+	ordered = {
+		1 = { "Xipil Warband" }				#16
+		2 = { "Ihuicayah Warband" }			#16
+		3 = { "Nenecotzin Warband" }		#16
+		4 = { "Teixochitl Warband" }		#16
+		5 = { "Xochitl Warband" }			#16
+		6 = { "Chipatzal Warband" }			#24
+		7 = { "Ahuilizhuitl Warband" }		#24
+		8 = { "Mazapil Warband" }			#24
+		9 = { "Tlazopilli Warband" }		#348
+		10 = { "Coaxoch Warband" }			#88
+		11 = { "Ueman Warband" }			#352
+		12 = { "Ichtaca Warband" }			#90
+		13 = { "Huitzilli Warband" }		#82
+		14 = { "Axapilli Warband" }			#82
+		15 = { "Itzhuitl Warband" }			#82
 	}
 }
-JTL_warband_west={
-	name="Western Tribal Warbands"
-	for_countries={JTL}
-	can_use={always=no}
-	division_types={"infantry"}
-	fallback_name="Tribal Warband"
-	ordered={
-		1={"Coyotl Warband"}#32
-		2={"Ixpil Warband"}#32
-		3={"Tonalquetzal Warband"}#32
-		4={"Mazatl Warband"}#26
-		5={"Huexaual Warband"}#81
-		6={"Ahuiliztli Warband"}#33
-		7={"Tlatic Warband"}#33
-		8={"Uetzmixtli Warband"}#33
-		9={"Yayauhxochitl Warband"}#351
-		10={"Xiloxaual Warband"}#351
-		11={"Teyahua Warband"}#351
+JTL_warband_west = {
+	name = "Western Tribal Warbands"
+	for_countries = { JTL }
+	can_use = { always = no }
+	division_types = { "infantry" }
+	fallback_name = "Tribal Warband"
+	ordered = {
+		1 = { "Coyotl Warband" }			#32
+		2 = { "Ixpil Warband" }				#32
+		3 = { "Tonalquetzal Warband" }		#32
+		4 = { "Mazatl Warband" }			#26
+		5 = { "Huexaual Warband" }			#81
+		6 = { "Ahuiliztli Warband" }		#33
+		7 = { "Tlatic Warband" }			#33
+		8 = { "Uetzmixtli Warband" }		#33
+		9 = { "Yayauhxochitl Warband" }		#351
+		10 = { "Xiloxaual Warband" }		#351
+		11 = { "Teyahua Warband" }			#351
 	}
 }
-JTL_warparty={
-	name="Tribal War Parties"
-	for_countries={JTL}
-	can_use={always=yes}
-	division_types={"infantry"}
-	fallback_name="Tribal War Party"
-	ordered={
-		1={"Citlalli War Party"}#350
-		2={"Xiomina War Party"}#31
-		3={"Teicotl War Party"}#25
-		4={"Patli War Party"}#25
-		5={"Nopaltzin War Party"}#36
-		6={"Xidira War Party"}#36
-		7={"Necalcuintli War Party"}#79
-		8={"Namametl War Party"}#79
-		9={"Coszcatzin War Party"}#353
-		10={"Ezmapichtli War Party"}#52
-		11={"Ozomahuatl War Party"}#52
+JTL_warparty = {
+	name = "Tribal War Parties"
+	for_countries = { JTL }
+	can_use = { always = yes }
+	division_types = { "infantry" }
+	fallback_name = "Tribal War Party"
+	ordered = {
+		1 = { "Citlalli War Party" }		#350
+		2 = { "Xiomina War Party" }			#31
+		3 = { "Teicotl War Party" }			#25
+		4 = { "Patli War Party" }			#25
+		5 = { "Nopaltzin War Party" }		#36
+		6 = { "Xidira War Party" }			#36
+		7 = { "Necalcuintli War Party" }	#79
+		8 = { "Namametl War Party" }		#79
+		9 = { "Coszcatzin War Party" }		#353
+		10 = { "Ezmapichtli War Party" }	#52
+		11 = { "Ozomahuatl War Party" }		#52
 	}
 }
-PLT_warband_homeland={
-	name="Southern Tribal Warbands"
-	for_countries={PLT}
-	can_use={always=yes}
-	division_types={"infantry"}
-	fallback_name="Tribal Warband"
-	ordered={
-		1={"Mazatl Warband"}#26
-		2={"Ahuiliztli Warband"}#33
-		3={"Tlatic Warband"}#33
-		4={"Uetzmixtli Warband"}#33
-		5={"Yayauhxochitl Warband"}#351
-		6={"Xiloxaual Warband"}#351
-		7={"Teyahua Warband"}#351
+PLT_warband_homeland = {
+	name = "Southern Tribal Warbands"
+	for_countries = { PLT }
+	can_use = { always = yes }
+	division_types = { "infantry" }
+	fallback_name = "Tribal Warband"
+	ordered = {
+		1 = { "Mazatl Warband" }			#26
+		2 = { "Ahuiliztli Warband" }		#33
+		3 = { "Tlatic Warband" }			#33
+		4 = { "Uetzmixtli Warband" }		#33
+		5 = { "Yayauhxochitl Warband" }		#351
+		6 = { "Xiloxaual Warband" }			#351
+		7 = { "Teyahua Warband" }			#351
 	}
 }
-PLT_warband_noncore={
-	name="Northern Tribal Warbands"
-	for_countries={PLT}
-	can_use={always=no}
-	division_types={"infantry"}
-	fallback_name="Tribal Warband"
-	ordered={
-		1={"Xipil Warband"}#16
-		2={"Ihuicayah Warband"}#16
-		3={"Nenecotzin Warband"}#16
-		4={"Teixochitl Warband"}#16
-		5={"Xochitl Warband"}#16
-		6={"Chipatzal Warband"}#24
-		7={"Ahuilizhuitl Warband"}#24
-		8={"Mazapil Warband"}#24
-		9={"Tlazopilli Warband"}#348
-		10={"Coaxoch Warband"}#88
-		11={"Ueman Warband"}#352
-		12={"Ichtaca Warband"}#90
-		13={"Huitzilli Warband"}#82
-		14={"Axapilli Warband"}#82
-		15={"Itzhuitl Warband"}#82
-		16={"Coyotl Warband"}#32
-		17={"Ixpil Warband"}#32
-		18={"Tonalquetzal Warband"}#32
-		20={"Huexaual Warband"}#81
+PLT_warband_noncore = {
+	name = "Northern Tribal Warbands"
+	for_countries = { PLT }
+	can_use = { always = no }
+	division_types = { "infantry" }
+	fallback_name = "Tribal Warband"
+	ordered = {
+		1 = { "Xipil Warband" }				#16
+		2 = { "Ihuicayah Warband" }			#16
+		3 = { "Nenecotzin Warband" }		#16
+		4 = { "Teixochitl Warband" }		#16
+		5 = { "Xochitl Warband" }			#16
+		6 = { "Chipatzal Warband" }			#24
+		7 = { "Ahuilizhuitl Warband" }		#24
+		8 = { "Mazapil Warband" }			#24
+		9 = { "Tlazopilli Warband" }		#348
+		10 = { "Coaxoch Warband" }			#88
+		11 = { "Ueman Warband" }			#352
+		12 = { "Ichtaca Warband" }			#90
+		13 = { "Huitzilli Warband" }		#82
+		14 = { "Axapilli Warband" }			#82
+		15 = { "Itzhuitl Warband" }			#82
+		16 = { "Coyotl Warband" }			#32
+		17 = { "Ixpil Warband" }			#32
+		18 = { "Tonalquetzal Warband" }		#32
+		20 = { "Huexaual Warband" }			#81
 	}
 }
-PLT_warparty_homeland={
-	name="Southern Tribal War Parties"
-	for_countries={PLT}
-	can_use={always=yes}
-	division_types={"infantry"}
-	fallback_name="Tribal War Party"
-	ordered={
-		1={"Ezmapichtli War Party"}#52
-		2={"Ozomahuatl War Party"}#52
-		3={"Necalcuintli War Party"}#79
-		4={"Namametl War Party"}#79
-		5={"Teicotl War Party"}#25
-		6={"Patli War Party"}#25
-		7={"Coszcatzin War Party"}#353
+PLT_warparty_homeland = {
+	name = "Southern Tribal War Parties"
+	for_countries = { PLT }
+	can_use = { always = yes }
+	division_types = { "infantry" }
+	fallback_name = "Tribal War Party"
+	ordered = {
+		1 = { "Ezmapichtli War Party" }		#52
+		2 = { "Ozomahuatl War Party" }		#52
+		3 = { "Necalcuintli War Party" }	#79
+		4 = { "Namametl War Party" }		#79
+		5 = { "Teicotl War Party" }			#25
+		6 = { "Patli War Party" }			#25
+		7 = { "Coszcatzin War Party" }		#353
 	}
 }
-PLT_warparty_noncore={
-	name="Northern Tribal War Parties"
-	for_countries={PLT}
-	can_use={always=no}
-	division_types={"infantry"}
-	fallback_name="Tribal War Party"
-	ordered={
-		1={"Nopaltzin War Party"}#36
-		2={"Xidira War Party"}#36
-		3={"Citlalli War Party"}#350
-		4={"Xiomina War Party"}#31
+PLT_warparty_noncore = {
+	name = "Northern Tribal War Parties"
+	for_countries = { PLT }
+	can_use = { always = no }
+	division_types = { "infantry" }
+	fallback_name = "Tribal War Party"
+	ordered = {
+		1 = { "Nopaltzin War Party" }		#36
+		2 = { "Xidira War Party" }			#36
+		3 = { "Citlalli War Party" }		#350
+		4 = { "Xiomina War Party" }			#31
 	}
 }
-THA_warband={
-	name="Tribal Warband"
-	for_countries={THA}
-	can_use={always=no}
-	division_types={"infantry"}
-	fallback_name="Tribal Warband"
-	ordered={
-		1={"Xipil Warband"}#16
-		2={"Ihuicayah Warband"}#16
-		3={"Nenecotzin Warband"}#16
-		4={"Teixochitl Warband"}#16
-		5={"Xochitl Warband"}#16
-		6={"Chipatzal Warband"}#24
-		7={"Ahuilizhuitl Warband"}#24
-		8={"Mazapil Warband"}#24
-		9={"Tlazopilli Warband"}#348
-		10={"Coaxoch Warband"}#88
-		11={"Ueman Warband"}#352
-		12={"Ichtaca Warband"}#90
-		13={"Huitzilli Warband"}#82
-		14={"Axapilli Warband"}#82
-		15={"Itzhuitl Warband"}#82
-		16={"Coyotl Warband"}#32
-		17={"Ixpil Warband"}#32
-		18={"Tonalquetzal Warband"}#32
-		19={"Mazatl Warband"}#26
-		20={"Huexaual Warband"}#81
-		21={"Ahuiliztli Warband"}#33
-		22={"Tlatic Warband"}#33
-		23={"Uetzmixtli Warband"}#33
-		24={"Yayauhxochitl Warband"}#351
-		25={"Xiloxaual Warband"}#351
-		26={"Teyahua Warband"}#351
+THA_warband = {
+	name = "Tribal Warband"
+	for_countries = { THA }
+	can_use = { always = no }
+	division_types = { "infantry" }
+	fallback_name = "Tribal Warband"
+	ordered = {
+		1 = { "Xipil Warband" }				#16
+		2 = { "Ihuicayah Warband" }			#16
+		3 = { "Nenecotzin Warband" }		#16
+		4 = { "Teixochitl Warband" }		#16
+		5 = { "Xochitl Warband" }			#16
+		6 = { "Chipatzal Warband" }			#24
+		7 = { "Ahuilizhuitl Warband" }		#24
+		8 = { "Mazapil Warband" }			#24
+		9 = { "Tlazopilli Warband" }		#348
+		10 = { "Coaxoch Warband" }			#88
+		11 = { "Ueman Warband" }			#352
+		12 = { "Ichtaca Warband" }			#90
+		13 = { "Huitzilli Warband" }		#82
+		14 = { "Axapilli Warband" }			#82
+		15 = { "Itzhuitl Warband" }			#82
+		16 = { "Coyotl Warband" }			#32
+		17 = { "Ixpil Warband" }			#32
+		18 = { "Tonalquetzal Warband" }		#32
+		19 = { "Mazatl Warband" }			#26
+		20 = { "Huexaual Warband" }			#81
+		21 = { "Ahuiliztli Warband" }		#33
+		22 = { "Tlatic Warband" }			#33
+		23 = { "Uetzmixtli Warband" }		#33
+		24 = { "Yayauhxochitl Warband" }	#351
+		25 = { "Xiloxaual Warband" }		#351
+		26 = { "Teyahua Warband" }			#351
 	}
 }
-THA_tzinacantli_warparty={
-	name="Tzinacantli Warriors"
-	for_countries={JTL}
-	can_use={always=no}
-	division_types={"infantry"}
-	fallback_name="Tzinacantli War Party"
-	ordered={
-		1={"Eloxopa War Party"}#35
-		2={"Tezcacoatl War Party"}#35
+THA_tzinacantli_warparty = {
+	name = "Tzinacantli Warriors"
+	for_countries = { JTL }
+	can_use = { always = no }
+	division_types = { "infantry" }
+	fallback_name = "Tzinacantli War Party"
+	ordered = {
+		1 = { "Eloxopa War Party" }			#35
+		2 = { "Tezcacoatl War Party" }		#35
 	}
 }
-THA_warparty={
-	name="Tribal War Parties"
-	for_countries={JTL}
-	can_use={always=no}
-	division_types={"infantry"}
-	fallback_name="Tribal War Party"
-	ordered={
-		1={"Citlalli War Party"}#350
-		2={"Xiomina War Party"}#31
-		3={"Teicotl War Party"}#25
-		4={"Nopaltzin War Party"}#36
-		5={"Xidira War Party"}#36
-		6={"Patli War Party"}#25
-		7={"Coszcatzin War Party"}#353
-		8={"Necalcuintli War Party"}#79
-		9={"Namametl War Party"}#79
+THA_warparty = {
+	name = "Tribal War Parties"
+	for_countries = { JTL }
+	can_use = { always = no }
+	division_types = { "infantry" }
+	fallback_name = "Tribal War Party"
+	ordered = {
+		1 = { "Citlalli War Party" }		#350
+		2 = { "Xiomina War Party" }			#31
+		3 = { "Teicotl War Party" }			#25
+		4 = { "Nopaltzin War Party" }		#36
+		5 = { "Xidira War Party" }			#36
+		6 = { "Patli War Party" }			#25
+		7 = { "Coszcatzin War Party" }		#353
+		8 = { "Necalcuintli War Party" }	#79
+		9 = { "Namametl War Party" }		#79
 	}
 }

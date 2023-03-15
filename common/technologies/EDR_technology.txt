@@ -1,0 +1,46 @@
+technologies = {
+	EDR_tech = {
+		research_cost = 1
+		intel_network_gain_factor = -0.3
+		allow = {
+			always = no
+		}
+	}
+	warwagon = {
+		allow_branch = {
+			is_EDR_nation = yes
+		}
+		enable_equipments = {
+			warwagon_equipment_0
+		}
+		enable_subunits = {
+			warwagon
+		}
+		dependencies = {
+			melee_weapons1 = 1
+			EDR_tech = 1
+		}
+		research_cost = 1.25
+		start_year = 419
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = -1 }
+		}
+		categories = {
+			motorized_equipment
+			infantry_tech
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 4
+				is_EDR_nation = yes
+			}
+			modifier = {
+				factor = -4
+				date > "1010.1.1"
+			}
+		}
+	}
+}
+#####---------------------------------------------------------------------> End

@@ -9,6 +9,7 @@ state={	#EDRSTATE
 		owner=HEB
 		add_core_of=HEB
 		#add_core_of=BUF
+		set_demilitarized_zone=yes
 		buildings={	
 			arms_factory=1
 		}

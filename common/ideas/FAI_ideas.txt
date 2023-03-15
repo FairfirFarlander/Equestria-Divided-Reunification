@@ -29,4 +29,13 @@ ideas = {
 			}
 		}
 	}
+	industrial_concern = {
+		FAI_reservoir_construction = {
+			#picture = 
+			allowed = { original_tag = FAI }
+			#available = { has_completed_focus = FAI_ }
+			research_bonus = { industry = 0.15 }
+			traits = { industrial_concern }
+		}
+	}
 }
