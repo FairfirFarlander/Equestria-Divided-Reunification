@@ -76,7 +76,7 @@ characters={
 			}
 		}
 		field_marshal={
-			desc="CRL_reese_mili_desc"
+			desc="CRL_reese_cmdr_desc"
 			skill=2
 			attack_skill=2
 			defense_skill=3
@@ -104,7 +104,7 @@ characters={
 			}
 		}
 		field_marshal={
-			desc="CRL_colloid_mili_desc"
+			desc="CRL_colloid_cmdr_desc"
 			skill=3
 			attack_skill=2
 			defense_skill=3
@@ -126,7 +126,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="CRY_DUSTY_EMBER_DESC"	#"CRL_dember_mili_desc"
+			desc="CRY_DUSTY_EMBER_DESC"	#"CRL_dember_cmdr_desc"
 			skill=2
 			attack_skill=2
 			defense_skill=4
@@ -147,7 +147,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="CRL_dfalafel_mili_desc"
+			desc="CRL_dfalafel_cmdr_desc"
 			skill=2
 			attack_skill=1
 			defense_skill=2
@@ -178,7 +178,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="CRL_isnow_mili_desc"
+			desc="CRL_isnow_cmdr_desc"
 			skill=1
 			attack_skill=1
 			defense_skill=2
@@ -201,7 +201,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="CRL_cloudie_mili_desc"
+			desc="CRL_cloudie_cmdr_desc"
 			skill=1
 			attack_skill=1
 			defense_skill=2
@@ -223,7 +223,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="CRL_crystalline_mili_desc"
+			desc="CRL_crystalline_cmdr_desc"
 			skill=1
 			attack_skill=1
 			defense_skill=1
@@ -244,7 +244,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="CRL_shooves_mili_desc"
+			desc="CRL_shooves_cmdr_desc"
 			skill=3
 			attack_skill=3
 			defense_skill=2

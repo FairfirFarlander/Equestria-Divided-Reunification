@@ -18,7 +18,7 @@ characters={
 			traits={}
 		}
 		field_marshal={	#force commander supreme
-			desc="HSW_rdash_mili_desc"
+			desc="HSW_rdash_cmdr_desc"
 			skill=3
 			attack_skill=4
 			defense_skill=3
@@ -83,7 +83,7 @@ characters={
 			}
 		}
 		corps_commander={	#wing commander
-			desc="HSW_soarin_mili_desc"
+			desc="HSW_soarin_cmdr_desc"
 			skill=3
 			attack_skill=2
 			defense_skill=3
@@ -106,7 +106,7 @@ characters={
 			}
 		}
 		corps_commander={	#wing commander
-			desc="HSW_spitfire_mili_desc"
+			desc="HSW_spitfire_cmdr_desc"
 			skill=3
 			attack_skill=2
 			defense_skill=1
@@ -129,7 +129,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="HSW_scootaloo_mili_desc"
+			desc="HSW_scootaloo_cmdr_desc"
 			skill=1
 			attack_skill=1
 			defense_skill=1

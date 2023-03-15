@@ -31,7 +31,7 @@ characters={
 			traits={}
 		}
 		corps_commander={
-			desc="EMB_ctyrennadus_mili_desc"
+			desc="EMB_ctyrennadus_cmdr_desc"
 			skill=2
 			attack_skill=2
 			defense_skill=3

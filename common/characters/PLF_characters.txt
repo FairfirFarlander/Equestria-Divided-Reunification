@@ -81,7 +81,7 @@ characters={
 			traits={hero_of_the_revolution}
 		}
 		field_marshal={
-			desc="PLF_gdelicious_mili_desc"	#BAL_delicious_desc_yummy
+			desc="PLF_gdelicious_cmdr_desc"	#BAL_delicious_desc_yummy
 			skill=2
 			attack_skill=2
 			defense_skill=2
@@ -111,7 +111,7 @@ characters={
 			traits={corn_lord}
 		}
 		corps_commander={
-			desc="BAL_corn_lord"	#PLF_cchafer_mili_desc
+			desc="BAL_corn_lord"	#PLF_cchafer_cmdr_desc
 			skill=2
 			attack_skill=1
 			defense_skill=1
@@ -406,7 +406,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="PLF_smane_mili_desc"
+			desc="PLF_smane_cmdr_desc"
 			skill=1
 			attack_skill=1
 			defense_skill=1
@@ -428,7 +428,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="PLF_lpearl_mili_desc"
+			desc="PLF_lpearl_cmdr_desc"
 			skill=1
 			attack_skill=1
 			defense_skill=1
@@ -450,7 +450,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="BAL_waifu_desc"	#PLF_spen_mili_desc
+			desc="BAL_waifu_desc"	#PLF_spen_cmdr_desc
 			skill=2
 			attack_skill=2
 			defense_skill=2
@@ -472,7 +472,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="BAL_gay_brandon_desc"	#PLF_bbloom_mili_desc
+			desc="BAL_gay_brandon_desc"	#PLF_bbloom_cmdr_desc
 			skill=3
 			attack_skill=4
 			defense_skill=1

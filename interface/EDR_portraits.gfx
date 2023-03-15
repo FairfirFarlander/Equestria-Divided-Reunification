@@ -1,5 +1,10 @@
 spritetypes={
 ###Nation Specific###
+##CLD##
+	spritetype={
+		name="GFX_CLD_wonderbolt_remnant"
+		textureFile="gfx/leaders/CHY/CLD_wonderbolt_remnant.dds"
+	}
 ##CHY##
 	spritetype={
 		name="GFX_CHY_cherry_jubilee"
@@ -448,6 +453,14 @@ spritetypes={
 	spritetype={
 		name="GFX_idea_TRS_mystical_phantasm"
 		textureFile="gfx/interface/ideas/Advisors/TRS/TRS_mystical_phantasm.dds"
+	}
+	spritetype={
+		name="GFX_TRS_radiguss"
+		textureFile="gfx/leaders/TRS/TRS_radiguss.dds"
+	}
+	spritetype={
+		name="GFX_idea_TRS_radiguss"
+		textureFile="gfx/interface/ideas/Advisors/TRS/TRS_radiguss.dds"
 	}
 ##NIH##
 	spritetype={

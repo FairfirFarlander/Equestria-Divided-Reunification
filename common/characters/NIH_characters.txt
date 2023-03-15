@@ -32,7 +32,7 @@ characters={
 			traits={}
 		}
 		corps_commander={
-			desc="NIH_cfate_mili_desc"
+			desc="NIH_cfate_cmdr_desc"
 			skill=1
 			attack_skill=1
 			defense_skill=1

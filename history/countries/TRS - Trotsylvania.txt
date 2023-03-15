@@ -1,9 +1,9 @@
-capital=56
-oob="TRS_1012"
-set_research_slots=2
-set_stability=0.36
-set_war_support=0.14
-add_ideas={
+capital = 56
+oob = "TRS_1012"
+set_research_slots = 2
+set_stability = 0.36
+set_war_support = 0.14
+add_ideas = {
 	closed_economy
 	agrarian_society
 	lack_of_scientists2
@@ -12,56 +12,67 @@ add_ideas={
 	TRS_trotsylvania
 	TRS_olden_ways
 }
-if={
-	limit={has_dlc="No Step Back"}
-	add_ideas={
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	add_ideas = {
 		traditionalism_academy_spirit
 		doctrinal_orthodoxy_spirit
 		disdain_for_the_digging_spirit
 	}
-	else={
-		add_ideas={EQS_bad_tanks}
-	}
-}
-set_technology={
-	pony_race=1
-	EDR_tech=1
-	penal_infantry=1
-	melee_weapons=1
-	melee_weapons1=1
-	tech_support=1
-	tech_pegasi=1
-	#tech_knights=1	#Later
-}
-actually_fix_weapon_techs=yes
-set_rule={
-	can_generate_female_aces=yes
-	can_generate_female_unit_leaders=yes
-	can_generate_female_country_leaders=yes
-}
-if={
-	limit={has_dlc="Death or Dishonor"}
-	HMS={
-		set_autonomy={
-			target=TRS
-			autonomy_state=autonomy_satellite
+	else = {
+		add_ideas = {
+			EQS_bad_tanks
 		}
 	}
-	else={
-		HMS={puppet=TRS}
+}
+set_technology = {
+	pony_race = 1
+	EDR_tech = 1
+	penal_infantry = 1
+	melee_weapons = 1
+	melee_weapons1 = 1
+	tech_support = 1
+	tech_pegasi = 1
+	#tech_knights = 1	#Later
+}
+actually_fix_weapon_techs = yes
+set_rule = {
+	can_generate_female_aces = yes
+	can_generate_female_unit_leaders = yes
+	can_generate_female_country_leaders = yes
+}
+if = {
+	limit = {
+		has_dlc = "Death or Dishonor"
+	}
+	HMS = {
+		set_autonomy = {
+			target = TRS
+			autonomy_state = autonomy_satellite
+		}
+	}
+	else = {
+		HMS = {
+			puppet = TRS
+		}
 	}
 }
-set_cosmetic_tag=TRS_HMS_puppet
-set_popularities={
-	fascism=40
-	communism=20
-	neutrality=22
-	democratic=18
+set_cosmetic_tag = TRS_HMS_puppet
+set_popularities = {
+	fascism = 40
+	communism = 20
+	neutrality = 22
+	democratic = 18
 }
-set_politics={ruling_party=fascism}
-set_country_flag=EDR_is_equestrian_breakaway
-recruit_character=TRS_duchess_aurora
-recruit_character=TRS_mystical_phantasm
-recruit_character=TRS_generic_pony
+set_politics = {
+	ruling_party = fascism
+}
+set_country_flag = EDR_is_equestrian_breakaway
+recruit_character = TRS_duchess_aurora
+recruit_character = TRS_mystical_phantasm
+recruit_character = TRS_radiguss
+recruit_character = TRS_generic_pony
 ###NOTES###
 #Stab/WarS are based off of 18(12)-18(14)/50. TRS is 14.

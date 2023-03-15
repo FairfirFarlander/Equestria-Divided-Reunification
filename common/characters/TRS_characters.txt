@@ -1,71 +1,100 @@
-characters={
-	TRS_duchess_aurora={
-		name=TRS_lady_aurora
-		gender=female
-		portraits={
-			civilian={
-				large="GFX_TRS_duchess_aurora"
-				small="GFX_idea_TRS_duchess_aurora"
+characters = {
+	TRS_duchess_aurora = {
+		name = TRS_lady_aurora
+		gender = female
+		portraits = {
+			civilian = {
+				large = "GFX_TRS_duchess_aurora"
+				small = "GFX_idea_TRS_duchess_aurora"
 			}
-			army={
-				large="GFX_TRS_duchess_aurora"
-				small="GFX_idea_TRS_duchess_aurora"
+			army = {
+				large = "GFX_TRS_duchess_aurora"
+				small = "GFX_idea_TRS_duchess_aurora"
 			}
 		}
-		country_leader={
-			desc="TRS_daurora"
-			ideology=fascism_ideology
-			traits={}
+		country_leader = {
+			desc = "TRS_daurora"
+			ideology = fascism_ideology
 		}
 	}
-	TRS_mystical_phantasm={
-		name=TRS_mystical_phantasm
-		portraits={
-			civilian={
-				large="GFX_TRS_mystical_phantasm"
-				small="GFX_idea_TRS_mystical_phantasm"
+	TRS_mystical_phantasm = {
+		name = TRS_mystical_phantasm
+		portraits = {
+			civilian = {
+				large = "GFX_TRS_mystical_phantasm"
+				small = "GFX_idea_TRS_mystical_phantasm"
 			}
-			army={
-				large="GFX_TRS_mystical_phantasm"
-				small="GFX_idea_TRS_mystical_phantasm"
+			army = {
+				large = "GFX_TRS_mystical_phantasm"
+				small = "GFX_idea_TRS_mystical_phantasm"
 			}
 		}
-		country_leader={
-			desc="TRS_mphantasm"
-			ideology=fascism_ideology
-			traits={}
+		country_leader = {
+			desc = "TRS_mphantasm_poli_desc"
+			ideology = fascism_ideology
 		}
-		advisor={
-			slot=political_advisor
-			cost=150
-			idea_token=TRS_mphantasm_advi
-			available={has_country_flag=TRS_S05_unlock_advisors}
-			traits={}
+		advisor = {
+			slot = political_advisor
+			cost = 150
+			idea_token = TRS_mphantasm_advi
+			available = {has_country_flag = TRS_S05_unlock_advisors}
+			traits = {
+			}
 		}
 	}
-	TRS_generic_pony={
-		name=TRS_generic_pony
-		gender=female
-		portraits={
-			civilian={
-				large="GFX_portrait_eqs_pony_generic_21"
-				small="GFX_portrait_eqs_pony_generic_21_small"
+	TRS_radiguss = {
+		name = TRS_radiguss
+		portraits = {
+			civilian = {
+				large = "GFX_TRS_radiguss"
+				small = "GFX_idea_TRS_radiguss"
+			}
+			army = {
+				large = "GFX_TRS_radiguss"
+				small = "GFX_idea_TRS_radiguss"
 			}
 		}
-		country_leader={
-			desc="TRS_gpony_poli_desc"
-			ideology=conservatism
-			traits={}
+		corps_commander = {
+			desc = "TRS_radiguss_cmdr_desc"
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			traits = {
+				pony_race_trait
+			}
 		}
-		country_leader={
-			desc="TRS_gpony_poli_desc"
-			ideology=marxism
-			traits={}
+		advisor = {
+			slot = political_advisor
+			cost = 150
+			idea_token = TRS_radiguss_advi
+			available = {
+			}
+			traits = {
+			}
 		}
-		country_leader={
-			desc="TRS_gpony_poli_desc"
-			ideology=despotism
-			traits={}
+	}
+	TRS_generic_pony = {
+		name = TRS_generic_pony
+		gender = female
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_eqs_pony_generic_21"
+				small = "GFX_portrait_eqs_pony_generic_21_small"
+			}
+		}
+		country_leader = {
+			desc = "TRS_gpony_poli_desc"
+			ideology = conservatism
+		}
+		country_leader = {
+			desc = "TRS_gpony_poli_desc"
+			ideology = marxism
+		}
+		country_leader = {
+			desc = "TRS_gpony_poli_desc"
+			ideology = despotism
 		}
 	}
 	#Inquisitor General

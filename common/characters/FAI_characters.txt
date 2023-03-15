@@ -34,7 +34,7 @@ characters = {
 			}
 		}
 		corps_commander={
-			desc="FAI_meringue_mili_desc"
+			desc="FAI_meringue_cmdr_desc"
 			skill=1
 			attack_skill=1
 			defense_skill=1

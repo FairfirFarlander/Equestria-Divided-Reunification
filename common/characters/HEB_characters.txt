@@ -18,7 +18,7 @@ characters={
 			traits={}
 		}
 		field_marshal={
-			desc="HEB_applejack_mili_desc"
+			desc="HEB_applejack_cmdr_desc"
 			skill=2
 			attack_skill=3
 			defense_skill=3
@@ -75,7 +75,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="HEB_bmac_mili_desc"
+			desc="HEB_bmac_cmdr_desc"
 			skill=2
 			attack_skill=2
 			defense_skill=3
@@ -96,7 +96,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="HEB_braeburn_mili_desc"
+			desc="HEB_braeburn_cmdr_desc"
 			skill=2
 			attack_skill=2
 			defense_skill=1
@@ -119,7 +119,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="HEB_ldust_mili_desc"
+			desc="HEB_ldust_cmdr_desc"
 			skill=2
 			attack_skill=3
 			defense_skill=2
@@ -143,7 +143,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="HEB_cstrongheart_mili_desc"
+			desc="HEB_cstrongheart_cmdr_desc"
 			skill=2
 			attack_skill=2
 			defense_skill=2

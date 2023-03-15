@@ -64,7 +64,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="MWC_acider_mili_desc"
+			desc="MWC_acider_cmdr_desc"
 			skill=1
 			attack_skill=2
 			defense_skill=1
@@ -87,7 +87,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="MWC_mfeather_mili_desc"
+			desc="MWC_mfeather_cmdr_desc"
 			skill=1
 			attack_skill=1
 			defense_skill=1

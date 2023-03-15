@@ -39,7 +39,7 @@ characters={
 			traits={}
 		}
 		field_marshal={
-			desc="BCK_wreath_mili_desc"
+			desc="BCK_wreath_cmdr_desc"
 			skill=3
 			attack_skill=4
 			defense_skill=2
@@ -74,7 +74,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="BCK_hgreen_mili_desc"
+			desc="BCK_hgreen_cmdr_desc"
 			skill=1
 			attack_skill=1
 			defense_skill=1

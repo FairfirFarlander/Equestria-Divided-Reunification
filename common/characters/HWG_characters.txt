@@ -19,7 +19,7 @@ characters={
 			traits={}
 		}
 		field_marshal={
-			desc="HWG_rarity_mili_desc"
+			desc="HWG_rarity_cmdr_desc"
 			skill=1
 			attack_skill=2
 			defense_skill=2
@@ -40,7 +40,7 @@ characters={
 			}
 		}
 		country_leader={
-			desc="HWG_smark_mili_desc"
+			desc="HWG_smark_cmdr_desc"
 			ideology=anarchist_communism
 			traits={}
 		}
@@ -64,7 +64,7 @@ characters={
 			traits={}
 		}
 		corps_commander={
-			desc="HWG_fdlis_mili_desc"
+			desc="HWG_fdlis_cmdr_desc"
 			skill=2 attack_skill=2	defense_skill=2
 			planning_skill=2	logistics_skill=1
 			traits={pony_race_trait media_personality vigilant_sentinel}
@@ -101,7 +101,7 @@ characters={
 			traits={}
 		}
 		corps_commander={
-			desc="HWG_fpants_mili_desc"
+			desc="HWG_fpants_cmdr_desc"
 			skill=2
 			attack_skill=1
 			defense_skill=3
@@ -133,7 +133,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="HWG_cdlune_mili_desc"
+			desc="HWG_cdlune_cmdr_desc"
 			skill=1
 			attack_skill=1
 			defense_skill=1
@@ -151,7 +151,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="HWG_mpotato_mili_desc"
+			desc="HWG_mpotato_cmdr_desc"
 			skill=1
 			attack_skill=1
 			defense_skill=1

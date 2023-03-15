@@ -45,7 +45,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="JUNGLE_lnarrative_mili_desc"
+			desc="JUNGLE_lnarrative_cmdr_desc"
 			skill=2
 			attack_skill=1
 			defense_skill=1

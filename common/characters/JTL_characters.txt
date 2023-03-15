@@ -17,7 +17,7 @@ characters={
 			ideology=theocracy_subideology
 		}
 		field_marshal={
-			desc="JTL_ahuizotl_mili_desc"	#TEM_ahuizotl_desc
+			desc="JTL_ahuizotl_cmdr_desc"	#TEM_ahuizotl_desc
 			skill=4
 			attack_skill=5
 			defense_skill=1
@@ -51,7 +51,7 @@ characters={
 			traits={}
 		}
 		corps_commander={
-			desc="JTL_tchant_mili_desc"
+			desc="JTL_tchant_cmdr_desc"
 			skill=1
 			attack_skill=1
 			defense_skill=1
@@ -79,7 +79,7 @@ characters={
 			traits={}
 		}
 		field_marshal={
-			desc="JTL_tailcoatl_mili_desc"
+			desc="JTL_tailcoatl_cmdr_desc"
 			skill=2
 			attack_skill=1
 			defense_skill=2
@@ -100,7 +100,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="JTL_tenoch_mili_desc"
+			desc="JTL_tenoch_cmdr_desc"
 			skill=2
 			attack_skill=2
 			defense_skill=2

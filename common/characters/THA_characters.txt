@@ -23,7 +23,7 @@ characters={
 			traits={}
 		}
 		field_marshal={
-			desc="THA_aend_mili_desc"
+			desc="THA_aend_cmdr_desc"
 			skill=1
 			attack_skill=1
 			defense_skill=1
@@ -50,7 +50,7 @@ characters={
 			traits={}
 		}
 		corps_commander={
-			desc="THA_apeak_mili_desc"
+			desc="THA_apeak_cmdr_desc"
 			skill=1
 			attack_skill=1
 			defense_skill=1

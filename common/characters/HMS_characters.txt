@@ -18,7 +18,7 @@ characters={
 			traits={}
 		}
 		field_marshal={
-			desc="HMS_tsparkle_mili_desc"
+			desc="HMS_tsparkle_cmdr_desc"
 			skill=1
 			attack_skill=1
 			defense_skill=1
@@ -64,7 +64,7 @@ characters={
 			traits={}
 		}
 		field_marshal={
-			desc="HMS_sarmor_mili_desc"
+			desc="HMS_sarmor_cmdr_desc"
 			skill=4
 			attack_skill=3
 			defense_skill=5
@@ -123,7 +123,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="HMS_tlulamoon_mili_desc"
+			desc="HMS_tlulamoon_cmdr_desc"
 			skill=1
 			attack_skill=2
 			defense_skill=1
@@ -144,7 +144,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="HMS_spike_mili_desc"
+			desc="HMS_spike_cmdr_desc"
 			skill=1
 			attack_skill=1
 			defense_skill=1

@@ -27,7 +27,7 @@ characters={
 			traits={}
 		}
 		field_marshal={
-			desc="VII_ember_mili_desc"
+			desc="VII_ember_cmdr_desc"
 			skill=3
 			attack_skill=4
 			defense_skill=4
@@ -56,7 +56,7 @@ characters={
 			ideology=anarchist_communism
 		}
 		corps_commander={
-			desc="VII_ruby_mili_desc"
+			desc="VII_ruby_cmdr_desc"
 			skill=1
 			attack_skill=1
 			defense_skill=1
@@ -78,7 +78,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="VII_torch_mili_desc"
+			desc="VII_torch_cmdr_desc"
 			skill=1
 			attack_skill=1
 			defense_skill=1

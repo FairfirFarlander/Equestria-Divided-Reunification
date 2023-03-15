@@ -17,7 +17,7 @@ characters={
 			traits={}
 		}
 		field_marshal={
-			desc="TAG_SNA_mili_desc"
+			desc="TAG_SNA_cmdr_desc"
 			skill=3
 			attack_skill=2
 			defense_skill=3
@@ -118,7 +118,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="VHT_twhirl_mili_desc"
+			desc="VHT_twhirl_cmdr_desc"
 			skill=4
 			attack_skill=2
 			defense_skill=3
@@ -152,7 +152,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="VHT_gleb_mili_desc"
+			desc="VHT_gleb_cmdr_desc"
 			skill=3
 			attack_skill=1
 			defense_skill=3
@@ -183,7 +183,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="VHT_melegy_mili_desc"
+			desc="VHT_melegy_cmdr_desc"
 			skill=1
 			attack_skill=1
 			defense_skill=1
@@ -206,7 +206,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="VHT_lblossom_mili_desc"
+			desc="VHT_lblossom_cmdr_desc"
 			skill=1
 			attack_skill=1
 			defense_skill=1
@@ -229,7 +229,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="VHT_iskies_mili_desc"
+			desc="VHT_iskies_cmdr_desc"
 			skill=1
 			attack_skill=2
 			defense_skill=1
@@ -251,7 +251,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="VHT_choof_mili_desc"
+			desc="VHT_choof_cmdr_desc"
 			skill=1
 			attack_skill=1
 			defense_skill=3

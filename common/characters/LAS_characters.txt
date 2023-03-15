@@ -31,7 +31,7 @@ characters={
 			traits={}
 		}
 		field_marshal={
-			desc="LAS_pchest_mili_desc"
+			desc="LAS_pchest_cmdr_desc"
 			skill=2
 			attack_skill=1
 			defense_skill=2

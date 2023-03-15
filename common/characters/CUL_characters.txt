@@ -28,7 +28,7 @@ characters={
 			traits={}
 		}
 		field_marshal={
-			desc="CUL_tlmare_mili_desc"
+			desc="CUL_tlmare_cmdr_desc"
 			skill=6
 			attack_skill=6
 			defense_skill=6
@@ -70,7 +70,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="CUL_dhooves_mili_desc"
+			desc="CUL_dhooves_cmdr_desc"
 			skill=1
 			attack_skill=1
 			defense_skill=1
@@ -100,7 +100,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="CUL_lheartstrings_mili_desc"
+			desc="CUL_lheartstrings_cmdr_desc"
 			skill=1
 			attack_skill=1
 			defense_skill=1
@@ -127,7 +127,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="CUL_surprise_mili_desc"
+			desc="CUL_surprise_cmdr_desc"
 			skill=1
 			attack_skill=1
 			defense_skill=1
@@ -146,7 +146,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="CUL_screwball_mili_desc"
+			desc="CUL_screwball_cmdr_desc"
 			skill=1
 			attack_skill=1
 			defense_skill=1
@@ -172,7 +172,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="CUL_ppierce_mili_desc"
+			desc="CUL_ppierce_cmdr_desc"
 			skill=1
 			attack_skill=1
 			defense_skill=1

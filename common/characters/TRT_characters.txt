@@ -22,7 +22,7 @@ characters={
 			traits={}
 		}
 		corps_commander={
-			desc="TRT_rfire_mili_desc"
+			desc="TRT_rfire_cmdr_desc"
 			skill=1 attack_skill=1	defense_skill=1
 			planning_skill=1	logistics_skill=1
 			traits={pony_race_trait}
@@ -49,7 +49,7 @@ characters={
 			}
 		}
 		corps_commander={
-			desc="TRT_thoosevelt_mili_desc"
+			desc="TRT_thoosevelt_cmdr_desc"
 			skill=1 attack_skill=1	defense_skill=1
 			planning_skill=1	logistics_skill=1
 			traits={pony_race_trait}

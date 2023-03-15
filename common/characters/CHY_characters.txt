@@ -33,7 +33,7 @@ characters={
 			traits={}
 		}
 		field_marshal={
-			desc="CHY_cjubilee_mili_desc"
+			desc="CHY_cjubilee_cmdr_desc"
 			skill=1
 			attack_skill=1
 			defense_skill=1
