@@ -4,12 +4,12 @@ characters = {
 		gender = female
 		portraits = {
 			civilian = {
-				large = "GFX_portrait_eqs_pony_generic_18"
-				small = "GFX_portrait_eqs_pony_generic_18_small"
+				large = "GFX_TFL_rain_dancer"
+				small = "GFX_TFL_rain_dancer_small"
 			}
 		}
 		country_leader = {
-			desc = "TFL_rdancer_poli_desc"
+			desc = "TFL_rdancer_leader_desc"
 			ideology = fascism_ideology
 		}
 	}
@@ -23,15 +23,15 @@ characters = {
 			}
 		}
 		country_leader = {
-			desc = "TFL_gpony_poli_desc"
+			desc = "TFL_gpony_leader_desc"
 			ideology = conservatism
 		}
 		country_leader = {
-			desc = "TFL_gpony_poli_desc"
+			desc = "TFL_gpony_leader_desc"
 			ideology = democratic_socialism
 		}
 		country_leader = {
-			desc = "TFL_gpony_poli_desc"
+			desc = "TFL_gpony_leader_desc"
 			ideology = despotism
 		}
 	}
@@ -45,15 +45,15 @@ characters = {
 			}
 		}
 		corps_commander = {
-			desc = "TFL_bjoe_cmdr_desc"
-			traits = {
-				buffalo_race_trait
-			}
+			desc = "TFL_bjoe_commander_desc"
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
+			traits = {
+				buffalo_race_trait
+			}
 		}
 	}
 	TFL_firespit = {
@@ -66,15 +66,15 @@ characters = {
 			}
 		}
 		corps_commander = {
-			desc = "TFL_firespit_cmdr_desc"
-			traits = {
-				pony_race_trait
-			}
+			desc = "TFL_firespit_commander_desc"
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
+			traits = {
+				pony_race_trait
+			}
 		}
 	}
 	TFL_yeehaw = {
@@ -87,15 +87,15 @@ characters = {
 			}
 		}
 		corps_commander = {
-			desc = "TFL_yeehaw_cmdr_desc"
-			traits = {
-				pony_race_trait
-			}
+			desc = "TFL_yeehaw_commander_desc"
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
+			traits = {
+				pony_race_trait
+			}
 		}
 	}
 }

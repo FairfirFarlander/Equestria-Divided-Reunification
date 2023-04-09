@@ -1,0 +1,12 @@
+leader_traits = {
+	CLD_disorganized = {
+		random = no
+		political_advisor_cost_factor = 0.2
+	}
+	PIE_governor_trait = {
+		random = no
+		stability_factor = 0.03
+	}
+}
+###NOTES###
+#PIE_governor stability factor is based off the founding of Rockville in 1803. It coincidently also bumps the stability to 81 with its current communist popularity. Go figure.

@@ -9,7 +9,7 @@
   ##Country Name##
    CLD: "Cloudsdale"
     CLD_DEF: "the Holdout of Cloudsdale"
-    CLD_ADJ: "Cloudsdali"
+    CLD_ADJ: "Cloudali"
   ##Political Parties##
    CLD_fascism_party: "Stormwings"
     CLD_fascism_party_long: "The Stormwings of Cloudsdale"
@@ -21,9 +21,12 @@
     CLD_democratic_party_long: "The Wonderbolt Remnant of Cloudsdale"
  ###Characters###
   ##Leaders##
+   CLD_ebn_flow: "Ebn' Flow"
+    CLD_eflow_leader_desc: "$CRDC_art_tiviyl$"  #§YBorn§!: \n\n§YBiography§!: \n\n
+    CLD_eflow_commander_desc: "$CLD_eflow_leader_desc$"
    CLD_wonderbolt_remnant: "Council of Cloudsdale"
-    CLD_wremnant_poli_desc: ""
-    CLD_wremnant_cmdr_desc: ""
+    CLD_wremnant_leader_desc: "§YFormed§!: 1005\n\n$CRDC_art_tiviyl$"   #\n\n§YBiography§!: 
+    CLD_wremnant_commander_desc: "$CLD_wremnant_leader_desc$"
   ##Commanders##
   ##Political Advisors##
   ##Military Advisors##

@@ -20,4 +20,37 @@ spriteTypes = {
 		legacy_lazy_load = no
 		noOfFrames = 1
 	}
+##Equestrian Heavy Infantry
+	spriteType = {
+		name = "GFX_equestrian_armor_medium"
+		texturefile = "gfx/interface/technologies/melee_equipment_2.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_armor1_medium"
+		texturefile = "gfx/interface/technologies/infantry_weapons.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_armor2_medium"
+		texturefile = "gfx/interface/technologies/melee_equipment_3.dds"
+	}
+	spriteType = {
+		name = "GFX_equestrian_armor3_medium"
+		texturefile = "gfx/interface/technologies/melee_equipment_4.dds"
+	}
+	spriteType = {
+		name = "GFX_unit_armored_infantry_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/warwagon_icon.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_armored_infantry_icon_medium_white"		
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_warwagon_icon.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unit_armored_infantry_icon_small"
+		texturefile = "gfx/texticons/unit_warwagon_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
 }

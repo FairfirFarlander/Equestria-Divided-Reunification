@@ -1,24 +1,29 @@
 ﻿l_english:
-###Credits Tooltips###
-##Characters##
-CRDC_art_bylisboa: "§YArtwork By§!: byLisboa"
- CRDC_art_pooryarrickda: "§YArtwork By§!: PoorYarrickDA"
- CRDC_pre_fujin777: "§YPreserved By§!: Fujin777"
- CRDC_res_sorencer: "§YResized By§!: Sorencer"
- CRDC_art_tiviyl: "§YPortrait§! by: §CTiviyl§!"
- CRDC_art_ruhje: "§YArtwork By§!: ruhje"
- CRDC_art_lionhearcartoon: "§YArtwork By§!: lionhearcartoon"
- CRDC_ref_tiviyl: "§YReffitting By§!: Tiviyl"
-##Decisions##
-CRDT_wri_tiviyl: "§LWritten§! by §CTiviyl§!"
- CRDT_wri_cod_fairfir: "§LWritten§! and §LCoded§! by §CFairfir§!"
-  CRDT_wri_cod_fairfir_tooltip: "§LIf these entries feel like a stopgap, they likely are.\nMy writing is not that good.\n~FAIRFIR/FRLANDR§!"
- CRDT_cod_fairfir: "§LCoded§! by §CFairfir§!"
-##Events##
-##Combos##
-CRDC_bylis_soren: "$CRED_art_libsboa$\n$CRED_res_sorencer$"
- CRDC_ruhje_soren: "$CRED_art_ruhje$\n$CRED_res_sorencer$"
- CRDC_lionh_soren: "$CRED_art_lionhearcartoon$\n$CRED_res_sorencer$"
- CRDC_poory_fujin_soren: "$CRDC_art_pooryarrickda$\n$CRDC_pre_fujin777$\n$CRDC_res_sorencer$"
- CRDC_bylis_tiviy: "$CRED_art_libsboa$\n$CRED_ref_tiviyl$"
- CRDT_tiviy_fairf: "$CRDT_wri_tiviyl$, $CRDT_cod_fairfir$"
+ ###Credits Tooltips###
+  ##Characters##
+   CRDR_asset_EAW: "§Y(Art Asset from EAW)§!"
+   CRDC_art_bylisboa: "§YArtwork By§!: §0byLisboa§!"
+   CRDC_art_bunnyshrubby: "§YArtwork§! by: §0bunnyshrubby§!"
+   CRDC_art_dusthiel: "§YArtwork§! by: §0Dusthiel§!"
+   CRDC_pre_fujin777: "§YPreserved By§!: Fujin777"
+   CRDC_art_lionhearcartoon: "§YArtwork By§!: lionhearcartoon"
+   CRDC_art_mrscroup: "§YArtwork§! by: §0MrScroup§!"
+   CRDC_art_pooryarrickda: "§YArtwork By§!: PoorYarrickDA"
+   CRDC_art_ruhje: "§YArtwork By§!: ruhje"
+   CRDC_art_sketchit: "§YArtwork§! by: §0Sketchit26/ende26§!"
+   CRDC_res_sorencer: "§YResized By§!: Sorencer"
+   CRDC_art_tiviyl: "§YArtwork§! by: §CTiviyl§!"
+   CRDC_ref_tiviyl: "§YReffitting By§!: Tiviyl"
+  ##Decisions##
+   CRDT_wri_tiviyl: "§LWritten§! by §CTiviyl§!"
+   CRDT_wri_cod_fairfir: "§LWritten§! and §LCoded§! by §CFairfir§!"
+   CRDT_wri_cod_fairfir_tooltip: "§LIf these entries feel like a stopgap, they likely are.\nMy writing is not that good.\n~FAIRFIR/FRLANDR§!"
+   CRDT_cod_fairfir: "§LCoded§! by §CFairfir§!"
+  ##Events##
+  ##Combos##
+   CRDC_bylis_soren: "$CRDC_art_libsboa$\n$CRDC_res_sorencer$"
+   CRDC_ruhje_soren: "$CRDC_art_ruhje$\n$CRDC_res_sorencer$"
+   CRDC_lionh_soren: "$CRDC_art_lionhearcartoon$\n$CRDC_res_sorencer$"
+   CRDC_poory_fujin_soren: "$CRDC_art_pooryarrickda$\n$CRDC_pre_fujin777$\n$CRDC_res_sorencer$"
+   CRDC_bylis_tiviy: "$CRDC_art_libsboa$\n$CRDC_ref_tiviyl$"
+   CRDT_tiviy_fairf: "$CRDT_wri_tiviyl$, $CRDT_cod_fairfir$"

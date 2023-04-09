@@ -42,5 +42,129 @@ technologies = {
 			}
 		}
 	}
+	equestrian_armor = {
+		allow_branch = {
+			is_EDR_nation = yes
+		}
+		enable_equipments = {
+			equestrian_armor_equipment_1
+		}
+		enable_subunits = {
+			armored_infantry
+		}
+		dependencies = {
+			melee_weapons1 = 1
+			EDR_tech = 1
+		}
+		path = {
+			leads_to_tech = equestrian_armor1
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 985
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = -1 }
+		}
+		categories = {
+			infantry_tech
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 10
+				is_EDR_nation = yes
+			}
+			modifier = {
+				factor = -10
+				date > "1012.1.1"
+			}
+		}
+	}
+	equestrian_armor1 = {
+		armored_infantry = {
+			armor_value = 3000
+		}
+		path = {
+			leads_to_tech = equestrian_armor2
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 1006
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 1 }
+		}
+		categories = {
+			infantry_tech
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 10
+				is_EDR_nation = yes
+			}
+			modifier = {
+				factor = -10
+				date > "1012.1.1"
+			}
+		}
+	}
+	equestrian_armor2 = {
+		armored_infantry = {
+			armor_value = 1000
+		}
+		path = {
+			leads_to_tech = equestrian_armor3
+			research_cost_coeff = 1
+		}
+		research_cost = 1.25
+		start_year = 1008
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 3 }
+		}
+		categories = {
+			infantry_tech
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 10
+				is_EDR_nation = yes
+			}
+			modifier = {
+				factor = -10
+				date > "1012.1.1"
+			}
+		}
+	}
+	equestrian_armor3 = {
+		armored_infantry = {
+			armor_value = 5000
+		}
+		enable_equipments = {
+			equestrian_armor_equipment_3
+		}
+		research_cost = 1.25
+		start_year = 1010
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 6 }
+		}
+		categories = {
+			infantry_tech
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 10
+				is_EDR_nation = yes
+			}
+			modifier = {
+				factor = -10
+				date > "1012.1.1"
+			}
+		}
+	}
 }
-#####---------------------------------------------------------------------> End

@@ -1,44 +1,64 @@
-characters={
-	CLD_wonderbolt_remnant={
-		name=CLD_wonderbolt_remnant
-		portraits={
-			civilian={
-				large="GFX_CLD_wonderbolt_remnant"
-				small="GFX_idea_CLD_wonderbolt_remnant"
+characters = {
+	CLD_ebn_flow = {
+		name = CLD_ebn_flow
+		portraits = {
+			civilian = {
+				large = "GFX_CLD_ebn_flow"
+				small = "GFX_CLD_ebn_flow_small"
 			}
-			army={
-				large="GFX_CLD_wonderbolt_remnant"
-				small="GFX_idea_CLD_wonderbolt_remnant"
+			army = {
+				large = "GFX_CLD_ebn_flow"
+				small = "GFX_CLD_ebn_flow_small"
 			}
 		}
-		country_leader={
-			desc="CLD_wremnant_poli_desc"
-			ideology=stratocracy
-			traits={}
+		country_leader = {
+			desc = "CLD_eflow_leader_desc"
+			ideology = stratocracy
 		}
-		country_leader={
-			desc="CLD_wremnant_poli_desc"
-			ideology=harmonic_libertarianism
-			traits={}
+		corp_commander = {
+			desc = "CLD_eflow_commander_desc"
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			traits = {
+				pony_race_trait
+			}
 		}
-		country_leader={
-			desc="CLD_wremnant_poli_desc"
-			ideology=leninism
-			traits={}
+	}
+	CLD_wonderbolt_remnant = {
+		name = CLD_wonderbolt_remnant
+		portraits = {
+			civilian = {
+				large = "GFX_CLD_wonderbolt_remnant"
+				small = "GFX_CLD_wonderbolt_remnant_small"
+			}
+			army = {
+				large = "GFX_CLD_wonderbolt_remnant"
+				small = "GFX_CLD_wonderbolt_remnant_small"
+			}
 		}
-		country_leader={
-			desc="CLD_wremnant_poli_desc"
-			ideology=oligarchism
-			traits={}
+		country_leader = {
+			desc = "CLD_wremnant_leader_desc"
+			ideology = harmonic_libertarianism
 		}
-		corp_commander={
-			desc="CLD_wremnant_cmdr_desc"
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			traits={
+		country_leader = {
+			desc = "CLD_wremnant_leader_desc"
+			ideology = leninism
+		}
+		country_leader = {
+			desc = "CLD_wremnant_leader_desc"
+			ideology = oligarchism
+		}
+		field_marshal = {
+			desc = "CLD_wremnant_commander_desc"
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			traits = {
 				pony_race_trait
 			}
 		}

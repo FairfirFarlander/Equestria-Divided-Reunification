@@ -1,54 +1,59 @@
-capital=38
-oob="PIE_1012"
-set_research_slots=2
-set_stability=0.7
-set_war_support=0.06
-add_ideas={
+capital = 38
+oob = "PIE_07"
+set_stability = 0.7
+set_war_support = 0.06
+add_ideas = {
 	limited_exports
 	agrarian_society
 	lack_of_scientists3
 	poverty4
 }
-if={
-	limit={has_dlc="No Step Back"}
-	add_ideas={
+set_technology = {
+	pony_race = 1
+	melee_weapons = 1
+	tech_support = 1
+	basic_train = 1
+}
+if = {
+	limit = { has_dlc = "No Step Back" }
+	add_ideas = {
 		traditionalism_academy_spirit
 		doctrinal_orthodoxy_spirit
 		disdain_for_the_digging_spirit
 	}
-	else={
-		add_ideas={EQS_bad_tanks}
-	}
-}
-set_technology={
-	pony_race=1
-	melee_weapons=1
-	tech_support=1
-}
-actually_fix_weapon_techs=yes
-set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
-if={
-	limit={has_dlc="Death or Dishonor"}
-	HEB={
-		set_autonomy={
-			target=PIE
-			autonomy_state=autonomy_satellite
+	else = {
+		add_ideas = {
+			EQS_bad_tanks
 		}
 	}
-	else={
-		HEB={puppet=PIE}
+}
+actually_fix_weapon_techs = yes
+set_rule = {	can_generate_female_aces = yes	can_generate_female_unit_leaders = yes	can_generate_female_country_leaders = yes}
+if = {
+	limit = { has_dlc = "Death or Dishonor" }
+	HEB = {
+		set_autonomy = {
+			target = PIE
+			autonomy_state = autonomy_satellite
+		}
+	}
+	else = {
+		HEB = { puppet = PIE }
 	}
 }
-set_popularities={
-	fascism=31
-	communism=57
-	neutrality=7
-	democratic=5
+set_popularities = {
+	fascism = 34
+	communism = 54
+	neutrality = 7
+	democratic = 5
 }
-set_politics={ruling_party=communism}
-set_country_flag=EDR_is_equestrian_breakaway
-recruit_character=PIE_marble_pie
-recruit_character=PIE_sapphire_smiles
-recruit_character=PIE_cloudy_quartz
-#recruit_character=PIE_maud_pie		#Implement me!
-#NOTES##Mareocrity, Marearchy, Matriarchy (Use this one)
+set_politics = { ruling_party = communism }
+set_country_flag = EDR_is_equestrian_breakaway
+recruit_character = PIE_cloudy_quartz
+recruit_character = PIE_marble_pie
+recruit_character = PIE_maud_pie
+#recruit_character = PIE_sapphire_smiles
+###NOTES###
+#Mareocrity, Marearchy, Matriarchy (Use this one)
+#Give Unique Earth Pony Tree Later.
+#Populariteis formerly 57, 31, 7, 5.

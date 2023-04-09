@@ -4,7 +4,7 @@ characters={
 		portraits={
 			civilian={
 				large="GFX_WTC_dashing_habbidasher"
-				small="GFX_idea_WTC_dashing_habbidasher"
+				small="GFX_WTC_dashing_habbidasher_small"
 			}
 		}
 		country_leader={
@@ -28,7 +28,7 @@ characters={
 		portraits={
 			civilian={
 				large="GFX_WTC_alicia_habbidasher"
-				small="GFX_idea_WTC_alicia_habbidasher"
+				small="GFX_WTC_alicia_habbidasher_small"
 			}
 		}
 		country_leader={
@@ -48,7 +48,7 @@ characters={
 		portraits={
 			civilian={
 				large="GFX_WTC_eloi_path"
-				small="GFX_idea_WTC_eloi_path"
+				small="GFX_WTC_eloi_path_small"
 			}
 		}
 		advisor={
@@ -61,8 +61,8 @@ characters={
 		name=WTC_saddle_arabian_mercenary
 		portraits={
 			civilian={
-				large="GFX_WTC_saddle_arabia_mercenary"
-				small="GFX_idea_WTC_saddle_arabian_mercenary"
+				large="GFX_WTC_saddle_arabian_mercenary"
+				small="GFX_WTC_saddle_arabian_mercenary_small"
 			}
 		}
 		advisor={
@@ -76,7 +76,7 @@ characters={
 		portraits={
 			civilian={
 				large="GFX_WTC_zebrican_mercenary"
-				small="GFX_idea_WTC_zebrican_mercenary"
+				small="GFX_WTC_zebrican_mercenary_small"
 			}
 		}
 		advisor={

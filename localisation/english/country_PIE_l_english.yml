@@ -1,25 +1,30 @@
 ﻿l_english:
-###Introduction###
-##Bookmark##
-PIE_GATHERING_STORM_DESC: ""
-##Welcome Screen##
- EAW_WS_PIE: ""
-  EAW_WS_PIE_desc: ""
-###Country Name###
-PIE: "Rockville Province"
- PIE_DEF: "The Province of Rockville"
- PIE_ADJ: "Pie Clanner"
-###Political Parties###
-###Characters###
-##Leaders##
-PIE_marble_pie: "Marble Pie"
- PIE_mpie_poli_desc: ""
- PIE_sapphire_smiles: "Sapphire Smiles"
-  PIE_ssmiles_poli_desc: ""
- PIE_cloudy_quartz: "Cloudy Quartz"
-  PIE_cquartz_poli_desc: ""
-##Commanders##
-##Political Advisors##
-##Military Advisors##
-###National Focuses###
-##Storyline Tree##
+ ###Introduction###
+  ##Bookmark##
+   PIE_GATHERING_STORM_DESC: ""
+  ##Welcome Screen##
+   EAW_WS_PIE: ""
+    EAW_WS_PIE_desc: ""
+ ###Politics###
+  ##Country Name##
+   PIE: "Rockville Province"
+    PIE_DEF: "The Province of Rockville"
+    PIE_ADJ: "Pie Clanner"
+  ##Political Parties##
+ ###Characters###
+  ##Leaders##
+   PIE_cloudy_quartz: "Cloudy Quartz"
+    PIE_cquartz_leader_desc: "$CRDC_art_dusthiel$"
+   PIE_marble_pie: "Marble Pie"
+    PIE_marpie_leader_desc: "$CRDC_art_mrscroup$"
+   PIE_maud_pie: "Maud Pie"
+    PIE_maupie_leader_desc: "$CRDC_art_sketchit$"
+    PIE_maupie_commander_desc: "$CRDC_art_bunnyshrubby$"
+    #PIE_maupie_advisorhere_desc: "$CRDC_art_bunnyshrubby$"
+   PIE_sapphire_smiles: "Sapphire Smiles"
+    PIE_ssmiles_leader_desc: ""
+  ##Commanders##
+  ##Political Advisors##
+  ##Military Advisors##
+ ###National Focuses###
+  ##Storyline Tree##

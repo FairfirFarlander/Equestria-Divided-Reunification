@@ -65,4 +65,37 @@ sub_units = {
 			attack = -0.15
 		}
 	}
+	armored_infantry = {
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 601
+		ai_priority = 200
+		active = no
+		type = {
+			infantry
+		}
+		group = infantry
+		categories = {
+			category_front_line
+			category_all_infantry
+			category_heavy_infantry
+			category_army
+		}
+		combat_width = 2
+		max_strength = 15
+		max_organisation = 65
+		default_morale = 0.32
+		manpower = 600
+		training_time = 120
+		suppression = -0.02
+		weight = 0.5
+		breakthrough = 1	#+1 Breakthrough from Rifle Line.
+		hardness = 200	#2% Hardness. 20% of the body is skeleton.
+		armor_value = 1000	#1 Armor
+		hard_attack = 1
+		supply_consumption = 0.06
+		need = {
+			support_equipment = 5
+		}
+	}
 }
