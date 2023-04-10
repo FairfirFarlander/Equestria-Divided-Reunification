@@ -1,29 +1,25 @@
-characters={
-	ALA_almond_tree={
-		name=ALA_almond_tree
-		gender=female
-		portraits={
-			civilian={large="GFX_portrait_pony_generic_4"}
+characters = {
+	ALA_almond_tree = {
+		name = ALA_almond_tree
+		gender = female
+		portraits = {
+			civilian = { large = GFX_portrait_pony_generic_4 }
 		}
-		country_leader={
-			desc="ALA_atree_poli_desc"
-			ideology=despotism
-			traits={}
+		country_leader = {
+			desc = ALA_atree_leader_desc
+			ideology = despotism
 		}
-		country_leader={
-			desc="ALA_atree_poli_desc"
-			ideology=conservatism
-			traits={}
+		country_leader = {
+			desc = ALA_atree_leader_desc
+			ideology = conservatism
 		}
-		country_leader={
-			desc="ALA_atree_poli_desc"
-			ideology=democratic_socialism
-			traits={}
+		country_leader = {
+			desc = ALA_atree_leader_desc
+			ideology = democratic_socialism
 		}
-		country_leader={
-			desc="ALA_atree_poli_desc"
-			ideology=fascism_ideology
-			traits={}
+		country_leader = {
+			desc = ALA_atree_leader_desc
+			ideology = fascism_ideology
 		}
 	}
 }

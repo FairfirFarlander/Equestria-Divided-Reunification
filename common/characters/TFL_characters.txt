@@ -41,7 +41,7 @@ characters = {
 		portraits = {
 			civilian = {
 				large = "GFX_TFL_buffalo_joe"
-				small = "GFX_idea_TFL_buffalo_joe"
+				small = "GFX_TFL_buffalo_joe"
 			}
 		}
 		corps_commander = {
@@ -62,7 +62,7 @@ characters = {
 		portraits = {
 			civilian = {
 				large = "GFX_TFL_firespit"
-				small = "GFX_idea_TFL_firespit"
+				small = "GFX_TFL_firespit"
 			}
 		}
 		corps_commander = {
@@ -83,7 +83,7 @@ characters = {
 		portraits = {
 			civilian = {
 				large = "GFX_TFL_yeehaw"
-				small = "GFX_idea_TFL_yeehaw"
+				small = "GFX_TFL_yeehaw"
 			}
 		}
 		corps_commander = {

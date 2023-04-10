@@ -8,8 +8,8 @@ LAS_GATHERING_STORM_DESC: ""
 ###Characters###
 ##Leaders##
 LAS_pine_chest: "Pine Chest"
- LAS_pchest_poli_desc: ""
- LAS_pchest_mili_desc: "$LAS_pchest_poli_desc$"
+ LAS_pchest_political_desc: ""
+ LAS_pchest_commander_desc: "$LAS_pchest_political_desc$"
 ##Commanders##
 ##Political Advisors##
 ##Military Advisors##

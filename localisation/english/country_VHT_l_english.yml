@@ -21,16 +21,16 @@ VHT_fascism: "House Vanhoover"
 ###Characters###
 ##Leaders##
 VHT_strawberry_snowflake: "Strawberry Snowflake"
- VHT_ssnowflake_poli_desc: ""
+ VHT_ssnowflake_political_desc: ""
 ##Commanders##
  VHT_indigo_skies: "Indigo Skies"
-  VHT_iskies_mili_desc: ""
+  VHT_iskies_commander_desc: ""
   VHT_crimson_hoof: "Crimson Hoof"
-   VHT_choof_mili_desc: ""
+   VHT_choof_commander_desc: ""
   VHT_moonlight_elegy: "Moonlight Elegy"
-   VHT_melegy_mili_desc: ""
+   VHT_melegy_commander_desc: ""
   VHT_lavender_blossom: "Lavender Blossom"
-   VHT_lblossom_mili_desc: ""
+   VHT_lblossom_commander_desc: ""
 ##Political Advisors##
 ##Military Advisors##
 ###National Focuses###

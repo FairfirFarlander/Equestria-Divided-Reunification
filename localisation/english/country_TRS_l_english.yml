@@ -9,17 +9,17 @@
   ##Leaders##
    TRS_duchess_aurora: "Duchess Aurora"
     TRS_lady_aurora: "Lady Aurora"
-    TRS_daurora_poli_desc: "§LPortrait§! by: §CTiviyl§!\n\nThe mysterious thestral mare, who almost seems to haunt the small palace she resides within. She commands a powerful presence wherever she goes. Her almost ghostly white fur and red eyes either bewitching or terrifying any who gaze upon her. Until recent years very few ponies outside of the nobility had seen her often. However, things have changed. After her and her small collection of guards ponies sided with Canterlot during their invasion into the region, she finds herself in control. With the blessings of Canterlot the duchess plans on reclaiming the glory of what is left of her small clan. However, being the last of her royal line and the thestral population declining in the region with each passing day, she will have to work hard to achieve her goals. But just what are the goals of this mysterious mare and will they lead her down a path that will put her at odds with Canterlot?"
+    TRS_daurora_political_desc: "§LPortrait§! by: §CTiviyl§!\n\nThe mysterious thestral mare, who almost seems to haunt the small palace she resides within. She commands a powerful presence wherever she goes. Her almost ghostly white fur and red eyes either bewitching or terrifying any who gaze upon her. Until recent years very few ponies outside of the nobility had seen her often. However, things have changed. After her and her small collection of guards ponies sided with Canterlot during their invasion into the region, she finds herself in control. With the blessings of Canterlot the duchess plans on reclaiming the glory of what is left of her small clan. However, being the last of her royal line and the thestral population declining in the region with each passing day, she will have to work hard to achieve her goals. But just what are the goals of this mysterious mare and will they lead her down a path that will put her at odds with Canterlot?"
    TRS_generic_pony: "Generic pony"
     TRS_generic_pony_desc: ""
   ##Commanders##
    TRS_radiguss: "Sir Radiguss"
-    TRS_radiguss_cmdr_desc: ""
-    TRS_radiguss_advi_desc: "$TRS_radiguss_cmdr_desc$"
+    TRS_radiguss_commander_desc: ""
+    TRS_radiguss_advi_desc: "$TRS_radiguss_commander_desc$"
   ##Political Advisors##
    TRS_mystical_phantasm: "Mystical Phantasm"
-    TRS_mphantasm_poli_desc: ""
-    TRS_mphantasm_advi_desc: "$TRS_mphantasm_poli_desc$"
+    TRS_mphantasm_political_desc: ""
+    TRS_mphantasm_advi_desc: "$TRS_mphantasm_political_desc$"
   ##Military Advisors##
   ##Country Name##
    TRS: "Trotsylvania"

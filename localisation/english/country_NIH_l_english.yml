@@ -29,8 +29,8 @@ NIH_fascism_party: "ETM"
 ###Characters###
 ##Leaders##
 NIH_cursed_fate: "Cursed Fate"
- NIH_cfate_poli_desc: "$CRDC_art_tiviyl$"
- NIH_cfate_mili_desc: "$CRDC_art_tiviyl$"
+ NIH_cfate_political_desc: "$CRDC_art_tiviyl$"
+ NIH_cfate_commander_desc: "$CRDC_art_tiviyl$"
 ##Commanders##
 ##Political Advisors##
 ##Military Advisors##

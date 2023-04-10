@@ -1,7 +1,15 @@
 ﻿l_english:
  ###Traits###
   ##Country Leader Traits##
-   PIE_governor_trait: "Governor of Rockville"
+   CUL_necromancer_trait: "Necromancer"
+   CUL_prophet_trait: "Prophet"
+   disorganized_trait: "Disorganized"
+   dragon_lord_trait_trait: "Dragon Lord"
+   governor_trait: "Governor of Rockville"
+   gypsy_bard_trait: "Joyous Bard"
+   laughing_mare_trait: "The Laughing Mare's Vessel"
+   matriarch_trait: "Matriarch of the Pie Clan"
+   messenger_trait: "Messenger of the Cult"
   ##Commander Personality Traits##
    trait_archmagister: "Archmagister"
     trait_archmagister_desc: "The Archmagister of Moon and Star is granted access to a vast wealth of resources and the talented ponies needed to make best use of them. While this means the Archmagister has the best and finest at their disposal, it comes with the accountability and responsibility for Moon and Star's most valuable (and likely irreplacable) assets."

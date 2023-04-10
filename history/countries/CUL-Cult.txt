@@ -1,9 +1,7 @@
-capital=2
-oob="CUL_1012"
-set_research_slots=3
-set_stability=0.5
-set_war_support=0.5
-add_ideas={
+capital = 2
+oob = "CUL_07"
+set_research_slots = 3
+add_ideas = {
 	closed_economy
 	isolation
 	detached_country
@@ -11,36 +9,36 @@ add_ideas={
 	poverty
 	#CUL_idea
 }
-set_technology={
-	pony_race=1
-	melee_weapons=1
-	tech_support=1
-	tech_unicorn=1
-	tech_unicorn_ms=1
-	pre_gw_artillery=1
+set_technology = {
+	pony_race = 1
+	melee_weapons = 1
+	tech_support = 1
+	tech_unicorn = 1
+	tech_unicorn_ms = 1
+	pre_gw_artillery = 1
 }
-if={
-	limit={has_dlc="No Step Back"}
-	add_ideas={
+if = {
+	limit = { has_dlc = "No Step Back" }
+	add_ideas = {
 		traditionalism_academy_spirit
 		doctrinal_orthodoxy_spirit
 		disdain_for_the_digging_spirit
 	}
-	else={
-		add_ideas={EQS_bad_tanks}
+	else = {
+		add_ideas = { EQS_bad_tanks }
 	}
 }
-actually_fix_weapon_techs=yes
-set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
-set_popularities={fascism=100}
-set_politics={ruling_party=fascism}
-set_country_flag=EDR_is_equestrian_breakaway
-recruit_character=CUL_the_laughing_mare
-recruit_character=CUL_unknown_melody
-recruit_character=CUL_cranky_doodle
-recruit_character=CUL_derpy_hooves
-recruit_character=CUL_lyra_heartstrings
-recruit_character=CUL_surprise
-recruit_character=CUL_screwball
-recruit_character=CUL_pokey_pierce
-#NOTES#
+actually_fix_weapon_techs = yes
+set_rule = {	can_generate_female_aces = yes	can_generate_female_unit_leaders = yes	can_generate_female_country_leaders = yes}
+set_popularities = { fascism = 100 }
+set_politics = { ruling_party = fascism }
+set_country_flag = EDR_is_equestrian_breakaway
+recruit_character = CUL_the_laughing_mare
+recruit_character = CUL_unknown_melody
+recruit_character = CUL_cranky_doodle
+recruit_character = CUL_derpy_hooves
+recruit_character = CUL_lyra_heartstrings
+recruit_character = CUL_surprise
+recruit_character = CUL_screwball
+recruit_character = CUL_pokey_pierce
+###NOTES###

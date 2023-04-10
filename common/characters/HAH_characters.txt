@@ -1,80 +1,76 @@
-characters={
-	HAH_misty_wisps={
-		name=HAH_misty_wisps
-		portraits={
-			civilian={
-				large="GFX_HAH_misty_wisps"
-				small="GFX_idea_HAH_misty_wisps"
+characters = {
+	HAH_misty_wisps = {
+		name = HAH_misty_wisps
+		portraits = {
+			civilian = {
+				large = "GFX_HAH_misty_wisps"
+				small = "GFX_HAH_misty_wisps"
 			}
 		}
-		country_leader={	#Can switch to neofeudal
-			desc="HAH_mwisps_poli_desc"
-			ideology=neofeudalism
-			traits={}
+		country_leader = {	#Can switch to neofeudal
+			desc = "HAH_mwisps_leader_desc"
+			ideology = neofeudalism
 		}
-		country_leader={
-			desc="WTC_gpony_poli_desc"
-			ideology=despotism
-			traits={}
+		country_leader = {
+			desc = "WTC_gpony_leader_desc"
+			ideology = despotism
 		}
 	}
-	HAH_willow_branch={
-		name=HAH_willow_branch
-		portraits={
-			civilian={
-				large="GFX_HAH_willow_branch"
-				small="GFX_idea_HAH_willow_branch"
+	HAH_willow_branch = {
+		name = HAH_willow_branch
+		portraits = {
+			civilian = {
+				large = "GFX_HAH_willow_branch"
+				small = "GFX_HAH_willow_branch"
 			}
 		}
-		country_leader={
-			desc="HAH_wbranch_poli_desc"
-			ideology=harmonic_theocracy	#esotericism
-			traits={}
+		country_leader = {
+			desc = "HAH_wbranch_leader_desc"
+			ideology = harmonic_theocracy	#esotericism
 		}
 	}
-	HAH_fiddle_pick={	#See Focus Tree
-		name=HAH_fiddle_pick
-		portraits={
-			army={
-				large="GFX_HAH_fiddle_pick"
-				small="GFX_idea_HAH_fiddle_pick"
+	HAH_fiddle_pick = {	#See Focus Tree
+		name = HAH_fiddle_pick
+		portraits = {
+			army = {
+				large = "GFX_HAH_fiddle_pick"
+				small = "GFX_HAH_fiddle_pick"
 			}
 		}
 	}
-	HAH_string_bow={	#See Focus Tree
-		name=HAH_string_bow
-		portraits={
-			civilian={
-				large="GFX_HAH_string_bow"
-				small="GFX_idea_HAH_string_bow"
+	HAH_string_bow = {	#See Focus Tree
+		name = HAH_string_bow
+		portraits = {
+			civilian = {
+				large = "GFX_HAH_string_bow"
+				small = "GFX_HAH_string_bow"
 			}
-			army={
-				large="GFX_HAH_string_bow"
-				small="GFX_idea_HAH_string_bow"
+			army = {
+				large = "GFX_HAH_string_bow"
+				small = "GFX_HAH_string_bow"
 			}
 		}
-		country_leader={
-			desc="HAH_sbow_poli_desc"
-			ideology=equalism
-			traits={}
+		country_leader = {
+			desc = "HAH_sbow_leader_desc"
+			ideology = equalism
 		}
 	}
-	HAH_boiled_apples={	#See Focus Tree
-		name=HAH_boiled_apples
-		portraits={
-			civilian={small="GFX_idea_unknown_advisor"}
+	HAH_boiled_apples = {	#See Focus Tree
+		name = HAH_boiled_apples
+		portraits = {
+			civilian = {small = "GFX_unknown_advisor"}
 		}
 	}
-	HAH_word_spinner={	#See Focus Tree
-		name=HAH_word_spinner
-		portraits={
-			civilian={small="GFX_idea_unknown_advisor"}
+	HAH_word_spinner = {	#See Focus Tree
+		name = HAH_word_spinner
+		portraits = {
+			civilian = {small = "GFX_unknown_advisor"}
 		}
 	}
-	HAH_uncle_haystack={	#See Focus Tree
-		name=HAH_uncle_haystack
-		portraits={
-			civilian={small="GFX_idea_unknown_advisor"}
+	HAH_uncle_haystack = {	#See Focus Tree
+		name = HAH_uncle_haystack
+		portraits = {
+			civilian = {small = "GFX_unknown_advisor"}
 		}
 	}
 }

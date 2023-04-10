@@ -1,55 +1,55 @@
 ﻿l_english:
-###Introduction###
-##Bookmark##
-CUL_GATHERING_STORM_DESC: ""
-##Welcome Screen##
- EAW_WS_CUL: ""
-  EAW_WS_CUL_desc: ""
-###Country Name###
-CUL: "Cult of Laughter"
- CUL_DEF: "The Cult of Laughter"
- CUL_ADJ: "Cultists"
- CUL_EQS: "Realm of Laughter"
-  CUL_EQS_DEF: "the Realm of Laughter"
-###Factions###
-CUL_EQS_faction: "Theatre of Joy"
-###Political Parties###
-CUL_fascism_party: "TWR"
- CUL_fascism_party_long: "The Worshippers"
- CUL_communism_party: "TLR"
-  CUL_communism_party_long: "The Laughing Reds"
- CUL_neutrality_party: "TMC"
-  CUL_neutrality_party_long: "The Moderate Cultists"
- CUL_democratic_party: "HAR"
-  CUL_democratic_party_long: "Harmonists"
-###Characters###
-##Leaders##
-CUL_the_laughing_mare: "The Laughing Mare"
- CUL_tlmare_poli_desc: ""
- CUL_tlmare_mili_desc: "$CUL_tlmare_poli_desc$"
- CUL_unknown_melody: "Unknown Melody"
-  CUL_umelody_poli_desc: ""
-##Commanders##
- CUL_derpy_hooves: "Derpy Hooves"
-  CUL_dhooves_mili_desc: "$CRDC_bylis_soren$"
-  CUL_dhooves_high_desc: "$CUL_dhooves_mili_desc$"
-  CUL_lyra_heartstrings: "Lyra Heartstrings"
-   CUL_lheartstrings_mili_desc: "$CRDC_bylis_soren$"
-   CUL_lheartstrings_high_desc: "$CUL_lheartstrings_mili_desc$"
-  CUL_surprise: "Surprise"
-   CUL_surprise_mili_desc: "$CRDC_bylis_soren$"
-  CUL_screwball: "Screwball"
-   CUL_screwball_mili_desc: "$CRDC_bylis_soren$"
-   CUL_screwball_high_desc: "$CUL_screwball_mili_desc$"
-  CUL_pokey_pierce: "Pokey Pierce"
-   CUL_ppierce_mili_desc: "$CRDC_bylis_soren$"
-   CUL_ppierce_high_desc: "$CUL_ppierce_mili_desc$"
-##Political Advisors##
- CUL_cranky_doodle: "Cranky Doodle"
-  CUL_cdoodle_advi_desc: "$CRDC_bylis_soren$"
-##Military Advisors##
-###Ideas###
-CUL_idea: "The dead shall have the last laugh."
- CUL_idea_desc: "After hiding in the shadows for nearly a decade, the Cult of Laughter finally rears it grotesque, grinning head. Mysterious, unpredictable, with it its goals unclear, the cult slowly spreads its influence over every corner of the war ravaged country. Ponies and non-Ponies alike, no matter if wealthy or poor, all are swayed by the promise of a better and brighter future filled with smiles, laughter, and the possibility of reunion with friends and loved ones who have been claimed by the years of pointless power struggles. With this mortal life so bleak, depressing, and full of pain, is not death an enclave of happiness? Is not laughter the best medicine for this disease that is consuming Equestria?"
-###National Focuses###
-##Storyline Tree##
+ ###Introduction###
+  ##Bookmark##
+   CUL_GATHERING_STORM_DESC: "$GENR_GATHERING_STORM_DESC$"
+  ##Welcome Screen##
+   EAW_WS_CUL: "$EAW_WS_GENR$"
+    EAW_WS_CUL_desc: "$EAW_WS_GENR_desc$"
+ ###Politics###
+  ##Country Name##
+   CUL: "Cult of Laughter"
+    CUL_DEF: "the Cult of Laughter"
+    CUL_ADJ: "Cultists"
+   CUL_EQS: "Realm of Laughter"
+    CUL_EQS_DEF: "the Realm of Laughter"
+  ##Factions##
+   CUL_EQS_faction: "Theatre of Joy"
+  ##Political Parties##
+   CUL_fascism_party: "TWR"
+    CUL_fascism_party_long: "The Worshippers"
+   CUL_communism_party: "TLR"
+    CUL_communism_party_long: "The Laughing Reds"
+   CUL_neutrality_party: "TMC"
+    CUL_neutrality_party_long: "The Moderate Cultists"
+   CUL_democratic_party: "HAR"
+    CUL_democratic_party_long: "Harmonists"
+ ###Characters###
+  ##Leaders##
+   CUL_the_laughing_mare: "The Laughing Mare"
+    CUL_tlmare_leader_desc: ""
+    CUL_tlmare_commander_desc: "$CUL_tlmare_leader_desc$"
+   CUL_unknown_melody: "Unknown Melody"
+    CUL_umelody_leader_desc: ""
+  ##Commanders##
+   CUL_lyra_heartstrings: "Lyra Heartstrings"
+    CUL_lheartstrings_commander_desc: "$CRDC_bylis_soren$"
+    CUL_lheartstrings_political_desc: "$CUL_lheartstrings_commander_desc$"
+   CUL_screwball: "Screwball"
+    CUL_screwball_commander_desc: "$CRDC_bylis_soren$"
+    CUL_screwball_political_desc: "$CUL_screwball_commander_desc$"
+   CUL_surprise: "Surprise"
+    CUL_surprise_highcmdr_desc: "$CRDC_bylis_soren$"
+   CUL_pokey_pierce: "Pokey Pierce"
+    CUL_ppierce_commander_desc: "$CRDC_bylis_soren$"
+    CUL_ppierce_chief_desc: "$CUL_ppierce_commander_desc$"
+  ##Political Advisors##
+   CUL_cranky_doodle: "Cranky Doodle"
+    CUL_cdoodle_political_desc: "$CRDC_bylis_soren$"
+   CUL_derpy_hooves: "Derpy Hooves"
+    CUL_dhooves_political_desc: "$CRDC_bylis_soren$"
+  ##Military Advisors##
+ ###Ideas###
+  CUL_idea: "The dead shall have the last laugh."
+   CUL_idea_desc: "After hiding in the shadows for nearly a decade, the Cult of Laughter finally rears it grotesque, grinning head. Mysterious, unpredictable, with it its goals unclear, the cult slowly spreads its influence over every corner of the war ravaged country. Ponies and non-Ponies alike, no matter if wealthy or poor, all are swayed by the promise of a better and brighter future filled with smiles, laughter, and the possibility of reunion with friends and loved ones who have been claimed by the years of pointless power struggles. With this mortal life so bleak, depressing, and full of pain, is not death an enclave of happiness? Is not laughter the best medicine for this disease that is consuming Equestria?"
+ ###National Focuses###
+  ##Storyline Tree##

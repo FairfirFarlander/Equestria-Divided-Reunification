@@ -1,31 +1,27 @@
-characters={
-	MSE_generic_pony={
-		name=MSE_generic_pony
-		gender=female
-		portraits={
-			civilian={
-				large="GFX_portrait_eqs_pony_generic_26"
+characters = {
+	MSE_generic_pony = {
+		name = MSE_generic_pony
+		gender = female
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_eqs_pony_generic_26"
 			}
 		}
-		country_leader={
-			desc="MSE_gpony_poli_desc"
-			ideology=fascism_ideology
-			traits={}
+		country_leader = {
+			desc = "MSE_gpony_leader_desc"
+			ideology = fascism_ideology
 		}
-		country_leader={
-			desc="MSE_gpony_poli_desc"
-			ideology=conservatism
-			traits={}
+		country_leader = {
+			desc = "MSE_gpony_leader_desc"
+			ideology = conservatism
 		}
-		country_leader={
-			desc="MSE_gpony_poli_desc"
-			ideology=democratic_socialism
-			traits={}
+		country_leader = {
+			desc = "MSE_gpony_leader_desc"
+			ideology = democratic_socialism
 		}
-		country_leader={
-			desc="MSE_gpony_poli_desc"
-			ideology=despotism
-			traits={}
+		country_leader = {
+			desc = "MSE_gpony_leader_desc"
+			ideology = despotism
 		}
 	}
 }

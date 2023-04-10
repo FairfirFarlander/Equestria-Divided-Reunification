@@ -1,51 +1,47 @@
-characters={
-	STB_iris_kelly={	#Sprout, Bud?#
-		name=STB_iris_kelly
-		gender=female
-		portraits={
-			civilian={
-				large="GFX_portrait_pony_generic_navy_13"
-				small="GFX_portrait_pony_generic_navy_13_small"
+characters = {
+	STB_iris_kelly = {	#Sprout, Bud?#
+		name = STB_iris_kelly
+		gender = female
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_pony_generic_navy_13"
+				small = "GFX_portrait_pony_generic_navy_13_small"
 			}
 		}
-		country_leader={
-			desc="STB_ikelly_poli_desc"
-			ideology=corporatocracy
-			traits={}
+		country_leader = {
+			desc = "STB_ikelly_leader_desc"
+			ideology = corporatocracy
 		}
 	}
-	STB_mabel_corne={
-		name=STB_mabel_corne
-		gender=female
-		portraits={
-			civilian={
-				large="GFX_portrait_pony_generic_land_8"
-				small="GFX_portrait_pony_generic_land_8_small"
+	STB_mabel_corne = {
+		name = STB_mabel_corne
+		gender = female
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_pony_generic_land_8"
+				small = "GFX_portrait_pony_generic_land_8_small"
 			}
 		}
-		country_leader={
-			desc="STB_mcorne_poli_desc"
-			ideology=democratic_socialism
-			traits={}
+		country_leader = {
+			desc = "STB_mcorne_leader_desc"
+			ideology = democratic_socialism
 		}
 	}
-	STB_smokey_dust={
-		name=STB_smokey_dust
-		portraits={
-			civilian={
-				large="GFX_portrait_pony_generic_navy_8"
-				small="GFX_portrait_pony_generic_navy_8_small"
+	STB_smokey_dust = {
+		name = STB_smokey_dust
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_pony_generic_navy_8"
+				small = "GFX_portrait_pony_generic_navy_8_small"
 			}
 		}
-		country_leader={
-			desc="STB_sdust_poli_desc"
-			ideology=centrism
-			traits={}
+		country_leader = {
+			desc = "STB_sdust_leader_desc"
+			ideology = centrism
 		}
-		country_leader={
-			desc="STB_sdust_poli_desc"
-			ideology=conservatism
-			traits={}
+		country_leader = {
+			desc = "STB_sdust_leader_desc"
+			ideology = conservatism
 		}
 	}
 }

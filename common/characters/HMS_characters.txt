@@ -1,30 +1,29 @@
-characters={
-	HMS_twilight_sparkle={
-		name=HMS_twilight_sparkle
-		gender=female
-		portraits={
-			civilian={
-				large="GFX_HMS_twilight_sparkle"
-				small="GFX_idea_HMS_twilight_sparkle"
+characters = {
+	HMS_twilight_sparkle = {
+		name = HMS_twilight_sparkle
+		gender = female
+		portraits = {
+			civilian = {
+				large = "GFX_HMS_twilight_sparkle"
+				small = "GFX_HMS_twilight_sparkle"
 			}
-			army={
-				large="GFX_HMS_twilight_sparkle"
-				small="GFX_idea_HMS_twilight_sparkle"
+			army = {
+				large = "GFX_HMS_twilight_sparkle"
+				small = "GFX_HMS_twilight_sparkle"
 			}
 		}
-		country_leader={
-			desc="HMS_tsparkle_poli_desc"
-			ideology=magocracy
-			traits={}
+		country_leader = {
+			desc = "HMS_tsparkle_leader_desc"
+			ideology = magocracy
 		}
-		field_marshal={
-			desc="HMS_tsparkle_cmdr_desc"
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=2
-			logistics_skill=2
-			traits={
+		field_marshal = {
+			desc = "HMS_tsparkle_commander_desc"
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			traits = {
 				trait_archmagister
 				pony_race_trait
 				organizer
@@ -32,45 +31,43 @@ characters={
 			}
 		}
 	}
-	HMS_frail_lance={
-		name=HMS_frail_lance
-		portraits={
-			civilian={
-				large="GFX_portrait_pony_generic_navy_10"
-				small="GFX_portrait_pony_generic_navy_10_small"
+	HMS_frail_lance = {
+		name = HMS_frail_lance
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_pony_generic_navy_10"
+				small = "GFX_portrait_pony_generic_navy_10_small"
 			}
 		}
-		country_leader={
-			desc="HMS_flance_poli_desc"
-			ideology=anarchist_communism
-			traits={}
+		country_leader = {
+			desc = "HMS_flance_leader_desc"
+			ideology = anarchist_communism
 		}
 	}
-	HMS_shining_armor={
-		name=HMS_shining_armor
-		portraits={
-			civilian={
-				large="GFX_HMS_shining_armor"
-				small="GFX_idea_HMS_shining_armor"
+	HMS_shining_armor = {
+		name = HMS_shining_armor
+		portraits = {
+			civilian = {
+				large = "GFX_HMS_shining_armor"
+				small = "GFX_HMS_shining_armor"
 			}
-			army={
-				large="GFX_HMS_shining_armor"
-				small="GFX_idea_HMS_shining_armor"
+			army = {
+				large = "GFX_HMS_shining_armor"
+				small = "GFX_HMS_shining_armor"
 			}
 		}
-		country_leader={
-			desc="HMS_sarmor_poli_desc"
-			ideology=despotism
-			traits={}
+		country_leader = {
+			desc = "HMS_sarmor_leader_desc"
+			ideology = despotism
 		}
-		field_marshal={
-			desc="HMS_sarmor_cmdr_desc"
-			skill=4
-			attack_skill=3
-			defense_skill=5
-			planning_skill=3
-			logistics_skill=3
-			traits={
+		field_marshal = {
+			desc = "HMS_sarmor_commander_desc"
+			skill = 4
+			attack_skill = 3
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 3
+			traits = {
 				royal_guard_commander
 				equestrian_prince
 				pony_race_trait
@@ -78,79 +75,76 @@ characters={
 			}
 		}
 	}
-	HMS_white_wind={
-		name=HMS_white_wind
-		gender=female
-		portraits={
-			civilian={
-				large="GFX_portrait_pony_generic_navy_7"
-				small="GFX_portrait_pony_generic_navy_7_small"
+	HMS_white_wind = {
+		name = HMS_white_wind
+		gender = female
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_pony_generic_navy_7"
+				small = "GFX_portrait_pony_generic_navy_7_small"
 			}
 		}
-		country_leader={
-			desc="HMS_wwind_poli_desc"
-			ideology=liberalism
-			traits={}
+		country_leader = {
+			desc = "HMS_wwind_leader_desc"
+			ideology = liberalism
 		}
 	}
-	HMS_cadence={
-		name=HMS_cadence
-		gender=female
-		portraits={
-			civilian={
-				large="GFX_HMS_cadence"
-				small="GFX_idea_HMS_cadence"
+	HMS_cadence = {
+		name = HMS_cadence
+		gender = female
+		portraits = {
+			civilian = {
+				large = "GFX_HMS_cadence"
+				small = "GFX_HMS_cadence"
 			}
 		}
-		country_leader={
-			desc="HMS_cadence_poli_desc"
-			ideology=despotism
-			traits={}
+		country_leader = {
+			desc = "HMS_cadence_leader_desc"
+			ideology = despotism
 		}
-		advisor={
-			slot=political_advisor
-			idea_token=HMS_cadence_advi
-			traits={}
+		advisor = {
+			slot = political_advisor
+			idea_token = HMS_cadence_advi
 		}
 	}
-	HMS_trixie_lulamoon={
-		name=HMS_trixie_lulamoon
-		gender=female
-		portraits={
-			army={
-				large="GFX_HMS_trixie_lulamoon_alt"
-				small="GFX_idea_HMS_trixie_lulamoon_alt"
+	HMS_trixie_lulamoon = {
+		name = HMS_trixie_lulamoon
+		gender = female
+		portraits = {
+			army = {
+				large = "GFX_HMS_trixie_lulamoon_alt"
+				small = "GFX_HMS_trixie_lulamoon_alt"
 			}
 		}
-		corps_commander={
-			desc="HMS_tlulamoon_cmdr_desc"
-			skill=1
-			attack_skill=2
-			defense_skill=1
-			planning_skill=2
-			logistics_skill=1
-			traits={
+		corps_commander = {
+			desc = "HMS_tlulamoon_commander_desc"
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			traits = {
 				media_personality
 				pony_race_trait
 			}
 		}
 	}
-	HMS_spike={
-		name=HMS_spike
-		portraits={
-			army={
-				large="GFX_HMS_spike"
-				small="GFX_idea_HMS_spike"
+	HMS_spike = {
+		name = HMS_spike
+		portraits = {
+			army = {
+				large = "GFX_HMS_spike"
+				small = "GFX_HMS_spike"
 			}
 		}
-		corps_commander={
-			desc="HMS_spike_cmdr_desc"
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			traits={dragon_race_trait}	#Add trait that reduces command to 1.#
+		corps_commander = {
+			desc = "HMS_spike_commander_desc"
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			traits = {dragon_race_trait}	#Add trait that reduces command to 1.#
 		}
 	}
 }

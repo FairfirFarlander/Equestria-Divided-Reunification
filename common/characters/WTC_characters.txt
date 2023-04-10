@@ -1,93 +1,87 @@
-characters={
-	WTC_dashing_habbidasher={
-		name=WTC_dashing_habbidasher
-		portraits={
-			civilian={
-				large="GFX_WTC_dashing_habbidasher"
-				small="GFX_WTC_dashing_habbidasher_small"
-			}
-		}
-		country_leader={
-			desc="WTC_dhabbidasher_poli_desc"
-			ideology=plutocracy
-			traits={}
-		}
-		country_leader={
-			desc="WTC_dhabbidasher_poli_desc"
-			ideology=conservatism
-			traits={}
-		}
-		country_leader={
-			desc="WTC_dhabbidasher_poli_desc"
-			ideology=democratic_socialism
-			traits={}
-		}
-	}
-	WTC_alicia_habbidasher={
-		name=WTC_alicia_habbidasher
-		portraits={
-			civilian={
-				large="GFX_WTC_alicia_habbidasher"
-				small="GFX_WTC_alicia_habbidasher_small"
-			}
-		}
-		country_leader={
-			desc="WTC_ahabbidasher_poli_desc"
-			ideology=despotism	#Temp
-			traits={}
-		}
-		advisor={
-			slot=political_advisor
-			idea_token=WTC_ahabbidasher_advi
-			traits={}
-		}
-	}
-	###Character Here
-	WTC_eloi_path={
-		name=WTC_eloi_path
-		portraits={
-			civilian={
-				large="GFX_WTC_eloi_path"
-				small="GFX_WTC_eloi_path_small"
-			}
-		}
-		advisor={
-			slot=political_advisor
-			idea_token=WTC_epath_advi
-			traits={}
-		}
-	}
-	WTC_saddle_arabian_mercenary={
-		name=WTC_saddle_arabian_mercenary
-		portraits={
-			civilian={
-				large="GFX_WTC_saddle_arabian_mercenary"
-				small="GFX_WTC_saddle_arabian_mercenary_small"
-			}
-		}
-		advisor={
-			slot=political_advisor
-			idea_token=WTC_samercenary_advi
-			traits={}
-		}
-	}
-	WTC_zebrican_mercenary={
-		name=WTC_zebrican_mercenary
-		portraits={
-			civilian={
-				large="GFX_WTC_zebrican_mercenary"
-				small="GFX_WTC_zebrican_mercenary_small"
-			}
-		}
-		advisor={
-			slot=political_advisor
-			idea_token=WTC_zmercenary_advi
-			traits={}
-		}
-	}
-	#Loyal Navy (includes convoys/mostly convoys) - likely due to 
+characters = {
+	WTC_dashing_habbidasher = {
+	#Loyal Navy (includes convoys/mostly convoys) - likely due to
 	#Native to the South (could be mistaken for Earthborn)
 	#Treats his troops and sailors as equals.
 	#Insane/risk-taker (The Ahuizotl hat to Rarity)
-	#
+		name = WTC_dashing_habbidasher
+		portraits = {
+			civilian = {
+				large = GFX_WTC_dashing_habbidasher
+				small = GFX_WTC_dashing_habbidasher_small
+			}
+		}
+		country_leader = {
+			desc = WTC_dhabbidasher_leader_desc
+			ideology = plutocracy
+		}
+		country_leader = {
+			desc = WTC_dhabbidasher_leader_desc
+			ideology = conservatism
+		}
+		country_leader = {
+			desc = WTC_dhabbidasher_leader_desc
+			ideology = democratic_socialism
+		}
+	}
+	WTC_alicia_habbidasher = {
+		name = WTC_alicia_habbidasher
+		portraits = {
+			civilian = {
+				large = GFX_WTC_alicia_habbidasher
+				small = GFX_WTC_alicia_habbidasher_small
+			}
+		}
+		country_leader = {
+			desc = WTC_ahabbidasher_leader_desc
+			ideology = despotism	#Temp
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = WTC_ahabbidasher_political
+			ledger = civilian
+		}
+	}
+	WTC_eloi_path = {
+		name = WTC_eloi_path
+		portraits = {
+			civilian = {
+				large = GFX_WTC_eloi_path
+				small = GFX_WTC_eloi_path_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = WTC_epath_political
+			ledger = civilian
+		}
+	}
+	WTC_saddle_arabian_mercenary = {
+		name = WTC_saddle_arabian_mercenary
+		portraits = {
+			civilian = {
+				large = GFX_WTC_saddle_arabian_mercenary
+				small = GFX_WTC_saddle_arabian_mercenary_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = WTC_samercenary_political
+			ledger = civilian
+		}
+	}
+	WTC_zebrican_mercenary = {
+		name = WTC_zebrican_mercenary
+		portraits = {
+			civilian = {
+				large = GFX_WTC_zebrican_mercenary
+				small = GFX_WTC_zebrican_mercenary_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = WTC_zmercenary_political
+			ledger = civilian
+		}
+	}
 }

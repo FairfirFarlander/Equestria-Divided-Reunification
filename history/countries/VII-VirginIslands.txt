@@ -1,75 +1,74 @@
-﻿capital=7
-oob="VII_1012"
-set_research_slots=2
-set_stability=0.6
-set_war_support=0.22
-add_ideas={
+﻿capital = 7
+oob = "VII_1012"
+set_stability = 0.6
+set_war_support = 0.22
+add_ideas = {
 	tribal_society
 	lack_of_scientists2
 	poverty5
 }
-set_technology={
-	dragon_race=1
-	melee_weapons=1
-	melee_weapons1=1
-	tech_support=1
-	pre_gw_artillery=1
-	dragons_light=1
-	dragons_heavy=1
-	tech_pegasi=1
+set_technology = {
+	dragon_race = 1
+	melee_weapons = 1
+	melee_weapons1 = 1
+	tech_support = 1
+	pre_gw_artillery = 1
+	dragons_light = 1
+	dragons_heavy = 1
+	tech_pegasi = 1
 }
-if={
-	limit={has_dlc="Man the Guns"}
-	set_technology={
-		early_ship_hull_light=1
-		early_ship_hull_cruiser=1
-		basic_battery=1
-		basic_depth_charges=1
-		basic_torpedo=1
-		basic_battery=1
-		mtg_transport=1
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_depth_charges = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		mtg_transport = 1
 	}
-	#set_naval_oob="VII_naval"
-	else={
-		set_technology={
-			early_destroyer=1
-			early_light_cruiser=1
-			transport=1
+	#set_naval_oob = "VII_07_MtG_naval"
+	else = {
+		set_technology = {
+			early_destroyer = 1
+			early_light_cruiser = 1
+			transport = 1
 		}
-		#set_naval_oob="VII_naval_legacy"
+		#set_naval_oob = "VII_07_naval"
 	}
 }
-actually_fix_weapon_techs=yes
-generic_CL_template=yes
-generic_DD_template=yes
-set_convoys=11
-set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
-set_popularities={
-	fascism=44
-	communism=7
-	neutrality=26
-	democratic=23
+actually_fix_weapon_techs = yes
+generic_CL_template = yes
+generic_DD_template = yes
+set_convoys = 11
+set_rule = {	can_generate_female_aces = yes	can_generate_female_unit_leaders = yes	can_generate_female_country_leaders = yes}
+set_popularities = {
+	fascism = 44
+	communism = 7
+	neutrality = 26
+	democratic = 23
 }
-set_politics={ruling_party=fascism}
-set_country_flag=EDR_is_equestrian_breakaway
-recruit_character=VII_ember
-recruit_character=VII_ruby
-recruit_character=VII_torch
-recruit_character=VII_smolder
-recruit_character=VII_gark
-recruit_character=VII_scales
-recruit_character=VII_cynder
-recruit_character=VII_firekin
-recruit_character=VII_tiagin
-recruit_character=VII_grima
-recruit_character=VII_kuzz
-recruit_character=VII_nascale
-recruit_character=VII_kasitor
-recruit_character=VII_kahamit
-recruit_character=VII_kalagar
-recruit_character=VII_nightburn
-recruit_character=VII_naga
-recruit_character=VII_ludmilla
-recruit_character=VII_tamm
-recruit_character=VII_kukulkan
+set_politics = { ruling_party = fascism }
+set_country_flag = EDR_is_equestrian_breakaway
+recruit_character = VII_torch
+recruit_character = VII_ember
+recruit_character = VII_ruby
+recruit_character = VII_smolder
+recruit_character = VII_gark
+recruit_character = VII_scales
+recruit_character = VII_cynder
+recruit_character = VII_firekin
+recruit_character = VII_tiagin
+recruit_character = VII_grima
+recruit_character = VII_kuzz
+recruit_character = VII_nascale
+recruit_character = VII_kasitor
+recruit_character = VII_kahamit
+recruit_character = VII_kalagar
+recruit_character = VII_nightburn
+recruit_character = VII_naga
+recruit_character = VII_ludmilla
+recruit_character = VII_tamm
+recruit_character = VII_kukulkan
 ###NOTES###

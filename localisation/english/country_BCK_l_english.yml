@@ -1,31 +1,32 @@
 ﻿l_english:
-###Introduction###
-##Bookmark##
-BCK_GATHERING_STORM_DESC: ""
-##Welcome Screen##
- EAW_WS_BCK: ""
-  EAW_WS_BCK_desc: ""
-###Country Name###
-BCK: "Buckcastle"
- BCK_DEF: "the County of Buckcastle"
- BCK_ADJ: "Vidonian"
-###Political Parties###
-###Characters###
-##Leaders##
-BCK_rockfeller: "J.D.Rockfeller"
- BCK_rockfeller_poli_desc: ""
- BCK_syndicate_council: "Syndicate Council"
-  BCK_scouncil_poli_desc: ""
- BCK_merry_wreath: "Merry Wreath"
-  BCK_mwreath_poli_desc: ""
-  BCK_mwreath_mili_desc: "$BCK_mwreath_mili_desc$"
- BCK_sea_prism: "Sea Prism"
-  BCK_sprism_poli_desc: ""
-##Commanders##
- BCK_hallow_green: "Hallow Green"
-  BCK_hgreen_mili_desc: ""
-##Political Advisors##
-##Military Advisors##
-###Ideas###
-###National Focuses###
-##Storyline Tree##
+ ###Introduction###
+  ##Bookmark##
+   BCK_GATHERING_STORM_DESC: "$GENR_GATHERING_STORM_DESC$"
+  ##Welcome Screen##
+   EAW_WS_BCK: "$EAW_WS_GENR$"
+    EAW_WS_BCK_desc: "$EAW_WS_GENR_desc$"
+ ###Politics###
+  ##Country Name##
+   BCK: "Buckcastle"
+    BCK_DEF: "the County of Buckcastle"
+    BCK_ADJ: "Vidonian"
+  ##Political Parties##
+ ###Characters###
+  ##Leaders##
+   BCK_rockfeller: "J.D.Rockfeller"
+    BCK_rockfeller_leader_desc: "$rockfeller_desc$"
+   BCK_syndicate_council: "Syndicate Council"
+    BCK_scouncil_leader_desc: ""
+   BCK_merry_wreath: "Merry Wreath"
+    BCK_mwreath_leader_desc: ""
+    BCK_mwreath_commander_desc: "$BCK_mwreath_leader_desc$"
+   BCK_sea_prism: "Sea Prism"
+    BCK_sprism_leader_desc: ""
+  ##Commanders##
+   BCK_hallow_green: "Hallow Green"
+    BCK_hgreen_commander_desc: ""
+  ##Political Advisors##
+  ##Military Advisors##
+ ###Ideas###
+ ###National Focuses###
+  ##Storyline Tree##

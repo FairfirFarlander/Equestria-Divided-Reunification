@@ -7,19 +7,19 @@ SYV_GATHERING_STORM_DESC: ""
   EAW_WS_SYV_desc: ""
 ###Country Name###
 SYV: "Severyana"
- SYV_DEF: "The Province Severyana"
+ SYV_DEF: "the Province Severyana"
  SYV_ADJ: "Severyani"
 ###Political Parties###
 ###Characters###
 ##Leaders##
 SYV_ratibor_sventoslavich: "Ratibor Sventoslavich"
- SYV_rsventoslavich_poli_desc: ""
+ SYV_rsventoslavich_political_desc: ""
  SYV_altidiya: "Altidiya"
-  SYV_altidiya_poli_desc: ""
+  SYV_altidiya_political_desc: ""
  SYV_peter_iv: "Peter IV"
-  SYV_piv_poli_desc: ""
+  SYV_piv_political_desc: ""
  SYV_caramelka_sladkaya: "Caramelka Sladkaya"
-  SYV_csladkaya_poli_desc: ""
+  SYV_csladkaya_political_desc: ""
 ##Commanders##
 ##Political Advisors##
 ##Military Advisors##

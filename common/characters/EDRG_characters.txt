@@ -1,57 +1,57 @@
-characters={
-	BALTIMARE_ash_moustache={
-		name=BALTIMARE_mayor_ash_moustache
-		portraits={
-			civilian={
-				small="GFX_idea_BAL_ash_moustache"
+characters = {
+	BALTIMARE_ash_moustache = {
+		name = BALTIMARE_mayor_ash_moustache
+		portraits = {
+			civilian = {
+				small = "GFX_BAL_ash_moustache"
 			}
 		}
-		advisor={
-			slot=political_advisor
-			idea_token=BALTIMARE_amoustache_advi
-			allowed={
-				OR={
-					original_tag=HWG
-					original_tag=PLF
+		advisor = {
+			slot = political_advisor
+			idea_token = BALTIMARE_amoustache_advi
+			allowed = {
+				OR = {
+					original_tag = HWG
+					original_tag = PLF
 				}
 			}
-			visible={
-				OR={
-					has_country_flag=amoustache_pardoned
-					has_country_flag=amoustache_banished
+			visible = {
+				OR = {
+					has_country_flag = amoustache_pardoned
+					has_country_flag = amoustache_banished
 				}
-				NOT={has_global_flag=amoustache_ded}
+				NOT = {has_global_flag = amoustache_ded}
 			}
-			traits={smooth_talking_charmer compassionate_gentleman}
+			traits = {smooth_talking_charmer compassionate_gentleman}
 		}
-		#country_leader={
-		#	desc=""
-		#	ideology=centrism
+		#country_leader = {
+		#	desc = ""
+		#	ideology = centrism
 		#}
-		#country_leader={
-		#	desc=""
-		#	ideology=liberalism
+		#country_leader = {
+		#	desc = ""
+		#	ideology = liberalism
 		#}
 	}
-	JUNGLE_light_narrative={
-		name=JUNGLE_light_narrative
-		portraits={
-			civilian={
-				large="gfx/leaders/NMS/batgarrison.tga"
+	JUNGLE_light_narrative = {
+		name = JUNGLE_light_narrative
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NMS/batgarrison.tga"
 			}
-			army={
-				large="gfx/leaders/NMS/batgarrison.tga"
-				small="GFX_idea_unknown_advisor"
+			army = {
+				large = "gfx/leaders/NMS/batgarrison.tga"
+				small = "GFX_unknown_advisor"
 			}
 		}
-		corps_commander={
-			desc="JUNGLE_lnarrative_cmdr_desc"
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=4
-			traits={
+		corps_commander = {
+			desc = "JUNGLE_lnarrative_commander_desc"
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 4
+			traits = {
 				media_personality
 				promising_general
 				thestral_race_trait

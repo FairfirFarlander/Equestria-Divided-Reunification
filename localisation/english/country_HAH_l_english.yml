@@ -16,16 +16,16 @@ HAH: "Hollow Shades"
 ###Characters###
 ##Leaders##
 HAH_misty_wisps: "Misty Wisps"
- HAH_mwisps_poli_desc: "$CRDC_art_tiviyl$"
+ HAH_mwisps_political_desc: "$CRDC_art_tiviyl$"
  HAH_willow_branch: "Willow Branch"
-  HAH_wbranch_poli_desc: "$CRDC_art_tiviyl$"
+  HAH_wbranch_political_desc: "$CRDC_art_tiviyl$"
 ##Commanders##
  HAH_fiddle_pick: "Fiddle Pick"
-  HAH_fpick_mili_desc: "$CRDC_art_tiviyl$"
+  HAH_fpick_commander_desc: "$CRDC_art_tiviyl$"
   HAH_fpick_stats: "§RAttack Skill§!: §Y3§!\n§YDefense Skill§!: §Y1§!\n§GPlanning Skill§!: §Y1§!\n§CLogistics Skill§!: §Y1§!"
  HAH_string_bow: "String Bow"
-  HAH_sbow_poli_desc: "$CRDC_art_tiviyl$"
-  HAH_sbow_mili_desc: "$HAH_sbow_poli_desc$"
+  HAH_sbow_political_desc: "$CRDC_art_tiviyl$"
+  HAH_sbow_commander_desc: "$HAH_sbow_political_desc$"
   HAH_sbow_stats: "§RAttack Skill§!: §Y1§!\n§YDefense Skill§!: §Y3§!\n§GPlanning Skill§!: §Y1§!\n§CLogistics Skill§!: §Y1§!"
 ##Political Advisors##
  HAH_boiled_apples: "Boiled Apples"

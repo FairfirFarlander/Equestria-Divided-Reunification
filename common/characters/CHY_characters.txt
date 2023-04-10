@@ -1,45 +1,41 @@
-characters={
-	CHY_cherry_jubilee={
-		name=CHY_cherry_jubilee
-		gender=female
-		portraits={
-			civilian={
-				large="GFX_CHY_cherry_jubilee"
-				small="GFX_idea_CHY_cherry_jubilee"
+characters = {
+	CHY_cherry_jubilee = {
+		name = CHY_cherry_jubilee
+		gender = female
+		portraits = {
+			civilian = {
+				large = "GFX_CHY_cherry_jubilee"
+				small = "GFX_CHY_cherry_jubilee"
 			}
-			army={
-				large="GFX_CHY_cherry_jubilee"
-				small="GFX_idea_CHY_cherry_jubilee"
+			army = {
+				large = "GFX_CHY_cherry_jubilee"
+				small = "GFX_CHY_cherry_jubilee"
 			}
 		}
-		country_leader={
-			desc="CHY_cjubilee_poli_desc"
-			ideology=neofeudalism
-			traits={}
+		country_leader = {
+			desc = "CHY_cjubilee_leader_desc"
+			ideology = neofeudalism
 		}
-		country_leader={
-			desc="CHY_cjubilee_poli_desc"
-			ideology=conservatism
-			traits={}
+		country_leader = {
+			desc = "CHY_cjubilee_leader_desc"
+			ideology = conservatism
 		}
-		country_leader={
-			desc="CHY_cjubilee_poli_desc"
-			ideology=democratic_socialism
-			traits={}
+		country_leader = {
+			desc = "CHY_cjubilee_leader_desc"
+			ideology = democratic_socialism
 		}
-		country_leader={
-			desc="CHY_cjubilee_poli_desc"
-			ideology=despotism
-			traits={}
+		country_leader = {
+			desc = "CHY_cjubilee_leader_desc"
+			ideology = despotism
 		}
-		field_marshal={
-			desc="CHY_cjubilee_cmdr_desc"
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			traits={
+		field_marshal = {
+			desc = "CHY_cjubilee_commander_desc"
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			traits = {
 				pony_race_trait
 			}
 		}

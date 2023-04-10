@@ -1,28 +1,24 @@
-characters={
-	ALI_edgar_alba={
-		name=ALI_edgar_alba
-		portraits={
-			civilian={large="GFX_portrait_pony_generic_1"}
+characters = {
+	ALI_edgar_alba = {
+		name = ALI_edgar_alba
+		portraits = {
+			civilian = { large = GFX_portrait_pony_generic_1 }
 		}
-		country_leader={
-			desc="ALA_ealba_poli_desc"
-			ideology=despotism
-			traits={}
+		country_leader = {
+			desc = "ALA_ealba_leader_desc"
+			ideology = despotism
 		}
-		country_leader={
-			desc="ALA_ealba_poli_desc"
-			ideology=conservatism
-			traits={}
+		country_leader = {
+			desc = "ALA_ealba_leader_desc"
+			ideology = conservatism
 		}
-		country_leader={
-			desc="ALA_ealba_poli_desc"
-			ideology=democratic_socialism
-			traits={}
+		country_leader = {
+			desc = "ALA_ealba_leader_desc"
+			ideology = democratic_socialism
 		}
-		country_leader={
-			desc="ALA_ealba_poli_desc"
-			ideology=fascism_ideology
-			traits={}
+		country_leader = {
+			desc = "ALA_ealba_leader_desc"
+			ideology = fascism_ideology
 		}
 	}
 }

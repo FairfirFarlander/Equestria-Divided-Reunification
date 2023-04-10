@@ -2,49 +2,43 @@ characters = {
 	COT_jd_neighvis = {
 		name = COT_jd_neighvis
 		portraits = {
-			civilian = {large = "gfx/leaders/SCS/JDavis.tga"}
+			civilian = { large = GFX_COT_jd_neighvis }
 		}
 		country_leader = {
-			desc = "COT_jdneighvis_poli_desc"
-			ideology = centrism	#neighvis_desc
-			traits = {}
+			desc = COT_jdneighvis_leader_desc
+			ideology = centrism
 		}
 		country_leader = {
-			desc = "COT_jdneighvis_poli_desc"
+			desc = COT_jdneighvis_leader_desc
 			ideology = conservatism
-			traits = {}
 		}
 		country_leader = {
-			desc = "COT_jdneighvis_poli_desc"
+			desc = COT_jdneighvis_leader_desc
 			ideology = democratic_socialism
-			traits = {}
 		}
 		country_leader = {
-			desc = "COT_jdneighvis_poli_desc"
+			desc = COT_jdneighvis_leader_desc
 			ideology = fascism_ideology
-			traits = {}
 		}
 	}
 	COT_neighson_e_miles = {
 		name = COT_neighson_e_miles
 		portraits = {
 			army = {
-				large = "gfx/leaders/SCS/StewedApple.tga"
-				small = "GFX_idea_SCS_stuart"
+				large = GFX_COT_neighson_e_miles
+				small = GFX_idea_SCS_stuart
 			}
 		}
 		field_marshal = {
-			desc = "COT_nemiles_cmdr_desc"
+			desc = COT_nemiles_commander_desc
 			visible = {
-				OR = {
-					AND = {
-						original_tag = COT
-						has_country_flag = COT_nemiles_hired
-					}
-					AND = {
-						original_tag = HEB
-						has_country_flag = HEB_nemiles_pardoned
-					}
+				if = {
+					limit = { original_tag = COT }
+					has_country_flag = COT_nemiles_hired
+				}
+				if = {
+					limit = { original_tag = HEB }
+					has_country_flag = HEB_nemiles_pardoned
 				}
 			}
 			skill = 3
@@ -61,7 +55,7 @@ characters = {
 		}
 		advisor = {
 			slot = army_chief
-			idea_token = COT_nemiles_chie
+			idea_token = COT_nemiles_chief
 			cost = 200
 			available = {
 				if = {
@@ -80,22 +74,20 @@ characters = {
 		name = COT_trotbert_e_neigh
 		portraits = {
 			army = {
-				large = "gfx/leaders/SCS/Lee.tga"
-				small = "GFX_idea_SCS_Lee"
+				large = GFX_COT_trotbert_e_neigh
+				small = GFX_idea_SCS_Lee
 			}
 		}
 		field_marshal = {
-			desc = "COT_teneigh_cmdr_desc"
+			desc = COT_teneigh_commander_desc
 			visible = {
-				OR = {
-					AND = {
-						original_tag = COT
-						has_country_flag = COT_teneigh_hired
-					}
-					AND = {
-						original_tag = HEB
-						has_country_flag = HEB_teneigh_pardoned
-					}
+				if = {
+					limit = { original_tag = COT }
+					has_country_flag = COT_teneigh_hired
+				}
+				if = {
+					limit = { original_tag = HEB }
+					has_country_flag = HEB_teneigh_pardoned
 				}
 			}
 			skill = 3
@@ -112,7 +104,7 @@ characters = {
 		}
 		advisor = {
 			slot = army_chief
-			idea_token = COT_teneigh_chie
+			idea_token = COT_teneigh_chief
 			cost = 200
 			available = {
 				if = {
@@ -131,22 +123,20 @@ characters = {
 		name = COT_stone_wall
 		portraits = {
 			army = {
-				large = "gfx/leaders/SCS/StoneWall.tga"
-				small = "GFX_idea_SCS_Stonewall"
+				large = GFX_COT_stone_wall
+				small = GFX_idea_SCS_Stonewall
 			}
 		}
 		field_marshal = {
-			desc = "COT_swall_cmdr_desc"
+			desc = COT_swall_commander_desc
 			visible = {
-				OR = {
-					AND = {
-						original_tag = COT
-						has_country_flag = COT_stone_wall_hired
-					}
-					AND = {
-						original_tag = HEB
-						has_country_flag = HEB_stone_wall_pardoned
-					}
+				if = {
+					limit = { original_tag = COT }
+					has_country_flag = COT_stone_wall_hired
+				}
+				if = {
+					limit = { original_tag = HEB }
+					has_country_flag = HEB_stone_wall_pardoned
 				}
 			}
 			skill = 3
@@ -163,7 +153,7 @@ characters = {
 		}
 		advisor = {
 			slot = army_chief
-			idea_token = COT_swall_chie
+			idea_token = COT_swall_chief
 			cost = 200
 			available = {
 				if = {
@@ -182,12 +172,12 @@ characters = {
 		name = COT_silverstar
 		portraits = {
 			army = {
-				large = "gfx/leaders/SCS/Silverstar.tga"
-				small = "gfx/interface/ideas/Advisors/SCS/SCS_silverstar.tga"
+				large = GFX_COT_silverstar
+				small = GFX_COT_silverstar_small
 			}
 		}
 		corps_commander = {
-			desc = "COT_silverstar_cmdr_desc"	#silverstar_desc
+			desc = COT_silverstar_commander_desc
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2
@@ -205,12 +195,12 @@ characters = {
 		gender = female
 		portraits = {
 			army = {
-				large = "gfx/leaders/SCS/Apple_Ale.tga"
-				small = "gfx/interface/ideas/Advisors/SCS/SCS_apple_ale.tga"
+				large = GFX_COT_apple_ale
+				small = GFX_COT_apple_ale_small
 			}
 		}
 		corps_commander = {
-			desc = "COT_aale_cmdr_desc"	#SCS_apple_waifu_desc
+			desc = COT_aale_commander_desc
 			skill = 2
 			attack_skill = 2
 			defense_skill = 1
@@ -229,12 +219,12 @@ characters = {
 		gender = female
 		portraits = {
 			army = {
-				large = "gfx/leaders/SCS/Moonshine_Melody.tga"
-				small = "gfx/interface/ideas/Advisors/SCS/SCS_moonshine_melody.tga"
+				large = GFX_COT_moonshine_melody
+				small = GFX_COT_moonshine_melody_small
 			}
 		}
 		corps_commander = {
-			desc = "COT_mmelody_cmdr_desc"	#SCS_moonshine_desc
+			desc = COT_mmelody_commander_desc
 			skill = 2
 			attack_skill = 2
 			defense_skill = 1
@@ -250,12 +240,12 @@ characters = {
 		name = COT_sorren_peak
 		portraits = {
 			army = {
-				large = "gfx/leaders/SCS/some_dixie_horse.tga"
-				small = "GFX_idea_SCS_Sorren_Peak"
+				large = GFX_COT_sorren_peak
+				small = GFX_idea_SCS_Sorren_Peak
 			}
 		}
 		corps_commander = {
-			desc = "COT_speak_cmdr_desc"	#SCS_dixie_horse_desc
+			desc = COT_speak_commander_desc
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2
@@ -273,12 +263,12 @@ characters = {
 		gender = female
 		portraits = {
 			army = {
-				large = "gfx/leaders/SCS/Cuddle_Fervor.tga"
-				small = "gfx/interface/ideas/Advisors/SCS/SCS_cuddle_fervor.tga"
+				large = GFX_COT_burnside_fervor
+				small = GFX_COT_burnside_fervor_small
 			}
 		}
 		corps_commander = {
-			desc = "COT_bfervor_cmdr_desc"
+			desc = COT_bfervor_commander_desc
 			skill = 3
 			attack_skill = 2
 			defense_skill = 4
@@ -291,22 +281,28 @@ characters = {
 			}
 		}
 	}
-	COT_william_b_talonsparrow = {	#TalonSparrow name by Pax
-		name = COT_talonsparrow	#Based off of the 23rd Virginia - Major General/Brigadier General William B. Taliaferro
+	COT_william_b_talonsparrow = {
+		name = COT_talonsparrow
+		#TalonSparrow name by Pax (as a random comment). Your words are preserved forever! Ahahahahaha!
+		#We based off of the 23rd Virginia - Major General/Brigadier General William B. Taliaferro. The man was Italian-American.
 		portraits = {
 			army = {
-				large = "GFX_portrait_griffon_generic_land_12"
-				small = "GFX_portrait_griffon_generic_land_12_small"
+				large = GFX_portrait_griffon_generic_land_12
+				small = GFX_portrait_griffon_generic_land_12_small
 			}
 		}
-		corps_commander = {	#William B. Talonsparrow
-			desc = "COT_wbtalonsparrow"
+		corps_commander = {
+			desc = COT_wbtalonsparrow
 			skill = 3
 			attack_skill = 3
 			defense_skill = 2
 			planning_skill = 2
 			logistics_skill = 1
-			traits = {harsh_leader bleeding_heart griffon_race_trait}
+			traits = {
+				harsh_leader
+				bleeding_heart
+				griffon_race_trait
+			}
 		}
 	}
 }

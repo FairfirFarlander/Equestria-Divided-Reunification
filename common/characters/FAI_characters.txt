@@ -5,24 +5,20 @@ characters = {
 			civilian = { large = "GFX_FAI_poppy_seed" }
 		}
 		country_leader = {
-			desc = "FAI_pseed_poli_desc"
+			desc = "FAI_pseed_leader_desc"
 			ideology = holy_order_f
-			traits = {}
 		}
 		country_leader = {
-			desc = "FAI_pseed_poli_desc"
+			desc = "FAI_pseed_leader_desc"
 			ideology = conservatism
-			traits = {}
 		}
 		country_leader = {
-			desc = "FAI_pseed_poli_desc"
+			desc = "FAI_pseed_leader_desc"
 			ideology = democratic_socialism
-			traits = {}
 		}
 		country_leader = {
-			desc = "FAI_pseed_poli_desc"
+			desc = "FAI_pseed_leader_desc"
 			ideology = anarchism
-			traits = {}
 		}
 	}
 	FAI_meringue = {
@@ -30,17 +26,17 @@ characters = {
 		portraits = {
 			army = {
 				large = "GFX_FAI_meringue"
-				small = "GFX_idea_FAI_meringue"
+				small = "GFX_FAI_meringue"
 			}
 		}
-		corps_commander={
-			desc="FAI_meringue_cmdr_desc"
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			traits={
+		corps_commander = {
+			desc = "FAI_meringue_commander_desc"
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			traits = {
 				pony_race_trait
 			}
 		}

@@ -1,51 +1,48 @@
-characters={
-	SOY_yaria={
-		name=SOY_yaria
-		gender=female
-		portraits={
-			civilian={
-				large="GFX_SOY_yaria"
-				small="GFX_idea_CHN_queen_yaria"
+characters = {
+	SOY_yaria = {
+		name = SOY_yaria
+		gender = female
+		portraits = {
+			civilian = {
+				large = "GFX_SOY_yaria"
+				small = "GFX_CHN_queen_yaria"
 			}
 		}
-		country_leader={
-			desc="chn_queen_yaria_desc"
-			ideology=despotism	#Change desc soon.
-			traits={queen_yaria}
+		country_leader = {
+			desc = "chn_queen_yaria_desc"
+			ideology = despotism	#Change desc soon.
+			traits = {queen_yaria}
 		}
-		country_leader={
-			desc="chn_queen_yaria_desc"
-			ideology=conservatism
-			traits={}
+		country_leader = {
+			desc = "chn_queen_yaria_desc"
+			ideology = conservatism
 		}
-		country_leader={
-			desc="chn_queen_yaria_desc"
-			ideology=democratic_socialism
-			traits={}
+		country_leader = {
+			desc = "chn_queen_yaria_desc"
+			ideology = democratic_socialism
 		}
-		country_leader={
-			desc="chn_queen_yaria_desc"
-			ideology=fascism_ideology
-			traits={}
+		country_leader = {
+			desc = "chn_queen_yaria_desc"
+			ideology = fascism_ideology
 		}
 	}
-	SOY_venyx={
-		name=SOY_venyx
-		gender=female
-		portraits={
-			army={
-				large="gfx/leaders/CHN/Venyx.tga"
-				small="gfx/interface/ideas/Advisors/CHN/idea_Venyx.tga"
+	SOY_venyx = {
+		name = SOY_venyx
+		gender = female
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHN/Venyx.tga"
+				small = "gfx/interface/ideas/Advisors/CHN/idea_Venyx.tga"
 			}
 		}
-		corps_commander={
-			desc="SOY_venyx_cmdr_desc"
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=3
-			logistics_skill=2
-			traits={
+		corps_commander = {
+			desc = "SOY_venyx_commander_desc"
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
+			traits = {
 				changeling_race_trait
 				organizer
 				winter_specialist

@@ -13,10 +13,10 @@ SOY: "Soryth"
 ###Characters###
 ##Leaders##
 SOY_yaria: "Queen Yaria"
- SOY_yaria_poli_desc: ""
+ SOY_yaria_political_desc: ""
 ##Commanders##
  SOY_venyx: "Venyx"
-  SOY_venyx_mili_desc: ""
+  SOY_venyx_commander_desc: ""
 ##Political Advisors##
 ##Military Advisors##
 ###Ideas##

@@ -21,20 +21,20 @@ PLF: "Hayseed"
 ###Characters###
 ##Leaders##
 PLF_regional_defense_council: "Regional Defense Council"
- PLF_rdcouncil_poli_desc: ""
+ PLF_rdcouncil_political_desc: ""
  PLF_rdcouncil_advi_desc: ""
  PLF_lavender_berry: "Lavender Berry"
-  PLF_lberry_poli_desc: ""
+  PLF_lberry_political_desc: ""
   PLF_lberry_advi_desc: ""
  PLF_golden_delicious: "Golden Delicious"
-  PLF_gdelicious_poli_desc: ""
-  PLF_gdelicious_mili_desc: ""
+  PLF_gdelicious_political_desc: ""
+  PLF_gdelicious_commander_desc: ""
  PLF_cricket_chafer: "Cricket Chafer"
-  PLF_cchafer_poli_desc: ""
-  PLF_cchafer_mili_desc: ""
+  PLF_cchafer_political_desc: ""
+  PLF_cchafer_commander_desc: ""
   PLF_cchafer_chie_desc: ""
  PLF_ringo_jam: "Ringo Jam"
-  PLF_rjam_poli_desc: ""
+  PLF_rjam_political_desc: ""
 ##Commanders##
 ##Political Advisors##
 ##Military Advisors##

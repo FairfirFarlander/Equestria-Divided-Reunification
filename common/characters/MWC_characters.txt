@@ -1,118 +1,114 @@
-characters={
-	MWC_rose_petal={
-		name=MWC_rose_petal
-		gender=female
-		portraits={
-			civilian={
-				large="GFX_portrait_pony_generic_2"
+characters = {
+	MWC_rose_petal = {
+		name = MWC_rose_petal
+		gender = female
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_pony_generic_2"
 			}
 		}
-		country_leader={
-			desc="MWC_rpetal_poli_desc"
-			ideology=ultranationalism
-			traits={}
+		country_leader = {
+			desc = "MWC_rpetal_leader_desc"
+			ideology = ultranationalism
 		}
 	}
-	MWC_mulberry_wine={
-		name=MWC_mulberry_wine
-		portraits={
-			civilian={
-				large="GFX_portrait_pony_generic_land_4"
+	MWC_mulberry_wine = {
+		name = MWC_mulberry_wine
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_pony_generic_land_4"
 			}
 		}
-		country_leader={
-			desc="MWC_mwine_poli_desc"
-			ideology=syndicalism
-			traits={}
+		country_leader = {
+			desc = "MWC_mwine_leader_desc"
+			ideology = syndicalism
 		}
 	}
-	MWC_honey_dew={
-		name=MWC_honey_dew
-		gender=female
-		portraits={
-			civilian={
-				large="GFX_portrait_pony_generic_3"
+	MWC_honey_dew = {
+		name = MWC_honey_dew
+		gender = female
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_pony_generic_3"
 			}
 		}
-		country_leader={
-			desc="MWC_hdew_poli_desc"
-			ideology=centrism
-			traits={}
+		country_leader = {
+			desc = "MWC_hdew_leader_desc"
+			ideology = centrism
 		}
 	}
-	MWC_maple_leaf={
-		name=MWC_maple_leaf
-		portraits={
-			civilian={
-				large="GFX_portrait_pony_generic_navy_4"
-				small="GFX_portrait_pony_generic_navy_4_small"
+	MWC_maple_leaf = {
+		name = MWC_maple_leaf
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_pony_generic_navy_4"
+				small = "GFX_portrait_pony_generic_navy_4_small"
 			}
 		}
-		country_leader={
-			desc="MWC_mleaf_poli_desc"
-			ideology=liberalism
-			traits={}
+		country_leader = {
+			desc = "MWC_mleaf_leader_desc"
+			ideology = liberalism
 		}
 	}
-	MWC_apple_cider={	#earthy
-		name=MWC_apple_cider
-		gender=female
-		portraits={
-			army={
-				large="GFX_portrait_eqs_pony_generic_13"
-				small="GFX_portrait_eqs_pony_generic_13_small"
+	MWC_apple_cider = {	#earthy
+		name = MWC_apple_cider
+		gender = female
+		portraits = {
+			army = {
+				large = "GFX_portrait_eqs_pony_generic_13"
+				small = "GFX_portrait_eqs_pony_generic_13_small"
 			}
 		}
-		corps_commander={
-			desc="MWC_acider_cmdr_desc"
-			skill=1
-			attack_skill=2
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=2
-			traits={
+		corps_commander = {
+			desc = "MWC_acider_commander_desc"
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			traits = {
 				pony_race_trait
 				harsh_leader
 				trait_engineer
 			}
 		}
 	}
-	MWC_mist_feather={	#pegasi
-		name=MWC_mist_feather
-		gender=female
-		portraits={
-			army={
-				large="GFX_portrait_eqs_pony_generic_18"
-				small="GFX_portrait_eqs_pony_generic_18_small"
+	MWC_mist_feather = {	#pegasi
+		name = MWC_mist_feather
+		gender = female
+		portraits = {
+			army = {
+				large = "GFX_portrait_eqs_pony_generic_18"
+				small = "GFX_portrait_eqs_pony_generic_18_small"
 			}
 		}
-		corps_commander={
-			desc="MWC_mfeather_cmdr_desc"
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			traits={pony_race_trait}
+		corps_commander = {
+			desc = "MWC_mfeather_commander_desc"
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			traits = {pony_race_trait}
 		}
 	}
-	MWC_anna_taylor={
-		name=MWC_anna_taylor
-		gender=female
-		portraits={
-			army={
-				large="GFX_portrait_pony_generic_navy_6"
-				small="GFX_portrait_pony_generic_navy_6_small"
+	MWC_anna_taylor = {
+		name = MWC_anna_taylor
+		gender = female
+		portraits = {
+			army = {
+				large = "GFX_portrait_pony_generic_navy_6"
+				small = "GFX_portrait_pony_generic_navy_6_small"
 			}
 		}
-		navy_leader={
-			desc="MWC_ataylor_navy_desc"
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=2
-			coordination_skill=2
-			traits={
+		navy_leader = {
+			desc = "MWC_ataylor_navy_desc"
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 2
+			coordination_skill = 2
+			traits = {
 				pony_race_trait
 				aviation_enthusiast
 			}

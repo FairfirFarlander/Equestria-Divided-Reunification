@@ -23,13 +23,13 @@ HFT_fascism_party: "CEIS"
 ###Characters###
 ##Leaders##
 HFT_orange: "Madam Orange"
- HFT_orange_poli_desc: ""
+ HFT_orange_political_desc: ""
  HFT_trixie_lulamoon: "Trixie Lulamoon"
-  HFT_tlulamoon_poli_desc: ""
-  HFT_tlulamoon_mili_desc: "$HFT_tlulamoon_poli_desc$"
+  HFT_tlulamoon_political_desc: ""
+  HFT_tlulamoon_commander_desc: "$HFT_tlulamoon_political_desc$"
 ##Commanders##
  HFT_orange_grove: "Orange Grove"
-  HFT_ogrove_mili_desc: ""
+  HFT_ogrove_commander_desc: ""
 ##Political Advisors##
 ##Military Advisors##
 ###Ideas###

@@ -1,10 +1,10 @@
 ﻿l_english:
  ###Introduction###
   ##Bookmark##
-   CLD_GATHERING_STORM_DESC: ""
+   CLD_GATHERING_STORM_DESC: "$GENR_GATHERING_STORM_DESC$"
   ##Welcome Screen##
-   EAW_WS_CLD: ""
-    EAW_WS_CLD_desc: ""
+   EAW_WS_CLD: "$EAW_WS_GENR$"
+    EAW_WS_CLD_desc: "$EAW_WS_GENR_desc$"
  ###Politics###
   ##Country Name##
    CLD: "Cloudsdale"
@@ -13,8 +13,8 @@
   ##Political Parties##
    CLD_fascism_party: "Stormwings"
     CLD_fascism_party_long: "The Stormwings of Cloudsdale"
-   CLD_communism_party: ""
-    CLD_communism_party_long: ""
+   CLD_communism_party: "CSS"
+    CLD_communism_party_long: "Cloudsdale Socialist Society"
    CLD_neutrality_party: "City Council"
     CLD_neutrality_party_long: "The City Council of Cloudsdale"
    CLD_democratic_party: "Wonderbolt Remnant"

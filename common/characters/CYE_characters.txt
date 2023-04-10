@@ -1,28 +1,24 @@
-characters={
-	CYE_nothinginterestinghappens={
-		name=CYE_voidwalker
-		portraits={
-			civilian={large="gfx/leaders/Asia/Unknown_Griffon.dds"}
+characters = {
+	CYE_nothinginterestinghappens = {
+		name = CYE_voidwalker
+		portraits = {
+			civilian = {large = "gfx/leaders/Asia/Unknown_Griffon.dds"}
 		}
-		country_leader={
-			desc="CYE_nihappens_desc"
-			ideology=anarchism
-			traits={}
+		country_leader = {
+			desc = "CYE_nihappens_desc"
+			ideology = anarchism
 		}
-		country_leader={
-			desc="CYE_nihappens_desc"
-			ideology=conservatism
-			traits={}
+		country_leader = {
+			desc = "CYE_nihappens_desc"
+			ideology = conservatism
 		}
-		country_leader={
-			desc="CYE_nihappens_desc"
-			ideology=democratic_socialism
-			traits={}
+		country_leader = {
+			desc = "CYE_nihappens_desc"
+			ideology = democratic_socialism
 		}
-		country_leader={
-			desc="CYE_nihappens_desc"
-			ideology=fascism_ideology
-			traits={}
+		country_leader = {
+			desc = "CYE_nihappens_desc"
+			ideology = fascism_ideology
 		}
 	}
 }

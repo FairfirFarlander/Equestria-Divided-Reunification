@@ -1,47 +1,43 @@
-characters={
-	SYV_ratibor_sventoslavich={
-		name=SYV_ratibor_sventoslavich
-		portraits={
-			civilian={
-				large="gfx/leaders/STG/Ratibor.tga"
+characters = {
+	SYV_ratibor_sventoslavich = {
+		name = SYV_ratibor_sventoslavich
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/STG/Ratibor.tga"
 			}
 		}
-		country_leader={
-			desc="SYV_rsventoslavich_poli_desc"
-			ideology=fascism_ideology
-			traits={}
+		country_leader = {
+			desc = "SYV_rsventoslavich_leader_desc"
+			ideology = fascism_ideology
 		}
 	}
-	SYV_peter_iv={	#Tsar Peter IV
-		name=SYV_peter_iv
-		portraits={
-			civilian={
-				large="gfx/leaders/STG/PeterIV.tga"
+	SYV_peter_iv = {	#Tsar Peter IV
+		name = SYV_peter_iv
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/STG/PeterIV.tga"
 			}
 		}
-		country_leader={
-			desc="SYV_piv_poli_desc"
-			ideology=despotism
-			traits={}
+		country_leader = {
+			desc = "SYV_piv_leader_desc"
+			ideology = despotism
 		}
 	}
-	SYV_caramelka_sladkaya={
-		name=SYV_caramelka_sladkaya
-		gender=female
-		portraits={
-			civilian={
-				large="gfx/leaders/STG/Caramelka.tga"
+	SYV_caramelka_sladkaya = {
+		name = SYV_caramelka_sladkaya
+		gender = female
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/STG/Caramelka.tga"
 			}
 		}
-		country_leader={
-			desc="WTC_gpony_poli_desc"
-			ideology=conservatism
-			traits={}
+		country_leader = {
+			desc = "WTC_gpony_leader_desc"
+			ideology = conservatism
 		}
-		country_leader={	#POLITICS_CARAMELKA
-			desc="SYV_csladkaya_poli_desc"
-			ideology=socialism
-			traits={}
+		country_leader = {	#POLITICS_CARAMELKA
+			desc = "SYV_csladkaya_leader_desc"
+			ideology = socialism
 		}
 	}
 }

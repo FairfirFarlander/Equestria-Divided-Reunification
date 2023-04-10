@@ -1,59 +1,64 @@
 ﻿l_english:
-###Introduction###
-##Bookmark##
-VII_GATHERING_STORM_DESC: ""
-##Welcome Screen##
- EAW_WS_VII: ""
-  EAW_WS_VII_desc: ""
-###Country Name###
-VII: "Dragon Isles"
- VII_DEF: "the Isles of Dragon"
- VII_ADJ: "Dragon"
-###Political Parties###
-###Characters###
-##Leaders##
-VII_ember: "Ember"
- VII_ember_poli_desc: ""
- VII_ember_mili_desc: ""
- VII_ruby: "Ruby"
-  VII_ruby_poli_desc: ""
-  VII_ruby_mili_desc: ""
-##Commanders##
- VII_torch: "Torch"
-  VII_torch_mili_desc: ""
-##Political Advisors##
- VII_smolder: "Smolder"
-  VII_gark_advi_desc: ""
-  VII_scales: "Scales"
-   VII_scales_advi_desc: ""
-  VII_cynder: "Cynder"
-   VII_cynder_advi_desc: ""
-##Military Advisors##
- VII_firekin: "Firekin"
-  VII_firekin_chie_desc: ""
-  VII_tiagin: "Tiagin"
-   VII_tiagin_chie_desc: ""
-  VII_grima: "Grima"
-   VII_grima_high_desc: ""
-  VII_kuzz: "Kuzz"
-   VII_kuzz_chie_desc: ""
-  VII_nascale: "Nascale"
-   VII_nascale_chie_desc: ""
-  VII_kasitor: "Kasitor"
-   VII_kasitor_chie_desc: ""
-  VII_kahamit: "Kahamit"
-   VII_kahamit_high_desc: ""
-  VII_kalagar: "Kalagar"
-   VII_kalagar_high_desc: ""
-  VII_nightburn: "Nightburn"
-   VII_nightburn_high_desc: ""
-  VII_naga: "Naga"
-   VII_naga_high_desc: ""
-  VII_ludmilla: "Ludmilla"
-   VII_ludmilla_theo_desc: ""
-  VII_tamm: "Tamn"
-   VII_tamm_theo_desc: ""
-  VII_kukulkan: "Kukulkan"
-   VII_kukulkan_theo_desc: ""
-###National Focuses###
-##Storyline Tree##
+ ###Introduction###
+  ##Bookmark##
+   VII_GATHERING_STORM_DESC: "$GENR_GATHERING_STORM_DESC$"
+  ##Welcome Screen##
+   EAW_WS_VII: "$EAW_WS_GENR$"
+    EAW_WS_VII_desc: "$EAW_WS_GENR_desc$"
+ ###Politics###
+  ##Country Name##
+   VII: "Dragon Isles"
+    VII_DEF: "the Isles of Dragon"
+    VII_ADJ: "Dragon"
+  ##Political Parties##
+ ###Characters###
+  ##Leaders##
+   VII_ember: "Ember"
+    VII_ember_leader_desc: ""
+    VII_ember_commander_desc: "$VII_ember_leader_desc$"
+   VII_ruby: "Ruby"
+    VII_ruby_leader_desc: ""
+    VII_ruby_commander_desc: "$VII_ruby_leader_desc$"
+  ##Commanders##
+   VII_torch: "Torch"
+    VII_torch_leader_desc: ""
+    VII_torch_commander_desc: "$VII_torch_leader_desc$"
+  ##Political Advisors##
+   VII_smolder: "Smolder"
+    VII_smolder_political_desc: ""
+   VII_gark: "Gark"
+    VII_gark_political_desc: ""
+   VII_scales: "Scales"
+    VII_scales_political_desc: ""
+   VII_cynder: "Cynder"
+    VII_cynder_political_desc: ""
+  ##Military Advisors##
+   VII_ludmilla: "Ludmilla"
+    VII_ludmilla_theorist_desc: ""
+   VII_tamm: "Tamn"
+    VII_tamm_theorist_desc: ""
+   VII_kukulkan: "Kukulkan"
+    VII_kukulkan_theorist_desc: ""
+   VII_firekin: "Firekin"
+    VII_firekin_chief_desc: ""
+   VII_tiagin: "Tiagin"
+    VII_tiagin_chief_desc: ""
+   VII_grima: "Grima"
+    VII_grima_chief_desc: ""
+    VII_grima_highcmdr_desc: ""
+   VII_kuzz: "Kuzz"
+    VII_kuzz_chief_desc: ""
+   VII_nascale: "Nascale"
+    VII_nascale_chief_desc: ""
+   VII_kasitor: "Kasitor"
+    VII_kasitor_chief_desc: ""
+   VII_kahamit: "Kahamit"
+    VII_kahamit_highcmdr_desc: ""
+   VII_kalagar: "Kalagar"
+    VII_kalagar_highcmdr_desc: ""
+   VII_nightburn: "Nightburn"
+    VII_nightburn_highcmdr_desc: ""
+   VII_naga: "Naga"
+    VII_naga_highcmdr_desc: ""
+ ###National Focuses###
+  ##Storyline Tree##

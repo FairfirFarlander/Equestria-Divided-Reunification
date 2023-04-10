@@ -18,16 +18,16 @@
  ###Characters###
   ##Leaders##
    TFL_rain_dancer: "Rain Dancer"
-    TFL_rdancer_poli_desc: ""
+    TFL_rdancer_political_desc: ""
    TFL_generic_pony: "Generic Pony"
-    TFL_gpony_poli_desc: ""
+    TFL_gpony_political_desc: ""
   ##Commanders##
    TFL_buffalo_joe: "Buffalo Joe"
-    TFL_bjoe_mili_desc: ""
+    TFL_bjoe_commander_desc: ""
    TFL_firespit: "Firespit"
-    TFL_firespit_mili_desc: ""
+    TFL_firespit_commander_desc: ""
    TFL_yeehaw: "Yeehaw"
-    TFL_yeehaw_mili_desc: ""
+    TFL_yeehaw_commander_desc: ""
   ##Political Advisors##
   ##Military Advisors##
  ###Ideas###

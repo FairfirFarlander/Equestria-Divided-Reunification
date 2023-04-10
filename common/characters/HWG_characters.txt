@@ -1,329 +1,320 @@
-characters={
-	HWG_rarity={
-		name=HWG_rarity	#mistress rarity
-		gender=female
-		portraits={
-			civilian={
-				large="GFX_HWG_rarity"
-				small="GFX_idea_HWG_rarity"
+characters = {
+	HWG_rarity = {
+		name = HWG_rarity	#mistress rarity
+		gender = female
+		portraits = {
+			civilian = {
+				large = "GFX_HWG_rarity"
+				small = "GFX_HWG_rarity"
 			}
-			army={
-				large="GFX_HWG_rarity"
-				small="GFX_idea_HWG_rarity"
+			army = {
+				large = "GFX_HWG_rarity"
+				small = "GFX_HWG_rarity"
 			}
 		}
-		country_leader={
-			desc="HWG_rarity_poli_desc"
-			ideology=plutocracy
-			expire="1017.09.8.20"	#Based on 982 - Lives to 30 : Used to be 1012 so now 35#
-			traits={}
+		country_leader = {
+			desc = "HWG_rarity_leader_desc"
+			ideology = plutocracy
+			expire = "1017.09.8.20"	#Based on 982 - Lives to 30 : Used to be 1012 so now 35#
 		}
-		field_marshal={
-			desc="HWG_rarity_cmdr_desc"
-			skill=1
-			attack_skill=2
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=1
-			traits={
+		field_marshal = {
+			desc = "HWG_rarity_commander_desc"
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			traits = {
 				pony_race_trait
 				politically_connected
 			}
 		}
 	}
-	HWG_shooter_mark={
-		name=HWG_shooter_mark
-		portraits={
-			civilian={
-				large="GFX_portrait_pony_generic_navy_4"
-				small="GFX_portrait_pony_generic_navy_4_small"
+	HWG_shooter_mark = {
+		name = HWG_shooter_mark
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_pony_generic_navy_4"
+				small = "GFX_portrait_pony_generic_navy_4_small"
 			}
 		}
-		country_leader={
-			desc="HWG_smark_cmdr_desc"
-			ideology=anarchist_communism
-			traits={}
+		country_leader = {
+			desc = "HWG_smark_commander_desc"
+			ideology = anarchist_communism
 		}
 	}
-	HWG_fleur_de_lis={
-		name=HWG_fleur_de_lis
-		gender=female
-		portraits={
-			civilian={
-				large="GFX_HWG_fleur_de_lis"
-				small="GFX_idea_HWG_fleur_de_lis"
+	HWG_fleur_de_lis = {
+		name = HWG_fleur_de_lis
+		gender = female
+		portraits = {
+			civilian = {
+				large = "GFX_HWG_fleur_de_lis"
+				small = "GFX_HWG_fleur_de_lis"
 			}
-			army={
-				large="GFX_HWG_fleur_de_lis"
-				small="GFX_idea_HWG_fleur_de_lis"
+			army = {
+				large = "GFX_HWG_fleur_de_lis"
+				small = "GFX_HWG_fleur_de_lis"
 			}
 		}
-		country_leader={
-			desc="HWG_fdlis_poli_desc"
-			ideology=oligarchism
-			traits={}
+		country_leader = {
+			desc = "HWG_fdlis_leader_desc"
+			ideology = oligarchism
 		}
-		corps_commander={
-			desc="HWG_fdlis_cmdr_desc"
-			skill=2 attack_skill=2	defense_skill=2
-			planning_skill=2	logistics_skill=1
-			traits={pony_race_trait media_personality vigilant_sentinel}
+		corps_commander = {
+			desc = "HWG_fdlis_commander_desc"
+			skill = 2 attack_skill = 2	defense_skill = 2
+			planning_skill = 2	logistics_skill = 1
+			traits = {pony_race_trait media_personality vigilant_sentinel}
 		}
-		#advisor={
-		#	slot=political_advisor
-		#	idea_token=HWG_fdlis_advi
-		#	available={has_intelligence_agency=yes}
-		#	visible={has_dlc="La Resistance"}
-		#	traits={head_of_intelligence}	#upgrade me
+		#advisor = {
+		#	slot = political_advisor
+		#	idea_token = HWG_fdlis_advi
+		#	available = {has_intelligence_agency = yes}
+		#	visible = {has_dlc = "La Resistance"}
+		#	traits = {head_of_intelligence}	#upgrade me
 		#}
-		#advisor={
-		#	slot=political_advisor
-		#	idea_token=HWG_fleur_de_lis
-		#	available={not={has_country_flag=fleur_de_lis_arrested}}
-		#	traits={backroom_backstabber}	#upgrade me?
+		#advisor = {
+		#	slot = political_advisor
+		#	idea_token = HWG_fleur_de_lis
+		#	available = {not = {has_country_flag = fleur_de_lis_arrested}}
+		#	traits = {backroom_backstabber}	#upgrade me?
 		#}	#See HWG-Whitegold.txt in countries.
 	}
-	HWG_fancy_pants={
-		name=HWG_fancy_pants
-		portraits={
-			civilian={
-				large="gfx/leaders/EQS/Prez-PM_Pants.tga"
-				small="GFX_idea_EQS_fancy_pants"
+	HWG_fancy_pants = {
+		name = HWG_fancy_pants
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EQS/Prez-PM_Pants.tga"
+				small = "GFX_EQS_fancy_pants"
 			}
-			army={
-				large="gfx/leaders/EQS/Prez-PM_Pants.tga"
-				small="GFX_idea_EQS_fancy_pants"
+			army = {
+				large = "gfx/leaders/EQS/Prez-PM_Pants.tga"
+				small = "GFX_EQS_fancy_pants"
 			}
 		}
-		country_leader={
-			desc="HWG_fpants_poli_desc"
-			ideology=liberalism
-			traits={}
+		country_leader = {
+			desc = "HWG_fpants_leader_desc"
+			ideology = liberalism
 		}
-		corps_commander={
-			desc="HWG_fpants_cmdr_desc"
-			skill=2
-			attack_skill=1
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=1
-			traits={
+		corps_commander = {
+			desc = "HWG_fpants_commander_desc"
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+			traits = {
 				pony_race_trait
 				politically_connected
 				trait_cautious
 			}
 		}
-		advisor={
-			slot=political_advisor
-			idea_token=HWG_fpants_advi
-			traits={smooth_talking_charmer}
+		advisor = {
+			slot = political_advisor
+			idea_token = HWG_fpants_advi
+			traits = {smooth_talking_charmer}
 		}
 	}
-	HWG_clair_de_lune={
-		name=HWG_clair_de_lune	#HWG_hornybastard - Why dafuq did I agree to dis joke name?#
-		gender=female	#--Farlander shrugged-- ~FF#
-		portraits={
-			civilian={
-				large="GFX_HWG_clair_de_lune"
-				small="GFX_idea_HWG_clair_de_lune"
+	HWG_clair_de_lune = {
+		name = HWG_clair_de_lune	#HWG_hornybastard - Why dafuq did I agree to dis joke name?#
+		gender = female	#--Farlander shrugged-- ~FF#
+		portraits = {
+			civilian = {
+				large = "GFX_HWG_clair_de_lune"
+				small = "GFX_HWG_clair_de_lune"
 			}
-			army={
-				large="GFX_HWG_clair_de_lune"
-				small="GFX_idea_HWG_clair_de_lune"
+			army = {
+				large = "GFX_HWG_clair_de_lune"
+				small = "GFX_HWG_clair_de_lune"
 			}
 		}
-		corps_commander={
-			desc="HWG_cdlune_cmdr_desc"
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			traits={thestral_race_trait}	#add siren trait
+		corps_commander = {
+			desc = "HWG_cdlune_commander_desc"
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			traits = {thestral_race_trait}	#add siren trait
 		}
 	}
-	HWG_mashed_potato={
-		name=HWG_mashed_potato
-		portraits={
-			army={
-				large="GFX_HWG_mashed_potato"
-				small="GFX_idea_HWG_mashed_potato"
+	HWG_mashed_potato = {
+		name = HWG_mashed_potato
+		portraits = {
+			army = {
+				large = "GFX_HWG_mashed_potato"
+				small = "GFX_HWG_mashed_potato"
 			}
 		}
-		corps_commander={
-			desc="HWG_mpotato_cmdr_desc"
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			traits={diamond_dog_race_trait}
+		corps_commander = {
+			desc = "HWG_mpotato_commander_desc"
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			traits = {diamond_dog_race_trait}
 		}
 	}
-	HWG_generic_admiral={
-		name=HWG_generic_admiral
-		gender=female
-		portraits={
-			army={
-				large="GFX_portrait_pony_generic_navy_7"
-				small="GFX_portrait_pony_generic_navy_7_small"
+	HWG_generic_admiral = {
+		name = HWG_generic_admiral
+		gender = female
+		portraits = {
+			army = {
+				large = "GFX_portrait_pony_generic_navy_7"
+				small = "GFX_portrait_pony_generic_navy_7_small"
 			}
 		}
-		navy_leader={
-			desc="HWG_gadmiral_navy_desc"
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=2
-			coordination_skill=2
-			traits={
+		navy_leader = {
+			desc = "HWG_gadmiral_navy_desc"
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 2
+			coordination_skill = 2
+			traits = {
 				pony_race_trait
 				aviation_enthusiast
 			}
 		}
 	}
-	HWG_flim_flam={
-		name=HWG_flim_flam
-		portraits={
-			civilian={
-				small="GFX_idea_flim"
+	HWG_flim_flam = {
+		name = HWG_flim_flam
+		portraits = {
+			civilian = {
+				small = "GFX_flim"
 			}
 		}
-		advisor={
-			slot=political_advisor
-			idea_token=HWG_fflam_advi
-			available={has_country_flag=HWG_flim_flam_hired}
-			traits={captain_of_industry}
+		advisor = {
+			slot = political_advisor
+			idea_token = HWG_fflam_advi
+			available = {has_country_flag = HWG_flim_flam_hired}
+			traits = {captain_of_industry}
 		}
 	}
-	HWG_filthy_rich={
-		name=HWG_filthy_rich
-		portraits={
-			civilian={
-				large="gfx/leaders/EQS/Prez-PM_Filth.tga"
-				small="GFX_idea_filthy_rich"
+	HWG_filthy_rich = {
+		name = HWG_filthy_rich
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EQS/Prez-PM_Filth.tga"
+				small = "GFX_filthy_rich"
 			}
 		}
-		advisor={
-			slot=political_advisor
-			idea_token=HWG_frich_advi
-			available={has_country_flag=HWG_filthy_rich_dead}
-			traits={smooth_talking_charmer}
+		advisor = {
+			slot = political_advisor
+			idea_token = HWG_frich_advi
+			available = {has_country_flag = HWG_filthy_rich_dead}
+			traits = {smooth_talking_charmer}
 		}
 	}
-	HWG_diamond_tiara={
-		name=HWG_diamond_tiara
-		gender=female
-		portraits={
-			civilian={
-				large="GFX_HWG_diamond_tiara"
-				small="GFX_idea_HWG_diamond_tiara"
+	HWG_diamond_tiara = {
+		name = HWG_diamond_tiara
+		gender = female
+		portraits = {
+			civilian = {
+				large = "GFX_HWG_diamond_tiara"
+				small = "GFX_HWG_diamond_tiara"
 			}
 		}
-		advisor={
-			slot=political_advisor
-			idea_token=HWG_dtiara_advi
-			available={has_country_flag=HWG_filthy_rich_dead}
-			traits={smooth_talking_charmer}
+		advisor = {
+			slot = political_advisor
+			idea_token = HWG_dtiara_advi
+			available = {has_country_flag = HWG_filthy_rich_dead}
+			traits = {smooth_talking_charmer}
 		}
 	}
-	HWG_sweetie_belle={
-		name=HWG_sweetie_belle
-		gender=female
-		portraits={
-			civilian={
-				large="GFX_HWG_sweetie_belle"
-				small="GFX_idea_HWG_sweetie_belle"
+	HWG_sweetie_belle = {
+		name = HWG_sweetie_belle
+		gender = female
+		portraits = {
+			civilian = {
+				large = "GFX_HWG_sweetie_belle"
+				small = "GFX_HWG_sweetie_belle"
 			}
 		}
-		advisor={
-			slot=political_advisor
-			idea_token=HWG_sbelle_advi
-			available={has_global_flag=rarity_is_dead}
-			traits={known_pony}
+		advisor = {
+			slot = political_advisor
+			idea_token = HWG_sbelle_advi
+			available = {has_global_flag = rarity_is_dead}
+			traits = {known_pony}
 		}
 	}
-	HWG_octavia_melody={	#Octavia Melody/Nighthooves
-		name=HWG_octavia_melody
-		portraits={
-			civilian={
-				large="GFX_HWG_octavia"
-				small="GFX_idea_HWG_octavia"
+	HWG_octavia_melody = {	#Octavia Melody/Nighthooves
+		name = HWG_octavia_melody
+		portraits = {
+			civilian = {
+				large = "GFX_HWG_octavia"
+				small = "GFX_HWG_octavia"
 			}
-			army={
-				large="GFX_HWG_octavia"
-				small="GFX_idea_HWG_octavia"
+			army = {
+				large = "GFX_HWG_octavia"
+				small = "GFX_HWG_octavia"
 			}
 		}
-		#advisor={
-		#	slot=political_advisor
-		#	idea_token=HWG_omelody_advi
-		#	available={has_intelligence_agency=yes}
-		#	visible={has_dlc="La Resistance"}
-		#	traits={head_of_intelligence}
+		#advisor = {
+		#	slot = political_advisor
+		#	idea_token = HWG_omelody_advi
+		#	available = {has_intelligence_agency = yes}
+		#	visible = {has_dlc = "La Resistance"}
+		#	traits = {head_of_intelligence}
 		#}
-		advisor={
-			slot=high_command
-			ledger=army
-			idea_token=HWG_omelody_high
-			cost=50
-			traits={}
+		advisor = {
+			slot = high_command
+			ledger = army
+			idea_token = HWG_omelody_high
+			cost = 50
 		}
 	}
-	HWG_whispy_locks={
-		name=HWG_whispy_locks
-		portraits={
-			civilian={
-				large="GFX_HWG_whispy_locks"
-				small="GFX_idea_HWG_whispy_locks"
+	HWG_whispy_locks = {
+		name = HWG_whispy_locks
+		portraits = {
+			civilian = {
+				large = "GFX_HWG_whispy_locks"
+				small = "GFX_HWG_whispy_locks"
 			}
 		}
-		advisor={
-			slot=political_advisor
-			idea_token=HWG_wlocks_advi
-			traits={}
+		advisor = {
+			slot = political_advisor
+			idea_token = HWG_wlocks_advi
 		}
 	}
-	HWG_lemon_meringue={
-		name=HWG_lemon_meringue
-		portraits={
-			civilian={
-				large="GFX_HWG_lemon_meringue"
-				small="GFX_idea_HWG_lemon_meringue"
+	HWG_lemon_meringue = {
+		name = HWG_lemon_meringue
+		portraits = {
+			civilian = {
+				large = "GFX_HWG_lemon_meringue"
+				small = "GFX_HWG_lemon_meringue"
 			}
 		}
-		advisor={
-			slot=political_advisor
-			idea_token=HWG_lmeringue_advi
-			traits={}
+		advisor = {
+			slot = political_advisor
+			idea_token = HWG_lmeringue_advi
 		}
 	}
-	HWG_prim_n_proper={
-		name=HWG_prim_n_proper
-		portraits={
-			civilian={
-				large="GFX_HWG_prim_n_proper"
-				small="GFX_idea_HWG_prim_n_proper"
+	HWG_prim_n_proper = {
+		name = HWG_prim_n_proper
+		portraits = {
+			civilian = {
+				large = "GFX_HWG_prim_n_proper"
+				small = "GFX_HWG_prim_n_proper"
 			}
 		}
-		advisor={
-			slot=political_advisor
-			idea_token=HWG_pnproper_advi
-			traits={}
+		advisor = {
+			slot = political_advisor
+			idea_token = HWG_pnproper_advi
 		}
 	}
-	HWG_straight_arrow={
-		name=HWG_straight_arrow
-		portraits={
-			civilian={
-				large="GFX_HWG_straight_arrow"
-				small="GFX_idea_HWG_straight_arrow"
+	HWG_straight_arrow = {
+		name = HWG_straight_arrow
+		portraits = {
+			civilian = {
+				large = "GFX_HWG_straight_arrow"
+				small = "GFX_HWG_straight_arrow"
 			}
 		}
-		advisor={
-			slot=political_advisor
-			idea_token=HWG_sarrow_advi
-			traits={}
+		advisor = {
+			slot = political_advisor
+			idea_token = HWG_sarrow_advi
 		}
 	}
 }

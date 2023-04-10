@@ -1,135 +1,129 @@
-characters={
-	SGR_ratibor_sventoslavich={
-		name=SGR_ratibor_sventoslavich
-		portraits={
-			civilian={
-				large="gfx/leaders/STG/Ratibor.tga"
+characters = {
+	SGR_ratibor_sventoslavich = {
+		name = SGR_ratibor_sventoslavich
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/STG/Ratibor.tga"
 			}
 		}
-		country_leader={
-			desc="SGR_rsventoslavich_poli_desc"
-			ideology=fascism_ideology
-			traits={}
+		country_leader = {
+			desc = "SGR_rsventoslavich_leader_desc"
+			ideology = fascism_ideology
 		}
 	}
-	SGR_altidiya={
-		name=SGR_altidiya
-		gender=female
-		portraits={
-			civilian={
-				large="gfx/leaders/STG/Alty.tga"
+	SGR_altidiya = {
+		name = SGR_altidiya
+		gender = female
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/STG/Alty.tga"
 			}
 		}
-		country_leader={	#POLITICS_ALTY_DESC
-			desc="SGR_altidiya_poli_desc"
-			ideology=leninism
-			traits={}
+		country_leader = {	#POLITICS_ALTY_DESC
+			desc = "SGR_altidiya_leader_desc"
+			ideology = leninism
 		}
 	}
-	SGR_peter_iv={	#Tsar Peter IV
-		name=SGR_peter_iv
-		portraits={
-			civilian={
-				large="gfx/leaders/STG/PeterIV.tga"
+	SGR_peter_iv = {	#Tsar Peter IV
+		name = SGR_peter_iv
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/STG/PeterIV.tga"
 			}
 		}
-		country_leader={
-			desc="SGR_piv_poli_desc"
-			ideology=despotism
-			traits={}
+		country_leader = {
+			desc = "SGR_piv_leader_desc"
+			ideology = despotism
 		}
 	}
-	SGR_caramelka_sladkaya={
-		name=SGR_caramelka_sladkaya
-		gender=female
-		portraits={
-			civilian={
-				large="gfx/leaders/STG/Caramelka.tga"
+	SGR_caramelka_sladkaya = {
+		name = SGR_caramelka_sladkaya
+		gender = female
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/STG/Caramelka.tga"
 			}
 		}
-		country_leader={	#POLITICS_CARAMELKA
-			desc="SGR_csladkaya_poli_desc"
-			ideology=socialism
-			traits={}
+		country_leader = {	#POLITICS_CARAMELKA
+			desc = "SGR_csladkaya_leader_desc"
+			ideology = socialism
 		}
 	}
-	SGR_nestor_lunin={
-		name=SGR_nestor_lunin
-		portraits={
-			civilian={
-				large="gfx/leaders/STG/Nestor.tga"
+	SGR_nestor_lunin = {
+		name = SGR_nestor_lunin
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/STG/Nestor.tga"
 			}
-			army={
-				large="gfx/leaders/STG/Nestor.tga"
-				small="GFX_idea_nestor_lunin"
+			army = {
+				large = "gfx/leaders/STG/Nestor.tga"
+				small = "GFX_nestor_lunin"
 			}
 		}
-		country_leader={
-			desc="NESTOR_DESC"
-			ideology=leninism
-			traits={}
+		country_leader = {
+			desc = "NESTOR_DESC"
+			ideology = leninism
 		}
-		field_marshal={
-			desc="SGR_nlunin_cmdr_desc"
-			skill=5
-			attack_skill=4
-			defense_skill=4
-			planning_skill=3
-			logistics_skill=5
-			traits={
+		field_marshal = {
+			desc = "SGR_nlunin_commander_desc"
+			skill = 5
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 5
+			traits = {
 				brilliant_strategist
 				promising_general
 				trait_nestor_lunin
 				pony_race_trait
 			}
 		}
-		advisor={
-			slot=theorist
-			ledger=army
-			cost=100
-			idea_token=SGR_nlunin_theo
-			traits={military_theorist alt_army_chief_reform_2}
+		advisor = {
+			slot = theorist
+			ledger = army
+			cost = 100
+			idea_token = SGR_nlunin_theo
+			traits = {military_theorist alt_army_chief_reform_2}
 		}
 	}
-	SGR_sinister_serov={
-		name=SGR_sinister_serov
-		portraits={
-			civilian={
-				large="gfx/leaders/STG/Sinnie.tga"
-				small="GFX_idea_sinnie"
+	SGR_sinister_serov = {
+		name = SGR_sinister_serov
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/STG/Sinnie.tga"
+				small = "GFX_sinnie"
 			}
 		}
-		country_leader={
-			desc="SGR_sserov_poli_desc"
-			ideology=stalinism
-			traits={dictator}
+		country_leader = {
+			desc = "SGR_sserov_leader_desc"
+			ideology = stalinism
+			traits = {dictator}
 		}
-		advisor={
-			slot=political_advisor
-			idea_token=SGR_sserov_advi
-			traits={
+		advisor = {
+			slot = political_advisor
+			idea_token = SGR_sserov_advi
+			traits = {
 				ideological_crusader
 				demagogue
 			}
 		}
 	}
-	SGR_vasiliy_pantsushenko={
-		name=SGR_vasiliy_pantsushenko
-		portraits={
-			civilian={
-				large="gfx/leaders/STG/Vasya.tga"
-				small="GFX_idea_vasya"
+	SGR_vasiliy_pantsushenko = {
+		name = SGR_vasiliy_pantsushenko
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/STG/Vasya.tga"
+				small = "GFX_vasya"
 			}
 		}
-		country_leader={
-			desc="SGR_vpantsushenko_poli_desc"
-			ideology=leninism
-			traits={}
+		country_leader = {
+			desc = "SGR_vpantsushenko_leader_desc"
+			ideology = leninism
 		}
-		advisor={
-			slot=political_advisor
-			idea_token=SGR_vpantsushenko_advi
-			traits={captain_of_industry}
+		advisor = {
+			slot = political_advisor
+			idea_token = SGR_vpantsushenko_advi
+			traits = {captain_of_industry}
 		}
 	}
 }

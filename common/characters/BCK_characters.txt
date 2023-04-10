@@ -1,86 +1,81 @@
-characters={
-	BCK_rockfeller={
-		name=BCK_rockfeller
-		portraits={
-			civilian={large="gfx/leaders/SCS/Rockhoof.tga"}
+characters = {
+	BCK_rockfeller = {
+		name = BCK_rockfeller
+		portraits = {
+			civilian = { large = GFX_BCK_rockfeller }
 		}
-		country_leader={
-			desc="BCK_rockfeller_poli_desc"
-			ideology=plutocracy
-			traits={}
-		}
-	}
-	BCK_syndicate_council={
-		name=BCK_syndicate_council
-		portraits={
-			civilian={large="gfx/leaders/BAL/completeanarchy.dds"}
-		}
-		country_leader={
-			desc="BCK_council_poli_desc"
-			ideology=marxism
-			traits={}
+		country_leader = {
+			desc = BCK_rockfeller_leader_desc
+			ideology = plutocracy
 		}
 	}
-	BCK_merry_wreath={
-		name=BCK_merry_wreath
-		portraits={
-			civilian={
-				large="GFX_portrait_pony_generic_navy_16"
-				small="GFX_portrait_pony_generic_navy_16_small"
+	BCK_syndicate_council = {
+		name = BCK_syndicate_council
+		portraits = {
+			civilian = { large = GFX_BCK_syndicate_council }
+		}
+		country_leader = {
+			desc = BCK_council_leader_desc
+			ideology = marxism
+		}
+	}
+	BCK_merry_wreath = {
+		name = BCK_merry_wreath
+		portraits = {
+			civilian = {
+				large = GFX_portrait_pony_generic_navy_16
+				small = GFX_portrait_pony_generic_navy_16_small
 			}
-			army={
-				large="GFX_portrait_pony_generic_navy_16"
-				small="GFX_portrait_pony_generic_navy_16_small"
+			army = {
+				large = GFX_portrait_pony_generic_navy_16
+				small = GFX_portrait_pony_generic_navy_16_small
 			}
 		}
-		country_leader={
-			desc="BCK_mwreath_poli_desc"
-			ideology=despotism
-			traits={}
+		country_leader = {
+			desc = BCK_mwreath_leader_desc
+			ideology = despotism
 		}
-		field_marshal={
-			desc="BCK_wreath_cmdr_desc"
-			skill=3
-			attack_skill=4
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=1
-			traits={
+		field_marshal = {
+			desc = BCK_wreath_commander_desc
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			traits = {
 				pony_race_trait
 				trait_reckless
 			}
 		}
 	}
-	BCK_sea_prism={
-		name=BCK_sea_prism
-		gender=female
-		portraits={
-			civilian={large="GFX_portrait_eqs_pony_generic_25"}
+	BCK_sea_prism = {
+		name = BCK_sea_prism
+		gender = female
+		portraits = {
+			civilian = { large = GFX_portrait_eqs_pony_generic_25 }
 		}
-		country_leader={
-			desc="BCK_sprism_poli_desc"
-			ideology=liberalism
-			traits={}
+		country_leader = {
+			desc = BCK_sprism_leader_desc
+			ideology = liberalism
 		}
 	}
-	BCK_hallow_green={
-		name=BCK_hallow_green
-		gender=female
-		portraits={
-			civilian={small="GFX_portrait_pony_generic_land_12_small"}
-			army={
-				large="GFX_portrait_pony_generic_land_12"
-				small="GFX_portrait_pony_generic_land_12_small"
+	BCK_hallow_green = {
+		name = BCK_hallow_green
+		gender = female
+		portraits = {
+			army = {
+				large = GFX_portrait_pony_generic_land_12
+				small = GFX_portrait_pony_generic_land_12_small
 			}
 		}
-		corps_commander={
-			desc="BCK_hgreen_cmdr_desc"
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			traits={
+		corps_commander = {
+			desc = BCK_hgreen_commander_desc
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			traits = {
 				pony_race_trait
 				old_guard
 				trait_cautious

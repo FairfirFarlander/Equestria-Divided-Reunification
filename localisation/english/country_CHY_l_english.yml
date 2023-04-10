@@ -13,8 +13,8 @@ CHY: "Cherry Clan"
 ###Characters###
 ##Leaders##
 CHY_cherry_jubilee: "Cherry Jubilee"
- CHY_cjubilee_poli_desc: ""
- CHY_cjubilee_mili_desc: "$CHY_cjubilee_poli_desc$"
+ CHY_cjubilee_political_desc: ""
+ CHY_cjubilee_commander_desc: "$CHY_cjubilee_political_desc$"
 ##Commanders##
 ##Advisors##
 ###Ideas###

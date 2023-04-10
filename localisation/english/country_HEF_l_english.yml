@@ -25,15 +25,15 @@ HEF_fascism_party: "TEF"
 ###Characters###
 ##Leaders##
 HEF_lady_fluttershy: "Lady Fluttershy"
- HEF_lfluttershy_poli_desc: "$CRDC_poory_fujin_soren$"
- HEF_lfluttershy_mili_desc: "$HEF_lfluttershy_poli_desc$"
+ HEF_lfluttershy_political_desc: "$CRDC_poory_fujin_soren$"
+ HEF_lfluttershy_commander_desc: "$HEF_lfluttershy_political_desc$"
  HEF_red_leaves: "Red Leaves"
-  HEF_rleaves_poli_desc: ""
+  HEF_rleaves_political_desc: ""
  HEF_zecora: "Zecora"
-  HEF_zecora_poli_desc: ""
-  HEF_zecora_mili_desc: ""
+  HEF_zecora_political_desc: ""
+  HEF_zecora_commander_desc: ""
  HEF_flower_seed: "Flower Seed"
-  HEF_fseed_poli_desc: ""
+  HEF_fseed_political_desc: ""
 ##Commanders##
 ##Political Advisors##
 ##Military Advisors##

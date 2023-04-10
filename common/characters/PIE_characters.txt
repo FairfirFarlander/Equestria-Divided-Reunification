@@ -4,36 +4,38 @@ characters = {
 		gender = female
 		portraits = {
 			civilian = {
-				large = "GFX_PIE_cloudy_quartz"
-				small = "GFX_idea_PIE_cloudy_quartz"
+				large = GFX_PIE_cloudy_quartz
+				small = GFX_idea_PIE_cloudy_quartz
 			}
 		}
 		country_leader = {
-			desc = "PIE_cquartz_leader_desc"
+			desc = PIE_cquartz_leader_desc
 			ideology = despotism
 			traits = {
-				PIE_governor_trait
+				governor_trait
+				matriarch_trait
 			}
 		}
 	}
-	PIE_marble_pie = {	#Governor -  Matriarch
+	PIE_marble_pie = {
 		name = PIE_marble_pie
 		gender = female
 		portraits = {
 			civilian = {
-				large = "GFX_PIE_marble_pie"
-				small = "GFX_PIE_marble_pie_small"
+				large = GFX_PIE_marble_pie
+				small = GFX_PIE_marble_pie_small
 			}
 		}
 		country_leader = {
-			desc = "PIE_marpie_leader_desc"
-			ideology = maarite_minion	#ultranationalism
+			desc = PIE_marpie_leader_desc
+			ideology = maarite_minion
+			#ultranationalism
 		}
 		country_leader = {
-			desc = "PIE_marpie_leader_desc"
+			desc = PIE_marpie_leader_desc
 			ideology = democratic_socialism
 			traits = {
-				PIE_governor_trait
+				governor_trait
 			}
 		}
 	}
@@ -42,22 +44,22 @@ characters = {
 		gender = female
 		portraits = {
 			civilian = {
-				large = "GFX_PIE_maud_pie"
+				large = GFX_PIE_maud_pie
 			}
 			army = {
-				large = "GFX_PIE_maud_pie_mili"
-				small = "GFX_idea_EQS_maud_pie"
+				large = GFX_PIE_maud_pie_mili
+				small = GFX_idea_EQS_maud_pie
 			}
 		}
 		country_leader = {
-			desc = "PIE_maupie_leader_desc"
+			desc = PIE_maupie_leader_desc
 			ideology = socialism
 			traits = {
-				PIE_governor_trait
+				governor_trait
 			}
 		}
-		corp_commander = {
-			desc = "CLD_maupie_commander_desc"
+		corps_commander = {
+			desc = CLD_maupie_commander_desc
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -68,18 +70,18 @@ characters = {
 			}
 		}
 	}
-#	PIE_sapphire_smiles = {
-#		name = PIE_sapphire_smiles
-#		gender = female
-#		portraits = {
-#			civilian = {
-#				large = "GFX_portrait_pony_generic_navy_13"
-#				small = "GFX_portrait_pony_generic_navy_13_small"
-#			}
-#		}
-#		country_leader = {
-#			desc = "PIE_ssmiles_leader_desc"
-#			ideology = democratic_socialism
-#		}
-#	}
+	PIE_sapphire_smiles = {
+		name = PIE_sapphire_smiles
+		gender = female
+		portraits = {
+			civilian = {
+				large = GFX_portrait_pony_generic_navy_13
+				small = GFX_portrait_pony_generic_navy_13_small
+			}
+		}
+		country_leader = {
+			desc = PIE_ssmiles_leader_desc
+			ideology = democratic_socialism
+		}
+	}
 }

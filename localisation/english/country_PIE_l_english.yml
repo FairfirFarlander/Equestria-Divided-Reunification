@@ -1,14 +1,14 @@
 ﻿l_english:
  ###Introduction###
   ##Bookmark##
-   PIE_GATHERING_STORM_DESC: ""
+   PIE_GATHERING_STORM_DESC: "$GENR_GATHERING_STORM_DESC$"
   ##Welcome Screen##
-   EAW_WS_PIE: ""
-    EAW_WS_PIE_desc: ""
+   EAW_WS_PIE: "$EAW_WS_GENR$"
+    EAW_WS_PIE_desc: "$EAW_WS_GENR_desc$"
  ###Politics###
   ##Country Name##
    PIE: "Rockville Province"
-    PIE_DEF: "The Province of Rockville"
+    PIE_DEF: "the Province of Rockville"
     PIE_ADJ: "Pie Clanner"
   ##Political Parties##
  ###Characters###
@@ -20,7 +20,7 @@
    PIE_maud_pie: "Maud Pie"
     PIE_maupie_leader_desc: "$CRDC_art_sketchit$"
     PIE_maupie_commander_desc: "$CRDC_art_bunnyshrubby$"
-    #PIE_maupie_advisorhere_desc: "$CRDC_art_bunnyshrubby$"
+    PIE_maupie_political_desc: "$CRDC_art_bunnyshrubby$"
    PIE_sapphire_smiles: "Sapphire Smiles"
     PIE_ssmiles_leader_desc: ""
   ##Commanders##

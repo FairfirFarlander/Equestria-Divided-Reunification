@@ -1,50 +1,47 @@
-characters={
-	PLT_rael_grey={	#Earl Riley#
-		name=PLT_rael_grey
-		gender=female
-		portraits={
-			civilian={
-				large="GFX_portrait_eqs_pony_generic_16"
-				small="GFX_portrait_eqs_pony_generic_16_small"
+characters = {
+	PLT_rael_grey = {	#Earl Riley#
+		name = PLT_rael_grey
+		gender = female
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_eqs_pony_generic_16"
+				small = "GFX_portrait_eqs_pony_generic_16_small"
 			}
 		}
-		country_leader={
-			desc="PLT_rgrey_poli_desc"
-			ideology=bandit
-			traits={}
+		country_leader = {
+			desc = "PLT_rgrey_leader_desc"
+			ideology = bandit
 		}
-		country_leader={
-			desc="PLT_rgrey_poli_desc"
-			ideology=leninism
-			traits={}
+		country_leader = {
+			desc = "PLT_rgrey_leader_desc"
+			ideology = leninism
 		}
 	}
-	PLT_willie_hoofard_tuft={	#William Howard Taft#
-		name=PLT_willie_hoofard_tuft
-		portraits={
-			civilian={
-				large="GFX_portrait_pony_generic_land_3"
-				small="GFX_portrait_pony_generic_land_3_small"
+	PLT_willie_hoofard_tuft = {	#William Howard Taft#
+		name = PLT_willie_hoofard_tuft
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_pony_generic_land_3"
+				small = "GFX_portrait_pony_generic_land_3_small"
 			}
 		}
-		country_leader={
-			desc="PLT_whtuft_poli_desc"
-			ideology=republicanism
-			traits={appeaser}	#Add some anti-trust.#
+		country_leader = {
+			desc = "PLT_whtuft_leader_desc"
+			ideology = republicanism
+			traits = {appeaser}	#Add some anti-trust.#
 		}
 	}
-	PLT_thistle_tap={	#Joseph Carson - Joeseph 'Seahawk' Barhoof#
-		name=PLT_thistle_tap
-		portraits={
-			civilian={
-				large="GFX_portrait_pony_generic_land_11"
-				small="GFX_portrait_pony_generic_land_11_small"
+	PLT_thistle_tap = {	#Joseph Carson - Joeseph 'Seahawk' Barhoof#
+		name = PLT_thistle_tap
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_pony_generic_land_11"
+				small = "GFX_portrait_pony_generic_land_11_small"
 			}
 		}
-		country_leader={
-			desc="PLT_ttap_poli_desc"
-			ideology=harmonic_libertarianism
-			traits={}
+		country_leader = {
+			desc = "PLT_ttap_leader_desc"
+			ideology = harmonic_libertarianism
 		}
 	}
 }

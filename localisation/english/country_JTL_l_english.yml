@@ -13,17 +13,17 @@ JTL: "Jungle League"
 ###Characters###
 ##Leaders##
 JUN_ahuizotl: "Ahuizotl"
- JTL_ahuizotl_poli_desc: ""
- JTL_ahuizotl_mili_desc: "$JTL_ahuizotl_poli_desc$"
+ JTL_ahuizotl_political_desc: ""
+ JTL_ahuizotl_commander_desc: "$JTL_ahuizotl_political_desc$"
  JTL_temple_chant: "Temple Chant"
-  JTL_tchant_poli_desc: ""
-  JTL_tchant_mili_desc: "$JTL_tchant_poli_desc$"
+  JTL_tchant_political_desc: ""
+  JTL_tchant_commander_desc: "$JTL_tchant_political_desc$"
  JTL_tailcoatl: "Tailcoatl"
-  JTL_tailcoatl_poli_desc: ""
-  JTL_tailcoatl_mili_desc: "$JTL_tailcoatl_poli_desc$"
+  JTL_tailcoatl_political_desc: ""
+  JTL_tailcoatl_commander_desc: "$JTL_tailcoatl_political_desc$"
 ##Commanders##
  JTL_tenoch: "Tenoch"
-  JTL_tenoch_mili_desc: ""
+  JTL_tenoch_commander_desc: ""
 
 ##Political Advisors##
 ##Military Advisors##

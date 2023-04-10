@@ -1,10 +1,10 @@
 ﻿l_english:
  ###Introduction###
   ##Bookmark##
-   COT_GATHERING_STORM_DESC: ""
+   COT_GATHERING_STORM_DESC: "$GENR_GATHERING_STORM_DESC$"
   ##Welcome Screen##
-   EAW_WS_COT: ""
-    EAW_WS_COT_desc: ""
+   EAW_WS_COT: "$EAW_WS_GENR$"
+    EAW_WS_COT_desc: "$EAW_WS_GENR_desc$"
  ###Country Name###
   COT: "Southern Confederation"
    COT_DEF: "the Confederation of Southern States"
@@ -13,35 +13,35 @@
  ###Characters###
   ##Leaders##
    COT_jd_neighvis: "J.D. Neighvis"
-    COT_jdneighvis_poli_desc: ""
+    COT_jdneighvis_leader_desc: "$neighvis_desc$"
   ##Commanders##
    COT_neighson_e_miles: "Stewed Apple" #Nelson Appleton Miles
-    COT_nemiles_mili_desc: ""
-    COT_nemiles_chie_desc: "$COT_nemiles_mili_desc$"
+    COT_nemiles_commander_desc: ""
+    COT_nemiles_chief_desc: "$COT_nemiles_commander_desc$"
     COT_nemiles_hired: "§Y$COT_neighson_e_miles$§! has been appointed."
     COT_nemiles_ideas_tooltip: "§Y$COT_neighson_e_miles$§!, which grants (Army Experience Gain: §G+0.40§! daily, Division Speed: §G+15.00%§!"
    COT_trotbert_e_neigh: "Trotbert E. Neigh" #Robert Edward Lee
-    COT_teneigh_mili_desc: ""
-    COT_teneigh_chie_desc: "$COT_teneigh_mili_desc$"
+    COT_teneigh_commander_desc: ""
+    COT_teneigh_chief_desc: "$COT_teneigh_commander_desc$"
     COT_teneigh_hired: "§Y$COT_trotbert_e_neigh$§! has been appointed."
     COT_teneigh_ideas_tooltip: "§Y$COT_trotbert_e_neigh$§!, which grants (Army Experience Gain: §G+0.40§! daily, Non-Combat Out of Supply Penalties: §G-9.0%§!"
    COT_stone_wall: "Stone Wall" #Thomas Jonathan Jackson
-    COT_swall_mili_desc: ""
-    COT_swall_chie_desc: "$COT_swall_mili_desc$"
+    COT_swall_commander_desc: ""
+    COT_swall_chief_desc: "$COT_swall_commander_desc$"
     COT_stone_wall_hired: "§Y$COT_stone_wall$§! has been appointed."
     COT_stone_wall_ideas_tooltip: "§Y$COT_stone_wall$§!, which grants (Army Experience Gain: §G+0.40§! daily, Division Defense: §G+15.0%§!"
    COT_silverstar: "Silverstar"
-    COT_silverstar_mili_desc: ""
+    COT_silverstar_commander_desc: "$silverstar_desc$"
    COT_apple_ale: "Apple Ale"
-    COT_aale_mili_desc: ""
+    COT_aale_commander_desc: "$SCS_apple_waifu_desc$"
    COT_moonshine_melody: "Moonshine Melody"
-    COT_mmelody_mili_desc: ""
+    COT_mmelody_commander_desc: "$SCS_moonshine_desc$"
    COT_sorren_peak: "Sorren Peak"
-    COT_speak_mili_desc: ""
+    COT_speak_commander_desc: "$SCS_dixie_horse_desc$"
    COT_burnside_fervor: "Burnside Fervor"
-    COT_bfervor_mili_desc: ""
+    COT_bfervor_commander_desc: ""
    COT_william_b_talonsparrow: "William B. Talonsparrow"
-    COT_wbtalonsparrow_mili_desc: ""
+    COT_wbtalonsparrow_commander_desc: ""
   ##Advisors##
  ###Ideas###
  ###National Focuses###

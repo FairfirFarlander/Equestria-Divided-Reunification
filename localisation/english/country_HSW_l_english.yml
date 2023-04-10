@@ -36,22 +36,22 @@ HSW_fascism_party: "CWC"
 ###Characters###
 ##Leaders##
 HSW_rainbow_dash: "Rainbow Dash"
- HSW_rdash_poli_desc: "$CRDC_poory_fujin_soren$"
- HSW_rdash_mili_desc: "$HSW_rdash_poli_desc$"
+ HSW_rdash_political_desc: "$CRDC_poory_fujin_soren$"
+ HSW_rdash_commander_desc: "$HSW_rdash_political_desc$"
  HSW_storm_mayhem: "Storm Mayhem"
-  HSW_smayhem_poli_desc: ""
+  HSW_smayhem_political_desc: ""
  HSW_steel_wings: "Steel Wings"
-  HSW_swings_poli_desc: ""
+  HSW_swings_political_desc: ""
  HSW_sunny_cloud: "Sunny Cloud"
-  HSW_scloud_poli_desc: ""
+  HSW_scloud_political_desc: ""
 ##Commanders##
  HSW_soarin: "Soarin"
-  HSW_soarin_mili_desc: ""
+  HSW_soarin_commander_desc: ""
   HSW_spitfire: "Spitfire"
-   HSW_spitfire_mili_desc: ""
+   HSW_spitfire_commander_desc: ""
   HSW_scootaloo: "Scootaloo"
-   HSW_scootaloo_mili_desc: "$CRDC_ruhje_soren$"
-   HSW_scootaloo_high_desc: "$HSW_scootaloo_mili_desc$"
+   HSW_scootaloo_commander_desc: "$CRDC_ruhje_soren$"
+   HSW_scootaloo_high_desc: "$HSW_scootaloo_commander_desc$"
 ##Political Advisors##
 ##Military Advisors##
 ###Ideas###

@@ -5,11 +5,11 @@ characters = {
 		portraits = {
 			civilian = {
 				large = "GFX_TRS_duchess_aurora"
-				small = "GFX_idea_TRS_duchess_aurora"
+				small = "GFX_TRS_duchess_aurora"
 			}
 			army = {
 				large = "GFX_TRS_duchess_aurora"
-				small = "GFX_idea_TRS_duchess_aurora"
+				small = "GFX_TRS_duchess_aurora"
 			}
 		}
 		country_leader = {
@@ -22,15 +22,15 @@ characters = {
 		portraits = {
 			civilian = {
 				large = "GFX_TRS_mystical_phantasm"
-				small = "GFX_idea_TRS_mystical_phantasm"
+				small = "GFX_TRS_mystical_phantasm"
 			}
 			army = {
 				large = "GFX_TRS_mystical_phantasm"
-				small = "GFX_idea_TRS_mystical_phantasm"
+				small = "GFX_TRS_mystical_phantasm"
 			}
 		}
 		country_leader = {
-			desc = "TRS_mphantasm_poli_desc"
+			desc = "TRS_mphantasm_leader_desc"
 			ideology = fascism_ideology
 		}
 		advisor = {
@@ -47,15 +47,15 @@ characters = {
 		portraits = {
 			civilian = {
 				large = "GFX_TRS_radiguss"
-				small = "GFX_idea_TRS_radiguss"
+				small = "GFX_TRS_radiguss"
 			}
 			army = {
 				large = "GFX_TRS_radiguss"
-				small = "GFX_idea_TRS_radiguss"
+				small = "GFX_TRS_radiguss"
 			}
 		}
 		corps_commander = {
-			desc = "TRS_radiguss_cmdr_desc"
+			desc = "TRS_radiguss_commander_desc"
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -85,15 +85,15 @@ characters = {
 			}
 		}
 		country_leader = {
-			desc = "TRS_gpony_poli_desc"
+			desc = "TRS_gpony_leader_desc"
 			ideology = conservatism
 		}
 		country_leader = {
-			desc = "TRS_gpony_poli_desc"
+			desc = "TRS_gpony_leader_desc"
 			ideology = marxism
 		}
 		country_leader = {
-			desc = "TRS_gpony_poli_desc"
+			desc = "TRS_gpony_leader_desc"
 			ideology = despotism
 		}
 	}

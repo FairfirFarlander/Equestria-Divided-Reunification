@@ -1,72 +1,71 @@
-characters={
-	TRT_rapid_fire={
-		name=TRT_rapid_fire
-		portraits={
-			civilian={
-				large="GFX_portrait_eqs_pony_generic_12"
-				small="GFX_portrait_eqs_pony_generic_12_small"
+characters = {
+	TRT_rapid_fire = {
+		name = TRT_rapid_fire
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_eqs_pony_generic_12"
+				small = "GFX_portrait_eqs_pony_generic_12_small"
 			}
-			army={
-				large="GFX_portrait_eqs_pony_generic_12"
-				small="GFX_portrait_eqs_pony_generic_12_small"
+			army = {
+				large = "GFX_portrait_eqs_pony_generic_12"
+				small = "GFX_portrait_eqs_pony_generic_12_small"
 			}
 		}
-		country_leader={
-			desc="TRT_rfire_poli_desc"
-			ideology=stratocracy
-			traits={fascist_demagogue}
+		country_leader = {
+			desc = "TRT_rfire_leader_desc"
+			ideology = stratocracy
+			traits = {fascist_demagogue}
 		}
-		country_leader={
-			desc="TRT_rfire_poli_desc"
-			ideology=democratic_socialism
-			traits={}
+		country_leader = {
+			desc = "TRT_rfire_leader_desc"
+			ideology = democratic_socialism
 		}
-		corps_commander={
-			desc="TRT_rfire_cmdr_desc"
-			skill=1 attack_skill=1	defense_skill=1
-			planning_skill=1	logistics_skill=1
-			traits={pony_race_trait}
+		corps_commander = {
+			desc = "TRT_rfire_commander_desc"
+			skill = 1 attack_skill = 1	defense_skill = 1
+			planning_skill = 1	logistics_skill = 1
+			traits = {pony_race_trait}
 		}
 	}
-	TRT_teddy_hoosevelt={	#teddy_steady_roosevelt
-		name=TRT_teddy_hoosevelt
-		portraits={
-			civilian={
-				large="GFX_portrait_pony_generic_navy_4"
-				small="GFX_portrait_pony_generic_navy_4_small"
+	TRT_teddy_hoosevelt = {	#teddy_steady_roosevelt
+		name = TRT_teddy_hoosevelt
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_pony_generic_navy_4"
+				small = "GFX_portrait_pony_generic_navy_4_small"
 			}
-			army={
-				large="GFX_portrait_pony_generic_navy_4"
-				small="GFX_portrait_pony_generic_navy_4_small"
+			army = {
+				large = "GFX_portrait_pony_generic_navy_4"
+				small = "GFX_portrait_pony_generic_navy_4_small"
 			}
 		}
-		country_leader={
-			desc="TRT_thoosevelt_poli_desc"
-			ideology=populism
-			traits={
+		country_leader = {
+			desc = "TRT_thoosevelt_leader_desc"
+			ideology = populism
+			traits = {
 				headstrong
 				great_war_hero
 			}
 		}
-		corps_commander={
-			desc="TRT_thoosevelt_cmdr_desc"
-			skill=1 attack_skill=1	defense_skill=1
-			planning_skill=1	logistics_skill=1
-			traits={pony_race_trait}
+		corps_commander = {
+			desc = "TRT_thoosevelt_commander_desc"
+			skill = 1 attack_skill = 1	defense_skill = 1
+			planning_skill = 1	logistics_skill = 1
+			traits = {pony_race_trait}
 		}
 	}
-	TRT_harshwhinny={	#ms._harshwhinny
-		name=TRT_harshwhinny
-		gender=female
-		portraits={
-			civilian={
-				large="GFX_TRT_harshwhinny"
-				small="GFX_idea_TRT_harshwhinny"
+	TRT_harshwhinny = {	#ms._harshwhinny
+		name = TRT_harshwhinny
+		gender = female
+		portraits = {
+			civilian = {
+				large = "GFX_TRT_harshwhinny"
+				small = "GFX_TRT_harshwhinny"
 			}
 		}
-		country_leader={
-			desc="TRT_harshwhinny_poli_desc"	ideology=harmonic_libertarianism
-			traits={
+		country_leader = {
+			desc = "TRT_harshwhinny_leader_desc"	ideology = harmonic_libertarianism
+			traits = {
 				appeaser
 				hedonist
 			}

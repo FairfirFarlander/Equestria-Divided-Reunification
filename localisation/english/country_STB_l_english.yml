@@ -27,11 +27,11 @@ STB_fascism_party: "STC"
 ###Characters###
 ##Leaders##
 STB_iris_kelly: "Iris Kelly"
- STB_ikelly_poli_desc: ""
+ STB_ikelly_political_desc: ""
  STB_mabel_corne: "Mabel Corne"
-  STB_mcorne_poli_desc: ""
+  STB_mcorne_political_desc: ""
  STB_smokey_dust: "Smokey Dust"
-  STB_sdust_poli_desc: ""
+  STB_sdust_political_desc: ""
 ##Commanders##
 ##Political Advisors##
 ##Military Advisors##

@@ -25,15 +25,15 @@ THA_fascism_party: "OTM"
 ###Characters###
 ##Leaders##
 THA_argent_end: "Argent End"
- THA_aend_poli_desc: "$CRDC_art_tiviyl$"
- THA_aend_mili_desc: "$THA_aend_poli_desc$"
+ THA_aend_political_desc: "$CRDC_art_tiviyl$"
+ THA_aend_commander_desc: "$THA_aend_political_desc$"
  THA_auburn_peak: "Auburn Peak"
-  THA_apeak_poli_desc: "$CRDC_art_tiviyl$"
-  THA_apeak_mili_desc: "$THA_apeak_poli_desc$"
-  THA_apeak_chie_desc: "$THA_apeak_poli_desc$"
+  THA_apeak_political_desc: "$CRDC_art_tiviyl$"
+  THA_apeak_commander_desc: "$THA_apeak_political_desc$"
+  THA_apeak_chie_desc: "$THA_apeak_political_desc$"
  THA_the_niece: "The Niece"
-  THA_tniece_poli_desc: ""
-  THA_tniece_advi_desc: "$THA_tniece_poli_desc$"
+  THA_tniece_political_desc: ""
+  THA_tniece_advi_desc: "$THA_tniece_political_desc$"
 ##Commanders##
 ##Political Advisors##
 ##Military Advisors##

@@ -1,305 +1,303 @@
-characters={
-	CRL_radiant_hope={
-		name=CRL_radiant_hope
-		gender=female
-		portraits={
-			civilian={
-				large="GFX_CRL_radiant_hope"
-				#small="GFX_idea_CRL_radiant_hope"
+characters = {
+	CRL_radiant_hope = {
+		name = CRL_radiant_hope
+		gender = female
+		portraits = {
+			civilian = {
+				large = "GFX_CRL_radiant_hope"
+				#small = "GFX_CRL_radiant_hope"
 			}
 		}
-		country_leader={	#POLITICS_RADIANTHOPE_DESC
-			desc="CRL_rhope_poli_desc"
-			ideology=nazism
-			traits={democratic_sympathies}
+		country_leader = {	#POLITICS_RADIANTHOPE_DESC
+			desc = "CRL_rhope_leader_desc"
+			ideology = nazism
+			traits = {democratic_sympathies}
 		}
-		country_leader={
-			desc="CRL_rhope_poli_desc"
-			ideology=conservatism
-			traits={}
-		}
-	}
-	CRL_arctic_lily={
-		name=CRL_arctic_lily
-		gender=female
-		portraits={
-			civilian={large="gfx/leaders/CRY/ArcticLily.tga"}
-		}
-		country_leader={
-			desc="CRL_alily_poli_desc"
-			ideology=leninism
+		country_leader = {
+			desc = "CRL_rhope_leader_desc"
+			ideology = conservatism
 		}
 	}
-	CRL_disputed={
-		name=CRL_disputed
-		portraits={
-			civilian={large="gfx/leaders/leader_unknown.dds"}
+	CRL_arctic_lily = {
+		name = CRL_arctic_lily
+		gender = female
+		portraits = {
+			civilian = {large = "gfx/leaders/CRY/ArcticLily.tga"}
 		}
-		country_leader={
-			desc="CRL_disputed_poli_desc"
-			ideology=despotism
+		country_leader = {
+			desc = "CRL_alily_leader_desc"
+			ideology = leninism
 		}
 	}
-	CRL_sombra={
-		name=CRL_sombra
-		portraits={
-			civilian={large="GFX_SombraPortrait"}
-			army={
-				large="GFX_SombraPortrait"
-				small="GFX_idea_sombra_leader"
+	CRL_disputed = {
+		name = CRL_disputed
+		portraits = {
+			civilian = {large = "gfx/leaders/leader_unknown.dds"}
+		}
+		country_leader = {
+			desc = "CRL_disputed_leader_desc"
+			ideology = despotism
+		}
+	}
+	CRL_sombra = {
+		name = CRL_sombra
+		portraits = {
+			civilian = {large = "GFX_SombraPortrait"}
+			army = {
+				large = "GFX_SombraPortrait"
+				small = "GFX_sombra_leader"
 			}
 		}
-		country_leader={
-			desc="POLITICS_SOMBRA_DESC"
-			ideology=magocracy
-			traits={sombra_trait warmonger}
+		country_leader = {
+			desc = "POLITICS_SOMBRA_DESC"
+			ideology = magocracy
+			traits = {sombra_trait warmonger}
 		}
-		advisor={
-			slot=army_chief
-			idea_token=CRL_sombra_chie
-			cost=100
-			visible={
-				has_country_leader={
-					character=CRL_sombra
-					ruling_only=yes
+		advisor = {
+			slot = army_chief
+			idea_token = CRL_sombra_chie
+			cost = 100
+			visible = {
+				has_country_leader = {
+					character = CRL_sombra
+					ruling_only = yes
 				}
 			}
-			traits={army_chief_maneuver_2}
+			traits = {army_chief_maneuver_2}
 		}
 	}
-	CRL_reese={
-		name=CRL_reese
-		portraits={
-			army={
-				large="gfx/leaders/CRY/Reese.tga"
-				small="GFX_idea_CRY_reese"
+	CRL_reese = {
+		name = CRL_reese
+		portraits = {
+			army = {
+				large = "gfx/leaders/CRY/Reese.tga"
+				small = "GFX_CRY_reese"
 			}
 		}
-		field_marshal={
-			desc="CRL_reese_cmdr_desc"
-			skill=2
-			attack_skill=2
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=1
-			traits={
+		field_marshal = {
+			desc = "CRL_reese_commander_desc"
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+			traits = {
 				brilliant_strategist
 				career_officer
 				pony_race_trait
 			}
 		}
-		advisor={
-			slot=army_chief
-			cost=100
-			idea_token=CRL_reese_chie
-			traits={army_logistics_2}
+		advisor = {
+			slot = army_chief
+			cost = 100
+			idea_token = CRL_reese_chie
+			traits = {army_logistics_2}
 		}
 	}
-	CRL_colloid={
-		name=CRL_colloid
-		portraits={
-			army={
-				large="gfx/leaders/CRY/Colloid.tga"
-				#small="gfx/leaders/CRL/CRL_colloid_small.dds"
+	CRL_colloid = {
+		name = CRL_colloid
+		portraits = {
+			army = {
+				large = "gfx/leaders/CRY/Colloid.tga"
+				#small = "gfx/leaders/CRL/CRL_colloid_small.dds"
 			}
 		}
-		field_marshal={
-			desc="CRL_colloid_cmdr_desc"
-			skill=3
-			attack_skill=2
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=2
-			traits={
+		field_marshal = {
+			desc = "CRL_colloid_commander_desc"
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+			traits = {
 				pony_race_trait
 				old_guard
 			}
 		}
 	}
-	CRL_dusty_ember={
-		name=CRL_dusty_ember
-		gender=female
-		portraits={
-			army={
-				large="gfx/leaders/CRY/Dusty_Ember.tga"
-				small="GFX_idea_CRY_dusty_ember"
+	CRL_dusty_ember = {
+		name = CRL_dusty_ember
+		gender = female
+		portraits = {
+			army = {
+				large = "gfx/leaders/CRY/Dusty_Ember.tga"
+				small = "GFX_CRY_dusty_ember"
 			}
 		}
-		corps_commander={
-			desc="CRY_DUSTY_EMBER_DESC"	#"CRL_dember_cmdr_desc"
-			skill=2
-			attack_skill=2
-			defense_skill=4
-			planning_skill=2
-			logistics_skill=1
-			traits={
+		corps_commander = {
+			desc = "CRY_DUSTY_EMBER_DESC"	#"CRL_dember_commander_desc"
+			skill = 2
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 1
+			traits = {
 				promising_general
 				pony_race_trait
 			}
 		}
 	}
-	CRL_deimos_falafel={
-		name=CRL_deimos_falafel	#Damiyan
-		portraits={
-			army={
-				large="gfx/leaders/CRY/Damiyan.tga"
-				small="GFX_idea_Damiyan"
+	CRL_deimos_falafel = {
+		name = CRL_deimos_falafel	#Damiyan
+		portraits = {
+			army = {
+				large = "gfx/leaders/CRY/Damiyan.tga"
+				small = "GFX_Damiyan"
 			}
 		}
-		corps_commander={
-			desc="CRL_dfalafel_cmdr_desc"
-			skill=2
-			attack_skill=1
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			traits={
+		corps_commander = {
+			desc = "CRL_dfalafel_commander_desc"
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			traits = {
 				trait_reckless
 				media_personality
 				pony_race_trait
 				winter_specialist
 			}
 		}
-		advisor={
-			slot=high_command
-			ledger=army
-			cost=150
-			idea_token=CRL_falafel_high
-			traits={defence_theorist}
+		advisor = {
+			slot = high_command
+			ledger = army
+			cost = 150
+			idea_token = CRL_falafel_high
+			traits = {defence_theorist}
 		}
 	}
-	CRL_icy_snow={
-		name=CRL_icy_snow
-		gender=female
-		portraits={
-			army={
-				large="gfx/leaders/CRY/Icy_snow.tga"
-				small="GFX_idea_CRY_icy_snow"
+	CRL_icy_snow = {
+		name = CRL_icy_snow
+		gender = female
+		portraits = {
+			army = {
+				large = "gfx/leaders/CRY/Icy_snow.tga"
+				small = "GFX_CRY_icy_snow"
 			}
 		}
-		corps_commander={
-			desc="CRL_isnow_cmdr_desc"
-			skill=1
-			attack_skill=1
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=1
-			traits={
+		corps_commander = {
+			desc = "CRL_isnow_commander_desc"
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			traits = {
 				trait_cautious
 				pony_race_trait
 				winter_specialist
 			}
 		}
 	}
-	CRL_cloudie={
-		name=CRL_cloudie
-		gender=female
-		portraits={
-			army={
-				large="gfx/leaders/CRY/Cloudie.tga"
-				small="GFX_idea_CRY_cloudie"
+	CRL_cloudie = {
+		name = CRL_cloudie
+		gender = female
+		portraits = {
+			army = {
+				large = "gfx/leaders/CRY/Cloudie.tga"
+				small = "GFX_CRY_cloudie"
 			}
 		}
-		corps_commander={
-			desc="CRL_cloudie_cmdr_desc"
-			skill=1
-			attack_skill=1
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=1
-			traits={
+		corps_commander = {
+			desc = "CRL_cloudie_commander_desc"
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			traits = {
 				medical_expert
 				pony_race_trait
 			}
 		}
 	}
-	CRL_crystalline={
-		name=CRL_crystalline
-		gender=female
-		portraits={
-			army={
-				large="gfx/leaders/CRY/Crystalline.tga"
-				small="GFX_idea_CRY_crystalline"
+	CRL_crystalline = {
+		name = CRL_crystalline
+		gender = female
+		portraits = {
+			army = {
+				large = "gfx/leaders/CRY/Crystalline.tga"
+				small = "GFX_CRY_crystalline"
 			}
 		}
-		corps_commander={
-			desc="CRL_crystalline_cmdr_desc"
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=3
-			traits={
+		corps_commander = {
+			desc = "CRL_crystalline_commander_desc"
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 3
+			traits = {
 				promising_general
 				pony_race_trait
 			}
 		}
 	}
-	CRL_squeeky_hooves={
-		name=CRL_squeeky_hooves
-		portraits={
-			army={
-				large="gfx/leaders/CRY/SombraGeneral.tga"
-				small="GFX_idea_CRY_squeeky_hooves"
+	CRL_squeeky_hooves = {
+		name = CRL_squeeky_hooves
+		portraits = {
+			army = {
+				large = "gfx/leaders/CRY/SombraGeneral.tga"
+				small = "GFX_CRY_squeeky_hooves"
 			}
 		}
-		corps_commander={
-			desc="CRL_shooves_cmdr_desc"
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=3
-			traits={
+		corps_commander = {
+			desc = "CRL_shooves_commander_desc"
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			traits = {
 				ranger
 				brilliant_strategist
 				pony_race_trait
 			}
 		}
 	}
-	CRL_sakira={
-		name=sakira
-		gender=female
-		portraits={
-			civilian={
-				large="gfx/leaders/EQS/Sakira.tga"
-				small="GFX_idea_sakira"
+	CRL_sakira = {
+		name = sakira
+		gender = female
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EQS/Sakira.tga"
+				small = "GFX_sakira"
 			}
 		}
-		country_leader={
-			desc="CRL_sakira_poli_desc"
-			ideology=nazism
-			traits={}
+		country_leader = {
+			desc = "CRL_sakira_leader_desc"
+			ideology = nazism
 		}
-		advisor={
-			slot=political_advisor
-			idea_token=CRL_sakira_advi
-			traits={captain_of_industry}
-		}
-	}
-	CRL_dust_snowfall={
-		name=dust_snowfall
-		portraits={
-			civilian={small="GFX_idea_dust_snowfall"}
-		}
-		advisor={
-			slot=political_advisor
-			idea_token=CRL_dsnowfall_advi
-			traits={prince_of_terror}
+		advisor = {
+			slot = political_advisor
+			idea_token = CRL_sakira_advi
+			traits = {captain_of_industry}
 		}
 	}
-	CRL_lake_frost={
-		name=lake_frost
-		portraits={
-			army={small="GFX_idea_lake_frost"}
+	CRL_dust_snowfall = {
+		name = dust_snowfall
+		portraits = {
+			civilian = {small = "GFX_dust_snowfall"}
 		}
-		advisor={
-			slot=theorist
-			ledger=army
-			cost=100
-			research_bonus={industry=0.075}
-			idea_token=CRL_lfrost_theo
-			traits={industry_theorist}
+		advisor = {
+			slot = political_advisor
+			idea_token = CRL_dsnowfall_advi
+			traits = {prince_of_terror}
+		}
+	}
+	CRL_lake_frost = {
+		name = lake_frost
+		portraits = {
+			army = {small = "GFX_lake_frost"}
+		}
+		advisor = {
+			slot = theorist
+			ledger = army
+			cost = 100
+			research_bonus = {industry = 0.075}
+			idea_token = CRL_lfrost_theo
+			traits = {industry_theorist}
 		}
 	}
 }

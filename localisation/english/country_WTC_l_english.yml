@@ -1,92 +1,77 @@
 ﻿l_english:
-###Introduction###
-##Bookmark##
-WTC_GATHERING_STORM_DESC: ""
-##Welcome Screen##
- EAW_WS_WTC: ""
-  EAW_WS_WTC_desc: ""
-###Country Name###
-WTC: "Manehattan Trading Company"
- WTC_DEF: "The Manehattan Trading Company"
- WTC_ADJ: "Maneglendi"
-###Political Parties###
-###Characters###
-##Leaders##
-WTC_dashing_habbidasher: "Dashing Habidasher"
- WTC_dhabbidasher_poli_desc: "$CRDC_art_tiviyl$"
- WTC_alicia_habbidasher: "Alicia Habidasher"
-  WTC_ahabbidasher_poli_desc: "$CRDC_art_tiviyl$"
-  WTC_ahabbidasher_advi_desc: "$CRDC_art_tiviyl$"
-##Political Advisors##
-##Military Advisors##
- WTC_eloi_path: "Eloi Path"
-  WTC_epath_advi_desc: "$CRDC_bylis_tiviy$"
- WTC_zebrican_mercenary: "Zebrican Mercenary"
-  WTC_zmercenary_advi_desc: "$CRDC_bylis_tiviy$"
- WTC_saddle_arabian_mercenary: "Saddle Arabian Mercenary"
-  WTC_samercenary_advi_desc: "$CRDC_bylis_tiviy$"
-###Ideas###
-WTC_no_army: "No Standing Army"
- WTC_no_army_desc: "[WTC.GetNameDef] "
-###Decisions###
-##WTC Aquisitions##
-WTC_purchase_technology: "[WTC.GetName] Aquistiions"
- WTC_JER_armor: "Purchase [JER.GetAdjective] Tanks"
-  WTC_JER_armor_desc: "Aquelia is well known for their ferocious armor corps the world over. A few of my contacts may be able to convince the [JER.GetAdjective] army to sell a few older models of vehicles to me for a price. I'm sure we could come to an arangement, especially with [75.GetName] footing part of the bill.\n\n§WThe §Y[WTC.GetName]§! will need...\n£army_experience §Y45 Army Experience§!, £pol_power §Y55 Political Power§!, and £convoy_texticon §Y8 Convoys§! to select this decision.\nThe £convoy_texticon §YConvoys§! will be §Grefunded§! on completion.§!"
-  WTC_JER_armor_req_blocked: "£army_experience  §R45§! £pol_power  §R55§! £convoy_texticon  §R8§!"
-  WTC_JER_armor_req: "£army_experience  §Y45§! £pol_power  §Y55§! £convoy_texticon  §Y8§!"
-  WTC_JER_armor_rev_tip: "§LThe §Y[WTC.GetName]§! will receive §Y[JER.GetAdjective]§! early tank equipment and form two divisions that will marshal in Baltimare.\n\nThe Aquelian Light Horse composted of...\n2 §5light tank brigades§! and 3 §7infantry brigades§!.\n\nThe Coltjun Aquarium Builders composed of...\n1 §1heavy tank brigade§! and 3 §7infantry brigades§!.§!"
- WTC_SGR_rockets: "Purchase [SGR.GetAdjective] Rockets"
-  WTC_SGR_rockets_desc: "Stalliongrad has been experimenting with military rocketry for the last decade, especially in the wake of the Crystal War and it's disturbing aftermath. This technology has the potential to level the playing field literally. It would be in our best interest to aquire this technology, whether it be from the [SGR.GetAdjective]s themselves or their foreign benifactors.\n\n§WThe §Y[WTC.GetName]§! will need...\n£army_experience §Y10 Army Experience§!, £pol_power §Y40 Political Power§!, and £convoy_texticon §Y10 Convoys§! to select this decision.\nThe £convoy_texticon §YConvoys§! will be §Grefunded§! on completion.§!"
-  WTC_SGR_rockets_req_blocked: "£army_experience  §R10§! £pol_power  §R40§! £convoy_texticon  §R10§!"
-  WTC_SGR_rockets_req: "£army_experience  §Y10§! £pol_power  §Y40§! £convoy_texticon  §Y10§!"
-  WTC_SGR_rockets_rev_tip: "§LThe §Y[WTC.GetName]§! will receive §Y[SGR.GetAdjective]§! rocket equipment and form two divisions that will marshal in Baltimare.\n\nThe Pyrotechnica Company and\nThe Flamin' Red Heads composted of...\n1 §9rocket artillery brigade§! and 3 §7infantry brigades§!.§!"
- WTC_WNG_trains: "Purchase [WNG.GetAdjective] Trains"
-  WTC_WNG_trains_desc: "With the Equestrian rail network rendered into shambles in recent years we have no means of transporting equipment and supplies deeper inland from the coastline. To correct this we need trains. The [WNG.GetAdjective]s are known to have powerful locomotives that they may be willing to sell. Perhaps we could work out a deal to obtain their older models.\n\n§WThe §Y[WTC.GetName]§! will need...\n£pol_power §Y30 Political Power§! and £convoy_texticon §Y1 Convoy§! to select this decision.\nThe £convoy_texticon §YConvoy§! will be §Grefunded§! on completion.§!"
-  WTC_WNG_trains_req_blocked: "£pol_power  §R30§! £convoy_texticon  §R1§!"
-  WTC_WNG_trains_req: "£pol_power  §Y30§! £convoy_texticon  §Y1§!"
-  WTC_WNG_trains_rev_tip: "§LThe §Y[WTC.GetName]§! will receive a §Y[WNG.GetAdjective]§! locomotive.§!"
- WTC_GRI_rifles: "Purchase [GRI.GetAdjective] Rifles"
-  WTC_GRI_rifles_desc: "The ability to produce modern Equestrian rifles in bulk has largely been lost due to constant infighting between nation-states. To overcome this setback, we must look abroad for such equipment in spit of foreign intervention. Within [GRI.GetNameDEF] are stockpiled many older rifles that may be useful should we convince them to sell to us. If we can't legally purchase such goods, we will find someone who is willing otherwise.\n\n§WThe §Y[WTC.GetName]§! will need...\n£pol_power §Y15 Political Power§! and £convoy_texticon §Y10 Convoys§! to select this decision.\nThe £convoy_texticon §YConvoys§! will be §Grefunded§! on completion.§!"
-  WTC_GRI_rifles_req_blocked: "£pol_power  §R15§! £convoy_texticon  §R10§!"
-  WTC_GRI_rifles_req: "£pol_power  §Y15§! £convoy_texticon  §Y10§!"
-  WTC_GRI_rifles_rev_tip: "§LThe §Y[WTC.GetName]§! will receive §Y[GRI.GetAdjective] $GRI_infantry_equipment_0$ rifles§!.\n\nNOTE: You can only select this decision three times.§!"
-##Recruit Soldiers (EDRG_oob)##
-WTC_Rmerc: "Expand More Mercenary Companies"
- WTC_Rmerc_desc: ""
-  WTC_merc_cap_add: "Raises the division cap of §YMercenary Brigade§! by §G1§!. The current division cap is §Y[?WTC_merc_cap]§!."
- WTC_Emerc: "Enlargen Mercenary Company Size"
-  WTC_Emerc_req_blocked: "£army_experience  §R5§!"
-  WTC_Emerc_req: "£army_experience  §Y5§!"
-  WTC_merc_cost_add: "Expands the §YMercenary Brigade§! divisions by adding an §7infantry battalion§!.\nThe current amount of §7infantry battalions§! is §Y[?WTC_merc_cost]§!."
- WTC_Emerc_art: "Enlargen Mercenary Company With Artillery"
-  WTC_Emerc_art_added: "§YMercenary Company§! has an §8artillery battalion§!."
-  WTC_Emerc_art_req_blocked: "$WTC_Emerc_req_blocked$"
-  WTC_Emerc_art_req: "$WTC_Emerc_req$"
-  WTC_Emerc_art_tooltip: "Expands the §YMercenary Brigade§! divisions by adding an §8artillery battalion§!."
-###National Focuses###
-##Storyline Tree##
-WTC_S00: "A Company Controlled From Afar"
- WTC_S00_desc: "This company was once called Haberdasher Shipping, but now it has been corrupted and changed to suit the needs of the Manehattans. And although the Company has been in my family for generations, I only am in charge because somepony in Manehattan allows it to be so. If I am to keep my family’s company and my own head, I must oblige them. Even if I must go down dark paths to do so."
- WTC_evt_a01.001.t: "Control From Afar"
-  WTC_evt_a01.001.d: "After yet another meeting with the "investors" in Manehattan, Dashing found himself sitting on the deck his ship as it drifted back into the ports of Baltimare. Looking over the ruins of the city he once called home before the revolution with sadness in his eyes. Soon enough his daughter would come from below deck and sit beside him. "Dad are you doing ok?" Hearing her voice he just smiled at her with a tired look on his face. However, while he did this he shook his head slowly and began to speak.\n\n"You know on paper and in the eyes of many down here, the Habbidasher family controls this company and land. That has got to be one of the biggest lies one could have sewn." He says before zoning out a little into space. Alicia would look at her father with a look of sadness as he stared off into the distance. She would take a deep breath before placing a tallon on his shoulder. "Regardless of those lies or misleadings, do you not see what we have been given? We have a chance to maybe rebuild this place, and if anyone has the know how it's you dad." She says with a reassuring smile before hugging the pegasi. Dashing returned the hug, but looked back to Baltimare while muttering out..."
-  WTC_evt_a01.001.a: "...I hope you are right Alicia."
- WTC_evt_a01.002.t: "Control From Afar Prt. 2"
-  WTC_evt_a01.002.d: "However, during the embrace he found himself staring out into the distance again. His mind ran wild with thoughts about what was really going on down here and who really controls this city and the company. Those five investors from Manehatten. Some of Whitegold’s most upper echelon, were the ones who decided to establish this company down here. As to why he was put in charge of it, he really could not say. All he could assume was that it would look better if a local was put in charge of things down here.\n\nHe would come back to earth just long enough to break the embrace of his daughter and send her on her way. As she left his side though a much more worrisome thought filled his mind. What would happen to him and his daughter if they outlived their usefulness or if the Manehattenites wished to assume direct control down here?"
-  WTC_evt_a01.002.a: "There is much work to do."
-# WTC_: ""
-#  WTC__desc: ""
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ ###Introduction###
+  ##Bookmark##
+   WTC_GATHERING_STORM_DESC: "$GENR_GATHERING_STORM_DESC$"
+  ##Welcome Screen##
+   EAW_WS_WTC: "The Jewel of the Jungle"
+    EAW_WS_WTC_desc: "$EAW_WS_GENR_desc$"
+ ###Politics###
+  ##Country Name##
+   WTC: "Manehattan Trading Company"
+    WTC_DEF: "the Manehattan Trading Company"
+    WTC_ADJ: "Maneglendi"
+  ##Political Parties##
+ ###Characters###
+  ##Leaders##
+   WTC_dashing_habbidasher: "Dashing Habidasher"
+    WTC_dhabbidasher_leader_desc: "$CRDC_art_tiviyl$"
+   WTC_alicia_habbidasher: "Alicia Habidasher"
+    WTC_ahabbidasher_leader_desc: "$CRDC_art_tiviyl$"
+    WTC_ahabbidasher_political_desc: "$CRDC_art_tiviyl$"
+  ##Political Advisors##
+  ##Military Advisors##
+   WTC_eloi_path: "Eloi Path"
+    WTC_epath_political_desc: "$CRDC_art_bylisboa$"
+   WTC_zebrican_mercenary: "Zebrican Mercenary"
+    WTC_zmercenary_political_desc: "$CRDC_art_bylisboa$"
+   WTC_saddle_arabian_mercenary: "Saddle Arabian Mercenary"
+    WTC_samercenary_political_desc: "$CRDC_art_bylisboa$"
+ ###Ideas###
+  WTC_no_army: "No Standing Army"
+   WTC_no_army_desc: "[WTC.GetNameDef] "
+ ###Decisions###
+  ##WTC Aquisitions##
+   WTC_purchase_technology: "[WTC.GetName] Aquistiions"
+    WTC_JER_armor: "Purchase [JER.GetAdjective] Tanks"
+     WTC_JER_armor_desc: "Aquelia is well known for their ferocious armor corps the world over. A few of my contacts may be able to convince the [JER.GetAdjective] army to sell a few older models of vehicles to me for a price. I'm sure we could come to an arangement, especially with [75.GetName] footing part of the bill.\n\n§WThe §Y[WTC.GetName]§! will need...\n£army_experience §Y45 Army Experience§!, £pol_power §Y55 Political Power§!, and £convoy_texticon §Y8 Convoys§! to select this decision.\nThe £convoy_texticon §YConvoys§! will be §Grefunded§! on completion.§!"
+    WTC_JER_armor_req_blocked: "£army_experience  §R45§! £pol_power  §R55§! £convoy_texticon  §R8§!"
+     WTC_JER_armor_req: "£army_experience  §Y45§! £pol_power  §Y55§! £convoy_texticon  §Y8§!"
+     WTC_JER_armor_rev_tip: "§LThe §Y[WTC.GetName]§! will receive §Y[JER.GetAdjective]§! early tank equipment and form two divisions that will marshal in Baltimare.\n\nThe Aquelian Light Horse composted of...\n2 §5light tank brigades§! and 3 §7infantry brigades§!.\n\nThe Coltjun Aquarium Builders composed of...\n1 §1heavy tank brigade§! and 3 §7infantry brigades§!.§!"
+    WTC_SGR_rockets: "Purchase [SGR.GetAdjective] Rockets"
+     WTC_SGR_rockets_desc: "Stalliongrad has been experimenting with military rocketry for the last decade, especially in the wake of the Crystal War and it's disturbing aftermath. This technology has the potential to level the playing field literally. It would be in our best interest to aquire this technology, whether it be from the [SGR.GetAdjective]s themselves or their foreign benifactors.\n\n§WThe §Y[WTC.GetName]§! will need...\n£army_experience §Y10 Army Experience§!, £pol_power §Y40 Political Power§!, and £convoy_texticon §Y10 Convoys§! to select this decision.\nThe £convoy_texticon §YConvoys§! will be §Grefunded§! on completion.§!"
+     WTC_SGR_rockets_req_blocked: "£army_experience  §R10§! £pol_power  §R40§! £convoy_texticon  §R10§!"
+     WTC_SGR_rockets_req: "£army_experience  §Y10§! £pol_power  §Y40§! £convoy_texticon  §Y10§!"
+     WTC_SGR_rockets_rev_tip: "§LThe §Y[WTC.GetName]§! will receive §Y[SGR.GetAdjective]§! rocket equipment and form two divisions that will marshal in Baltimare.\n\nThe Pyrotechnica Company and\nThe Flamin' Red Heads composted of...\n1 §9rocket artillery brigade§! and 3 §7infantry brigades§!.§!"
+    WTC_WNG_trains: "Purchase [WNG.GetAdjective] Trains"
+     WTC_WNG_trains_desc: "With the Equestrian rail network rendered into shambles in recent years we have no means of transporting equipment and supplies deeper inland from the coastline. To correct this we need trains. The [WNG.GetAdjective]s are known to have powerful locomotives that they may be willing to sell. Perhaps we could work out a deal to obtain their older models.\n\n§WThe §Y[WTC.GetName]§! will need...\n£pol_power §Y30 Political Power§! and £convoy_texticon §Y1 Convoy§! to select this decision.\nThe £convoy_texticon §YConvoy§! will be §Grefunded§! on completion.§!"
+     WTC_WNG_trains_req_blocked: "£pol_power  §R30§! £convoy_texticon  §R1§!"
+     WTC_WNG_trains_req: "£pol_power  §Y30§! £convoy_texticon  §Y1§!"
+     WTC_WNG_trains_rev_tip: "§LThe §Y[WTC.GetName]§! will receive a §Y[WNG.GetAdjective]§! locomotive.§!"
+    WTC_GRI_rifles: "Purchase [GRI.GetAdjective] Rifles"
+     WTC_GRI_rifles_desc: "The ability to produce modern Equestrian rifles in bulk has largely been lost due to constant infighting between nation-states. To overcome this setback, we must look abroad for such equipment in spit of foreign intervention. Within [GRI.GetNameDEF] are stockpiled many older rifles that may be useful should we convince them to sell to us. If we can't legally purchase such goods, we will find someone who is willing otherwise.\n\n§WThe §Y[WTC.GetName]§! will need...\n£pol_power §Y15 Political Power§! and £convoy_texticon §Y10 Convoys§! to select this decision.\nThe £convoy_texticon §YConvoys§! will be §Grefunded§! on completion.§!"
+     WTC_GRI_rifles_req_blocked: "£pol_power  §R15§! £convoy_texticon  §R10§!"
+     WTC_GRI_rifles_req: "£pol_power  §Y15§! £convoy_texticon  §Y10§!"
+     WTC_GRI_rifles_rev_tip: "§LThe §Y[WTC.GetName]§! will receive §Y[GRI.GetAdjective] $GRI_infantry_equipment_0$ rifles§!.\n\nNOTE: You can only select this decision three times.§!"
+  ##Recruit Soldiers (EDRG_oob)##
+   WTC_Rmerc: "Expand More Mercenary Companies"
+    WTC_Rmerc_desc: ""
+    WTC_merc_cap_add: "Raises the division cap of §YMercenary Brigade§! by §G1§!. The current division cap is §Y[?WTC_merc_cap]§!."
+   WTC_Emerc: "Enlargen Mercenary Company Size"
+    WTC_Emerc_req_blocked: "£army_experience  §R5§!"
+    WTC_Emerc_req: "£army_experience  §Y5§!"
+    WTC_merc_cost_add: "Expands the §YMercenary Brigade§! divisions by adding an §7infantry battalion§!.\nThe current amount of §7infantry battalions§! is §Y[?WTC_merc_cost]§!."
+   WTC_Emerc_art: "Enlargen Mercenary Company With Artillery"
+    WTC_Emerc_art_added: "§YMercenary Company§! has an §8artillery battalion§!."
+    WTC_Emerc_art_req_blocked: "$WTC_Emerc_req_blocked$"
+    WTC_Emerc_art_req: "$WTC_Emerc_req$"
+    WTC_Emerc_art_tooltip: "Expands the §YMercenary Brigade§! divisions by adding an §8artillery battalion§!."
+ ###National Focuses###
+  ##Storyline Tree##
+   WTC_S00: "A Company Controlled From Afar"
+    WTC_S00_desc: "This company was once called Haberdasher Shipping, but now it has been corrupted and changed to suit the needs of the Manehattans. And although the Company has been in my family for generations, I only am in charge because somepony in Manehattan allows it to be so. If I am to keep my family’s company and my own head, I must oblige them. Even if I must go down dark paths to do so."
+    WTC_evt_a01.001.t: "Control From Afar"
+     WTC_evt_a01.001.d: "After yet another meeting with the "investors" in Manehattan, Dashing found himself sitting on the deck his ship as it drifted back into the ports of Baltimare. Looking over the ruins of the city he once called home before the revolution with sadness in his eyes. Soon enough his daughter would come from below deck and sit beside him. "Dad are you doing ok?" Hearing her voice he just smiled at her with a tired look on his face. However, while he did this he shook his head slowly and began to speak.\n\n"You know on paper and in the eyes of many down here, the Habbidasher family controls this company and land. That has got to be one of the biggest lies one could have sewn." He says before zoning out a little into space. Alicia would look at her father with a look of sadness as he stared off into the distance. She would take a deep breath before placing a tallon on his shoulder. "Regardless of those lies or misleadings, do you not see what we have been given? We have a chance to maybe rebuild this place, and if anyone has the know how it's you dad." She says with a reassuring smile before hugging the pegasi. Dashing returned the hug, but looked back to Baltimare while muttering out..."
+     WTC_evt_a01.001.a: "...I hope you are right Alicia."
+    WTC_evt_a01.002.t: "Control From Afar Prt. 2"
+     WTC_evt_a01.002.d: "However, during the embrace he found himself staring out into the distance again. His mind ran wild with thoughts about what was really going on down here and who really controls this city and the company. Those five investors from Manehatten. Some of Whitegold’s most upper echelon, were the ones who decided to establish this company down here. As to why he was put in charge of it, he really could not say. All he could assume was that it would look better if a local was put in charge of things down here.\n\nHe would come back to earth just long enough to break the embrace of his daughter and send her on her way. As she left his side though a much more worrisome thought filled his mind. What would happen to him and his daughter if they outlived their usefulness or if the Manehattenites wished to assume direct control down here?"
+     WTC_evt_a01.002.a: "There is much work to do."

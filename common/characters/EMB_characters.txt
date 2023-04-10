@@ -1,91 +1,87 @@
-characters={
-	EMB_mother_nightshade={
-		name=EMB_mother_nightshade
-		portraits={
-			civilian={
-				large="GFX_EMB_mother_nightshade"
-				small="GFX_idea_EMB_mother_nightshade"
+characters = {
+	EMB_mother_nightshade = {
+		name = EMB_mother_nightshade
+		portraits = {
+			civilian = {
+				large = "GFX_EMB_mother_nightshade"
+				small = "GFX_EMB_mother_nightshade"
 			}
 		}
-		country_leader={
-			desc="EMB_mnightshade_poli_desc"
-			ideology=holy_order_f
-			traits={}
+		country_leader = {
+			desc = "EMB_mnightshade_leader_desc"
+			ideology = holy_order_f
 		}
 	}
-	EMB_councillor_tyrennadus={
-		name=EMB_councillor_tyrennadus
-		portraits={
-			civilian={
-				large="GFX_EMB_councillor_tyrennadus"
-				small="GFX_idea_EMB_councillor_tyrennadus"
+	EMB_councillor_tyrennadus = {
+		name = EMB_councillor_tyrennadus
+		portraits = {
+			civilian = {
+				large = "GFX_EMB_councillor_tyrennadus"
+				small = "GFX_EMB_councillor_tyrennadus"
 			}
-			army={
-				large="GFX_EMB_councillor_tyrennadus"
-				small="GFX_idea_EMB_councillor_tyrennadus"
+			army = {
+				large = "GFX_EMB_councillor_tyrennadus"
+				small = "GFX_EMB_councillor_tyrennadus"
 			}
 		}
-		country_leader={
-			desc="EMB_ctyrennadus_poli_desc"
-			ideology=primitive_communism
-			traits={}
+		country_leader = {
+			desc = "EMB_ctyrennadus_leader_desc"
+			ideology = primitive_communism
 		}
-		corps_commander={
-			desc="EMB_ctyrennadus_cmdr_desc"
-			skill=2
-			attack_skill=2
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=1
-			traits={
+		corps_commander = {
+			desc = "EMB_ctyrennadus_commander_desc"
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 1
+			traits = {
 				changeling_race_trait
 				old_guard
 			}
 		}
 	}
-	EMB_queen_narratek={
-		name=EMB_queen_narratek
-		portraits={
-			civilian={
-				large="GFX_EMB_queen_narratek"
-				small="GFX_idea_EMB_queen_narratek"
+	EMB_queen_narratek = {
+		name = EMB_queen_narratek
+		portraits = {
+			civilian = {
+				large = "GFX_EMB_queen_narratek"
+				small = "GFX_EMB_queen_narratek"
 			}
 		}
-		country_leader={
-			desc="EMB_qnarratek_poli_desc"
-			ideology=tribal_council
-			traits={}
+		country_leader = {
+			desc = "EMB_qnarratek_leader_desc"
+			ideology = tribal_council
 		}
 	}
-	EMB_aetanae_krix={	#Willow
-		name=EMB_aetanae_krix
-		portraits={
-			civilian={
-				large="GFX_EMB_aetanae_krix"
-				small="GFX_idea_EMB_aetanae_krix"
+	EMB_aetanae_krix = {	#Willow
+		name = EMB_aetanae_krix
+		portraits = {
+			civilian = {
+				large = "GFX_EMB_aetanae_krix"
+				small = "GFX_EMB_aetanae_krix"
 			}
 		}
-		country_leader={
-			desc="EMB_akrix_poli_desc"
-			ideology=tribal_federation
-			traits={}
+		country_leader = {
+			desc = "EMB_akrix_leader_desc"
+			ideology = tribal_federation
 		}
 	}
-	EMB_hithax_ballas={
-		name=EMB_hithax_ballas
-		portraits={
-			army={
-				large="GFX_EMB_hithax_ballas"
-				small="GFX_idea_EMB_hithax_ballas"
+	EMB_hithax_ballas = {
+		name = EMB_hithax_ballas
+		portraits = {
+			army = {
+				large = "GFX_EMB_hithax_ballas"
+				small = "GFX_EMB_hithax_ballas"
 			}
 		}
 	}
-	EMB_lavender_opal={
-		name=EMB_lavender_opal
-		portraits={
-			army={
-				large="GFX_EMB_lavender_opal"
-				small="GFX_idea_EMB_lavender_opal"
+	EMB_lavender_opal = {
+		name = EMB_lavender_opal
+		portraits = {
+			army = {
+				large = "GFX_EMB_lavender_opal"
+				small = "GFX_EMB_lavender_opal"
 			}
 		}
 	}

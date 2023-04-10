@@ -3,20 +3,20 @@ characters = {
 		name = CLD_ebn_flow
 		portraits = {
 			civilian = {
-				large = "GFX_CLD_ebn_flow"
-				small = "GFX_CLD_ebn_flow_small"
+				large = GFX_CLD_ebn_flow
+				small = GFX_CLD_ebn_flow_small
 			}
 			army = {
-				large = "GFX_CLD_ebn_flow"
-				small = "GFX_CLD_ebn_flow_small"
+				large = GFX_CLD_ebn_flow
+				small = GFX_CLD_ebn_flow_small
 			}
 		}
 		country_leader = {
-			desc = "CLD_eflow_leader_desc"
+			desc = CLD_eflow_leader_desc
 			ideology = stratocracy
 		}
 		corp_commander = {
-			desc = "CLD_eflow_commander_desc"
+			desc = CLD_eflow_commander_desc
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -31,28 +31,31 @@ characters = {
 		name = CLD_wonderbolt_remnant
 		portraits = {
 			civilian = {
-				large = "GFX_CLD_wonderbolt_remnant"
-				small = "GFX_CLD_wonderbolt_remnant_small"
+				large = GFX_CLD_wonderbolt_remnant
+				small = GFX_CLD_wonderbolt_remnant_small
 			}
 			army = {
-				large = "GFX_CLD_wonderbolt_remnant"
-				small = "GFX_CLD_wonderbolt_remnant_small"
+				large = GFX_CLD_wonderbolt_remnant
+				small = GFX_CLD_wonderbolt_remnant_small
 			}
 		}
 		country_leader = {
-			desc = "CLD_wremnant_leader_desc"
+			desc = CLD_wremnant_leader_desc
 			ideology = harmonic_libertarianism
+			traits = { disorganized_trait }
 		}
 		country_leader = {
-			desc = "CLD_wremnant_leader_desc"
+			desc = CLD_wremnant_leader_desc
 			ideology = leninism
+			traits = { disorganized_trait }
 		}
 		country_leader = {
-			desc = "CLD_wremnant_leader_desc"
+			desc = CLD_wremnant_leader_desc
 			ideology = oligarchism
+			traits = { disorganized_trait }
 		}
 		field_marshal = {
-			desc = "CLD_wremnant_commander_desc"
+			desc = CLD_wremnant_commander_desc
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1

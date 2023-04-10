@@ -1,44 +1,40 @@
-characters={
-	NIH_cursed_fate={
-		name=NIH_cursed_fate
-		portraits={
-			civilian={
-				large="GFX_NIH_cursed_fate"
-				small="GFX_idea_NIH_cursed_fate"
+characters = {
+	NIH_cursed_fate = {
+		name = NIH_cursed_fate
+		portraits = {
+			civilian = {
+				large = "GFX_NIH_cursed_fate"
+				small = "GFX_NIH_cursed_fate"
 			}
-			army={
-				large="gfx/leaders/NIH/NIH_cursed_fate.dds"
-				small="GFX_idea_NIH_cursed_fate"
+			army = {
+				large = "gfx/leaders/NIH/NIH_cursed_fate.dds"
+				small = "GFX_NIH_cursed_fate"
 			}
 		}
-		country_leader={
-			desc="NIH_cfate_poli_desc"
-			ideology=despotism
-			traits={}
+		country_leader = {
+			desc = "NIH_cfate_leader_desc"
+			ideology = despotism
 		}
-		country_leader={
-			desc="NIH_cfate_poli_desc"
-			ideology=conservatism
-			traits={}
+		country_leader = {
+			desc = "NIH_cfate_leader_desc"
+			ideology = conservatism
 		}
-		country_leader={
-			desc="NIH_cfate_poli_desc"
-			ideology=democratic_socialism
-			traits={}
+		country_leader = {
+			desc = "NIH_cfate_leader_desc"
+			ideology = democratic_socialism
 		}
-		country_leader={
-			desc="NIH_cfate_poli_desc"
-			ideology=fascism_ideology
-			traits={}
+		country_leader = {
+			desc = "NIH_cfate_leader_desc"
+			ideology = fascism_ideology
 		}
-		corps_commander={
-			desc="NIH_cfate_cmdr_desc"
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			traits={pony_race_trait}
+		corps_commander = {
+			desc = "NIH_cfate_commander_desc"
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			traits = {pony_race_trait}
 		}
 	}
 }

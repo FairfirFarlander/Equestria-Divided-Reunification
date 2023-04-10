@@ -13,7 +13,7 @@ TRT_fascism: "Trottingham Protectorate"
   TRT_communism_DEF: "the Socialist Republic of the Griffish Isles"
   TRT_communism_ADJ: "Treilish"
  TRT_neutrality: "Trottingham City-State"
-  TRT_neutrality_DEF: "The City-State of Trottingham"
+  TRT_neutrality_DEF: "the City-State of Trottingham"
  TRT_democratic: "Equestrian Republic"
   TRT_democratic_DEF: "the Republic of Equestria"
 ###Political Parties###
@@ -28,13 +28,13 @@ TRT_fascism_party: "NSTWP"
 ###Characters###
 ##Leaders##
 TRT_rapid_fire: "Rapid Fire"
- TRT_rfire_poli_desc: ""
- TRT_rfire_mili_desc: "$TRT_rfire_poli_desc$"
+ TRT_rfire_political_desc: ""
+ TRT_rfire_commander_desc: "$TRT_rfire_political_desc$"
  TRT_teddy_hoosevelt: "Teddy Hoosevelt"
-  TRT_thoosevelt_poli_desc: ""
-  TRT_thoosevelt_mili_desc: "$TRT_thoosevelt_poli_desc$"
+  TRT_thoosevelt_political_desc: ""
+  TRT_thoosevelt_commander_desc: "$TRT_thoosevelt_political_desc$"
  TRT_harshwhinny: "Ms. Harshwhinny"
-  TRT_harshwhinny_poli_desc: ""
+  TRT_harshwhinny_political_desc: ""
 ##Commanders##
 ##Political Advisors##
 ##Military Advisors##

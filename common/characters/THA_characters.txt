@@ -1,89 +1,83 @@
-characters={
-	THA_argent_end={
-		name=THA_argent_end
-		portraits={
-			civilian={
-				large="GFX_THA_argent_end"
-				small="GFX_idea_THA_argent_end"
+characters = {
+	THA_argent_end = {
+		name = THA_argent_end
+		portraits = {
+			civilian = {
+				large = "GFX_THA_argent_end"
+				small = "GFX_THA_argent_end"
 			}
-			army={
-				large="GFX_THA_argent_end"
-				small="GFX_idea_THA_argent_end"
+			army = {
+				large = "GFX_THA_argent_end"
+				small = "GFX_THA_argent_end"
 			}
 		}
-		country_leader={
-			desc="THA_aend_poli_desc"
-			ideology=despotism
-			expire="1014.06.06.21"	#Used to be 1014
-			traits={}
+		country_leader = {
+			desc = "THA_aend_leader_desc"
+			ideology = despotism
+			expire = "1014.06.06.21"	#Used to be 1014
 		}
-		country_leader={
-			desc="THA_aend_poli_desc"
-			ideology=democratic_socialism
-			traits={}
+		country_leader = {
+			desc = "THA_aend_leader_desc"
+			ideology = democratic_socialism
 		}
-		field_marshal={
-			desc="THA_aend_cmdr_desc"
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			traits={thestral_race_trait}
+		field_marshal = {
+			desc = "THA_aend_commander_desc"
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			traits = {thestral_race_trait}
 		}
 	}
-	THA_auburn_peak={
-		name=THA_auburn_peak
-		portraits={
-			civilian={
-				large="GFX_THA_auburn_peak"
-				small="GFX_idea_THA_auburn_peak"
+	THA_auburn_peak = {
+		name = THA_auburn_peak
+		portraits = {
+			civilian = {
+				large = "GFX_THA_auburn_peak"
+				small = "GFX_THA_auburn_peak"
 			}
-			army={
-				large="GFX_THA_auburn_peak"
-				small="GFX_idea_THA_auburn_peak"
+			army = {
+				large = "GFX_THA_auburn_peak"
+				small = "GFX_THA_auburn_peak"
 			}
 		}
-		country_leader={
-			desc="THA_apeak_poli_desc"
-			ideology=holy_order_f
-			traits={}
+		country_leader = {
+			desc = "THA_apeak_leader_desc"
+			ideology = holy_order_f
 		}
-		corps_commander={
-			desc="THA_apeak_cmdr_desc"
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			traits={thestral_race_trait}
+		corps_commander = {
+			desc = "THA_apeak_commander_desc"
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			traits = {thestral_race_trait}
 		}
-		advisor={
-			slot=army_chief
-			cost=150
-			idea_token=THA_apeak_chie
-			traits={}
+		advisor = {
+			slot = army_chief
+			cost = 150
+			idea_token = THA_apeak_chie
 		}
 	}
-	THA_the_niece={
-		name=THA_the_niece
-		gender=female
-		portraits={
-			civilian={
-				large="GFX_portrait_eqs_pony_generic_23"
-				small="GFX_portrait_eqs_pony_generic_23_small"
+	THA_the_niece = {
+		name = THA_the_niece
+		gender = female
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_eqs_pony_generic_23"
+				small = "GFX_portrait_eqs_pony_generic_23_small"
 			}
 		}
-		country_leader={
-			desc="THA_tniece_poli_desc"
-			ideology=harmonic_libertarianism
-			traits={}
+		country_leader = {
+			desc = "THA_tniece_leader_desc"
+			ideology = harmonic_libertarianism
 		}
-		advisor={
-			slot=political_advisor
-			cost=2000	#change me later
-			idea_token=THA_tniece_advi
-			traits={}
+		advisor = {
+			slot = political_advisor
+			cost = 2000	#change me later
+			idea_token = THA_tniece_advi
 		}
 	}
 }

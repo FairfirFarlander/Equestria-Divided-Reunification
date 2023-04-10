@@ -1,131 +1,127 @@
-characters={
-	HEB_applejack={	#Supreme Commander
-		name=HEB_applejack
-		gender=female
-		portraits={
-			civilian={
-				large="GFX_HEB_applejack_poli"
-				small="GFX_idea_HEB_applejack_poli"
+characters = {
+	HEB_applejack = {	#Supreme Commander
+		name = HEB_applejack
+		gender = female
+		portraits = {
+			civilian = {
+				large = "GFX_HEB_applejack_poli"
+				small = "GFX_HEB_applejack_poli"
 			}
-			army={
-				large="GFX_HEB_applejack_mili"
-				small="GFX_idea_HEB_applejack_mili"
+			army = {
+				large = "GFX_HEB_applejack_mili"
+				small = "GFX_HEB_applejack_mili"
 			}
 		}
-		country_leader={
-			desc="HEB_applejack_poli_desc"
-			ideology=nazism
-			traits={}
+		country_leader = {
+			desc = "HEB_applejack_leader_desc"
+			ideology = nazism
 		}
-		field_marshal={
-			desc="HEB_applejack_cmdr_desc"
-			skill=2
-			attack_skill=3
-			defense_skill=3
-			planning_skill=1
-			logistics_skill=1
-			traits={
+		field_marshal = {
+			desc = "HEB_applejack_commander_desc"
+			skill = 2
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 1
+			traits = {
 				pony_race_trait
 				ranger
 				offensive_doctrine
 			}
 		}
 	}
-	HEB_jack_trader={
-		name=HEB_jack_trader
-		portraits={
-			civilian={large="GFX_portrait_pony_generic_land_13"}
+	HEB_jack_trader = {
+		name = HEB_jack_trader
+		portraits = {
+			civilian = {large = "GFX_portrait_pony_generic_land_13"}
 		}
-		country_leader={
-			desc="HEB_jtrader_poli_desc"
-			ideology=anarchist_communism
-			traits={}
-		}
-	}
-	HEB_magia_saviour={
-		name=HEB_magia_saviour
-		gender=female
-		portraits={
-			civilian={large="GFX_portrait_riv_pony_generic_1"}
-		}
-		country_leader={
-			desc="HEB_msaviour_poli_desc"
-			ideology=despotism
-			traits={}
+		country_leader = {
+			desc = "HEB_jtrader_leader_desc"
+			ideology = anarchist_communism
 		}
 	}
-	HEB_raving_cloud={
-		name=HEB_raving_cloud
-		gender=female
-		portraits={
-			civilian={large="GFX_portrait_pony_generic_land_9"}
+	HEB_magia_saviour = {
+		name = HEB_magia_saviour
+		gender = female
+		portraits = {
+			civilian = {large = "GFX_portrait_riv_pony_generic_1"}
 		}
-		country_leader={
-			desc="HEB_rcloud_poli_desc"
-			ideology=liberalism
-			traits={}
+		country_leader = {
+			desc = "HEB_msaviour_leader_desc"
+			ideology = despotism
 		}
 	}
-	HEB_big_mac={
-		name=HEB_big_mac
-		portraits={
-			army={
-				large="GFX_HEB_big_mac"
-				small="GFX_idea_HEB_big_mac"
+	HEB_raving_cloud = {
+		name = HEB_raving_cloud
+		gender = female
+		portraits = {
+			civilian = {large = "GFX_portrait_pony_generic_land_9"}
+		}
+		country_leader = {
+			desc = "HEB_rcloud_leader_desc"
+			ideology = liberalism
+		}
+	}
+	HEB_big_mac = {
+		name = HEB_big_mac
+		portraits = {
+			army = {
+				large = "GFX_HEB_big_mac"
+				small = "GFX_HEB_big_mac"
 			}
 		}
-		corps_commander={
-			desc="HEB_bmac_cmdr_desc"
-			skill=2
-			attack_skill=2
-			defense_skill=3
-			planning_skill=1
-			logistics_skill=2
-			traits={
+		corps_commander = {
+			desc = "HEB_bmac_commander_desc"
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+			traits = {
 				pony_race_trait
 				inflexible_strategist
 			}
 		}
 	}
-	HEB_braeburn={
-		name=HEB_braeburn
-		portraits={
-			army={
-				large="GFX_HEB_braeburn"
-				small="GFX_idea_HEB_braeburn"
+	HEB_braeburn = {
+		name = HEB_braeburn
+		portraits = {
+			army = {
+				large = "GFX_HEB_braeburn"
+				small = "GFX_HEB_braeburn"
 			}
 		}
-		corps_commander={
-			desc="HEB_braeburn_cmdr_desc"
-			skill=2
-			attack_skill=2
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=4
-			traits={
+		corps_commander = {
+			desc = "HEB_braeburn_commander_desc"
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 4
+			traits = {
 				pony_race_trait
 				urban_assault_specialist
 				desert_fox
 			}
 		}
 	}
-	HEB_lightning_dust={
-		name=HEB_lightning_dust
-		gender=female
-		portraits={
-			army={
-				large="GFX_HEB_lightning_dust"
-				small="GFX_idea_HEB_lightning_dust"
+	HEB_lightning_dust = {
+		name = HEB_lightning_dust
+		gender = female
+		portraits = {
+			army = {
+				large = "GFX_HEB_lightning_dust"
+				small = "GFX_HEB_lightning_dust"
 			}
 		}
-		corps_commander={
-			desc="HEB_ldust_cmdr_desc"
-			skill=2
-			attack_skill=3
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=1
-			traits={
+		corps_commander = {
+			desc = "HEB_ldust_commander_desc"
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			traits = {
 				pony_race_trait
 				trait_reckless
 				harsh_leader
@@ -133,70 +129,66 @@ characters={
 			}
 		}
 	}
-	HEB_chief_strongheart={
-		name=HEB_chief_strongheart
-		gender=female
-		portraits={
-			army={
-				large="GFX_HEB_chief_strongheart"
-				small="GFX_idea_HEB_chief_strongheart"
+	HEB_chief_strongheart = {
+		name = HEB_chief_strongheart
+		gender = female
+		portraits = {
+			army = {
+				large = "GFX_HEB_chief_strongheart"
+				small = "GFX_HEB_chief_strongheart"
 			}
 		}
-		corps_commander={
-			desc="HEB_cstrongheart_cmdr_desc"
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=2
-			traits={
+		corps_commander = {
+			desc = "HEB_cstrongheart_commander_desc"
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+			traits = {
 				buffalo_race_trait
 				inspirational_leader
 			}
 		}
-		advisor={
-			slot=political_advisor
-			idea_token=HEB_cstrongheart_advi
-			traits={}
+		advisor = {
+			slot = political_advisor
+			idea_token = HEB_cstrongheart_advi
 		}
 	}
-	HEB_apple_bloom={
-		name=HEB_apple_bloom
-		gender=female
-		portraits={
-			civilian={
-				large="GFX_HEB_apple_bloom"
-				small="GFX_idea_HEB_apple_bloom"
+	HEB_apple_bloom = {
+		name = HEB_apple_bloom
+		gender = female
+		portraits = {
+			civilian = {
+				large = "GFX_HEB_apple_bloom"
+				small = "GFX_HEB_apple_bloom"
 			}
-			army={
-				large="GFX_HEB_apple_bloom"
-				small="GFX_idea_HEB_apple_bloom"
+			army = {
+				large = "GFX_HEB_apple_bloom"
+				small = "GFX_HEB_apple_bloom"
 			}
 		}
-		advisor={
-			slot=political_advisor
-			idea_token=HEB_abloom_advi
-			traits={}
+		advisor = {
+			slot = political_advisor
+			idea_token = HEB_abloom_advi
 		}
 	}
-	HEB_granny_smith={
-		name=HEB_granny_smith
-		gender=female
-		portraits={
-			civilian={
-				large="GFX_HEB_granny_smith"
-				small="GFX_idea_HEB_granny_smith"
+	HEB_granny_smith = {
+		name = HEB_granny_smith
+		gender = female
+		portraits = {
+			civilian = {
+				large = "GFX_HEB_granny_smith"
+				small = "GFX_HEB_granny_smith"
 			}
 		}
-		advisor={
-			slot=political_advisor
-			idea_token=HEB_gsmith_advi
-			traits={}
+		advisor = {
+			slot = political_advisor
+			idea_token = HEB_gsmith_advi
 		}
-		advisor={
-			slot=theorist
-			idea_token=HEB_gsmith_theo
-			traits={}
+		advisor = {
+			slot = theorist
+			idea_token = HEB_gsmith_theo
 		}
 	}
 }

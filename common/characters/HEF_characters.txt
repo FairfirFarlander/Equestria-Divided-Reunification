@@ -1,78 +1,74 @@
-characters={
-	HEF_lady_fluttershy={
-		name=HEF_lady_fluttershy
-		gender=female
-		portraits={
-			civilian={
-				large="GFX_HEF_lady_fluttershy"
-				small="GFX_idea_HEF_lady_fluttershy"
+characters = {
+	HEF_lady_fluttershy = {
+		name = HEF_lady_fluttershy
+		gender = female
+		portraits = {
+			civilian = {
+				large = "GFX_HEF_lady_fluttershy"
+				small = "GFX_HEF_lady_fluttershy"
 			}
-			army={
-				large="GFX_HEF_lady_fluttershy"
-				small="GFX_idea_HEF_lady_fluttershy"
-			}
-		}
-		country_leader={
-			desc="HEF_lfluttershy_poli_desc"
-			ideology=kratokracy
-			traits={}
-		}
-		field_marshal={
-			desc="HEF_lfluttershy_cmdr_desc"
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			traits={pony_race_trait}
-		}
-	}
-	HEF_red_leaves={
-		name=HEF_red_leaves
-		portraits={
-			civilian={large="GFX_portrait_pony_generic_land_4"}
-		}
-		country_leader={
-			desc="HEF_rleaves_poli_desc"
-			ideology=anarchist_communism
-			traits={}
-		}
-	}
-	HEF_zecora={
-		name=HEF_zecora
-		gender=female
-		portraits={
-			civilian={large="gfx/leaders/ZRS/Zecora.tga"}
-			army={
-				large="gfx/leaders/ZRS/Zecora.tga"
-				small="GFX_idea_unknown_advisor"
+			army = {
+				large = "GFX_HEF_lady_fluttershy"
+				small = "GFX_HEF_lady_fluttershy"
 			}
 		}
-		country_leader={
-			desc="HEF_zecora_poli_desc"
-			ideology=tribal_council
-			traits={}
+		country_leader = {
+			desc = "HEF_lfluttershy_leader_desc"
+			ideology = kratokracy
 		}
-		corps_commander={
-			desc="HEF_zecora_cmdr_desc"
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			traits={pony_race_trait}
+		field_marshal = {
+			desc = "HEF_lfluttershy_commander_desc"
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			traits = {pony_race_trait}
 		}
 	}
-	HEF_flower_seed={
-		name=HEF_flower_seed
-		gender=female
-		portraits={
-			civilian={large="GFX_portrait_eqs_pony_generic_14"}
+	HEF_red_leaves = {
+		name = HEF_red_leaves
+		portraits = {
+			civilian = {large = "GFX_portrait_pony_generic_land_4"}
 		}
-		country_leader={
-			desc="HEF_fseed_poli_desc"
-			ideology=liberalism
-			traits={}
+		country_leader = {
+			desc = "HEF_rleaves_leader_desc"
+			ideology = anarchist_communism
+		}
+	}
+	HEF_zecora = {
+		name = HEF_zecora
+		gender = female
+		portraits = {
+			civilian = {large = "gfx/leaders/ZRS/Zecora.tga"}
+			army = {
+				large = "gfx/leaders/ZRS/Zecora.tga"
+				small = "GFX_unknown_advisor"
+			}
+		}
+		country_leader = {
+			desc = "HEF_zecora_leader_desc"
+			ideology = tribal_council
+		}
+		corps_commander = {
+			desc = "HEF_zecora_commander_desc"
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			traits = {pony_race_trait}
+		}
+	}
+	HEF_flower_seed = {
+		name = HEF_flower_seed
+		gender = female
+		portraits = {
+			civilian = {large = "GFX_portrait_eqs_pony_generic_14"}
+		}
+		country_leader = {
+			desc = "HEF_fseed_leader_desc"
+			ideology = liberalism
 		}
 	}
 }

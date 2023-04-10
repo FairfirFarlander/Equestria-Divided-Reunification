@@ -1,192 +1,201 @@
-characters={
-	CUL_the_laughing_mare={
-		name=CUL_the_laughing_mare
-		gender=female
-		portraits={
-			civilian={
-				large="GFX_CUL_the_laughing_mare_poli"
-				small="GFX_idea_CUL_the_laughing_mare_poli"
+characters = {
+	CUL_the_laughing_mare = {
+		name = CUL_the_laughing_mare
+		gender = female
+		portraits = {
+			civilian = {
+				large = GFX_CUL_the_laughing_mare_poli
+				small = GFX_CUL_the_laughing_mare_poli_small
 			}
-			army={
-				large="GFX_CUL_the_laughing_mare_mili"
-				small="GFX_idea_CUL_the_laughing_mare_mili"
+			army = {
+				large = GFX_CUL_the_laughing_mare_mili
+				small = GFX_CUL_the_laughing_mare_mili_small
 			}
 		}
-		country_leader={
-			desc="CUL_tlmare_poli_desc"
-			ideology=falangism
-			traits={FIR_necromancer}
+		country_leader = {
+			desc = CUL_tlmare_leader_desc
+			ideology = falangism
+			traits = { laughing_mare_trait }
 		}
-		country_leader={
-			desc="CUL_tlmare_poli_desc"
-			ideology=religious_socialism
-			traits={FIR_necromancer}
+		country_leader = {
+			desc = CUL_tlmare_leader_desc
+			ideology = religious_socialism
+			traits = { laughing_mare_trait }
 		}
-		country_leader={
-			desc="CUL_tlmare_poli_desc"
-			ideology=centrism
-			traits={}
+		country_leader = {
+			desc = CUL_tlmare_leader_desc
+			ideology = centrism
 		}
-		field_marshal={
-			desc="CUL_tlmare_cmdr_desc"
-			skill=6
-			attack_skill=6
-			defense_skill=6
-			planning_skill=6
-			logistics_skill=6
-			traits={unspecified_race_trait}
+		field_marshal = {
+			desc = CUL_tlmare_commander_desc
+			skill = 6
+			attack_skill = 6
+			defense_skill = 6
+			planning_skill = 6
+			logistics_skill = 6
+			traits = { unspecified_race_trait }
 		}
 	}
-	CUL_unknown_melody={
-		name=CUL_unknown_melody
-		portraits={
-			civilian={large="gfx/leaders/leader_unknown.dds"}
+	CUL_unknown_melody = {
+		name = CUL_unknown_melody
+		portraits = {
+			civilian = { large = GFX_CUL_unknown_melody }
 		}
-		country_leader={
-			desc="CUL_umelody_poli_desc"
-			ideology=liberalism
-			traits={}
-		}
-	}
-	CUL_cranky_doodle={
-		name=CUL_cranky_doodle
-		portraits={
-			civilian={small="GFX_idea_CUL_cranky_doodle"}
-		}
-		advisor={
-			slot=political_advisor
-			idea_token=CUL_cdoodle_advi
-			traits={cult_leader}	#prophet
+		country_leader = {
+			desc = CUL_umelody_leader_desc
+			ideology = liberalism
 		}
 	}
-	CUL_derpy_hooves={
-		name=CUL_derpy_hooves
-		gender=female
-		portraits={
-			civilian={small="GFX_idea_CUL_derpy_hooves"}
-			army={
-				large="GFX_CUL_derpy_hooves"
-				small="GFX_idea_CUL_derpy_hooves"
+	CUL_lyra_heartstrings = {
+		name = CUL_lyra_heartstrings
+		gender = female
+		portraits = {
+			civilian = { small = GFX_CUL_lyra_heartstrings_small }
+			army = {
+				large = GFX_CUL_lyra_heartstrings
+				small = GFX_CUL_lyra_heartstrings_small
 			}
 		}
-		corps_commander={
-			desc="CUL_dhooves_cmdr_desc"
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			traits={pony_race_trait}	#prophet
+		corps_commander = {
+			desc = CUL_lheartstrings_commander_desc
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 1
+			traits = {
+				pony_race_trait
+				bleeding_heart
+			}
 		}
-		advisor={
-			slot=high_command
-			ledger=army
-			cost=50
-			idea_token=CUL_dhooves_high
-			allowed={original_tag=CUL}
-			traits={}
+		advisor = {
+			slot = political_advisor
+			ledger = civilian
+			idea_token = CUL_lheartstrings_political
+			traits = {
+				CUL_prophet_trait
+				gypsy_bard_trait
+			}
 		}
 	}
-	CUL_lyra_heartstrings={
-		name=CUL_lyra_heartstrings
-		gender=female
-		portraits={
-			civilian={
-				small="GFX_idea_CUL_lyra_heartstrings"
-			}
-			army={
-				large="GFX_CUL_lyra_heartstrings"
-				small="GFX_idea_CUL_lyra_heartstrings"
+	CUL_screwball = {
+		name = CUL_screwball
+		gender = female
+		portraits = {
+			army = {
+				large = GFX_CUL_screwball
+				small = GFX_CUL_screwball_small
 			}
 		}
-		corps_commander={
-			desc="CUL_lheartstrings_cmdr_desc"
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			traits={pony_race_trait}	#prophet
+		corps_commander = {
+			desc = CUL_screwball_commander_desc
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 3
+			traits = { trait_unpredictable pony_race_trait }
 		}
-		advisor={
-			slot=high_command
-			ledger=army
-			cost=50
-			idea_token=CUL_lheartstrings_high
-			allowed={original_tag=CUL}
-			traits={army_regrouping_1}
+		advisor = {
+			slot = political_advisor
+			ledger = civilian
+			idea_token = CUL_screwball_political
+			cost = 100
+			traits = {
+				insane
+				occultist
+			}
 		}
 	}
-	CUL_surprise={
-		name=CUL_surprise
-		gender=female
-		portraits={
-			army={
-				large="GFX_CUL_surprise"
-				small="GFX_idea_CUL_surprise"
+	CUL_surprise = {
+		name = CUL_surprise
+		gender = female
+		portraits = {
+			army = {
+				large = GFX_CUL_surprise
+				small = GFX_CUL_surprise_small
 			}
 		}
-		corps_commander={
-			desc="CUL_surprise_cmdr_desc"
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			traits={pony_race_trait}	#prophet
+		corps_commander = {
+			desc = CUL_surprise_commander_desc
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			traits = {
+				pony_race_trait
+				trait_reckless
+				commando
+			}
+		}
+		advisor = {
+			slot = high_command
+			ledger = army
+			idea_token = CUL_surprise_highcmdr
+			cost = 100
+			traits = {
+				CUL_prophet_trait
+				army_commando_1
+			}
 		}
 	}
-	CUL_screwball={
-		name=CUL_screwball
-		gender=female
-		portraits={
-			army={
-				large="GFX_CUL_screwball"
-				small="GFX_idea_CUL_screwball"
+	CUL_pokey_pierce = {
+		name = CUL_pokey_pierce
+		portraits = {
+			army = {
+				large = GFX_CUL_pokey_pierce
+				small = GFX_CUL_pokey_pierce_small
 			}
 		}
-		corps_commander={
-			desc="CUL_screwball_cmdr_desc"
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			traits={pony_race_trait}	#prophet
+		corps_commander = {
+			desc = CUL_ppierce_commander_desc
+			skill = 2
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			traits = {
+				pony_race_trait
+			}
 		}
-		advisor={
-			slot=high_command
-			ledger=army
-			cost=50
-			idea_token=CUL_screwball_high
-			allowed={original_tag=CUL}
-			traits={}
+		advisor = {
+			slot = army_chief
+			ledger = army
+			idea_token = CUL_ppierce_chief
+			cost = 50
+			traits = { army_chief_morale_1 }
 		}
 	}
-	CUL_pokey_pierce={
-		name=CUL_pokey_pierce
-		portraits={
-			army={
-				large="GFX_CUL_pokey_pierce"
-				small="GFX_idea_CUL_pokey_pierce"
+	CUL_cranky_doodle = {
+		name = CUL_cranky_doodle
+		portraits = {
+			civilian = { small = GFX_CUL_cranky_doodle_small }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = CUL_cdoodle_political
+			ledger = civilian
+			traits = {
+				CUL_prophet_trait
+				CUL_necromancer
 			}
 		}
-		corps_commander={
-			desc="CUL_ppierce_cmdr_desc"
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			traits={pony_race_trait}	#prophet
+	}
+	CUL_derpy_hooves = {
+		name = CUL_derpy_hooves
+		gender = female
+		portraits = {
+			civilian = { small = GFX_CUL_derpy_hooves_small }
 		}
-		advisor={
-			slot=high_command
-			ledger=army
-			cost=50
-			idea_token=CUL_ppierce_high
-			allowed={original_tag=CUL}
-			traits={}
+		advisor = {
+			slot = political_advisor
+			idea_token = CUL_dhooves_political
+			ledger = civilian
+			traits = {
+				CUL_prophet_trait
+				messenger_trait
+			}
 		}
 	}
 }

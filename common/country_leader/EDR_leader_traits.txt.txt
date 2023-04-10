@@ -1,12 +1,41 @@
 leader_traits = {
-	CLD_disorganized = {
+	CUL_necromancer_trait = {
+		random = no
+		stability_factor = 0.01
+	}
+	CUL_prophet_trait = {
+		random = no
+		stability_factor = 0.01
+	}
+	disorganized_trait = {
 		random = no
 		political_advisor_cost_factor = 0.2
 	}
-	PIE_governor_trait = {
+	dragon_lord_trait = {
+		random = no
+		stability_factor = 0.01
+	}
+	governor_trait = {
 		random = no
 		stability_factor = 0.03
 	}
+	gypsy_bard_trait = {
+		random = no
+		stability_factor = 0.05
+		army_morale_factor = 0.05
+	}
+	laughing_mare_trait = {
+		random = no
+		stability_factor = 0.01
+	}
+	matriarch_trait = {
+		random = no
+		stability_factor = 0.03
+	}
+	messenger_trait = {
+		random = no
+		stability_factor = 0.13
+	}
 }
 ###NOTES###
-#PIE_governor stability factor is based off the founding of Rockville in 1803. It coincidently also bumps the stability to 81 with its current communist popularity. Go figure.
+#governor_trait stability factor is based off the founding of Rockville in 1803. It coincidently also bumps the stability to 81 with its current communist popularity. Go figure.

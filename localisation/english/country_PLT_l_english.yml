@@ -13,11 +13,11 @@ PLT: "Portland Province"
 ###Characters###
 ##Leaders##
 PLT_rael_grey: "Rael Grey"
- PLT_rgrey_poli_desc: ""
+ PLT_rgrey_political_desc: ""
  PLT_willie_hoofard_tuft: "Willie Hoofard Tuft"
-  PLT_whtuft_poli_desc: ""
+  PLT_whtuft_political_desc: ""
  PLT_thistle_tap: "Thistle Tap"
-  PLT_ttap_poli_desc: ""
+  PLT_ttap_political_desc: ""
 ##Commanders##
 ##Political Advisors##
 ##Military Advisors##

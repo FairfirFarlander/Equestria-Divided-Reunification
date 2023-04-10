@@ -1,34 +1,34 @@
 ﻿l_english:
-###Introduction###
-##Bookmark##
-ALA_GATHERING_STORM_DESC: ""
-##Welcome Screen##
- EAW_WS_ALA: ""
-  EAW_WS_ALA_desc: ""
-###Country Name###
-ALA: "Alamane"
- ALA_DEF: "the County of Alamane"
- ALA_ADJ: "Macanae"
-###Political Parties###
-ALA_fascism_party: "GOAM"
- ALA_fascism_party_long: "The Grey Order of Alamane and the Macanae"
- ALA_communism_party: "PCPA"
-  ALA_communism_party_long: "Ponies Communist Party of Alamane"
- ALA_neutrality_party: "DCAA"
-  ALA_neutrality_party_long: "The Diet of the Citizens of Prance and Albion\n"Dietem Civis Autem Alamane""
- ALA_democratic_party: "EPH"
-  ALA_democratic_party_long: "Equestrians for the Preservation of Harmony"
-###Characters###
-##Leaders##
-ALA_almond_tree: "Almond Tree"
- ALA_atree_poli_desc: ""
-##Commanders##
-##Political Advisors##
-##Military Advisors##
-###Ideas###
-###National Focuses###
-##Storyline Tree##
-ALA_I00: ""
- ALA_I00_desc: ""
- ALA_I01: ""
-  ALA_I01_desc: ""
+ ###Introduction###
+  ##Bookmark##
+   ALA_GATHERING_STORM_DESC: "$GENR_GATHERING_STORM_DESC$"
+  ##Welcome Screen##
+   EAW_WS_ALA: "$EAW_WS_GENR$"
+    EAW_WS_ALA_desc: "$EAW_WS_GENR_desc$"
+  ##Country Name##
+   ALA: "Alamane"
+    ALA_DEF: "the County of Alamane"
+    ALA_ADJ: "Macanae"
+  ##Political Parties##
+   ALA_fascism_party: "GOAM"
+    ALA_fascism_party_long: "The Grey Order of Alamane and the Macanae"
+   ALA_communism_party: "PCPA"
+    ALA_communism_party_long: "Ponies Communist Party of Alamane"
+   ALA_neutrality_party: "DCAA"
+    ALA_neutrality_party_long: "The Diet of the Citizens of Prance and Albion\n"Dietem Civis Autem Alamane""
+   ALA_democratic_party: "EPH"
+    ALA_democratic_party_long: "Equestrians for the Preservation of Harmony"
+ ###Characters###
+  ##Leaders##
+   ALA_almond_tree: "Almond Tree"
+    ALA_atree_leader_desc: ""
+  ##Commanders##
+  ##Political Advisors##
+  ##Military Advisors##
+ ###Ideas###
+ ###National Focuses###
+  ##Storyline Tree##
+   ALA_I00: ""
+    ALA_I00_desc: ""
+   ALA_I01: ""
+    ALA_I01_desc: ""
