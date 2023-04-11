@@ -1,20 +1,21 @@
 ﻿l_english:
-###Introduction###
-##Bookmark##
-TRH_GATHERING_STORM_DESC: ""
-##Welcome Screen##
- EAW_WS_TRH: ""
-  EAW_WS_TRH_desc: ""
-###Characters###
-##Leaders##
-##Commanders##
-##Political Advisors##
-##Military Advisors##
-###Country Name###
-TRH: "Twilight Range Hold"
- TRH_DEF: "the Thestral Hold of the Twilight Range"
- TRH_ADJ: "Thestrali"
-###Political Parties###
-###Ideas###
-###National Focuses###
-##Storyline Tree##
+ ###Introduction###
+  ##Bookmark##
+   TRH_GATHERING_STORM_DESC: "$GENR_GATHERING_STORM_DESC$"
+  ##Welcome Screen##
+   EAW_WS_TRH: "$EAW_WS_GENR_desc$"
+    EAW_WS_TRH_desc: "$EAW_WS_GENR_desc$"
+ ###Characters###
+  ##Leaders##
+  ##Commanders##
+  ##Political Advisors##
+  ##Military Advisors##
+ ###Poltics###
+  ##Country Name##
+   TRH: "Twilight Range Hold"
+    TRH_DEF: "the Thestral Hold of the Twilight Range"
+    TRH_ADJ: "Thestrali"
+  ##Political Parties##
+ ###Ideas###
+ ###National Focuses###
+  ##Storyline Tree##

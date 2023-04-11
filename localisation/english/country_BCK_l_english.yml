@@ -16,15 +16,15 @@
    BCK_rockfeller: "J.D.Rockfeller"
     BCK_rockfeller_leader_desc: "$rockfeller_desc$"
    BCK_syndicate_council: "Syndicate Council"
-    BCK_scouncil_leader_desc: ""
+    BCK_scouncil_leader_desc: "$GENR_advisor_desc$"
    BCK_merry_wreath: "Merry Wreath"
-    BCK_mwreath_leader_desc: ""
+    BCK_mwreath_leader_desc: "$GENR_advisor_desc$"
     BCK_mwreath_commander_desc: "$BCK_mwreath_leader_desc$"
    BCK_sea_prism: "Sea Prism"
-    BCK_sprism_leader_desc: ""
+    BCK_sprism_leader_desc: "$GENR_advisor_desc$"
   ##Commanders##
    BCK_hallow_green: "Hallow Green"
-    BCK_hgreen_commander_desc: ""
+    BCK_hgreen_commander_desc: "$GENR_advisor_desc$"
   ##Political Advisors##
   ##Military Advisors##
  ###Ideas###

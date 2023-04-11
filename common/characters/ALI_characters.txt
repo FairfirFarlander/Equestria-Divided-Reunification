@@ -5,19 +5,19 @@ characters = {
 			civilian = { large = GFX_portrait_pony_generic_1 }
 		}
 		country_leader = {
-			desc = "ALA_ealba_leader_desc"
+			desc = ALI_ealba_leader_desc
 			ideology = despotism
 		}
 		country_leader = {
-			desc = "ALA_ealba_leader_desc"
+			desc = ALI_ealba_leader_desc
 			ideology = conservatism
 		}
 		country_leader = {
-			desc = "ALA_ealba_leader_desc"
+			desc = ALI_ealba_leader_desc
 			ideology = democratic_socialism
 		}
 		country_leader = {
-			desc = "ALA_ealba_leader_desc"
+			desc = ALI_ealba_leader_desc
 			ideology = fascism_ideology
 		}
 	}

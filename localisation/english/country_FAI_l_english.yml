@@ -1,10 +1,10 @@
 ﻿l_english:
  ###Introduction###
   ##Bookmark##
-   FAI_GATHERING_STORM_DESC: ""
+   FAI_GATHERING_STORM_DESC: "$GENR_GATHERING_STORM_DESC$"
   ##Welcome Screen##
-   EAW_WS_FAI: ""
-    EAW_WS_FAI_desc: ""
+   EAW_WS_FAI: "$EAW_WS_GENR$"
+    EAW_WS_FAI_desc: "$EAW_WS_GENR_desc$"
  ###Country Name###
   ##Base##
    FAI: "Pondesa"
@@ -17,10 +17,10 @@
  ###Characters###
   ##Leaders##
    FAI_poppy_seed: "Poppy Seed"
-    FAI_pseed_political_desc: ""
+    FAI_pseed_leader_desc: "$CRDC_art_tiviyl$"
   ##Commanders##
    FAI_meringue: "Brother Meringue"
-    FAI_meringue_commander_desc: ""
+    FAI_meringue_commander_desc: "$CRDC_art_tiviyl$"
   ##Political Advisors##
   ##Military Advisors##
  ###Ideas###

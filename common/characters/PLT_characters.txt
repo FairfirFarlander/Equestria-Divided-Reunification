@@ -4,16 +4,16 @@ characters = {
 		gender = female
 		portraits = {
 			civilian = {
-				large = "GFX_portrait_eqs_pony_generic_16"
-				small = "GFX_portrait_eqs_pony_generic_16_small"
+				large = GFX_portrait_eqs_pony_generic_16
+				small = GFX_portrait_eqs_pony_generic_16_small
 			}
 		}
 		country_leader = {
-			desc = "PLT_rgrey_leader_desc"
+			desc = PLT_rgrey_leader_desc
 			ideology = bandit
 		}
 		country_leader = {
-			desc = "PLT_rgrey_leader_desc"
+			desc = PLT_rgrey_leader_desc
 			ideology = leninism
 		}
 	}
@@ -21,26 +21,26 @@ characters = {
 		name = PLT_willie_hoofard_tuft
 		portraits = {
 			civilian = {
-				large = "GFX_portrait_pony_generic_land_3"
-				small = "GFX_portrait_pony_generic_land_3_small"
+				large = GFX_portrait_pony_generic_land_3
+				small = GFX_portrait_pony_generic_land_3_small
 			}
 		}
 		country_leader = {
-			desc = "PLT_whtuft_leader_desc"
+			desc = PLT_whtuft_leader_desc
 			ideology = republicanism
-			traits = {appeaser}	#Add some anti-trust.#
+			traits = { appeaser }	#Add some anti-trust.#
 		}
 	}
 	PLT_thistle_tap = {	#Joseph Carson - Joeseph 'Seahawk' Barhoof#
 		name = PLT_thistle_tap
 		portraits = {
 			civilian = {
-				large = "GFX_portrait_pony_generic_land_11"
-				small = "GFX_portrait_pony_generic_land_11_small"
+				large = GFX_portrait_pony_generic_land_11
+				small = GFX_portrait_pony_generic_land_11_small
 			}
 		}
 		country_leader = {
-			desc = "PLT_ttap_leader_desc"
+			desc = PLT_ttap_leader_desc
 			ideology = harmonic_libertarianism
 		}
 	}

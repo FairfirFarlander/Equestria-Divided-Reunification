@@ -113,7 +113,7 @@ characters = {
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = VII_smolder_political
+			idea_token = VII_smolder_politician
 			ledger = civilian
 			available = {
 				has_country_leader = {
@@ -131,11 +131,11 @@ characters = {
 	VII_gark = {
 		name = VII_gark
 		portraits = {
-			civilian = { small = GFX_unknown_advisor_dragon }
+			civilian = { small = GFX_idea_unknown_advisor_dragon }
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = VII_gark_political
+			idea_token = VII_gark_politician
 			ledger = civilian
 			traits = { captain_of_industry }
 		}
@@ -148,7 +148,7 @@ characters = {
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = VII_scales_political
+			idea_token = VII_scales_politician
 			ledger = civilian
 			traits = { backroom_backstabber }
 		}
@@ -161,7 +161,7 @@ characters = {
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = VII_cynder_political
+			idea_token = VII_cynder_politician
 			ledger = civilian
 			traits = { prince_of_terror }
 		}
@@ -169,7 +169,7 @@ characters = {
 	VII_ludmilla = {
 		name = VII_ludmilla
 		portraits = {
-			army = { small = GFX_unknown_advisor_dragon }
+			army = { small = GFX_idea_unknown_advisor_dragon }
 		}
 		advisor = {
 			slot = theorist
@@ -182,7 +182,7 @@ characters = {
 	VII_tamm = {
 		name = VII_tamm
 		portraits = {
-			army = { small = GFX_unknown_advisor_dragon }
+			army = { small = GFX_idea_unknown_advisor_dragon }
 		}
 		advisor = {
 			slot = theorist
@@ -199,7 +199,7 @@ characters = {
 	VII_kukulkan = {
 		name = VII_kukulkan
 		portraits = {
-			army = { small = GFX_unknown_advisor_dragon }
+			army = { small = GFX_idea_unknown_advisor_dragon }
 		}
 		advisor = {
 			slot = theorist
@@ -212,7 +212,7 @@ characters = {
 	VII_firekin = {
 		name = VII_firekin
 		portraits = {
-			army = { small = GFX_unknown_advisor_dragon }
+			army = { small = GFX_idea_unknown_advisor_dragon }
 		}
 		advisor = {
 			slot = army_chief
@@ -223,7 +223,7 @@ characters = {
 	}
 	VII_tiagin = {
 		name = VII_tiagin
-		portraits = {			army = { small = GFX_unknown_advisor_dragon }		}
+		portraits = {			army = { small = GFX_idea_unknown_advisor_dragon }		}
 		advisor = {
 			slot = army_chief
 			idea_token = VII_tiagin_chief
@@ -231,7 +231,7 @@ characters = {
 			traits = { army_chief_defensive_2 }		}	}
 	VII_grima = {
 		name = VII_grima
-		portraits = {			army = { small = GFX_unknown_advisor_dragon }		}
+		portraits = {			army = { small = GFX_idea_unknown_advisor_dragon }		}
 		advisor = {
 			slot = navy_chief
 			idea_token = VII_grima_chief
@@ -246,7 +246,7 @@ characters = {
 			traits = { army_infantry_2 }		}	}
 	VII_kuzz = {
 		name = VII_kuzz
-		portraits = {			army = { small = GFX_unknown_advisor_dragon }		}
+		portraits = {			army = { small = GFX_idea_unknown_advisor_dragon }		}
 		advisor = {
 			slot = navy_chief
 			idea_token = VII_kuzz_chief
@@ -254,7 +254,7 @@ characters = {
 			traits = { navy_chief_commerce_raiding_2 }		}	}
 	VII_nascale = {
 		name = VII_nascale
-		portraits = {			army = { small = GFX_unknown_advisor_dragon }		}
+		portraits = {			army = { small = GFX_idea_unknown_advisor_dragon }		}
 		advisor = {
 			slot = air_chief
 			idea_token = VII_nascale_chief
@@ -262,7 +262,7 @@ characters = {
 			traits = { air_chief_all_weather_2 }		}	}
 	VII_kasitor = {
 		name = VII_kasitor
-		portraits = {			army = { small = GFX_unknown_advisor_dragon }		}
+		portraits = {			army = { small = GFX_idea_unknown_advisor_dragon }		}
 		advisor = {
 			slot = air_chief
 			idea_token = VII_kasitor_chief
@@ -270,7 +270,7 @@ characters = {
 			traits = { air_chief_ground_support_2 }		}	}
 	VII_kahamit = {
 		name = VII_kahamit
-		portraits = {			army = { small = GFX_unknown_advisor_dragon }		}
+		portraits = {			army = { small = GFX_idea_unknown_advisor_dragon }		}
 		advisor = {
 			slot = high_command
 			ledger = army
@@ -279,7 +279,7 @@ characters = {
 			traits = { army_regrouping_2 }		}	}
 	VII_kalagar = {
 		name = VII_kalagar
-		portraits = {			army = { small = GFX_unknown_advisor_dragon }		}
+		portraits = {			army = { small = GFX_idea_unknown_advisor_dragon }		}
 		advisor = {
 			slot = high_command
 			ledger = army
@@ -288,7 +288,7 @@ characters = {
 			traits = { army_chief_morale_2 }		}	}
 	VII_nightburn = {
 		name = VII_nightburn
-		portraits = {			army = { small = GFX_unknown_advisor_dragon }		}
+		portraits = {			army = { small = GFX_idea_unknown_advisor_dragon }		}
 		advisor = {
 			slot = high_command
 			ledger = navy
@@ -297,7 +297,7 @@ characters = {
 			traits = { navy_screen_2 }		}	}
 	VII_naga = {
 		name = VII_naga
-		portraits = {			army = { small = GFX_unknown_advisor_dragon }		}
+		portraits = {			army = { small = GFX_idea_unknown_advisor_dragon }		}
 		advisor = {
 			slot = high_command
 			ledger = air

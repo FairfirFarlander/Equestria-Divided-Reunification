@@ -4,20 +4,21 @@ characters = {
 		gender = female
 		portraits = {
 			civilian = {
-				large = "GFX_HMS_twilight_sparkle"
-				small = "GFX_HMS_twilight_sparkle"
+				large = GFX_HMS_twilight_sparkle
+				small = GFX_HMS_twilight_sparkle_small
 			}
 			army = {
-				large = "GFX_HMS_twilight_sparkle"
-				small = "GFX_HMS_twilight_sparkle"
+				large = GFX_HMS_twilight_sparkle
+				small = GFX_HMS_twilight_sparkle_small
 			}
 		}
 		country_leader = {
-			desc = "HMS_tsparkle_leader_desc"
+			desc = HMS_tsparkle_leader_desc
 			ideology = magocracy
+			traits = { HMS_thadeus_trait }
 		}
 		field_marshal = {
-			desc = "HMS_tsparkle_commander_desc"
+			desc = HMS_tsparkle_commander_desc
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -35,12 +36,12 @@ characters = {
 		name = HMS_frail_lance
 		portraits = {
 			civilian = {
-				large = "GFX_portrait_pony_generic_navy_10"
-				small = "GFX_portrait_pony_generic_navy_10_small"
+				large = GFX_portrait_pony_generic_navy_10
+				small = GFX_portrait_pony_generic_navy_10_small
 			}
 		}
 		country_leader = {
-			desc = "HMS_flance_leader_desc"
+			desc = HMS_flance_leader_desc
 			ideology = anarchist_communism
 		}
 	}
@@ -48,20 +49,20 @@ characters = {
 		name = HMS_shining_armor
 		portraits = {
 			civilian = {
-				large = "GFX_HMS_shining_armor"
-				small = "GFX_HMS_shining_armor"
+				large = GFX_HMS_shining_armor
+				small = GFX_HMS_shining_armor_small
 			}
 			army = {
-				large = "GFX_HMS_shining_armor"
-				small = "GFX_HMS_shining_armor"
+				large = GFX_HMS_shining_armor
+				small = GFX_HMS_shining_armor_small
 			}
 		}
 		country_leader = {
-			desc = "HMS_sarmor_leader_desc"
+			desc = HMS_sarmor_leader_desc
 			ideology = despotism
 		}
 		field_marshal = {
-			desc = "HMS_sarmor_commander_desc"
+			desc = HMS_sarmor_commander_desc
 			skill = 4
 			attack_skill = 3
 			defense_skill = 5
@@ -80,12 +81,12 @@ characters = {
 		gender = female
 		portraits = {
 			civilian = {
-				large = "GFX_portrait_pony_generic_navy_7"
-				small = "GFX_portrait_pony_generic_navy_7_small"
+				large = GFX_portrait_pony_generic_navy_7
+				small = GFX_portrait_pony_generic_navy_7_small
 			}
 		}
 		country_leader = {
-			desc = "HMS_wwind_leader_desc"
+			desc = HMS_wwind_leader_desc
 			ideology = liberalism
 		}
 	}
@@ -94,17 +95,18 @@ characters = {
 		gender = female
 		portraits = {
 			civilian = {
-				large = "GFX_HMS_cadence"
-				small = "GFX_HMS_cadence"
+				large = GFX_HMS_cadence
+				small = GFX_HMS_cadence_small
 			}
 		}
 		country_leader = {
-			desc = "HMS_cadence_leader_desc"
+			desc = HMS_cadence_leader_desc
 			ideology = despotism
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = HMS_cadence_advi
+			idea_token = HMS_cadence_politician
+			ledger = civilian
 		}
 	}
 	HMS_trixie_lulamoon = {
@@ -112,12 +114,12 @@ characters = {
 		gender = female
 		portraits = {
 			army = {
-				large = "GFX_HMS_trixie_lulamoon_alt"
-				small = "GFX_HMS_trixie_lulamoon_alt"
+				large = GFX_HMS_trixie_lulamoon_alt
+				small = GFX_HMS_trixie_lulamoon_alt_small
 			}
 		}
 		corps_commander = {
-			desc = "HMS_tlulamoon_commander_desc"
+			desc = HMS_tlulamoon_commander_desc
 			skill = 1
 			attack_skill = 2
 			defense_skill = 1
@@ -133,12 +135,12 @@ characters = {
 		name = HMS_spike
 		portraits = {
 			army = {
-				large = "GFX_HMS_spike"
-				small = "GFX_HMS_spike"
+				large = GFX_HMS_spike
+				small = GFX_HMS_spike_small
 			}
 		}
 		corps_commander = {
-			desc = "HMS_spike_commander_desc"
+			desc = HMS_spike_commander_desc
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1

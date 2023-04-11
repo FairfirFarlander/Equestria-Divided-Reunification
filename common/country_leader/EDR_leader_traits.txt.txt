@@ -24,6 +24,26 @@ leader_traits = {
 		stability_factor = 0.05
 		army_morale_factor = 0.05
 	}
+	HEB_yeehaw_trait = {
+		random = no
+		stability_factor = 0.01
+	}
+	HMS_thadeus_trait = {
+		random = no
+		stability_factor = 0.01
+	}
+	HSW_the_bird_trait = {
+		random = no
+		stability_factor = 0.01
+	}
+	HSW_wing_commander = {
+		random = no
+		stability_factor = 0.01
+	}
+	HWG_mistress = {
+		random = no
+		stability_factor = 0.01
+	}
 	laughing_mare_trait = {
 		random = no
 		stability_factor = 0.01

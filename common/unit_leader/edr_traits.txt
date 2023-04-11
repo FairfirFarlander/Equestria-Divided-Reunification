@@ -1,11 +1,9 @@
 leader_traits = {
-	#Field Marshall Traits#
+##Field Marshall Traits##
 	trait_archmagister = {
 		type = field_marshal
 		trait_type = personality_trait
-		allowed = {
-			always = no
-		}
+		allowed = { always = no }
 		ai_will_do = {
 			factor = 1
 		}
@@ -20,19 +18,33 @@ leader_traits = {
 			army_org_factor = 0.05
 		}
 	}
-	#Corp Commander Traits#
+	trait_the_bird = {
+		type = field_marshal
+		trait_type = personality_trait
+		allowed = { always = no }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+##Corp Commander Traits##
 	trait_foreman = {
 		type = corps_commander
 		trait_type = personality_trait
-		allowed = {
-			always = no
-		}
+		allowed = { always = no }
 		ai_will_do = {
 			factor = 1
 		}
 		modifier = {
 			army_org_factor = 0.05
 			army_morale_factor = -0.05
+		}
+	}
+	trait_siren = {
+		type = corps_commander
+		trait_type = personality_trait
+		allowed = { always = no }
+		ai_will_do = {
+			factor = 1
 		}
 	}
 }

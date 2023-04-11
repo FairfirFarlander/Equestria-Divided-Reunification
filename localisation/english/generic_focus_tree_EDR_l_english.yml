@@ -4,7 +4,7 @@
    GENR_GATHERING_STORM_DESC: "Ah shit! I can't believe you've done this! This is cursed. You have somehow selected an unfinished nation. Shaaame on e-you - unless..."
   ##Welcome Screen##
    EAW_WS_GENR: "§LThe Clam Before the Storm§!"
-    EAW_WS_GENR_desc: "§YThis country is not finshed and thus uses Reunification's generic focus tree.§! While we have plans for it, these have not been fully implemented. We recommend you play one of the Equestrian countries on the starting screen. If you want to keep going despite this, have fun.\n\n- The Reunification Development Team"
+    EAW_WS_GENR_desc: "§YThe country of the [ROOT.GetAdjective] are not finshed and thus uses Reunification's generic focus tree.§! While we have plans for it, these have not been fully implemented. We recommend you play one of the Equestrian countries on the starting screen. If you want to keep going despite this, have fun.\n\n- The Reunification Development Team"
  ###Politics###
   ##Country Name##
    GENR: "Country Name"
@@ -16,20 +16,20 @@
    GENR_advisor_desc: "Test"
   ##Leaders##
    GENR_leader: ""
-    GENR_leader_desc: ""
+    GENR_leader_desc: "$GENR_advisor_desc$"
   ##Commanders##
    GENR_commander: ""
-    GENR_comamnder_desc: ""
+    GENR_comamnder_desc: "$GENR_advisor_desc$"
   ##Political Advisors##
    GENR_political: ""
-    GENR_political_desc: ""
+    GENR_politician_desc: "$GENR_advisor_desc$"
   ##Military Advisors##
    GENR_theorist: ""
-    GENR_theorist_desc: ""
+    GENR_theorist_desc: "$GENR_advisor_desc$"
    GENR_chief: ""
-    GENR_chief_desc: ""
+    GENR_chief_desc: "$GENR_advisor_desc$"
    GENR_highcmdr: ""
-    GENR_highcmdr_desc: ""
+    GENR_highcmdr_desc: "$GENR_advisor_desc$"
  ###National Focuses###
   ##Storyline Tree##
   ##Political Tree##

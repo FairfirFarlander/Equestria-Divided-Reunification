@@ -5,7 +5,7 @@ characters = {
 		portraits = {
 			civilian = {
 				large = GFX_PIE_cloudy_quartz
-				small = GFX_idea_PIE_cloudy_quartz
+				small = GFX_PIE_cloudy_quartz_small
 			}
 		}
 		country_leader = {

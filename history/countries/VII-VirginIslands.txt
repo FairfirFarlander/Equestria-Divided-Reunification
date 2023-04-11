@@ -1,5 +1,5 @@
 ﻿capital = 7
-oob = "VII_1012"
+oob = "VII_07"
 set_stability = 0.6
 set_war_support = 0.22
 add_ideas = {

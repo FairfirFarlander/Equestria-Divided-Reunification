@@ -1,54 +1,53 @@
-capital=122
-oob="HFT_1012"
-set_research_slots=2
-set_stability=0.6
-set_war_support=0.17
-add_ideas={
+capital = 122
+oob = "HFT_07"
+set_stability = 0.6
+set_war_support = 0.17
+add_ideas = {
 	agrarian_society
 	lack_of_scientists3
 	poverty5
 }
-set_technology={
-	pony_race=1
-	melee_weapons=1
-	tech_support=1
+set_technology = {
+	pony_race = 1
+	melee_weapons = 1
+	tech_support = 1
 }
-if={
-	limit={has_dlc="No Step Back"}
-	add_ideas={
+if = {
+	limit = {has_dlc = "No Step Back"}
+	add_ideas = {
 		traditionalism_academy_spirit
 		doctrinal_orthodoxy_spirit
 		disdain_for_the_digging_spirit
 	}
-	else={
-		add_ideas={EQS_bad_tanks}
+	else = {
+		add_ideas = {EQS_bad_tanks}
 	}
 }
-actually_fix_weapon_techs=yes
-set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
+actually_fix_weapon_techs = yes
+set_rule = {	can_generate_female_aces = yes	can_generate_female_unit_leaders = yes	can_generate_female_country_leaders = yes}
 
-if={
-	limit={has_dlc="Death or Dishonor"}
-	HEB={
-		set_autonomy={
-			target=HFT
-			autonomy_state=autonomy_satellite
+if = {
+	limit = {has_dlc = "Death or Dishonor"}
+	HEB = {
+		set_autonomy = {
+			target = HFT
+			autonomy_state = autonomy_satellite
 		}
 	}
-	else={
-		HEB={puppet=HFT}
+	else = {
+		HEB = {puppet = HFT}
 	}
 }
-set_popularities={
-	fascism=32
-	communism=16
-	neutrality=45
-	democratic=7
+set_popularities = {
+	fascism = 32
+	communism = 16
+	neutrality = 45
+	democratic = 7
 }
-set_politics={ruling_party=neutrality}
-set_country_flag=EDR_is_equestrian_breakaway
-recruit_character=HFT_orange
-recruit_character=HFT_orange_grove
-#recruit_character=HFT_trixie_lulamoon
+set_politics = {ruling_party = neutrality}
+set_country_flag = EDR_is_equestrian_breakaway
+recruit_character = HFT_orange
+recruit_character = HFT_orange_grove
+#recruit_character = HFT_trixie_lulamoon
 #NOTES#
 #Welcome to the Orange Grove MotherFucker.

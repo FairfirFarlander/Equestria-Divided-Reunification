@@ -20,9 +20,9 @@
    PIE_maud_pie: "Maud Pie"
     PIE_maupie_leader_desc: "$CRDC_art_sketchit$"
     PIE_maupie_commander_desc: "$CRDC_art_bunnyshrubby$"
-    PIE_maupie_political_desc: "$CRDC_art_bunnyshrubby$"
+    PIE_maupie_politician_desc: "$CRDC_art_bunnyshrubby$"
    PIE_sapphire_smiles: "Sapphire Smiles"
-    PIE_ssmiles_leader_desc: ""
+    PIE_ssmiles_leader_desc: "$GENR_advisor_desc$"
   ##Commanders##
   ##Political Advisors##
   ##Military Advisors##

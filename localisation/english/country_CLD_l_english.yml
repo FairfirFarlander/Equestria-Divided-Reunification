@@ -27,6 +27,7 @@
    CLD_wonderbolt_remnant: "Council of Cloudsdale"
     CLD_wremnant_leader_desc: "§YFormed§!: 1005\n\n$CRDC_art_tiviyl$"   #\n\n§YBiography§!: 
     CLD_wremnant_commander_desc: "$CLD_wremnant_leader_desc$"
+    CLD_wremnant_politician_desc: "$CLD_wremnant_leader_desc$"
   ##Commanders##
   ##Political Advisors##
   ##Military Advisors##

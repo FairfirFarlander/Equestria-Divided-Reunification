@@ -39,7 +39,7 @@ characters = {
 	CUL_unknown_melody = {
 		name = CUL_unknown_melody
 		portraits = {
-			civilian = { large = GFX_CUL_unknown_melody }
+			civilian = { large = GFX_idea_unknown_advisor }
 		}
 		country_leader = {
 			desc = CUL_umelody_leader_desc
@@ -71,7 +71,7 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			ledger = civilian
-			idea_token = CUL_lheartstrings_political
+			idea_token = CUL_lheartstrings_politician
 			traits = {
 				CUL_prophet_trait
 				gypsy_bard_trait
@@ -94,15 +94,18 @@ characters = {
 			defense_skill = 3
 			planning_skill = 1
 			logistics_skill = 3
-			traits = { trait_unpredictable pony_race_trait }
+			traits = {
+				trait_unpredictable
+				pony_race_trait
+			}
 		}
 		advisor = {
 			slot = political_advisor
 			ledger = civilian
-			idea_token = CUL_screwball_political
+			idea_token = CUL_screwball_politician
 			cost = 100
 			traits = {
-				insane
+				CUL_prophet_trait
 				occultist
 			}
 		}
@@ -164,7 +167,10 @@ characters = {
 			ledger = army
 			idea_token = CUL_ppierce_chief
 			cost = 50
-			traits = { army_chief_morale_1 }
+			traits = {
+				CUL_prophet_trait
+				army_chief_morale_1
+			}
 		}
 	}
 	CUL_cranky_doodle = {
@@ -174,11 +180,11 @@ characters = {
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = CUL_cdoodle_political
+			idea_token = CUL_cdoodle_politician
 			ledger = civilian
 			traits = {
 				CUL_prophet_trait
-				CUL_necromancer
+				CUL_necromancer_trait
 			}
 		}
 	}
@@ -190,7 +196,7 @@ characters = {
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = CUL_dhooves_political
+			idea_token = CUL_dhooves_politician
 			ledger = civilian
 			traits = {
 				CUL_prophet_trait

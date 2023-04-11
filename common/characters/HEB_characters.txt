@@ -1,23 +1,24 @@
 characters = {
-	HEB_applejack = {	#Supreme Commander
+	HEB_applejack = {
 		name = HEB_applejack
 		gender = female
 		portraits = {
 			civilian = {
-				large = "GFX_HEB_applejack_poli"
-				small = "GFX_HEB_applejack_poli"
+				large = GFX_HEB_applejack_poli
+				small = GFX_HEB_applejack_poli_small
 			}
 			army = {
-				large = "GFX_HEB_applejack_mili"
-				small = "GFX_HEB_applejack_mili"
+				large = GFX_HEB_applejack_mili
+				small = GFX_HEB_applejack_mili_small
 			}
 		}
 		country_leader = {
-			desc = "HEB_applejack_leader_desc"
+			desc = HEB_applejack_leader_desc
 			ideology = nazism
+			traits = { HEB_yeehaw_trait }
 		}
 		field_marshal = {
-			desc = "HEB_applejack_commander_desc"
+			desc = HEB_applejack_commander_desc
 			skill = 2
 			attack_skill = 3
 			defense_skill = 3
@@ -33,10 +34,10 @@ characters = {
 	HEB_jack_trader = {
 		name = HEB_jack_trader
 		portraits = {
-			civilian = {large = "GFX_portrait_pony_generic_land_13"}
+			civilian = { large = GFX_portrait_pony_generic_land_13 }
 		}
 		country_leader = {
-			desc = "HEB_jtrader_leader_desc"
+			desc = HEB_jtrader_leader_desc
 			ideology = anarchist_communism
 		}
 	}
@@ -44,10 +45,10 @@ characters = {
 		name = HEB_magia_saviour
 		gender = female
 		portraits = {
-			civilian = {large = "GFX_portrait_riv_pony_generic_1"}
+			civilian = { large = GFX_portrait_riv_pony_generic_1 }
 		}
 		country_leader = {
-			desc = "HEB_msaviour_leader_desc"
+			desc = HEB_msaviour_leader_desc
 			ideology = despotism
 		}
 	}
@@ -55,10 +56,10 @@ characters = {
 		name = HEB_raving_cloud
 		gender = female
 		portraits = {
-			civilian = {large = "GFX_portrait_pony_generic_land_9"}
+			civilian = { large = GFX_portrait_pony_generic_land_9 }
 		}
 		country_leader = {
-			desc = "HEB_rcloud_leader_desc"
+			desc = HEB_rcloud_leader_desc
 			ideology = liberalism
 		}
 	}
@@ -66,12 +67,12 @@ characters = {
 		name = HEB_big_mac
 		portraits = {
 			army = {
-				large = "GFX_HEB_big_mac"
-				small = "GFX_HEB_big_mac"
+				large = GFX_HEB_big_mac
+				small = GFX_HEB_big_mac_small
 			}
 		}
 		corps_commander = {
-			desc = "HEB_bmac_commander_desc"
+			desc = HEB_bmac_commander_desc
 			skill = 2
 			attack_skill = 2
 			defense_skill = 3
@@ -87,12 +88,12 @@ characters = {
 		name = HEB_braeburn
 		portraits = {
 			army = {
-				large = "GFX_HEB_braeburn"
-				small = "GFX_HEB_braeburn"
+				large = GFX_HEB_braeburn
+				small = GFX_HEB_braeburn_small
 			}
 		}
 		corps_commander = {
-			desc = "HEB_braeburn_commander_desc"
+			desc = HEB_braeburn_commander_desc
 			skill = 2
 			attack_skill = 2
 			defense_skill = 1
@@ -110,12 +111,12 @@ characters = {
 		gender = female
 		portraits = {
 			army = {
-				large = "GFX_HEB_lightning_dust"
-				small = "GFX_HEB_lightning_dust"
+				large = GFX_HEB_lightning_dust
+				small = GFX_HEB_lightning_dust_small
 			}
 		}
 		corps_commander = {
-			desc = "HEB_ldust_commander_desc"
+			desc = HEB_ldust_commander_desc
 			skill = 2
 			attack_skill = 3
 			defense_skill = 2
@@ -134,12 +135,12 @@ characters = {
 		gender = female
 		portraits = {
 			army = {
-				large = "GFX_HEB_chief_strongheart"
-				small = "GFX_HEB_chief_strongheart"
+				large = GFX_HEB_chief_strongheart
+				small = GFX_HEB_chief_strongheart_small
 			}
 		}
 		corps_commander = {
-			desc = "HEB_cstrongheart_commander_desc"
+			desc = HEB_cstrongheart_commander_desc
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2
@@ -152,7 +153,7 @@ characters = {
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = HEB_cstrongheart_advi
+			idea_token = HEB_cstrongheart_politician
 		}
 	}
 	HEB_apple_bloom = {
@@ -160,17 +161,17 @@ characters = {
 		gender = female
 		portraits = {
 			civilian = {
-				large = "GFX_HEB_apple_bloom"
-				small = "GFX_HEB_apple_bloom"
+				large = GFX_HEB_apple_bloom
+				small = GFX_HEB_apple_bloom_small
 			}
 			army = {
-				large = "GFX_HEB_apple_bloom"
-				small = "GFX_HEB_apple_bloom"
+				large = GFX_HEB_apple_bloom
+				small = GFX_HEB_apple_bloom_small
 			}
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = HEB_abloom_advi
+			idea_token = HEB_abloom_politician
 		}
 	}
 	HEB_granny_smith = {
@@ -178,17 +179,17 @@ characters = {
 		gender = female
 		portraits = {
 			civilian = {
-				large = "GFX_HEB_granny_smith"
-				small = "GFX_HEB_granny_smith"
+				large = GFX_HEB_granny_smith
+				small = GFX_HEB_granny_smith_small
 			}
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = HEB_gsmith_advi
+			idea_token = HEB_gsmith_politician
 		}
 		advisor = {
 			slot = theorist
-			idea_token = HEB_gsmith_theo
+			idea_token = HEB_gsmith_theorist
 		}
 	}
 }

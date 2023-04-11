@@ -1,76 +1,75 @@
-capital=344
-oob="CRL_1012"
-set_research_slots=3
-set_stability=0.50
-set_war_support=0.3
-add_ideas={
+capital = 344
+oob = "CRL_07"
+set_research_slots = 3
+set_war_support = 0.3
+add_ideas = {
 	outdated_industry
 	lack_of_scientists3
 	poverty3
 	royal_family
 	sombra_threat
 }
-set_technology={
-	pony_race=1
-	melee_weapons=1
-	melee_weapons1=1
-	tech_support=1
-	tech_recon=1
-	tech_engineers=1
-	tech_military_police=1
-	pre_gw_artillery=1
-	tech_unicorn=1
-	tech_unicorn_ms=1
+set_technology = {
+	pony_race = 1
+	melee_weapons = 1
+	melee_weapons1 = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_engineers = 1
+	tech_military_police = 1
+	pre_gw_artillery = 1
+	tech_unicorn = 1
+	tech_unicorn_ms = 1
 }
-if={
-	limit={has_dlc="No Step Back"}
-	set_technology={
-		gwtank_chassis=1
+if = {
+	limit = { has_dlc = "No Step Back" }
+	set_technology = {
+		gwtank_chassis = 1
 	}
-	else={
-		set_technology={
-			gwtank=1
+	else = {
+		set_technology = {
+			gwtank = 1
 		}
 	}
 }
-if={
-	limit={has_dlc="By Blood Alone"}
-	set_technology={
-		iw_small_airframe=1
-		early_bombs=1
-		aa_lmg=1
-		engines_1=1
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+	set_technology = {
+		iw_small_airframe = 1
+		early_bombs = 1
+		aa_lmg = 1
+		engines_1 = 1
 	}
-	else={
-		set_technology={
-			early_fighter=1
+	else = {
+		set_technology = {
+			early_fighter = 1
 		}
 	}
 }
-actually_fix_weapon_techs=yes
-set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
-set_popularities={
-	fascism=52
-	communism=22
-	neutrality=21
-	democratic=5
+actually_fix_weapon_techs = yes
+set_rule = {	can_generate_female_aces = yes	can_generate_female_unit_leaders = yes	can_generate_female_country_leaders = yes}
+set_popularities = {
+	fascism = 52
+	communism = 22
+	neutrality = 21
+	democratic = 5
 }
-set_politics={ruling_party=fascism}
-set_country_flag=EDR_is_equestrian_breakaway
-recruit_character=CRL_radiant_hope
-recruit_character=CRL_arctic_lily
-recruit_character=CRL_disputed
-recruit_character=CRL_sombra
-recruit_character=CRL_reese
-recruit_character=CRL_colloid
-recruit_character=CRL_dusty_ember
-recruit_character=CRL_deimos_falafel
-recruit_character=CRL_icy_snow
-recruit_character=CRL_cloudie
-recruit_character=CRL_crystalline
-recruit_character=CRL_squeeky_hooves
-recruit_character=CRL_sakira
-recruit_character=CRL_dust_snowfall
-recruit_character=CRL_lake_frost
-#NOTES#
+set_politics = { ruling_party = fascism }
+set_country_flag = EDR_is_equestrian_breakaway
+recruit_character = CRL_radiant_hope
+recruit_character = CRL_arctic_lily
+recruit_character = CRL_disputed
+recruit_character = CRL_sombra
+recruit_character = CRL_reese
+recruit_character = CRL_colloid
+recruit_character = CRL_dusty_ember
+recruit_character = CRL_deimos_falafel
+recruit_character = CRL_icy_snow
+recruit_character = CRL_cloudie
+recruit_character = CRL_crystalline
+recruit_character = CRL_squeeky_hooves
+recruit_character = CRL_sakira
+recruit_character = CRL_dust_snowfall
+recruit_character = CRL_lake_frost
+###NOTES###
 #Make a Quebuck Rebellion - Mattor iz estatic!

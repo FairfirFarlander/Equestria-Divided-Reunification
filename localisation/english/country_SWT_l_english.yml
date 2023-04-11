@@ -1,22 +1,23 @@
 ﻿l_english:
-###Introduction###
-##Bookmark##
-SWT_GATHERING_STORM_DESC: ""
-##Welcome Screen##
- EAW_WS_SWT: ""
-  EAW_WS_SWT_desc: ""
-###Characters###
-##Leaders##
-SWT_generic_pony: "Generic Pony"
- SWT_gpony_political_desc: ""
-##Commanders##
-##Political Advisors##
-##Military Advisors##
-###Country Name###
-SWT: "Northern Pegasus Territory"
- SWT_DEF: "the Northern Pegasus Territory"
- SWT_ADJ: "Peligasi"
-###Poltitical Parties###
-###Ideas###
-###National Focuses###
-##Storyline Tree##
+ ###Introduction###
+  ##Bookmark##
+   SWT_GATHERING_STORM_DESC: "$GENR_GATHERING_STORM_DESC$"
+  ##Welcome Screen##
+   EAW_WS_SWT: "$EAW_WS_GENR$"
+    EAW_WS_SWT_desc: "$EAW_WS_GENR_desc$"
+ ###Politics###
+  ##Country Name##
+   SWT: "Northern Pegasus Territory"
+   SWT_DEF: "the Northern Pegasus Territory"
+    SWT_ADJ: "Peligasi"
+  ##Poltitical Parties##
+ ###Characters###
+  ##Leaders##
+   SWT_generic_pony: "Generic Pony"
+    SWT_gpony_leader_desc: "$GENR_advisor_desc$"
+  ##Commanders##
+  ##Political Advisors##
+  ##Military Advisors##
+ ###Ideas###
+ ###National Focuses###
+  ##Storyline Tree##

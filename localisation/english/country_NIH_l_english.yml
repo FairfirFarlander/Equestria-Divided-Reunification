@@ -1,38 +1,39 @@
 ﻿l_english:
-###Introduction###
-##Bookmark##
-NIH_GATHERING_STORM_DESC: ""
+ ###Introduction###
+  ##Bookmark##
+   NIH_GATHERING_STORM_DESC: "$GENR_GATHERING_STORM_DESC$"
 ##Welcome Screen##
- EAW_WS_NIH: ""
-  EAW_WS_NIH_desc: ""
-###Country Name###
-NIH: "Acorange"
- NIH_DEF: "the County of Acorange"
- NIH_ADJ: "Acorniaii"
-NIH_fascism: "Acorange Governate" #Acorange City Brigade
- NIH_fascism_DEF: "the Military Governate of Acorange"
- NIH_communism: "TRNSR"
-  NIH_communism_DEF: "the Red North Star Republic"
- NIH_neutrality: "Acorange Hold-Out"
-  NIH_neutrality_DEF: "the Acorange Hold Out"
- NIH_democratic: "The North Star Republic"
-  NIH_democratic_DEF: "the Republic of the Northern Star"
-###Political Parties###
-NIH_fascism_party: "ETM"
- NIH_fascism_party_long: "Eye Of The Moon"
- NIH_communism_party: "ARSS"
-  NIH_communism_party_long: "Acorange Red Star Society"
- NIH_neutrality_party: "COF"
-  NIH_neutrality_party_long: "Council of Officers"
- NIH_democratic_party: "TNL"
-  NIH_democratic_party_long: "Ponies Of The North Star"
-###Characters###
-##Leaders##
-NIH_cursed_fate: "Cursed Fate"
- NIH_cfate_political_desc: "$CRDC_art_tiviyl$"
- NIH_cfate_commander_desc: "$CRDC_art_tiviyl$"
-##Commanders##
-##Political Advisors##
-##Military Advisors##
-###National Focuses###
-##Storyline Tree##
+ EAW_WS_NIH: "$EAW_WS_GENR$"
+  EAW_WS_NIH_desc: "$EAW_WS_GENR_desc$"
+ ###Politics###
+  ##Country Name##
+   NIH: "Acorange"
+    NIH_DEF: "the County of Acorange"
+    NIH_ADJ: "Acorniaii"
+   NIH_fascism: "Acorange Governate" #Acorange City Brigade
+    NIH_fascism_DEF: "the Military Governate of Acorange"
+   NIH_communism: "TRNSR"
+    NIH_communism_DEF: "the Red North Star Republic"
+   NIH_neutrality: "Acorange Hold-Out"
+    NIH_neutrality_DEF: "the Acorange Hold Out"
+   NIH_democratic: "The North Star Republic"
+    NIH_democratic_DEF: "the Republic of the Northern Star"
+  ##Political Parties##
+   NIH_fascism_party: "ETM"
+    NIH_fascism_party_long: "Eye Of The Moon"
+   NIH_communism_party: "ARSS"
+    NIH_communism_party_long: "Acorange Red Star Society"
+   NIH_neutrality_party: "COF"
+    NIH_neutrality_party_long: "Council of Officers"
+   NIH_democratic_party: "TNL"
+    NIH_democratic_party_long: "Ponies Of The North Star"
+ ###Characters###
+  ##Leaders##
+   NIH_cursed_fate: "Cursed Fate"
+    NIH_cfate_leader_desc: "$CRDC_art_tiviyl$"
+    NIH_cfate_commander_desc: "$CRDC_art_tiviyl$"
+  ##Commanders##
+  ##Political Advisors##
+  ##Military Advisors##
+ ###National Focuses###
+  ##Storyline Tree##

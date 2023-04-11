@@ -1,0 +1,21 @@
+﻿l_english:
+ ###Introduction###
+  ##Bookmark##
+   KCB_GATHERING_STORM_DESC: "$GENR_GATHERING_STORM_DESC$"
+  ##Welcome Screen##
+   EAW_WS_KCB: "$EAW_WS_GENR$"
+    EAW_WS_KCB_desc: "$EAW_WS_GENR_desc$"
+ ###Politics###
+  ##Country Name##
+   KCB: "Kastlebuck"
+    KCB_DEF: "the County of Kastlebuck"
+    KCB_ADJ: "Vidonian"
+  ##Political Parties##
+ ###Characters###
+  ##Leaders##
+  ##Commanders##
+  ##Political Advisors##
+  ##Military Advisors##
+ ###Ideas###
+ ###National Focuses###
+  ##Storyline Tree##

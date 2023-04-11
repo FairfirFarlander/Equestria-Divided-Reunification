@@ -33,7 +33,7 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_CHY_cherry_jubilee_small"
-		textureFile = "gfx/interface/advisors/CHY/CHY_cherry_jubilee.dds"
+		textureFile = "gfx/interface/advisors/CHY/CHY_cherry_jubilee_small.dds"
 	}
 ##COT##
 	spritetype = {
@@ -57,24 +57,12 @@ spritetypes = {
 		textureFile = "gfx/leaders/SCS/Silverstar.tga"
 	}
 	spritetype = {
-		name = "GFX_COT_silverstar_small"
-		textureFile = "gfx/interface/ideas/Advisors/SCS/SCS_silverstar.tga"
-	}
-	spritetype = {
 		name = "GFX_COT_apple_ale"
 		textureFile = "gfx/leaders/SCS/Apple_Ale.tga"
 	}
 	spritetype = {
-		name = "GFX_COT_apple_ale_small"
-		textureFile = "gfx/interface/ideas/Advisors/SCS/SCS_apple_ale.tga"
-	}
-	spritetype = {
 		name = "GFX_COT_moonshine_melody"
 		textureFile = "gfx/leaders/SCS/Moonshine_Melody.tga"
-	}
-	spritetype = {
-		name = "GFX_COT_moonshine_melody_small"
-		textureFile = "gfx/interface/ideas/Advisors/SCS/SCS_moonshine_melody.tga"
 	}
 	spritetype = {
 		name = "GFX_COT_sorren_peak"
@@ -84,10 +72,6 @@ spritetypes = {
 		name = "GFX_COT_burnside_fervor"
 		textureFile = "gfx/leaders/SCS/Cuddle_Fervor.tga"
 	}
-	spritetype = {
-		name = "GFX_COT_burnside_fervor_small"
-		textureFile = "gfx/interface/ideas/Advisors/SCS/SCS_cuddle_fervor.tga"
-	}
 ##CRL##
 	spritetype = {
 		name = "GFX_CRL_radiant_hope"
@@ -95,7 +79,51 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_CRL_radiant_hope_small"
-		textureFile = "gfx/interface/advisors/CRL/CRL_radiant_hope.dds"
+		textureFile = "gfx/interface/advisors/CRL/CRL_radiant_hope_small.dds"
+	}
+	spritetype = {
+		name = "GFX_CRL_artic_lily"
+		textureFile = "gfx/leaders/CRY/ArcticLily.tga"
+	}
+	spritetype = {
+		name = "GFX_CRL_reese"
+		textureFile = "gfx/leaders/CRY/Reese.tga"
+	}
+	spritetype = {
+		name = "GFX_CRL_colloid"
+		textureFile = "gfx/leaders/CRY/Colloid.tga"
+	}
+	spritetype = {
+		name = "GFX_CRL_colloid_small"
+		textureFile = "gfx/interface/advisors/CRL/CRL_colloid_small.dds"
+	}
+	spritetype = {
+		name = "GFX_CRL_dusty_ember"
+		textureFile = "gfx/leaders/CRY/Dusty_Ember.tga"
+	}
+	spritetype = {
+		name = "GFX_CRL_deimos_falafel"
+		textureFile = "gfx/leaders/CRY/Damiyan.tga"
+	}
+	spritetype = {
+		name = "GFX_CRL_icy_snow"
+		textureFile = "gfx/leaders/CRY/Icy_snow.tga"
+	}
+	spritetype = {
+		name = "GFX_CRL_cloudie"
+		textureFile = "gfx/leaders/CRY/Cloudie.tga"
+	}
+	spritetype = {
+		name = "GFX_CRL_crystalline"
+		textureFile = "gfx/leaders/CRY/Crystalline.tga"
+	}
+	spritetype = {
+		name = "GFX_CRL_squeeky_hooves"
+		textureFile = "gfx/leaders/CRY/SombraGeneral.tga"
+	}
+	spritetype = {
+		name = "GFX_CRL_sakira"
+		textureFile = "gfx/leaders/EQS/Sakira.tga"
 	}
 ##CUL##
 	spritetype = {
@@ -113,10 +141,6 @@ spritetypes = {
 	spritetype = {
 		name = "GFX_CUL_the_laughing_mare_mili_small"
 		textureFile = "gfx/interface/advisors/CUL/CUL_the_laughing_mare_mili.dds"
-	}
-	spritetype = {
-		name = "GFX_CUL_unknown_melody"
-		textureFile = "gfx/leaders/leader_unknown.dds"
 	}
 	spritetype = {
 		name = "GFX_CUL_cranky_doodle"
@@ -173,7 +197,7 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_EMB_aetanae_krix_small"
-		textureFile = "gfx/interface/advisors/EMB/EMB_aetanae_krix.dds"
+		textureFile = "gfx/interface/advisors/EMB/EMB_aetanae_krix_small.dds"
 	}
 	spritetype = {
 		name = "GFX_EMB_councillor_tyrennadus"
@@ -181,7 +205,7 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_EMB_councillor_tyrennadus_small"
-		textureFile = "gfx/interface/advisors/EMB/EMB_councillor_tyrennadus.dds"
+		textureFile = "gfx/interface/advisors/EMB/EMB_councillor_tyrennadus_small.dds"
 	}
 	spritetype = {
 		name = "GFX_EMB_hithax_ballas"
@@ -189,7 +213,7 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_EMB_hithax_ballas_small"
-		textureFile = "gfx/interface/advisors/EMB/EMB_hithax_ballas.dds"
+		textureFile = "gfx/interface/advisors/EMB/EMB_hithax_ballas_small.dds"
 	}
 	spritetype = {
 		name = "GFX_EMB_lavender_opal"
@@ -197,7 +221,7 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_EMB_lavender_opal_small"
-		textureFile = "gfx/interface/advisors/EMB/EMB_lavender_opal.dds"
+		textureFile = "gfx/interface/advisors/EMB/EMB_lavender_opal_small.dds"
 	}
 	spritetype = {
 		name = "GFX_EMB_mother_nightshade"
@@ -205,7 +229,7 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_EMB_mother_nightshade_small"
-		textureFile = "gfx/interface/advisors/EMB/EMB_mother_nightshade.dds"
+		textureFile = "gfx/interface/advisors/EMB/EMB_mother_nightshade_small.dds"
 	}
 	spritetype = {
 		name = "GFX_EMB_queen_narratek"
@@ -213,7 +237,7 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_EMB_queen_narratek_small"
-		textureFile = "gfx/interface/advisors/EMB/EMB_queen_narratek.dds"
+		textureFile = "gfx/interface/advisors/EMB/EMB_queen_narratek_small.dds"
 	}
 ##FAI##
 	spritetype = {
@@ -268,7 +292,7 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_HEB_apple_bloom_small"
-		textureFile = "gfx/interface/advisors/HEB/HEB_apple_bloom.dds"
+		textureFile = "gfx/interface/advisors/HEB/HEB_apple_bloom_small.dds"
 	}
 	spritetype = {
 		name = "GFX_HEB_applejack_poli"
@@ -276,7 +300,7 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_HEB_applejack_poli_small"
-		textureFile = "gfx/interface/advisors/HEB/HEB_applejack_poli.dds"
+		textureFile = "gfx/interface/advisors/HEB/HEB_applejack_poli_small.dds"
 	}
 	spritetype = {
 		name = "GFX_HEB_applejack_mili"
@@ -284,7 +308,7 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_HEB_applejack_mili_small"
-		textureFile = "gfx/interface/advisors/HEB/HEB_applejack_mili.dds"
+		textureFile = "gfx/interface/advisors/HEB/HEB_applejack_mili_small.dds"
 	}
 	spritetype = {
 		name = "GFX_HEB_big_mac"
@@ -292,7 +316,7 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_HEB_big_mac_small"
-		textureFile = "gfx/interface/advisors/HEB/HEB_big_mac.dds"
+		textureFile = "gfx/interface/advisors/HEB/HEB_big_mac_small.dds"
 	}
 	spritetype = {
 		name = "GFX_HEB_braeburn"
@@ -300,7 +324,7 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_HEB_braeburn_small"
-		textureFile = "gfx/interface/advisors/HEB/HEB_braeburn.dds"
+		textureFile = "gfx/interface/advisors/HEB/HEB_braeburn_small.dds"
 	}
 	spritetype = {
 		name = "GFX_HEB_chief_strongheart"
@@ -308,7 +332,7 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_HEB_chief_strongheart_small"
-		textureFile = "gfx/interface/advisors/HEB/HEB_chief_strongheart.dds"
+		textureFile = "gfx/interface/advisors/HEB/HEB_chief_strongheart_small.dds"
 	}
 	spritetype = {
 		name = "GFX_HEB_granny_smith"
@@ -316,7 +340,7 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_HEB_granny_smith_small"
-		textureFile = "gfx/interface/advisors/HEB/HEB_granny_smith.dds"
+		textureFile = "gfx/interface/advisors/HEB/HEB_granny_smith_small.dds"
 	}
 	spritetype = {
 		name = "GFX_HEB_lightning_dust"
@@ -324,7 +348,7 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_HEB_lightning_dust_small"
-		textureFile = "gfx/interface/advisors/HEB/HEB_lightning_dust.dds"
+		textureFile = "gfx/interface/advisors/HEB/HEB_lightning_dust_small.dds"
 	}
 ##HEF##
 	spritetype = {
@@ -333,7 +357,15 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_HEF_lady_fluttershy_small"
-		textureFile = "gfx/interface/advisors/HEF/HEF_lady_fluttershy.dds"
+		textureFile = "gfx/interface/advisors/HEF/HEF_lady_fluttershy_small.dds"
+	}
+	spritetype = {
+		name = "GFX_HEF_zecora"
+		textureFile = "gfx/leaders/ZRS/Zecora.tga"
+	}
+	spritetype = {
+		name = "GFX_HEF_zecora_small"
+		textureFile = "gfx/interface/advisors/HEF/HEF_zecora_small.dds"
 	}
 ##HFT##
 	spritetype = {
@@ -351,7 +383,7 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_HMS_cadence_small"
-		textureFile = "gfx/interface/advisors/HMS/HMS_cadence.dds"
+		textureFile = "gfx/interface/advisors/HMS/HMS_cadence_small.dds"
 	}
 	spritetype = {
 		name = "GFX_HMS_shining_armor"
@@ -359,7 +391,7 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_HMS_shining_armor_small"
-		textureFile = "gfx/interface/advisors/HMS/HMS_shining_armor.dds"
+		textureFile = "gfx/interface/advisors/HMS/HMS_shining_armor_small.dds"
 	}
 	spritetype = {
 		name = "GFX_HMS_spike"
@@ -367,7 +399,7 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_HMS_spike_small"
-		textureFile = "gfx/interface/advisors/HMS/HMS_spike.dds"
+		textureFile = "gfx/interface/advisors/HMS/HMS_spike_small.dds"
 	}
 	spritetype = {
 		name = "GFX_HMS_trixie_lulamoon"
@@ -375,7 +407,7 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_HMS_trixie_lulamoon_small"
-		textureFile = "gfx/interface/advisors/HMS/HMS_trixie_lulamoon.dds"
+		textureFile = "gfx/interface/advisors/HMS/HMS_trixie_lulamoon_small.dds"
 	}
 	spritetype = {
 		name = "GFX_HMS_trixie_lulamoon_alt"
@@ -383,7 +415,7 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_HMS_trixie_lulamoon_alt_small"
-		textureFile = "gfx/interface/advisors/HMS/HMS_trixie_lulamoon_alt.dds"
+		textureFile = "gfx/interface/advisors/HMS/HMS_trixie_lulamoon_alt_small.dds"
 	}
 	spritetype = {
 		name = "GFX_HMS_twilight_sparkle"
@@ -391,7 +423,7 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_HMS_twilight_sparkle_small"
-		textureFile = "gfx/interface/advisors/HMS/HMS_twilight_sparkle.dds"
+		textureFile = "gfx/interface/advisors/HMS/HMS_twilight_sparkle_small.dds"
 	}
 ##HSW##
 	spritetype = {
@@ -400,7 +432,7 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_HSW_rainbow_dash_small"
-		textureFile = "gfx/interface/advisors/HSW/HSW_rainbow_dash.dds"
+		textureFile = "gfx/interface/advisors/HSW/HSW_rainbow_dash_small.dds"
 	}
 	spritetype = {
 		name = "GFX_HSW_scootaloo"
@@ -408,7 +440,7 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_HSW_scootaloo_small"
-		textureFile = "gfx/interface/advisors/HSW/HSW_scootaloo.dds"
+		textureFile = "gfx/interface/advisors/HSW/HSW_scootaloo_small.dds"
 	}
 	spritetype = {
 		name = "GFX_HSW_soarin"
@@ -416,7 +448,7 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_HSW_soarin_small"
-		textureFile = "gfx/interface/advisors/HSW/HSW_soarin.dds"
+		textureFile = "gfx/interface/advisors/HSW/HSW_soarin_small.dds"
 	}
 	spritetype = {
 		name = "GFX_HSW_spitfire"
@@ -424,7 +456,7 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_HSW_spitfire_small"
-		textureFile = "gfx/interface/advisors/HSW/HSW_spitfire.dds"
+		textureFile = "gfx/interface/advisors/HSW/HSW_spitfire_small.dds"
 	}
 ##HWG##
 	spritetype = {
@@ -433,7 +465,7 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_HWG_clair_de_lune_small"
-		textureFile = "gfx/interface/advisors/HWG/HWG_clair_de_lune.dds"
+		textureFile = "gfx/interface/advisors/HWG/HWG_clair_de_lune_small.dds"
 	}
 	spritetype = {
 		name = "GFX_HWG_diamond_tiara"
@@ -441,7 +473,15 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_HWG_diamond_tiara_small"
-		textureFile = "gfx/interface/advisors/HWG/HWG_diamond_tiara.dds"
+		textureFile = "gfx/interface/advisors/HWG/HWG_diamond_tiara_small.dds"
+	}
+	spritetype = {
+		name = "GFX_HWG_fancy_pants"
+		textureFile = "gfx/leaders/EQS/Prez-PM_Pants.tga"
+	}
+	spritetype = {
+		name = "GFX_HWG_filthy_rich"
+		textureFile = "gfx/leaders/EQS/Prez-PM_Filth.tga"
 	}
 	spritetype = {
 		name = "GFX_HWG_fleur_de_lis"
@@ -449,7 +489,7 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_HWG_fleur_de_lis_small"
-		textureFile = "gfx/interface/advisors/HWG/HWG_fleur_de_lis.dds"
+		textureFile = "gfx/interface/advisors/HWG/HWG_fleur_de_lis_small.dds"
 	}
 	spritetype = {
 		name = "GFX_HWG_lemon_meringue"
@@ -457,7 +497,7 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_HWG_lemon_meringue_small"
-		textureFile = "gfx/interface/advisors/HWG/HWG_lemon_meringue.dds"
+		textureFile = "gfx/interface/advisors/HWG/HWG_lemon_meringue_small.dds"
 	}
 	spritetype = {
 		name = "GFX_HWG_mashed_potato"
@@ -465,7 +505,7 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_HWG_mashed_potato_small"
-		textureFile = "gfx/interface/advisors/HWG/HWG_mashed_potato.dds"
+		textureFile = "gfx/interface/advisors/HWG/HWG_mashed_potato_small.dds"
 	}
 	spritetype = {
 		name = "GFX_HWG_octavia"
@@ -473,7 +513,7 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_HWG_octavia_small"
-		textureFile = "gfx/interface/advisors/HWG/HWG_octavia.dds"
+		textureFile = "gfx/interface/advisors/HWG/HWG_octavia_small.dds"
 	}
 	spritetype = {
 		name = "GFX_HWG_prim_n_proper"
@@ -481,7 +521,7 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_HWG_prim_n_proper_small"
-		textureFile = "gfx/interface/advisors/HWG/HWG_prim_n_proper.dds"
+		textureFile = "gfx/interface/advisors/HWG/HWG_prim_n_proper_small.dds"
 	}
 	spritetype = {
 		name = "GFX_HWG_rarity"
@@ -489,7 +529,7 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_HWG_rarity_small"
-		textureFile = "gfx/interface/advisors/HWG/HWG_rarity.dds"
+		textureFile = "gfx/interface/advisors/HWG/HWG_rarity_small.dds"
 	}
 	spritetype = {
 		name = "GFX_HWG_straight_arrow"
@@ -497,7 +537,7 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_HWG_straight_arrow_small"
-		textureFile = "gfx/interface/advisors/HWG/HWG_straight_arrow.dds"
+		textureFile = "gfx/interface/advisors/HWG/HWG_straight_arrow_small.dds"
 	}
 	spritetype = {
 		name = "GFX_HWG_sweetie_belle"
@@ -505,7 +545,7 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_HWG_sweetie_belle_small"
-		textureFile = "gfx/interface/advisors/HWG/HWG_sweetie_belle.dds"
+		textureFile = "gfx/interface/advisors/HWG/HWG_sweetie_belle_small.dds"
 	}
 	spritetype = {
 		name = "GFX_HWG_whispy_locks"
@@ -513,32 +553,33 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_HWG_whispy_locks_small"
-		textureFile = "gfx/interface/advisors/HWG/HWG_whispy_locks.dds"
+		textureFile = "gfx/interface/advisors/HWG/HWG_whispy_locks_small.dds"
 	}
-##TRS##
+##JTL##
 	spritetype = {
-		name = "GFX_TRS_duchess_aurora"
-		textureFile = "gfx/leaders/TRS/TRS_duchess_aurora.dds"
-	}
-	spritetype = {
-		name = "GFX_TRS_duchess_aurora_small"
-		textureFile = "gfx/interface/advisors/TRS/TRS_duchess_aurora.dds"
+		name = "GFX_JTL_ahuizotl"
+		textureFile = "gfx/leaders/TEM/Ahuizotl.tga"
 	}
 	spritetype = {
-		name = "GFX_TRS_mystical_phantasm"
-		textureFile = "gfx/leaders/TRS/TRS_mystical_phantasm.dds"
+		name = "GFX_JTL_tailcoatl"
+		textureFile = "gfx/leaders/TEM/TEM_Tailcoatl.tga"
 	}
 	spritetype = {
-		name = "GFX_TRS_mystical_phantasm_small"
-		textureFile = "gfx/interface/advisors/TRS/TRS_mystical_phantasm.dds"
+		name = "GFX_JTL_temple_chant"
+		textureFile = "gfx/leaders/TEM/Mem.tga"
 	}
 	spritetype = {
-		name = "GFX_TRS_radiguss"
-		textureFile = "gfx/leaders/TRS/TRS_radiguss.dds"
+		name = "GFX_JTL_temple_chant_small"
+		textureFile = "gfx/interface/ideas/Advisors/TEM/TEM_mem.tga"
 	}
 	spritetype = {
-		name = "GFX_TRS_radiguss_small"
-		textureFile = "gfx/interface/advisors/TRS/TRS_radiguss.dds"
+		name = "GFX_JTL_tenoch"
+		textureFile = "gfx/leaders/TEM/TEM_tenoch.tga"
+	}
+##LAS##
+	spritetype = {
+		name = "GFX_LAS_pine_chest"
+		textureFile = "gfx/leaders/LSP/pinechest.tga"
 	}
 ##NIH##
 	spritetype = {
@@ -547,7 +588,7 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_NIH_cursed_fate_small"
-		textureFile = "gfx/interface/advisors/NIH/NIH_cursed_fate.dds"
+		textureFile = "gfx/interface/advisors/NIH/NIH_cursed_fate_small.dds"
 	}
 ##PIE##
 	spritetype = {
@@ -574,7 +615,81 @@ spritetypes = {
 		name = "GFX_PIE_maud_pie_mili"
 		textureFile = "gfx/leaders/EQS/MaudPie.tga"
 	}
+##PLF##
+	spritetype = {
+		name = "GFX_PLF_RDC"
+		textureFile = "gfx/leaders/BAL/completeanarchy.tga"
+	}
+	spritetype = {
+		name = "GFX_PLF_RDC_small"
+		textureFile = "gfx/interface/advisors/PLF/PLF_RDC_small.dds"
+	}
+	spritetype = {
+		name = "GFX_PLF_lavender_berry"
+		textureFile = "gfx/leaders/BAL/larrybarry.tga"
+	}
+	spritetype = {
+		name = "GFX_PLF_golden_delicious"
+		textureFile = "gfx/leaders/BAL/Golden Delicious.tga"
+	}
+	spritetype = {
+		name = "GFX_PLF_cricket_chafer"
+		textureFile = "gfx/leaders/BAL/Chafer.tga"
+	}
+	spritetype = {
+		name = "GFX_PLF_silvermane"
+		textureFile = "gfx/leaders/BAL/silvermane.tga"
+	}
+	spritetype = {
+		name = "GFX_PLF_lime_pearl"
+		textureFile = "gfx/leaders/BAL/commie_waifu.tga"
+	}
+	spritetype = {
+		name = "GFX_PLF_stylus_pen"
+		textureFile = "gfx/leaders/BAL/glorious_commie_waifu.tga"
+	}
+	spritetype = {
+		name = "GFX_PLF_boreal_bloom"
+		textureFile = "gfx/leaders/BAL/Brandon.tga"
+	}
+##SGR##
+	spritetype = {
+		name = "GFX_SGR_ratibor"
+		textureFile = "gfx/leaders/STG/Ratibor.tga"
+	}
+	spritetype = {
+		name = "GFX_SGR_altidiya"
+		textureFile = "gfx/leaders/STG/Alty.tga"
+	}
+	spritetype = {
+		name = "GFX_SGR_peter_iv"
+		textureFile = "gfx/leaders/STG/PeterIV.tga"
+	}
+	spritetype = {
+		name = "GFX_SGR_caramelka_sladkaya"
+		textureFile = "gfx/leaders/STG/Caramelka.tga"
+	}
+	spritetype = {
+		name = "GFX_SGR_nestor"
+		textureFile = "gfx/leaders/STG/Nestor.tga"
+	}
+	spritetype = {
+		name = "GFX_SGR_sinister_serov"
+		textureFile = "gfx/leaders/STG/Sinnie.tga"
+	}
+	spritetype = {
+		name = "GFX_SGR_vasya"
+		textureFile = "gfx/leaders/STG/Vasya.tga"
+	}
 ##SOY##
+	spritetype = {
+		name = "GFX_SOY_venyx"
+		textureFile = "gfx/leaders/CHN/Venyx.tga"
+	}
+	spritetype = {
+		name = "GFX_SOY_venyx_small"
+		textureFile = "gfx/interface/ideas/Advisors/CHN/idea_Venyx.tga"
+	}
 	spritetype = {
 		name = "GFX_SOY_yaria"
 		textureFile = "gfx/leaders/SOY/SOY_yaria.dds"
@@ -586,7 +701,7 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_TFL_buffalo_joe_small"
-		textureFile = "gfx/interface/advisors/TFL/TFL_buffalo_joe.dds"
+		textureFile = "gfx/interface/advisors/TFL/TFL_buffalo_joe_small.dds"
 	}
 	spritetype = {
 		name = "GFX_TFL_firespit"
@@ -594,7 +709,7 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_TFL_firespit_small"
-		textureFile = "gfx/interface/advisors/TFL/TFL_firespit.dds"
+		textureFile = "gfx/interface/advisors/TFL/TFL_firespit_small.dds"
 	}
 	spritetype = {
 		name = "GFX_TFL_rain_dancer"
@@ -605,12 +720,12 @@ spritetypes = {
 		textureFile = "gfx/interface/advisors/TFL/TFL_rain_dancer_small.dds"
 	}
 	spritetype = {
-		name = "GFX_TFL_yeehaw"
-		textureFile = "gfx/leaders/TFL/TFL_yeehaw.dds"
+		name = "GFX_TFL_hawyee"
+		textureFile = "gfx/leaders/TFL/TFL_hawyee.dds"
 	}
 	spritetype = {
-		name = "GFX_TFL_yeehaw_small"
-		textureFile = "gfx/interface/advisors/TFL/TFL_yeehaw.dds"
+		name = "GFX_TFL_hawyee_small"
+		textureFile = "gfx/interface/advisors/TFL/TFL_hawyee_small.dds"
 	}
 ##THA##
 	spritetype = {
@@ -619,7 +734,7 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_THA_argent_end_small"
-		textureFile = "gfx/interface/advisors/THA/THA_argent_end.dds"
+		textureFile = "gfx/interface/advisors/THA/THA_argent_end_small.dds"
 	}
 	spritetype = {
 		name = "GFX_THA_auburn_peak"
@@ -627,7 +742,7 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_THA_auburn_peak_small"
-		textureFile = "gfx/interface/advisors/THA/THA_auburn_peak.dds"
+		textureFile = "gfx/interface/advisors/THA/THA_auburn_peak_small.dds"
 	}
 	#spritetype = {
 	#	name = "GFX_THA_the_niece"
@@ -635,8 +750,33 @@ spritetypes = {
 	#}
 	#spritetype = {
 	#	name = "GFX_THA_the_niece"
-	#	textureFile = "gfx/interface/advisors/THA/THA_the_niece.dds"
+	#	textureFile = "gfx/interface/advisors/THA/THA_the_niece_small.dds"
 	#}
+##TRS##
+	spritetype = {
+		name = "GFX_TRS_duchess_aurora"
+		textureFile = "gfx/leaders/TRS/TRS_duchess_aurora.dds"
+	}
+	spritetype = {
+		name = "GFX_TRS_duchess_aurora_small"
+		textureFile = "gfx/interface/advisors/TRS/TRS_duchess_aurora_small.dds"
+	}
+	spritetype = {
+		name = "GFX_TRS_mystical_phantasm"
+		textureFile = "gfx/leaders/TRS/TRS_mystical_phantasm.dds"
+	}
+	spritetype = {
+		name = "GFX_TRS_mystical_phantasm_small"
+		textureFile = "gfx/interface/advisors/TRS/TRS_mystical_phantasm_small.dds"
+	}
+	spritetype = {
+		name = "GFX_TRS_radiguss"
+		textureFile = "gfx/leaders/TRS/TRS_radiguss.dds"
+	}
+	spritetype = {
+		name = "GFX_TRS_radiguss_small"
+		textureFile = "gfx/interface/advisors/TRS/TRS_radiguss_small.dds"
+	}
 ##TRT##
 	spritetype = {
 		name = "GFX_TRT_harshwhinny"
@@ -644,9 +784,42 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_TRT_harshwhinny_small"
-		textureFile = "gfx/interface/advisors/TRT/TRT_harshwhinny.dds"
+		textureFile = "gfx/interface/advisors/TRT/TRT_harshwhinny_small.dds"
 	}
-###VII###
+##VHT##
+	spritetype = {
+		name = "GFX_VHT_dust_hoover"
+		textureFile = "gfx/leaders/VAN/Admiral.tga"
+	}
+	spritetype = {
+		name = "GFX_VHT_strawberry_snowflake"
+		textureFile = "gfx/leaders/VAN/Strawberry_Snowflake.tga"
+	}
+	spritetype = {
+		name = "GFX_VHT_winter_turnip"
+		textureFile = "gfx/leaders/VAN/Winter_Turnip.tga"
+	}
+	spritetype = {
+		name = "GFX_VHT_sunset_punch"
+		textureFile = "gfx/leaders/Pony/portrait_pony_generic_3.dds"
+	}
+	spritetype = {
+		name = "GFX_VHT_turbine_whirl"
+		textureFile = "gfx/leaders/VAN/Turbine.tga"
+	}
+	spritetype = {
+		name = "GFX_VHT_turbine_whirl_small"
+		textureFile = "gfx/interface/ideas/Advisors/VAN/VAN_turbine.tga"
+	}
+	spritetype = {
+		name = "GFX_VHT_gleb"
+		textureFile = "gfx/leaders/VAN/Gleb.tga"
+	}
+	spritetype = {
+		name = "GFX_VHT_gleb_small"
+		textureFile = "gfx/interface/ideas/Advisors/VAN/VAN_gleb.tga"
+	}
+##VII##
 	spritetype = {
 		name = "GFX_VII_ember"
 		textureFile = "gfx/leaders/DRG/Amber.tga"

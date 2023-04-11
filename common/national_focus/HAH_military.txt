@@ -98,13 +98,15 @@
 		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_M02B"
-			add_advisor_role={
-				character=HAH_boiled_apples
-				advisor={
-					slot=political_advisor
-					idea_token=HAH_bapples_advi
-					modifier={
-						research_speed_factor=0.15
+			effect_tooltip = {
+				add_advisor_role={
+					character=HAH_boiled_apples
+					advisor={
+						slot=political_advisor
+						idea_token=HAH_bapples_advi
+						modifier={
+							research_speed_factor=0.15
+						}
 					}
 				}
 			}

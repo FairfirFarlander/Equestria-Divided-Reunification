@@ -4,20 +4,21 @@ characters = {
 		gender = female
 		portraits = {
 			civilian = {
-				large = "GFX_HSW_rainbow_dash"
-				small = "GFX_HSW_rainbow_dash"
+				large = GFX_HSW_rainbow_dash
+				small = GFX_HSW_rainbow_dash_small
 			}
 			army = {
-				large = "GFX_HSW_rainbow_dash"
-				small = "GFX_HSW_rainbow_dash"
+				large = GFX_HSW_rainbow_dash
+				small = GFX_HSW_rainbow_dash_small
 			}
 		}
 		country_leader = {
-			desc = "HSW_rdash_leader_desc"
+			desc = HSW_rdash_leader_desc
 			ideology = stratocracy
+			traits = { HSW_the_bird_trait }
 		}
-		field_marshal = {	#force commander supreme
-			desc = "HSW_rdash_commander_desc"
+		field_marshal = {
+			desc = HSW_rdash_commander_desc
 			skill = 3
 			attack_skill = 4
 			defense_skill = 3
@@ -34,12 +35,12 @@ characters = {
 		name = HSW_storm_mayhem
 		portraits = {
 			civilian = {
-				large = "GFX_portrait_pony_generic_navy_15"
-				small = "GFX_portrait_pony_generic_navy_15_small"
+				large = GFX_portrait_pony_generic_navy_15
+				small = GFX_portrait_pony_generic_navy_15_small
 			}
 		}
 		country_leader = {
-			desc = "HSW_smayhem_leader_desc"
+			desc = HSW_smayhem_leader_desc
 			ideology = anarchist_communism
 		}
 	}
@@ -47,12 +48,12 @@ characters = {
 		name = HSW_steel_wings
 		portraits = {
 			civilian = {
-				large = "GFX_portrait_pony_generic_navy_1"
-				small = "GFX_portrait_pony_generic_navy_1_small"
+				large = GFX_portrait_pony_generic_navy_1
+				small = GFX_portrait_pony_generic_navy_1_small
 			}
 		}
 		country_leader = {
-			desc = "HSW_swings_leader_desc"
+			desc = HSW_swings_leader_desc
 			ideology = despotism
 		}
 	}
@@ -61,12 +62,12 @@ characters = {
 		gender = female
 		portraits = {
 			civilian = {
-				large = "GFX_portrait_pony_generic_navy_5"
-				small = "GFX_portrait_pony_generic_navy_5_small"
+				large = GFX_portrait_pony_generic_navy_5
+				small = GFX_portrait_pony_generic_navy_5_small
 			}
 		}
 		country_leader = {
-			desc = "HSW_scloud_leader_desc"
+			desc = HSW_scloud_leader_desc
 			ideology = liberalism
 		}
 	}
@@ -74,12 +75,12 @@ characters = {
 		name = HSW_soarin
 		portraits = {
 			army = {
-				large = "GFX_HSW_soarin"
-				small = "GFX_HSW_soarin"
+				large = GFX_HSW_soarin
+				small = GFX_HSW_soarin_small
 			}
 		}
 		corps_commander = {	#wing commander
-			desc = "HSW_soarin_commander_desc"
+			desc = HSW_soarin_commander_desc
 			skill = 3
 			attack_skill = 2
 			defense_skill = 3
@@ -97,12 +98,17 @@ characters = {
 		gender = female
 		portraits = {
 			army = {
-				large = "GFX_HSW_spitfire"
-				small = "GFX_HSW_spitfire"
+				large = GFX_HSW_spitfire
+				small = GFX_HSW_spitfire_small
 			}
 		}
+		country_leader = {
+			desc = HSW_spitfire_leader_desc
+			ideology = liberalism
+			traits = { HSW_wing_commander }
+		}
 		corps_commander = {	#wing commander
-			desc = "HSW_spitfire_commander_desc"
+			desc = HSW_spitfire_commander_desc
 			skill = 3
 			attack_skill = 2
 			defense_skill = 1
@@ -120,25 +126,24 @@ characters = {
 		gender = female
 		portraits = {
 			army = {
-				large = "GFX_HSW_scootaloo"
-				small = "GFX_HSW_scootaloo"
+				large = GFX_HSW_scootaloo
+				small = GFX_HSW_scootaloo_small
 			}
 		}
 		corps_commander = {
-			desc = "HSW_scootaloo_commander_desc"
+			desc = HSW_scootaloo_commander_desc
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
-			traits = {pony_race_trait}
+			traits = { pony_race_trait }
 		}
 		advisor = {
 			slot = high_command
+			idea_token = HSW_scootaloo_highcmdr
 			ledger = army
 			cost = 50
-			idea_token = HSW_scootaloo_high
-			allowed = {original_tag = HSW}
 		}
 	}
 }

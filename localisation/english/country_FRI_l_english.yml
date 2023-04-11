@@ -1,22 +1,23 @@
 ﻿l_english:
-###Introduction###
-##Bookmark##
-FRI_GATHERING_STORM_DESC: ""
-##Welcome Screen##
- EAW_WS_FRI: ""
-  EAW_WS_FRI_desc: ""
-###Country Name###
-FRI: "Friesland"
- FRI_DEF: "the Slave State of Friesland"
- FRI_ADJ: "Frieslandi"
-###Political Parties###
-###Characters###
-##Leaders##
-FRI_generic_pony: "Generic pony"
- FRI_generic_pony_desc: ""
-##Commanders##
-##Political Advisors##
-##Military Advisors##
-###Ideas###
-###National Focuses###
-##Storyline Tree##
+ ###Introduction###
+  ##Bookmark##
+   FRI_GATHERING_STORM_DESC: "$GENR_GATHERING_STORM_DESC$"
+  ##Welcome Screen##
+   EAW_WS_FRI: "$EAW_WS_GENR$"
+    EAW_WS_FRI_desc: "$EAW_WS_GENR_desc$"
+ ###Politics###
+  ##Country Name##
+   FRI: "Friesland"
+    FRI_DEF: "the Slave State of Friesland"
+    FRI_ADJ: "Frieslandi"
+  ##Political Parties##
+ ###Characters###
+  ##Leaders##
+   FRI_generic_pony: "Generic pony"
+    FRI_gpony_leader_desc: "$GENR_advisor_desc$"
+  ##Commanders##
+  ##Political Advisors##
+  ##Military Advisors##
+ ###Ideas###
+ ###National Focuses###
+  ##Storyline Tree##

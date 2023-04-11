@@ -3,12 +3,12 @@ characters = {
 		name = EMB_mother_nightshade
 		portraits = {
 			civilian = {
-				large = "GFX_EMB_mother_nightshade"
-				small = "GFX_EMB_mother_nightshade"
+				large = GFX_EMB_mother_nightshade
+				small = GFX_EMB_mother_nightshade_small
 			}
 		}
 		country_leader = {
-			desc = "EMB_mnightshade_leader_desc"
+			desc = EMB_mnightshade_leader_desc
 			ideology = holy_order_f
 		}
 	}
@@ -16,20 +16,20 @@ characters = {
 		name = EMB_councillor_tyrennadus
 		portraits = {
 			civilian = {
-				large = "GFX_EMB_councillor_tyrennadus"
-				small = "GFX_EMB_councillor_tyrennadus"
+				large = GFX_EMB_councillor_tyrennadus
+				small = GFX_EMB_councillor_tyrennadus_small
 			}
 			army = {
-				large = "GFX_EMB_councillor_tyrennadus"
-				small = "GFX_EMB_councillor_tyrennadus"
+				large = GFX_EMB_councillor_tyrennadus
+				small = GFX_EMB_councillor_tyrennadus_small
 			}
 		}
 		country_leader = {
-			desc = "EMB_ctyrennadus_leader_desc"
+			desc = EMB_ctyrennadus_leader_desc
 			ideology = primitive_communism
 		}
 		corps_commander = {
-			desc = "EMB_ctyrennadus_commander_desc"
+			desc = EMB_ctyrennadus_commander_desc
 			skill = 2
 			attack_skill = 2
 			defense_skill = 3
@@ -45,12 +45,12 @@ characters = {
 		name = EMB_queen_narratek
 		portraits = {
 			civilian = {
-				large = "GFX_EMB_queen_narratek"
-				small = "GFX_EMB_queen_narratek"
+				large = GFX_EMB_queen_narratek
+				small = GFX_EMB_queen_narratek_small
 			}
 		}
 		country_leader = {
-			desc = "EMB_qnarratek_leader_desc"
+			desc = EMB_qnarratek_leader_desc
 			ideology = tribal_council
 		}
 	}
@@ -58,12 +58,12 @@ characters = {
 		name = EMB_aetanae_krix
 		portraits = {
 			civilian = {
-				large = "GFX_EMB_aetanae_krix"
-				small = "GFX_EMB_aetanae_krix"
+				large = GFX_EMB_aetanae_krix
+				small = GFX_EMB_aetanae_krix_small
 			}
 		}
 		country_leader = {
-			desc = "EMB_akrix_leader_desc"
+			desc = EMB_akrix_leader_desc
 			ideology = tribal_federation
 		}
 	}
@@ -71,8 +71,21 @@ characters = {
 		name = EMB_hithax_ballas
 		portraits = {
 			army = {
-				large = "GFX_EMB_hithax_ballas"
-				small = "GFX_EMB_hithax_ballas"
+				large = GFX_EMB_hithax_ballas
+				small = GFX_EMB_hithax_ballas_small
+			}
+		}
+		corps_commander = {
+			visible = { has_country_flag = EMB_recruited_officers }
+			desc = EMB_hballas_commander_desc
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			traits = {
+				trait_foreman
+				changeling_race_trait
 			}
 		}
 	}
@@ -80,8 +93,21 @@ characters = {
 		name = EMB_lavender_opal
 		portraits = {
 			army = {
-				large = "GFX_EMB_lavender_opal"
-				small = "GFX_EMB_lavender_opal"
+				large = GFX_EMB_lavender_opal
+				small = GFX_EMB_lavender_opal_small
+			}
+		}
+		corps_commander = {
+			visible = { has_country_flag = EMB_recruited_officers }
+			desc = EMB_lopal_commander_desc
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			traits = {
+				trait_cautious
+				changeling_race_trait
 			}
 		}
 	}

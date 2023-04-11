@@ -1,7 +1,7 @@
 ﻿l_english:
  ###Introduction###
   ##Bookmark##
-   TFL_GATHERING_STORM_DESC: ""
+   TFL_GATHERING_STORM_DESC: "$GENR_GATHERING_STORM_DESC$"
   ##Welcome Screen##
    EAW_WS_TFL: "The Forgotten Legion"
     EAW_WS_TFL_desc: "A rag tag legion of Earthborn forces have found themselves deep within unfriendly territory, and surrounded on all sides by perceived enemies. But how did they find themselves in such a position? As the tensions were rising in the coalition, the mayor of Orshab began to fear the worst. Wanting to protect his citizens from whatever may come, he sent out messengers to the surrounding powers. Hoping that one of them would come to their aid. One of those messengers would be intercepted by a group of Earthborn soldiers who were manning the border between the coalition and Hoofington. Fearing that the messenger was a scout for some kind of enemy army, they would take him prisoner and take him to their camp to be detained. Upon reaching the camp, the soldiers were stopped by their commanding officer, a mare by the name of Rain Dancer. She confronted them, questioning why they had brought someone back to their encampment. When the soldiers began to tell her about the circumstances surrounding this messenger's capture, she pulled the stallion and began to question him herself. After hours of questioning it was clear to her that this stallion was no spy, so she went on to ask what he was doing in the lands of Earthborn. That was weeks ago now. The little coalition of towns has long since fallen apart. The mayor who sent out a call for aid has long since fled the town. And the once proud group of soldiers who came to these lands to secure them are running out of time. The few supplies that they were getting dried up as tensions between the confederacy and Earthborn began heating up once again."
@@ -18,16 +18,16 @@
  ###Characters###
   ##Leaders##
    TFL_rain_dancer: "Rain Dancer"
-    TFL_rdancer_political_desc: ""
+    TFL_rdancer_leader_desc: "$GENR_advisor_desc$"
    TFL_generic_pony: "Generic Pony"
-    TFL_gpony_political_desc: ""
+    TFL_gpony_leader_desc: "$GENR_advisor_desc$"
   ##Commanders##
    TFL_buffalo_joe: "Buffalo Joe"
-    TFL_bjoe_commander_desc: ""
+    TFL_bjoe_commander_desc: "$GENR_advisor_desc$"
    TFL_firespit: "Firespit"
-    TFL_firespit_commander_desc: ""
-   TFL_yeehaw: "Yeehaw"
-    TFL_yeehaw_commander_desc: ""
+    TFL_firespit_commander_desc: "$GENR_advisor_desc$"
+   TFL_hawyee: "Yeehaw"
+    TFL_hawyee_commander_desc: "$GENR_advisor_desc$"
   ##Political Advisors##
   ##Military Advisors##
  ###Ideas###

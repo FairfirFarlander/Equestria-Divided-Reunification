@@ -38,7 +38,7 @@ characters = {
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = WTC_ahabbidasher_political
+			idea_token = WTC_ahabbidasher_politician
 			ledger = civilian
 		}
 	}
@@ -52,7 +52,7 @@ characters = {
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = WTC_epath_political
+			idea_token = WTC_epath_politician
 			ledger = civilian
 		}
 	}
@@ -66,7 +66,7 @@ characters = {
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = WTC_samercenary_political
+			idea_token = WTC_samercenary_politician
 			ledger = civilian
 		}
 	}
@@ -80,7 +80,7 @@ characters = {
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = WTC_zmercenary_political
+			idea_token = WTC_zmercenary_politician
 			ledger = civilian
 		}
 	}

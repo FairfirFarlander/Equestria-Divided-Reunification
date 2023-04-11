@@ -52,7 +52,9 @@ characters = {
 		name = BCK_sea_prism
 		gender = female
 		portraits = {
-			civilian = { large = GFX_portrait_eqs_pony_generic_25 }
+			civilian = {
+				large = GFX_portrait_eqs_pony_generic_25
+			}
 		}
 		country_leader = {
 			desc = BCK_sprism_leader_desc

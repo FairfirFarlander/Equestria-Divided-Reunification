@@ -26,27 +26,28 @@
  ###Characters###
   ##Leaders##
    CUL_the_laughing_mare: "The Laughing Mare"
-    CUL_tlmare_leader_desc: ""
+    CUL_tlmare_leader_desc: "$GENR_advisor_desc$"
     CUL_tlmare_commander_desc: "$CUL_tlmare_leader_desc$"
    CUL_unknown_melody: "Unknown Melody"
-    CUL_umelody_leader_desc: ""
+    CUL_umelody_leader_desc: "$GENR_advisor_desc$"
   ##Commanders##
    CUL_lyra_heartstrings: "Lyra Heartstrings"
-    CUL_lheartstrings_commander_desc: "$CRDC_bylis_soren$"
-    CUL_lheartstrings_political_desc: "$CUL_lheartstrings_commander_desc$"
+    CUL_lheartstrings_commander_desc: "$CRDC_art_bylisboa$"
+    CUL_lheartstrings_politician_desc: "$CUL_lheartstrings_commander_desc$"
    CUL_screwball: "Screwball"
-    CUL_screwball_commander_desc: "$CRDC_bylis_soren$"
-    CUL_screwball_political_desc: "$CUL_screwball_commander_desc$"
+    CUL_screwball_commander_desc: "$CRDC_art_bylisboa$"
+    CUL_screwball_politician_desc: "$CUL_screwball_commander_desc$"
    CUL_surprise: "Surprise"
-    CUL_surprise_highcmdr_desc: "$CRDC_bylis_soren$"
+    CUL_surprise_commander_desc: "$CRDC_art_bylisboa$"
+    CUL_surprise_highcmdr_desc: "$CUL_surprise_commander_desc$"
    CUL_pokey_pierce: "Pokey Pierce"
-    CUL_ppierce_commander_desc: "$CRDC_bylis_soren$"
+    CUL_ppierce_commander_desc: "$CRDC_art_bylisboa$"
     CUL_ppierce_chief_desc: "$CUL_ppierce_commander_desc$"
   ##Political Advisors##
    CUL_cranky_doodle: "Cranky Doodle"
-    CUL_cdoodle_political_desc: "$CRDC_bylis_soren$"
+    CUL_cdoodle_politician_desc: "$CRDC_art_bylisboa$"
    CUL_derpy_hooves: "Derpy Hooves"
-    CUL_dhooves_political_desc: "$CRDC_bylis_soren$"
+    CUL_dhooves_politician_desc: "$CRDC_art_bylisboa$"
   ##Military Advisors##
  ###Ideas###
   CUL_idea: "The dead shall have the last laugh."

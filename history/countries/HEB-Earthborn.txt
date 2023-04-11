@@ -1,9 +1,8 @@
-capital=21
-oob="HEB_1012"
-set_research_slots=3
-set_stability=0.5
-set_war_support=0.12
-add_ideas={
+capital = 21
+oob = "HEB_07"
+set_research_slots = 3
+set_war_support = 0.12
+add_ideas = {
 	pre_industrial_society2
 	lack_of_scientists3
 	poverty4
@@ -12,75 +11,75 @@ add_ideas={
 	HEB_clanandkin04
 	HEB_dehorn
 }
-set_technology={
-	pony_race=1
-	melee_weapons=1
-	melee_weapons1=1
-	tech_support=1
-	tech_recon=1
-	pre_gw_artillery=1
+set_technology = {
+	pony_race = 1
+	melee_weapons = 1
+	melee_weapons1 = 1
+	tech_support = 1
+	tech_recon = 1
+	pre_gw_artillery = 1
 }
-if={
-	limit={has_dlc="Man the Guns"}
-	set_technology={
-		early_ship_hull_light=1
-		early_ship_hull_cruiser=1
-		basic_battery=1
-		basic_depth_charges=1
-		basic_torpedo=1
-		mtg_transport=1
+if = {
+	limit = {has_dlc = "Man the Guns"}
+	set_technology = {
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_depth_charges = 1
+		basic_torpedo = 1
+		mtg_transport = 1
 	}
-	#set_naval_oob="HEB_1012_naval"
-	else={
-		set_technology={
-			early_destroyer=1
-			early_light_cruiser=1
-			transport=1
+	#set_naval_oob = "HEB_07_naval"
+	else = {
+		set_technology = {
+			early_destroyer = 1
+			early_light_cruiser = 1
+			transport = 1
 		}
-		#set_naval_oob="HEB_1012_naval_legacy"
+		#set_naval_oob = "HEB_07_naval_legacy"
 	}
 }
-if={
-	limit={has_dlc="No Step Back"}
-	add_ideas={
+if = {
+	limit = {has_dlc = "No Step Back"}
+	add_ideas = {
 		traditionalism_academy_spirit
 		doctrinal_orthodoxy_spirit
 		disdain_for_the_digging_spirit
 	}
-	set_technology={
-		gwtank_chassis=1
+	set_technology = {
+		gwtank_chassis = 1
 	}
-	else={
-		set_technology={
-			gwtank=1
+	else = {
+		set_technology = {
+			gwtank = 1
 		}
-		add_ideas={EQS_bad_tanks}
+		add_ideas = {EQS_bad_tanks}
 	}
 }
-actually_fix_weapon_techs=yes
-generic_CL_template=yes
-generic_DD_template=yes
-set_convoys=11
-set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
-create_faction=HEB_faction
-add_to_faction=CHY
-add_to_faction=HFT
-add_to_faction=PIE
-set_popularities={
-	fascism=85
-	neutrality=15
+actually_fix_weapon_techs = yes
+generic_CL_template = yes
+generic_DD_template = yes
+set_convoys = 11
+set_rule = {	can_generate_female_aces = yes	can_generate_female_unit_leaders = yes	can_generate_female_country_leaders = yes}
+create_faction = HEB_faction
+add_to_faction = CHY
+add_to_faction = HFT
+add_to_faction = PIE
+set_popularities = {
+	fascism = 85
+	neutrality = 15
 }
-set_politics={ruling_party=fascism}
-set_country_flag=EDR_is_equestrian_breakaway
-recruit_character=HEB_applejack
-recruit_character=HEB_jack_trader
-recruit_character=HEB_magia_saviour
-recruit_character=HEB_raving_cloud
-recruit_character=HEB_big_mac
-recruit_character=HEB_braeburn
-recruit_character=HEB_lightning_dust
-recruit_character=HEB_chief_strongheart
-recruit_character=HEB_apple_bloom
-recruit_character=HEB_granny_smith
+set_politics = {ruling_party = fascism}
+set_country_flag = EDR_is_equestrian_breakaway
+recruit_character = HEB_applejack
+recruit_character = HEB_jack_trader
+recruit_character = HEB_magia_saviour
+recruit_character = HEB_raving_cloud
+recruit_character = HEB_big_mac
+recruit_character = HEB_braeburn
+recruit_character = HEB_lightning_dust
+recruit_character = HEB_chief_strongheart
+recruit_character = HEB_apple_bloom
+recruit_character = HEB_granny_smith
 #NOTES#
 #Hit 1 ASAP literacy#

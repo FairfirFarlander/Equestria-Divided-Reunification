@@ -8,7 +8,7 @@ characters = {
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = BALTIMARE_amoustache_advi
+			idea_token = BALTIMARE_amoustache_politician
 			allowed = {
 				OR = {
 					original_tag = HWG
@@ -41,7 +41,7 @@ characters = {
 			}
 			army = {
 				large = "gfx/leaders/NMS/batgarrison.tga"
-				small = "GFX_unknown_advisor"
+				small = "GFX_idea_unknown_advisor"
 			}
 		}
 		corps_commander = {

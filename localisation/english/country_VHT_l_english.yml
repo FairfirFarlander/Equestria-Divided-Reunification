@@ -1,37 +1,38 @@
 ﻿l_english:
-###Introduction###
-##Bookmark##
-VHT_GATHERING_STORM_DESC: ""
-##Welcome Screen##
- EAW_WS_VHT: ""
-  EAW_WS_VHT_desc: ""
-###Country Name###
-VHT: "Vanhoover"
- VHT_DEF: "the County of Vanhoover"
- VHT_ADJ: "Hoovarian"
-VHT_fascism: "House Vanhoover"
- VHT_fascism_DEF: "the House of Vanhoover"
- VHT_communism: "Vanhoover Commune"
-  VHT_communism_DEF: "the Commune of Vanhoover"
- VHT_neutrality: "Vanhoover Republic"
-  VHT_neutrality_DEF: "the Republic of Vanhoover"
- VHT_democratic: "Vanhoover Republic"
-  VHT_democratic_DEF: "the Democratic Republic of Vanhoover"
-###Political Parties###
-###Characters###
-##Leaders##
-VHT_strawberry_snowflake: "Strawberry Snowflake"
- VHT_ssnowflake_political_desc: ""
-##Commanders##
- VHT_indigo_skies: "Indigo Skies"
-  VHT_iskies_commander_desc: ""
-  VHT_crimson_hoof: "Crimson Hoof"
-   VHT_choof_commander_desc: ""
-  VHT_moonlight_elegy: "Moonlight Elegy"
-   VHT_melegy_commander_desc: ""
-  VHT_lavender_blossom: "Lavender Blossom"
-   VHT_lblossom_commander_desc: ""
-##Political Advisors##
-##Military Advisors##
-###National Focuses###
-##Storyline Tree##
+ ###Introduction###
+  ##Bookmark##
+   VHT_GATHERING_STORM_DESC: "$GENR_GATHERING_STORM_DESC$"
+  ##Welcome Screen##
+   EAW_WS_VHT: "$EAW_WS_GENR$"
+    EAW_WS_VHT_desc: "$EAW_WS_GENR_desc$"
+ ###Politics###
+  ##Country Name##
+   VHT: "Vanhoover"
+    VHT_DEF: "the County of Vanhoover"
+    VHT_ADJ: "Hoovarian"
+   VHT_fascism: "House Vanhoover"
+    VHT_fascism_DEF: "the House of Vanhoover"
+   VHT_communism: "Vanhoover Commune"
+    VHT_communism_DEF: "the Commune of Vanhoover"
+   VHT_neutrality: "Vanhoover Republic"
+    VHT_neutrality_DEF: "the Republic of Vanhoover"
+   VHT_democratic: "Vanhoover Republic"
+    VHT_democratic_DEF: "the Democratic Republic of Vanhoover"
+  ##Political Parties##
+ ###Characters###
+  ##Leaders##
+   VHT_strawberry_snowflake: "Strawberry Snowflake"
+    VHT_ssnowflake_leader_desc: "$GENR_advisor_desc$"
+  ##Commanders##
+   VHT_indigo_skies: "Indigo Skies"
+    VHT_iskies_commander_desc: "$GENR_advisor_desc$"
+    VHT_crimson_hoof: "Crimson Hoof"
+     VHT_choof_commander_desc: "$GENR_advisor_desc$"
+    VHT_moonlight_elegy: "Moonlight Elegy"
+     VHT_melegy_commander_desc: "$GENR_advisor_desc$"
+    VHT_lavender_blossom: "Lavender Blossom"
+     VHT_lblossom_commander_desc: "$GENR_advisor_desc$"
+  ##Political Advisors##
+  ##Military Advisors##
+ ###National Focuses###
+  ##Storyline Tree##

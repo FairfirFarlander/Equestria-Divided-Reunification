@@ -1,49 +1,50 @@
 ﻿l_english:
-###Introduction###
-##Bookmark##
-MWC_GATHERING_STORM_DESC: ""
-##Welcome Screen##
- EAW_WS_MWC: ""
-  EAW_WS_MWC_desc: ""
-###Country Name###
-MWC: "Meadowood"
- MWC_DEF: "the County of Meadowood"
- MWC_ADJ: "Meadish"
- MWC_fascism: "Union of Meadowood"
-  MWC_fascism_DEF: "the National Union of Meadowood"
- MWC_communism: "Unions of Meadowood"
-  MWC_communism_DEF: "the Federated Unions of Meadowood"
- MWC_neutrality: "Meadowood Confederation"
-  MWC_neutrality_DEF: "the Meadowood Confederation"
- MWC_democratic: "Meadowood Republic"
-  MWC_democratic_DEF: "the Republic of Meadowood"
-###Political Parties###
-MWC_fascism_party: "MWNP"
- MWC_fascism_party_long: "Meadowood Nationalist Party"
- MWC_communism_party: "MWWP"
-  MWC_communism_party_long: "Meadowood Worker's Party"
- MWC_neutrality_party: "CCMW"
-  MWC_neutrality_party_long: "Confederate Council of Meadowood"
- MWC_democratic_party: "EFP"
-  MWC_democratic_party_long: "Equestrian Friendship Party"
-###Characters###
-##Leaders##
-MWC_rose_petal: "Rose Petal"
- MWC_rpetal_political_desc: ""
- MWC_mulberry_wine: "Mulberry Wine"
-  MWC_mwine_political_desc: ""
- MWC_honey_dew: "Honey Dew"
-  MWC_hdew_political_desc: ""
- MWC_maple_leaf: "Maple Leaf"
-  MWC_mleaf_political_desc: ""
-##Commanders##
- MWC_apple_cider: "Apple Cider"
-  MWC_acider_commander_desc: ""
-  MWC_mist_feather: "Mist Feather"
-   MWC_mfeather_commander_desc: ""
-  MWC_anna_taylor: "Anna Taylor"
-   MWC_ataylor_navy_desc: ""
-##Political Advisors##
-##Military Advisors##
-###National Focuses###
-##Storyline Tree##
+ ###Introduction###
+  ##Bookmark##
+   MWC_GATHERING_STORM_DESC: "$GENR_GATHERING_STORM_DESC$"
+  ##Welcome Screen##
+   EAW_WS_MWC: "$EAW_WS_GENR$"
+    EAW_WS_MWC_desc: "$EAW_WS_GENR_desc$"
+ ###Politics###
+  ##Country Name##
+   MWC: "Meadowood"
+    MWC_DEF: "the County of Meadowood"
+    MWC_ADJ: "Meadish"
+   MWC_fascism: "Union of Meadowood"
+    MWC_fascism_DEF: "the National Union of Meadowood"
+   MWC_communism: "Unions of Meadowood"
+    MWC_communism_DEF: "the Federated Unions of Meadowood"
+   MWC_neutrality: "Meadowood Confederation"
+    MWC_neutrality_DEF: "the Meadowood Confederation"
+   MWC_democratic: "Meadowood Republic"
+    MWC_democratic_DEF: "the Republic of Meadowood"
+  ##Political Parties##
+   MWC_fascism_party: "MWNP"
+    MWC_fascism_party_long: "Meadowood Nationalist Party"
+   MWC_communism_party: "MWWP"
+    MWC_communism_party_long: "Meadowood Worker's Party"
+   MWC_neutrality_party: "CCMW"
+    MWC_neutrality_party_long: "Confederate Council of Meadowood"
+   MWC_democratic_party: "EFP"
+    MWC_democratic_party_long: "Equestrian Friendship Party"
+ ###Characters###
+  ##Leaders##
+   MWC_rose_petal: "Rose Petal"
+    MWC_rpetal_leader_desc: "$GENR_advisor_desc$"
+   MWC_mulberry_wine: "Mulberry Wine"
+    MWC_mwine_leader_desc: "$GENR_advisor_desc$"
+   MWC_honey_dew: "Honey Dew"
+    MWC_hdew_leader_desc: "$GENR_advisor_desc$"
+   MWC_maple_leaf: "Maple Leaf"
+    MWC_mleaf_leader_desc: "$GENR_advisor_desc$"
+  ##Commanders##
+   MWC_apple_cider: "Apple Cider"
+    MWC_acider_commander_desc: "$GENR_advisor_desc$"
+   MWC_mist_feather: "Mist Feather"
+    MWC_mfeather_commander_desc: "$GENR_advisor_desc$"
+   MWC_anna_taylor: "Anna Taylor"
+    MWC_ataylor_commander_desc: "$GENR_advisor_desc$"
+  ##Political Advisors##
+  ##Military Advisors##
+ ###National Focuses###
+  ##Storyline Tree##

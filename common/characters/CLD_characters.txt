@@ -15,7 +15,13 @@ characters = {
 			desc = CLD_eflow_leader_desc
 			ideology = stratocracy
 		}
-		corp_commander = {
+		corps_commander = {
+			visible = {
+				has_country_leader = {
+					character = CLD_ebn_flow
+					ruling_only = yes
+				}
+			}
 			desc = CLD_eflow_commander_desc
 			skill = 1
 			attack_skill = 1
@@ -54,7 +60,15 @@ characters = {
 			ideology = oligarchism
 			traits = { disorganized_trait }
 		}
-		field_marshal = {
+		corps_commander = {
+			visible = {
+				NOT = {
+					has_country_leader = {
+						character = CLD_wonderbolt_remnant
+						ruling_only = yes
+					}
+				}
+			}
 			desc = CLD_wremnant_commander_desc
 			skill = 1
 			attack_skill = 1
@@ -63,6 +77,19 @@ characters = {
 			logistics_skill = 1
 			traits = {
 				pony_race_trait
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = CLD_wremnant_politician
+			ledger = civilian
+			available = {
+				NOT = {
+					has_country_leader = {
+						character = CLD_wonderbolt_remnant
+						ruling_only = yes
+					}
+				}
 			}
 		}
 	}

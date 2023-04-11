@@ -1,21 +1,22 @@
 ﻿l_english:
-###Introduction###
-##Bookmark##
-PRT_GATHERING_STORM_DESC: ""
-##Welcome Screen##
- EAW_WS_PRT: ""
-  EAW_WS_PRT_desc: ""
-###Country Name###
-PRT: "Pirates Cove"
- PRT_DEF: "the Pirates Cove"
- PRT_ADJ: "Pirates"
-###Political Parties###
-###Characters###
-##Leaders##
-PRT_generic_pony: "Generic Pony"
- PRT_gpony_political_desc: ""
-##Commanders##
-##Political Advisors##
-##Military Advisors##
-###National Focuses###
-##Storyline Tree##
+ ###Introduction###
+  ##Bookmark##
+   PRT_GATHERING_STORM_DESC: "$GENR_GATHERING_STORM_DESC$"
+  ##Welcome Screen##
+   EAW_WS_PRT: "$EAW_WS_GENR$"
+    EAW_WS_PRT_desc: "$EAW_WS_GENR_desc$"
+ ###Politics###
+  ##Country Name##
+   PRT: "Pirates Cove"
+    PRT_DEF: "the Pirates Cove"
+    PRT_ADJ: "Pirates"
+  ##Political Parties##
+ ###Characters###
+  ##Leaders##
+   PRT_generic_pony: "Generic Pony"
+    PRT_gpony_leader_desc: "$GENR_advisor_desc$"
+  ##Commanders##
+  ##Political Advisors##
+  ##Military Advisors##
+ ###National Focuses###
+  ##Storyline Tree##

@@ -1,9 +1,9 @@
-capital=574
-oob="CYE"
-set_research_slots=1
-set_stability=1
-set_war_support=0
-add_ideas={
+capital = 574
+oob = "CYE"
+set_research_slots = 1
+set_stability = 1
+set_war_support = 0
+add_ideas = {
 	disarmed_nation
 	closed_economy
 	isolation
@@ -13,16 +13,14 @@ add_ideas={
 	generic_race_idea
 	CYE_nerf_me_harder
 }
-set_technology={
-	pony_race=1
-	melee_weapons=1
-	tech_support=1
+set_technology = {
+	pony_race = 1
+	melee_weapons = 1
+	tech_support = 1
 }
-actually_fix_weapon_techs=yes
-set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
-set_popularities={
-	neutrality=100
-}
-set_politics={ruling_party=neutrality}
-recruit_character=CYE_nothinginterestinghappens
-#NOTES#
+actually_fix_weapon_techs = yes
+set_rule = {	can_generate_female_aces = yes	can_generate_female_unit_leaders = yes	can_generate_female_country_leaders = yes}
+set_popularities = { neutrality = 100 }
+set_politics = { ruling_party = neutrality }
+recruit_character = CYE_nothinginterestinghappens
+###NOTES###

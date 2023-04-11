@@ -4,35 +4,35 @@ characters = {
 		gender = female
 		portraits = {
 			civilian = {
-				large = "GFX_HEF_lady_fluttershy"
-				small = "GFX_HEF_lady_fluttershy"
+				large = GFX_HEF_lady_fluttershy
+				small = GFX_HEF_lady_fluttershy_small
 			}
 			army = {
-				large = "GFX_HEF_lady_fluttershy"
-				small = "GFX_HEF_lady_fluttershy"
+				large = GFX_HEF_lady_fluttershy
+				small = GFX_HEF_lady_fluttershy_small
 			}
 		}
 		country_leader = {
-			desc = "HEF_lfluttershy_leader_desc"
+			desc = HEF_lfluttershy_leader_desc
 			ideology = kratokracy
 		}
 		field_marshal = {
-			desc = "HEF_lfluttershy_commander_desc"
+			desc = HEF_lfluttershy_commander_desc
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
-			traits = {pony_race_trait}
+			traits = { pony_race_trait }
 		}
 	}
 	HEF_red_leaves = {
 		name = HEF_red_leaves
 		portraits = {
-			civilian = {large = "GFX_portrait_pony_generic_land_4"}
+			civilian = { large = GFX_portrait_pony_generic_land_4 }
 		}
 		country_leader = {
-			desc = "HEF_rleaves_leader_desc"
+			desc = HEF_rleaves_leader_desc
 			ideology = anarchist_communism
 		}
 	}
@@ -40,34 +40,34 @@ characters = {
 		name = HEF_zecora
 		gender = female
 		portraits = {
-			civilian = {large = "gfx/leaders/ZRS/Zecora.tga"}
+			civilian = { large = GFX_HEF_zecora }
 			army = {
-				large = "gfx/leaders/ZRS/Zecora.tga"
-				small = "GFX_unknown_advisor"
+				large = GFX_HEF_zecora
+				small = GFX_HEF_zecora_small
 			}
 		}
 		country_leader = {
-			desc = "HEF_zecora_leader_desc"
+			desc = HEF_zecora_leader_desc
 			ideology = tribal_council
 		}
 		corps_commander = {
-			desc = "HEF_zecora_commander_desc"
+			desc = HEF_zecora_commander_desc
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
-			traits = {pony_race_trait}
+			traits = { pony_race_trait }
 		}
 	}
 	HEF_flower_seed = {
 		name = HEF_flower_seed
 		gender = female
 		portraits = {
-			civilian = {large = "GFX_portrait_eqs_pony_generic_14"}
+			civilian = { large = GFX_portrait_eqs_pony_generic_14 }
 		}
 		country_leader = {
-			desc = "HEF_fseed_leader_desc"
+			desc = HEF_fseed_leader_desc
 			ideology = liberalism
 		}
 	}

@@ -1,7 +1,7 @@
 ﻿l_english:
  ###Introduction###
   ##Bookmark##
-   TRS_GATHERING_STORM_DESC: ""
+   TRS_GATHERING_STORM_DESC: "$GENR_GATHERING_STORM_DESC$"
   ##Welcome Screen##
    EAW_WS_TRS: ""
     EAW_WS_TRS_desc: "The great mountains of Neighgra bore witness to some of the most intense fighting during the second Crystalen War. Now this blood soaked land is a new nation, held together by little more than stubbornness of a dying royal line and the influence of Canterlot. When Canterlot went on its many conquests, the dying thestral clans of the area swore their loyalty to Canterlot in the hopes that they would gain some semblance of their old power over the land. Led by the few nobility left amongst them, the ever shrinking thestral force marched alongside Canterlot. Bringing with them a unyielding fury built out of desperation for survival. Once order was brought to the region and the dust of war settled, Canterlot granted the thestral’s their request. A new nation was to be formed, the Duchy Of Trotsylvania. However, this gift from the old capital came at a cost. This new thestral kingdom was to be little more than a satellite state for Canterlot, its word is law in these lands. However, the mare who sits upon the Trotsylvanian throne has plans to possibly change that. She wishes to see the lands of her forbearers return to some symbol of greatness; to maybe be seen as worthy enough to be compared to the old clans or possibly seen as an equal to Canterlot. But a long road lies ahead of her. Will she be able to lead this relic of a nation through these dark and modern times? Only time may tell what fate has in store for this mysterious dutches and her shell of a kingdom."
@@ -9,17 +9,17 @@
   ##Leaders##
    TRS_duchess_aurora: "Duchess Aurora"
     TRS_lady_aurora: "Lady Aurora"
-    TRS_daurora_political_desc: "§LPortrait§! by: §CTiviyl§!\n\nThe mysterious thestral mare, who almost seems to haunt the small palace she resides within. She commands a powerful presence wherever she goes. Her almost ghostly white fur and red eyes either bewitching or terrifying any who gaze upon her. Until recent years very few ponies outside of the nobility had seen her often. However, things have changed. After her and her small collection of guards ponies sided with Canterlot during their invasion into the region, she finds herself in control. With the blessings of Canterlot the duchess plans on reclaiming the glory of what is left of her small clan. However, being the last of her royal line and the thestral population declining in the region with each passing day, she will have to work hard to achieve her goals. But just what are the goals of this mysterious mare and will they lead her down a path that will put her at odds with Canterlot?"
+    TRS_daurora_leader_desc: "§LPortrait§! by: §CTiviyl§!\n\nThe mysterious thestral mare, who almost seems to haunt the small palace she resides within. She commands a powerful presence wherever she goes. Her almost ghostly white fur and red eyes either bewitching or terrifying any who gaze upon her. Until recent years very few ponies outside of the nobility had seen her often. However, things have changed. After her and her small collection of guards ponies sided with Canterlot during their invasion into the region, she finds herself in control. With the blessings of Canterlot the duchess plans on reclaiming the glory of what is left of her small clan. However, being the last of her royal line and the thestral population declining in the region with each passing day, she will have to work hard to achieve her goals. But just what are the goals of this mysterious mare and will they lead her down a path that will put her at odds with Canterlot?"
    TRS_generic_pony: "Generic pony"
-    TRS_generic_pony_desc: ""
+    TRS_generic_pony_desc: "$GENR_advisor_desc$"
   ##Commanders##
    TRS_radiguss: "Sir Radiguss"
-    TRS_radiguss_commander_desc: ""
-    TRS_radiguss_advi_desc: "$TRS_radiguss_commander_desc$"
+    TRS_radiguss_commander_desc: "$GENR_advisor_desc$"
+    TRS_radiguss_politician_desc: "$TRS_radiguss_commander_desc$"
   ##Political Advisors##
    TRS_mystical_phantasm: "Mystical Phantasm"
-    TRS_mphantasm_political_desc: ""
-    TRS_mphantasm_advi_desc: "$TRS_mphantasm_political_desc$"
+    TRS_mphantasm_leader_desc: "$GENR_advisor_desc$"
+    TRS_mphantasm_politician_desc: "$TRS_mphantasm_leader_desc$"
   ##Military Advisors##
   ##Country Name##
    TRS: "Trotsylvania"
@@ -88,7 +88,7 @@
    TRS_S03A: "The Return of the Royal Knights"
     TRS_S03A_desc: "Even before my time the royal guard that surrounded my family had begun to shrink and struggle. I can see it in the eyes of the few royal knights that are left in the duchy. They all wish to be a part of the once mighty silver army of their forefathers instead of this shell of a force who guards this castle. I believe that with a little persuasion and work with the nobility, the  could see a return of the royal knights."
     TRS_S03A_effect_tooltip: "§GUnlocks§! the §YRoyal Knight§! template.\nThe §YRoyal Knights§! will slowly rebuild and reinstate itself back into military service."
-     TRS_poli_advi_unlock: "Has formed the Royal Council."
+     TRS_politician_advisor_unlock: "Has formed the Royal Council."
    TRS_S03B: "A Gathering of A Royal Council"
     TRS_S03B_desc: "It is tradition that whomever sits upon the throne has a small collection of ponies around them to help advise them in times of strife. I will send out a few letters and summonses and see who would be willing to still partake in such a tradition in these modern times."
     TRS_S03B_unlock_advisors: "With the §YRoyal Council§! formed, the Duchess will be able to consult skilled advisors and experts.\n§Y[ROOT.GetNameDefCap]§! will have access to almost all of it's §YPolitical Advisors§!."
@@ -107,7 +107,7 @@
    TRS_S05: "The Inquisition’s Approved Advisers"
     TRS_S05_desc: "My throne room was ever so generously graced with the presence of two members from Moon and Star’s little Inquisition. What are they doing here in my lands? I did not summon them here..."
     TRS_S05_effect_tooltip: "§YInquisitor Phantasm§! and §YInquisitor Swirl§! will take up accomadations in §Y[ROOT.GetNameDef]§!, granting them access to the Royal Court.\nThey'll both become available as §YPolitical Advisors§!."
-    TRS_inqu_advi_unlock: "The Inquisitors have arrived."
+    TRS_inquisitor_advisor_unlock: "The Inquisitors have arrived."
     TRS_ES.0501.t: "The Inquisition Comes to the Duchy"
      TRS_ES.0501.d: "During an evening gathering of the nobility, a member of the guard rushes to the side of Duchess Aurora. Aurora would give the mare a strange look before realizing the panicked look on her face. The guard would try to speak through her pants as she tried to catch her breath.\n\n"Madam Duchess. Forgive the intrusion but I came to inform you that two dignitaries from Canterlot have come. They are demanding an immediate audience with you."\n\nJust as the word leaves the guards lips, two stallions come into the room. Pushing past the nobility and servants in their way, until they came face to face with Aurora. There was something strange the way they looked. One was draped in a long hooded purple cloak that covered his eyes. The other was dressed in a rather fine looked purple coat and sash.\n\nWhat truly struck her about their appearance were the metal crests adorning their clothing. However once she saw them, her blood ran cold. Aurora realized that standing before her were two members of Moon and Star's inquisitorial force. Her heart began to beat faster and faster as they came closer to her throne. Hiding her nervousness the best she could, she stood to great the two of them with a gentle smile."
      TRS_ES.0501.a: "§LContinue...§!"

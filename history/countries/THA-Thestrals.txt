@@ -1,100 +1,99 @@
-capital=30
-oob="THA_1012"
-set_research_slots=2
-set_stability=0.23
-set_war_support=0.11
-add_ideas={
+capital = 30
+oob = "THA_07"
+set_stability = 0.23
+set_war_support = 0.11
+add_ideas = {
 	limited_exports
 	isolation
 	agrarian_society
 	THA_Ancestor_Guidance
 	THA_Warrior_Culture_Traditions
 }
-if={
-	limit={has_dlc="No Step Back"}
-	add_ideas={
+if = {
+	limit = {has_dlc = "No Step Back"}
+	add_ideas = {
 		traditionalism_academy_spirit
 		doctrinal_orthodoxy_spirit
 		disdain_for_the_digging_spirit
 	}
-	else={
-		add_ideas={EQS_bad_tanks}
+	else = {
+		add_ideas = {EQS_bad_tanks}
 	}
 }
-set_technology={
-	pony_race=1
-	melee_weapons=1
-	melee_weapons1=1
-	tech_mountaineers=1
-	tech_support=1
-	pre_gw_artillery=1
-	tech_pegasi=1
+set_technology = {
+	pony_race = 1
+	melee_weapons = 1
+	melee_weapons1 = 1
+	tech_mountaineers = 1
+	tech_support = 1
+	pre_gw_artillery = 1
+	tech_pegasi = 1
 }
-if={limit={has_dlc="Man the Guns"}
-	set_technology={
-		early_ship_hull_light=1
-		basic_battery=1
-		mtg_transport=1
+if = {limit = {has_dlc = "Man the Guns"}
+	set_technology = {
+		early_ship_hull_light = 1
+		basic_battery = 1
+		mtg_transport = 1
 	}
 }
-if={limit={not={has_dlc="Man the Guns"}}
-	set_technology={
-		early_destroyer=1
-		transport=1
+if = {limit = {not = {has_dlc = "Man the Guns"}}
+	set_technology = {
+		early_destroyer = 1
+		transport = 1
 	}
 }
-actually_fix_weapon_techs=yes
-generic_DD_template=yes
-set_convoys=3
-set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
-set_variable={THA_carl_cost=4}
-set_variable={THA_egrd_cost=4}
-clamp_variable={
-	var=THA_carl_cost
-	min=1
-	max=9
+actually_fix_weapon_techs = yes
+generic_DD_template = yes
+set_convoys = 3
+set_rule = {	can_generate_female_aces = yes	can_generate_female_unit_leaders = yes	can_generate_female_country_leaders = yes}
+set_variable = {THA_carl_cost = 4}
+set_variable = {THA_egrd_cost = 4}
+clamp_variable = {
+	var = THA_carl_cost
+	min = 1
+	max = 9
 }
-clamp_variable={
-	var=THA_egrd_cost
-	min=1
-	max=6
+clamp_variable = {
+	var = THA_egrd_cost
+	min = 1
+	max = 6
 }
-add_offsite_building={
-	type=industrial_complex
-	level=1
+add_offsite_building = {
+	type = industrial_complex
+	level = 1
 }
-add_offsite_building={
-	type=arms_factory
-	level=1
+add_offsite_building = {
+	type = arms_factory
+	level = 1
 }
-set_variable={THA.THA_capital_hold_local_supplies=0}
-set_variable={THA.THA_capital_hold_building_slots=1}
-set_variable={THA.THA_westhold_local_supplies=1}
-set_variable={THA.THA_westhold_building_slots=1}
-set_variable={THA.THA_holds_local_supplies=5}
-set_variable={THA.THA_holds_building_slots=0}
-17={	#Badlands
-	add_dynamic_modifier={modifier=THA_holds}
+set_variable = {THA.THA_capital_hold_local_supplies = 0}
+set_variable = {THA.THA_capital_hold_building_slots = 1}
+set_variable = {THA.THA_westhold_local_supplies = 1}
+set_variable = {THA.THA_westhold_building_slots = 1}
+set_variable = {THA.THA_holds_local_supplies = 5}
+set_variable = {THA.THA_holds_building_slots = 0}
+17 = {	#Badlands
+	add_dynamic_modifier = {modifier = THA_holds}
 }
-30={	#Ayacachtli
-	add_dynamic_modifier={modifier=THA_capital_hold}
+30 = {	#Ayacachtli
+	add_dynamic_modifier = {modifier = THA_capital_hold}
 }
-35={	#Macintosh Mountains
-	add_dynamic_modifier={modifier=THA_westhold}
+35 = {	#Macintosh Mountains
+	add_dynamic_modifier = {modifier = THA_westhold}
 }
-37={	#Scale Mountains
-	add_dynamic_modifier={modifier=THA_holds}
+37 = {	#Scale Mountains
+	add_dynamic_modifier = {modifier = THA_holds}
 }
-set_popularities={
-	fascism=11
-	communism=32
-	neutrality=49
-	democratic=8
+set_popularities = {
+	fascism = 11
+	communism = 32
+	neutrality = 49
+	democratic = 8
 }
-set_politics={ruling_party=neutrality}
-set_country_flag=EDR_is_equestrian_breakaway
-recruit_character=THA_argent_end
+set_politics = {ruling_party = neutrality}
+set_country_flag = EDR_is_equestrian_breakaway
+recruit_character = THA_argent_end
 #NOTES#
 #The first great first fruit war. Fighting for Mangoes! EEEEEEE!
-#recruit_character=THA_auburn_peak
-#recruit_character=THA_the_niece
+#recruit_character = THA_auburn_peak
+#recruit_character = THA_the_niece

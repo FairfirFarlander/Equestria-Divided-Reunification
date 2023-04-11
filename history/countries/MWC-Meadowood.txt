@@ -1,100 +1,99 @@
-capital=48
-oob="MWC_1012"
-set_research_slots=2
-set_stability=0.8
-set_war_support=0.19
-add_ideas={
+capital = 48
+oob = "MWC_07"
+set_stability = 0.8
+set_war_support = 0.19
+add_ideas = {
 	pre_industrial_society
 	lack_of_scientists2
 	poverty4
 	#MWC_militia
 }
-set_technology={
-	pony_race=1
-	melee_weapons=1
-	melee_weapons1=1
-	tech_support=1
-	pre_gw_artillery=1
-	early_fighter=1
-	tech_pegasi=1
-	tech_unicorn=1
+set_technology = {
+	pony_race = 1
+	melee_weapons = 1
+	melee_weapons1 = 1
+	tech_support = 1
+	pre_gw_artillery = 1
+	early_fighter = 1
+	tech_pegasi = 1
+	tech_unicorn = 1
 }
-if={
-	limit={has_dlc="Man the Guns"}
-	set_technology={
-		early_ship_hull_light=1
-		early_ship_hull_cruiser=1
-		basic_battery=1
-		basic_depth_charges=1
-		basic_torpedo=1
-		mtg_transport=1
+if = {
+	limit = {has_dlc = "Man the Guns"}
+	set_technology = {
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_depth_charges = 1
+		basic_torpedo = 1
+		mtg_transport = 1
 	}
-	create_equipment_variant={
-		name="Meadowood Class"
-		type=ship_hull_cruiser_1
-		modules={
-			fixed_ship_battery_slot=ship_light_medium_battery_1
-			fixed_ship_anti_air_slot=ship_anti_air_1
-			fixed_ship_engine_slot=cruiser_ship_engine_1
-			fixed_ship_armor_slot=ship_armor_cruiser_1
-		}
-	}
-	create_equipment_variant={
-		name="Hops Class"
-		type=ship_hull_light_1
-		modules={
-			fixed_ship_battery_slot=ship_light_battery_1
-			fixed_ship_anti_air_slot=ship_anti_air_1
-			fixed_ship_engine_slot=light_ship_engine_1
+	create_equipment_variant = {
+		name = "Meadowood Class"
+		type = ship_hull_cruiser_1
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
 		}
 	}
-	#set_naval_oob="MWC_1007_naval"
-	else={
-		set_technology={
-			early_destroyer=1
-			early_light_cruiser=1
-			transport=1
+	create_equipment_variant = {
+		name = "Hops Class"
+		type = ship_hull_light_1
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_engine_slot = light_ship_engine_1
 		}
-		create_equipment_variant={
-			name="Meadowood Class"
-			type=light_cruiser_1
+	}
+	#set_naval_oob = "MWC_07_naval"
+	else = {
+		set_technology = {
+			early_destroyer = 1
+			early_light_cruiser = 1
+			transport = 1
 		}
-		create_equipment_variant={
-			name="Hops Class"
-			type=destroyer_1
+		create_equipment_variant = {
+			name = "Meadowood Class"
+			type = light_cruiser_1
 		}
-		#set_naval_oob="MWC_1007_naval_legacy"
+		create_equipment_variant = {
+			name = "Hops Class"
+			type = destroyer_1
+		}
+		#set_naval_oob = "MWC_07_naval_legacy"
 	}
 }
-if={
-	limit={has_dlc="No Step Back"}
-	add_ideas={
+if = {
+	limit = {has_dlc = "No Step Back"}
+	add_ideas = {
 		traditionalism_academy_spirit
 		doctrinal_orthodoxy_spirit
 		disdain_for_the_digging_spirit
 	}
-	else={
-		add_ideas={EQS_bad_tanks}
+	else = {
+		add_ideas = {EQS_bad_tanks}
 	}
 }
-actually_fix_weapon_techs=yes
-set_convoys=17
-set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
-set_popularities={
-	fascism=7
-	communism=9
-	neutrality=65
-	democratic=19
+actually_fix_weapon_techs = yes
+set_convoys = 17
+set_rule = {	can_generate_female_aces = yes	can_generate_female_unit_leaders = yes	can_generate_female_country_leaders = yes}
+set_popularities = {
+	fascism = 7
+	communism = 9
+	neutrality = 65
+	democratic = 19
 }
-set_politics={ruling_party=neutrality}
-set_country_flag=EDR_is_equestrian_breakaway
-recruit_character=MWC_rose_petal
-recruit_character=MWC_mulberry_wine
-recruit_character=MWC_honey_dew
-recruit_character=MWC_maple_leaf
-recruit_character=MWC_apple_cider
-recruit_character=MWC_mist_feather
-recruit_character=MWC_anna_taylor
+set_politics = {ruling_party = neutrality}
+set_country_flag = EDR_is_equestrian_breakaway
+recruit_character = MWC_rose_petal
+recruit_character = MWC_mulberry_wine
+recruit_character = MWC_honey_dew
+recruit_character = MWC_maple_leaf
+recruit_character = MWC_apple_cider
+recruit_character = MWC_mist_feather
+recruit_character = MWC_anna_taylor
 set_power_balance = {
 	id = MWC_hoofcolt_bop
 	left_side = MWC_left

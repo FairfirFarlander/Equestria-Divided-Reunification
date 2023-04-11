@@ -2,22 +2,22 @@ characters = {
 	FAI_poppy_seed = {
 		name = FAI_poppy_seed
 		portraits = {
-			civilian = { large = "GFX_FAI_poppy_seed" }
+			civilian = { large = GFX_FAI_poppy_seed }
 		}
 		country_leader = {
-			desc = "FAI_pseed_leader_desc"
+			desc = FAI_pseed_leader_desc
 			ideology = holy_order_f
 		}
 		country_leader = {
-			desc = "FAI_pseed_leader_desc"
+			desc = FAI_pseed_leader_desc
 			ideology = conservatism
 		}
 		country_leader = {
-			desc = "FAI_pseed_leader_desc"
+			desc = FAI_pseed_leader_desc
 			ideology = democratic_socialism
 		}
 		country_leader = {
-			desc = "FAI_pseed_leader_desc"
+			desc = FAI_pseed_leader_desc
 			ideology = anarchism
 		}
 	}
@@ -25,12 +25,12 @@ characters = {
 		name = FAI_meringue
 		portraits = {
 			army = {
-				large = "GFX_FAI_meringue"
-				small = "GFX_FAI_meringue"
+				large = GFX_FAI_meringue
+				small = GFX_FAI_meringue_small
 			}
 		}
 		corps_commander = {
-			desc = "FAI_meringue_commander_desc"
+			desc = FAI_meringue_commander_desc
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1

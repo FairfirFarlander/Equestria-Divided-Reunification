@@ -1,9 +1,8 @@
-capital=319
-oob="EMB_1012"
-set_research_slots=2
-set_stability=0.46
-set_war_support=0.07
-add_ideas={
+capital = 319
+oob = "EMB_07"
+set_stability = 0.46
+set_war_support = 0.07
+add_ideas = {
 	EMB_Under_Cities
 	EMB_Church_Of_The_First_Queen
 	limited_exports
@@ -12,34 +11,34 @@ add_ideas={
 	lack_of_scientists2
 	poverty4
 }
-set_technology={
-	changeling_race=1
-	melee_weapons=1
-	tech_support=1
-	tech_jager=1
+set_technology = {
+	changeling_race = 1
+	melee_weapons = 1
+	tech_support = 1
+	tech_jager = 1
 }
-actually_fix_weapon_techs=yes
-set_convoys=2
-set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
-set_popularities={
-	fascism=13
-	communism=42
-	neutrality=24
-	democratic=21
+actually_fix_weapon_techs = yes
+set_convoys = 2
+set_rule = {	can_generate_female_aces = yes	can_generate_female_unit_leaders = yes	can_generate_female_country_leaders = yes}
+set_popularities = {
+	fascism = 13
+	communism = 42
+	neutrality = 24
+	democratic = 21
 }
-set_politics={ruling_party=communism}
-recruit_character=EMB_mother_nightshade
-recruit_character=EMB_councillor_tyrennadus
-recruit_character=EMB_queen_narratek
-recruit_character=EMB_aetanae_krix
-recruit_character=EMB_hithax_ballas	#Remove after testing
-recruit_character=EMB_lavender_opal	#Remove after testing
-#NOTES#
+set_politics = { ruling_party = communism }
+recruit_character = EMB_mother_nightshade
+recruit_character = EMB_councillor_tyrennadus
+recruit_character = EMB_queen_narratek
+recruit_character = EMB_aetanae_krix
+recruit_character = EMB_hithax_ballas	#Make unavaiable after testing
+recruit_character = EMB_lavender_opal	#Make unavaiable after testing
+###NOTES###
 #Literally Vietnam
 #Dreadnaughts suck! Only get one gun. *TY; We tried. It died. *FF
-#construction1=1
+#construction1 = 1
 #Testtech
-#pre_gw_artillery=1
-#gw_artillery=1
-#interwar_antiair=1
-#basic_fire_control_system=1
+#pre_gw_artillery = 1
+#gw_artillery = 1
+#interwar_antiair = 1
+#basic_fire_control_system = 1

@@ -1,9 +1,8 @@
-capital=40
-oob="HAH_1012"
-set_research_slots=2
-set_stability=0.16
-set_war_support=0.04
-add_ideas={
+capital = 40
+oob = "HAH_07"
+set_stability = 0.16
+set_war_support = 0.04
+add_ideas = {
 	limited_exports
 	isolation
 	agrarian_society
@@ -14,54 +13,54 @@ add_ideas={
 	HAH_nonunicorn_family_ban
 	HAH_inquisition_impatience
 }
-set_technology={
-	pony_race=1
-	melee_weapons=1
-	tech_support=1
-	tech_military_police=1
-	tech_unicorn=1
+set_technology = {
+	pony_race = 1
+	melee_weapons = 1
+	tech_support = 1
+	tech_military_police = 1
+	tech_unicorn = 1
 }
-if={
-	limit={has_dlc="No Step Back"}
-	add_ideas={
+if = {
+	limit = { has_dlc = "No Step Back" }
+	add_ideas = {
 		traditionalism_academy_spirit
 		doctrinal_orthodoxy_spirit
 		disdain_for_the_digging_spirit
 	}
-	else={
-		add_ideas={EQS_bad_tanks}
+	else = {
+		add_ideas = { EQS_bad_tanks }
 	}
 }
-actually_fix_weapon_techs=yes
-set_convoys=2
-set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
-if={
-	limit={has_dlc="Death or Dishonor"}
-	HMS={
-		set_autonomy={
-			target=HAH
-			autonomy_state=autonomy_satellite
+actually_fix_weapon_techs = yes
+set_convoys = 2
+set_rule = {	can_generate_female_aces = yes	can_generate_female_unit_leaders = yes	can_generate_female_country_leaders = yes}
+if = {
+	limit = { has_dlc = "Death or Dishonor" }
+	HMS = {
+		set_autonomy = {
+			target = HAH
+			autonomy_state = autonomy_satellite
 		}
 	}
-	else={
-		HMS={puppet=HAH}
+	else = {
+		HMS = { puppet = HAH }
 	}
 }
-set_popularities={
-	fascism=40
-	communism=19
-	neutrality=22
-	democratic=19
+set_popularities = {
+	fascism = 40
+	communism = 19
+	neutrality = 22
+	democratic = 19
 }
-set_politics={ruling_party=fascism}
-set_country_flag=EDR_is_equestrian_breakaway
-recruit_character=HAH_misty_wisps
-recruit_character=HAH_willow_branch
-recruit_character=HAH_fiddle_pick
-recruit_character=HAH_string_bow
-recruit_character=HAH_boiled_apples
-recruit_character=HAH_word_spinner
-recruit_character=HAH_uncle_haystack
+set_politics = { ruling_party = fascism }
+set_country_flag = EDR_is_equestrian_breakaway
+recruit_character = HAH_misty_wisps
+recruit_character = HAH_willow_branch
+recruit_character = HAH_fiddle_pick
+recruit_character = HAH_string_bow
+recruit_character = HAH_boiled_apples
+recruit_character = HAH_word_spinner
+recruit_character = HAH_uncle_haystack
 ###NOTES###
 #Joy, Harmony, Tranquility (Tranq)
 #Remove 1 convoy later when the doctor takes charge

@@ -1,20 +1,21 @@
 ﻿l_english:
-###Introduction###
-##Bookmark##
-FSH_GATHERING_STORM_DESC: ""
-##Welcome Screen##
- EAW_WS_FSH: ""
-  EAW_WS_FSH_desc: ""
-###Country Name###
-FSH: "Freeside Hold"
- FSH_DEF: "the Thestral Hold of Freeside"
- FSH_ADJ: "Thestrali"
-###Political Parties###
-###Characters###
-##Leaders##
-##Commanders##
-##Political Advisors##
-##Military Advisors##
-###Ideas###
-###National Focuses###
-##Storyline Tree##
+ ###Introduction###
+  ##Bookmark##
+   FSH_GATHERING_STORM_DESC: "$GENR_GATHERING_STORM_DESC$"
+  ##Welcome Screen##
+   EAW_WS_FSH: "$EAW_WS_GENR$"
+    EAW_WS_FSH_desc: "$EAW_WS_GENR_desc$"
+ ###Politics###
+  ##Country Name##
+   FSH: "Freeside Hold"
+    FSH_DEF: "the Thestral Hold of Freeside"
+    FSH_ADJ: "Thestrali"
+  ##Political Parties##
+ ###Characters###
+  ##Leaders##
+  ##Commanders##
+  ##Political Advisors##
+  ##Military Advisors##
+ ###Ideas###
+ ###National Focuses###
+  ##Storyline Tree##

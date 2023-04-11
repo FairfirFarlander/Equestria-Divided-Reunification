@@ -1,92 +1,94 @@
 ﻿l_english:
-###Introduction###
-##Bookmark##
-HSW_GATHERING_STORM_DESC: ""
-##Welcome Screen##
- EAW_WS_HSW: ""
-  EAW_WS_HSW_desc: "IDUNNOWHATTHISIS"
-###Country Name###
-HSW: "Stormwing"
- HSW_DEF: "the Governate of Stormwing"
- HSW_ADJ: "Sholwia"
- HSW_fascism: "House Stormwing"
-  HSW_fascism_DEF: "the Stratocracy of House Stormwing"
- HSW_communism: "Equestrian Socialist Union"
-  HSW_communism_DEF: "the Socialist Union of Equestria"
- HSW_neutrality: "Barony of Cloudchester"
-  HSW_neutrality_DEF: "the Barony of Cloudsdale and Marechester"
-  HSW_neutrality_ADJ: "Chlowa"
- HSW_democratic: "Oleander"
-  HSW_democratic_DEF: "the Democratic-Republic of Chlowvachk"
-  HSW_democratic_ADJ: "Chlowa"
- HSW_EQS: "Equestrian Stratocracy"
-  HSW_EQS_DEF: "the Stratocracy of Equestria"
-  HSW_EQS_ADJ: "Equestrian"
-###Factions###
-HSW_EQS_faction: "Equestrian Stratocratic Alliance"
-###Political Parties###
-HSW_fascism_party: "CWC"
- HSW_fascism_party_long: "Council of Wing Commanders"
- HSW_communism_party: "SLF" #Vanhoover
-  HSW_communism_party_long: "Socialist Liberation Front"
- HSW_neutrality_party: "PGP"
-  HSW_neutrality_party_long: "Protectorates of Governed Provinces"
- HSW_democratic_party: "ARR"
-  HSW_democratic_party_long: "Alliance to Restore the Republic"
-###Characters###
-##Leaders##
-HSW_rainbow_dash: "Rainbow Dash"
- HSW_rdash_political_desc: "$CRDC_poory_fujin_soren$"
- HSW_rdash_commander_desc: "$HSW_rdash_political_desc$"
- HSW_storm_mayhem: "Storm Mayhem"
-  HSW_smayhem_political_desc: ""
- HSW_steel_wings: "Steel Wings"
-  HSW_swings_political_desc: ""
- HSW_sunny_cloud: "Sunny Cloud"
-  HSW_scloud_political_desc: ""
-##Commanders##
- HSW_soarin: "Soarin"
-  HSW_soarin_commander_desc: ""
-  HSW_spitfire: "Spitfire"
-   HSW_spitfire_commander_desc: ""
-  HSW_scootaloo: "Scootaloo"
-   HSW_scootaloo_commander_desc: "$CRDC_ruhje_soren$"
-   HSW_scootaloo_high_desc: "$HSW_scootaloo_commander_desc$"
-##Political Advisors##
-##Military Advisors##
-###Ideas###
-HSW_idea: "We bring the thunder!"
- HSW_idea_desc: "Fueled by their desire to bring back the ancient glory of Pegasi military dominance, House Stormwing watches the unraveling chaos from up above. Believing it is the duty of the military to hold the realm together in the absence of its rulers, they carefully weigh the strengths and weaknesses of their opponents and wait for a perfect moment to strike. And when opportunity presents itself, they attack. A swarm of wings and spears assisted by the wrath of the sky itself - storms and tornadoes - swoops down on its unsuspecting prey. Without warning, without mercy - this is the way of House Stormwing, the Way of the Pegasi. Just how it once was, just how it always will be."
-###National Focuses###
-##Storyline Tree##
-EQD_HSW_03A: "The Typhoon Plan" #The Portward Campaign
- EQD_HSW_03A_desc: "Cooler heads within the Council of Wing Commanders seek to march the armies westward to reign in the unruly provinces along the coastline. While a potential campaign may suffer from many initial setbacks it promises to reduce our land borders, provide unadultared access to the sea, and supplemment our armies with new recruits."
- HSW_evt_a11.001.t: "The Matter of the Northern Territories"
-  HSW_evt_a11.001.d: "Before we partake in our Westward campaign we must address a lingering issue regarding our northern provinces. We have had reports of several ground commanders refusing the call to muster. Most of the locals in the region seem increasingly hostile to our occupation with every passing day. Even more disturbing some less than model governors claim that consequences will follow should we continue to mistreat our allies. We must decide on how to deal with this situation before it gets out of hoof."
-  HSW_evt_a11.001.a: "We must remind them of their loyalties.\nSend in the phalanxes to restore order."
-  HSW_evt_a11.001.b: "Perhaps some tact and diplomacy is in order.\nNegotiate with those willing. Silence the rest."
- HSW_evt_a11.002.t: "Our Loyalties Betrayed"
-  HSW_evt_a11.002.d: "The Council of Wing Commanders in Stormwing have sent phanalxes into the region to restore order. In truth it seems so far that they are occupying homesteads, violating local law processes, and slaying those locals whom are determined a threat. The citizens of the region are outraged calling this behavior unequestrian. They demand that something be done and are no doubt making moves to do so in the near future. If the path or rebellion is to be sought the time is now or never to take up arms lest the territories forever lose their newfound soevereignty. Such a path however will likely lead to much bloodshed and destruction, the likes from which we may never recover."
-  HSW_evt_a11.002.a: "We are loyal to the end.\nCooperate and preserve what we have left."
-  HSW_evt_a11.002.b: "Our backs are bent, but not broken.\nRally the militias. We will fight if we must."
- HSW_evt_a11.003.t: ""
-  HSW_evt_a11.003.d: ""
-  HSW_evt_a11.003.a: ""
- HSW_evt_a11.004.t: "The Chains of Allegiance"
-  HSW_evt_a11.004.d: "The governing bodies of the provinces by and large have agreed to cooperate with us in restoring order. This will however take some time as an endevour such as this will inevitably require many lawponies. A sizable portion of our resources and troops will likely be tied up towards this end."
-  HSW_evt_a11.004.a: "Aw ye... Horsefeathers!"
- HSW_evt_a11.005.t: ""
-  HSW_evt_a11.005.d: ""
-  HSW_evt_a11.005.a: ""
- EQD_HSW_03B: "Operation Torrent" #The Skystar Campaign
-  EQD_HSW_03B_desc: "Hotter heads within the Council of Wing Commanders are itching to deliver vengence upon our most hated enemies, the unicorns of Moon and Star. This campaign will most assuredly be bloody and leave us in a vulnerable state if it drags on too long. The benefits of such a conquest however far outweigh the consequences should the gamble pay off."
- EQD_HSW_04A: ""
-  EQD_HSW_04A_desc: ""
- EQD_HSW_04B: ""
-  EQD_HSW_04B_desc: ""
- EQD_HSW_04C: ""
-  EQD_HSW_04C_desc: ""
- EQD_HSW_04D: ""
-  EQD_HSW_04D_desc: ""
- EQD_HSW_04E: ""
-  EQD_HSW_04E_desc: ""
+ ###Introduction###
+  ##Bookmark##
+  HSW_GATHERING_STORM_DESC: "$GENR_GATHERING_STORM_DESC$"
+  ##Welcome Screen##
+   EAW_WS_HSW: "$EAW_WS_GENR$"
+    EAW_WS_HSW_desc: "$EAW_WS_GENR_desc$"
+ ###Politics###
+  ##Country Name##
+   HSW: "Stormwing"
+    HSW_DEF: "the Governate of Stormwing"
+    HSW_ADJ: "Sholwia"
+   HSW_fascism: "House Stormwing"
+    HSW_fascism_DEF: "the Stratocracy of House Stormwing"
+   HSW_communism: "Equestrian Socialist Union"
+    HSW_communism_DEF: "the Socialist Union of Equestria"
+   HSW_neutrality: "Barony of Cloudchester"
+    HSW_neutrality_DEF: "the Barony of Cloudsdale and Marechester"
+    HSW_neutrality_ADJ: "Chlowa"
+   HSW_democratic: "Oleander"
+    HSW_democratic_DEF: "the Democratic-Republic of Chlowvachk"
+    HSW_democratic_ADJ: "Chlowa"
+   HSW_EQS: "Equestrian Stratocracy"
+    HSW_EQS_DEF: "the Stratocracy of Equestria"
+    HSW_EQS_ADJ: "Equestrian"
+  ##Factions##
+   HSW_EQS_faction: "Equestrian Stratocratic Alliance"
+  ##Political Parties##
+   HSW_fascism_party: "CWC"
+    HSW_fascism_party_long: "Council of Wing Commanders"
+   HSW_communism_party: "SLF" #Vanhoover
+    HSW_communism_party_long: "Socialist Liberation Front"
+   HSW_neutrality_party: "PGP"
+    HSW_neutrality_party_long: "Protectorates of Governed Provinces"
+   HSW_democratic_party: "ARR"
+    HSW_democratic_party_long: "Alliance to Restore the Republic"
+ ###Characters###
+  ##Leaders##
+   HSW_rainbow_dash: "Rainbow Dash"
+    HSW_rdash_leader_desc: "$CRDC_art_pooryarrickda$"
+    HSW_rdash_commander_desc: "$HSW_rdash_leader_desc$"
+   HSW_storm_mayhem: "Storm Mayhem"
+    HSW_smayhem_leader_desc: "$GENR_advisor_desc$"
+   HSW_steel_wings: "Steel Wings"
+    HSW_swings_leader_desc: "$GENR_advisor_desc$"
+   HSW_sunny_cloud: "Sunny Cloud"
+    HSW_scloud_leader_desc: "$GENR_advisor_desc$"
+  ##Commanders##
+   HSW_soarin: "Soarin"
+    HSW_soarin_commander_desc: "$GENR_advisor_desc$"
+   HSW_spitfire: "Spitfire"
+    HSW_spitfire_leader_desc: "$HSW_spitfire_commander_desc$"
+    HSW_spitfire_commander_desc: "$GENR_advisor_desc$"
+   HSW_scootaloo: "Scootaloo"
+    HSW_scootaloo_commander_desc: "$CRDC_art_ruhje$"
+    HSW_scootaloo_highcmdr_desc: "$HSW_scootaloo_commander_desc$"
+  ##Political Advisors##
+  ##Military Advisors##
+ ###Ideas###
+  HSW_idea: "We bring the thunder!"
+   HSW_idea_desc: "Fueled by their desire to bring back the ancient glory of Pegasi military dominance, House Stormwing watches the unraveling chaos from up above. Believing it is the duty of the military to hold the realm together in the absence of its rulers, they carefully weigh the strengths and weaknesses of their opponents and wait for a perfect moment to strike. And when opportunity presents itself, they attack. A swarm of wings and spears assisted by the wrath of the sky itself - storms and tornadoes - swoops down on its unsuspecting prey. Without warning, without mercy - this is the way of House Stormwing, the Way of the Pegasi. Just how it once was, just how it always will be."
+ ###National Focuses###
+  ##Storyline Tree##
+   EQD_HSW_03A: "The Typhoon Plan" #The Portward Campaign
+    EQD_HSW_03A_desc: "Cooler heads within the Council of Wing Commanders seek to march the armies westward to reign in the unruly provinces along the coastline. While a potential campaign may suffer from many initial setbacks it promises to reduce our land borders, provide unadultared access to the sea, and supplemment our armies with new recruits."
+   HSW_evt_a11.001.t: "The Matter of the Northern Territories"
+    HSW_evt_a11.001.d: "Before we partake in our Westward campaign we must address a lingering issue regarding our northern provinces. We have had reports of several ground commanders refusing the call to muster. Most of the locals in the region seem increasingly hostile to our occupation with every passing day. Even more disturbing some less than model governors claim that consequences will follow should we continue to mistreat our allies. We must decide on how to deal with this situation before it gets out of hoof."
+    HSW_evt_a11.001.a: "We must remind them of their loyalties.\nSend in the phalanxes to restore order."
+    HSW_evt_a11.001.b: "Perhaps some tact and diplomacy is in order.\nNegotiate with those willing. Silence the rest."
+   HSW_evt_a11.002.t: "Our Loyalties Betrayed"
+    HSW_evt_a11.002.d: "The Council of Wing Commanders in Stormwing have sent phanalxes into the region to restore order. In truth it seems so far that they are occupying homesteads, violating local law processes, and slaying those locals whom are determined a threat. The citizens of the region are outraged calling this behavior unequestrian. They demand that something be done and are no doubt making moves to do so in the near future. If the path or rebellion is to be sought the time is now or never to take up arms lest the territories forever lose their newfound soevereignty. Such a path however will likely lead to much bloodshed and destruction, the likes from which we may never recover."
+    HSW_evt_a11.002.a: "We are loyal to the end.\nCooperate and preserve what we have left."
+    HSW_evt_a11.002.b: "Our backs are bent, but not broken.\nRally the militias. We will fight if we must."
+   HSW_evt_a11.003.t: ""
+    HSW_evt_a11.003.d: ""
+    HSW_evt_a11.003.a: ""
+   HSW_evt_a11.004.t: "The Chains of Allegiance"
+    HSW_evt_a11.004.d: "The governing bodies of the provinces by and large have agreed to cooperate with us in restoring order. This will however take some time as an endevour such as this will inevitably require many lawponies. A sizable portion of our resources and troops will likely be tied up towards this end."
+    HSW_evt_a11.004.a: "Aw ye... Horsefeathers!"
+   HSW_evt_a11.005.t: ""
+    HSW_evt_a11.005.d: ""
+    HSW_evt_a11.005.a: ""
+   EQD_HSW_03B: "Operation Torrent" #The Skystar Campaign
+    EQD_HSW_03B_desc: "Hotter heads within the Council of Wing Commanders are itching to deliver vengence upon our most hated enemies, the unicorns of Moon and Star. This campaign will most assuredly be bloody and leave us in a vulnerable state if it drags on too long. The benefits of such a conquest however far outweigh the consequences should the gamble pay off."
+   EQD_HSW_04A: ""
+    EQD_HSW_04A_desc: ""
+   EQD_HSW_04B: ""
+    EQD_HSW_04B_desc: ""
+   EQD_HSW_04C: ""
+    EQD_HSW_04C_desc: ""
+   EQD_HSW_04D: ""
+    EQD_HSW_04D_desc: ""
+   EQD_HSW_04E: ""
+    EQD_HSW_04E_desc: ""

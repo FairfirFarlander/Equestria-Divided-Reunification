@@ -4,24 +4,24 @@ characters = {
 		gender = female
 		portraits = {
 			civilian = {
-				large = "GFX_portrait_eqs_pony_generic_17"
-				small = "GFX_portrait_eqs_pony_generic_17_small"
+				large = GFX_portrait_eqs_pony_generic_17
+				small = GFX_portrait_eqs_pony_generic_17_small
 			}
 		}
 		country_leader = {
-			desc = "SWT_gpony_leader_desc"
+			desc = SWT_gpony_leader_desc
 			ideology = fascism_ideology
 		}
 		country_leader = {
-			desc = "SWT_gpony_leader_desc"
+			desc = SWT_gpony_leader_desc
 			ideology = conservatism
 		}
 		country_leader = {
-			desc = "SWT_gpony_leader_desc"
+			desc = SWT_gpony_leader_desc
 			ideology = democratic_socialism
 		}
 		country_leader = {
-			desc = "SWT_gpony_leader_desc"
+			desc = SWT_gpony_leader_desc
 			ideology = despotism
 		}
 	}

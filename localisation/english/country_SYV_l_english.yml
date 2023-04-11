@@ -1,28 +1,29 @@
 ﻿l_english:
-###Introduction###
-##Bookmark##
-SYV_GATHERING_STORM_DESC: ""
-##Welcome Screen##
- EAW_WS_SYV: ""
-  EAW_WS_SYV_desc: ""
-###Country Name###
-SYV: "Severyana"
- SYV_DEF: "the Province Severyana"
- SYV_ADJ: "Severyani"
-###Political Parties###
-###Characters###
-##Leaders##
-SYV_ratibor_sventoslavich: "Ratibor Sventoslavich"
- SYV_rsventoslavich_political_desc: ""
- SYV_altidiya: "Altidiya"
-  SYV_altidiya_political_desc: ""
- SYV_peter_iv: "Peter IV"
-  SYV_piv_political_desc: ""
- SYV_caramelka_sladkaya: "Caramelka Sladkaya"
-  SYV_csladkaya_political_desc: ""
-##Commanders##
-##Political Advisors##
-##Military Advisors##
-###Ideas###
-###National Focuses###
-##Storyline Tree##
+ ###Introduction###
+  ##Bookmark##
+   SYV_GATHERING_STORM_DESC: "$GENR_GATHERING_STORM_DESC$"
+  ##Welcome Screen##
+   EAW_WS_SYV: "$EAW_WS_GENR$"
+    EAW_WS_SYV_desc: "$EAW_WS_GENR_desc$"
+ ###Politics###
+  ##Country Name##
+   SYV: "Severyana"
+    SYV_DEF: "the Province Severyana"
+    SYV_ADJ: "Severyani"
+  ##Political Parties##
+ ###Characters###
+  ##Leaders##
+   SYV_ratibor_sventoslavich: "Ratibor Sventoslavich"
+    SYV_rsventoslavich_leader_desc: "$GENR_advisor_desc$"
+   SYV_altidiya: "Altidiya"
+    SYV_altidiya_leader_desc: "$GENR_advisor_desc$"
+   SYV_peter_iv: "Peter IV"
+    SYV_piv_leader_desc: "$GENR_advisor_desc$"
+   SYV_caramelka_sladkaya: "Caramelka Sladkaya"
+    SYV_csladkaya_leader_desc: "$POLITICS_CARAMELKA$"
+  ##Commanders##
+  ##Political Advisors##
+  ##Military Advisors##
+ ###Ideas###
+ ###National Focuses###
+  ##Storyline Tree##

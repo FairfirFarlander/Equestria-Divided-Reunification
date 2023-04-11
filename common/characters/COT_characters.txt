@@ -2,7 +2,10 @@ characters = {
 	COT_jd_neighvis = {
 		name = COT_jd_neighvis
 		portraits = {
-			civilian = { large = GFX_COT_jd_neighvis }
+			civilian = {
+				large = GFX_COT_jd_neighvis
+				small = GFX_idea_SCS_JD_neighvis
+			}
 		}
 		country_leader = {
 			desc = COT_jdneighvis_leader_desc
@@ -26,7 +29,7 @@ characters = {
 		portraits = {
 			army = {
 				large = GFX_COT_neighson_e_miles
-				small = GFX_idea_SCS_stuart
+				small = GFX_idea_SCS_Stuart
 			}
 		}
 		field_marshal = {
@@ -173,7 +176,7 @@ characters = {
 		portraits = {
 			army = {
 				large = GFX_COT_silverstar
-				small = GFX_COT_silverstar_small
+				small = GFX_idea_SCS_Silverstar
 			}
 		}
 		corps_commander = {
@@ -196,7 +199,7 @@ characters = {
 		portraits = {
 			army = {
 				large = GFX_COT_apple_ale
-				small = GFX_COT_apple_ale_small
+				small = GFX_idea_SCS_Apple_Ale
 			}
 		}
 		corps_commander = {
@@ -220,7 +223,7 @@ characters = {
 		portraits = {
 			army = {
 				large = GFX_COT_moonshine_melody
-				small = GFX_COT_moonshine_melody_small
+				small = GFX_idea_SCS_Moonshine_Melody
 			}
 		}
 		corps_commander = {
@@ -264,7 +267,7 @@ characters = {
 		portraits = {
 			army = {
 				large = GFX_COT_burnside_fervor
-				small = GFX_COT_burnside_fervor_small
+				small = GFX_idea_SCS_Cuddle_Fervor
 			}
 		}
 		corps_commander = {

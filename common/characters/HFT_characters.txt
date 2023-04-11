@@ -5,7 +5,7 @@ characters = {
 		portraits = {
 			civilian = {
 				large = "GFX_HFT_orange"
-				small = "GFX_HFT_orange"
+				small = "GFX_HFT_orange_small"
 			}
 		}
 		country_leader = {
@@ -36,7 +36,7 @@ characters = {
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
-			traits = {pony_race_trait}
+			traits = { pony_race_trait }
 		}
 	}
 	HFT_trixie_lulamoon = {
@@ -45,11 +45,11 @@ characters = {
 		portraits = {
 			civilian = {
 				large = "GFX_HMS_trixie_lulamoon"
-				small = "GFX_HMS_trixie_lulamoon"
+				small = "GFX_HMS_trixie_lulamoon_small"
 			}
 			army = {
 				large = "GFX_HMS_trixie_lulamoon"
-				small = "GFX_HMS_trixie_lulamoon"
+				small = "GFX_HMS_trixie_lulamoon_small"
 			}
 		}
 		country_leader = {

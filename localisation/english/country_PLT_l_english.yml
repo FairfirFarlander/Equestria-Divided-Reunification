@@ -1,53 +1,53 @@
 ﻿l_english:
-###Introduction###
-##Bookmark##
-PLT_GATHERING_STORM_DESC: ""
-##Welcome Screen##
- EAW_WS_PLT: ""
-  EAW_WS_PLT_desc: ""
-###Country Name###
-PLT: "Portland Province"
- PLT_DEF: "the Province of Portland"
- PLT_ADJ: "Portish"
-###Political Parties###
-###Characters###
-##Leaders##
-PLT_rael_grey: "Rael Grey"
- PLT_rgrey_political_desc: ""
- PLT_willie_hoofard_tuft: "Willie Hoofard Tuft"
-  PLT_whtuft_political_desc: ""
- PLT_thistle_tap: "Thistle Tap"
-  PLT_ttap_political_desc: ""
-##Commanders##
-##Political Advisors##
-##Military Advisors##
-###National Focuses###
-##Storyline Tree##
-PLT_S00: "In the Shadow of Giants"
- PLT_S00_desc: "Today marks the second year of Portland's independence as a nation-state. Our democracy has survived the initial challenges of it's founding, yet our struggle is not yet over. With our first formal election upcoming, a call has been sent for candidates to submit their bids."
-  PLTact01.01.t: ""
-   PLTact01.01.d: ""
-   PLTact01.01.a: ""
-  PLTact01.02.t: ""
-   PLTact01.02.d: ""
-   PLTact01.02.a: ""
-  PLTact01.03.t: ""
-   PLTact01.03.d: ""
-   PLTact01.03.a: ""
-  PLTact01.04.t: ""
-   PLTact01.04.d: ""
-   PLTact01.04.a: ""
-  PLTact01.05.t: "A Journalist's Scoop"
-   PLTact01.05.d: ""
-   PLTact01.05.a: "Cover Thistle Tap's campaign."
-   PLTact01.05.b: "Cover Wind Tuft's campaign."
-   PLTact01.05.c: "Cover Rael Grey's campaign."
-  PLT_S00_tooltip: "§PThistle Tap§! declares their candidacy!\n§LWind Tuft§! declares their candidacy!\n§CRael Grey§! declares their candidacy!\n"
- PLT_S01A: "Support Thistle Tap"
-  PLT_S01A_desc: ""
- PLT_S01B: "Support Wind Tuft"
-  PLT_S01B_desc: ""
- PLT_S01C: "Support Rael Grey"
-  PLT_S01C_desc: ""
-# PLT_S0: ""
-#  PLT_S0_desc: ""
+ ###Introduction###
+  ##Bookmark##
+   PLT_GATHERING_STORM_DESC: "$GENR_GATHERING_STORM_DESC$"
+  ##Welcome Screen##
+   EAW_WS_PLT: "$EAW_WS_GENR$"
+    EAW_WS_PLT_desc: "$EAW_WS_GENR_desc$"
+  ##Country Name##
+   PLT: "Portland Province"
+    PLT_DEF: "the Province of Portland"
+    PLT_ADJ: "Portish"
+  ##Political Parties##
+ ###Characters###
+  ##Leaders##
+   PLT_rael_grey: "Rael Grey"
+    PLT_rgrey_leader_desc: "$GENR_advisor_desc$"
+   PLT_willie_hoofard_tuft: "Willie Hoofard Tuft"
+    PLT_whtuft_leader_desc: "$GENR_advisor_desc$"
+   PLT_thistle_tap: "Thistle Tap"
+    PLT_ttap_leader_desc: "$GENR_advisor_desc$"
+  ##Commanders##
+  ##Political Advisors##
+  ##Military Advisors##
+ ###National Focuses###
+  ##Storyline Tree##
+   PLT_S00: "In the Shadow of Giants"
+    PLT_S00_desc: "Today marks the second year of Portland's independence as a nation-state. Our democracy has survived the initial challenges of it's founding, yet our struggle is not yet over. With our first formal election upcoming, a call has been sent for candidates to submit their bids."
+    PLTact01.01.t: ""
+     PLTact01.01.d: ""
+     PLTact01.01.a: ""
+    PLTact01.02.t: ""
+     PLTact01.02.d: ""
+     PLTact01.02.a: ""
+    PLTact01.03.t: ""
+     PLTact01.03.d: ""
+     PLTact01.03.a: ""
+    PLTact01.04.t: ""
+     PLTact01.04.d: ""
+     PLTact01.04.a: ""
+    PLTact01.05.t: "A Journalist's Scoop"
+     PLTact01.05.d: ""
+     PLTact01.05.a: "Cover Thistle Tap's campaign."
+     PLTact01.05.b: "Cover Wind Tuft's campaign."
+     PLTact01.05.c: "Cover Rael Grey's campaign."
+    PLT_S00_tooltip: "§PThistle Tap§! declares their candidacy!\n§LWind Tuft§! declares their candidacy!\n§CRael Grey§! declares their candidacy!\n"
+   PLT_S01A: "Support Thistle Tap"
+    PLT_S01A_desc: ""
+   PLT_S01B: "Support Wind Tuft"
+    PLT_S01B_desc: ""
+   PLT_S01C: "Support Rael Grey"
+    PLT_S01C_desc: ""
+#   PLT_S0: ""
+#    PLT_S0_desc: ""

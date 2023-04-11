@@ -1,52 +1,51 @@
-capital=22
-oob="CHY_1012"
-set_research_slots=2
-set_stability=0.8
-set_war_support=0.02
-add_ideas={
+capital = 22
+oob = "CHY_07"
+set_stability = 0.8
+set_war_support = 0.02
+add_ideas = {
 	pre_industrial_society3
 	lack_of_scientists3
 	poverty4
 }
-set_technology={
-	pony_race=1
-	melee_weapons=1
-	melee_weapons1=1
-	tech_support=1
-	pre_gw_artillery=1
+set_technology = {
+	pony_race = 1
+	melee_weapons = 1
+	melee_weapons1 = 1
+	tech_support = 1
+	pre_gw_artillery = 1
 }
-if={
-	limit={has_dlc="No Step Back"}
-	add_ideas={
+if = {
+	limit = { has_dlc = "No Step Back" }
+	add_ideas = {
 		traditionalism_academy_spirit
 		doctrinal_orthodoxy_spirit
 		disdain_for_the_digging_spirit
 	}
-	else={
-		add_ideas={EQS_bad_tanks}
+	else = {
+		add_ideas = { EQS_bad_tanks }
 	}
 }
-actually_fix_weapon_techs=yes
-set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
-if={
-	limit={has_dlc="Death or Dishonor"}
-	HEB={
-		set_autonomy={
-			target=CHY
-			autonomy_state=autonomy_satellite
+actually_fix_weapon_techs = yes
+set_rule = {	can_generate_female_aces = yes	can_generate_female_unit_leaders = yes	can_generate_female_country_leaders = yes}
+if = {
+	limit = { has_dlc = "Death or Dishonor" }
+	HEB = {
+		set_autonomy = {
+			target = CHY
+			autonomy_state = autonomy_satellite
 		}
 	}
-	else={
-		HEB={puppet=CHY}
+	else = {
+		HEB = { puppet = CHY }
 	}
 }
-set_popularities={
-	fascism=48
-	communism=23
-	neutrality=15
-	democratic=14
+set_popularities = {
+	fascism = 48
+	communism = 23
+	neutrality = 15
+	democratic = 14
 }
-set_politics={ruling_party=fascism}
-set_country_flag=EDR_is_equestrian_breakaway
-recruit_character=CHY_cherry_jubilee
-#NOTES#
+set_politics = { ruling_party = fascism }
+set_country_flag = EDR_is_equestrian_breakaway
+recruit_character = CHY_cherry_jubilee
+###NOTES###

@@ -2,60 +2,60 @@ characters = {
 	JUN_ahuizotl = {
 		name = JUN_ahuizotl
 		portraits = {
-			civilian = {large = "gfx/leaders/TEM/Ahuizotl.tga"}
+			civilian = { large = GFX_JTL_ahuizotl }
 			army = {
-				large = "gfx/leaders/TEM/Ahuizotl.tga"
-				small = "GFX_TEM_Ahuizotl_Advisor"
+				large = GFX_JTL_ahuizotl
+				small = GFX_TEM_Ahuizotl_Advisor
 			}
 		}
 		country_leader = {
-			desc = "JTL_ahuizotl_leader_desc"
+			desc = JTL_ahuizotl_leader_desc
 			ideology = falangism
 		}
 		country_leader = {
-			desc = "JTL_ahuizotl_leader_desc"
+			desc = JTL_ahuizotl_leader_desc
 			ideology = theocracy_subideology
 		}
 		field_marshal = {
-			desc = "JTL_ahuizotl_commander_desc"	#TEM_ahuizotl_desc
-			skill = 4
-			attack_skill = 5
-			defense_skill = 1
+			desc = JTL_ahuizotl_commander_desc
+			skill = 3
+			attack_skill = 6
+			defense_skill = 2
 			planning_skill = 2
 			logistics_skill = 2
 			traits = {
 				unspecified_race_trait
 				offensive_doctrine
-			}	#Add 3 more#
+			}
 		}
 	}
 	JTL_temple_chant = {
 		name = JTL_temple_chant
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/TEM/Mem.tga"
+				large = GFX_JTL_temple_chant
 			}
 			army = {
-				large = "gfx/leaders/TEM/Mem.tga"
-				small = "GFX_unknown_advisor"
+				large = GFX_JTL_temple_chant
+				small = GFX_JTL_temple_chant_small
 			}
 		}
 		country_leader = {
-			desc = "JTL_tchant_leader_desc"
+			desc = JTL_tchant_leader_desc
 			ideology = primitive_communism
 		}
 		country_leader = {
-			desc = "JTL_tchant_leader_desc"
+			desc = JTL_tchant_leader_desc
 			ideology = tribal_council
 		}
 		corps_commander = {
-			desc = "JTL_tchant_commander_desc"
+			desc = JTL_tchant_commander_desc
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
-			traits = {pony_race_trait}
+			traits = { pony_race_trait }
 		}
 	}
 	JTL_tailcoatl = {	#Tlatoani Tailcoatl
@@ -63,20 +63,20 @@ characters = {
 		gender = female
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/TEM/TEM_Tailcoatl.tga"
-				small = "GFX_TEM_Tailcoatl"
+				large = GFX_JTL_tailcoatl
+				small = GFX_TEM_Tailcoatl
 			}
 			army = {
-				large = "gfx/leaders/TEM/TEM_Tailcoatl.tga"
-				small = "GFX_TEM_Tailcoatl"
+				large = GFX_JTL_tailcoatl
+				small = GFX_TEM_Tailcoatl
 			}
 		}
 		country_leader = {
-			desc = "JTL_tailcoatl_leader_desc"
+			desc = JTL_tailcoatl_leader_desc
 			ideology = tribal_federation
 		}
 		field_marshal = {
-			desc = "JTL_tailcoatl_commander_desc"
+			desc = JTL_tailcoatl_commander_desc
 			skill = 2
 			attack_skill = 1
 			defense_skill = 2
@@ -92,12 +92,12 @@ characters = {
 		name = JTL_tenoch
 		portraits = {
 			army = {
-				large = "gfx/leaders/TEM/TEM_tenoch.tga"
-				small = "GFX_TEM_Tenoch"
+				large = GFX_JTL_tenoch
+				small = GFX_TEM_Tenoch
 			}
 		}
 		corps_commander = {
-			desc = "JTL_tenoch_commander_desc"
+			desc = JTL_tenoch_commander_desc
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2

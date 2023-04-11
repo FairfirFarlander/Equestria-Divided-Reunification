@@ -1,24 +1,26 @@
 ﻿l_english:
-###Introduction###
-##Bookmark##
-CYE_GATHERING_STORM_DESC: ""
-##Welcome Screen##
- EAW_WS_CYE: ""
-  EAW_WS_CYE_desc: ""
-###Country Name###
-CYE: "Cease Your Existance"
- CYE_DEF: "to Cease Your Existance"
- CYE_ADJ: "CEASE!!!"
-###Political Parties###
-###Characters###
-##Leaders##
-CYE_voidwalker: "§R...§!"
- CYE_nihappens_desc: "§RYou're not supposed to be here.§!"
-##Political Advisors##
-##Military Advisors##
-###Ideas###
-CYE_nerf_me_harder:0""
-###National Focuses###
-##Storyline Tree##
-CYE_S00: "§R...§!"
- CYE_S00_desc: "§tYou're not supposed to be here.§!"
+ ###Introduction###
+  ##Bookmark##
+   CYE_GATHERING_STORM_DESC: "$GENR_GATHERING_STORM_DESC$"
+  ##Welcome Screen##
+   EAW_WS_CYE: "$EAW_WS_GENR$"
+    EAW_WS_CYE_desc: "§RWe are the doom of your race, the end of your road, the finality of life. Cease your hypocrisy for your doom is niegh§!"
+ ###Politics###
+  ##Country Name##
+  CYE: "Cease Your Existance"
+   CYE_DEF: "to Cease Your Existance"
+   CYE_ADJ: "CEASE!!!"
+  ##Political Parties##
+ ###Characters###
+  ##Leaders##
+   CYE_voidwalker: "§R...§!"
+    CYE_nihappens_desc: "§RYou're not supposed to be here.§!"
+  ##Political Advisors##
+  ##Military Advisors##
+ ###Ideas###
+  CYE_nerf_me_harder: ""
+   CYE_nerf_me_harder_desc: "§RWe are inevitable, creature. You will find your death in these crypts.§!"
+ ###National Focuses###
+  ##Storyline Tree##
+   CYE_S00: "§R...§!"
+    CYE_S00_desc: "§tYou're not supposed to be here.§!"

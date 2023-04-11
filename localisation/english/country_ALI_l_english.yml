@@ -22,7 +22,7 @@
  ###Characters###
   ##Leaders##
    ALI_edgar_alba: "Edgar Alba" #Edgar Alba Poe
-    ALI_ealba_leader_desc: ""
+    ALI_ealba_leader_desc: "$GENR_advisor_desc$"
   ##Commanders##
   ##Political Advisors##
   ##Military Advisors##

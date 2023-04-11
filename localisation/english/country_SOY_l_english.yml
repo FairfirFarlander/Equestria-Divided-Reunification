@@ -1,24 +1,25 @@
 ﻿l_english:
-###Introduction###
-##Bookmark##
-SOY_GATHERING_STORM_DESC: ""
-##Welcome Screen##
- EAW_WS_SOY: ""
-  EAW_WS_SOY_desc: ""
-###Country Name###
-SOY: "Soryth"
- SOY_DEF: "the Queendom of Soryth"
- SOY_ADJ: "Sorythling"
-###Political Parties###
-###Characters###
-##Leaders##
-SOY_yaria: "Queen Yaria"
- SOY_yaria_political_desc: ""
-##Commanders##
- SOY_venyx: "Venyx"
-  SOY_venyx_commander_desc: ""
-##Political Advisors##
-##Military Advisors##
-###Ideas##
-###National Focuses###
-##Storyline Tree##
+ ###Introduction###
+  ##Bookmark##
+   SOY_GATHERING_STORM_DESC: "$GENR_GATHERING_STORM_DESC$"
+  ##Welcome Screen##
+   EAW_WS_SOY: "$EAW_WS_GENR$"
+    EAW_WS_SOY_desc: "$EAW_WS_GENR_desc$"
+ ###Politics###
+  ##Country Name##
+   SOY: "Soryth"
+    SOY_DEF: "the Queendom of Soryth"
+    SOY_ADJ: "Sorythian"
+  ##Political Parties##
+ ###Characters###
+  ##Leaders##
+   SOY_yaria: "Queen Yaria"
+    SOY_yaria_leader_desc: "$CRDC_art_mrscroup$"
+  ##Commanders##
+   SOY_venyx: "Venyx"
+    SOY_venyx_commander_desc: "$CRDC_art_mrscroup$"
+  ##Political Advisors##
+  ##Military Advisors##
+ ###Ideas##
+ ###National Focuses###
+  ##Storyline Tree##

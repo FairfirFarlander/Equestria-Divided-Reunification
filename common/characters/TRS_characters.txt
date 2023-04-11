@@ -4,16 +4,16 @@ characters = {
 		gender = female
 		portraits = {
 			civilian = {
-				large = "GFX_TRS_duchess_aurora"
-				small = "GFX_TRS_duchess_aurora"
+				large = GFX_TRS_duchess_aurora
+				small = GFX_TRS_duchess_aurora_small
 			}
 			army = {
-				large = "GFX_TRS_duchess_aurora"
-				small = "GFX_TRS_duchess_aurora"
+				large = GFX_TRS_duchess_aurora
+				small = GFX_TRS_duchess_aurora_small
 			}
 		}
 		country_leader = {
-			desc = "TRS_daurora"
+			desc = TRS_daurora
 			ideology = fascism_ideology
 		}
 	}
@@ -21,41 +21,39 @@ characters = {
 		name = TRS_mystical_phantasm
 		portraits = {
 			civilian = {
-				large = "GFX_TRS_mystical_phantasm"
-				small = "GFX_TRS_mystical_phantasm"
+				large = GFX_TRS_mystical_phantasm
+				small = GFX_TRS_mystical_phantasm_small
 			}
 			army = {
-				large = "GFX_TRS_mystical_phantasm"
-				small = "GFX_TRS_mystical_phantasm"
+				large = GFX_TRS_mystical_phantasm
+				small = GFX_TRS_mystical_phantasm_small
 			}
 		}
 		country_leader = {
-			desc = "TRS_mphantasm_leader_desc"
+			desc = TRS_mphantasm_leader_desc
 			ideology = fascism_ideology
 		}
 		advisor = {
 			slot = political_advisor
 			cost = 150
-			idea_token = TRS_mphantasm_advi
-			available = {has_country_flag = TRS_S05_unlock_advisors}
-			traits = {
-			}
+			idea_token = TRS_mphantasm_politician
+			available = { has_country_flag = TRS_S05_unlock_advisors }
 		}
 	}
 	TRS_radiguss = {
 		name = TRS_radiguss
 		portraits = {
 			civilian = {
-				large = "GFX_TRS_radiguss"
-				small = "GFX_TRS_radiguss"
+				large = GFX_TRS_radiguss
+				small = GFX_TRS_radiguss_small
 			}
 			army = {
-				large = "GFX_TRS_radiguss"
-				small = "GFX_TRS_radiguss"
+				large = GFX_TRS_radiguss
+				small = GFX_TRS_radiguss_small
 			}
 		}
 		corps_commander = {
-			desc = "TRS_radiguss_commander_desc"
+			desc = TRS_radiguss_commander_desc
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -68,11 +66,7 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			cost = 150
-			idea_token = TRS_radiguss_advi
-			available = {
-			}
-			traits = {
-			}
+			idea_token = TRS_radiguss_politician
 		}
 	}
 	TRS_generic_pony = {
@@ -80,20 +74,20 @@ characters = {
 		gender = female
 		portraits = {
 			civilian = {
-				large = "GFX_portrait_eqs_pony_generic_21"
-				small = "GFX_portrait_eqs_pony_generic_21_small"
+				large = GFX_portrait_eqs_pony_generic_21
+				small = GFX_portrait_eqs_pony_generic_21_small
 			}
 		}
 		country_leader = {
-			desc = "TRS_gpony_leader_desc"
+			desc = TRS_gpony_leader_desc
 			ideology = conservatism
 		}
 		country_leader = {
-			desc = "TRS_gpony_leader_desc"
+			desc = TRS_gpony_leader_desc
 			ideology = marxism
 		}
 		country_leader = {
-			desc = "TRS_gpony_leader_desc"
+			desc = TRS_gpony_leader_desc
 			ideology = despotism
 		}
 	}

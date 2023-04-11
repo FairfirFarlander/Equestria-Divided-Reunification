@@ -1,9 +1,8 @@
-capital=95
-oob="FAI_07"
-set_research_slots=2
-set_stability=0.52
-set_war_support=0.24
-add_ideas={
+capital = 95
+oob = "FAI_07"
+set_stability = 0.52
+set_war_support = 0.24
+add_ideas = {
 	extensive_conscription
 	outlaw_economy
 	limited_exports
@@ -11,27 +10,27 @@ add_ideas={
 	lack_of_scientists3
 	poverty4
 }
-set_technology={
-	pony_race=1
-	melee_weapons=1
-	tech_support=1
+set_technology = {
+	pony_race = 1
+	melee_weapons = 1
+	tech_support = 1
 }
-actually_fix_weapon_techs=yes
-add_offsite_building={
-	type=synthetic_refinery
-	level=1
+actually_fix_weapon_techs = yes
+add_offsite_building = {
+	type = synthetic_refinery
+	level = 1
 }
-set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
-set_popularities={
-	fascism=15
-	communism=2
-	neutrality=76
-	democratic=7
+set_rule = {	can_generate_female_aces = yes	can_generate_female_unit_leaders = yes	can_generate_female_country_leaders = yes}
+set_popularities = {
+	fascism = 15
+	communism = 2
+	neutrality = 76
+	democratic = 7
 }
-set_politics={ruling_party=neutrality}
-set_country_flag=EDR_is_equestrian_breakaway
-recruit_character=FAI_poppy_seed
-recruit_character=FAI_meringue
+set_politics = { ruling_party = neutrality }
+set_country_flag = EDR_is_equestrian_breakaway
+recruit_character = FAI_poppy_seed
+recruit_character = FAI_meringue
 ###NOTES###
 #Pondesa
 #At the End of Their Focus Tree

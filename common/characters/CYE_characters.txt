@@ -2,22 +2,22 @@ characters = {
 	CYE_nothinginterestinghappens = {
 		name = CYE_voidwalker
 		portraits = {
-			civilian = {large = "gfx/leaders/Asia/Unknown_Griffon.dds"}
+			civilian = { large = gfx/leaders/Asia/Unknown_Griffon.dds }
 		}
 		country_leader = {
-			desc = "CYE_nihappens_desc"
+			desc = CYE_nihappens_desc
 			ideology = anarchism
 		}
 		country_leader = {
-			desc = "CYE_nihappens_desc"
+			desc = CYE_nihappens_desc
 			ideology = conservatism
 		}
 		country_leader = {
-			desc = "CYE_nihappens_desc"
+			desc = CYE_nihappens_desc
 			ideology = democratic_socialism
 		}
 		country_leader = {
-			desc = "CYE_nihappens_desc"
+			desc = CYE_nihappens_desc
 			ideology = fascism_ideology
 		}
 	}

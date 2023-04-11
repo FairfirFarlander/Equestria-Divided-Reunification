@@ -1,39 +1,39 @@
 ﻿l_english:
-###Introduction###
-##Bookmark##
-JTL_GATHERING_STORM_DESC: ""
-##Welcome Screen##
- EAW_WS_JTL: ""
-  EAW_WS_JTL_desc: ""
-###Country Name###
-JTL: "Jungle League"
- JTL_DEF: "the League of the Jungle"
- JTL_ADJ: "Aztalan"
-###Political Parties###
-###Characters###
-##Leaders##
-JUN_ahuizotl: "Ahuizotl"
- JTL_ahuizotl_political_desc: ""
- JTL_ahuizotl_commander_desc: "$JTL_ahuizotl_political_desc$"
- JTL_temple_chant: "Temple Chant"
-  JTL_tchant_political_desc: ""
-  JTL_tchant_commander_desc: "$JTL_tchant_political_desc$"
- JTL_tailcoatl: "Tailcoatl"
-  JTL_tailcoatl_political_desc: ""
-  JTL_tailcoatl_commander_desc: "$JTL_tailcoatl_political_desc$"
-##Commanders##
- JTL_tenoch: "Tenoch"
-  JTL_tenoch_commander_desc: ""
-
-##Political Advisors##
-##Military Advisors##
-###Ideas##
-###National Focuses###
-##Storyline Tree##
-JTL_S00: ""
- JTL_S00_desc: ""
-# JTL_: ""
-#  JTL__desc: ""
-##Army Tree##
-JTL_L01: ""
- JTL_L01_desc: ""
+ ###Introduction###
+  ##Bookmark##
+   JTL_GATHERING_STORM_DESC: "$GENR_GATHERING_STORM_DESC$"
+  ##Welcome Screen##
+   EAW_WS_JTL: "$EAW_WS_GENR$"
+    EAW_WS_JTL_desc: "$EAW_WS_GENR_desc$"
+ ###Politics###
+  ##Country Name###
+   JTL: "Jungle League"
+    JTL_DEF: "the League of the Jungle"
+    JTL_ADJ: "Aztalan"
+  ##Political Parties##
+ ###Characters###
+ ##Leaders##
+  JUN_ahuizotl: "Ahuizotl"
+   JTL_ahuizotl_leader_desc: "$GENR_advisor_desc$"
+  JTL_ahuizotl_commander_desc: "$JTL_ahuizotl_leader_desc$"
+  JTL_temple_chant: "Temple Chant"
+   JTL_tchant_leader_desc: "$GENR_advisor_desc$"
+   JTL_tchant_commander_desc: "$JTL_tchant_leader_desc$"
+  JTL_tailcoatl: "Tailcoatl"
+   JTL_tailcoatl_leader_desc: "$GENR_advisor_desc$"
+   JTL_tailcoatl_commander_desc: "$JTL_tailcoatl_leader_desc$"
+  ##Commanders##
+   JTL_tenoch: "Tenoch"
+    JTL_tenoch_commander_desc: "$TEM_ahuizotl_desc$"
+  ##Political Advisors##
+  ##Military Advisors##
+ ###Ideas###
+ ###National Focuses###
+  ##Storyline Tree##
+   JTL_S00: ""
+    JTL_S00_desc: ""
+#    JTL_: ""
+#     JTL__desc: ""
+  ##Army Tree##
+   JTL_L01: ""
+    JTL_L01_desc: ""

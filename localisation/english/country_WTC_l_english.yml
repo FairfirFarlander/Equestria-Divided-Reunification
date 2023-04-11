@@ -17,15 +17,15 @@
     WTC_dhabbidasher_leader_desc: "$CRDC_art_tiviyl$"
    WTC_alicia_habbidasher: "Alicia Habidasher"
     WTC_ahabbidasher_leader_desc: "$CRDC_art_tiviyl$"
-    WTC_ahabbidasher_political_desc: "$CRDC_art_tiviyl$"
+    WTC_ahabbidasher_politician_desc: "$CRDC_art_tiviyl$"
   ##Political Advisors##
   ##Military Advisors##
    WTC_eloi_path: "Eloi Path"
-    WTC_epath_political_desc: "$CRDC_art_bylisboa$"
+    WTC_epath_politician_desc: "$CRDC_art_bylisboa$"
    WTC_zebrican_mercenary: "Zebrican Mercenary"
-    WTC_zmercenary_political_desc: "$CRDC_art_bylisboa$"
+    WTC_zmercenary_politician_desc: "$CRDC_art_bylisboa$"
    WTC_saddle_arabian_mercenary: "Saddle Arabian Mercenary"
-    WTC_samercenary_political_desc: "$CRDC_art_bylisboa$"
+    WTC_samercenary_politician_desc: "$CRDC_art_bylisboa$"
  ###Ideas###
   WTC_no_army: "No Standing Army"
    WTC_no_army_desc: "[WTC.GetNameDef] "

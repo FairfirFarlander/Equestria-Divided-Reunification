@@ -1,22 +1,23 @@
 ﻿l_english:
-###Introduction###
-##Bookmark##
-LAS_GATHERING_STORM_DESC: ""
-##Welcome Screen##
- EAW_WS_LAS: ""
-  EAW_WS_LAS_desc: ""
-###Characters###
-##Leaders##
-LAS_pine_chest: "Pine Chest"
- LAS_pchest_political_desc: ""
- LAS_pchest_commander_desc: "$LAS_pchest_political_desc$"
-##Commanders##
-##Political Advisors##
-##Military Advisors##
-###Country Name###
-LAS: "Las Aetherius"
- LAS_DEF: "the Province of Las Aetherius"
- LAS_ADJ: "Pegasi"
-###Political Parties###
-###National Focuses###
-##Storyline Tree##
+ ###Introduction###
+  ##Bookmark##
+   LAS_GATHERING_STORM_DESC: "$GENR_GATHERING_STORM_DESC$"
+  ##Welcome Screen##
+   EAW_WS_LAS: "$EAW_WS_GENR$"
+    EAW_WS_LAS_desc: "$EAW_WS_GENR_desc$"
+ ###Characters###
+  ##Leaders##
+   LAS_pine_chest: "Pine Chest"
+    LAS_pchest_leader_desc: "$pcadesc$"
+    LAS_pchest_commander_desc: "$LAS_pchest_leader_desc$"
+  ##Commanders##
+  ##Political Advisors##
+  ##Military Advisors##
+ ###Politics####
+  ##Country Name##
+   LAS: "Las Aetherius"
+    LAS_DEF: "the Province of Las Aetherius"
+    LAS_ADJ: "Pegasi"
+  ##Political Parties##
+ ###National Focuses###
+  ##Storyline Tree##

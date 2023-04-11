@@ -3,24 +3,22 @@ characters = {
 		name = MSE_generic_pony
 		gender = female
 		portraits = {
-			civilian = {
-				large = "GFX_portrait_eqs_pony_generic_26"
-			}
+			civilian = { large = GFX_portrait_eqs_pony_generic_26 }
 		}
 		country_leader = {
-			desc = "MSE_gpony_leader_desc"
+			desc = MSE_gpony_leader_desc
 			ideology = fascism_ideology
 		}
 		country_leader = {
-			desc = "MSE_gpony_leader_desc"
+			desc = MSE_gpony_leader_desc
 			ideology = conservatism
 		}
 		country_leader = {
-			desc = "MSE_gpony_leader_desc"
+			desc = MSE_gpony_leader_desc
 			ideology = democratic_socialism
 		}
 		country_leader = {
-			desc = "MSE_gpony_leader_desc"
+			desc = MSE_gpony_leader_desc
 			ideology = despotism
 		}
 	}

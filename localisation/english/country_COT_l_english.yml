@@ -16,17 +16,17 @@
     COT_jdneighvis_leader_desc: "$neighvis_desc$"
   ##Commanders##
    COT_neighson_e_miles: "Stewed Apple" #Nelson Appleton Miles
-    COT_nemiles_commander_desc: ""
+    COT_nemiles_commander_desc: "$GENR_advisor_desc$"
     COT_nemiles_chief_desc: "$COT_nemiles_commander_desc$"
     COT_nemiles_hired: "§Y$COT_neighson_e_miles$§! has been appointed."
     COT_nemiles_ideas_tooltip: "§Y$COT_neighson_e_miles$§!, which grants (Army Experience Gain: §G+0.40§! daily, Division Speed: §G+15.00%§!"
    COT_trotbert_e_neigh: "Trotbert E. Neigh" #Robert Edward Lee
-    COT_teneigh_commander_desc: ""
+    COT_teneigh_commander_desc: "$GENR_advisor_desc$"
     COT_teneigh_chief_desc: "$COT_teneigh_commander_desc$"
     COT_teneigh_hired: "§Y$COT_trotbert_e_neigh$§! has been appointed."
     COT_teneigh_ideas_tooltip: "§Y$COT_trotbert_e_neigh$§!, which grants (Army Experience Gain: §G+0.40§! daily, Non-Combat Out of Supply Penalties: §G-9.0%§!"
    COT_stone_wall: "Stone Wall" #Thomas Jonathan Jackson
-    COT_swall_commander_desc: ""
+    COT_swall_commander_desc: "$GENR_advisor_desc$"
     COT_swall_chief_desc: "$COT_swall_commander_desc$"
     COT_stone_wall_hired: "§Y$COT_stone_wall$§! has been appointed."
     COT_stone_wall_ideas_tooltip: "§Y$COT_stone_wall$§!, which grants (Army Experience Gain: §G+0.40§! daily, Division Defense: §G+15.0%§!"
@@ -39,9 +39,9 @@
    COT_sorren_peak: "Sorren Peak"
     COT_speak_commander_desc: "$SCS_dixie_horse_desc$"
    COT_burnside_fervor: "Burnside Fervor"
-    COT_bfervor_commander_desc: ""
+    COT_bfervor_commander_desc: "$GENR_advisor_desc$"
    COT_william_b_talonsparrow: "William B. Talonsparrow"
-    COT_wbtalonsparrow_commander_desc: ""
+    COT_wbtalonsparrow_commander_desc: "$GENR_advisor_desc$"
   ##Advisors##
  ###Ideas###
  ###National Focuses###
@@ -204,8 +204,8 @@
     COT_I05G_desc: "$SCS_drill_south_croissant_desc$"
    COT_I05H: "$SCS_branch_out_into_rubber$"
     COT_I05H_desc: "$SCS_branch_out_into_rubber_desc$"
-   COT_I06A: "$SCS_apple_barons_political_support$"
-    COT_I06A_desc: "$SCS_apple_barons_political_support_desc$"
+   COT_I06A: "$SCS_apple_barons_politician_support$"
+    COT_I06A_desc: "$SCS_apple_barons_politician_support_desc$"
    COT_I06B: "$SCS_small_town_values$"
     COT_I06B_desc: "$SCS_small_town_values_desc$"
    COT_I06C: "$SCS_baron_civvies_3$"

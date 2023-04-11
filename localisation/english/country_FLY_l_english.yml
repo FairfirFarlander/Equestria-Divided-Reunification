@@ -1,21 +1,22 @@
 ﻿l_english:
-###Introduction###
-##Bookmark##
-FLY_GATHERING_STORM_DESC: ""
-##Welcome Screen##
- EAW_WS_FLY: ""
-  EAW_WS_FLY_desc: ""
-###Country Name###
-FLY: "Fillydelphia Province"
- FLY_DEF: "the Province of Fillydelphia"
- FLY_ADJ: "Filleian"
-###Political Parties###
-###Characters###
-##Leaders##
-FLY_cherry_jam: "Cherry Jam"
- FLY_cjam_political_desc: ""
-##Commanders##
-##Political Advisors##
-##Military Advisors##
-###National Focuses###
-##Storyline Tree##
+ ###Introduction###
+  ##Bookmark##
+   FLY_GATHERING_STORM_DESC: "$GENR_GATHERING_STORM_DESC$"
+  ##Welcome Screen##
+   EAW_WS_FLY: "$EAW_WS_GENR$"
+    EAW_WS_FLY_desc: "$EAW_WS_GENR_desc$"
+ ###Politics###
+  ##Country Name##
+   FLY: "Fillydelphia Province"
+    FLY_DEF: "the Province of Fillydelphia"
+    FLY_ADJ: "Filleian"
+  ##Political Parties##
+ ###Characters###
+  ##Leaders##
+   FLY_cherry_jam: "Cherry Jam"
+    FLY_cjam_leader_desc: "$GENR_advisor_desc$"
+  ##Commanders##
+  ##Political Advisors##
+  ##Military Advisors##
+ ###National Focuses###
+  ##Storyline Tree##

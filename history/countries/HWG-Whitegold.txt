@@ -1,9 +1,9 @@
-capital=75
-oob="HWG_1012"
-set_research_slots=3
-set_stability=0.4
-set_war_support=0.08
-add_ideas={
+capital = 75
+oob = "HWG_07"
+set_research_slots = 3
+set_stability = 0.4
+set_war_support = 0.08
+add_ideas = {
 	outdated_industry
 	lack_of_scientists3
 	poverty5
@@ -12,234 +12,191 @@ add_ideas={
 	HWG_tensions
 	HWG_society
 }
-if={
-	limit={has_dlc="No Step Back"}
-	add_ideas={
+if = {
+	limit = {has_dlc = "No Step Back"}
+	add_ideas = {
 		traditionalism_academy_spirit
 		doctrinal_orthodoxy_spirit
 		disdain_for_the_digging_spirit
 	}
-	else={
-		add_ideas={EQS_bad_tanks}
+	else = {
+		add_ideas = {EQS_bad_tanks}
 	}
 }
-set_technology={
-	pony_race=1
-	melee_weapons=1
-	melee_weapons1=1
-	tech_support=1
-	pre_gw_artillery=1
+set_technology = {
+	pony_race = 1
+	melee_weapons = 1
+	melee_weapons1 = 1
+	tech_support = 1
+	pre_gw_artillery = 1
 }
-if={
-	limit={has_dlc="Man the Guns"}
-	set_technology={
-		early_ship_hull_light=1
-		early_ship_hull_cruiser=1
-		basic_battery=1
-		basic_depth_charges=1
-		basic_torpedo=1
-		mtg_transport=1
+if = {
+	limit = {has_dlc = "Man the Guns"}
+	set_technology = {
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_depth_charges = 1
+		basic_torpedo = 1
+		mtg_transport = 1
 	}
-	create_equipment_variant={
-		name="Belle 06' Class (Canterlot R)"
-		type=ship_hull_cruiser_1
-		modules={
-			fixed_ship_battery_slot=ship_medium_battery_1
-			fixed_ship_engine_slot=cruiser_ship_engine_1
-			fixed_ship_secondaries_slot=ship_secondaries_1
-			fixed_ship_armor_slot=ship_armor_cruiser_1
-			mid_1_custom_slot=ship_torpedo_1
-			rear_1_custom_slot=ship_medium_battery_1
+	create_equipment_variant = {
+		name = "Belle 06' Class (Canterlot R)"
+		type = ship_hull_cruiser_1
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_medium_battery_1
 		}
 	}
-	create_equipment_variant={
-		name="Auditor 03' Class (Emerald M)"
-		type=ship_hull_cruiser_1
-		modules={
-			fixed_ship_battery_slot=ship_light_medium_battery_1
-			fixed_ship_engine_slot=cruiser_ship_engine_1
-			fixed_ship_armor_slot=ship_armor_cruiser_1
-			mid_1_custom_slot=ship_torpedo_1
-			rear_1_custom_slot=ship_light_medium_battery_1
+	create_equipment_variant = {
+		name = "Auditor 03' Class (Emerald M)"
+		type = ship_hull_cruiser_1
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_light_medium_battery_1
 		}
 	}
-	create_equipment_variant={
-		name="Investor 05' Class (Ardent M)"
-		type=ship_hull_light_1
-		modules={
-			fixed_ship_battery_slot=ship_light_battery_1
-			fixed_ship_engine_slot=light_ship_engine_1
-			fixed_ship_torpedo_slot=ship_torpedo_1
-			mid_1_custom_slot=ship_torpedo_1
-			rear_1_custom_slot=ship_depth_charge_1
+	create_equipment_variant = {
+		name = "Investor 05' Class (Ardent M)"
+		type = ship_hull_light_1
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
-	create_equipment_variant={
-		name="Surveyor 03' Class (Ardent M)"
-		type=ship_hull_light_1
-		modules={
-			fixed_ship_battery_slot=ship_light_battery_1
-			fixed_ship_engine_slot=light_ship_engine_1
+	create_equipment_variant = {
+		name = "Surveyor 03' Class (Ardent M)"
+		type = ship_hull_light_1
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_engine_slot = light_ship_engine_1
 		}
 	}
-	set_naval_oob="HWG_1012_naval"
-	else={
-		set_technology={
-			early_destroyer=1
-			early_light_cruiser=1
-			early_heavy_cruiser=1
-			transport=1
+	set_naval_oob = "HWG_07_naval"
+	else = {
+		set_technology = {
+			early_destroyer = 1
+			early_light_cruiser = 1
+			early_heavy_cruiser = 1
+			transport = 1
 		}
-		create_equipment_variant={
-			name="Belle 03' Class (Canterlot R)"
-			type=heavy_cruiser_1
-			upgrades={
-				ship_reliability_upgrade=1
-				ship_gun_upgrade=1
+		create_equipment_variant = {
+			name = "Belle 03' Class (Canterlot R)"
+			type = heavy_cruiser_1
+			upgrades = {
+				ship_reliability_upgrade = 1
+				ship_gun_upgrade = 1
 			}
 		}
-		create_equipment_variant={
-			name="Auditor 03' Class (Emerald M)"
-			type=light_cruiser_1
-			upgrades={
-				ship_reliability_upgrade=1
-				ship_gun_upgrade=1
+		create_equipment_variant = {
+			name = "Auditor 03' Class (Emerald M)"
+			type = light_cruiser_1
+			upgrades = {
+				ship_reliability_upgrade = 1
+				ship_gun_upgrade = 1
 			}
 		}
-		create_equipment_variant={	#Light-Medium Destroyer#
-			name="Investor 05' Class (Ardent M)"
-			type=destroyer_1
-			upgrades={
-				ship_torpedo_upgrade=1
+		create_equipment_variant = {	#Light-Medium Destroyer#
+			name = "Investor 05' Class (Ardent M)"
+			type = destroyer_1
+			upgrades = {
+				ship_torpedo_upgrade = 1
 			}
 		}
-		create_equipment_variant={	#Destroyer#
-			name="Surveyor 03' Class (Ardent M)"
-			type=destroyer_1
+		create_equipment_variant = {	#Destroyer#
+			name = "Surveyor 03' Class (Ardent M)"
+			type = destroyer_1
 		}
-		set_naval_oob="HWG_1012_naval_legacy"
+		set_naval_oob = "HWG_07_naval_legacy"
 	}
 }
-if={
-	limit={has_dlc="La Resistance"}
-	create_intelligence_agency=yes
+if = {
+	limit = {has_dlc = "La Resistance"}
+	create_intelligence_agency = yes
 }
-if={
-	limit={has_dlc="By Blood Alone"}
-	set_technology={
-		airship_airframes=1
-		early_bombs=1
-		aa_lmg=1
-		engines_1=1
+if = {
+	limit = {has_dlc = "By Blood Alone"}
+	set_technology = {
+		airship_airframes = 1
+		early_bombs = 1
+		aa_lmg = 1
+		engines_1 = 1
 	}
-	create_equipment_variant={
-		name="Chelangel UM06-9"	#Neighchelangelo - Ultramarine 06' V9
-		type=medium_airship_airframe_0
-		modules={
-			fixed_main_weapon_slot=medium_bomb_bay
-			engine_type_slot=engine_1_2x
+	create_equipment_variant = {
+		name = "Chelangel UM06-9"	#Neighchelangelo - Ultramarine 06' V9
+		type = medium_airship_airframe_0
+		modules = {
+			fixed_main_weapon_slot = medium_bomb_bay
+			engine_type_slot = engine_1_2x
 		}
 	}
-	create_equipment_variant={
-		name="Diamond UM04-2"	#Diamond Tiara - Ultramarine 04' V2
-		type=large_airship_airframe_0
-		modules={
-			fixed_main_weapon_slot=large_bomb_bay
-			engine_type_slot=engine_1_4x
+	create_equipment_variant = {
+		name = "Diamond UM04-2"	#Diamond Tiara - Ultramarine 04' V2
+		type = large_airship_airframe_0
+		modules = {
+			fixed_main_weapon_slot = large_bomb_bay
+			engine_type_slot = engine_1_4x
 		}
 	}
-	set_air_oob="HWG_1012_air"
-	else={
-		set_technology={
-			airships1=1
+	set_air_oob = "HWG_07_air"
+	else = {
+		set_technology = {
+			airships1 = 1
 		}
-		create_equipment_variant={
-			name="Chelangel UM06-9"	#Neighchelangelo - Ultramarine 06' V9
-			type=medium_airship_equipment_0
-			upgrades={
-				plane_range_upgrade=1
-				plane_reliability_upgrade=1
+		create_equipment_variant = {
+			name = "Chelangel UM06-9"	#Neighchelangelo - Ultramarine 06' V9
+			type = medium_airship_equipment_0
+			upgrades = {
+				plane_range_upgrade = 1
+				plane_reliability_upgrade = 1
 			}
 		}
-		create_equipment_variant={
-			name="Diamond UM04-2"	#Diamond Tiara - Ultramarine 04' V2
-			type=heavy_airship_equipment_0
+		create_equipment_variant = {
+			name = "Diamond UM04-2"	#Diamond Tiara - Ultramarine 04' V2
+			type = heavy_airship_equipment_0
 		}
-		set_air_oob="HWG_1012_air_legacy"
+		set_air_oob = "HWG_07_air_legacy"
 	}
 }
-actually_fix_weapon_techs=yes
-set_convoys=8
-set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
-set_popularities={
-	fascism=66
-	communism=12
-	neutrality=13
-	democratic=9
+actually_fix_weapon_techs = yes
+set_convoys = 8
+set_rule = {	can_generate_female_aces = yes	can_generate_female_unit_leaders = yes	can_generate_female_country_leaders = yes}
+set_popularities = {
+	fascism = 66
+	communism = 12
+	neutrality = 13
+	democratic = 9
 }
-set_politics={ruling_party=fascism}
-set_country_flag=EDR_is_equestrian_breakaway
-recruit_character=HWG_rarity
-recruit_character=HWG_shooter_mark
-recruit_character=HWG_fleur_de_lis
-recruit_character=HWG_fancy_pants
-recruit_character=HWG_clair_de_lune
-recruit_character=HWG_mashed_potato
-recruit_character=HWG_generic_admiral
-recruit_character=HWG_flim_flam
-recruit_character=HWG_filthy_rich
-recruit_character=HWG_diamond_tiara
-recruit_character=HWG_sweetie_belle
-recruit_character=HWG_octavia_melody
-recruit_character=HWG_whispy_locks
-recruit_character=HWG_lemon_meringue
-recruit_character=HWG_prim_n_proper
-recruit_character=HWG_straight_arrow
-if={
-	limit={has_dlc="La Resistance"}
-	add_advisor_role={
-		character=HWG_fleur_de_lis
-		advisor={
-			slot=political_advisor
-			idea_token=HWG_fdlis_advi
-			allowed={has_dlc="La Resistance"}
-			available={has_intelligence_agency=yes}
-			traits={head_of_intelligence}	#upgrade me#
-		}
-	}
-	add_advisor_role={
-		character=HWG_octavia_melody
-		advisor={
-			slot=political_advisor
-			idea_token=HWG_omelody_advi
-			allowed={has_dlc="La Resistance"}
-			available={has_intelligence_agency=yes}
-			traits={head_of_intelligence}
-		}
-	}
-	else={
-		add_advisor_role={
-			character=HWG_fleur_de_lis
-			advisor={
-				slot=political_advisor
-				idea_token=HWG_fdlis_advi
-				allowed={not={has_dlc="La Resistance"}}
-				traits={backroom_backstabber}	#upgrade me?#
-			}
-		}
-		add_advisor_role={
-			character=HWG_octavia_melody
-			advisor={
-				slot=political_advisor
-				idea_token=HWG_omelody_advi
-				allowed={not={has_dlc="La Resistance"}}
-				traits={backroom_backstabber}	#encrypt/decrypt trait here#
-			}
-		}
-	}
-}
-#NOTES#
-#strategic_bomber1=1
-#tech_pegasi=1
-#tech_unicorn=1
-#tech_ironpaws=1
+set_politics = {ruling_party = fascism}
+set_country_flag = EDR_is_equestrian_breakaway
+recruit_character = HWG_rarity
+recruit_character = HWG_shooter_mark
+recruit_character = HWG_fleur_de_lis
+recruit_character = HWG_fancy_pants
+recruit_character = HWG_clair_de_lune
+recruit_character = HWG_mashed_potato
+recruit_character = HWG_generic_admiral
+recruit_character = HWG_flim_flam
+recruit_character = HWG_filthy_rich
+recruit_character = HWG_diamond_tiara
+recruit_character = HWG_sweetie_belle
+recruit_character = HWG_octavia_melody
+recruit_character = HWG_whispy_locks
+recruit_character = HWG_lemon_meringue
+recruit_character = HWG_prim_n_proper
+recruit_character = HWG_straight_arrow
+###NOTES###
+#strategic_bomber1 = 1
+#tech_pegasi = 1
+#tech_unicorn = 1
+#tech_ironpaws = 1

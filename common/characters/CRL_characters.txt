@@ -4,17 +4,17 @@ characters = {
 		gender = female
 		portraits = {
 			civilian = {
-				large = "GFX_CRL_radiant_hope"
-				#small = "GFX_CRL_radiant_hope"
+				large = GFX_CRL_radiant_hope
+				small = GFX_CRL_radiant_hope_small
 			}
 		}
-		country_leader = {	#POLITICS_RADIANTHOPE_DESC
-			desc = "CRL_rhope_leader_desc"
+		country_leader = {
+			desc = CRL_rhope_leader_desc
 			ideology = nazism
-			traits = {democratic_sympathies}
+			traits = { democratic_sympathies }
 		}
 		country_leader = {
-			desc = "CRL_rhope_leader_desc"
+			desc = CRL_rhope_leader_desc
 			ideology = conservatism
 		}
 	}
@@ -22,40 +22,43 @@ characters = {
 		name = CRL_arctic_lily
 		gender = female
 		portraits = {
-			civilian = {large = "gfx/leaders/CRY/ArcticLily.tga"}
+			civilian = { large = GFX_CRL_artic_lily }
 		}
 		country_leader = {
-			desc = "CRL_alily_leader_desc"
+			desc = CRL_alily_leader_desc
 			ideology = leninism
 		}
 	}
 	CRL_disputed = {
 		name = CRL_disputed
 		portraits = {
-			civilian = {large = "gfx/leaders/leader_unknown.dds"}
+			civilian = { large = GFX_idea_unknown_advisor }
 		}
 		country_leader = {
-			desc = "CRL_disputed_leader_desc"
+			desc = CRL_disputed_leader_desc
 			ideology = despotism
 		}
 	}
 	CRL_sombra = {
 		name = CRL_sombra
 		portraits = {
-			civilian = {large = "GFX_SombraPortrait"}
+			civilian = { large = GFX_SombraPortrait }
 			army = {
-				large = "GFX_SombraPortrait"
-				small = "GFX_sombra_leader"
+				large = GFX_SombraPortrait
+				small = GFX_idea_CRY_sombra
 			}
 		}
 		country_leader = {
-			desc = "POLITICS_SOMBRA_DESC"
+			desc = CRL_sombra_leader_desc
 			ideology = magocracy
-			traits = {sombra_trait warmonger}
+			traits = {
+				sombra_trait
+				warmonger
+			}
 		}
 		advisor = {
 			slot = army_chief
-			idea_token = CRL_sombra_chie
+			idea_token = CRL_sombra_chief
 			cost = 100
 			visible = {
 				has_country_leader = {
@@ -63,19 +66,19 @@ characters = {
 					ruling_only = yes
 				}
 			}
-			traits = {army_chief_maneuver_2}
+			traits = { army_chief_maneuver_2 }
 		}
 	}
 	CRL_reese = {
 		name = CRL_reese
 		portraits = {
 			army = {
-				large = "gfx/leaders/CRY/Reese.tga"
-				small = "GFX_CRY_reese"
+				large = GFX_CRL_reese
+				small = GFX_idea_CRY_reese
 			}
 		}
 		field_marshal = {
-			desc = "CRL_reese_commander_desc"
+			desc = CRL_reese_commander_desc
 			skill = 2
 			attack_skill = 2
 			defense_skill = 3
@@ -90,20 +93,20 @@ characters = {
 		advisor = {
 			slot = army_chief
 			cost = 100
-			idea_token = CRL_reese_chie
-			traits = {army_logistics_2}
+			idea_token = CRL_reese_chief
+			traits = { army_logistics_2 }
 		}
 	}
 	CRL_colloid = {
 		name = CRL_colloid
 		portraits = {
 			army = {
-				large = "gfx/leaders/CRY/Colloid.tga"
-				#small = "gfx/leaders/CRL/CRL_colloid_small.dds"
+				large = GFX_CRL_colloid
+				small = GFX_CRL_colloid_small
 			}
 		}
 		field_marshal = {
-			desc = "CRL_colloid_commander_desc"
+			desc = CRL_colloid_commander_desc
 			skill = 3
 			attack_skill = 2
 			defense_skill = 3
@@ -120,12 +123,12 @@ characters = {
 		gender = female
 		portraits = {
 			army = {
-				large = "gfx/leaders/CRY/Dusty_Ember.tga"
-				small = "GFX_CRY_dusty_ember"
+				large = GFX_CRL_dusty_ember
+				small = GFX_idea_CRY_dusty_ember
 			}
 		}
 		corps_commander = {
-			desc = "CRY_DUSTY_EMBER_DESC"	#"CRL_dember_commander_desc"
+			desc = CRL_dember_commander_desc
 			skill = 2
 			attack_skill = 2
 			defense_skill = 4
@@ -138,15 +141,15 @@ characters = {
 		}
 	}
 	CRL_deimos_falafel = {
-		name = CRL_deimos_falafel	#Damiyan
+		name = CRL_deimos_falafel
 		portraits = {
 			army = {
-				large = "gfx/leaders/CRY/Damiyan.tga"
-				small = "GFX_Damiyan"
+				large = GFX_CRL_deimos_falafel
+				small = GFX_idea_CRY_damiyan
 			}
 		}
 		corps_commander = {
-			desc = "CRL_dfalafel_commander_desc"
+			desc = CRL_dfalafel_commander_desc
 			skill = 2
 			attack_skill = 1
 			defense_skill = 2
@@ -163,8 +166,8 @@ characters = {
 			slot = high_command
 			ledger = army
 			cost = 150
-			idea_token = CRL_falafel_high
-			traits = {defence_theorist}
+			idea_token = CRL_falafel_highcmdr
+			traits = { defence_theorist }
 		}
 	}
 	CRL_icy_snow = {
@@ -172,12 +175,12 @@ characters = {
 		gender = female
 		portraits = {
 			army = {
-				large = "gfx/leaders/CRY/Icy_snow.tga"
-				small = "GFX_CRY_icy_snow"
+				large = GFX_CRL_icy_snow
+				small = GFX_idea_CRY_icy_snow
 			}
 		}
 		corps_commander = {
-			desc = "CRL_isnow_commander_desc"
+			desc = CRL_isnow_commander_desc
 			skill = 1
 			attack_skill = 1
 			defense_skill = 2
@@ -195,12 +198,12 @@ characters = {
 		gender = female
 		portraits = {
 			army = {
-				large = "gfx/leaders/CRY/Cloudie.tga"
-				small = "GFX_CRY_cloudie"
+				large = GFX_CRL_cloudie
+				small = GFX_idea_CRY_cloudie
 			}
 		}
 		corps_commander = {
-			desc = "CRL_cloudie_commander_desc"
+			desc = CRL_cloudie_commander_desc
 			skill = 1
 			attack_skill = 1
 			defense_skill = 2
@@ -217,12 +220,12 @@ characters = {
 		gender = female
 		portraits = {
 			army = {
-				large = "gfx/leaders/CRY/Crystalline.tga"
-				small = "GFX_CRY_crystalline"
+				large = GFX_CRL_crystalline
+				small = GFX_idea_CRY_crystalline
 			}
 		}
 		corps_commander = {
-			desc = "CRL_crystalline_commander_desc"
+			desc = CRL_crystalline_commander_desc
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -238,12 +241,12 @@ characters = {
 		name = CRL_squeeky_hooves
 		portraits = {
 			army = {
-				large = "gfx/leaders/CRY/SombraGeneral.tga"
-				small = "GFX_CRY_squeeky_hooves"
+				large = GFX_CRL_squeeky_hooves
+				small = GFX_idea_CRY_squeeky_hooves
 			}
 		}
 		corps_commander = {
-			desc = "CRL_shooves_commander_desc"
+			desc = CRL_shooves_commander_desc
 			skill = 3
 			attack_skill = 3
 			defense_skill = 2
@@ -261,43 +264,45 @@ characters = {
 		gender = female
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/EQS/Sakira.tga"
-				small = "GFX_sakira"
+				large = GFX_CRL_sakira
+				small = GFX_idea_CRY_sakira
 			}
 		}
 		country_leader = {
-			desc = "CRL_sakira_leader_desc"
+			desc = CRL_sakira_leader_desc
 			ideology = nazism
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = CRL_sakira_advi
-			traits = {captain_of_industry}
+			idea_token = CRL_sakira_politician
+			ledger = civilian
+			traits = { captain_of_industry }
 		}
 	}
 	CRL_dust_snowfall = {
 		name = dust_snowfall
 		portraits = {
-			civilian = {small = "GFX_dust_snowfall"}
+			civilian = { small = GFX_idea_CRY_dust_snowfall }
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = CRL_dsnowfall_advi
-			traits = {prince_of_terror}
+			idea_token = CRL_dsnowfall_politician
+			ledger = civilian
+			traits = { prince_of_terror }
 		}
 	}
 	CRL_lake_frost = {
 		name = lake_frost
 		portraits = {
-			army = {small = "GFX_lake_frost"}
+			army = { small = GFX_idea_CRY_lake_frost }
 		}
 		advisor = {
 			slot = theorist
+			idea_token = CRL_lfrost_theorist
 			ledger = army
 			cost = 100
-			research_bonus = {industry = 0.075}
-			idea_token = CRL_lfrost_theo
-			traits = {industry_theorist}
+			research_bonus = { industry = 0.075 }
+			traits = { industry_theorist }
 		}
 	}
 }

@@ -21,7 +21,7 @@
  ###Characters###
   ##Leaders##
    ALA_almond_tree: "Almond Tree"
-    ALA_atree_leader_desc: ""
+    ALA_atree_leader_desc: "$GENR_advisor_desc$"
   ##Commanders##
   ##Political Advisors##
   ##Military Advisors##

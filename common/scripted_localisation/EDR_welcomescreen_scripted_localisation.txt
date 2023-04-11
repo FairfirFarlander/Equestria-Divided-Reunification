@@ -524,20 +524,20 @@ defined_text={
 	name=GetCountryIntro
 	#EDR
 	text={trigger={original_tag=ALA}localization_key=EAW_WS_ALA_desc}
-	text={trigger={original_tag=XXX}localization_key=EAW_WS_XXX_desc}
+	text={trigger={original_tag=ALI}localization_key=EAW_WS_ALI_desc}
 	text={trigger={original_tag=BCK}localization_key=EAW_WS_BCK_desc}
 	text={trigger={original_tag=CHY}localization_key=EAW_WS_CHY_desc}
-	text={trigger={original_tag=XXX}localization_key=EAW_WS_XXX_desc}
+	text={trigger={original_tag=CLD}localization_key=EAW_WS_CLD_desc}
 	text={trigger={original_tag=COT}localization_key=EAW_WS_COT_desc}
 	text={trigger={original_tag=CRL}localization_key=EAW_WS_CRL_desc}
 	text={trigger={original_tag=CUL}localization_key=EAW_WS_CUL_desc}
-	text={trigger={original_tag=XXX}localization_key=EAW_WS_XXX_desc}
+	text={trigger={original_tag=CYE}localization_key=EAW_WS_CYE_desc}
 	text={trigger={original_tag=EMB}localization_key=EAW_WS_EMB_desc}
-	text={trigger={original_tag=XXX}localization_key=EAW_WS_XXX_desc}
+	text={trigger={original_tag=FAI}localization_key=EAW_WS_FAI_desc}
 	text={trigger={original_tag=FLY}localization_key=EAW_WS_FLY_desc}
-	text={trigger={original_tag=XXX}localization_key=EAW_WS_XXX_desc}
-	text={trigger={original_tag=XXX}localization_key=EAW_WS_XXX_desc}
-	text={trigger={original_tag=XXX}localization_key=EAW_WS_XXX_desc}
+	text={trigger={original_tag=FRI}localization_key=EAW_WS_FRI_desc}
+	text={trigger={original_tag=FSH}localization_key=EAW_WS_FSH_desc}
+	text={trigger={original_tag=HAH}localization_key=EAW_WS_HAH_desc}
 	text={trigger={original_tag=HEB}localization_key=EAW_WS_HEB_desc}
 	text={trigger={original_tag=HEF}localization_key=EAW_WS_HEF_desc}
 	text={trigger={original_tag=HFT}localization_key=EAW_WS_HFT_desc}
@@ -546,7 +546,7 @@ defined_text={
 	text={trigger={original_tag=HWG}localization_key=EAW_WS_HWG_desc}
 	text={trigger={original_tag=JTL}localization_key=EAW_WS_JTL_desc}
 	text={trigger={original_tag=LAS}localization_key=EAW_WS_LAS_desc}
-	text={trigger={original_tag=XXX}localization_key=EAW_WS_XXX_desc}
+	text={trigger={original_tag=MSE}localization_key=EAW_WS_MSE_desc}
 	text={trigger={original_tag=MWC}localization_key=EAW_WS_MWC_desc}
 	text={trigger={original_tag=NIH}localization_key=EAW_WS_NIH_desc}
 	text={trigger={original_tag=PIE}localization_key=EAW_WS_PIE_desc}
@@ -554,13 +554,13 @@ defined_text={
 	text={trigger={original_tag=PLT}localization_key=EAW_WS_PLT_desc}
 	text={trigger={original_tag=PRT}localization_key=EAW_WS_PRT_desc}
 	text={trigger={original_tag=SGR}localization_key=EAW_WS_SGR_desc}
-	text={trigger={original_tag=XXX}localization_key=EAW_WS_XXX_desc}
+	text={trigger={original_tag=SOY}localization_key=EAW_WS_SOY_desc}
 	text={trigger={original_tag=STB}localization_key=EAW_WS_STB_desc}
 	text={trigger={original_tag=SWT}localization_key=EAW_WS_SWT_desc}
 	text={trigger={original_tag=SYV}localization_key=EAW_WS_SYV_desc}
-	text={trigger={original_tag=XXX}localization_key=EAW_WS_XXX_desc}
+	text={trigger={original_tag=TFL}localization_key=EAW_WS_TFL_desc}
 	text={trigger={original_tag=THA}localization_key=EAW_WS_THA_desc}
-	text={trigger={original_tag=XXX}localization_key=EAW_WS_XXX_desc}
+	text={trigger={original_tag=TRH}localization_key=EAW_WS_TRH_desc}
 	text={trigger={original_tag=TRS}localization_key=EAW_WS_TRS_desc}
 	text={trigger={original_tag=TRT}localization_key=EAW_WS_TRT_desc}
 	text={trigger={original_tag=VHT}localization_key=EAW_WS_VHT_desc}

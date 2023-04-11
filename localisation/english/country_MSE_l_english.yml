@@ -1,22 +1,23 @@
 ﻿l_english:
-###Introduction###
-##Bookmark##
-MSE_GATHERING_STORM_DESC: ""
-##Welcome Screen##
- EAW_WS_MSE: ""
-  EAW_WS_MSE_desc: ""
-###Country Name###
-MSE: "Strakoma"
- MSE_DEF: "the Slave State of Strakoma"
- MSE_ADJ: "Stratish"
-###Political Parties###
-###Characters###
-##Leaders##
-MSE_generic_pony: "Generic pony"
- MSE_generic_pony_desc: ""
-##Commanders##
-##Political Advisors##
-##Military Advisors##
-###Ideas###
-###National Focuses###
-##Storyline Tree##
+ ###Introduction###
+  ##Bookmark##
+   MSE_GATHERING_STORM_DESC: "$GENR_GATHERING_STORM_DESC$"
+  ##Welcome Screen##
+   EAW_WS_MSE: "$EAW_WS_GENR$"
+    EAW_WS_MSE_desc: "$EAW_WS_GENR_desc$"
+ ###Politics###
+  ##Country Name##
+   MSE: "Strakoma"
+    MSE_DEF: "the Slave State of Strakoma"
+    MSE_ADJ: "Stratish"
+  ##Political Parties##
+ ###Characters###
+  ##Leaders##
+   MSE_generic_pony: "Generic pony"
+    MSE_gpony_leader_desc: "$GENR_advisor_desc$"
+  ##Commanders##
+  ##Political Advisors##
+  ##Military Advisors##
+ ###Ideas###
+ ###National Focuses###
+  ##Storyline Tree##

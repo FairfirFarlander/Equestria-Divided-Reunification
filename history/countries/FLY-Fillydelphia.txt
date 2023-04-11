@@ -1,58 +1,57 @@
-capital=12
-oob="FLY_1012"
-set_research_slots=2
-set_stability=0.23
-set_war_support=0.11
-add_ideas={
+capital = 12
+oob = "FLY_07"
+set_stability = 0.23
+set_war_support = 0.11
+add_ideas = {
 	pre_industrial_society
 	lack_of_scientists3
 	poverty2
 }
-set_technology={
-	pony_race=1
-	melee_weapons=1
-	pre_gw_artillery=1
-	tech_pegasi=1
-	tech_support=1
-	tech_unicorn=1
+set_technology = {
+	pony_race = 1
+	melee_weapons = 1
+	pre_gw_artillery = 1
+	tech_pegasi = 1
+	tech_support = 1
+	tech_unicorn = 1
 }
-if={
-	limit={has_dlc="Man the Guns"}
-	set_technology={
-		early_ship_hull_light=1
-		basic_battery=1
-		mtg_transport=1
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		early_ship_hull_light = 1
+		basic_battery = 1
+		mtg_transport = 1
 	}
-	#set_naval_oob="FLY_1012_naval"
-	else={
-		set_technology={
-			early_destroyer=1
-			transport=1
+	#set_naval_oob = "FLY_07_naval"
+	else = {
+		set_technology = {
+			early_destroyer = 1
+			transport = 1
 		}
-		#set_naval_oob="FLY_1012_naval_legacy"
+		#set_naval_oob = "FLY_07_naval_legacy"
 	}
 }
-if={
-	limit={has_dlc="No Step Back"}
-	add_ideas={
+if = {
+	limit = { has_dlc = "No Step Back" }
+	add_ideas = {
 		traditionalism_academy_spirit
 		doctrinal_orthodoxy_spirit
 		disdain_for_the_digging_spirit
 	}
-	else={
-		add_ideas={EQS_bad_tanks}
+	else = {
+		add_ideas = { EQS_bad_tanks }
 	}
 }
-actually_fix_weapon_techs=yes
-set_convoys=3
-set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
-set_popularities={
-	fascism=49
-	communism=11
-	neutrality=32
-	democratic=8
+actually_fix_weapon_techs = yes
+set_convoys = 3
+set_rule = {	can_generate_female_aces = yes	can_generate_female_unit_leaders = yes	can_generate_female_country_leaders = yes}
+set_popularities = {
+	fascism = 49
+	communism = 11
+	neutrality = 32
+	democratic = 8
 }
-set_politics={ruling_party=fascism}
-set_country_flag=EDR_is_equestrian_breakaway
-recruit_character=FLY_cherry_jam
-#NOTES#
+set_politics = { ruling_party = fascism }
+set_country_flag = EDR_is_equestrian_breakaway
+recruit_character = FLY_cherry_jam
+###NOTES###

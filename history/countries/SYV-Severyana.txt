@@ -1,69 +1,68 @@
-set_capital={state=157}
-oob="SYV_1012"
-set_research_slots=2
-set_stability=0.17
-set_war_support=0.03
-add_ideas={
+set_capital = {state = 157}
+oob = "SYV_07"
+set_stability = 0.17
+set_war_support = 0.03
+add_ideas = {
 	pre_industrial_society
 	lack_of_scientists1
 	poverty2
 }
-set_technology={
-	pony_race=1
-	melee_weapons=1
-	melee_weapons1=1
-	tech_support=1
-	tech_military_police=1
-	pre_gw_artillery=1
-	tech_pegasi=1
+set_technology = {
+	pony_race = 1
+	melee_weapons = 1
+	melee_weapons1 = 1
+	tech_support = 1
+	tech_military_police = 1
+	pre_gw_artillery = 1
+	tech_pegasi = 1
 }
-if={
-	limit={has_dlc="Man the Guns"}
-	set_technology={
-		early_ship_hull_light=1
-		early_ship_hull_submarine=1
-		early_ship_hull_cruiser=1
-		basic_battery=1
-		basic_torpedo=1
-		mtg_transport=1
+if = {
+	limit = {has_dlc = "Man the Guns"}
+	set_technology = {
+		early_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		mtg_transport = 1
 	}
-	else={
-		set_technology={
-			early_submarine=1
-			early_destroyer=1
-			early_light_cruiser=1
-			early_heavy_cruiser=1
-			transport=1
+	else = {
+		set_technology = {
+			early_submarine = 1
+			early_destroyer = 1
+			early_light_cruiser = 1
+			early_heavy_cruiser = 1
+			transport = 1
 		}
 	}
 }
-if={
-	limit={has_dlc="No Step Back"}
-	add_ideas={
+if = {
+	limit = {has_dlc = "No Step Back"}
+	add_ideas = {
 		traditionalism_academy_spirit
 		doctrinal_orthodoxy_spirit
 		disdain_for_the_digging_spirit
 	}
-	else={
-		add_ideas={EQS_bad_tanks}
+	else = {
+		add_ideas = {EQS_bad_tanks}
 	}
 }
-actually_fix_weapon_techs=yes
-generic_CA_template=yes
-generic_CL_template=yes
-generic_DD_template=yes
-generic_SS_template=yes
-set_convoys=7
-set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
-set_popularities={
-	fascism=10
-	communism=20
-	neutrality=27
-	democratic=43
+actually_fix_weapon_techs = yes
+generic_CA_template = yes
+generic_CL_template = yes
+generic_DD_template = yes
+generic_SS_template = yes
+set_convoys = 7
+set_rule = {	can_generate_female_aces = yes	can_generate_female_unit_leaders = yes	can_generate_female_country_leaders = yes}
+set_popularities = {
+	fascism = 10
+	communism = 20
+	neutrality = 27
+	democratic = 43
 }
-set_politics={ruling_party=democratic}
-set_country_flag=EDR_is_equestrian_breakaway
-recruit_character=SYV_ratibor_sventoslavich
-recruit_character=SYV_peter_iv
-recruit_character=SYV_caramelka_sladkaya
+set_politics = {ruling_party = democratic}
+set_country_flag = EDR_is_equestrian_breakaway
+recruit_character = SYV_ratibor_sventoslavich
+recruit_character = SYV_peter_iv
+recruit_character = SYV_caramelka_sladkaya
 #NOTES#

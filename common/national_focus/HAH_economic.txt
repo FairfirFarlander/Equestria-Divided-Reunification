@@ -31,16 +31,18 @@
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_I01A"
 			add_ideas=HAH_daily_rabble
-			add_advisor_role={
-				character=HAH_word_spinner
-				advisor={
-					slot=political_advisor
-					idea_token=HAH_wspinner_advi
-					research_bonus={
-						race_tech=0.1
-					}
-					modifier={
-						research_speed_factor=0.05
+			effect_tooltip = {
+				add_advisor_role={
+					character=HAH_word_spinner
+					advisor={
+						slot=political_advisor
+						idea_token=HAH_wspinner_advi
+						research_bonus={
+							race_tech=0.1
+						}
+						modifier={
+							research_speed_factor=0.05
+						}
 					}
 				}
 			}
@@ -134,14 +136,16 @@
 		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_I03A"
-			add_advisor_role={
-				character=HAH_uncle_haystack
-				advisor={
-					slot=political_advisor
-					idea_token=HAH_uhaystack_advi
-					modifier={
-						stability_weekly=0.005
-						resistance_decay=0.05
+			effect_tooltip = {
+				add_advisor_role={
+					character=HAH_uncle_haystack
+					advisor={
+						slot=political_advisor
+						idea_token=HAH_uhaystack_advi
+						modifier={
+							stability_weekly=0.005
+							resistance_decay=0.05
+						}
 					}
 				}
 			}

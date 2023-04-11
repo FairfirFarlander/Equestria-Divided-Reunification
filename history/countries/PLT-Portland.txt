@@ -1,86 +1,85 @@
-capital=351
-oob="PLT_1012"
-set_research_slots=2
-set_stability=0.41
-set_war_support=0.09
-add_ideas={
+capital = 351
+oob = "PLT_07"
+set_stability = 0.41
+set_war_support = 0.09
+add_ideas = {
 	agrarian_society
 	lack_of_scientists2
 	poverty4
 }
-set_technology={
-	melee_weapons=1
-	melee_weapons1=1
-	tech_support=1
-	pre_gw_artillery=1
-	pony_race=1
-	penal_infantry=1
+set_technology = {
+	melee_weapons = 1
+	melee_weapons1 = 1
+	tech_support = 1
+	pre_gw_artillery = 1
+	pony_race = 1
+	penal_infantry = 1
 }
-if={
-	limit={has_dlc="Man the Guns"}
-	set_technology={
-		early_ship_hull_light=1
-		early_ship_hull_cruiser=1
-		basic_battery=1
-		mtg_transport=1
+if = {
+	limit = {has_dlc = "Man the Guns"}
+	set_technology = {
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		mtg_transport = 1
 	}
-	create_equipment_variant={
-		name="Archipelago 996 Class"
-		type=ship_hull_cruiser_1
-		modules={
-			fixed_ship_battery_slot=ship_light_medium_battery_1
-			fixed_ship_engine_slot=cruiser_ship_engine_1
-		}
-	}
-	create_equipment_variant={
-		name="Fjordwater 992 Class"
-		type=ship_hull_light_1
-		modules={
-			fixed_ship_battery_slot=ship_light_battery_1
-			fixed_ship_engine_slot=light_ship_engine_1
+	create_equipment_variant = {
+		name = "Archipelago 996 Class"
+		type = ship_hull_cruiser_1
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_engine_slot = cruiser_ship_engine_1
 		}
 	}
-	set_naval_oob="PLT_1012_naval"
-	else={
-		set_technology={
-			early_destroyer=1
-			early_light_cruiser=1
-			transport=1
+	create_equipment_variant = {
+		name = "Fjordwater 992 Class"
+		type = ship_hull_light_1
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_engine_slot = light_ship_engine_1
 		}
-		create_equipment_variant={
-			name="Archipelago 996 Class"
-			type=light_cruiser_1
+	}
+	set_naval_oob = "PLT_07_naval"
+	else = {
+		set_technology = {
+			early_destroyer = 1
+			early_light_cruiser = 1
+			transport = 1
 		}
-		create_equipment_variant={
-			name="Fjordwater 992 Class"
-			type=destroyer_1
+		create_equipment_variant = {
+			name = "Archipelago 996 Class"
+			type = light_cruiser_1
 		}
-		set_naval_oob="PLT_1012_naval_legacy"
+		create_equipment_variant = {
+			name = "Fjordwater 992 Class"
+			type = destroyer_1
+		}
+		set_naval_oob = "PLT_07_naval_legacy"
 	}
 }
-if={
-	limit={has_dlc="No Step Back"}
-	add_ideas={
+if = {
+	limit = {has_dlc = "No Step Back"}
+	add_ideas = {
 		traditionalism_academy_spirit
 		doctrinal_orthodoxy_spirit
 		disdain_for_the_digging_spirit
 	}
-	else={
-		add_ideas={EQS_bad_tanks}
+	else = {
+		add_ideas = {EQS_bad_tanks}
 	}
 }
-actually_fix_weapon_techs=yes
-set_convoys=3
-set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
-set_popularities={
-	fascism=12
-	communism=17
-	neutrality=30
-	democratic=41
+actually_fix_weapon_techs = yes
+set_convoys = 3
+set_rule = {	can_generate_female_aces = yes	can_generate_female_unit_leaders = yes	can_generate_female_country_leaders = yes}
+set_popularities = {
+	fascism = 12
+	communism = 17
+	neutrality = 30
+	democratic = 41
 }
-set_politics={ruling_party=democratic}
-set_country_flag=EDR_is_equestrian_breakaway
-recruit_character=PLT_rael_grey
-recruit_character=PLT_willie_hoofard_tuft
-recruit_character=PLT_thistle_tap
+set_politics = {ruling_party = democratic}
+set_country_flag = EDR_is_equestrian_breakaway
+recruit_character = PLT_rael_grey
+recruit_character = PLT_willie_hoofard_tuft
+recruit_character = PLT_thistle_tap
 ###NOTES###

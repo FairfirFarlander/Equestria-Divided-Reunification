@@ -4,12 +4,12 @@ characters = {
 		gender = female
 		portraits = {
 			civilian = {
-				large = "GFX_TFL_rain_dancer"
-				small = "GFX_TFL_rain_dancer_small"
+				large = GFX_TFL_rain_dancer
+				small = GFX_TFL_rain_dancer_small
 			}
 		}
 		country_leader = {
-			desc = "TFL_rdancer_leader_desc"
+			desc = TFL_rdancer_leader_desc
 			ideology = fascism_ideology
 		}
 	}
@@ -18,20 +18,20 @@ characters = {
 		gender = female
 		portraits = {
 			civilian = {
-				large = "GFX_portrait_eqs_pony_generic_18"
-				small = "GFX_portrait_eqs_pony_generic_18_small"
+				large = GFX_portrait_eqs_pony_generic_18
+				small = GFX_portrait_eqs_pony_generic_18_small
 			}
 		}
 		country_leader = {
-			desc = "TFL_gpony_leader_desc"
+			desc = TFL_gpony_leader_desc
 			ideology = conservatism
 		}
 		country_leader = {
-			desc = "TFL_gpony_leader_desc"
+			desc = TFL_gpony_leader_desc
 			ideology = democratic_socialism
 		}
 		country_leader = {
-			desc = "TFL_gpony_leader_desc"
+			desc = TFL_gpony_leader_desc
 			ideology = despotism
 		}
 	}
@@ -40,12 +40,12 @@ characters = {
 		gender = female
 		portraits = {
 			civilian = {
-				large = "GFX_TFL_buffalo_joe"
-				small = "GFX_TFL_buffalo_joe"
+				large = GFX_TFL_buffalo_joe
+				small = GFX_TFL_buffalo_joe_small
 			}
 		}
 		corps_commander = {
-			desc = "TFL_bjoe_commander_desc"
+			desc = TFL_bjoe_commander_desc
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -61,12 +61,12 @@ characters = {
 		gender = female
 		portraits = {
 			civilian = {
-				large = "GFX_TFL_firespit"
-				small = "GFX_TFL_firespit"
+				large = GFX_TFL_firespit
+				small = GFX_TFL_firespit
 			}
 		}
 		corps_commander = {
-			desc = "TFL_firespit_commander_desc"
+			desc = TFL_firespit_commander_desc
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -77,17 +77,17 @@ characters = {
 			}
 		}
 	}
-	TFL_yeehaw = {
-		name = TFL_yeehaw
+	TFL_hawyee = {
+		name = TFL_hawyee
 		gender = female
 		portraits = {
 			civilian = {
-				large = "GFX_TFL_yeehaw"
-				small = "GFX_TFL_yeehaw"
+				large = GFX_TFL_hawyee
+				small = GFX_TFL_hawyee_small
 			}
 		}
 		corps_commander = {
-			desc = "TFL_yeehaw_commander_desc"
+			desc = TFL_hawyee_commander_desc
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1

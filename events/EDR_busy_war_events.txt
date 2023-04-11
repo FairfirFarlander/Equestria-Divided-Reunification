@@ -14,18 +14,18 @@ add_namespace = EDRG_EW1
 		immediate = { log = "[GetDateText]: [Root.GetName]: event EDRG_EW1.01" }
 	}
 	country_event = {	#A Pearn Harbor HEB
-		id = EDRG_EW1.01
-		title = EDRG_EW1.01.t
-		desc = EDRG_EW1.01.d
+		id = EDRG_EW1.02
+		title = EDRG_EW1.02.t
+		desc = EDRG_EW1.02.d
 		#picture = 
 		fire_only_once = yes
 		trigger = {
 			date > 1007.01.08
 		}
 		option = {	#
-			name = EDRG_EW1.01.a
+			name = EDRG_EW1.02.a
 		}
-		immediate = { log = "[GetDateText]: [Root.GetName]: event EDRG_EW1.01" }
+		immediate = { log = "[GetDateText]: [Root.GetName]: event EDRG_EW1.02" }
 	}
 	country_event = {	#Earthborn Demands Fort Mourn HEB then COT
 		id = EDRG_EW1.03

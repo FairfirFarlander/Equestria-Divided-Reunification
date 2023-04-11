@@ -4,11 +4,11 @@ characters = {
 		gender = female
 		portraits = {
 			civilian = {
-				large = "GFX_portrait_pony_generic_2"
+				large = GFX_portrait_pony_generic_2
 			}
 		}
 		country_leader = {
-			desc = "MWC_rpetal_leader_desc"
+			desc = MWC_rpetal_leader_desc
 			ideology = ultranationalism
 		}
 	}
@@ -16,11 +16,11 @@ characters = {
 		name = MWC_mulberry_wine
 		portraits = {
 			civilian = {
-				large = "GFX_portrait_pony_generic_land_4"
+				large = GFX_portrait_pony_generic_land_4
 			}
 		}
 		country_leader = {
-			desc = "MWC_mwine_leader_desc"
+			desc = MWC_mwine_leader_desc
 			ideology = syndicalism
 		}
 	}
@@ -29,11 +29,11 @@ characters = {
 		gender = female
 		portraits = {
 			civilian = {
-				large = "GFX_portrait_pony_generic_3"
+				large = GFX_portrait_pony_generic_3
 			}
 		}
 		country_leader = {
-			desc = "MWC_hdew_leader_desc"
+			desc = MWC_hdew_leader_desc
 			ideology = centrism
 		}
 	}
@@ -41,12 +41,12 @@ characters = {
 		name = MWC_maple_leaf
 		portraits = {
 			civilian = {
-				large = "GFX_portrait_pony_generic_navy_4"
-				small = "GFX_portrait_pony_generic_navy_4_small"
+				large = GFX_portrait_pony_generic_navy_4
+				small = GFX_portrait_pony_generic_navy_4_small
 			}
 		}
 		country_leader = {
-			desc = "MWC_mleaf_leader_desc"
+			desc = MWC_mleaf_leader_desc
 			ideology = liberalism
 		}
 	}
@@ -55,12 +55,12 @@ characters = {
 		gender = female
 		portraits = {
 			army = {
-				large = "GFX_portrait_eqs_pony_generic_13"
-				small = "GFX_portrait_eqs_pony_generic_13_small"
+				large = GFX_portrait_eqs_pony_generic_13
+				small = GFX_portrait_eqs_pony_generic_13_small
 			}
 		}
 		corps_commander = {
-			desc = "MWC_acider_commander_desc"
+			desc = MWC_acider_commander_desc
 			skill = 1
 			attack_skill = 2
 			defense_skill = 1
@@ -78,12 +78,12 @@ characters = {
 		gender = female
 		portraits = {
 			army = {
-				large = "GFX_portrait_eqs_pony_generic_18"
-				small = "GFX_portrait_eqs_pony_generic_18_small"
+				large = GFX_portrait_eqs_pony_generic_18
+				small = GFX_portrait_eqs_pony_generic_18_small
 			}
 		}
 		corps_commander = {
-			desc = "MWC_mfeather_commander_desc"
+			desc = MWC_mfeather_commander_desc
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -97,12 +97,12 @@ characters = {
 		gender = female
 		portraits = {
 			army = {
-				large = "GFX_portrait_pony_generic_navy_6"
-				small = "GFX_portrait_pony_generic_navy_6_small"
+				large = GFX_portrait_pony_generic_navy_6
+				small = GFX_portrait_pony_generic_navy_6_small
 			}
 		}
 		navy_leader = {
-			desc = "MWC_ataylor_navy_desc"
+			desc = MWC_ataylor_navy_desc
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1

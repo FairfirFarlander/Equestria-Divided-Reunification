@@ -4,12 +4,12 @@ characters = {
 		gender = female
 		portraits = {
 			civilian = {
-				large = "GFX_portrait_pony_generic_navy_13"
-				small = "GFX_portrait_pony_generic_navy_13_small"
+				large = GFX_portrait_pony_generic_navy_13
+				small = GFX_portrait_pony_generic_navy_13_small
 			}
 		}
 		country_leader = {
-			desc = "STB_ikelly_leader_desc"
+			desc = STB_ikelly_leader_desc
 			ideology = corporatocracy
 		}
 	}
@@ -18,12 +18,12 @@ characters = {
 		gender = female
 		portraits = {
 			civilian = {
-				large = "GFX_portrait_pony_generic_land_8"
-				small = "GFX_portrait_pony_generic_land_8_small"
+				large = GFX_portrait_pony_generic_land_8
+				small = GFX_portrait_pony_generic_land_8_small
 			}
 		}
 		country_leader = {
-			desc = "STB_mcorne_leader_desc"
+			desc = STB_mcorne_leader_desc
 			ideology = democratic_socialism
 		}
 	}
@@ -31,16 +31,16 @@ characters = {
 		name = STB_smokey_dust
 		portraits = {
 			civilian = {
-				large = "GFX_portrait_pony_generic_navy_8"
-				small = "GFX_portrait_pony_generic_navy_8_small"
+				large = GFX_portrait_pony_generic_navy_8
+				small = GFX_portrait_pony_generic_navy_8_small
 			}
 		}
 		country_leader = {
-			desc = "STB_sdust_leader_desc"
+			desc = STB_sdust_leader_desc
 			ideology = centrism
 		}
 		country_leader = {
-			desc = "STB_sdust_leader_desc"
+			desc = STB_sdust_leader_desc
 			ideology = conservatism
 		}
 	}

@@ -1,9 +1,8 @@
-capital=136
-oob="NIH_1012"
-set_research_slots=2
-set_stability=0.45
-set_war_support=0.15
-add_ideas={
+capital = 136
+oob = "NIH_07"
+set_stability = 0.45
+set_war_support = 0.15
+add_ideas = {
 	closed_economy
 	isolation
 	outdated_industry
@@ -13,41 +12,41 @@ add_ideas={
 	NIH_last_of_the_line
 	NIH_the_bitter_cold
 }
-if={
-	limit={has_dlc="No Step Back"}
-	add_ideas={
+if = {
+	limit = {has_dlc = "No Step Back"}
+	add_ideas = {
 		traditionalism_academy_spirit
 		doctrinal_orthodoxy_spirit
 		disdain_for_the_digging_spirit
 	}
-	else={
-		add_ideas={EQS_bad_tanks}
+	else = {
+		add_ideas = {EQS_bad_tanks}
 	}
 }
-set_technology={
-	pony_race=1
-	melee_weapons=1
-	melee_weapons1=1
-	infantry_weapons=1
-	tech_support=1
-	pre_gw_artillery=1
-	early_fighter=1
-	tech_pegasi=1
+set_technology = {
+	pony_race = 1
+	melee_weapons = 1
+	melee_weapons1 = 1
+	infantry_weapons = 1
+	tech_support = 1
+	pre_gw_artillery = 1
+	early_fighter = 1
+	tech_pegasi = 1
 }
-actually_fix_weapon_techs=yes
-add_manpower=5000
-add_offsite_building={
-	type=nuclear_reactor
-	level=1
+actually_fix_weapon_techs = yes
+add_manpower = 5000
+add_offsite_building = {
+	type = nuclear_reactor
+	level = 1
 }
-set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
-set_popularities={
-	fascism=36
-	communism=4
-	neutrality=45
-	democratic=15
+set_rule = {	can_generate_female_aces = yes	can_generate_female_unit_leaders = yes	can_generate_female_country_leaders = yes}
+set_popularities = {
+	fascism = 36
+	communism = 4
+	neutrality = 45
+	democratic = 15
 }
-set_politics={ruling_party=neutrality}
-set_country_flag=EDR_is_equestrian_breakaway
-recruit_character=NIH_cursed_fate
+set_politics = {ruling_party = neutrality}
+set_country_flag = EDR_is_equestrian_breakaway
+recruit_character = NIH_cursed_fate
 #NOTES#

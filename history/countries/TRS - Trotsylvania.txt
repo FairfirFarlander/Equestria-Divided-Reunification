@@ -1,5 +1,5 @@
 capital = 56
-oob = "TRS_1012"
+oob = "TRS_07"
 set_research_slots = 2
 set_stability = 0.36
 set_war_support = 0.14

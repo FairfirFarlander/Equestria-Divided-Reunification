@@ -1,48 +1,47 @@
-capital=116
-oob="BCK_1012"
-set_research_slots=2
-set_stability=0.6
-set_war_support=0.17
-add_ideas={
+capital = 116
+oob = "BCK_07"
+set_stability = 0.6
+set_war_support = 0.17
+add_ideas = {
 	agrarian_society4
 	lack_of_scientists3
 	poverty3
 	BCK_Bountiful_Harvests
 	BCK_The_Middle_Ground
 }
-set_technology={
-	pony_race=1
-	melee_weapons=1
-	tech_support=1
-	tech_pony_misc=1
+set_technology = {
+	pony_race = 1
+	melee_weapons = 1
+	tech_support = 1
+	tech_pony_misc = 1
 }
-if={
-	limit={has_dlc="No Step Back"}
-	add_ideas={
+if = {
+	limit = {has_dlc = "No Step Back"}
+	add_ideas = {
 		traditionalism_academy_spirit
 		doctrinal_orthodoxy_spirit
 		disdain_for_the_digging_spirit
 	}
-	else={
-		add_ideas={EQS_bad_tanks}
+	else = {
+		add_ideas = {EQS_bad_tanks}
 	}
 }
-actually_fix_weapon_techs=yes
-set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
-starting_train_buffer=1
-set_convoys=8
-set_popularities={
-	fascism=8
-	communism=17
-	neutrality=30
-	democratic=45
+actually_fix_weapon_techs = yes
+set_rule = {	can_generate_female_aces = yes	can_generate_female_unit_leaders = yes	can_generate_female_country_leaders = yes}
+starting_train_buffer = 1
+set_convoys = 8
+set_popularities = {
+	fascism = 8
+	communism = 17
+	neutrality = 30
+	democratic = 45
 }
-set_politics={ruling_party=neutrality}
-set_country_flag=EDR_is_equestrian_breakaway
-recruit_character=BCK_rockfeller
-recruit_character=BCK_syndicate_council
-recruit_character=BCK_merry_wreath
-recruit_character=BCK_sea_prism
-recruit_character=BCK_hallow_green
+set_politics = {ruling_party = neutrality}
+set_country_flag = EDR_is_equestrian_breakaway
+recruit_character = BCK_rockfeller
+recruit_character = BCK_syndicate_council
+recruit_character = BCK_merry_wreath
+recruit_character = BCK_sea_prism
+recruit_character = BCK_hallow_green
 #NOTES#
 #Facism think locus corp.

@@ -23,22 +23,25 @@
 		ai_will_do={factor=40}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus EMB_MM01"
-			add_corps_commander_role={
-				character=EMB_hithax_ballas
-				desc="EMB_hballas_mili_desc"
-				skill=1	attack_skill=1	defense_skill=1
-				planning_skill=2	logistics_skill=2
-				traits={trait_foreman changeling_race_trait}
+			set_country_flag = EMB_recruited_officers
+			effect_tooltip = {
+				add_corps_commander_role={
+					character=EMB_hithax_ballas
+					desc="EMB_hballas_mili_desc"
+					skill=1	attack_skill=1	defense_skill=1
+					planning_skill=2	logistics_skill=2
+					traits={trait_foreman changeling_race_trait}
+				}
+				custom_effect_tooltip=EMB_hithax_ballas_stats
+				add_corps_commander_role={
+					character=EMB_lavender_opal
+					desc="EMB_lopal_mili_desc"
+					skill=1	attack_skill=1	defense_skill=2
+					planning_skill=1	logistics_skill=2
+					traits={trait_cautious changeling_race_trait}
+				}
+				custom_effect_tooltip=EMB_lavender_opal_stats
 			}
-			custom_effect_tooltip=EMB_hithax_ballas_stats
-			add_corps_commander_role={
-				character=EMB_lavender_opal
-				desc="EMB_lopal_mili_desc"
-				skill=1	attack_skill=1	defense_skill=2
-				planning_skill=1	logistics_skill=2
-				traits={trait_cautious changeling_race_trait}
-			}
-			custom_effect_tooltip=EMB_lavender_opal_stats
 		}
 	}
 	shared_focus={	#Our Traditions Are Not Yet Dead

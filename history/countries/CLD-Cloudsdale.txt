@@ -1,5 +1,5 @@
 capital = 68
-#oob = "CLD_1012"
+oob = "CLD_07"
 set_war_support = 0.2
 add_ideas = {
 	limited_conscription

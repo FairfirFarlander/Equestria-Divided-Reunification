@@ -3,16 +3,16 @@ characters = {
 		name = HAH_misty_wisps
 		portraits = {
 			civilian = {
-				large = "GFX_HAH_misty_wisps"
-				small = "GFX_HAH_misty_wisps"
+				large = GFX_HAH_misty_wisps
+				small = GFX_HAH_misty_wisps_small
 			}
 		}
 		country_leader = {	#Can switch to neofeudal
-			desc = "HAH_mwisps_leader_desc"
+			desc = HAH_mwisps_leader_desc
 			ideology = neofeudalism
 		}
 		country_leader = {
-			desc = "WTC_gpony_leader_desc"
+			desc = WTC_mwisps_leader_desc
 			ideology = despotism
 		}
 	}
@@ -20,57 +20,112 @@ characters = {
 		name = HAH_willow_branch
 		portraits = {
 			civilian = {
-				large = "GFX_HAH_willow_branch"
-				small = "GFX_HAH_willow_branch"
+				large = GFX_HAH_willow_branch
+				small = GFX_HAH_willow_branch_small
 			}
 		}
 		country_leader = {
-			desc = "HAH_wbranch_leader_desc"
+			desc = HAH_wbranch_leader_desc
 			ideology = harmonic_theocracy	#esotericism
 		}
 	}
-	HAH_fiddle_pick = {	#See Focus Tree
+	HAH_fiddle_pick = {
 		name = HAH_fiddle_pick
 		portraits = {
 			army = {
-				large = "GFX_HAH_fiddle_pick"
-				small = "GFX_HAH_fiddle_pick"
+				large = GFX_HAH_fiddle_pick
+				small = GFX_HAH_fiddle_pick_small
+			}
+		}
+		corps_commander = {
+			visible = { has_completed_focus = HAH_S09D }
+			desc = HAH_fpick_commander_desc
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			traits = {
+				pony_race_trait
 			}
 		}
 	}
-	HAH_string_bow = {	#See Focus Tree
+	HAH_string_bow = {
 		name = HAH_string_bow
 		portraits = {
 			civilian = {
-				large = "GFX_HAH_string_bow"
-				small = "GFX_HAH_string_bow"
+				large = GFX_HAH_string_bow
+				small = GFX_HAH_string_bow_small
 			}
 			army = {
-				large = "GFX_HAH_string_bow"
-				small = "GFX_HAH_string_bow"
+				large = GFX_HAH_string_bow
+				small = GFX_HAH_string_bow_small
 			}
 		}
 		country_leader = {
-			desc = "HAH_sbow_leader_desc"
+			desc = HAH_sbow_leader_desc
 			ideology = equalism
 		}
+		corps_commander = {
+			visible = { has_completed_focus = HAH_S09D }
+			desc = HAH_sbow_commander_desc
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			traits = {
+				pony_race_trait
+			}
+		}
 	}
-	HAH_boiled_apples = {	#See Focus Tree
+	HAH_boiled_apples = {
 		name = HAH_boiled_apples
 		portraits = {
-			civilian = {small = "GFX_unknown_advisor"}
+			civilian = { small = GFX_idea_unknown_advisor }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = HAH_bapples_politician
+			ledger = civilian
+			available = { has_completed_focus = HAH_M02B }
+			modifier = {
+				research_speed_factor=0.15
+			}
 		}
 	}
-	HAH_word_spinner = {	#See Focus Tree
+	HAH_word_spinner = {
 		name = HAH_word_spinner
 		portraits = {
-			civilian = {small = "GFX_unknown_advisor"}
+			civilian = { small = GFX_idea_unknown_advisor }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = HAH_wspinner_politician
+			ledger = civilian
+			available = { has_completed_focus = HAH_I01A }
+			research_bonus = {
+				race_tech = 0.1
+			}
+			modifier = {
+				research_speed_factor = 0.05
+			}
 		}
 	}
-	HAH_uncle_haystack = {	#See Focus Tree
+	HAH_uncle_haystack = {
 		name = HAH_uncle_haystack
 		portraits = {
-			civilian = {small = "GFX_unknown_advisor"}
+			civilian = { small = GFX_idea_unknown_advisor }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = HAH_uhaystack_politician
+			ledger = civilian
+			available = { has_completed_focus = HAH_I03A }
+			modifier = {
+				stability_weekly = 0.005
+				resistance_decay = 0.05
+			}
 		}
 	}
 }

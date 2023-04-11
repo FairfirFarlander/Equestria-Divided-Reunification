@@ -1,69 +1,67 @@
-capital=169
-oob="SWT_1012"
-set_research_slots=2
-set_stability=0.5
-set_war_support=0.2
-add_ideas={
+capital = 169
+oob = "SWT_07"
+set_war_support = 0.2
+add_ideas = {
 	limited_exports
 	agrarian_society
 	lack_of_scientists3
 	poverty4
 }
-set_technology={
-	pony_race=1
-	melee_weapons=1
-	tech_support=1
+set_technology = {
+	pony_race = 1
+	melee_weapons = 1
+	tech_support = 1
 }
-if={
-	limit={has_dlc="Man the Guns"}
-	set_technology={
-		early_ship_hull_light=1
-		early_ship_hull_cruiser=1
-		basic_battery=1
-		basic_depth_charges=1
-		basic_torpedo=1
-		mtg_transport=1
+if = {
+	limit = {has_dlc = "Man the Guns"}
+	set_technology = {
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_depth_charges = 1
+		basic_torpedo = 1
+		mtg_transport = 1
 	}
-	else={
-		set_technology={
-			early_destroyer=1
-			early_light_cruiser=1
-			transport=1
+	else = {
+		set_technology = {
+			early_destroyer = 1
+			early_light_cruiser = 1
+			transport = 1
 		}
 	}
 }
-if={
-	limit={has_dlc="No Step Back"}
-	add_ideas={
+if = {
+	limit = {has_dlc = "No Step Back"}
+	add_ideas = {
 		traditionalism_academy_spirit
 		doctrinal_orthodoxy_spirit
 		disdain_for_the_digging_spirit
 	}
-	else={
-		add_ideas={EQS_bad_tanks}
+	else = {
+		add_ideas = {EQS_bad_tanks}
 	}
 }
-actually_fix_weapon_techs=yes
-set_rule={	can_generate_female_aces=yes	can_generate_female_unit_leaders=yes	can_generate_female_country_leaders=yes}
-if={
-	limit={has_dlc="Death or Dishonor"}
-	HSW={
-		set_autonomy={
-			target=SWT
-			autonomy_state=autonomy_satellite
+actually_fix_weapon_techs = yes
+set_rule = {	can_generate_female_aces = yes	can_generate_female_unit_leaders = yes	can_generate_female_country_leaders = yes}
+if = {
+	limit = {has_dlc = "Death or Dishonor"}
+	HSW = {
+		set_autonomy = {
+			target = SWT
+			autonomy_state = autonomy_satellite
 		}
 	}
-	else={
-		HSW={puppet=SWT}
+	else = {
+		HSW = {puppet = SWT}
 	}
 }
-set_popularities={
-	fascism=76
-	communism=2
-	neutrality=15
-	democratic=7
+set_popularities = {
+	fascism = 76
+	communism = 2
+	neutrality = 15
+	democratic = 7
 }
-set_politics={ruling_party=fascism}
-set_country_flag=EDR_is_equestrian_breakaway
-recruit_character=SWT_generic_pony
+set_politics = {ruling_party = fascism}
+set_country_flag = EDR_is_equestrian_breakaway
+recruit_character = SWT_generic_pony
 ###NOTES###

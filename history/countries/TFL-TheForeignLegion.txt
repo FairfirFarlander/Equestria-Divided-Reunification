@@ -1,7 +1,6 @@
 capital = 119
-#oob = "TFL_1012"
+#oob = "TFL_07"
 set_research_slots = 2
-set_stability = 0.5
 set_war_support = 0.2
 add_ideas = {
 	service_by_requirement
@@ -36,6 +35,6 @@ recruit_character = TFL_rain_dancer
 recruit_character = TFL_generic_pony
 recruit_character = TFL_buffalo_joe
 recruit_character = TFL_firespit
-recruit_character = TFL_yeehaw
+recruit_character = TFL_hawyee
 ###NOTES###
 #Years the Irish brigade was founded. 61 18 -Nonrelated 18 3

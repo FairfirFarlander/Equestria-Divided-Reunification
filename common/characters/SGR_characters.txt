@@ -2,12 +2,10 @@ characters = {
 	SGR_ratibor_sventoslavich = {
 		name = SGR_ratibor_sventoslavich
 		portraits = {
-			civilian = {
-				large = "gfx/leaders/STG/Ratibor.tga"
-			}
+			civilian = { large = GFX_SGR_ratibor }
 		}
 		country_leader = {
-			desc = "SGR_rsventoslavich_leader_desc"
+			desc = SGR_rsventoslavich_leader_desc
 			ideology = fascism_ideology
 		}
 	}
@@ -15,24 +13,20 @@ characters = {
 		name = SGR_altidiya
 		gender = female
 		portraits = {
-			civilian = {
-				large = "gfx/leaders/STG/Alty.tga"
-			}
+			civilian = { large = GFX_SGR_altidiya }
 		}
-		country_leader = {	#POLITICS_ALTY_DESC
-			desc = "SGR_altidiya_leader_desc"
+		country_leader = {
+			desc = SGR_altidiya_leader_desc
 			ideology = leninism
 		}
 	}
 	SGR_peter_iv = {	#Tsar Peter IV
 		name = SGR_peter_iv
 		portraits = {
-			civilian = {
-				large = "gfx/leaders/STG/PeterIV.tga"
-			}
+			civilian = { large = GFX_SGR_peter_iv }
 		}
 		country_leader = {
-			desc = "SGR_piv_leader_desc"
+			desc = SGR_piv_leader_desc
 			ideology = despotism
 		}
 	}
@@ -40,12 +34,10 @@ characters = {
 		name = SGR_caramelka_sladkaya
 		gender = female
 		portraits = {
-			civilian = {
-				large = "gfx/leaders/STG/Caramelka.tga"
-			}
+			civilian = { large = GFX_SGR_caramelka_sladkaya }
 		}
-		country_leader = {	#POLITICS_CARAMELKA
-			desc = "SGR_csladkaya_leader_desc"
+		country_leader = {
+			desc = SGR_csladkaya_leader_desc
 			ideology = socialism
 		}
 	}
@@ -53,19 +45,19 @@ characters = {
 		name = SGR_nestor_lunin
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/STG/Nestor.tga"
+				large = GFX_SGR_nestor
 			}
 			army = {
-				large = "gfx/leaders/STG/Nestor.tga"
-				small = "GFX_nestor_lunin"
+				large = GFX_SGR_nestor
+				small = GFX_idea_STG_nestor_lunin
 			}
 		}
 		country_leader = {
-			desc = "NESTOR_DESC"
+			desc = SGR_nlunin_leader_desc
 			ideology = leninism
 		}
 		field_marshal = {
-			desc = "SGR_nlunin_commander_desc"
+			desc = SGR_nlunin_commander_desc
 			skill = 5
 			attack_skill = 4
 			defense_skill = 4
@@ -83,25 +75,28 @@ characters = {
 			ledger = army
 			cost = 100
 			idea_token = SGR_nlunin_theo
-			traits = {military_theorist alt_army_chief_reform_2}
+			traits = {
+				military_theorist
+				alt_army_chief_reform_2
+			}
 		}
 	}
 	SGR_sinister_serov = {
 		name = SGR_sinister_serov
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/STG/Sinnie.tga"
-				small = "GFX_sinnie"
+				large = GFX_SGR_sinister_serov
+				small = GFX_idea_STG_sinnie
 			}
 		}
 		country_leader = {
-			desc = "SGR_sserov_leader_desc"
+			desc = SGR_sserov_leader_desc
 			ideology = stalinism
 			traits = {dictator}
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = SGR_sserov_advi
+			idea_token = SGR_sserov_politician
 			traits = {
 				ideological_crusader
 				demagogue
@@ -112,18 +107,18 @@ characters = {
 		name = SGR_vasiliy_pantsushenko
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/STG/Vasya.tga"
-				small = "GFX_vasya"
+				large = GFX_SGR_vasya
+				small = GFX_idea_STG_vasya
 			}
 		}
 		country_leader = {
-			desc = "SGR_vpantsushenko_leader_desc"
+			desc = SGR_vpantsushenko_leader_desc
 			ideology = leninism
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = SGR_vpantsushenko_advi
-			traits = {captain_of_industry}
+			idea_token = SGR_vpantsushenko_politician
+			traits = { captain_of_industry }
 		}
 	}
 }

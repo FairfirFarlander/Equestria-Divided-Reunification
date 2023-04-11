@@ -3,22 +3,22 @@ characters = {
 		name = FRI_generic_pony
 		gender = female
 		portraits = {
-			civilian = {large = "GFX_portrait_eqs_pony_generic_14"}
+			civilian = { large = GFX_portrait_eqs_pony_generic_14 }
 		}
 		country_leader = {
-			desc = "FRI_gpony_leader_desc"
+			desc = FRI_gpony_leader_desc
 			ideology = fascism_ideology
 		}
 		country_leader = {
-			desc = "FRI_gpony_leader_desc"
+			desc = FRI_gpony_leader_desc
 			ideology = conservatism
 		}
 		country_leader = {
-			desc = "FRI_gpony_leader_desc"
+			desc = FRI_gpony_leader_desc
 			ideology = democratic_socialism
 		}
 		country_leader = {
-			desc = "FRI_gpony_leader_desc"
+			desc = FRI_gpony_leader_desc
 			ideology = despotism
 		}
 	}
