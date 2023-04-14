@@ -1,4 +1,4 @@
-capital = 319
+capital = 36
 oob = "EMB_07"
 set_stability = 0.46
 set_war_support = 0.07

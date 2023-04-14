@@ -1,18 +1,18 @@
-state={	#EDRSTATE
-	id=235
-	name="STATE_235"
-	manpower=514880
-	state_category=large_town
-	provinces={458 463 559 582 3494 3584 6495 11438 11454 11530 11561}
-	resources={steel=20}
-	history={
-		owner=SGR
-		add_core_of=SGR
-		victory_points={3584 10}
-		buildings={
-			infrastructure=4
-			arms_factory=2
-			industrial_complex=2
+state = {	#EDRSTATE
+	id = 235
+	name = "STATE_235"
+	manpower = 514880
+	state_category = large_town
+	provinces = { 458 463 559 582 3494 3584 6495 11438 11454 11530 11561 }
+	resources = { steel = 20 }
+	history = {
+		owner = SGR
+		add_core_of = SGR
+		victory_points = {3584 10}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 2
 		}
 	}
 }

@@ -1,13 +1,19 @@
-state={	#EDRSTATE
-	id=36
-	name="STATE_36"
-	manpower=90140
-	state_category=town
-	provinces={543 557 1079 6552 6723 7040 9541 10023 11525 11901 12042 13249}
-	resources={oil=15 rubber=11}	#EAW no oil
-	history={
-		owner=JTL
-		add_core_of=JTL
-		add_claim_by=THA
+state = {	#EDRSTATE
+	id = 36
+	name = "STATE_36"
+	manpower = 390140	#90140
+	state_category = town
+	provinces = { 543 557 1079 6552 6723 7040 9541 10023 11525 11901 12042 13249 }
+	resources = { oil = 15 rubber = 11}	#EAW no oil
+	history = {
+		owner = EMB
+		add_core_of = EMB
+		add_claim_by = THA
+		victory_points = {10023 3}
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+		}
 	}
 }

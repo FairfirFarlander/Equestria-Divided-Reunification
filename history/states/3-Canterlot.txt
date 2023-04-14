@@ -1,22 +1,22 @@
-state={	#EDRSTATE
-	id=3
-	name="STATE_3"
-	manpower=1035000	#200000 exodused
-	state_category=large_city
-	buildings_max_level_factor=2
-	provinces={156 179 911 1173 3764 3773 3928 6788 6975 9138 9182 9218 9738 11114 13058}
-	resources={steel=28 crystals=12}
-	history={
-		owner=HMS
-		add_core_of=HMS
-		victory_points={179 40}
-		buildings={
-			infrastructure=3
-			air_base=2
-			anti_air_building=1
-			arms_factory=2
-			industrial_complex=3
-			179={bunker=5}
+state = {	#EDRSTATE
+	id = 3
+	name = "STATE_3"
+	manpower = 1035000	#200000 exodused
+	state_category = large_city
+	buildings_max_level_factor = 2
+	provinces = { 156 179 911 1173 3764 3773 3928 6788 6975 9138 9182 9218 9738 11114 13058 }
+	resources = { steel = 28 crystals = 12 }
+	history = {
+		owner = HMS
+		add_core_of = HMS
+		victory_points = {179 40}
+		buildings = {
+			infrastructure = 3
+			air_base = 2
+			anti_air_building = 1
+			arms_factory = 2
+			industrial_complex = 3
+			179 = {bunker = 5}
 		}
 	}
 }

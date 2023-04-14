@@ -1,15 +1,15 @@
-state={	#EDRSTATE
-	id=164
-	name="STATE_164"
-	manpower=38880	#48880
-	state_category=pastoral
-	provinces={574 10244 11066}
-	history={
-		owner=SGR	#SYV
-		add_core_of=SGR
-		#add_core_of=SYV
-		buildings={	
-			infrastructure=1
+state = {	#EDRSTATE
+	id = 164
+	name = "STATE_164"
+	manpower = 38880	#48880
+	state_category = pastoral
+	provinces = { 574 10244 11066 }
+	history = {
+		owner = SGR	#SYV
+		add_core_of = SGR
+		#add_core_of = SYV
+		buildings = {	
+			infrastructure = 1
 		}
 	}
 }

@@ -1,13 +1,13 @@
-state={	#EDRSTATE
-	id=18
-	name="STATE_18"
-	manpower=34900
-	state_category=wasteland
-	impassable=yes
-	provinces={1752 1870 3719 4759 4772 6722 7877 10709 12566 12685}
-	resources={steel=3}	#tungsten=10 chromium=3
-	history={	#McColts - Zebrica Killed yoooooou. :(
-		owner=MWC
-		add_core_of=MWC
+state = {	#EDRSTATE
+	id = 18
+	name = "STATE_18"
+	manpower = 34900
+	state_category = wasteland
+	impassable = yes
+	provinces = { 1752 1870 3719 4759 4772 6722 7877 10709 12566 12685 }
+	resources = { steel = 3 }	#tungsten = 10 chromium = 3
+	history = {	#McColts - Zebrica Killed yoooooou. :(
+		owner = MWC
+		add_core_of = MWC
 	}
 }

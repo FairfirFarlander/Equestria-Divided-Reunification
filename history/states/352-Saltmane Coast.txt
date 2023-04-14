@@ -1,17 +1,17 @@
-state={	#EDRSTATE
-	id=352
-	name="STATE_352"
-	manpower=175400
-	state_category=rural
-	provinces={405 495 564 6535 9509 11388 11431}
-	history={
-		owner=WTC
-		add_core_of=JTL
-		add_claim_by=WTC
-		victory_points={405 5}
-		buildings={
-			infrastructure=1
-			405={naval_base=1}
+state = {	#EDRSTATE
+	id = 352
+	name = "STATE_352"
+	manpower = 175400
+	state_category = rural
+	provinces = { 405 495 564 6535 9509 11388 11431 }
+	history = {
+		owner = WTC
+		add_core_of = JTL
+		add_claim_by = WTC
+		victory_points = {405 5}
+		buildings = {
+			infrastructure = 1
+			405 = {naval_base = 1}
 		}
 	}
 }

@@ -1,14 +1,14 @@
-state={	#EDRSTATE
-	id=230
-	name="STATE_230"
-	manpower=69984
-	state_category=pastoral
-	provinces={896 958 3725 3762 3794 3874 3886 3892 4024 6866 6867 6902 6907 9728 9839 9917 11711 11820}
-	history={
-		owner=ALA
-		add_core_of=ALA
-		buildings={
-			infrastructure=1
+state = {	#EDRSTATE
+	id = 230
+	name = "STATE_230"
+	manpower = 69984
+	state_category = pastoral
+	provinces = { 896 958 3725 3762 3794 3874 3886 3892 4024 6866 6867 6902 6907 9728 9839 9917 11711 11820 }
+	history = {
+		owner = ALA
+		add_core_of = ALA
+		buildings = {
+			infrastructure = 1
 		}
 	}
 }

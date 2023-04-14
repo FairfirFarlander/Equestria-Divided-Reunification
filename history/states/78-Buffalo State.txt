@@ -1,17 +1,17 @@
-state={	#EDRSTATE
-	id=78
-	name="STATE_78"
-	manpower=163454
-	state_category=rural
-	provinces={555 674 687 3537 3550 3639 3701 3704 6695 6709 8113 9614 9651 9690 11603 11652}
-	resources={oil=36 steel=5}
-	history={
-		owner=HEB
-		add_core_of=HEB
-		#add_core_of=BUF
-		set_demilitarized_zone=yes
-		buildings={	
-			arms_factory=1
+state = {	#EDRSTATE
+	id = 78
+	name = "STATE_78"
+	manpower = 163454
+	state_category = rural
+	provinces = { 555 674 687 3537 3550 3639 3701 3704 6695 6709 8113 9614 9651 9690 11603 11652 }
+	resources = { oil = 36 steel = 5 }
+	history = {
+		owner = HEB
+		add_core_of = HEB
+		#add_core_of = BUF
+		set_demilitarized_zone = yes
+		buildings = {	
+			arms_factory = 1
 		}
 	}
 }

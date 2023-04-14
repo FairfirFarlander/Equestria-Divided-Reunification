@@ -1,21 +1,21 @@
-state={	#EDRSTATE
-	id=47
-	name="STATE_47"
-	manpower=1014064
-	state_category=large_town
-	provinces={699 730 935 949 965 3908 3937 3952 3971 6658 6953 6982 9537 9821 9890 9906 11657 11754 11832 11857 11868}
-	resources={chromium=14}
-	history={
-		owner=COT
-		add_core_of=COT
-		victory_points={3937 10}
-		victory_points={11754 3}
-		buildings={
-			infrastructure=2
-			arms_factory=1
-			industrial_complex=1
-			dockyard=1	#TEMPORARY. No Dockyards mah ass.
-			11754={naval_base=1}
+state = {	#EDRSTATE
+	id = 47
+	name = "STATE_47"
+	manpower = 1014064
+	state_category = large_town
+	provinces = { 699 730 935 949 965 3908 3937 3952 3971 6658 6953 6982 9537 9821 9890 9906 11657 11754 11832 11857 11868 }
+	resources = { chromium = 14 }
+	history = {
+		owner = COT
+		add_core_of = COT
+		victory_points = {3937 10}
+		victory_points = {11754 3}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			dockyard = 1	#TEMPORARY. No Dockyards mah ass.
+			11754 = {naval_base = 1}
 		}
 	}
 }

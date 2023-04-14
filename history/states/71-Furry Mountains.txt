@@ -1,12 +1,12 @@
-state={	#EDRSTATE
-	id=71
-	name="STATE_71"
-	manpower=16
-	state_category=wasteland
-	#impassable=yes
-	provinces={630 4507 6652 6716 7552 9471 9771 9849}
-	history={
-		owner=COT
-		add_core_of=COT
+state = {	#EDRSTATE
+	id = 71
+	name = "STATE_71"
+	manpower = 16
+	state_category = wasteland
+	#impassable = yes
+	provinces = { 630 4507 6652 6716 7552 9471 9771 9849 }
+	history = {
+		owner = COT
+		add_core_of = COT
 	}
 }
