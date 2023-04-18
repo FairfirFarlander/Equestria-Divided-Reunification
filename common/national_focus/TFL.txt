@@ -32,7 +32,7 @@ focus_tree = {
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: focus TFL_S00"
-			country_event = TFL_ES.0001
+			country_event = TFL_ES.00000
 		}
 	}
 	shared_focus = {	#The Actions One Must Take To Survive
@@ -59,6 +59,152 @@ focus_tree = {
 			add_timed_idea = {
 				idea = TFL_operational_reassurances
 				days = 90
+			}
+		}
+	}
+	shared_focus = {	#Every Single Hoof Counts Now
+		id = TFL_S02A
+		#icon = 
+		x = -1 y = 1 cost = 2 relative_position_id = TFL_S01A
+		search_filters = {  }
+		prerequisite = { focus = TFL_S01A }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: focus TFL_S02A"
+			custom_effect_tooltip = TFL_S02A_effect_tooltip
+			hidden_effect = {
+				country_lock_all_division_template = no
+				load_oob = "TFL_S02A_militia"
+			}
+		}
+	}
+	shared_focus = {	#Forcing A Supply Train Our Way
+		id = TFL_S02B
+		#icon = 
+		x = 0 y = 2 cost = 2 relative_position_id = TFL_S00
+		search_filters = {  }
+		prerequisite = { focus = TFL_S01A }
+		prerequisite = { focus = TFL_S01B }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: focus TFL_S02B"
+			country_event = TFL_ES.02100
+			every_country = {
+				limit = {
+					OR = {
+						original_tag = CHY
+						original_tag = HEB
+						original_tag = HFT
+						original_tag = PIE
+					}
+				}
+				add_opinion_modifier = {
+					modifier = TFL_ssstrained_relations
+					target = TFL
+				}
+			}
+		}
+	}
+	shared_focus = {	#Fortifying Orshab
+		id = TFL_S02C
+		#icon = 
+		x = 1 y = 1 cost = 2 relative_position_id = TFL_S01B
+		search_filters = {  }
+		prerequisite = { focus = TFL_S01B }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: focus TFL_S02C"
+			119 = {
+				add_building_construction = {
+					type = bunker
+					province = 6259
+					level = 2
+					instant_build = yes
+				}
+			}
+			hidden_effect = {
+				country_event = {
+					id = TFL_ES.02300
+					days = 60
+				}
+			}
+		}
+	}
+	shared_focus = {	#Using the Terrain to Our Advantage
+		id = TFL_S03A
+		#icon = 
+		x = 0 y = 1 cost = 2 relative_position_id = TFL_S02A
+		search_filters = {  }
+		prerequisite = { focus = TFL_S02A }
+		prerequisite = { focus = TFL_S02B }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: focus TFL_S03A"
+			add_ideas = TFL_operation_storms
+			set_technology = { marines = 1 }
+		}
+	}
+	shared_focus = {	#Running Off Ethanol
+		id = TFL_S03B
+		#icon = 
+		x = 0 y = 1 cost = 2 relative_position_id = TFL_S02B
+		search_filters = {  }
+		prerequisite = {
+			focus = TFL_S02A
+			focus = TFL_S02C
+		}
+		prerequisite = { focus = TFL_S02B }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: focus TFL_S03B"
+			114 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+			119 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = fuel_silo
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	shared_focus = {	#Setting Up Some Sort of Manufacturing
+		id = TFL_S03C
+		#icon = 
+		x = 0 y = 1 cost = 2 relative_position_id = TFL_S02C
+		search_filters = {  }
+		prerequisite = { focus = TFL_S02B }
+		prerequisite = { focus = TFL_S02C }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: focus TFL_S03C"
+			114 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			119 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 	}

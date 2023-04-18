@@ -1,12 +1,12 @@
 add_namespace = TFL_ES
-	country_event = {	#One Final Call For Help
-		id = TFL_ES.0001
-		title = TFL_ES.0001.t
-		desc = TFL_ES.0001.d
+	country_event = {	#The Reply
+		id = TFL_ES.00000
+		title = TFL_ES.00000.t
+		desc = TFL_ES.00000.d
 		#picture = 
 		is_triggered_only = yes
 		option = {
-			name = TFL_ES.0001.a
+			name = TFL_ES.00000.a
 		}
 		option = {
 			name = TFL_E0_CWT
@@ -15,23 +15,72 @@ add_namespace = TFL_ES
 			}
 		}
 		immediate = {
-			log = "[GetDateText]: [Root.GetName]: event TFL_ES.0001"
+			log = "[GetDateText]: [Root.GetName]: event TFL_ES.00000"
 		}
 	}
-	country_event = {	#First Ammendment
-		id = TFL_ES.0002
-		title = TFL_ES.0002.t
-		desc = TFL_ES.0002.d
+	country_event = {	#Train Thieves Part 1
+		id = TFL_ES.02100
+		title = TFL_ES.02100.t
+		desc = TFL_ES.02100.d
 		#picture = 
 		is_triggered_only = yes
 		option = {
-			name = TFL_ES.0002.a
+			name = TFL_ES.02200.a
+			country_event = {
+				id = TFL_ES.02101
+				days = 2
+			}
 		}
 		option = {
 			name = TFL_E0_CWT
 			trigger = { is_debug = yes }
 		}
 		immediate = {
-			log = "[GetDateText]: [Root.GetName]: event TFL_ES.0002"
+			log = "[GetDateText]: [Root.GetName]: event TFL_ES.02100"
+		}
+	}
+	country_event = {	#Train Thieves Part 2
+		id = TFL_ES.02101
+		title = TFL_ES.02100.t
+		desc = TFL_ES.02100.d
+		#picture = 
+		is_triggered_only = yes
+		option = {
+			name = TFL_ES.02101.a
+			add_stability = 0.05
+			add_equipment_to_stockpile = {
+				type = melee_equipment_1
+				amount = 400
+				producer = HEB
+			}
+			add_equipment_to_stockpile = {
+				type = train_equipment_1
+				amount = 1
+				producer = HFT
+			}
+		}
+		option = {
+			name = TFL_E0_CWT
+			trigger = { is_debug = yes }
+		}
+		immediate = {
+			log = "[GetDateText]: [Root.GetName]: event TFL_ES.02101"
+		}
+	}
+	country_event = {	#18 Lunatics and Their Gravel
+		id = TFL_ES.02300
+		title = TFL_ES.02300.t
+		desc = TFL_ES.02300.d
+		#picture = 
+		is_triggered_only = yes
+		option = {
+			name = TFL_ES.02300.a
+		}
+		option = {
+			name = TFL_E0_CWT
+			trigger = { is_debug = yes }
+		}
+		immediate = {
+			log = "[GetDateText]: [Root.GetName]: event TFL_ES.02300"
 		}
 	}

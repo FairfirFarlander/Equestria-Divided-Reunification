@@ -1,6 +1,16 @@
 capital = 119
-#oob = "TFL_07"
-set_research_slots = 2
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+		NOT = { has_dlc = "La Resistance" }
+	}
+	set_oob = "TFL_07_NSB"
+	else_if = {
+		limit = { has_dlc = "La Resistance" }
+		set_oob = "TFL_07_LAR"
+	}
+	else = { set_oob = "TFL_07" }
+}
 set_war_support = 0.2
 add_ideas = {
 	service_by_requirement
@@ -14,8 +24,28 @@ set_technology = {
 	pony_race = 1
 	melee_weapons = 1
 	tech_support = 1
+	tech_recon = 1
+	tech_pegasi = 1
+}
+if = {
+	limit = { has_dlc = "No Step Back" }
+	add_ideas = {
+		traditionalism_academy_spirit
+		doctrinal_orthodoxy_spirit
+		disdain_for_the_digging_spirit
+	}
+	set_technology = {
+		gwtank_chassis = 1
+	}
+	else = {
+		set_technology = {
+			gwtank = 1
+		}
+		add_ideas = { EQS_bad_tanks }
+	}
 }
 actually_fix_weapon_techs = yes
+country_lock_all_division_template = yes
 set_rule = {
 	can_generate_female_aces = yes
 	can_generate_female_unit_leaders = yes
@@ -27,9 +57,7 @@ set_popularities = {
 	neutrality = 18
 	democratic = 18
 }	#anarchism
-set_politics = {
-	ruling_party = fascism
-}
+set_politics = { ruling_party = fascism }
 set_country_flag = EDR_is_equestrian_breakaway
 recruit_character = TFL_rain_dancer
 recruit_character = TFL_generic_pony

@@ -167,4 +167,12 @@ technologies = {
 			}
 		}
 	}
+	TFL_river_pons = {
+		category_light_infantry = {
+			river = {
+				attack = 0.1
+				defence = 0.1
+			}
+		}
+	}
 }

@@ -20,7 +20,7 @@ set_technology = {
 	pre_gw_artillery = 1
 }
 if = {
-	limit = {has_dlc = "Man the Guns"}
+	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
 		early_ship_hull_light = 1
 		early_ship_hull_cruiser = 1

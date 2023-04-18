@@ -13,6 +13,12 @@ ideas = {
 				stability_weekly = 0.007
 			}
 		}
+		TFL_operation_storms = {
+			#picture = 
+			modifier = {
+				river_crossing_factor = -0.5
+			}
+		}
 	}
 	industrial_concern = {
 		TFL_stallion_co = {

@@ -3,19 +3,24 @@
 #	min_trust
 #	max_trust
 #	decay
-#	months/years/days=timer
-#	trade=yes/no
-opinion_modifiers={
-	moonstar_seeth_opinion={value=-10}
-	HMS_to_HAH_disapproval={value=-10}
-	HAH_inquisitorial_sanction_opinion={value=-20}
-	HAH_connections={value=20}
-	moonstar_opinion0={value=5}
-	moonstar_opinion1={value=10}
-	moonstar_opinion2={value=20}
-	moonstar_opinion3={value=30}
-	moonstar_opinion4={value=40}
-	moonstar_opinion5={value=50}
-	#Ember Related Opinions
-	EMB_self_isolation={value=-20}
+#	months/years/days = timer
+#	trade = yes/no
+opinion_modifiers = {
+	moonstar_seeth_opinion = { value = -10 }
+	HMS_to_HAH_disapproval = { value = -10 }
+	HAH_inquisitorial_sanction_opinion = { value = -20 }
+	HAH_connections = { value = 20 }
+##MoonStar Opinion##
+	moonstar_opinion0 = { value = 5 }
+	moonstar_opinion1 = { value = 10 }
+	moonstar_opinion2 = { value = 20 }
+	moonstar_opinion3 = { value = 30 }
+	moonstar_opinion4 = { value = 40 }
+	moonstar_opinion5 = { value = 50 }
+##Ember Related Opinions##
+	EMB_self_isolation = { value = -20 }
+	TFL_ssstrained_relations = {
+		value = -50
+		decay = 1
+	}
 }
