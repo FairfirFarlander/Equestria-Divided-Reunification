@@ -3,27 +3,23 @@ add_namespace = TFL_ES
 		id = TFL_ES.00000
 		title = TFL_ES.00000.t
 		desc = TFL_ES.00000.d
-		#picture = 
 		is_triggered_only = yes
-		option = {
-			name = TFL_ES.00000.a
-		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event TFL_ES.00000" }
+		option = { name = TFL_ES.00000.a }
 		option = {
 			name = TFL_E0_CWT
 			trigger = {
 				is_debug = yes
 			}
 		}
-		immediate = {
-			log = "[GetDateText]: [Root.GetName]: event TFL_ES.00000"
-		}
 	}
 	country_event = {	#Train Thieves Part 1
 		id = TFL_ES.02100
 		title = TFL_ES.02100.t
 		desc = TFL_ES.02100.d
-		#picture = 
 		is_triggered_only = yes
+		picture = GFX_event_pony_soldiers_sunset
+		immediate = { log = "[GetDateText]: [Root.GetName]: event TFL_ES.02100" }
 		option = {
 			name = TFL_ES.02200.a
 			country_event = {
@@ -35,16 +31,14 @@ add_namespace = TFL_ES
 			name = TFL_E0_CWT
 			trigger = { is_debug = yes }
 		}
-		immediate = {
-			log = "[GetDateText]: [Root.GetName]: event TFL_ES.02100"
-		}
 	}
 	country_event = {	#Train Thieves Part 2
 		id = TFL_ES.02101
 		title = TFL_ES.02100.t
 		desc = TFL_ES.02100.d
-		#picture = 
 		is_triggered_only = yes
+		picture = GFX_report_event_generic_train
+		immediate = { log = "[GetDateText]: [Root.GetName]: event TFL_ES.02101" }
 		option = {
 			name = TFL_ES.02101.a
 			add_stability = 0.05
@@ -63,16 +57,13 @@ add_namespace = TFL_ES
 			name = TFL_E0_CWT
 			trigger = { is_debug = yes }
 		}
-		immediate = {
-			log = "[GetDateText]: [Root.GetName]: event TFL_ES.02101"
-		}
 	}
 	country_event = {	#18 Lunatics and Their Gravel
 		id = TFL_ES.02300
 		title = TFL_ES.02300.t
 		desc = TFL_ES.02300.d
-		#picture = 
 		is_triggered_only = yes
+		immediate = { log = "[GetDateText]: [Root.GetName]: event TFL_ES.02300" }
 		option = {
 			name = TFL_ES.02300.a
 		}
@@ -80,7 +71,57 @@ add_namespace = TFL_ES
 			name = TFL_E0_CWT
 			trigger = { is_debug = yes }
 		}
-		immediate = {
-			log = "[GetDateText]: [Root.GetName]: event TFL_ES.02300"
+	}
+	country_event = {	#The River Tractors
+		id = TFL_ES.04000
+		title = TFL_ES.04000.t
+		desc = TFL_ES.04000.d
+		picture = GFX_report_event_sweden_tank
+		is_triggered_only = yes
+		immediate = { log = "[GetDateText]: [Root.GetName]: event TFL_ES.04000" }
+		option = {
+			name = TFL_ES.04000.a
+			add_tech_bonus = {
+				name = marine_bonus
+				category = marine_tech
+				bonus = 0.15
+				uses = 1
+			}
+			if = {
+				limit = {
+					has_dlc = "No Step Back"
+					has_dlc = "Man the Guns"
+				}
+				set_technology = {
+					amphibious_drive = 1
+				}
+				create_equipment_variant = {
+					name = "Hydra Tank (A)"
+					type = light_tank_amphibious_chassis_0
+					icon = "gfx/interface/technologies/EQS_armoured_tractor.dds"
+					modules = {
+						main_armament_slot = tank_heavy_machine_gun
+						turret_type_slot = tank_light_one_man_tank_turret
+						suspension_type_slot = tank_bogie_suspension
+						armor_type_slot = tank_riveted_armor
+						engine_type_slot = tank_gasoline_engine
+						special_type_slot_1 = amphibious_drive
+					}
+					upgrades = {
+						tank_nsb_engine_upgrade = 1
+						tank_nsb_armor_upgrade = 1
+					}
+				}
+			}
+			else_if = {
+				limit = { has_dlc = "Man the Guns" }
+				set_technology = {
+					amphibious_tank = 1
+				}
+			}
+		}
+		option = {
+			name = TFL_E0_CWT
+			trigger = { is_debug = yes }
 		}
 	}

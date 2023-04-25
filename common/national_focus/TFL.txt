@@ -26,7 +26,7 @@ focus_tree = {
 ##StoryTree
 	shared_focus = {	#One Final Call For Help
 		id = TFL_S00
-		#icon = 
+		icon = GFX_goal_radio
 		x = 0 y = 0 cost = 1
 		search_filters = {  }
 		ai_will_do = { factor = 80 }
@@ -37,7 +37,7 @@ focus_tree = {
 	}
 	shared_focus = {	#The Actions One Must Take To Survive
 		id = TFL_S01A
-		#icon = 
+		icon = GFX_goal_generic_dangerous_deal_pony_pony
 		x = -1 y = 1 cost = 2 relative_position_id = TFL_S00
 		search_filters = {  }
 		prerequisite = { focus = TFL_S00 }
@@ -49,7 +49,7 @@ focus_tree = {
 	}
 	shared_focus = {	#Securing and Reassuring the Populace
 		id = TFL_S01B
-		#icon = 
+		icon = GFX_goal_EQS_TNO_reassure_ponies
 		x = 1 y = 1 cost = 2 relative_position_id = TFL_S00
 		search_filters = {  }
 		prerequisite = { focus = TFL_S00 }
@@ -64,7 +64,7 @@ focus_tree = {
 	}
 	shared_focus = {	#Every Single Hoof Counts Now
 		id = TFL_S02A
-		#icon = 
+		icon = GFX_goal_generic_pony_soldier
 		x = -1 y = 1 cost = 2 relative_position_id = TFL_S01A
 		search_filters = {  }
 		prerequisite = { focus = TFL_S01A }
@@ -80,7 +80,7 @@ focus_tree = {
 	}
 	shared_focus = {	#Forcing A Supply Train Our Way
 		id = TFL_S02B
-		#icon = 
+		icon = GFX_goal_rct_train
 		x = 0 y = 2 cost = 2 relative_position_id = TFL_S00
 		search_filters = {  }
 		prerequisite = { focus = TFL_S01A }
@@ -107,7 +107,7 @@ focus_tree = {
 	}
 	shared_focus = {	#Fortifying Orshab
 		id = TFL_S02C
-		#icon = 
+		icon = GFX_goal_nested_fortifications
 		x = 1 y = 1 cost = 2 relative_position_id = TFL_S01B
 		search_filters = {  }
 		prerequisite = { focus = TFL_S01B }
@@ -132,7 +132,7 @@ focus_tree = {
 	}
 	shared_focus = {	#Using the Terrain to Our Advantage
 		id = TFL_S03A
-		#icon = 
+		icon = GFX_goal_water
 		x = 0 y = 1 cost = 2 relative_position_id = TFL_S02A
 		search_filters = {  }
 		prerequisite = { focus = TFL_S02A }
@@ -141,12 +141,15 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: focus TFL_S03A"
 			add_ideas = TFL_operation_storms
-			set_technology = { marines = 1 }
+			set_technology = {
+				marines = 1
+				TFL_river_pons = 1
+			}
 		}
 	}
 	shared_focus = {	#Running Off Ethanol
 		id = TFL_S03B
-		#icon = 
+		icon = GFX_goal_oil
 		x = 0 y = 1 cost = 2 relative_position_id = TFL_S02B
 		search_filters = {  }
 		prerequisite = {
@@ -177,7 +180,7 @@ focus_tree = {
 	}
 	shared_focus = {	#Setting Up Some Sort of Manufacturing
 		id = TFL_S03C
-		#icon = 
+		icon = GFX_goal_generic_lau_industry
 		x = 0 y = 1 cost = 2 relative_position_id = TFL_S02C
 		search_filters = {  }
 		prerequisite = { focus = TFL_S02B }
@@ -206,5 +209,66 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+		}
+	}
+	shared_focus = {	#A Semi Functional Tank Workshop
+		id = TFL_S04A
+		#icon = 
+		x = -1 y = 1 cost = 2 relative_position_id = TFL_S03A
+		search_filters = {  }
+		prerequisite = { focus = TFL_S03A }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: focus TFL_S04A"
+			119 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = light_tank_bonus
+				category = cat_light_armor
+				bonus = 0.15
+				uses = 1
+			}
+			if = {
+				limit = { has_dlc = "No Step Back" }
+				create_equipment_variant = {
+					name = "Yak Tank"
+					type = light_tank_chassis_0
+					icon = "gfx/interface/technologies/EQS_armoured_tractor.dds"
+					modules = {
+						main_armament_slot = tank_heavy_machine_gun
+						turret_type_slot = tank_light_one_man_tank_turret
+						suspension_type_slot = tank_bogie_suspension
+						armor_type_slot = tank_riveted_armor
+						engine_type_slot = tank_gasoline_engine
+					}
+					upgrades = {
+						tank_nsb_engine_upgrade = 1
+						tank_nsb_armor_upgrade = 1
+					}
+				}
+			}
+			hidden_effect = {
+				country_event = {
+					id = TFL_ES.04000
+					days = 35
+				}
+			}
+		}
+	}
+	shared_focus = {	#
+		id = TFL_SXXX
+		#icon = 
+		x = -1 y = 1 cost = 2 relative_position_id = TFL_S03A
+		search_filters = {  }
+		#prerequisite = { focus = TFL_S03A }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: focus TFL_SXXX"
 		}
 	}

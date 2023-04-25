@@ -29,10 +29,23 @@
     NIH_democratic_party_long: "Ponies Of The North Star"
  ###Characters###
   ##Leaders##
-   NIH_cursed_fate: "Cursed Fate"
-    NIH_cfate_leader_desc: "$CRDC_art_tiviyl$"
-    NIH_cfate_commander_desc: "$CRDC_art_tiviyl$"
+   NIH_lulluby_and_burgundy: "Lullaby and Burgundy"
+    NIH_lab_leader_desc: "$CRDC_art_tiviyl$"
+   NIH_burgundy: "Burgundy"
+    NIH_burgundy_leader_desc: "$CRDC_art_tiviyl$"
+    NIH_burgundy_commander_desc: "$NIH_burgundy_leader_desc$"
+    NIH_burgundy_chief_desc: "$NIH_burgundy_leader_desc$"
+   NIH_lulluby: "Lullaby"
+    NIH_lulluby_leader_desc: "$CRDC_art_tiviyl$"
   ##Commanders##
+   NIH_cursed_fate: "Cursed Fate"
+    NIH_cfate_commander_desc: "$CRDC_art_tiviyl$"
+    NIH_cfate_politician_desc: "$NIH_cfate_commander_desc$"
+    NIH_cfate_highcmdr_desc: "$NIH_cfate_commander_desc$"
+   NIH_night_raid: "Night Raid"
+    NIH_nraid_commander_desc: "$CRDC_art_tiviyl$"
+    NIH_nraid_politician_desc: "$NIH_nraid_commander_desc$"
+    NIH_nraid_highcmdr_desc: "$NIH_nraid_commander_desc$"
   ##Political Advisors##
   ##Military Advisors##
  ###National Focuses###

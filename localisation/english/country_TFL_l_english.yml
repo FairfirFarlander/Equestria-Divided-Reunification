@@ -35,6 +35,10 @@
   ##Foucus Ideas##
    TFL_operational_reassurances: "Operational Reassurance and Security"
     TFL_operational_reassurances_desc: ""
+   TFL_operation_storms: "Operation: Storms on the River"
+    TFL_operation_storms_desc: ""
+   TFL_river_pons: "River Ponies"
+    TFL_river_pons_desc: ""
   ##Event Ideas##
   ##Designers and Concerns##
  ###Cultural Overrides###
@@ -77,8 +81,11 @@
     TFL_S03B_desc: "With the lack of any kind of real fuel source in the region we will have to be creative to keep our vehicles running. It is possible to make engines run off a few types of alcohol, but it will make them burn hotter and possibly break down a bit more often."
    TFL_S03C: "Setting Up Some Sort of Manufacturing"
     TFL_S03C_desc: "There are a few buildings in and around Orshab that could be used for manufacturing. The issue is making them into factories. Thankfully there are a few old machines laying around here and there, but without more we will not be able to mass produce much."
-   TFL_SXX: ""
-    TFL_SXX_desc: ""
+   TFL_S04A: "A Semi Functional Tank Workshop"
+    TFL_S04A_desc: "With the border now completely shut off to us no new armored vehicles will be coming to us any time soon. So the commander has been trying to piece together a sort of deal with some of the locals and our engineers. She believes that we could get a small-scale tank building operation in Orshab, but it will take some time and production will be limited. At least we will have some more armor in production and a few spare parts being made."
+    TFL_ES.04000.t: "The River Tractors"
+     TFL_ES.04000.d: "While we were studying the waterways we had been coming across a growing number of old tractors scattered about. Our engineers see them as spare parts and scrap, but our tankers have been seeing them as something else. On their off time a few of them have been tinkering with a few of them. And today one of them drove the tractor he was working on back into town. It was a rather goofy sight of scrap and rusted tractor, but he seemed rather proud of it. He claimed that he was able to make it able to go up against the might of the rivers. Of course we all looked at him like he was some kind of mad pony, but then one of our engineers got to looking at it. She believes that what this soldier put together could actually manage to cross some bodies of water with a little more tinkering and testing.\n\nSo guess who is now the engineer’s favorite tanker and gets extra rations while the rest of us go out and gather the rest of those old tractors. At least we may have something that will help us in the river lands in this place. However, many of us still have doubts about these old tractors turned armored tubs. Hopefully we will all be pleasantly surprised when they are all put together and put to the test."
+     TFL_ES.04000.a: ""
    TFL_SXX: ""
     TFL_SXX_desc: ""
    TFL_SXX: ""

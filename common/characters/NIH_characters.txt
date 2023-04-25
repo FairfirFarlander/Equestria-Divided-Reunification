@@ -1,4 +1,68 @@
 characters = {
+	NIH_lulluby_and_burgundy = {
+		name = NIH_lulluby_and_burgundy
+		gender = female	#But, one is male? Search how EAW does the crusaders.
+		#portraits = {
+		#	civilian = {
+		#		large = GFX_NIH_lulluby_and_burgundy
+		#		small = GFX_NIH_lulluby_and_burgundy_small
+		#	}
+		#	army = {
+		#		large = GFX_NIH_lulluby_and_burgundy
+		#		small = GFX_NIH_lulluby_and_burgundy_small
+		#	}
+		#}
+		country_leader = {
+			desc = NIH_lab_leader_desc
+			ideology = fascism_ideology
+		}
+	}
+	NIH_burgundy = {
+		name = NIH_burgundy
+		#portraits = {
+		#	civilian = {
+		#		large = GFX_NIH_burgundy
+		#		small = GFX_NIH_burgundy_small
+		#	}
+		#	army = {
+		#		large = GFX_NIH_burgundy
+		#		small = GFX_NIH_burgundy_small
+		#	}
+		#}
+		country_leader = {
+			desc = NIH_burgundy_leader_desc
+			ideology = fascism_ideology
+		}
+		field_marshal = {
+			desc = NIH_burgundy_commander_desc
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+			traits = { pony_race_trait trait_royal_guard career_officer }
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = NIH_burgundy_chief
+			cost = 50
+			traits = { army_chief_morale_1 }
+		}
+	}
+	NIH_lulluby = {
+		name = NIH_lulluby
+		gender = female
+		#portraits = {
+		#	civilian = {
+		#		large = GFX_NIH_lulluby
+		#		small = GFX_NIH_lulluby_small
+		#	}
+		#}
+		country_leader = {
+			desc = NIH_lulluby_leader_desc
+			ideology = fascism_ideology
+		}
+	}
 	NIH_cursed_fate = {
 		name = NIH_cursed_fate
 		portraits = {
@@ -11,30 +75,65 @@ characters = {
 				small = GFX_NIH_cursed_fate_small
 			}
 		}
-		country_leader = {
-			desc = NIH_cfate_leader_desc
-			ideology = despotism
-		}
-		country_leader = {
-			desc = NIH_cfate_leader_desc
-			ideology = conservatism
-		}
-		country_leader = {
-			desc = NIH_cfate_leader_desc
-			ideology = democratic_socialism
-		}
-		country_leader = {
-			desc = NIH_cfate_leader_desc
-			ideology = fascism_ideology
-		}
 		corps_commander = {
 			desc = NIH_cfate_commander_desc
 			skill = 1
 			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			traits = {
+				pony_race_trait
+				engineer
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = NIH_cfate_advisor_desc
+			ledger = civilian
+			cost = 137
+			traits = { local_magician }
+		}
+		advisor = {
+			slot = high_command
+			idea_token = NIH_cfate_highcmdr
+			ledger = army
+			cost = 50
+			traits = { army_entrenchment_1 }
+		}
+	}
+	NIH_night_raid = {
+		name = NIH_night_raid
+		portraits = {
+			army = {
+				large = GFX_NIH_night_raid
+				small = GFX_NIH_night_raid_small
+			}
+		}
+		corps_commander = {
+			desc = NIH_nraid_commander_desc
+			skill = 1
+			attack_skill = 2
 			defense_skill = 1
 			planning_skill = 1
-			logistics_skill = 1
-			traits = { pony_race_trait }
+			logistics_skill = 2
+			traits = {
+				thestral_race_trait
+				artillery_expert
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = NIH_nraid_politician
+			ledger = civilian
+			traits = { anti_communist_crusader }
+		}
+		advisor = {
+			slot = high_command
+			idea_token = NIH_nraid_highcmdr
+			ledger = army
+			cost = 50
+			traits = { army_artillery_1 }
 		}
 	}
 }

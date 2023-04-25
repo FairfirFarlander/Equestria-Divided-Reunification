@@ -583,12 +583,44 @@ spritetypes = {
 	}
 ##NIH##
 	spritetype = {
+		name = "GFX_NIH_burgundy"
+		textureFile = "gfx/leaders/NIH/NIH_burgundy.dds"
+	}
+	spritetype = {
+		name = "GFX_NIH_burgundy_small"
+		textureFile = "gfx/interface/advisors/NIH/NIH_burgundy_small.dds"
+	}
+	spritetype = {
 		name = "GFX_NIH_cursed_fate"
 		textureFile = "gfx/leaders/NIH/NIH_cursed_fate.dds"
 	}
 	spritetype = {
 		name = "GFX_NIH_cursed_fate_small"
 		textureFile = "gfx/interface/advisors/NIH/NIH_cursed_fate_small.dds"
+	}
+	spritetype = {
+		name = "GFX_NIH_lulluby"
+		textureFile = "gfx/leaders/NIH/NIH_lulluby.dds"
+	}
+	spritetype = {
+		name = "GFX_NIH_lulluby_small"
+		textureFile = "gfx/interface/advisors/NIH/NIH_lulluby_small.dds"
+	}
+	spritetype = {
+		name = "GFX_NIH_lulluby_and_burgundy"
+		textureFile = "gfx/leaders/NIH/NIH_lulluby_and_burgundy.dds"
+	}
+	spritetype = {
+		name = "GFX_NIH_lulluby_and_burgundy_small"
+		textureFile = "gfx/interface/advisors/NIH/NIH_lulluby_and_burgundy_small.dds"
+	}
+	spritetype = {
+		name = "GFX_NIH_night_raid"
+		textureFile = "gfx/leaders/NIH/NIH_night_raid.dds"
+	}
+	spritetype = {
+		name = "GFX_NIH_night_raid_small"
+		textureFile = "gfx/interface/advisors/NIH/NIH_night_raid_small.dds"
 	}
 ##PIE##
 	spritetype = {
@@ -777,6 +809,22 @@ spritetypes = {
 		name = "GFX_TRS_radiguss_small"
 		textureFile = "gfx/interface/advisors/TRS/TRS_radiguss_small.dds"
 	}
+	spritetype = {
+		name = "GFX_TRS_tea_leaf"
+		textureFile = "gfx/leaders/TRS/TRS_tea_leaf.dds"
+	}
+	spritetype = {
+		name = "GFX_TRS_tea_leaf_small"
+		textureFile = "gfx/interface/advisors/TRS/TRS_tea_leaf_small.dds"
+	}
+	spritetype = {
+		name = "GFX_TRS_darth_the_judgemental"
+		textureFile = "gfx/leaders/TRS/TRS_darth_the_judgemental.dds"
+	}
+	spritetype = {
+		name = "GFX_TRS_darth_the_judgemental_small"
+		textureFile = "gfx/interface/advisors/TRS/TRS_darth_the_judgemental_small.dds"
+	}
 ##TRT##
 	spritetype = {
 		name = "GFX_TRT_harshwhinny"
@@ -892,6 +940,6 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_XXX_NAM_small"
-		textureFile = "gfx/interface/advisors/XXX/XXX_NAM.dds"
+		textureFile = "gfx/interface/advisors/XXX/XXX_NAM_small.dds"
 	}
 }

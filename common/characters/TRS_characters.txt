@@ -13,7 +13,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			desc = TRS_daurora
+			desc = TRS_daurora_leader_desc
 			ideology = fascism_ideology
 		}
 	}
@@ -67,6 +67,42 @@ characters = {
 			slot = political_advisor
 			cost = 150
 			idea_token = TRS_radiguss_politician
+		}
+	}
+	TRS_tea_leaf = {
+		name = TRS_tea_leaf
+		portraits = {
+			army = {
+				large = GFX_TRS_tea_leaf
+				small = GFX_TRS_tea_leaf_small
+			}
+		}
+		corps_commander = {
+			desc = TRS_tleaf_commander_desc
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			traits = {
+				pony_race_trait
+				trait_knight_bachelor
+			}
+		}
+	}
+	TRS_darth_the_judgemental = {
+		name = TRS_darth_the_judgemental
+		portraits = {
+			civilian = {
+				large = GFX_TRS_darth_the_judgemental
+				small = GFX_TRS_darth_the_judgemental_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			cost = 150
+			idea_token = TRS_dtjudgemental_politician
+			traits = { prince_of_terror }
 		}
 	}
 	TRS_generic_pony = {
