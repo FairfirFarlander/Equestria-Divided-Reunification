@@ -1,6 +1,6 @@
-defined_text={#Country
-	name=GetNiceCountryName
-	#EDR
+defined_text = { #Country
+	name = GetNiceCountryName
+#EDR
 	text = {
 		trigger = { original_tag = ALA }
 		localization_key = EAW_WS_ALA
@@ -169,7 +169,7 @@ defined_text={#Country
 		trigger = { original_tag = WTC }
 		localization_key = EAW_WS_WTC
 	}
-#EAW ===================================
+#EAW
 	text = {
 		trigger = { original_tag = VED }
 		localization_key = EAW_WS_VED
@@ -191,6 +191,10 @@ defined_text={#Country
 		localization_key = EAW_WS_GRF
 	}
 	text = {
+		trigger = { original_tag = PLB }
+		localization_key = EAW_WS_PLB
+	}
+	text = {
 		trigger = { original_tag = GFF }
 		localization_key = EAW_WS_GFF
 	}
@@ -203,9 +207,9 @@ defined_text={#Country
 		localization_key = EAW_WS_ROU
 	}
 	text = {
-		trigger = { 
+		trigger = {
 			OR = {
-				original_tag = FAT 
+				original_tag = FAT
 				original_tag = FAW
 			}
 		}
@@ -263,10 +267,7 @@ defined_text={#Country
 	}
 	text = {
 		trigger = {
-			OR = {
-				original_tag = PLB
-				original_tag = PNG
-			}
+			original_tag = PNG
 		}
 		localization_key = EAW_WS_PLR
 	}
@@ -389,7 +390,13 @@ defined_text={#Country
 		localization_key = EAW_WS_SRS
 	}
 	text = {
-		trigger = { OR = { original_tag = LNS original_tag = LSM original_tag = LSC } }
+		trigger = {
+			OR = {
+				original_tag = LNS
+				original_tag = LSM
+				original_tag = LSC
+			}
+		}
 		localization_key = EAW_WS_LNS
 	}
 	text = {
@@ -443,12 +450,16 @@ defined_text={#Country
 	text = {
 		trigger = { original_tag = STW }
 		localization_key = EAW_WS_STW
-  }
-  text = {
-    trigger = { original_tag = FRN }
+	}
+	text = {
+		trigger = { original_tag = HEL }
+		localization_key = EAW_WS_HEL
+	}
+	text = {
+		trigger = { original_tag = FRN }
 		localization_key = EAW_WS_FRN
 	}
-		text = {
+	text = {
 		trigger = { original_tag = BAK }
 		localization_key = EAW_WS_BAK
 	}
@@ -475,8 +486,8 @@ defined_text={#Country
 	text = {
 		trigger = { original_tag = GAZ }
 		localization_key = EAW_WS_GAZ
-  }
-  text = {
+	}
+	text = {
 		trigger = { original_tag = CTL }
 		localization_key = EAW_WS_CTL
 	}
@@ -520,53 +531,182 @@ defined_text={#Country
 		localization_key = "[Root.GetNameDef]"
 	}
 }
-defined_text={
-	name=GetCountryIntro
-	#EDR
-	text={trigger={original_tag=ALA}localization_key=EAW_WS_ALA_desc}
-	text={trigger={original_tag=ALI}localization_key=EAW_WS_ALI_desc}
-	text={trigger={original_tag=BCK}localization_key=EAW_WS_BCK_desc}
-	text={trigger={original_tag=CHY}localization_key=EAW_WS_CHY_desc}
-	text={trigger={original_tag=CLD}localization_key=EAW_WS_CLD_desc}
-	text={trigger={original_tag=COT}localization_key=EAW_WS_COT_desc}
-	text={trigger={original_tag=CRL}localization_key=EAW_WS_CRL_desc}
-	text={trigger={original_tag=CUL}localization_key=EAW_WS_CUL_desc}
-	text={trigger={original_tag=CYE}localization_key=EAW_WS_CYE_desc}
-	text={trigger={original_tag=EMB}localization_key=EAW_WS_EMB_desc}
-	text={trigger={original_tag=FAI}localization_key=EAW_WS_FAI_desc}
-	text={trigger={original_tag=FLY}localization_key=EAW_WS_FLY_desc}
-	text={trigger={original_tag=FRI}localization_key=EAW_WS_FRI_desc}
-	text={trigger={original_tag=FSH}localization_key=EAW_WS_FSH_desc}
-	text={trigger={original_tag=HAH}localization_key=EAW_WS_HAH_desc}
-	text={trigger={original_tag=HEB}localization_key=EAW_WS_HEB_desc}
-	text={trigger={original_tag=HEF}localization_key=EAW_WS_HEF_desc}
-	text={trigger={original_tag=HFT}localization_key=EAW_WS_HFT_desc}
-	text={trigger={original_tag=HMS}localization_key=EAW_WS_HMS_desc}
-	text={trigger={original_tag=HSW}localization_key=EAW_WS_HSW_desc}
-	text={trigger={original_tag=HWG}localization_key=EAW_WS_HWG_desc}
-	text={trigger={original_tag=JTL}localization_key=EAW_WS_JTL_desc}
-	text={trigger={original_tag=LAS}localization_key=EAW_WS_LAS_desc}
-	text={trigger={original_tag=MSE}localization_key=EAW_WS_MSE_desc}
-	text={trigger={original_tag=MWC}localization_key=EAW_WS_MWC_desc}
-	text={trigger={original_tag=NIH}localization_key=EAW_WS_NIH_desc}
-	text={trigger={original_tag=PIE}localization_key=EAW_WS_PIE_desc}
-	text={trigger={original_tag=PLF}localization_key=EAW_WS_PLF_desc}
-	text={trigger={original_tag=PLT}localization_key=EAW_WS_PLT_desc}
-	text={trigger={original_tag=PRT}localization_key=EAW_WS_PRT_desc}
-	text={trigger={original_tag=SGR}localization_key=EAW_WS_SGR_desc}
-	text={trigger={original_tag=SOY}localization_key=EAW_WS_SOY_desc}
-	text={trigger={original_tag=STB}localization_key=EAW_WS_STB_desc}
-	text={trigger={original_tag=SWT}localization_key=EAW_WS_SWT_desc}
-	text={trigger={original_tag=SYV}localization_key=EAW_WS_SYV_desc}
-	text={trigger={original_tag=TFL}localization_key=EAW_WS_TFL_desc}
-	text={trigger={original_tag=THA}localization_key=EAW_WS_THA_desc}
-	text={trigger={original_tag=TRH}localization_key=EAW_WS_TRH_desc}
-	text={trigger={original_tag=TRS}localization_key=EAW_WS_TRS_desc}
-	text={trigger={original_tag=TRT}localization_key=EAW_WS_TRT_desc}
-	text={trigger={original_tag=VHT}localization_key=EAW_WS_VHT_desc}
-	text={trigger={original_tag=VII}localization_key=EAW_WS_VII_desc}
-	text={trigger={original_tag=WTC}localization_key=EAW_WS_WTC_desc}
-	#EAW
+defined_text = {
+	name = GetCountryIntro
+#EDR
+	text = {
+		trigger = { original_tag = ALA }
+		localization_key = EAW_WS_ALA_desc
+	}
+	text = {
+		trigger = { original_tag = ALI }
+		localization_key = EAW_WS_ALI_desc
+	}
+	text = {
+		trigger = { original_tag = BCK }
+		localization_key = EAW_WS_BCK_desc
+	}
+	text = {
+		trigger = { original_tag = CHY }
+		localization_key = EAW_WS_CHY_desc
+	}
+	text = {
+		trigger = { original_tag = CLD }
+		localization_key = EAW_WS_CLD_desc
+	}
+	text = {
+		trigger = { original_tag = COT }
+		localization_key = EAW_WS_COT_desc
+	}
+	text = {
+		trigger = { original_tag = CRL }
+		localization_key = EAW_WS_CRL_desc
+	}
+	text = {
+		trigger = { original_tag = CUL }
+		localization_key = EAW_WS_CUL_desc
+	}
+	text = {
+		trigger = { original_tag = CYE }
+		localization_key = EAW_WS_CYE_desc
+	}
+	text = {
+		trigger = { original_tag = EMB }
+		localization_key = EAW_WS_EMB_desc
+	}
+	text = {
+		trigger = { original_tag = FAI }
+		localization_key = EAW_WS_FAI_desc
+	}
+	text = {
+		trigger = { original_tag = FLY }
+		localization_key = EAW_WS_FLY_desc
+	}
+	text = {
+		trigger = { original_tag = FRI }
+		localization_key = EAW_WS_FRI_desc
+	}
+	text = {
+		trigger = { original_tag = FSH }
+		localization_key = EAW_WS_FSH_desc
+	}
+	text = {
+		trigger = { original_tag = HAH }
+		localization_key = EAW_WS_HAH_desc
+	}
+	text = {
+		trigger = { original_tag = HEB }
+		localization_key = EAW_WS_HEB_desc
+	}
+	text = {
+		trigger = { original_tag = HEF }
+		localization_key = EAW_WS_HEF_desc
+	}
+	text = {
+		trigger = { original_tag = HFT }
+		localization_key = EAW_WS_HFT_desc
+	}
+	text = {
+		trigger = { original_tag = HMS }
+		localization_key = EAW_WS_HMS_desc
+	}
+	text = {
+		trigger = { original_tag = HSW }
+		localization_key = EAW_WS_HSW_desc
+	}
+	text = {
+		trigger = { original_tag = HWG }
+		localization_key = EAW_WS_HWG_desc
+	}
+	text = {
+		trigger = { original_tag = JTL }
+		localization_key = EAW_WS_JTL_desc
+	}
+	text = {
+		trigger = { original_tag = LAS }
+		localization_key = EAW_WS_LAS_desc
+	}
+	text = {
+		trigger = { original_tag = MSE }
+		localization_key = EAW_WS_MSE_desc
+	}
+	text = {
+		trigger = { original_tag = MWC }
+		localization_key = EAW_WS_MWC_desc
+	}
+	text = {
+		trigger = { original_tag = NIH }
+		localization_key = EAW_WS_NIH_desc
+	}
+	text = {
+		trigger = { original_tag = PIE }
+		localization_key = EAW_WS_PIE_desc
+	}
+	text = {
+		trigger = { original_tag = PLF }
+		localization_key = EAW_WS_PLF_desc
+	}
+	text = {
+		trigger = { original_tag = PLT }
+		localization_key = EAW_WS_PLT_desc
+	}
+	text = {
+		trigger = { original_tag = PRT }
+		localization_key = EAW_WS_PRT_desc
+	}
+	text = {
+		trigger = { original_tag = SGR }
+		localization_key = EAW_WS_SGR_desc
+	}
+	text = {
+		trigger = { original_tag = SOY }
+		localization_key = EAW_WS_SOY_desc
+	}
+	text = {
+		trigger = { original_tag = STB }
+		localization_key = EAW_WS_STB_desc
+	}
+	text = {
+		trigger = { original_tag = SWT }
+		localization_key = EAW_WS_SWT_desc
+	}
+	text = {
+		trigger = { original_tag = SYV }
+		localization_key = EAW_WS_SYV_desc
+	}
+	text = {
+		trigger = { original_tag = TFL }
+		localization_key = EAW_WS_TFL_desc
+	}
+	text = {
+		trigger = { original_tag = THA }
+		localization_key = EAW_WS_THA_desc
+	}
+	text = {
+		trigger = { original_tag = TRH }
+		localization_key = EAW_WS_TRH_desc
+	}
+	text = {
+		trigger = { original_tag = TRS }
+		localization_key = EAW_WS_TRS_desc
+	}
+	text = {
+		trigger = { original_tag = TRT }
+		localization_key = EAW_WS_TRT_desc
+	}
+	text = {
+		trigger = { original_tag = VHT }
+		localization_key = EAW_WS_VHT_desc
+	}
+	text = {
+		trigger = { original_tag = VII }
+		localization_key = EAW_WS_VII_desc
+	}
+	text = {
+		trigger = { original_tag = WTC }
+		localization_key = EAW_WS_WTC_desc
+	}
+#EAW
 	text = {
 		trigger = { original_tag = VED }
 		localization_key = EAW_WS_VED_desc
@@ -586,6 +726,10 @@ defined_text={
 	text = {
 		trigger = { original_tag = GRF }
 		localization_key = EAW_WS_GRF_desc
+	}
+	text = {
+		trigger = { original_tag = PLB }
+		localization_key = EAW_WS_PLB_desc
 	}
 	text = {
 		trigger = { original_tag = GFF }
@@ -616,9 +760,9 @@ defined_text={
 		localization_key = EAW_WS_ROU_desc
 	}
 	text = {
-		trigger = { 
+		trigger = {
 			OR = {
-				original_tag = FAT 
+				original_tag = FAT
 				original_tag = FAW
 			}
 		}
@@ -675,12 +819,7 @@ defined_text={
 		localization_key = EAW_WS_YAK_desc
 	}
 	text = {
-		trigger = {
-			OR = {
-				original_tag = PLB
-				original_tag = PNG
-			}
-		}
+		trigger = { original_tag = PNG }
 		localization_key = EAW_WS_PLR_desc
 	}
 	text = {
@@ -787,14 +926,20 @@ defined_text={
 		localization_key = EAW_WS_HLQ_desc
 	}
 	text = {
-		trigger = { OR = { original_tag = LNS original_tag = LSM original_tag = LSC } }
+		trigger = {
+			OR = {
+				original_tag = LNS
+				original_tag = LSM
+				original_tag = LSC
+			}
+		}
 		localization_key = EAW_WS_LNS_desc
 	}
 	text = {
 		trigger = { original_tag = SRS }
 		localization_key = EAW_WS_SRS_desc
-  }
-  text = {
+	}
+	text = {
 		trigger = { original_tag = CYA }
 		localization_key = EAW_WS_CYA_desc
 	}
@@ -845,12 +990,16 @@ defined_text={
 	text = {
 		trigger = { original_tag = STW }
 		localization_key = EAW_WS_STW_desc
-  }
-  text = {
+	}
+	text = {
+		trigger = { original_tag = HEL }
+		localization_key = EAW_WS_HEL_desc
+	}
+	text = {
 		trigger = { original_tag = FRN }
 		localization_key = EAW_WS_FRN_desc
 	}
-		text = {
+	text = {
 		trigger = { original_tag = BAK }
 		localization_key = EAW_WS_BAK_desc
 	}
@@ -877,8 +1026,8 @@ defined_text={
 	text = {
 		trigger = { original_tag = GAZ }
 		localization_key = EAW_WS_GAZ_desc
-  }
-  text = {
+	}
+	text = {
 		trigger = { original_tag = CTL }
 		localization_key = EAW_WS_CTL_desc
 	}

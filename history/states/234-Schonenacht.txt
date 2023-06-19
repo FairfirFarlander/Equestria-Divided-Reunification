@@ -3,12 +3,14 @@ state = {	#EDRSTATE
 	name = "STATE_234"
 	manpower = 291998
 	state_category = rural
-	provinces = { 3159 3311 6104 6213 6289 6313 6405 }
+	provinces = {
+		3159 3311 6104 6213 6289 6313 6405 9161
+	}
 	resources = { oil = 4 }
 	history = {
 		owner = SGR
 		add_core_of = SGR
-		victory_points = {3159 5}
+		victory_points = {3159 3}
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1

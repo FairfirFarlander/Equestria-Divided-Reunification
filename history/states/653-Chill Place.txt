@@ -3,7 +3,9 @@ state = {	#EDRSTATE
 	name = "STATE_653"
 	manpower = 76000
 	state_category = pastoral
-	provinces = { 1593 1922 2026 5067 7296 8009 8074 10308 12324 12756 13024 }
+	provinces = {
+		407 1593 3274 3983 4983 5067 6363 8009 10308 10873 12704 12756
+	}
 	history = {
 		owner = SGR	#SYV
 		add_core_of = SGR

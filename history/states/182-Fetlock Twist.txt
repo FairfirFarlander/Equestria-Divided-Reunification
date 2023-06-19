@@ -3,7 +3,9 @@ state = {	#EDRSTATE
 	name = "STATE_182"
 	manpower = 38786
 	state_category = pastoral
-	provinces = { 107 976 1106 1109 1205 6187 10163 11818 }
+	provinces = {
+		107 976 1106 1109 1205 6187 10163 11818 13275
+	}
 	history = {
 		owner = HMS
 		add_core_of = HMS

@@ -1,0 +1,176 @@
+bookmarks = {
+	bookmark = {
+		name = "EQUESTRIA_DIVIDED_NAME"
+		desc = "EQUESTRIA_DIVIDED_DESC"
+		date = 1007.1.1.12	#Year/Month/Day/Hour
+		picture = "GFX_bookmark_reunification"
+		default_country = "HMS"
+		default = yes
+		"HSW" = {
+			history = "HSW_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				HSW_idea
+			}
+			focuses = {
+			}
+		}
+		"CUL" = {
+			history = "CUL_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				CUL_idea
+			}
+			focuses = {
+			}
+		}
+		"HWG" = {
+			history = "HWG_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				HWG_idea
+			}
+			focuses = {
+			}
+		}
+		"HEB" = {
+			history = "HEB_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				HEB_idea
+			}
+			focuses = {
+			}
+		}
+		"HEF" = {
+			history = "HEF_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				HEF_idea
+			}
+			focuses = {
+			}
+		}
+		"HMS" = {
+			history = "HMS_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				HMS_idea
+			}
+			focuses = {
+			}
+		}
+		"CRL" = {
+			history = "CRL_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+				CRY_comrevolution
+				CRY_oldking
+			}
+		}
+		"SGR" = {
+			history = "SGR_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+				severe_famine
+				incomplete_industrialization
+			}
+			focuses = {
+				vasya_2
+				the_palace
+				manifesto_of_materialism
+			}
+		}
+		"COT" = {	#Southern Confederation
+			minor = yes
+			history = "COT_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+				COT_M04
+				COT_M00
+				COT_I02G
+			}
+		}
+		"CLD" = {	#Cloudsdale
+			minor = yes
+			history = "CLD_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"TFL" = {	#The Thirteenth Legion
+			minor = yes
+			history = "TFL_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"FAI" = {	#Ponderosa
+			minor = yes
+			history = "FAI_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+				FAI_S10
+				FAI_S05
+				FAI_S03C
+			}
+		}
+		"EMB" = {	#Communes of Ember
+			minor = yes
+			history = "EMB_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+				EMB_Under_Cities
+			}
+			focuses = {
+				EMB_M00
+				EMB_MM02A
+				EMB_MM04B
+			}
+		}
+		"TRS" = {	#Neighagra
+			minor = yes
+			history = "TRS_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				TRS_blood_throne
+				TRS_trotsylvania
+				TRS_olden_ways
+			}
+			focuses = {
+				TRS_S02
+				TRS_M04D
+				TRS_M04C
+			}
+		}
+		"HAH" = {	#Hollow Shades
+			minor = yes
+			history = "HAH_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				HAH_HMS_puppet
+				HAH_slave_state
+				HAH_inquisition_impatience
+			}
+			focuses = {
+				HAH_WS304
+				HAH_D03C
+				HAH_I04
+			}
+		}
+		effect = {
+			randomize_weather = 22345 #Obligatory in every bookmark!
+			#123 = { rain_light = yes }
+		}
+	}
+}

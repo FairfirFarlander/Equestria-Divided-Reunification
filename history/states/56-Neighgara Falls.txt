@@ -3,7 +3,8 @@ state = {	#EDRSTATE
 	name = "STATE_56"
 	manpower = 286226	#276226
 	state_category = town
-	provinces = { 67 158 192 3034 3048 3179 3193 6076 6163 6165 9160 9167 9186 9189 9226 }
+	provinces = {
+		67 158 192 3048 3193 6076 6163 6165 9160 9167 9186 9189 9226 }
 	history = {
 		owner = TRS
 		add_core_of = TRS

@@ -3,7 +3,9 @@ state = {	#EDRSTATE
 	name = "STATE_229"
 	manpower = 82485
 	state_category = rural
-	provinces = { 364 869 909 3353 4127 4983 6807 9303 9322 9763 9878 11297 11907 12704 }
+	provinces = {
+		364 869 909 2026 3287 3353 4127 6807 9303 9322 9763 9878 11297 11907
+	}
 	history = {
 		owner = SGR	#SYV
 		add_core_of = SGR

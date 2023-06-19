@@ -11,6 +11,7 @@ raiding_category = {
 			original_tag = GRY
 			original_tag = SIC
 			original_tag = OLV
+			original_tag = HEL
 		#EDR Nations
 			original_tag = CLD
 			original_tag = FAI
@@ -72,6 +73,10 @@ raiding_category = {
 					has_country_flag = OLV_viking
 				}
 			}
+			AND = {
+				original_tag = HEL
+				has_country_flag = HEL_banditry_unlocked
+			}
 		#EDR Nations
 			AND = {
 				original_tag = CLD
@@ -91,5 +96,8 @@ raiding_category = {
 				NOT = { is_puppet = yes }
 			}
 		}
+	}
+	priority = {
+		base = 125
 	}
 }
