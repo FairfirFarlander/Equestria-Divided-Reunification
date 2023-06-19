@@ -24,7 +24,7 @@
 		ai_will_do={factor=80}
 		completion_reward={
 			log="[GetDateText]: [Root.GetName]: focus HAH_S00"
-			country_event=HAH_ES1.0001	#Rules of Dominion
+			country_event=HAH_ES.00000	#Rules of Dominion
 		}
 	}
 	shared_focus={	#A Demand for Timber and Stone

@@ -8,7 +8,7 @@ add_ideas = {
 	outdated_industry
 	lack_of_scientists2
 	poverty1
-	NIH_night_guard_divisions
+	NIH_hand_to_mouth
 	NIH_last_of_the_line
 	NIH_the_bitter_cold
 }

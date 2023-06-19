@@ -1,20 +1,23 @@
-division_template={
-	name="Serf Militia"
-	template_counter=14
-	regiments={
-		militia={x=0 y=0}
-		militia={x=0 y=1}
+division_template = {
+	name = "Serf Militia"
+	template_counter = 14
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
 	}
 }
-units={
-	division={	#Hollow Shades#
-		name="Serf Militia"
-		location=6598
-		division_template="Serf Militia"
-		start_experience_factor=0.2
-		start_equipment_factor=1
-		force_equipment_variants={
-			melee_equipment_0={owner="HAH" creator="HAH"}
+units = {
+	division = {
+		name = "Serf Militia"
+		location = 6598		#Hollow Shades
+		division_template = "Serf Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			melee_equipment_0 = {
+				owner = "HAH"
+				creator = "HAH"
+			}
 		}
 	}
 }

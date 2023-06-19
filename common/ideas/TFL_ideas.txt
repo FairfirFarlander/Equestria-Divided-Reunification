@@ -15,9 +15,9 @@ ideas = {
 		}
 		TFL_operation_storms = {
 			#picture = 
-			modifier = {
-				river_crossing_factor = -0.5
-			}
+			#modifier = {
+			#	river_crossing_factor = -0.5
+			#}
 		}
 	}
 	industrial_concern = {

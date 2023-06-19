@@ -1,1153 +1,1161 @@
-add_namespace=HAH_ES1
-	country_event={		#Rules of Dominion
-		id=HAH_ES1.0001
-		title=HAH_ES1.0001.t	desc=HAH_ES1.0001.d	#picture=
-		is_triggered_only=yes
-		option={
-			name=HAH_ES1.0001.a
-			custom_effect_tooltip=HAH_ES1.0001.a_tooltip
-			hidden_effect={load_oob="HAH_S00_legionarie_cohort"}
+add_namespace = HAH_ES		#Events Story
+	country_event = {		#Rules of Dominion
+		id = HAH_ES.00000
+		title = HAH_ES.00000.t
+		desc = HAH_ES.00000.d
+		is_triggered_only = yes
+		immediate = {
+			log = "[GetDateText]: [Root.GetName]: event HAH_ES.00000"
 		}
-		option={
-			name=HAH_evt_C-FF_W-TY.r
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_ES1.0001"}
-	}
-	country_event={		#Back to Business
-		id=HAH_ES1.0201
-		title=HAH_ES1.0201.t	desc=HAH_ES1.0201.d	#picture=
-		is_triggered_only=yes
-		option={
-			name=HAH_ES1.0201.a
-			set_country_flag=HAH_gathering_materials
-		}
-		option={
-			name=HAH_ES1.0201.h
-			trigger={is_debug=yes}
-			clr_country_flag=HAH_gathering_materials
-		}
-		option={
-			name=HAH_evt_C-FF_W-TY.r
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_ES1.0201"}
-	}
-	country_event={		#The Luxuries of The Capital
-		id=HAH_ES1.0202
-		title=HAH_ES1.0202.t	desc=HAH_ES1.0202.d	#picture=
-		is_triggered_only=yes
-		option={
-			name=HAH_ES1.0202.a
-			clr_country_flag=HAH_gathering_materials
-			set_country_flag=HAH_business_concluded
-			add_stability=0.04
-			add_political_power=10
-		}
-		option={
-			name=HAH_ES1.0202.h
-			trigger={is_debug=yes}
-			set_country_flag=HAH_gathering_materials
-			clr_country_flag=HAH_business_concluded
-			add_stability=-0.04
-			add_political_power=-10
-		}
-		option={
-			name=HAH_evt_C-FF_W-TY.r
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_ES1.0202"}
-	}
-	country_event={		#Letter to an Old Friend
-		id=HAH_ES1.0203
-		title=HAH_ES1.0203.t	desc=HAH_ES1.0203.d	#picture=
-		is_triggered_only=yes
-		option={name=HAH_ES1.0203.a}
-		option={
-			name=HAH_evt_C-FF_W-TY.r
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_ES1.0203"}
-	}
-	country_event={		#Shipping the Equipment Here
-		id=HAH_ES1.0204
-		title=HAH_ES1.0204.t	desc=HAH_ES1.0204.d	#picture=
-		is_triggered_only=yes
-		option={name=HAH_ES1.0204.a}
-		option={
-			name=HAH_evt_C-FF_W-TY.r
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_ES1.0204"}
-	}
-	country_event={		#Acquiring the Proper Ingredients
-		id=HAH_ES1.0205
-		title=HAH_ES1.0205.t	desc=HAH_ES1.0205.d	#picture=
-		is_triggered_only=yes
-		option={name=HAH_ES1.0205.a}
-		option={
-			name=HAH_evt_C-FF_W-TY.r
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_ES1.0205"}
-	}
-	country_event={		#Acquiring the Most Important Ingredient
-		id=HAH_ES1.0206
-		title=HAH_ES1.0206.t	desc=HAH_ES1.0206.d	#picture=
-		is_triggered_only=yes
-		option={name=HAH_ES1.0206.a}
-		option={
-			name=HAH_evt_C-FF_W-TY.r
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_ES1.0206"}
-	}
-	country_event={		#Bread and Circuses
-		id=HAH_ES1.0302
-		title=HAH_ES1.0302.t	desc=HAH_ES1.0302.d	#picture=
-		is_triggered_only=yes
-		option={
-			name=HAH_ES1.0302.a
-			set_country_flag=HAH_bread_and_circuses
-		}
-		option={
-			name=HAH_ES1.0302.h
-			trigger={is_debug=yes}
-			clr_country_flag=HAH_bread_and_circuses
-		}
-		option={
-			name=HAH_evt_C-FF_W-TY.r
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_ES1.0302"}
-	}
-	country_event={		#A Ball
-		id=HAH_ES1.0305
-		title=HAH_ES1.0305.t	desc=HAH_ES1.0305.d	#picture=
-		is_triggered_only=yes
-		option={
-			name=HAH_ES1.0305.a
-		}
-		option={
-			name=HAH_evt_C-FF_W-TY.r
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_ES1.0305"}
-	}
-	country_event={		#Production Begins
-		id=HAH_ES1.0401
-		title=HAH_ES1.0401.t	desc=HAH_ES1.0401.d	#picture=
-		is_triggered_only=yes
-		option={
-			name=HAH_ES1.0401.a
-			add_stability=0.05
-		}
-		option={
-			name=HAH_evt_C-FF_W-TY.r
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_ES1.0401"}
-	}
-	country_event={		#A Bad Batch
-		id=HAH_ES1.042
-		title=HAH_ES1.042.t	desc=HAH_ES1.042.d	#picture=
-		is_triggered_only=yes
-		option={
-			name=HAH_ES1.042.a
-			add_manpower=-5
-		}
-		option={
-			name=HAH_evt_C-FF_W-TY.r
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_ES1.042"}
-	}
-	country_event={		#Willow's Solution
-		id=HAH_ES1.0501
-		title=HAH_ES1.0501.t	desc=HAH_ES1.0501.d	#picture=
-		is_triggered_only=yes
-		option={
-			name=HAH_ES1.0501.a
-			remove_ideas=HAH_inquisition_impatience
-		}
-		option={
-			name=HAH_ES1.0501.h
-			trigger={is_debug=yes}
-			add_ideas=HAH_inquisition_impatience
-		}
-		option={
-			name=HAH_evt_C-FF_W-TY.r
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_ES1.0501"}
-	}
-add_namespace=HAH_ES2
-	country_event={		#The Attack
-		id=HAH_ES2.0601
-		title=HAH_ES2.0601.t	desc=HAH_ES2.0601.d	#picture=
-		is_triggered_only=yes
-		option={
-			name=HAH_ES2.0601.a
-		}
-		option={
-			name=HAH_evt_C-FF_W-TY.r
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_ES2.0601"}
-	}
-	country_event={		#Misty's Solution
-		id=HAH_ES2.0602
-		title=HAH_ES2.0602.t	desc=HAH_ES2.0602.d	#picture=
-		is_triggered_only=yes
-		option={
-			name=HAH_ES2.0602.a
-		}
-		option={
-			name=HAH_evt_C-FF_W-TY.r
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_ES2.0602"}
-	}
-	country_event={		#The Masks
-		id=HAH_ES2.0701
-		title=HAH_ES2.0701.t	desc=HAH_ES2.0701.d	#picture=
-		is_triggered_only=yes
-		option={
-			name=HAH_ES2.0701.a
-		}
-		option={
-			name=HAH_evt_C-FF_W-TY.r
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_ES2.0701"}
-	}
-	country_event={		#The Grand Masquerade
-		id=HAH_ES2.0704
-		title=HAH_ES2.0704.t	desc=HAH_ES2.0704.d	#picture=
-		is_triggered_only=yes
-		option={
-			name=HAH_ES2.0704.a
-			HMS={add_opinion_modifier={target=HAH modifier=HMS_to_HAH_disapproval}}
-			add_stability=0.15
-			add_popularity={ideology=democratic popularity=0.03}
-		}
-		option={
-			name=HAH_evt_C-FF_W-TY.r
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_ES2.0704"}
-	}
-	country_event={		#Mandated Masks
-		id=HAH_ES2.0801
-		title=HAH_ES2.0801.t	desc=HAH_ES2.0801.d	#picture=
-		is_triggered_only=yes
-		option={
-			name=HAH_ES2.0801.a
-			add_ideas=HAH_masked_ponies
-			set_country_flag=HAH_unlock_economy
-			set_country_flag=HAH_unlock_military
-		}
-		option={
-			name=HAH_evt_C-FF_W-TY.r
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_ES2.0801"}
-	}
-	country_event={		#Farming Poison Joke
-		id=HAH_ES2.0902
-		title=HAH_ES2.0902.t	desc=HAH_ES2.0902.d	#picture=
-		is_triggered_only=yes
-		option={
-			name=HAH_ES2.0902.a
-		}
-		option={
-			name=HAH_evt_C-FF_W-TY.r
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_ES2.0902"}
-	}
-	country_event={		#The Bobbies
-		id=HAH_ES2.0903
-		title=HAH_ES2.0903.t	desc=HAH_ES2.0903.d	#picture=
-		is_triggered_only=yes
-		option={
-			name=HAH_ES2.0903.a
-			add_ideas=HAH_bobbies
-			load_oob="HAH_S09C_bobbies_division"
-		}
-		option={
-			name=HAH_evt_C-FF_W-TY.r
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_ES2.0903"}
-	}
-	country_event={		#Project Flu Season
-		id=HAH_ES2.1001
-		title=HAH_ES2.1001.t	desc=HAH_ES2.1001.d	#picture=
-		is_triggered_only=yes
-		option={
-			name=HAH_ES2.1001.a
-		}
-		option={
-			name=HAH_evt_C-FF_W-TY.r
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_ES2.1001"}
-	}
-	country_event={		#The Tranquil Ponies
-		id=HAH_ES2.1002
-		title=HAH_ES2.1002.t	desc=HAH_ES2.1002.d	#picture=
-		is_triggered_only=yes
-		option={
-			name=HAH_ES2.1002.a
-			swap_ideas={
-				remove_idea=HAH_masked_ponies
-				add_idea=HAH_tranquil_ponies
+		option = {
+			name = HAH_ES.00000.a
+			custom_effect_tooltip = HAH_ES.00000.a_tooltip
+			hidden_effect = {
+				load_oob = "HAH_S00_legionarie_cohort"
 			}
 		}
-		option={
-			name=HAH_evt_C-FF_W-TY.r
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_ES2.1002"}
-	}
-	country_event={		#The Choice
-		id=HAH_ES2.1101
-		title=HAH_ES2.1101.t	desc=HAH_ES2.1101.d	#picture=
-		is_triggered_only=yes
-		option={
-			name=HAH_ES2.1101.a
-			set_country_flag=HAH_misty_and_willow_in_charge
-			country_event=HAH_EMS3.0000
-		}
-		option={
-			name=HAH_ES2.1101.b
-			set_country_flag=HAH_willow_in_charge
-			country_event=HAH_EWS3.0000
-		}
-		option={
-			name=HAH_evt_C-FF_W-TY.r
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_ES2.1101"}
-	}
-add_namespace=HAH_EMS3
-	country_event={		#Nothing Here
-		id=HAH_EMS3.0000
-		title=HAH_EMS3.0000.t
-		desc=HAH_EMS3.0000.d
-		is_triggered_only=yes
-		option={
-			name=HAH_EMS3.0000.a
-			load_focus_tree={
-				tree=HAH_misty
-				keep_completed=yes
+		option = {
+			name = HAH_evt_C-FF_W-TY.r
+			trigger = {
+				is_debug = yes
 			}
 		}
-		option={
-			name=HAH_evt_C-FF_W-TY.r
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EMS3.0000"}
 	}
-add_namespace=HAH_EWS3
-	country_event={		#Willow Storms Off
-		id=HAH_EWS3.0000
-		title=HAH_EWS3.0000.t
-		desc=HAH_EWS3.0000.d
-		is_triggered_only=yes
-		option={
-			name=HAH_EWS3.0000.a
-			load_focus_tree={
-				tree=HAH_willow
-				keep_completed=yes
+	country_event = {		#Back to Business
+		id = HAH_ES.0201
+		title = HAH_ES.0201.t
+		desc = HAH_ES.0201.d
+		is_triggered_only = yes
+		option = {
+			name = HAH_ES.0201.a
+			set_country_flag = HAH_gathering_materials
+		}
+		option = {
+			name = HAH_ES.0201.h
+			trigger = { is_debug = yes }
+			clr_country_flag = HAH_gathering_materials
+		}
+		option = {
+			name = HAH_evt_C-FF_W-TY.r
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_ES.0201" }
+	}
+	country_event = {		#The Luxuries of The Capital
+		id = HAH_ES.0202
+		title = HAH_ES.0202.t	desc = HAH_ES.0202.d	#picture =
+		is_triggered_only = yes
+		option = {
+			name = HAH_ES.0202.a
+			clr_country_flag = HAH_gathering_materials
+			set_country_flag = HAH_business_concluded
+			add_stability = 0.04
+			add_political_power = 10
+		}
+		option = {
+			name = HAH_ES.0202.h
+			trigger = { is_debug = yes }
+			set_country_flag = HAH_gathering_materials
+			clr_country_flag = HAH_business_concluded
+			add_stability = -0.04
+			add_political_power = -10
+		}
+		option = {
+			name = HAH_evt_C-FF_W-TY.r
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_ES.0202" }
+	}
+	country_event = {		#Letter to an Old Friend
+		id = HAH_ES.0203
+		title = HAH_ES.0203.t	desc = HAH_ES.0203.d	#picture =
+		is_triggered_only = yes
+		option = { name = HAH_ES.0203.a }
+		option = {
+			name = HAH_evt_C-FF_W-TY.r
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_ES.0203" }
+	}
+	country_event = {		#Shipping the Equipment Here
+		id = HAH_ES.0204
+		title = HAH_ES.0204.t	desc = HAH_ES.0204.d	#picture =
+		is_triggered_only = yes
+		option = { name = HAH_ES.0204.a }
+		option = {
+			name = HAH_evt_C-FF_W-TY.r
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_ES.0204" }
+	}
+	country_event = {		#Acquiring the Proper Ingredients
+		id = HAH_ES.0205
+		title = HAH_ES.0205.t	desc = HAH_ES.0205.d	#picture =
+		is_triggered_only = yes
+		option = { name = HAH_ES.0205.a }
+		option = {
+			name = HAH_evt_C-FF_W-TY.r
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_ES.0205" }
+	}
+	country_event = {		#Acquiring the Most Important Ingredient
+		id = HAH_ES.0206
+		title = HAH_ES.0206.t	desc = HAH_ES.0206.d	#picture =
+		is_triggered_only = yes
+		option = { name = HAH_ES.0206.a }
+		option = {
+			name = HAH_evt_C-FF_W-TY.r
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_ES.0206" }
+	}
+	country_event = {		#Bread and Circuses
+		id = HAH_ES.0302
+		title = HAH_ES.0302.t	desc = HAH_ES.0302.d	#picture =
+		is_triggered_only = yes
+		option = {
+			name = HAH_ES.0302.a
+			set_country_flag = HAH_bread_and_circuses
+		}
+		option = {
+			name = HAH_ES.0302.h
+			trigger = { is_debug = yes }
+			clr_country_flag = HAH_bread_and_circuses
+		}
+		option = {
+			name = HAH_evt_C-FF_W-TY.r
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_ES.0302" }
+	}
+	country_event = {		#A Ball
+		id = HAH_ES.0305
+		title = HAH_ES.0305.t	desc = HAH_ES.0305.d	#picture =
+		is_triggered_only = yes
+		option = {
+			name = HAH_ES.0305.a
+		}
+		option = {
+			name = HAH_evt_C-FF_W-TY.r
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_ES.0305" }
+	}
+	country_event = {		#Production Begins
+		id = HAH_ES.0401
+		title = HAH_ES.0401.t	desc = HAH_ES.0401.d	#picture =
+		is_triggered_only = yes
+		option = {
+			name = HAH_ES.0401.a
+			add_stability = 0.05
+		}
+		option = {
+			name = HAH_evt_C-FF_W-TY.r
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_ES.0401" }
+	}
+	country_event = {		#A Bad Batch
+		id = HAH_ES.042
+		title = HAH_ES.042.t	desc = HAH_ES.042.d	#picture =
+		is_triggered_only = yes
+		option = {
+			name = HAH_ES.042.a
+			add_manpower = -5
+		}
+		option = {
+			name = HAH_evt_C-FF_W-TY.r
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_ES.042" }
+	}
+	country_event = {		#Willow's Solution
+		id = HAH_ES.0501
+		title = HAH_ES.0501.t	desc = HAH_ES.0501.d	#picture =
+		is_triggered_only = yes
+		option = {
+			name = HAH_ES.0501.a
+			remove_ideas = HAH_inquisition_impatience
+		}
+		option = {
+			name = HAH_ES.0501.h
+			trigger = { is_debug = yes }
+			add_ideas = HAH_inquisition_impatience
+		}
+		option = {
+			name = HAH_evt_C-FF_W-TY.r
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_ES.0501" }
+	}
+add_namespace = HAH_ES2
+	country_event = {		#The Attack
+		id = HAH_ES2.0601
+		title = HAH_ES2.0601.t	desc = HAH_ES2.0601.d	#picture =
+		is_triggered_only = yes
+		option = {
+			name = HAH_ES2.0601.a
+		}
+		option = {
+			name = HAH_evt_C-FF_W-TY.r
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_ES2.0601" }
+	}
+	country_event = {		#Misty's Solution
+		id = HAH_ES2.0602
+		title = HAH_ES2.0602.t	desc = HAH_ES2.0602.d	#picture =
+		is_triggered_only = yes
+		option = {
+			name = HAH_ES2.0602.a
+		}
+		option = {
+			name = HAH_evt_C-FF_W-TY.r
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_ES2.0602" }
+	}
+	country_event = {		#The Masks
+		id = HAH_ES2.0701
+		title = HAH_ES2.0701.t	desc = HAH_ES2.0701.d	#picture =
+		is_triggered_only = yes
+		option = {
+			name = HAH_ES2.0701.a
+		}
+		option = {
+			name = HAH_evt_C-FF_W-TY.r
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_ES2.0701" }
+	}
+	country_event = {		#The Grand Masquerade
+		id = HAH_ES2.0704
+		title = HAH_ES2.0704.t	desc = HAH_ES2.0704.d	#picture =
+		is_triggered_only = yes
+		option = {
+			name = HAH_ES2.0704.a
+			HMS = { add_opinion_modifier = { target = HAH modifier = HMS_to_HAH_disapproval } }
+			add_stability = 0.15
+			add_popularity = { ideology = democratic popularity = 0.03 }
+		}
+		option = {
+			name = HAH_evt_C-FF_W-TY.r
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_ES2.0704" }
+	}
+	country_event = {		#Mandated Masks
+		id = HAH_ES2.0801
+		title = HAH_ES2.0801.t	desc = HAH_ES2.0801.d	#picture =
+		is_triggered_only = yes
+		option = {
+			name = HAH_ES2.0801.a
+			add_ideas = HAH_masked_ponies
+			set_country_flag = HAH_unlock_economy
+			set_country_flag = HAH_unlock_military
+		}
+		option = {
+			name = HAH_evt_C-FF_W-TY.r
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_ES2.0801" }
+	}
+	country_event = {		#Farming Poison Joke
+		id = HAH_ES2.0902
+		title = HAH_ES2.0902.t	desc = HAH_ES2.0902.d	#picture =
+		is_triggered_only = yes
+		option = {
+			name = HAH_ES2.0902.a
+		}
+		option = {
+			name = HAH_evt_C-FF_W-TY.r
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_ES2.0902" }
+	}
+	country_event = {		#The Bobbies
+		id = HAH_ES2.0903
+		title = HAH_ES2.0903.t	desc = HAH_ES2.0903.d	#picture =
+		is_triggered_only = yes
+		option = {
+			name = HAH_ES2.0903.a
+			add_ideas = HAH_bobbies
+			load_oob = "HAH_S09C_bobbies_division"
+		}
+		option = {
+			name = HAH_evt_C-FF_W-TY.r
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_ES2.0903" }
+	}
+	country_event = {		#Project Flu Season
+		id = HAH_ES2.1001
+		title = HAH_ES2.1001.t	desc = HAH_ES2.1001.d	#picture =
+		is_triggered_only = yes
+		option = {
+			name = HAH_ES2.1001.a
+		}
+		option = {
+			name = HAH_evt_C-FF_W-TY.r
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_ES2.1001" }
+	}
+	country_event = {		#The Tranquil Ponies
+		id = HAH_ES2.1002
+		title = HAH_ES2.1002.t	desc = HAH_ES2.1002.d	#picture =
+		is_triggered_only = yes
+		option = {
+			name = HAH_ES2.1002.a
+			swap_ideas = {
+				remove_idea = HAH_masked_ponies
+				add_idea = HAH_tranquil_ponies
 			}
 		}
-		option={
-			name=CRDT_tiviy_fairf
-			trigger={is_debug=yes}
+		option = {
+			name = HAH_evt_C-FF_W-TY.r
+			trigger = { is_debug = yes }
 		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0000"}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_ES2.1002" }
 	}
-	country_event={		#Storming of the Factory
-		id=HAH_EWS3.0001
-		title=HAH_EWS3.0001.t
-		desc=HAH_EWS3.0001.d
-		is_triggered_only=yes
-		option={
-			name=HAH_EWS3.0001.a
-			country_event=HAH_EWS3.0002
+	country_event = {		#The Choice
+		id = HAH_ES2.1101
+		title = HAH_ES2.1101.t	desc = HAH_ES2.1101.d	#picture =
+		is_triggered_only = yes
+		option = {
+			name = HAH_ES2.1101.a
+			set_country_flag = HAH_misty_and_willow_in_charge
+			country_event = HAH_EMS3.0000
 		}
-		option={
-			name=CRDT_tiviy_fairf
-			trigger={is_debug=yes}
+		option = {
+			name = HAH_ES2.1101.b
+			set_country_flag = HAH_willow_in_charge
+			country_event = HAH_EWS3.0000
 		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0001"}
+		option = {
+			name = HAH_evt_C-FF_W-TY.r
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_ES2.1101" }
 	}
-	country_event={		#Storming of the Factory
-		id=HAH_EWS3.0002
-		title=HAH_EWS3.0002.t
-		desc=HAH_EWS3.0002.d
-		is_triggered_only=yes
-		option={
-			name=HAH_EWS3.0002.a
-			add_stability=-0.2
-		}
-		option={
-			name=CRDT_tiviy_fairf
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0002"}
-	}
-	country_event={		#Swift and Quick Moves
-		id=HAH_EWS3.0101
-		title=HAH_EWS3.0101.t
-		desc=HAH_EWS3.0101.d
-		is_triggered_only=yes
-		option={
-			name=HAH_EWS3.0101.a
-			country_event=HAH_EWS3.0102
-		}
-		option={
-			name=CRDT_tiviy_fairf
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0101"}
-	}
-	country_event={		#Swift and Quick Moves
-		id=HAH_EWS3.0102
-		title=HAH_EWS3.0102.t
-		desc=HAH_EWS3.0102.d
-		is_triggered_only=yes
-		option={
-			name=HAH_EWS3.0102.a
-		}
-		option={
-			name=CRDT_tiviy_fairf
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0102"}
-	}
-	country_event={		#The Inquisition Sanctions Us
-		id=HAH_EWS3.0103
-		title=HAH_EWS3.0103.t
-		desc=HAH_EWS3.0103.d
-		is_triggered_only=yes
-		option={
-			name=HAH_EWS3.0103.a
-			add_ideas=HAH_inquisition_sanctions
-			HMS={
-				add_opinion_modifier={
-					target=HAH
-					modifier=HAH_inquisitorial_sanction_opinion
-				}
-				end_puppet=HAH
-				diplomatic_relation={
-					country=HAH
-					relation=guarantee
-					active=yes
-				}
-			}
-			HAH={
-				leave_faction=yes
-				diplomatic_relation={
-					country=HMS
-					relation=guarantee
-					active=yes
-				}
-			}
-			TRS={
-				add_opinion_modifier={
-					target=HAH
-					modifier=HAH_inquisitorial_sanction_opinion
-				}
-			}
-			MSE={
-				add_opinion_modifier={
-					target=HAH
-					modifier=HAH_inquisitorial_sanction_opinion
-				}
-			}
-			FRI={
-				add_opinion_modifier={
-					target=HAH
-					modifier=HAH_inquisitorial_sanction_opinion
-				}
-			}
-			hidden_effect={
-				country_event={id=HAH_EWS3.0201 days=35}	#Canterlot Demands More Drastic Tests
+add_namespace = HAH_EMS3
+	country_event = {		#Nothing Here
+		id = HAH_EMS3.0000
+		title = HAH_EMS3.0000.t
+		desc = HAH_EMS3.0000.d
+		is_triggered_only = yes
+		option = {
+			name = HAH_EMS3.0000.a
+			load_focus_tree = {
+				tree = HAH_misty
+				keep_completed = yes
 			}
 		}
-		option={
-			name=CRDT_tiviy_fairf
-			trigger={is_debug=yes}
+		option = {
+			name = HAH_evt_C-FF_W-TY.r
+			trigger = { is_debug = yes }
 		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0103"}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_EMS3.0000" }
 	}
-	country_event={		#Morning Dew's Personal Meeting with Willow
-		id=HAH_EWS3.0104
-		title=HAH_EWS3.0104.t
-		desc=HAH_EWS3.0104.d
-		is_triggered_only=yes
-		option={
-			name=HAH_EWS3.0104.a
-		}
-		option={
-			name=CRDT_tiviy_fairf
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0104"}
-	}
-	country_event={		#Canterlot Demands More Drastic Tests
-		id=HAH_EWS3.0201
-		title=HAH_EWS3.0201.t
-		desc=HAH_EWS3.0201.d
-		is_triggered_only=yes
-		option={
-			name=HAH_EWS3.0201.a
-			set_country_flag=HAH_can_raid_neighbors
-		}
-		option={
-			name=CRDT_tiviy_fairf
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0201"}
-	}
-	country_event={		#Hollow Shades Takes Winsom Falls
-		id=HAH_EWS3.0202
-		title=HAH_EWS3.0202.t
-		desc=HAH_EWS3.0202.d
-		is_triggered_only=yes
-		option={
-			name=HAH_EWS3.0202.a
-			add_political_power=100
-			add_war_support=0.05
-			ROOT={transfer_state=186}
-			clr_country_flag=HAH_border_war_in_progress
-			if={
-				limit={
-					NOT={has_country_flag=HAH_tranquil_blooded}
-				}
-				hidden_effect={
-					country_event={id=HAH_EWS3.0216 days=5}	#The Blockades Are Lifted, but Policing Increases
-				}
-				else={
-					country_event=HAH_EWS3.0217	#The Notation of Zeal
-				}
+add_namespace = HAH_EWS3
+	country_event = {		#Willow Storms Off
+		id = HAH_EWS3.0000
+		title = HAH_EWS3.0000.t
+		desc = HAH_EWS3.0000.d
+		is_triggered_only = yes
+		option = {
+			name = HAH_EWS3.0000.a
+			load_focus_tree = {
+				tree = HAH_willow
+				keep_completed = yes
 			}
 		}
-		option={
-			name=CRDT_wri_cod_fairfir
-			custom_effect_tooltip=CRDT_wri_cod_fairfir_tooltip
-			trigger={is_debug=yes}
+		option = {
+			name = CRDT_tiviy_fairf
+			trigger = { is_debug = yes }
 		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0202"}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_EWS3.0000" }
 	}
-	country_event={		#Winsom Falls Has Fallen
-		id=HAH_EWS3.0203
-		title=HAH_EWS3.0203.t
-		desc=HAH_EWS3.0203.d
-		is_triggered_only=yes
-		option={
-			name=HAH_EWS3.0203.a
-			add_political_power=-50
+	country_event = {		#Storming of the Factory
+		id = HAH_EWS3.0001
+		title = HAH_EWS3.0001.t
+		desc = HAH_EWS3.0001.d
+		is_triggered_only = yes
+		option = {
+			name = HAH_EWS3.0001.a
+			country_event = HAH_EWS3.0002
 		}
-		option={
-			name=CRDT_wri_cod_fairfir
-			custom_effect_tooltip=CRDT_wri_cod_fairfir_tooltip
-			trigger={is_debug=yes}
+		option = {
+			name = CRDT_tiviy_fairf
+			trigger = { is_debug = yes }
 		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0203"}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_EWS3.0001" }
 	}
-	country_event={		#Winsom Falls Repelled Us
-		id=HAH_EWS3.0204
-		title=HAH_EWS3.0204.t
-		desc=HAH_EWS3.0204.d
-		is_triggered_only=yes
-		option={
-			name=HAH_EWS3.0204.a
-			add_political_power=-50
-			clr_country_flag=HAH_border_war_in_progress
-			if={
-				limit={
-					NOT={has_country_flag=HAH_tranquil_blooded}
+	country_event = {		#Storming of the Factory
+		id = HAH_EWS3.0002
+		title = HAH_EWS3.0002.t
+		desc = HAH_EWS3.0002.d
+		is_triggered_only = yes
+		option = {
+			name = HAH_EWS3.0002.a
+			add_stability = -0.2
+		}
+		option = {
+			name = CRDT_tiviy_fairf
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_EWS3.0002" }
+	}
+	country_event = {		#Swift and Quick Moves
+		id = HAH_EWS3.0101
+		title = HAH_EWS3.0101.t
+		desc = HAH_EWS3.0101.d
+		is_triggered_only = yes
+		option = {
+			name = HAH_EWS3.0101.a
+			country_event = HAH_EWS3.0102
+		}
+		option = {
+			name = CRDT_tiviy_fairf
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_EWS3.0101" }
+	}
+	country_event = {		#Swift and Quick Moves
+		id = HAH_EWS3.0102
+		title = HAH_EWS3.0102.t
+		desc = HAH_EWS3.0102.d
+		is_triggered_only = yes
+		option = {
+			name = HAH_EWS3.0102.a
+		}
+		option = {
+			name = CRDT_tiviy_fairf
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_EWS3.0102" }
+	}
+	country_event = {		#The Inquisition Sanctions Us
+		id = HAH_EWS3.0103
+		title = HAH_EWS3.0103.t
+		desc = HAH_EWS3.0103.d
+		is_triggered_only = yes
+		option = {
+			name = HAH_EWS3.0103.a
+			add_ideas = HAH_inquisition_sanctions
+			HMS = {
+				add_opinion_modifier = {
+					target = HAH
+					modifier = HAH_inquisitorial_sanction_opinion
 				}
-				hidden_effect={
-					country_event={id=HAH_EWS3.0216 days=5}	#The Blockades Are Lifted, but Policing Increases
+				end_puppet = HAH
+				diplomatic_relation = {
+					country = HAH
+					relation = guarantee
+					active = yes
 				}
-				else={
-					country_event=HAH_EWS3.0217	#The Notation of Zeal
+			}
+			HAH = {
+				leave_faction = yes
+				diplomatic_relation = {
+					country = HMS
+					relation = guarantee
+					active = yes
+				}
+			}
+			TRS = {
+				add_opinion_modifier = {
+					target = HAH
+					modifier = HAH_inquisitorial_sanction_opinion
+				}
+			}
+			MSE = {
+				add_opinion_modifier = {
+					target = HAH
+					modifier = HAH_inquisitorial_sanction_opinion
+				}
+			}
+			FRI = {
+				add_opinion_modifier = {
+					target = HAH
+					modifier = HAH_inquisitorial_sanction_opinion
+				}
+			}
+			hidden_effect = {
+				country_event = { id = HAH_EWS3.0201 days = 35 }	#Canterlot Demands More Drastic Tests
+			}
+		}
+		option = {
+			name = CRDT_tiviy_fairf
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_EWS3.0103" }
+	}
+	country_event = {		#Morning Dew's Personal Meeting with Willow
+		id = HAH_EWS3.0104
+		title = HAH_EWS3.0104.t
+		desc = HAH_EWS3.0104.d
+		is_triggered_only = yes
+		option = {
+			name = HAH_EWS3.0104.a
+		}
+		option = {
+			name = CRDT_tiviy_fairf
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_EWS3.0104" }
+	}
+	country_event = {		#Canterlot Demands More Drastic Tests
+		id = HAH_EWS3.0201
+		title = HAH_EWS3.0201.t
+		desc = HAH_EWS3.0201.d
+		is_triggered_only = yes
+		option = {
+			name = HAH_EWS3.0201.a
+			set_country_flag = HAH_can_raid_neighbors
+		}
+		option = {
+			name = CRDT_tiviy_fairf
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_EWS3.0201" }
+	}
+	country_event = {		#Hollow Shades Takes Winsom Falls
+		id = HAH_EWS3.0202
+		title = HAH_EWS3.0202.t
+		desc = HAH_EWS3.0202.d
+		is_triggered_only = yes
+		option = {
+			name = HAH_EWS3.0202.a
+			add_political_power = 100
+			add_war_support = 0.05
+			ROOT = { transfer_state = 186 }
+			clr_country_flag = HAH_border_war_in_progress
+			if = {
+				limit = {
+					NOT = { has_country_flag = HAH_tranquil_blooded }
+				}
+				hidden_effect = {
+					country_event = { id = HAH_EWS3.0216 days = 5 }	#The Blockades Are Lifted, but Policing Increases
+				}
+				else = {
+					country_event = HAH_EWS3.0217	#The Notation of Zeal
 				}
 			}
 		}
-		option={
-			name=CRDT_wri_cod_fairfir
-			custom_effect_tooltip=CRDT_wri_cod_fairfir_tooltip
-			trigger={is_debug=yes}
+		option = {
+			name = CRDT_wri_cod_fairfir
+			custom_effect_tooltip = CRDT_wri_cod_fairfir_tooltip
+			trigger = { is_debug = yes }
 		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0204"}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_EWS3.0202" }
 	}
-	country_event={		#Winsom Falls Stands
-		id=HAH_EWS3.0205
-		title=HAH_EWS3.0205.t
-		desc=HAH_EWS3.0205.d
-		is_triggered_only=yes
-		option={
-			name=HAH_EWS3.0205.a
-			add_political_power=50
+	country_event = {		#Winsom Falls Has Fallen
+		id = HAH_EWS3.0203
+		title = HAH_EWS3.0203.t
+		desc = HAH_EWS3.0203.d
+		is_triggered_only = yes
+		option = {
+			name = HAH_EWS3.0203.a
+			add_political_power = -50
 		}
-		option={
-			name=CRDT_wri_cod_fairfir
-			custom_effect_tooltip=CRDT_wri_cod_fairfir_tooltip
-			trigger={is_debug=yes}
+		option = {
+			name = CRDT_wri_cod_fairfir
+			custom_effect_tooltip = CRDT_wri_cod_fairfir_tooltip
+			trigger = { is_debug = yes }
 		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0205"}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_EWS3.0203" }
 	}
-	country_event={		#Hollow Shades Raids Flower Wreath
-		id=HAH_EWS3.0206
-		title=HAH_EWS3.0206.t
-		desc=HAH_EWS3.0206.d
-		is_triggered_only=yes
-		option={
-			name=HAH_EWS3.0206.a
-			add_political_power=150
-			add_war_support=0.05
-			clr_country_flag=HAH_border_war_in_progress
-			if={
-				limit={
-					NOT={has_country_flag=HAH_tranquil_blooded}
+	country_event = {		#Winsom Falls Repelled Us
+		id = HAH_EWS3.0204
+		title = HAH_EWS3.0204.t
+		desc = HAH_EWS3.0204.d
+		is_triggered_only = yes
+		option = {
+			name = HAH_EWS3.0204.a
+			add_political_power = -50
+			clr_country_flag = HAH_border_war_in_progress
+			if = {
+				limit = {
+					NOT = { has_country_flag = HAH_tranquil_blooded }
 				}
-				hidden_effect={
-					country_event={id=HAH_EWS3.0216 days=5}	#The Blockades Are Lifted, but Policing Increases
+				hidden_effect = {
+					country_event = { id = HAH_EWS3.0216 days = 5 }	#The Blockades Are Lifted, but Policing Increases
 				}
-				else={
-					country_event=HAH_EWS3.0217	#The Notation of Zeal
-				}
-			}
-		}
-		option={
-			name=CRDT_wri_cod_fairfir
-			custom_effect_tooltip=CRDT_wri_cod_fairfir_tooltip
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0206"}
-	}
-	country_event={		#Flower Wreath Has Been Raided
-		id=HAH_EWS3.0207
-		title=HAH_EWS3.0207.t
-		desc=HAH_EWS3.0207.d
-		is_triggered_only=yes
-		option={
-			name=HAH_EWS3.0207.a
-			add_political_power=-50
-		}
-		option={
-			name=CRDT_wri_cod_fairfir
-			custom_effect_tooltip=CRDT_wri_cod_fairfir_tooltip
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0207"}
-	}
-	country_event={		#Flower Wreath Repelled Us
-		id=HAH_EWS3.0208
-		title=HAH_EWS3.0208.t
-		desc=HAH_EWS3.0208.d
-		is_triggered_only=yes
-		option={
-			name=HAH_EWS3.0208.a
-			add_political_power=-50
-			clr_country_flag=HAH_border_war_in_progress
-			if={
-				limit={
-					NOT={has_country_flag=HAH_tranquil_blooded}
-				}
-				hidden_effect={
-					country_event={id=HAH_EWS3.0216 days=5}	#The Blockades Are Lifted, but Policing Increases
-				}
-				else={
-					country_event=HAH_EWS3.0217	#The Notation of Zeal
+				else = {
+					country_event = HAH_EWS3.0217	#The Notation of Zeal
 				}
 			}
 		}
-		option={
-			name=CRDT_wri_cod_fairfir
-			custom_effect_tooltip=CRDT_wri_cod_fairfir_tooltip
-			trigger={is_debug=yes}
+		option = {
+			name = CRDT_wri_cod_fairfir
+			custom_effect_tooltip = CRDT_wri_cod_fairfir_tooltip
+			trigger = { is_debug = yes }
 		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0208"}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_EWS3.0204" }
 	}
-	country_event={		#Flower Wreath Stands
-		id=HAH_EWS3.0209
-		title=HAH_EWS3.0209.t
-		desc=HAH_EWS3.0209.d
-		is_triggered_only=yes
-		option={
-			name=HAH_EWS3.0209.a
-			add_political_power=50
+	country_event = {		#Winsom Falls Stands
+		id = HAH_EWS3.0205
+		title = HAH_EWS3.0205.t
+		desc = HAH_EWS3.0205.d
+		is_triggered_only = yes
+		option = {
+			name = HAH_EWS3.0205.a
+			add_political_power = 50
 		}
-		option={
-			name=CRDT_wri_cod_fairfir
-			custom_effect_tooltip=CRDT_wri_cod_fairfir_tooltip
-			trigger={is_debug=yes}
+		option = {
+			name = CRDT_wri_cod_fairfir
+			custom_effect_tooltip = CRDT_wri_cod_fairfir_tooltip
+			trigger = { is_debug = yes }
 		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0209"}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_EWS3.0205" }
 	}
-	country_event={		#Hollow Shades Takes Fetlock Twist
-		id=HAH_EWS3.0210
-		title=HAH_EWS3.0210.t
-		desc=HAH_EWS3.0210.d
-		is_triggered_only=yes
-		option={
-			name=HAH_EWS3.0210.a
-			add_political_power=100
-			add_war_support=0.05
-			ROOT={transfer_state=182}
-			clr_country_flag=HAH_border_war_in_progress
-			if={
-				limit={
-					NOT={has_country_flag=HAH_tranquil_blooded}
+	country_event = {		#Hollow Shades Raids Flower Wreath
+		id = HAH_EWS3.0206
+		title = HAH_EWS3.0206.t
+		desc = HAH_EWS3.0206.d
+		is_triggered_only = yes
+		option = {
+			name = HAH_EWS3.0206.a
+			add_political_power = 150
+			add_war_support = 0.05
+			clr_country_flag = HAH_border_war_in_progress
+			if = {
+				limit = {
+					NOT = { has_country_flag = HAH_tranquil_blooded }
 				}
-				hidden_effect={
-					country_event={id=HAH_EWS3.0216 days=5}	#The Blockades Are Lifted, but Policing Increases
+				hidden_effect = {
+					country_event = { id = HAH_EWS3.0216 days = 5 }	#The Blockades Are Lifted, but Policing Increases
 				}
-				else={
-					country_event=HAH_EWS3.0217	#The Notation of Zeal
-				}
-			}
-		}
-		option={
-			name=CRDT_wri_cod_fairfir
-			custom_effect_tooltip=CRDT_wri_cod_fairfir_tooltip
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0210"}
-	}
-	country_event={		#Fetlock Twist Has Fallen
-		id=HAH_EWS3.0211
-		title=HAH_EWS3.0211.t
-		desc=HAH_EWS3.0211.d
-		is_triggered_only=yes
-		option={
-			name=HAH_EWS3.0211.a
-			add_political_power=-50
-			if={
-				limit={
-					HMS={owns_state=182}
-				}
-				add_war_support=-0.05
-			}
-		}
-		option={
-			name=CRDT_wri_cod_fairfir
-			custom_effect_tooltip=CRDT_wri_cod_fairfir_tooltip
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0211"}
-	}
-	country_event={		#Fetlock Twist Repelled Us
-		id=HAH_EWS3.0212
-		title=HAH_EWS3.0212.t
-		desc=HAH_EWS3.0212.d
-		is_triggered_only=yes
-		option={
-			name=HAH_EWS3.0212.a
-			add_political_power=-50
-			clr_country_flag=HAH_border_war_in_progress
-			if={
-				limit={
-					NOT={has_country_flag=HAH_tranquil_blooded}
-				}
-				hidden_effect={
-					country_event={id=HAH_EWS3.0216 days=5}	#The Blockades Are Lifted, but Policing Increases
-				}
-				else={
-					country_event=HAH_EWS3.0217	#The Notation of Zeal
+				else = {
+					country_event = HAH_EWS3.0217	#The Notation of Zeal
 				}
 			}
 		}
-		option={
-			name=CRDT_wri_cod_fairfir
-			custom_effect_tooltip=CRDT_wri_cod_fairfir_tooltip
-			trigger={is_debug=yes}
+		option = {
+			name = CRDT_wri_cod_fairfir
+			custom_effect_tooltip = CRDT_wri_cod_fairfir_tooltip
+			trigger = { is_debug = yes }
 		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0212"}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_EWS3.0206" }
 	}
-	country_event={		#Fetlock Twist Stands
-		id=HAH_EWS3.0213
-		title=HAH_EWS3.0213.t
-		desc=HAH_EWS3.0213.d
-		is_triggered_only=yes
-		option={
-			name=HAH_EWS3.0213.a
-			add_political_power=50
-			if={
-				limit={
-					HMS={owns_state=182}
-				}
-				add_war_support=0.05
-			}
+	country_event = {		#Flower Wreath Has Been Raided
+		id = HAH_EWS3.0207
+		title = HAH_EWS3.0207.t
+		desc = HAH_EWS3.0207.d
+		is_triggered_only = yes
+		option = {
+			name = HAH_EWS3.0207.a
+			add_political_power = -50
 		}
-		option={
-			name=CRDT_wri_cod_fairfir
-			custom_effect_tooltip=CRDT_wri_cod_fairfir_tooltip
-			trigger={is_debug=yes}
+		option = {
+			name = CRDT_wri_cod_fairfir
+			custom_effect_tooltip = CRDT_wri_cod_fairfir_tooltip
+			trigger = { is_debug = yes }
 		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0213"}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_EWS3.0207" }
 	}
-	country_event={		#Our Test Is Cancelled
-		id=HAH_EWS3.0214
-		title=HAH_EWS3.0214.t
-		desc=HAH_EWS3.0214.d
-		is_triggered_only=yes
-		option={
-			name=HAH_EWS3.0214.a
-			clr_country_flag=HAH_border_war_in_progress
-			if={
-				limit={
-					NOT={has_country_flag=HAH_tranquil_blooded}
+	country_event = {		#Flower Wreath Repelled Us
+		id = HAH_EWS3.0208
+		title = HAH_EWS3.0208.t
+		desc = HAH_EWS3.0208.d
+		is_triggered_only = yes
+		option = {
+			name = HAH_EWS3.0208.a
+			add_political_power = -50
+			clr_country_flag = HAH_border_war_in_progress
+			if = {
+				limit = {
+					NOT = { has_country_flag = HAH_tranquil_blooded }
 				}
-				hidden_effect={
-					country_event={id=HAH_EWS3.0218 days=3}	#The Test is Exempted
+				hidden_effect = {
+					country_event = { id = HAH_EWS3.0216 days = 5 }	#The Blockades Are Lifted, but Policing Increases
 				}
-			}
-			else={
-				country_event=HAH_EWS3.0217	#The Notation of Zeal
-			}
-		}
-		option={
-			name=CRDT_wri_cod_fairfir
-			custom_effect_tooltip=CRDT_wri_cod_fairfir_tooltip
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0214"}
-	}
-	country_event={		#The Madponies Have Retreated?
-		id=HAH_EWS3.0215
-		title=HAH_EWS3.0215.t
-		desc=HAH_EWS3.0215.d
-		is_triggered_only=yes
-		option={
-			name=HAH_EWS3.0215.a
-			add_political_power=25
-		}
-		option={
-			name=CRDT_wri_cod_fairfir
-			custom_effect_tooltip=CRDT_wri_cod_fairfir_tooltip
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0215"}
-	}
-	country_event={		#The Blockades Are Lifted, but Policing Increases
-		id=HAH_EWS3.0216
-		title=HAH_EWS3.0216.t
-		desc=HAH_EWS3.0216.d
-		is_triggered_only=yes
-		option={
-			name=HAH_EWS3.0216.a
-			if={
-				limit={has_dlc="La Resistance"}
-				remove_ideas=HAH_inquisition_sanctions
-				add_ideas=HAH_closely_watched_lar
-			}
-			else={
-				remove_ideas=HAH_inquisition_sanctions
-				add_ideas=HAH_closely_watched
-			}
-			set_country_flag=HAH_tranquil_blooded
-			HAH={
-				diplomatic_relation={
-					country=HMS
-					relation=guarantee
-					active=no
-				}
-			}
-			HMS={
-				diplomatic_relation={
-					country=HAH
-					relation=guarantee
-					active=no
-				}
-				add_to_faction=HAH
-				remove_opinion_modifier={
-					target=HAH
-					modifier=HAH_inquisitorial_sanction_opinion
-				}
-			}
-			TRS={
-				remove_opinion_modifier={
-					target=HAH
-					modifier=HAH_inquisitorial_sanction_opinion
-				}
-			}
-			MSE={
-				remove_opinion_modifier={
-					target=HAH
-					modifier=HAH_inquisitorial_sanction_opinion
-				}
-			}
-			FRI={
-				remove_opinion_modifier={
-					target=HAH
-					modifier=HAH_inquisitorial_sanction_opinion
-				}
-			}
-			hidden_effect={
-				country_event={id=HAH_EWS3.0301 days=90}	#The Policing Finally Lessens
-			}
-		}
-		option={
-			name=CRDT_tiviy_fairf
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0216"}
-	}
-	country_event={		#The Notation of Zeal
-		id=HAH_EWS3.0217
-		title=HAH_EWS3.0217.t
-		desc=HAH_EWS3.0217.d
-		is_triggered_only=yes
-		option={
-			name=HAH_EWS3.0217.a
-			set_country_flag=HAH_zeal_noted
-			clr_country_flag=HAH_can_raid_neighbors
-		}
-		option={
-			name=CRDT_wri_cod_fairfir
-			custom_effect_tooltip=CRDT_wri_cod_fairfir_tooltip
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0217"}
-	}
-	country_event={		#The Test is Exempt
-		id=HAH_EWS3.0218
-		title=HAH_EWS3.0218.t
-		desc=HAH_EWS3.0218.d
-		is_triggered_only=yes
-		option={
-			name=HAH_EWS3.0218.a
-			set_country_flag=HAH_tranquil_blooded
-			hidden_effect={
-				country_event={id=HAH_EWS3.0216 days=3}	#The Blockades Are Lifted, but Policing Increases
-			}
-		}
-		option={
-			name=CRDT_wri_cod_fairfir
-			custom_effect_tooltip=CRDT_wri_cod_fairfir_tooltip
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0218"}
-	}
-	country_event={		#The Policing Finally Lessens
-		id=HAH_EWS3.0301
-		title=HAH_EWS3.0301.t
-		desc=HAH_EWS3.0301.d
-		is_triggered_only=yes
-		option={
-			name=HAH_EWS3.0301.a
-		}
-		option={
-			name=CRDT_tiviy_fairf
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0301"}
-	}
-	country_event={		#Going to Canterlot not as a Servant, but a Leader
-		id=HAH_EWS3.0401
-		title=HAH_EWS3.0401.t
-		desc=HAH_EWS3.0401.d
-		is_triggered_only=yes
-		option={
-			name=HAH_EWS3.0401.a
-			country_event=HAH_EWS3.0402
-		}
-		option={
-			name=CRDT_tiviy_fairf
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0401"}
-	}
-	country_event={		#Going to Canterlot not as a Servant, but a Leader
-		id=HAH_EWS3.0402
-		title=HAH_EWS3.0402.t
-		desc=HAH_EWS3.0402.d
-		is_triggered_only=yes
-		option={
-			name=HAH_EWS3.0402.a
-			HMS={
-				add_opinion_modifier={
-					target=HAH
-					modifier=HAH_connections
+				else = {
+					country_event = HAH_EWS3.0217	#The Notation of Zeal
 				}
 			}
 		}
-		option={
-			name=CRDT_tiviy_fairf
-			trigger={is_debug=yes}
+		option = {
+			name = CRDT_wri_cod_fairfir
+			custom_effect_tooltip = CRDT_wri_cod_fairfir_tooltip
+			trigger = { is_debug = yes }
 		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0402"}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_EWS3.0208" }
 	}
-	country_event={		#A Broken Heart Leads to Tragedy
-		id=HAH_EWS3.0601
-		title=HAH_EWS3.0601.t
-		desc=HAH_EWS3.0601.d
-		is_triggered_only=yes
-		option={
-			name=HAH_EWS3.0601.a
-			country_event=HAH_EWS3.0602
+	country_event = {		#Flower Wreath Stands
+		id = HAH_EWS3.0209
+		title = HAH_EWS3.0209.t
+		desc = HAH_EWS3.0209.d
+		is_triggered_only = yes
+		option = {
+			name = HAH_EWS3.0209.a
+			add_political_power = 50
 		}
-		option={
-			name=CRDT_tiviy_fairf
-			trigger={is_debug=yes}
+		option = {
+			name = CRDT_wri_cod_fairfir
+			custom_effect_tooltip = CRDT_wri_cod_fairfir_tooltip
+			trigger = { is_debug = yes }
 		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0601"}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_EWS3.0209" }
 	}
-	country_event={		#A Broken Heart Leads to Tragedy
-		id=HAH_EWS3.0602
-		title=HAH_EWS3.0602.t
-		desc=HAH_EWS3.0602.d
-		is_triggered_only=yes
-		option={
-			name=HAH_EWS3.0602.a
-		}
-		option={
-			name=CRDT_tiviy_fairf
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0602"}
-	}
-	country_event={		#Misty’s Will
-		id=HAH_EWS3.0603
-		title=HAH_EWS3.0603.t
-		desc=HAH_EWS3.0603.d
-		is_triggered_only=yes
-		option={
-			name=HAH_EWS3.0603.a
-			country_event=HAH_EWS3.0604
-		}
-		option={
-			name=CRDT_tiviy_fairf
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0603"}
-	}
-	country_event={		#Misty’s Will
-		id=HAH_EWS3.0604
-		title=HAH_EWS3.0604.t
-		desc=HAH_EWS3.0604.d
-		is_triggered_only=yes
-		option={
-			name=HAH_EWS3.0604.a
-			decrease_poverty=yes
-		}
-		option={
-			name=CRDT_tiviy_fairf
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0604"}
-	}
-	country_event={		#Misty’s Statue
-		id=HAH_EWS3.0801
-		title=HAH_EWS3.0801.t
-		desc=HAH_EWS3.0801.d
-		is_triggered_only=yes
-		option={
-			name=HAH_EWS3.0801.a
-			hidden_effect={
-				country_event={id=HAH_EWS3.0802 days=3}
-			}
-		}
-		option={
-			name=CRDT_tiviy_fairf
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0801"}
-	}
-	country_event={		#Morning Dew and Willow’s Little Conversation
-		id=HAH_EWS3.0802
-		title=HAH_EWS3.0802.t
-		desc=HAH_EWS3.0802.d
-		is_triggered_only=yes
-		option={
-			name=HAH_EWS3.0802.a
-			country_event=HAH_EWS3.0803
-		}
-		option={
-			name=CRDT_tiviy_fairf
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0802"}
-	}
-	country_event={		#Morning Dew and Willow’s Little Conversation
-		id=HAH_EWS3.0803
-		title=HAH_EWS3.0803.t
-		desc=HAH_EWS3.0803.d
-		is_triggered_only=yes
-		option={
-			name=HAH_EWS3.0803.a
-			country_event=HAH_EWS3.0804
-		}
-		option={
-			name=CRDT_tiviy_fairf
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0803"}
-	}
-	country_event={		#Morning Dew’s Demise
-		id=HAH_EWS3.0804
-		title=HAH_EWS3.0804.t
-		desc=HAH_EWS3.0804.d
-		is_triggered_only=yes
-		option={
-			name=HAH_EWS3.0804.a
-			country_event=HAH_EWS3.0805
-		}
-		option={
-			name=CRDT_tiviy_fairf
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0804"}
-	}
-	country_event={		#Morning Dew’s Demise
-		id=HAH_EWS3.0805
-		title=HAH_EWS3.0805.t
-		desc=HAH_EWS3.0805.d
-		is_triggered_only=yes
-		option={
-			name=HAH_EWS3.0805.a
-			set_country_flag=HAH_willow_no_return
-			mark_focus_tree_layout_dirty=yes
-		}
-		option={
-			name=CRDT_tiviy_fairf
-			trigger={is_debug=yes}
-		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.0805"}
-	}
-	country_event={		#The Hour Has Come
-		id=HAH_EWS3.1201
-		title=HAH_EWS3.1201.t
-		desc=HAH_EWS3.1201.d
-		is_triggered_only=yes
-		option={
-			name=HAH_EWS3.1201.a
-			HAH={
-				declare_war_on={
-					target=HMS
-					type=annex_everything
+	country_event = {		#Hollow Shades Takes Fetlock Twist
+		id = HAH_EWS3.0210
+		title = HAH_EWS3.0210.t
+		desc = HAH_EWS3.0210.d
+		is_triggered_only = yes
+		option = {
+			name = HAH_EWS3.0210.a
+			add_political_power = 100
+			add_war_support = 0.05
+			ROOT = { transfer_state = 182 }
+			clr_country_flag = HAH_border_war_in_progress
+			if = {
+				limit = {
+					NOT = { has_country_flag = HAH_tranquil_blooded }
+				}
+				hidden_effect = {
+					country_event = { id = HAH_EWS3.0216 days = 5 }	#The Blockades Are Lifted, but Policing Increases
+				}
+				else = {
+					country_event = HAH_EWS3.0217	#The Notation of Zeal
 				}
 			}
-			add_corps_commander_role={
-				character=HAH_willow_branch
-				skill=1
-				attack_skill=1
-				defense_skill=1
-				planning_skill=3
-				logistics_skill=2
+		}
+		option = {
+			name = CRDT_wri_cod_fairfir
+			custom_effect_tooltip = CRDT_wri_cod_fairfir_tooltip
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_EWS3.0210" }
+	}
+	country_event = {		#Fetlock Twist Has Fallen
+		id = HAH_EWS3.0211
+		title = HAH_EWS3.0211.t
+		desc = HAH_EWS3.0211.d
+		is_triggered_only = yes
+		option = {
+			name = HAH_EWS3.0211.a
+			add_political_power = -50
+			if = {
+				limit = {
+					HMS = { owns_state = 182 }
+				}
+				add_war_support = -0.05
 			}
 		}
-		option={
-			name=CRDT_tiviy_fairf
-			trigger={is_debug=yes}
+		option = {
+			name = CRDT_wri_cod_fairfir
+			custom_effect_tooltip = CRDT_wri_cod_fairfir_tooltip
+			trigger = { is_debug = yes }
 		}
-		immediate={log="[GetDateText]: [Root.GetName]: event HAH_EWS3.1201"}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_EWS3.0211" }
+	}
+	country_event = {		#Fetlock Twist Repelled Us
+		id = HAH_EWS3.0212
+		title = HAH_EWS3.0212.t
+		desc = HAH_EWS3.0212.d
+		is_triggered_only = yes
+		option = {
+			name = HAH_EWS3.0212.a
+			add_political_power = -50
+			clr_country_flag = HAH_border_war_in_progress
+			if = {
+				limit = {
+					NOT = { has_country_flag = HAH_tranquil_blooded }
+				}
+				hidden_effect = {
+					country_event = { id = HAH_EWS3.0216 days = 5 }	#The Blockades Are Lifted, but Policing Increases
+				}
+				else = {
+					country_event = HAH_EWS3.0217	#The Notation of Zeal
+				}
+			}
+		}
+		option = {
+			name = CRDT_wri_cod_fairfir
+			custom_effect_tooltip = CRDT_wri_cod_fairfir_tooltip
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_EWS3.0212" }
+	}
+	country_event = {		#Fetlock Twist Stands
+		id = HAH_EWS3.0213
+		title = HAH_EWS3.0213.t
+		desc = HAH_EWS3.0213.d
+		is_triggered_only = yes
+		option = {
+			name = HAH_EWS3.0213.a
+			add_political_power = 50
+			if = {
+				limit = {
+					HMS = { owns_state = 182 }
+				}
+				add_war_support = 0.05
+			}
+		}
+		option = {
+			name = CRDT_wri_cod_fairfir
+			custom_effect_tooltip = CRDT_wri_cod_fairfir_tooltip
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_EWS3.0213" }
+	}
+	country_event = {		#Our Test Is Cancelled
+		id = HAH_EWS3.0214
+		title = HAH_EWS3.0214.t
+		desc = HAH_EWS3.0214.d
+		is_triggered_only = yes
+		option = {
+			name = HAH_EWS3.0214.a
+			clr_country_flag = HAH_border_war_in_progress
+			if = {
+				limit = {
+					NOT = { has_country_flag = HAH_tranquil_blooded }
+				}
+				hidden_effect = {
+					country_event = { id = HAH_EWS3.0218 days = 3 }	#The Test is Exempted
+				}
+			}
+			else = {
+				country_event = HAH_EWS3.0217	#The Notation of Zeal
+			}
+		}
+		option = {
+			name = CRDT_wri_cod_fairfir
+			custom_effect_tooltip = CRDT_wri_cod_fairfir_tooltip
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_EWS3.0214" }
+	}
+	country_event = {		#The Madponies Have Retreated?
+		id = HAH_EWS3.0215
+		title = HAH_EWS3.0215.t
+		desc = HAH_EWS3.0215.d
+		is_triggered_only = yes
+		option = {
+			name = HAH_EWS3.0215.a
+			add_political_power = 25
+		}
+		option = {
+			name = CRDT_wri_cod_fairfir
+			custom_effect_tooltip = CRDT_wri_cod_fairfir_tooltip
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_EWS3.0215" }
+	}
+	country_event = {		#The Blockades Are Lifted, but Policing Increases
+		id = HAH_EWS3.0216
+		title = HAH_EWS3.0216.t
+		desc = HAH_EWS3.0216.d
+		is_triggered_only = yes
+		option = {
+			name = HAH_EWS3.0216.a
+			if = {
+				limit = { has_dlc = "La Resistance" }
+				remove_ideas = HAH_inquisition_sanctions
+				add_ideas = HAH_closely_watched_lar
+			}
+			else = {
+				remove_ideas = HAH_inquisition_sanctions
+				add_ideas = HAH_closely_watched
+			}
+			set_country_flag = HAH_tranquil_blooded
+			HAH = {
+				diplomatic_relation = {
+					country = HMS
+					relation = guarantee
+					active = no
+				}
+			}
+			HMS = {
+				diplomatic_relation = {
+					country = HAH
+					relation = guarantee
+					active = no
+				}
+				add_to_faction = HAH
+				remove_opinion_modifier = {
+					target = HAH
+					modifier = HAH_inquisitorial_sanction_opinion
+				}
+			}
+			TRS = {
+				remove_opinion_modifier = {
+					target = HAH
+					modifier = HAH_inquisitorial_sanction_opinion
+				}
+			}
+			MSE = {
+				remove_opinion_modifier = {
+					target = HAH
+					modifier = HAH_inquisitorial_sanction_opinion
+				}
+			}
+			FRI = {
+				remove_opinion_modifier = {
+					target = HAH
+					modifier = HAH_inquisitorial_sanction_opinion
+				}
+			}
+			hidden_effect = {
+				country_event = { id = HAH_EWS3.0301 days = 90 }	#The Policing Finally Lessens
+			}
+		}
+		option = {
+			name = CRDT_tiviy_fairf
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_EWS3.0216" }
+	}
+	country_event = {		#The Notation of Zeal
+		id = HAH_EWS3.0217
+		title = HAH_EWS3.0217.t
+		desc = HAH_EWS3.0217.d
+		is_triggered_only = yes
+		option = {
+			name = HAH_EWS3.0217.a
+			set_country_flag = HAH_zeal_noted
+			clr_country_flag = HAH_can_raid_neighbors
+		}
+		option = {
+			name = CRDT_wri_cod_fairfir
+			custom_effect_tooltip = CRDT_wri_cod_fairfir_tooltip
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_EWS3.0217" }
+	}
+	country_event = {		#The Test is Exempt
+		id = HAH_EWS3.0218
+		title = HAH_EWS3.0218.t
+		desc = HAH_EWS3.0218.d
+		is_triggered_only = yes
+		option = {
+			name = HAH_EWS3.0218.a
+			set_country_flag = HAH_tranquil_blooded
+			hidden_effect = {
+				country_event = { id = HAH_EWS3.0216 days = 3 }	#The Blockades Are Lifted, but Policing Increases
+			}
+		}
+		option = {
+			name = CRDT_wri_cod_fairfir
+			custom_effect_tooltip = CRDT_wri_cod_fairfir_tooltip
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_EWS3.0218" }
+	}
+	country_event = {		#The Policing Finally Lessens
+		id = HAH_EWS3.0301
+		title = HAH_EWS3.0301.t
+		desc = HAH_EWS3.0301.d
+		is_triggered_only = yes
+		option = {
+			name = HAH_EWS3.0301.a
+		}
+		option = {
+			name = CRDT_tiviy_fairf
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_EWS3.0301" }
+	}
+	country_event = {		#Going to Canterlot not as a Servant, but a Leader
+		id = HAH_EWS3.0401
+		title = HAH_EWS3.0401.t
+		desc = HAH_EWS3.0401.d
+		is_triggered_only = yes
+		option = {
+			name = HAH_EWS3.0401.a
+			country_event = HAH_EWS3.0402
+		}
+		option = {
+			name = CRDT_tiviy_fairf
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_EWS3.0401" }
+	}
+	country_event = {		#Going to Canterlot not as a Servant, but a Leader
+		id = HAH_EWS3.0402
+		title = HAH_EWS3.0402.t
+		desc = HAH_EWS3.0402.d
+		is_triggered_only = yes
+		option = {
+			name = HAH_EWS3.0402.a
+			HMS = {
+				add_opinion_modifier = {
+					target = HAH
+					modifier = HAH_connections
+				}
+			}
+		}
+		option = {
+			name = CRDT_tiviy_fairf
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_EWS3.0402" }
+	}
+	country_event = {		#A Broken Heart Leads to Tragedy
+		id = HAH_EWS3.0601
+		title = HAH_EWS3.0601.t
+		desc = HAH_EWS3.0601.d
+		is_triggered_only = yes
+		option = {
+			name = HAH_EWS3.0601.a
+			country_event = HAH_EWS3.0602
+		}
+		option = {
+			name = CRDT_tiviy_fairf
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_EWS3.0601" }
+	}
+	country_event = {		#A Broken Heart Leads to Tragedy
+		id = HAH_EWS3.0602
+		title = HAH_EWS3.0602.t
+		desc = HAH_EWS3.0602.d
+		is_triggered_only = yes
+		option = {
+			name = HAH_EWS3.0602.a
+		}
+		option = {
+			name = CRDT_tiviy_fairf
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_EWS3.0602" }
+	}
+	country_event = {		#Misty’s Will
+		id = HAH_EWS3.0603
+		title = HAH_EWS3.0603.t
+		desc = HAH_EWS3.0603.d
+		is_triggered_only = yes
+		option = {
+			name = HAH_EWS3.0603.a
+			country_event = HAH_EWS3.0604
+		}
+		option = {
+			name = CRDT_tiviy_fairf
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_EWS3.0603" }
+	}
+	country_event = {		#Misty’s Will
+		id = HAH_EWS3.0604
+		title = HAH_EWS3.0604.t
+		desc = HAH_EWS3.0604.d
+		is_triggered_only = yes
+		option = {
+			name = HAH_EWS3.0604.a
+			decrease_poverty = yes
+		}
+		option = {
+			name = CRDT_tiviy_fairf
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_EWS3.0604" }
+	}
+	country_event = {		#Misty’s Statue
+		id = HAH_EWS3.0801
+		title = HAH_EWS3.0801.t
+		desc = HAH_EWS3.0801.d
+		is_triggered_only = yes
+		option = {
+			name = HAH_EWS3.0801.a
+			hidden_effect = {
+				country_event = { id = HAH_EWS3.0802 days = 3 }
+			}
+		}
+		option = {
+			name = CRDT_tiviy_fairf
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_EWS3.0801" }
+	}
+	country_event = {		#Morning Dew and Willow’s Little Conversation
+		id = HAH_EWS3.0802
+		title = HAH_EWS3.0802.t
+		desc = HAH_EWS3.0802.d
+		is_triggered_only = yes
+		option = {
+			name = HAH_EWS3.0802.a
+			country_event = HAH_EWS3.0803
+		}
+		option = {
+			name = CRDT_tiviy_fairf
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_EWS3.0802" }
+	}
+	country_event = {		#Morning Dew and Willow’s Little Conversation
+		id = HAH_EWS3.0803
+		title = HAH_EWS3.0803.t
+		desc = HAH_EWS3.0803.d
+		is_triggered_only = yes
+		option = {
+			name = HAH_EWS3.0803.a
+			country_event = HAH_EWS3.0804
+		}
+		option = {
+			name = CRDT_tiviy_fairf
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_EWS3.0803" }
+	}
+	country_event = {		#Morning Dew’s Demise
+		id = HAH_EWS3.0804
+		title = HAH_EWS3.0804.t
+		desc = HAH_EWS3.0804.d
+		is_triggered_only = yes
+		option = {
+			name = HAH_EWS3.0804.a
+			country_event = HAH_EWS3.0805
+		}
+		option = {
+			name = CRDT_tiviy_fairf
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_EWS3.0804" }
+	}
+	country_event = {		#Morning Dew’s Demise
+		id = HAH_EWS3.0805
+		title = HAH_EWS3.0805.t
+		desc = HAH_EWS3.0805.d
+		is_triggered_only = yes
+		option = {
+			name = HAH_EWS3.0805.a
+			set_country_flag = HAH_willow_no_return
+			mark_focus_tree_layout_dirty = yes
+		}
+		option = {
+			name = CRDT_tiviy_fairf
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_EWS3.0805" }
+	}
+	country_event = {		#The Hour Has Come
+		id = HAH_EWS3.1201
+		title = HAH_EWS3.1201.t
+		desc = HAH_EWS3.1201.d
+		is_triggered_only = yes
+		option = {
+			name = HAH_EWS3.1201.a
+			HAH = {
+				declare_war_on = {
+					target = HMS
+					type = annex_everything
+				}
+			}
+			add_corps_commander_role = {
+				character = HAH_willow_branch
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 3
+				logistics_skill = 2
+			}
+		}
+		option = {
+			name = CRDT_tiviy_fairf
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event HAH_EWS3.1201" }
 	}

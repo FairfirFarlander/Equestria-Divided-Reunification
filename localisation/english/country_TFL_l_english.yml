@@ -36,8 +36,8 @@
    TFL_operational_reassurances: "Operational Reassurance and Security"
     TFL_operational_reassurances_desc: ""
    TFL_operation_storms: "Operation: Storms on the River"
-    TFL_operation_storms_desc: ""
-   TFL_river_pons: "River Ponies"
+    TFL_operation_storms_desc: "Shows the result of the River Ponies tech which grants 10% Attack and Defense over rivers."
+   TFL_river_pons: "$TFL_ADJ$ River Ponies"
     TFL_river_pons_desc: ""
   ##Event Ideas##
   ##Designers and Concerns##
@@ -51,7 +51,7 @@
    TFL_S00: "One Final Call For Help"
     TFL_S00_desc: "It has been weeks now since we have received any sort of word from Hoofington. We are running low on supplies and the morale of the troops is running low. We need to get a message out and see if we can get some kind of support."
     TFL_ES.00000.t: "The Reply"
-     TFL_ES.00000.d: "After weeks of not receiving any sort of new orders or supplies from the higher ups back home, orders were given to send out a telegraph back to Hoofington. We waited and waited for any sort of response, but when we finally received a telegram back. You could see the color draining from the faces of the commander and telegraph operator as the message came through.\n\n==============================================\nMEMBERS  OF  THE  13th  EARTHBORN  LEGION,\nYOUR  ORDERS  ARE  AS  FOLLOWS.\nCONTINUE  TO  HOLD  OUT  AND  SECURE  THE  REGION.  WITH  TENSIONS EVER  RISING  FURTHER  SOUTH  ALL  RESOURCES  MUST  BE  DIVERTED. YOU  WILL  BE  RECEIVING  NO  FURTHER  AID.  YOU  ARE  NOT  TO  PULL  YOUR  FORCES  BACK  UNDER  ANY  CIRCUMSTANCES.  ANY  SOLDIER  FROM  THE  13TH  FOUND  TRYING  TO  COME  BACK  OVER  THE  BORDER  WILL  BE  TREATED  AS  A  DESERTER  AND  DEALT  WITH  ACCORDIGNLY.\n==============================================\n\nIt was at that moment Rain Danver came to a harsh and spine chilling realization..."
+     TFL_ES.00000.d: "After weeks of not receiving any sort of new orders or supplies from the higher ups back home, orders were given to send out a telegraph back to Hoofington. We waited and waited for any sort of response, but when we finally received a telegram back. You could see the color draining from the faces of the commander and telegraph operator as the message came through.\n\n==============================================\nMEMBERS  OF  THE  13th  EARTHBORN  LEGION,\nYOUR  ORDERS  ARE  AS  FOLLOWS.\nCONTINUE  TO  HOLD  OUT  AND  SECURE  THE  REGION.  WITH  TENSIONS EVER  RISING  FURTHER  SOUTH  ALL  RESOURCES  MUST  BE  DIVERTED. YOU  WILL  BE  RECEIVING  NO  FURTHER  AID.  YOU  ARE  NOT  TO  PULL  YOUR  FORCES  BACK  UNDER  ANY  CIRCUMSTANCES.  ANY  SOLDIER  FROM  THE  13TH  FOUND  TRYING  TO  COME  BACK  OVER  THE  BORDER  WILL  BE  TREATED  AS  A  DESERTER  AND  DEALT  WITH  ACCORDIGNLY.\n==============================================\n\nIt was at that moment Rain Dancer came to a harsh and spine chilling realization..."
      TFL_ES.00000.a: "She and her troops were alone."
      TFL_E0_CWT: ""
    TFL_S01A: "The Actions One Must Take To Survive"
@@ -64,7 +64,7 @@
     TFL_S02A_effect_tooltip: "§Y[ROOT.GetNameDefCap]§! will gain a §YProvincial Militia§! template and be able to §3edit§!, §7train§!, and §Odisband§! §Ydivision templates§!."
    TFL_S02B: "Forcing A Supply Train Our Way"
     TFL_S02B_desc: "Earthborn seems to have abandoned us up here. If we try to go back we will be treated as deserters, and if we continue to stay up here we will meet our end without fresh supply. We need a supplies willingly or not. We are going to have to force their hooves. There is at least one train that gets close enough for us to divert our way. But when we do this... They will consider us as traitors in their eyes."
-    TFL_ssstrained_relations: "§OOutraged by Theft!§!"
+    TFL_ssstrained_relations: "§OOutraged§! by §OTheft!§!"
     TFL_ES.02100.t: "Train Thieves"
      TFL_ES.02100.d: "With few opinions left and her troops running low on supply, Rain Dancer gave the order for a small group of volunteers to come forth. Asking for soldiers who had no families or ties back in Earthborn territory. All of those who stepped forward were briefed on what their mission would be. They were told the risks and were even offered the chance to turn down the mission. Knowing how desperate the soldiers of thirteenth were getting, none of them took the opportunity to opt from the mission. Each was given a few days worth of rations and were sent out towards the border..."
      TFL_ES.02100.a: "Towards the town of Trotland."
