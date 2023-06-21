@@ -16,7 +16,7 @@ units = {
 		force_equipment_variants = {
 			gw_tank_equipment = {
 				owner = "FAI"
-				creator = "HEB"
+				creator = "TFL"
 			}
 		}
 	}

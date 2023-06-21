@@ -118,6 +118,7 @@ bookmarks = {
 			history = "FAI_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
+				outlaw_economy
 			}
 			focuses = {
 				FAI_S10

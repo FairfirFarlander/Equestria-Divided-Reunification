@@ -1,27 +1,27 @@
 ideas = {
 	country = {
 		FAI_radio_preacher = {
-		#	picture = 
+			picture = EQS_equestrian_influence
 			modifier = { stability_weekly = -0.005 }
 			cancel = {
 				FAI = { exists = no }
 			}
 		}
 		FAI_vigilance_at_home = {
-		#	picture = 
+			picture = EQS_changeling_spies
 			modifier = {
 				army_core_attack_factor = 0.1
 				army_core_defence_factor = 0.1
 			}
 		}
 		FAI_rifle_by_side = {
-		#	picture = 
+			picture = ELF_bits_gun_idea_icon
 			modifier = {
 				training_time_factor = -0.1
 			}
 		}
 		FAI_vigilant_flock = {
-		#	picture = 
+			picture = EQS_celestia_sun
 			modifier = {
 				army_core_attack_factor = 0.1
 				army_core_defence_factor = 0.1
