@@ -1,7 +1,7 @@
 ﻿l_english:
  ###Introduction###
   ##Bookmark##
-   CUL_GATHERING_STORM_DESC: "$GENR_GATHERING_STORM_DESC$"
+   CUL_GATHERING_STORM_DESC: "Harmony is no more. Ponyville stands as a stark reminder of a bygone era where freindship and harmony was once the guiding principles of all ponykind. No longer. The home of the Mane Six is a flooded landscape barren of the life and joy that once radiated from it's quaint homesteads. It is now the memorial and mass grave of many whom once called it home. It is a hollowed ground for any who would dare venture to it. Yet even as the dust settles extraordinary events are occuring within. The Houses have sealed off the region from prying eyes to observe and contain that which brews within.\n\nWhat manner of calamity sleeps in this ruined landscape?"
   ##Welcome Screen##
    EAW_WS_CUL: "$EAW_WS_GENR$"
     EAW_WS_CUL_desc: "$EAW_WS_GENR_desc$"
@@ -10,6 +10,9 @@
    CUL: "Cult of Laughter"
     CUL_DEF: "the Cult of Laughter"
     CUL_ADJ: "Cultists"
+   CUL_neutrality: "Ponyville Ruins"
+    CUL_neutrality_DEF: "the Ruins of Ponyville"
+    CUL_neutrality_ADJ: "Equestrian"
    CUL_EQS: "Realm of Laughter"
     CUL_EQS_DEF: "the Realm of Laughter"
   ##Factions##
@@ -19,12 +22,14 @@
     CUL_fascism_party_long: "The Worshippers"
    CUL_communism_party: "TLR"
     CUL_communism_party_long: "The Laughing Reds"
-   CUL_neutrality_party: "TMC"
-    CUL_neutrality_party_long: "The Moderate Cultists"
-   CUL_democratic_party: "HAR"
-    CUL_democratic_party_long: "Harmonists"
+   CUL_neutrality_party: "Nopony"
+    CUL_neutrality_party_long: "Nopony"
+   CUL_democratic_party: "SRP"
+    CUL_democratic_party_long: "Society for the Restoration of Ponyville"
  ###Characters###
   ##Leaders##
+   CUL_ponyville_ruins: "The Ruins of Ponyville"
+    CUL_pruins_leader_desc: "$CRDC_art_nemo2d$"
    CUL_the_laughing_mare: "The Laughing Mare"
     CUL_tlmare_leader_desc: "$GENR_advisor_desc$"
     CUL_tlmare_commander_desc: "$CUL_tlmare_leader_desc$"

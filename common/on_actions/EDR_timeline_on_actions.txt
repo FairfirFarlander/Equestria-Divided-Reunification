@@ -1,6 +1,12 @@
 on_actions = {
 	on_startup = {
 		effect = {
+			CUL = {
+				set_portraits = {
+					character = CUL_ponyville_ruins
+					civilian = { large = GFX_CUL_ponyville_ruins }
+				}
+			}
 			if = {	#Wars with all minors.
 				limit = {
 					NOT = {

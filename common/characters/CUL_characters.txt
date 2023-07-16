@@ -1,4 +1,16 @@
 characters = {
+	CUL_ponyville_ruins = {
+		name = CUL_ponyville_ruins
+		portraits = {
+			civilian = {
+				large = GFX_CUL_ponyville_ruins_bookmark
+			}
+		}
+		country_leader = {
+			desc = CUL_pruins_leader_desc
+			ideology = anarchism
+		}
+	}
 	CUL_the_laughing_mare = {
 		name = CUL_the_laughing_mare
 		gender = female

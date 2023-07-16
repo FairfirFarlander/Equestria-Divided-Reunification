@@ -17,9 +17,9 @@ bookmarks = {
 		}
 		"CUL" = {
 			history = "CUL_GATHERING_STORM_DESC"
-			ideology = fascism
+			ideology = neutrality
 			ideas = {
-				CUL_idea
+				#CUL_idea
 			}
 			focuses = {
 			}

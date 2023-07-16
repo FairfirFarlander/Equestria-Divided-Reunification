@@ -56,17 +56,22 @@ characters = {
 			desc = TRS_radiguss_commander_desc
 			skill = 1
 			attack_skill = 1
-			defense_skill = 1
+			defense_skill = 2
 			planning_skill = 1
 			logistics_skill = 1
 			traits = {
+				old_guard
 				pony_race_trait
+				infantry_leader
 			}
 		}
 		advisor = {
 			slot = political_advisor
 			cost = 150
 			idea_token = TRS_radiguss_politician
+			traits = {
+				constabulary
+			}
 		}
 	}
 	TRS_tea_leaf = {
@@ -85,8 +90,9 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 			traits = {
-				pony_race_trait
 				trait_knight_bachelor
+				pony_race_trait
+				trait_mountaineer
 			}
 		}
 	}

@@ -127,6 +127,14 @@ spritetypes = {
 	}
 ##CUL##
 	spritetype = {
+		name = "GFX_CUL_ponyville_ruins"
+		textureFile = "gfx/leaders/CUL/CUL_ponyville_ruins.dds"
+	}
+	spritetype = {
+		name = "GFX_CUL_ponyville_ruins_bookmark"
+		textureFile = "gfx/leaders/CUL/CUL_ponyville_ruins_bookmark.dds"
+	}
+	spritetype = {
 		name = "GFX_CUL_the_laughing_mare_poli"
 		textureFile = "gfx/leaders/CUL/CUL_the_laughing_mare_poli.dds"
 	}
