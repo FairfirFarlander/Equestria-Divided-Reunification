@@ -1,177 +1,185 @@
 #Military Tree
-	shared_focus={	#Factories of Our Own
-		id=HAH_M00 icon=GFX_goal_generic_construct_mil_factory
-		x=-8 y=0 cost=5
-		offset={
-			x=0
-			trigger={is_debug=yes}
+	shared_focus = {	#Factories of Our Own
+		id = HAH_M00 icon = GFX_goal_generic_construct_mil_factory
+		x = -8 y = 0 cost = 5
+		offset = {
+			x = 0
+			trigger = {is_debug = yes}
 		}
-		search_filters={}
-		ai_will_do={factor=40}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HAH_M00"
-			40={
-				add_extra_state_shared_building_slots=2
-				add_building_construction={
-					type=arms_factory
-					level=2 instant_build=yes
+		search_filters = {}
+		ai_will_do = {factor = 40}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HAH_M00"
+			40 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2 instant_build = yes
 				}
 			}
 		}
 	}
-	shared_focus={	#In Times of Need
-		id=HAH_M01A icon=GFX_goal_generic_pony_soldier
-		x=-2 y=1 cost=2 relative_position_id=HAH_M00
-		search_filters={}
-		prerequisite={focus=HAH_M00}
-		ai_will_do={factor=40}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HAH_M01A"
-			custom_effect_tooltip=HAH_M01A_tooltip
-			hidden_effect={load_oob="HAH_M01A_serf_militia"}
+	shared_focus = {	#In Times of Need
+		id = HAH_M01A icon = GFX_goal_generic_pony_soldier
+		x = -2 y = 1 cost = 2
+		relative_position_id = HAH_M00
+		search_filters = {}
+		prerequisite = {focus = HAH_M00}
+		ai_will_do = {factor = 40}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HAH_M01A"
+			custom_effect_tooltip = HAH_M01A_tooltip
+			hidden_effect = {load_oob = "HAH_M01A_serf_militia"}
 		}
 	}
-	shared_focus={	#A Plan of For Battle
-		id=HAH_M01B icon=GFX_goal_planning_bonus
-		x=0 y=1 cost=2 relative_position_id=HAH_M00
-		search_filters={}
-		prerequisite={focus=HAH_M00}
-		ai_will_do={factor=40}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HAH_M01B"
-			add_doctrine_cost_reduction={
-				name=HAH_M01B_doctrine_bonus
-				cost_reduction=1
-				uses=1
-				category=cat_grand_battle_plan
-				category=cat_superior_firepower
+	shared_focus = {	#A Plan of For Battle
+		id = HAH_M01B icon = GFX_goal_planning_bonus
+		x = 0 y = 1 cost = 2
+		relative_position_id = HAH_M00
+		search_filters = {}
+		prerequisite = {focus = HAH_M00}
+		ai_will_do = {factor = 40}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HAH_M01B"
+			add_doctrine_cost_reduction = {
+				name = HAH_M01B_doctrine_bonus
+				cost_reduction = 1
+				uses = 1
+				category = cat_grand_battle_plan
+				category = cat_superior_firepower
 			}
 		}
 	}
-	shared_focus={	#Boom Sticks
-		id=HAH_M01C icon=GFX_goal_van_rifles
-		x=2 y=1 cost=2 relative_position_id=HAH_M00
-		search_filters={}
-		prerequisite={focus=HAH_M00}
-		ai_will_do={factor=40}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HAH_M01C"
-			if={limit={
-					not={
-						has_tech=melee_weapons1
-						is_researching_technology=melee_weapons1
+	shared_focus = {	#Boom Sticks
+		id = HAH_M01C icon = GFX_goal_van_rifles
+		x = 2 y = 1 cost = 2
+		relative_position_id = HAH_M00
+		search_filters = {}
+		prerequisite = {focus = HAH_M00}
+		ai_will_do = {factor = 40}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HAH_M01C"
+			if = {limit = {
+					not = {
+						has_tech = melee_weapons1
+						is_researching_technology = melee_weapons1
 					}
 				}
-				set_technology={melee_weapons1=yes}
+				set_technology = {melee_weapons1 = yes}
 			}
-			else_if={limit={
-					is_researching_technology=melee_weapons1
+			else_if = {limit = {
+					is_researching_technology = melee_weapons1
 				}
-				add_ideas=HAH_M01C_temp_melee_bonus
+				add_ideas = HAH_M01C_temp_melee_bonus
 			}
-			else={
-				add_tech_bonus={
-					name=infantry_bonus
-					bonus=0.50 uses=1
-					category=infantry_weapons
+			else = {
+				add_tech_bonus = {
+					name = infantry_bonus
+					bonus = 0.50 uses = 1
+					category = infantry_weapons
 				}
 			}
 		}
 	}
-	shared_focus={	#The Hollow Shade Brigade
-		id=HAH_M02A icon=GFX_goal_military_mission_soldier
-		x=0 y=1 cost=2 relative_position_id=HAH_M01A
-		search_filters={}
-		prerequisite={focus=HAH_M01A}
-		ai_will_do={factor=40}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HAH_M02A"
-			custom_effect_tooltip=HAH_M02A_tooltip
-			hidden_effect={load_oob="HAH_M02A_legionaries"}
+	shared_focus = {	#The Hollow Shade Brigade
+		id = HAH_M02A icon = GFX_goal_military_mission_soldier
+		x = 0 y = 1 cost = 2
+		relative_position_id = HAH_M01A
+		search_filters = {}
+		prerequisite = {focus = HAH_M01A}
+		ai_will_do = {factor = 40}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HAH_M02A"
+			custom_effect_tooltip = HAH_M02A_tooltip
+			hidden_effect = {load_oob = "HAH_M02A_legionaries"}
 		}
 	}
-	shared_focus={	#Another Great Mind
-		id=HAH_M02B icon=GFX_goal_KTG_Bookstack
-		x=0 y=1 cost=2 relative_position_id=HAH_M01B
-		search_filters={}
-		prerequisite={focus=HAH_M01B}
-		ai_will_do={factor=40}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HAH_M02B"
+	shared_focus = {	#Another Great Mind
+		id = HAH_M02B icon = GFX_goal_KTG_Bookstack
+		x = 0 y = 1 cost = 2
+		relative_position_id = HAH_M01B
+		search_filters = {}
+		prerequisite = {focus = HAH_M01B}
+		ai_will_do = {factor = 40}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HAH_M02B"
 			effect_tooltip = {
-				add_advisor_role={
-					character=HAH_boiled_apples
-					advisor={
-						slot=political_advisor
-						idea_token=HAH_bapples_advi
-						modifier={
-							research_speed_factor=0.15
+				add_advisor_role = {
+					character = HAH_boiled_apples
+					advisor = {
+						slot = political_advisor
+						idea_token = HAH_bapples_advi
+						modifier = {
+							research_speed_factor = 0.15
 						}
 					}
 				}
 			}
 		}
 	}
-	shared_focus={	#The Glory of The Cannon
-		id=HAH_M02C icon=GFX_goal_generic_army_artillery
-		x=0 y=1 cost=2 relative_position_id=HAH_M01C
-		search_filters={}
-		prerequisite={focus=HAH_M01C}
-		ai_will_do={factor=40}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HAH_M02C"
-			if={limit={
-					not={
-						has_tech=pre_gw_artillery
-						is_researching_technology=pre_gw_artillery
+	shared_focus = {	#The Glory of The Cannon
+		id = HAH_M02C icon = GFX_goal_generic_army_artillery
+		x = 0 y = 1 cost = 2
+		relative_position_id = HAH_M01C
+		search_filters = {}
+		prerequisite = {focus = HAH_M01C}
+		ai_will_do = {factor = 40}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HAH_M02C"
+			if = {limit = {
+					not = {
+						has_tech = pre_gw_artillery
+						is_researching_technology = pre_gw_artillery
 					}
 				}
-				set_technology={pre_gw_artillery=yes}
+				set_technology = {pre_gw_artillery = yes}
 			}
-			else_if={limit={
-					is_researching_technology=pre_gw_artillery
+			else_if = {limit = {
+					is_researching_technology = pre_gw_artillery
 				}
-				add_ideas=HAH_M02C_temp_artillery_bonus
+				add_ideas = HAH_M02C_temp_artillery_bonus
 			}
-			else={
-				add_tech_bonus={
-					name=HAH_artillery_bonus
-					bonus=0.50 uses=1
-					category=artillery
+			else = {
+				add_tech_bonus = {
+					name = HAH_artillery_bonus
+					bonus = 0.50 uses = 1
+					category = artillery
 				}
 			}
 		}
 	}
-	shared_focus={	#Outlasting Our Foes
-		id=HAH_M03A icon=GFX_goal_generic_support_equipment
-		x=-1 y=1 cost=2 relative_position_id=HAH_M02B
-		search_filters={}
-		prerequisite={focus=HAH_M02B}
-		prerequisite={focus=HAH_M02A focus=HAH_M02C}
-		ai_will_do={factor=40}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HAH_M03A"
-			set_technology={tech_logistics_company=1}
-			add_tech_bonus={
-				name=engineer_bonus
-				bonus=0.50 uses=1
-				category=engineers_tech
+	shared_focus = {	#Outlasting Our Foes
+		id = HAH_M03A icon = GFX_goal_generic_support_equipment
+		x = -1 y = 1 cost = 2
+		relative_position_id = HAH_M02B
+		search_filters = {}
+		prerequisite = {focus = HAH_M02B}
+		prerequisite = {focus = HAH_M02A focus = HAH_M02C}
+		ai_will_do = {factor = 40}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HAH_M03A"
+			set_technology = {tech_logistics_company = 1}
+			add_tech_bonus = {
+				name = engineer_bonus
+				bonus = 0.50 uses = 1
+				category = engineers_tech
 			}
 		}
 	}
-	shared_focus={	#Castle Hollow
-		id=HAH_M03B icon=GFX_focus_castle_at_night
-		x=1 y=1 cost=2 relative_position_id=HAH_M02B
-		search_filters={}
-		prerequisite={focus=HAH_M02B}
-		ai_will_do={factor=40}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HAH_M03B"
-			40={
-				add_building_construction={
-					type=bunker
-					level=3 instant_build=yes
-					province=6598
+	shared_focus = {	#Castle Hollow
+		id = HAH_M03B icon = GFX_focus_castle_at_night
+		x = 1 y = 1 cost = 2
+		relative_position_id = HAH_M02B
+		search_filters = {}
+		prerequisite = {focus = HAH_M02B}
+		ai_will_do = {factor = 40}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HAH_M03B"
+			40 = {
+				add_building_construction = {
+					type = bunker
+					level = 3 instant_build = yes
+					province = 6598
 				}
 			}
 		}

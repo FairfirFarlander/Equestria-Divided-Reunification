@@ -7,7 +7,7 @@ focus_tree = {
 			tag = STG
 		}
 	}
-	continuous_focus_position = { x = 2675 y = 100 }
+	continuous_focus_position = { x = 2675	y = 100 }
 	default = no
 	focus = {
 		id = the_palace
@@ -21,7 +21,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
 			add_political_power = 150
-			country_event = { id=stalliongrad.14 days = 2 }
+			country_event = { id = stalliongrad.14 days = 2 }
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -2682,7 +2682,7 @@ focus_tree = {
 					province = 3359
 				}
 			}
-			163= {
+			163 = {
 				add_building_construction = {
 					type = bunker
 					level = 2

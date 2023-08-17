@@ -1,7 +1,7 @@
 ﻿l_english:
  ###Introduction###
   ##Bookmark##
-   CUL_GATHERING_STORM_DESC: "Harmony is no more. Ponyville stands as a stark reminder of a bygone era where freindship and harmony was once the guiding principles of all ponykind. No longer. The home of the Mane Six is a flooded landscape barren of the life and joy that once radiated from it's quaint homesteads. It is now the memorial and mass grave of many whom once called it home. It is a hollowed ground for any who would dare venture to it. Yet even as the dust settles extraordinary events are occuring within. The Houses have sealed off the region from prying eyes to observe and contain that which brews within.\n\nWhat manner of calamity sleeps in this ruined landscape?"
+   CUL_GATHERING_STORM_DESC: "Harmony is no more. Ponyville sits as a reminder of a bygone era where freindship and harmony was once the guiding principles of all ponykind. No longer.\n\nThe ruined hamlet is now a flooded landscape barren of the life; a memorial ground to the joy that once radiated from it's quaint homesteads. Yet even now extraordinary events are occuring within beckoning to those who would dare to venture within it's hollowed remains. The Houses have unanimously sealed off the region from prying eyes to observe and contain that which brews unseen.\n\nWhat manner of peril or calamity lies within?"
   ##Welcome Screen##
    EAW_WS_CUL: "$EAW_WS_GENR$"
     EAW_WS_CUL_desc: "$EAW_WS_GENR_desc$"
@@ -29,7 +29,7 @@
  ###Characters###
   ##Leaders##
    CUL_ponyville_ruins: "The Ruins of Ponyville"
-    CUL_pruins_leader_desc: "$CRDC_art_nemo2d$"
+    CUL_pruins_leader_desc: "$CRDC_art_pooryarrickda$\n$CRDC_art_nemo2d$"
    CUL_the_laughing_mare: "The Laughing Mare"
     CUL_tlmare_leader_desc: "$GENR_advisor_desc$"
     CUL_tlmare_commander_desc: "$CUL_tlmare_leader_desc$"

@@ -1,4 +1,4 @@
-EDR_debug_decisions={
+EDR_DBUG_decisions={
 	#icon=
 	priority=13
 }

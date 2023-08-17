@@ -1,242 +1,398 @@
-focus_tree={
-	id=EQD_major_houses_shared
-	country={
-		factor=1
-		modifier={add=3 tag=CUL} modifier={add=3 tag=HEB}
-		modifier={add=3 tag=HEF} modifier={add=3 tag=HMS}
-		modifier={add=3 tag=HSW} modifier={add=3 tag=HWG}
+focus_tree = {
+	id = EDMG_focus_tree	#Equestria Divided Majors Generic
+	country = {
+		factor = 0
+		modifier = {
+			OR = {
+				tag = CUL
+				tag = HEB
+				tag = HEF
+				tag = HMS
+				tag = HSW
+				tag = HWG
+			}
+			add = 2
+		}
 	}
-	continuous_focus_position={x=650 y=-100}
-	shared_focus=EQD_S00
-	#shared_focus=HSW_calm_before_the_storm
-	#shared_focus=EDR_I00
-	#shared_focus=EDR_L05
-	#shared_focus=EDR_N05
-	#shared_focus=EDR_A05
+	shared_focus = EQD_S00
+	shared_focus = EQD_S269
+	#shared_focus = HSW_calm_before_the_storm
+	#shared_focus = EDR_I00
+	#shared_focus = EDR_L05
+	#shared_focus = EDR_N05
+	#shared_focus = EDR_A05
+	continuous_focus_position = { x = 650	y = -100 }
 }
-focus_tree={
-	id=EQD_major_houses_shared_debug
-	country={
-		factor=1
-		modifier={add=3 tag=CUL} modifier={add=3 tag=HEB}
-		modifier={add=3 tag=HEF} modifier={add=3 tag=HMS}
-		modifier={add=3 tag=HSW} modifier={add=3 tag=HWG}
-		modifier={add=1 is_debug=yes}
+focus_tree = {
+	id = EQD_focus_tree_debug
+	country = {
+		factor = 0
+		modifier = {
+			is_debug = yes
+			OR = {
+				tag = CUL
+				tag = HEB
+				tag = HEF
+				tag = HMS
+				tag = HSW
+				tag = HWG
+			}
+			add = 7
+		}
 	}
-	continuous_focus_position={x=10 y=-400}
-	shared_focus=EQD_S00
-	shared_focus=EQD_S269
-	#shared_focus=HSW_calm_before_the_storm
-	#shared_focus=EDR_I00
-	#shared_focus=EDR_L05
-	#shared_focus=EDR_N05
-	#shared_focus=EDR_A05
+	shared_focus = EQD_S00
+	shared_focus = EQD_S269
+	#shared_focus = HSW_calm_before_the_storm
+	#shared_focus = EDR_I00
+	#shared_focus = EDR_L05
+	#shared_focus = EDR_N05
+	#shared_focus = EDR_A05
+	shared_focus = CUL_calm_before_the_storm
+	shared_focus = HEF_the_war
+	shared_focus = HMS_the_war
+	shared_focus = HEB_the_war
+	shared_focus = HMS_the_war
+	shared_focus = HWG_the_war
+	shared_focus = EQD_S0300
+	shared_focus = EQD_S0301
+	shared_focus = EQD_S0302
+	shared_focus = EQD_S0400
+	shared_focus = EQD_S0401
+	shared_focus = EQD_S0402
+	shared_focus = EQD_S0403
+	shared_focus = EQD_S0500
+	shared_focus = EQD_S0501
+	shared_focus = EQD_S0502
+	continuous_focus_position = { x = 10	y = -400 }
 }
-	shared_focus={		#From the Ashes of Eques
-		id=EQD_S00 icon=GFX_goal_generic_demand_territory
-		cost=7 x=0 y=0
-		offset={
-			y=0
-			trigger={is_debug=yes}
+	shared_focus = {	#From the Ashes of Eques
+		id = EQD_S00
+		icon = GFX_goal_generic_demand_territory
+		x = 0	y = 0	cost = 7
+		offset = {
+			x = -7
+			trigger = {is_debug = yes}
 		}
-		search_filters={FOCUS_FILTER_POLITICAL}
-		select_effect={country_event=EDR_evt_gen.000}	#Event Verbosity
-		ai_will_do={factor=4000}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EQD_S00"
-			add_political_power=250
-			#country_event=EQD_evt_a01.001	#
-		}
-	}
-	shared_focus={		#Amassing Our Forces
-		id=EQD_S01A icon=GFX_goal_generic_small_arms
-		cost=7 x=-2 y=1 relative_position_id=EQD_S00
-		search_filters={}
-		prerequisite={focus=EQD_S00}
-		ai_will_do={factor=80}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EQD_S01A"
-			add_manpower=2000000
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		select_effect = {country_event = EDR_evt_gen.000}	#Event Verbosity
+		ai_will_do = {factor = 4000}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQD_S00"
+			add_political_power = 250
+			#country_event = EQD_evt_a01.001	#
 		}
 	}
-	shared_focus={		#Rousing the Economy
-		id=EQD_S01B icon=GFX_goal_generic_construct_civ_factory
-		cost=7 x=0 y=1 relative_position_id=EQD_S00
-		search_filters={}
-		prerequisite={focus=EQD_S00}
-		ai_will_do={factor=80}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EQD_S01B"
-			one_random_industrial_complex=yes
-			two_random_industrial_complex=yes
-			three_random_industrial_complex=yes
+	shared_focus = {	#Amassing Our Forces
+		id = EQD_S01A icon = GFX_goal_generic_small_arms
+		cost = 7 x = -2	y = 1
+		relative_position_id = EQD_S00
+		search_filters = {}
+		prerequisite = {focus = EQD_S00}
+		ai_will_do = {factor = 80}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQD_S01A"
+			add_manpower = 2000000
 		}
 	}
-	shared_focus={		#Cranking the Arms Industry
-		id=EQD_S01C icon=GFX_goal_generic_construct_mil_factory
-		cost=7 x=2 y=1 relative_position_id=EQD_S00
-		search_filters={}
-		prerequisite={focus=EQD_S00}
-		ai_will_do={factor=80}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EQD_S01C"
-			one_random_arms_factory=yes
-			two_random_arms_factory=yes
-			three_random_arms_factory=yes
+	shared_focus = {	#Rousing the Economy
+		id = EQD_S01B icon = GFX_goal_generic_construct_civ_factory
+		cost = 7 x = 0	y = 1
+		relative_position_id = EQD_S00
+		search_filters = {}
+		prerequisite = {focus = EQD_S00}
+		ai_will_do = {factor = 80}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQD_S01B"
+			one_random_industrial_complex = yes
+			two_random_industrial_complex = yes
+			three_random_industrial_complex = yes
 		}
 	}
-	shared_focus={		#Calm Before the Storm
-		id=EQD_S02 icon=GFX_goal_generic_alliance
-		cost=10 x=0 y=2 relative_position_id=EQD_S00
-		search_filters={}
-		prerequisite={focus=EQD_S01A}
-		prerequisite={focus=EQD_S01B}
-		prerequisite={focus=EQD_S01C}
-		ai_will_do={factor=80}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EQD_S02"
-			add_war_support=0.15
-			add_threat=1
+	shared_focus = {	#Cranking the Arms Industry
+		id = EQD_S01C icon = GFX_goal_generic_construct_mil_factory
+		cost = 7 x = 2	y = 1
+		relative_position_id = EQD_S00
+		search_filters = {}
+		prerequisite = {focus = EQD_S00}
+		ai_will_do = {factor = 80}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQD_S01C"
+			one_random_arms_factory = yes
+			two_random_arms_factory = yes
+			three_random_arms_factory = yes
 		}
 	}
-	shared_focus={	#Reunification
-		id=EQD_S269 #icon=
-		x=0 y=4 cost=10	relative_position_id=EQD_S00
-		search_filters={}
-		available={
-			custom_trigger_tooltip={
-				tooltip=EQD_S269_trigger_tooltip
-				CUL={
-					or={
-						exists=no
-						is_subject_of=ROOT
-						is_ai=no
+	shared_focus = {	#Calm Before the Storm
+		id = EQD_S02 icon = GFX_goal_generic_alliance
+		cost = 10 x = 0	y = 2
+		relative_position_id = EQD_S00
+		search_filters = {}
+		prerequisite = {focus = EQD_S01A}
+		prerequisite = {focus = EQD_S01B}
+		prerequisite = {focus = EQD_S01C}
+		ai_will_do = {factor = 80}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQD_S02"
+			add_war_support = 0.15
+			add_threat = 1
+		}
+	}
+	shared_focus = {	#
+		id = EQD_S0300
+		#icon = 
+		relative_position_id = EQD_S02
+		x = -2	y = 1	cost = 10
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQD_S0300"
+			every_state = {
+				limit = {
+					OR = {
+						state = 14
+						state = 136
+						state = 175
 					}
 				}
-				HEB={
-					or={
-						exists=no
-						is_subject_of=ROOT
-						is_ai=no
-					}
-				}
-				HEF={
-					or={
-						exists=no
-						is_subject_of=ROOT
-						is_ai=no
-					}
-				}
-				HMS={
-					or={
-						exists=no
-						is_subject_of=ROOT
-						is_ai=no
-					}
-				}
-				HSW={
-					or={
-						exists=no
-						is_subject_of=ROOT
-						is_ai=no
-					}
-				}
-				HWG={
-					or={
-						exists=no
-						is_subject_of=ROOT
-						is_ai=no
+				add_claim_by = ROOT
+				ROOT = {
+					create_wargoal = {
+						type = annex_everything
+						target = PREV.controller
 					}
 				}
 			}
 		}
-		ai_will_do={factor=160}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EQD_S269"
-			custom_effect_tooltip=EQD_S269_effect_tooltip
-			hidden_effect={
-				annex_country={
-					target=CUL
-					transfer_troops=yes
+	}
+	shared_focus = {	#
+		id = EQD_S0301
+		#icon = 
+		relative_position_id = EQD_S02
+		x = 0	y = 1	cost = 10
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQD_S0301"
+		}
+	}
+	shared_focus = {	#
+		id = EQD_S0302
+		#icon = 
+		relative_position_id = EQD_S02
+		x = 2	y = 1	cost = 10
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQD_S0302"
+		}
+	}
+	shared_focus = {	#
+		id = EQD_S0400
+		#icon = 
+		relative_position_id = EQD_S02
+		x = -3	y = 2	cost = 10
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQD_S0400"
+		}
+	}
+	shared_focus = {	#
+		id = EQD_S0401
+		#icon = 
+		relative_position_id = EQD_S02
+		x = -1	y = 2	cost = 10
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQD_S0401"
+		}
+	}
+	shared_focus = {	#
+		id = EQD_S0402
+		#icon = 
+		relative_position_id = EQD_S02
+		x = 1	y = 2	cost = 10
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQD_S0402"
+		}
+	}
+	shared_focus = {	#
+		id = EQD_S0403
+		#icon = 
+		relative_position_id = EQD_S02
+		x = 3	y = 2	cost = 10
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQD_S0403"
+		}
+	}
+	shared_focus = {	#
+		id = EQD_S0500
+		#icon = 
+		relative_position_id = EQD_S02
+		x = -2	y = 3	cost = 10
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQD_S0500"
+		}
+	}
+	shared_focus = {	#
+		id = EQD_S0501
+		#icon = 
+		relative_position_id = EQD_S02
+		x = 0	y = 3	cost = 10
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQD_S0501"
+		}
+	}
+	shared_focus = {	#
+		id = EQD_S0502
+		#icon = 
+		relative_position_id = EQD_S02
+		x = 2	y = 3	cost = 10
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQD_S0502"
+		}
+	}
+	shared_focus = {	#Reunification
+		id = EQD_S269
+		#icon = 
+		x = 0	y = 6	cost = 10	relative_position_id = EQD_S00
+		search_filters = {}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = EQD_S269_trigger_tooltip
+				CUL = {
+					or = {
+						exists = no
+						is_subject_of = ROOT
+						is_ai = no
+					}
 				}
-				annex_country={
-					target=HEB
-					transfer_troops=yes
+				HEB = {
+					or = {
+						exists = no
+						is_subject_of = ROOT
+						is_ai = no
+					}
 				}
-				annex_country={
-					target=HEF
-					transfer_troops=yes
+				HEF = {
+					or = {
+						exists = no
+						is_subject_of = ROOT
+						is_ai = no
+					}
 				}
-				annex_country={
-					target=HMS
-					transfer_troops=yes
+				HMS = {
+					or = {
+						exists = no
+						is_subject_of = ROOT
+						is_ai = no
+					}
 				}
-				annex_country={
-					target=HSW
-					transfer_troops=yes
+				HSW = {
+					or = {
+						exists = no
+						is_subject_of = ROOT
+						is_ai = no
+					}
 				}
-				annex_country={
-					target=HWG
-					transfer_troops=yes
+				HWG = {
+					or = {
+						exists = no
+						is_subject_of = ROOT
+						is_ai = no
+					}
 				}
-				every_state={
-					limit={
-						OR={
-							is_core_of=CUL
-							is_core_of=HEB
-							is_core_of=HEF
-							is_core_of=HMS
-							is_core_of=HSW
-							is_core_of=HWG
+			}
+		}
+		ai_will_do = {factor = 160}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQD_S269"
+			custom_effect_tooltip = EQD_S269_effect_tooltip
+			hidden_effect = {
+				annex_country = {
+					target = CUL
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = HEB
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = HEF
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = HMS
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = HSW
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = HWG
+					transfer_troops = yes
+				}
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = CUL
+							is_core_of = HEB
+							is_core_of = HEF
+							is_core_of = HMS
+							is_core_of = HSW
+							is_core_of = HWG
 						}
 					}
-					hidden_effect={
-						remove_core_of=CUL
-						remove_core_of=HEB
-						remove_core_of=HEF
-						remove_core_of=HMS
-						remove_core_of=HSW
-						remove_core_of=HWG
+					hidden_effect = {
+						remove_core_of = CUL
+						remove_core_of = HEB
+						remove_core_of = HEF
+						remove_core_of = HMS
+						remove_core_of = HSW
+						remove_core_of = HWG
 					}
-					add_core_of=ROOT
+					add_core_of = ROOT
 				}
 			}
-			if={
-				limit={original_tag=CUL}
-				set_cosmetic_tag=CUL_EQS
+			if = {
+				limit = {original_tag = CUL}
+				set_cosmetic_tag = CUL_EQS
 			}
-			if={
-				limit={original_tag=HEB}
-				set_cosmetic_tag=HEB_EQS
+			if = {
+				limit = {original_tag = HEB}
+				set_cosmetic_tag = HEB_EQS
 			}
-			if={
-				limit={original_tag=HEF}
-				set_cosmetic_tag=HEF_EQS
+			if = {
+				limit = {original_tag = HEF}
+				set_cosmetic_tag = HEF_EQS
 			}
-			if={
-				limit={original_tag=HMS}
-				set_cosmetic_tag=HMS_EQS
+			if = {
+				limit = {original_tag = HMS}
+				set_cosmetic_tag = HMS_EQS
 			}
-			if={
-				limit={original_tag=HSW}
-				set_cosmetic_tag=HSW_EQS
+			if = {
+				limit = {original_tag = HSW}
+				set_cosmetic_tag = HSW_EQS
 			}
-			if={
-				limit={original_tag=HWG}
-				set_cosmetic_tag=HWG_EQS
+			if = {
+				limit = {original_tag = HWG}
+				set_cosmetic_tag = HWG_EQS
 			}
-			custom_effect_tooltip=EQD_S269_effect_tooltip_2
-			set_global_flag=EDR_equestria_reunified
-			set_country_flag=EDR_equestrian_minors_reunification
+			custom_effect_tooltip = EQD_S269_effect_tooltip_2
+			set_global_flag = EDR_equestria_reunified
+			set_country_flag = EDR_equestrian_minors_reunification
 		}
 	}
-	shared_focus={	#Reunification
-		id=EQD_S270 #icon=
-		x=0 y=1 cost=10	relative_position_id=EQD_S269
-		prerequisite={focus=EQD_S269}
-		search_filters={}
-		ai_will_do={factor=160}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EQD_S270"
+	shared_focus = {	#Reunification
+		id = EQD_S270
+		#icon = 
+		x = 0	y = 1	cost = 10	relative_position_id = EQD_S269
+		prerequisite = {focus = EQD_S269}
+		search_filters = {}
+		ai_will_do = {factor = 160}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQD_S270"
 		}
 	}

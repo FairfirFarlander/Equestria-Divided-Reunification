@@ -1,170 +1,253 @@
-ideas={
-	country={
-		EDR_polar_sympathies={
-			allowed={always=no}
-			#picture
-			removal_cost=-1
-			modifier={
-				fascism_drift=0.05
-				communism_drift=0.05
+ideas = {
+	country = {
+		EDR_alicorn_doubt = {
+			modifier = {
+				fascism_drift = 0.05
+				communism_drift = 0.05
 			}
 		}
-		EDR_sovereign_sympathies={
-			allowed={always=no}
-			#picture
-			removal_cost=-1
-			modifier={
-				fascism_drift=0.05
-				neutrality_drift=0.05
+		EDR_sovereignty = {
+			modifier = {
+				fascism_drift = 0.05
+				neutrality_drift = 0.05
 			}
 		}
-		EDR_harmonic_sympathies={
-			allowed={always=no}
-			#picture
-			removal_cost=-1
-			modifier={
-				neutrality_drift=0.05
-				democratic_drift=0.05
+		EDR_hope = {
+			modifier = {
+				neutrality_drift = 0.05
+				democratic_drift = 0.05
 			}
 		}
-		EDR_temp_arty_bonus={
-			allowed={always=no}
-			available={not={has_tech=pre_gw_artillery}}
-			#picture=
-			removal_cost=-1
-			research_bonus={
-				artillery=0.55
+		EDR_temp_arty_bonus = {
+			available = {
+				not = { has_tech = pre_gw_artillery }
+			}
+			research_bonus = {
+				artillery = 0.55
 			}
 		}
-		EDR_temp_inftry_bonus={
-			allowed={always=no}
-			available={not={has_tech=infantry_weapons}}
-			#picture=
-			removal_cost=-1
-			research_bonus={
-				infantry_weapons=0.55
+		EDR_temp_inftry_bonus = {
+			available = {
+				not = {
+					has_tech = infantry_weapons
+				}
+			}
+			research_bonus = {
+				infantry_weapons = 0.55
 			}
 		}
-		EDR_army_command={
-			allowed={always=no}
-			#picture=
-			removal_cost=-1
-			modifier={
-				experience_gain_army=0.02
+		EDR_army_command = {
+			modifier = {
+				experience_gain_army = 0.02
 			}
-			research_bonus={
-				land_doctrine=0.07
+			research_bonus = {
+				land_doctrine = 0.07
 			}
 		}
-		EDR_navy_command={
-			allowed={always=no}
-			#picture=
-			removal_cost=-1
-			modifier={
-				experience_gain_navy=0.02
+		EDR_navy_command = {
+			modifier = {
+				experience_gain_navy = 0.02
 			}
-			research_bonus={
-				naval_equipment=0.03
-				naval_doctrine=0.07
+			research_bonus = {
+				naval_equipment = 0.03
+				naval_doctrine = 0.07
 			}
 		}
-		EDR_airforce_command={
-			allowed={always=no}
-			#picture=
-			removal_cost=-1
-			modifier={
-				experience_gain_air=0.02
+		EDR_airforce_command = {
+			modifier = {
+				experience_gain_air = 0.02
 			}
-			research_bonus={
-				air_equipment=0.03
-				air_doctrine=0.07
+			research_bonus = {
+				air_equipment = 0.03
+				air_doctrine = 0.07
 			}
 		}
-		EDR_supremacy_populism={
-			allowed={always=no}
-			#picture=
-			removal_cost=-1
-			modifier={
-				fascism_drift=0.1
-				conscription_factor=0.05
+		EDR_supremacy_populism = {
+			modifier = {
+				fascism_drift = 0.1
+				conscription_factor = 0.05
 			}
 		}
-		moonstar_influence0={	#Moonstar Influence STARTS
-			allowed={always=no}
-			picture=HMS_idea
-			removal_cost=-1
-			on_add={
-				ROOT={add_opinion_modifier={target=HMS modifier=moonstar_opinion0}}
-				HMS={add_opinion_modifier={target=ROOT modifier=moonstar_opinion0}}
+		moonstar_influence0 = {	#Moonstar Influence STARTS
+			picture = HMS_idea
+			on_add = {
+				ROOT = {
+					add_opinion_modifier = {
+						modifier = moonstar_opinion0
+						target = HMS
+					}
+				}
+				HMS = {
+					add_opinion_modifier = {
+						modifier = moonstar_opinion0
+						target = ROOT
+					}
+				}
 			}
-			on_remove={
-				ROOT={remove_opinion_modifier={target=HMS modifier=moonstar_opinion0}}
-				HMS={remove_opinion_modifier={target=ROOT modifier=moonstar_opinion0}}
-			}
-		}
-		moonstar_influence1={
-			allowed={always=no}
-			picture=HMS_idea
-			removal_cost=-1
-			on_add={
-				ROOT={add_opinion_modifier={target=HMS modifier=moonstar_opinion1}}
-				HMS={add_opinion_modifier={target=ROOT modifier=moonstar_opinion1}}
-			}
-			on_remove={
-				ROOT={remove_opinion_modifier={target=HMS modifier=moonstar_opinion1}}
-				HMS={remove_opinion_modifier={target=ROOT modifier=moonstar_opinion1}}
-			}
-		}
-		moonstar_influence2={
-			allowed={always=no}
-			picture=HMS_idea
-			removal_cost=-1
-			on_add={
-				ROOT={add_opinion_modifier={target=HMS modifier=moonstar_opinion2}}
-				HMS={add_opinion_modifier={target=ROOT modifier=moonstar_opinion2}}
-			}
-			on_remove={
-				ROOT={remove_opinion_modifier={target=HMS modifier=moonstar_opinion2}}
-				HMS={remove_opinion_modifier={target=ROOT modifier=moonstar_opinion2}}
+			on_remove = {
+				ROOT = {
+					remove_opinion_modifier = {
+						modifier = moonstar_opinion0
+						target = HMS
+					}
+				}
+				HMS = {
+					remove_opinion_modifier = {
+						modifier = moonstar_opinion0
+						target = ROOT
+					}
+				}
 			}
 		}
-		moonstar_influence3={
-			allowed={always=no}
-			picture=HMS_idea
-			removal_cost=-1
-			on_add={
-				ROOT={add_opinion_modifier={target=HMS modifier=moonstar_opinion3}}
-				HMS={add_opinion_modifier={target=ROOT modifier=moonstar_opinion3}}
+		moonstar_influence1 = {
+			picture = HMS_idea
+			on_add = {
+				ROOT = {
+					add_opinion_modifier = {
+						modifier = moonstar_opinion1
+						target = HMS
+					}
+				}
+				HMS = {
+					add_opinion_modifier = {
+						modifier = moonstar_opinion1
+						target = ROOT
+					}
+				}
 			}
-			on_remove={
-				ROOT={remove_opinion_modifier={target=HMS modifier=moonstar_opinion3}}
-				HMS={remove_opinion_modifier={target=ROOT modifier=moonstar_opinion3}}
+			on_remove = {
+				ROOT = {
+					remove_opinion_modifier = {
+						modifier = moonstar_opinion1
+						target = HMS
+					}
+				}
+				HMS = {
+					remove_opinion_modifier = {
+						modifier = moonstar_opinion1
+						target = ROOT
+					}
+				}
 			}
 		}
-		moonstar_influence4={
-			allowed={always=no}
-			picture=HMS_idea
-			removal_cost=-1
-			on_add={
-				ROOT={add_opinion_modifier={target=HMS modifier=moonstar_opinion4}}
-				HMS={add_opinion_modifier={target=ROOT modifier=moonstar_opinion4}}
+		moonstar_influence2 = {
+			picture = HMS_ideaon_add = {
+				ROOT = {
+					add_opinion_modifier = {
+						modifier = moonstar_opinion2
+						target = HMS
+					}
+				}
+				HMS = {
+					add_opinion_modifier = {
+						modifier = moonstar_opinion2
+						target = ROOT
+					}
+				}
 			}
-			on_remove={
-				ROOT={remove_opinion_modifier={target=HMS modifier=moonstar_opinion4}}
-				HMS={remove_opinion_modifier={target=ROOT modifier=moonstar_opinion4}}
+			on_remove = {
+				ROOT = {
+					remove_opinion_modifier = {
+						modifier = moonstar_opinion2
+						target = HMS
+					}
+				}
+				HMS = {
+					remove_opinion_modifier = {
+						modifier = moonstar_opinion2
+						target = ROOT
+					}
+				}
 			}
 		}
-		moonstar_influence5={
-			allowed={always=no}
-			picture=HMS_idea
-			removal_cost=-1
-			on_add={
-				ROOT={add_opinion_modifier={target=HMS modifier=moonstar_opinion5}}
-				HMS={add_opinion_modifier={target=ROOT modifier=moonstar_opinion5}}
+		moonstar_influence3 = {
+			picture = HMS_ideaon_add = {
+				ROOT = {
+					add_opinion_modifier = {
+						modifier = moonstar_opinion3
+						target = HMS
+					}
+				}
+				HMS = {
+					add_opinion_modifier = {
+						modifier = moonstar_opinion3
+						target = ROOT
+					}
+				}
 			}
-			on_remove={
-				ROOT={remove_opinion_modifier={target=HMS modifier=moonstar_opinion5}}
-				HMS={remove_opinion_modifier={target=ROOT modifier=moonstar_opinion5}}
+			on_remove = {
+				ROOT = {
+					remove_opinion_modifier = {
+						modifier = moonstar_opinion3
+						target = HMS
+					}
+				}
+				HMS = {
+					remove_opinion_modifier = {
+						modifier = moonstar_opinion3
+						target = ROOT
+					}
+				}
+			}
+		}
+		moonstar_influence4 = {
+			picture = HMS_ideaon_add = {
+				ROOT = {
+					add_opinion_modifier = {
+						modifier = moonstar_opinion4
+						target = HMS
+					}
+				}
+				HMS = {
+					add_opinion_modifier = {
+						modifier = moonstar_opinion4
+						target = ROOT
+					}
+				}
+			}
+			on_remove = {
+				ROOT = {
+					remove_opinion_modifier = {
+						modifier = moonstar_opinion4
+						target = HMS
+					}
+				}
+				HMS = {
+					remove_opinion_modifier = {
+						modifier = moonstar_opinion4
+						target = ROOT
+					}
+				}
+			}
+		}
+		moonstar_influence5 = {
+			picture = HMS_ideaon_add = {
+				ROOT = {
+					add_opinion_modifier = {
+						modifier = moonstar_opinion5
+						target = HMS
+					}
+				}
+				HMS = {
+					add_opinion_modifier = {
+						modifier = moonstar_opinion5
+						target = ROOT
+					}
+				}
+			}
+			on_remove = {
+				ROOT = {
+					remove_opinion_modifier = {
+						modifier = moonstar_opinion5
+						target = HMS
+					}
+				}
+				HMS = {
+					remove_opinion_modifier = {
+						modifier = moonstar_opinion5
+						target = ROOT
+					}
+				}
 			}
 		}	#Moonstar Influence ENDS
 	}

@@ -1,17 +1,17 @@
-focus_tree={
-	id=JTL country={factor=0 modifier={add=3 tag=JTL}}
-	continuous_focus_position={x=3750 y=-400}
-	shared_focus=JUN_decleration
-	shared_focus=JUN_army_debate
-	shared_focus=JUN_aztlan_airforce
-	shared_focus=JUN_aztlan_navy
-	shared_focus=JUN_the_three_regions
-	shared_focus=JUN_the_political_situation
-	shared_focus=TEM_the_uprising
-	shared_focus=TEM_sacrifice_berry
-	#shared_focus=EDR_I00
-	#shared_focus=EDR_L05
-	#shared_focus=EDR_N05
-	#shared_focus=EDR_A05
-	shared_focus=JTL_S00
+focus_tree = {
+	id = JTL country = {factor = 0 modifier = {add = 3 tag = JTL}}
+	continuous_focus_position = {x = 3750 y = -400}
+	shared_focus = JUN_decleration
+	shared_focus = JUN_army_debate
+	shared_focus = JUN_aztlan_airforce
+	shared_focus = JUN_aztlan_navy
+	shared_focus = JUN_the_three_regions
+	shared_focus = JUN_the_political_situation
+	shared_focus = TEM_the_uprising
+	shared_focus = TEM_sacrifice_berry
+	#shared_focus = EDR_I00
+	#shared_focus = EDR_L05
+	#shared_focus = EDR_N05
+	#shared_focus = EDR_A05
+	shared_focus = JTL_S00
 }

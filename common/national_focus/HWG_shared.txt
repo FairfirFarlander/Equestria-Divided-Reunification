@@ -1,387 +1,387 @@
-	shared_focus={		#Time for Action
-		id=HWG_the_war icon=GFX_goal_generic_demand_territory
-		x=8 y=0 cost=2 ai_will_do={factor=40}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HWG_the_war"
-			add_political_power=250
+	shared_focus = {	#Time for Action
+		id = HWG_the_war icon = GFX_goal_generic_demand_territory
+		x = 8 y = 0 cost = 2 ai_will_do = {factor = 40}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HWG_the_war"
+			add_political_power = 250
 		}
 	}
-	shared_focus={		#Make a Speech Against Tyranny
-		id=HWG_fully_mobolize_our_nation icon=GFX_goal_generic_small_arms
-		relative_position_id=HWG_the_war
-		x=-2 y=1 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=HWG_the_war}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HWG_fully_mobolize_our_nation"
-			add_manpower=2000000
+	shared_focus = {	#Make a Speech Against Tyranny
+		id = HWG_fully_mobolize_our_nation icon = GFX_goal_generic_small_arms
+		relative_position_id = HWG_the_war
+		x = -2 y = 1 cost = 7 ai_will_do = {factor = 40}
+		prerequisite = {focus = HWG_the_war}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HWG_fully_mobolize_our_nation"
+			add_manpower = 2000000
 		}
 	}
-	shared_focus={		#More Goods Equal More Work
-		id=HWG_more_industry icon=GFX_goal_generic_construct_civ_factory
-		relative_position_id=HWG_the_war
-		x=0 y=1 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=HWG_the_war}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HWG_more_industry"
-			three_random_industrial_complex=yes
-			two_random_industrial_complex=yes
+	shared_focus = {	#More Goods Equal More Work
+		id = HWG_more_industry icon = GFX_goal_generic_construct_civ_factory
+		relative_position_id = HWG_the_war
+		x = 0 y = 1 cost = 7 ai_will_do = {factor = 40}
+		prerequisite = {focus = HWG_the_war}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HWG_more_industry"
+			three_random_industrial_complex = yes
+			two_random_industrial_complex = yes
 		}
 	}
-	shared_focus={		#Invest in Arms Factories
-		id=HWG_more_weapons icon=GFX_goal_generic_construct_mil_factory
-		relative_position_id=HWG_the_war
-		x=2 y=1 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=HWG_the_war}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HWG_more_weapons"
-			three_random_arms_factory=yes
-			two_random_arms_factory=yes
+	shared_focus = {	#Invest in Arms Factories
+		id = HWG_more_weapons icon = GFX_goal_generic_construct_mil_factory
+		relative_position_id = HWG_the_war
+		x = 2 y = 1 cost = 7 ai_will_do = {factor = 40}
+		prerequisite = {focus = HWG_the_war}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HWG_more_weapons"
+			three_random_arms_factory = yes
+			two_random_arms_factory = yes
 		}
 	}
-	shared_focus={		#Calm Before The Storm
-		id=HWG_calm_before_the_storm icon=GFX_goal_generic_alliance
-		relative_position_id=HWG_the_war
-		x=0 y=2 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=HWG_fully_mobolize_our_nation}
-		prerequisite={focus=HWG_more_industry}
-		prerequisite={focus=HWG_more_weapons}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HWG_calm_before_the_storm"
-			add_war_support=0.25
+	shared_focus = {	#Calm Before The Storm
+		id = HWG_calm_before_the_storm icon = GFX_goal_generic_alliance
+		relative_position_id = HWG_the_war
+		x = 0 y = 2 cost = 7 ai_will_do = {factor = 40}
+		prerequisite = {focus = HWG_fully_mobolize_our_nation}
+		prerequisite = {focus = HWG_more_industry}
+		prerequisite = {focus = HWG_more_weapons}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HWG_calm_before_the_storm"
+			add_war_support = 0.25
 		}
 	}
-	shared_focus={		#Civilising the Forest
-		id=HWG_war_to_everfree icon=GFX_goal_generic_major_war
-		relative_position_id=HWG_calm_before_the_storm
-		x=-2 y=1 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=HWG_calm_before_the_storm}
-		available={any_neighbor_country={tag=HEF}}
-		bypass={
-			HEF={OR={
-				exists=no
-				has_war_with=ROOT
-				is_subject_of=ROOT
+	shared_focus = {	#Civilising the Forest
+		id = HWG_war_to_everfree icon = GFX_goal_generic_major_war
+		relative_position_id = HWG_calm_before_the_storm
+		x = -2 y = 1 cost = 7 ai_will_do = {factor = 40}
+		prerequisite = {focus = HWG_calm_before_the_storm}
+		available = {any_neighbor_country = {tag = HEF}}
+		bypass = {
+			HEF = {OR = {
+				exists = no
+				has_war_with = ROOT
+				is_subject_of = ROOT
 			}}
 		}
-		will_lead_to_war_with=HEF
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HWG_war_to_everfree"
-			every_state={limit={is_core_of=HEF}add_claim_by=HWG}
-			create_wargoal={type=annex_everything target=HEF}
+		will_lead_to_war_with = HEF
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HWG_war_to_everfree"
+			every_state = {limit = {is_core_of = HEF}add_claim_by = HWG}
+			create_wargoal = {type = annex_everything target = HEF}
 		}
 	}
-	shared_focus={		#Break the Horn
-		id=HWG_war_to_canterlot icon=GFX_goal_generic_major_war
-		relative_position_id=HWG_calm_before_the_storm
-		x=0 y=1 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=HWG_calm_before_the_storm}
-		available={any_neighbor_country={tag=HMS}}
-		bypass={
-			HMS={OR={
-				exists=no
-				has_war_with=ROOT
-				is_subject_of=ROOT
+	shared_focus = {	#Break the Horn
+		id = HWG_war_to_canterlot icon = GFX_goal_generic_major_war
+		relative_position_id = HWG_calm_before_the_storm
+		x = 0 y = 1 cost = 7 ai_will_do = {factor = 40}
+		prerequisite = {focus = HWG_calm_before_the_storm}
+		available = {any_neighbor_country = {tag = HMS}}
+		bypass = {
+			HMS = {OR = {
+				exists = no
+				has_war_with = ROOT
+				is_subject_of = ROOT
 			}}
 		}
-		will_lead_to_war_with=HMS
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HWG_war_to_canterlot"
-			every_state={limit={is_core_of=HMS}add_claim_by=HWG}
-			create_wargoal={type=annex_everything target=HMS}
+		will_lead_to_war_with = HMS
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HWG_war_to_canterlot"
+			every_state = {limit = {is_core_of = HMS}add_claim_by = HWG}
+			create_wargoal = {type = annex_everything target = HMS}
 		}
 	}
-	shared_focus={		#Bring Capitalism to the North
-		id=HWG_war_against_stalliongrad icon=GFX_goal_generic_major_war
-		relative_position_id=HWG_calm_before_the_storm
-		x=2 y=1 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=HWG_calm_before_the_storm}
-		available={any_neighbor_country={OR={tag=STL tag=STG}}}
-		bypass={
-			STG={OR={
-				exists=no
-				has_war_with=ROOT
-				is_subject_of=ROOT
+	shared_focus = {	#Bring Capitalism to the North
+		id = HWG_war_against_stalliongrad icon = GFX_goal_generic_major_war
+		relative_position_id = HWG_calm_before_the_storm
+		x = 2 y = 1 cost = 7 ai_will_do = {factor = 40}
+		prerequisite = {focus = HWG_calm_before_the_storm}
+		available = {any_neighbor_country = {OR = {tag = STL tag = STG}}}
+		bypass = {
+			STG = {OR = {
+				exists = no
+				has_war_with = ROOT
+				is_subject_of = ROOT
 			}}
-			STL={OR={
-				exists=no
-				has_war_with=ROOT
-				is_subject_of=ROOT
+			STL = {OR = {
+				exists = no
+				has_war_with = ROOT
+				is_subject_of = ROOT
 			}}
 		}
-		will_lead_to_war_with=STG
-		will_lead_to_war_with=STL
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HWG_war_against_stalliongrad"
-			every_state={limit={is_core_of=STG}add_claim_by=HWG}every_state={limit={is_core_of=STL}add_claim_by=HWG}
-			create_wargoal={type=annex_everything target=STG}
-			create_wargoal={type=annex_everything target=STL}
+		will_lead_to_war_with = STG
+		will_lead_to_war_with = STL
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HWG_war_against_stalliongrad"
+			every_state = {limit = {is_core_of = STG}add_claim_by = HWG}every_state = {limit = {is_core_of = STL}add_claim_by = HWG}
+			create_wargoal = {type = annex_everything target = STG}
+			create_wargoal = {type = annex_everything target = STL}
 		}
 	}
-	shared_focus={		#Taking Back What Belong to Us
-		id=HWG_retake_new_mareland icon=GFX_goal_generic_major_war
-		relative_position_id=HWG_calm_before_the_storm
-		x=-3 y=2 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=HWG_war_to_everfree}
-		available={
-			has_war=no
-			OR={
-				owns_state=7
-				VII={OR={
-					exists=no
-					is_subject_of=ROOT
-					is_in_faction_with=ROOT
+	shared_focus = {	#Taking Back What Belong to Us
+		id = HWG_retake_new_mareland icon = GFX_goal_generic_major_war
+		relative_position_id = HWG_calm_before_the_storm
+		x = -3 y = 2 cost = 7 ai_will_do = {factor = 40}
+		prerequisite = {focus = HWG_war_to_everfree}
+		available = {
+			has_war = no
+			OR = {
+				owns_state = 7
+				VII = {OR = {
+					exists = no
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
 				}}
 			}
 		}
-		bypass={
-			EQC={OR={
-				exists=no
-				has_war_with=ROOT
-				is_subject_of=ROOT
+		bypass = {
+			EQC = {OR = {
+				exists = no
+				has_war_with = ROOT
+				is_subject_of = ROOT
 			}}
 		}
-		will_lead_to_war_with=EQC
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HWG_retake_new_mareland"
-			every_state={limit={is_core_of=EQC}add_claim_by=HWG}
-			create_wargoal={type=annex_everything target=EQC}
+		will_lead_to_war_with = EQC
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HWG_retake_new_mareland"
+			every_state = {limit = {is_core_of = EQC}add_claim_by = HWG}
+			create_wargoal = {type = annex_everything target = EQC}
 		}
 	}
-	shared_focus={		#Assert Ownership Over the Clouds
-		id=HWG_war_to_cloudsdale icon=GFX_goal_generic_major_war
-		relative_position_id=HWG_calm_before_the_storm
-		x=-1 y=2 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=HWG_war_to_canterlot}
-		available={any_neighbor_country={tag=HSW}}
-		bypass={
-			HSW={OR={
-				exists=no
-				has_war_with=ROOT
-				is_subject_of=ROOT
+	shared_focus = {	#Assert Ownership Over the Clouds
+		id = HWG_war_to_cloudsdale icon = GFX_goal_generic_major_war
+		relative_position_id = HWG_calm_before_the_storm
+		x = -1 y = 2 cost = 7 ai_will_do = {factor = 40}
+		prerequisite = {focus = HWG_war_to_canterlot}
+		available = {any_neighbor_country = {tag = HSW}}
+		bypass = {
+			HSW = {OR = {
+				exists = no
+				has_war_with = ROOT
+				is_subject_of = ROOT
 			}}
 		}
-		will_lead_to_war_with=HSW
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HWG_war_to_cloudsdale"
-			every_state={limit={is_core_of=HSW}add_claim_by=HWG}
-			create_wargoal={type=annex_everything target=HSW}
+		will_lead_to_war_with = HSW
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HWG_war_to_cloudsdale"
+			every_state = {limit = {is_core_of = HSW}add_claim_by = HWG}
+			create_wargoal = {type = annex_everything target = HSW}
 		}
 	}
-	shared_focus={		#War Against Sombra's Tyrany
-		id=HWG_war_against_the_crystal_empire icon=GFX_goal_generic_major_war
-		relative_position_id=HWG_calm_before_the_storm
-		x=1 y=2 cost=7 ai_will_do={factor=40}
-		prerequisite={
-			focus=HWG_war_to_canterlot
-			focus=HWG_war_against_stalliongrad
+	shared_focus = {	#War Against Sombra's Tyrany
+		id = HWG_war_against_the_crystal_empire icon = GFX_goal_generic_major_war
+		relative_position_id = HWG_calm_before_the_storm
+		x = 1 y = 2 cost = 7 ai_will_do = {factor = 40}
+		prerequisite = {
+			focus = HWG_war_to_canterlot
+			focus = HWG_war_against_stalliongrad
 		}
-		available={any_neighbor_country={tag=CRY}}
-		bypass={
-			CRY={OR={
-				exists=no
-				has_war_with=ROOT
-				is_subject_of=ROOT
+		available = {any_neighbor_country = {tag = CRY}}
+		bypass = {
+			CRY = {OR = {
+				exists = no
+				has_war_with = ROOT
+				is_subject_of = ROOT
 			}}
 		}
-		will_lead_to_war_with=CRY
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HWG_war_against_the_crystal_empire"
-			every_state={limit={is_core_of=CRY}add_claim_by=HWG}
-			create_wargoal={type=annex_everything target=CRY}
+		will_lead_to_war_with = CRY
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HWG_war_against_the_crystal_empire"
+			every_state = {limit = {is_core_of = CRY}add_claim_by = HWG}
+			create_wargoal = {type = annex_everything target = CRY}
 		}
 	}
-	shared_focus={		#Destroy the Power of Money
-		id=HWG_war_to_manehattan icon=GFX_goal_generic_major_war
-		relative_position_id=HWG_calm_before_the_storm
-		x=3 y=2 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=HWG_war_against_stalliongrad}
-		available={any_neighbor_country={tag=HWG}}
-		bypass={
-			HWG={OR={
-				exists=no
-				has_war_with=ROOT
-				is_subject_of=ROOT
+	shared_focus = {	#Destroy the Power of Money
+		id = HWG_war_to_manehattan icon = GFX_goal_generic_major_war
+		relative_position_id = HWG_calm_before_the_storm
+		x = 3 y = 2 cost = 7 ai_will_do = {factor = 40}
+		prerequisite = {focus = HWG_war_against_stalliongrad}
+		available = {any_neighbor_country = {tag = HWG}}
+		bypass = {
+			HWG = {OR = {
+				exists = no
+				has_war_with = ROOT
+				is_subject_of = ROOT
 			}}
 		}
-		will_lead_to_war_with=HWG
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HWG_war_to_manehattan"
-			#every_state={limit={is_core_of=HWG}add_claim_by=HWG}
-			#create_wargoal={type=annex_everything target=HWG}
+		will_lead_to_war_with = HWG
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HWG_war_to_manehattan"
+			#every_state = {limit = {is_core_of = HWG}add_claim_by = HWG}
+			#create_wargoal = {type = annex_everything target = HWG}
 		}
 	}	
-	shared_focus={		#Destroy Business Competitors
-		id=HWG_war_to_appleloosa icon=GFX_goal_generic_major_war
-		relative_position_id=HWG_calm_before_the_storm
-		x=-2 y=3 cost=7 ai_will_do={factor=40}
-		prerequisite={
-			focus=HWG_war_to_everfree
-			focus=HWG_war_to_cloudsdale
+	shared_focus = {	#Destroy Business Competitors
+		id = HWG_war_to_appleloosa icon = GFX_goal_generic_major_war
+		relative_position_id = HWG_calm_before_the_storm
+		x = -2 y = 3 cost = 7 ai_will_do = {factor = 40}
+		prerequisite = {
+			focus = HWG_war_to_everfree
+			focus = HWG_war_to_cloudsdale
 		}
-		available={any_neighbor_country={tag=HEB}}
-		bypass={
-			HEB={OR={
-				exists=no
-				has_war_with=ROOT
-				is_subject_of=ROOT
+		available = {any_neighbor_country = {tag = HEB}}
+		bypass = {
+			HEB = {OR = {
+				exists = no
+				has_war_with = ROOT
+				is_subject_of = ROOT
 			}}
 		}
-		will_lead_to_war_with=HEB
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HWG_war_to_appleloosa"
-			every_state={limit={is_core_of=HEB}add_claim_by=HWG}
-			create_wargoal={type=annex_everything target=HEB}
+		will_lead_to_war_with = HEB
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HWG_war_to_appleloosa"
+			every_state = {limit = {is_core_of = HEB}add_claim_by = HWG}
+			create_wargoal = {type = annex_everything target = HEB}
 		}
 	}
-	shared_focus={		#Burn What We Cannot Bribe!
-		id=HWG_war_against_laughter icon=GFX_goal_generic_major_war
-		relative_position_id=HWG_calm_before_the_storm
-		x=0 y=3 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=HWG_war_to_canterlot}
-		prerequisite={focus=HWG_war_to_everfree}
-		available={
-			HMS={exists=no}
-			HEF={exists=no}
+	shared_focus = {	#Burn What We Cannot Bribe!
+		id = HWG_war_against_laughter icon = GFX_goal_generic_major_war
+		relative_position_id = HWG_calm_before_the_storm
+		x = 0 y = 3 cost = 7 ai_will_do = {factor = 40}
+		prerequisite = {focus = HWG_war_to_canterlot}
+		prerequisite = {focus = HWG_war_to_everfree}
+		available = {
+			HMS = {exists = no}
+			HEF = {exists = no}
 		}
-		bypass={CUL={exists=no}}
-		will_lead_to_war_with=CUL
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HWG_war_against_laughter"
-			every_state={limit={is_core_of=CUL}add_claim_by=HWG}
-			create_wargoal={type=annex_everything target=CUL}
+		bypass = {CUL = {exists = no}}
+		will_lead_to_war_with = CUL
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HWG_war_against_laughter"
+			every_state = {limit = {is_core_of = CUL}add_claim_by = HWG}
+			create_wargoal = {type = annex_everything target = CUL}
 		}
 	}
-	shared_focus={		#Assert Control Over the Crystal Dominion
-		id=HWG_assert_control_over_the_crystal_dominion icon=GFX_goal_generic_forceful_treaty
-		relative_position_id=HWG_calm_before_the_storm
-		x=2 y=3 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=HWG_war_against_the_crystal_empire}
-		available={AND={
-			CRY={OR={
-				exists=no
-				is_subject_of=ROOT
+	shared_focus = {	#Assert Control Over the Crystal Dominion
+		id = HWG_assert_control_over_the_crystal_dominion icon = GFX_goal_generic_forceful_treaty
+		relative_position_id = HWG_calm_before_the_storm
+		x = 2 y = 3 cost = 7 ai_will_do = {factor = 40}
+		prerequisite = {focus = HWG_war_against_the_crystal_empire}
+		available = {AND = {
+			CRY = {OR = {
+				exists = no
+				is_subject_of = ROOT
 			}}
-			HSW={exists=no}
-			HMS={exists=no}
-			HEF={exists=no}
-			HWG={exists=no}
-			CUL={exists=no}
+			HSW = {exists = no}
+			HMS = {exists = no}
+			HEF = {exists = no}
+			HWG = {exists = no}
+			CUL = {exists = no}
 		}}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HWG_assert_control_over_the_crystal_dominion"
-			every_state={limit={is_core_of=CRY}add_claim_by=HWG}
-			create_wargoal={type=annex_everything target=CRY}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HWG_assert_control_over_the_crystal_dominion"
+			every_state = {limit = {is_core_of = CRY}add_claim_by = HWG}
+			create_wargoal = {type = annex_everything target = CRY}
 		}
 	}
-	shared_focus={		#Equestria Reunited
-		id=HWG_equestria_reunited icon=GFX_goal_generic_attack_allies
-		relative_position_id=HWG_calm_before_the_storm
-		x=0 y=4 cost=4 ai_will_do={factor=40}
-		prerequisite={focus=HWG_war_against_laughter}
-		available={
-			owns_state=3
-			owns_state=5
-			owns_state=21
-			owns_state=75
-			owns_state=68
-			owns_state=70
-			owns_state=344
-			owns_state=153
-			HEF={exists=no}
-			HMS={exists=no}
-			HSW={exists=no}
-			HEB={exists=no}
-			CUL={exists=no}
-			CRY={OR={
-				exists=no
-				is_subject_of=ROOT
+	shared_focus = {	#Equestria Reunited
+		id = HWG_equestria_reunited icon = GFX_goal_generic_attack_allies
+		relative_position_id = HWG_calm_before_the_storm
+		x = 0 y = 4 cost = 4 ai_will_do = {factor = 40}
+		prerequisite = {focus = HWG_war_against_laughter}
+		available = {
+			owns_state = 3
+			owns_state = 5
+			owns_state = 21
+			owns_state = 75
+			owns_state = 68
+			owns_state = 70
+			owns_state = 344
+			owns_state = 153
+			HEF = {exists = no}
+			HMS = {exists = no}
+			HSW = {exists = no}
+			HEB = {exists = no}
+			CUL = {exists = no}
+			CRY = {OR = {
+				exists = no
+				is_subject_of = ROOT
 			}}
-			STG={OR={
-				exists=no
-				is_subject_of=ROOT
+			STG = {OR = {
+				exists = no
+				is_subject_of = ROOT
 			}}
-			STL={OR={
-				exists=no
-				is_subject_of=ROOT
+			STL = {OR = {
+				exists = no
+				is_subject_of = ROOT
 			}}
 		}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HWG_equestria_reunited"
-			create_faction=Equestrian_Hegemony
-			set_cosmetic_tag=EARTHB
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HWG_equestria_reunited"
+			create_faction = Equestrian_Hegemony
+			set_cosmetic_tag = EARTHB
 		}
 	}
-	shared_focus={		#Take Care of the Changeling Threat
-		id=HWG_take_care_of_the_changeling_threat icon=GFX_goal_generic_CAS
-		relative_position_id=HWG_equestria_reunited
-		x=-3 y=1 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=HWG_equestria_reunited}
-		mutually_exclusive={focus=HWG_let_them_come}
-		available={any_neighbor_country={tag=CHN}}
-		bypass={
-			CHN={OR={
-				exists=no
-				has_war_with=ROOT
-				is_subject_of=ROOT
+	shared_focus = {	#Take Care of the Changeling Threat
+		id = HWG_take_care_of_the_changeling_threat icon = GFX_goal_generic_CAS
+		relative_position_id = HWG_equestria_reunited
+		x = -3 y = 1 cost = 7 ai_will_do = {factor = 40}
+		prerequisite = {focus = HWG_equestria_reunited}
+		mutually_exclusive = {focus = HWG_let_them_come}
+		available = {any_neighbor_country = {tag = CHN}}
+		bypass = {
+			CHN = {OR = {
+				exists = no
+				has_war_with = ROOT
+				is_subject_of = ROOT
 			}}
 		}
-		will_lead_to_war_with=CHN
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HWG_take_care_of_the_changeling_threat"
-			create_wargoal={type=annex_everything target=CHN}
+		will_lead_to_war_with = CHN
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HWG_take_care_of_the_changeling_threat"
+			create_wargoal = {type = annex_everything target = CHN}
 		}
 	}
-	shared_focus={		#Let Them Come
-		id=HWG_let_them_come icon=GFX_goal_generic_fortify_city
-		relative_position_id=HWG_equestria_reunited
-		x=-1 y=1 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=HWG_equestria_reunited}
-		mutually_exclusive={focus=HWG_take_care_of_the_changeling_threat}
-		available={any_neighbor_country={tag=CHN tag=CNN}}
-		bypass={
-			CHN={OR={
-				exists=no
-				is_subject_of=ROOT
-				is_in_faction_with=ROOT
+	shared_focus = {	#Let Them Come
+		id = HWG_let_them_come icon = GFX_goal_generic_fortify_city
+		relative_position_id = HWG_equestria_reunited
+		x = -1 y = 1 cost = 7 ai_will_do = {factor = 40}
+		prerequisite = {focus = HWG_equestria_reunited}
+		mutually_exclusive = {focus = HWG_take_care_of_the_changeling_threat}
+		available = {any_neighbor_country = {tag = CHN tag = CNN}}
+		bypass = {
+			CHN = {OR = {
+				exists = no
+				is_subject_of = ROOT
+				is_in_faction_with = ROOT
 			}}
-			CCN={OR={
-				exists=no
-				is_subject_of=ROOT
-				is_in_faction_with=ROOT
+			CCN = {OR = {
+				exists = no
+				is_subject_of = ROOT
+				is_in_faction_with = ROOT
 			}}
 		}
-		will_lead_to_war_with=CHN
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HWG_let_them_come"
-			add_ideas=deterrence
+		will_lead_to_war_with = CHN
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HWG_let_them_come"
+			add_ideas = deterrence
 		}
 	}
-	shared_focus={		#Focus for Retake control
-		id=HWG_retake_control icon=GFX_focus_hol_the_foundations_of_defense
-		relative_position_id=HWG_equestria_reunited
-		x=3 y=1 cost=7 ai_will_do={factor=40}
-		prerequisite={focus=HWG_equestria_reunited}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HWG_retake_control"
-			every_state={limit={is_core_of=HWG} add_core_of=HWG}
-			every_state={limit={is_core_of=HEF} add_core_of=HWG}
-			every_state={limit={is_core_of=HWG} add_core_of=HWG}
-			every_state={limit={is_core_of=HMS} add_core_of=HWG}
-			every_state={limit={is_core_of=HSW} add_core_of=HWG}
-			every_state={limit={is_core_of=CUL} add_core_of=HWG}
-			every_state={limit={is_core_of=STG} add_core_of=HWG}
-			every_state={limit={is_core_of=STL} add_core_of=HWG}
+	shared_focus = {	#Focus for Retake control
+		id = HWG_retake_control icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = HWG_equestria_reunited
+		x = 3 y = 1 cost = 7 ai_will_do = {factor = 40}
+		prerequisite = {focus = HWG_equestria_reunited}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HWG_retake_control"
+			every_state = {limit = {is_core_of = HWG} add_core_of = HWG}
+			every_state = {limit = {is_core_of = HEF} add_core_of = HWG}
+			every_state = {limit = {is_core_of = HWG} add_core_of = HWG}
+			every_state = {limit = {is_core_of = HMS} add_core_of = HWG}
+			every_state = {limit = {is_core_of = HSW} add_core_of = HWG}
+			every_state = {limit = {is_core_of = CUL} add_core_of = HWG}
+			every_state = {limit = {is_core_of = STG} add_core_of = HWG}
+			every_state = {limit = {is_core_of = STL} add_core_of = HWG}
 		}
 	}
-	shared_focus={		#Focus for Transform
-		id=HWG_modern_society icon=GFX_goal_generic_construct_civ_factory
-		relative_position_id=HWG_retake_control		#Temporarily
-		x=0 y=1 cost=1 ai_will_do={factor=40}
-		prerequisite={focus=HWG_retake_control}
-		bypass={has_idea=modern_society}
-		available={num_of_factories>40}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HWG_modern_society"
-			add_ideas=agrarian_society
+	shared_focus = {	#Focus for Transform
+		id = HWG_modern_society icon = GFX_goal_generic_construct_civ_factory
+		relative_position_id = HWG_retake_control		#Temporarily
+		x = 0 y = 1 cost = 1 ai_will_do = {factor = 40}
+		prerequisite = {focus = HWG_retake_control}
+		bypass = {has_idea = modern_society}
+		available = {num_of_factories>40}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HWG_modern_society"
+			add_ideas = agrarian_society
 		}
 	}

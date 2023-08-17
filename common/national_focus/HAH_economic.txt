@@ -1,196 +1,206 @@
 #Economic Tree
-	shared_focus={	#Rebuilding The Old Forest Roads
-		id=HAH_I00 icon=GFX_infrastructure_road
-		x=8 y=0 cost=5
-		offset={
-			x=8
-			trigger={
-				is_debug=yes
-				NOT={has_country_flag=EDR_show_less_focuses}
+	shared_focus = {	#Rebuilding The Old Forest Roads
+		id = HAH_I00 icon = GFX_infrastructure_road
+		x = 8 y = 0 cost = 5
+		offset = {
+			x = 8
+			trigger = {
+				is_debug = yes
+				NOT = {has_country_flag = EDR_show_less_focuses}
 			}
 		}
-		search_filters={FOCUS_FILTER_INDUSTRY}
-		ai_will_do={factor=40}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HAH_I00"
-			40={
-				add_extra_state_shared_building_slots=1
-				add_building_construction={
-					type=infrastructure
-					level=1 instant_build=yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		ai_will_do = {factor = 40}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HAH_I00"
+			40 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1 instant_build = yes
 				}
 			}
 		}
 	}
-	shared_focus={	#The Daily Rabble
-		id=HAH_I01A icon=GFX_goal_big_news
-		x=-2 y=1 cost=5 relative_position_id=HAH_I00
-		search_filters={FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}
-		prerequisite={focus=HAH_I00}
-		ai_will_do={factor=40}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HAH_I01A"
-			add_ideas=HAH_daily_rabble
+	shared_focus = {	#The Daily Rabble
+		id = HAH_I01A icon = GFX_goal_big_news
+		x = -2 y = 1 cost = 5
+		relative_position_id = HAH_I00
+		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}
+		prerequisite = {focus = HAH_I00}
+		ai_will_do = {factor = 40}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HAH_I01A"
+			add_ideas = HAH_daily_rabble
 			effect_tooltip = {
-				add_advisor_role={
-					character=HAH_word_spinner
-					advisor={
-						slot=political_advisor
-						idea_token=HAH_wspinner_advi
-						research_bonus={
-							race_tech=0.1
+				add_advisor_role = {
+					character = HAH_word_spinner
+					advisor = {
+						slot = political_advisor
+						idea_token = HAH_wspinner_advi
+						research_bonus = {
+							race_tech = 0.1
 						}
-						modifier={
-							research_speed_factor=0.05
+						modifier = {
+							research_speed_factor = 0.05
 						}
 					}
 				}
 			}
 		}
 	}
-	shared_focus={	#Our Own Little Train Station
-		id=HAH_I01B icon=GFX_goal_generic_railroad
-		x=0 y=1 cost=5 relative_position_id=HAH_I00
-		search_filters={FOCUS_FILTER_INDUSTRY}
-		prerequisite={focus=HAH_I00}
-		ai_will_do={factor=40}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HAH_I01B"
-			set_technology={basic_train=1}
-			add_equipment_to_stockpile={
-				type=train_equipment_1
-				amount=1
-				producer=EQS
+	shared_focus = {	#Our Own Little Train Station
+		id = HAH_I01B icon = GFX_goal_generic_railroad
+		x = 0 y = 1 cost = 5
+		relative_position_id = HAH_I00
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		prerequisite = {focus = HAH_I00}
+		ai_will_do = {factor = 40}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HAH_I01B"
+			set_technology = {basic_train = 1}
+			add_equipment_to_stockpile = {
+				type = train_equipment_1
+				amount = 1
+				producer = EQS
 			}
-			increase_society_development_gradually_with_tt=yes
+			increase_society_development_gradually_with_tt = yes
 		}
 	}
-	shared_focus={	#Factories, Factories, Factories!
-		id=HAH_I01C icon=GFX_goal_generic_lau_factory
-		x=2 y=1 cost=5 relative_position_id=HAH_I00
-		search_filters={FOCUS_FILTER_INDUSTRY}
-		prerequisite={focus=HAH_I00}
-		ai_will_do={factor=40}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HAH_I01C"
-			40={
-				add_extra_state_shared_building_slots=2
-				add_building_construction={
-					type=arms_factory
-					level=1 instant_build=yes
+	shared_focus = {	#Factories, Factories, Factories!
+		id = HAH_I01C icon = GFX_goal_generic_lau_factory
+		x = 2 y = 1 cost = 5
+		relative_position_id = HAH_I00
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		prerequisite = {focus = HAH_I00}
+		ai_will_do = {factor = 40}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HAH_I01C"
+			40 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1 instant_build = yes
 				}
-				add_building_construction={
-					type=industrial_complex
-					level=1 instant_build=yes
-				}
-			}
-			increase_society_development_gradually_with_tt=yes
-		}
-	}
-	shared_focus={	#The Pre-Division Radios
-		id=HAH_I02A icon=GFX_goal_generic_radio_equipment
-		x=0 y=1 cost=5 relative_position_id=HAH_I01A
-		search_filters={FOCUS_FILTER_RESEARCH}
-		prerequisite={focus=HAH_I01A}
-		ai_will_do={factor=40}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HAH_I02A"
-			set_technology={radio=1}
-			increase_society_development_gradually_with_tt=yes
-		}
-	}
-	shared_focus={	#Avant Garde Engineering
-		id=HAH_I02B icon=GFX_goal_rct_expand_the_city
-		x=0 y=1 cost=5 relative_position_id=HAH_I01B
-		search_filters={FOCUS_FILTER_RESEARCH}
-		prerequisite={focus=HAH_I01B}
-		prerequisite={focus=HAH_I01C}
-		ai_will_do={factor=40}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HAH_I02B"
-			add_ideas=HAH_avant_garde
-		}
-	}
-	shared_focus={	#Increasing The Size of The Mill
-		id=HAH_I02C icon=GFX_goal_factory_complex
-		x=0 y=1 cost=5 relative_position_id=HAH_I01C
-		search_filters={FOCUS_FILTER_RESEARCH}
-		prerequisite={focus=HAH_I01C}
-		ai_will_do={factor=40}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HAH_I02C"
-			40={
-				add_resource={
-					type=steel
-					amount=6
+				add_building_construction = {
+					type = industrial_complex
+					level = 1 instant_build = yes
 				}
 			}
-			increase_society_development_gradually_with_tt=yes
+			increase_society_development_gradually_with_tt = yes
 		}
 	}
-	shared_focus={	#Uncle Haystack
-		id=HAH_I03A icon=GFX_goal_radio
-		x=0 y=1 cost=5 relative_position_id=HAH_I02A
-		search_filters={FOCUS_FILTER_STABILITY}
-		prerequisite={focus=HAH_I02A}
-		ai_will_do={factor=40}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HAH_I03A"
+	shared_focus = {	#The Pre-Division Radios
+		id = HAH_I02A icon = GFX_goal_generic_radio_equipment
+		x = 0 y = 1 cost = 5
+		relative_position_id = HAH_I01A
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		prerequisite = {focus = HAH_I01A}
+		ai_will_do = {factor = 40}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HAH_I02A"
+			set_technology = {radio = 1}
+			increase_society_development_gradually_with_tt = yes
+		}
+	}
+	shared_focus = {	#Avant Garde Engineering
+		id = HAH_I02B icon = GFX_goal_rct_expand_the_city
+		x = 0 y = 1 cost = 5
+		relative_position_id = HAH_I01B
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		prerequisite = {focus = HAH_I01B}
+		prerequisite = {focus = HAH_I01C}
+		ai_will_do = {factor = 40}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HAH_I02B"
+			add_ideas = HAH_avant_garde
+		}
+	}
+	shared_focus = {	#Increasing The Size of The Mill
+		id = HAH_I02C icon = GFX_goal_factory_complex
+		x = 0 y = 1 cost = 5
+		relative_position_id = HAH_I01C
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		prerequisite = {focus = HAH_I01C}
+		ai_will_do = {factor = 40}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HAH_I02C"
+			40 = {
+				add_resource = {
+					type = steel
+					amount = 6
+				}
+			}
+			increase_society_development_gradually_with_tt = yes
+		}
+	}
+	shared_focus = {	#Uncle Haystack
+		id = HAH_I03A icon = GFX_goal_radio
+		x = 0 y = 1 cost = 5
+		relative_position_id = HAH_I02A
+		search_filters = {FOCUS_FILTER_STABILITY}
+		prerequisite = {focus = HAH_I02A}
+		ai_will_do = {factor = 40}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HAH_I03A"
 			effect_tooltip = {
-				add_advisor_role={
-					character=HAH_uncle_haystack
-					advisor={
-						slot=political_advisor
-						idea_token=HAH_uhaystack_advi
-						modifier={
-							stability_weekly=0.005
-							resistance_decay=0.05
+				add_advisor_role = {
+					character = HAH_uncle_haystack
+					advisor = {
+						slot = political_advisor
+						idea_token = HAH_uhaystack_advi
+						modifier = {
+							stability_weekly = 0.005
+							resistance_decay = 0.05
 						}
 					}
 				}
 			}
 		}
 	}
-	shared_focus={	#Small Town Geniuses
-		id=HAH_I03B icon=GFX_goal_double_research
-		x=0 y=1 cost=5 relative_position_id=HAH_I02B
-		search_filters={FOCUS_FILTER_STABILITY}
-		prerequisite={focus=HAH_I02B}
-		ai_will_do={factor=40}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HAH_I03B"
-			add_research_slot=1
+	shared_focus = {	#Small Town Geniuses
+		id = HAH_I03B icon = GFX_goal_double_research
+		x = 0 y = 1 cost = 5
+		relative_position_id = HAH_I02B
+		search_filters = {FOCUS_FILTER_STABILITY}
+		prerequisite = {focus = HAH_I02B}
+		ai_will_do = {factor = 40}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HAH_I03B"
+			add_research_slot = 1
 		}
 	}
-	shared_focus={	#The Science of Refinement
-		id=HAH_I03C icon=GFX_goal_basic_oil
-		x=0 y=1 cost=5 relative_position_id=HAH_I02C
-		search_filters={FOCUS_FILTER_STABILITY}
-		prerequisite={focus=HAH_I02C}
-		ai_will_do={factor=40}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HAH_I03C"
-			set_technology={synth_oil_experiments=1}
-			40={
-				add_extra_state_shared_building_slots=1
-				add_building_construction={
-					type=synthetic_refinery
-					level=1 instant_build=yes
+	shared_focus = {	#The Science of Refinement
+		id = HAH_I03C icon = GFX_goal_basic_oil
+		x = 0 y = 1 cost = 5
+		relative_position_id = HAH_I02C
+		search_filters = {FOCUS_FILTER_STABILITY}
+		prerequisite = {focus = HAH_I02C}
+		ai_will_do = {factor = 40}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HAH_I03C"
+			set_technology = {synth_oil_experiments = 1}
+			40 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1 instant_build = yes
 				}
 			}
-			increase_society_development_gradually_with_tt=yes
+			increase_society_development_gradually_with_tt = yes
 		}
 	}
-	shared_focus={	#No Longer Merely Farmers
-		id=HAH_I04 icon=GFX_goal_GRI_mechfarming
-		x=0 y=1 cost=5 relative_position_id=HAH_I03B
-		search_filters={FOCUS_FILTER_STABILITY}
-		prerequisite={focus=HAH_I03A}
-		prerequisite={focus=HAH_I03B}
-		prerequisite={focus=HAH_I03C}
-		ai_will_do={factor=40}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HAH_I04"
-			increase_society_development_gradually_with_tt=yes
+	shared_focus = {	#No Longer Merely Farmers
+		id = HAH_I04 icon = GFX_goal_GRI_mechfarming
+		x = 0 y = 1 cost = 5
+		relative_position_id = HAH_I03B
+		search_filters = {FOCUS_FILTER_STABILITY}
+		prerequisite = {focus = HAH_I03A}
+		prerequisite = {focus = HAH_I03B}
+		prerequisite = {focus = HAH_I03C}
+		ai_will_do = {factor = 40}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HAH_I04"
+			increase_society_development_gradually_with_tt = yes
 		}
 	}

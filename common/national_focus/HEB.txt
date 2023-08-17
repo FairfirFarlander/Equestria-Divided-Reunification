@@ -1,11 +1,11 @@
-focus_tree={
-	id=HEB country={factor=0 modifier={add=3 tag=HEB}}
-	continuous_focus_position={x=1750 y=800}
-	shared_focus=EDR_I00
-	shared_focus=EDR_L05
-	shared_focus=EDR_N05
-	shared_focus=EDR_A05
-	shared_focus=HEB_the_war
-	shared_focus=HEB_S00
-	shared_focus=HEB_L00
+focus_tree = {
+	id = HEB country = {factor = 0 modifier = {add = 3 tag = HEB}}
+	continuous_focus_position = {x = 1750 y = 800}
+	shared_focus = EDR_I00
+	shared_focus = EDR_L05
+	shared_focus = EDR_N05
+	shared_focus = EDR_A05
+	shared_focus = HEB_the_war
+	shared_focus = HEB_S00
+	shared_focus = HEB_L00
 }

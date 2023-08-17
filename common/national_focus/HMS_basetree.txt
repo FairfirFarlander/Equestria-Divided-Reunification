@@ -1,39 +1,41 @@
 #Story Tree Main
-	shared_focus={		#
-		id=HMS_S00 #icon=
-		x=0 y=0 cost=8 ai_will_do={factor=4000}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HMS_S00"
-			set_country_flag=HMS_politics_active
-			if={
-				limit={is_debug=yes}
-				HMS={
-					set_variable={HMS_inquisition_opinion=2}
-					set_variable={HMS_elites_opinion=3}
-					set_variable={HMS_military_opinion=0}
-					set_variable={HMS_church_opinion=4}
-					set_variable={HMS_slavers_opinion=5}
-					set_variable={HMS_citizens_opinion=1}
+	shared_focus = {	#
+		id = HMS_S00
+		#icon = 
+		x = 0 y = 0 cost = 8 ai_will_do = {factor = 4000}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HMS_S00"
+			set_country_flag = HMS_politics_active
+			if = {
+				limit = {is_debug = yes}
+				HMS = {
+					set_variable = {HMS_inquisition_opinion = 2}
+					set_variable = {HMS_elites_opinion = 3}
+					set_variable = {HMS_military_opinion = 0}
+					set_variable = {HMS_church_opinion = 4}
+					set_variable = {HMS_slavers_opinion = 5}
+					set_variable = {HMS_citizens_opinion = 1}
 				}
 			}
-			else={
-				HMS={
-					set_variable={HMS_inquisition_opinion=3}
-					set_variable={HMS_elites_opinion=3}
-					set_variable={HMS_military_opinion=3}
-					set_variable={HMS_church_opinion=3}
-					set_variable={HMS_slavers_opinion=3}
-					set_variable={HMS_citizens_opinion=3}
+			else = {
+				HMS = {
+					set_variable = {HMS_inquisition_opinion = 3}
+					set_variable = {HMS_elites_opinion = 3}
+					set_variable = {HMS_military_opinion = 3}
+					set_variable = {HMS_church_opinion = 3}
+					set_variable = {HMS_slavers_opinion = 3}
+					set_variable = {HMS_citizens_opinion = 3}
 				}
 			}
 		}
 	}
-	shared_focus={		#
-		id=HMS_S01 #icon=
-		relative_position_id=HMS_S00
-		x=0 y=1 cost=2 ai_will_do={factor=320}
-		prerequisite={focus=HMS_S00}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HMS_S01"
+	shared_focus = {	#
+		id = HMS_S01
+		#icon = 
+		relative_position_id = HMS_S00
+		x = 0 y = 1 cost = 2 ai_will_do = {factor = 320}
+		prerequisite = {focus = HMS_S00}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HMS_S01"
 		}
 	}

@@ -1,112 +1,112 @@
 #Story Tree Main	-Note, ambrosia every year at festival
-	shared_focus={		#The Underway Awaits!
-		id=EMB_S10 icon=GFX_goal_chn_communist_banner
-		x=0 y=0 cost=8 ai_will_do={factor=4000}
-		select_effect={
-			country_event={id=EMBact01.01 days=21}		#The Great Migration
-			country_event={id=EMBact01.02 days=42}		#The Finishing Touches
+	shared_focus = {	#The Underway Awaits!
+		id = EMB_S10 icon = GFX_goal_chn_communist_banner
+		x = 0 y = 0 cost = 8 ai_will_do = {factor = 4000}
+		select_effect = {
+			country_event = {id = EMBact01.01 days = 21}		#The Great Migration
+			country_event = {id = EMBact01.02 days = 42}		#The Finishing Touches
 		}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EMB_S10"
-			country_event=EMBact01.03		#A Nation Born Underground
-		}
-	}
-	shared_focus={		#Our Future Underground
-		id=EMB_S11 icon=GFX_goal_commune_politics
-		relative_position_id=EMB_S10
-		x=0 y=1 cost=2 ai_will_do={factor=320}
-		prerequisite={focus=EMB_S10}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EMB_S11"
-			country_event=EMBact01.04		#The Council Resides
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EMB_S10"
+			country_event = EMBact01.03		#A Nation Born Underground
 		}
 	}
-	shared_focus={		#A Royal Idea
-		id=EMB_S12A icon=GFX_goal_SZC_improvised_farming_machinery
-		relative_position_id=EMB_S11
-		x=-1 y=1 cost=3 ai_will_do={factor=160}
-		prerequisite={focus=EMB_S11}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EMB_S12A"
-			country_event=EMBact01.05		#The Terraces Are Prepared
+	shared_focus = {	#Our Future Underground
+		id = EMB_S11 icon = GFX_goal_commune_politics
+		relative_position_id = EMB_S10
+		x = 0 y = 1 cost = 2 ai_will_do = {factor = 320}
+		prerequisite = {focus = EMB_S10}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EMB_S11"
+			country_event = EMBact01.04		#The Council Resides
 		}
 	}
-	shared_focus={		#An Alchemical Idea
-		id=EMB_S12B icon=GFX_goal_agriculture
-		relative_position_id=EMB_S11
-		x=1 y=1 cost=3 ai_will_do={factor=80}
-		prerequisite={focus=EMB_S11}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EMB_S12B"
-			country_event=EMBact01.06		#The Gardens Are Planted
+	shared_focus = {	#A Royal Idea
+		id = EMB_S12A icon = GFX_goal_SZC_improvised_farming_machinery
+		relative_position_id = EMB_S11
+		x = -1 y = 1 cost = 3 ai_will_do = {factor = 160}
+		prerequisite = {focus = EMB_S11}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EMB_S12A"
+			country_event = EMBact01.05		#The Terraces Are Prepared
 		}
 	}
-	shared_focus={		#The Beginning of Troubles
-		id=EMB_S13A icon=GFX_SIA_jungletraining
-		relative_position_id=EMB_S11
-		x=-2 y=2 cost=6 ai_will_do={factor=80}
-		prerequisite={focus=EMB_S12A}
-		prerequisite={focus=EMB_S12B}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EMB_S13A"
-			set_country_flag=EMB_military_unlocked
-			set_country_flag=EMB_diplomacy_unlocked
-			custom_effect_tooltip=EMB_S13A_tooltip
+	shared_focus = {	#An Alchemical Idea
+		id = EMB_S12B icon = GFX_goal_agriculture
+		relative_position_id = EMB_S11
+		x = 1 y = 1 cost = 3 ai_will_do = {factor = 80}
+		prerequisite = {focus = EMB_S11}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EMB_S12B"
+			country_event = EMBact01.06		#The Gardens Are Planted
 		}
 	}
-	shared_focus={		#The Cost of No Sun
-		id=EMB_S13B icon=GFX_goal_sunshine
-		relative_position_id=EMB_S11
-		x=0 y=2 cost=6 ai_will_do={factor=80}
-		prerequisite={focus=EMB_S12A}
-		prerequisite={focus=EMB_S12B}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EMB_S13B"
+	shared_focus = {	#The Beginning of Troubles
+		id = EMB_S13A icon = GFX_SIA_jungletraining
+		relative_position_id = EMB_S11
+		x = -2 y = 2 cost = 6 ai_will_do = {factor = 80}
+		prerequisite = {focus = EMB_S12A}
+		prerequisite = {focus = EMB_S12B}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EMB_S13A"
+			set_country_flag = EMB_military_unlocked
+			set_country_flag = EMB_diplomacy_unlocked
+			custom_effect_tooltip = EMB_S13A_tooltip
 		}
 	}
-	shared_focus={		#There Is Not Enough Room!
-		id=EMB_S13C icon=GFX_focus_collective_housing
-		relative_position_id=EMB_S11
-		x=2 y=2 cost=6 ai_will_do={factor=80}
-		prerequisite={focus=EMB_S12A}
-		prerequisite={focus=EMB_S12B}
-		completion_reward={
-			#log="[GetDateText]: [Root.GetName]: focus EMB_S13C"
+	shared_focus = {	#The Cost of No Sun
+		id = EMB_S13B icon = GFX_goal_sunshine
+		relative_position_id = EMB_S11
+		x = 0 y = 2 cost = 6 ai_will_do = {factor = 80}
+		prerequisite = {focus = EMB_S12A}
+		prerequisite = {focus = EMB_S12B}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EMB_S13B"
 		}
 	}
-	shared_focus={		#Bubble, Bubble, Toil and Trouble
-		id=EMB_S14A icon=GFX_viira_climate
-		relative_position_id=EMB_S11
-		x=-1 y=3 cost=6 ai_will_do={factor=160}
-		prerequisite={focus=EMB_S13A}
-		prerequisite={focus=EMB_S13B}
-		prerequisite={focus=EMB_S13C}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EMB_S14A"
-			add_stability=-0.05
-			add_popularity={ideology=communism	popularity=-0.10}
+	shared_focus = {	#There Is Not Enough Room!
+		id = EMB_S13C icon = GFX_focus_collective_housing
+		relative_position_id = EMB_S11
+		x = 2 y = 2 cost = 6 ai_will_do = {factor = 80}
+		prerequisite = {focus = EMB_S12A}
+		prerequisite = {focus = EMB_S12B}
+		completion_reward = {
+			#log = "[GetDateText]: [Root.GetName]: Focus EMB_S13C"
 		}
 	}
-	shared_focus={		#We Cannot Keep Up With Demand!
-		id=EMB_S14B icon=GFX_focus_indy_skelly_pony
-		relative_position_id=EMB_S11
-		x=1 y=3 cost=6 ai_will_do={factor=160}
-		prerequisite={focus=EMB_S13A}
-		prerequisite={focus=EMB_S13B}
-		prerequisite={focus=EMB_S13C}
-		completion_reward={
-			#log="[GetDateText]: [Root.GetName]: focus EMB_S14B"
+	shared_focus = {	#Bubble, Bubble, Toil and Trouble
+		id = EMB_S14A icon = GFX_viira_climate
+		relative_position_id = EMB_S11
+		x = -1 y = 3 cost = 6 ai_will_do = {factor = 160}
+		prerequisite = {focus = EMB_S13A}
+		prerequisite = {focus = EMB_S13B}
+		prerequisite = {focus = EMB_S13C}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EMB_S14A"
+			add_stability = -0.05
+			add_popularity = {ideology = communism	popularity = -0.10}
 		}
 	}
-	shared_focus={		#Unrest in the Underway
-		id=EMB_S15 icon=GFX_goal_purge_opposition
-		relative_position_id=EMB_S11
-		x=0 y=4 cost=6 ai_will_do={factor=4000}
-		prerequisite={focus=EMB_S14A}
-		prerequisite={focus=EMB_S14B}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus EMB_S15"
-			custom_effect_tooltip=EMB_S15_tooltip1
-			custom_effect_tooltip=EMB_S15_tooltip2
+	shared_focus = {	#We Cannot Keep Up With Demand!
+		id = EMB_S14B icon = GFX_focus_indy_skelly_pony
+		relative_position_id = EMB_S11
+		x = 1 y = 3 cost = 6 ai_will_do = {factor = 160}
+		prerequisite = {focus = EMB_S13A}
+		prerequisite = {focus = EMB_S13B}
+		prerequisite = {focus = EMB_S13C}
+		completion_reward = {
+			#log = "[GetDateText]: [Root.GetName]: Focus EMB_S14B"
+		}
+	}
+	shared_focus = {	#Unrest in the Underway
+		id = EMB_S15 icon = GFX_goal_purge_opposition
+		relative_position_id = EMB_S11
+		x = 0 y = 4 cost = 6 ai_will_do = {factor = 4000}
+		prerequisite = {focus = EMB_S14A}
+		prerequisite = {focus = EMB_S14B}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EMB_S15"
+			custom_effect_tooltip = EMB_S15_tooltip1
+			custom_effect_tooltip = EMB_S15_tooltip2
 		}
 	}

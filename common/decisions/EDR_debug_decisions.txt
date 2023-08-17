@@ -1,8 +1,517 @@
-EDR_debug_decisions={
-	EDR_show_not_tell={
-		#icon=
-		visible={is_debug=yes}
-		available={hidden_trigger={always=no}}
+EDR_DBUG_decisions={
+	DBUG_show_decisions = {
+		priority = 12
+		icon = GFX_category_icon
+		visible = {
+			NOT = { has_global_flag = DBUG_showing_decisions }
+		}
+		complete_effect = {
+			log = "[GetDateText]: decision DBUG_show_decisions"
+			set_global_flag = DBUG_showing_decisions
+		}
+	}
+	DBUG_hide_decisions = {
+		priority = 12
+		icon = GFX_category_icon
+		visible = { has_global_flag = DBUG_showing_decisions }
+		complete_effect = {
+			log = "[GetDateText]: decision DBUG_hide_decisions"
+			clr_global_flag = DBUG_showing_decisions
+		}
+	}
+###By Blood Alone###
+	DBUG_show_bba_decisions = {
+		priority = 8
+		icon = GFX_category_icon
+		allowed = { has_dlc = "By Blood Alone" }
+		visible = {
+			has_global_flag = DBUG_showing_decisions
+			NOT = { has_global_flag = DBUG_showing_bba_decisions }
+		}
+		complete_effect = {
+			log = "[GetDateText]: decision DBUG_show_bba_decisions"
+			set_global_flag = DBUG_showing_bba_decisions
+		}
+	}
+	DBUG_hide_bba_decisions = {
+		priority = 8
+		icon = GFX_category_icon
+		allowed = { has_dlc = "By Blood Alone" }
+		visible = {
+			has_global_flag = DBUG_showing_decisions
+			has_global_flag = DBUG_showing_bba_decisions
+		}
+		complete_effect = {
+			log = "[GetDateText]: decision DBUG_hide_bba_decisions"
+			clr_global_flag = DBUG_showing_bba_decisions
+		}
+	}
+	DBUG_history_entry = {
+		priority = 8
+		allowed = { has_dlc = "By Blood Alone" }
+		visible = {
+			has_global_flag = DBUG_showing_decisions
+			has_global_flag = DBUG_showing_bba_decisions
+		}
+		complete_effect = {
+			log = "[GetDateText]: decision DBUG_history_entry"
+			random_country_division = {
+				add_history_entry = {
+					key = custom_localized_key
+					subject = "Custom String (not localized)"
+					allow = yes
+				}
+			}
+		}
+	}
+	DBUG_officer_xp = {
+		priority = 8
+		allowed = { has_dlc = "By Blood Alone" }
+		visible = {
+			has_global_flag = DBUG_showing_decisions
+			has_global_flag = DBUG_showing_bba_decisions
+		}
+		complete_effect = {
+			log = "[GetDateText]: decision DBUG_history_entry"
+			random_country_division = {
+				add_divisional_commander_xp = 801
+			}
+		}
+	}
+###No Step Back###
+	DBUG_show_nsb_decisions = {
+		priority = 7
+		icon = GFX_category_icon
+		allowed = { has_dlc = "No Step Back" }
+		visible = {
+			has_global_flag = DBUG_showing_decisions
+			NOT = { has_global_flag = DBUG_showing_nsb_decisions }
+		}
+		complete_effect = {
+			log = "[GetDateText]: decision DBUG_show_nsb_decisions"
+			set_global_flag = DBUG_showing_nsb_decisions
+		}
+	}
+	DBUG_hide_nsb_decisions = {
+		priority = 7
+		icon = GFX_category_icon
+		allowed = { has_dlc = "No Step Back" }
+		visible = {
+			has_global_flag = DBUG_showing_decisions
+			has_global_flag = DBUG_showing_nsb_decisions
+		}
+		complete_effect = {
+			log = "[GetDateText]: decision DBUG_hide_nsb_decisions"
+			clr_global_flag = DBUG_showing_nsb_decisions
+		}
+	}
+	DBUG_tank_techs_nsb = {
+		priority = 7
+		icon = generic_tank
+		allowed = { has_dlc = "No Step Back" }
+		visible = {
+			has_global_flag = DBUG_showing_decisions
+			has_global_flag = DBUG_showing_nsb_decisions
+		}
+		complete_effect = {
+			log = "[GetDateText]: decision DBUG_tank_techs_nsb"
+			hidden_effect = {
+				set_technology = {
+					infantry_weapons = 1
+					magical_weapons = 1
+					magical_weapons1 = 1
+					magical_weapons2 = 1
+					magical_weapons3 = 1
+					motorised_infantry = 1
+					mechanised_infantry = 1
+					tech_engineers2 = 1
+					tech_engineers_a = 1
+					tech_maintenance_company2 = 1
+					gwtank_chassis = 1
+					basic_light_tank_chassis = 1
+					improved_light_tank_chassis = 1
+					amphibious_tank_chassis = 1
+					amphibious_drive = 1
+					advanced_light_tank_chassis = 1
+					semi_modern_light_tank_chassis = 1
+					modern_light_tank_chassis = 1
+					basic_medium_tank_chassis = 1
+					improved_medium_tank_chassis = 1
+					advanced_medium_tank_chassis = 1
+					main_battle_tank_chassis = 1
+					main_battle_tank_chassis_b = 1
+					main_battle_tank_chassis_c = 1
+					basic_heavy_tank_chassis = 1
+					improved_heavy_tank_chassis = 1
+					advanced_heavy_tank_chassis = 1
+					super_heavy_tank_chassis = 1
+					super_heavy_tank_chassis_b = 1
+					super_heavy_tank_chassis_c = 1
+					armor_tech_1 = 1
+					armor_tech_2 = 1
+					armor_tech_3 = 1
+					armor_tech_4 = 1
+					armor_tech_5 = 1
+					armor_tech_6 = 1
+					engine_tech_1 = 1
+					engine_tech_2 = 1
+					engine_tech_3 = 1
+					engine_tech_4 = 1
+					engine_tech_5 = 1
+					engine_tech_6 = 1
+					gw_artillery = 1
+					interwar_artillery = 1
+					artillery1 = 1
+					artillery3 = 1
+					artillery4 = 1
+					artillery5 = 1
+					mountain_gun = 1
+					rocket_artillery = 1
+					rocket_artillery4 = 1
+					interwar_antiair = 1
+					antiair2 = 1
+					antiair3 = 1
+					antiair5 = 1
+					interwar_antitank = 1
+					antitank1 = 1
+					antitank2 = 1
+					antitank3 = 1
+					antitank4 = 1
+					antitank5 = 1
+					antitank_c = 1
+					antitank_f = 1
+					artillery_a = 1
+					artillery_b = 1
+					artillery_d = 1
+					artillery_e = 1
+					rocket_artillery_c = 1
+					rocket_artillery_f = 1
+					antiair_c = 1
+					antiair_f = 1
+					improved_computing_machine = 1
+					radio = 1
+					decimetric_radar = 1
+					centimetric_radar = 1
+					jet_engines = 1
+					future_radar_2 = 1
+					future_radar_3 = 1
+					future_computing_machine_2 = 1
+					popup = no
+				}
+			}
+		}
+	}
+###La Resistance###
+	DBUG_show_lar_decisions = {
+		priority = 6
+		icon = GFX_category_icon
+		visible = {
+			has_global_flag = DBUG_showing_decisions
+			NOT = { has_global_flag = DBUG_showing_lar_decisions }
+		}
+		complete_effect = {
+			log = "[GetDateText]: decision DBUG_show_lar_decisions"
+			set_global_flag = DBUG_showing_lar_decisions
+		}
+	}
+	DBUG_hide_lar_decisions = {
+		priority = 6
+		icon = GFX_category_icon
+		visible = {
+			has_global_flag = DBUG_showing_decisions
+			has_global_flag = DBUG_showing_lar_decisions
+		}
+		complete_effect = {
+			log = "[GetDateText]: decision DBUG_hide_lar_decisions"
+			clr_global_flag = DBUG_showing_lar_decisions
+		}
+	}
+	DBUG_create_agency = {
+		priority = 6
+		allowed = { has_dlc = "La Resistance" }
+		visible = {
+			has_global_flag = DBUG_showing_decisions
+			has_global_flag = DBUG_showing_lar_decisions
+		}
+		available = { has_intelligence_agency = no }
+		complete_effect = {
+			log = "[GetDateText]: decision DBUG_create_agency"
+			create_intelligence_agency = {
+				name = "T.E.S.T"
+			}
+		}
+	}
+	DBUG_create_operative = {
+		priority = 6
+		allowed = { has_dlc = "La Resistance" }
+		visible = {
+			has_global_flag = DBUG_showing_decisions
+			has_global_flag = DBUG_showing_lar_decisions
+		}
+		available = { has_intelligence_agency = yes }
+		complete_effect = {
+			log = "[GetDateText]: decision DBUG_capture_operative"
+			create_operative_leader = {
+				name = "T.E.S.T. Operative"
+				bypass_recruitment = yes
+			}
+		}
+	}
+	DBUG_capture_operative = {
+		priority = 6
+		allowed = { has_dlc = "La Resistance" }
+		visible = {
+			has_global_flag = DBUG_showing_decisions
+			has_global_flag = DBUG_showing_lar_decisions
+		}
+		available = { num_of_operatives > 0 }
+		complete_effect = {
+			log = "[GetDateText]: decision DBUG_capture_operative"
+			random_operative = {
+				limit = {
+					is_operative_captured = no
+				}
+				capture_operative = {
+					captured_by = ROOT
+				}
+			}
+		}
+	}
+	DBUG_turn_operative = {
+		priority = 6
+		allowed = { has_dlc = "La Resistance" }
+		visible = {
+			has_global_flag = DBUG_showing_decisions
+			has_global_flag = DBUG_showing_lar_decisions
+		}
+		available = { num_of_operatives > 0 }
+		complete_effect = {
+			log = "[GetDateText]: decision DBUG_turn_operative"
+			random_operative = {
+				limit = {
+					is_operative_captured = no
+				}
+				set_nationality = ROOT
+				operative_leader_event = {
+					id = lar_operative_event.5
+					set_from_from = ROOT #tells the event which nationality to add
+				}
+			}
+		}
+	}
+	DBUG_harm_operative = {
+		priority = 6
+		allowed = { has_dlc = "La Resistance" }
+		visible = {
+			has_global_flag = DBUG_showing_decisions
+			has_global_flag = DBUG_showing_lar_decisions
+		}
+		available = { num_of_operatives > 0 }
+		complete_effect = {
+			log = "[GetDateText]: decision DBUG_harm_operative"
+			random_operative = {
+				harm_operative_leader = 1
+				operative_leader_event = {
+					id = lar_operative_event.4
+					set_from_from = URG
+				}
+			}
+		}
+	}
+	DBUG_add_random_nationality = {
+		priority = 6
+		allowed = { has_dlc = "La Resistance" }
+		visible = {
+			has_global_flag = DBUG_showing_decisions
+			has_global_flag = DBUG_showing_lar_decisions
+		}
+		available = { num_of_operatives > 0 }
+		complete_effect = {
+			log = "[GetDateText]: decision DBUG_add_random_nationality"
+			random_country = {
+				limit = {
+					NOT = { tag = FROM }
+				}
+				FROM = {
+					random_operative = {
+						add_nationality = PREV.PREV
+					}
+				}
+			}
+		}
+	}
+	DBUG_slot_machine = { # we pegi 18 now
+		priority = 6
+		allowed = { has_dlc = "La Resistance" }
+		visible = {
+			has_global_flag = DBUG_showing_decisions
+			has_global_flag = DBUG_showing_lar_decisions
+		}
+		days_remove = 777
+		modifier = {
+			operative_slot = 99
+		}
+		complete_effect = {
+			log = "[GetDateText]: decision DBUG_slot_machine"
+		}
+	}
+	DBUG_decryption_tech_1 = {
+		priority = 6
+		allowed = {
+			NOT = { has_dlc = "La Resistance" }
+		}
+		visible = {
+			has_global_flag = DBUG_showing_decisions
+			has_global_flag = DBUG_showing_lar_decisions
+		}
+		days_remove = 100
+		modifier = {
+			decryption = 1
+		}
+		complete_effect = {
+			log = "[GetDateText]: decision DBUG_decryption_tech_1"
+		}
+		remove_effect = {
+			log = "[GetDateText]: decision DBUG_decryption_tech_1"
+		}
+	}
+	DBUG_decryption_tech_2 = {
+		priority = 6
+		allowed = {
+			NOT = { has_dlc = "La Resistance" }
+		}
+		visible = {
+			has_global_flag = DBUG_showing_decisions
+			has_global_flag = DBUG_showing_lar_decisions
+		}
+		days_remove = 100
+		modifier = {
+			decryption = 1
+		}
+		complete_effect = {
+			log = "[GetDateText]: decision DBUG_decryption_tech_2"
+		}
+		remove_effect = {
+			log = "[GetDateText]: decision DBUG_decryption_tech_2"
+		}
+	}
+	DBUG_decryption_tech_3 = {
+		priority = 6
+		allowed = {
+			NOT = { has_dlc = "La Resistance" }
+		}
+		visible = {
+			has_global_flag = DBUG_showing_decisions
+			has_global_flag = DBUG_showing_lar_decisions
+		}
+		days_remove = 100
+		modifier = {
+			decryption = 1
+		}
+		complete_effect = {
+			log = "[GetDateText]: decision DBUG_decryption_tech_3"
+		}
+		remove_effect = {
+			log = "[GetDateText]: decision DBUG_decryption_tech_3"
+		}
+	}
+	DBUG_encryption_tech_1 = {
+		priority = 6
+		allowed = {
+			NOT = { has_dlc = "La Resistance" }
+		}
+		visible = {
+			has_global_flag = DBUG_showing_decisions
+			has_global_flag = DBUG_showing_lar_decisions
+		}
+		days_remove = 100
+		modifier = {
+			encryption = 1
+		}
+		complete_effect = {
+			log = "[GetDateText]: decision DBUG_encryption_tech_1"
+		}
+		remove_effect = {
+			log = "[GetDateText]: decision DBUG_encryption_tech_1"
+		}
+	}
+	DBUG_encryption_tech_2 = {
+		priority = 6
+		allowed = {
+			NOT = { has_dlc = "La Resistance" }
+		}
+		visible = {
+			has_global_flag = DBUG_showing_decisions
+			has_global_flag = DBUG_showing_lar_decisions
+		}
+		days_remove = 100
+		modifier = {
+			encryption = 1
+		}
+		complete_effect = {
+			log = "[GetDateText]: decision DBUG_encryption_tech_2"
+		}
+		remove_effect = {
+			log = "[GetDateText]: decision DBUG_encryption_tech_2"
+		}
+	}
+	DBUG_encryption_tech_3 = {
+		priority = 6
+		allowed = {
+			NOT = { has_dlc = "La Resistance" }
+		}
+		visible = {
+			has_global_flag = DBUG_showing_decisions
+			has_global_flag = DBUG_showing_lar_decisions
+		}
+		days_remove = 100
+		modifier = {
+			encryption = 1
+		}
+		complete_effect = {
+			log = "[GetDateText]: decision DBUG_encryption_tech_3"
+		}
+		remove_effect = {
+			log = "[GetDateText]: decision DBUG_encryption_tech_3"
+		}
+	}
+	DBUG_summon_oob = {	#Remember to reset the load_oob = ""s after you are finished!
+		visible = { has_global_flag = DBUG_showing_decisions }
+		complete_effect = {
+			log = "[GetDateText]: decision DBUG_decryption_tech_1"
+			load_oob = ""
+		}
+	}
+	DBUG_color_me = {
+		priority = 0
+		visible = { has_global_flag = DBUG_showing_decisions }
+		available = {
+			hidden_trigger = { always = no }
+		}
+	}
+	DBUG_show_obsolete_focus = {
+		visible = {
+			has_global_flag = DBUG_showing_decisions
+			NOT = { has_country_flag = DBUG_showing_obsolete_focus }
+		}
+		priority = -1
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision DBUG_show_obsolete_focus"
+			set_country_flag = DBUG_showing_obsolete_focus
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	DBUG_hide_obsolete_focus = {
+		visible = {
+			has_global_flag = DBUG_showing_decisions
+			has_country_flag = DBUG_showing_obsolete_focus
+		}
+		priority = -1
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision DBUG_hide_obsolete_focus"
+			clr_country_flag = DBUG_showing_obsolete_focus
+			mark_focus_tree_layout_dirty = yes
+		}
 	}
 	miller_flour={
 		#icon=

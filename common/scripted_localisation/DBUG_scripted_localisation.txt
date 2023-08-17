@@ -1,0 +1,26 @@
+defined_text = {
+	name = DBUG_show_lar_decisions
+	text = {
+		trigger = {
+			NOT = { has_dlc = "La Resistance" }
+		}
+		localization_key = DBUG_show_lar_di_decisions
+	}
+	text = {
+		trigger = { has_dlc = "La Resistance" }
+		localization_key = DBUG_show_lar_en_decisions
+	}
+}
+defined_text = {
+	name = DBUG_hide_lar_decisions
+	text = {
+		trigger = {
+			NOT = { has_dlc = "La Resistance" }
+		}
+		localization_key = DBUG_hide_lar_di_decisions
+	}
+	text = {
+		trigger = { has_dlc = "La Resistance" }
+		localization_key = DBUG_hide_lar_en_decisions
+	}
+}

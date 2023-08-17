@@ -23,9 +23,9 @@ shared_focus = {
 	cost = 4.40
 	x = -9
 	y = 0
-	offset={
-		x=-6
-		trigger={is_debug=yes}
+	offset = {
+		x = -6
+		trigger = {is_debug = yes}
 	}
 	ai_will_do = {
 		factor = 80
@@ -47,9 +47,9 @@ shared_focus = {
 	cost = 4.40
 	x = -18
 	y = 0
-	offset={
-		x=-6
-		trigger={is_debug=yes}
+	offset = {
+		x = -6
+		trigger = {is_debug = yes}
 	}
 	ai_will_do = {
 		factor = 30

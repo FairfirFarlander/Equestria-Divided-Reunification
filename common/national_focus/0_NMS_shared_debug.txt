@@ -1,5 +1,5 @@
 ### Civil War Tree ###
-shared_focus={
+shared_focus = {
 	id = NMS_stranded
 	icon = GFX_goal_NLR_Pritstik
 	cost = 2.00

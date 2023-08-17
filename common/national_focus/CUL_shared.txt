@@ -1,605 +1,430 @@
-	#Use this later... add_offsite_building={type=arms_factory level=2}
-	#Focus for Retake New Mareland
-	shared_focus={
-		id=CUL_retake_new_mareland
-		icon=GFX_goal_generic_major_war
-		x=17
-		y=10
-		cost=7
-		available_if_capitulated=yes
-		prerequisite={focus=CUL_assert_control_over_the_crystal_dominion}
-		ai_will_do={
-			factor=1
-		}
-		completion_reward={
-			create_wargoal={
-type=annex_everything
-target=EQC
-}
-		}
-	}
-
-	#Focus for Assert Control over the Crystal Dominion
-	shared_focus={
-		id=CUL_assert_control_over_the_crystal_dominion
-		icon=GFX_goal_generic_forceful_treaty
-		x=21
-		y=8
-		cost=7
-		available_if_capitulated=yes
-		prerequisite={focus=CUL_retake_control}
-		ai_will_do={
-			factor=1
-		}
-		completion_reward={
-			every_state={limit={is_core_of=CRY}add_core_of=CUL}
-		}
-	}
-
-	#Focus for Take care of the Changeling Threat
-	shared_focus={
-		id=CUL_take_care_of_the_changeling_threat
-		icon=GFX_goal_generic_CAS
-		x=19
-		y=10
-		cost=7
-		available_if_capitulated=yes
-		prerequisite={focus=CUL_assert_control_over_the_crystal_dominion}
-		mutually_exclusive={focus=CUL_let_them_come}
-		ai_will_do={
-			factor=1
-		}
-		completion_reward={
-			create_wargoal={
-type=annex_everything
-target=CHN
-}
-create_wargoal={
-type=annex_everything
-target=CCN
-}
-		}
-	}
-
-	#Focus for Let Them Come
-	shared_focus={
-		id=CUL_let_them_come
-		icon=GFX_goal_generic_fortify_city
-		x=22
-		y=10
-		cost=7
-		available_if_capitulated=yes
-		prerequisite={focus=CUL_assert_control_over_the_crystal_dominion}
-		mutually_exclusive={focus=CUL_take_care_of_the_changeling_threat}
-		ai_will_do={
-			factor=1
-		}
-		completion_reward={
-			add_ideas=deterrence
-		}
-	}
-
-	#Focus for Calm Before The Storm
-	shared_focus={
-		id=CUL_calm_before_the_storm
-		icon=GFX_goal_generic_alliance
-		x=24
-		y=2
-		cost=7
-		available_if_capitulated=yes
-		prerequisite={
-			focus=CUL_more_industry
-		}
-		prerequisite={
-			focus=CUL_more_weapons
-		}
-		prerequisite={
-			focus=CUL_fully_mobolize_our_nation
-		}
-		ai_will_do={
-			factor=2
-		}
-		completion_reward={
-			add_war_support=0.25
-			add_threat=5
-			every_state={limit={is_core_of=HMS}add_claim_by=CUL}
-			every_state={limit={is_core_of=HSW}add_claim_by=CUL}
-			every_state={limit={is_core_of=HWG}add_claim_by=CUL}
-			every_state={limit={is_core_of=HEF}add_claim_by=CUL}
-			every_state={limit={is_core_of=HEB}add_claim_by=CUL}
-			every_state={limit={is_core_of=CRY}add_claim_by=CUL}
-			every_state={limit={is_core_of=STG}add_claim_by=CUL}
-			every_state={limit={is_core_of=STL}add_claim_by=CUL}
-		}
-	}
-
-	#Focus for More industry
-	shared_focus={
-		id=CUL_more_industry
-		icon=GFX_goal_generic_construct_civ_factory
-		x=24
-		y=1
-		cost=7
-		available_if_capitulated=yes
-		prerequisite={focus=CUL_the_war}
-		ai_will_do={
-			factor=2
-		}
-		completion_reward={
-			random_owned_controlled_state={
-				limit={
-					free_building_slots={
-						building=industrial_complex
-						size>1
-						include_locked=yes
-					}
-					OR={
-						is_in_home_area=yes
-						NOT={
-							owner={
-								any_owned_state={
-									free_building_slots={
-										building=industrial_complex
-										size>1
-										include_locked=yes
-									}
-									is_in_home_area=yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots=5
-				add_building_construction={
-					type=industrial_complex
-					level=5
-					instant_build=yes
-				}
+	#Use this later... add_offsite_building = {type = arms_factory level = 2}
+	shared_focus = {	#Retake New Mareland
+		id = CUL_retake_new_mareland
+		icon = GFX_goal_generic_major_war
+		x = 17	y = 10	cost = 7
+		prerequisite = { focus = CUL_assert_control_over_the_crystal_dominion }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CUL_retake_new_mareland"
+			create_wargoal = {
+				type = annex_everything
+				target = EQC
 			}
 		}
 	}
-
+	shared_focus = {	#Assert Control over the Crystal Dominion
+		id = CUL_assert_control_over_the_crystal_dominion
+		icon = GFX_goal_generic_forceful_treaty
+		x = 21
+		y = 8
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = {focus = CUL_retake_control}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			every_state = {limit = {is_core_of = CRY}add_core_of = CUL}
+		}
+	}
+	shared_focus = {	#Focus for Take care of the Changeling Threat
+		id = CUL_take_care_of_the_changeling_threat
+		icon = GFX_goal_generic_CAS
+		x = 19	y = 10	cost = 7
+		prerequisite = { focus = CUL_assert_control_over_the_crystal_dominion }
+		mutually_exclusive = { focus = CUL_let_them_come }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = CHN
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = CCN
+			}
+		}
+	}
+	shared_focus = {	#Focus for Let Them Come
+		id = CUL_let_them_come
+		icon = GFX_goal_generic_fortify_city
+		x = 22
+		y = 10
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = {focus = CUL_assert_control_over_the_crystal_dominion}
+		mutually_exclusive = {focus = CUL_take_care_of_the_changeling_threat}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = deterrence
+		}
+	}
+	shared_focus = {	#Focus for Calm Before The Storm
+		id = CUL_calm_before_the_storm
+		icon = GFX_goal_generic_alliance
+		x = 24
+		y = 2
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = CUL_more_industry
+		}
+		prerequisite = {
+			focus = CUL_more_weapons
+		}
+		prerequisite = {
+			focus = CUL_fully_mobolize_our_nation
+		}
+		ai_will_do = {
+			factor = 2
+		}
+		completion_reward = {
+			add_war_support = 0.25
+			add_threat = 5
+			every_state = {limit = {is_core_of = HMS}add_claim_by = CUL}
+			every_state = {limit = {is_core_of = HSW}add_claim_by = CUL}
+			every_state = {limit = {is_core_of = HWG}add_claim_by = CUL}
+			every_state = {limit = {is_core_of = HEF}add_claim_by = CUL}
+			every_state = {limit = {is_core_of = HEB}add_claim_by = CUL}
+			every_state = {limit = {is_core_of = CRY}add_claim_by = CUL}
+			every_state = {limit = {is_core_of = STG}add_claim_by = CUL}
+			every_state = {limit = {is_core_of = STL}add_claim_by = CUL}
+		}
+	}
 	#Focus for War to Everfree
-	shared_focus={
-		id=CUL_war_to_everfree
-		icon=GFX_goal_generic_major_war
-		x=21
-		y=4
-		cost=7
-		available_if_capitulated=yes
-		prerequisite={focus=CUL_calm_before_the_storm}
-		ai_will_do={
-			factor=1
+	shared_focus = {
+		id = CUL_war_to_everfree
+		icon = GFX_goal_generic_major_war
+		x = 21
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = {focus = CUL_calm_before_the_storm}
+		ai_will_do = {
+			factor = 1
 		}
-		bypass={
-			tag=HEF
+		bypass = {
+			tag = HEF
 		}
-		completion_reward={
-			create_wargoal={
-type=annex_everything
-target=HEF
+		completion_reward = {
+			create_wargoal = {
+type = annex_everything
+target = HEF
 }
-create_wargoal={
-type=annex_everything
-target=VII
+create_wargoal = {
+type = annex_everything
+target = VII
 }
 		}
 	}
-
 	#Focus for War to Appleloosa
-	shared_focus={
-		id=CUL_war_to_appleloosa
-		icon=GFX_goal_generic_major_war
-		x=23
-		y=4
-		cost=7
-		available_if_capitulated=yes
-		prerequisite={focus=CUL_calm_before_the_storm}
-		ai_will_do={
-			factor=1
+	shared_focus = {
+		id = CUL_war_to_appleloosa
+		icon = GFX_goal_generic_major_war
+		x = 23
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = {focus = CUL_calm_before_the_storm}
+		ai_will_do = {
+			factor = 1
 		}
-		bypass={
-			tag=HEB
+		bypass = {
+			tag = HEB
 		}
-		completion_reward={
-			create_wargoal={
-type=annex_everything
-target=HEB
+		completion_reward = {
+			create_wargoal = {
+type = annex_everything
+target = HEB
 }
 		}
 	}
-
 	#Focus for War against Stalliongrad
-	shared_focus={
-		id=CUL_war_against_stalliongrad
-		icon=GFX_goal_generic_major_war
-		x=31
-		y=4
-		cost=7
-		available_if_capitulated=yes
-		prerequisite={focus=CUL_calm_before_the_storm}
-		ai_will_do={
-			factor=1
+	shared_focus = {
+		id = CUL_war_against_stalliongrad
+		icon = GFX_goal_generic_major_war
+		x = 31
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = {focus = CUL_calm_before_the_storm}
+		ai_will_do = {
+			factor = 1
 		}
-		completion_reward={
-			create_wargoal={
-type=annex_everything
-target=STG
+		completion_reward = {
+			create_wargoal = {
+type = annex_everything
+target = STG
 }
-create_wargoal={
-type=annex_everything
-target=STL
+create_wargoal = {
+type = annex_everything
+target = STL
 }
 		}
 	}
-
 	#Focus for Equestria: Reunited
-	shared_focus={
-		id=CUL_equestria_reunited
-		icon=GFX_goal_generic_attack_allies
-		x=24
-		y=6
-		cost=4
-		available_if_capitulated=yes
-		prerequisite={
-			focus=CUL_war_to_everfree
+	shared_focus = {
+		id = CUL_equestria_reunited
+		icon = GFX_goal_generic_attack_allies
+		x = 24
+		y = 6
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = CUL_war_to_everfree
 		}
-		prerequisite={
-			focus=CUL_war_to_appleloosa
+		prerequisite = {
+			focus = CUL_war_to_appleloosa
 		}
-		prerequisite={
-			focus=CUL_war_against_stalliongrad
+		prerequisite = {
+			focus = CUL_war_against_stalliongrad
 		}
-		prerequisite={
-			focus=CUL_war_to_cloudsdale
+		prerequisite = {
+			focus = CUL_war_to_cloudsdale
 		}
-		prerequisite={
-			focus=CUL_war_against_the_crystal_empire
+		prerequisite = {
+			focus = CUL_war_against_the_crystal_empire
 		}
-		prerequisite={
-			focus=CUL_war_to_canterlot
+		prerequisite = {
+			focus = CUL_war_to_canterlot
 		}
-		prerequisite={
-			focus=CUL_war_against_laughter
+		prerequisite = {
+			focus = CUL_war_against_laughter
 		}
-		prerequisite={
-			focus=CUL_war_to_manehattan
+		prerequisite = {
+			focus = CUL_war_to_manehattan
 		}
-		ai_will_do={
-			factor=8
+		ai_will_do = {
+			factor = 8
 		}
-		available={
-			owns_state=3
-			owns_state=5
-			owns_state=21
-			owns_state=75
-			owns_state=68
-			owns_state=70
-			owns_state=344
-			owns_state=153
+		available = {
+			owns_state = 3
+			owns_state = 5
+			owns_state = 21
+			owns_state = 75
+			owns_state = 68
+			owns_state = 70
+			owns_state = 344
+			owns_state = 153
 		}
-		completion_reward={
-			create_faction=Laughter_Hegemony
-			set_cosmetic_tag=LAUGHTER
+		completion_reward = {
+			create_faction = Laughter_Hegemony
+			set_cosmetic_tag = LAUGHTER
 		}
 	}
-
 	#Focus for War to Cloudsdale
-	shared_focus={
-		id=CUL_war_to_cloudsdale
-		icon=GFX_goal_generic_major_war
-		x=25
-		y=4
-		cost=7
-		available_if_capitulated=yes
-		prerequisite={focus=CUL_calm_before_the_storm}
-		ai_will_do={
-			factor=1
+	shared_focus = {
+		id = CUL_war_to_cloudsdale
+		icon = GFX_goal_generic_major_war
+		x = 25
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = {focus = CUL_calm_before_the_storm}
+		ai_will_do = {
+			factor = 1
 		}
-		bypass={
-			tag=HSW
+		bypass = {
+			tag = HSW
 		}
-		completion_reward={
-			create_wargoal={
-type=annex_everything
-target=HSW
+		completion_reward = {
+			create_wargoal = {
+type = annex_everything
+target = HSW
 }
 		}
 	}
-
 	#Focus for War Against the Crystal Empire
-	shared_focus={
-		id=CUL_war_against_the_crystal_empire
-		icon=GFX_goal_generic_major_war
-		x=29
-		y=4
-		cost=7
-		available_if_capitulated=yes
-		prerequisite={focus=CUL_calm_before_the_storm}
-		ai_will_do={
-			factor=3
+	shared_focus = {
+		id = CUL_war_against_the_crystal_empire
+		icon = GFX_goal_generic_major_war
+		x = 29
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = {focus = CUL_calm_before_the_storm}
+		ai_will_do = {
+			factor = 3
 		}
-		completion_reward={
-			create_wargoal={
-type=annex_everything
-target=CRY
+		completion_reward = {
+			create_wargoal = {
+type = annex_everything
+target = CRY
 }
 		}
 	}
-
-	#Focus for More weapons
-	shared_focus={
-		id=CUL_more_weapons
-		icon=GFX_goal_generic_construct_mil_factory
-		x=31
-		y=1
-		cost=7
-		available_if_capitulated=yes
-		prerequisite={focus=CUL_the_war}
-		ai_will_do={
-			factor=3
-		}
-		completion_reward={
-			random_owned_controlled_state={
-				limit={
-					free_building_slots={
-						building=arms_factory
-						size>0
-						include_locked=yes
-					}
-					OR={
-						is_in_home_area=yes
-						NOT={
-							owner={
-								any_owned_state={
-									free_building_slots={
-										building=arms_factory
-										size>0
-										include_locked=yes
-									}
-									is_in_home_area=yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots=5
-				add_building_construction={
-					type=arms_factory
-					level=5
-					instant_build=yes
-				}
-			}
-		}
-	}
-
 	#Focus for War to Manehattan
-	shared_focus={
-		id=CUL_war_to_manehattan
-		icon=GFX_goal_generic_major_war
-		x=19
-		y=4
-		cost=7
-		available_if_capitulated=yes
-		prerequisite={focus=CUL_calm_before_the_storm}
-		ai_will_do={
-			factor=1
+	shared_focus = {
+		id = CUL_war_to_manehattan
+		icon = GFX_goal_generic_major_war
+		x = 19
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = {focus = CUL_calm_before_the_storm}
+		ai_will_do = {
+			factor = 1
 		}
-		bypass={
-			tag=HWG
+		bypass = {
+			tag = HWG
 		}
-		completion_reward={
-			create_wargoal={
-type=annex_everything
-target=HWG
+		completion_reward = {
+			create_wargoal = {
+type = annex_everything
+target = HWG
 }
-		}
-	}
-
-	#Focus for Fully Mobolize Our Nation
-	shared_focus={
-		id=CUL_fully_mobolize_our_nation
-		icon=GFX_goal_generic_small_arms
-		x=17
-		y=1
-		cost=7
-		available_if_capitulated=yes
-		ai_will_do={
-			factor=2
-		}
-		prerequisite={focus=CUL_the_war}
-		completion_reward={
-			add_manpower=2000000
-		}
-	}
-
-	#Focus for The War
-	shared_focus={
-		id=CUL_the_war
-		icon=GFX_goal_generic_demand_territory
-		x=24
-		y=0
-		cost=2
-		available_if_capitulated=yes
-		ai_will_do={
-			factor=5
-		}
-		completion_reward={
-			add_political_power=250
-			add_threat=5
 		}
 	}
 	#Focus for Modern Society
-	shared_focus={
-		id=CUL_modern_society
-		icon=GFX_goal_generic_construct_civ_factory
-		x=24
-		y=11
-		cost=15
-		available_if_capitulated=yes
-		prerequisite={focus=CUL_early_industrial_society}
-		bypass={
-			
-			NOT={has_idea=outdated_industry}
-		
+	shared_focus = {
+		id = CUL_modern_society
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 24
+		y = 11
+		cost = 15
+		available_if_capitulated = yes
+		prerequisite = {focus = CUL_early_industrial_society}
+		bypass = {
+			NOT = {has_idea = outdated_industry}
 		}
-		available={
-			
+		available = {
 			num_of_factories>40
-		
 		}
-		completion_reward={
-			
-			log="[GetDateText]: [Root.GetName]: Focus remove_outdated_industry"
-			add_ideas=modern_society
-		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus remove_outdated_industry"
+			add_ideas = modern_society
 		}
 	}
-
 	#Focus for Agrarian Society
-	shared_focus={
-		id=CUL_agrarian_society
-		icon=GFX_goal_generic_construct_civ_factory
-		x=24
-		y=8
-		cost=20
-		available_if_capitulated=yes
-		prerequisite={focus=CUL_transform}
-		search_filters={FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
-		bypass={
-			
-			NOT={has_idea=agrarian_society}
-		
+	shared_focus = {
+		id = CUL_agrarian_society
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 24
+		y = 8
+		cost = 20
+		available_if_capitulated = yes
+		prerequisite = {focus = CUL_transform}
+		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
+		bypass = {
+			NOT = {has_idea = agrarian_society}
 		}
-		available={
-			
+		available = {
 			num_of_factories>25
-		
 		}
-		completion_reward={
-			
-			log="[GetDateText]: [Root.GetName]: Focus remove_agrarian_society"
-			add_ideas=pre_industrial_society
-		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus remove_agrarian_society"
+			add_ideas = pre_industrial_society
 		}
 	}
-
 	#Focus for Early Industrial Society
-	shared_focus={
-		id=CUL_early_industrial_society
-		icon=GFX_goal_generic_construct_civ_factory
-		x=24
-		y=9
-		cost=15
-		available_if_capitulated=yes
-		prerequisite={focus=CUL_agrarian_society}
-		search_filters={FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
-		bypass={
-			
-			NOT={has_idea=pre_industrial_society}
-		
+	shared_focus = {
+		id = CUL_early_industrial_society
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 24
+		y = 9
+		cost = 15
+		available_if_capitulated = yes
+		prerequisite = {focus = CUL_agrarian_society}
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
+		bypass = {
+			NOT = {has_idea = pre_industrial_society}
 		}
-		available={
-			
+		available = {
 			num_of_factories>35
-		
 		}
-		completion_reward={
-			
-			log="[GetDateText]: [Root.GetName]: Focus remove_pre_industrial_society"
-			add_ideas=outdated_industry
-		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus remove_pre_industrial_society"
+			add_ideas = outdated_industry
 		}
 	}
-
 	#Focus for Transform
-	shared_focus={
-		id=CUL_transform
-		icon=GFX_goal_generic_construct_civ_factory
-		x=24
-		y=7
-		cost=7
-		available_if_capitulated=yes
-		prerequisite={focus=CUL_equestria_reunited}
-		bypass={
-			NOT={has_idea=tribal_society}
+	shared_focus = {
+		id = CUL_transform
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 24
+		y = 7
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = {focus = CUL_equestria_reunited}
+		bypass = {
+			NOT = {has_idea = tribal_society}
 		}
-		available={
+		available = {
 			num_of_factories>15
 		}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: Focus remove_tribal_society"
-			add_ideas=agrarian_society
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus remove_tribal_society"
+			add_ideas = agrarian_society
 		}
 	}
 	#Focus for War to Canterlot
-	shared_focus={
-		id=CUL_war_to_canterlot
-		icon=GFX_goal_generic_major_war
-		x=17
-		y=4
-		cost=7
-		available_if_capitulated=yes
-		prerequisite={focus=CUL_calm_before_the_storm}
-		ai_will_do={
-			factor=1
+	shared_focus = {
+		id = CUL_war_to_canterlot
+		icon = GFX_goal_generic_major_war
+		x = 17
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = {focus = CUL_calm_before_the_storm}
+		ai_will_do = {
+			factor = 1
 		}
-		bypass={
-			tag=HMS
+		bypass = {
+			tag = HMS
 		}
-		completion_reward={
-			create_wargoal={
-type=annex_everything
-target=HMS
+		completion_reward = {
+			create_wargoal = {
+type = annex_everything
+target = HMS
 }
 		}
 	}
-
 	#Focus for War against Laughter
-	shared_focus={
-		id=CUL_war_against_laughter
-		icon=GFX_goal_generic_major_war
-		x=27
-		y=4
-		cost=7
-		available_if_capitulated=yes
-		prerequisite={focus=CUL_calm_before_the_storm}
-		ai_will_do={
-			factor=1
+	shared_focus = {
+		id = CUL_war_against_laughter
+		icon = GFX_goal_generic_major_war
+		x = 27
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = {focus = CUL_calm_before_the_storm}
+		ai_will_do = {
+			factor = 1
 		}
-		bypass={
-			tag=CUL
+		bypass = {
+			tag = CUL
 		}
-		completion_reward={
-			create_wargoal={
-type=annex_everything
-target=CUL
+		completion_reward = {
+			create_wargoal = {
+type = annex_everything
+target = CUL
 }
 		}
 	}
-
 	#Focus for Retake control
-	shared_focus={
-		id=CUL_retake_control
-		icon=GFX_focus_hol_the_foundations_of_defense
-		x=21
-		y=7
-		cost=7
-		available_if_capitulated=yes
-		prerequisite={focus=CUL_equestria_reunited}
-		ai_will_do={
-			factor=8
+	shared_focus = {
+		id = CUL_retake_control
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 21
+		y = 7
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = {focus = CUL_equestria_reunited}
+		ai_will_do = {
+			factor = 8
 		}
-		completion_reward={
-			every_state={limit={is_core_of=CUL}add_core_of=CUL}
-			every_state={limit={is_core_of=HEF}add_core_of=CUL}
-			every_state={limit={is_core_of=HWG}add_core_of=CUL}
-			every_state={limit={is_core_of=HEB}add_core_of=CUL}
-			every_state={limit={is_core_of=HSW}add_core_of=CUL}
-			every_state={limit={is_core_of=HMS}add_core_of=CUL}
-			every_state={limit={is_core_of=STG}add_core_of=CUL}
-			every_state={limit={is_core_of=STL}add_core_of=CUL}
+		completion_reward = {
+			every_state = {limit = {is_core_of = CUL}add_core_of = CUL}
+			every_state = {limit = {is_core_of = HEF}add_core_of = CUL}
+			every_state = {limit = {is_core_of = HWG}add_core_of = CUL}
+			every_state = {limit = {is_core_of = HEB}add_core_of = CUL}
+			every_state = {limit = {is_core_of = HSW}add_core_of = CUL}
+			every_state = {limit = {is_core_of = HMS}add_core_of = CUL}
+			every_state = {limit = {is_core_of = STG}add_core_of = CUL}
+			every_state = {limit = {is_core_of = STL}add_core_of = CUL}
 		}
 	}
-
 #End of focuses

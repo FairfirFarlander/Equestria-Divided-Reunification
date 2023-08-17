@@ -4845,7 +4845,7 @@
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus BAL_death_from_above"
 			add_tech_bonus = {
-				name =  tactical_bombers
+				name = tactical_bombers
 				bonus = 1.0
 				uses = 2
 				category = tactical_bomber

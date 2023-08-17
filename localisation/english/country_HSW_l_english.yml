@@ -1,7 +1,7 @@
 ﻿l_english:
  ###Introduction###
   ##Bookmark##
-  HSW_GATHERING_STORM_DESC: "$GENR_GATHERING_STORM_DESC$"
+  HSW_GATHERING_STORM_DESC: ""
   ##Welcome Screen##
    EAW_WS_HSW: "$EAW_WS_GENR$"
     EAW_WS_HSW_desc: "$EAW_WS_GENR_desc$"

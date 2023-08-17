@@ -1,7 +1,7 @@
 	shared_focus = {	#
 		id = COT_S00
 		icon = GFX_goal_attack_SCS
-		x = 0 y = 0 cost = 1
+		x = 0	y = 0	cost = 1
 		select_effect = {
 			country_event = COT_ES.0001
 		}
@@ -10,130 +10,131 @@
 			add_political_power = 100
 		}
 	}
-	shared_focus={		#International Relations
-		id=COT_S01A
-		icon=GFX_goal_foreign_diplomacy
-		relative_position_id=COT_S00
-		x=-4 y=1 cost=6
-		prerequisite={focus=COT_S00}
-		ai_will_do={factor=40}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus COT_S01A"
-			#country_event=COTact1.4A	#Griffonian Envoys
+	shared_focus = {	#International Relations
+		id = COT_S01A
+		icon = GFX_goal_foreign_diplomacy
+		relative_position_id = COT_S00
+		x = -4 y = 1 cost = 6
+		prerequisite = {focus = COT_S00}
+		ai_will_do = {factor = 40}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_S01A"
+			#country_event = COTact1.4A	#Griffonian Envoys
 		}
 	}
-	shared_focus={		#International Relations
-		id=COT_S02A
-		icon=GFX_goal_improve_relations_pony_griffon
-		relative_position_id=COT_S01A
-		x=-1 y=1 cost=6
-		prerequisite={focus=COT_S01A}
-		ai_will_do={factor=40}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus COT_S02A"
-			#country_event=COTact1.4A	#Griffonian Envoys
-			add_equipment_to_stockpile={
-				type=infantry_equipment_0
-				amount=500
-				producer=WNG
+	shared_focus = {	#International Relations
+		id = COT_S02A
+		icon = GFX_goal_improve_relations_pony_griffon
+		relative_position_id = COT_S01A
+		x = -1 y = 1 cost = 6
+		prerequisite = {focus = COT_S01A}
+		ai_will_do = {factor = 40}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_S02A"
+			#country_event = COTact1.4A	#Griffonian Envoys
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 500
+				producer = WNG
 			}
 		}
 	}
 	shared_focus = {	#Raise the 23rd - Major General > Brigadier General William B. Taliaferro
 		id = COT_S03A
 		icon = GFX_focus_wng_flag
-		x = 0 y = 1 cost = 1 relative_position_id = COT_S02A
+		x = 0	y = 1	cost = 1
+		relative_position_id = COT_S02A
 		prerequisite = { focus = COT_S02A }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus COT_S03A"
-			#country_event=COTact1.6A	#Wingbardian Volunteers
-			#create_corps_commander={	#TalonSparrow name by Pax
-			#	name="William Talonsparrow"	#id=	#desc=""
-			#	picture="GFX_portrait_griffon_generic_land_12"	#female=yes
-			#	traits={harsh_leader bleeding_heart griffon_race_trait}
-			#	skill=3	attack_skill=3	defense_skill=2
-			#	planning_skill=2	logistics_skill=1
+			#country_event = COTact1.6A	#Wingbardian Volunteers
+			#create_corps_commander = {	#TalonSparrow name by Pax
+			#	name = "William Talonsparrow"	#id = 	#desc = ""
+			#	picture = "GFX_portrait_griffon_generic_land_12"	#female = yes
+			#	traits = {harsh_leader bleeding_heart griffon_race_trait}
+			#	skill = 3	attack_skill = 3	defense_skill = 2
+			#	planning_skill = 2	logistics_skill = 1
 			#}
-			hidden_effect={load_oob="COT_taliaferro"}
+			hidden_effect = {load_oob = "COT_taliaferro"}
 		}
 	}
 
 
 
-	shared_focus={		#We Stand Alone
-		id=COT_standalone
-		icon=GFX_goal_nested_fortifications
-		x=0 y=1 cost=2
-		ai_will_do={factor=80}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus COT_standalone"
-			#country_event=COTact1.4B	#Batten the Hatches
-			add_political_power=70
+	shared_focus = {	#We Stand Alone
+		id = COT_standalone
+		icon = GFX_goal_nested_fortifications
+		x = 0 y = 1 cost = 2
+		ai_will_do = {factor = 80}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_standalone"
+			#country_event = COTact1.4B	#Batten the Hatches
+			add_political_power = 70
 		}
 	}
-	shared_focus={		#Equestrian Relations
-		id=COT_ponyrelations
-		icon=GFX_goal_improve_relations_pony_pony
-		x=6 y=1 cost=4
-		ai_will_do={factor=40}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus COT_ponyrelations"
-			#country_event=COTact1.4C	#...Keeps the Doctor Away - Delay Earthborne Invasion
+	shared_focus = {	#Equestrian Relations
+		id = COT_ponyrelations
+		icon = GFX_goal_improve_relations_pony_pony
+		x = 6 y = 1 cost = 4
+		ai_will_do = {factor = 40}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_ponyrelations"
+			#country_event = COTact1.4C	#...Keeps the Doctor Away - Delay Earthborne Invasion
 		}
 	}
-	shared_focus={		#A Deal With the Diamond
-		id=COT_dealdiamond
-		icon=GFX_goal_generic_dangerous_deal_pony_pony
-		x=-2 y=1 cost=4
-		prerequisite={focus=COT_ponyrelations}
-		ai_will_do={factor=40}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus COT_dealdiamond"
-			#country_event=COTact1.5C	#A Bottle a Galleon - Meet Fleur's Operative and Strike a Wine/Debt Deal
-			COT={add_timed_idea={idea=COT_winendebt days=730}}
+	shared_focus = {	#A Deal With the Diamond
+		id = COT_dealdiamond
+		icon = GFX_goal_generic_dangerous_deal_pony_pony
+		x = -2 y = 1 cost = 4
+		prerequisite = {focus = COT_ponyrelations}
+		ai_will_do = {factor = 40}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_dealdiamond"
+			#country_event = COTact1.5C	#A Bottle a Galleon - Meet Fleur's Operative and Strike a Wine/Debt Deal
+			COT = {add_timed_idea = {idea = COT_winendebt days = 730}}
 		}
 	}
-	shared_focus={		#To Thunderous Applause
-		id=COT_thunderhooves
-		icon=GFX_goal_artillery
-		x=-1 y=1 cost=4
-		ai_will_do={factor=40}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus COT_thunderhooves"
-			#country_event=COTact1.6CA	#A Shipment of 'Instruments'
-			add_equipment_to_stockpile={type=artillery_equipment_0 amount=12 producer=HWG}
+	shared_focus = {	#To Thunderous Applause
+		id = COT_thunderhooves
+		icon = GFX_goal_artillery
+		x = -1 y = 1 cost = 4
+		ai_will_do = {factor = 40}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_thunderhooves"
+			#country_event = COTact1.6CA	#A Shipment of 'Instruments'
+			add_equipment_to_stockpile = {type = artillery_equipment_0 amount = 12 producer = HWG}
 		}
 	}
-	shared_focus={		#Sabotage Earthborn Arms Production
-		id=COT_sabotagefactory
-		icon=GFX_goal_fire
-		x=1 y=1 cost=4
-		ai_will_do={factor=40}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus COT_dealdiamond"
-			#country_event=COTact1.6CB	#The Appleloosa Bomber - Pick The Factory Target (The Earthborn Arms Forge or Appleblooms Workshop [Can kill her 15% chance])
-			21={
-				damage_building={
-					type=arms_factory
-					damage=1
+	shared_focus = {	#Sabotage Earthborn Arms Production
+		id = COT_sabotagefactory
+		icon = GFX_goal_fire
+		x = 1 y = 1 cost = 4
+		ai_will_do = {factor = 40}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus COT_dealdiamond"
+			#country_event = COTact1.6CB	#The Appleloosa Bomber - Pick The Factory Target (The Earthborn Arms Forge or Appleblooms Workshop [Can kill her 15% chance])
+			21 = {
+				damage_building = {
+					type = arms_factory
+					damage = 1
 				}
 			}
 		}
 	}
 	
 	
-	#shared_focus={		#A Deal With the Diamond
-	#	id=COT_dealdiamond
-	#	icon=GFX_goal_artillery
-	#	relative_position_id=COT_dealdiamond
-	#	x=-1 y=1 cost=4
-	#	prerequisite={focus=COT_dealdiamond}
-	#	ai_will_do={factor=40}
-	#	completion_reward={
-	#		log="[GetDateText]: [Root.GetName]: focus COT_dealdiamond"
-	#		#country_event=COTact1.5C	#A Bottle a Galleon - Meet Fleur's Operative and Strike a Wine/Debt Deal
-	#		add_equipment_to_stockpile={type=artillery_equipment_0 amount=12 producer=EQS}
-	#		add_political_power=-35
+	#shared_focus = {	#A Deal With the Diamond
+	#	id = COT_dealdiamond
+	#	icon = GFX_goal_artillery
+	#	relative_position_id = COT_dealdiamond
+	#	x = -1 y = 1 cost = 4
+	#	prerequisite = {focus = COT_dealdiamond}
+	#	ai_will_do = {factor = 40}
+	#	completion_reward = {
+	#		log = "[GetDateText]: [Root.GetName]: Focus COT_dealdiamond"
+	#		#country_event = COTact1.5C	#A Bottle a Galleon - Meet Fleur's Operative and Strike a Wine/Debt Deal
+	#		add_equipment_to_stockpile = {type = artillery_equipment_0 amount = 12 producer = EQS}
+	#		add_political_power = -35
 	#	}
 	#}
 	#Grapes of Wrath Focus NameIdea

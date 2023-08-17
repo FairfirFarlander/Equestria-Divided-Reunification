@@ -3,7 +3,7 @@
   ##Bookmark##
    GENR_GATHERING_STORM_DESC: "Ah shit! I can't believe you've done this! This is cursed. You have somehow selected an unfinished nation. Shaaame on e-you - unless..."
   ##Welcome Screen##
-   EAW_WS_GENR: "§LThe Clam Before the Storm§!"
+   EAW_WS_GENR: "§LThe Calm Before the Storm§!"
     EAW_WS_GENR_desc: "§YThe country of the [ROOT.GetAdjective] are not finshed and thus uses Reunification's generic focus tree.§! While we have plans for it, these have not been fully implemented. We recommend you play one of the Equestrian countries on the starting screen. If you want to keep going despite this, have fun.\n\n- The Reunification Development Team"
  ###Politics###
   ##Country Name##
@@ -35,12 +35,15 @@
   ##Political Tree##
    EDR_P00: "The Death of an Era"
     EDR_P00_desc: ""
-   EDR_P01A: "A New Hope"
+   EDR_P01A: "Questioning the Past"
     EDR_P01A_desc: ""
-   EDR_P01B: "Equestria Strikes Back"
+    EDR_alicorn_doubt: "Anti-Alicorn Sentiment"
+   EDR_P01B: "Look to Tradition"
     EDR_P01B_desc: ""
-   EDR_P01C: "The Return of Harmony"
+    EDR_sovereignty: "Restoration of Soverignty"
+   EDR_P01C: "A Return to Tradition"
     EDR_P01C_desc: ""
+    EDR_hope: "Hopes for the Future"
    EDR_P02A: ""
     EDR_P02A_desc: ""
    EDR_P02B: ""

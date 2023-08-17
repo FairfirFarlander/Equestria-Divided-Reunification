@@ -7,7 +7,7 @@ focus_tree = {
 			add = 3
 		}
 	}
-	continuous_focus_position = { x = 60 y = 1460 }
+	continuous_focus_position = { x = 60	y = 1460 }
 	shared_focus = COT_S00
 	shared_focus = COT_M00
 	shared_focus = COT_AN00
@@ -23,7 +23,7 @@ focus_tree = {
 	shared_focus = {
 		id = COT_constitutional_convention
 		icon = GFX_focus_generic_the_giant_wakes
-		x = -3 y = 4 cost = 10 ai_will_do = { factor = 10 }
+		x = -3	y = 4	cost = 10 ai_will_do = { factor = 10 }
 		select_effect = {
 			country_event = { id = scs.15 days = 6 random = 48 }
 			country_event = { id = scs.23 days = 30 random = 240 }#events about Rockhoof
@@ -42,7 +42,7 @@ focus_tree = {
 		id = COT_the_first_election
 		icon = GFX_goal_generic_elections
 		relative_position_id = COT_constitutional_convention
-		x = 0 y = 1 cost = 5
+		x = 0	y = 1	cost = 5
 		prerequisite = { focus = COT_constitutional_convention }
 		available = { has_country_flag = SCS_election_flag }
 		bypass = { has_country_flag = SCS_election_flag }
@@ -55,7 +55,7 @@ focus_tree = {
 		id = COT_coltlumbia_victory
 		icon = GFX_goal_liberty
 		relative_position_id = COT_the_first_election
-		x = -2 y = 1 cost = 5
+		x = -2	y = 1	cost = 5
 		prerequisite = { focus = COT_the_first_election }
 		mutually_exclusive = { focus = COT_southern_democrat_victory }
 		available = { has_country_flag = SCS_coltlumbia_win }
@@ -74,7 +74,7 @@ focus_tree = {
 		id = COT_southern_democrat_victory
 		icon = GFX_goal_EEA
 		relative_position_id = COT_the_first_election
-		x = 2 y = 1 cost = 5
+		x = 2	y = 1	cost = 5
 		prerequisite = { focus = COT_the_first_election }
 		mutually_exclusive = { focus = COT_coltlumbia_victory }
 		available = { has_country_flag = SCS_sdem_win }
@@ -93,7 +93,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_I00
 		icon = GFX_goal_generic_positive_trade_relations
-		x = -15 y = 0 cost = 1 relative_position_id = COT_S00
+		x = -15	y = 0	cost = 1
+		relative_position_id = COT_S00
 		offset = {
 			x = 3
 			trigger = { has_completed_focus = COT_I01A }
@@ -127,7 +128,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_I01A
 		icon = GFX_goal_bag_of_money_pony
-		x = -3 y = 1 cost = 5 relative_position_id = COT_I00
+		x = -3	y = 1	cost = 5
+		relative_position_id = COT_I00
 		offset = {
 			x = 3
 			trigger = { has_completed_focus = COT_I01A }
@@ -166,7 +168,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_I01B
 		icon = GFX_goal_constitutional_guarantees
-		x = 0 y = 1 cost = 5 relative_position_id = COT_I00
+		x = 0	y = 1	cost = 5
+		relative_position_id = COT_I00
 		allow_branch = {
 			NOT = {
 				OR = {
@@ -197,7 +200,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_I01C
 		icon = GFX_goal_state_economy
-		x = 3 y = 1 cost = 5 relative_position_id = COT_I00
+		x = 3	y = 1	cost = 5
+		relative_position_id = COT_I00
 		offset = {
 			x = -3
 			trigger = { has_completed_focus = COT_I01C }
@@ -232,7 +236,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_I02A
 		icon = GFX_goal_apple_icon
-		x = -7 y = 2 cost = 5 relative_position_id = COT_I00
+		x = -7	y = 2	cost = 5
+		relative_position_id = COT_I00
 		offset = {
 			x = 3
 			trigger = { has_completed_focus = COT_I01A }
@@ -277,7 +282,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_I02B
 		icon = GFX_goal_free_market
-		x = -1 y = 1 cost = 5 relative_position_id = COT_I01A
+		x = -1	y = 1	cost = 5
+		relative_position_id = COT_I01A
 		prerequisite = { focus = COT_I01A }
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -300,7 +306,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_I02C
 		icon = GFX_goal_generic_construct_infrastructure
-		x = -2 y = 2 cost = 5 relative_position_id = COT_I00
+		x = -2	y = 2	cost = 5
+		relative_position_id = COT_I00
 		offset = {
 			x = 3
 			trigger = { has_completed_focus = COT_I01A }
@@ -330,7 +337,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_I02D
 		icon = GFX_goal_chn_economic_plan
-		x = 0 y = 1 cost = 5 relative_position_id = COT_I01B
+		x = 0	y = 1	cost = 5
+		relative_position_id = COT_I01B
 		prerequisite = { focus = COT_I01B }
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -353,7 +361,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_I02E
 		icon = GFX_goal_forced_inf
-		x = 2 y = 2 cost = 5 relative_position_id = COT_I00
+		x = 2	y = 2	cost = 5
+		relative_position_id = COT_I00
 		offset = {
 			x = -3
 			trigger = { has_completed_focus = COT_I01C }
@@ -383,7 +392,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_I02F
 		icon = GFX_goal_economic_control
-		x = 1 y = 1 cost = 5 relative_position_id = COT_I01C
+		x = 1	y = 1	cost = 5
+		relative_position_id = COT_I01C
 		prerequisite = { focus = COT_I01C }
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -406,7 +416,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_I02G
 		icon = GFX_goal_oil_derrick
-		x = 7 y = 2 cost = 5 relative_position_id = COT_I00
+		x = 7	y = 2	cost = 5
+		relative_position_id = COT_I00
 		offset = {
 			x = -3
 			trigger = { has_completed_focus = COT_I01C }
@@ -450,7 +461,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_I03A
 		icon = GFX_focus_indy_agriculture
-		x = -1 y = 1 cost = 5 relative_position_id = COT_I02A
+		x = -1	y = 1	cost = 5
+		relative_position_id = COT_I02A
 		offset = {
 			x = 1
 			trigger = { has_completed_focus = COT_I03A }
@@ -480,7 +492,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_I03B
 		icon = GFX_focus_indy_agriculture_2
-		x = 1 y = 1 cost = 5 relative_position_id = COT_I02A
+		x = 1	y = 1	cost = 5
+		relative_position_id = COT_I02A
 		offset = {
 			x = -1
 			trigger = { has_completed_focus = COT_I03B }
@@ -509,7 +522,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_I03C
 		icon = GFX_IRE_medium_industry
-		x = 0 y = 1 cost = 2.9 relative_position_id = COT_I02C
+		x = 0	y = 1	cost = 2.9
+		relative_position_id = COT_I02C
 		offset = {
 			x = -1
 			trigger = { has_completed_focus = COT_I01A }
@@ -538,7 +552,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_I03D
 		icon = GFX_focus_research
-		x = 0 y = 3 cost = 5 relative_position_id = COT_I00
+		x = 0	y = 3	cost = 5
+		relative_position_id = COT_I00
 		offset = {
 			x = 2
 			trigger = { has_completed_focus = COT_I01A }
@@ -566,7 +581,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_I03E
 		icon = GFX_IRE_heavy_industry
-		x = 0 y = 1 cost = 2.9 relative_position_id = COT_I02E
+		x = 0	y = 1	cost = 2.9
+		relative_position_id = COT_I02E
 		offset = {
 			x = 1
 			trigger = { has_completed_focus = COT_I01C }
@@ -594,7 +610,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_I03F
 		icon = GFX_goal_further_oil
-		x = -1 y = 1 cost = 5 relative_position_id = COT_I02G
+		x = -1	y = 1	cost = 5
+		relative_position_id = COT_I02G
 		offset = {
 			x = 1
 			trigger = { has_completed_focus = COT_I03F }
@@ -623,7 +640,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_I03G
 		icon = GFX_goal_oil
-		x = 1 y = 1 cost = 5 relative_position_id = COT_I02G
+		x = 1	y = 1	cost = 5
+		relative_position_id = COT_I02G
 		offset = {
 			x = -1
 			trigger = { has_completed_focus = COT_I03G }
@@ -657,7 +675,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_I04A
 		icon = GFX_focus_AUS_agriculture
-		x = 0 y = 1 cost = 5 relative_position_id = COT_I03A
+		x = 0	y = 1	cost = 5
+		relative_position_id = COT_I03A
 		prerequisite = { focus = COT_I03A }
 		ai_will_do = { factor = 8 }
 		search_filters = {
@@ -676,7 +695,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_I04B
 		icon = GFX_goal_BUF_gora
-		x = 0 y = 1 cost = 5 relative_position_id = COT_I03B
+		x = 0	y = 1	cost = 5
+		relative_position_id = COT_I03B
 		prerequisite = { focus = COT_I03B }
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -691,7 +711,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_I04C
 		icon = GFX_goal_generic_construct_civ_factory
-		x = 0 y = 3 cost = 5 relative_position_id = COT_I01A
+		x = 0	y = 3	cost = 5
+		relative_position_id = COT_I01A
 		offset = {
 			x = -1
 			trigger = { has_completed_focus = COT_I01A }
@@ -716,7 +737,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_I04D
 		icon = GFX_goal_document
-		x = 0 y = 2 cost = 5 relative_position_id = COT_I02D
+		x = 0	y = 2	cost = 5
+		relative_position_id = COT_I02D
 		prerequisite = { focus = COT_I02D }
 		prerequisite = {
 			focus = COT_I02C
@@ -740,7 +762,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_I04E
 		icon = GFX_goal_industrial_pony
-		x = 0 y = 3 cost = 5 relative_position_id = COT_I01C
+		x = 0	y = 3	cost = 5
+		relative_position_id = COT_I01C
 		offset = {
 			x = 1
 			trigger = { has_completed_focus = COT_I01C }
@@ -765,7 +788,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_I04F
 		icon = GFX_goal_GRF_northern_oil
-		x = 0 y = 2 cost = 5 relative_position_id = COT_I02G
+		x = 0	y = 2	cost = 5
+		relative_position_id = COT_I02G
 		prerequisite = {
 			focus = COT_I03F
 			focus = COT_I03G
@@ -781,7 +805,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_I05A
 		icon = GFX_goal_coffee_exports
-		x = 0 y = 1 cost = 5 relative_position_id = COT_I04A
+		x = 0	y = 1	cost = 5
+		relative_position_id = COT_I04A
 		prerequisite = { focus = COT_I04A }
 		ai_will_do = { factor = 8 }
 		search_filters = {
@@ -800,7 +825,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_I05B
 		icon = GFX_goal_agriculture
-		x = 0 y = 1 cost = 5 relative_position_id = COT_I04B
+		x = 0	y = 1	cost = 5
+		relative_position_id = COT_I04B
 		prerequisite = { focus = COT_I04B }
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -815,7 +841,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_I05C
 		icon = GFX_goal_generic_construct_mil_factory
-		x = -1 y = 1 cost = 5 relative_position_id = COT_I04C
+		x = -1	y = 1	cost = 5
+		relative_position_id = COT_I04C
 		offset = {
 			x = 1
 			trigger = { has_completed_focus = COT_I01A }
@@ -838,7 +865,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_I05D
 		icon = GFX_focus_generic_industry_2
-		x = -2 y = 5 cost = 5 relative_position_id = COT_I00
+		x = -2	y = 5	cost = 5
+		relative_position_id = COT_I00
 		offset = {
 			x = 3
 			trigger = { has_completed_focus = COT_I01A }
@@ -868,7 +896,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_I05E
 		icon = GFX_goal_industry_air
-		x = 2 y = 5 cost = 5 relative_position_id = COT_I00
+		x = 2	y = 5	cost = 5
+		relative_position_id = COT_I00
 		offset = {
 			x = -3
 			trigger = { has_completed_focus = COT_I01C }
@@ -898,7 +927,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_I05F
 		icon = GFX_goal_generic_construct_civ_factory
-		x = 1 y = 1 cost = 5 relative_position_id = COT_I04E
+		x = 1	y = 1	cost = 5
+		relative_position_id = COT_I04E
 		offset = {
 			x = -1
 			trigger = { has_completed_focus = COT_I01C }
@@ -921,7 +951,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_I05G
 		icon = GFX_goal_GRF_northern_oil
-		x = 0 y = 2 cost = 5 relative_position_id = COT_I03F
+		x = 0	y = 2	cost = 5
+		relative_position_id = COT_I03F
 		prerequisite = { focus = COT_I04F }
 		prerequisite = { focus = COT_I03F }
 		ai_will_do = { factor = 8 }
@@ -936,7 +967,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_I05H
 		icon = GFX_focus_generic_rubber
-		x = 0 y = 2 cost = 5 relative_position_id = COT_I03G
+		x = 0	y = 2	cost = 5
+		relative_position_id = COT_I03G
 		prerequisite = { focus = COT_I04F }
 		prerequisite = { focus = COT_I03G }
 		ai_will_do = { factor = 8 }
@@ -963,7 +995,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_I06A
 		icon = GFX_goal_collaborate_local_elites_pony
-		x = 0 y = 1 cost = 5 relative_position_id = COT_I05A
+		x = 0	y = 1	cost = 5
+		relative_position_id = COT_I05A
 		prerequisite = { focus = COT_I05A }
 		ai_will_do = { factor = 8 }
 		search_filters = {
@@ -983,7 +1016,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_I06B
 		icon = GFX_goal_appleloosa
-		x = 0 y = 1 cost = 5 relative_position_id = COT_I05B
+		x = 0	y = 1	cost = 5
+		relative_position_id = COT_I05B
 		prerequisite = { focus = COT_I05B }
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -995,7 +1029,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_I06C
 		icon = GFX_focus_generic_industry_3
-		x = 0 y = 2 cost = 5 relative_position_id = COT_I04C
+		x = 0	y = 2	cost = 5
+		relative_position_id = COT_I04C
 		offset = {
 			x = 1
 			trigger = { has_completed_focus = COT_I01A }
@@ -1019,7 +1054,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_I06D
 		icon = GFX_goal_compassionaite_politics
-		x = 0 y = 2 cost = 5 relative_position_id = COT_I04D
+		x = 0	y = 2	cost = 5
+		relative_position_id = COT_I04D
 		prerequisite = { focus = COT_I04D }
 		prerequisite = { focus = COT_I05D }
 		prerequisite = { focus = COT_I05E }
@@ -1045,7 +1081,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_I06E
 		icon = GFX_focus_indy_industrial_tanks
-		x = 0 y = 2 cost = 5 relative_position_id = COT_I04E
+		x = 0	y = 2	cost = 5
+		relative_position_id = COT_I04E
 		offset = {
 			x = -1
 			trigger = { has_completed_focus = COT_I01C }
@@ -1069,7 +1106,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_I06F
 		icon = GFX_goal_GRF_northern_oil
-		x = 0 y = 1 cost = 5 relative_position_id = COT_I05G
+		x = 0	y = 1	cost = 5
+		relative_position_id = COT_I05G
 		prerequisite = { focus = COT_I05G }
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -1083,7 +1121,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_I06G
 		icon = GFX_goal_generic_construction2
-		x = 0 y = 1 cost = 5 relative_position_id = COT_I05H
+		x = 0	y = 1	cost = 5
+		relative_position_id = COT_I05H
 		prerequisite = { focus = COT_I05H }
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -1097,7 +1136,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_I07
 		icon = GFX_focus_research
-		x = 0 y = 7 cost = 5 relative_position_id = COT_I00
+		x = 0	y = 7	cost = 5
+		relative_position_id = COT_I00
 		prerequisite = {
 			focus = COT_I06D
 			focus = COT_I06C
@@ -1114,7 +1154,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_AN00
 		icon = GFX_goal_generic_navy_carrier
-		x = 10 y = 4 cost = 0.15 relative_position_id = COT_S00
+		x = 10	y = 4	cost = 0.15
+		relative_position_id = COT_S00
 		bypass = { has_country_flag = SCS_finished_convention }
 		available = { has_country_flag = SCS_finished_convention }
 		ai_will_do = { factor = 5 }
@@ -1126,7 +1167,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_N01
 		icon = GFX_goal_dockyard_generic_psody
-		x = -2 y = 1 cost = 5 relative_position_id = COT_AN00
+		x = -2	y = 1	cost = 5
+		relative_position_id = COT_AN00
 		prerequisite = { focus = COT_AN00 }
 		available = { owns_state = 80 }
 		ai_will_do = { factor = 4 }
@@ -1155,7 +1197,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_A01
 		icon = GFX_goal_eqs_airfields_south
-		x = 2 y = 1 cost = 5 relative_position_id = COT_AN00
+		x = 2	y = 1	cost = 5
+		relative_position_id = COT_AN00
 		prerequisite = { focus = COT_AN00 }
 		ai_will_do = { factor = 4 }
 		search_filters = { FOCUS_FILTER_AIRFORCE_BONUS }
@@ -1167,7 +1210,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_N02A
 		icon = GFX_goal_generic_navy_submarine
-		x = -1 y = 1 cost = 5 relative_position_id = COT_N01
+		x = -1	y = 1	cost = 5
+		relative_position_id = COT_N01
 		prerequisite = { focus = COT_N01 }
 		mutually_exclusive = { focus = COT_N02B }
 		ai_will_do = { factor = 4 }
@@ -1191,7 +1235,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_N02B
 		icon = GFX_goal_generic_navy_cruiser
-		x = 1 y = 1 cost = 5 relative_position_id = COT_N01
+		x = 1	y = 1	cost = 5
+		relative_position_id = COT_N01
 		prerequisite = { focus = COT_N01 }
 		mutually_exclusive = { focus = COT_N02A }
 		available = { has_government = fascism }
@@ -1216,7 +1261,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_A02A
 		icon = GFX_goal_generic_build_airforce
-		x = -1 y = 1 cost = 5 relative_position_id = COT_A01
+		x = -1	y = 1	cost = 5
+		relative_position_id = COT_A01
 		prerequisite = { focus = COT_A01 }
 		mutually_exclusive = { focus = COT_A02B }
 		ai_will_do = { factor = 4 }
@@ -1234,7 +1280,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_A02B
 		icon = GFX_goal_generic_air_fighter2
-		x = 1 y = 1 cost = 5 relative_position_id = COT_A01
+		x = 1	y = 1	cost = 5
+		relative_position_id = COT_A01
 		prerequisite = { focus = COT_A01 }
 		mutually_exclusive = { focus = COT_A02A }
 		ai_will_do = { factor = 4 }
@@ -1252,7 +1299,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_N03
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		x = 0 y = 2 cost = 5 relative_position_id = COT_N01
+		x = 0	y = 2	cost = 5
+		relative_position_id = COT_N01
 		prerequisite = {
 			focus = COT_N02A
 			focus = COT_N02B
@@ -1272,7 +1320,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_A03
 		icon = GFX_goal_generic_air_doctrine
-		x = -0 y = 2 cost = 5 relative_position_id = COT_A01
+		x = -0	y = 2	cost = 5
+		relative_position_id = COT_A01
 		prerequisite = {
 			focus = COT_A02A
 			focus = COT_A02B
@@ -1292,7 +1341,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_N04A
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = -1 y = 1 cost = 5 relative_position_id = COT_N03
+		x = -1	y = 1	cost = 5
+		relative_position_id = COT_N03
 		prerequisite = { focus = COT_N03 }
 		available = { owns_state = 80 }
 		ai_will_do = { factor = 7 }
@@ -1317,7 +1367,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_N04B
 		icon = GFX_goal_generic_amphibious_assault
-		x = 1 y = 1 cost = 5 relative_position_id = COT_N03
+		x = 1	y = 1	cost = 5
+		relative_position_id = COT_N03
 		prerequisite = { focus = COT_N03 }
 		ai_will_do = { factor = 4 }
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -1334,7 +1385,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_A04A
 		icon = GFX_goal_generic_radar
-		x = -1 y = 1 cost = 5 relative_position_id = COT_A03
+		x = -1	y = 1	cost = 5
+		relative_position_id = COT_A03
 		prerequisite = { focus = COT_A03 }
 		ai_will_do = { factor = 4 }
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -1357,7 +1409,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_A04B
 		icon = GFX_goal_generic_air_production
-		x = 1 y = 1 cost = 5 relative_position_id = COT_A03
+		x = 1	y = 1	cost = 5
+		relative_position_id = COT_A03
 		prerequisite = { focus = COT_A03 }
 		available = { owns_state = 20 }
 		ai_will_do = { factor = 4 }
@@ -1377,7 +1430,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_N05
 		icon = GFX_goal_generic_build_navy
-		x = 0 y = 2 cost = 5 relative_position_id = COT_N03
+		x = 0	y = 2	cost = 5
+		relative_position_id = COT_N03
 		prerequisite = {
 			focus = COT_N04A
 			focus = COT_N04B
@@ -1391,7 +1445,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_A05
 		icon = GFX_goal_industry_air
-		x = 0 y = 2 cost = 5 relative_position_id = COT_A03
+		x = 0	y = 2	cost = 5
+		relative_position_id = COT_A03
 		prerequisite = {
 			focus = COT_A04B
 			focus = COT_A04A
@@ -1416,7 +1471,8 @@ focus_tree = {
 	shared_focus = {	#Grand Army of the Confederacy
 		id = COT_M00
 		icon = GFX_goal_officers
-		x = 18 y = 0 cost = 5 relative_position_id = COT_S00
+		x = 18	y = 0	cost = 5
+		relative_position_id = COT_S00
 		offset = {
 			x = -4
 			trigger = {
@@ -1465,7 +1521,8 @@ focus_tree = {
 	shared_focus = {	#The Right to Bear Arms
 		id = COT_M01A
 		icon = GFX_goal_SCS_guns
-		x = -9 y = 1 cost = 5 relative_position_id = COT_M00
+		x = -9	y = 1	cost = 5
+		relative_position_id = COT_M00
 		offset = {
 			x = 4
 			trigger = {
@@ -1512,7 +1569,8 @@ focus_tree = {
 	shared_focus = {	#Appoint Stewed Apple as General in Chief
 		id = COT_M01B
 		icon = GFX_focus_RAJ_lions_of_the_great_war
-		x = -4 y = 1 cost = 5 relative_position_id = COT_M00
+		x = -4	y = 1	cost = 5
+		relative_position_id = COT_M00
 		offset = {
 			x = 4
 			trigger = { has_completed_focus = COT_M01B }
@@ -1541,7 +1599,8 @@ focus_tree = {
 	shared_focus = {	#Appoint Trotbert E. Neigh as General in Chief
 		id = COT_M01C
 		icon = GFX_goal_offensive_army
-		x = 0 y = 1 cost = 5 relative_position_id = COT_M00
+		x = 0	y = 1	cost = 5
+		relative_position_id = COT_M00
 		allow_branch = {
 			NOT = {
 				OR = {
@@ -1566,7 +1625,8 @@ focus_tree = {
 	shared_focus = {	#Appoint Stone Wall as General in Chief
 		id = COT_M01D
 		icon = GFX_goal_generic_defence
-		x = 4 y = 1 cost = 5 relative_position_id = COT_M00
+		x = 4	y = 1	cost = 5
+		relative_position_id = COT_M00
 		offset = {
 			x = -4
 			trigger = { has_completed_focus = COT_M01D }
@@ -1595,7 +1655,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_M01E
 		icon = GFX_goal_document
-		x = 9 y = 1 cost = 5 relative_position_id = COT_M00
+		x = 9	y = 1	cost = 5
+		relative_position_id = COT_M00
 		offset = {
 			x = -4
 			trigger = {
@@ -1637,7 +1698,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_M02A
 		icon = GFX_goal_conscription_pony
-		x = -1 y = 1 cost = 5 relative_position_id = COT_M01A
+		x = -1	y = 1	cost = 5
+		relative_position_id = COT_M01A
 		offset = {
 			x = 1
 			trigger = { has_completed_focus = COT_M02A }
@@ -1681,7 +1743,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_M02B
 		icon = GFX_goal_generic_cavalry
-		x = 1 y = 1 cost = 5 relative_position_id = COT_M01A
+		x = 1	y = 1	cost = 5
+		relative_position_id = COT_M01A
 		offset = {
 			x = -1
 			trigger = { has_completed_focus = COT_M02B }
@@ -1725,7 +1788,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_M02C
 		icon = GFX_goal_generic_special_forces
-		x = -1 y = 1 cost = 5 relative_position_id = COT_M01B
+		x = -1	y = 1	cost = 5
+		relative_position_id = COT_M01B
 		prerequisite = { focus = COT_M01B }
 		ai_will_do = { factor = 7 }
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -1742,7 +1806,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_M02D
 		icon = GFX_goal_generic_radar
-		x = 1 y = 1 cost = 5 relative_position_id = COT_M01B
+		x = 1	y = 1	cost = 5
+		relative_position_id = COT_M01B
 		prerequisite = { focus = COT_M01B }
 		ai_will_do = { factor = 7 }
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -1761,7 +1826,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_M02E
 		icon = GFX_goal_rct_fancy_train
-		x = -1 y = 1 cost = 5 relative_position_id = COT_M01C
+		x = -1	y = 1	cost = 5
+		relative_position_id = COT_M01C
 		prerequisite = { focus = COT_M01C }
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_ARMY_BONUS }
@@ -1773,7 +1839,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_M02F
 		icon = GFX_goal_riv_army
-		x = 1 y = 1 cost = 5 relative_position_id = COT_M01C
+		x = 1	y = 1	cost = 5
+		relative_position_id = COT_M01C
 		prerequisite = { focus = COT_M01C }
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -1785,7 +1852,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_M02G
 		icon = GFX_goal_anti_tank
-		x = -1 y = 1 cost = 5 relative_position_id = COT_M01D
+		x = -1	y = 1	cost = 5
+		relative_position_id = COT_M01D
 		prerequisite = { focus = COT_M01D }
 		ai_will_do = { factor = 7 }
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -1803,7 +1871,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_M02H
 		icon = GFX_focus_generic_support_the_left_right
-		x = 1 y = 1 cost = 5 relative_position_id = COT_M01D
+		x = 1	y = 1	cost = 5
+		relative_position_id = COT_M01D
 		prerequisite = { focus = COT_M01D }
 		ai_will_do = { factor = 8 }
 		search_filters = {
@@ -1838,7 +1907,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_M02I
 		icon = GFX_goal_national_artillery
-		x = -1 y = 1 cost = 5 relative_position_id = COT_M01E
+		x = -1	y = 1	cost = 5
+		relative_position_id = COT_M01E
 		offset = {
 			x = 1
 			trigger = { has_completed_focus = COT_M02I }
@@ -1882,7 +1952,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_M02J
 		icon = GFX_goal_planning_bonus
-		x = 1 y = 1 cost = 5 relative_position_id = COT_M01E
+		x = 1	y = 1	cost = 5
+		relative_position_id = COT_M01E
 		offset = {
 			x = -1
 			trigger = { has_completed_focus = COT_M02J }
@@ -1926,7 +1997,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_M03A
 		icon = GFX_goal_generic_small_arms
-		x = -1 y = 1 cost = 5 relative_position_id = COT_M02A
+		x = -1	y = 1	cost = 5
+		relative_position_id = COT_M02A
 		prerequisite = { focus = COT_M02A }
 		ai_will_do = { factor = 7 }
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -1943,7 +2015,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_M03B
 		icon = GFX_focus_indy_tanks_across_the_border
-		x = 0 y = 2 cost = 5 relative_position_id = COT_M01A
+		x = 0	y = 2	cost = 5
+		relative_position_id = COT_M01A
 		offset = {
 			x = 1
 			trigger = { has_completed_focus = COT_M02A }
@@ -1971,7 +2044,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_M03C
 		icon = GFX_goal_generic_army_motorized
-		x = 1 y = 1 cost = 5 relative_position_id = COT_M02B
+		x = 1	y = 1	cost = 5
+		relative_position_id = COT_M02B
 		prerequisite = { focus = COT_M02B }
 		ai_will_do = { factor = 7 }
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -1994,7 +2068,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_M03D
 		icon = GFX_goal_revolution_pony
-		x = 0 y = 1 cost = 5 relative_position_id = COT_M02C
+		x = 0	y = 1	cost = 5
+		relative_position_id = COT_M02C
 		prerequisite = { focus = COT_M02C }
 		ai_will_do = { factor = 8 }
 		completion_reward = {
@@ -2005,7 +2080,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_M03E
 		icon = GFX_goal_generic_army_tanks
-		x = 0 y = 1 cost = 5 relative_position_id = COT_M02D
+		x = 0	y = 1	cost = 5
+		relative_position_id = COT_M02D
 		prerequisite = { focus = COT_M02D }
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -2021,7 +2097,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_M03F
 		icon = GFX_goal_nested_fortifications
-		x = 0 y = 1 cost = 5 relative_position_id = COT_M02E
+		x = 0	y = 1	cost = 5
+		relative_position_id = COT_M02E
 		prerequisite = { focus = COT_M02E }
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_ARMY_BONUS }
@@ -2033,7 +2110,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_M03G
 		icon = GFX_focus_indy_swing_the_sword
-		x = 0 y = 1 cost = 5 relative_position_id = COT_M02F
+		x = 0	y = 1	cost = 5
+		relative_position_id = COT_M02F
 		prerequisite = { focus = COT_M02F }
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_ARMY_BONUS }
@@ -2045,7 +2123,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_M03H
 		icon = GFX_goal_national_arsenal
-		x = 0 y = 1 cost = 5 relative_position_id = COT_M02G
+		x = 0	y = 1	cost = 5
+		relative_position_id = COT_M02G
 		prerequisite = { focus = COT_M02G }
 		ai_will_do = { factor = 8 }
 		completion_reward = {
@@ -2056,7 +2135,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_M03I
 		icon = GFX_focus_healthcare_program
-		x = 0 y = 1 cost = 5 relative_position_id = COT_M02H
+		x = 0	y = 1	cost = 5
+		relative_position_id = COT_M02H
 		prerequisite = { focus = COT_M02H }
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -2073,7 +2153,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_M03J
 		icon = GFX_goal_generic_army_artillery
-		x = -1 y = 1 cost = 5 relative_position_id = COT_M02I
+		x = -1	y = 1	cost = 5
+		relative_position_id = COT_M02I
 		prerequisite = { focus = COT_M02I }
 		ai_will_do = { factor = 7 }
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -2089,7 +2170,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_M03K
 		icon = GFX_goal_magical_weapon_focus
-		x = 0 y = 2 cost = 5 relative_position_id = COT_M01E
+		x = 0	y = 2	cost = 5
+		relative_position_id = COT_M01E
 		offset = {
 			x = 1
 			trigger = { has_completed_focus = COT_M02I }
@@ -2117,7 +2199,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_M03L
 		icon = GFX_goal_generic_construction2
-		x = 1 y = 1 cost = 5 relative_position_id = COT_M02J
+		x = 1	y = 1	cost = 5
+		relative_position_id = COT_M02J
 		prerequisite = { focus = COT_M02J }
 		ai_will_do = { factor = 7 }
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -2134,7 +2217,8 @@ focus_tree = {
 	shared_focus = {
 		id = COT_M04
 		icon = GFX_goal_scs
-		x = 0 y = 3 cost = 5 relative_position_id = COT_M01C
+		x = 0	y = 3	cost = 5
+		relative_position_id = COT_M01C
 		prerequisite = {
 			focus = COT_M03D
 			focus = COT_M03E

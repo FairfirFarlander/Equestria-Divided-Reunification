@@ -1,49 +1,49 @@
 focus_tree = {
-	id = FAI
+	id = FAI_focus_tree
 	country = {
 		factor = 0
 		modifier = {
 			tag = FAI
-			add = 3
+			add = 0	#2
 		}
 	}
-	continuous_focus_position = { x = 10 y = -400 }
 	shared_focus = FAI_S00
+	continuous_focus_position = { x = 10	y = -400 }
 }
 focus_tree = {
-	id = FAI_debug
+	id = FAI_focus_tree_debug
 	country = {
 		factor = 0
 		modifier = {
 			is_debug = yes
 			tag = FAI
-			add = 5
+			add = 7
 		}
 	}
-	continuous_focus_position = { x = 10 y = -400 }
 	shared_focus = FAI_S00
+	continuous_focus_position = { x = 10	y = -400 }
 }
 ##StoryTree
 	shared_focus = {	#What We Must Do to Survive
 		id = FAI_S00
 		icon = GFX_goal_survival_first
-		x = 0 y = 0 cost = 1
-		search_filters = {  }
+		x = 0	y = 0	cost = 1
+		search_filters = {}
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus FAI_S00"
+			log = "[GetDateText]: [Root.GetName]: Focus FAI_S00"
 			custom_effect_tooltip = FAI_S00_effect_tooltip
 		}
 	}
 	shared_focus = {	#Firing Up Old Factories
 		id = FAI_S01A
 		icon = GFX_goal_factory_complex
-		x = -1 y = 1 cost = 2 relative_position_id = FAI_S00
-		search_filters = {  }
+		relative_position_id = FAI_S00
+		x = -1	y = 1	cost = 2
 		prerequisite = { focus = FAI_S00 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus FAI_S01A"
+			log = "[GetDateText]: [Root.GetName]: Focus FAI_S01A"
 			99 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -57,12 +57,12 @@ focus_tree = {
 	shared_focus = {	#The Guns of the Congregation
 		id = FAI_S01B
 		icon = GFX_goal_van_rifles
-		x = 1 y = 1 cost = 2 relative_position_id = FAI_S00
-		search_filters = {  }
+		relative_position_id = FAI_S00
+		x = 1	y = 1	cost = 2
 		prerequisite = { focus = FAI_S00 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus FAI_S01B"
+			log = "[GetDateText]: [Root.GetName]: Focus FAI_S01B"
 			95 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -76,12 +76,12 @@ focus_tree = {
 	shared_focus = {	#Radios in Every Home and On Every Street Corner
 		id = FAI_S02A
 		icon = GFX_goal_radio
-		x = 0 y = 1 cost = 5 relative_position_id = FAI_S01A
-		search_filters = {  }
+		relative_position_id = FAI_S01A
+		x = 0	y = 1	cost = 5
 		prerequisite = { focus = FAI_S01A }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus FAI_S02A"
+			log = "[GetDateText]: [Root.GetName]: Focus FAI_S02A"
 			set_technology = {
 				radio = 1
 			}
@@ -90,12 +90,12 @@ focus_tree = {
 	shared_focus = {	#Homegrown Innovations
 		id = FAI_S02B
 		icon = GFX_goal_Arms_Export
-		x = 0 y = 1 cost = 5 relative_position_id = FAI_S01B
-		search_filters = {  }
+		relative_position_id = FAI_S01B
+		x = 0	y = 1	cost = 5
 		prerequisite = { focus = FAI_S01B }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus FAI_S02B"
+			log = "[GetDateText]: [Root.GetName]: Focus FAI_S02B"
 			add_tech_bonus = {
 				name = infantry_bonus
 				category = infantry_weapons
@@ -107,12 +107,12 @@ focus_tree = {
 	shared_focus = {	#Boosting the Signal
 		id = FAI_S03A
 		icon = GFX_goal_generic_radio_equipment
-		x = -2 y = 3 cost = 5 relative_position_id = FAI_S00
-		search_filters = {  }
+		relative_position_id = FAI_S00
+		x = -2	y = 3	cost = 5
 		prerequisite = { focus = FAI_S02A }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus FAI_S03A"
+			log = "[GetDateText]: [Root.GetName]: Focus FAI_S03A"
 			CLD = {
 				add_ideas = FAI_radio_preacher
 			}
@@ -124,35 +124,41 @@ focus_tree = {
 	shared_focus = {	#They'll Come Loud and They'll Come Fast
 		id = FAI_S03B
 		icon = GFX_goal_revolution_pony
-		x = 0 y = 3 cost = 5 relative_position_id = FAI_S00
-		search_filters = {  }
+		relative_position_id = FAI_S00
+		x = 0	y = 3	cost = 5
 		prerequisite = { focus = FAI_S02A }
 		prerequisite = { focus = FAI_S02B }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus FAI_S03B"
+			log = "[GetDateText]: [Root.GetName]: Focus FAI_S03B"
 			if = {
 				limit = { has_idea = FAI_rifle_by_side }
-				add_ideas = FAI_vigilant_flock
-				else = {
-					add_ideas = FAI_vigilance_at_home
+				swap_ideas = {
+					remove_idea = FAI_rifle_by_side
+					add_idea = FAI_vigilant_flock
 				}
+			}
+			else = {
+				add_ideas = FAI_vigilance_at_home
 			}
 		}
 	}
 	shared_focus = {	#Keep A Rifle By Your Side
 		id = FAI_S03C
 		icon = GFX_goal_generic_pony_volunteer
-		x = 2 y = 3 cost = 5 relative_position_id = FAI_S00
-		search_filters = {  }
+		relative_position_id = FAI_S00
+		x = 2	y = 3	cost = 5
 		prerequisite = { focus = FAI_S02A }
 		prerequisite = { focus = FAI_S02B }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus FAI_S03C"
+			log = "[GetDateText]: [Root.GetName]: Focus FAI_S03C"
 			if = {
 				limit = { has_idea = FAI_vigilance_at_home }
-				add_ideas = FAI_vigilant_flock
+				swap_ideas = {
+					remove_idea = FAI_vigilance_at_home
+					add_idea = FAI_vigilant_flock
+				}
 				else = {
 					add_ideas = FAI_rifle_by_side
 				}
@@ -162,13 +168,13 @@ focus_tree = {
 	shared_focus = {	#The Sharing of Poppy's Knowledge
 		id = FAI_S04A
 		icon = GFX_goal_planning_bonus
-		x = 0 y = 2 cost = 5 relative_position_id = FAI_S02A
-		search_filters = {  }
+		relative_position_id = FAI_S02A
+		x = 0	y = 2	cost = 5
 		prerequisite = { focus = FAI_S03A }
 		prerequisite = { focus = FAI_S03B }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus FAI_S04A"
+			log = "[GetDateText]: [Root.GetName]: Focus FAI_S04A"
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				category = cat_grand_battle_plan
@@ -180,13 +186,13 @@ focus_tree = {
 	shared_focus = {	#To Let the Faithful Be Closer to the Sisters
 		id = FAI_S04B
 		icon = GFX_goal_POL_recon_aircraft
-		x = 0 y = 2 cost = 5 relative_position_id = FAI_S02B
-		search_filters = {  }
+		relative_position_id = FAI_S02B
+		x = 0	y = 2	cost = 5
 		prerequisite = { focus = FAI_S03B }
 		prerequisite = { focus = FAI_S03C }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus FAI_S04B"
+			log = "[GetDateText]: [Root.GetName]: Focus FAI_S04B"
 			95 = {
 				add_building_construction = {
 					type = air_base
@@ -200,13 +206,15 @@ focus_tree = {
 				generic_early_fighter = yes
 				add_equipment_to_stockpile = {
 					type = small_plane_airframe_0
-					variant_name = "Early Fighter"
+					variant_name = "Hollow Shades Fury"
+					producer = EQS
 					amount = 30
 				}
 				else = {
 					set_technology = { early_fighter = 1 }
 					add_equipment_to_stockpile = {
 						type = fighter_equipment_1
+						producer = EQS
 						amount = 30
 					}
 				}
@@ -216,13 +224,13 @@ focus_tree = {
 	shared_focus = {	#The Sisters' Most Devoted Servants
 		id = FAI_S05
 		icon = GFX_goal_UESR_TNO_sun_moon
-		x = 0 y = 2 cost = 5 relative_position_id = FAI_S03B
-		search_filters = {  }
+		relative_position_id = FAI_S03B
+		x = 0	y = 2	cost = 5
 		prerequisite = { focus = FAI_S04A }
 		prerequisite = { focus = FAI_S04B }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus FAI_S05"
+			log = "[GetDateText]: [Root.GetName]: Focus FAI_S05"
 			hidden_effect = { load_oob = FAI_S05_royal_guard }
 			custom_effect_tooltip = FAI_S05_effect_tooltip
 		}
@@ -230,8 +238,8 @@ focus_tree = {
 	shared_focus = {	#The Sinners to Our South
 		id = FAI_S06A
 		icon = GFX_goal_GEA_guerilla_warfare
-		x = -1 y = 1 cost = 5 relative_position_id = FAI_S05
-		search_filters = {  }
+		relative_position_id = FAI_S05
+		x = -1	y = 1	cost = 5
 		prerequisite = { focus = FAI_S05 }
 		available = { is_subject = no }
 		bypass = {
@@ -249,7 +257,7 @@ focus_tree = {
 		will_lead_to_war_with = TFL
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus FAI_S06A"
+			log = "[GetDateText]: [Root.GetName]: Focus FAI_S06A"
 			create_wargoal = {
 				type = annex_everything
 				target = TFL
@@ -259,8 +267,8 @@ focus_tree = {
 	shared_focus = {	#The Heathens to the East
 		id = FAI_S06B
 		icon = GFX_goal_generic_pony_pegasus
-		x = 1 y = 1 cost = 5 relative_position_id = FAI_S05
-		search_filters = {  }
+		relative_position_id = FAI_S05
+		x = 1	y = 1	cost = 5
 		prerequisite = { focus = FAI_S05 }
 		available = { is_subject = no }
 		bypass = {
@@ -277,7 +285,7 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus FAI_S06B"
+			log = "[GetDateText]: [Root.GetName]: Focus FAI_S06B"
 			create_wargoal = {
 				type = annex_everything
 				target = CLD
@@ -287,8 +295,8 @@ focus_tree = {
 	shared_focus = {	#A New Use for the Tools of Sinners
 		id = FAI_S07A
 		icon = GFX_goal_generic_support_equipment
-		x = 0 y = 1 cost = 5 relative_position_id = FAI_S06A
-		search_filters = {  }
+		relative_position_id = FAI_S06A
+		x = 0	y = 1	cost = 5
 		prerequisite = { focus = FAI_S06A }
 		available = {
 			TFL = {
@@ -314,7 +322,7 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus FAI_S07A"
+			log = "[GetDateText]: [Root.GetName]: Focus FAI_S07A"
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = 1000
@@ -328,21 +336,21 @@ focus_tree = {
 			if = {
 				limit = { has_dlc = "No Step Back" }
 				set_technology = { gwtank_chassis = 1 }
-				create_equipment_variant={
-					name="M1-13 Applesauce (S)"
-					type=light_tank_chassis_0
-					modules={
-						main_armament_slot=tank_heavy_machine_gun
-						turret_type_slot=tank_light_one_man_tank_turret
-						suspension_type_slot=tank_bogie_suspension
-						armor_type_slot=tank_riveted_armor
-						engine_type_slot=tank_gasoline_engine
+				create_equipment_variant = {
+					name = "M1-13 Applesauce (S)"
+					type = light_tank_chassis_0
+					modules = {
+						main_armament_slot = tank_heavy_machine_gun
+						turret_type_slot = tank_light_one_man_tank_turret
+						suspension_type_slot = tank_bogie_suspension
+						armor_type_slot = tank_riveted_armor
+						engine_type_slot = tank_gasoline_engine
 					}
 				}
-				hidden_effect = { set_oob = FAI_S07A_TFL_tank_nsb }
+				hidden_effect = { load_oob = FAI_S07A_TFL_tank_nsb }
 				else = {
 					set_technology = { gwtank = 1 }
-					hidden_effect = { set_oob = FAI_S07A_TFL_tank }
+					hidden_effect = { load_oob = FAI_S07A_TFL_tank }
 				}
 			}
 			custom_effect_tooltip = FAI_S07A_effect_tooltip
@@ -351,9 +359,20 @@ focus_tree = {
 	shared_focus = {	#The Hedonistic Gift
 		id = FAI_S07B
 		icon = GFX_goal_generic_air_CAS_new
-		x = 0 y = 1 cost = 5 relative_position_id = FAI_S06B
-		search_filters = {  }
+		relative_position_id = FAI_S06B
+		x = 0	y = 1	cost = 5
 		prerequisite = { focus = FAI_S06B }
+		available = {
+			CLD = {
+				OR = {
+					exists = no
+					AND = {
+						exists = yes
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
 		bypass = {
 			CLD = { exists = no }
 			68 = {
@@ -367,7 +386,7 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus FAI_S07B"
+			log = "[GetDateText]: [Root.GetName]: Focus FAI_S07B"
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = 2000
@@ -385,7 +404,7 @@ focus_tree = {
 				}
 				create_equipment_variant = {
 					name = "Hawker Hurricane (CAS)"
-					type = small_plane_airframe_1
+					type = small_plane_cas_airframe_1
 					modules = {
 						fixed_main_weapon_slot = bomb_locks
 						fixed_auxiliary_weapon_slot_1 = light_mg_4x
@@ -404,13 +423,13 @@ focus_tree = {
 	shared_focus = {	#To Deal with the Heathens and Sinners
 		id = FAI_S08
 		icon = GFX_focus_indy_bound_by_blood
-		x = 0 y = 3 cost = 5 relative_position_id = FAI_S05
-		search_filters = {  }
+		relative_position_id = FAI_S05
+		x = 0	y = 3	cost = 5
 		prerequisite = { focus = FAI_S07A }
 		prerequisite = { focus = FAI_S07B }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus FAI_S08"
+			log = "[GetDateText]: [Root.GetName]: Focus FAI_S08"
 			every_state = {
 				limit = {
 					OR = {
@@ -428,26 +447,47 @@ focus_tree = {
 	shared_focus = {	#The One True Home for the Faithful
 		id = FAI_S09
 		icon = GFX_goal_UESR_TNO_sun_moon
-		x = 0 y = 1 cost = 5 relative_position_id = FAI_S08
-		search_filters = {  }
+		relative_position_id = FAI_S08
+		x = 0	y = 1	cost = 5
 		prerequisite = { focus = FAI_S08 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus FAI_S09"
+			log = "[GetDateText]: [Root.GetName]: Focus FAI_S09"
 			set_cosmetic_tag = FAI_greater
-			add_ideas = closed_economy
-			add_stability=0.2
+			custom_effect_tooltip = FAI_S09_effect_tooltip
+			if = {
+				limit = { has_idea = free_trade }
+				swap_ideas = {
+					remove_idea = free_trade
+					add_idea = closed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = export_focus }
+				swap_ideas = {
+					remove_idea = export_focus
+					add_idea = closed_economy
+				}
+			}
+			else_if = {
+				limit = { has_idea = limited_exports }
+				swap_ideas = {
+					remove_idea = limited_exports
+					add_idea = closed_economy
+				}
+			}
+			add_stability = 0.2
 		}
 	}
 	shared_focus = {	#Heaven's Gates
 		id = FAI_S10
 		icon = GFX_focus_man_claim_the_mandate_of_heaven
-		x = 0 y = 1 cost = 5 relative_position_id = FAI_S09
-		search_filters = {  }
+		relative_position_id = FAI_S09
+		x = 0	y = 1	cost = 5
 		prerequisite = { focus = FAI_S09 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus FAI_S10"
+			log = "[GetDateText]: [Root.GetName]: Focus FAI_S10"
 			99 = {
 				add_building_construction = {
 					type = bunker
@@ -470,16 +510,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-		}
-	}
-	shared_focus = {	#
-		id = FAI_S0
-		#icon = 
-		x = 0 y = 2 cost = 5 relative_position_id = FAI_S0
-		search_filters = {  }
-		#prerequisite = { focus = FAI_ }
-		ai_will_do = { factor = 80 }
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus FAI_S0"
+			custom_effect_tooltip = FAI_S10_effect_tooltip
 		}
 	}

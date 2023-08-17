@@ -6,14 +6,14 @@ ideas={
 		}
 		HMS_sunandmoon={
 			allowed={always=no}	removal_cost=-1
-			picture=sunrise_sparkle
+			picture=EQS_TNO_holy_alicorns_idea
 			modifier={
 				stability_factor=0.1
 			}
 		}
 		HMS_unicornrace={
 			allowed={always=no}	removal_cost=-1
-			picture=unicorn_academy
+			picture=unicorn_science
 			modifier={
 				#War Support Here
 			}

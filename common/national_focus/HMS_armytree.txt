@@ -1,104 +1,113 @@
 #Story Tree Main
-	shared_focus={		#A Royal Inspection
-		id=HMS_LAN00 #icon=
-		x=-12 y=0 cost=5 ai_will_do={factor=4000}
-		select_effect={
-			country_event=HMS_evt_a11.001	#The Equestrian Remenant
-			country_event={id=HMS_evt_a11.002 days=14}	#The Right of Command
-			country_event={id=HMS_evt_a11.003 days=21}	#A Call to Reform
-			country_event={id=HMS_evt_a11.004 days=28}	#The Tools of War
+	shared_focus = {	#A Royal Inspection
+		id = HMS_LAN00
+		#icon = 
+		x = -12 y = 0 cost = 5 ai_will_do = {factor = 4000}
+		select_effect = {
+			country_event = HMS_evt_a11.001	#The Equestrian Remenant
+			country_event = {id = HMS_evt_a11.002 days = 14}	#The Right of Command
+			country_event = {id = HMS_evt_a11.003 days = 21}	#A Call to Reform
+			country_event = {id = HMS_evt_a11.004 days = 28}	#The Tools of War
 		}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HMS_LAN00"
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HMS_LAN00"
 		}
 	}
-	shared_focus={		#Restore the Campanian System
-		id=HMS_L01A #icon=
-		relative_position_id=HMS_LAN00
-		x=-3 y=1 cost=2 ai_will_do={factor=320}
-		prerequisite={focus=HMS_LAN00}
-		mutually_exclusive={focus=HMS_L01B}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HMS_L01A"
+	shared_focus = {	#Restore the Campanian System
+		id = HMS_L01A
+		#icon = 
+		relative_position_id = HMS_LAN00
+		x = -3 y = 1 cost = 2 ai_will_do = {factor = 320}
+		prerequisite = {focus = HMS_LAN00}
+		mutually_exclusive = {focus = HMS_L01B}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HMS_L01A"
 			#Locks conscription to decision which activates a mission timer.
 			#This timer will ramp up conscription shortly before a campaign.
 			#If no campaign takes place, a penalty is applied to war support.
 		}
 	}
-	shared_focus={		#Retain Equestian Conscription
-		id=HMS_L01B #icon=
-		relative_position_id=HMS_LAN00
-		x=3 y=1 cost=2 ai_will_do={factor=320}
-		prerequisite={focus=HMS_LAN00}
-		mutually_exclusive={focus=HMS_L01A}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HMS_L01B"
+	shared_focus = {	#Retain Equestian Conscription
+		id = HMS_L01B
+		#icon = 
+		relative_position_id = HMS_LAN00
+		x = 3 y = 1 cost = 2 ai_will_do = {factor = 320}
+		prerequisite = {focus = HMS_LAN00}
+		mutually_exclusive = {focus = HMS_L01A}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HMS_L01B"
 			#Unlocks Conscription Laws.
 		}
 	}
-	shared_focus={		#Swords to Ploughs
-		id=HMS_L02A #icon=
-		relative_position_id=HMS_LAN00
-		x=-6 y=2 cost=2 ai_will_do={factor=320}
-		prerequisite={focus=HMS_L01A}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HMS_L02A"
+	shared_focus = {	#Swords to Ploughs
+		id = HMS_L02A
+		#icon = 
+		relative_position_id = HMS_LAN00
+		x = -6 y = 2 cost = 2 ai_will_do = {factor = 320}
+		prerequisite = {focus = HMS_L01A}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HMS_L02A"
 			#Core Resistance and Defense Buff
 		}
 	}
-	shared_focus={		#Build Local Training Fields
-		id=HMS_L02B #icon=
-		relative_position_id=HMS_LAN00
-		x=-2 y=2 cost=2 ai_will_do={factor=320}
-		prerequisite={focus=HMS_L01A focus=HMS_L01B}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HMS_L02B"
+	shared_focus = {	#Build Local Training Fields
+		id = HMS_L02B
+		#icon = 
+		relative_position_id = HMS_LAN00
+		x = -2 y = 2 cost = 2 ai_will_do = {factor = 320}
+		prerequisite = {focus = HMS_L01A focus = HMS_L01B}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HMS_L02B"
 			#Training Time Boost.
 		}
 	}
-	shared_focus={		#Restructure High Command
-		id=HMS_L02C #icon=
-		relative_position_id=HMS_LAN00
-		x=0 y=2 cost=2 ai_will_do={factor=320}
-		prerequisite={focus=HMS_L01A focus=HMS_L01B}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HMS_L02C"
+	shared_focus = {	#Restructure High Command
+		id = HMS_L02C
+		#icon = 
+		relative_position_id = HMS_LAN00
+		x = 0 y = 2 cost = 2 ai_will_do = {factor = 320}
+		prerequisite = {focus = HMS_L01A focus = HMS_L01B}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HMS_L02C"
 			#Unlocks new advisors, generals, and high command staff based on which system is chosen.
 		}
 	}
-	shared_focus={		#Expand Specialist Roles
-		id=HMS_L02D #icon=
-		relative_position_id=HMS_LAN00
-		x=2 y=2 cost=2 ai_will_do={factor=320}
-		prerequisite={focus=HMS_L01A focus=HMS_L01B}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HMS_L02D"
+	shared_focus = {	#Expand Specialist Roles
+		id = HMS_L02D
+		#icon = 
+		relative_position_id = HMS_LAN00
+		x = 2 y = 2 cost = 2 ai_will_do = {factor = 320}
+		prerequisite = {focus = HMS_L01A focus = HMS_L01B}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HMS_L02D"
 			#Gives a tech bonus to support weapons, spec ops, or support equipment
 			#Special ops cap from disorganized army is removed.
 		}
 	}
-	shared_focus={		#The Grain Dole
-		id=HMS_L02E #icon=
-		relative_position_id=HMS_LAN00
-		x=6 y=2 cost=2 ai_will_do={factor=320}
-		prerequisite={focus=HMS_L01B}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HMS_L02E"
+	shared_focus = {	#The Grain Dole
+		id = HMS_L02E
+		#icon = 
+		relative_position_id = HMS_LAN00
+		x = 6 y = 2 cost = 2 ai_will_do = {factor = 320}
+		prerequisite = {focus = HMS_L01B}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HMS_L02E"
 			#Removes organisation debuff of disorganized army
 			#Provides a small out of supply buff
 		}
 	}
 #Air Tree
-	shared_focus={		#Look to the Skies
-		id=HMS_A01A #icon=
-		relative_position_id=HMS_LAN00
-		x=-14 y=1 cost=5 ai_will_do={factor=20}
-		prerequisite={focus=HMS_LAN00}
-		select_effect={
-			country_event={id=HMS_evt_a11.011 days=10}	#Feather Horn's Proposal
-			country_event={id=HMS_evt_a11.011 days=20}	#Wight Drop's Dream
+	shared_focus = {	#Look to the Skies
+		id = HMS_A01A
+		#icon = 
+		relative_position_id = HMS_LAN00
+		x = -14 y = 1 cost = 5 ai_will_do = {factor = 20}
+		prerequisite = {focus = HMS_LAN00}
+		select_effect = {
+			country_event = {id = HMS_evt_a11.011 days = 10}	#Feather Horn's Proposal
+			country_event = {id = HMS_evt_a11.011 days = 20}	#Wight Drop's Dream
 		}
-		completion_reward={
-			log="[GetDateText]: [Root.GetName]: focus HMS_A01A"
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HMS_A01A"
 		}
 	}

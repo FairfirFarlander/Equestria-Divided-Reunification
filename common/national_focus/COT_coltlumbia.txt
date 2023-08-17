@@ -1,7 +1,8 @@
 	shared_focus = {
 		id = COT_you_happy_land
 		icon = GFX_goal_support_democracy
-		x = 17 y = 7 cost = 5 relative_position_id = COT_S00
+		x = 17	y = 7	cost = 5
+		relative_position_id = COT_S00
 		available = { has_country_flag = SCS_coltlumbia_win }
 		ai_will_do = { factor = 14 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -13,7 +14,8 @@
 	shared_focus = {
 		id = COT_expose_rockhoof
 		icon = GFX_focus_generic_anti_fascist_diplomacy
-		x = -1 y = 1 cost = 2.9 relative_position_id = COT_you_happy_land
+		x = -1	y = 1	cost = 2.9
+		relative_position_id = COT_you_happy_land
 		prerequisite = { focus = COT_you_happy_land }
 		available = { has_country_flag = SCS_coltlumbia_win }
 		ai_will_do = { factor = 14 }
@@ -26,10 +28,11 @@
 	shared_focus = {
 		id = COT_tar_democrats_and_royalists
 		icon = GFX_goal_strike_harmony
-		x = 1 y = 1 cost = 2.9 relative_position_id = COT_you_happy_land
+		x = 1	y = 1	cost = 2.9
+		relative_position_id = COT_you_happy_land
 		prerequisite = { focus = COT_you_happy_land }
 		available = { has_country_flag = SCS_coltlumbia_win }
-		ai_will_do =  factor = 14 }
+		ai_will_do = factor = 14 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus COT_tar_democrats_and_royalists"
 			add_popularity = {
@@ -43,7 +46,8 @@
 	shared_focus = {
 		id = COT_total_isolation
 		icon = GFX_goal_nested_fortifications
-		x = -3 y = 1 cost = 5 relative_position_id = COT_expose_rockhoof
+		x = -3	y = 1	cost = 5
+		relative_position_id = COT_expose_rockhoof
 		mutually_exclusive = {
 			focus = COT_extend_the_confederacy
 			focus = COT_manifest_destiny
@@ -1357,7 +1361,7 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus COT_sea_to_shining_sea"
 			if = {
-				limit={
+				limit = {
 				country_exists = CES
 				}
 				create_wargoal = {
@@ -1365,7 +1369,7 @@
 				}
 			}
 			if = {
-				limit={
+				limit = {
 				country_exists = NMS
 				}
 				create_wargoal = {
@@ -1373,7 +1377,7 @@
 				}
 			}
 			if = {
-				limit={
+				limit = {
 				country_exists = JUN
 				}
 				create_wargoal = {
@@ -1381,7 +1385,7 @@
 				}
 			}
 			if = {
-				limit={
+				limit = {
 				country_exists = TEM
 				}
 				create_wargoal = {
@@ -1389,7 +1393,7 @@
 				}
 			}
 			if = {
-				limit={
+				limit = {
 				country_exists = BAL
 				}
 				create_wargoal = {
