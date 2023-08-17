@@ -341,9 +341,9 @@ set_popularities = {
 }
 set_politics = { ruling_party = fascism }
 set_country_flag = EDR_is_equestrian_breakaway
-recruit_character = NIH_lulluby_and_burgundy
-recruit_character = NIH_burgundy
-recruit_character = NIH_lulluby
+recruit_character = NIH_burgandy_and_lullaby
+recruit_character = NIH_burgandy
+recruit_character = NIH_lullaby
 recruit_character = NIH_cursed_fate
 recruit_character = NIH_night_raid
 #NOTES#

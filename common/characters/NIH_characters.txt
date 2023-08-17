@@ -1,40 +1,40 @@
 characters = {
-	NIH_lulluby_and_burgundy = {
-		name = NIH_lulluby_and_burgundy
+	NIH_burgandy_and_lullaby = {
+		name = NIH_burgandy_and_lullaby
 		gender = female	#But, one is male? Search how EAW does the crusaders.
-		#portraits = {
-		#	civilian = {
-		#		large = GFX_NIH_lulluby_and_burgundy
-		#		small = GFX_NIH_lulluby_and_burgundy_small
-		#	}
-		#	army = {
-		#		large = GFX_NIH_lulluby_and_burgundy
-		#		small = GFX_NIH_lulluby_and_burgundy_small
-		#	}
-		#}
+		portraits = {
+			civilian = {
+				large = GFX_NIH_burgandy_and_lullaby
+				small = GFX_NIH_burgandy_and_lullaby_small
+			}
+			army = {
+				large = GFX_NIH_burgandy_and_lullaby
+				small = GFX_NIH_burgandy_and_lullaby_small
+			}
+		}
 		country_leader = {
-			desc = NIH_lab_leader_desc
+			desc = NIH_balullaby_leader_desc
 			ideology = fascism_ideology
 		}
 	}
-	NIH_burgundy = {
-		name = NIH_burgundy
-		#portraits = {
-		#	civilian = {
-		#		large = GFX_NIH_burgundy
-		#		small = GFX_NIH_burgundy_small
-		#	}
-		#	army = {
-		#		large = GFX_NIH_burgundy
-		#		small = GFX_NIH_burgundy_small
-		#	}
-		#}
+	NIH_burgandy = {
+		name = NIH_burgandy
+		portraits = {
+			civilian = {
+				large = GFX_NIH_burgandy
+				small = GFX_NIH_burgandy_small
+			}
+			army = {
+				large = GFX_NIH_burgandy
+				small = GFX_NIH_burgandy_small
+			}
+		}
 		country_leader = {
-			desc = NIH_burgundy_leader_desc
+			desc = NIH_burgandy_leader_desc
 			ideology = fascism_ideology
 		}
 		field_marshal = {
-			desc = NIH_burgundy_commander_desc
+			desc = NIH_burgandy_commander_desc
 			skill = 3
 			attack_skill = 3
 			defense_skill = 2
@@ -44,22 +44,22 @@ characters = {
 		}
 		advisor = {
 			slot = army_chief
-			idea_token = NIH_burgundy_chief
+			idea_token = NIH_burgandy_chief
 			cost = 50
 			traits = { army_chief_morale_1 }
 		}
 	}
-	NIH_lulluby = {
-		name = NIH_lulluby
+	NIH_lullaby = {
+		name = NIH_lullaby
 		gender = female
-		#portraits = {
-		#	civilian = {
-		#		large = GFX_NIH_lulluby
-		#		small = GFX_NIH_lulluby_small
-		#	}
-		#}
+		portraits = {
+			civilian = {
+				large = GFX_NIH_lullaby
+				small = GFX_NIH_lullaby_small
+			}
+		}
 		country_leader = {
-			desc = NIH_lulluby_leader_desc
+			desc = NIH_lullaby_leader_desc
 			ideology = fascism_ideology
 		}
 	}

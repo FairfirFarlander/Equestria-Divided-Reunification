@@ -29,14 +29,14 @@
     NIH_democratic_party_long: "Ponies Of The North Star"
  ###Characters###
   ##Leaders##
-   NIH_lulluby_and_burgundy: "Lullaby and Burgundy"
-    NIH_lab_leader_desc: "$CRDC_art_tiviyl$"
-   NIH_burgundy: "Burgundy"
-    NIH_burgundy_leader_desc: "$CRDC_art_tiviyl$"
-    NIH_burgundy_commander_desc: "$NIH_burgundy_leader_desc$"
-    NIH_burgundy_chief_desc: "$NIH_burgundy_leader_desc$"
-   NIH_lulluby: "Lullaby"
-    NIH_lulluby_leader_desc: "$CRDC_art_tiviyl$"
+   NIH_burgandy_and_lullaby: "Lullaby and Burgandy"
+    NIH_balullaby_leader_desc: "$CRDC_art_tiviyl$"
+   NIH_burgandy: "Burgandy"
+    NIH_burgandy_leader_desc: "$CRDC_art_tiviyl$"
+    NIH_burgandy_commander_desc: "$NIH_burgandy_leader_desc$"
+    NIH_burgandy_chief_desc: "$NIH_burgandy_leader_desc$"
+   NIH_lullaby: "Lullaby"
+    NIH_lullaby_leader_desc: "$CRDC_art_tiviyl$"
   ##Commanders##
    NIH_cursed_fate: "Cursed Fate"
     NIH_cfate_commander_desc: "$CRDC_art_tiviyl$"

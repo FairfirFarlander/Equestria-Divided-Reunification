@@ -7,10 +7,10 @@ focus_tree = {
 			add = 3
 		}
 	}
-	continuous_focus_position = { x = 10 y = -400 }
+	continuous_focus_position = { x = 10	y = -400 }
 	shared_focus = TRS_S00
 	shared_focus = TRS_M00
-	shared_focus = TRS_I00
+	shared_focus = TRS_I0000
 }
 focus_tree = {
 	id = TRS_debug
@@ -22,20 +22,20 @@ focus_tree = {
 			add = 5
 		}
 	}
-	continuous_focus_position = { x = 10 y = -400 }
+	continuous_focus_position = { x = 10	y = -400 }
 	shared_focus = TRS_S00
 	shared_focus = TRS_M00
-	shared_focus = TRS_I00
+	shared_focus = TRS_I0000
 }
-##StoryTree
+##Story Branch##
 	shared_focus = {	#Securing My Birthright
 		id = TRS_S00
 		icon = GFX_focus_generic_monarchy_1
-		x = 0 y = 0 cost = 1
+		x = 0	y = 0	cost = 1
 		search_filters = {  }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus TRS_S00"
+			log = "[GetDateText]: [Root.GetName]: Focus TRS_S00"
 			swap_ideas = {
 				remove_idea = TRS_blood_throne
 				add_idea = TRS_blood_throne_1
@@ -45,38 +45,41 @@ focus_tree = {
 	shared_focus = {	#Convening with the Lower Houses
 		id = TRS_S01A
 		#icon = 
-		x = -1 y = 1 cost = 2 relative_position_id = TRS_S00
+		x = -1	y = 1	cost = 2
+		relative_position_id = TRS_S00
 		search_filters = {  }
 		prerequisite = { focus = TRS_S00 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus TRS_S01A"
+			log = "[GetDateText]: [Root.GetName]: Focus TRS_S01A"
 			country_event = TRS_ES.0001
 		}
 	}
 	shared_focus = {	#A Gathering of the High Nobility
 		id = TRS_S01B
 		#icon = 
-		x = 1 y = 1 cost = 2 relative_position_id = TRS_S00
+		x = 1	y = 1	cost = 2
+		relative_position_id = TRS_S00
 		search_filters = {  }
 		prerequisite = { focus = TRS_S00 }
 		select_effect = { country_event = TRS_ES.0101 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus TRS_S01B"
+			log = "[GetDateText]: [Root.GetName]: Focus TRS_S01B"
 			country_event = TRS_ES.0102
 		}
 	}
 	shared_focus = {	#The Crowning of Lady Aurora
 		id = TRS_S02
 		#icon = 
-		x = 0 y = 2 cost = 4 relative_position_id = TRS_S00
+		x = 0	y = 2	cost = 4
+		relative_position_id = TRS_S00
 		search_filters = {  }
 		prerequisite = { focus = TRS_S01A }
 		prerequisite = { focus = TRS_S01B }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus TRS_S02"
+			log = "[GetDateText]: [Root.GetName]: Focus TRS_S02"
 			if = {
 				limit = {
 					NOT = { has_country_flag = EDRlessevents }
@@ -97,12 +100,13 @@ focus_tree = {
 	shared_focus = {	#The Return of the Royal Knights
 		id = TRS_S03A
 		#icon = 
-		x = -2 y = 1 cost = 4 relative_position_id = TRS_S02
+		x = -2	y = 1	cost = 4
+		relative_position_id = TRS_S02
 		search_filters = {  }
 		prerequisite = { focus = TRS_S02 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus TRS_S03A"
+			log = "[GetDateText]: [Root.GetName]: Focus TRS_S03A"
 			set_technology = {
 				tech_military_police = 1
 				tech_knights = 1
@@ -120,12 +124,13 @@ focus_tree = {
 	shared_focus = {	#A Gathering of A Royal Council
 		id = TRS_S03B
 		#icon = 
-		x = 0 y = 1 cost = 4 relative_position_id = TRS_S02
+		x = 0	y = 1	cost = 4
+		relative_position_id = TRS_S02
 		search_filters = {  }
 		prerequisite = { focus = TRS_S02 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus TRS_S03B"
+			log = "[GetDateText]: [Root.GetName]: Focus TRS_S03B"
 			swap_ideas = {
 				remove_idea = TRS_blood_throne_2
 				add_idea = TRS_blood_throne_3
@@ -137,44 +142,47 @@ focus_tree = {
 	shared_focus = {	#Opening Up to the Rest Of Moon and Star
 		id = TRS_S03C
 		#icon = 
-		x = 2 y = 1 cost = 4 relative_position_id = TRS_S02
+		x = 2	y = 1	cost = 4
+		relative_position_id = TRS_S02
 		search_filters = {  }
 		prerequisite = { focus = TRS_S02 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus TRS_S03C"
+			log = "[GetDateText]: [Root.GetName]: Focus TRS_S03C"
 			add_ideas = limited_exports
-			hidden_effect = { set_country_flag = TRS_I00_unlock }
+			hidden_effect = { set_country_flag = TRS_I0000_unlock }
 			custom_effect_tooltip = TRS_S03C_effect_tooltip
 		}
 	}
 	shared_focus = {	#To Deal with the Monsters Without
 		id = TRS_S04A
 		#icon = 
-		x = -1 y = 2 cost = 4 relative_position_id = TRS_S02
+		x = -1	y = 2	cost = 4
+		relative_position_id = TRS_S02
 		search_filters = {  }
 		prerequisite = { focus = TRS_S03A }
 		prerequisite = { focus = TRS_S03B }
 		prerequisite = { focus = TRS_S03C }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus TRS_S04A"
+			log = "[GetDateText]: [Root.GetName]: Focus TRS_S04A"
 			hidden_effect = { set_country_flag = TRS_M00_unlock }
 			custom_effect_tooltip = TRS_S04A_effect_tooltip
-			add_war_support=0.02
+			add_war_support = 0.02
 		}
 	}
 	shared_focus = {	#To Deal with the Monsters Within
 		id = TRS_S04B
 		#icon = 
-		x = 1 y = 2 cost = 4 relative_position_id = TRS_S02
+		x = 1	y = 2	cost = 4
+		relative_position_id = TRS_S02
 		search_filters = {  }
 		prerequisite = { focus = TRS_S03A }
 		prerequisite = { focus = TRS_S03B }
 		prerequisite = { focus = TRS_S03C }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus TRS_S04B"
+			log = "[GetDateText]: [Root.GetName]: Focus TRS_S04B"
 			hidden_effect = { set_country_flag = TRS_H00_unlock }
 			custom_effect_tooltip = TRS_S04B_effect_tooltip
 		}
@@ -182,14 +190,15 @@ focus_tree = {
 	shared_focus = {	#The Inquisition’s Approved Advisers
 		id = TRS_S05
 		#icon = 
-		x = 0 y = 3 cost = 1 relative_position_id = TRS_S02
+		x = 0	y = 3	cost = 1
+		relative_position_id = TRS_S02
 		search_filters = {  }
 		prerequisite = { focus = TRS_S04A }
 		prerequisite = { focus = TRS_S04B }
 		select_effect = { country_event = TRS_ES.0501 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus TRS_S04B"
+			log = "[GetDateText]: [Root.GetName]: Focus TRS_S04B"
 			hidden_effect = { set_country_flag = TRS_S05_unlock_advisors }
 			custom_effect_tooltip = TRS_S05_effect_tooltip
 		}
@@ -197,39 +206,42 @@ focus_tree = {
 	shared_focus = {	#A Meeting With Inquisitor Swirl
 		id = TRS_S06A
 		#icon = 
-		x = -1 y = 1 cost = 1 relative_position_id = TRS_S05
+		x = -1	y = 1	cost = 1
+		relative_position_id = TRS_S05
 		search_filters = {  }
 		prerequisite = { focus = TRS_S05 }
 		select_effect = { country_event = TRS_ES.0501 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus TRS_S06A"
+			log = "[GetDateText]: [Root.GetName]: Focus TRS_S06A"
 			country_event = TRS_ES.0601
 		}
 	}
 	shared_focus = {	#A Meeting With Inquisitor Phantasm
 		id = TRS_S06B
 		#icon = 
-		x = 1 y = 1 cost = 1 relative_position_id = TRS_S05
+		x = 1	y = 1	cost = 1
+		relative_position_id = TRS_S05
 		search_filters = {  }
 		prerequisite = { focus = TRS_S05 }
 		select_effect = { country_event = TRS_ES.0501 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus TRS_S06B"
+			log = "[GetDateText]: [Root.GetName]: Focus TRS_S06B"
 			country_event = TRS_ES.0603
 		}
 	}
-##Military Tree
+##Military Branch##
 	shared_focus = {	#Moving Past Simple Line Tactics
 		id = TRS_M00
 		#icon = 
-		x = -6 y = 0 cost = 5 relative_position_id = TRS_S00
+		x = -6	y = 0	cost = 5
+		relative_position_id = TRS_S00
 		search_filters = {  }
 		available = { has_country_flag = TRS_M00_unlock }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus TRS_M00"
+			log = "[GetDateText]: [Root.GetName]: Focus TRS_M00"
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				category = cat_grand_battle_plan
@@ -241,12 +253,13 @@ focus_tree = {
 	shared_focus = {	#Some Proper Standardization
 		id = TRS_M01
 		#icon = 
-		x = 0 y = 1 cost = 5 relative_position_id = TRS_M00
+		x = 0	y = 1	cost = 5
+		relative_position_id = TRS_M00
 		search_filters = {  }
 		prerequisite = { focus = TRS_M00 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus TRS_M01"
+			log = "[GetDateText]: [Root.GetName]: Focus TRS_M01"
 			swap_ideas = {
 				remove_idea = TRS_olden_ways
 				add_idea = TRS_olden_ways_1
@@ -256,13 +269,14 @@ focus_tree = {
 	shared_focus = {	#Nobility Determines Knightship
 		id = TRS_M02A
 		#icon = 
-		x = -1 y = 1 cost = 5 relative_position_id = TRS_M01
+		x = -1	y = 1	cost = 5
+		relative_position_id = TRS_M01
 		search_filters = {  }
 		prerequisite = { focus = TRS_M01 }
 		mutually_exclusive = { focus = TRS_M02B }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus TRS_M02A"
+			log = "[GetDateText]: [Root.GetName]: Focus TRS_M02A"
 			swap_ideas = {
 				remove_idea = TRS_olden_ways_1
 				add_idea = TRS_olden_ways_2A
@@ -272,13 +286,14 @@ focus_tree = {
 	shared_focus = {	#Even the Lowliest of Peasants May Achieve Knighthood
 		id = TRS_M02B
 		#icon = 
-		x = 1 y = 1 cost = 5 relative_position_id = TRS_M01
+		x = 1	y = 1	cost = 5
+		relative_position_id = TRS_M01
 		search_filters = {  }
 		prerequisite = { focus = TRS_M01 }
 		mutually_exclusive = { focus = TRS_M02A }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus TRS_M02B"
+			log = "[GetDateText]: [Root.GetName]: Focus TRS_M02B"
 			swap_ideas = {
 				remove_idea = TRS_olden_ways_1
 				add_idea = TRS_olden_ways_2B
@@ -288,7 +303,8 @@ focus_tree = {
 	shared_focus = {	#The Duchess's Mountaineers
 		id = TRS_M03A
 		#icon = 
-		x = -2 y = 2 cost = 5 relative_position_id = TRS_M01
+		x = -2	y = 2	cost = 5
+		relative_position_id = TRS_M01
 		search_filters = {  }
 		prerequisite = {
 			focus = TRS_M02A
@@ -296,7 +312,7 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus TRS_M03A"
+			log = "[GetDateText]: [Root.GetName]: Focus TRS_M03A"
 			add_tech_bonus = {
 				name = special_forces_bonus
 				category = mountaineers_tech
@@ -308,7 +324,8 @@ focus_tree = {
 	shared_focus = {	#A More Specialized Form of Cannon
 		id = TRS_M03B
 		#icon = 
-		x = 0 y = 2 cost = 5 relative_position_id = TRS_M01
+		x = 0	y = 2	cost = 5
+		relative_position_id = TRS_M01
 		search_filters = {  }
 		prerequisite = {
 			focus = TRS_M02A
@@ -316,7 +333,7 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus TRS_M03B"
+			log = "[GetDateText]: [Root.GetName]: Focus TRS_M03B"
 			set_technology = {
 				mountain_gun = 1
 			}
@@ -325,7 +342,8 @@ focus_tree = {
 	shared_focus = {	#The Weapons of Canterlot, Now Our Own
 		id = TRS_M03C
 		#icon = 
-		x = 2 y = 2 cost = 5 relative_position_id = TRS_M01
+		x = 2	y = 2	cost = 5
+		relative_position_id = TRS_M01
 		search_filters = {  }
 		prerequisite = {
 			focus = TRS_M02A
@@ -333,7 +351,7 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus TRS_M03C"
+			log = "[GetDateText]: [Root.GetName]: Focus TRS_M03C"
 			set_technology = {
 				magical_weapons = 1
 			}
@@ -347,73 +365,79 @@ focus_tree = {
 	shared_focus = {	#To Prepare For What We All Know Will Come
 		id = TRS_M04C
 		#icon = 
-		x = 1 y = 1 cost = 5 relative_position_id = TRS_M03B
+		x = 1	y = 1	cost = 5
+		relative_position_id = TRS_M03B
 		search_filters = {  }
 		prerequisite = { focus = TRS_M03A }
 		prerequisite = { focus = TRS_M03B }
 		prerequisite = { focus = TRS_M03C }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus TRS_M04C"
+			log = "[GetDateText]: [Root.GetName]: Focus TRS_M04C"
 			TRS_M04C_effect = yes
 		}
 	}
 	shared_focus = {	#The March To Baicall
 		id = TRS_M04D
 		#icon = 
-		x = 3 y = 1 cost = 5 relative_position_id = TRS_M03B
+		x = 3	y = 1	cost = 5
+		relative_position_id = TRS_M03B
 		search_filters = {  }
 		prerequisite = { focus = TRS_M03A }
 		prerequisite = { focus = TRS_M03B }
 		prerequisite = { focus = TRS_M03C }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus TRS_M04D"
+			log = "[GetDateText]: [Root.GetName]: Focus TRS_M04D"
 		}
 	}
 	shared_focus = {	#The Star Contingency
 		id = TRS_M05C
 		#icon = 
-		x = -2 y = 2 cost = 5 relative_position_id = TRS_M03C
+		x = -2	y = 2	cost = 5
+		relative_position_id = TRS_M03C
 		search_filters = {  }
 		prerequisite = { focus = TRS_M04C }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus TRS_M05C"
+			log = "[GetDateText]: [Root.GetName]: Focus TRS_M05C"
 		}
 	}
 	shared_focus = {	#The Castle Contingency
 		id = TRS_M05D
 		#icon = 
-		x = 0 y = 2 cost = 5 relative_position_id = TRS_M03C
+		x = 0	y = 2	cost = 5
+		relative_position_id = TRS_M03C
 		search_filters = {  }
 		prerequisite = { focus = TRS_M04C }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus TRS_M05D"
+			log = "[GetDateText]: [Root.GetName]: Focus TRS_M05D"
 		}
 	}
 	shared_focus = {	#The Brotherhood Contingency
 		id = TRS_M05E
 		#icon = 
-		x = 2 y = 2 cost = 5 relative_position_id = TRS_M03C
+		x = 2	y = 2	cost = 5
+		relative_position_id = TRS_M03C
 		search_filters = {  }
 		prerequisite = { focus = TRS_M04C }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus TRS_M05E"
+			log = "[GetDateText]: [Root.GetName]: Focus TRS_M05E"
 		}
 	}
-##Economy Tree
-	shared_focus = {	#Expanding and Improving The Farms Of Trotterfield
-		id = TRS_I00
-		#icon = 
-		x = 6 y = 0 cost = 5 relative_position_id = TRS_S00
+##Economy Branch
+	shared_focus = {	#Improving The Farms Of Trotterfield
+		id = TRS_I0000
+		icon = GFX_goal_SZC_improvised_farming_machinery
+		x = 5	y = 0	cost = 5
+		relative_position_id = TRS_S00
 		search_filters = {  }
-		available = { has_country_flag = TRS_I00_unlock }
+		available = { has_country_flag = TRS_I0000_unlock }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus TRS_I00"
+			log = "[GetDateText]: [Root.GetName]: Focus TRS_I0000"
 			add_tech_bonus = {
 				name = special_forces_bonus
 				technology = tech_pony_misc
@@ -426,32 +450,227 @@ focus_tree = {
 			}
 		}
 	}
-	shared_focus = {	#Industrializing The Duchy
-		id = TRS_I01
-		#icon = 
-		x = 0 y = 1 cost = 5 relative_position_id = TRS_I00
+	shared_focus = {	#A More Self Reliant Trotsylvania
+		id = TRS_I0100
+		icon = GFX_goal_industrial_pony
+		x = -2	y = 1	cost = 5
+		relative_position_id = TRS_I0000
 		search_filters = {  }
-		prerequisite = { focus = TRS_I00 }
+		prerequisite = { focus = TRS_I0000 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus TRS_I01"
-			183 = {
-				add_extra_state_shared_building_slots = 2
+			log = "[GetDateText]: [Root.GetName]: Focus TRS_I0100"
+			modify_building_resources = {
+				building = industrial_complex
+				resource = steel
+				amount = 1
+			}
+			add_tech_bonus = {
+				name = synth_bonus
+				category = synth_resources
+				bonus = 1
+				uses = 1
+			}
+		}
+	}
+	shared_focus = {	#Industrializing The Duchy
+		id = TRS_I0101
+		icon = GFX_goal_generic_production
+		x = 0	y = 1	cost = 5
+		relative_position_id = TRS_I0000
+		search_filters = {  }
+		prerequisite = { focus = TRS_I0000 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TRS_I0101"
+			one_random_industrial_complex = yes
+			one_random_industrial_complex = yes
+		}
+	}
+	shared_focus = {	#Tapping Into The Mountains
+		id = TRS_I0102
+		icon = GFX_goal_mountain_mine
+		x = 2	y = 1	cost = 5
+		relative_position_id = TRS_I0000
+		search_filters = {  }
+		prerequisite = { focus = TRS_I0000 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TRS_I0102"
+			add_resource = {
+				type = steel
+				amount = 4
+				state = 56
+			}
+			add_resource = {
+				type = crystals
+				amount = 3
+				state = 56
+			}
+			add_resource = {
+				type = crystals
+				amount = 1
+				state = 102
+			}
+		}
+	}
+	shared_focus = {	#A New Use For A Family Relic
+		id = TRS_I0200
+		icon = GFX_goal_air
+		x = -1	y = 2	cost = 5
+		relative_position_id = TRS_I0000
+		search_filters = {  }
+		prerequisite = {
+			focus = TRS_I0100
+			focus = TRS_I0101
+		}
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TRS_I0200"
+			56 = {
 				add_building_construction = {
-					type = industrial_complex
-					level = 2
+					type = air_base
+					level = 1
 					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_dlc = "By Blood Alone" }
+				set_technology = {
+					airship_airframes = 1
+				}
+				create_equipment_variant = {
+					name = "Stratus Cloudstrider"
+					type = medium_airship_airframe_0
+					icon = "GFX_medium_airship_equipment_0_medium"
+					modules = {
+						fixed_main_weapon_slot = medium_bomb_bay
+						engine_type_slot = engine_1_2x
+					}
+				}
+				hidden_effect = {
+					load_oob = TRS_I0200_air_bba
+				}
+			}
+			else = {
+				set_technology = {
+					airships1 = 1
+				}
+				hidden_effect = {
+					load_oob = TRS_I0200_air_legacy
 				}
 			}
 		}
 	}
-	shared_focus = {	#
-		id = TRS_I0
-		#icon = 
-		x = 0 y = 1 cost = 5 relative_position_id = TRS_I01
+	shared_focus = {	#The Great Watery Gateway
+		id = TRS_I0201
+		icon = GFX_goal_water
+		x = 2	y = 2	cost = 5
+		relative_position_id = TRS_I0000
 		search_filters = {  }
+		prerequisite = { focus = TRS_I0101 }
+		prerequisite = { focus = TRS_I0102 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus TRS_I0"
+			log = "[GetDateText]: [Root.GetName]: Focus TRS_I0201"
+			add_ideas = TRS_natural_highway
+			add_equipment_to_stockpile = {
+				type = convoy
+				producer = FRI
+				amount = 30
+			}
+		}
+	}
+	shared_focus = {	#A New Opportunity For The Nobility
+		id = TRS_I0300
+		icon = GFX_goal_POL_recon_aircraft
+		x = -1	y = 3	cost = 5
+		relative_position_id = TRS_I0000
+		search_filters = {  }
+		prerequisite = { focus = TRS_I0200 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TRS_I0300"
+			if = {
+				limit = { has_dlc = "By Blood Alone" }
+				set_technology = {
+					early_bombs = 1
+					aa_lmg = 1
+					engines_1 = 1
+				}
+				create_equipment_variant = {
+					name = "Liliac"
+					type = medium_airship_airframe_0
+					icon = "GFX_medium_airship_equipment_0_medium"
+					modules = {
+						fixed_main_weapon_slot = light_mg_4x
+						engine_type_slot = engine_1_2x
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = medium_airship_airframe_0
+					producer = TRS
+					variant_name = "Liliac"
+					amount = 20
+				}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+					type = medium_airship_equipment_0
+					producer = TRS
+					amount = 20
+				}
+			}
+			add_ideas = TRS_rogue_traders
+		}
+	}
+	shared_focus = {	#Rekindling Old Ties
+		id = TRS_I0301
+		icon = GFX_goal_bat
+		x = 1	y = 3	cost = 5
+		relative_position_id = TRS_I0000
+		search_filters = {  }
+		prerequisite = { focus = TRS_I0200 }
+		prerequisite = { focus = TRS_I0201 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TRS_I0301"
+			add_to_tech_sharing_group = TRS_batty_economics
+			if = {
+				limit = {
+					FSH = { exists = yes }
+				}
+				FSH = { country_event = TRS_EI.030100 }	#Rekindling Old Ties
+			}
+			if = {
+				limit = {
+					THA = { exists = yes }
+				}
+				THA = { country_event = TRS_EI.030100 }
+			}
+			if = {
+				limit = {
+					TRH = { exists = yes }
+				}
+				TRH = { country_event = TRS_EI.030100 }
+			}
+		}
+	}
+	shared_focus = {	#A More Modern Way of Learning
+		id = TRS_I0400
+		icon = GFX_goal_bookstack
+		x = 0	y = 4	cost = 5
+		relative_position_id = TRS_I0000
+		search_filters = {  }
+		prerequisite = { focus = TRS_I0300 }
+		prerequisite = { focus = TRS_I0301 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TRS_I0400"
+			if = {
+				limit = { amount_research_slots < 5 }
+				add_research_slot = 1
+			}
+			decrease_illiteracy = yes
 		}
 	}

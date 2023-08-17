@@ -1,0 +1,10 @@
+air_wings = {	#Aurora's Royal Airship
+	56 = {	#Neighagra Falls
+		medium_airship_airframe_0 = {
+			owner = TRS
+			creator = TRS
+			version_name = "Stratus Cloudstrider"
+			amount = 1
+		}
+	}
+}

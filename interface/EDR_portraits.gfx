@@ -260,6 +260,15 @@ spritetypes = {
 		name = "GFX_FAI_meringue_small"
 		textureFile = "gfx/interface/advisors/FAI/FAI_meringue.dds"
 	}
+##FLY##
+	spritetype = {
+		name = "GFX_FLY_cream_cheese"
+		textureFile = "gfx/leaders/FLY/FLY_cream_cheese.dds"
+	}
+	spritetype = {
+		name = "GFX_FLY_cream_cheese_small"
+		textureFile = "gfx/interface/advisors/FLY/FLY_cream_cheese_small.dds"
+	}
 ##HAH##
 	spritetype = {
 		name = "GFX_HAH_misty_wisps"
@@ -591,12 +600,12 @@ spritetypes = {
 	}
 ##NIH##
 	spritetype = {
-		name = "GFX_NIH_burgundy"
-		textureFile = "gfx/leaders/NIH/NIH_burgundy.dds"
+		name = "GFX_NIH_burgandy"
+		textureFile = "gfx/leaders/NIH/NIH_burgandy_and_lullaby.dds"	#gfx/leaders/NIH/NIH_burgandy.dds
 	}
 	spritetype = {
-		name = "GFX_NIH_burgundy_small"
-		textureFile = "gfx/interface/advisors/NIH/NIH_burgundy_small.dds"
+		name = "GFX_NIH_burgandy_small"
+		textureFile = "gfx/interface/advisors/NIH/NIH_burgandy_and_lullaby_small.dds"	#gfx/interface/advisors/NIH/NIH_burgandy_small.dds
 	}
 	spritetype = {
 		name = "GFX_NIH_cursed_fate"
@@ -607,20 +616,20 @@ spritetypes = {
 		textureFile = "gfx/interface/advisors/NIH/NIH_cursed_fate_small.dds"
 	}
 	spritetype = {
-		name = "GFX_NIH_lulluby"
-		textureFile = "gfx/leaders/NIH/NIH_lulluby.dds"
+		name = "GFX_NIH_lullaby"
+		textureFile = "gfx/leaders/NIH/NIH_burgandy_and_lullaby.dds"	#gfx/leaders/NIH/NIH_lullaby.dds
 	}
 	spritetype = {
-		name = "GFX_NIH_lulluby_small"
-		textureFile = "gfx/interface/advisors/NIH/NIH_lulluby_small.dds"
+		name = "GFX_NIH_lullaby_small"
+		textureFile = "gfx/interface/advisors/NIH/NIH_burgandy_and_lullaby_small.dds"	#gfx/interface/advisors/NIH/NIH_lullaby_small.dds
 	}
 	spritetype = {
-		name = "GFX_NIH_lulluby_and_burgundy"
-		textureFile = "gfx/leaders/NIH/NIH_lulluby_and_burgundy.dds"
+		name = "GFX_NIH_burgandy_and_lullaby"
+		textureFile = "gfx/leaders/NIH/NIH_burgandy_and_lullaby.dds"
 	}
 	spritetype = {
-		name = "GFX_NIH_lulluby_and_burgundy_small"
-		textureFile = "gfx/interface/advisors/NIH/NIH_lulluby_and_burgundy_small.dds"
+		name = "GFX_NIH_burgandy_and_lullaby_small"
+		textureFile = "gfx/interface/advisors/NIH/NIH_burgandy_and_lullaby_small.dds"
 	}
 	spritetype = {
 		name = "GFX_NIH_night_raid"

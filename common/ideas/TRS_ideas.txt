@@ -76,5 +76,49 @@ ideas = {
 				}
 			}
 		}
+		TRS_final_rest = {
+			picture = ENG_the_war_to_end_all_wars
+		}
+		TRS_natural_highway = {
+			picture = HIRA_trade
+			modifier = {
+				trade_opinion_factor = 0.08
+				production_speed_buildings_factor = 0.02
+			}
+		}
+		TRS_rogue_traders = {
+			picture = MNC_bandits_black_market
+			modifier = {
+				trade_opinion_factor = 0.1
+				opinion_gain_monthly = 0.15
+				improve_relations_maintain_cost_factor = -0.5
+			}
+			equipment_bonus = {
+				medium_plane_airframe = {
+					build_cost_ic = -0.10
+					instant = yes
+				}
+				medium_plane_fighter_airframe = {
+					build_cost_ic = -0.10
+					instant = yes
+				}
+				medium_plane_scout_plane_airframe = {
+					build_cost_ic = -0.10	
+					instant = yes
+				}
+				large_plane_airframe = {
+					build_cost_ic = -0.10
+					instant = yes
+				}
+				large_plane_maritime_patrol_plane_airframe = {
+					build_cost_ic = -0.10
+					instant = yes
+				}
+				transport_plane_equipment = {
+					build_cost_ic = -0.10
+					instant = yes
+				}
+			}
+		}
 	}
 }

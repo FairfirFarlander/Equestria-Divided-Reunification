@@ -1,0 +1,13 @@
+ideas = {
+	country = {
+		FLY_government_cheese = {
+			picture = severe_famine4
+			modifier = {
+				
+			}
+		}
+	}
+	#industrial_concern = {
+	#	Put a cheese thing here. Also add cheese sadnvich as an advisor.
+	#}
+}

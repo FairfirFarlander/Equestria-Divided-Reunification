@@ -7,18 +7,24 @@ characters = {
 		}
 		country_leader = {
 			desc = FLY_cjam_leader_desc
-			ideology = holy_order_f
-		}
-		country_leader = {
-			desc = FLY_cjam_leader_desc
-			ideology = conservatism
-		}
-		country_leader = {
-			desc = FLY_cjam_leader_desc
 			ideology = democratic_socialism
 		}
 		country_leader = {
 			desc = FLY_cjam_leader_desc
+			ideology = holy_order_f
+		}
+	}
+	FLY_cream_cheese = {
+		name = FLY_cream_cheese
+		portraits = {
+			civilian = { large = GFX_FLY_cream_cheese }
+		}
+		country_leader = {
+			desc = FLY_ccheese_leader_desc
+			ideology = conservatism
+		}
+		country_leader = {
+			desc = FLY_ccheese_leader_desc
 			ideology = despotism
 		}
 	}

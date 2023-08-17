@@ -15,8 +15,14 @@
   ##Leaders##
    FLY_cherry_jam: "Cherry Jam"
     FLY_cjam_leader_desc: "$GENR_advisor_desc$"
+   FLY_cream_cheese: "Cream Cheese"
+    FLY_ccheese_leader_desc: "$GENR_advisor_desc$"
   ##Commanders##
   ##Political Advisors##
   ##Military Advisors##
+ ###Ideas###
+  ##Starting Ideas##
+   FLY_government_cheese: "Government Cheese"
+    FLY_government_cheese_desc: ""Government Cheese" is a massive storage network of underground cheese. This unprecedented amount of dairy was purchased and stockpiled by the former Equestrian Government as a result of a cheese excess and impending cheese market collapse following the second Crystal War. While there were plans to distribute said cheese shortly after the war's conclusion, the Baltimare revolution of 04' prevented the transport of said cheese due to the declaration of martial law in the region. When the Equestrian government collapsed, the cheese stores were mostly forgotten.\n\nNow that the situation is more or less stable, the local government has decided to distribute the stores as planned. If nothing else, the Fillydelphians won't go hungry."
  ###National Focuses###
   ##Storyline Tree##

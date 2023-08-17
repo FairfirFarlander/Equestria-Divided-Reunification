@@ -217,10 +217,60 @@ add_namespace = TRS_ES
 		desc = TRS_ES.0604.d
 		#picture = 
 		is_triggered_only = yes
-		option = { name = TRS_ES.0604.a }
+		option = {
+			name = TRS_ES.0604.a
+		}
 		option = {
 			name = TRS_ES.0001.r
 			trigger = { is_debug = yes }
 		}
 		immediate = { log = "[GetDateText]: [Root.GetName]: event TRS_ES.0604" }
+	}
+add_namespace = TRS_EI	#Industrial Events
+	country_event = {	#Rekindling Old Ties
+		id = TRS_EI.030100
+		title = TRS_EI.030100.t
+		desc = TRS_EI.030100.d
+		#picture = 
+		is_triggered_only = yes
+		option = {
+			name = TRS_EI.030100.a
+			add_to_tech_sharing_group = TRS_batty_economics
+			FROM = { country_event = TRS_EI.030101 }	#Yes
+		}
+		option = {
+			name = TRS_EI.030100.b
+			FROM = { country_event = TRS_EI.030102 }	#No
+		}
+		option = {
+			name = TRS_EI.0001.r
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event TRS_EI.030100" }
+	}
+	country_event = {	#Rekindling Old Ties - Yes
+		id = TRS_EI.030101
+		title = TRS_EI.030101.t
+		desc = TRS_EI.030101.d
+		#picture = 
+		is_triggered_only = yes
+		option = { name = TRS_EI.030101.a }
+		option = {
+			name = TRS_EI.0001.r
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event TRS_EI.030101" }
+	}
+	country_event = {	#Rekindling Old Ties
+		id = TRS_EI.030102
+		title = TRS_EI.030102.t
+		desc = TRS_EI.030102.d
+		#picture = 
+		is_triggered_only = yes
+		option = { name = TRS_EI.030102.a }
+		option = {
+			name = TRS_EI.0001.r
+			trigger = { is_debug = yes }
+		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event TRS_EI.030102" }
 	}

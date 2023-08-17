@@ -1,0 +1,9 @@
+air_wings = {	#Aurora's Royal Airship
+	56 = {	#Neighagra Falls
+		medium_airship_equipment_0 = {
+			owner = TRS
+			creator = TRS
+			amount = 1
+		}
+	}
+}
