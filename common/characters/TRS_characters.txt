@@ -37,7 +37,7 @@ characters = {
 			slot = political_advisor
 			cost = 150
 			idea_token = TRS_mphantasm_politician
-			available = { has_country_flag = TRS_S05_unlock_advisors }
+			available = { has_country_flag = TRS_S0500_unlock_advisors }
 		}
 	}
 	TRS_radiguss = {

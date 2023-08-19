@@ -149,9 +149,9 @@ bookmarks = {
 				TRS_olden_ways
 			}
 			focuses = {
-				TRS_S02
-				TRS_M04D
-				TRS_M04C
+				TRS_S0200
+				TRS_M0402
+				TRS_I0301
 			}
 		}
 		"HAH" = {	#Hollow Shades

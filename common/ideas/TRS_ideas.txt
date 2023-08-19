@@ -37,8 +37,8 @@ ideas = {
 		TRS_olden_ways_1 = {
 			picture = warrior_pony
 			modifier = {
-				army_org_factor = 0.1
-				training_time_army_factor = 0.1
+				army_org_factor = 0.05
+				training_time_army_factor = 0.05
 			}
 			equipment_bonus = {
 				infantry_equipment = {
@@ -50,10 +50,11 @@ ideas = {
 		TRS_olden_ways_2A = {
 			picture = warrior_pony
 			modifier = {
-				army_org_factor = 0.1
-				training_time_army_factor = 0.1
+				army_org_factor = 0.05
+				training_time_army_factor = 0.05
 				modifier_army_sub_unit_pegasi_attack_factor = 0.05
 				modifier_army_sub_unit_pegasi_defence_factor = 0.05
+				special_forces_training_time_factor = 0.1
 			}
 			equipment_bonus = {
 				infantry_equipment = {
@@ -65,9 +66,9 @@ ideas = {
 		TRS_olden_ways_2B = {
 			picture = warrior_pony
 			modifier = {
-				army_org_factor = 0.1
-				training_time_army_factor = 0.1
-				special_forces_training_time_factor = -0.1
+				army_org_factor = 0.05
+				training_time_army_factor = 0.05
+				special_forces_training_time_factor = -0.05
 			}
 			equipment_bonus = {
 				infantry_equipment = {
