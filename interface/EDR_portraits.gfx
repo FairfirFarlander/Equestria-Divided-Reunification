@@ -783,7 +783,23 @@ spritetypes = {
 	}
 	spritetype = {
 		name = "GFX_THA_argent_end_small"
-		textureFile = "gfx/interface/advisors/THA/THA_argent_end_small.dds"
+		textureFile = "gfx/interface/advisors/THA/THA_argent_endsmall.dds"
+	}
+	spritetype = {
+		name = "GFX_THA_argent_end_masked"
+		textureFile = "gfx/leaders/THA/THA_argent_end_masked.dds"
+	}
+	spritetype = {
+		name = "GFX_THA_argent_end_masked_small"
+		textureFile = "gfx/interface/advisors/THA/THA_argent_end_masked_small.dds"
+	}
+	spritetype = {
+		name = "GFX_THA_argent_end_unmasked"
+		textureFile = "gfx/leaders/THA/THA_argent_end_unmasked.dds"
+	}
+	spritetype = {
+		name = "GFX_THA_argent_end_unmasked_small"
+		textureFile = "gfx/interface/advisors/THA/THA_argent_end_unmasked_small.dds"
 	}
 	spritetype = {
 		name = "GFX_THA_auburn_peak"

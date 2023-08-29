@@ -5,7 +5,7 @@ state = {	#EDRSTATE	#Petrograd?
 	state_category = metropolis
 	buildings_max_level_factor = 2	#1.5
 	provinces = {
-		311 507 3301 3501 6221 7239 9364 9458 
+		311 507 3274 3301 3501 6221 6363 7239 9364 9458 
 	}
 	history = {
 		owner = SGR

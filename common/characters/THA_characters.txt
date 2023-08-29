@@ -3,12 +3,12 @@ characters = {
 		name = THA_argent_end
 		portraits = {
 			civilian = {
-				large = GFX_THA_argent_end
-				small = GFX_THA_argent_end_small
+				large = GFX_THA_argent_end_unmasked
+				small = GFX_THA_argent_end_unmasked_small
 			}
 			army = {
-				large = GFX_THA_argent_end
-				small = GFX_THA_argent_end_small
+				large = GFX_THA_argent_end_unmasked
+				small = GFX_THA_argent_end_unmasked_small
 			}
 		}
 		country_leader = {

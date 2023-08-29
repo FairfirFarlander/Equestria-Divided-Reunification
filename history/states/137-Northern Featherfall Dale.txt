@@ -7,6 +7,7 @@ state = {	#EDRSTATE
 	history = {
 		owner = NIH
 		add_core_of = NIH
+		victory_points = { 3653 1 }
 		buildings = {
 			infrastructure = 1
 			air_base = 1
