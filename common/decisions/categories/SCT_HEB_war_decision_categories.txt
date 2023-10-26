@@ -1,27 +1,27 @@
-COT_HEB_war_two = {
+SCT_HEB_war_two = {
 	#icon = 
 	priority = 2
 	allowed = {
 		OR = {
-			tag = COT
+			tag = SCT
 			tag = HEB
 		}
 	}
 	visible = {
 		OR = {
-			has_global_flag = COT_HEB_war_two
+			has_global_flag = SCT_HEB_war_two
 			is_debug = yes
 		}
 	}
 }
-COT_HEB_war_three = {
+SCT_HEB_war_three = {
 	#icon = 
 	priority = 2
 	allowed = {
-		tag = COT
+		tag = SCT
 		tag = HEB
 	}
 	visible = {
-		has_global_flag = COT_HEB_war_three
+		has_global_flag = SCT_HEB_war_three
 	}
 }

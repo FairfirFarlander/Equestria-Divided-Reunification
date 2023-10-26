@@ -131,7 +131,8 @@ ideas = {
 			}
 		}
 		moonstar_influence2 = {
-			picture = HMS_ideaon_add = {
+			picture = HMS_idea
+			on_add = {
 				ROOT = {
 					add_opinion_modifier = {
 						modifier = moonstar_opinion2
@@ -161,7 +162,8 @@ ideas = {
 			}
 		}
 		moonstar_influence3 = {
-			picture = HMS_ideaon_add = {
+			picture = HMS_idea
+			on_add = {
 				ROOT = {
 					add_opinion_modifier = {
 						modifier = moonstar_opinion3
@@ -191,7 +193,8 @@ ideas = {
 			}
 		}
 		moonstar_influence4 = {
-			picture = HMS_ideaon_add = {
+			picture = HMS_idea
+			on_add = {
 				ROOT = {
 					add_opinion_modifier = {
 						modifier = moonstar_opinion4
@@ -221,7 +224,8 @@ ideas = {
 			}
 		}
 		moonstar_influence5 = {
-			picture = HMS_ideaon_add = {
+			picture = HMS_idea
+			on_add = {
 				ROOT = {
 					add_opinion_modifier = {
 						modifier = moonstar_opinion5

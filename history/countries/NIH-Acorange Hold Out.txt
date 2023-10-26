@@ -359,6 +359,6 @@ recruit_character = NIH_night_raid
 #If he lives and has been found
 #Otherwise they shell them to bits from the sea.
 #Shell Appleloosa to glass as they are traitors.
-#They either puppet COT or...
+#They either puppet SCT or...
 #If the Cult exists in Ponyville, it gets nuked.
 #If not, they memorialize or blacksite it.

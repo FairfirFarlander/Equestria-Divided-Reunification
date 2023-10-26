@@ -30,7 +30,7 @@ units={
 		start_experience_factor=0.26
 		start_equipment_factor=0.85
 		force_equipment_variants={
-			melee_equipment_0={owner="COT" creator="EQS"}
+			melee_equipment_0={owner="SCT" creator="EQS"}
 		}
 	}
 	division={	#San Manetonio#
@@ -40,7 +40,7 @@ units={
 		start_experience_factor=0.18
 		start_equipment_factor=0.9
 		force_equipment_variants={
-			melee_equipment_0={owner="COT" creator="EQS"}
+			melee_equipment_0={owner="SCT" creator="EQS"}
 		}
 	}
 	division={	#Trotgaron - Former Rosemarin#
@@ -50,7 +50,7 @@ units={
 		start_experience_factor=0.3
 		start_equipment_factor=0.75
 		force_equipment_variants={
-			melee_equipment_1={owner="COT" creator="EQS"}
+			melee_equipment_1={owner="SCT" creator="EQS"}
 		}
 	}
 	division={	#North Trotsas#
@@ -60,7 +60,7 @@ units={
 		start_experience_factor=0.1
 		start_equipment_factor=0.8
 		force_equipment_variants={
-			melee_equipment_0={owner="COT" creator="EQS"}
+			melee_equipment_0={owner="SCT" creator="EQS"}
 		}
 	}
 	division={	#Horston#
@@ -70,7 +70,7 @@ units={
 		start_experience_factor=0.26
 		start_equipment_factor=0.85
 		force_equipment_variants={
-			melee_equipment_0={owner="COT" creator="EQS"}
+			melee_equipment_0={owner="SCT" creator="EQS"}
 		}
 	}
 	division={	#Canter Creek - Former Hoofington#
@@ -80,7 +80,7 @@ units={
 		start_experience_factor=0.3
 		start_equipment_factor=0.8
 		force_equipment_variants={
-			melee_equipment_1={owner="COT" creator="EQS"}
+			melee_equipment_1={owner="SCT" creator="EQS"}
 		}
 	}
 	division={	#South Trotsas - Former Fort Mourn#
@@ -90,7 +90,7 @@ units={
 		start_experience_factor=0.3
 		start_equipment_factor=0.6
 		force_equipment_variants={
-			melee_equipment_1={owner="COT" creator="COT"}
+			melee_equipment_1={owner="SCT" creator="SCT"}
 		}
 	}
 }

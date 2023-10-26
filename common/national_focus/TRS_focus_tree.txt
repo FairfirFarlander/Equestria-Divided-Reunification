@@ -624,11 +624,11 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus TRS_I0000"
 			add_tech_bonus = {
 				name = special_forces_bonus
-				technology = tech_pony_misc
-				technology = tech_pony_misc3
-				technology = tech_pony_misc_a2
-				technology = tech_pony_misc_b
-				technology = tech_pony_misc_c2
+				technology = tech_earth_pony_a3
+				technology = tech_earth_pony_a1
+				technology = tech_earth_pony_b1
+				technology = tech_earth_pony_b2
+				technology = tech_earth_pony_a3
 				bonus = 1
 				uses = 1
 			}
@@ -889,7 +889,7 @@ focus_tree = {
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus TRS_M04C"
-			TRS_M04C_effect = yes
+			#TRS_M04C_effect = yes
 		}
 	}
 	shared_focus = {	#The March To Baicall

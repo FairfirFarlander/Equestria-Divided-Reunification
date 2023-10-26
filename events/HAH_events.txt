@@ -348,7 +348,7 @@ add_namespace = HAH_EMS3
 		option = {
 			name = HAH_EMS3.0000.a
 			load_focus_tree = {
-				tree = HAH_misty
+				tree = HAH_misty_focus_tree
 				keep_completed = yes
 			}
 		}
@@ -367,7 +367,7 @@ add_namespace = HAH_EWS3
 		option = {
 			name = HAH_EWS3.0000.a
 			load_focus_tree = {
-				tree = HAH_willow
+				tree = HAH_willow_focus_tree
 				keep_completed = yes
 			}
 		}

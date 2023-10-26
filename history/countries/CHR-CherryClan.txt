@@ -1,5 +1,5 @@
 capital = 22
-oob = "CHY_07"
+oob = "CHR_07"
 set_stability = 0.8
 set_war_support = 0.02
 add_ideas = {
@@ -31,12 +31,12 @@ if = {
 	limit = { has_dlc = "Death or Dishonor" }
 	HEB = {
 		set_autonomy = {
-			target = CHY
+			target = CHR
 			autonomy_state = autonomy_satellite
 		}
 	}
 	else = {
-		HEB = { puppet = CHY }
+		HEB = { puppet = CHR }
 	}
 }
 set_popularities = {
@@ -47,5 +47,5 @@ set_popularities = {
 }
 set_politics = { ruling_party = fascism }
 set_country_flag = EDR_is_equestrian_breakaway
-recruit_character = CHY_cherry_jubilee
+recruit_character = CHR_cherry_jubilee
 ###NOTES###

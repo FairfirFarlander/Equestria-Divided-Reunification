@@ -12,7 +12,7 @@
 		allow_branch = {
 			OR = {
 				AND = {
-					has_focus_tree = HAH_willow
+					has_focus_tree = HAH_willow_focus_tree
 					NOT = {
 						has_country_flag = HAH_willow_no_return
 						has_country_flag = EDR_show_less_focuses

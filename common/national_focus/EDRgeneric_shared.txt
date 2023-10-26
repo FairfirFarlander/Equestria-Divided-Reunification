@@ -656,7 +656,7 @@ focus_tree = {
 			add_doctrine_cost_reduction = {
 				name = navy_doc_bonus
 				category = naval_doctrine
-				bonus = 0.75
+				cost_reduction = 0.75
 				uses = 1
 			}
 		}

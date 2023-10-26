@@ -9,14 +9,14 @@ add_ideas = {
 	WTC_no_army
 }
 if = {
-	limit = {has_dlc = "No Step Back"}
+	limit = { has_dlc = "No Step Back" }
 	add_ideas = {
 		traditionalism_academy_spirit
 		doctrinal_orthodoxy_spirit
 		disdain_for_the_digging_spirit
 	}
 	else = {
-		add_ideas = {EQS_bad_tanks}
+		add_ideas = { EQS_bad_tanks }
 	}
 }
 set_technology = {
@@ -29,7 +29,7 @@ set_technology = {
 	tech_unicorn = 1
 }
 if = {
-	limit = {has_dlc = "Man the Guns"}
+	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
 		early_ship_hull_light = 1
 		basic_depth_charges = 1
@@ -113,8 +113,8 @@ if = {
 actually_fix_weapon_techs = yes
 set_convoys = 4
 set_rule = {	can_generate_female_aces = yes	can_generate_female_unit_leaders = yes	can_generate_female_country_leaders = yes}
-set_variable = {WTC_merc_cap = 2}
-set_variable = {WTC_merc_cost = 3}
+set_variable = { WTC_merc_cap = 2 }
+set_variable = { WTC_merc_cost = 3 }
 clamp_variable = {
 	var = WTC_merc_cap
 	min = 0
@@ -138,7 +138,7 @@ clamp_variable = {
 	set_compliance = 26
 }
 if = {
-	limit = {has_dlc = "Death or Dishonor"}
+	limit = { has_dlc = "Death or Dishonor" }
 	HWG = {
 		set_autonomy = {
 			autonomous_state = autonomy_satellite
@@ -146,7 +146,7 @@ if = {
 		}
 	}
 	else = {
-		HWG = {puppet = WTC}
+		HWG = { puppet = WTC }
 	}
 }
 set_popularities = {
@@ -155,14 +155,14 @@ set_popularities = {
 	neutrality = 29
 	democratic = 10
 }
-set_politics = {ruling_party = fascism}
+set_politics = { ruling_party = fascism }
 set_country_flag = EDR_is_equestrian_breakaway
 recruit_character = WTC_dashing_habbidasher
 recruit_character = WTC_alicia_habbidasher
 recruit_character = WTC_eloi_path
 recruit_character = WTC_zebrican_mercenary
 recruit_character = WTC_saddle_arabian_mercenary
-#NOTES#
+###NOTES###
 #1929 - The Great Depression. Lasted almost a decade (10). 42 is when the US entered WWII.
 #humble appeaser, rutheless capitalist; deal broker, ideological crusader; hawk?;reluctant interventionalist, ideological crusader.
 #Alicia should be given roles later, not at start. Setup character accordingly.

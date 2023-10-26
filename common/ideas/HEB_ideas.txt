@@ -4,7 +4,7 @@ ideas={
 			allowed={always=no}	removal_cost=-1
 			picture=hebidea
 		}
-		HEB_clanandkin00={	#For HEB aligned PIE CHY FLY
+		HEB_clanandkin00={	#For HEB aligned PIE CHR FLY
 			allowed={always=no}	removal_cost=-1
 			#picture=
 			modifier={

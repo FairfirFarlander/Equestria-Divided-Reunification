@@ -25,7 +25,7 @@ units={
 		start_experience_factor=0.26
 		start_equipment_factor=0.85
 		force_equipment_variants={
-			melee_equipment_1={owner="COT" creator="COT"}
+			melee_equipment_1={owner="SCT" creator="SCT"}
 		}
 	}
 	division={
@@ -35,7 +35,7 @@ units={
 		start_experience_factor=0.18
 		start_equipment_factor=0.9
 		force_equipment_variants={
-			melee_equipment_1={owner="COT" creator="COT"}
+			melee_equipment_1={owner="SCT" creator="SCT"}
 		}
 	}
 	division={
@@ -45,7 +45,7 @@ units={
 		start_experience_factor=0.3
 		start_equipment_factor=0.75
 		force_equipment_variants={
-			melee_equipment_1={owner="COT" creator="COT"}
+			melee_equipment_1={owner="SCT" creator="SCT"}
 		}
 	}
 	division={
@@ -55,7 +55,7 @@ units={
 		start_experience_factor=0.1
 		start_equipment_factor=0.8
 		force_equipment_variants={
-			melee_equipment_1={owner="COT" creator="COT"}
+			melee_equipment_1={owner="SCT" creator="SCT"}
 		}
 	}
 }

@@ -83,16 +83,16 @@ bookmarks = {
 				manifesto_of_materialism
 			}
 		}
-		"COT" = {	#Southern Confederation
+		"SCT" = {	#Southern Confederation
 			minor = yes
-			history = "COT_GATHERING_STORM_DESC"
+			history = "SCT_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
 			}
 			focuses = {
-				COT_M04
-				COT_M00
-				COT_I02G
+				SCT_M04
+				SCT_M00
+				SCT_I02G
 			}
 		}
 		"CLD" = {	#Cloudsdale

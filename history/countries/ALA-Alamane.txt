@@ -19,7 +19,7 @@ set_technology = {
 	tech_unicorn = 1
 }
 if = {
-	limit = {has_dlc = "Man the Guns"}
+	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
 		early_ship_hull_light = 1
 		early_ship_hull_cruiser = 1
@@ -82,7 +82,7 @@ if = {
 		disdain_for_the_digging_spirit
 	}
 	else = {
-		add_ideas = {EQS_bad_tanks}
+		add_ideas = { EQS_bad_tanks }
 	}
 }
 if = {
@@ -130,7 +130,7 @@ set_popularities = {
 	neutrality = 67
 	democratic = 9
 }
-set_politics = {ruling_party = neutrality}
+set_politics = { ruling_party = neutrality }
 set_country_flag = EDR_is_equestrian_breakaway
 recruit_character = ALA_almond_tree
-#NOTES#
+###NOTES###

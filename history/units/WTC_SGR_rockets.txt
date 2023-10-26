@@ -1,31 +1,37 @@
 division_template={
-	name="Rocket Artillery Unit"
-	is_locked=yes
-	regiments={
-		infantry={x=0 y=0}	rocket_artillery_brigade={x=1 y=0}
-		infantry={x=0 y=1}
-		infantry={x=0 y=2}
+	name = "Rocket Artillery Unit"
+	is_locked = yes
+	regiments = {
+		infantry = { x = 0 y = 0 }	rocket_artillery_brigade = { x = 1 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
 	}
 }
-units={
-	division={	#Baltimare
-		name="Pyrotechnica Company"
-		location=13011
-		division_template="Rocket Artillery Unit"
-		start_experience_factor=0.1
-		start_equipment_factor=1
-		force_equipment_variants={
-			rocket_artillery_equipment_1={owner="WTC" creator="STG"}
+units = {
+	division = {	#Baltimare
+		name = "Pyrotechnica Company"
+		location = 13011
+		division_template = "Rocket Artillery Unit"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			rocket_artillery_equipment_1 = {
+				owner = "WTC"
+				creator = "STG"
+			}
 		}
 	}
-	division={	#Baltimare
-		name="Flamin' Red Heads"
-		location=13011
-		division_template="Rocket Artillery Unit"
-		start_experience_factor=0.1
-		start_equipment_factor=1
-		force_equipment_variants={
-			rocket_artillery_equipment_1={owner="WTC" creator="STG"}
+	division = {	#Baltimare
+		name = "Flamin' Red Heads"
+		location = 13011
+		division_template = "Rocket Artillery Unit"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			rocket_artillery_equipment_1 = {
+				owner="WTC"
+				creator="STG"
+			}
 		}
 	}
 }

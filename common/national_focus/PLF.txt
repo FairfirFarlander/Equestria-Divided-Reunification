@@ -102,11 +102,11 @@ focus_tree = {
 			add_tech_bonus = {
 				name = industrial_bonus
 				bonus = 0.75 uses = 2
-				technology = tech_pony_misc
-				technology = tech_pony_misc3
-				technology = tech_pony_misc_a
-				technology = tech_pony_misc_a2
-				technology = tech_pony_misc_b
+				technology = tech_earth_pony_a3
+				technology = tech_earth_pony_a1
+				technology = tech_pegasi_bonus1
+				technology = tech_earth_pony_b1
+				technology = tech_earth_pony_b2
 			}
 		}
 	}

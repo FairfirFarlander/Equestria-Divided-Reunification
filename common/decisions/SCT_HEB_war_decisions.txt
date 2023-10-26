@@ -1,9 +1,9 @@
-COT_HEB_war_two = {
-	COT_HEB_war_two_incoming = {
+SCT_HEB_war_two = {
+	SCT_HEB_war_two_incoming = {
 		icon = GFX_decision_crossed_swords
 		activation = {
 			date < 1007.01.02
-			NOT = { has_global_flag = COT_HEB_war_two }
+			NOT = { has_global_flag = SCT_HEB_war_two }
 		}
 		available = {
 			custom_trigger_tooltip = {
@@ -13,15 +13,15 @@ COT_HEB_war_two = {
 		}
 		cancel_trigger = {
 			OR = {
-				COT = { has_war_with = HEB }
-				HEB = { has_war_with = COT }
+				SCT = { has_war_with = HEB }
+				HEB = { has_war_with = SCT }
 			}
 		}
 		is_good = no
 		days_mission_timeout = 102
 		timeout_effect = {
-			set_global_flag = COT_HEB_war_two
-			activate_mission = COT_HEB_war_two_progress
+			set_global_flag = SCT_HEB_war_two
+			activate_mission = SCT_HEB_war_two_progress
 			hidden_effect = {
 				build_railway = {
 					level = 1
@@ -62,15 +62,15 @@ COT_HEB_war_two = {
 				hidden_effect = {
 					create_wargoal = {
 						type = civil_war
-						target = COT
+						target = SCT
 					}
 				}
 				declare_war_on = {
 					type = civil_war
-					target = COT
+					target = SCT
 				}
 			}
-			COT = {
+			SCT = {
 				hidden_effect = {
 					78 = { add_claim_by = PREV }
 					91 = { add_claim_by = PREV }
@@ -78,18 +78,18 @@ COT_HEB_war_two = {
 					93 = { add_claim_by = PREV }
 				}
 			}
-			log = "[GetDateText]: The [COT.GetAdjective] - [HEB.GetAdjective] war has begun!"
+			log = "[GetDateText]: The [SCT.GetAdjective] - [HEB.GetAdjective] war has begun!"
 		}
 	}
-	COT_HEB_war_two_progress = {
+	SCT_HEB_war_two_progress = {
 		icon = GFX_decision_crossed_swords
 		activation = {
-			has_global_flag = COT_HEB_war_two
-			NOT = { has_global_flag = COT_HEB_war_two_end }
+			has_global_flag = SCT_HEB_war_two
+			NOT = { has_global_flag = SCT_HEB_war_two_end }
 		}
 		available = {
 			OR = {
-				COT = { exists = no }
+				SCT = { exists = no }
 				HEB = { exists = no }
 			}
 		}
@@ -98,23 +98,23 @@ COT_HEB_war_two = {
 		cancel_trigger = {
 			NOT = {
 				OR = {
-					COT = { has_war_with = HEB }
-					HEB = { has_war_with = COT }
+					SCT = { has_war_with = HEB }
+					HEB = { has_war_with = SCT }
 				}
 			}
 		}
 		cancel_effect = {
-			set_global_flag = COT_HEB_war_two_end
+			set_global_flag = SCT_HEB_war_two_end
 		}
 		complete_effect = {
-			log = "[GetDateText]: The [COT.GetAdjective] - [HEB.GetAdjective] war has ended in total victory!"
-			set_global_flag = COT_HEB_war_two_end
+			log = "[GetDateText]: The [SCT.GetAdjective] - [HEB.GetAdjective] war has ended in total victory!"
+			set_global_flag = SCT_HEB_war_two_end
 			if = {
 				limit = {
-					original_tag = COT
-					COT = { exists = yes }
+					original_tag = SCT
+					SCT = { exists = yes }
 				}
-				COT = {
+				SCT = {
 					add_political_power = 200
 					HEB = { add_to_PREV_potential_cores = yes }
 				}
@@ -126,26 +126,26 @@ COT_HEB_war_two = {
 				}
 				HEB = {
 					add_political_power = 100
-					COT = { add_to_PREV_potential_cores = yes }
+					SCT = { add_to_PREV_potential_cores = yes }
 				}
 			}
 			42 = { set_demilitarized_zone = yes }
 			78 = { set_demilitarized_zone = yes }
 		}
 		timeout_effect = {
-			log = "[GetDateText]: The [COT.GetAdjective] - [HEB.GetAdjective] war has ground to a stalemate!"
-			set_global_flag = COT_HEB_war_two_end
+			log = "[GetDateText]: The [SCT.GetAdjective] - [HEB.GetAdjective] war has ground to a stalemate!"
+			set_global_flag = SCT_HEB_war_two_end
 			add_political_power = -200
 			if = {
 				limit = {
-					91 = { is_controlled_by = COT }
-					92 = { is_controlled_by = COT }
+					91 = { is_controlled_by = SCT }
+					92 = { is_controlled_by = SCT }
 					OR = {
-						93 = { is_controlled_by = COT }
-						COT = { controls_province = 9608 }
+						93 = { is_controlled_by = SCT }
+						SCT = { controls_province = 9608 }
 					}
 				}
-				COT = {
+				SCT = {
 					add_political_power = 100
 					transfer_state = 78
 					transfer_state = 91
@@ -155,10 +155,10 @@ COT_HEB_war_two = {
 			}
 			else_if = {
 				limit = {
-					91 = { is_controlled_by = COT }
-					92 = { is_controlled_by = COT }
+					91 = { is_controlled_by = SCT }
+					92 = { is_controlled_by = SCT }
 				}
-				COT = {
+				SCT = {
 					add_political_power = 50
 					transfer_state = 91
 					transfer_state = 92
@@ -166,9 +166,9 @@ COT_HEB_war_two = {
 			}
 			else_if = {
 				limit = {
-					92 = { is_controlled_by = COT }
+					92 = { is_controlled_by = SCT }
 				}
-				COT = {
+				SCT = {
 					add_political_power = 25
 					transfer_state = 92
 				}
@@ -204,7 +204,7 @@ COT_HEB_war_two = {
 				}
 				HEB = { add_political_power = 50 }
 			}
-			HEB = { white_peace = COT }
+			HEB = { white_peace = SCT }
 			42 = { set_demilitarized_zone=yes }
 			78 = { set_demilitarized_zone=yes }
 		}
@@ -212,14 +212,14 @@ COT_HEB_war_two = {
 	dummy_warior = {
 		icon = GFX_decision_crossed_swords
 		available = {
-			#COT = { exists = no }
+			#SCT = { exists = no }
 		}
 		complete_effect = {
-			clr_global_flag = COT_HEB_war_two
-			activate_mission = COT_HEB_war_two_progress
+			clr_global_flag = SCT_HEB_war_two
+			activate_mission = SCT_HEB_war_two_progress
 		}
 	}
 }
-COT_HEB_war_three = {
+SCT_HEB_war_three = {
 	
 }

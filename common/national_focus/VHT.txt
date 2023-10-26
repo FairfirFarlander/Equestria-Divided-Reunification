@@ -6,10 +6,6 @@ focus_tree = {
 		#	tag = VHT
 		#	add = 2
 		#}
-		modifier = {
-			has_country_flag = EDR_submod_active
-			subtract = 1
-		}
 	}
 	continuous_focus_position = { x = 0	y = 10 }
 	shared_focus = VAN_The_Calm_Revolution
@@ -47,27 +43,5 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus VHT_S100"
 			country_event = HAH_EWS3.0001	#Storming of the Factory
-		}
-	}
-	shared_focus = {	#Under New Management
-		id = HAH_WS301
-		icon = GFX_zebra_question
-		relative_position_id = HAH_WS300
-		x = 0	y = 1	cost = 7
-		prerequisite = { focus = HAH_WS300 }
-		ai_will_do = { factor = 4000 }
-		select_effect = {
-			country_event = HAH_EWS3.0101	#Swift and Quick Moves
-			country_event = {	#The Inquisition Sanctions Us
-				id = HAH_EWS3.0103
-				days = 30
-			}
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus HAH_WS301"
-			hidden_effect = {
-				country_event = HAH_EWS3.0104	#Morning Dew's Personal Meeting with Willow
-			}
-			custom_effect_tooltip = HAH_WS301_tooltip
 		}
 	}

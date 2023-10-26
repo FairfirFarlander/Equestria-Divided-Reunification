@@ -26,50 +26,50 @@ spritetypes = {
 		name = "GFX_CLD_ebn_flow_small"
 		textureFile = "gfx/interface/advisors/CLD/CLD_ebn_flow_small.dds"
 	}
-##CHY##
+##CHR##
 	spritetype = {
-		name = "GFX_CHY_cherry_jubilee"
-		textureFile = "gfx/leaders/CHY/CHY_cherry_jubilee.dds"
+		name = "GFX_CHR_cherry_jubilee"
+		textureFile = "gfx/leaders/CHR/CHR_cherry_jubilee.dds"
 	}
 	spritetype = {
-		name = "GFX_CHY_cherry_jubilee_small"
-		textureFile = "gfx/interface/advisors/CHY/CHY_cherry_jubilee_small.dds"
+		name = "GFX_CHR_cherry_jubilee_small"
+		textureFile = "gfx/interface/advisors/CHR/CHR_cherry_jubilee_small.dds"
 	}
-##COT##
+##SCT##
 	spritetype = {
-		name = "GFX_COT_jd_neighvis"
+		name = "GFX_SCT_jd_neighvis"
 		textureFile = "gfx/leaders/SCS/JDavis.tga"
 	}
 	spritetype = {
-		name = "GFX_COT_neighson_e_miles"
+		name = "GFX_SCT_neighson_e_miles"
 		textureFile = "gfx/leaders/SCS/StewedApple.tga"
 	}
 	spritetype = {
-		name = "GFX_COT_trotbert_e_neigh"
+		name = "GFX_SCT_trotbert_e_neigh"
 		textureFile = "gfx/leaders/SCS/Lee.tga"
 	}
 	spritetype = {
-		name = "GFX_COT_stone_wall"
+		name = "GFX_SCT_stone_wall"
 		textureFile = "gfx/leaders/SCS/StoneWall.tga"
 	}
 	spritetype = {
-		name = "GFX_COT_silverstar"
+		name = "GFX_SCT_silverstar"
 		textureFile = "gfx/leaders/SCS/Silverstar.tga"
 	}
 	spritetype = {
-		name = "GFX_COT_apple_ale"
+		name = "GFX_SCT_apple_ale"
 		textureFile = "gfx/leaders/SCS/Apple_Ale.tga"
 	}
 	spritetype = {
-		name = "GFX_COT_moonshine_melody"
+		name = "GFX_SCT_moonshine_melody"
 		textureFile = "gfx/leaders/SCS/Moonshine_Melody.tga"
 	}
 	spritetype = {
-		name = "GFX_COT_sorren_peak"
+		name = "GFX_SCT_sorren_peak"
 		textureFile = "gfx/leaders/SCS/some_dixie_horse.tga"
 	}
 	spritetype = {
-		name = "GFX_COT_burnside_fervor"
+		name = "GFX_SCT_burnside_fervor"
 		textureFile = "gfx/leaders/SCS/Cuddle_Fervor.tga"
 	}
 ##CRL##

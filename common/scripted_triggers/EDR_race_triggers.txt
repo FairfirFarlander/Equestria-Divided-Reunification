@@ -7,9 +7,9 @@ uses_pony_EQS_portraits = {
 		original_tag = ALA
 		original_tag = ALI
 		original_tag = BCK
-		original_tag = CHY
+		original_tag = CHR
 		original_tag = CLD
-		original_tag = COT
+		original_tag = SCT
 		original_tag = CRL
 		original_tag = CUL
 		original_tag = FAI
@@ -110,9 +110,9 @@ is_country_main_culture_equestrian = {
 		original_tag = ALA
 		original_tag = ALI
 		original_tag = BCK
-		original_tag = CHY
+		original_tag = CHR
 		original_tag = CLD
-		original_tag = COT
+		original_tag = SCT
 		original_tag = CRL
 		original_tag = CUL
 		original_tag = FAI
@@ -200,9 +200,9 @@ is_state_main_culture_equestrian = {
 		is_in_array = { state_original_cores = ALA }
 		is_in_array = { state_original_cores = ALI }
 		is_in_array = { state_original_cores = BCK }
-		is_in_array = { state_original_cores = CHY }
+		is_in_array = { state_original_cores = CHR }
 		is_in_array = { state_original_cores = CLD }
-		is_in_array = { state_original_cores = COT }
+		is_in_array = { state_original_cores = SCT }
 		is_in_array = { state_original_cores = CRL }
 		is_in_array = { state_original_cores = CUL }
 		is_in_array = { state_original_cores = FAI }
@@ -271,9 +271,9 @@ is_operative_main_culture_equestrian = {
 		has_nationality = ALA
 		has_nationality = ALI
 		has_nationality = BCK
-		has_nationality = CHY
+		has_nationality = CHR
 		has_nationality = CLD
-		has_nationality = COT
+		has_nationality = SCT
 		has_nationality = CRL
 		has_nationality = CUL
 		has_nationality = FAI

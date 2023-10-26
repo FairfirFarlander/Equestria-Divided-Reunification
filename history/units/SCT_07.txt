@@ -29,8 +29,8 @@ units = {
 		start_equipment_factor = 0.55
 		force_equipment_variants = {
 			melee_equipment_1 = {
-				owner = "COT"
-				creator = "COT"
+				owner = "SCT"
+				creator = "SCT"
 			}
 		}
 	}
@@ -42,8 +42,8 @@ units = {
 		start_equipment_factor = 0.6
 		force_equipment_variants = {
 			melee_equipment_1 = {
-				owner = "COT"
-				creator = "COT"
+				owner = "SCT"
+				creator = "SCT"
 			}
 		}
 	}
@@ -55,7 +55,7 @@ units = {
 		start_equipment_factor = 0.7
 		force_equipment_variants = {
 			melee_equipment_0 = {
-				owner = "COT"
+				owner = "SCT"
 				creator = "EQS"
 			}
 		}
@@ -68,7 +68,7 @@ units = {
 		start_equipment_factor = 0.95
 		force_equipment_variants = {
 			melee_equipment_0 = {
-				owner = "COT"
+				owner = "SCT"
 				creator = "BUF"
 			}
 		}

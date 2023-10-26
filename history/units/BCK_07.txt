@@ -1,71 +1,86 @@
-division_template={
-	name="Citizen Militia"
-	priority=0
-	template_counter=3
-	regiments={
-		militia={x=0 y=0}
-		militia={x=0 y=1}
-		militia={x=0 y=2}
+division_template = {
+	name = "Citizen Militia"
+	priority = 0
+	template_counter = 3
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
 	}
 }
-division_template={
-	name="Provincial Levy"
-	template_counter=58
-	regiments={
-		infantry={x=0 y=0}
-		infantry={x=0 y=1}
-		infantry={x=0 y=2}
-		infantry={x=0 y=3}
+division_template = {
+	name = "Provincial Levy"
+	template_counter = 58
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
 	}
 }
-units={
-	division={	#Buckcastle#
-		name="Castellen Royal Guard Regiment"
-		location=9867
-		division_template="Provincial Levy"
-		start_experience_factor=0.3
-		start_equipment_factor=1
-		force_equipment_variants={
-			melee_equipment_0={owner="BCK" creator="EQS"}
+units = {
+	division = {	#Buckcastle#
+		name = "Castellen Royal Guard Regiment"
+		location = 9867
+		division_template = "Provincial Levy"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			melee_equipment_0 = {
+				owner = "BCK"
+				creator = "EQS"
+			}
 		}
 	}
-	division={	#Buckcastle#
-		name="Castellen Royal Regiment I"
-		location=9867
-		division_template="Provincial Levy"
-		start_experience_factor=0.1	start_equipment_factor=0.8
-		force_equipment_variants={
-			melee_equipment_0={owner="BCK" creator="EQS"}
+	division = {	#Buckcastle#
+		name = "Castellen Royal Regiment I"
+		location = 9867
+		division_template = "Provincial Levy"
+		start_experience_factor = 0.1	start_equipment_factor = 0.8
+		force_equipment_variants = {
+			melee_equipment_0 = {
+				owner = "BCK"
+				creator = "EQS"
+			}
 		}
 	}
-	division={	#Amethyst Basin#
-		name="Castellen Royal Regiment II"
-		location=3915
-		division_template="Provincial Levy"
-		start_experience_factor=0.02
-		start_equipment_factor=0.75
-		force_equipment_variants={
-			melee_equipment_0={owner="BCK" creator="EQS"}
+	division = {	#Amethyst Basin#
+		name = "Castellen Royal Regiment II"
+		location = 3915
+		division_template = "Provincial Levy"
+		start_experience_factor = 0.02
+		start_equipment_factor = 0.75
+		force_equipment_variants = {
+			melee_equipment_0 = {
+				owner = "BCK"
+				creator = "EQS"
+			}
 		}
 	}
-	division={	#Amethyst Basin#
-		name="Castellen Royal Regiment III"
-		location=9751
-		division_template="Provincial Levy"
-		start_experience_factor=0
-		start_equipment_factor=0.7
-		force_equipment_variants={
-			melee_equipment_0={owner="BCK" creator="EQS"}
+	division = {	#Amethyst Basin#
+		name = "Castellen Royal Regiment III"
+		location = 9751
+		division_template = "Provincial Levy"
+		start_experience_factor = 0
+		start_equipment_factor = 0.7
+		force_equipment_variants = {
+			melee_equipment_0 = {
+				owner = "BCK"
+				creator = "EQS"
+			}
 		}
 	}
-	division={	#Amethyst Basin#
-		name="Castellen Royal Regiment IV"
-		location=11596
-		division_template="Provincial Levy"
-		start_experience_factor=0
-		start_equipment_factor=0.7
-		force_equipment_variants={
-			melee_equipment_0={owner="BCK" creator="EQS"}
+	division = {	#Amethyst Basin#
+		name = "Castellen Royal Regiment IV"
+		location = 11596
+		division_template = "Provincial Levy"
+		start_experience_factor = 0
+		start_equipment_factor = 0.7
+		force_equipment_variants = {
+			melee_equipment_0 = {
+				owner = "BCK"
+				creator = "EQS"
+			}
 		}
 	}
 }

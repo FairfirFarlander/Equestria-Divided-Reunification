@@ -69,15 +69,15 @@
 		y = 2
 		cost = 7
 		available_if_capitulated = yes
-		prerequisite = {
-			focus = CUL_more_industry
-		}
-		prerequisite = {
-			focus = CUL_more_weapons
-		}
-		prerequisite = {
-			focus = CUL_fully_mobolize_our_nation
-		}
+		#prerequisite = {
+		#	focus = CUL_more_industry
+		#}
+		#prerequisite = {
+		#	focus = CUL_more_weapons
+		#}
+		#prerequisite = {
+		#	focus = CUL_fully_mobolize_our_nation
+		#}
 		ai_will_do = {
 			factor = 2
 		}
@@ -102,7 +102,7 @@
 		y = 4
 		cost = 7
 		available_if_capitulated = yes
-		prerequisite = {focus = CUL_calm_before_the_storm}
+		#prerequisite = {focus = CUL_calm_before_the_storm}
 		ai_will_do = {
 			factor = 1
 		}
@@ -128,7 +128,7 @@ target = VII
 		y = 4
 		cost = 7
 		available_if_capitulated = yes
-		prerequisite = {focus = CUL_calm_before_the_storm}
+		#prerequisite = {focus = CUL_calm_before_the_storm}
 		ai_will_do = {
 			factor = 1
 		}
@@ -150,7 +150,7 @@ target = HEB
 		y = 4
 		cost = 7
 		available_if_capitulated = yes
-		prerequisite = {focus = CUL_calm_before_the_storm}
+		#prerequisite = {focus = CUL_calm_before_the_storm}
 		ai_will_do = {
 			factor = 1
 		}
@@ -223,7 +223,7 @@ target = STL
 		y = 4
 		cost = 7
 		available_if_capitulated = yes
-		prerequisite = {focus = CUL_calm_before_the_storm}
+		#prerequisite = {focus = CUL_calm_before_the_storm}
 		ai_will_do = {
 			factor = 1
 		}
@@ -245,7 +245,7 @@ target = HSW
 		y = 4
 		cost = 7
 		available_if_capitulated = yes
-		prerequisite = {focus = CUL_calm_before_the_storm}
+		#prerequisite = {focus = CUL_calm_before_the_storm}
 		ai_will_do = {
 			factor = 3
 		}
@@ -264,7 +264,7 @@ target = CRY
 		y = 4
 		cost = 7
 		available_if_capitulated = yes
-		prerequisite = {focus = CUL_calm_before_the_storm}
+		#prerequisite = {focus = CUL_calm_before_the_storm}
 		ai_will_do = {
 			factor = 1
 		}
@@ -368,7 +368,7 @@ target = HWG
 		y = 4
 		cost = 7
 		available_if_capitulated = yes
-		prerequisite = {focus = CUL_calm_before_the_storm}
+		#prerequisite = {focus = CUL_calm_before_the_storm}
 		ai_will_do = {
 			factor = 1
 		}
@@ -390,7 +390,7 @@ target = HMS
 		y = 4
 		cost = 7
 		available_if_capitulated = yes
-		prerequisite = {focus = CUL_calm_before_the_storm}
+		#prerequisite = {focus = CUL_calm_before_the_storm}
 		ai_will_do = {
 			factor = 1
 		}

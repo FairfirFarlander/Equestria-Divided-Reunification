@@ -614,129 +614,129 @@ EDR_debug_toggle_minors_decisions={
 	}
 }
 EDR_debug_HEB_land_decisions={
-	HEB_res_CHY={
+	HEB_res_CHR={
 		#icon=
-		visible={not={country_exists=CHY}}
+		visible={not={country_exists=CHR}}
 		fire_only_once=no
 		complete_effect={
 			22={
-				add_core_of=CHY
+				add_core_of=CHR
 				remove_core_of=HEB
-				transfer_state_to=CHY
+				transfer_state_to=CHR
 			}
 			23={
-				add_core_of=CHY
+				add_core_of=CHR
 				remove_core_of=HEB
-				transfer_state_to=CHY
+				transfer_state_to=CHR
 			}
 			113={
-				add_core_of=CHY
+				add_core_of=CHR
 				remove_core_of=HEB
-				transfer_state_to=CHY
+				transfer_state_to=CHR
 			}
 			120={
-				add_core_of=CHY
+				add_core_of=CHR
 				remove_core_of=HEB
-				transfer_state_to=CHY
+				transfer_state_to=CHR
 			}
 		}
 	}
-	HEB_rev_CHY={
+	HEB_rev_CHR={
 		#icon=
-		visible={country_exists=CHY}
+		visible={country_exists=CHR}
 		fire_only_once=no
 		complete_effect={
 			22={
-				remove_core_of=CHY
+				remove_core_of=CHR
 				add_core_of=HEB
 				transfer_state_to=HEB
 			}
 			23={
-				remove_core_of=CHY
+				remove_core_of=CHR
 				add_core_of=HEB
 				transfer_state_to=HEB
 			}
 			113={
-				remove_core_of=CHY
+				remove_core_of=CHR
 				add_core_of=HEB
 				transfer_state_to=HEB
 			}
 			120={
-				remove_core_of=CHY
+				remove_core_of=CHR
 				add_core_of=HEB
 				transfer_state_to=HEB
 			}
 		}
 	}
-	HEB_res_COT={
+	HEB_res_SCT={
 		#icon=
-		visible={not={country_exists=COT}}
+		visible={not={country_exists=SCT}}
 		fire_only_once=no
 		complete_effect={
 			43={
-				add_core_of=COT
+				add_core_of=SCT
 				remove_core_of=HEB
-				transfer_state_to=COT
+				transfer_state_to=SCT
 			}
 			44={
-				add_core_of=COT
+				add_core_of=SCT
 				remove_core_of=HEB
-				transfer_state_to=COT
+				transfer_state_to=SCT
 			}
 			47={
-				add_core_of=COT
+				add_core_of=SCT
 				remove_core_of=HEB
-				transfer_state_to=COT
+				transfer_state_to=SCT
 			}
 			49={
-				add_core_of=COT
+				add_core_of=SCT
 				remove_core_of=HEB
-				transfer_state_to=COT
+				transfer_state_to=SCT
 			}
 			51={
-				add_core_of=COT
+				add_core_of=SCT
 				remove_core_of=HEB
-				transfer_state_to=COT
+				transfer_state_to=SCT
 			}
 			71={
-				add_core_of=COT
+				add_core_of=SCT
 				remove_core_of=HEB
-				transfer_state_to=COT
+				transfer_state_to=SCT
 			}
 		}
 	}
-	HEB_rev_COT={
+	HEB_rev_SCT={
 		#icon=
-		visible={country_exists=COT}
+		visible={country_exists=SCT}
 		fire_only_once=no
 		complete_effect={
 			43={
-				remove_core_of=COT
+				remove_core_of=SCT
 				add_core_of=HEB
 				transfer_state_to=HEB
 			}
 			44={
-				remove_core_of=COT
+				remove_core_of=SCT
 				add_core_of=HEB
 				transfer_state_to=HEB
 			}
 			47={
-				remove_core_of=COT
+				remove_core_of=SCT
 				add_core_of=HEB
 				transfer_state_to=HEB
 			}
 			49={
-				remove_core_of=COT
+				remove_core_of=SCT
 				add_core_of=HEB
 				transfer_state_to=HEB
 			}
 			51={
-				remove_core_of=COT
+				remove_core_of=SCT
 				add_core_of=HEB
 				transfer_state_to=HEB
 			}
 			71={
-				remove_core_of=COT
+				remove_core_of=SCT
 				add_core_of=HEB
 				transfer_state_to=HEB
 			}

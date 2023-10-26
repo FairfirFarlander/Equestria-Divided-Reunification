@@ -1,5 +1,5 @@
 add_namespace = EDRG_EW1
-	country_event = {	#A Pearn Harbor COT
+	country_event = {	#A Pearn Harbor SCT
 		id = EDRG_EW1.01
 		title = EDRG_EW1.01.t
 		desc = EDRG_EW1.01.d
@@ -27,7 +27,7 @@ add_namespace = EDRG_EW1
 		}
 		immediate = { log = "[GetDateText]: [Root.GetName]: event EDRG_EW1.02" }
 	}
-	country_event = {	#Earthborn Demands Fort Mourn HEB then COT
+	country_event = {	#Earthborn Demands Fort Mourn HEB then SCT
 		id = EDRG_EW1.03
 		title = EDRG_EW1.03.t
 		desc = EDRG_EW1.03.d
@@ -55,7 +55,7 @@ add_namespace = EDRG_EW1
 		}
 		immediate = { log = "[GetDateText]: [Root.GetName]: event EDRG_EW1.04" }
 	}
-	country_event = {	#A New Face' Demands COT
+	country_event = {	#A New Face' Demands SCT
 		id = EDRG_EW1.05
 		title = EDRG_EW1.05.t
 		desc = EDRG_EW1.05.d
@@ -69,7 +69,7 @@ add_namespace = EDRG_EW1
 		}
 		immediate = { log = "[GetDateText]: [Root.GetName]: event EDRG_EW1.05" }
 	}
-	country_event = {	#Supply Event? COT
+	country_event = {	#Supply Event? SCT
 		id = EDRG_EW1.06
 		title = EDRG_EW1.06.t
 		desc = EDRG_EW1.06.d
@@ -125,7 +125,7 @@ add_namespace = EDRG_EW1
 		}
 		immediate = { log = "[GetDateText]: [Root.GetName]: event EDRG_EW1.09" }
 	}
-	country_event = {	#Reply and response COT
+	country_event = {	#Reply and response SCT
 		id = EDRG_EW1.010
 		title = EDRG_EW1.010.t
 		desc = EDRG_EW1.010.d

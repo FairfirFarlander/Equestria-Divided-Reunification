@@ -6,10 +6,6 @@ focus_tree = {
 		#	tag = TFL
 		#	add = 2
 		#}
-		modifier = {
-			has_country_flag = EDR_submod_active
-			subtract = 1
-		}
 	}
 	shared_focus = TFL_S00
 	continuous_focus_position = { x = 10	y = -400 }
@@ -22,10 +18,6 @@ focus_tree = {
 			is_debug = yes
 			tag = TFL
 			add = 7
-		}
-		modifier = {
-			has_country_flag = EDR_submod_active
-			subtract = 1
 		}
 	}
 	shared_focus = TFL_S00
@@ -101,7 +93,7 @@ focus_tree = {
 			every_country = {
 				limit = {
 					OR = {
-						original_tag = CHY
+						original_tag = CHR
 						original_tag = HEB
 						original_tag = HFT
 						original_tag = PIE

@@ -14,14 +14,14 @@ ideas={
 		ALA_industrial_concern_1={
 			picture=IRE_medium_industry
 			allowed={original_tag=ALA}
-			available={has_completed_focus=ALA_I01A}
+			#available={has_completed_focus=ALA_I01A}
 			research_bonus={industry=0.15}
 			traits={industrial_concern}
 		}
 		ALA_industrial_concern_2={
 			picture=viirawheat
 			allowed={original_tag=ALA}
-			available={has_completed_focus=ALA_I01B}
+			#available={has_completed_focus=ALA_I01B}
 			cost=75
 			research_bonus={excavation_tech=0.10}
 			traits={industrial_concern}

@@ -6,8 +6,8 @@ state = {	#EDRSTATE
 	provinces = { 662 676 1643 3630 6634 6913 6940 6998 7196 9602 9756 9874 11583 11586 11608 11887 }
 	resources = { steel = 5 chromium = 21 }
 	history = {
-		owner = COT
-		add_core_of = COT
+		owner = SCT
+		add_core_of = SCT
 		victory_points = {1643 3}
 		buildings = {
 			infrastructure = 2

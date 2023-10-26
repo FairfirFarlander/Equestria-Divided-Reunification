@@ -13,17 +13,66 @@ ideas={
 				navy_max_range_factor=-0.40
 			}
 			equipment_bonus={	#Thanks to Euro General (1649Discordnumber) at EAWsubmodding for the insight and example code for fixing the aircraft stats.
-				fighter_equipment={instant=yes	maximum_speed=-0.65	air_range=-0.50}
-				cv_fighter_equipment={instant=yes	maximum_speed=-0.65	air_range=-0.50}
-				CAS_equipment={instant=yes	maximum_speed=-0.65	air_range=-0.50}
-				cv_CAS_equipment={instant=yes	maximum_speed=-0.65	air_range=-0.50}
-				cv_nav_bomber_equipment={instant=yes	maximum_speed=-0.65	air_range=-0.50}
-				nav_bomber_equipment={instant=yes	maximum_speed=-0.65	air_range=-0.50}
-				tac_bomber_equipment={instant=yes	maximum_speed=-0.65	air_range=-0.50}
-				heavy_fighter_equipment={instant=yes	maximum_speed=-0.65	air_range=-0.50}
-				strat_bomber_equipment={instant=yes	maximum_speed=-0.65	air_range=-0.50}
-				transport_plane_equipment={instant=yes	maximum_speed=-0.65	air_range=-0.50}
-				scout_plane_equipment={instant=yes	maximum_speed=-0.65	air_range=-0.50}
+				small_plane_airframe = {
+					instant = yes
+					maximum_speed = -0.65
+					air_range = -0.50
+				}
+				cv_small_plane_airframe = {
+					instant = yes
+					maximum_speed = -0.65
+					air_range = -0.5
+				}
+				small_plane_cas_airframe = {
+					instant = yes
+					maximum_speed = -0.65
+					air_range = -0.5
+				}
+				cv_small_plane_cas_airframe = {
+					instant = yes
+					maximum_speed = -0.65
+					air_range = -0.5
+				}
+				small_plane_naval_bomber_airframe = {
+					instant = yes
+					maximum_speed = -0.65
+					air_range = -0.5
+				}
+				cv_small_plane_naval_bomber_airframe = {
+					instant = yes
+					maximum_speed = -0.65
+					air_range = -0.5
+				}
+				medium_plane_airframe = {
+					instant = yes
+					maximum_speed = -0.65
+					air_range = -0.5
+				}
+				medium_plane_fighter_airframe = {
+					instant = yes
+					maximum_speed = -0.65
+					air_range = -0.5
+				}
+				medium_plane_scout_plane_airframe = {
+					instant = yes
+					maximum_speed = -0.65
+					air_range = -0.5	
+				}
+				large_plane_airframe = {
+					instant = yes
+					maximum_speed = -0.65
+					air_range = -0.5
+				}
+				large_plane_maritime_patrol_plane_airframe = {
+					instant = yes
+					maximum_speed = -0.65
+					air_range = -0.5
+				}
+				transport_plane_equipment = {
+					instant = yes
+					maximum_speed = -0.65
+					air_range = -0.5
+				}
 			}
 		}
 		HWG_tensions={	#Underclass Tensions (-0.4PPG, -15%Stability, -15%Production, +0.02Communism, +0.02Harmony)

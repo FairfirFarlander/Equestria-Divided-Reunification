@@ -1,7 +1,7 @@
 ﻿l_english:
  ##News Events##
   EDRG_NW1.01.t: "The Confederate Earthborn War"
-   EDRG_NW1.01.d: "[This.GetNewspaperHeader]Yesterday, [HEB.GetAdjective] forces crossed the border into [COT.GetAdjective] territory to finish what they had started last year; the iradication of [COT.GetNameDef]. The shots fired near Fort Sorrow mark the beginning of the Second Confederate Earthborn War. The South has once again been roiled into turmoil that will see it's landscape shorn apart. The rest of the Equestrian world holds it's breath as this may just be a prelude to the storm that is to come."
+   EDRG_NW1.01.d: "[This.GetNewspaperHeader]Yesterday, [HEB.GetAdjective] forces crossed the border into [SCT.GetAdjective] territory to finish what they had started last year; the iradication of [SCT.GetNameDef]. The shots fired near Fort Sorrow mark the beginning of the Second Confederate Earthborn War. The South has once again been roiled into turmoil that will see it's landscape shorn apart. The rest of the Equestrian world holds it's breath as this may just be a prelude to the storm that is to come."
    EDRG_NW1.01.a: "The jack of independence still flies."
    EDRG_NW1.01.b: "We must bring them back to the fold."
    EDRG_NW1.01.c: "So roar the guns of the south."

@@ -124,7 +124,7 @@ focus_tree = {
 		ai_will_do = {factor = 80}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus HAH_S01B"
-			set_technology = {tech_pony_misc = 1}
+			set_technology = {tech_earth_pony_a3 = 1}
 		}
 	}
 	shared_focus = {	#A Quota for Steel
@@ -350,10 +350,10 @@ focus_tree = {
 			add_tech_bonus = {
 				name = HAH_earthy_bonus
 				bonus = 0.5	uses = 1
-				technology = tech_pony_misc3
-				technology = tech_pony_misc_a2
-				technology = tech_pony_misc_b
-				technology = tech_pony_misc_c2
+				technology = tech_earth_pony_a1
+				technology = tech_earth_pony_b1
+				technology = tech_earth_pony_b2
+				technology = tech_earth_pony_a3
 			}
 			add_to_variable = {HAH_grand_masquerade = 1}
 			if = {

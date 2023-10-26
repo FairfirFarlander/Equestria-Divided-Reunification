@@ -1,35 +1,35 @@
 characters = {
-	CHY_cherry_jubilee = {
-		name = CHY_cherry_jubilee
+	CHR_cherry_jubilee = {
+		name = CHR_cherry_jubilee
 		gender = female
 		portraits = {
 			civilian = {
-				large = GFX_CHY_cherry_jubilee
-				small = GFX_CHY_cherry_jubilee_small
+				large = GFX_CHR_cherry_jubilee
+				small = GFX_CHR_cherry_jubilee_small
 			}
 			army = {
-				large = GFX_CHY_cherry_jubilee
-				small = GFX_CHY_cherry_jubilee_small
+				large = GFX_CHR_cherry_jubilee
+				small = GFX_CHR_cherry_jubilee_small
 			}
 		}
 		country_leader = {
-			desc = CHY_cjubilee_leader_desc
+			desc = CHR_cjubilee_leader_desc
 			ideology = neofeudalism
 		}
 		country_leader = {
-			desc = CHY_cjubilee_leader_desc
+			desc = CHR_cjubilee_leader_desc
 			ideology = conservatism
 		}
 		country_leader = {
-			desc = CHY_cjubilee_leader_desc
+			desc = CHR_cjubilee_leader_desc
 			ideology = democratic_socialism
 		}
 		country_leader = {
-			desc = CHY_cjubilee_leader_desc
+			desc = CHR_cjubilee_leader_desc
 			ideology = despotism
 		}
 		corps_commander = {
-			desc = CHY_cjubilee_commander_desc
+			desc = CHR_cjubilee_commander_desc
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -41,12 +41,12 @@ characters = {
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = CHY_cjubilee_politician
+			idea_token = CHR_cjubilee_politician
 			ledger = civilian
 			available = {
 				NOT = {
 					has_country_leader = {
-						character = CHY_cherry_jubilee
+						character = CHR_cherry_jubilee
 						ruling_only = yes
 					}
 				}

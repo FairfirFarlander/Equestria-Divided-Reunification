@@ -1,0 +1,47 @@
+focus_tree = {
+	id = CLD_focustree
+	country = {
+		factor = 0
+		#modifier = {
+		#	tag = CLD
+		#	add = 2
+		#}
+	}
+	shared_focus = CLD_S00
+	continuous_focus_position = { x = 10	y = -400 }
+}
+focus_tree = {
+	id = CLD_focustree_debug
+	country = {
+		factor = 0
+		modifier = {
+			is_debug = yes
+			tag = CLD
+			add = 7
+		}
+	}
+	shared_focus = CLD_S00
+	continuous_focus_position = { x = 10	y = -400 }
+}
+##StoryTree
+	shared_focus = {	#
+		id = CLD_S00
+		#icon = 
+		x = 0	y = 0	cost = 1
+		search_filters = {}
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLD_S00"
+		}
+	}
+	shared_focus = {	#
+		id = CLD_SXXX
+		#icon = 
+		#relative_position_id = CLD_S03A
+		x = -1	y = 1	cost = 2
+		#prerequisite = { focus = CLD_S03A }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLD_SXXX"
+		}
+	}

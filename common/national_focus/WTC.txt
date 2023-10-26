@@ -6,10 +6,6 @@ focus_tree = {
 			tag = WTC
 			add = 2
 		}
-		modifier = {
-			has_country_flag = EDR_submod_active
-			subtract = 1
-		}
 	}
 	shared_focus = WTC_S00
 	shared_focus = WTC_S05
@@ -25,10 +21,6 @@ focus_tree = {
 			is_debug = yes
 			tag = WTC
 			add = 7
-		}
-		modifier = {
-			has_country_flag = EDR_submod_active
-			subtract = 1
 		}
 	}
 	shared_focus = WTC_S00

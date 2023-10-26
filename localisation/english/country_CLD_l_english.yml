@@ -1,9 +1,9 @@
 ﻿l_english:
  ###Introduction###
   ##Bookmark##
-   CLD_GATHERING_STORM_DESC: "$GENR_GATHERING_STORM_DESC$"
+   CLD_GATHERING_STORM_DESC: "When Equestria fractured during the Great Divide, Cloudsdale weathered the storm under the care of the Wonderbolts. Loyal to a fault the city on the clouds gathered to the Eqeustrian banner all who held the equestrian dream to their hearts. Yet tradgedy would strike when Rainbow Dash, the Element of Loyalty, caused a schism within the city and tore the defenders of Equestria in two. With the departure of a former hero of the Princessdom and many of her followers, the bastion of loyalty fractured and faded into the chaos gripping the nation. Now alone, Cloudsdale hangs by a feather. Amidst the coming turmoil the ponies of Cloudsdale must adapt to the winds of change or be engulfed by the maelstrom."
   ##Welcome Screen##
-   EAW_WS_CLD: "$EAW_WS_GENR$"
+   EAW_WS_CLD: "The Cradle of §4Pegasai Kind§!"
     EAW_WS_CLD_desc: "$EAW_WS_GENR_desc$"
  ###Politics###
   ##Country Name##

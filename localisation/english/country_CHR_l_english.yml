@@ -1,0 +1,24 @@
+﻿l_english:
+ ###Introduction###
+  ##Bookmark##
+   CHR_GATHERING_STORM_DESC: "$GENR_GATHERING_STORM_DESC$"
+  ##Welcome Screen##
+   EAW_WS_CHR: "$EAW_WS_GENR$"
+    EAW_WS_CHR_desc: "$EAW_WS_GENR_desc$"
+ ###Politics###
+  ##Country Name##
+   CHR: "Cherry Clan"
+    CHR_DEF: "the Cherry Clan"
+    CHR_ADJ: "Cheari"
+  ##Political Parties##
+ ###Characters###
+  ##Leaders##
+   CHR_cherry_jubilee: "Cherry Jubilee"
+    CHR_cjubilee_leader_desc: "$GENR_advisor_desc$"
+    CHR_cjubilee_commander_desc: "$CHR_cjubilee_leader_desc$"
+    CHR_cjubilee_politician_desc: "$CHR_cjubilee_leader_desc$"
+  ##Commanders##
+  ##Advisors##
+ ###Ideas###
+ ###National Focuses###
+  ##Storyline Tree##

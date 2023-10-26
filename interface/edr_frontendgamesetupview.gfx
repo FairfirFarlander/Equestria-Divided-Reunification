@@ -3,4 +3,19 @@ spriteTypes = {
 		name = "GFX_bookmark_reunification"
 		texturefile = "gfx/interface/bookmark_reunification.dds"
 	}
+	spriteType = {
+		name = "GFX_first_new_content_flag"
+		texturefile = "gfx/flags/HAH.tga"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_second_new_content_flag"
+		texturefile = "gfx/flags/TRS.tga"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_third_new_content_flag"
+		texturefile = "gfx/flags/MSE_fascism.tga"
+		noOfFrames = 1
+	}
 }

@@ -62,7 +62,7 @@ generic_DD_template = yes
 set_convoys = 11
 set_rule = {	can_generate_female_aces = yes	can_generate_female_unit_leaders = yes	can_generate_female_country_leaders = yes}
 create_faction = HEB_faction
-add_to_faction = CHY
+add_to_faction = CHR
 add_to_faction = HFT
 add_to_faction = PIE
 set_popularities = {

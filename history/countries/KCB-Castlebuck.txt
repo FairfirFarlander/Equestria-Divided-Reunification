@@ -13,7 +13,7 @@ set_technology = {
 	pony_race = 1
 	melee_weapons = 1
 	tech_support = 1
-	tech_pony_misc = 1
+	tech_earth_pony = 1
 }
 if = {
 	limit = {has_dlc = "No Step Back"}

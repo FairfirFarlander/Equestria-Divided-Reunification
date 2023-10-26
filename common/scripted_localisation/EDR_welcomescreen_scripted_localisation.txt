@@ -14,16 +14,16 @@ defined_text = { #Country
 		localization_key = EAW_WS_BCK
 	}
 	text = {
-		trigger = { original_tag = CHY }
-		localization_key = EAW_WS_CHY
+		trigger = { original_tag = CHR }
+		localization_key = EAW_WS_CHR
 	}
 	text = {
 		trigger = { original_tag = CLD }
 		localization_key = EAW_WS_CLD
 	}
 	text = {
-		trigger = { original_tag = COT }
-		localization_key = EAW_WS_COT
+		trigger = { original_tag = SCT }
+		localization_key = EAW_WS_SCT
 	}
 	text = {
 		trigger = { original_tag = CRL }
@@ -553,16 +553,16 @@ defined_text = {
 		localization_key = EAW_WS_BCK_desc
 	}
 	text = {
-		trigger = { original_tag = CHY }
-		localization_key = EAW_WS_CHY_desc
+		trigger = { original_tag = CHR }
+		localization_key = EAW_WS_CHR_desc
 	}
 	text = {
 		trigger = { original_tag = CLD }
 		localization_key = EAW_WS_CLD_desc
 	}
 	text = {
-		trigger = { original_tag = COT }
-		localization_key = EAW_WS_COT_desc
+		trigger = { original_tag = SCT }
+		localization_key = EAW_WS_SCT_desc
 	}
 	text = {
 		trigger = { original_tag = CRL }

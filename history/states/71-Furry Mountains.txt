@@ -6,7 +6,7 @@ state = {	#EDRSTATE
 	#impassable = yes
 	provinces = { 630 4507 6652 6716 7552 9471 9771 9849 }
 	history = {
-		owner = COT
-		add_core_of = COT
+		owner = SCT
+		add_core_of = SCT
 	}
 }

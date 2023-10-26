@@ -51,7 +51,7 @@
 #			}
 #		}
 #	}
-#	EDR_HEB_COT_leadup_1013={
+#	EDR_HEB_SCT_leadup_1013={
 #		icon=GFX_decision_crossed_swords
 #		#allowed={
 #		#	HEB={is_ai=yes}
@@ -61,9 +61,9 @@
 #		days_mission_timeout=420	#Time it for April 12th
 #		complete_effect={log="That isn't possible! AAAAAAHHHH!!!"}
 #		timeout_effect={
-#			log="[GetDateText]: [Root.GetName]: mission EDR_HEB_COT_war_1013"
-#			set_global_flag=EDR_HEB_COT_war_1013
-#			COT={
+#			log="[GetDateText]: [Root.GetName]: mission EDR_HEB_SCT_war_1013"
+#			set_global_flag=EDR_HEB_SCT_war_1013
+#			SCT={
 #				if={
 #					limit={
 #						NOT={is_ai=yes}
@@ -75,7 +75,7 @@
 #					limit={
 #						NOT={is_ai=yes}
 #					}
-#					country_event=EDR_HEB_COT_leadup_1013.01
+#					country_event=EDR_HEB_SCT_leadup_1013.01
 #				}
 #			}
 #		}

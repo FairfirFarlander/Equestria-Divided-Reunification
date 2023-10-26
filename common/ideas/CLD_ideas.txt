@@ -1,0 +1,11 @@
+ideas = {
+	country = {
+		CLD_equestrian_hold_out = {
+			#picture = 
+			modifier = {
+				political_power_gain = 0.5
+				trade_opinion_factor = -0.5
+			}
+		}
+	}
+}
