@@ -7,7 +7,10 @@ focus_tree = {
 			add = 1
 		}
 	}
-	continuous_focus_position = {x = 60 y = -400}
+	continuous_focus_position = {
+		x = 60
+		y = -400
+	}
 	shared_focus = EDR_I00
 	shared_focus = EDR_L05
 	shared_focus = EDR_N05
@@ -17,9 +20,19 @@ focus_tree = {
 }
 focus_tree = {
 	id = generic_testing_focus_tree
-	country = {factor = 0 modifier = {add = 4 tag = BCK is_debug = yes}}
-	continuous_focus_position = {x = 2130 y = 0} #2130 930, 2140 940
-	shared_focus = EDR_P00
+	country = {
+		factor = 0
+		modifier = {
+			tag = BCK
+			add = 4
+			is_debug = yes
+		}
+	}
+	continuous_focus_position = {
+		x = 1930
+		y = 0
+	}	#2130 930, 2140 940
+	shared_focus = EDR_P0000
 	shared_focus = EDR_I00
 	shared_focus = EDR_L05
 	shared_focus = EDR_N05
@@ -31,74 +44,350 @@ focus_tree = {
 }
 focus_tree = {
 	id = EDR_null_focus_tree
-	country = {factor = 0 modifier = {add = 4 tag = CYE}}	default = no
-	continuous_focus_position = {x = 60 y = 60}
+	country = {
+		factor = 0
+		modifier = {
+			tag = CYE
+			add = 4
+		}
+	}
+	default = no
+	continuous_focus_position = {
+		x = 60
+		y = 60
+	}
 }
 #Generic Equestrian Seperatist Tree
 	shared_focus = {	#The Death of an Era
-		id = EDR_P00 icon = GFX_goal_EQS_TNO_chaos
-		x = -4 y = 0 cost = 8 ai_will_do = {factor = 4000} #1.43
+		id = EDR_P0000
+		icon = GFX_goal_EQS_TNO_chaos
+		x = 11	y = 5	cost = 8	#1.43
+		ai_will_do = { factor = 4000 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus EDR_P00"
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0000"
 			add_political_power = 100
 		}
 	}
 	shared_focus = {	#Questioning the Past - A New Hope
-		id = EDR_P01A icon = GFX_goal_EQS_TNO_meet_leaders
-		relative_position_id = EDR_P00
-		x = -2 y = 1 cost = 8 ai_will_do = {factor = 40}
-		prerequisite = {focus = EDR_P00}
-		mutually_exclusive = {focus = EDR_P01B focus = EDR_P01C}
+		id = EDR_P0100
+		icon = GFX_goal_EQS_TNO_meet_leaders
+		relative_position_id = EDR_P0000
+		x = -2	y = 1	cost = 8
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_P0000 }
+		mutually_exclusive = {
+			focus = EDR_P0101
+			focus = EDR_P0102
+		}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus EDR_P01A"
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0100"
 			add_timed_idea = {
 				idea = EDR_alicorn_doubt
 				days = 356
 			}
 		}
 	}
-	shared_focus = {	#Equestria Strikes Back
-		id = EDR_P01B icon = GFX_goal_EQS_TNO_meet_nobles
-		relative_position_id = EDR_P00
-		x = 0 y = 1 cost = 8 ai_will_do = {factor = 40}
-		prerequisite = {focus = EDR_P00}
-		mutually_exclusive = {focus = EDR_P01A focus = EDR_P01C}
+	shared_focus = {	#Look Towards Our Roots - Equestria Strikes Back
+		id = EDR_P0101
+		icon = GFX_goal_EQS_TNO_meet_nobles
+		relative_position_id = EDR_P0000
+		x = 0	y = 1	cost = 8
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_P0000 }
+		mutually_exclusive = {
+			focus = EDR_P0100
+			focus = EDR_P0102
+		}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus EDR_P01B"
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0101"
 			add_timed_idea = {
 				idea = EDR_sovereignty
 				days = 356
 			}
 		}
 	}
-	shared_focus = {	#The Return of Harmony
-		id = EDR_P01C icon = GFX_goal_EQS_TNO_elements
-		relative_position_id = EDR_P00
-		x = 2 y = 1 cost = 8 ai_will_do = {factor = 40}
-		prerequisite = {focus = EDR_P00}
-		mutually_exclusive = {focus = EDR_P01A focus = EDR_P01B}
+	shared_focus = {	#Returning to Tradition
+		id = EDR_P0102
+		icon = GFX_goal_EQS_TNO_elements
+		relative_position_id = EDR_P0000
+		x = 2	y = 1	cost = 8
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_P0000 }
+		mutually_exclusive = {
+			focus = EDR_P0100
+			focus = EDR_P0101
+		}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus EDR_P01C"
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0102"
 			add_timed_idea = {
 				idea = EDR_hope
 				days = 356
 			}
 		}
 	}
-	shared_focus = {	#The Return of Harmony
-		id = EDR_P02A
-		#icon = 
-		relative_position_id = EDR_P01A
-		x = 0 y = 1 cost = 8 ai_will_do = {factor = 40}
-		prerequisite = {focus = EDR_P01A}
+	shared_focus = {	#To Kill an Idea
+		id = EDR_P0200
+		icon = GFX_goal_strike_harmony
+		relative_position_id = EDR_P0100
+		x = 0	y = 1	cost = 8
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_P0100 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus EDR_P02A"
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0200"
+			add_stability = -0.025
+			add_political_power = 84
+		}
+	}
+	shared_focus = {	#To Renew the Present
+		id = EDR_P0201
+		icon = GFX_goal_improve_relations_pony_pony
+		relative_position_id = EDR_P0101
+		x = 0	y = 1	cost = 8
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_P0101 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0201"
+			add_political_power = 45
+			add_war_support = 0.025
+		}
+	}
+	shared_focus = {	#To Hope for the Future
+		id = EDR_P0202
+		icon = GFX_goal_generic_liberty_statue
+		relative_position_id = EDR_P0102
+		x = 0	y = 1	cost = 8
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_P0102 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0202"
+			add_stability = 0.05
+			add_political_power = 18
+		}
+	}
+	shared_focus = {	#For the Greater Good
+		id = EDR_P0300
+		icon = GFX_goal_revolution_pony
+		relative_position_id = EDR_P0000
+		x = -3	y = 3	cost = 8
+		ai_will_do = { factor = 40 }
+		prerequisite = {
+			focus = EDR_P0200
+			focus = EDR_P0201
+			focus = EDR_P0202
+		}
+		available = {
+			OR = {
+				has_completed_focus = EDR_P0100
+				any_character = { has_trait = communist_revolutionary }
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0300"
+			set_politics = { ruling_party = communism }
+			add_ideas = griffon_communism_support_idea
+			hidden_effect = {
+				if = {
+					limit = {
+						OR = {
+							original_tag = BCK
+						}
+					}
+				}
+				else_if = {
+					limit = { has_completed_focus = EDR_P0100 }
+					random_list = {
+						30 = { set_country_leader_ideology = marxism }
+						30 = { set_country_leader_ideology = stalinism }
+						20 = { set_country_leader_ideology = leninism }
+						20 = { set_country_leader_ideology = syndicalism }
+					}
+				}
+				else_if = {
+					limit = { has_completed_focus = EDR_P0101 }
+					random_list = {
+						40 = { set_country_leader_ideology = leninism }
+						40 = { set_country_leader_ideology = syndicalism }
+						20 = { set_country_leader_ideology = anarchist_communism }
+					}
+				}
+				else = {
+					random_list = {
+						80 = { set_country_leader_ideology = democratic_socialism }
+						20 = { set_country_leader_ideology = leninism }
+					}
+				}
+			}
+		}
+	}
+	shared_focus = {	#Peace Through Power
+		id = EDR_P0301
+		icon = GFX_goal_EQC_fascism
+		relative_position_id = EDR_P0000
+		x = -1	y = 3	cost = 8
+		ai_will_do = { factor = 40 }
+		prerequisite = {
+			focus = EDR_P0200
+			focus = EDR_P0201
+			focus = EDR_P0202
+		}
+		available = {
+			OR = {
+				has_completed_focus = EDR_P0100
+				has_completed_focus = EDR_P0101
+				any_character = { has_trait = fascist_demagogue }
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0301"
+			set_politics = { ruling_party = fascism }
+			add_ideas = griffon_fascism_support_idea
+			hidden_effect = {
+				if = {
+					limit = {
+						OR = {
+							original_tag = BCK
+						}
+					}
+				}
+				else_if = {
+					limit = { has_completed_focus = EDR_P0100 }
+					random_list = {
+						20 = { set_country_leader_ideology = falangism }
+						20 = { set_country_leader_ideology = nazism }
+						20 = { set_country_leader_ideology = rexism }
+						20 = { set_country_leader_ideology = fascism_ideology }
+						20 = { set_country_leader_ideology = ultranationalism }
+					}
+				}
+				else_if = {
+					limit = { has_completed_focus = EDR_P0101 }
+					random_list = {
+						20 = { set_country_leader_ideology = falangism }
+						20 = { set_country_leader_ideology = nazism }
+						20 = { set_country_leader_ideology = rexism }
+						20 = { set_country_leader_ideology = fascism_ideology }
+						20 = { set_country_leader_ideology = ultranationalism }
+					}
+				}
+				else = {
+					random_list = {
+						40 = { set_country_leader_ideology = falangism }
+						30 = { set_country_leader_ideology = fascism_ideology }
+						30 = { set_country_leader_ideology = ultranationalism }
+					}
+				}
+			}
+		}
+	}
+	shared_focus = {	#For Home and Hearth
+		id = EDR_P0302
+		icon = GFX_goal_ideology_social_conservative
+		relative_position_id = EDR_P0000
+		x = 1	y = 3	cost = 8
+		ai_will_do = { factor = 40 }
+		prerequisite = {
+			focus = EDR_P0200
+			focus = EDR_P0201
+			focus = EDR_P0202
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0302"
+			set_politics = { ruling_party = neutrality }
+			add_ideas = griffon_neutrality_support_idea
+			hidden_effect = {
+				if = {
+					limit = {
+						OR = {
+							original_tag = BCK
+						}
+					}
+				}
+				else_if = {
+					limit = { has_completed_focus = EDR_P0100 }
+					random_list = {
+						70 = { set_country_leader_ideology = oligarchism }
+						30 = { set_country_leader_ideology = despotism }
+					}
+				}
+				else_if = {
+					limit = { has_completed_focus = EDR_P0101 }
+					random_list = {
+						50 = { set_country_leader_ideology = centrism }
+						30 = { set_country_leader_ideology = despotism }
+						20 = { set_country_leader_ideology = oligarchism }
+					}
+				}
+				else = {
+					random_list = {
+						70 = { set_country_leader_ideology = centrism }
+						20 = { set_country_leader_ideology = despotism }
+						10 = { set_country_leader_ideology = oligarchism }
+					}
+				}
+			}
+		}
+	}
+	shared_focus = {	#An Enduring Dream
+		id = EDR_P0303
+		icon = GFX_goal_EQS_TNO_equestria_saved
+		relative_position_id = EDR_P0000
+		x = 3	y = 3	cost = 8
+		ai_will_do = { factor = 40 }
+		prerequisite = {
+			focus = EDR_P0200
+			focus = EDR_P0201
+			focus = EDR_P0202
+		}
+		available = {
+			OR = {
+				has_completed_focus = EDR_P0100
+				has_completed_focus = EDR_P0101
+				any_character = { has_trait = democratic_reformer }
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0303"
+			set_politics = { ruling_party = democratic }
+			add_ideas = griffon_harmony_support_idea
+			hidden_effect = {
+				if = {
+					limit = {
+						OR = {
+							original_tag = BCK
+						}
+					}
+				}
+				else_if = {
+					limit = { has_completed_focus = EDR_P0100 }
+					random_list = {
+						50 = { set_country_leader_ideology = socialism }
+						30 = { set_country_leader_ideology = liberalism }
+						20 = { set_country_leader_ideology = conservatism }
+					}
+				}
+				else_if = {
+					limit = { has_completed_focus = EDR_P0101 }
+					random_list = {
+						40 = { set_country_leader_ideology = conservatism }
+						30 = { set_country_leader_ideology = socialism }
+						30 = { set_country_leader_ideology = liberalism }
+					}
+				}
+				else = {
+					random_list = {
+						50 = { set_country_leader_ideology = liberalism }
+						30 = { set_country_leader_ideology = socialism }
+						20 = { set_country_leader_ideology = conservatism }
+					}
+				}
+			}
 		}
 	}
 #Industry Tree
 	shared_focus = {	#Acquire Industrial Tools
 		id = EDR_I00 icon = GFX_goal_generic_production
-		x = 11 y = 0 cost = 7 ai_will_do = {factor = 40}
+		relative_position_id = EDR_P0000
+		x = -16 y = -1 cost = 7 ai_will_do = {factor = 40}	#x=11 y=0
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_I00"
 			add_tech_bonus = {
@@ -329,6 +618,7 @@ focus_tree = {
 #Land Tree
 	shared_focus = {	#Recover Lost Weaponry
 		id = EDR_L05 icon = GFX_focus_indy_swing_the_sword
+		relative_position_id = EDR_P0000
 		x = -10
 		y = 5
 		cost = 4
@@ -634,6 +924,7 @@ focus_tree = {
 	shared_focus = {	#Establish the Navy
 		id = EDR_N05
 		icon = GFX_goal_generic_construct_naval_dockyard
+		relative_position_id = EDR_P0000
 		x = 0	y = 5	cost = 7 
 		available = { any_controlled_state_is_coastal = yes }
 		ai_will_do = { factor = 40 }
@@ -864,6 +1155,7 @@ focus_tree = {
 	shared_focus = {	#Establish the Army Airforce
 		id = EDR_A05
 		icon = GFX_goal_generic_build_airforce
+		relative_position_id = EDR_P0000
 		x = 10	y = 5	cost = 7
 		search_filters = {  }
 		available = { has_tech = infantry_weapons }

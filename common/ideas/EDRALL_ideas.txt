@@ -1,18 +1,21 @@
 ideas = {
 	country = {
 		EDR_alicorn_doubt = {
+			picture = generic_king_handled
 			modifier = {
 				fascism_drift = 0.05
 				communism_drift = 0.05
 			}
 		}
 		EDR_sovereignty = {
+			picture = Generic_Resurrected_Monarchy
 			modifier = {
 				fascism_drift = 0.05
 				neutrality_drift = 0.05
 			}
 		}
 		EDR_hope = {
+			picture = EQS_friendly_harmony
 			modifier = {
 				neutrality_drift = 0.05
 				democratic_drift = 0.05
