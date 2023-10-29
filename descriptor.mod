@@ -10,5 +10,5 @@ name="EAW: Equestria Divided Reunification"
 dependencies={
 	"Equestria at War"
 }
-supported_version="1.12.*"
+supported_version="1.13.*"
 remote_file_id="2848345089"
