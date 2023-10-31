@@ -1,46 +1,36 @@
 add_namespace = TFL_ES
 	country_event = {	#The Reply
-		id = TFL_ES.00000
-		title = TFL_ES.00000.t
-		desc = TFL_ES.00000.d
+		id = TFL_ES.000000
+		title = TFL_ES.000000.t
+		desc = TFL_ES.000000.d
 		is_triggered_only = yes
-		immediate = { log = "[GetDateText]: [Root.GetName]: event TFL_ES.00000" }
-		option = { name = TFL_ES.00000.a }
-		option = {
-			name = TFL_E0_CWT
-			trigger = {
-				is_debug = yes
-			}
-		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event TFL_ES.000000" }
+		option = { name = TFL_ES.000000.a }
 	}
 	country_event = {	#Train Thieves Part 1
-		id = TFL_ES.02100
-		title = TFL_ES.02100.t
-		desc = TFL_ES.02100.d
+		id = TFL_ES.020100
+		title = TFL_ES.020100.t
+		desc = TFL_ES.020100.d
 		is_triggered_only = yes
 		picture = GFX_event_pony_soldiers_sunset
-		immediate = { log = "[GetDateText]: [Root.GetName]: event TFL_ES.02100" }
+		immediate = { log = "[GetDateText]: [Root.GetName]: event TFL_ES.020100" }
 		option = {
-			name = TFL_ES.02200.a
+			name = TFL_ES.020100.a
 			country_event = {
-				id = TFL_ES.02101
+				id = TFL_ES.020101
 				days = 2
 			}
 		}
-		option = {
-			name = TFL_E0_CWT
-			trigger = { is_debug = yes }
-		}
 	}
 	country_event = {	#Train Thieves Part 2
-		id = TFL_ES.02101
-		title = TFL_ES.02100.t
-		desc = TFL_ES.02100.d
+		id = TFL_ES.020101
+		title = TFL_ES.020100.t
+		desc = TFL_ES.020100.d
 		is_triggered_only = yes
 		picture = GFX_report_event_generic_train
 		immediate = { log = "[GetDateText]: [Root.GetName]: event TFL_ES.02101" }
 		option = {
-			name = TFL_ES.02101.a
+			name = TFL_ES.020101.a
 			add_stability = 0.05
 			add_equipment_to_stockpile = {
 				type = melee_equipment_1
@@ -54,23 +44,18 @@ add_namespace = TFL_ES
 			}
 		}
 		option = {
-			name = TFL_E0_CWT
+			name = EDRG_ED.debug
 			trigger = { is_debug = yes }
 		}
 	}
 	country_event = {	#18 Lunatics and Their Gravel
-		id = TFL_ES.02300
-		title = TFL_ES.02300.t
-		desc = TFL_ES.02300.d
+		id = TFL_ES.020300
+		title = TFL_ES.020300.t
+		desc = TFL_ES.020300.d
+		picture = GFX_event_teufort_lunatics
 		is_triggered_only = yes
-		immediate = { log = "[GetDateText]: [Root.GetName]: event TFL_ES.02300" }
-		option = {
-			name = TFL_ES.02300.a
-		}
-		option = {
-			name = TFL_E0_CWT
-			trigger = { is_debug = yes }
-		}
+		immediate = { log = "[GetDateText]: [Root.GetName]: event TFL_ES.020300" }
+		option = { name = TFL_ES.020300.a }
 	}
 	country_event = {	#The River Tractors
 		id = TFL_ES.04000
@@ -92,9 +77,7 @@ add_namespace = TFL_ES
 					has_dlc = "No Step Back"
 					has_dlc = "Man the Guns"
 				}
-				set_technology = {
-					amphibious_drive = 1
-				}
+				set_technology = { amphibious_drive = 1 }
 				create_equipment_variant = {
 					name = "Hydra Tank (A)"
 					type = light_tank_amphibious_chassis_0
@@ -115,9 +98,10 @@ add_namespace = TFL_ES
 			}
 			else_if = {
 				limit = { has_dlc = "Man the Guns" }
-				set_technology = {
-					amphibious_tank = 1
-				}
+				set_technology = { amphibious_tank = 1 }
+			}
+			else = {
+				
 			}
 		}
 		option = {

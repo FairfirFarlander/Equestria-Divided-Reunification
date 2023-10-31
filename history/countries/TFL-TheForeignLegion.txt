@@ -43,9 +43,7 @@ if = {
 		doctrinal_orthodoxy_spirit
 		disdain_for_the_digging_spirit
 	}
-	set_technology = {
-		gwtank_chassis = 1
-	}
+	set_technology = { gwtank_chassis = 1 }
 	create_equipment_variant = {
 		name = "M1-13 Applesauce (S)"
 		type = light_tank_chassis_0
@@ -58,9 +56,7 @@ if = {
 		}
 	}
 	else = {
-		set_technology = {
-			gwtank = 1
-		}
+		set_technology = { gwtank = 1 }
 		add_ideas = { EQS_bad_tanks }
 	}
 }

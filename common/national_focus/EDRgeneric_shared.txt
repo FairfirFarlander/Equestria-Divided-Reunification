@@ -383,6 +383,17 @@ focus_tree = {
 			}
 		}
 	}
+	shared_focus = {	#
+		id = EDR_P0400
+		#icon = 
+		relative_position_id = EDR_P0300
+		x = 0	y = 1	cost = 8
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_P0300 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0400"
+		}
+	}
 #Industry Tree
 	shared_focus = {	#Acquire Industrial Tools
 		id = EDR_I00 icon = GFX_goal_generic_production

@@ -39,4 +39,8 @@ spriteTypes={
 		name="GFX_event_changeling_victory"
 		texturefile="gfx/event_pictures/changeling_victory.dds"
 	}
+	spriteType={
+		name="GFX_event_teufort_lunatics"
+		texturefile="gfx/event_pictures/teufort_lunatics.dds"
+	}
 }
