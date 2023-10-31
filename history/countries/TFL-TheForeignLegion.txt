@@ -13,6 +13,7 @@ if = {
 }
 set_war_support = 0.2
 add_ideas = {
+	TFL_no_supply
 	service_by_requirement
 	outlaw_economy
 	limited_exports

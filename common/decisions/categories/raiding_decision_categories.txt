@@ -92,7 +92,7 @@ raiding_category = {
 			AND = {
 				original_tag = TFL
 				has_government = fascism
-				has_completed_focus = TFL_S01A
+				has_completed_focus = TFL_S0100
 				NOT = { is_puppet = yes }
 			}
 		}

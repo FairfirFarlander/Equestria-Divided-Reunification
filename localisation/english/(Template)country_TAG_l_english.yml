@@ -1,0 +1,89 @@
+﻿l_english:
+#Documentation is contained within the documentation folder under `localisation_guidelines.md`. Open it with a text editor, browser, or markup reading interface.
+ ###Politics###
+  ##Bookmark/Intro##
+   #TAG_GATHERING_STORM_DESC: ""
+  ##Country Name##
+   #TAG: ""
+    #TAG_DEF: "the "
+    #TAG_ADJ: ""
+    #TAG_ideology: ""
+     #TAG_ideology_DEF: "the "
+     #TAG_ideology_ADJ: ""
+    #TAG_subideology: ""
+     #TAG_subideology_DEF: "the "
+     #TAG_subideology_ADJ: ""
+  ##Factions##
+   #TAG_faction: ""
+  ##Political Parties##
+   #TAG_ideology_party: ""
+    #TAG_ideology_party_long: ""
+ ###Characters###
+  ##Leaders##
+   #TAG_charactername: ""
+    #TAG_charactername_leader_desc: ""
+    #TAG_charactertrait: ""
+    #TAG_charactertrait_desc: ""
+  ##Commanders##
+    #TAG_charactername_commander_desc: ""
+  ##Political Advisors##
+    #TAG_charactername_political_desc: ""
+  ##Military Advisors##
+    #TAG_charactername_theo_desc: ""
+    #TAG_charactername_chief_desc: ""
+    #TAG_charactername_highcmdr_desc: ""
+ ###Ideas/Concerns/Flags/Tooltips###
+  ##Ideas##
+   #TAG_ideaname: ""
+    #TAG_ideaname_desc: ""
+  ##Concerns/Designers##
+   #TAG_concernname: ""
+    #TAG_concernname_desc: ""
+  ##Global Flags##
+   #TAG_globalflagname: ""
+  ##Country Flags##
+   #TAG_countryflagname: ""
+  ##Tooltips##
+   #TAG_tooltipname: ""
+  ##Map Modifiers##
+   #TAG_map_modifier: ""
+ ###National Focuses###
+  #TAG_focustreename: ""
+  ##Focustree Branch##
+   #TAG_focusname: ""
+    #TAG_focusname_desc: ""
+    #TAG_focuscustomtriggertooltipname_cttt: ""
+    #TAG_focuscustomeffecttooltipname_cett: ""
+    #TAG_namespace.eventtitle.t: ""
+     #TAG_namespace.eventdescription.d: ""
+     #TAG_namespace.eventoptiona.a: ""
+     #TAG_namespace.eventoptionacustomeffecttooltip.a_cett: ""
+ ###Events###
+  ##Event Category##
+   #TAG_namespace.eventtitle.t: ""
+    #TAG_namespace.eventtitle.d: ""
+    #TAG_namespace.eventtitle.a: ""
+    #TAG_namespace.eventtitle.a_cett: ""
+ ###Decisions###
+  ##Decision Category##
+   #TAG_decisioncategoryname: ""
+    #TAG_decisioncategoryname_desc: ""
+    #TAG_decisionname: ""
+     #TAG_decisionname_desc: ""
+     #TAG_focuscustomtriggertooltipname_cttt: ""
+     #TAG_focuscustomeffecttooltipname_cett: ""
+     #TAG_decisionname_req: "£iconhere  §Ycost§!"
+      #TAG_decisionname_req_blocked: "£iconhere  §Yunmetcost§!"
+ ###Cultural Overrides###
+  ##Equipment##
+   #TAG_namedequipment: ""
+    #TAG_namedequipment_desc: ""
+  ##Variants##
+   #TAG_EQUIPMENT_VERSION_1: ""
+  ##Military Namelists##
+   #UNIT_GENERIC_NAME_TAG: "$NR$. $NAME$"
+   #FLEET_NAME_TAG: "fleetname $NUMBER$"
+   #AIR_WING_NAME_TAG_FALLBACK: "$TYPE$ $NUMBER$"
+   #AIR_WING_NAME_TAG_GENERIC: "$NAME$ $NR$"
+  ##City Names##
+   #TAG_vp_cityname: ""

@@ -1,0 +1,12 @@
+#TFL_sekret_trade
+	defined_text = {
+		name = TFL_sekret_trade_desc
+		text = {
+			trigger = { original_tag = TFL }
+			localization_key = TFL_sekret_trade_TFL
+		}
+		text = {
+			trigger = { original_tag = PIE }
+			localization_key = TFL_sekret_trade_PIE
+		}
+	}

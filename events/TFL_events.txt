@@ -58,14 +58,14 @@ add_namespace = TFL_ES
 		option = { name = TFL_ES.020300.a }
 	}
 	country_event = {	#The River Tractors
-		id = TFL_ES.04000
-		title = TFL_ES.04000.t
-		desc = TFL_ES.04000.d
+		id = TFL_ES.040000
+		title = TFL_ES.040000.t
+		desc = TFL_ES.040000.d
 		picture = GFX_report_event_sweden_tank
 		is_triggered_only = yes
-		immediate = { log = "[GetDateText]: [Root.GetName]: event TFL_ES.04000" }
+		immediate = { log = "[GetDateText]: [Root.GetName]: event TFL_ES.040000" }
 		option = {
-			name = TFL_ES.04000.a
+			name = TFL_ES.040000.a
 			add_tech_bonus = {
 				name = marine_bonus
 				category = marine_tech
@@ -100,12 +100,9 @@ add_namespace = TFL_ES
 				limit = { has_dlc = "Man the Guns" }
 				set_technology = { amphibious_tank = 1 }
 			}
-			else = {
-				
-			}
 		}
 		option = {
-			name = TFL_E0_CWT
+			name = EDRG_ED.debug
 			trigger = { is_debug = yes }
 		}
 	}

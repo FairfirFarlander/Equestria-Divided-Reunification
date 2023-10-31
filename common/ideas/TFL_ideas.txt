@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 		TFL_no_supply = {
-			#picture = 
+			picture = severe_famine
 			modifier = {
 				army_attack_factor = -0.2
 				army_defence_factor = -0.2
@@ -13,14 +13,23 @@ ideas = {
 				stability_weekly = 0.007
 			}
 		}
-		TFL_operation_storms = {
-			#picture = 
-			#modifier = {
-			#	river_crossing_factor = -0.5
-			#}
+		TFL_sekret_trade = {	#Shhh. It's mispelled.
+			picture = STG_food_market
+			modifier = {
+				production_speed_buildings_factor = 0.03
+				stability_factor = 0.02
+			}
+		}
+		TFL_outreach_programs = {
+			picture = EQS_ponies_act
+			modifier = {
+				fascism_drift = 0.02
+				stability_weekly = 0.006
+			}
 		}
 	}
 	industrial_concern = {
+		designer = yes
 		TFL_stallion_co = {
 			picture = company_pile_of_guns
 			allowed = { original_tag = TFL }

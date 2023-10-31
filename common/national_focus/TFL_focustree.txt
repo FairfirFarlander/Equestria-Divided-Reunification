@@ -73,18 +73,18 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus TFL_S0200"
 			custom_effect_tooltip = TFL_S0200_effect_tooltip
+			division_template = {
+				name = "Provincial Militia"
+				priority = 0
+				template_counter = 3
+				regiments = {
+					militia = { x = 0 y = 0 }
+					militia = { x = 0 y = 1 }
+					militia = { x = 0 y = 2 }
+				}
+			}
 			hidden_effect = {
 				country_lock_all_division_template = no
-				division_template = {
-					name = "Provincial Militia"
-					priority = 0
-					template_counter = 3
-					regiments = {
-						militia = { x = 0 y = 0 }
-						militia = { x = 0 y = 1 }
-						militia = { x = 0 y = 2 }
-					}
-				}
 				random_owned_controlled_state = {
 					limit = {
 						ROOT = {
@@ -162,30 +162,25 @@ focus_tree = {
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus TFL_S0300"
-			add_ideas = TFL_operation_storms
 			set_technology = {
 				marines = 1
 				TFL_river_pons = 1
 			}
+			custom_effect_tooltip = TFL_S0300_cett
+			hidden_effect = { add_ideas = TFL_operation_storms }
 		}
 	}
 	shared_focus = {	#Running Off Ethanol
 		id = TFL_S0301
 		icon = GFX_goal_oil
 		relative_position_id = TFL_S0000
-		x = 0
-		y = 3
-		cost = 2
+		x = 0 y = 3 cost = 2
 		prerequisite = {
 			focus = TFL_S0200
 			focus = TFL_S0202
 		}
-		prerequisite = {
-			focus = TFL_S0201
-		}
-		ai_will_do = {
-			factor = 80
-		}
+		prerequisite = { focus = TFL_S0201 }
+		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus TFL_S0301"
 			114 = {
@@ -210,18 +205,10 @@ focus_tree = {
 		id = TFL_S0302
 		icon = GFX_goal_generic_lau_industry
 		relative_position_id = TFL_S0000
-		x = 2
-		y = 3
-		cost = 2
-		prerequisite = {
-			focus = TFL_S0201
-		}
-		prerequisite = {
-			focus = TFL_S0202
-		}
-		ai_will_do = {
-			factor = 80
-		}
+		x = 2 y = 3 cost = 2
+		prerequisite = { focus = TFL_S0201 }
+		prerequisite = { focus = TFL_S0202 }
+		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus TFL_S0302"
 			114 = {
@@ -249,17 +236,11 @@ focus_tree = {
 	}
 	shared_focus = {	#A Semi Functional Tank Workshop
 		id = TFL_S0400
-		#icon = 
+		icon = GFX_goal_generic_army_tank_2
 		relative_position_id = TFL_S0000
-		x = -3
-		y = 4
-		cost = 2
-		prerequisite = {
-			focus = TFL_S0300
-		}
-		ai_will_do = {
-			factor = 80
-		}
+		x = -3 y = 4 cost = 2
+		prerequisite = { focus = TFL_S0300 }
+		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus TFL_S0400"
 			119 = {
@@ -277,9 +258,7 @@ focus_tree = {
 				uses = 1
 			}
 			if = {
-				limit = {
-					has_dlc = "No Step Back"
-				}
+				limit = { has_dlc = "No Step Back" }
 				create_equipment_variant = {
 					name = "Yak Tank"
 					type = light_tank_chassis_0
@@ -305,14 +284,310 @@ focus_tree = {
 			}
 		}
 	}
+	shared_focus = {	#Setting Standards and Improving Tools
+		id = TFL_S0401
+		icon = GFX_goal_generic_production
+		relative_position_id = TFL_S0000
+		x = -1 y = 4 cost = 2
+		prerequisite = {
+			focus = TFL_S0300
+			focus = TFL_S0301
+		}
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TFL_S0401"
+			set_technology = { basic_machine_tools = 1 }
+		}
+	}
+	shared_focus = {	#Guns Aimed Skyward
+		id = TFL_S0402
+		icon = GFX_goal_anti_air
+		relative_position_id = TFL_S0000
+		x = 1 y = 4 cost = 2
+		prerequisite = {
+			focus = TFL_S0301
+			focus = TFL_S0302
+		}
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TFL_S0402"
+			set_technology = { interwar_antiair = 1 }
+			119 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	shared_focus = {	#The Carotene Road
+		id = TFL_S0403
+		icon = GFX_tradegoods
+		relative_position_id = TFL_S0000
+		x = 3	y = 4	cost = 2
+		prerequisite = { focus = TFL_S0302 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TFL_S0403"
+			114 = { add_manpower = 750 }
+			119 = { add_manpower = 250 }
+			every_possible_country = {
+				limit = {
+					OR = {
+						original_tag = PIE
+						original_tag = TFL
+					}
+				}
+				add_timed_idea = {
+					idea = TFL_sekret_trade
+					days = 60
+				}
+			}
+		}
+	}
+	shared_focus = {	#The Veteran and His Crazed Followers
+		id = TFL_S0500
+		icon = GFX_focus_man_claim_the_mandate_of_heaven
+		relative_position_id = TFL_S0000
+		x = -1 y = 5 cost = 2
+		prerequisite = { focus = TFL_S0400 }
+		prerequisite = { focus = TFL_S0401 }
+		prerequisite = { focus = TFL_S0402 }
+		prerequisite = { focus = TFL_S0403 }
+		available = {
+			country_exists = FAI
+			is_subject = no
+		}
+		bypass = {
+			FAI = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+					has_war_with = ROOT
+				}
+			}
+		}
+		will_lead_to_war_with = FAI
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TFL_S0500"
+			create_wargoal = {
+				target = FAI
+				type = annex_everything
+			}
+		}
+	}
+	shared_focus = {	#The Remnants of The Old World
+		id = TFL_S0501
+		icon = GFX_goal_eqs_airfields_central
+		relative_position_id = TFL_S0000
+		x = 1 y = 5 cost = 2
+		prerequisite = { focus = TFL_S0400 }
+		prerequisite = { focus = TFL_S0401 }
+		prerequisite = { focus = TFL_S0402 }
+		prerequisite = { focus = TFL_S0403 }
+		available = {
+			country_exists = CLD
+			is_subject = no
+		}
+		bypass = {
+			CLD = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+					has_war_with = ROOT
+				}
+			}
+		}
+		will_lead_to_war_with = CLD
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TFL_S0501"
+			create_wargoal = {
+				target = CLD
+				type = annex_everything
+			}
+		}
+	}
+	shared_focus = {	#The Cult’s Stockpiles
+		id = TFL_S0600
+		icon = GFX_goal_Arms_Export
+		relative_position_id = TFL_S0000
+		x = -1 y = 6 cost = 2
+		prerequisite = { focus = TFL_S0500 }
+		available = {
+			FAI = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+				}
+			}
+		}
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TFL_S0600"
+			add_tech_bonus = {
+				name = infantry_bonus
+				category = infantry_weapons
+				bonus = 0.5
+				uses = 1
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = FAI
+			}
+			if = {
+				limit = { has_dlc = "By Blood Alone" }
+				set_technology = {
+					iw_small_airframe = 1
+					early_bombs = 1
+					aa_lmg = 1
+					engines_1 = 1
+				}
+				generic_early_fighter = yes
+				add_equipment_to_stockpile = {
+					type = small_plane_airframe_0
+					variant_name = "Hollow Shades Fury"
+					producer = EQS
+					amount = 10
+				}
+			}
+			if = {
+				set_technology = {
+					early_fighter = 1
+				}
+				custom_effect_tooltip = TFL_S0600_cett
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_0
+					amount = 10
+				}
+			}
+		}
+	}
+	shared_focus = {	#The Liberation of Cloudsdale
+		id = TFL_S0601
+		icon = GFX_goal_generic_pony_pegasus
+		relative_position_id = TFL_S0000
+		x = 1 y = 6 cost = 2
+		prerequisite = { focus = TFL_S0501 }
+		available = {
+			CLD = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+				}
+			}
+		}
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TFL_S0601"
+			add_tech_bonus = {
+				name = infantry_bonus
+				category = infantry_weapons
+				bonus = 0.5
+				uses = 1
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = CLD
+			}
+			if = {
+				limit = { has_dlc = "By Blood Alone" }
+				set_technology = {
+					iw_small_airframe = 1
+					basic_small_airframe = 1
+					early_bombs = 1
+					aa_lmg = 1
+					engines_1 = 1
+					engines_2 = 1
+				}
+				create_equipment_variant = {
+					name = "Hawker Hurricane (CAS)"
+					type = small_plane_cas_airframe_1
+					modules = {
+						fixed_main_weapon_slot = bomb_locks
+						fixed_auxiliary_weapon_slot_1 = light_mg_4x
+						engine_type_slot = engine_2_1x
+					}
+				}
+			}
+			if = {
+				set_technology = {
+					early_fighter = 1
+					CAS1 = 1
+				}
+			}
+		}
+	}
+	shared_focus = {	#Reaching Out To Those Who Followed The Cult
+		id = TFL_S0700
+		icon = GFX_HON_peace_in_our_time
+		relative_position_id = TFL_S0000
+		x = -2 y = 7 cost = 2
+		prerequisite = { focus = TFL_S0600 }
+		prerequisite = { focus = TFL_S0601 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TFL_S0700"
+			add_timed_idea = {
+				idea = TFL_outreach_programs
+				days = 90
+			}
+		}
+	}
+	shared_focus = {	#The Train From Hoofington
+		id = TFL_S0701
+		#icon = 
+		relative_position_id = TFL_S0000
+		x = 0 y = 7 cost = 2
+		prerequisite = { focus = TFL_S0600 }
+		prerequisite = { focus = TFL_S0601 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TFL_S0701"
+		}
+	}
+	shared_focus = {	#Weather Under the Wings
+		id = TFL_S0702
+		icon = GFX_goal_improve_relations_pony_pony
+		relative_position_id = TFL_S0000
+		x = 2 y = 7 cost = 2
+		prerequisite = { focus = TFL_S0600 }
+		prerequisite = { focus = TFL_S0601 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TFL_S0702"
+			set_technology = { tech_pegasi = 1 }
+			add_tech_bonus = {
+				name = pegasi
+				category = pegasi_tech
+				bonus = 0.75
+				uses = 1
+			}
+			custom_effect_tooltip = TFL_S0702_cett
+			division_template = {
+				name = "Wonderbolt Regiment"
+				priority = 2
+				regiments = {
+					pegasi = { x = 0 y = 0 }
+					pegasi = { x = 0 y = 1 }
+					pegasi = { x = 0 y = 2 }
+					pegasi = { x = 0 y = 3 }
+				}
+			}
+		}
+	}
 	shared_focus = {	#
 		id = TFL_SXXX
 		#icon = 
-		relative_position_id = TFL_S03A
-		x = -1	y = 1	cost = 2
-		#prerequisite = { focus = TFL_S03A }
+		relative_position_id = TFL_S0000
+		x = -1 y = 1 cost = 2
+		#prerequisite = { focus = TFL_S0000 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TFL_SXXX"
+			log = "[GetDateText]: [Root.GetName]: Focus TFL_S0000"
 		}
 	}
