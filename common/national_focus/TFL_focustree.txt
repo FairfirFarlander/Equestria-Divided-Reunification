@@ -72,7 +72,7 @@ focus_tree = {
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus TFL_S0200"
-			custom_effect_tooltip = TFL_S0200_effect_tooltip
+			custom_effect_tooltip = TFL_S0200_cett
 			division_template = {
 				name = "Provincial Militia"
 				priority = 0
@@ -540,7 +540,7 @@ focus_tree = {
 	}
 	shared_focus = {	#The Train From Hoofington
 		id = TFL_S0701
-		#icon = 
+		icon = GFX_goal_rct_fancy_train
 		relative_position_id = TFL_S0000
 		x = 0 y = 7 cost = 2
 		prerequisite = { focus = TFL_S0600 }
@@ -548,6 +548,7 @@ focus_tree = {
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus TFL_S0701"
+			country_event = TFL_ES.070100	#A Train of Vultures
 		}
 	}
 	shared_focus = {	#Weather Under the Wings
@@ -580,14 +581,234 @@ focus_tree = {
 			}
 		}
 	}
-	shared_focus = {	#
-		id = TFL_SXXX
-		#icon = 
+	shared_focus = {	#Our Future in the Region
+		id = TFL_S0800
+		icon = GFX_zebra_question
 		relative_position_id = TFL_S0000
-		x = -1 y = 1 cost = 2
-		#prerequisite = { focus = TFL_S0000 }
+		x = 0 y = 8 cost = 2
+		allow_branch = {
+			has_global_flag = TFL_lost_legion_formed
+			is_debug = yes
+		}
+		prerequisite = { focus = TFL_S0701 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TFL_S0000"
+			log = "[GetDateText]: [Root.GetName]: Focus TFL_S0800"
+			country_event = TFL_ES.080000	#The Chaotic Aftermath
+		}
+	}
+	shared_focus = {	#Establishing A Chain Of Command
+		id = TFL_S0900
+		icon = GFX_goal_doctrine_tank_warfare
+		relative_position_id = TFL_S0900
+		x = -1 y = 9 cost = 2
+		prerequisite = { focus = TFL_S0800 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TFL_S0900"
+			country_event = TFL_ES.090000	#Chain Of Command
+		}
+	}
+	shared_focus = {	#Passage For Our Families
+		id = TFL_S0901
+		icon = GFX_goal_ELF_friendship
+		relative_position_id = TFL_S0000
+		x = 1 y = 9 cost = 2
+		prerequisite = { focus = TFL_S0800 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TFL_S0901"
+			country_event = TFL_ES.090100	#The Passage
+		}
+	}
+	shared_focus = {	#The Cult’s Old Transmitters
+		id = TFL_S1000
+		icon = GFX_goal_generic_radio_equipment
+		relative_position_id = TFL_S0000
+		x = -2 y = 10 cost = 2
+		prerequisite = { focus = TFL_S0900 }
+		prerequisite = { focus = TFL_S0901 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TFL_S1000"
+			if = {
+				limit = { has_tech = radio }
+				add_tech_bonus = {
+					name = electronics
+					category = electronics
+					bonus = 0.55
+					uses = 1
+				}
+			}
+			else = {
+				set_technology = { radio = 1 }
+			}
+		}
+	}
+	shared_focus = {	#Armored Monsters Of Our Own
+		id = TFL_S1001
+		icon = GFX_tank_L_M
+		relative_position_id = TFL_S0000
+		x = 0 y = 10 cost = 2
+		prerequisite = { focus = TFL_S0900 }
+		prerequisite = { focus = TFL_S0901 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TFL_S1001"
+			add_tech_bonus = {
+				name = tank_bonus
+				category = cat_medium_armor
+				bonus = 1
+				uses = 1
+			}
+		}
+	}
+	shared_focus = {	#The Miracles of Cloudsdale
+		id = TFL_S1002
+		icon = GFX_goal_BAT_weather_manipulation
+		relative_position_id = TFL_S0000
+		x = 2 y = 10 cost = 2
+		prerequisite = { focus = TFL_S0900 }
+		prerequisite = { focus = TFL_S0901 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TFL_S1002"
+			set_technology = {
+				tech_pegasi_bonus1 = 1
+				tech_pegasi_bonus2 = 1
+			}
+		}
+	}
+	shared_focus = {	#Rallying The Locals Behind Us
+		id = TFL_S1100
+		icon = GFX_goal_generic_ponykind
+		relative_position_id = TFL_S0000
+		x = -3 y = 11 cost = 2
+		prerequisite = { focus = TFL_S1000 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TFL_S1100"
+			add_stability = 0.15
+			custom_effect_tooltip = TFL_S1100_cett
+			division_template = {
+				name = "Provincial Militia"
+				priority = 0
+				template_counter = 3
+				regiments = {
+					militia = { x = 0 y = 0 }	militia = { x = 1 y = 0 }
+					militia = { x = 0 y = 1 }	militia = { x = 1 y = 1 }
+					militia = { x = 0 y = 2 }	militia = { x = 1 y = 2 }
+				}
+			}
+			hidden_effect = {
+				random_owned_controlled_state = {
+					limit = {
+						ROOT = {
+							has_full_control_of_state = PREV
+						}
+					}
+					prioritize = { 119 }
+					create_unit = {
+						division = "name = \"Cloudsdale Militia\" division_template = \"Provincial Militia\" start_experience_factor = 0.1 start_equipment_factor = 1 force_equipment_variants = { melee_equipment_1 = { owner = \"TFL\" creator = \"EQS\" } }"
+						owner = TFL
+					}
+					create_unit = {
+						division = "name = \"Orshab Militia\" division_template = \"Provincial Militia\" start_experience_factor = 0.1 start_equipment_factor = 1 force_equipment_variants = { melee_equipment_1 = { owner = \"TFL\" creator = \"EQS\" } }"
+						owner = TFL
+					}
+					create_unit = {
+						division = "name = \"Ponderosa Militia\" division_template = \"Provincial Militia\" start_experience_factor = 0.1 start_equipment_factor = 1 force_equipment_variants = { melee_equipment_1 = { owner = \"TFL\" creator = \"EQS\" } }"
+						owner = TFL
+					}
+				}
+			}
+		}
+	}
+	shared_focus = {	#Strong Hearts, But Even Stronger Borders
+		id = TFL_S1101
+		icon = GFX_goal_nested_fortifications
+		relative_position_id = TFL_S0000
+		x = -1 y = 11 cost = 2
+		prerequisite = {
+			focus = TFL_S1000
+			focus = TFL_S1001
+		}
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TFL_S1101"
+			add_tech_bonus = {
+				name = engineer_bonus
+				category = engineers_tech
+				bonus = 1
+				uses = 2
+			}
+		}
+	}
+	shared_focus = {	#The Old Library
+		id = TFL_S1102
+		icon = GFX_goal_bookstack
+		relative_position_id = TFL_S0000
+		x = 1 y = 11 cost = 2
+		prerequisite = {
+			focus = TFL_S1001
+			focus = TFL_S1002
+		}
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TFL_S1102"
+			unlock_decision_tooltip = TFL_ponyville_raid
+			set_country_flag = TFL_ponyville_raid
+		}
+	}
+	shared_focus = {	#Repaying Them For Their Kindness
+		id = TFL_S1103
+		icon = GFX_goal_generic_major_alliance_pony
+		relative_position_id = TFL_S0000
+		x = 3 y = 11 cost = 2
+		prerequisite = { focus = TFL_S1002 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TFL_S1103"
+			give_guarantee = PIE
+		}
+	}
+	shared_focus = {	#Bracing For The Inevitable
+		id = TFL_S1200
+		icon = GFX_goal_ELF_shield
+		relative_position_id = TFL_S0000
+		x = -1 y = 12 cost = 2
+		prerequisite = { focus = TFL_S1100 }
+		prerequisite = {
+			focus = TFL_S1101
+			focus = TFL_S1102
+		}
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TFL_S1200"
+			add_ideas = TFL_preparing_inevitable
+		}
+	}
+	shared_focus = {	#Striking Back Against Those Who Left Us
+		id = TFL_S1201
+		icon = GFX_goal_generic_military_deal_pony
+		relative_position_id = TFL_S0000
+		x = 1 y = 12 cost = 2
+		prerequisite = {
+			focus = TFL_S1101
+			focus = TFL_S1102
+		}
+		prerequisite = { focus = TFL_S1103 }
+		will_lead_to_war_with = HFT
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TFL_S1201"
+			create_wargoal = {
+				target = HFT
+				type = annex_everything
+			}
+			add_timed_idea = {
+				idea = TFL_vengence
+				days = 120
+			}
 		}
 	}

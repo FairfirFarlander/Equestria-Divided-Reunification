@@ -9,9 +9,7 @@ ideas = {
 		}
 		TFL_operational_reassurances = {
 			#picture = 
-			modifier = {
-				stability_weekly = 0.007
-			}
+			modifier = { stability_weekly = 0.007 }
 		}
 		TFL_sekret_trade = {	#Shhh. It's mispelled.
 			picture = STG_food_market
@@ -25,6 +23,49 @@ ideas = {
 			modifier = {
 				fascism_drift = 0.02
 				stability_weekly = 0.006
+			}
+		}
+		TFL_preparing_inevitable = {
+			picture = EQS_AI_buff
+			modifier = { production_speed_bunker_factor = 0.15 }
+			targeted_modifier = {
+				tag = CHR
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = HEB
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = HFT
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = PIE
+				defense_bonus_against = 0.05
+			}
+		}
+		TFL_vengence = {
+			picture = HIP_AF_totalwar
+			targeted_modifier = {
+				tag = CHR
+				attack_bonus_against = 0.1
+				breakthrough_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = HEB
+				attack_bonus_against = 0.1
+				breakthrough_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = HFT
+				attack_bonus_against = 0.1
+				breakthrough_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = PIE
+				attack_bonus_against = 0.1
+				breakthrough_bonus_against = 0.05
 			}
 		}
 	}

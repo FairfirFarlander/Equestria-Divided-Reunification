@@ -2,13 +2,13 @@ state = {	#EDRSTATE
 	id = 30
 	name = "STATE_30"
 	manpower = 400200
-	state_category = rural
+	state_category = town
 	provinces = { 521 569 732 3956 5283 7123 7451 11106 11516 }
 	resources = { chromium = 12 }
 	history = {
 		owner = THA
 		add_core_of = THA
-		victory_points = {569 15}
+		victory_points = {569 10}
 		buildings = {
 			infrastructure = 1
 		}

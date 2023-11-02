@@ -1,0 +1,42 @@
+raiding_category = {
+	TFL_ponyville_raid = {
+		priority = 2
+		#icon = 
+		visible = {
+			OR = {
+				has_country_flag = TFL_ponyville_raid
+				is_debug = yes
+			}
+		}
+		available = {
+			68 = { is_fully_controlled_by = TFL }
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 2
+				state = 68
+			}
+		}
+		fire_only_once = yes
+		complete_effect = {
+			log = "[GetDateText]: decision TFL_ponyville_raid"
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 68
+					num_provinces = 4
+					on_win = raiding.1
+					on_lose = raiding.3
+					on_cancel = raiding.2
+				}
+				defender = {
+					state = 2
+					num_provinces = 4
+					on_win = raiding.6
+					on_lose = raiding.4
+					on_cancel = raiding.5
+				}
+			}
+		}
+	}
+}
