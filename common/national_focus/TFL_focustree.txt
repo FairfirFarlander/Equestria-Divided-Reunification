@@ -332,6 +332,10 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus TFL_S0403"
 			114 = { add_manpower = 750 }
 			119 = { add_manpower = 250 }
+			swap_ideas = {
+				remove_idea = TFL_some_supply
+				add_idea = TFL_much_supply
+			}
 			every_possible_country = {
 				limit = {
 					OR = {
@@ -427,6 +431,7 @@ focus_tree = {
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus TFL_S0600"
+			remove_ideas = TFL_much_supply
 			add_tech_bonus = {
 				name = infantry_bonus
 				category = infantry_weapons
@@ -483,6 +488,7 @@ focus_tree = {
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus TFL_S0601"
+			remove_ideas = TFL_much_supply
 			add_tech_bonus = {
 				name = infantry_bonus
 				category = infantry_weapons

@@ -25,13 +25,17 @@ add_namespace = TFL_ES
 	country_event = {	#Train Thieves Part 2
 		id = TFL_ES.020101
 		title = TFL_ES.020100.t
-		desc = TFL_ES.020100.d
+		desc = TFL_ES.020101.d
 		is_triggered_only = yes
 		picture = GFX_report_event_generic_train
 		immediate = { log = "[GetDateText]: [Root.GetName]: event TFL_ES.02101" }
 		option = {
 			name = TFL_ES.020101.a
 			add_stability = 0.05
+			swap_ideas = {
+				remove_idea = TFL_no_supply
+				add_idea = TFL_some_supply
+			}
 			add_equipment_to_stockpile = {
 				type = melee_equipment_1
 				amount = 400

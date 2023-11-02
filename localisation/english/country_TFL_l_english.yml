@@ -51,8 +51,16 @@
   ##Starting Ideas##
    TFL_no_supply: "Dwindling Supplies"
     TFL_no_supply_desc: "For weeks now we have been without supplies from the homeland in this forsaken frontier. There are rumors that war is creeping in the south and that we are being left to fend for ourselves. Rationing has been instituted which has caused some to speak of requisitioning goods from the locals. Needless to say this has been prevented thus far, which has led to a growing deal of discontentment as our supplies dwindle further. If we do not act soon, a mutiny will surely follow."
+   TFL_some_supply: "Stabilized Supplies"
+    TFL_some_supply_desc: "With our recent raid, we've finnaly been able to stabilize our supply situation. By no means does this mean we are in a good situation. We will need to secure more supplies in order to enable our full operational capacity."
+   TFL_much_supply: "Growing Supplies"
+    TFL_much_supply_desc: "We have managed to secure more supplies from various sources and are nearly able to operate at full capacity. However it is not enough to allow us such freedom of movement. The only way we will be able to secure such logistical considerations seems to be by conquering the rest of the valley. Surely the caches of supplies the Cult and the Remnant have will enable us to operate fully in the region."
   ##Event Ideas##
   ##Designers and Concerns##
+   TFL_hoofgard_electric: "Hoofgard Electric"
+    TFL_hoofgard_electric_desc: ""
+   TFL_stallion_co: "Stallion Co."
+    TFL_stallion_co_desc: ""
  ###Cultural Overrides###
   ##Tooltips##
   ##Equipment##

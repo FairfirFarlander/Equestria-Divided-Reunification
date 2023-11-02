@@ -10,7 +10,6 @@ ideas={
 	}
 #TECHNOLOGY
 	industrial_concern={
-		designer=yes
 		ALA_industrial_concern_1={
 			picture=IRE_medium_industry
 			allowed={original_tag=ALA}

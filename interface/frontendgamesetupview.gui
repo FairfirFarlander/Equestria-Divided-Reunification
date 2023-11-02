@@ -631,8 +631,8 @@ guiTypes = {
 			oversound = ui_menu_over
 			shortcut = "RETURN"
 		}
-
-
+		
+		
 		### EXPERIMENTAL PATCH HIGHLIGHTS WINDOW
 		containerWindowType = {
 			name = "patch_highlights_background"
@@ -661,7 +661,7 @@ guiTypes = {
 				format = center
 				maxWidth = 330
 				maxHeight = 36
-
+				
 				pdx_tooltip = HIGHLIGHTS_FULL_PATCH_REMINDER
 			}
 			iconType = {
@@ -1738,7 +1738,7 @@ guiTypes = {
 				position = { x = 10 y = -39}
 				quadTextureSprite ="GFX_button_123x34"
 				orientation = "LOWER_LEFT"
-				buttonText = "CUSTOM_GAME_SETTINGS_BACK"
+				buttonText = "SM_APPLY"
 				buttonFont = "hoi_18mbs"
 				clicksound = click_default
 			}

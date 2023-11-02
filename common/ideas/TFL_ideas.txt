@@ -7,8 +7,22 @@ ideas = {
 				army_defence_factor = -0.2
 			}
 		}
+		TFL_some_supply = {
+			picture = severe_famine3
+			modifier = {
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+			}
+		}
+		TFL_much_supply = {
+			picture = severe_famine5
+			modifier = {
+				army_attack_factor = -0.2
+				army_defence_factor = -0.2
+			}
+		}
 		TFL_operational_reassurances = {
-			#picture = 
+			picture = lock
 			modifier = { stability_weekly = 0.007 }
 		}
 		TFL_sekret_trade = {	#Shhh. It's mispelled.
@@ -70,7 +84,6 @@ ideas = {
 		}
 	}
 	industrial_concern = {
-		designer = yes
 		TFL_stallion_co = {
 			picture = company_pile_of_guns
 			allowed = { original_tag = TFL }
@@ -79,7 +92,7 @@ ideas = {
 			traits = { construction_company }
 		}
 		TFL_hoofgard_electric = {
-			#picture = 
+			picture = WIT_generic_electronics_concern
 			allowed = { original_tag = TFL }
 			#available = { has_completed_focus = TFL_ }
 			research_bonus = { electronics = 0.15 }
