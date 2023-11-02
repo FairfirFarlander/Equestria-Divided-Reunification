@@ -2,10 +2,10 @@ focus_tree = {
 	id = TFL_focus_tree
 	country = {
 		factor = 0
-		#modifier = {
-		#	tag = TFL
-		#	add = 2
-		#}
+		modifier = {
+			tag = TFL
+			add = 2
+		}
 	}
 	continuous_focus_position = { x = 10 y = -400 }
 	shared_focus = TFL_S0000
@@ -67,7 +67,7 @@ focus_tree = {
 		id = TFL_S0200
 		icon = GFX_goal_generic_pony_soldier
 		relative_position_id = TFL_S0000
-		x = -2 y = 2 cost = 2
+		x = -2 y = 2 cost = 3
 		prerequisite = { focus = TFL_S0100 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
@@ -131,7 +131,7 @@ focus_tree = {
 		id = TFL_S0202
 		icon = GFX_goal_nested_fortifications
 		relative_position_id = TFL_S0000
-		x = 2 y = 2 cost = 2
+		x = 2 y = 2 cost = 3
 		prerequisite = { focus = TFL_S0101 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
@@ -156,7 +156,7 @@ focus_tree = {
 		id = TFL_S0300
 		icon = GFX_goal_water
 		relative_position_id = TFL_S0000
-		x = -2 y = 3 cost = 2
+		x = -2 y = 3 cost = 3
 		prerequisite = { focus = TFL_S0200 }
 		prerequisite = { focus = TFL_S0201 }
 		ai_will_do = { factor = 80 }
@@ -174,7 +174,7 @@ focus_tree = {
 		id = TFL_S0301
 		icon = GFX_goal_oil
 		relative_position_id = TFL_S0000
-		x = 0 y = 3 cost = 2
+		x = 0 y = 3 cost = 3
 		prerequisite = {
 			focus = TFL_S0200
 			focus = TFL_S0202
@@ -205,7 +205,7 @@ focus_tree = {
 		id = TFL_S0302
 		icon = GFX_goal_generic_lau_industry
 		relative_position_id = TFL_S0000
-		x = 2 y = 3 cost = 2
+		x = 2 y = 3 cost = 3
 		prerequisite = { focus = TFL_S0201 }
 		prerequisite = { focus = TFL_S0202 }
 		ai_will_do = { factor = 80 }
@@ -238,7 +238,7 @@ focus_tree = {
 		id = TFL_S0400
 		icon = GFX_goal_generic_army_tank_2
 		relative_position_id = TFL_S0000
-		x = -3 y = 4 cost = 2
+		x = -3 y = 4 cost = 3
 		prerequisite = { focus = TFL_S0300 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
@@ -288,7 +288,7 @@ focus_tree = {
 		id = TFL_S0401
 		icon = GFX_goal_generic_production
 		relative_position_id = TFL_S0000
-		x = -1 y = 4 cost = 2
+		x = -1 y = 4 cost = 3
 		prerequisite = {
 			focus = TFL_S0300
 			focus = TFL_S0301
@@ -303,7 +303,7 @@ focus_tree = {
 		id = TFL_S0402
 		icon = GFX_goal_anti_air
 		relative_position_id = TFL_S0000
-		x = 1 y = 4 cost = 2
+		x = 1 y = 4 cost = 3
 		prerequisite = {
 			focus = TFL_S0301
 			focus = TFL_S0302
@@ -325,7 +325,7 @@ focus_tree = {
 		id = TFL_S0403
 		icon = GFX_tradegoods
 		relative_position_id = TFL_S0000
-		x = 3	y = 4	cost = 2
+		x = 3	y = 4	cost = 3
 		prerequisite = { focus = TFL_S0302 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
@@ -350,7 +350,7 @@ focus_tree = {
 		id = TFL_S0500
 		icon = GFX_focus_man_claim_the_mandate_of_heaven
 		relative_position_id = TFL_S0000
-		x = -1 y = 5 cost = 2
+		x = -1 y = 5 cost = 4
 		prerequisite = { focus = TFL_S0400 }
 		prerequisite = { focus = TFL_S0401 }
 		prerequisite = { focus = TFL_S0402 }
@@ -382,7 +382,7 @@ focus_tree = {
 		id = TFL_S0501
 		icon = GFX_goal_eqs_airfields_central
 		relative_position_id = TFL_S0000
-		x = 1 y = 5 cost = 2
+		x = 1 y = 5 cost = 4
 		prerequisite = { focus = TFL_S0400 }
 		prerequisite = { focus = TFL_S0401 }
 		prerequisite = { focus = TFL_S0402 }
@@ -414,7 +414,7 @@ focus_tree = {
 		id = TFL_S0600
 		icon = GFX_goal_Arms_Export
 		relative_position_id = TFL_S0000
-		x = -1 y = 6 cost = 2
+		x = -1 y = 6 cost = 4
 		prerequisite = { focus = TFL_S0500 }
 		available = {
 			FAI = {
@@ -470,7 +470,7 @@ focus_tree = {
 		id = TFL_S0601
 		icon = GFX_goal_generic_pony_pegasus
 		relative_position_id = TFL_S0000
-		x = 1 y = 6 cost = 2
+		x = 1 y = 6 cost = 4
 		prerequisite = { focus = TFL_S0501 }
 		available = {
 			CLD = {
@@ -526,7 +526,7 @@ focus_tree = {
 		id = TFL_S0700
 		icon = GFX_HON_peace_in_our_time
 		relative_position_id = TFL_S0000
-		x = -2 y = 7 cost = 2
+		x = -2 y = 7 cost = 3
 		prerequisite = { focus = TFL_S0600 }
 		prerequisite = { focus = TFL_S0601 }
 		ai_will_do = { factor = 80 }
@@ -555,7 +555,7 @@ focus_tree = {
 		id = TFL_S0702
 		icon = GFX_goal_improve_relations_pony_pony
 		relative_position_id = TFL_S0000
-		x = 2 y = 7 cost = 2
+		x = 2 y = 7 cost = 3
 		prerequisite = { focus = TFL_S0600 }
 		prerequisite = { focus = TFL_S0601 }
 		ai_will_do = { factor = 80 }
@@ -601,7 +601,7 @@ focus_tree = {
 		id = TFL_S0900
 		icon = GFX_goal_doctrine_tank_warfare
 		relative_position_id = TFL_S0900
-		x = -1 y = 9 cost = 2
+		x = -1 y = 9 cost = 3
 		prerequisite = { focus = TFL_S0800 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
@@ -613,7 +613,7 @@ focus_tree = {
 		id = TFL_S0901
 		icon = GFX_goal_ELF_friendship
 		relative_position_id = TFL_S0000
-		x = 1 y = 9 cost = 2
+		x = 1 y = 9 cost = 3
 		prerequisite = { focus = TFL_S0800 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
@@ -625,7 +625,7 @@ focus_tree = {
 		id = TFL_S1000
 		icon = GFX_goal_generic_radio_equipment
 		relative_position_id = TFL_S0000
-		x = -2 y = 10 cost = 2
+		x = -2 y = 10 cost = 4
 		prerequisite = { focus = TFL_S0900 }
 		prerequisite = { focus = TFL_S0901 }
 		ai_will_do = { factor = 80 }
@@ -649,7 +649,7 @@ focus_tree = {
 		id = TFL_S1001
 		icon = GFX_tank_L_M
 		relative_position_id = TFL_S0000
-		x = 0 y = 10 cost = 2
+		x = 0 y = 10 cost = 4
 		prerequisite = { focus = TFL_S0900 }
 		prerequisite = { focus = TFL_S0901 }
 		ai_will_do = { factor = 80 }
@@ -667,7 +667,7 @@ focus_tree = {
 		id = TFL_S1002
 		icon = GFX_goal_BAT_weather_manipulation
 		relative_position_id = TFL_S0000
-		x = 2 y = 10 cost = 2
+		x = 2 y = 10 cost = 4
 		prerequisite = { focus = TFL_S0900 }
 		prerequisite = { focus = TFL_S0901 }
 		ai_will_do = { factor = 80 }
@@ -683,7 +683,7 @@ focus_tree = {
 		id = TFL_S1100
 		icon = GFX_goal_generic_ponykind
 		relative_position_id = TFL_S0000
-		x = -3 y = 11 cost = 2
+		x = -3 y = 11 cost = 4
 		prerequisite = { focus = TFL_S1000 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
@@ -728,7 +728,7 @@ focus_tree = {
 		id = TFL_S1101
 		icon = GFX_goal_nested_fortifications
 		relative_position_id = TFL_S0000
-		x = -1 y = 11 cost = 2
+		x = -1 y = 11 cost = 4
 		prerequisite = {
 			focus = TFL_S1000
 			focus = TFL_S1001
@@ -748,7 +748,7 @@ focus_tree = {
 		id = TFL_S1102
 		icon = GFX_goal_bookstack
 		relative_position_id = TFL_S0000
-		x = 1 y = 11 cost = 2
+		x = 1 y = 11 cost = 4
 		prerequisite = {
 			focus = TFL_S1001
 			focus = TFL_S1002
@@ -764,7 +764,7 @@ focus_tree = {
 		id = TFL_S1103
 		icon = GFX_goal_generic_major_alliance_pony
 		relative_position_id = TFL_S0000
-		x = 3 y = 11 cost = 2
+		x = 3 y = 11 cost = 4
 		prerequisite = { focus = TFL_S1002 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
@@ -776,7 +776,7 @@ focus_tree = {
 		id = TFL_S1200
 		icon = GFX_goal_ELF_shield
 		relative_position_id = TFL_S0000
-		x = -1 y = 12 cost = 2
+		x = -1 y = 12 cost = 5
 		prerequisite = { focus = TFL_S1100 }
 		prerequisite = {
 			focus = TFL_S1101
@@ -792,7 +792,7 @@ focus_tree = {
 		id = TFL_S1201
 		icon = GFX_goal_generic_military_deal_pony
 		relative_position_id = TFL_S0000
-		x = 1 y = 12 cost = 2
+		x = 1 y = 12 cost = 5
 		prerequisite = {
 			focus = TFL_S1101
 			focus = TFL_S1102

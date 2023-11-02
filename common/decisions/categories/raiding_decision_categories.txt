@@ -86,7 +86,7 @@ raiding_category = {
 			AND = {
 				original_tag = FAI
 				has_government = neutrality
-				has_completed_focus = FAI_S00
+				has_completed_focus = FAI_S0000
 				NOT = { is_puppet = yes }
 			}
 			AND = {

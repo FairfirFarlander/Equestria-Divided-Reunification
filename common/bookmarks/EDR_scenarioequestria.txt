@@ -121,9 +121,9 @@ bookmarks = {
 				outlaw_economy
 			}
 			focuses = {
-				FAI_S10
-				FAI_S05
-				FAI_S03C
+				FAI_S1000
+				FAI_S0500
+				FAI_S0302
 			}
 		}
 		"EMB" = {	#Communes of Ember
