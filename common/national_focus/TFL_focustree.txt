@@ -613,7 +613,6 @@ focus_tree = {
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus TFL_S0700"
-			FAI = { add_to_ROOT_potential_cores = yes }
 			every_state = {
 				limit = { is_core_of = FAI }
 				add_compliance = 10
@@ -647,7 +646,6 @@ focus_tree = {
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus TFL_S0702"
-			CLD = { add_to_ROOT_potential_cores = yes }
 			every_state = {
 				limit = { is_core_of = CLD }
 				add_compliance = 10

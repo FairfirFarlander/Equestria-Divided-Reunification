@@ -75,7 +75,7 @@
      TFL_ES.000000.a: "She and her troops were alone."
    TFL_S0100: "The Actions One Must Take To Survive"
     TFL_S0100_desc: "With no more supplies coming in we have no choice but to rely on less than moral options to keep our soldiers fed and supplied. The commander has given orders that raids can and will be organized on some of the neighboring territories. We can see it in her eyes though. She does not want to be reduced to this, but what choice do we have?"
-    TFL_S0100_cett: "§Y[TFL.GetName]§! will be able to conduct §Oraids§! on it's non-Earthborn neighbors."
+    TFL_S0100_cett: "§Y[TFL.GetName]§! will be able to conduct §Oraids§! on it's non-Earthborn neighbors.\n§ONote that most targets are much stronger than us.§!"
    TFL_S0101: "Securing and Reassuring the Populace"
     TFL_S0101_desc: "The ponies who call Orshab home are scared, and we'd be lying if we said we were not scared as well. But right now we need to secure this side of the rivers and rally the populace behind us. A few speeches from the commander and minor police work should do the trick, but all of that will not distract them from the threats across the river for long."
     TFL_operational_reassurances: "Operational Reassurance and Security"
