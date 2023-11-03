@@ -53,13 +53,17 @@ add_namespace = TFL_ES
 		}
 	}
 	country_event = {	#18 Lunatics and Their Gravel
-		id = TFL_ES.030300
-		title = TFL_ES.030300.t
-		desc = TFL_ES.030300.d
+		id = TFL_ES.030200
+		title = TFL_ES.030200.t
+		desc = TFL_ES.030200.d
 		picture = GFX_event_teufort_lunatics
 		is_triggered_only = yes
-		immediate = { log = "[GetDateText]: [Root.GetName]: event TFL_ES.030300" }
-		option = { name = TFL_ES.030300.a }
+		immediate = { log = "[GetDateText]: [Root.GetName]: event TFL_ES.030200" }
+		option = {
+			name = TFL_ES.030200.a
+			custom_effect_tooltip = TFL_ES.030200.cett
+			set_global_flag = TFL_stallion_co_established
+		}
 	}
 	country_event = {	#The River Tractors
 		id = TFL_ES.040000
@@ -204,7 +208,7 @@ add_namespace = TFL_ES
 			trigger = { is_debug = yes }
 		}
 	}
-	country_event = {	#The Chaotic Aftermath
+	country_event = {	#Chain of Command
 		id = TFL_ES.090000
 		title = TFL_ES.090000.t
 		desc = TFL_ES.090000.d
@@ -214,6 +218,10 @@ add_namespace = TFL_ES
 		option = {
 			name = TFL_ES.090000.a
 			add_stability = 0.1
+			swap_ideas = {
+				remove_idea = outlaw_economy
+				add_idea = war_economy
+			}
 		}
 		option = {
 			name = EDRG_ED.debug

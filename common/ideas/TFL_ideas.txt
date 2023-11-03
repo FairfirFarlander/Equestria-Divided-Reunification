@@ -93,7 +93,10 @@ ideas = {
 		TFL_stallion_co = {
 			picture = company_pile_of_guns
 			allowed = { original_tag = TFL }
-			#available = { has_completed_focus = TFL_ }
+			available = {
+				has_global_flag = TFL_stallion_co_established
+				owns_state = 114
+			}
 			research_bonus = { industry = 0.15 }
 			traits = { construction_company }
 		}
