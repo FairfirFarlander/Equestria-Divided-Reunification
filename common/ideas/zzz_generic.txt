@@ -1293,6 +1293,7 @@ ideas = {
 				NOT = { original_tag = WAR }
 				#EDR
 				NOT = { original_tag = FAI }
+				NOT = { original_tag = TFL }
 			}
 
 			research_bonus = {

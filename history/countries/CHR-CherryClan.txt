@@ -27,18 +27,7 @@ if = {
 }
 actually_fix_weapon_techs = yes
 set_rule = {	can_generate_female_aces = yes	can_generate_female_unit_leaders = yes	can_generate_female_country_leaders = yes}
-if = {
-	limit = { has_dlc = "Death or Dishonor" }
-	HEB = {
-		set_autonomy = {
-			target = CHR
-			autonomy_state = autonomy_satellite
-		}
-	}
-	else = {
-		HEB = { puppet = CHR }
-	}
-}
+HEB = { puppet = CHR }
 set_popularities = {
 	fascism = 48
 	communism = 23

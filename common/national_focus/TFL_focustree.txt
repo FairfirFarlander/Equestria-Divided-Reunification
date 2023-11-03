@@ -45,6 +45,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus TFL_S0100"
 			custom_effect_tooltip = TFL_S0100_cett
+			add_war_support = 0.05
 		}
 	}
 	shared_focus = {	#Securing and Reassuring the Populace
@@ -69,23 +70,17 @@ focus_tree = {
 		relative_position_id = TFL_S0000
 		x = -2 y = 2 cost = 4
 		prerequisite = { focus = TFL_S0100 }
+		available = { has_completed_focus = TFL_S0201 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus TFL_S0200"
 			add_ideas = extensive_conscription
 			custom_effect_tooltip = TFL_S0200_cett
-			division_template = {
-				name = "Provincial Militia"
-				priority = 0
-				template_counter = 3
-				regiments = {
-					militia = { x = 0 y = 0 }
-					militia = { x = 0 y = 1 }
-					militia = { x = 0 y = 2 }
-				}
-			}
 			hidden_effect = {
-				country_lock_all_division_template = no
+				set_division_template_lock = {
+					division_template = "Provincial Militia"
+					is_locked = no
+				}
 				random_owned_controlled_state = {
 					limit = {
 						ROOT = {
@@ -134,6 +129,7 @@ focus_tree = {
 		relative_position_id = TFL_S0000
 		x = 2 y = 2 cost = 4
 		prerequisite = { focus = TFL_S0101 }
+		available = { has_completed_focus = TFL_S0201 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus TFL_S0202"
@@ -176,7 +172,29 @@ focus_tree = {
 				TFL_river_pons = 1
 			}
 			custom_effect_tooltip = TFL_S0300_cett
-			hidden_effect = { add_ideas = TFL_operation_storms }
+			hidden_effect = {
+				division_template = {
+					name = "Riverpony Regiment"
+					regiments = {
+						marine = { x = 0 y = 0 }
+						marine = { x = 0 y = 1 }
+						marine = { x = 0 y = 2 }
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						ROOT = {
+							has_full_control_of_state = PREV
+						}
+					}
+					prioritize = { 119 }
+					create_unit = {
+						division = "name = \"Orshabi Riverponies\" division_template = \"Riverpony Regiment\" start_experience_factor = 0.1 start_equipment_factor = 1 force_equipment_variants = { melee_equipment_1 = { owner = \"TFL\" creator = \"TFL\" } }"
+						owner = TFL
+					}
+				}
+				delete_unit_template_and_units = "Marines"
+			}
 		}
 	}
 	shared_focus = {	#Running Off Ethanol
@@ -221,6 +239,7 @@ focus_tree = {
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus TFL_S0302"
+			add_war_support = 0.05
 			119 = {
 				add_building_construction = {
 					type = bunker
@@ -258,7 +277,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = light_tank_bonus
 				category = cat_light_armor
-				bonus = 0.15
+				bonus = 1.5
 				uses = 1
 			}
 			if = {
@@ -277,6 +296,29 @@ focus_tree = {
 					upgrades = {
 						tank_nsb_engine_upgrade = 1
 						tank_nsb_armor_upgrade = 1
+					}
+				}
+			}
+			custom_effect_tooltip = TFL_S0400_cett
+			hidden_effect = {
+				add_units_to_division_template = {
+					template_name = "Foreign Legion"
+					regiments = { light_armor = 2 }
+				}
+				if = {
+					limit = { has_dlc = "No Step Back" }
+					add_equipment_to_stockpile = {
+						type = light_tank_chassis_0
+						variant_name = "Yak Tank"
+						amount = 13
+						producer = EQS
+					}
+				}
+				else = {
+					add_equipment_to_stockpile = {
+						type = gw_tank_equipment
+						amount = 13
+						producer = EQS
 					}
 				}
 			}
@@ -311,7 +353,7 @@ focus_tree = {
 				add_tech_bonus = {
 					name = industrial_bonus
 					category = cat_production
-					bonus = 0.4
+					bonus = 1.4
 					uses = 1
 				}
 			}
@@ -330,6 +372,10 @@ focus_tree = {
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus TFL_S0402"
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
 			114 = { add_manpower = 750 }
 			119 = { add_manpower = 250 }
 			swap_ideas = {
@@ -364,6 +410,15 @@ focus_tree = {
 				add_building_construction = {
 					type = anti_air_building
 					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = TFL_S0403_cett
+			114 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					province = 3368
 					instant_build = yes
 				}
 			}
@@ -470,12 +525,12 @@ focus_tree = {
 			add_tech_bonus = {
 				name = infantry_bonus
 				category = infantry_weapons
-				bonus = 0.5
+				bonus = 1.5
 				uses = 1
 			}
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = 200
+				amount = 2000
 				producer = FAI
 			}
 			if = {
@@ -524,7 +579,7 @@ focus_tree = {
 			}
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = 200
+				amount = 2000
 				producer = CLD
 			}
 			if = {
@@ -601,7 +656,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = pegasi
 				category = pegasi_tech
-				bonus = 0.75
+				bonus = 1.75
 				uses = 1
 			}
 			custom_effect_tooltip = TFL_S0702_cett
@@ -613,6 +668,18 @@ focus_tree = {
 					pegasi = { x = 0 y = 1 }
 					pegasi = { x = 0 y = 2 }
 					pegasi = { x = 0 y = 3 }
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					ROOT = {
+						has_full_control_of_state = PREV
+					}
+				}
+				prioritize = { 119 }
+				create_unit = {
+					division = "name = \"Wonderbolts of Cloudsdale\" division_template = \"Wonderbolt Regiment\" start_experience_factor = 0.3 start_equipment_factor = 1 force_equipment_variants = { melee_equipment_1 = { owner = \"TFL\" creator = \"EQS\" } }"
+					owner = TFL
 				}
 			}
 		}
@@ -638,7 +705,7 @@ focus_tree = {
 	shared_focus = {	#Establishing A Chain Of Command
 		id = TFL_S0900
 		icon = GFX_goal_doctrine_tank_warfare
-		relative_position_id = TFL_S0900
+		relative_position_id = TFL_S0000
 		x = -1 y = 9 cost = 3
 		prerequisite = { focus = TFL_S0800 }
 		ai_will_do = { factor = 80 }
@@ -674,7 +741,7 @@ focus_tree = {
 				add_tech_bonus = {
 					name = electronics
 					category = electronics
-					bonus = 0.55
+					bonus = 1.55
 					uses = 1
 				}
 			}
@@ -696,7 +763,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = tank_bonus
 				category = cat_medium_armor
-				bonus = 1
+				bonus = 2
 				uses = 1
 			}
 		}
@@ -717,19 +784,40 @@ focus_tree = {
 			}
 		}
 	}
-	shared_focus = {	#Rallying The Locals Behind Us
+	shared_focus = {	#Strong Hearts, But Even Stronger Borders
 		id = TFL_S1100
-		icon = GFX_goal_generic_ponykind
+		icon = GFX_goal_nested_fortifications
 		relative_position_id = TFL_S0000
 		x = -3 y = 11 cost = 4
 		prerequisite = { focus = TFL_S1000 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus TFL_S1100"
+			add_tech_bonus = {
+				name = engineer_bonus
+				category = engineers_tech
+				bonus = 1
+				uses = 2
+			}
+		}
+	}
+	shared_focus = {	#Rallying The Locals Behind Us
+		id = TFL_S1101
+		icon = GFX_goal_generic_ponykind
+		relative_position_id = TFL_S0000
+		x = -1 y = 11 cost = 4
+		prerequisite = {
+			focus = TFL_S1000
+			focus = TFL_S1001
+		}
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TFL_S1101"
 			add_stability = 0.15
-			custom_effect_tooltip = TFL_S1100_cett
+			add_war_support = 0.05
+			custom_effect_tooltip = TFL_S1101_cett
 			division_template = {
-				name = "Provincial Militia"
+				name = "State Militia"
 				priority = 0
 				template_counter = 3
 				regiments = {
@@ -747,38 +835,18 @@ focus_tree = {
 					}
 					prioritize = { 119 }
 					create_unit = {
-						division = "name = \"Cloudsdale Militia\" division_template = \"Provincial Militia\" start_experience_factor = 0.1 start_equipment_factor = 1 force_equipment_variants = { melee_equipment_1 = { owner = \"TFL\" creator = \"EQS\" } }"
+						division = "name = \"Cloudsdale Militia\" division_template = \"State Militia\" start_experience_factor = 0.1 start_equipment_factor = 1 force_equipment_variants = { melee_equipment_1 = { owner = \"TFL\" creator = \"EQS\" } }"
 						owner = TFL
 					}
 					create_unit = {
-						division = "name = \"Orshab Militia\" division_template = \"Provincial Militia\" start_experience_factor = 0.1 start_equipment_factor = 1 force_equipment_variants = { melee_equipment_1 = { owner = \"TFL\" creator = \"EQS\" } }"
+						division = "name = \"Orshab Militia\" division_template = \"State Militia\" start_experience_factor = 0.1 start_equipment_factor = 1 force_equipment_variants = { melee_equipment_1 = { owner = \"TFL\" creator = \"EQS\" } }"
 						owner = TFL
 					}
 					create_unit = {
-						division = "name = \"Ponderosa Militia\" division_template = \"Provincial Militia\" start_experience_factor = 0.1 start_equipment_factor = 1 force_equipment_variants = { melee_equipment_1 = { owner = \"TFL\" creator = \"EQS\" } }"
+						division = "name = \"Ponderosa Militia\" division_template = \"State Militia\" start_experience_factor = 0.1 start_equipment_factor = 1 force_equipment_variants = { melee_equipment_1 = { owner = \"TFL\" creator = \"EQS\" } }"
 						owner = TFL
 					}
 				}
-			}
-		}
-	}
-	shared_focus = {	#Strong Hearts, But Even Stronger Borders
-		id = TFL_S1101
-		icon = GFX_goal_nested_fortifications
-		relative_position_id = TFL_S0000
-		x = -1 y = 11 cost = 4
-		prerequisite = {
-			focus = TFL_S1000
-			focus = TFL_S1001
-		}
-		ai_will_do = { factor = 80 }
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus TFL_S1101"
-			add_tech_bonus = {
-				name = engineer_bonus
-				category = engineers_tech
-				bonus = 1
-				uses = 2
 			}
 		}
 	}
@@ -795,6 +863,33 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus TFL_S1102"
 			unlock_decision_tooltip = TFL_ponyville_raid
+			custom_effect_tooltip = TFL_S1102_cett
+			effect_tooltip = {
+				add_tech_bonus = {
+					name = unicorn_bonus
+					category = unicorn_tech
+					bonus = 1
+					uses = 1
+				}
+				add_tech_bonus = {
+					name = infantry_bonus
+					category = infantry_weapons
+					bonus = 1
+					uses = 1
+				}
+				add_tech_bonus = {
+					name = engineer_bonus
+					category = engineers_tech
+					bonus = 1
+					uses = 1
+				}
+				add_tech_bonus = {
+					name = industrial_bonus
+					category = cat_production
+					bonus = 1
+					uses = 1
+				}
+			}
 			set_country_flag = TFL_ponyville_raid
 		}
 	}
@@ -807,7 +902,24 @@ focus_tree = {
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus TFL_S1103"
-			give_guarantee = PIE
+			if = {	#When content allows replace this with an event with a choice (AI will always accept) and ensure PIE is removed from the vengeance idea in the next focus. Make faction if necessary.
+				limit = {
+					PIE = {
+						NOT = { is_puppet_of = HEB }
+					}
+				}
+				PIE = {
+					leave_faction = yes
+				}
+				give_guarantee = PIE
+			}
+			else = {
+				HEB = {
+					end_puppet = PIE
+					leave_faction = yes
+				}
+				give_guarantee = PIE
+			}
 		}
 	}
 	shared_focus = {	#Bracing For The Inevitable
@@ -816,10 +928,9 @@ focus_tree = {
 		relative_position_id = TFL_S0000
 		x = -1 y = 12 cost = 5
 		prerequisite = { focus = TFL_S1100 }
-		prerequisite = {
-			focus = TFL_S1101
-			focus = TFL_S1102
-		}
+		prerequisite = { focus = TFL_S1101 }
+		prerequisite = { focus = TFL_S1102 }
+		mutually_exclusive = { focus = TFL_S1201 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus TFL_S1200"
@@ -831,11 +942,10 @@ focus_tree = {
 		icon = GFX_goal_generic_military_deal_pony
 		relative_position_id = TFL_S0000
 		x = 1 y = 12 cost = 5
-		prerequisite = {
-			focus = TFL_S1101
-			focus = TFL_S1102
-		}
+		prerequisite = { focus = TFL_S1101 }
+		prerequisite = { focus = TFL_S1102 }
 		prerequisite = { focus = TFL_S1103 }
+		mutually_exclusive = { focus = TFL_S1200 }
 		will_lead_to_war_with = HFT
 		ai_will_do = { factor = 80 }
 		completion_reward = {

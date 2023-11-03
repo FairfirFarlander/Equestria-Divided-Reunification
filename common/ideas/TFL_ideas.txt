@@ -2,9 +2,12 @@ ideas = {
 	country = {
 		TFL_13th_legion = {
 			picture = HEB_idea
+			modifier = {
+				mobilization_speed = 0.19	#Remember the American Revolution
+			}
 		}
 		TFL_forgotten_legion = {
-			picture = hebidea
+			picture = HEB_idea
 		}
 		TFL_no_supply = {
 			picture = severe_famine

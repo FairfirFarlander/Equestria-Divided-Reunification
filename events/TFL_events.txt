@@ -46,6 +46,7 @@ add_namespace = TFL_ES
 				amount = 1
 				producer = HFT
 			}
+			set_technology = { basic_train = 1 }
 		}
 		option = {
 			name = EDRG_ED.debug
@@ -77,7 +78,7 @@ add_namespace = TFL_ES
 			add_tech_bonus = {
 				name = marine_bonus
 				category = marine_tech
-				bonus = 0.15
+				bonus = 1.5
 				uses = 1
 			}
 			if = {
@@ -220,7 +221,7 @@ add_namespace = TFL_ES
 			add_stability = 0.1
 			swap_ideas = {
 				remove_idea = outlaw_economy
-				add_idea = war_economy
+				add_idea = partial_economic_mobilisation
 			}
 		}
 		option = {
@@ -239,6 +240,97 @@ add_namespace = TFL_ES
 			name = TFL_ES.090100.a
 			add_stability = 0.1
 			119 = { add_manpower = 5000 }
+		}
+		option = {
+			name = EDRG_ED.debug
+			trigger = { is_debug = yes }
+		}
+	}
+	country_event = {	#Knowledge Acquired
+		id = TFL_ES.110200
+		title = TFL_ES.110200.t
+		desc = TFL_ES.110200.d
+		#picture = GFX_event_
+		is_triggered_only = yes
+		fire_only_once = yes
+		immediate = { log = "[GetDateText]: [Root.GetName]: event TFL_ES.110200" }
+		option = {
+			name = TFL_ES.110200.a
+			add_tech_bonus = {
+				name = unicorn_bonus
+				category = unicorn_tech
+				bonus = 1
+				uses = 1
+			}
+			add_tech_bonus = {
+				name = infantry_bonus
+				category = infantry_weapons
+				bonus = 1
+				uses = 1
+			}
+			add_tech_bonus = {
+				name = engineer_bonus
+				category = engineers_tech
+				bonus = 1
+				uses = 1
+			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				category = cat_production
+				bonus = 1
+				uses = 1
+			}
+		}
+		option = {
+			name = EDRG_ED.debug
+			trigger = { is_debug = yes }
+		}
+	}
+	country_event = {	#Knowledge Aflame
+		id = TFL_ES.110201
+		title = TFL_ES.110201.t
+		desc = TFL_ES.110201.d
+		#picture = GFX_event_
+		is_triggered_only = yes
+		fire_only_once = yes
+		immediate = { log = "[GetDateText]: [Root.GetName]: event TFL_ES.110201" }
+		option = {
+			name = TFL_ES.110201.a
+			add_political_power = -50
+		}
+		option = {
+			name = EDRG_ED.debug
+			trigger = { is_debug = yes }
+		}
+	}
+	country_event = {	#Artifacts Stolen
+		id = TFL_ES.110202
+		title = TFL_ES.110202.t
+		desc = TFL_ES.110202.d
+		#picture = GFX_event_
+		is_triggered_only = yes
+		fire_only_once = yes
+		immediate = { log = "[GetDateText]: [Root.GetName]: event TFL_ES.110202" }
+		option = {
+			name = TFL_ES.110202.a
+			add_political_power = -50
+		}
+		option = {
+			name = EDRG_ED.debug
+			trigger = { is_debug = yes }
+		}
+	}
+	country_event = {	#Artifacts Burned
+		id = TFL_ES.110203
+		title = TFL_ES.110203.t
+		desc = TFL_ES.110203.d
+		#picture = GFX_event_
+		is_triggered_only = yes
+		fire_only_once = yes
+		immediate = { log = "[GetDateText]: [Root.GetName]: event TFL_ES.110203" }
+		option = {
+			name = TFL_ES.110203.a
+			add_political_power = -25
 		}
 		option = {
 			name = EDRG_ED.debug

@@ -25,16 +25,16 @@ raiding_category = {
 				attacker = {
 					state = 68
 					num_provinces = 4
-					on_win = raiding.1
-					on_lose = raiding.3
-					on_cancel = raiding.2
+					on_win = TFL_ES.110200
+					on_lose = TFL_ES.110201
+					on_cancel = TFL_ES.110201
 				}
 				defender = {
 					state = 2
 					num_provinces = 4
-					on_win = raiding.6
-					on_lose = raiding.4
-					on_cancel = raiding.5
+					on_win = TFL_ES.110202
+					on_lose = TFL_ES.110203
+					on_cancel = TFL_ES.110203
 				}
 			}
 		}

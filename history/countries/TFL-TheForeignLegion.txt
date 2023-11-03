@@ -25,7 +25,6 @@ add_ideas = {
 set_technology = {
 	pony_race = 1
 	melee_weapons = 1
-	melee_weapons1 = 1
 	tech_trucks = 1
 	motorised_infantry = 1
 	tech_support = 1
@@ -64,7 +63,6 @@ if = {
 	}
 }
 actually_fix_weapon_techs = yes
-country_lock_all_division_template = yes
 add_manpower = 5400
 set_rule = {
 	can_generate_female_aces = yes
