@@ -1,6 +1,9 @@
 EDR_DBUG_decisions={
 	#icon=
 	priority=13
+	visible={
+		is_debug=yes
+	}
 }
 EDR_debug_toggle_minors_decisions={
 	#icon=

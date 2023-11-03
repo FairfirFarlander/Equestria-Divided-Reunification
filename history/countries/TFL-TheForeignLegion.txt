@@ -13,23 +13,25 @@ if = {
 }
 set_war_support = 0.2
 add_ideas = {
+	TFL_13th_legion
 	TFL_no_supply
-	service_by_requirement
+	limited_conscription
 	outlaw_economy
 	limited_exports
-	agrarian_society
+	agrarian_society5
 	lack_of_scientists3
 	poverty4
 }
 set_technology = {
 	pony_race = 1
 	melee_weapons = 1
+	melee_weapons1 = 1
 	tech_trucks = 1
 	motorised_infantry = 1
 	tech_support = 1
 	tech_recon = 1
+	pre_gw_artillery = 1
 	tech_pegasi = 1
-	gimmie_boom = 1
 }
 if = {
 	limit = { has_dlc = "La Resistance" }
@@ -63,6 +65,7 @@ if = {
 }
 actually_fix_weapon_techs = yes
 country_lock_all_division_template = yes
+add_manpower = 5400
 set_rule = {
 	can_generate_female_aces = yes
 	can_generate_female_unit_leaders = yes

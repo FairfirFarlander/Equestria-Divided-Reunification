@@ -109,8 +109,13 @@ bookmarks = {
 			history = "TFL_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
+				TFL_13th_legion
+				TFL_no_supply
 			}
 			focuses = {
+				TFL_S0100
+				TFL_S0300
+				TFL_S0601
 			}
 		}
 		"FAI" = {	#Ponderosa

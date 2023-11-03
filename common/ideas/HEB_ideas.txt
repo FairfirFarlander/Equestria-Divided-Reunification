@@ -2,7 +2,7 @@ ideas={
 	country={
 		HEB_idea={
 			allowed={always=no}	removal_cost=-1
-			picture=hebidea
+			picture=HEB_idea
 		}
 		HEB_clanandkin00={	#For HEB aligned PIE CHR FLY
 			allowed={always=no}	removal_cost=-1

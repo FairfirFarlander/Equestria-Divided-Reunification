@@ -5,7 +5,7 @@ spriteTypes={
 	}
 	spriteType={
 		name="GFX_idea_HEB_idea"
-		texturefile="gfx/interface/ideas/hebidea.dds"
+		texturefile="gfx/interface/ideas/HEB_idea.dds"
 	}
 	spriteType={
 		name="GFX_idea_HEF_idea"
