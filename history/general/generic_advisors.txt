@@ -12,6 +12,7 @@ every_possible_country = {
 			limit = {
 				NOT = { tag = VAN }
 				NOT = { tag = POM }
+				NOT = { tag = FAI }
 				NOT = { tag = TFL }
 			}
 

@@ -7,6 +7,10 @@ ideas = {
 				FAI = { exists = no }
 			}
 		}
+		FAI_radio_preacher_good = {
+			picture = EQS_equestrian_influence
+			modifier = { weekly_manpower = 327 }
+		}
 		FAI_vigilance_at_home = {
 			picture = EQS_changeling_spies
 			modifier = {

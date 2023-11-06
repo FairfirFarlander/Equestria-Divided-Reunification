@@ -111,6 +111,7 @@ bookmarks = {
 			ideas = {
 				TFL_13th_legion
 				TFL_no_supply
+				outlaw_economy
 			}
 			focuses = {
 				TFL_S0100

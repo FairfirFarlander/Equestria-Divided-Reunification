@@ -39,7 +39,7 @@ focus_tree = {
 		id = FAI_S0100
 		icon = GFX_goal_factory_complex
 		relative_position_id = FAI_S0000
-		x = -1 y = 1 cost = 3
+		x = -1 y = 1 cost = 4
 		prerequisite = { focus = FAI_S0000 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
@@ -58,7 +58,7 @@ focus_tree = {
 		id = FAI_S0101
 		icon = GFX_goal_van_rifles
 		relative_position_id = FAI_S0000
-		x = 1 y = 1 cost = 3
+		x = 1 y = 1 cost = 4
 		prerequisite = { focus = FAI_S0000 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
@@ -77,19 +77,32 @@ focus_tree = {
 		id = FAI_S0200
 		icon = GFX_goal_radio
 		relative_position_id = FAI_S0000
-		x = -1 y = 2 cost = 3
+		x = -1 y = 2 cost = 4
 		prerequisite = { focus = FAI_S0100 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FAI_S0200"
-			set_technology = { radio = 1 }
+			if = {
+				limit = {
+					NOT = { has_tech = radio }
+				}
+				set_technology = { radio = 1 }
+			}
+			else = {
+				add_tech_bonus = {
+					name = electronics_bonus
+					category = electronics
+					bonus = 0.55
+					uses = 1
+				}
+			}
 		}
 	}
 	shared_focus = {	#Homegrown Innovations
 		id = FAI_S0201
 		icon = GFX_goal_Arms_Export
 		relative_position_id = FAI_S0000
-		x = 1 y = 2 cost = 3
+		x = 1 y = 2 cost = 4
 		prerequisite = { focus = FAI_S0101 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
@@ -100,13 +113,17 @@ focus_tree = {
 				bonus = 1
 				uses = 1
 			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
+			}
 		}
 	}
 	shared_focus = {	#Boosting the Signal
 		id = FAI_S0300
 		icon = GFX_goal_generic_radio_equipment
 		relative_position_id = FAI_S0000
-		x = -2 y = 3 cost = 3
+		x = -2 y = 3 cost = 4
 		prerequisite = { focus = FAI_S0200 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
@@ -120,18 +137,23 @@ focus_tree = {
 				}
 				add_ideas = FAI_radio_preacher
 			}
+			add_timed_idea = {
+				idea = FAI_radio_preacher_good
+				days = 90
+			}
 		}
 	}
 	shared_focus = {	#They'll Come Loud and They'll Come Fast
 		id = FAI_S0301
 		icon = GFX_goal_revolution_pony
 		relative_position_id = FAI_S0000
-		x = 0 y = 3 cost = 3
+		x = 0 y = 3 cost = 4
 		prerequisite = { focus = FAI_S0200 }
 		prerequisite = { focus = FAI_S0201 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FAI_S0301"
+			add_war_support = 0.05
 			if = {
 				limit = { has_idea = FAI_rifle_by_side }
 				swap_ideas = {
@@ -148,12 +170,14 @@ focus_tree = {
 		id = FAI_S0302
 		icon = GFX_goal_generic_pony_volunteer
 		relative_position_id = FAI_S0000
-		x = 2 y = 3 cost = 3
+		x = 2 y = 3 cost = 4
 		prerequisite = { focus = FAI_S0200 }
 		prerequisite = { focus = FAI_S0201 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FAI_S0302"
+			add_war_support = 0.05
+			custom_effect_tooltip = FAI_S0302_cett
 			if = {
 				limit = { has_idea = FAI_vigilance_at_home }
 				swap_ideas = {
@@ -164,11 +188,29 @@ focus_tree = {
 					add_ideas = FAI_rifle_by_side
 				}
 			}
+			hidden_effect = {
+				set_division_template_lock = {
+					division_template = "Faithful Band"
+					is_locked = no
+				}
+				random_owned_controlled_state = {
+					limit = {
+						ROOT = {
+							has_full_control_of_state = PREV
+						}
+					}
+					prioritize = { 99 }
+					create_unit = {
+						division = "name = \"Daleish Faithful\" division_template = \"Faithful Band\" start_experience_factor = 0.1 start_equipment_factor = 1 force_equipment_variants = { melee_equipment_1 = { owner = \"FAI\" creator = \"EQS\" } }"
+						owner = FAI
+					}
+				}
+			}
 		}
 	}
-	shared_focus = {	#The Sharing of Poppy's Knowledge
+	shared_focus = {	#To Let the Faithful Be Closer to the Sisters
 		id = FAI_S0400
-		icon = GFX_goal_planning_bonus
+		icon = GFX_goal_POL_recon_aircraft
 		relative_position_id = FAI_S0000
 		x = -1 y = 4 cost = 4
 		prerequisite = { focus = FAI_S0300 }
@@ -176,24 +218,6 @@ focus_tree = {
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FAI_S0400"
-			add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				category = cat_grand_battle_plan
-				cost_reduction = 0.82
-				uses = 1
-			}
-		}
-	}
-	shared_focus = {	#To Let the Faithful Be Closer to the Sisters
-		id = FAI_S0401
-		icon = GFX_goal_POL_recon_aircraft
-		relative_position_id = FAI_S0201
-		x = 0 y = 2 cost = 4
-		prerequisite = { focus = FAI_S0301 }
-		prerequisite = { focus = FAI_S0302 }
-		ai_will_do = { factor = 80 }
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FAI_S0401"
 			95 = {
 				add_building_construction = {
 					type = air_base
@@ -203,8 +227,39 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_dlc = "By Blood Alone" }
-				set_technology = { iw_small_airframe = 1 }
-				generic_early_fighter = yes
+				if = {
+					limit = {
+						NOT = { has_tech = iw_small_airframe }
+					}
+					set_technology = { iw_small_airframe = 1 }
+				}
+				if = {
+					limit = {
+						NOT = { has_tech = early_bombs }
+					}
+					set_technology = { early_bombs = 1 }
+				}
+				if = {
+					limit = {
+						NOT = { has_tech = aa_lmg }
+					}
+					set_technology = { aa_lmg = 1 }
+				}
+				if = {
+					limit = {
+						NOT = { has_tech = engines_1 }
+					}
+					set_technology = { engines_1 = 1 }
+				}
+				create_equipment_variant = {
+					name = "Hollow Shades Fury"
+					type = small_plane_airframe_0
+					icon = "GFX_ENG_light_plane_5_medium"
+					modules = {
+						fixed_main_weapon_slot = light_mg_2x
+						engine_type_slot = engine_1_1x
+					}
+				}
 				add_equipment_to_stockpile = {
 					type = small_plane_airframe_0
 					variant_name = "Hollow Shades Fury"
@@ -212,13 +267,37 @@ focus_tree = {
 					amount = 30
 				}
 				else = {
-					set_technology = { early_fighter = 1 }
+					if = {
+						limit = {
+							NOT = { has_tech = early_fighter }
+						}
+						set_technology = { early_fighter = 1 }
+					}
 					add_equipment_to_stockpile = {
-						type = fighter_equipment_1
+						type = fighter_equipment_0
 						producer = EQS
 						amount = 30
 					}
 				}
+			}
+		}
+	}
+	shared_focus = {	#The Sharing of Poppy's Knowledge
+		id = FAI_S0401
+		icon = GFX_goal_planning_bonus
+		relative_position_id = FAI_S0000
+		x = 1 y = 4 cost = 4
+		prerequisite = { focus = FAI_S0301 }
+		prerequisite = { focus = FAI_S0302 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FAI_S0401"
+			army_experience = 18
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				category = cat_grand_battle_plan
+				cost_reduction = 0.82
+				uses = 1
 			}
 		}
 	}
@@ -227,8 +306,10 @@ focus_tree = {
 		icon = GFX_goal_UESR_TNO_sun_moon
 		relative_position_id = FAI_S0000
 		x = 0 y = 5 cost = 4
-		prerequisite = { focus = FAI_S0400 }
-		prerequisite = { focus = FAI_S0401 }
+		prerequisite = {
+			focus = FAI_S0400
+			focus = FAI_S0401
+		}
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FAI_S0500"
@@ -258,11 +339,11 @@ focus_tree = {
 					prioritize = { 95 }
 					create_unit = {
 						division = "name = \"Day Breakers\" division_template = \"Royal Guard\" start_experience_factor = 0.1 start_equipment_factor = 1 force_equipment_variants = { melee_equipment_1 = { owner = \"FAI\" creator = \"EQS\" } }"
-						owner = TFL
+						owner = FAI
 					}
 					create_unit = {
 						division = "name = \"Night Terrors\" division_template = \"Royal Guard\" start_experience_factor = 0.1 start_equipment_factor = 1 force_equipment_variants = { melee_equipment_1 = { owner = \"FAI\" creator = \"EQS\" } }"
-						owner = TFL
+						owner = FAI
 					}
 				}
 			}
@@ -274,7 +355,10 @@ focus_tree = {
 		relative_position_id = FAI_S0000
 		x = -1 y = 6 cost = 4
 		prerequisite = { focus = FAI_S0500 }
-		available = { is_subject = no }
+		available = {
+			country_exists = TFL
+			is_subject = no
+		}
 		bypass = {
 			TFL = {
 				OR = {
@@ -300,10 +384,13 @@ focus_tree = {
 	shared_focus = {	#The Heathens to the East
 		id = FAI_S0601
 		icon = GFX_goal_generic_pony_pegasus
-		relative_position_id = FAI_S0500
-		x = 1 y = 1 cost = 4
+		relative_position_id = FAI_S0000
+		x = 1 y = 6 cost = 4
 		prerequisite = { focus = FAI_S0500 }
-		available = { is_subject = no }
+		available = {
+			country_exists = CLD
+			is_subject = no
+		}
 		bypass = {
 			CLD = {
 				OR = {
@@ -316,6 +403,7 @@ focus_tree = {
 				}
 			}
 		}
+		will_lead_to_war_with = CLD
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FAI_S0601"
@@ -470,13 +558,41 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_dlc = "By Blood Alone" }
-				set_technology = {
-					iw_small_airframe = 1
-					basic_small_airframe = 1
-					early_bombs = 1
-					aa_lmg = 1
-					engines_1 = 1
-					engines_2 = 1
+				if = {
+					limit = {
+						NOT = { has_tech = iw_small_airframe }
+					}
+					set_technology = { iw_small_airframe = 1 }
+				}
+				if = {
+					limit = {
+						NOT = { has_tech = basic_small_airframe }
+					}
+					set_technology = { basic_small_airframe = 1 }
+				}
+				if = {
+					limit = {
+						NOT = { has_tech = early_bombs }
+					}
+					set_technology = { early_bombs = 1 }
+				}
+				if = {
+					limit = {
+						NOT = { has_tech = aa_lmg }
+					}
+					set_technology = { aa_lmg = 1 }
+				}
+				if = {
+					limit = {
+						NOT = { has_tech = engines_1 }
+					}
+					set_technology = { engines_1 = 1 }
+				}
+				if = {
+					limit = {
+						NOT = { has_tech = engines_2 }
+					}
+					set_technology = { engines_2 = 1 }
 				}
 				create_equipment_variant = {
 					name = "Hawker Hurricane (CAS)"
@@ -487,11 +603,24 @@ focus_tree = {
 						engine_type_slot = engine_2_1x
 					}
 				}
-				else = {
-					set_technology = {
-						early_fighter = 1
-						CAS1 = 1
+				add_equipment_to_stockpile = {
+					type = small_plane_cas_airframe
+					variant_name = "Hawker Hurricane (CAS)"
+					amount = 12
+					producer = CLD
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						NOT = { has_tech = CAS1 }
 					}
+					set_technology = { CAS1 = 1 }
+				}
+				add_equipment_to_stockpile = {
+					type = CAS_equipment_1
+					amount = 12
+					producer = CLD
 				}
 			}
 		}
@@ -529,6 +658,7 @@ focus_tree = {
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FAI_S0900"
+			add_stability = 0.2
 			set_cosmetic_tag = FAI_greater
 			custom_effect_tooltip = FAI_S0900_cett
 			if = {
@@ -552,7 +682,6 @@ focus_tree = {
 					add_idea = closed_economy
 				}
 			}
-			add_stability = 0.2
 		}
 	}
 	shared_focus = {	#Heaven's Gates
