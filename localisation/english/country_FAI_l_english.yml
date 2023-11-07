@@ -3,8 +3,8 @@
   ##Bookmark##
    FAI_GATHERING_STORM_DESC: "$GENR_GATHERING_STORM_DESC$"
   ##Welcome Screen##
-   EAW_WS_FAI: "$EAW_WS_GENR$"
-    EAW_WS_FAI_desc: "$EAW_WS_GENR_desc$"
+   EAW_WS_FAI: "§2The Home of the Faithful§!"
+    EAW_WS_FAI_desc: "What was once a collection of towns and holdouts who still clung to the ideas of §7Equestria§!, have now found themselves divided. The ponies of §YPondessa§! were once apart of those holdouts of §7Equestrian ideas and beliefs§!. Now it is an area filled with §1religious zealots and ideologues§!, where the only laws are the ones brought forth by the members of a new faith and their leader. Armed militias roam the streets, ready to strike at those who they consider a threat to their way of life or their cause. The closest way to describe such a place now is a land of anarchy with a religious twist.\n\n§2Ponderrosa§! is the home of §2The Faithful§!. A religion centered around the devout worship of the §YRoyal Sisters§!. Their leader goes by the name of §YPoppy Seed§!, a veteran of the second crystal war. No one really seems to know when he showed up, but when he did his words took the region by storm; preaching his gospel to whomever may listen. His sermons sound quite similar to the preachings of the §0zealots§! one would find within the borders of §0Moon and Star§!. Unlike those zealous unicorns however, he preaches of a strange form of unity instead of division. Decreeing that any and all creatures are the children of the Sisters and that anyone may join his flock. His words and teachings seem to have struck a cord deep down within his §2Ponderossa§!, giving many of them a sort of purpose in their eyes. And what is that purpose? To spread the teachings of their pastor and the word of sisters.\n\nHowever, it is plain to see that the ideas and sermons of the Faithful are becoming §1more and more radical§! as the world around us all gets bleaker. Many fear what they may begin to do to those who do not follow their religious ideas. Only time will tell what fate awaits Poppy and his followers."
  ###Country Name###
   ##Base##
    FAI: "Pondesa"
@@ -59,17 +59,20 @@
     FAI_S0300: "Boosting the Signal"
      FAI_S0300_desc: "Brothers and sisters, the towers that carry our sermons across the air waves have the chance to reach further than we could have ever dreamed. All must have a chance to hear them. Even if our teachings go through one ear and out the other, all must have a chance to hear it. Boost the signal and the words of the Sister fill the ears of all!"
      FAI_radio_preacher: "Incessant Radio Preacher"
-     FAI_radio_preacher_desc: ""
+     FAI_radio_preacher_desc: "No matter what frequency we swap to, this signal seems to bleed into each and every one of them. The Good Word the preacher in the broadcasts goes endlessly on about seems to be having an effect on our people, whether by changing their minds against us or demoralizing those who are forced to listen. If we don't put a stop to this at the source we may end up with a dangerous situation on our hands."
      FAI_radio_preacher_good: "Allure of the Good Word"
-     FAI_radio_preacher_good_desc: ""
+     FAI_radio_preacher_good_desc: "The good word brings many from all walks of life to our cause. Our radio sermons are having a profound effect on this land."
     FAI_S0301: "They'll Come Loud and They'll Come Fast"
      FAI_S0301_desc: "When those sinners from the outside come to strike us down, they will have bombs and they will have tanks, my brothers. But we must not falter. The sisters will protect us and help us keep the sinners from getting past the gate!"
      FAI_vigilance_at_home: "Vigilance at Home"
+      FAI_vigilance_at_home_desc: "They'll look high and they'll look low\nThey'll look everywhere we go\nBut when the sinners find, us we won't hide"
     FAI_S0302: "Keep A Rifle By Your Side"
      FAI_S0302_desc: "Oh my dear brothers and sisters, every creature who calls our blessed lands home should own a weapon. Whether it be old and rusted or shiny and new. We must all keep a rifle by our side if those foolish heathens come bashing down our gate!"
      FAI_S0302_cett: "A §YFaithful Band§! will spawn in §Y$VICTORY_POINTS_9375$§!.\nThe §YFaithful Band§! division template will be §Gunlocked§!."
      FAI_rifle_by_side: "Keep A Rifle By Your Side"
+      FAI_rifle_by_side_desc: "They'll come loud and they'll come fast\nWe shoot first and we can last\nKeep your rifle by your side"
      FAI_vigilant_flock: "A Vigilant Flock"
+      FAI_vigilant_flock_desc: "They'll come day and they'll come night\nThey'll have our children in their sights\nBut if they don't have faith, their eyes are blind\nThey can scream and they can shout\nBut they can never smoke us out\nKeep your rifle by your side"
     FAI_S0400: "To Let the Faithful Be Closer to the Sisters"
      FAI_S0400_desc: "There are members of our congregation who have come forth with an idea. They believe that they can turn some of the old crop dusters hiding away in our barns into mighty tools to defend our families. Pass them your tools and let them build my children!"
     FAI_S0401: "The Sharing of Poppy's Knowledge"
