@@ -1,7 +1,11 @@
 spriteTypes = {
 	spriteType = {
-		name = "GFX_idea_HWG_idea"
-		texturefile = "gfx/interface/ideas/hwgidea.dds"
+		name = "GFX_idea_CUL_idea"
+		texturefile = "gfx/interface/ideas/culidea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_FAI_idea"
+		texturefile = "gfx/interface/ideas/FAI_idea.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_HEB_idea"
@@ -12,16 +16,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/hefidea.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_CUL_idea"
-		texturefile = "gfx/interface/ideas/culidea.dds"
-	}
-	spriteType = {
 		name = "GFX_idea_HMS_idea"
 		texturefile = "gfx/interface/ideas/hmsidea.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_HSW_idea"
 		texturefile = "gfx/interface/ideas/hswidea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HWG_idea"
+		texturefile = "gfx/interface/ideas/hwgidea.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_TFL_idea"

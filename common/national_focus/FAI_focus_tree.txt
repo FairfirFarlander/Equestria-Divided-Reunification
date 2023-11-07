@@ -375,6 +375,10 @@ focus_tree = {
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FAI_S0600"
+			every_state = {
+				limit = { is_core_of = TFL }
+				add_claim_by = FAI
+			}
 			create_wargoal = {
 				type = annex_everything
 				target = TFL
@@ -407,6 +411,10 @@ focus_tree = {
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FAI_S0601"
+			every_state = {
+				limit = { is_core_of = CLD }
+				add_claim_by = FAI
+			}
 			create_wargoal = {
 				type = annex_everything
 				target = CLD
@@ -444,15 +452,19 @@ focus_tree = {
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FAI_S0700"
+			every_state = {
+				limit = { is_core_of = TFL }
+				add_compliance = 20
+			}
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = 1000
 				producer = TFL
 			}
 			add_equipment_to_stockpile = {
-				type = motorized_equipment
+				type = motorized_equipment_1
 				amount = 200
-				producer = TFL
+				producer = EQS
 			}
 			custom_effect_tooltip = FAI_S0700_cett
 			if = {
@@ -473,9 +485,13 @@ focus_tree = {
 				division_template = {
 					name = "Shaber Division"
 					regiments = {
-						light_armor = { x = 0 y = 0 }	infantry = { x = 1 y = 0 }
-						light_armor = { x = 0 y = 1 }	infantry = { x = 1 y = 1 }
-						light_armor = { x = 0 y = 2 }
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+					}
+					support = {
+						light_tank_recon = { x = 0 y = 0 }
 					}
 				}
 				hidden_effect = {
@@ -498,8 +514,8 @@ focus_tree = {
 						name = "Shaber Division"
 						regiments = {
 							light_armor = { x = 0 y = 0 }	infantry = { x = 1 y = 0 }
-							light_armor = { x = 0 y = 1 }	infantry = { x = 1 y = 1 }
-							light_armor = { x = 0 y = 2 }
+															infantry = { x = 1 y = 1 }
+															infantry = { x = 1 y = 2 }
 						}
 					}
 					hidden_effect = {
@@ -511,7 +527,7 @@ focus_tree = {
 							}
 							prioritize = { 95 }
 							create_unit = {
-								division = "name = \"Legionary Company\" division_template = \"Shaber Division\" start_experience_factor = 0.1 start_equipment_factor = 1 force_equipment_variants = { gw_tank_equipment = { owner = \"FAI\" creator = \"TFL\" } }"
+								division = "name = \"Legionary Company\" division_template = \"Shaber Division\" start_experience_factor = 0.1 start_equipment_factor = 0.6 force_equipment_variants = { gw_tank_equipment = { owner = \"FAI\" creator = \"TFL\" } }"
 								owner = FAI
 							}
 						}
@@ -551,6 +567,10 @@ focus_tree = {
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FAI_S0701"
+			every_state = {
+				limit = { is_core_of = CLD }
+				add_compliance = 20
+			}
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = 2000

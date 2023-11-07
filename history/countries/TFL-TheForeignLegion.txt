@@ -11,14 +11,14 @@ if = {
 	}
 	else = { set_oob = "TFL_07" }
 }
-set_war_support = 0.2
+set_war_support = 0.32
 add_ideas = {
 	TFL_13th_legion
 	TFL_no_supply
 	limited_conscription
 	outlaw_economy
 	limited_exports
-	agrarian_society5
+	agrarian_society6
 	lack_of_scientists3
 	poverty4
 }
@@ -83,3 +83,4 @@ recruit_character = TFL_firespit
 recruit_character = TFL_hawyee
 ###NOTES###
 #Years the Irish brigade was founded. 61 18 -Nonrelated 18 3
+#35 War Support is a reference to the Bonus Army.

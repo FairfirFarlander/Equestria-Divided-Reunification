@@ -26,6 +26,23 @@
   ##Political Advisors##
   ##Military Advisors##
  ###Ideas###
+  ##Starting Ideas##
+   FAI_faithful_flock: "The Faithful"
+    FAI_faithful_flock_desc: "When Equestria fell, the ponies of the valley banded together to protect one another from the chaos of the Great Divide. Over time this alliance began to fracture, showing the true colors of those we once called friends. All felt lost until Poppy Seed, the leader of our flock, began to preach the gospel of the Sisters to all he came across.\n\nHis message is a call to all, not just a chosen few. Such a message will have a profound impact wherever it may be spread. With our belief in the goddesses renewed we are reborn to a new purpose, to spread the word in this bleak and dark reality in promise for a better tomorrow."
+   FAI_limited_faithful: "Vigil of the Faithful"
+    FAI_limited_faithful_desc: ""
+   FAI_extensive_faithful: "Call Upon the Faithful"
+    FAI_extensive_faithful_desc: ""
+   FAI_service_by_faithful: "Service to the Church"
+    FAI_service_by_faithful_desc: ""
+   FAI_all_adults_faithful: "All Before the Sisters"
+    FAI_all_adults_faithful_desc: ""
+   FAI_scraping_the_faithful: "Faith Above All"
+    FAI_scraping_the_faithful_desc: ""
+  ##Event Ideas##
+  ##Designers and Concerns##
+   FAI_reservoir_construction: "Reservoir Construction"
+    FAI_reservoir_construction_desc: ""
  ###National Focuses###
   ##Storyline Tree##
    FAI_S0000: "What We Must Do to Survive"

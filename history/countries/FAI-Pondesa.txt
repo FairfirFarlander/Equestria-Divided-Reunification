@@ -3,10 +3,11 @@ oob = "FAI_07"
 set_stability = 0.52
 set_war_support = 0.24
 add_ideas = {
-	extensive_conscription
+	FAI_faithful_flock
+	FAI_limited_faithful
 	outlaw_economy
 	limited_exports
-	agrarian_society
+	agrarian_society6
 	lack_of_scientists3
 	poverty4
 }
@@ -42,4 +43,5 @@ recruit_character = FAI_meringue
 #Neighbors can buy weapons for political power.
 #*FF Add an non-aggression pact for the nearby majors? Mainly Stormwing.
 #	Stockpile limited (Cooldown).
-#	Add a chance for neighbors to refuse the tradedeal (HMS sees them as heretics, HSW sees them as rebels, etc...)
+#	Add a chance for neighbors to refuse the trade deal (HMS sees them as heretics, HSW sees them as rebels, etc...)
+#Stability is based on two digits. 5 being FC5 the game, and 1924 being the year Calvin Coolidge gave the first presidential broadcast over radio.

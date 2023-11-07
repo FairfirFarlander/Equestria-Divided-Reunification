@@ -1,5 +1,11 @@
 ideas = {
 	country = {
+		FAI_faithful_flock = {
+			picture = FAI_idea
+			modifier = {
+				stability_factor = 0.08	#A New Beginning from Genesis (8 people).
+			}
+		}
 		FAI_radio_preacher = {
 			picture = EQS_equestrian_influence
 			modifier = { stability_weekly = -0.005 }
@@ -35,9 +41,8 @@ ideas = {
 	}
 	industrial_concern = {
 		FAI_reservoir_construction = {
-			#picture = 
+			picture = RCT_Boats_on_River_GmbH
 			allowed = { original_tag = FAI }
-			#available = { has_completed_focus = FAI_ }
 			research_bonus = { industry = 0.15 }
 			traits = { industrial_concern }
 		}

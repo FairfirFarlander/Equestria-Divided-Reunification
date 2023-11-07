@@ -111,7 +111,7 @@ bookmarks = {
 			ideas = {
 				TFL_13th_legion
 				TFL_no_supply
-				outlaw_economy
+				TFL_preparing_inevitable
 			}
 			focuses = {
 				TFL_S0100
@@ -124,7 +124,9 @@ bookmarks = {
 			history = "FAI_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
-				outlaw_economy
+				FAI_faithful_flock
+				FAI_vigilant_flock
+				FAI_radio_preacher_good
 			}
 			focuses = {
 				FAI_S1000
