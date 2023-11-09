@@ -1,10 +1,33 @@
 ideas = {
 	country = {
-		CLD_equestrian_hold_out = {
-			#picture = 
+		CLD_cloudsdale_remnant = {
+			picture = EQS_wonderbolts
 			modifier = {
-				political_power_gain = 0.5
+			}
+			research_bonus = {
+				pegasi_tech = 0.2
+			}
+		}
+		CLD_equestrian_hold_out = {
+			picture = EQS_harmonic_stagnation
+			modifier = {
+				political_power_gain = -0.1
 				trade_opinion_factor = -0.5
+			}
+		}
+		CLD_notawonderbolt = {
+			picture = nimbusia
+			modifier = {
+				conscription_factor = -0.5
+				special_forces_min = -16
+				special_forces_training_time_factor = 0.15
+			}
+		}
+		CLD_waningwonderbolt = {
+			picture = nimbusia_blue
+			modifier = {
+				special_forces_min = -8
+				special_forces_training_time_factor = 0.15
 			}
 		}
 	}

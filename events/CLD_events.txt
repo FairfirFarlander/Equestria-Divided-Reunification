@@ -1,0 +1,97 @@
+add_namespace = CLD_ES
+	country_event = {	#
+		id = CLD_ES.000000
+		title = CLD_ES.000000.t
+		desc = CLD_ES.000000.d
+		is_triggered_only = yes
+		immediate = { log = "[GetDateText]: [Root.GetName]: event CLD_ES.000000" }
+		option = {
+			name = CLD_ES.000000.a
+			country_event = CLD_ES.000001
+		}
+	}
+	country_event = {	#
+		id = CLD_ES.000001
+		title = CLD_ES.000000.t
+		desc = CLD_ES.000001.d
+		is_triggered_only = yes
+		immediate = { log = "[GetDateText]: [Root.GetName]: event CLD_ES.000001" }
+		option = {
+			name = CLD_ES.000001.a
+			add_stability = 0.15
+			add_war_support = 0.1
+		}
+		option = {
+			name = CLD_ES.000001.b
+		}
+		option = {
+			name = EDRG_ED.debug
+			trigger = { is_debug = yes }
+		}
+	}
+add_namespace = CLD_EWS
+	country_event = {	#
+		id = CLD_EWS.020100
+		title = CLD_EWS.020100.t
+		desc = CLD_EWS.020100.d
+		is_triggered_only = yes
+		immediate = { log = "[GetDateText]: [Root.GetName]: event CLD_EWS.020100" }
+		option = {
+			name = CLD_EWS.020100.a
+		}
+	}
+	country_event = {	#
+		id = CLD_EWS.020101
+		title = CLD_EWS.020101.t
+		desc = CLD_EWS.020101.d
+		is_triggered_only = yes
+		immediate = { log = "[GetDateText]: [Root.GetName]: event CLD_EWS.020101" }
+		option = {
+			name = CLD_EWS.020101.a
+			101 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		option = {
+			name = EDRG_ED.debug
+			trigger = { is_debug = yes }
+		}
+	}
+	country_event = {	#
+		id = CLD_EWS.020102
+		title = CLD_EWS.020102.t
+		desc = CLD_EWS.020102.d
+		is_triggered_only = yes
+		immediate = { log = "[GetDateText]: [Root.GetName]: event CLD_EWS.020102" }
+		option = {
+			name = CLD_EWS.020102.a
+			68 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		option = {
+			name = EDRG_ED.debug
+			trigger = { is_debug = yes }
+		}
+	}
+add_namespace = CLD_ESS

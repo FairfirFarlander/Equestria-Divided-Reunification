@@ -80,8 +80,21 @@ raiding_category = {
 		#EDR Nations
 			AND = {
 				original_tag = CLD
-				has_government = neutrality
-				NOT = { is_puppet = yes }
+				OR = {
+					AND = {
+						has_country_flag = CLD_council_wonderbolts
+						has_completed_focus = CLD_SW0100
+						NOT = { is_puppet = yes }
+					}
+					AND = {
+						has_country_flag = CLD_council_stormwing
+						has_completed_focus = CLD_SS0900
+						OR = {
+							CLD = { is_puppet_of = HSW }
+							NOT = { is_puppet = yes }
+						}
+					}
+				}
 			}
 			AND = {
 				original_tag = FAI

@@ -23,7 +23,7 @@ focus_tree = {
 	shared_focus = FAI_S0000
 	continuous_focus_position = { x = 10 y = -400 }
 }
-##StoryTree
+##Story Branch
 	shared_focus = {	#What We Must Do to Survive
 		id = FAI_S0000
 		icon = GFX_goal_survival_first
@@ -473,6 +473,7 @@ focus_tree = {
 				create_equipment_variant = {
 					name = "M1-13 Applesauce (S)"
 					type = light_tank_chassis_0
+					icon = "gfx/interface/technologies/EQS_armoured_tractor.dds"
 					modules = {
 						main_armament_slot = tank_heavy_machine_gun
 						turret_type_slot = tank_light_one_man_tank_turret
@@ -617,6 +618,7 @@ focus_tree = {
 				create_equipment_variant = {
 					name = "Hawker Hurricane (CAS)"
 					type = small_plane_cas_airframe_1
+					icon = "GFX_ENG_fighter1_medium"
 					modules = {
 						fixed_main_weapon_slot = bomb_locks
 						fixed_auxiliary_weapon_slot_1 = light_mg_4x

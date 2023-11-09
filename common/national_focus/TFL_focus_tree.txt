@@ -667,6 +667,7 @@ focus_tree = {
 				create_equipment_variant = {
 					name = "Hawker Hurricane (CAS)"
 					type = small_plane_cas_airframe_1
+					icon = "GFX_ENG_fighter1_medium"
 					modules = {
 						fixed_main_weapon_slot = bomb_locks
 						fixed_auxiliary_weapon_slot_1 = light_mg_4x

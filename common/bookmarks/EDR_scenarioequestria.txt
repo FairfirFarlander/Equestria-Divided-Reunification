@@ -100,8 +100,12 @@ bookmarks = {
 			history = "CLD_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
+				CLD_cloudsdale_remnant
+				CLD_equestrian_hold_out
+				CLD_notawonderbolt
 			}
 			focuses = {
+				
 			}
 		}
 		"TFL" = {	#The Thirteenth Legion

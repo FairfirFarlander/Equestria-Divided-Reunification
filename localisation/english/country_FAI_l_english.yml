@@ -16,6 +16,14 @@
    FAI_greater: "Faithful County"
     FAI_greater_DEF: "the Faithful County of Ponderossa"
  ###Political Parties###
+   FAI_democratic_party: "Equestrian Revival"
+    FAI_democratic_party_long: "The Party for the Revival of Equestria"
+   FAI_communism_party: "Dalish Socialist"
+    FAI_communism_party_long: "The Social Democrats of the Dale Valley"
+   FAI_fascism_party: "The Coming Storm"
+    FAI_fascism_party_long: "The Believers of the Coming Storm"
+   FAI_neutrality_party: "The Faithful"
+    FAI_neutrality_party_long: "The Followers of the Faithful Flock"
  ###Characters###
   ##Leaders##
    FAI_poppy_seed: "Poppy Seed"

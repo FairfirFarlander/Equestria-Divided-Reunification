@@ -1,0 +1,662 @@
+focus_tree = {
+	id = CLD_focus_tree
+	country = {
+		factor = 0
+		#modifier = {
+		#	tag = CLD
+		#	add = 2
+		#}
+	}
+	shared_focus = CLD_S0000
+	continuous_focus_position = { x = 10 y = -400 }
+}
+focus_tree = {
+	id = CLD_focus_tree_debug
+	country = {
+		factor = 0
+		modifier = {
+			is_debug = yes
+			tag = CLD
+			add = 7
+		}
+	}
+	shared_focus = CLD_S0000
+	continuous_focus_position = { x = 10 y = -400 }
+}
+##Story Branch
+	shared_focus = {	#The City Council’s Fateful Meeting
+		id = CLD_S0000
+		icon = GFX_goal_government_icon
+		x = 0 y = 0 cost = 1
+		search_filters = {}
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLD_S0000"
+			country_event = CLD_ES.000000
+		}
+	}
+#Wonderbolts Story Branch
+	shared_focus = {	#Desperation Forces Our Hooves
+		id = CLD_SW0100
+		icon = GFX_goal_famine
+		relative_position_id = CLD_S0000
+		x = -4 y = 1 cost = 2
+		offset = {
+			trigger = { has_completed_focus = CLD_SW0100 }
+			x = 4
+		}
+		allow_branch = {
+			NOT = { has_completed_focus = CLD_SS0100 }
+		}
+		prerequisite = { focus = CLD_S0000 }
+		available = { has_country_flag = CLD_council_wonderbolts }
+		mutually_exclusive = { focus = CLD_SS0100 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLD_SW0100"
+			mark_focus_tree_layout_dirty = yes
+			custom_effect_tooltip = CLD_SW0100_cett
+		}
+	}
+	shared_focus = {	#The Cloudsdale Air Field
+		id = CLD_SW0200
+		icon = GFX_goal_eqs_airfields_central
+		relative_position_id = CLD_SW0100
+		x = -2 y = 1 cost = 2
+		prerequisite = { focus = CLD_SW0100 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLD_SW0200"
+			68 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	shared_focus = {	#Rebuilding Cloudsdale
+		id = CLD_SW0201
+		icon = GFX_goal_factory_complex
+		relative_position_id = CLD_SW0100
+		x = 0 y = 1 cost = 2
+		prerequisite = { focus = CLD_SW0100 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLD_SW0201"
+			68 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			country_event = CLD_EWS.020100
+			hidden_effect = {
+				country_event = {
+					id = CLD_EWS.020101
+					days = 60
+				}
+				country_event = {
+					id = CLD_EWS.020102
+					days = 120
+				}
+			}
+		}
+	}
+	shared_focus = {	#The Cloudsdale Volunteers
+		id = CLD_SW0202
+		icon = GFX_goal_generic_pony_volunteer
+		relative_position_id = CLD_SW0100
+		x = 2 y = 1 cost = 2
+		prerequisite = { focus = CLD_SW0100 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLD_SW0202"
+			custom_effect_tooltip = CLD_SW0202_cett
+			hidden_effect = {
+				set_division_template_lock = {
+					division_template = "Provincial Militia"
+					is_locked = no
+				}
+				random_owned_controlled_state = {
+					limit = {
+						ROOT = {
+							has_full_control_of_state = PREV
+						}
+					}
+					prioritize = { 68 }
+					create_unit = {
+						division = "name = \"Cloudsdale Militia\" division_template = \"Provincial Militia\" start_experience_factor = 0.1 start_equipment_factor = 1 force_equipment_variants = { melee_equipment_1 = { owner = \"CLD\" creator = \"EQS\" } }"
+						owner = CLD
+					}
+					create_unit = {
+						division = "name = \"Cloudsdale Militia\" division_template = \"Provincial Militia\" start_experience_factor = 0.1 start_equipment_factor = 1 force_equipment_variants = { melee_equipment_1 = { owner = \"CLD\" creator = \"EQS\" } }"
+						owner = CLD
+					}
+				}
+			}
+		}
+	}
+	shared_focus = {	#New Steel and Aluminum Mills In Winterhome
+		id = CLD_SW0300
+		icon = GFX_Steel
+		relative_position_id = CLD_SW0100
+		x = -3 y = 2 cost = 2
+		prerequisite = { focus = CLD_SW0200 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLD_SW0300"
+			101 = {
+				add_resource = {
+					type = steel
+					amount = 3
+				}
+				add_resource = {
+					type = aluminium
+					amount = 1
+				}
+			}
+		}
+	}
+	shared_focus = {	#What It Means To Be A Wonderbolt
+		id = CLD_SW0301
+		icon = GFX_goal_generic_pony_pegasus
+		relative_position_id = CLD_SW0100
+		x = -1 y = 2 cost = 2
+		prerequisite = { focus = CLD_SW0200 }
+		prerequisite = { focus = CLD_SW0201 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLD_SW0301"
+			swap_ideas = {
+				remove_idea = CLD_notawonderbolt
+				add_idea = CLD_waningwonderbolt
+			}
+		}
+	}
+	shared_focus = {	#Salvaging Our Old Uniform Factory
+		id = CLD_SW0302
+		icon = GFX_goal_generic_construct_mil_factory
+		relative_position_id = CLD_SW0100
+		x = 1 y = 2 cost = 2
+		prerequisite = { focus = CLD_SW0201 }
+		prerequisite = { focus = CLD_SW0202 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLD_SW0302"
+			101 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	shared_focus = {	#Sending Out Signals
+		id = CLD_SW0303
+		icon = GFX_goal_radio
+		relative_position_id = CLD_SW0100
+		x = 3 y = 2 cost = 2
+		prerequisite = { focus = CLD_SW0202 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLD_SW0303"
+			add_manpower = 2500
+		}
+	}
+	shared_focus = {	#Helping The Infantry Keep Up
+		id = CLD_SW0400
+		icon = GFX_truck_gen
+		relative_position_id = CLD_SW0100
+		x = -2 y = 3 cost = 2
+		prerequisite = { focus = CLD_SW0300 }
+		prerequisite = { focus = CLD_SW0301 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLD_SW0400"
+			custom_effect_tooltip = CLD_SW0400_cett
+			division_template = {
+				name = "Canter Regiment"
+				regiments = {
+					motorized = { x = 0 y = 0 }
+					motorized = { x = 0 y = 1 }
+					motorized = { x = 0 y = 2 }
+				}
+			}
+			hidden_effect = {
+				random_owned_controlled_state = {
+					limit = {
+						ROOT = {
+							has_full_control_of_state = PREV
+						}
+					}
+					prioritize = { 68 }
+					create_unit = {
+						division = "name = \"Canterhooves of Cloudsdale\" division_template = \"Canter Regiment\" start_experience_factor = 0.1 start_equipment_factor = 1 force_equipment_variants = { melee_equipment_1 = { owner = \"CLD\" creator = \"EQS\" } }"
+						owner = CLD
+					}
+					create_unit = {
+						division = "name = \"Canterhooves of Winterhome\" division_template = \"Canter Regiment\" start_experience_factor = 0.1 start_equipment_factor = 1 force_equipment_variants = { melee_equipment_1 = { owner = \"CLD\" creator = \"EQS\" } }"
+						owner = CLD
+					}
+				}
+			}
+		}
+	}
+	shared_focus = {	#Revisiting The Spitfire Project
+		id = CLD_SW0401
+		icon = GFX_goal_generic_air_fighter2
+		relative_position_id = CLD_SW0100
+		x = 0 y = 3 cost = 2
+		prerequisite = { focus = CLD_SW0301 }
+		prerequisite = { focus = CLD_SW0302 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLD_SW0401"
+			if = {
+				limit = { has_dlc = "By Blood Alone" }
+				if = {
+					limit = {
+						NOT = { has_tech = iw_small_airframe }
+					}
+					set_technology = { iw_small_airframe = 1 }
+				}
+				if = {
+					limit = {
+						NOT = { has_tech = basic_small_airframe }
+					}
+					set_technology = { basic_small_airframe = 1 }
+				}
+				if = {
+					limit = {
+						NOT = { has_tech = early_bombs }
+					}
+					set_technology = { early_bombs = 1 }
+				}
+				if = {
+					limit = {
+						NOT = { has_tech = aa_lmg }
+					}
+					set_technology = { aa_lmg = 1 }
+				}
+				if = {
+					limit = {
+						NOT = { has_tech = engines_1 }
+					}
+					set_technology = { engines_1 = 1 }
+				}
+				if = {
+					limit = {
+						NOT = { has_tech = engines_2 }
+					}
+					set_technology = { engines_2 = 1 }
+				}
+				create_equipment_variant = {
+					name = "Hawker Hurricane"
+					type = small_plane_airframe_1
+					icon = "GFX_ENG_fighter1_medium"
+					modules = {
+						fixed_main_weapon_slot = light_mg_4x
+						fixed_auxiliary_weapon_slot_1 = light_mg_4x
+						engine_type_slot = engine_2_1x
+					}
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						NOT = { has_tech = early_fighter }
+					}
+					set_technology = { early_fighter = 1 }
+				}
+				if = {
+					limit = {
+						NOT = { has_tech = fighter1 }
+					}
+					set_technology = { fighter1 = 1 }
+				}
+			}
+		}
+	}
+	shared_focus = {	#Their Armor Does Not Scare Us
+		id = CLD_SW0402
+		icon = GFX_goal_anti_tank
+		relative_position_id = CLD_SW0100
+		x = 2 y = 3 cost = 2
+		prerequisite = { focus = CLD_SW0302 }
+		prerequisite = { focus = CLD_SW0303 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLD_SW0402"
+			if = {
+				limit = {
+					NOT = { has_tech = interwar_antitank }
+				}
+				set_technology = { interwar_antitank = 1 }
+			}
+			add_tech_bonus = {
+				name = cat_anti_tank_research
+				category = cat_anti_tank
+				bonus = 0.5
+				uses = 1
+			}
+		}
+	}
+	shared_focus = {	#From Remnants And Militias To A Proper Military
+		id = CLD_SW0500
+		icon = GFX_goal_generic_pony_soldier
+		relative_position_id = CLD_SW0100
+		x = 0 y = 4 cost = 2
+		prerequisite = {
+			focus = CLD_SW0400
+			focus = CLD_SW0402
+		}
+		prerequisite = { focus = CLD_SW0401 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLD_SW0500"
+			custom_effect_tooltip = CLD_SW0500_cett
+			division_template = {
+				name = "Equestrian Division"
+				regiments = {
+					infantry = { x = 0 y = 0 }	infantry = { x = 1 y = 0 }
+					infantry = { x = 0 y = 1 }	infantry = { x = 1 y = 1 }
+					infantry = { x = 0 y = 2 }	infantry = { x = 1 y = 2 }
+				}
+			}
+			hidden_effect = {
+				random_owned_controlled_state = {
+					limit = {
+						ROOT = {
+							has_full_control_of_state = PREV
+						}
+					}
+					prioritize = { 68 }
+					create_unit = {
+						division = "name = \"Canterhooves of Cloudsdale\" division_template = \"Equestrian Division\" start_experience_factor = 0.1 start_equipment_factor = 0.7 force_equipment_variants = { infantry_equipment_0 = { owner = \"CLD\" creator = \"EQS\" } }"
+						owner = CLD
+					}
+				}
+			}
+		}
+	}
+#Stormwing Story Branch
+	shared_focus = {	#A Legion Approaches
+		id = CLD_SS0100
+		#icon = 
+		relative_position_id = CLD_S0000
+		x = 4 y = 1 cost = 2
+		offset = {
+			trigger = { has_completed_focus = CLD_SS0100 }
+			x = -4
+		}
+		allow_branch = {
+			NOT = { has_completed_focus = CLD_SW0100 }
+		}
+		prerequisite = { focus = CLD_S0000 }
+		available = { has_country_flag = CLD_council_stormwing }
+		mutually_exclusive = { focus = CLD_SW0100 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLD_SS0100"
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	shared_focus = {	#The First Proper Shipments From House Stormwing
+		id = CLD_SS0200
+		#icon = 
+		relative_position_id = CLD_SS0100
+		x = -1 y = 1 cost = 2
+		prerequisite = { focus = CLD_SS0100 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLD_SS0200"
+		}
+	}
+	shared_focus = {	#Tending To The Risk Of Any Possible Rebellion
+		id = CLD_SS0201
+		#icon = 
+		relative_position_id = CLD_SS0100
+		x = 1 y = 1 cost = 2
+		prerequisite = { focus = CLD_SS0100 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLD_SS0201"
+		}
+	}
+	shared_focus = {	#The Cloudsdale Air Field
+		id = CLD_SS0300
+		#icon = 
+		relative_position_id = CLD_SS0100
+		x = -2 y = 2 cost = 2
+		prerequisite = { focus = CLD_SS0200 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLD_SS0300"
+		}
+	}
+	shared_focus = {	#Rebuilding Cloudsdale
+		id = CLD_SS0301
+		#icon = 
+		relative_position_id = CLD_SS0100
+		x = 0 y = 2 cost = 2
+		prerequisite = { focus = CLD_SS0200 }
+		prerequisite = { focus = CLD_SS0201 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLD_SS0301"
+		}
+	}
+	shared_focus = {	#Some Proper Stormwing Infantry
+		id = CLD_SS0302
+		#icon = 
+		relative_position_id = CLD_SS0100
+		x = 2 y = 2 cost = 2
+		prerequisite = { focus = CLD_SS0201 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLD_SS0302"
+		}
+	}
+	shared_focus = {	#The Wonderbolts Must Have Been Holding Out On Us
+		id = CLD_SS0400
+		#icon = 
+		relative_position_id = CLD_SS0100
+		x = -3 y = 3 cost = 2
+		prerequisite = { focus = CLD_SS0300 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLD_SS0400"
+		}
+	}
+	shared_focus = {	#The Stormwing Truth
+		id = CLD_SS0401
+		#icon = 
+		relative_position_id = CLD_SS0100
+		x = -1 y = 3 cost = 2
+		prerequisite = { focus = CLD_SS0300 }
+		prerequisite = { focus = CLD_SS0301 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLD_SS0401"
+		}
+	}
+	shared_focus = {	#Cementing Stormwing’s Control In The City
+		id = CLD_SS0402
+		#icon = 
+		relative_position_id = CLD_SS0100
+		x = 1 y = 3 cost = 2
+		prerequisite = { focus = CLD_SS0301 }
+		prerequisite = { focus = CLD_SS0302 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLD_SS0402"
+		}
+	}
+	shared_focus = {	#Military Weather Application
+		id = CLD_SS0403
+		#icon = 
+		relative_position_id = CLD_SS0100
+		x = 3 y = 3 cost = 2
+		prerequisite = { focus = CLD_SS0302 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLD_SS0403"
+		}
+	}
+	shared_focus = {	#Putting Those Traitors to Use
+		id = CLD_SS0500
+		#icon = 
+		relative_position_id = CLD_SS0100
+		x = -2 y = 4 cost = 2
+		prerequisite = { focus = CLD_SS0400 }
+		prerequisite = { focus = CLD_SS0401 }
+		prerequisite = { focus = CLD_SS0402 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLD_SS0500"
+		}
+	}
+	shared_focus = {	#Importing Stormwing Training Ideas and Tactics
+		id = CLD_SS0501
+		#icon = 
+		relative_position_id = CLD_SS0100
+		x = 2 y = 4 cost = 2
+		prerequisite = { focus = CLD_SS0401 }
+		prerequisite = { focus = CLD_SS0402 }
+		prerequisite = { focus = CLD_SS0403 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLD_SS0501"
+		}
+	}
+#Story Valley Sub-Branch
+	shared_focus = {	#
+		id = CLD_S0600
+		#icon = 
+		relative_position_id = CLD_S0000
+		x = -1 y = 6 cost = 2
+		allow_branch = { always = yes }
+		prerequisite = { focus = CLD_SW0500 }
+		prerequisite = {
+			focus = CLD_SS0500
+			focus = CLD_SS0501
+		}
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLD_S0600"
+		}
+	}
+	shared_focus = {	#
+		id = CLD_S0601
+		#icon = 
+		relative_position_id = CLD_S0000
+		x = 1 y = 6 cost = 2
+		allow_branch = { always = yes }
+		prerequisite = { focus = CLD_SW0500 }
+		prerequisite = {
+			focus = CLD_SS0500
+			focus = CLD_SS0501
+		}
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLD_S0601"
+		}
+	}
+	shared_focus = {	#
+		id = CLD_S0700
+		#icon = 
+		relative_position_id = CLD_S0000
+		x = -1 y = 7 cost = 2
+		prerequisite = { focus = CLD_S0600 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLD_S0700"
+		}
+	}
+	shared_focus = {	#
+		id = CLD_S0701
+		#icon = 
+		relative_position_id = CLD_S0000
+		x = 1 y = 7 cost = 2
+		prerequisite = { focus = CLD_S0601 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLD_S0701"
+		}
+	}
+#Wonderbolt Post-Valley Story Branch
+	shared_focus = {	#
+		id = CLD_SW0800
+		#icon = 
+		relative_position_id = CLD_SW0100
+		x = 0 y = 7 cost = 2
+		allow_branch = {
+			NOT = { has_completed_focus = CLD_SS0100 }
+		}
+		prerequisite = { focus = CLD_S0700 }
+		prerequisite = { focus = CLD_S0701 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLD_SW0800"
+		}
+	}
+	shared_focus = {	#
+		id = CLD_SW0900
+		#icon = 
+		relative_position_id = CLD_SW0100
+		x = 0 y = 8 cost = 2
+		prerequisite = { focus = CLD_SW0800 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLD_SW0900"
+		}
+	}
+#Stormwing Post-Valley Story Branch
+	shared_focus = {	#The Southern Pegasus Territories
+		id = CLD_SS0800
+		#icon = 
+		relative_position_id = CLD_SS0100
+		x = 0 y = 7 cost = 2
+		allow_branch = {
+			NOT = { has_completed_focus = CLD_SW0100 }
+		}
+		prerequisite = { focus = CLD_S0700 }
+		prerequisite = { focus = CLD_S0701 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLD_SS0800"
+		}
+	}
+	shared_focus = {	#Glory Hunting Parties
+		id = CLD_SS0900
+		#icon = 
+		relative_position_id = CLD_SS0100
+		x = -1 y = 8 cost = 2
+		prerequisite = { focus = CLD_SS0800 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLD_SS0900"
+		}
+	}
+	shared_focus = {	#The Bread Basket Of Stormwing
+		id = CLD_SS0901
+		#icon = 
+		relative_position_id = CLD_SS0100
+		x = 1 y = 8 cost = 2
+		prerequisite = { focus = CLD_SS0800 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CLD_SS0901"
+		}
+	}

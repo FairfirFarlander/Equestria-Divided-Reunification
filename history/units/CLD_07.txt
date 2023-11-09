@@ -2,24 +2,54 @@ division_template = {
 	name = "Provincial Militia"
 	priority = 0
 	template_counter = 7
+	is_locked = yes
 	regiments = {
 		militia = { x = 0 y = 0 }
 		militia = { x = 0 y = 1 }
 		militia = { x = 0 y = 2 }
 	}
 }
+division_template = {
+	name = "Wonderbolt Regiment"
+	priority = 2
+	is_locked = yes
+	force_allow_recruiting = yes
+	division_cap = 3
+	regiments = {
+		pegasi = { x = 0 y = 0 }	pegasi = { x = 1 y = 0 }
+		pegasi = { x = 0 y = 1 }
+		pegasi = { x = 0 y = 2 }
+	}
+}
 units = {
 	division = {
-		name = "Test Dummy"
+		name = "Wonderbolt Remnant"
 		location = 11672
-		division_template = "Provincial Militia"
-		start_experience_factor = 0.1
-		start_equipment_factor = 1
+		division_template = "Wonderbolt Regiment"
+		start_experience_factor = 0.65
+		start_equipment_factor = 0.5
 		force_equipment_variants = {
-			melee_equipment_0 = {
-				owner = ALA
-				creator = ALA
+			melee_equipment_1 = {
+				owner = CLD
+				creator = EQS
 			}
 		}
+	}
+}
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = melee_equipment_0
+		amount = 200
+		producer = EQS
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_0
+		amount = 200
+		producer = EQS
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+		amount = 10
+		producer = EQS
 	}
 }

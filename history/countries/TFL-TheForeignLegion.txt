@@ -48,6 +48,7 @@ if = {
 	create_equipment_variant = {
 		name = "M1-13 Applesauce (S)"
 		type = light_tank_chassis_0
+		icon = "gfx/interface/technologies/EQS_armoured_tractor.dds"
 		modules = {
 			main_armament_slot = tank_heavy_machine_gun
 			turret_type_slot = tank_light_one_man_tank_turret
