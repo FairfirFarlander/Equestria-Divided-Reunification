@@ -484,7 +484,7 @@ focus_tree = {
 				}
 				set_technology = { gwtank = 1 }
 				division_template = {
-					name = "Shaber Division"
+					name = "Shaber Regiment"
 					regiments = {
 						infantry = { x = 0 y = 0 }
 						infantry = { x = 0 y = 1 }
@@ -504,7 +504,7 @@ focus_tree = {
 						}
 						prioritize = { 95 }
 						create_unit = {
-							division = "name = \"Legionary Company\" division_template = \"Shaber Division\" start_experience_factor = 0.1 start_equipment_factor = 1 force_equipment_variants = { light_tank_chassis_0 = { version_name = \"M1-13 Applesauce (S)\" owner = \"FAI\" creator = \"TFL\" } }"
+							division = "name = \"Legionary Company\" division_template = \"Shaber Regiment\" start_experience_factor = 0.1 start_equipment_factor = 1 force_equipment_variants = { light_tank_chassis_0 = { version_name = \"M1-13 Applesauce (S)\" owner = \"FAI\" creator = \"TFL\" } }"
 							owner = FAI
 						}
 					}
@@ -512,7 +512,7 @@ focus_tree = {
 				else = {
 					set_technology = { gwtank = 1 }
 					division_template = {
-						name = "Shaber Division"
+						name = "Shaber Regiment"
 						regiments = {
 							light_armor = { x = 0 y = 0 }	infantry = { x = 1 y = 0 }
 															infantry = { x = 1 y = 1 }
@@ -528,7 +528,7 @@ focus_tree = {
 							}
 							prioritize = { 95 }
 							create_unit = {
-								division = "name = \"Legionary Company\" division_template = \"Shaber Division\" start_experience_factor = 0.1 start_equipment_factor = 0.6 force_equipment_variants = { gw_tank_equipment = { owner = \"FAI\" creator = \"TFL\" } }"
+								division = "name = \"Legionary Company\" division_template = \"Shaber Regiment\" start_experience_factor = 0.1 start_equipment_factor = 0.6 force_equipment_variants = { gw_tank_equipment = { owner = \"FAI\" creator = \"TFL\" } }"
 								owner = FAI
 							}
 						}

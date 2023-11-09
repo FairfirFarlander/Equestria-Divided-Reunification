@@ -94,7 +94,7 @@
      FAI_S0601_desc: "Floating high in their city of clouds are ponies who think of themselves as servants of the sisters. They fly overhead in their war planes, spreading the same death and chaos I witnessed before the great division! Brothers and sisters we must bring a stop to their madness before it destroys us all! Soon we will march upon their lands, not as conquerors, but as savors and messengers of the good word!"
     FAI_S0700: "A New Use for the Tools of Sinners"
      FAI_S0700_desc: "Those sinners parading around, playing army, had their hooves on some pretty invaluable weapons. Weapons that now we can use and tools to protect ourselves and the holy word of the Sisters. What divine intervention that the Sister would send us against an enemy who would have the tools we need to keep serving them."
-     FAI_S0700_cett: "\n§Y[FAI.GetName]§! will receive §Y[TFL.GetAdjective]§! early tank equipment and form a division that will marshal in Orshab.\n\nThe Legionary Company composted of...\n3 §5light tank brigades§! and 2 §7infantry brigades§!."
+     FAI_S0700_cett: "\n§Y[ROOT.GetName]§! will receive §Y[TFL.GetAdjective]§! early tank equipment and form a division that will marshal in Orshab.\n\nThe Legionary Company composted of...\n1 §5light tank§! and 4 §7infantry brigades§!."
     FAI_S0701: "The Hedonistic Gift"
      FAI_S0701_desc: "Those foolish heathens who called Cloudsdale home left us many things to use in our fight to preserve our faith. What kind of followers would we be if we did not use these gifts bestowed upon us to protect the faithful and our fellow believers."
     FAI_S0800: "To Deal with the Heathens and Sinners"
