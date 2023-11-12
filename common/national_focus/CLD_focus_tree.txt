@@ -400,7 +400,7 @@ focus_tree = {
 #Stormwing Story Branch
 	shared_focus = {	#A Legion Approaches
 		id = CLD_SS0100
-		#icon = 
+		icon = GFX_goal_nim_helmet
 		relative_position_id = CLD_S0000
 		x = 4 y = 1 cost = 2
 		offset = {
@@ -417,44 +417,86 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CLD_SS0100"
 			mark_focus_tree_layout_dirty = yes
+			country_event = CLD_ESS.010000
 		}
 	}
 	shared_focus = {	#The First Proper Shipments From House Stormwing
 		id = CLD_SS0200
-		#icon = 
+		icon = GFX_goal_nim_agriculture
 		relative_position_id = CLD_SS0100
 		x = -1 y = 1 cost = 2
 		prerequisite = { focus = CLD_SS0100 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CLD_SS0200"
+			add_stability = 0.3
+			add_ideas = CLD_stormin
 		}
 	}
 	shared_focus = {	#Tending To The Risk Of Any Possible Rebellion
 		id = CLD_SS0201
-		#icon = 
+		icon = GFX_goal_nim_government_broken
 		relative_position_id = CLD_SS0100
 		x = 1 y = 1 cost = 2
 		prerequisite = { focus = CLD_SS0100 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CLD_SS0201"
+			custom_effect_tooltip = CLD_SS0201_cett
+			division_template = {
+				name = "Hoplitai"
+				template_counter = 80
+				regiments = {
+					pegasi = { x = 0 y = 0 }
+					pegasi = { x = 0 y = 1 }
+					pegasi = { x = 0 y = 2 }
+				}
+				recon = { x = 0 y = 0 }
+			}
+			hidden_effect = {
+				set_division_template_lock = {
+					division_template = "Provincial Militia"
+					is_locked = no
+				}
+				delete_unit_template_and_units = {
+					division_template = "Wonderbolt Regiment"
+				}
+				random_owned_controlled_state = {
+					limit = {
+						ROOT = {
+							has_full_control_of_state = PREV
+						}
+					}
+					prioritize = { 68 }
+					create_unit = {
+						division = "name = \"Cloudsdale Hoplitai\" division_template = \"Hoplitai\" start_experience_factor = 0.1 start_equipment_factor = 1 force_equipment_variants = { melee_equipment_1 = { owner = \"CLD\" creator = \"HSW\" } }"
+						owner = CLD
+					}
+				}
+			}
 		}
 	}
 	shared_focus = {	#The Cloudsdale Air Field
 		id = CLD_SS0300
-		#icon = 
+		icon = GFX_goal_nim_wing
 		relative_position_id = CLD_SS0100
 		x = -2 y = 2 cost = 2
 		prerequisite = { focus = CLD_SS0200 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CLD_SS0300"
+			68 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	shared_focus = {	#Rebuilding Cloudsdale
 		id = CLD_SS0301
-		#icon = 
+		#icon = GFX_goal_nim_mining
 		relative_position_id = CLD_SS0100
 		x = 0 y = 2 cost = 2
 		prerequisite = { focus = CLD_SS0200 }
@@ -462,33 +504,96 @@ focus_tree = {
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CLD_SS0301"
+			add_extra_state_shared_building_slots = 6
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+			add_timed_idea = {
+				idea = CLD_rebuildingspree
+				days = 120
+			}
+			set_country_flag = CLD_rebuilding_cloudsdale
+			unlock_decision_category_tooltip = CLD_rebuilding_cloudsdale_category
 		}
 	}
 	shared_focus = {	#Some Proper Stormwing Infantry
 		id = CLD_SS0302
-		#icon = 
+		icon = GFX_goal_nim_warrior
 		relative_position_id = CLD_SS0100
 		x = 2 y = 2 cost = 2
 		prerequisite = { focus = CLD_SS0201 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CLD_SS0302"
+			custom_effect_tooltip = CLD_SS0302_cett
+			division_template = {
+				name = "Merarchía Pezikoú"
+				template_counter = 59
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+				}
+			}
+			HSW = {
+				170 = { add_manpower = -6000 }
+			}
+			hidden_effect = {
+				random_owned_controlled_state = {
+					limit = {
+						ROOT = {
+							has_full_control_of_state = PREV
+						}
+					}
+					prioritize = { 68 }
+					create_unit = {
+						division = "name = \"Pezikoú\" division_template = \"Merarchía Pezikoú\" start_experience_factor = 0.1 start_equipment_factor = 1 force_equipment_variants = { melee_equipment_1 = { owner = \"CLD\" creator = \"HSW\" } }"
+						owner = CLD
+					}
+					create_unit = {
+						division = "name = \"Pezikoú\" division_template = \"Merarchía Pezikoú\" start_experience_factor = 0.1 start_equipment_factor = 1 force_equipment_variants = { melee_equipment_1 = { owner = \"CLD\" creator = \"HSW\" } }"
+						owner = CLD
+					}
+				}
+			}
 		}
 	}
-	shared_focus = {	#The Wonderbolts Must Have Been Holding Out On Us
+	shared_focus = {	#The Wonderbolts Hidden Caches
 		id = CLD_SS0400
-		#icon = 
+		#icon = GFX_goal_nim_swords
 		relative_position_id = CLD_SS0100
 		x = -3 y = 3 cost = 2
 		prerequisite = { focus = CLD_SS0300 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CLD_SS0400"
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 200
+				producer = EQS
+			}
+			add_equipment_to_stockpile = {
+				type = melee_equipment_1
+				amount = 200
+				producer = EQS
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = 150
+				producer = EQS
+			}
 		}
 	}
 	shared_focus = {	#The Stormwing Truth
 		id = CLD_SS0401
-		#icon = 
+		icon = GFX_goal_nim_torch
 		relative_position_id = CLD_SS0100
 		x = -1 y = 3 cost = 2
 		prerequisite = { focus = CLD_SS0300 }
@@ -496,11 +601,12 @@ focus_tree = {
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CLD_SS0401"
+			add_ideas = CLD_stormwing_truth
 		}
 	}
 	shared_focus = {	#Cementing Stormwing’s Control In The City
 		id = CLD_SS0402
-		#icon = 
+		icon = GFX_goal_nim_slavery
 		relative_position_id = CLD_SS0100
 		x = 1 y = 3 cost = 2
 		prerequisite = { focus = CLD_SS0301 }
@@ -508,22 +614,27 @@ focus_tree = {
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CLD_SS0402"
+			remove_ideas = CLD_equestrian_hold_out
 		}
 	}
 	shared_focus = {	#Military Weather Application
 		id = CLD_SS0403
-		#icon = 
+		icon = GFX_goal_nim_cloud
 		relative_position_id = CLD_SS0100
 		x = 3 y = 3 cost = 2
 		prerequisite = { focus = CLD_SS0302 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CLD_SS0403"
+			set_technology = {
+				tech_pegasi_bonus1 = 1
+				tech_pegasi_bonus2 = 1
+			}
 		}
 	}
 	shared_focus = {	#Putting Those Traitors to Use
 		id = CLD_SS0500
-		#icon = 
+		icon = GFX_goal_nim_break_chains
 		relative_position_id = CLD_SS0100
 		x = -2 y = 4 cost = 2
 		prerequisite = { focus = CLD_SS0400 }
@@ -532,11 +643,41 @@ focus_tree = {
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CLD_SS0500"
+			custom_effect_tooltip = CLD_SS0500_cett
+			division_template = {
+				name = "Fallen Pegasi"
+				priority = 0
+				template_counter = 71
+				is_locked = yes
+				regiments = {
+					irregular_infantry = { x = 0 y = 0 }
+					irregular_infantry = { x = 0 y = 1 }
+					irregular_infantry = { x = 0 y = 2 }
+				}
+			}
+			hidden_effect = {
+				random_owned_controlled_state = {
+					limit = {
+						ROOT = {
+							has_full_control_of_state = PREV
+						}
+					}
+					prioritize = { 68 }
+					create_unit = {
+						division = "name = \"Cloudsdale Militia\" division_template = \"Fallen Pegasi\" start_experience_factor = 0.3 start_equipment_factor = 1 force_equipment_variants = { melee_equipment_0 = { owner = \"CLD\" creator = \"CLD\" } }"
+						owner = CLD
+					}
+					create_unit = {
+						division = "name = \"Cloudsdale Militia\" division_template = \"Fallen Pegasi\" start_experience_factor = 0.3 start_equipment_factor = 1 force_equipment_variants = { melee_equipment_0 = { owner = \"CLD\" creator = \"CLD\" } }"
+						owner = CLD
+					}
+				}
+			}
 		}
 	}
-	shared_focus = {	#Importing Stormwing Training Ideas and Tactics
+	shared_focus = {	#Stormwing Training Ideas and Tactics
 		id = CLD_SS0501
-		#icon = 
+		icon = GFX_goal_nim_bolt
 		relative_position_id = CLD_SS0100
 		x = 2 y = 4 cost = 2
 		prerequisite = { focus = CLD_SS0401 }
@@ -545,6 +686,10 @@ focus_tree = {
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CLD_SS0501"
+			swap_ideas = {
+				remove_idea = CLD_cloudsdale_remnant
+				add_idea = CLD_stormwing_enclave
+			}
 		}
 	}
 #Story Valley Sub-Branch
@@ -846,7 +991,7 @@ focus_tree = {
 #Stormwing Post-Valley Story Branch
 	shared_focus = {	#The Southern Pegasus Territories
 		id = CLD_SS0800
-		#icon = 
+		icon = GFX_goal_nim_shield
 		relative_position_id = CLD_SS0100
 		x = 0 y = 7 cost = 2
 		allow_branch = {
@@ -857,27 +1002,46 @@ focus_tree = {
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CLD_SS0800"
+			set_cosmetic_tag = CLD_stormwing_puppet
+			HSW = { puppet = CLD }
 		}
 	}
 	shared_focus = {	#Glory Hunting Parties
 		id = CLD_SS0900
-		#icon = 
+		icon = GFX_goal_nim_amphora
 		relative_position_id = CLD_SS0100
 		x = -1 y = 8 cost = 2
 		prerequisite = { focus = CLD_SS0800 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CLD_SS0900"
+			custom_effect_tooltip = CLD_SS0900_cett
 		}
 	}
 	shared_focus = {	#The Bread Basket Of Stormwing
 		id = CLD_SS0901
-		#icon = 
+		icon = GFX_goal_nim_olives
 		relative_position_id = CLD_SS0100
 		x = 1 y = 8 cost = 2
 		prerequisite = { focus = CLD_SS0800 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CLD_SS0901"
+			add_tech_bonus = {
+				name = earth_pony_tech
+				category = earth_pony_tech
+				bonus = 1
+				uses = 1
+			}
+			every_possible_country = {
+				limit = {
+					OR = {
+						original_tag = CLD
+						original_tag = HSW
+						original_tag = SWT
+					}
+				}
+				add_ideas = CLD_bread_basket
+			}
 		}
 	}

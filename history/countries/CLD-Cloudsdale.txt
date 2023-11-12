@@ -210,8 +210,8 @@ set_popularities = {
 }
 set_politics = { ruling_party = democratic }
 set_country_flag = EDR_is_equestrian_breakaway
-recruit_character = CLD_ebn_flow
 recruit_character = CLD_wonderbolt_remnant
+recruit_character = CLD_ebn_flow
 ###NOTES###
 #Spirit of 76'
 #anarchism

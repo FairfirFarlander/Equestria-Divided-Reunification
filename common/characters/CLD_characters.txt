@@ -56,17 +56,19 @@ characters = {
 			traits = { disorganized_trait }
 		}
 		country_leader = {
+			desc = CLD_eflow_leader_desc
+			ideology = stratocracy
+		}
+		country_leader = {
 			desc = CLD_wremnant_leader_desc
 			ideology = oligarchism
 			traits = { disorganized_trait }
 		}
 		corps_commander = {
 			visible = {
-				NOT = {
-					has_country_leader = {
-						character = CLD_wonderbolt_remnant
-						ruling_only = yes
-					}
+				has_country_leader = {
+					character = CLD_wonderbolt_remnant
+					ruling_only = yes
 				}
 			}
 			desc = CLD_wremnant_commander_desc

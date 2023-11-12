@@ -1,0 +1,11 @@
+CLD_rebuilding_cloudsdale_category = {
+	#icon = 
+	priority = 3
+	allowed = { original_tag = CLD }
+	visible = {
+		OR = {
+			has_country_flag = CLD_rebuilding_cloudsdale
+			is_debug = yes
+		}
+	}
+}

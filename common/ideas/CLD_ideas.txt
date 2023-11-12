@@ -8,6 +8,16 @@ ideas = {
 				pegasi_tech = 0.2
 			}
 		}
+		CLD_stormwing_enclave = {
+			picture = EQS_wonderbolts
+			modifier = {
+				training_time_factor = 0.1
+				army_infantry_defence_factor = 0.05
+			}
+			research_bonus = {
+				pegasi_tech = 0.35
+			}
+		}
 		CLD_equestrian_hold_out = {
 			picture = EQS_harmonic_stagnation
 			modifier = {
@@ -28,6 +38,35 @@ ideas = {
 			modifier = {
 				special_forces_min = -8
 				special_forces_training_time_factor = 0.15
+			}
+		}
+		CLD_stormin = {
+			picture = severe_famine4
+			modifier = {
+				monthly_population = 0.03
+			}
+			targeted_modifier = {
+				tag = HSW
+				trade_opinion_factor = 1
+			}
+		}
+		CLD_rebuildingspree = {	#REEEEEEE!
+			picture = HIRA_hammer
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		CLD_stormwing_truth = {
+			picture = generic_democratic_drift_bonus
+			modifier = {
+				conscription = 0.03
+				stability_factor = 0.1
+			}
+		}
+		CLD_bread_basket = {
+			picture = STG_sinnie_food_subsidies
+			modifier = {
+				monthly_population = 0.12
 			}
 		}
 	}

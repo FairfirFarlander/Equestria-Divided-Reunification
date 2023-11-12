@@ -1,0 +1,31 @@
+CLD_rebuilding_cloudsdale_category = {
+	CLD_rebuild_in_time = {
+		priority = 2
+		icon = GFX_decision_generic_construction
+		visible = {
+			OR = {
+				has_country_flag = CLD_rebuilding_cloudsdale
+				is_debug = yes
+			}
+		}
+		activation = { always = no }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "You cannot prolong the inevitable"
+				always = no
+			}
+		}
+		is_good = no
+		highlight_states = {
+			highlight_state_targets = {
+				state = 2
+				state = 68
+			}
+		}
+		days_mission_timeout = 102
+		fire_only_once = yes
+		complete_effect = {
+			log = "[GetDateText]: decision CLD_rebuild_in_time"
+		}
+	}
+}

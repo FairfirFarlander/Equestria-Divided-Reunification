@@ -35,6 +35,19 @@ units = {
 			}
 		}
 	}
+	division = {
+		name = "Wonderbolt Remnant"
+		location = 11672
+		division_template = "Wonderbolt Regiment"
+		start_experience_factor = 0.65
+		start_equipment_factor = 0.5
+		force_equipment_variants = {
+			melee_equipment_1 = {
+				owner = CLD
+				creator = EQS
+			}
+		}
+	}
 }
 instant_effect = {
 	add_equipment_to_stockpile = {
