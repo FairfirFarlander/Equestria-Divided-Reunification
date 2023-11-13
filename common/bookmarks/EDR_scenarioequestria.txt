@@ -105,7 +105,9 @@ bookmarks = {
 				CLD_notawonderbolt
 			}
 			focuses = {
-				
+				CLD_SW0100
+				CLD_SS0100
+				CLD_S0601
 			}
 		}
 		"TFL" = {	#The Thirteenth Legion

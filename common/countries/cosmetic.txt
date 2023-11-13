@@ -11,6 +11,10 @@ HEB_EQS = {
 	color = rgb { 133 203 97 }
 	color_ui = rgb { 133 203 97 }
 }
+CLD_CLD_stormwing_puppet = {
+	color = rgb { 203 229 242 }
+	color_ui = rgb { 160 214 242 }
+}
 #EAW
 FAT_Monarchy = {
 	color = rgb { 104 107 156 }
