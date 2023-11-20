@@ -1,5 +1,5 @@
 CLD_rebuilding_cloudsdale_category = {
-	#icon = 
+	icon = GFX_decision_category_generic_industry
 	priority = 3
 	allowed = { original_tag = CLD }
 	visible = {

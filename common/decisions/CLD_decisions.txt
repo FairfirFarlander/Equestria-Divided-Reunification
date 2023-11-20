@@ -1,6 +1,6 @@
 CLD_rebuilding_cloudsdale_category = {
 	CLD_rebuild_in_time = {
-		priority = 2
+		priority = 3
 		icon = GFX_decision_generic_construction
 		visible = {
 			OR = {
@@ -11,21 +11,198 @@ CLD_rebuilding_cloudsdale_category = {
 		activation = { always = no }
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = "You cannot prolong the inevitable"
+				tooltip = CLD_rebuild_in_time_cttt
 				always = no
 			}
 		}
 		is_good = no
-		highlight_states = {
-			highlight_state_targets = {
-				state = 2
-				state = 68
-			}
-		}
-		days_mission_timeout = 102
+		days_mission_timeout = 120
 		fire_only_once = yes
 		complete_effect = {
+			log = "[GetDateText]: decision complete CLD_rebuild_in_time. WHY!?"
+		}
+		timeout_effect = {
+			log = "[GetDateText]: decision timeout CLD_rebuild_in_time"
+			clr_country_flag = CLD_rebuilding_cloudsdale
+			custom_effect_tooltip = CLD_rebuild_in_time_cett
+		}
+	}
+	DBUG_CLD_toggle_stormwing_supplies = {
+		priority = 2
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
 			log = "[GetDateText]: decision CLD_rebuild_in_time"
+			if = {
+				limit = { has_country_flag = CLD_stormwing_supplimented }
+				clr_country_flag = CLD_stormwing_supplimented
+			}
+			else = { set_country_flag = CLD_stormwing_supplimented }
+		}
+	}
+	CLD_stormwing_complex = {
+		icon = GFX_decision_generic_factory
+		visible = {
+			OR = {
+				has_country_flag = CLD_rebuilding_cloudsdale
+				is_debug = yes
+			}
+		}
+		available = {
+			if = {
+				limit = { is_debug = yes }
+				custom_trigger_tooltip = {
+					tooltip = CLD_rebuilding_cloudsdale
+				}
+			}
+			else = { has_country_flag = CLD_rebuilding_cloudsdale }
+			NOT = { has_country_flag = CLD_stormwing_supplimented }
+		}
+		days_remove = 56
+		complete_effect = {
+			log = "[GetDateText]: decision complete CLD_stormwing_complex"
+			set_country_flag = CLD_stormwing_supplimented
+		}
+		remove_effect = {
+			log = "[GetDateText]: decision remove CLD_stormwing_complex"
+			68 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			clr_country_flag = CLD_stormwing_supplimented
+		}
+		cancel_trigger = {
+			if = {
+				limit = { is_debug = yes }
+				custom_trigger_tooltip = {
+					tooltip = CLD_not_rebuilding_cloudsdale
+					always = no
+				}
+			}
+			else = {
+				NOT = { has_country_flag = CLD_rebuilding_cloudsdale }
+			}
+		}
+	}
+	CLD_stormwing_factory = {
+		icon = GFX_decision_generic_industry
+		visible = {
+			OR = {
+				has_country_flag = CLD_rebuilding_cloudsdale
+				is_debug = yes
+			}
+		}
+		available = {
+			if = {
+				limit = { is_debug = yes }
+				custom_trigger_tooltip = {
+					tooltip = CLD_rebuilding_cloudsdale
+				}
+			}
+			else = { has_country_flag = CLD_rebuilding_cloudsdale }
+			NOT = { has_country_flag = CLD_stormwing_supplimented }
+		}
+		days_remove = 56
+		complete_effect = {
+			log = "[GetDateText]: decision complete CLD_stormwing_factory"
+			set_country_flag = CLD_stormwing_supplimented
+		}
+		remove_effect = {
+			log = "[GetDateText]: decision remove CLD_stormwing_factory"
+			68 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			clr_country_flag = CLD_stormwing_supplimented
+		}
+		cancel_trigger = {
+			if = {
+				limit = { is_debug = yes }
+				custom_trigger_tooltip = {
+					tooltip = CLD_not_rebuilding_cloudsdale
+					always = no
+				}
+			}
+			else = {
+				NOT = { has_country_flag = CLD_rebuilding_cloudsdale }
+			}
+		}
+	}
+	CLD_local_complex = {
+		icon = GFX_decision_generic_factory
+		visible = {
+			OR = {
+				has_country_flag = CLD_rebuilding_cloudsdale
+				is_debug = yes
+			}
+		}
+		available = {
+			if = {
+				limit = { is_debug = yes }
+				custom_trigger_tooltip = {
+					tooltip = CLD_rebuilding_cloudsdale
+				}
+			}
+			else = { has_country_flag = CLD_rebuilding_cloudsdale }
+		}
+		cost = 50
+		days_remove = 35
+		complete_effect = {
+			log = "[GetDateText]: decision complete CLD_local_complex"
+		}
+		remove_effect = {
+			log = "[GetDateText]: decision remove CLD_local_complex"
+			68 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	CLD_local_factory = {
+		icon = GFX_decision_generic_industry
+		visible = {
+			OR = {
+				has_country_flag = CLD_rebuilding_cloudsdale
+				is_debug = yes
+			}
+		}
+		available = {
+			if = {
+				limit = { is_debug = yes }
+				custom_trigger_tooltip = {
+					tooltip = CLD_rebuilding_cloudsdale
+				}
+			}
+			else = { has_country_flag = CLD_rebuilding_cloudsdale }
+		}
+		cost = 50
+		days_remove = 35
+		complete_effect = {
+			log = "[GetDateText]: decision complete CLD_local_factory"
+		}
+		remove_effect = {
+			log = "[GetDateText]: decision remove CLD_local_factory"
+			68 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 }
