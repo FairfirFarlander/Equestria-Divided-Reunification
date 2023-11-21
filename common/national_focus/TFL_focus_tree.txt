@@ -7,7 +7,7 @@ focus_tree = {
 			add = 2
 		}
 	}
-	continuous_focus_position = { x = 10 y = -400 }
+	continuous_focus_position = { x = 850 y = 0 }
 	shared_focus = TFL_S0000
 }
 focus_tree = {
@@ -20,7 +20,7 @@ focus_tree = {
 			add = 7
 		}
 	}
-	continuous_focus_position = { x = 10 y = -400 }
+	continuous_focus_position = { x = 850 y = 0 }
 	shared_focus = TFL_S0000
 }
 ##Story Tree

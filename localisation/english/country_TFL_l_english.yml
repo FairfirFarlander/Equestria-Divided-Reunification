@@ -35,16 +35,16 @@
  ###Characters###
   ##Leaders##
    TFL_rain_dancer: "Rain Dancer"
-    TFL_rdancer_leader_desc: ""
+    TFL_rdancer_leader_desc: "$CRDC_art_tiviyl$"
    TFL_generic_pony: "Generic Pony"
     TFL_gpony_leader_desc: "$GENR_advisor_desc$"
   ##Commanders##
    TFL_buffalo_joe: "Buffalo Joe"
-    TFL_bjoe_commander_desc: ""
+    TFL_bjoe_commander_desc: "$CRDC_art_pooryarrickda$"
    TFL_firespit: "Flaring Heart"
-    TFL_firespit_commander_desc: ""
+    TFL_firespit_commander_desc: "$CRDC_art_pooryarrickda$"
    TFL_hawyee: "Loam Rise"
-    TFL_hawyee_commander_desc: ""
+    TFL_hawyee_commander_desc: "$CRDC_art_pooryarrickda$"
   ##Political Advisors##
   ##Military Advisors##
  ###Ideas###

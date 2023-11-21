@@ -8,7 +8,7 @@ focus_tree = {
 		}
 	}
 	shared_focus = CLD_S0000
-	continuous_focus_position = { x = 10 y = -400 }
+	continuous_focus_position = { x = 0 y = 1350 }
 }	#41 Weeks
 focus_tree = {
 	id = CLD_focus_tree_debug
@@ -21,7 +21,7 @@ focus_tree = {
 		}
 	}
 	shared_focus = CLD_S0000
-	continuous_focus_position = { x = 10 y = -400 }
+	continuous_focus_position = { x = 0 y = 1350 }
 }
 ##Story Branch
 	shared_focus = {	#The City Council’s Fateful Meeting

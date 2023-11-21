@@ -8,7 +8,7 @@ focus_tree = {
 		}
 	}
 	shared_focus = FAI_S0000
-	continuous_focus_position = { x = 10 y = -400 }
+	continuous_focus_position = { x = 700 y = 0 }
 }
 focus_tree = {
 	id = FAI_focus_tree_debug
@@ -21,7 +21,7 @@ focus_tree = {
 		}
 	}
 	shared_focus = FAI_S0000
-	continuous_focus_position = { x = 10 y = -400 }
+	continuous_focus_position = { x = 700 y = 0 }
 }
 ##Story Branch
 	shared_focus = {	#What We Must Do to Survive
