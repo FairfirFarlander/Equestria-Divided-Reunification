@@ -158,6 +158,7 @@ focus_tree = {
 		relative_position_id = CLD_SW0100
 		x = -3 y = 2 cost = 4
 		prerequisite = { focus = CLD_SW0200 }
+		prerequisite = { focus = CLD_SW0201 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CLD_SW0300"
@@ -214,6 +215,7 @@ focus_tree = {
 		icon = GFX_goal_radio
 		relative_position_id = CLD_SW0100
 		x = 3 y = 2 cost = 4
+		prerequisite = { focus = CLD_SW0201 }
 		prerequisite = { focus = CLD_SW0202 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
@@ -430,6 +432,10 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CLD_SS0200"
 			add_stability = 0.3
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
 			add_ideas = CLD_stormin
 		}
 	}
@@ -452,6 +458,10 @@ focus_tree = {
 					pegasi = { x = 0 y = 2 }
 				}
 				recon = { x = 0 y = 0 }
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.15
 			}
 			hidden_effect = {
 				set_division_template_lock = {
@@ -607,7 +617,10 @@ focus_tree = {
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CLD_SS0401"
-			add_ideas = CLD_stormwing_truth
+			swap_ideas = {
+				remove_idea = CLD_notawonderbolt
+				add_idea = CLD_stormwing_truth
+			}
 		}
 	}
 	shared_focus = {	#Cementing Stormwing’s Control In The City
@@ -706,8 +719,8 @@ focus_tree = {
 		relative_position_id = CLD_S0000
 		x = -1 y = 6 cost = 4
 		allow_branch = { always = yes }
-		prerequisite = { focus = CLD_SW0500 }
 		prerequisite = {
+			focus = CLD_SW0500
 			focus = CLD_SS0500
 			focus = CLD_SS0501
 		}
@@ -744,8 +757,8 @@ focus_tree = {
 		relative_position_id = CLD_S0000
 		x = 1 y = 6 cost = 4
 		allow_branch = { always = yes }
-		prerequisite = { focus = CLD_SW0500 }
 		prerequisite = {
+			focus = CLD_SW0500
 			focus = CLD_SS0500
 			focus = CLD_SS0501
 		}
@@ -795,7 +808,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus CLD_S0700"
 			every_state = {
 				limit = { is_core_of = TFL }
-				add_compliance = 20
+				add_compliance = 30
 			}
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
@@ -810,7 +823,6 @@ focus_tree = {
 			custom_effect_tooltip = CLD_S0700_cett
 			if = {
 				limit = { has_dlc = "No Step Back" }
-				set_technology = { gwtank_chassis = 1 }
 				create_equipment_variant = {
 					name = "M1-13 Applesauce (S)"
 					type = light_tank_chassis_0
@@ -823,7 +835,6 @@ focus_tree = {
 						engine_type_slot = tank_gasoline_engine
 					}
 				}
-				set_technology = { gwtank = 1 }
 				division_template = {
 					name = "Shaber Regiment"
 					regiments = {
@@ -850,28 +861,27 @@ focus_tree = {
 						}
 					}
 				}
-				else = {
-					set_technology = { gwtank = 1 }
-					division_template = {
-						name = "Shaber Regiment"
-						regiments = {
-							light_armor = { x = 0 y = 0 }	motorized = { x = 1 y = 0 }
-															motorized = { x = 1 y = 1 }
-															motorized = { x = 1 y = 2 }
-						}
+			}
+			else = {
+				division_template = {
+					name = "Shaber Regiment"
+					regiments = {
+						motorized = { x = 0 y = 0 }	light_armor = { x = 1 y = 0 }
+						motorized = { x = 0 y = 1 }
+						motorized = { x = 0 y = 2 }
 					}
-					hidden_effect = {
-						random_owned_controlled_state = {
-							limit = {
-								ROOT = {
-									has_full_control_of_state = PREV
-								}
+				}
+				hidden_effect = {
+					random_owned_controlled_state = {
+						limit = {
+							ROOT = {
+								has_full_control_of_state = PREV
 							}
-							prioritize = { 95 }
-							create_unit = {
-								division = "name = \"Legionary Company\" division_template = \"Shaber Regiment\" start_experience_factor = 0.1 start_equipment_factor = 0.6 force_equipment_variants = { gw_tank_equipment = { owner = \"CLD\" creator = \"TFL\" } }"
-								owner = CLD
-							}
+						}
+						prioritize = { 95 }
+						create_unit = {
+							division = "name = \"Legionary Company\" division_template = \"Shaber Regiment\" start_experience_factor = 0.1 start_equipment_factor = 0.6 force_equipment_variants = { gw_tank_equipment = { owner = \"CLD\" creator = \"TFL\" } }"
+							owner = CLD
 						}
 					}
 				}
@@ -897,7 +907,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus CLD_S0701"
 			every_state = {
 				limit = { is_core_of = FAI }
-				add_compliance = 20
+				add_compliance = 30
 			}
 			add_equipment_to_stockpile = {
 				type = infantry_equipment

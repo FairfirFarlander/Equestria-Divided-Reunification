@@ -154,6 +154,10 @@ add_namespace = CLD_ESS
 		option = {
 			name = CLD_ESS.010001.a
 			set_politics = { ruling_party = fascism }
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.35
+			}
 			promote_character = CLD_ebn_flow
 		}
 		option = {
