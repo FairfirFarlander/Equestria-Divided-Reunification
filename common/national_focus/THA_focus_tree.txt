@@ -1,61 +1,116 @@
-#The Fruit of Our Eye - Think Mango Province focus name
-#Argent End Starting Tree
-	shared_focus = {	#The Mountain Stands Strong
-		id = THA_S00 icon = GFX_focus_GRE_a_land_of_mountains
-		x = -5 y = 7 cost = 2.86 ai_will_do = {factor = 40}
-		select_effect = {
-			country_event = EDR_evt_gen.000	#Event Verbosity
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus THA_S00"
-			country_event = THAact01.05		#Comfort the Fallen
+focus_tree = {
+	id = THA_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			tag = THA
+			add = 2
 		}
 	}
-	shared_focus = {	#The Most of Little Time
-		id = THA_S01 icon = GFX_goal_NLR_Peace_in_our_Time
-		relative_position_id = THA_S00
-		x = 0 y = 1 cost = 2 ai_will_do = {factor = 40}
-		prerequisite = {focus = THA_S00}
+	#shared_focus = EDR_I00
+	#shared_focus = EDR_L05
+	#shared_focus = EDR_N05
+	#shared_focus = EDR_A05
+	shared_focus = THA_S0000
+	shared_focus = THA_SS00
+	shared_focus = NMS_stranded
+	shared_focus = NMS_end_of_war
+	shared_focus = NMS_the_third_position
+	shared_focus = NMS_economic_stuff
+	shared_focus = NMS_army_stuff
+	shared_focus = NMS_aztlan_navy
+	shared_focus = NMS_aztlan_airforce
+	continuous_focus_position = { x = 6000 y = 0 }
+}
+focus_tree = {
+	id = THA_focus_tree_debug
+	country = {
+		factor = 0
+		modifier = {
+			is_debug = yes
+			tag = THA
+			add = 2
+		}
+	}
+	#shared_focus = EDR_I00
+	#shared_focus = EDR_L05
+	#shared_focus = EDR_N05
+	#shared_focus = EDR_A05
+	shared_focus = THA_S0000
+	shared_focus = THA_SS00
+	shared_focus = NMS_stranded
+	shared_focus = NMS_end_of_war
+	shared_focus = NMS_the_third_position
+	shared_focus = NMS_economic_stuff
+	shared_focus = NMS_army_stuff
+	shared_focus = NMS_aztlan_navy
+	shared_focus = NMS_aztlan_airforce
+	continuous_focus_position = { x = 6000 y = 0 }
+}
+#The Fruit of Our Eye - Think Mango Province focus name
+#Argent End Starting Tree
+##Story Branch
+	shared_focus = {	#The Mountain Stands Strong
+		id = THA_S0000
+		icon = GFX_focus_GRE_a_land_of_mountains
+		x = -5 y = 7 cost = 3
+		search_filters = {}
+		ai_will_do = { factor = 80 }
+		select_effect = { country_event = THA_ES.000000 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus THA_S01"
-			if = {limit = {not = {has_country_flag = EDRlessevents}}
-				country_event = THAact01.07	#Searching For Answers
+			log = "[GetDateText]: [Root.GetName]: Focus THA_S0000"
+			country_event = THA_ES.000002	#The Great Mourning
+		}
+	}
+	shared_focus = {	#The Heart Breaking Cost	#The Most of Little Time
+		id = THA_S0100
+		icon = GFX_goal_NLR_Peace_in_our_Time
+		relative_position_id = THA_S0000
+		x = 0 y = 1 cost = 3
+		search_filters = {}
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = THA_S0000 }
+		select_effect = {
+			country_event = {	#A King's Tears
+				id = THA_ES.000100
+				days = 3
 			}
-			else = {
-				add_political_power = -15
-			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus THA_S0100"
+			country_event = THA_ES.000103	#Searching For Answers
 		}
 	}
 	shared_focus = {	#A Meeting With The Guard
 		id = THA_S02A icon = GFX_goal_bat_with_hat
-		relative_position_id = THA_S01
+		relative_position_id = THA_S0100
 		x = -2 y = 1 cost = 2 ai_will_do = {factor = 40}
-		prerequisite = {focus = THA_S01}
+		prerequisite = {focus = THA_S0100}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus THA_S02A"
 		}
 	}
 	shared_focus = {	#The Word of The Moon
 		id = THA_S02B icon = GFX_goal_nightmare_moon
-		relative_position_id = THA_S01
+		relative_position_id = THA_S0100
 		x = 0 y = 1 cost = 2 ai_will_do = {factor = 40}
-		prerequisite = {focus = THA_S01}
+		prerequisite = {focus = THA_S0100}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus THA_S02B"
 		}
 	}
 	shared_focus = {	#A Look Into The Records
 		id = THA_S02C icon = GFX_goal_bookstack
-		relative_position_id = THA_S01
+		relative_position_id = THA_S0100
 		x = 2 y = 1 cost = 2 ai_will_do = {factor = 40}
-		prerequisite = {focus = THA_S01}
+		prerequisite = {focus = THA_S0100}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus THA_S02C"
 		}
 	}
 	shared_focus = {	#Argent’s Speech
 		id = THA_S03 icon = GFX_goal_night_supporters
-		relative_position_id = THA_S01
+		relative_position_id = THA_S0100
 		x = 0 y = 2 cost = 2 ai_will_do = {factor = 40}
 		prerequisite = {focus = THA_S02A}
 		prerequisite = {focus = THA_S02B}

@@ -4,16 +4,16 @@ add_namespace = TFL_ES
 		title = TFL_ES.000000.t
 		desc = TFL_ES.000000.d
 		is_triggered_only = yes
-		immediate = { log = "[GetDateText]: [Root.GetName]: event TFL_ES.000000" }
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered TFL_ES.000000" }
 		option = { name = TFL_ES.000000.a }
 	}
 	country_event = {	#Train Thieves Part 1
 		id = TFL_ES.020100
 		title = TFL_ES.020100.t
 		desc = TFL_ES.020100.d
-		is_triggered_only = yes
 		picture = GFX_event_pony_soldiers_sunset
-		immediate = { log = "[GetDateText]: [Root.GetName]: event TFL_ES.020100" }
+		is_triggered_only = yes
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered TFL_ES.020100" }
 		option = {
 			name = TFL_ES.020100.a
 			country_event = {
@@ -26,9 +26,9 @@ add_namespace = TFL_ES
 		id = TFL_ES.020101
 		title = TFL_ES.020100.t
 		desc = TFL_ES.020101.d
-		is_triggered_only = yes
 		picture = GFX_report_event_generic_train
-		immediate = { log = "[GetDateText]: [Root.GetName]: event TFL_ES.02101" }
+		is_triggered_only = yes
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered TFL_ES.02101" }
 		option = {
 			name = TFL_ES.020101.a
 			add_stability = 0.05
@@ -59,7 +59,7 @@ add_namespace = TFL_ES
 		desc = TFL_ES.030200.d
 		picture = GFX_event_teufort_lunatics
 		is_triggered_only = yes
-		immediate = { log = "[GetDateText]: [Root.GetName]: event TFL_ES.030200" }
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered TFL_ES.030200" }
 		option = {
 			name = TFL_ES.030200.a
 			custom_effect_tooltip = TFL_ES.030200.cett
@@ -72,7 +72,7 @@ add_namespace = TFL_ES
 		desc = TFL_ES.040000.d
 		picture = GFX_report_event_sweden_tank
 		is_triggered_only = yes
-		immediate = { log = "[GetDateText]: [Root.GetName]: event TFL_ES.040000" }
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered TFL_ES.040000" }
 		option = {
 			name = TFL_ES.040000.a
 			add_tech_bonus = {
@@ -119,9 +119,8 @@ add_namespace = TFL_ES
 		id = TFL_ES.070100
 		title = TFL_ES.070100.t
 		desc = TFL_ES.070100.d
-		#picture = GFX_event_
 		is_triggered_only = yes
-		immediate = { log = "[GetDateText]: [Root.GetName]: event TFL_ES.070100" }
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered TFL_ES.070100" }
 		option = {
 			name = TFL_ES.070100.a
 			country_event = TFL_ES.070101
@@ -131,9 +130,8 @@ add_namespace = TFL_ES
 		id = TFL_ES.070101
 		title = TFL_ES.070100.t
 		desc = TFL_ES.070101.d
-		#picture = GFX_event_
 		is_triggered_only = yes
-		immediate = { log = "[GetDateText]: [Root.GetName]: event TFL_ES.070101" }
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered TFL_ES.070101" }
 		option = {
 			name = TFL_ES.070101.a
 			if = {
@@ -181,9 +179,8 @@ add_namespace = TFL_ES
 		id = TFL_ES.070102
 		title = TFL_ES.070102.t
 		desc = TFL_ES.070102.d
-		#picture = GFX_event_
 		is_triggered_only = yes
-		immediate = { log = "[GetDateText]: [Root.GetName]: event TFL_ES.070102" }
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered TFL_ES.070102" }
 		option = {
 			name = TFL_ES.070102.a
 		}
@@ -192,9 +189,8 @@ add_namespace = TFL_ES
 		id = TFL_ES.080000
 		title = TFL_ES.080000.t
 		desc = TFL_ES.080000.d
-		#picture = GFX_event_
 		is_triggered_only = yes
-		immediate = { log = "[GetDateText]: [Root.GetName]: event TFL_ES.080000" }
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered TFL_ES.080000" }
 		option = {
 			name = TFL_ES.080000.a
 			set_cosmetic_tag = TFL_lost_legion
@@ -213,9 +209,8 @@ add_namespace = TFL_ES
 		id = TFL_ES.090000
 		title = TFL_ES.090000.t
 		desc = TFL_ES.090000.d
-		#picture = GFX_event_
 		is_triggered_only = yes
-		immediate = { log = "[GetDateText]: [Root.GetName]: event TFL_ES.090000" }
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered TFL_ES.090000" }
 		option = {
 			name = TFL_ES.090000.a
 			add_stability = 0.1
@@ -233,9 +228,8 @@ add_namespace = TFL_ES
 		id = TFL_ES.090100
 		title = TFL_ES.090100.t
 		desc = TFL_ES.090100.d
-		#picture = GFX_event_
 		is_triggered_only = yes
-		immediate = { log = "[GetDateText]: [Root.GetName]: event TFL_ES.090100" }
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered TFL_ES.090100" }
 		option = {
 			name = TFL_ES.090100.a
 			add_stability = 0.1
@@ -250,10 +244,9 @@ add_namespace = TFL_ES
 		id = TFL_ES.110200
 		title = TFL_ES.110200.t
 		desc = TFL_ES.110200.d
-		#picture = GFX_event_
 		is_triggered_only = yes
 		fire_only_once = yes
-		immediate = { log = "[GetDateText]: [Root.GetName]: event TFL_ES.110200" }
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered TFL_ES.110200" }
 		option = {
 			name = TFL_ES.110200.a
 			add_tech_bonus = {
@@ -290,10 +283,9 @@ add_namespace = TFL_ES
 		id = TFL_ES.110201
 		title = TFL_ES.110201.t
 		desc = TFL_ES.110201.d
-		#picture = GFX_event_
 		is_triggered_only = yes
 		fire_only_once = yes
-		immediate = { log = "[GetDateText]: [Root.GetName]: event TFL_ES.110201" }
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered TFL_ES.110201" }
 		option = {
 			name = TFL_ES.110201.a
 			add_political_power = -50
@@ -307,10 +299,9 @@ add_namespace = TFL_ES
 		id = TFL_ES.110202
 		title = TFL_ES.110202.t
 		desc = TFL_ES.110202.d
-		#picture = GFX_event_
 		is_triggered_only = yes
 		fire_only_once = yes
-		immediate = { log = "[GetDateText]: [Root.GetName]: event TFL_ES.110202" }
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered TFL_ES.110202" }
 		option = {
 			name = TFL_ES.110202.a
 			add_political_power = -50
@@ -324,10 +315,9 @@ add_namespace = TFL_ES
 		id = TFL_ES.110203
 		title = TFL_ES.110203.t
 		desc = TFL_ES.110203.d
-		#picture = GFX_event_
 		is_triggered_only = yes
 		fire_only_once = yes
-		immediate = { log = "[GetDateText]: [Root.GetName]: event TFL_ES.110203" }
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered TFL_ES.110203" }
 		option = {
 			name = TFL_ES.110203.a
 			add_political_power = -25

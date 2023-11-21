@@ -1,74 +1,95 @@
-add_namespace=THAact01
-	country_event={		#The March Back To Ayacachtli
-		id=THAact01.01	is_triggered_only=yes
-		immediate={log="[GetDateText]: [Root.GetName]: event THAact01.01"}
-		title=THAact01.01.t	desc=THAact01.01.d
-		#picture=
-		option={name=THAact01.01.a
-			country_event={id=THAact01.02 days=7}	#Welcome Home
+add_namespace = THA_ES
+	country_event = {	#The March Back To Ayacachtli
+		id = THA_ES.000000
+		title = THA_ES.000000.t
+		desc = THA_ES.000000.d
+		is_triggered_only = yes
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered THA_ES.000000" }
+		option = {
+			name = THA_ES.000000.a
+			hidden_effect = {
+				country_event = {	#Welcome Home
+					id = THA_ES.000001
+					days = 7
+				}
+			}
 		}
 	}
-	country_event={		#Welcome Home
-		id=THAact01.02	is_triggered_only=yes
-		immediate={log="[GetDateText]: [Root.GetName]: event THAact01.02"}
-		title=THAact01.02.t	desc=THAact01.02.d
-		#picture=
-		option={name=THAact01.02.a
-			add_stability=0.3
-			country_event=THAact01.03
+	country_event = {	#Welcome Home
+		id = THA_ES.000001
+		title = THA_ES.000001.t
+		desc = THA_ES.000001.d
+		is_triggered_only = yes
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered THA_ES.000001" }
+		option = {
+			name = THA_ES.000001.a
+			add_stability = 0.15
 		}
 	}
-	country_event={		#The Heart Breaking Cost
-		id=THAact01.03	is_triggered_only=yes
-		immediate={log="[GetDateText]: [Root.GetName]: event THAact01.03"}
-		title=THAact01.03.t	desc=THAact01.03.d
-		#picture=
-		option={name=THAact01.03.a
-			add_ideas=THA_the_great_mourning
-			country_event={id=THAact01.04 days=21}
+	country_event = {	#The Great Mourning
+		id = THA_ES.000002
+		title = THA_ES.000002.t
+		desc = THA_ES.000002.d
+		is_triggered_only = yes
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered THA_ES.000002" }
+		option = {
+			name = THA_ES.000002.a
+			add_timed_idea = {
+				idea = THA_the_great_mourning
+				days = 60
+			}
 		}
 	}
-	country_event={		#To Comfort the Fallen
-		id=THAact01.04	is_triggered_only=yes
-		immediate={log="[GetDateText]: [Root.GetName]: event THAact01.04"}
-		title=THAact01.04.t	desc=THAact01.04.d
-		#picture=
-		option={name=THAact01.04.a}
-	}
-	country_event={		#Comfort the Fallen
-		id=THAact01.05	is_triggered_only=yes
-		immediate={log="[GetDateText]: [Root.GetName]: event THAact01.05"}
-		title=THAact01.05.t	desc=THAact01.05.d
-		#picture=
-		option={name=THAact01.05.a
-			add_stability=0.1
+	country_event = {	#A King's Tears
+		id = THA_ES.000100
+		title = THA_ES.000100.t
+		desc = THA_ES.000100.d
+		is_triggered_only = yes
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered THA_ES.000100" }
+		option = {
+			name = THA_ES.000100.a
+			hidden_effect = {
+				country_event = {	#To Comfort the Fallen
+					id = THA_ES.000101
+					days = 14
+				}
+			}
+		}
+		option = {
+			name = THA_ES.000100.a
+			hidden_effect = {
+				country_event = {	#A Moment of Grief
+					id = THA_ES.000101
+					days = 21
+				}
+			}
 		}
 	}
-	country_event={		#Short version of "The Heart Breaking Cost"
-		id=THAact01.06	is_triggered_only=yes
-		immediate={log="[GetDateText]: [Root.GetName]: event THAact01.06"}
-		title=THAact01.06.t	desc=THAact01.06.d
-		#picture=
-		option={name=THAact01.06.a
-			add_ideas=THA_the_great_mourning
+	country_event = {	#To Comfort the Fallen
+		id = THA_ES.000101
+		title = THA_ES.000101.t
+		desc = THA_ES.000101.d
+		is_triggered_only = yes
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered THA_ES.000101" }
+		option = {
+			name = THA_ES.000101.a
+			add_stability = 0.1
 		}
 	}
-	country_event={		#Searching For Answers
-		id=THAact01.07	is_triggered_only=yes
-		immediate={log="[GetDateText]: [Root.GetName]: event THAact01.07"}
-		title=THAact01.07.t	desc=THAact01.07.d
-		#picture=
-		option={name=THAact01.07.a
-			add_political_power=15
-		}
+	country_event = {	#A Moment of Grief
+		id = THA_ES.000102
+		title = THA_ES.000102.t
+		desc = THA_ES.000102.d
+		is_triggered_only = yes
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered THA_ES.000102" }
+		option = { name = THA_ES.000102.a }
 	}
-	country_event={		#Auburn's Reassuring Word
-		id=THAact01.08	is_triggered_only=yes
-		immediate={log="[GetDateText]: [Root.GetName]: event THAact01.08"}
-		title=THAact01.08.t	desc=THAact01.08.d
-		#picture=
-		option={name=THAact01.08.a
-			add_ideas=THA_temp_infantry_bonus
-		}
+	country_event = {	#Searching For Answers
+		id = THA_ES.000103
+		title = THA_ES.000103.t
+		desc = THA_ES.000103.d
+		is_triggered_only = yes
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered THA_ES.000103" }
+		option = { name = THA_ES.000103.a }
 	}
 	
