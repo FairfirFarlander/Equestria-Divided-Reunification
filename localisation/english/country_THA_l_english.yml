@@ -3,8 +3,8 @@
   ##Bookmark##
    THA_GATHERING_STORM_DESC: "$GENR_GATHERING_STORM_DESC$"
   ##Welcome Screen##
-   EAW_WS_THA: "$EAW_WS_GENR$"
-    EAW_WS_THA_desc: "$EAW_WS_GENR_desc$"
+   EAW_WS_THA: "The Lunar Holds"
+    EAW_WS_THA_desc: "The story of Ayacachtli is a sorrow filled tale as of late. The recent tragedies of this nation looms over it like a sickly darkness. A sickly "King of The Mountain" rules over these mountains named Argent End, a stallion whose odd disease causes him to almost rot away as he ages. Many theories have flouted about how the young pony got such an illness. Because of this, it is unknown just how long Argent has left to live. Despite this affliction, he does his best to rule over those around him.\n\nAs Equestria slipped into Chaos and began to break apart, the few thestral hold outs left in the land began to fall one by one. Refugees began fleeing their homes and coming to Ayacachtli in the hopes of finding safety. Few would actually make it to the mountains. Those who did brought with them horrifying tales of the raids and battles that came to them. Soon enough the ponies of Ayacachtli believed that they were the final hold out of thestral kind and culture. With these thoughts and stories, many came to wonder if it was still worth fighting.\n\nDespite all of this, the young ruler was determined to lead his hold through the darkness. He gathered up everyone willing to fight and led them into battles as his health worsened. Leading what small armies he could muster to secure his realm. What they lacked in size, they made up for in skill and passion. The thestral armies defended their mountains from the chaos that surrounded them valiantly. Eventually the outsiders stopped bringing war to their mountains. Ayacachtli would finally know a peace after years of defencive war, however it is a tense peace that can come to a swift end at any moment.\n\nBecause of this, Argent End has set his eyes down a path he thinks will lead his kind to better days. One that involves a focus of defence and building what bridges he can with surrounding nations. Will it really be enough to protect his subjects, and will he be able to live long enough to see those better days come? Only time will tell."
  ###Poltics###
   ##Country Name##
    THA: "Lunar Holds"
@@ -14,15 +14,15 @@
    THA_old_democratic: "Noctralia"
     THA_old_democratic_DEF: "the Province of Noctralia"
     THA_old_democratic_ADJ: "Noctrali"
- ##Political Parties##
-  THA_fascism_party: "OTM"
-   THA_fascism_party_long: "Order of The Moon"
-  THA_communism_party: "WTS"
-   THA_communism_party_long: "The Workers of The Stars"
-  THA_neutrality_party: "TH"
-   THA_neutrality_party_long: "The Thestral Nobility"
-  THA_democratic_party: "VTR"
-   THA_democratic_party_long: "The Voice of The Relm"
+  ##Political Parties##
+   THA_fascism_party: "OTM"
+    THA_fascism_party_long: "Order of The Moon"
+   THA_communism_party: "WTS"
+    THA_communism_party_long: "The Workers of The Stars"
+   THA_neutrality_party: "TH"
+    THA_neutrality_party_long: "The Thestral Nobility"
+   THA_democratic_party: "VTR"
+    THA_democratic_party_long: "The Voice of The Realm"
  ###Characters###
   ##Leaders##
    THA_argent_end: "Argent End"
@@ -69,8 +69,8 @@
    THA_S0000: "The Mountain Stands Strong"
     THA_S0000_desc: "The time has come for my armies to return to our homes. At long last we can return to our mountain and be at peace. However, I fear that deep down I know our neighbors will try once again to harm us. I will not yet tell my soldiers my fears. They deserve a chance to rest and see their families. For now let us return and celebrate what victories we can. For I fear that even darker days lay ahead of us."
     THA_ES.000000.t: "The March Back to Ayacachtli"
-     THA_ES.000000.d: ""
-     THA_ES.000000.a: "By night we flow."
+     THA_ES.000000.d: "With our victory at Fort Golden realized, we have managed to drive back the madponies to the holes whence they came. Surely they will not be so eager to attack us again after such a setback. And yet such a victory goes both ways. Many of our number fell in the attack despite having every advantage at our disposal in the dead of the night. The flashes of muzzles and crack of rifled weaponry still rings in my ears. Yet despite the bodycount, we have made sure to recover our bretheren and set alight what we could not that their souls may acsend to the moon and not be brandished by the sun.\n\nWe march back home that we might rest from our labors and reunite with our families. Yet the going is rough as the ground beneath begins to moisten and our burden weighs us down. When we at last reach the safety of our mountain home we may find sturdy purchase and familiar winds to guide our wings. Only then can we rest easy knowing the safety in the realm of the emaculate moon."
+     THA_ES.000000.a: "So lies the journey ahead."
     THA_ES.000001.t: "Welcome Home"
      THA_ES.000001.d: ""
      THA_ES.000001.a: "For now we rest."
