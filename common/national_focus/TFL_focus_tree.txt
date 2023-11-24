@@ -202,7 +202,10 @@ focus_tree = {
 						owner = TFL
 					}
 				}
-				delete_unit_template_and_units = "Marines"
+				delete_unit_template_and_units = {
+					division_template = "Marines"
+					disband = yes
+				}
 			}
 		}
 	}
@@ -259,7 +262,15 @@ focus_tree = {
 			hidden_effect = {
 				country_event = {
 					id = TFL_ES.030200
-					days = 60
+					days = 14
+				}
+				country_event = {
+					id = TFL_ES.030201
+					days = 30
+				}
+				country_event = {
+					id = TFL_ES.030202
+					days = 46
 				}
 			}
 		}

@@ -53,7 +53,7 @@ add_namespace = TFL_ES
 			trigger = { is_debug = yes }
 		}
 	}
-	country_event = {	#18 Lunatics and Their Gravel
+	country_event = {	#Stallion Co. Founded
 		id = TFL_ES.030200
 		title = TFL_ES.030200.t
 		desc = TFL_ES.030200.d
@@ -64,6 +64,48 @@ add_namespace = TFL_ES
 			name = TFL_ES.030200.a
 			custom_effect_tooltip = TFL_ES.030200.cett
 			set_global_flag = TFL_stallion_co_established
+		}
+		option = {
+			name = EDRG_ED.debug
+			trigger = { is_debug = yes }
+		}
+	}
+	country_event = {	#18 Lunatics and Their Gravel
+		id = TFL_ES.030201
+		title = TFL_ES.030201.t
+		desc = TFL_ES.030201.d
+		picture = GFX_event_teufort_lunatics
+		is_triggered_only = yes
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered TFL_ES.030201" }
+		option = {
+			name = TFL_ES.030201.a
+			custom_effect_tooltip = TFL_ES.030201.cett
+			set_global_flag = TFL_REDBLUE_services
+		}
+		option = {
+			name = EDRG_ED.debug
+			trigger = { is_debug = yes }
+		}
+	}
+	country_event = {	#A Mysterious Stranger
+		id = TFL_ES.030202
+		title = TFL_ES.030202.t
+		desc = TFL_ES.030202.d
+		picture = GFX_event_teufort_lunatics
+		is_triggered_only = yes
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered TFL_ES.030202" }
+		option = {
+			name = TFL_ES.030202.a
+		}
+		option = {
+			name = TFL_ES.030202.b
+			custom_effect_tooltip = TFL_ES.030202.cett
+			clr_global_flag = TFL_REDBLUE_services
+			set_global_flag = TFL_GRAY_services
+		}
+		option = {
+			name = EDRG_ED.debug
+			trigger = { is_debug = yes }
 		}
 	}
 	country_event = {	#The River Tractors

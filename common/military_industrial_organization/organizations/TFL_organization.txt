@@ -1,0 +1,10 @@
+TFL_stallion_co_infantry = {
+	include = generic_infantry_equipment_organization
+	name = TFL_stallion_co_infantry
+	icon = GFX_idea_company_pile_of_guns
+	allowed = {
+		has_dlc = "Arms Against Tyranny"
+		original_tag = TFL
+	}
+	available = { has_global_flag = TFL_stallion_co_established }
+}

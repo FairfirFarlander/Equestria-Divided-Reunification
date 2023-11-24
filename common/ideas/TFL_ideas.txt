@@ -92,22 +92,45 @@ ideas = {
 			}
 		}
 	}
-	industrial_concern = {
-		TFL_stallion_co = {
+	materiel_manufacturer = {
+		designer = yes
+		TFL_stallion_co_infantry = {
 			picture = company_pile_of_guns
 			allowed = { original_tag = TFL }
-			available = {
-				has_global_flag = TFL_stallion_co_established
-				owns_state = 114
-			}
-			research_bonus = { industry = 0.15 }
+			available = { has_global_flag = TFL_stallion_co_established }
+			cost = 100
+			research_bonus = { infantry_weapons = 0.15 }
+			traits = { infantry_equipment_manufacturer }
+		}
+	}
+	industrial_concern = {
+		TFL_RED_stallion = {
+			picture = NMS_sierra_caballo_mining_company
+			allowed = { original_tag = TFL }
+			available = { has_global_flag = TFL_REDBLUE_services }
+			cost = 100
+			research_bonus = { excavation_tech = 0.15 }
+			traits = { agricultural_concern }
+		}
+		TFL_BLU_stallion = {
+			picture = generic_industrial_concern_2
+			allowed = { original_tag = TFL }
+			available = { has_global_flag = TFL_REDBLUE_services }
+			cost = 100
+			research_bonus = { construction_tech = 0.15 }
 			traits = { construction_company }
 		}
 		TFL_hoofgard_electric = {
 			picture = WIT_generic_electronics_concern
 			allowed = { original_tag = TFL }
-			#available = { has_completed_focus = TFL_ }
-			research_bonus = { electronics = 0.15 }
+			research_bonus = { electronics = 0.1 }
+			traits = { electronics_concern }
+		}
+		TFL_stallion_co_electric = {
+			picture = selectric
+			allowed = { original_tag = TFL }
+			available = { has_global_flag = TFL_GRAY_services }
+			research_bonus = { electronics = 0.2 }
 			traits = { electronics_concern }
 		}
 	}
