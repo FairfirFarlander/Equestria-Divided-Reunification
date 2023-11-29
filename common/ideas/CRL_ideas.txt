@@ -1,0 +1,11 @@
+ideas = {
+	country = {
+		CRL_sombra_shadow = {
+			picture = CRY_sombra_threat
+			modifier = {
+				stability_factor = -0.15
+				conscription_factor = -0.2
+			}
+		}
+	}
+}

@@ -430,6 +430,20 @@ on_actions = {
 					add_to_PREV_potential_cores = yes
 				}
 			}
+			#every_state = {
+			#	limit = {
+			#		NOT = { is_on_continent = europe }
+			#	}
+			#	CYE = { transfer_state = PREV }
+			#}
+			#if = {	#NO_MINORS
+			#	limit = {
+			#		has_game_rule = {
+			#			rule = EDR_equestrian_minors_status
+			#			option = EDR_NO_MINORS
+			#		}
+			#	}
+			#}
 		}
 	}
 }

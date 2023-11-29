@@ -1,4 +1,4 @@
-ALA = {
+ALA = {	#use 40 S and 90 V
 	color = rgb { 204 255 204 }
 	color_ui = rgb { 204 255 204 }
 }
@@ -19,11 +19,11 @@ CLD = {
 	color_ui = rgb { 63 172 228 }
 }
 CRL = {
-	color = rgb { 213 166 240 }
-	color_ui = rgb { 213 166 240 }
+	color = rgb { 223 138 230 }
+	color_ui = rgb { 159 103 164 }
 }
 CUL = {
-	color = rgb { 101 1 36 }
+	color = rgb { 102 10 67 }
 	color_ui = rgb { 101 1 36 }
 }
 EMB = {
@@ -59,12 +59,12 @@ HFT = {
 	color_ui = rgb { 238 184 67 }
 }
 HMS = {
-	color = rgb { 209 26 255 }
-	color_ui = rgb { 177 62 155 }
+	color = rgb { 178 62 154 }	#178 62 154
+	color_ui = rgb { 209 159 228 }
 }	#209 26 255	#185 98 171
 HSW = {
-	color = rgb { 153 204 255 }
-	color_ui = rgb { 0 179 254 }
+	color = rgb { 138 203 230 }
+	color_ui = rgb { 163 222 248 }
 }	#179 179 255
 HWG = {
 	color = rgb { 249 242 255 }

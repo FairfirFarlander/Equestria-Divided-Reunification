@@ -89,7 +89,8 @@ focus_tree = {
 			army_experience = 1
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				category = land_doctrine
+				category = cat_grand_battle_plan
+				category = cat_mass_assault
 				cost_reduction = 0.99
 				uses = 1
 			}

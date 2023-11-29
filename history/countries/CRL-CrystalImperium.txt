@@ -3,11 +3,10 @@ oob = "CRL_07"
 set_research_slots = 3
 set_war_support = 0.3
 add_ideas = {
+	CRL_sombra_shadow
 	outdated_industry
 	lack_of_scientists3
 	poverty3
-	royal_family
-	sombra_threat
 }
 set_technology = {
 	pony_race = 1
