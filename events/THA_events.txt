@@ -14,6 +14,10 @@ add_namespace = THA_ES
 				}
 			}
 		}
+		option = {
+			name = EDRG_ED.debug
+			trigger = { is_debug = yes }
+		}
 	}
 	country_event = {	#Welcome Home
 		id = THA_ES.000001
@@ -23,7 +27,12 @@ add_namespace = THA_ES
 		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered THA_ES.000001" }
 		option = {
 			name = THA_ES.000001.a
-			add_stability = 0.15
+			add_stability = 0.2
+			country_event = THA_ES.000002	#The Great Mourning
+		}
+		option = {
+			name = EDRG_ED.debug
+			trigger = { is_debug = yes }
 		}
 	}
 	country_event = {	#The Great Mourning
@@ -38,58 +47,55 @@ add_namespace = THA_ES
 				idea = THA_the_great_mourning
 				days = 60
 			}
+			hidden_effect = {
+				country_event = {
+					id = THA_ES.000003
+					days = 1
+				}
+			}
+		}
+		option = {
+			name = EDRG_ED.debug
+			trigger = { is_debug = yes }
 		}
 	}
 	country_event = {	#A King's Tears
-		id = THA_ES.000100
-		title = THA_ES.000100.t
-		desc = THA_ES.000100.d
+		id = THA_ES.000003
+		title = THA_ES.000003.t
+		desc = THA_ES.000003.d
+		picture = GFX_event_luna_prison
 		is_triggered_only = yes
-		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered THA_ES.000100" }
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered THA_ES.000003" }
 		option = {
-			name = THA_ES.000100.a
-			hidden_effect = {
-				country_event = {	#To Comfort the Fallen
-					id = THA_ES.000101
-					days = 14
-				}
-			}
+			name = THA_ES.000003.a
+			add_stability = 0.07
 		}
 		option = {
-			name = THA_ES.000100.a
-			hidden_effect = {
-				country_event = {	#A Moment of Grief
-					id = THA_ES.000101
-					days = 21
-				}
-			}
+			name = EDRG_ED.debug
+			trigger = { is_debug = yes }
 		}
 	}
-	country_event = {	#To Comfort the Fallen
-		id = THA_ES.000101
-		title = THA_ES.000101.t
-		desc = THA_ES.000101.d
+	country_event = {	#The Most of Little Time
+		id = THA_ES.000004
+		title = THA_ES.000004.t
+		desc = THA_ES.000004.d
 		is_triggered_only = yes
-		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered THA_ES.000101" }
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered THA_ES.000004" }
 		option = {
-			name = THA_ES.000101.a
-			add_stability = 0.1
+			name = THA_ES.000004.a
 		}
-	}
-	country_event = {	#A Moment of Grief
-		id = THA_ES.000102
-		title = THA_ES.000102.t
-		desc = THA_ES.000102.d
-		is_triggered_only = yes
-		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered THA_ES.000102" }
-		option = { name = THA_ES.000102.a }
 	}
 	country_event = {	#Searching For Answers
-		id = THA_ES.000103
-		title = THA_ES.000103.t
-		desc = THA_ES.000103.d
+		id = THA_ES.020000
+		title = THA_ES.020000.t
+		desc = THA_ES.020000.d
 		is_triggered_only = yes
-		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered THA_ES.000103" }
-		option = { name = THA_ES.000103.a }
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered THA_ES.020000" }
+		option = {
+			name = THA_ES.020000.a
+		}
+		option = {
+			name = THA_ES.020000.b
+		}
 	}
 	

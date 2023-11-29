@@ -1,33 +1,27 @@
 ideas = {
 	country = {
-		THA_Warrior_Culture_Traditions = {	#WE LIVE FOR COMBAT
-			allowed = {always = no}
+		THA_warrior_culture = {	#WE LIVE FOR COMBAT
 			picture = warrior_pony
-			removal_cost = -1
 			modifier = {
-				conscription = 0.015
-				army_attack_factor  =  0.03
-				army_defence_factor  =  0.04
+				army_attack_factor  =  0.05
+				army_defence_factor  =  0.05
 			}
 		}
-		THA_Ancestor_Guidance = {	#Our ancestors know what is right
-			allowed = {always = no}
+		THA_shortages = {
 			picture = enlightened_education_SOL
-			removal_cost = -1
 			modifier = {
-			stability_factor = 0.035
+				political_power_gain = -0.2
+				consumer_goods_factor = 0.07
+				stability_factor = -0.15
+				recruitable_population_factor = -0.05
 			}
 		}
-		THA_cultcell = {
-			allowed = {always = no}
-			#picture = 
-			removal_cost = -1
+		THA_border_crisis = {
+			picture = enlightened_education_SOL
 			modifier = {
-				political_power_gain = -0.40
 				stability_factor = -0.15
-				industrial_capacity_factory = -0.15
-				communism_drift = 0.02
-				democratic_drift = 0.02
+				war_support_factor = -0.025
+				recruitable_population_factor = -0.05
 			}
 		}
 		THA_the_great_mourning = {
@@ -50,32 +44,16 @@ ideas = {
 			#picture = #
 			removal_cost = -1
 		}
-	}
-	political_advisor = {
-		THA_auburn_political = {
-			#picture = #
-			allowed = {original_tag = THA}
+		THA_auburn_rifle_modernization = {
+			picture = CVA_zargun
 			available = {
-				and = {
-					has_completed_focus = THA_S02A
-					not = {has_idea = THA_auburn_military}
+				not = {
+					has_tech = infantry_weapons
 				}
 			}
-			traits = {rearmer}
-		}
-	}
-	high_command = {
-		THA_auburn_military = {
-			ledger = army
-			#picture = #
-			allowed = {original_tag = THA}
-			available = {
-				and = {
-					has_completed_focus = THA_S02A
-					not = {has_idea = THA_auburn_political}
-				}
+			research_bonus = {
+				infantry_weapons = 1
 			}
-			traits = {army_infantry_1}
 		}
 	}
 }

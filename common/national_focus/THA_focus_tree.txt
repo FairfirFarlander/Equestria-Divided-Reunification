@@ -59,85 +59,91 @@ focus_tree = {
 		select_effect = { country_event = THA_ES.000000 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus THA_S0000"
-			country_event = THA_ES.000002	#The Great Mourning
+			country_event = THA_ES.000004	#The Most of Little Time
 		}
 	}
-	shared_focus = {	#The Heart Breaking Cost	#The Most of Little Time
+	shared_focus = {	#Meeting with the Guard
 		id = THA_S0100
-		icon = GFX_goal_NLR_Peace_in_our_Time
+		icon = GFX_goal_bat_with_hat
 		relative_position_id = THA_S0000
-		x = 0 y = 1 cost = 3
+		x = -2 y = 1 cost = 2
 		search_filters = {}
-		ai_will_do = { factor = 40 }
+		ai_will_do = { factor = 80 }
 		prerequisite = { focus = THA_S0000 }
-		select_effect = {
-			country_event = {	#A King's Tears
-				id = THA_ES.000100
-				days = 3
-			}
-		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus THA_S0100"
-			country_event = THA_ES.000103	#Searching For Answers
+			#country_event = THA_ES.010000	#Auburn's Reassuring Word
+			add_ideas = THA_auburn_rifle_modernization
 		}
 	}
-	shared_focus = {	#A Meeting With The Guard
-		id = THA_S02A icon = GFX_goal_bat_with_hat
-		relative_position_id = THA_S0100
-		x = -2 y = 1 cost = 2 ai_will_do = {factor = 40}
-		prerequisite = {focus = THA_S0100}
+	shared_focus = {	#The Word of the Moon
+		id = THA_S0101
+		icon = GFX_goal_nightmare_moon
+		relative_position_id = THA_S0000
+		x = 0 y = 1 cost = 2
+		ai_will_do = { factor = 80 }
+		prerequisite = { focus = THA_S0000 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus THA_S02A"
+			log = "[GetDateText]: [Root.GetName]: Focus THA_S0101"
+			#country_event = THA_ES.010100	#Ancient Tactics
+			army_experience = 1
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				category = land_doctrine
+				cost_reduction = 0.99
+				uses = 1
+			}
 		}
 	}
-	shared_focus = {	#The Word of The Moon
-		id = THA_S02B icon = GFX_goal_nightmare_moon
-		relative_position_id = THA_S0100
-		x = 0 y = 1 cost = 2 ai_will_do = {factor = 40}
-		prerequisite = {focus = THA_S0100}
+	shared_focus = {	#A Look into the Records
+		id = THA_S0102
+		icon = GFX_goal_bookstack
+		relative_position_id = THA_S0000
+		x = 2 y = 1 cost = 2
+		ai_will_do = { factor = 80 }
+		prerequisite = { focus = THA_S0000 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus THA_S02B"
-		}
-	}
-	shared_focus = {	#A Look Into The Records
-		id = THA_S02C icon = GFX_goal_bookstack
-		relative_position_id = THA_S0100
-		x = 2 y = 1 cost = 2 ai_will_do = {factor = 40}
-		prerequisite = {focus = THA_S0100}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus THA_S02C"
+			log = "[GetDateText]: [Root.GetName]: Focus THA_S0102"
+			#country_event = THA_ES.010200	#An Ancient Stockpile
+			custom_effect_tooltip = THA_S0102_cett
 		}
 	}
 	shared_focus = {	#Argent’s Speech
-		id = THA_S03 icon = GFX_goal_night_supporters
-		relative_position_id = THA_S0100
-		x = 0 y = 2 cost = 2 ai_will_do = {factor = 40}
-		prerequisite = {focus = THA_S02A}
-		prerequisite = {focus = THA_S02B}
-		prerequisite = {focus = THA_S02C}
-		
+		id = THA_S0200
+		icon = GFX_goal_night_supporters
+		relative_position_id = THA_S0000
+		x = 0 y = 2 cost = 1
+		ai_will_do = { factor = 80 }
+		prerequisite = { focus = THA_S0100 }
+		prerequisite = { focus = THA_S0101 }
+		prerequisite = { focus = THA_S0102 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus THA_S03"
+			log = "[GetDateText]: [Root.GetName]: Focus THA_S0200"
+			country_event = THA_ES.020000
 		}
 	}
 	shared_focus = {	#We Will Never Yield
-		id = THA_SA04 icon = GFX_goal_generic_defence
-		relative_position_id = THA_S03
-		x = -4 y = 1 cost = 2 ai_will_do = {factor = 40}
-		prerequisite = {focus = THA_S03}
-		mutually_exclusive = {focus = THA_SD04}
+		id = THA_S0300
+		icon = GFX_goal_generic_defence
+		relative_position_id = THA_S0000
+		x = -4 y = 3 cost = 2
+		ai_will_do = { factor = 80 }
+		prerequisite = { focus = THA_S0200 }
+		mutually_exclusive = { focus = THA_S0301 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus THA_SA04"
+			log = "[GetDateText]: [Root.GetName]: Focus THA_S0300"
 		}
 	}
 	shared_focus = {	#The Mountain Will Never Fall
-		id = THA_SD04 icon = GFX_goal_fortify_the_westwall
-		relative_position_id = THA_S03
-		x = 4 y = 1 cost = 2 ai_will_do = {factor = 40}
-		prerequisite = {focus = THA_S03}
-		mutually_exclusive = {focus = THA_SA04}
+		id = THA_S0301
+		icon = GFX_goal_fortify_the_westwall
+		relative_position_id = THA_S0000
+		x = 4 y = 3 cost = 2
+		ai_will_do = { factor = 80 }
+		prerequisite = { focus = THA_S0200 }
+		mutually_exclusive = { focus = THA_S0300 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus THA_SD04"
+			log = "[GetDateText]: [Root.GetName]: Focus THA_S0301"
 		}
 	}
 #Argent True Neutral#
@@ -238,5 +244,65 @@ focus_tree = {
 		prerequisite = {focus = THA_SD04}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus THA_SD06D"
+		}
+	}
+#The Fruit of Our Eye
+	shared_focus = {	#The Council Meeets
+		id = THA_SS00
+		#icon = 
+		x = 0 y = 8 cost = 4 ai_will_do = {factor = 40}
+		select_effect = {set_temp_variable = {aaaaa = 1}}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus THA_SS00"
+		}
+	}
+	shared_focus = {	#The Thestral
+		id = THA_SS01B
+		#icon = 
+		relative_position_id = THA_SS00
+		x = -1 y = 1 cost = 2 ai_will_do = {factor = 40}
+		prerequisite = {focus = THA_SS00}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus THA_SS01B"
+		}
+	}
+	shared_focus = {	#Matters of Safety
+		id = THA_SS01C
+		#icon = 
+		relative_position_id = THA_SS00
+		x = 1 y = 1 cost = 2 ai_will_do = {factor = 40}
+		prerequisite = {focus = THA_SS00}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus THA_SS01C"
+		}
+	}
+	shared_focus = {	#Matters of Population
+		id = THA_SS02A
+		#icon = 
+		relative_position_id = THA_SS00
+		x = -2 y = 2 cost = 2 ai_will_do = {factor = 40}
+		prerequisite = {focus = THA_SS00}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus THA_SS02A"
+		}
+	}
+	shared_focus = {	#Matters of Tradition
+		id = THA_SS02B
+		#icon = 
+		relative_position_id = THA_SS00
+		x = 0 y = 2 cost = 2 ai_will_do = {factor = 40}
+		prerequisite = {focus = THA_SS00}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus THA_SS02B"
+		}
+	}
+	shared_focus = {	#Matters of Religion
+		id = THA_SS02C
+		#icon = 
+		relative_position_id = THA_SS00
+		x = 2 y = 2 cost = 2 ai_will_do = {factor = 40}
+		prerequisite = {focus = THA_SS00}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus THA_SS02C"
 		}
 	}

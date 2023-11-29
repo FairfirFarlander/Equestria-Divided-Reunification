@@ -22,12 +22,15 @@ characters = {
 		}
 		field_marshal = {
 			desc = THA_aend_commander_desc
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			traits = { thestral_race_trait }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 3
+			traits = {
+				thestral_race_trait
+				bleeding_heart
+			}
 		}
 	}
 	THA_auburn_peak = {
@@ -48,17 +51,28 @@ characters = {
 		}
 		corps_commander = {
 			desc = THA_apeak_commander_desc
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			traits = { thestral_race_trait }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 2
+			traits = {
+				thestral_race_trait
+				brilliant_strategist
+				old_guard
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = THA_apeak_political
+			ledger = civilian
+			traits = { rearmer }
 		}
 		advisor = {
 			slot = army_chief
-			cost = 150
-			idea_token = THA_apeak_chie
+			idea_token = THA_apeak_chief
+			ledger = army
+			traits = { army_chief_old_guard }
 		}
 	}
 	THA_the_niece = {
@@ -75,9 +89,9 @@ characters = {
 			ideology = harmonic_libertarianism
 		}
 		advisor = {
+			idea_token = THA_tniece_political
 			slot = political_advisor
 			cost = 2000	#change me later
-			idea_token = THA_tniece_politician
 		}
 	}
 }

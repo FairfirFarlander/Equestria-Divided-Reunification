@@ -1,13 +1,14 @@
 capital = 30
 oob = "THA_07"
-set_stability = 0.23
+set_stability = 0.61
 set_war_support = 0.11
 add_ideas = {
+	THA_warrior_culture
+	THA_shortages
+	THA_border_crisis
 	limited_exports
 	isolation
 	agrarian_society
-	THA_Ancestor_Guidance
-	THA_Warrior_Culture_Traditions
 }
 if = {
 	limit = {has_dlc = "No Step Back"}
@@ -97,3 +98,4 @@ recruit_character = THA_argent_end
 #The first great first fruit war. Fighting for Mangoes! EEEEEEE!
 #recruit_character = THA_auburn_peak
 #recruit_character = THA_the_niece
+#Baldwin IV's birth date
