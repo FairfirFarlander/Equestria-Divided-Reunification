@@ -12,7 +12,7 @@ focus_tree = {
 	#shared_focus = EDR_N05
 	#shared_focus = EDR_A05
 	shared_focus = THA_S0000
-	shared_focus = THA_SS00
+	#shared_focus = THA_SS00
 	shared_focus = NMS_stranded
 	shared_focus = NMS_end_of_war
 	shared_focus = NMS_the_third_position
@@ -29,7 +29,7 @@ focus_tree = {
 		modifier = {
 			is_debug = yes
 			tag = THA
-			add = 2
+			add = 3
 		}
 	}
 	#shared_focus = EDR_I00
@@ -37,7 +37,7 @@ focus_tree = {
 	#shared_focus = EDR_N05
 	#shared_focus = EDR_A05
 	shared_focus = THA_S0000
-	shared_focus = THA_SS00
+	#shared_focus = THA_SS00
 	shared_focus = NMS_stranded
 	shared_focus = NMS_end_of_war
 	shared_focus = NMS_the_third_position
@@ -107,6 +107,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus THA_S0102"
 			#country_event = THA_ES.010200	#An Ancient Stockpile
 			custom_effect_tooltip = THA_S0102_cett
+			set_country_flag = THA_stockpiles_unleashed
 		}
 	}
 	shared_focus = {	#Argent’s Speech
@@ -120,7 +121,7 @@ focus_tree = {
 		prerequisite = { focus = THA_S0102 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus THA_S0200"
-			country_event = THA_ES.020000
+			#country_event = THA_ES.020000	#Argent's Speech	#Complete Later.
 		}
 	}
 	shared_focus = {	#We Will Never Yield
@@ -129,44 +130,53 @@ focus_tree = {
 		relative_position_id = THA_S0000
 		x = -4 y = 3 cost = 2
 		ai_will_do = { factor = 80 }
+		allow_branch = { always = no }
 		prerequisite = { focus = THA_S0200 }
 		mutually_exclusive = { focus = THA_S0301 }
+		bypass = {
+			has_country_flag = THA_never_yield_path
+		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus THA_S0300"
 		}
 	}
-	shared_focus = {	#The Mountain Will Never Fall
-		id = THA_S0301
-		icon = GFX_goal_fortify_the_westwall
+##Argent True Neutral Branch##
+	shared_focus = {	#Assessing The Situation	#The Mountain Will Never Fall
+		id = THA_SN0300
+		icon = GFX_goal_news
 		relative_position_id = THA_S0000
-		x = 4 y = 3 cost = 2
+		x = 0 y = 3 cost = 2
 		ai_will_do = { factor = 80 }
 		prerequisite = { focus = THA_S0200 }
 		mutually_exclusive = { focus = THA_S0300 }
+		bypass = {
+			has_country_flag = THA_never_fall_path
+		}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus THA_S0301"
+			log = "[GetDateText]: [Root.GetName]: Focus THA_SN0300"
+			add_ideas = THA_lone_mountain
 		}
 	}
-#Argent True Neutral#
-	shared_focus = {	#Let Us Assess the Situation
-		id = THA_SD05A
+	shared_focus = {	#Addressing The Lack Of Food
+		id = THA_SN0400
 		#icon = #
-		relative_position_id = THA_SD04
-		x = -3 y = 1 cost = 2 ai_will_do = {factor = 40}
-		prerequisite = {focus = THA_SD04}
+		relative_position_id = THA_SN0300
+		x = -2 y = 1 cost = 2
+		prerequisite = { focus = THA_SN0300 }
+		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus THA_SD05A"
-			add_ideas = THA_mountain_is_alone	#The Mountain is Alone
+			log = "[GetDateText]: [Root.GetName]: Focus THA_SN0400"
 		}
 	}
 	shared_focus = {	#Reinforcing The City Walls
-		id = THA_SD05B
+		id = THA_SN0401
 		#icon = #
-		relative_position_id = THA_SD04
-		x = -1 y = 1 cost = 2 ai_will_do = {factor = 40}
-		prerequisite = {focus = THA_SD04}
+		relative_position_id = THA_SN0300
+		x = 0 y = 1 cost = 2
+		prerequisite = { focus = THA_SN0300 }
+		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus THA_SD05B"
+			log = "[GetDateText]: [Root.GetName]: Focus THA_SN0401"
 			30 = {
 				add_building_construction = {
 					type = bunker level = 2 instant_build = yes province = 569
@@ -175,76 +185,90 @@ focus_tree = {
 			#event here
 		}
 	}
-	shared_focus = {	#Expanding The Workshops
-		id = THA_SD05C
+	shared_focus = {	#Villager Militias
+		id = THA_SN0402
 		#icon = #
-		relative_position_id = THA_SD04
-		x = 1 y = 1 cost = 2 ai_will_do = {factor = 40}
-		prerequisite = {focus = THA_SD04}
+		relative_position_id = THA_SN0300
+		x = 2 y = 1 cost = 2
+		prerequisite = { focus = THA_SN0300 }
+		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus THA_SD05C"
+			log = "[GetDateText]: [Root.GetName]: Focus THA_SN0402"
+			load_oob = "THA_villager_militias" #hidden_effect = {}#
+		}
+	}
+	shared_focus = {	#Expanding The Workshops
+		id = THA_SN0500
+		#icon = #
+		relative_position_id = THA_SN0300
+		x = -4 y = 2 cost = 2
+		prerequisite = { focus = THA_SN0400 }
+		prerequisite = { focus = THA_SN0401 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus THA_SN0500"
 			30 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1 instant_build = yes
+					level = 1
+					instant_build = yes
 				}
 				add_building_construction = {
 					type = industrial_complex
-					level = 1 instant_build = yes
+					level = 1
+					instant_build = yes
 				}
 			}
 		}
 	}
-	shared_focus = {	#Villager Militias
-		id = THA_SD05D
-		#icon = #
-		relative_position_id = THA_SD04
-		x = 3 y = 1 cost = 2 ai_will_do = {factor = 40}
-		prerequisite = {focus = THA_SD04}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus THA_SD05D"
-			load_oob = "THA_villager_militias" #hidden_effect = {}#
-		}
-	}
 	shared_focus = {	#Bracing For What May Come Next
-		id = THA_SD06A
+		id = THA_SN0501
 		#icon = #
-		relative_position_id = THA_SD04
-		x = -3 y = 2 cost = 2 ai_will_do = {factor = 40}
-		prerequisite = {focus = THA_SD04}
+		relative_position_id = THA_SN0300
+		x = -2 y = 2 cost = 2
+		prerequisite = { focus = THA_SN0401 }
+		prerequisite = { focus = THA_SN0402 }
+		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus THA_SD06A"
+			log = "[GetDateText]: [Root.GetName]: Focus THA_SN0501"
 		}
 	}
-	shared_focus = {	#Addressing The Lack Of Food
-		id = THA_SD06B
+	shared_focus = {	#Reinforcing the Macintosh Mountains
+		id = THA_SN0502
 		#icon = #
-		relative_position_id = THA_SD04
-		x = -1 y = 2 cost = 2 ai_will_do = {factor = 40}
-		prerequisite = {focus = THA_SD04}
+		relative_position_id = THA_SN0300
+		x = 0 y = 2 cost = 2
+		prerequisite = { focus = THA_SN0400 }
+		prerequisite = { focus = THA_SN0401 }
+		prerequisite = { focus = THA_SN0402 }
+		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus THA_SD06B"
-		}
-	}
-	shared_focus = {	#Telescopes and Binoculars
-		id = THA_SD06C
-		#icon = #
-		relative_position_id = THA_SD04
-		x = 1 y = 2 cost = 2 ai_will_do = {factor = 40}
-		prerequisite = {focus = THA_SD04}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus THA_SD06C"
+			log = "[GetDateText]: [Root.GetName]: Focus THA_SN0502"
 		}
 	}
 	shared_focus = {	#Sending Out Patrols
-		id = THA_SD06D
+		id = THA_SN0503
 		#icon = #
-		relative_position_id = THA_SD04
-		x = 3 y = 2 cost = 2 ai_will_do = {factor = 40}
-		prerequisite = {focus = THA_SD04}
+		relative_position_id = THA_SN0300
+		x = 2 y = 2 cost = 2
+		prerequisite = { focus = THA_SN0401 }
+		prerequisite = { focus = THA_SN0402 }
+		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus THA_SD06D"
+			log = "[GetDateText]: [Root.GetName]: Focus THA_SN0503"
+		}
+	}
+	shared_focus = {	#Telescopes and Binoculars
+		id = THA_SN0504
+		#icon = #
+		relative_position_id = THA_SN0300
+		x = 4 y = 2 cost = 2
+		prerequisite = { focus = THA_SN0401 }
+		prerequisite = { focus = THA_SN0402 }
+		ai_will_do = { factor = 80 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus THA_SN0504"
 		}
 	}
 #The Fruit of Our Eye

@@ -8,7 +8,7 @@ ideas = {
 			}
 		}
 		THA_shortages = {
-			picture = enlightened_education_SOL
+			picture = severe_famine
 			modifier = {
 				political_power_gain = -0.2
 				consumer_goods_factor = 0.07
@@ -17,7 +17,7 @@ ideas = {
 			}
 		}
 		THA_border_crisis = {
-			picture = enlightened_education_SOL
+			picture = pony_passport
 			modifier = {
 				stability_factor = -0.15
 				war_support_factor = -0.025
@@ -30,20 +30,6 @@ ideas = {
 				stability_factor = -0.05
 			}
 		}
-		THA_temp_infantry_bonus = {
-			allowed = {always = no}
-			available = {not = {has_tech = infantry_weapons}}
-			#picture = 
-			removal_cost = -1
-			research_bonus = {
-				infantry_weapons = 0.55
-			}
-		}
-		THA_mountain_is_alone = {
-			allowed = {always = no}
-			#picture = #
-			removal_cost = -1
-		}
 		THA_auburn_rifle_modernization = {
 			picture = CVA_zargun
 			available = {
@@ -53,6 +39,13 @@ ideas = {
 			}
 			research_bonus = {
 				infantry_weapons = 1
+			}
+		}
+		THA_lone_mountain = {
+			picture = NLR_bats1_idea
+			modifier = {
+				army_core_defence_factor = 0.02
+				ai_focus_defense_factor = 1
 			}
 		}
 	}
