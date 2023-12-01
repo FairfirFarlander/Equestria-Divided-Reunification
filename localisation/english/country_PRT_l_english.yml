@@ -15,6 +15,14 @@
   ##Leaders##
    PRT_generic_pony: "Generic Pony"
     PRT_gpony_leader_desc: "$GENR_advisor_desc$"
+   PRT_black_claw: "Black Claw"
+    PRT_bclaw_leader_desc: "$GENR_advisor_desc$"
+   PRT_calcot_greens: "Calçot Greens"
+    PRT_cgreens_leader_desc: "$GENR_advisor_desc$"
+   PRT_ocean_breeze: "Ocean Breeze"
+    PRT_obreeze_leader_desc: "$GENR_advisor_desc$"
+   PRT_sparrow_feathers: "Sparrow Feathers"
+    PRT_sfeathers_leader_desc: "$GENR_advisor_desc$"
   ##Commanders##
   ##Political Advisors##
   ##Military Advisors##

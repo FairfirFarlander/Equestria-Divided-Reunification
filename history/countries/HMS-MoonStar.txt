@@ -27,6 +27,7 @@ set_technology = {
 	pony_race = 1
 	penal_infantry = 1
 	melee_weapons = 1
+	magical_weapons = 1	#Nerf This
 	tech_support = 1
 	tech_military_police = 1
 	tech_unicorn = 1

@@ -1,47 +1,50 @@
-division_template={
-	name="Thestral Levy"
-	is_locked=yes
-	force_allow_recruiting=yes
-	priority=0
-	template_counter=3
-	regiments={
-		militia={x=0 y=0}
-		militia={x=0 y=1}
-		militia={x=0 y=2}
+division_template = {
+	name = "Thestral Levy"
+	is_locked = yes
+	force_allow_recruiting = yes
+	priority = 0
+	template_counter = 3
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
 	}
 }
-division_template={
-	name="Huscarls"
-	is_locked=yes
-	force_allow_recruiting=yes
-	template_counter=38
-	regiments={
-		infantry={x=0 y=0}	infantry={x=1 y=0}
-		infantry={x=0 y=1}
-		infantry={x=0 y=2}
+division_template = {
+	name = "Huscarls"
+	is_locked = yes
+	force_allow_recruiting = yes
+	template_counter = 38
+	regiments = {
+		infantry = { x = 0 y = 0 }	infantry = { x = 1 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
 	}
 }
-division_template={
-	name="End Guard"
-	is_locked=yes
-	force_allow_recruiting=yes
-	priority=2
-	template_counter=39
-	regiments={
-		pegasi={x=0 y=0}	pegasi={x=1 y=0}
-		pegasi={x=0 y=1}
-		pegasi={x=0 y=2}
+division_template = {
+	name = "End Guard"
+	is_locked = yes
+	force_allow_recruiting = yes
+	priority = 2
+	template_counter = 39
+	regiments = {
+		pegasi = { x = 0 y = 0 }	pegasi = { x = 1 y = 0 }
+		pegasi = { x = 0 y = 1 }
+		pegasi = { x = 0 y = 2 }
 	}
 }
-units={
-	division={	#Ayacachtli#
-		name="Praetorea Ayacachtli"
-		location=569
-		division_template="End Guard"
-		start_experience_factor=0.75
-		start_equipment_factor=0.8
-		force_equipment_variants={
-			melee_equipment_1={owner="THA" creator="THA"}
+units = {
+	division = {	#Ayacachtli#
+		name = "Praetorea Ayacachtli"
+		location = 569
+		division_template = "End Guard"
+		start_experience_factor = 0.75
+		start_equipment_factor = 0.8
+		force_equipment_variants = {
+			melee_equipment_1 = {
+				owner = "THA"
+				creator = "THA"
+			}
 		}
 	}
 }

@@ -98,8 +98,9 @@ set_popularities = {
 set_politics = { ruling_party = neutrality }
 set_country_flag = EDR_is_equestrian_breakaway
 recruit_character = THA_argent_end
+recruit_character = THA_auburn_peak
+recruit_character = THA_willow_leaf
 ###NOTES###
 #The first great first fruit war. Fighting for Mangoes! EEEEEEE!
-#recruit_character = THA_auburn_peak
 #recruit_character = THA_the_niece
 #Baldwin IV's birth date

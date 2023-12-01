@@ -15,7 +15,7 @@ set_technology = {
 	pony_race = 1
 }
 if = {
-	limit = {has_dlc = "Man the Guns"}
+	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
 		early_ship_hull_light = 1
 		early_ship_hull_cruiser = 1
@@ -33,14 +33,14 @@ if = {
 	}
 }
 if = {
-	limit = {has_dlc = "No Step Back"}
+	limit = { has_dlc = "No Step Back" }
 	add_ideas = {
 		traditionalism_academy_spirit
 		doctrinal_orthodoxy_spirit
 		disdain_for_the_digging_spirit
 	}
 	else = {
-		add_ideas = {EQS_bad_tanks}
+		add_ideas = { EQS_bad_tanks }
 	}
 }
 actually_fix_weapon_techs = yes
@@ -52,7 +52,11 @@ set_popularities = {
 	neutrality = 30
 	democratic = 41
 }
-set_politics = {ruling_party = democratic}
+set_politics = { ruling_party = democratic }
 set_country_flag = EDR_is_equestrian_breakaway
+recruit_character = PRT_black_claw
+recruit_character = PRT_calcot_greens
+recruit_character = PRT_ocean_breeze
+recruit_character = PRT_sparrow_feathers
 recruit_character = PRT_generic_pony
 ###NOTES###

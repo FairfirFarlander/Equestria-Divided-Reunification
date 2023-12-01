@@ -94,4 +94,18 @@ characters = {
 			cost = 2000	#change me later
 		}
 	}
+	THA_willow_leaf = {
+		name = THA_willow_leaf
+		gender = female
+		portraits = {
+			civilian = { small = GFX_idea_unknown_advisor6 }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = THA_wleaf_politician
+			ledger = civilian
+			available = { has_country_flag = THA_willow_recrutied }
+			traits = { smooth_talking_charmer }
+		}
+	}
 }

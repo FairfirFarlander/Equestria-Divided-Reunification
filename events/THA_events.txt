@@ -150,4 +150,18 @@ add_namespace = THA_ES
 			name = THA_ES.020000.b
 		}
 	}
+add_namespace = THA_ESN
+	country_event = {	#
+		id = THA_ESN.040100
+		title = THA_ESN.040100.t
+		desc = THA_ESN.040100.d
+		is_triggered_only = yes
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered THA_ES.040100" }
+		option = {
+			name = THA_ES.040100.a
+		}
+		option = {
+			name = THA_ES.040100.b
+		}
+	}
 	

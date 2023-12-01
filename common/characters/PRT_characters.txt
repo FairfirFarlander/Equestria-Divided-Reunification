@@ -25,4 +25,61 @@ characters = {
 			ideology = despotism
 		}
 	}
+	PRT_black_claw = {
+		name = PRT_black_claw
+		portraits = {
+			civilian = {
+				large = GFX_PRT_black_claw
+				small = GFX_PRT_black_claw_small
+			}
+		}
+		country_leader = {
+			desc = PRT_bclaw_leader_desc
+			ideology = kratokracy
+		}
+	}
+	PRT_calcot_greens = {
+		name = PRT_calcot_greens
+		portraits = {
+			civilian = {
+				large = GFX_portrait_eqs_pony_generic_19
+				small = GFX_portrait_eqs_pony_generic_19_small
+				#large = GFX_PRT_calcot_greens
+				#small = GFX_PRT_calcot_greens_small
+			}
+		}
+		country_leader = {
+			desc = PRT_cgreens_leader_desc
+			ideology = anarchist_communism
+		}
+	}
+	PRT_ocean_breeze = {
+		name = PRT_ocean_breeze
+		gender = female
+		portraits = {
+			civilian = {
+				large = GFX_portrait_eqs_pony_generic_19
+				small = GFX_portrait_eqs_pony_generic_19_small
+				#large = GFX_PRT_ocean_breeze
+				#small = GFX_PRT_ocean_breeze_small
+			}
+		}
+		country_leader = {
+			desc = PRT_obreeze_leader_desc
+			ideology = despotism
+		}
+	}
+	PRT_sparrow_feathers = {
+		name = PRT_sparrow_feathers
+		portraits = {
+			civilian = {
+				large = GFX_PRT_sparrow_feathers
+				small = GFX_PRT_sparrow_feathers_small
+			}
+		}
+		country_leader = {
+			desc = PRT_sfeathers_leader_desc
+			ideology = social_banditry
+		}
+	}
 }
