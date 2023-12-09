@@ -152,16 +152,31 @@ add_namespace = THA_ES
 	}
 add_namespace = THA_ESN
 	country_event = {	#
-		id = THA_ESN.040100
-		title = THA_ESN.040100.t
-		desc = THA_ESN.040100.d
+		id = THA_ESN.040000
+		title = THA_ESN.040000.t
+		desc = THA_ESN.040000.d
 		is_triggered_only = yes
-		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered THA_ES.040100" }
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered THA_ES.040000" }
 		option = {
-			name = THA_ES.040100.a
+			name = THA_ES.040000.a
 		}
 		option = {
-			name = THA_ES.040100.b
+			name = EDRG_ED.debug
+			trigger = { is_debug = yes }
+		}
+	}
+	country_event = {	#
+		id = THA_ESN.040000
+		title = THA_ESN.040000.t
+		desc = THA_ESN.040000.d
+		is_triggered_only = yes
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered THA_ES.040000" }
+		option = {
+			name = THA_ES.040000.a
+		}
+		option = {
+			name = EDRG_ED.debug
+			trigger = { is_debug = yes }
 		}
 	}
 	

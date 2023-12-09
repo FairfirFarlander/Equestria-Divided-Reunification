@@ -61,7 +61,7 @@ focus_tree = {
 	shared_focus = {	#The Death of an Era
 		id = EDR_P0000
 		icon = GFX_goal_EQS_TNO_chaos
-		x = 11	y = 5	cost = 8	#1.43
+		x = 11 y = 2 cost = 8	#1.43
 		ai_will_do = { factor = 4000 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0000"
@@ -72,7 +72,7 @@ focus_tree = {
 		id = EDR_P0100
 		icon = GFX_goal_EQS_TNO_meet_leaders
 		relative_position_id = EDR_P0000
-		x = -2	y = 1	cost = 8
+		x = -2 y = 1 cost = 8
 		ai_will_do = { factor = 40 }
 		prerequisite = { focus = EDR_P0000 }
 		mutually_exclusive = {
@@ -91,7 +91,7 @@ focus_tree = {
 		id = EDR_P0101
 		icon = GFX_goal_EQS_TNO_meet_nobles
 		relative_position_id = EDR_P0000
-		x = 0	y = 1	cost = 8
+		x = 0 y = 1 cost = 8
 		ai_will_do = { factor = 40 }
 		prerequisite = { focus = EDR_P0000 }
 		mutually_exclusive = {
@@ -110,7 +110,7 @@ focus_tree = {
 		id = EDR_P0102
 		icon = GFX_goal_EQS_TNO_elements
 		relative_position_id = EDR_P0000
-		x = 2	y = 1	cost = 8
+		x = 2 y = 1 cost = 8
 		ai_will_do = { factor = 40 }
 		prerequisite = { focus = EDR_P0000 }
 		mutually_exclusive = {
@@ -142,7 +142,7 @@ focus_tree = {
 		id = EDR_P0201
 		icon = GFX_goal_improve_relations_pony_pony
 		relative_position_id = EDR_P0101
-		x = 0	y = 1	cost = 8
+		x = 0 y = 1 cost = 8
 		ai_will_do = { factor = 40 }
 		prerequisite = { focus = EDR_P0101 }
 		completion_reward = {
@@ -155,7 +155,7 @@ focus_tree = {
 		id = EDR_P0202
 		icon = GFX_goal_generic_liberty_statue
 		relative_position_id = EDR_P0102
-		x = 0	y = 1	cost = 8
+		x = 0 y = 1 cost = 8
 		ai_will_do = { factor = 40 }
 		prerequisite = { focus = EDR_P0102 }
 		completion_reward = {
@@ -168,7 +168,7 @@ focus_tree = {
 		id = EDR_P0300
 		icon = GFX_goal_revolution_pony
 		relative_position_id = EDR_P0000
-		x = -3	y = 3	cost = 8
+		x = -3 y = 3 cost = 8
 		ai_will_do = { factor = 40 }
 		prerequisite = {
 			focus = EDR_P0200
@@ -223,7 +223,7 @@ focus_tree = {
 		id = EDR_P0301
 		icon = GFX_goal_EQC_fascism
 		relative_position_id = EDR_P0000
-		x = -1	y = 3	cost = 8
+		x = -1 y = 3 cost = 8
 		ai_will_do = { factor = 40 }
 		prerequisite = {
 			focus = EDR_P0200
@@ -283,7 +283,7 @@ focus_tree = {
 		id = EDR_P0302
 		icon = GFX_goal_ideology_social_conservative
 		relative_position_id = EDR_P0000
-		x = 1	y = 3	cost = 8
+		x = 1 y = 3 cost = 8
 		ai_will_do = { factor = 40 }
 		prerequisite = {
 			focus = EDR_P0200
@@ -331,7 +331,7 @@ focus_tree = {
 		id = EDR_P0303
 		icon = GFX_goal_EQS_TNO_equestria_saved
 		relative_position_id = EDR_P0000
-		x = 3	y = 3	cost = 8
+		x = 3 y = 3 cost = 8
 		ai_will_do = { factor = 40 }
 		prerequisite = {
 			focus = EDR_P0200
@@ -383,22 +383,191 @@ focus_tree = {
 			}
 		}
 	}
-	shared_focus = {	#
+	shared_focus = {	#Land Reform and Redistribution
 		id = EDR_P0400
-		#icon = 
+		icon = GFX_goal_generic_land_reform
 		relative_position_id = EDR_P0300
-		x = 0	y = 1	cost = 8
+		x = 0 y = 1 cost = 8
 		ai_will_do = { factor = 40 }
 		prerequisite = { focus = EDR_P0300 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0400"
+			add_ideas = griffon_land_reform_idea
+		}
+	}
+	shared_focus = {	#Security Through Force of Arms
+		id = EDR_P0401
+		icon = GFX_goal_generic_lau_military
+		relative_position_id = EDR_P0301
+		x = 0 y = 1 cost = 8
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_P0301 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0401"
+		}
+	}
+	shared_focus = {	#
+		id = EDR_P0402
+		#icon = 
+		relative_position_id = EDR_P0302
+		x = 0 y = 1 cost = 8
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_P0302 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0402"
+		}
+	}
+	shared_focus = {	#
+		id = EDR_P0403
+		#icon = 
+		relative_position_id = EDR_P0303
+		x = 0 y = 1 cost = 8
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_P0303 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0403"
+		}
+	}
+	shared_focus = {	#Societal Revival
+		id = EDR_P0500
+		icon = GFX_goal_socialist_infrastructure
+		relative_position_id = EDR_P0400
+		x = 0 y = 1 cost = 8
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_P0400 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0500"
+			add_timed_idea = {
+				idea = griffon_five_year_plan_idea
+				days = 1800
+			}
+		}
+	}
+	shared_focus = {	#
+		id = EDR_P0501
+		#icon = 
+		relative_position_id = EDR_P0401
+		x = 0 y = 1 cost = 8
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_P0401 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0501"
+		}
+	}
+	shared_focus = {	#
+		id = EDR_P0502
+		#icon = 
+		relative_position_id = EDR_P0402
+		x = 0 y = 1 cost = 8
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_P0402 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0502"
+		}
+	}
+	shared_focus = {	#
+		id = EDR_P0503
+		#icon = 
+		relative_position_id = EDR_P0403
+		x = 0 y = 1 cost = 8
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_P0403 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0503"
+		}
+	}
+	shared_focus = {	#Proactive Initiatives
+		id = EDR_P0600
+		icon = GFX_goal_we_can_do_it_aj
+		relative_position_id = EDR_P0500
+		x = 0 y = 1 cost = 8
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_P0500 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0600"
+			add_ideas = griffon_spread_the_revolution_idea
+		}
+	}
+	shared_focus = {	#
+		id = EDR_P0601
+		#icon = 
+		relative_position_id = EDR_P0501
+		x = 0 y = 1 cost = 8
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_P0501 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0601"
+		}
+	}
+	shared_focus = {	#
+		id = EDR_P0602
+		#icon = 
+		relative_position_id = EDR_P0502
+		x = 0 y = 1 cost = 8
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_P0502 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0602"
+		}
+	}
+	shared_focus = {	#
+		id = EDR_P0603
+		#icon = 
+		relative_position_id = EDR_P0503
+		x = 0 y = 1 cost = 8
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_P0503 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0603"
+		}
+	}
+	shared_focus = {	#
+		id = EDR_P0700
+		#icon = 
+		relative_position_id = EDR_P0200
+		x = 0 y = 5 cost = 8
+		ai_will_do = { factor = 40 }
+		prerequisite = {
+			focus = EDR_P0600
+			focus = EDR_P0601
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0700"
+		}
+	}
+	shared_focus = {	#
+		id = EDR_P0701
+		#icon = 
+		relative_position_id = EDR_P0202
+		x = 0 y = 5 cost = 8
+		ai_will_do = { factor = 40 }
+		prerequisite = {
+			focus = EDR_P0602
+			focus = EDR_P0603
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0701"
+		}
+	}
+	shared_focus = {	#
+		id = EDR_P0800
+		#icon = 
+		relative_position_id = EDR_P0201
+		x = 0 y = 6 cost = 8
+		ai_will_do = { factor = 40 }
+		prerequisite = {
+			focus = EDR_P0700
+			focus = EDR_P0701
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0800"
 		}
 	}
 #Industry Tree
 	shared_focus = {	#Acquire Industrial Tools
 		id = EDR_I00 icon = GFX_goal_generic_production
 		relative_position_id = EDR_P0000
-		x = -16 y = -1 cost = 7 ai_will_do = {factor = 40}	#x=11 y=0
+		x = 10 y = 5 cost = 7 ai_will_do = {factor = 40}	#x=11 y=0
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_I00"
 			add_tech_bonus = {
@@ -631,7 +800,7 @@ focus_tree = {
 		id = EDR_L05 icon = GFX_focus_indy_swing_the_sword
 		relative_position_id = EDR_P0000
 		x = -10
-		y = 5
+		y = 10
 		cost = 4
 		search_filters = {FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_RESEARCH}
 		ai_will_do = {factor = 40}
@@ -936,7 +1105,7 @@ focus_tree = {
 		id = EDR_N05
 		icon = GFX_goal_generic_construct_naval_dockyard
 		relative_position_id = EDR_P0000
-		x = 0	y = 5	cost = 7 
+		x = 0	y = 10	cost = 7 
 		available = { any_controlled_state_is_coastal = yes }
 		ai_will_do = { factor = 40 }
 		completion_reward = {
@@ -1167,7 +1336,7 @@ focus_tree = {
 		id = EDR_A05
 		icon = GFX_goal_generic_build_airforce
 		relative_position_id = EDR_P0000
-		x = 10	y = 5	cost = 7
+		x = 10	y = 10	cost = 7
 		search_filters = {  }
 		available = { has_tech = infantry_weapons }
 		ai_will_do = { factor = 40 }
