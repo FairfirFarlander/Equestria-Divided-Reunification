@@ -151,28 +151,242 @@ add_namespace = THA_ES
 		}
 	}
 add_namespace = THA_ESN
-	country_event = {	#
+	country_event = {	#Rationing What Little We Have
 		id = THA_ESN.040000
 		title = THA_ESN.040000.t
 		desc = THA_ESN.040000.d
 		is_triggered_only = yes
-		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered THA_ES.040000" }
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered THA_ESN.040000" }
 		option = {
-			name = THA_ES.040000.a
+			name = THA_ESN.040000.a
+			add_stability = 0.03
 		}
 		option = {
 			name = EDRG_ED.debug
 			trigger = { is_debug = yes }
 		}
 	}
-	country_event = {	#
-		id = THA_ESN.040000
-		title = THA_ESN.040000.t
-		desc = THA_ESN.040000.d
+	country_event = {	#Reinforcing The Walls
+		id = THA_ESN.040100
+		title = THA_ESN.040100.t
+		desc = THA_ESN.040100.d
 		is_triggered_only = yes
-		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered THA_ES.040000" }
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered THA_ESN.040100" }
 		option = {
-			name = THA_ES.040000.a
+			name = THA_ESN.040100.a
+			30 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 569
+					instant_build = yes
+				}
+			}
+		}
+		option = {
+			name = EDRG_ED.debug
+			trigger = { is_debug = yes }
+		}
+	}
+	country_event = {	#The Great Signal Fires
+		id = THA_ESN.050300
+		title = THA_ESN.050300.t
+		desc = THA_ESN.050300.d
+		is_triggered_only = yes
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered THA_ESN.050300" }
+		option = {
+			name = THA_ESN.050300.a
+			add_stability = 0.05
+		}
+		option = {
+			name = EDRG_ED.debug
+			trigger = { is_debug = yes }
+		}
+	}
+	country_event = {	#Requesting Aid
+		id = THA_ESN.060000
+		title = THA_ESN.060000.t
+		desc = THA_ESN.060000.d
+		is_triggered_only = yes
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered THA_ESN.060000" }
+		option = {
+			name = THA_ESN.060000.a
+			FROM = { country_event = THA_ESN.060001 }
+			set_country_flag = THA_food_imports
+			ai_chance = { base = 35 }
+		}
+		option = {
+			name = THA_ESN.060000.b
+			FROM = { country_event = THA_ESN.060002 }
+			ai_chance = { base = 65 }
+		}
+		option = {
+			name = EDRG_ED.debug
+			trigger = { is_debug = yes }
+		}
+	}
+	country_event = {	#Foreign Aid
+		id = THA_ESN.060001
+		title = THA_ESN.060001.t
+		desc = THA_ESN.060001.d
+		is_triggered_only = yes
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered THA_ESN.060001" }
+		option = {
+			name = THA_ESN.060001.a
+		}
+	}
+	country_event = {	#No Aid
+		id = THA_ESN.060002
+		title = THA_ESN.060002.t
+		desc = THA_ESN.060002.d
+		is_triggered_only = yes
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered THA_ESN.060002" }
+		option = {
+			name = THA_ESN.060002.a
+		}
+	}
+	country_event = {	#The Search Begins
+		id = THA_ESN.060100
+		title = THA_ESN.060100.t
+		desc = THA_ESN.060100.d
+		is_triggered_only = yes
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered THA_ESN.060100" }
+		option = {
+			name = THA_ESN.060100.a
+			add_manpower = -100
+			hidden_effect = {
+				country_event = {
+					id = THA_ESN.060101
+					days = 28
+					random_days = 152
+				}
+				country_event = {
+					id = THA_ESN.060102
+					days = 28
+					random_days = 152
+				}
+				country_event = {
+					id = THA_ESN.060103
+					days = 28
+					random_days = 152
+				}
+				country_event = {
+					id = THA_ESN.060104
+					days = 28
+					random_days = 152
+				}
+				country_event = {
+					id = THA_ESN.060105
+					days = 28
+					random_days = 152
+				}
+				country_event = {
+					id = THA_ESN.060106
+					days = 28
+					random_days = 152
+				}
+			}
+		}
+		option = {
+			name = EDRG_ED.debug
+			trigger = { is_debug = yes }
+		}
+	}
+	country_event = {	#The Apple of our Eye
+		id = THA_ESN.060101
+		title = THA_ESN.060101.t
+		desc = THA_ESN.060101.d
+		is_triggered_only = yes
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered THA_ESN.060101" }
+		option = {
+			name = THA_ESN.060101.a
+			30 = { add_manpower = 1000 }
+			35 = { add_manpower = 500 }
+			37 = { add_manpower = 500 }
+		}
+		option = {
+			name = EDRG_ED.debug
+			trigger = { is_debug = yes }
+		}
+	}
+	country_event = {	#Of Mares and Foals
+		id = THA_ESN.060102
+		title = THA_ESN.060102.t
+		desc = THA_ESN.060102.d
+		is_triggered_only = yes
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered THA_ESN.060102" }
+		option = {
+			name = THA_ESN.060102.a
+			30 = { add_manpower = 750 }
+			35 = { add_manpower = 500 }
+			37 = { add_manpower = 250 }
+		}
+		option = {
+			name = EDRG_ED.debug
+			trigger = { is_debug = yes }
+		}
+	}
+	country_event = {	#A Dark Night
+		id = THA_ESN.060103
+		title = THA_ESN.060103.t
+		desc = THA_ESN.060103.d
+		is_triggered_only = yes
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered THA_ESN.060103" }
+		option = {
+			name = THA_ESN.060103.a
+			17 = { add_manpower = 1000 }
+			30 = { add_manpower = 2000 }
+			35 = { add_manpower = 500 }
+			37 = { add_manpower = 500 }
+		}
+		option = {
+			name = EDRG_ED.debug
+			trigger = { is_debug = yes }
+		}
+	}
+	country_event = {	#The Shadow of the Moon
+		id = THA_ESN.060104
+		title = THA_ESN.060104.t
+		desc = THA_ESN.060104.d
+		is_triggered_only = yes
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered THA_ESN.060104" }
+		option = {
+			name = THA_ESN.060104.a
+			17 = { add_manpower = 500 }
+			35 = { add_manpower = 250 }
+		}
+		option = {
+			name = EDRG_ED.debug
+			trigger = { is_debug = yes }
+		}
+	}
+	country_event = {	#A Trot Too Far
+		id = THA_ESN.060105
+		title = THA_ESN.060105.t
+		desc = THA_ESN.060105.d
+		is_triggered_only = yes
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered THA_ESN.060105" }
+		option = {
+			name = THA_ESN.060105.a
+			30 = { add_manpower = 50 }
+		}
+		option = {
+			name = EDRG_ED.debug
+			trigger = { is_debug = yes }
+		}
+	}
+	country_event = {	#A Price Too High
+		id = THA_ESN.060106
+		title = THA_ESN.060106.t
+		desc = THA_ESN.060106.d
+		is_triggered_only = yes
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered THA_ESN.060106" }
+		option = {
+			name = THA_ESN.060106.a
+			17 = { add_manpower = 10 }
+			30 = { add_manpower = 50 }
+			35 = { add_manpower = 20 }
+			37 = { add_manpower = 20 }
 		}
 		option = {
 			name = EDRG_ED.debug

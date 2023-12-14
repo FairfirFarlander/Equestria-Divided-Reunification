@@ -166,33 +166,24 @@ focus_tree = {
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus THA_SN0400"
-			add_stability = 0.03
-			#country_event = THA_ESN.040000	#Rationing What Little We Have
+			country_event = THA_ESN.040000	#Rationing What Little We Have
 		}
 	}
 	shared_focus = {	#Reinforcing The City Walls
 		id = THA_SN0401
-		#icon = #
+		icon = GFX_goal_nested_fortifications
 		relative_position_id = THA_SN0300
 		x = 0 y = 1 cost = 2
 		prerequisite = { focus = THA_SN0300 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus THA_SN0401"
-			30 = {
-				add_building_construction = {
-					type = bunker
-					level = 2
-					province = 569
-					instant_build = yes
-				}
-			}
-			#country_event = THA_ESN.040100	#Reinforcing The Walls
+			country_event = THA_ESN.040100	#Reinforcing The Walls
 		}
 	}
 	shared_focus = {	#Villager Militias
 		id = THA_SN0402
-		#icon = #
+		icon = GFX_goal_conscription_pony
 		relative_position_id = THA_SN0300
 		x = 5 y = 1 cost = 2
 		prerequisite = { focus = THA_SN0300 }
@@ -201,6 +192,18 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus THA_SN0402"
 			custom_effect_tooltip = THA_SN0402_cett
 			hidden_effect = {
+				random_owned_controlled_state = {
+					limit = {
+						ROOT = {
+							has_full_control_of_state = PREV
+						}
+					}
+					prioritize = { 30 }
+					create_unit = {
+						division = "name = \"Ayacachtli Militia\" division_template = \"Thestral Levy\" start_experience_factor = 0.1 start_equipment_factor = 1 force_equipment_variants = { melee_equipment_0 = { owner = \"THA\" creator = \"THA\" } }"
+						owner = THA
+					}
+				}
 				random_owned_controlled_state = {
 					limit = {
 						ROOT = {
@@ -230,7 +233,7 @@ focus_tree = {
 	}
 	shared_focus = {	#Stretching What We Have Even Further
 		id = THA_SN0500
-		icon = GFX_goal_PAL_Food_Import
+		icon = GFX_goal_breadfocus
 		relative_position_id = THA_SN0300
 		x = -5 y = 2 cost = 2
 		prerequisite = { focus = THA_SN0400 }
@@ -245,7 +248,7 @@ focus_tree = {
 	}
 	shared_focus = {	#Expanding The Workshops
 		id = THA_SN0501
-		#icon = #
+		icon = GFX_goal_factory_complex
 		relative_position_id = THA_SN0300
 		x = -2 y = 2 cost = 2
 		prerequisite = { focus = THA_SN0401 }
@@ -253,7 +256,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus THA_SN0501"
 			30 = {
-				#add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 1
@@ -269,7 +272,7 @@ focus_tree = {
 	}
 	shared_focus = {	#Reinforcing the Macintosh Mountains
 		id = THA_SN0502
-		#icon = #
+		icon = GFX_fortification_gen
 		relative_position_id = THA_SN0300
 		x = 0 y = 2 cost = 2
 		prerequisite = { focus = THA_SN0401 }
@@ -288,20 +291,19 @@ focus_tree = {
 	}
 	shared_focus = {	#The Great Signal Fires
 		id = THA_SN0503
-		#icon = #
+		icon = GFX_goal_fire
 		relative_position_id = THA_SN0300
 		x = 2 y = 2 cost = 2
 		prerequisite = { focus = THA_SN0401 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus THA_SN0503"
-			add_stability = 0.05
-			#country_event = THA_ESN.050300	#The Great Signal Fires
+			country_event = THA_ESN.050300	#The Great Signal Fires
 		}
 	}
 	shared_focus = {	#Sending Out Patrols
 		id = THA_SN0504
-		#icon = #
+		icon = GFX_mountaineer_gen
 		relative_position_id = THA_SN0300
 		x = 5 y = 2 cost = 2
 		prerequisite = { focus = THA_SN0402 }
@@ -335,14 +337,29 @@ focus_tree = {
 	}
 	shared_focus = {	#In Our Time of Desperation
 		id = THA_SN0600
-		#icon = #
+		#icon = GFX_SF_food
 		relative_position_id = THA_SN0300
 		x = -4 y = 3 cost = 2
 		prerequisite = { focus = THA_SN0500 }
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus THA_SN0600"
-			#country_event = THA_ESN.060000	#Requesting Aid
+			every_country = {
+				limit = {
+					OR = {
+						original_tag = BCK
+						original_tag = HEB
+						original_tag = STB
+						original_tag = HWG
+					}
+				}
+				country_event = {
+					id = THA_ESN.060000	#Requesting Aid
+					days = 4
+					random_days = 17
+				}
+			}
+			custom_effect_tooltip = THA_SN0600_cett
 		}
 	}
 	shared_focus = {	#The Displacement of Our Kind
@@ -355,13 +372,12 @@ focus_tree = {
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus THA_SN0601"
-			add_manpower = -100
-			#country_event = THA_ESN.060100	#Some Have Been Captured
+			country_event = THA_ESN.060100	#The Search Begins
 		}
 	}
 	shared_focus = {	#Dealing With Our Bandit Problem
 		id = THA_SN0602
-		#icon = #
+		#icon = GFX_goal_step_on_skull
 		relative_position_id = THA_SN0300
 		x = 0 y = 3 cost = 2
 		prerequisite = {

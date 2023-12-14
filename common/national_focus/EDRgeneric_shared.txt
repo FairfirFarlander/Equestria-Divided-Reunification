@@ -404,6 +404,7 @@ focus_tree = {
 		prerequisite = { focus = EDR_P0301 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0401"
+			add_ideas = griffon_nationalist_thought_idea
 		}
 	}
 	shared_focus = {	#

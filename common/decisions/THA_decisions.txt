@@ -1,214 +1,254 @@
-THA_the_king={
-	THA_comfort_fallen={		#Comfort the Fallen
-		#icon=
-		fire_only_once=yes
-		days_remove=30
-		complete_effect={
-			log="[GetDateText]: [Root.GetName]: decision THA_comfort_fallen"
-			country_event=THAact01.04
+THA_famine_and_food = {
+	THA_famine_progress = {	#Of Meals and Mangos
+		icon = GFX_decision_safe
+		available = {
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = THA_famine_progress_cttt
+					owns_state = 84
+				}
+				has_country_flag = THA_BCK_food_arrangement
+			}
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision THA_famine_progress"
+		}
+	}
+	THA_import_food = {	#Of Meals and Mangos
+		icon = GFX_decision_wheat_bundle
+		targets = { BCK HEB STB HWG }
+		target_trigger = {
+			original_tag = THA
+			OR = {
+				is_debug = yes
+				FROM = { has_country_flag = THA_food_imports }
+			}
+		}
+		targets_dynamic = yes
+		available = {
+			if = {
+				limit = { is_debug = yes }
+			}
+			else = {
+				FROM = { has_country_flag = THA_food_imports }
+			}
+		}
+		fire_only_once = yes
+		days_remove = 30
+		modifier = { consumer_goods_expected_value = 0.05 }
+		complete_effect = { log = "[GetDateText]: [Root.GetName]: decision selected THA_import_food" }
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision completed THA_import_food"
+			custom_effect_tooltip = THA_import_food_cett
+			add_to_variable = { THA_famine_counter = 1 }
+			clamp_variable = {
+				var = THA_famine_counter
+				min = 0
+				max = 3
+			}
 		}
 	}
 }
-EDRG_oob={
-	THA_Ecarl={	#Expand Huscarl Size
-		#icon=
-		visible={
-			tag=THA
-			check_variable={THA_carl_cost<9}
+EDRG_oob = {
+	THA_Ecarl = {	#Expand Huscarl Size
+		#icon =
+		visible = {
+			tag = THA
+			check_variable = { THA_carl_cost < 9 }
 		}
-		available={
-			check_variable={THA_carl_cost<9}
+		available = {
+			check_variable = { THA_carl_cost < 9 }
 		}
-		custom_cost_trigger={has_army_experience>4}
-		custom_cost_text=THA_Ecarl_req
-		#days_re_enable=60
-		ai_will_do={
-			base=3
-			modifier={
-				add=-3
-				check_variable={THA_carl_cap>5}
+		custom_cost_trigger = { has_army_experience > 4 }
+		custom_cost_text = THA_Ecarl_req
+		#days_re_enable = 60
+		ai_will_do = {
+			base = 3
+			modifier = {
+				add = -3
+				check_variable = { THA_carl_cap > 5 }
 			}
-			modifier={
-				add=4
-				check_variable={THA_carl_cap>5}
-				check_variable={THA_carl_cap<10}
-				OR={
-					has_war_with=CUL
-					has_war_with=HEB
-					has_war_with=HEF
-					has_war_with=HMS
-					has_war_with=HSW
-					has_war_with=HWG
+			modifier = {
+				add = 4
+				check_variable = { THA_carl_cap > 5 }
+				check_variable = { THA_carl_cap < 10 }
+				OR = {
+					has_war_with = CUL
+					has_war_with = HEB
+					has_war_with = HEF
+					has_war_with = HMS
+					has_war_with = HSW
+					has_war_with = HWG
 				}
 			}
 		}
-		complete_effect={
-			log="[GetDateText]: [Root.GetName]: decision THA_Ecarl"
-			add_to_variable={
-				var=THA_carl_cost
-				value=1
-				tooltip=THA_carl_cost_add
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision THA_Ecarl"
+			add_to_variable = {
+				var = THA_carl_cost
+				value = 1
+				tooltip = THA_carl_cost_add
 			}
-			hidden_effect={
-				army_experience=-5
-				if={
-					limit={
-						check_variable={THA_carl_cost<7}
+			hidden_effect = {
+				army_experience = -5
+				if = {
+					limit = {
+						check_variable = { THA_carl_cost < 7 }
 					}
-					add_units_to_division_template={
-						template_name="Huscarls"
-						regiments={infantry=1}
+					add_units_to_division_template = {
+						template_name = "Huscarls"
+						regiments = { infantry = 1 }
 					}
 				}
-				if={
-					limit={
-						check_variable={THA_carl_cost>6}
-						check_variable={THA_carl_cost<10}
+				if = {
+					limit = {
+						check_variable = { THA_carl_cost > 6 }
+						check_variable = { THA_carl_cost < 10 }
 					}
-					add_units_to_division_template={
-						template_name="Huscarls"
-						regiments={infantry=2}
+					add_units_to_division_template = {
+						template_name = "Huscarls"
+						regiments = { infantry = 2 }
 					}
 				}
 			}
 		}
 	}
-	THA_Ecarl_art={	#Enlargen Huscarl with Artillery
-		#icon=
-		visible={
-			tag=THA
-			NOT={has_country_flag=THA_Ecarl_art_added}
+	THA_Ecarl_art = {	#Enlargen Huscarl with Artillery
+		#icon = 
+		visible = {
+			tag = THA
+			NOT = { has_country_flag = THA_Ecarl_art_added }
 		}
-		available={
-			tag=THA
-			NOT={has_country_flag=THA_Ecarl_art_added}
+		available = {
+			tag = THA
+			NOT = { has_country_flag = THA_Ecarl_art_added }
 		}
-		custom_cost_trigger={has_army_experience>4}
-		custom_cost_text=THA_Ecarl_art_req
-		days_re_enable=30
-		fire_only_once=yes
-		ai_will_do={
-			base=0
-			modifier={
-				add=2
+		custom_cost_trigger = { has_army_experience > 4 }
+		custom_cost_text = THA_Ecarl_art_req
+		days_re_enable = 30
+		fire_only_once = yes
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 2
 				num_of_military_factories>6
 			}
 		}
-		complete_effect={
-			log="[GetDateText]: [Root.GetName]: decision THA_Ecarl_art"
-			custom_effect_tooltip=THA_Ecarl_art_tooltip
-			set_country_flag=THA_Ecarl_art_added
-			hidden_effect={
-				add_units_to_division_template={
-					template_name="Huscarls"
-					regiments={artillery_brigade=0}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision THA_Ecarl_art"
+			custom_effect_tooltip = THA_Ecarl_art_tooltip
+			set_country_flag = THA_Ecarl_art_added
+			hidden_effect = {
+				add_units_to_division_template = {
+					template_name = "Huscarls"
+					regiments = { artillery_brigade = 0 }
 				}
 			}
 		}
 	}
-	THA_Eegrd={	#Expand End Guard Size
-		#icon=
-		visible={
-			tag=THA
-			check_variable={THA_egrd_cost<6}
+	THA_Eegrd = {	#Expand End Guard Size
+		#icon = 
+		visible = {
+			tag = THA
+			check_variable = { THA_egrd_cost < 6 }
 		}
-		available={
-			tag=THA
-			check_variable={THA_egrd_cost<6}
+		available = {
+			tag = THA
+			check_variable = { THA_egrd_cost < 6 }
 		}
-		custom_cost_trigger={has_army_experience>4}
-		custom_cost_text=THA_Eegrd_req
-		#days_re_enable=60
-		ai_will_do={
-			base=3
-			modifier={
-				add=-3
-				check_variable={THA_egrd_cap>5}
+		custom_cost_trigger = { has_army_experience > 4 }
+		custom_cost_text = THA_Eegrd_req
+		#days_re_enable = 60
+		ai_will_do = {
+			base = 3
+			modifier = {
+				add = -3
+				check_variable = { THA_egrd_cap > 5 }
 			}
 		}
-		complete_effect={
-			log="[GetDateText]: [Root.GetName]: decision THA_Eegrd"
-			add_to_variable={
-				var=THA_egrd_cost
-				value=1
-				tooltip=THA_egrd_cost_add
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision THA_Eegrd"
+			add_to_variable = {
+				var = THA_egrd_cost
+				value = 1
+				tooltip = THA_egrd_cost_add
 			}
-			hidden_effect={
-				army_experience=-5
-				if={
-					limit={
-						check_variable={THA_egrd_cost<7}
+			hidden_effect = {
+				army_experience = -5
+				if = {
+					limit = {
+						check_variable = { THA_egrd_cost < 7 }
 					}
-					add_units_to_division_template={
-						template_name="End Guard"
-						regiments={pegasi=1}
+					add_units_to_division_template = {
+						template_name = "End Guard"
+						regiments = { pegasi = 1 }
 					}
 				}
 			}
 		}
 	}
-	THA_Eegrd_supart={	#Enlargen End Guard with Support Artillery
-		#icon=
-		visible={
-			tag=THA
-			NOT={has_country_flag=THA_Eegrd_supart_added}
+	THA_Eegrd_supart = {	#Enlargen End Guard with Support Artillery
+		#icon = 
+		visible = {
+			tag = THA
+			NOT = { has_country_flag = THA_Eegrd_supart_added }
 		}
-		available={
-			tag=THA
-			NOT={has_country_flag=THA_Eegrd_supart_added}
+		available = {
+			tag = THA
+			NOT = { has_country_flag = THA_Eegrd_supart_added }
 		}
-		custom_cost_trigger={has_army_experience>4}
-		custom_cost_text=THA_Eegrd_supart_req
-		days_re_enable=30
-		fire_only_once=yes
-		ai_will_do={
-			base=0
-			modifier={
-				add=2
-				num_of_military_factories>6
+		custom_cost_trigger = { has_army_experience > 4 }
+		custom_cost_text = THA_Eegrd_supart_req
+		days_re_enable = 30
+		fire_only_once = yes
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 2
+				num_of_military_factories > 6
 			}
 		}
-		complete_effect={
-			log="[GetDateText]: [Root.GetName]: decision THA_Eegrd_supart"
-			custom_effect_tooltip=THA_Eegrd_supart_tooltip
-			set_country_flag=THA_Eegrd_supart_added
-			hidden_effect={
-				add_units_to_division_template={
-					template_name="End Guard"
-					support={artillery=0}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision THA_Eegrd_supart"
+			custom_effect_tooltip = THA_Eegrd_supart_tooltip
+			set_country_flag = THA_Eegrd_supart_added
+			hidden_effect = {
+				add_units_to_division_template = {
+					template_name = "End Guard"
+					support = { artillery = 0 }
 				}
 			}
 		}
 	}
-	THA_Eegrd_motart={	#Enlargen End Guard with Motorized Artillery
-		#icon=
-		visible={
-			tag=THA
-			NOT={has_country_flag=THA_Eegrd_motart_added}
+	THA_Eegrd_motart = {	#Enlargen End Guard with Motorized Artillery
+		#icon = 
+		visible = {
+			tag = THA
+			NOT = { has_country_flag = THA_Eegrd_motart_added }
 		}
-		available={
-			tag=THA
-			NOT={has_country_flag=THA_Eegrd_motart_added}
+		available = {
+			tag = THA
+			NOT = { has_country_flag = THA_Eegrd_motart_added }
 		}
-		custom_cost_trigger={has_army_experience>4}
-		custom_cost_text=THA_Eegrd_motart_req
-		days_re_enable=30
-		fire_only_once=yes
-		ai_will_do={
-			base=0
-			modifier={
-				add=2
-				num_of_military_factories>6
+		custom_cost_trigger = { has_army_experience > 4 }
+		custom_cost_text = THA_Eegrd_motart_req
+		days_re_enable = 30
+		fire_only_once = yes
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 2
+				num_of_military_factories > 6
 			}
 		}
-		complete_effect={
-			log="[GetDateText]: [Root.GetName]: decision THA_Eegrd_motart"
-			custom_effect_tooltip=THA_Eegrd_motart_tooltip
-			set_country_flag=THA_Eegrd_motart_added
-			hidden_effect={
-				add_units_to_division_template={
-					template_name="End Guard"
-					regiments={mot_artillery_brigade=0}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision THA_Eegrd_motart"
+			custom_effect_tooltip = THA_Eegrd_motart_tooltip
+			set_country_flag = THA_Eegrd_motart_added
+			hidden_effect = {
+				add_units_to_division_template = {
+					template_name = "End Guard"
+					regiments = { mot_artillery_brigade = 0 }
 				}
 			}
 		}

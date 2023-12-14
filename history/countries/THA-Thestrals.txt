@@ -77,6 +77,12 @@ set_variable = { THA.THA_westhold_local_supplies = 1 }
 set_variable = { THA.THA_westhold_building_slots = 1 }
 set_variable = { THA.THA_holds_local_supplies = 5 }
 set_variable = { THA.THA_holds_building_slots = 0 }
+set_variable = { THA_famine_counter = 0 }
+clamp_variable = {
+	var = THA_famine_counter
+	min = 0
+	max = 3
+}
 17 = {	#Badlands
 	add_dynamic_modifier = { modifier = THA_holds }
 }

@@ -1,6 +1,10 @@
-THA_the_king={
-	#icon=#
-	priority=100
-	allowed={tag=THA}
-	visible={has_country_flag=THA_the_king_speaks}
+THA_famine_and_food = {
+	icon = GFX_decision_HIE_tree
+	priority = 3
+	allowed = { tag = THA }
+	visible = {
+		OR = {
+			is_debug = yes
+		}
+	}
 }

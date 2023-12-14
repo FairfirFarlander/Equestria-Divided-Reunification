@@ -1,0 +1,28 @@
+#THA_famine_progress
+	defined_text = {
+		name = THA_famine_progress
+		text = {
+			trigger = {
+				check_variable = { THA_famine_counter = 0 }
+			}
+			localization_key = THA_famine_progress_0
+		}
+		text = {
+			trigger = {
+				check_variable = { THA_famine_counter = 1 }
+			}
+			localization_key = THA_famine_progress_1
+		}
+		text = {
+			trigger = {
+				check_variable = { THA_famine_counter = 2 }
+			}
+			localization_key = THA_famine_progress_2
+		}
+		text = {
+			trigger = {
+				check_variable = { THA_famine_counter = 3 }
+			}
+			localization_key = THA_famine_progress_3
+		}
+	}
