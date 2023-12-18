@@ -397,7 +397,7 @@ focus_tree = {
 	}
 	shared_focus = {	#Security Through Force of Arms
 		id = EDR_P0401
-		icon = GFX_goal_generic_lau_military
+		icon = GFX_goal_national_arsenal
 		relative_position_id = EDR_P0301
 		x = 0 y = 1 cost = 8
 		ai_will_do = { factor = 40 }
@@ -407,15 +407,16 @@ focus_tree = {
 			add_ideas = griffon_nationalist_thought_idea
 		}
 	}
-	shared_focus = {	#
+	shared_focus = {	#The Rock of Foundation
 		id = EDR_P0402
-		#icon = 
+		icon = GFX_fortification_gen
 		relative_position_id = EDR_P0302
 		x = 0 y = 1 cost = 8
 		ai_will_do = { factor = 40 }
 		prerequisite = { focus = EDR_P0302 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0402"
+			add_ideas = griffon_defend_the_tradition_idea
 		}
 	}
 	shared_focus = {	#
@@ -427,6 +428,7 @@ focus_tree = {
 		prerequisite = { focus = EDR_P0303 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0403"
+			add_ideas = griffon_carry_the_torch_idea
 		}
 	}
 	shared_focus = {	#Societal Revival
@@ -444,15 +446,16 @@ focus_tree = {
 			}
 		}
 	}
-	shared_focus = {	#
+	shared_focus = {	#The Guns of Sovereignty
 		id = EDR_P0501
-		#icon = 
+		icon = GFX_goal_generic_lau_military
 		relative_position_id = EDR_P0401
 		x = 0 y = 1 cost = 8
 		ai_will_do = { factor = 40 }
 		prerequisite = { focus = EDR_P0401 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0501"
+			add_ideas = griffon_gear_for_war_idea
 		}
 	}
 	shared_focus = {	#
@@ -464,6 +467,7 @@ focus_tree = {
 		prerequisite = { focus = EDR_P0402 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0502"
+			add_ideas = griffon_home_guard_idea
 		}
 	}
 	shared_focus = {	#
@@ -475,6 +479,7 @@ focus_tree = {
 		prerequisite = { focus = EDR_P0403 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0503"
+			add_ideas = griffon_words_not_swords_idea
 		}
 	}
 	shared_focus = {	#Proactive Initiatives
@@ -489,15 +494,16 @@ focus_tree = {
 			add_ideas = griffon_spread_the_revolution_idea
 		}
 	}
-	shared_focus = {	#
+	shared_focus = {	#A Call to Arms
 		id = EDR_P0601
-		#icon = 
+		icon = GFX_goal_generic_pony_soldier
 		relative_position_id = EDR_P0501
 		x = 0 y = 1 cost = 8
 		ai_will_do = { factor = 40 }
 		prerequisite = { focus = EDR_P0501 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0601"
+			add_ideas = griffon_militarization_idea
 		}
 	}
 	shared_focus = {	#
@@ -509,6 +515,7 @@ focus_tree = {
 		prerequisite = { focus = EDR_P0502 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0602"
+			add_ideas = griffon_leading_the_way_idea
 		}
 	}
 	shared_focus = {	#
@@ -520,11 +527,12 @@ focus_tree = {
 		prerequisite = { focus = EDR_P0503 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0603"
+			add_ideas = griffon_common_good_idea
 		}
 	}
-	shared_focus = {	#
+	shared_focus = {	#A Bulwark in the Dark
 		id = EDR_P0700
-		#icon = 
+		icon = GFX_goal_generic_pony_volunteer
 		relative_position_id = EDR_P0200
 		x = 0 y = 5 cost = 8
 		ai_will_do = { factor = 40 }
@@ -534,6 +542,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0700"
+			add_ideas = griffon_fight_to_the_last_idea
 		}
 	}
 	shared_focus = {	#
@@ -548,6 +557,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0701"
+			add_ideas = griffon_stronger_together_idea
 		}
 	}
 	shared_focus = {	#
@@ -562,6 +572,51 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0800"
+			add_war_support = 0.05
+			if = {
+				limit = { has_idea = feudalism }
+				remove_ideas = feudalism
+			}
+			if = {
+				limit = { is_ai = no }
+				set_rule = { can_create_factions = yes }
+			}
+		}
+	}
+	shared_focus = {	#
+		id = EDR_P0900
+		#icon = 
+		relative_position_id = EDR_P0800
+		x = -2 y = 1 cost = 8
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_P0800 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0900"
+			add_ideas = griffon_expansionist_focus_idea
+		}
+	}
+	shared_focus = {	#
+		id = EDR_P0901
+		#icon = 
+		relative_position_id = EDR_P0800
+		x = 0 y = 1 cost = 8
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_P0800 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0901"
+			add_political_power = 150
+		}
+	}
+	shared_focus = {	#
+		id = EDR_P0902
+		#icon = 
+		relative_position_id = EDR_P0800
+		x = 2 y = 1 cost = 8
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_P0800 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0902"
+			add_ideas = neutrality_idea
 		}
 	}
 #Industry Tree
