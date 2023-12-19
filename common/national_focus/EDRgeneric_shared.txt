@@ -57,11 +57,12 @@ focus_tree = {
 		y = 60
 	}
 }
-#Generic Equestrian Seperatist Tree
+###Generic Equestrian Separatist Tree###
+##Political Branch
 	shared_focus = {	#The Death of an Era
 		id = EDR_P0000
 		icon = GFX_goal_EQS_TNO_chaos
-		x = 11 y = 2 cost = 8	#1.43
+		x = 11 y = 12 cost = 8	#1.43
 		ai_will_do = { factor = 4000 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0000"
@@ -419,9 +420,9 @@ focus_tree = {
 			add_ideas = griffon_defend_the_tradition_idea
 		}
 	}
-	shared_focus = {	#
+	shared_focus = {	#Uncovering the Spark
 		id = EDR_P0403
-		#icon = 
+		icon = GFX_goal_unicorn_academy
 		relative_position_id = EDR_P0303
 		x = 0 y = 1 cost = 8
 		ai_will_do = { factor = 40 }
@@ -458,9 +459,9 @@ focus_tree = {
 			add_ideas = griffon_gear_for_war_idea
 		}
 	}
-	shared_focus = {	#
+	shared_focus = {	#Every Hearth a Hoof
 		id = EDR_P0502
-		#icon = 
+		icon = GFX_goal_generic_pony_volunteer
 		relative_position_id = EDR_P0402
 		x = 0 y = 1 cost = 8
 		ai_will_do = { factor = 40 }
@@ -470,9 +471,9 @@ focus_tree = {
 			add_ideas = griffon_home_guard_idea
 		}
 	}
-	shared_focus = {	#
+	shared_focus = {	#Lessons of Cooperation
 		id = EDR_P0503
-		#icon = 
+		icon = GFX_goal_improve_relations_pony_pony
 		relative_position_id = EDR_P0403
 		x = 0 y = 1 cost = 8
 		ai_will_do = { factor = 40 }
@@ -506,9 +507,9 @@ focus_tree = {
 			add_ideas = griffon_militarization_idea
 		}
 	}
-	shared_focus = {	#
+	shared_focus = {	#For Home and Country
 		id = EDR_P0602
-		#icon = 
+		icon = GFX_goal_derpy_conscription
 		relative_position_id = EDR_P0502
 		x = 0 y = 1 cost = 8
 		ai_will_do = { factor = 40 }
@@ -518,9 +519,9 @@ focus_tree = {
 			add_ideas = griffon_leading_the_way_idea
 		}
 	}
-	shared_focus = {	#
+	shared_focus = {	#Lost, Not Forgotten
 		id = EDR_P0603
-		#icon = 
+		icon = GFX_goal_generic_liberty_statue
 		relative_position_id = EDR_P0503
 		x = 0 y = 1 cost = 8
 		ai_will_do = { factor = 40 }
@@ -545,9 +546,9 @@ focus_tree = {
 			add_ideas = griffon_fight_to_the_last_idea
 		}
 	}
-	shared_focus = {	#
+	shared_focus = {	#A Stand Against Chaos
 		id = EDR_P0701
-		#icon = 
+		icon = GFX_goal_generic_ponykind
 		relative_position_id = EDR_P0202
 		x = 0 y = 5 cost = 8
 		ai_will_do = { factor = 40 }
@@ -560,16 +561,17 @@ focus_tree = {
 			add_ideas = griffon_stronger_together_idea
 		}
 	}
+##Diplomatic Branch##
 	shared_focus = {	#
 		id = EDR_P0800
 		#icon = 
 		relative_position_id = EDR_P0201
-		x = 0 y = 6 cost = 8
+		x = 0 y = 7 cost = 8
 		ai_will_do = { factor = 40 }
-		prerequisite = {
-			focus = EDR_P0700
-			focus = EDR_P0701
-		}
+		#prerequisite = {
+		#	focus = EDR_P0700
+		#	focus = EDR_P0701
+		#}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_P0800"
 			add_war_support = 0.05
@@ -619,11 +621,11 @@ focus_tree = {
 			add_ideas = neutrality_idea
 		}
 	}
-#Industry Tree
+##Industrial Branch##
 	shared_focus = {	#Acquire Industrial Tools
 		id = EDR_I00 icon = GFX_goal_generic_production
 		relative_position_id = EDR_P0000
-		x = 10 y = 5 cost = 7 ai_will_do = {factor = 40}	#x=11 y=0
+		x = 10 y = 2 cost = 7 ai_will_do = {factor = 40}	#x=11 y=0
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_I00"
 			add_tech_bonus = {
@@ -851,12 +853,12 @@ focus_tree = {
 			add_research_slot = 1
 		}
 	}
-#Land Tree
+##Land (Army) Military Branch##
 	shared_focus = {	#Recover Lost Weaponry
 		id = EDR_L05 icon = GFX_focus_indy_swing_the_sword
 		relative_position_id = EDR_P0000
 		x = -10
-		y = 10
+		y = 7
 		cost = 4
 		search_filters = {FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_RESEARCH}
 		ai_will_do = {factor = 40}
@@ -1156,12 +1158,12 @@ focus_tree = {
 			}
 		}
 	}
-#Navy Tree
+##Navy Branch##
 	shared_focus = {	#Establish the Navy
 		id = EDR_N05
 		icon = GFX_goal_generic_construct_naval_dockyard
 		relative_position_id = EDR_P0000
-		x = 0	y = 10	cost = 7 
+		x = 0	y = 7	cost = 7 
 		available = { any_controlled_state_is_coastal = yes }
 		ai_will_do = { factor = 40 }
 		completion_reward = {
@@ -1387,12 +1389,12 @@ focus_tree = {
 			ROOT = {add_ideas = EDR_navy_command}
 		}
 	}
-#Airforce Tree{
+##Airforce Branch##
 	shared_focus = {	#Establish the Army Airforce
 		id = EDR_A05
 		icon = GFX_goal_generic_build_airforce
 		relative_position_id = EDR_P0000
-		x = 10	y = 10	cost = 7
+		x = 10	y = 7	cost = 7
 		search_filters = {  }
 		available = { has_tech = infantry_weapons }
 		ai_will_do = { factor = 40 }
