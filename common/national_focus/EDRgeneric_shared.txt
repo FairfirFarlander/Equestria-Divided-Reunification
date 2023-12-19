@@ -11,7 +11,7 @@ focus_tree = {
 		x = 60
 		y = -400
 	}
-	shared_focus = EDR_I00
+	shared_focus = EDR_I0200
 	shared_focus = EDR_L05
 	shared_focus = EDR_N05
 	shared_focus = EDR_N06B
@@ -33,7 +33,7 @@ focus_tree = {
 		y = 0
 	}	#2130 930, 2140 940
 	shared_focus = EDR_P0000
-	shared_focus = EDR_I00
+	shared_focus = EDR_I0200
 	shared_focus = EDR_L05
 	shared_focus = EDR_N05
 	shared_focus = EDR_N06B
@@ -623,110 +623,136 @@ focus_tree = {
 	}
 ##Industrial Branch##
 	shared_focus = {	#Acquire Industrial Tools
-		id = EDR_I00 icon = GFX_goal_generic_production
+		id = EDR_I0200
+		icon = GFX_goal_generic_production
 		relative_position_id = EDR_P0000
-		x = 10 y = 2 cost = 7 ai_will_do = {factor = 40}	#x=11 y=0
+		x = 10 y = 2 cost = 7
+		ai_will_do = { factor = 40 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus EDR_I00"
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_I0200"
 			add_tech_bonus = {
 				name = industrial_bonus
-				bonus = 0.75 uses = 1
 				category = industry
+				bonus = 0.75
+				uses = 1
 			}
 		}
 	}
 	shared_focus = {	#Increase Local Arms Production
-		id = EDR_I01A icon = GFX_goal_pony_labour
-		relative_position_id = EDR_I00
-		x = -2 y = 1 cost = 7 ai_will_do = {factor = 40}
-		prerequisite = {focus = EDR_I00}
+		id = EDR_I0300
+		icon = GFX_goal_pony_labour
+		relative_position_id = EDR_I0200
+		x = -2 y = 1 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_I0200 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus EDR_I01A"
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_I0300"
 			increase_society_development_gradually_with_tt = yes
 			one_random_arms_factory = yes
 		}
 	}
 	shared_focus = {	#Improve Inter-State Infrastructure
-		id = EDR_I01B icon = GFX_goal_generic_construct_infrastructure
-		relative_position_id = EDR_I00
-		x = 0 y = 1 cost = 7 ai_will_do = {factor = 40}
-		prerequisite = {focus = EDR_I00}
+		id = EDR_I0301
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = EDR_I0200
+		x = 0 y = 1 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_I0200 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus EDR_I01B"
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_I0301"
 			increase_society_development_gradually_with_tt = yes
 			one_random_infrastructure = yes
 			one_random_infrastructure = yes
 		}
 	}
 	shared_focus = {	#Contract Civilian Companies
-		id = EDR_I01C icon = GFX_goal_bag_of_money_pony
-		relative_position_id = EDR_I00
-		x = 2 y = 1 cost = 7 ai_will_do = {factor = 40}
-		prerequisite = {focus = EDR_I00}
+		id = EDR_I0302
+		icon = GFX_goal_bag_of_money_pony
+		relative_position_id = EDR_I0200
+		x = 2 y = 1 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_I0200 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus EDR_I01C"
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_I0302"
 			increase_society_development_gradually_with_tt = yes
 			one_random_industrial_complex = yes
 		}
 	}
 	shared_focus = {	#Construct A Shipyard
-		id = EDR_I02A icon = GFX_goal_generic_naval_industry
-		relative_position_id = EDR_I01A
-		x = -1 y = 1 cost = 7 ai_will_do = {factor = 40}
-		prerequisite = {focus = EDR_I01A}
-		available = {any_controlled_state_is_coastal = yes}
+		id = EDR_I0400 icon = GFX_goal_generic_naval_industry
+		relative_position_id = EDR_I0300
+		x = -1 y = 1 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_I0300 }
+		available = { any_controlled_state_is_coastal = yes }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus EDR_I02A"
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_I0400"
 			one_random_dockyard = yes
 		}
 	}
 	shared_focus = {	#Oil Extraction and Sythetics Research
-		id = EDR_I02B icon = GFX_goal_oil_derrick
-		relative_position_id = EDR_I00
-		x = -1 y = 2 cost = 7 ai_will_do = {factor = 40}
-		prerequisite = {focus = EDR_I01A focus = EDR_I01B}
+		id = EDR_I0401
+		icon = GFX_goal_oil_derrick
+		relative_position_id = EDR_I0200
+		x = -1 y = 2 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = {
+			focus = EDR_I0300
+			focus = EDR_I0301
+		}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus EDR_I02B"
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_I0401"
 			add_tech_bonus = {
 				name = synth_bonus
-				bonus = 0.75 uses = 1
 				category = synth_resources
+				bonus = 0.75
+				uses = 1
 			}
 		}
 	}
 	shared_focus = {	#Invest In Extraction Techniques
-		id = EDR_I02C icon = GFX_goal_generic_coal_mining
-		relative_position_id = EDR_I00
-		x = 1 y = 2 cost = 7 ai_will_do = {factor = 40}
-		prerequisite = {focus = EDR_I01B focus = EDR_I01C}
+		id = EDR_I0402 icon = GFX_goal_generic_coal_mining
+		relative_position_id = EDR_I0200
+		x = 1 y = 2 cost = 7
+		ai_will_do = {factor = 40}
+		prerequisite = {
+			focus = EDR_I0301
+			focus = EDR_I0302
+		}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus EDR_I02C"
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_I0402"
 			add_tech_bonus = {
 				name = excavation_bonus
-				bonus = 0.75 uses = 1
 				category = excavation_tech
+				bonus = 0.75
+				uses = 1
 			}
 		}
 	}
 	shared_focus = {	#Understanding of the Natural World
-		id = EDR_I02D icon = GFX_goal_double_research
-		relative_position_id = EDR_I01C
-		x = 1 y = 1 cost = 7 ai_will_do = {factor = 40}
-		prerequisite = {focus = EDR_I01C}
-		bypass = {NOT = {amount_research_slots<3}}
+		id = EDR_I0403 icon = GFX_goal_double_research
+		relative_position_id = EDR_I0302
+		x = 1 y = 1 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_I0302 }
+		bypass = {
+			NOT = { amount_research_slots < 3 }
+		}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus EDR_I02D"
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_I0403"
 			increase_science_base = yes
 			add_research_slot = 1
 		}
 	}
 	shared_focus = {	#Reforge the Armnament Industry
-		id = EDR_I03A icon = GFX_goal_industrial_pony
-		relative_position_id = EDR_I01A
-		x = 0 y = 2 cost = 7 ai_will_do = {factor = 40}
-		prerequisite = {focus = EDR_I01A}
+		id = EDR_I0500
+		icon = GFX_goal_industrial_pony
+		relative_position_id = EDR_I0300
+		x = 0 y = 2 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_I0300 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus EDR_I03A"
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_I0500"
 			increase_society_development_gradually_with_tt = yes
 			add_offsite_building = {
 				type = arms_factory
@@ -736,23 +762,26 @@ focus_tree = {
 		}
 	}
 	shared_focus = {	#Sythetic Oil and Rubber Production Project
-		id = EDR_I03B icon = GFX_goal_oil
-		relative_position_id = EDR_I01B
-		x = 0 y = 2 cost = 7 ai_will_do = {factor = 40}
-		prerequisite = {focus = EDR_I02B}
-		prerequisite = {focus = EDR_I02C}
+		id = EDR_I0501
+		icon = GFX_goal_oil
+		relative_position_id = EDR_I0301
+		x = 0 y = 2 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_I0401 }
+		prerequisite = { focus = EDR_I0402 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus EDR_I03B"
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_I0501"
 			one_random_synthetic_refinery = yes
 		}
 	}
 	shared_focus = {	#Encourage Industrial Development
-		id = EDR_I03C icon = GFX_goal_generic_lau_factory
-		relative_position_id = EDR_I01C
-		x = 0 y = 2 cost = 7 ai_will_do = {factor = 40}
-		prerequisite = {focus = EDR_I01C}
+		id = EDR_I0502 icon = GFX_goal_generic_lau_factory
+		relative_position_id = EDR_I0302
+		x = 0 y = 2 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_I0302 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus EDR_I03C"
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_I0502"
 			increase_society_development_gradually_with_tt = yes
 			add_offsite_building = {
 				type = industrial_complex
@@ -762,60 +791,75 @@ focus_tree = {
 		}
 	}
 	shared_focus = {	#Expand Naval Construction Facilities
-		id = EDR_I04A icon = GFX_goal_generic_shipyard
-		relative_position_id = EDR_I02A
-		x = 0 y = 2 cost = 7 ai_will_do = {factor = 40}
-		prerequisite = {focus = EDR_I02A}
+		id = EDR_I0600
+		icon = GFX_goal_generic_shipyard
+		relative_position_id = EDR_I0400
+		x = 0 y = 2 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_I0400 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus EDR_I04A"
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_I0600"
 			one_random_dockyard = yes
 			one_random_dockyard = yes
 		}
 	}
 	shared_focus = {	#Focus On Military Endevours
-		id = EDR_I04B icon = GFX_goal_generic_construct_mil_factory
-		relative_position_id = EDR_I03A
-		x = 1 y = 1 cost = 7 ai_will_do = {factor = 40}
-		prerequisite = {focus = EDR_I03A}
-		mutually_exclusive = {focus = EDR_I04C}
+		id = EDR_I0601
+		icon = GFX_goal_generic_construct_mil_factory
+		relative_position_id = EDR_I0500
+		x = 1 y = 1 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_I0500 }
+		mutually_exclusive = { focus = EDR_I0602 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus EDR_I04B"
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_I0601"
 			one_random_arms_factory = yes
 			two_random_arms_factory = yes
 		}
 	}
 	shared_focus = {	#Focus On Civilian Endevours
-		id = EDR_I04C icon = GFX_goal_improve_industry
-		relative_position_id = EDR_I03C
-		x = -1 y = 1 cost = 7 ai_will_do = {factor = 40}
-		prerequisite = {focus = EDR_I03C}
-		mutually_exclusive = {focus = EDR_I04B}
+		id = EDR_I0602
+		icon = GFX_goal_improve_industry
+		relative_position_id = EDR_I0502
+		x = -1 y = 1 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_I0502 }
+		mutually_exclusive = { focus = EDR_I0601 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus EDR_I04C"
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_I0602"
 			two_random_industrial_complex = yes
 			two_random_industrial_complex = yes
 		}
 	}
 	shared_focus = {	#Evidence, Reason, and Understanding
-		id = EDR_I04D icon = GFX_focus_research
-		relative_position_id = EDR_I02D
-		x = 0 y = 2 cost = 7 ai_will_do = {factor = 40}
-		prerequisite = {focus = EDR_I02D}
-		prerequisite = {focus = EDR_I03C}
-		bypass = {NOT = {amount_research_slots<4}}
+		id = EDR_I0603
+		icon = GFX_focus_research
+		relative_position_id = EDR_I0403
+		x = 0 y = 2 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_I0403 }
+		prerequisite = { focus = EDR_I0502 }
+		bypass = {
+			NOT = { amount_research_slots < 4 }
+		}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus EDR_I04D"
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_I0603"
 			increase_science_base = yes
 			add_research_slot = 1
 		}
 	}
 	shared_focus = {	#Set Aside Oil Stockpiles
-		id = EDR_I05A icon = GFX_oilbarrels
-		relative_position_id = EDR_I04A
-		x = 0 y = 1 cost = 7 ai_will_do = {factor = 40}
-		prerequisite = {focus = EDR_I04A focus = EDR_I04B}
+		id = EDR_I0700
+		icon = GFX_oilbarrels
+		relative_position_id = EDR_I0600
+		x = 0 y = 1 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = {
+			focus = EDR_I0600
+			focus = EDR_I0601
+		}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus EDR_I05A"
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_I0700"
 			random_owned_controlled_state = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -827,41 +871,48 @@ focus_tree = {
 		}
 	}
 	shared_focus = {	#From Night To Day #Unlimited Power!
-		id = EDR_I05B icon = GFX_focus_generic_electricity
-		relative_position_id = EDR_I03C
-		x = 0 y = 2 cost = 7 ai_will_do = {factor = 40}
-		prerequisite = {focus = EDR_I03C}
+		id = EDR_I0701 icon = GFX_focus_generic_electricity
+		relative_position_id = EDR_I0502
+		x = 0 y = 2 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_I0502 }
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus EDR_I05B"
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_I0701"
 			add_tech_bonus = {
 				name = electronics
-				bonus = 0.75 uses = 1
 				category = electronics
+				bonus = 0.75
+				uses = 1
 			}
 		}
 	}
 	shared_focus = {	#To Boldly Go Where No-One Has Gone Before
-		id = EDR_I06 icon = GFX_focus_research2
-		relative_position_id = EDR_I04D
-		x = 0 y = 2 cost = 7 ai_will_do = {factor = 40}
-		prerequisite = {focus = EDR_I04D}
-		prerequisite = {focus = EDR_I05B}
-		bypass = {NOT = {amount_research_slots<5}}
+		id = EDR_I0800 icon = GFX_focus_research2
+		relative_position_id = EDR_I0603
+		x = 0 y = 2 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_I0603 }
+		prerequisite = { focus = EDR_I0701 }
+		bypass = {
+			NOT = { amount_research_slots < 5 }
+		}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus EDR_I06"
+			log = "[GetDateText]: [Root.GetName]: Focus EDR_I0800"
 			increase_science_base = yes
 			add_research_slot = 1
 		}
 	}
 ##Land (Army) Military Branch##
 	shared_focus = {	#Recover Lost Weaponry
-		id = EDR_L05 icon = GFX_focus_indy_swing_the_sword
+		id = EDR_L05
+		icon = GFX_focus_indy_swing_the_sword
 		relative_position_id = EDR_P0000
-		x = -10
-		y = 7
-		cost = 4
-		search_filters = {FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_RESEARCH}
-		ai_will_do = {factor = 40}
+		x = -10 y = 7 cost = 4
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+			FOCUS_FILTER_RESEARCH
+		}
+		ai_will_do = { factor = 40 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_L05"
 			add_equipment_to_stockpile = {
@@ -878,283 +929,389 @@ focus_tree = {
 		}
 	}
 	shared_focus = {	#Restructure the Chain of Command
-		id = EDR_L06A icon = GFX_goal_officers
+		id = EDR_L06A
+		icon = GFX_goal_officers
 		relative_position_id = EDR_L05
-		x = -3 y = 1 cost = 7 ai_will_do = {factor = 40}
-		prerequisite = {focus = EDR_L05}
+		x = -3 y = 1 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_L05 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_L06A"
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 0.75 uses = 1
 				category = land_doctrine
+				bonus = 0.75
+				uses = 1
 			}
 		}
 	}
 	shared_focus = {	#Seek Out Equestrian Weapons Caches
-		id = EDR_L06B icon = GFX_goal_generic_military_equipment
+		id = EDR_L06B
+		icon = GFX_goal_generic_military_equipment
 		relative_position_id = EDR_L05
-		x = -1 y = 1 cost = 7 ai_will_do = {factor = 40}
-		prerequisite = {focus = EDR_L05}
+		x = -1 y = 1 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_L05 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_L06B"
 			custom_effect_tooltip = EDR_L06B_tooltip
 		}
 	}
 	shared_focus = {	#Rekindle The Old Foundaries
-		id = EDR_L06C icon = GFX_goal_generic_army_artillery
+		id = EDR_L06C
+		icon = GFX_goal_generic_army_artillery
 		relative_position_id = EDR_L05
-		x = 1 y = 1 cost = 7 ai_will_do = {factor = 40}
-		prerequisite = {focus = EDR_L05}
-		bypass = {has_tech = pre_gw_artillery}
+		x = 1 y = 1 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_L05 }
+		bypass = { has_tech = pre_gw_artillery }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_L06C"
-			if = {limit = {not = {is_researching_technology = pre_gw_artillery}}
+			if = {
+				limit = {
+					not = { is_researching_technology = pre_gw_artillery }
+				}
 				add_tech_bonus = {
 					name = artillery_bonus
-					bonus = 0.55 uses = 1
 					technology = pre_gw_artillery
+					bonus = 0.55
+					uses = 1
 				}
 			}
-			else = {ROOT = {add_ideas = EDR_temp_arty_bonus}}
+			else = {
+				ROOT = { add_ideas = EDR_temp_arty_bonus }
+			}
 		}
 	}
 	shared_focus = {	#Reverse Engineer Equestrian Rifles
-		id = EDR_L06D icon = GFX_focus_generic_commonwealth_build_infantry
+		id = EDR_L06D
+		icon = GFX_focus_generic_commonwealth_build_infantry
 		relative_position_id = EDR_L05
-		x = 3 y = 1 cost = 7 ai_will_do = {factor = 40}
-		prerequisite = {focus = EDR_L05}
-		available = {has_equipment = {infantry_equipment_0>99}}
-		bypass = {has_tech = infantry_weapons}
+		x = 3 y = 1 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_L05 }
+		available = {
+			has_equipment = { infantry_equipment_0 > 99 }
+		}
+		bypass = { has_tech = infantry_weapons }
 		select_effect = {
-			set_temp_variable = {aaaaa = 1}
-			add_equipment_to_stockpile = {type = infantry_equipment_0 amount = -100 producer = EQS}
+			set_temp_variable = { aaaaa = 1 }
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = -100
+				producer = EQS
+			}
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_L06D"
-			if = {limit = {not = {is_researching_technology = infantry_weapons}}
+			if = {
+				limit = {
+					not = { is_researching_technology = infantry_weapons }
+				}
 				add_tech_bonus = {
 					name = infantry_bonus
-					bonus = 0.55 uses = 1
 					technology = infantry_weapons
+					bonus = 0.55
+					uses = 1
 				}
 			}
-			else = {ROOT = {add_ideas = EDR_temp_inftry_bonus}}
+			else = {
+				ROOT = { add_ideas = EDR_temp_inftry_bonus }
+			}
 		}
 	}
 	shared_focus = {	#Promote NCOs From Within The Ranks
-		id = EDR_L07A icon = GFX_goal_military_mission_pony
+		id = EDR_L07A
+		icon = GFX_goal_military_mission_pony
 		relative_position_id = EDR_L06A
-		x = -1 y = 1 cost = 7 ai_will_do = {factor = 40}
-		prerequisite = {focus = EDR_L06A}
+		x = -1 y = 1 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_L06A }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_L07A"
 			army_experience = 15
 		}
 	}
 	shared_focus = {	#Utilize Modern Military Doctrine
-		id = EDR_L07B icon = GFX_goal_generic_army_doctrines
+		id = EDR_L07B
+		icon = GFX_goal_generic_army_doctrines
 		relative_position_id = EDR_L06A
-		x = 1 y = 1 cost = 7 ai_will_do = {factor = 40}
-		prerequisite = {focus = EDR_L06A}
+		x = 1 y = 1 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_L06A }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_L07B"
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 0.75 uses = 1
 				category = land_doctrine
+				bonus = 0.75
+				uses = 1
 			}
 		}
 	}
 	shared_focus = {	#Restore Equestrian Tractor-Tank Production
-		id = EDR_L07C icon = GFX_focus_NZL_bob_semple_tank
+		id = EDR_L07C
+		icon = GFX_focus_NZL_bob_semple_tank
 		relative_position_id = EDR_L06B
-		x = 1 y = 1 cost = 7 ai_will_do = {factor = 40}
-		prerequisite = {focus = EDR_L05}
-		available = {has_equipment = {gw_tank_equipment>2}}
-		bypass = {has_tech = gwtank}
+		x = 1 y = 1 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_L05 }
+		available = {
+			has_equipment = { gw_tank_equipment > 2 }
+		}
+		bypass = { has_tech = gwtank }
 		select_effect = {
-			set_temp_variable = {aaaaa = 1}
-			add_equipment_to_stockpile = {type = gw_tank_equipment amount = -3 producer = EQS}
-			#country_event = {id = EDR_L07Creward0.1 days = 84}		#Tanks Off The Line
+			set_temp_variable = { aaaaa = 1 }
+			add_equipment_to_stockpile = {
+				type = gw_tank_equipment
+				amount = -3
+				producer = EQS
+			}
+			#country_event = {	#Tanks Off The Line
+			#	id = EDR_L07Creward0.1
+			#	days = 84
+			#}
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_L07C"
-			add_equipment_to_stockpile = {type = gw_tank_equipment amount = 12 producer = EQS}
-			if = {limit = {not = {is_researching_technology = gwtank}}
+			add_equipment_to_stockpile = {
+				type = gw_tank_equipment
+				amount = 12
+				producer = EQS
+			}
+			if = {
+				limit = {
+					not = { is_researching_technology = gwtank }
+				}
 				add_tech_bonus = {
 					name = gwtank_bonus
-					bonus = 0.55 uses = 1
 					technology = gwtank
+					bonus = 0.55
+					uses = 1
 				}
 			}
 		}
 	}
 	shared_focus = {	#Develop Specialized Equipment
-		id = EDR_L07D icon = GFX_goal_generic_support_equipment
+		id = EDR_L07D
+		icon = GFX_goal_generic_support_equipment
 		relative_position_id = EDR_L06D
-		x = -1 y = 1 cost = 7 ai_will_do = {factor = 40}
-		prerequisite = {focus = EDR_L06D}
+		x = -1 y = 1 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_L06D }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_L07D"
 			add_tech_bonus = {
 				name = support_equipment_bonus
-				bonus = 0.75 uses = 1
 				category = recon_tech
 				category = engineers_tech
 				category = military_police_tech
 				category = maintenance_company_tech
+				bonus = 0.75
+				uses = 1
 			}
 		}
 	}
 	shared_focus = {	#Form Specialized Combat Regiments
-		id = EDR_L07E icon = GFX_focus_military_derpy
+		id = EDR_L07E
+		icon = GFX_focus_military_derpy
 		relative_position_id = EDR_L06D
-		x = 1 y = 1 cost = 7 ai_will_do = {factor = 40}
-		prerequisite = {focus = EDR_L06D}
+		x = 1 y = 1 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_L06D }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_L07E"
 			add_tech_bonus = {
 				name = special_ops_bonus
-				bonus = 0.75 uses = 1
 				category = marine_tech
 				category = mountaineers_tech
+				bonus = 0.75
+				uses = 1
 			}
 		}
 	}
 	shared_focus = {	#Reform Military Operations
 		id = EDR_L08A icon = GFX_goal_AST_state_of_army
 		relative_position_id = EDR_L06A
-		x = 0 y = 2 cost = 7 ai_will_do = {factor = 40}
-		prerequisite = {focus = EDR_L07A}
-		prerequisite = {focus = EDR_L07B}
+		x = 0 y = 2 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_L07A }
+		prerequisite = { focus = EDR_L07B }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_L08A"
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 0.75 uses = 1
 				category = land_doctrine
+				bonus = 0.75
+				uses = 1
 			}
 		}
 	}
 	shared_focus = {	#Serialize Motor Vehicles
-		id = EDR_L08B icon = GFX_goal_generic_army_motorized
+		id = EDR_L08B
+		icon = GFX_goal_generic_army_motorized
 		relative_position_id = EDR_L07C
-		x = -1 y = 1 cost = 7 ai_will_do = {factor = 40}
-		prerequisite = {focus = EDR_L07C}
-		available = {has_equipment = {motorized_equipment_1>9}}
-		bypass = {has_tech = motorised_infantry}
+		x = -1 y = 1 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_L07C }
+		available = {
+			has_equipment = { motorized_equipment_1 > 9 }
+		}
+		bypass = { has_tech = motorised_infantry }
 		select_effect = {
-			set_temp_variable = {aaaaa = 1}
-			add_equipment_to_stockpile = {type = motorized_equipment_1 amount = -10 producer = EQS}
-			#country_event = {id = EDR_L07Creward0.1 days = 84}		#Tanks Off The Line
+			set_temp_variable = { aaaaa = 1 }
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1
+				amount = -10
+				producer = EQS
+			}
+			#country_event = {
+			#	id = EDR_L07Creward0.1
+			#	days = 84
+			#}		#Tanks Off The Line
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_L08B"
-			add_equipment_to_stockpile = {type = motorized_equipment_1 amount = 30 producer = EQS}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1
+				amount = 30
+				producer = EQS
+			}
 			add_tech_bonus = {
 				name = motorized_bonus
-				bonus = 0.55 uses = 1
 				category = motorized_equipment
+				bonus = 0.55
+				uses = 1
 			}
 		}
 	}
 	shared_focus = {	#Repair The Howitzer Factory Molds
-		id = EDR_L08C icon = GFX_goal_artillery
+		id = EDR_L08C
+		icon = GFX_goal_artillery
 		relative_position_id = EDR_L06C
-		x = 0 y = 2 cost = 7 ai_will_do = {factor = 40}
-		prerequisite = {focus = EDR_L06C}
-		available = {has_equipment = {artillery_equipment_1>11}}
-		bypass = {has_tech = gw_artillery}
+		x = 0 y = 2 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_L06C }
+		available = {
+			has_equipment = { artillery_equipment_1 > 11 }
+		}
+		bypass = { has_tech = gw_artillery }
 		select_effect = {
-			set_temp_variable = {aaaaa = 1}
-			add_equipment_to_stockpile = {type = artillery_equipment_1 amount = -12 producer = EQS}
+			set_temp_variable = { aaaaa = 1 }
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_1
+				amount = -12
+				producer = EQS
+			}
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_L08C"
-			add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 36 producer = EQS}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_1
+				amount = 36
+				producer = EQS
+			}
 			add_tech_bonus = {
 				name = artillery_bonus
-				bonus = 0.55 uses = 1
 				technology = gw_artillery
+				bonus = 0.55
+				uses = 1
 			}
 		}
 	}
 	shared_focus = {	#Improve Exisitng Rifle Designs
-		id = EDR_L08D icon = GFX_goal_van_rifles
+		id = EDR_L08D
+		icon = GFX_goal_van_rifles
 		relative_position_id = EDR_L06D
-		x = 0 y = 2 cost = 7 ai_will_do = {factor = 40}
-		prerequisite = {focus = EDR_L06D}
-		prerequisite = {focus = EDR_L07D focus = EDR_L07E}
+		x = 0 y = 2 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_L06D }
+		prerequisite = {
+			focus = EDR_L07D
+			focus = EDR_L07E
+		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_L08D"
 			add_tech_bonus = {
 				name = infantry_bonus
-				bonus = 0.55 uses = 1
 				category = infantry_weapons
+				bonus = 0.55
+				uses = 1
 			}
 		}
 	}
 	shared_focus = {	#Establish The Military Academy
-		id = EDR_L09A icon = GFX_goal_Equestrian_Royal_Army_1
+		id = EDR_L09A
+		icon = GFX_goal_Equestrian_Royal_Army_1
 		relative_position_id = EDR_L06A
-		x = 0 y = 3 cost = 7 ai_will_do = {factor = 40}
-		prerequisite = {focus = EDR_L08A}
+		x = 0 y = 3 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_L08A }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_L09A"
-			ROOT = {add_ideas = EDR_army_command}
+			add_ideas = EDR_army_command
 		}
 	}
 	shared_focus = {	#The Future Of Fighting Vehicles
-		id = EDR_L09B icon = GFX_goal_generic_army_tank_2
+		id = EDR_L09B
+		icon = GFX_goal_generic_army_tank_2
 		relative_position_id = EDR_L08B
-		x = 0 y = 1 cost = 7 ai_will_do = {factor = 40}
-		prerequisite = {focus = EDR_L08B}
+		x = 0 y = 1 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_L08B }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_L09B"
 			add_tech_bonus = {
 				name = tank_bonus
-				bonus = 0.55 uses = 1
 				category = armor
+				bonus = 0.55
+				uses = 1
 			}
 		}
 	}
 	shared_focus = {	#Man The Arsenals
-		id = EDR_L09C icon = GFX_goal_Anti_Air_Guns
+		id = EDR_L09C
+		icon = GFX_goal_Anti_Air_Guns
 		relative_position_id = EDR_L08C
-		x = 0 y = 1 cost = 7 ai_will_do = {factor = 40}
-		prerequisite = {focus = EDR_L08C}
-		prerequisite = {focus = EDR_L08D}
+		x = 0 y = 1 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_L08C }
+		prerequisite = { focus = EDR_L08D }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_L09C"
 			add_tech_bonus = {
 				name = support_artillery_bonus
-				bonus = 0.75 uses = 2
 				category = artillery
+				bonus = 0.75
+				uses = 2
 			}
 		}
 	}
 	shared_focus = {	#Update The Infantry Kit
 		id = EDR_L09D icon = GFX_goal_generic_ponykind
 		relative_position_id = EDR_L08D
-		x = 0 y = 1 cost = 7 ai_will_do = {factor = 40}
-		prerequisite = {focus = EDR_L08D}
+		x = 0 y = 1 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_L08D }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_L09D"
 			EDR_L09D_reward = yes
 		}
 	}
 	shared_focus = {	#To Embue Magic Into A Machine
-		id = EDR_L09E icon = GFX_goal_magical_weapon_focus
+		id = EDR_L09E
+		icon = GFX_goal_magical_weapon_focus
 		relative_position_id = EDR_L08D
-		x = 2 y = 1 cost = 7 ai_will_do = {factor = 40}
-		prerequisite = {focus = EDR_L08D}
+		x = 2 y = 1 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_L08D }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_L09E"
 			add_tech_bonus = {
 				name = magical_tech_bonus
-				bonus = 0.75 uses = 1
 				category = magical_tech
+				bonus = 0.75
+				uses = 1
 			}
 		}
 	}
@@ -1163,7 +1320,7 @@ focus_tree = {
 		id = EDR_N05
 		icon = GFX_goal_generic_construct_naval_dockyard
 		relative_position_id = EDR_P0000
-		x = 0	y = 7	cost = 7 
+		x = 0 y = 7 cost = 7 
 		available = { any_controlled_state_is_coastal = yes }
 		ai_will_do = { factor = 40 }
 		completion_reward = {
@@ -1176,9 +1333,9 @@ focus_tree = {
 	shared_focus = {	#Improve Naval Doctrine
 		id = EDR_N06A
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		x = -2	y = 1	cost = 7
+		x = -2 y = 1 cost = 7
 		relative_position_id = EDR_N05
-		prerequisite = {focus = EDR_N05}
+		prerequisite = { focus = EDR_N05 }
 		ai_will_do = { factor = 40 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_N06A"
@@ -1193,10 +1350,10 @@ focus_tree = {
 	shared_focus = {	#Subaquatic Weapon Systems
 		id = EDR_N06B
 		icon = GFX_goal_generic_navy_anti_submarine
-		x = 0	y = 1	cost = 7
+		x = 0 y = 1 cost = 7
 		relative_position_id = EDR_N05
-		allow_branch = {has_dlc = "Man the Guns"}
-		available = {has_completed_focus = EDR_N05}
+		allow_branch = { has_dlc = "Man the Guns" }
+		available = { has_completed_focus = EDR_N05 }
 		ai_will_do = { factor = 40 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_N06B"
@@ -1210,13 +1367,20 @@ focus_tree = {
 		}
 	}
 	shared_focus = {	#Cruiser Class Development"
-		id = EDR_N06C icon = GFX_focus_generic_cruiser2
+		id = EDR_N06C
+		icon = GFX_focus_generic_cruiser2
 		relative_position_id = EDR_N05
-		x = 2	y = 1	cost = 7 ai_will_do = { factor = 40 }
-		prerequisite = {focus = EDR_N05}
+		x = 2 y = 1 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_N05 }
 		available = {
-			if = {limit = {not = {has_dlc = "Man the Guns"}}has_tech = infantry_weapons}
-			else = {has_tech = pre_gw_artillery}
+			if = {
+				limit = {
+					not = { has_dlc = "Man the Guns" }
+				}
+				has_tech = infantry_weapons
+			}
+			else = { has_tech = pre_gw_artillery }
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_N06C"
@@ -1224,13 +1388,20 @@ focus_tree = {
 		}
 	}
 	shared_focus = {	#Destroyer CLass Development
-		id = EDR_N06D icon = GFX_focus_generic_destroyer
+		id = EDR_N06D
+		icon = GFX_focus_generic_destroyer
 		relative_position_id = EDR_N05
-		x = 4	y = 1	cost = 7 ai_will_do = { factor = 40 }
-		prerequisite = {focus = EDR_N05}
+		x = 4 y = 1 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_N05 }
 		available = {
-			if = {limit = {not = {has_dlc = "Man the Guns"}}has_tech = infantry_weapons}
-			else = {has_tech = pre_gw_artillery}
+			if = {
+				limit = {
+					not = { has_dlc = "Man the Guns" }
+				}
+				has_tech = infantry_weapons
+			}
+			else = { has_tech = pre_gw_artillery }
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_N06D"
@@ -1242,125 +1413,165 @@ focus_tree = {
 		}
 	}
 	shared_focus = {	#Maritime Combat Drills
-		id = EDR_N07A icon = GFX_goal_generic_build_navy
+		id = EDR_N07A
+		icon = GFX_goal_generic_build_navy
 		relative_position_id = EDR_N06A
-		x = -2	y = 1	cost = 7 ai_will_do = { factor = 40 }
-		prerequisite = {focus = EDR_N06A}
+		x = -2 y = 1 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_N06A }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_N07A"
 			navy_experience = 25
-			if = {limit = {has_dlc = "Man the Guns"}
+			if = {
+				limit = { has_dlc = "Man the Guns" }
 				add_tech_bonus = {
 					name = navtrain_bonus
-					bonus = 0.75	uses = 1
 					category = naval_training
+					bonus = 0.75
+					uses = 1
 				}
 			}
 		}
 	}
 	shared_focus = {	#Form Naval Admiralty
-		id = EDR_N07B icon = GFX_goal_generic_navy_doctrines_tactics
+		id = EDR_N07B
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		relative_position_id = EDR_N06A
-		x = 0	y = 1	cost = 7 ai_will_do = { factor = 40 }
-		prerequisite = {focus = EDR_N06A}
+		x = 0	y = 1	cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_N06A }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_N07B"
 			add_tech_bonus = {
 				name = navy_doc_bonus
-				bonus = 0.75	uses = 1
 				category = naval_doctrine
+				bonus = 0.75
+				uses = 1
 			}
 		}
 	}
 	shared_focus = {	#Battleship Class Development"
-		id = EDR_N07C icon = GFX_focus_generic_navy_battleship2
+		id = EDR_N07C
+		icon = GFX_focus_generic_navy_battleship2
 		relative_position_id = EDR_N05
-		x = 1	y = 2	cost = 7 ai_will_do = { factor = 40 }
-		prerequisite = {focus = EDR_N05}
-		available = {has_tech = gw_artillery}
+		x = 1 y = 2 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_N05 }
+		available = { has_tech = gw_artillery }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_N07C"
 			add_tech_bonus = {
 				name = capital_ships_bonus
-				bonus = 0.75	uses = 1
 				category = bb_tech
+				bonus = 0.75
+				uses = 1
 			}
 		}
 	}
 	shared_focus = {	#Submarine Class Development
-		id = EDR_N07D icon = GFX_goal_generic_navy_submarine
+		id = EDR_N07D
+		icon = GFX_goal_generic_navy_submarine
 		relative_position_id = EDR_N05
-		x = 3	y = 2	cost = 7 ai_will_do = { factor = 40 }
-		prerequisite = {focus = EDR_N05}
-		available = {has_tech = infantry_weapons}
+		x = 3 y = 2 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_N05 }
+		available = { has_tech = infantry_weapons }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_N07D"
 			add_tech_bonus = {
 				name = ss_bonus
-				bonus = 0.75	uses = 1
 				category = ss_tech
+				bonus = 0.75
+				uses = 1
 			}
 			EDR_N07D_reward = yes
 		}
 	}
 	shared_focus = {	#Carrier Class Development"
-		id = EDR_N07E icon = GFX_goal_generic_navy_carrier
+		id = EDR_N07E
+		icon = GFX_goal_generic_navy_carrier
 		relative_position_id = EDR_N05
-		x = 5	y = 2	cost = 7 ai_will_do = { factor = 40 }
-		prerequisite = {focus = EDR_N05 focus = EDR_A06A}
-		available = {has_tech = early_fighter}
+		x = 5 y = 2 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = {
+			focus = EDR_N05
+			focus = EDR_A06A
+		}
+		available = { has_tech = early_fighter }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_N07E"
 			add_tech_bonus = {
 				name = cv_bonus
-				bonus = 0.75	uses = 1
 				category = cv_tech
+				bonus = 0.75
+				uses = 1
 			}
 		}
 	}
 	shared_focus = {	#Cadet Training Programs
-		id = EDR_N08A icon = GFX_focus_generic_military_academy
+		id = EDR_N08A
+		icon = GFX_focus_generic_military_academy
 		relative_position_id = EDR_N07A
-		x = 0	y = 1	cost = 7 ai_will_do = { factor = 40 }
-		prerequisite = {focus = EDR_N07A}
+		x = 0 y = 1 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_N07A }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_N08A"
 			navy_experience = 50
 		}
 	}
 	shared_focus = {	#Fortify Naval Doctrine
-		id = EDR_N08B icon = GFX_goal_generic_navy_doctrines_tactics
+		id = EDR_N08B
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		relative_position_id = EDR_N07B
-		x = 0	y = 1	cost = 7 ai_will_do = { factor = 40 }
-		prerequisite = {focus = EDR_N07B}
+		x = 0 y = 1 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = { focus = EDR_N07B }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_N08B"
 			add_tech_bonus = {
 				name = navy_doc_bonus
-				bonus = 0.75	uses = 1
 				category = naval_doctrine
+				bonus = 0.75
+				uses = 1
 			}
 		}
 	}
 	shared_focus = {	#Strength Through Firepower
-		id = EDR_N08C icon = GFX_focus_generic_navy_battleship3alt
+		id = EDR_N08C
+		icon = GFX_focus_generic_navy_battleship3alt
 		relative_position_id = EDR_N05
-		x = 0	y = 3	cost = 7 ai_will_do = { factor = 40 }
-		prerequisite = {focus = EDR_N06C focus = EDR_N06D}
-		prerequisite = {focus = EDR_N07C}
-		mutually_exclusive = {focus = EDR_N08D focus = EDR_N08E}
+		x = 0 y = 3 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = {
+			focus = EDR_N06C
+			focus = EDR_N06D
+		}
+		prerequisite = { focus = EDR_N07C }
+		mutually_exclusive = {
+			focus = EDR_N08D
+			focus = EDR_N08E
+		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_N08C"
 			EDR_N08C_reward = yes
 		}
 	}
 	shared_focus = {	#Divide and Conqeuror
-		id = EDR_N08D icon = GFX_goal_generic_wolf_pack
+		id = EDR_N08D
+		icon = GFX_goal_generic_wolf_pack
 		relative_position_id = EDR_N05
-		x = 2	y = 3	cost = 7 ai_will_do = { factor = 40 }
-		prerequisite = {focus = EDR_N06C focus = EDR_N06D}
-		prerequisite = {focus = EDR_N07D}
-		mutually_exclusive = {focus = EDR_N08C focus = EDR_N08E}
+		x = 2 y = 3 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = {
+			focus = EDR_N06C
+			focus = EDR_N06D
+		}
+		prerequisite = { focus = EDR_N07D }
+		mutually_exclusive = {
+			focus = EDR_N08C
+			focus = EDR_N08E
+		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_N08D"
 			EDR_N08D_reward = yes
@@ -1369,24 +1580,40 @@ focus_tree = {
 	shared_focus = {	#Hammer and Anvil
 		id = EDR_N08E icon = GFX_goal_carrier
 		relative_position_id = EDR_N05
-		x = 4	y = 3	cost = 7 ai_will_do = { factor = 40 }
-		prerequisite = {focus = EDR_N06D focus = EDR_N06C}
-		prerequisite = {focus = EDR_N07E}
-		mutually_exclusive = {focus = EDR_N08C focus = EDR_N08D}
+		x = 4 y = 3 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = {
+			focus = EDR_N06D
+			focus = EDR_N06C
+		}
+		prerequisite = { focus = EDR_N07E }
+		mutually_exclusive = {
+			focus = EDR_N08C
+			focus = EDR_N08D
+		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_N08E"
 			EDR_N08E_reward = yes
 		}
 	}
 	shared_focus = {	#Establish the Naval Academy
-		id = EDR_N09 icon = GFX_goal_Equestrian_Royal_Navy_1
+		id = EDR_N09
+		icon = GFX_goal_Equestrian_Royal_Navy_1
 		relative_position_id = EDR_N05
-		x = 0	y = 4	cost = 7 ai_will_do = { factor = 40 }
-		prerequisite = {focus = EDR_N08E focus = EDR_N08E focus = EDR_N08C}
-		prerequisite = {focus = EDR_N08B focus = EDR_N08A}
+		x = 0 y = 4 cost = 7
+		ai_will_do = { factor = 40 }
+		prerequisite = {
+			focus = EDR_N08E
+			focus = EDR_N08E
+			focus = EDR_N08C
+		}
+		prerequisite = {
+			focus = EDR_N08B
+			focus = EDR_N08A
+		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_N09"
-			ROOT = {add_ideas = EDR_navy_command}
+			add_ideas = EDR_navy_command
 		}
 	}
 ##Airforce Branch##
@@ -1394,7 +1621,7 @@ focus_tree = {
 		id = EDR_A05
 		icon = GFX_goal_generic_build_airforce
 		relative_position_id = EDR_P0000
-		x = 10	y = 7	cost = 7
+		x = 10 y = 7 cost = 7
 		search_filters = {  }
 		available = { has_tech = infantry_weapons }
 		ai_will_do = { factor = 40 }
@@ -1429,7 +1656,7 @@ focus_tree = {
 	shared_focus = {	#Carrier-Based Aircraft Initiative
 		id = EDR_A06A
 		icon = GFX_goal_generic_air_fighter2
-		x = -4	y = 1	cost = 7
+		x = -4 y = 1 cost = 7
 		relative_position_id = EDR_A05
 		allow_branch = {
 			NOT = { has_dlc = "By Blood Alone" }
@@ -1444,7 +1671,7 @@ focus_tree = {
 	shared_focus = {	#Aerial Superiority Initiative
 		id = EDR_A06B
 		icon = GFX_goal_generic_air_fighter_new
-		x = -2	y = 1	cost = 7
+		x = -2 y = 1 cost = 7
 		relative_position_id = EDR_A05
 		offset = {
 			x = -1
@@ -1479,14 +1706,14 @@ focus_tree = {
 	shared_focus = {	#Aerial Bombardment Initiative
 		id = EDR_A06C
 		icon = GFX_goal_generic_air_tactical_bomber_new
-		x = 0	y = 1	cost = 7
+		x = 0 y = 1 cost = 7
 		relative_position_id = EDR_A05
 		offset = {
 			x = -1
 			trigger = { has_dlc = "By Blood Alone" }
 		}
 		prerequisite = { focus = EDR_A05 }
-		mutually_exclusive = {focus = EDR_A06B}
+		mutually_exclusive = { focus = EDR_A06B }
 		ai_will_do = { factor = 40 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EDR_A06C"
@@ -1514,7 +1741,7 @@ focus_tree = {
 	shared_focus = {	#Army Airforce Coordination
 		id = EDR_A06D
 		icon = GFX_goal_generic_air_doctrine
-		x = 2	y = 1	cost = 7
+		x = 2 y = 1 cost = 7
 		relative_position_id = EDR_A05
 		offset = {
 			x = -1
@@ -1535,7 +1762,7 @@ focus_tree = {
 	shared_focus = {	#Heavy Aircraft Initiative
 		id = EDR_A07A
 		icon = GFX_goal_generic_air_strategic_bomber_new
-		x = -3	y = 2	cost = 7
+		x = -3 y = 2 cost = 7
 		relative_position_id = EDR_A05
 		allow_branch = {
 			NOT = { has_dlc = "By Blood Alone" }
@@ -1555,7 +1782,7 @@ focus_tree = {
 	shared_focus = {	#Battlefield Support Initiative
 		id = EDR_A07B
 		icon = GFX_goal_generic_air_CAS_new
-		x = -1	y = 2	cost = 7
+		x = -1 y = 2 cost = 7
 		relative_position_id = EDR_A05
 		allow_branch = {
 			NOT = { has_dlc = "By Blood Alone" }
@@ -1579,7 +1806,7 @@ focus_tree = {
 	shared_focus = {	#Army Airforce Autonomy
 		id = EDR_A07C
 		icon = GFX_goal_generic_air_doctrine
-		x = 0	y = 1	cost = 7
+		x = 0 y = 1 cost = 7
 		relative_position_id = EDR_A06D
 		prerequisite = { focus = EDR_A06D }
 		ai_will_do = { factor = 40 }
@@ -1596,7 +1823,7 @@ focus_tree = {
 	shared_focus = {	#Aircraft Adaptation Initiative
 		id = EDR_A07D
 		icon = GFX_goal_new_airforce
-		x = 2	y = 1	cost = 7
+		x = 2 y = 1 cost = 7
 		relative_position_id = EDR_A06D
 		prerequisite = { focus = EDR_A06D }
 		ai_will_do = { factor = 40 }
@@ -1608,7 +1835,7 @@ focus_tree = {
 	shared_focus = {	#Scout Plane Initiative
 		id = EDR_A08A
 		icon = GFX_goal_POL_recon_aircraft
-		x = -4	y = 3	cost = 7
+		x = -4 y = 3 cost = 7
 		relative_position_id = EDR_A05
 		allow_branch = {
 			NOT = { has_dlc = "By Blood Alone" }
@@ -1629,7 +1856,7 @@ focus_tree = {
 	shared_focus = {	#Light Aircraft Focus
 		id = EDR_A08B
 		icon = GFX_goal_generic_air_fighter2_new
-		x = -1	y = 1	cost = 7
+		x = -1 y = 1 cost = 7
 		relative_position_id = EDR_A07B
 		offset = {
 			x = -1
@@ -1662,7 +1889,7 @@ focus_tree = {
 	shared_focus = {	#Medium Aircraft Focus
 		id = EDR_A08C
 		icon = GFX_goal_generic_air_bomber_new
-		x = 1	y = 1	cost = 7
+		x = 1 y = 1 cost = 7
 		relative_position_id = EDR_A07B
 		offset = {
 			x = -1
@@ -1695,7 +1922,7 @@ focus_tree = {
 	shared_focus = {	#Independent Airforce Command
 		id = EDR_A08D
 		icon = GFX_goal_generic_air_doctrine
-		x = 0	y = 1	cost = 7
+		x = 0 y = 1 cost = 7
 		relative_position_id = EDR_A07C
 		prerequisite = {focus = EDR_A07C}
 		ai_will_do = { factor = 40 }
@@ -1712,7 +1939,7 @@ focus_tree = {
 	shared_focus = {	#Aerial Modification Initiative
 		id = EDR_A08E
 		icon = GFX_goal_air_red
-		x = 0	y = 1	cost = 7
+		x = 0 y = 1 cost = 7
 		relative_position_id = EDR_A07D
 		prerequisite = { focus = EDR_A07D }
 		ai_will_do = { factor = 40 }
@@ -1724,7 +1951,7 @@ focus_tree = {
 	shared_focus = {	#Rocketry Development Program
 		id = EDR_A09A
 		icon = GFX_focus_rocketry
-		x = -1	y = 4	cost = 7
+		x = -1 y = 4 cost = 7
 		relative_position_id = EDR_A05
 		prerequisite = {
 			focus = EDR_A08B
@@ -1745,7 +1972,7 @@ focus_tree = {
 	shared_focus = {	#Establish the Airforce Academy
 		id = EDR_A09B
 		icon = GFX_goal_Equestrian_Royal_Air_Force_1
-		x = 1	y = 4	cost = 7
+		x = 1 y = 4 cost = 7
 		relative_position_id = EDR_A05
 		prerequisite = { focus = EDR_A08D }
 		prerequisite = {

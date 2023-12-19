@@ -3,7 +3,7 @@ focus_tree = {
 	continuous_focus_position = {x = 1750 y = 800}
 	shared_focus = HWG_the_war
 	shared_focus = HWG_convene_the_house_council
-	shared_focus = EDR_I00
+	shared_focus = EDR_I0200
 	shared_focus = EDR_L05
 	shared_focus = EDR_N05
 	shared_focus = EDR_A05
@@ -15,7 +15,7 @@ focus_tree = {	#DEBUG
 	shared_focus = HWG_the_war
 	shared_focus = HWG_convene_the_house_council
 	shared_focus = HWG_S00
-	#shared_focus = EDR_I00
+	#shared_focus = EDR_I0200
 	#shared_focus = EDR_L05
 	#shared_focus = EDR_N05
 	#shared_focus = EDR_A05

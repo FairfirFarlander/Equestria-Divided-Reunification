@@ -1,4 +1,48 @@
 characters = {
+	MSE_council = {
+		name = MSE_council
+		portraits = {
+			civilian = {
+				large = GFX_MSE_council
+				small = GFX_MSE_council_small
+			}
+		}
+		country_leader = {
+			desc = MSE_council_leader_desc
+			ideology = fascism_ideology
+		}
+		country_leader = {
+			desc = MSE_council_leader_desc
+			ideology = despotism
+		}
+	}
+	MSE_morning_star = {
+		name = MSE_morning_star
+		gender = female
+		portraits = {
+			civilian = {
+				large = GFX_MSE_morning_star
+				small = GFX_MSE_morning_star_small
+			}
+		}
+		country_leader = {
+			desc = MSE_mstar_leader_desc
+			ideology = fascism_ideology
+		}
+	}
+	MSE_orange_creamsicle = {
+		name = MSE_orange_creamsicle
+		portraits = {
+			civilian = {
+				large = GFX_MSE_orange_creamsicle
+				small = GFX_MSE_orange_creamsicle_small
+			}
+		}
+		country_leader = {
+			desc = MSE_ocreamsicle_leader_desc
+			ideology = democratic_socialism
+		}
+	}
 	MSE_generic_pony = {
 		name = MSE_generic_pony
 		gender = female
@@ -7,20 +51,7 @@ characters = {
 		}
 		country_leader = {
 			desc = MSE_gpony_leader_desc
-			ideology = fascism_ideology
-		}
-		country_leader = {
-			desc = MSE_gpony_leader_desc
 			ideology = conservatism
-		}
-		country_leader = {
-			desc = MSE_gpony_leader_desc
-			ideology = democratic_socialism
-		}
-		country_leader = {
-			desc = MSE_gpony_leader_desc
-			ideology = despotism
 		}
 	}
 }
-# Won a Trixie Look Alike Contest Desc

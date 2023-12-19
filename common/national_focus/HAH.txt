@@ -21,7 +21,7 @@ focus_tree = {
 		}
 	}
 	#shared_focus = HAH_MS00
-	shared_focus = EDR_I00
+	shared_focus = EDR_I0200
 	shared_focus = EDR_L05
 	shared_focus = EDR_N05
 	shared_focus = EDR_N06B
@@ -61,7 +61,7 @@ focus_tree = {
 	shared_focus = HAH_I00
 	shared_focus = HAH_M00
 	shared_focus = HAH_WS309
-	#shared_focus = EDR_I00
+	#shared_focus = EDR_I0200
 	#shared_focus = EDR_L05
 	#shared_focus = EDR_N05
 	#shared_focus = EDR_A05

@@ -15,6 +15,10 @@
   ##Leaders##
    MSE_generic_pony: "Generic pony"
     MSE_gpony_leader_desc: "$GENR_advisor_desc$"
+   MSE_morning_star: ""
+    MSE_mstar_leader_desc: "Won a Trixie look-alike contest!"
+   MSE_orange_creamsicle: ""
+    MSE_ocreamsicle_leader_desc: "$GENR_advisor_desc$"
   ##Commanders##
   ##Political Advisors##
   ##Military Advisors##

@@ -3,7 +3,7 @@ focus_tree = {
 	continuous_focus_position = {x = 1750 y = 800}
 	shared_focus = EQD_S00
 	shared_focus = HSW_calm_before_the_storm
-	shared_focus = EDR_I00
+	shared_focus = EDR_I0200
 	shared_focus = EDR_L05
 	shared_focus = EDR_N05
 	shared_focus = EDR_A05
@@ -13,7 +13,7 @@ focus_tree = {
 	continuous_focus_position = {x = 0 y = -350}
 	shared_focus = EQD_S00
 	shared_focus = HSW_calm_before_the_storm
-	shared_focus = EDR_I00
+	shared_focus = EDR_I0200
 	shared_focus = EDR_L05
 	shared_focus = EDR_N05
 	shared_focus = EDR_A05

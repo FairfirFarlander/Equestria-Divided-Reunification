@@ -598,6 +598,31 @@ spritetypes = {
 		name = "GFX_LAS_pine_chest"
 		textureFile = "gfx/leaders/LSP/pinechest.tga"
 	}
+##MSE##
+	spritetype = {
+		name = "GFX_MSE_council"
+		textureFile = "gfx/leaders/MSE/MSE_council.dds"
+	}
+	spritetype = {
+		name = "GFX_MSE_council_small"
+		textureFile = "gfx/interface/advisors/MSE/MSE_council_small.dds"
+	}
+	spritetype = {
+		name = "GFX_MSE_morning_star"
+		textureFile = "gfx/leaders/MSE/MSE_morning_star.dds"	#gfx/leaders/MSE/MSE_morning_star.dds
+	}
+	spritetype = {
+		name = "GFX_MSE_morning_star_small"
+		textureFile = "gfx/interface/advisors/MSE/MSE_morning_star_small.dds"
+	}
+	spritetype = {
+		name = "GFX_MSE_orange_creamsicle"
+		textureFile = "gfx/leaders/MSE/MSE_orange_creamsicle.dds"	#gfx/leaders/MSE/MSE_orange_creamsicle.dds
+	}
+	spritetype = {
+		name = "GFX_MSE_orange_creamsicle_small"
+		textureFile = "gfx/interface/advisors/MSE/MSE_orange_creamsicle_small.dds"
+	}
 ##NIH##
 	spritetype = {
 		name = "GFX_NIH_burgandy"
@@ -700,6 +725,39 @@ spritetypes = {
 	spritetype = {
 		name = "GFX_PLF_boreal_bloom"
 		textureFile = "gfx/leaders/BAL/Brandon.tga"
+	}
+##PRT##
+	spritetype = {
+		name = "GFX_PRT_black_claw"
+		textureFile = "gfx/leaders/PRT/PRT_black_claw.dds"
+	}
+	spritetype = {
+		name = "GFX_PRT_black_claw_small"
+		textureFile = "gfx/interface/advisors/PRT/PRT_black_claw_small.dds"
+	}
+	spritetype = {
+		name = "GFX_PRT_calcot_greens"
+		textureFile = "gfx/leaders/PRT/PRT_calcot_greens.dds"
+	}
+	spritetype = {
+		name = "GFX_PRT_calcot_greens_small"
+		textureFile = "gfx/interface/advisors/PRT/PRT_calcot_greens_small.dds"
+	}
+	spritetype = {
+		name = "GFX_PRT_ocean_breeze"
+		textureFile = "gfx/leaders/PRT/PRT_ocean_breeze.dds"
+	}
+	spritetype = {
+		name = "GFX_PRT_ocean_breeze_small"
+		textureFile = "gfx/interface/advisors/PRT/PRT_ocean_breeze_small.dds"
+	}
+	spritetype = {
+		name = "GFX_PRT_sparrow_feathers"
+		textureFile = "gfx/leaders/PRT/PRT_sparrow_feathers.dds"
+	}
+	spritetype = {
+		name = "GFX_PRT_sparrow_feathers_small"
+		textureFile = "gfx/interface/advisors/PRT/PRT_sparrow_feathers_small.dds"
 	}
 ##SGR##
 	spritetype = {
@@ -866,39 +924,6 @@ spritetypes = {
 	spritetype = {
 		name = "GFX_TRT_harshwhinny_small"
 		textureFile = "gfx/interface/advisors/TRT/TRT_harshwhinny_small.dds"
-	}
-##PRT##
-	spritetype = {
-		name = "GFX_PRT_black_claw"
-		textureFile = "gfx/leaders/PRT/PRT_black_claw.dds"
-	}
-	spritetype = {
-		name = "GFX_PRT_black_claw_small"
-		textureFile = "gfx/interface/advisors/PRT/PRT_black_claw_small.dds"
-	}
-	spritetype = {
-		name = "GFX_PRT_calcot_greens"
-		textureFile = "gfx/leaders/PRT/PRT_calcot_greens.dds"
-	}
-	spritetype = {
-		name = "GFX_PRT_calcot_greens_small"
-		textureFile = "gfx/interface/advisors/PRT/PRT_calcot_greens_small.dds"
-	}
-	spritetype = {
-		name = "GFX_PRT_ocean_breeze"
-		textureFile = "gfx/leaders/PRT/PRT_ocean_breeze.dds"
-	}
-	spritetype = {
-		name = "GFX_PRT_ocean_breeze_small"
-		textureFile = "gfx/interface/advisors/PRT/PRT_ocean_breeze_small.dds"
-	}
-	spritetype = {
-		name = "GFX_PRT_sparrow_feathers"
-		textureFile = "gfx/leaders/PRT/PRT_sparrow_feathers.dds"
-	}
-	spritetype = {
-		name = "GFX_PRT_sparrow_feathers_small"
-		textureFile = "gfx/interface/advisors/PRT/PRT_sparrow_feathers_small.dds"
 	}
 ##VHT##
 	spritetype = {
