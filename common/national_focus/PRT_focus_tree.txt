@@ -1,0 +1,179 @@
+focus_tree = {
+	id = PRT_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			tag = PRT
+			add = 0 #2
+		}
+	}
+	continuous_focus_position = { x = 1000 y = 0 }
+	shared_focus = PRT_I0000
+}
+focus_tree = {
+	id = PRT_focus_tree_debug
+	country = {
+		factor = 0
+		modifier = {
+			is_debug = yes
+			tag = PRT
+			add = 7
+		}
+	}
+	continuous_focus_position = { x = 1000 y = 0 }
+	shared_focus = PRT_I0000
+}
+	shared_focus = {	#Improving the Homeport Just A Wee Bit
+		id = PRT_I0000
+		icon = GFX_goal_dockyard_generic_psody
+		#relative_position_id = 
+		x = 0 y = 0 cost = 0
+		search_filters = {}
+		ai_will_do = { factor = 40 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PRT_I0000"
+			one_infra_every_core = yes
+		}
+	}
+	shared_focus = {	#Salvaging Projects
+		id = PRT_I0100
+		icon = GFX_CTL_V_STEEL
+		relative_position_id = PRT_I0000
+		x = 0 y = 1 cost = 0
+		prerequisite = { focus = PRT_I0000 }
+		search_filters = {}
+		ai_will_do = { factor = 40 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PRT_I0100"
+			1195 = {
+				add_resource = {
+					type = steel
+					amount = 2
+				}
+			}
+		}
+	}
+	shared_focus = {	#A Bigger Cut for the Lads
+		id = PRT_I0200
+		icon = GFX_goal_gold_reserve_2
+		relative_position_id = PRT_I0100
+		x = -1 y = 1 cost = 0
+		prerequisite = { focus = PRT_I0100 }
+		mutually_exclusive = { focus = PRT_I0201 }
+		search_filters = {}
+		ai_will_do = { factor = 40 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PRT_I0200"
+			add_ideas = PRT_cut_bonuses
+		}
+	}
+	shared_focus = {	#Bonuses Paid in Rum
+		id = PRT_I0201
+		icon = GFX_goal_focus_TRD_bottleforcyrus
+		relative_position_id = PRT_I0100
+		x = 1 y = 1 cost = 0
+		prerequisite = { focus = PRT_I0100 }
+		mutually_exclusive = { focus = PRT_I0200 }
+		search_filters = {}
+		ai_will_do = { factor = 40 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PRT_I0201"
+			add_ideas = PRT_rum_bonuses
+		}
+	}
+	shared_focus = {	#A Use for Those in Da Briggs
+		id = PRT_I0300
+		icon = GFX_goal_slavery
+		relative_position_id = PRT_I0100
+		x = -1 y = 2 cost = 0
+		prerequisite = {
+			focus = PRT_I0200
+			focus = PRT_I0201
+		}
+		search_filters = {}
+		ai_will_do = { factor = 40 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PRT_I0300"
+			add_ideas = PRT_brigg_labor
+		}
+	}
+	shared_focus = {	#I Came for Ye Booty! That be Treasure Ya Know.
+		id = PRT_I0301
+		icon = GFX_goal_zes_raid
+		relative_position_id = PRT_I0100
+		x = 1 y = 2 cost = 0
+		prerequisite = {
+			focus = PRT_I0200
+			focus = PRT_I0201
+		}
+		bypass = { always = yes }
+		search_filters = {}
+		ai_will_do = { factor = 40 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PRT_I0301"
+			#Raid Loot Bonus Increased
+		}
+	}
+	shared_focus = {	#Trade Free of Tax or Scrutiny
+		id = PRT_I0400
+		icon = GFX_goal_tax_slave
+		relative_position_id = PRT_I0100
+		x = -2 y = 3 cost = 0
+		prerequisite = {
+			focus = PRT_I0300
+			focus = PRT_I0301
+		}
+		search_filters = {}
+		ai_will_do = { factor = 40 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PRT_I0400"
+			add_ideas = PRT_trade_haven
+		}
+	}
+	shared_focus = {	#The Cubuck Rum Run
+		id = PRT_I0401
+		icon = GFX_tradegoods
+		relative_position_id = PRT_I0100
+		x = 0 y = 3 cost = 0
+		prerequisite = {
+			focus = PRT_I0300
+			focus = PRT_I0301
+		}
+		search_filters = {}
+		ai_will_do = { factor = 40 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PRT_I0401"
+			add_ideas = PRT_cubuck_rum
+		}
+	}
+	shared_focus = {	#More Legitiment Business Ventures
+		id = PRT_I0402
+		icon = GFX_goal_cash_and_cap
+		relative_position_id = PRT_I0100
+		x = 2 y = 3 cost = 0
+		prerequisite = {
+			focus = PRT_I0300
+			focus = PRT_I0301
+		}
+		search_filters = {}
+		ai_will_do = { factor = 40 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PRT_I0402"
+			two_random_industrial_complex = yes
+		}
+	}
+	shared_focus = {	#We Control the Trade in the Southern Seas!
+		id = PRT_I0500
+		icon = GFX_goal_BEL_Battleship_Investements
+		relative_position_id = PRT_I0100
+		x = 0 y = 4 cost = 0
+		prerequisite = { focus = PRT_I0400 }
+		prerequisite = { focus = PRT_I0401 }
+		prerequisite = { focus = PRT_I0402 }
+		search_filters = {}
+		ai_will_do = { factor = 40 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PRT_I0500"
+			add_ideas = PRT_south_seas_trade
+		}
+	}

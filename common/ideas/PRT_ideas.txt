@@ -1,0 +1,53 @@
+ideas = {
+	country = {
+		PRT_cut_bonuses = {
+			#picture = 
+			modifier = {
+				army_org_regain = 0.05
+				recruitable_population_factor = 0.05
+			}
+		}
+		PRT_rum_bonuses = {
+			#picture = 
+			modifier = {
+				army_morale_factor = 0.025
+				army_org_regain = -0.025
+				recruitable_population_factor = 0.025
+			}
+		}
+		PRT_brigg_labor = {
+			#picture = 
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				conversion_cost_civ_to_mil_factor = -0.1
+				conversion_cost_mil_to_civ_factor = -0.1
+			}
+		}
+		PRT_trade_haven = {
+			#picture = 
+			modifier = {
+				trade_opinion_factor = 0.15
+			}
+		}
+		PRT_cubuck_rum = {
+			#picture = 
+			modifier = {
+				stability_factor = 0.07
+				trade_opinion_factor = 0.05
+			}
+		}
+		PRT_south_seas_trade = {
+			#picture = 
+			do_effect = {
+				controls_state = 1195
+				controls_province = 20703
+				controls_province = 20964
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.2
+				production_factory_start_efficiency_factor = 0.05
+				trade_opinion_factor = 0.1
+			}
+		}
+	}
+}

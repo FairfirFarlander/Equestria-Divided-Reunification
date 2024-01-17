@@ -451,7 +451,7 @@ focus_tree = {
 			custom_effect_tooltip = CLD_SS0201_cett
 			division_template = {
 				name = "Hoplitai"
-				template_counter = 80
+				template_counter = 85
 				regiments = {
 					pegasi = { x = 0 y = 0 }
 					pegasi = { x = 0 y = 1 }
