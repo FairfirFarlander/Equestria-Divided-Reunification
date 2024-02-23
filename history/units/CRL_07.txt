@@ -26,7 +26,7 @@ division_template={
 	is_locked=yes
 	force_allow_recruiting=yes
 	priority=2
-	template_counter=5
+	template_counter=85
 	regiments={
 		infantry={x=0 y=0}
 		infantry={x=0 y=1}
