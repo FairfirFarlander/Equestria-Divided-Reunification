@@ -119,7 +119,7 @@ EDR_debug_FLY_land_decisions={
 		has_global_flag=EDR_toggle_minors_visiblity
 		or={
 			and={
-				tag=HLY
+				tag=FLY
 				has_global_flag=EDR_debug_shwlandmaj
 			}
 			has_global_flag=EDR_debug_shwland

@@ -1387,7 +1387,7 @@ focus_tree = {
 			EDR_N06C_reward = yes
 		}
 	}
-	shared_focus = {	#Destroyer CLass Development
+	shared_focus = {	#Destroyer Class Development
 		id = EDR_N06D
 		icon = GFX_focus_generic_destroyer
 		relative_position_id = EDR_N05

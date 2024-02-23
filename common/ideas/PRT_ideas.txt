@@ -1,5 +1,6 @@
 ideas = {
 	country = {
+	##Economic (Industrial) Tree Ideas##
 		PRT_cut_bonuses = {
 			#picture = 
 			modifier = {
@@ -47,6 +48,62 @@ ideas = {
 				production_speed_buildings_factor = 0.2
 				production_factory_start_efficiency_factor = 0.05
 				trade_opinion_factor = 0.1
+			}
+		}
+	##Military (Naval/Military) Tree Ideas##
+		PRT_the_promise = {
+			#picture = 
+			modifier = {
+				recruitable_population_factor = 0.05
+				monthly_population = 0.03
+			}
+		}
+		PRT_grog_for_injured = {
+			#picture = 
+			modifier = {
+				army_morale_factor = 0.05
+			}
+		}
+		PRT_concocted_potions = {
+			#picture = 
+			modifier = {
+				heat_attrition_factor = -0.03
+			}
+		}
+		PRT_grog_n_potions = {
+			#picture = 
+			modifier = {
+				army_morale_factor = 0.05
+				heat_attrition_factor = -0.03
+			}
+		}
+		PRT_light_n_fast = {
+			#picture = 
+			modifier = {
+				modifier_army_sub_unit_infantry_speed_factor = 0.05
+				modifier_army_sub_unit_militia_speed_factor = 0.05
+			}
+		}
+		PRT_strongest_at_sea = {
+			#picture = 
+			modifier = {
+				attrition = -0.02
+				no_supply_grace = 0.03
+			}
+		}
+		PRT_fortune_favors = {
+			#picture = 
+			modifier = {
+				army_attack_factor = 0.1
+			}
+		}
+		PRT_never_die = {
+			#picture = 
+			modifier = {
+				recruitable_population_factor = 0.05
+				monthly_population = 0.03
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
 			}
 		}
 	}

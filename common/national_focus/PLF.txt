@@ -13,6 +13,7 @@ focus_tree = {
 	shared_focus = BAL_decentralized_militia
 	shared_focus = BAL_centralized_army
 	shared_focus = BAL_revolution
+	shared_focus = PLF_consult_locals
 }
 	shared_focus = {	#
 		id = PLF_S00
@@ -94,7 +95,7 @@ focus_tree = {
 		id = PLF_consult_locals
 		icon = GFX_goal_improve_relations_pony_pony
 		#prerequisite = {focus = PLF_winter_07}
-		x = 11 y = 0 cost = 5
+		x = 26 y = 0 cost = 5
 		ai_will_do = {factor = 40}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus PLF_consult_locals"

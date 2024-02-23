@@ -1,0 +1,21 @@
+add_namespace = PRT_ES
+	country_event = {	#
+		id = PRT_ES.000000
+		title = PRT_ES.000000.t
+		desc = PRT_ES.000000.d
+		is_triggered_only = yes
+		immediate = { log = "[GetDateText]: [Root.GetName]: event triggered PRT_ES.000000" }
+		option = {
+			name = PRT_ES.000000.a
+			add_equipment_to_stockpile = {
+				type = small_plane_cas_airframe_1
+				variant_name = "Golden Corsair"
+				producer = PRT
+				amount = 5
+			}
+		}
+		option = {
+			name = EDRG_ED.debug
+			trigger = { is_debug = yes }
+		}
+	}

@@ -218,12 +218,12 @@ characters = {
 				small = GFX_idea_BAL_ministry_of_defense
 			}
 		}
-		available = { has_country_flag = PLF_ministries_unlocked }
 		advisor = {
 			slot = political_advisor
 			idea_token = PLF_modefense_politician
 			ledger = civilian
 			traits = { BAL_mod }
+			available = { has_country_flag = PLF_ministries_unlocked }
 		}
 	}
 	PLF_ministry_of_information = {
@@ -233,12 +233,12 @@ characters = {
 				small = GFX_idea_BAL_ministry_of_information
 			}
 		}
-		available = { has_country_flag = PLF_ministries_unlocked }
 		advisor = {
 			slot = political_advisor
 			idea_token = PLF_moinformation_politician
 			ledger = civilian
 			traits = { BAL_moi }
+			available = { has_country_flag = PLF_ministries_unlocked }
 		}
 	}
 	PLF_ministry_of_labour = {
@@ -248,12 +248,12 @@ characters = {
 				small = GFX_idea_BAL_ministry_of_labor
 			}
 		}
-		available = { has_country_flag = PLF_ministries_unlocked }
 		advisor = {
 			slot = political_advisor
 			idea_token = PLF_molabour_politician
 			ledger = civilian
 			traits = { BAL_mol }
+			available = { has_country_flag = PLF_ministries_unlocked }
 		}
 	}
 	PLF_silver_storm = {

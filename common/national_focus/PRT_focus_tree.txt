@@ -7,8 +7,9 @@ focus_tree = {
 			add = 0 #2
 		}
 	}
-	continuous_focus_position = { x = 1000 y = 0 }
-	shared_focus = PRT_I0000
+	continuous_focus_position = { x = 2000 y = 0 }
+	#shared_focus = PRT_I0000
+	#shared_focus = PRT_M0000
 }
 focus_tree = {
 	id = PRT_focus_tree_debug
@@ -20,9 +21,11 @@ focus_tree = {
 			add = 7
 		}
 	}
-	continuous_focus_position = { x = 1000 y = 0 }
+	continuous_focus_position = { x = 2000 y = 0 }
 	shared_focus = PRT_I0000
+	shared_focus = PRT_M0000
 }
+##Economic (Industrial) Tree##
 	shared_focus = {	#Improving the Homeport Just A Wee Bit
 		id = PRT_I0000
 		icon = GFX_goal_dockyard_generic_psody
@@ -111,7 +114,7 @@ focus_tree = {
 		ai_will_do = { factor = 40 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus PRT_I0301"
-			#Raid Loot Bonus Increased
+			#Raid Loot Bonus Increased - Do later when understood. ~FRLNDR
 		}
 	}
 	shared_focus = {	#Trade Free of Tax or Scrutiny
@@ -175,5 +178,329 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus PRT_I0500"
 			add_ideas = PRT_south_seas_trade
+		}
+	}
+##Military (Naval/Military) Tree##
+	shared_focus = {	#The Promise of Fortune and Adventure!
+		id = PRT_M0000
+		icon = GFX_goal_unknown
+		#relative_position_id = 
+		x = 8 y = 0 cost = 0
+		search_filters = {}
+		ai_will_do = { factor = 40 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PRT_M0000"
+			add_ideas = PRT_the_promise
+		}
+	}
+	shared_focus = {	#Grog for the Injured and Weary
+		id = PRT_M0100
+		icon = GFX_goal_unknown
+		relative_position_id = PRT_M0000
+		x = -2 y = 1 cost = 0
+		prerequisite = { focus = PRT_M0000 }
+		search_filters = {}
+		ai_will_do = { factor = 40 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PRT_M0100"
+			if = {
+				limit = { has_idea = PRT_concocted_potions }
+				swap_ideas = {
+					remove_idea = PRT_concocted_potions
+					add_idea = PRT_grog_n_potions
+				}
+			}
+			else = { add_ideas = PRT_grog_for_injured }
+		}
+	}
+	shared_focus = {	#Concoctions to Save Us from this Heat!
+		id = PRT_M0101
+		icon = GFX_goal_unknown
+		relative_position_id = PRT_M0000
+		x = 0 y = 1 cost = 0
+		prerequisite = { focus = PRT_M0000 }
+		search_filters = {}
+		ai_will_do = { factor = 40 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PRT_M0101"
+			if = {
+				limit = { has_idea = PRT_grog_for_injured }
+				swap_ideas = {
+					remove_idea = PRT_grog_for_injured
+					add_idea = PRT_grog_n_potions
+				}
+			}
+			else = { add_ideas = PRT_concocted_potions }
+		}
+	}
+	shared_focus = {	#Coastal Raiding Parties
+		id = PRT_M0102
+		icon = GFX_goal_unknown
+		relative_position_id = PRT_M0000
+		x = 2 y = 1 cost = 0
+		prerequisite = { focus = PRT_M0000 }
+		search_filters = {}
+		ai_will_do = { factor = 40 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PRT_M0102"
+			if = {
+				limit = { has_tech = marines }
+				set_technology = { marines = 1 }
+			}
+			else = {
+				add_tech_bonus = {
+					name = special_ops_bonus
+					category = marine_tech
+					bonus = 1
+					uses = 1
+				}
+			}
+		}
+	}
+	shared_focus = {	#Naval Guns on Land
+		id = PRT_M0200
+		icon = GFX_goal_unknown
+		relative_position_id = PRT_M0000
+		x = -2 y = 2 cost = 0
+		#allow_branch = { has_dlc = "Man the Guns" }
+		prerequisite = { focus = PRT_M0100 }
+		search_filters = {}
+		ai_will_do = { factor = 40 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PRT_M0200"
+			add_tech_bonus = {
+				name = support_artillery_bonus
+				category = artillery
+				bonus = 0.5
+				uses = 1
+			}
+		}
+	}
+	shared_focus = {	#The Cannons Just Don't Cut It No More
+		id = PRT_M0201
+		icon = GFX_goal_unknown
+		relative_position_id = PRT_M0000
+		x = 0 y = 2 cost = 0
+		#allow_branch = { has_dlc = "Man the Guns" }
+		prerequisite = { focus = PRT_M0000 }
+		search_filters = {}
+		ai_will_do = { factor = 40 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PRT_M0201"
+			add_tech_bonus = {
+				name = battery_bonus
+				category = cat_ship_light_battery
+				category = cat_ship_medium_battery
+				category = cat_ship_heavy_battery
+				bonus = 1
+				uses = 1
+			}
+		}
+	}
+	shared_focus = {	#Hospital Ships
+		id = PRT_M0202
+		icon = GFX_goal_unknown
+		relative_position_id = PRT_M0000
+		x = 2 y = 2 cost = 0
+		prerequisite = { focus = PRT_M0101 }
+		search_filters = {}
+		ai_will_do = { factor = 40 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PRT_M0202"
+			add_tech_bonus = {
+				name = hospital_research
+				category = hospital_tech
+				bonus = 1
+				uses = 1
+			}
+		}
+	}
+	shared_focus = {	#This Will Run Off Cheap Stuff?
+		id = PRT_M0300
+		icon = GFX_goal_unknown
+		relative_position_id = PRT_M0000
+		x = -3 y = 3 cost = 0
+		prerequisite = { focus = PRT_M0101 }
+		search_filters = {}
+		ai_will_do = { factor = 40 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PRT_M0300"
+			add_tech_bonus = {
+				name = synth_bonus
+				category = synth_resources
+				bonus = 1
+				uses = 2
+			}
+		}
+	}
+	shared_focus = {	#Pack Light and Move Quickly
+		id = PRT_M0301
+		icon = GFX_goal_unknown
+		relative_position_id = PRT_M0000
+		x = -1 y = 3 cost = 0
+		prerequisite = { focus = PRT_M0101 }
+		search_filters = {}
+		ai_will_do = { factor = 40 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PRT_M0301"
+			add_ideas = PRT_light_n_fast
+		}
+	}
+	shared_focus = {	#Only the Strongest Make it at Sea
+		id = PRT_M0302
+		icon = GFX_goal_unknown
+		relative_position_id = PRT_M0000
+		x = 1 y = 3 cost = 0
+		prerequisite = { focus = PRT_M0101 }
+		search_filters = {}
+		ai_will_do = { factor = 40 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PRT_M0302"
+			army_experience = 15
+			add_ideas = PRT_strongest_at_sea
+		}
+	}
+	shared_focus = {	#Fortune Favors the Infamous!
+		id = PRT_M0303
+		icon = GFX_goal_unknown
+		relative_position_id = PRT_M0000
+		x = 3 y = 3 cost = 0
+		prerequisite = { focus = PRT_M0101 }
+		search_filters = {}
+		ai_will_do = { factor = 40 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PRT_M0303"
+			add_ideas = PRT_fortune_favors
+		}
+	}
+	shared_focus = {	#The Speediest and Slyest of Ships
+		id = PRT_M0400
+		icon = GFX_goal_unknown
+		relative_position_id = PRT_M0000
+		x = -4 y = 4 cost = 0
+		prerequisite = { focus = PRT_M0101 }
+		search_filters = {}
+		ai_will_do = { factor = 40 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PRT_M0400"
+			add_tech_bonus = {
+				name = dd_bonus
+				category = dd_tech
+				bonus = 0.5
+				uses = 1
+			}
+		}
+	}
+	shared_focus = {	#Something With A Bit More Punch
+		id = PRT_M0401
+		icon = GFX_goal_unknown
+		relative_position_id = PRT_M0000
+		x = -2 y = 4 cost = 0
+		prerequisite = { focus = PRT_M0101 }
+		search_filters = {}
+		ai_will_do = { factor = 40 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PRT_M0401"
+			add_tech_bonus = {
+				name = cl_bonus
+				category = cl_tech
+				bonus = 0.5
+				uses = 1
+			}
+		}
+	}
+	shared_focus = {	#The Big Ships with Da Big Guns!
+		id = PRT_M0402
+		icon = GFX_goal_unknown
+		relative_position_id = PRT_M0000
+		x = 0 y = 4 cost = 0
+		prerequisite = { focus = PRT_M0101 }
+		search_filters = {}
+		ai_will_do = { factor = 40 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PRT_M0402"
+			add_tech_bonus = {
+				name = bb_bonus
+				category = bb_tech
+				bonus = 0.5
+				uses = 1
+			}
+		}
+	}
+	shared_focus = {	#Terrors of the Skies and Seas
+		id = PRT_M0403
+		icon = GFX_goal_unknown
+		relative_position_id = PRT_M0000
+		x = 2 y = 4 cost = 0
+		prerequisite = { focus = PRT_M0101 }
+		search_filters = {}
+		ai_will_do = { factor = 40 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PRT_M0403"
+			if = {
+				limit = { has_dlc = "By Blood Alone" }
+				set_technology = {
+					airship_airframes = 1
+					early_bombs = 1
+					engines_1 = 1
+				}
+				create_equipment_variant = {
+					name = "Golden Corsair"
+					type = medium_airship_airframe_0
+					icon = "GFX_medium_airship_equipment_0_medium"
+					modules = {
+						fixed_main_weapon_slot = medium_bomb_bay
+						engine_type_slot = engine_1_2x
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = medium_airship_airframe_0
+					variant_name = "Golden Corsair"
+					amount = 5
+				}
+			}
+			else = {
+				set_technology = { airships1 = 1 }
+				add_equipment_to_stockpile = {
+					type = medium_airship_equipment_0
+					amount = 5
+				}
+			}
+		}
+	}
+	shared_focus = {	#Never Shall We Die!
+		id = PRT_M0404
+		icon = GFX_goal_unknown
+		relative_position_id = PRT_M0000
+		x = 4 y = 4 cost = 0
+		prerequisite = { focus = PRT_M0101 }
+		search_filters = {}
+		ai_will_do = { factor = 40 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PRT_M0404"
+			swap_ideas = {
+				remove_idea = PRT_the_promise
+				add_idea = PRT_never_die
+			}
+		}
+	}
+	shared_focus = {	#Fortress Tortuga
+		id = PRT_M0500
+		icon = GFX_goal_unknown
+		relative_position_id = PRT_M0000
+		x = 0 y = 5 cost = 0
+		prerequisite = { focus = PRT_M0101 }
+		search_filters = {}
+		ai_will_do = { factor = 40 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PRT_M0500"
+			1195 = {
+				add_building_construction = {
+					type = coastal_bunker
+					province = 20720
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
