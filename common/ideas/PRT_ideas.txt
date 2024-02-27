@@ -1,5 +1,18 @@
 ideas = {
 	country = {
+	##Starting Ideas##
+		PRT_why_trade = {
+			picture = KIR_skull_icon
+			modifier = {
+				trade_opinion_factor = -0.8
+			}
+		}
+		PRT_yar_har = {
+			picture = HIP_trade
+			modifier = {
+				stability_factor = -0.3
+			}
+		}
 	##Economic (Industrial) Tree Ideas##
 		PRT_cut_bonuses = {
 			#picture = 
@@ -58,6 +71,13 @@ ideas = {
 				monthly_population = 0.03
 			}
 		}
+		PRT_strongest_at_sea = {
+			#picture = 
+			modifier = {
+				attrition = -0.02
+				no_supply_grace = 24
+			}
+		}
 		PRT_grog_for_injured = {
 			#picture = 
 			modifier = {
@@ -82,13 +102,6 @@ ideas = {
 			modifier = {
 				modifier_army_sub_unit_infantry_speed_factor = 0.05
 				modifier_army_sub_unit_militia_speed_factor = 0.05
-			}
-		}
-		PRT_strongest_at_sea = {
-			#picture = 
-			modifier = {
-				attrition = -0.02
-				no_supply_grace = 0.03
 			}
 		}
 		PRT_fortune_favors = {

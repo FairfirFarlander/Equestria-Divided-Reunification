@@ -4,6 +4,8 @@ set_research_slots = 1
 set_stability = 0.76
 set_war_support = 0.76
 add_ideas = {
+	PRT_why_trade
+	PRT_yar_har
 	agrarian_society
 	lack_of_scientists2
 	poverty4
