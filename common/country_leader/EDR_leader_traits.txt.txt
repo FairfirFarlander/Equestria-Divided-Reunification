@@ -62,6 +62,15 @@ leader_traits = {
 		foreign_subversive_activites = -0.3
 		required_garrison_factor = -0.18
 	}
+	PRT_broken_compass = {
+		random = no
+		air_range_factor = 0.3
+		navy_max_range_factor = 0.3
+	}
+	PRT_silver_tounge = {
+		random = no
+		opinion_gain_monthly_factor = 0.1
+	}
 }
 ###NOTES###
 #governor_trait stability factor is based off the founding of Rockville in 1803. It coincidently also bumps the stability to 81 with its current communist popularity. Go figure.
