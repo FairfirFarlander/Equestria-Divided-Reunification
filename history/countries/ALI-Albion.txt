@@ -1,4 +1,4 @@
-set_capital = {state = 525}
+capital = 525
 oob = "ALI_spawn"
 set_stability = 0.36
 set_war_support = 0.12

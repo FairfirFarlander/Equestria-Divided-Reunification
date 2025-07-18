@@ -1,103 +1,124 @@
-division_template={
-	name="Townsfolk Mob"
-	priority=0
-	template_counter=22
-	regiments={
-		militia={x=0 y=0}
-		militia={x=0 y=1}
-		militia={x=0 y=2}
+division_template = {
+	name = "Townsfolk Mob"
+	priority = 0
+	template_counter = 22
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
 	}
 }
-division_template={
-	name="Reveler Cultists"
-	template_counter=1
-	regiments={
-		infantry={x=0 y=0}
-		infantry={x=0 y=1}
-		infantry={x=0 y=2}
-		infantry={x=0 y=3}
-		infantry={x=0 y=4}
+division_template = {
+	name = "Reveler Cultists"
+	template_counter = 1
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
 	}
 }
-division_template={
-	name="Euphories Detachment"
-	template_counter=2
-	regiments={
-		pegasi={x=0 y=0}
-		pegasi={x=0 y=1}
-		pegasi={x=0 y=2}
-		pegasi={x=0 y=3}
+division_template = {
+	name = "Euphories Detachment"
+	template_counter = 2
+	regiments = {
+		pegasi = { x = 0 y = 0 }
+		pegasi = { x = 0 y = 1 }
+		pegasi = { x = 0 y = 2 }
+		pegasi = { x = 0 y = 3 }
 	}
 }
-units={
-	division={	#Whinnysota#
-		name="Whinnyapolis Cult"
-		location=9887
-		division_template="Reveler Cultists"
-		start_experience_factor=0.1
-		start_equipment_factor=0.75
-		force_equipment_variants={
-			melee_equipment_0={owner="CUL" creator="CUL"}
+units = {
+	division = {
+		name = "Whinnyapolis Cult"
+		location = 9887	#Whinnysota
+		division_template = "Reveler Cultists"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+		force_equipment_variants = {
+			melee_equipment_0 = {
+				owner = "CUL"
+				creator = "CUL"
+			}
 		}
 	}
-	division={	#Feldspar Fields#
-		name="Ponytown Cult"
-		location=9150
-		division_template="Reveler Cultists"
-		start_experience_factor=0.1
-		start_equipment_factor=0.75
-		force_equipment_variants={
-			melee_equipment_0={owner="CUL" creator="CUL"}
+	division = {
+		name = "Ponytown Cult"
+		location = 9150	#Feldspar Fields
+		division_template = "Reveler Cultists"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+		force_equipment_variants = {
+			melee_equipment_0 = {
+				owner = "CUL"
+				creator = "CUL"
+			}
 		}
 	}
-	division={	#Agate Fields#
-		name="Quebuck Cult"
-		location=304
-		division_template="Reveler Cultists"
-		start_experience_factor=0.1
-		start_equipment_factor=0.75
-		force_equipment_variants={
-			melee_equipment_0={owner="CUL" creator="CUL"}
+	division = {
+		name = "Quebuck Cult"
+		location = 304	#Agate Fields
+		division_template = "Reveler Cultists"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+		force_equipment_variants = {
+			melee_equipment_0 = {
+				owner = "CUL"
+				creator = "CUL"
+			}
 		}
 	}
-	division={	#Shiny Bound#
-		name="Hedgewards Cult"
-		location=9236
-		division_template="Reveler Cultists"
-		start_experience_factor=0.1
-		start_equipment_factor=0.75
-		force_equipment_variants={
-			melee_equipment_0={owner="CUL" creator="CUL"}
+	division = {
+		name = "Hedgewards Cult"
+		location = 9236	#Shiny Bound
+		division_template = "Reveler Cultists"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+		force_equipment_variants = {
+			melee_equipment_0 = {
+				owner = "CUL"
+				creator = "CUL"
+			}
 		}
 	}
-	division={	#Bluebell Fields#
-		name="Marechester Cult"
-		location=11686
-		division_template="Reveler Cultists"
-		start_experience_factor=0.1
-		start_equipment_factor=0.75
-		force_equipment_variants={
-			melee_equipment_0={owner="CUL" creator="CUL"}
+	division = {
+		name = "Marechester Cult"
+		location = 11686	#Bluebell Fields
+		division_template = "Reveler Cultists"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+		force_equipment_variants = {
+			melee_equipment_0 = {
+				owner = "CUL"
+				creator = "CUL"
+			}
 		}
 	}
-	division={	#Acornage#
-		name="Acornage Cult"
-		location=748
-		division_template="Reveler Cultists"
-		start_experience_factor=0.1
-		start_equipment_factor=0.75
-		force_equipment_variants={
-			melee_equipment_0={owner="CUL" creator="CUL"}
+	division = {
+		name = "Acornage Cult"
+		location = 748	#Acornage
+		division_template = "Reveler Cultists"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+		force_equipment_variants = {
+			melee_equipment_0 = {
+				owner = "CUL"
+				creator = "CUL"
+			}
 		}
 	}
-	division={	#Western Featherfall Dale#
-		name="Euphories of Featherfall"
-		location=3653
-		division_template="Euphories Detachment"
-		start_experience_factor=0.1
-		start_equipment_factor=0.75
-		force_equipment_variants={
-			melee_equipment_0={owner="CUL" creator="CUL"}
+	division = {
+		name = "Euphories of Featherfall"
+		location = 3653	#Western Featherfall Dale
+		division_template = "Euphories Detachment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+		force_equipment_variants = {
+			melee_equipment_0 = {
+				owner = "CUL"
+				creator = "CUL"
+			}
 		}
 	}
 }

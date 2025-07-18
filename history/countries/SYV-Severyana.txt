@@ -1,4 +1,4 @@
-set_capital = {state = 157}
+capital = 157
 oob = "SYV_07"
 set_stability = 0.17
 set_war_support = 0.03
@@ -53,7 +53,11 @@ generic_CL_template = yes
 generic_DD_template = yes
 generic_SS_template = yes
 set_convoys = 7
-set_rule = {	can_generate_female_aces = yes	can_generate_female_unit_leaders = yes	can_generate_female_country_leaders = yes}
+set_rule = {
+	can_generate_female_aces = yes
+	can_generate_female_unit_leaders = yes
+	can_generate_female_country_leaders = yes
+}
 set_popularities = {
 	fascism = 10
 	communism = 20

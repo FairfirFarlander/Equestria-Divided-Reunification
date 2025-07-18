@@ -1,54 +1,63 @@
-division_template={
-	name="Militia"
-	priority=0
-	template_counter=3
-	regiments={
-		militia={x=0 y=0}
-		militia={x=0 y=1}
-		militia={x=0 y=2}
+division_template = {
+	name = "Militia"
+	priority = 0
+	template_counter = 3
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
 	}
 }
-division_template={
-	name="Coastal Conscripts"
-	template_counter=40
-	regiments={
-		infantry={x=0 y=0}
-		infantry={x=0 y=1}
-		infantry={x=0 y=2}
+division_template = {
+	name = "Coastal Conscripts"
+	template_counter = 40
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
 	}
 }
-units={
-	division={	#Portland
-		name="Portland Militia"
-		location=668
-		division_template="Militia"
-		start_experience_factor=0.04
-		start_equipment_factor=1
-		force_equipment_variants={
-			melee_equipment_0={owner="PLT" creator="PLT"}
+units = {
+	division = {
+		name = "Portland Militia"
+		location = 668	#Portland
+		division_template = "Militia"
+		start_experience_factor = 0.04
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			melee_equipment_0 = {
+				owner = "PLT"
+				creator = "PLT"
+			}
 		}
 	}
-	division={	#Warm Water Way
-		name="1st Portland Guard Regiment"
-		location=688
-		division_template="Coastal Conscripts"
-		start_experience_factor=0.02
-		start_equipment_factor=0.6
-		force_equipment_variants={
-			melee_equipment_1={owner="PLT" creator="EQS"}
+	division = {
+		name = "1st Portland Guard Regiment"
+		location = 688	#Warm Water Way
+		division_template = "Coastal Conscripts"
+		start_experience_factor = 0.02
+		start_equipment_factor = 0.6
+		force_equipment_variants = {
+			melee_equipment_1 = {
+				owner = "PLT"
+				creator = "EQS"
+			}
 		}
 	}
 }
-instant_effect={
-	add_equipment_production={
-		equipment={type=melee_equipment_0 creator="PLT"}
-		requested_factories=1
-		progress=0.96
-		efficiency=28
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = melee_equipment_0
+			creator = "PLT"
+		}
+		requested_factories = 1
+		progress = 0.96
+		efficiency = 28
 	}
-	add_equipment_to_stockpile={
-		type=melee_equipment_1
-		amount=92
-		producer=PLT
+	add_equipment_to_stockpile = {
+		type = melee_equipment_1
+		amount = 92
+		producer = PLT
 	}
 }

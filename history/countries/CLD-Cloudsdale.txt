@@ -69,7 +69,7 @@ if = {
 	create_equipment_variant = {
 		name = "Yak Tank"
 		type = light_tank_chassis_0
-		icon = "gfx/interface/technologies/EQS_armoured_tractor.dds"
+		icon = "GFX_commonwealth_2d_gwtank_medium"
 		modules = {
 			main_armament_slot = tank_heavy_machine_gun
 			turret_type_slot = tank_light_one_man_tank_turret
@@ -92,7 +92,7 @@ if = {
 		create_equipment_variant = {
 			name = "Yak Tank"
 			type = gw_tank_equipment
-			icon = "gfx/interface/technologies/EQS_armoured_tractor.dds"
+			icon = "GFX_commonwealth_2d_gwtank_medium"
 			upgrades = {
 				tank_reliability_upgrade = 2
 				tank_gun_upgrade = 2
@@ -115,7 +115,7 @@ if = {
 	create_equipment_variant = {
 		name = "Handley Page Hayford"
 		type = medium_plane_airframe_0
-		icon = "GFX_ENG_scout_plane2_medium"
+		#icon = "GFX_ENG_scout_plane2_medium"	#Fix me!
 		modules = {
 			fixed_main_weapon_slot = medium_bomb_bay
 			engine_type_slot = engine_1_2x
@@ -201,7 +201,11 @@ if = {
 	}
 }
 actually_fix_weapon_techs = yes
-set_rule = {	can_generate_female_aces = yes	can_generate_female_unit_leaders = yes	can_generate_female_country_leaders = yes}
+set_rule = {
+	can_generate_female_aces = yes
+	can_generate_female_unit_leaders = yes
+	can_generate_female_country_leaders = yes
+}
 set_popularities = {
 	fascism = 7
 	communism = 2

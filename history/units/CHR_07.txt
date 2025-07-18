@@ -18,9 +18,9 @@ division_template = {
 	}
 }
 units = {
-	division = {	#Even#
+	division = {
 		name = "Cherry Arms Brigade I"
-		location = 6720
+		location = 6720	#Even
 		division_template = "Ponies-at-Arms"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
@@ -31,9 +31,9 @@ units = {
 			}
 		}
 	}
-	division = {	#Sires Hollow#
+	division = {
 		name = "Cherry Arms Brigade II"
-		location = 11427
+		location = 11427	#Sires Hollow
 		division_template = "Ponies-at-Arms"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
@@ -44,9 +44,9 @@ units = {
 			}
 		}
 	}
-	division = {	#Sires Hollow#
+	division = {
 		name = "Cherry Arms Brigade III"
-		location = 11627
+		location = 11627	#Sires Hollow
 		division_template = "Ponies-at-Arms"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8

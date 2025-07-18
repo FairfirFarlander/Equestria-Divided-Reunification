@@ -1,93 +1,111 @@
-division_template={
-	name="Stroi"
-	priority=0
-	template_counter=14
-	regiments={
-		militia={x=0 y=0}
-		militia={x=0 y=1}
-		militia={x=0 y=2}
+division_template = {
+	name = "Stroi"
+	priority = 0
+	template_counter = 14
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
 	}
 }
-division_template={
-	name="Streletskoye Voysko"
-	is_locked=yes
-	priority=1
-	template_counter=55
-	regiments={
-		infantry={x=0 y=0}
-		infantry={x=0 y=1}
-		infantry={x=0 y=2}
+division_template = {
+	name = "Streletskoye Voysko"
+	is_locked = yes
+	priority = 1
+	template_counter = 55
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
 	}
 }
-division_template={
-	name="Pomestnoe Voysko"
-	is_locked=yes
-	priority=1
-	regiments={
-		pegasi={x=0 y=0}
-		pegasi={x=0 y=1}
-		pegasi={x=0 y=2}
+division_template = {
+	name = "Pomestnoe Voysko"
+	is_locked = yes
+	priority = 1
+	regiments = {
+		pegasi = { x = 0 y = 0 }
+		pegasi = { x = 0 y = 1 }
+		pegasi = { x = 0 y = 2 }
 	}
 }
-units={
-	division={	#Baicall#
-		name="Baicall Stroi"
-		location=6208
-		division_template="Stroi"
-		start_experience_factor=0.02
-		start_equipment_factor=0.6
-		force_equipment_variants={
-			melee_equipment_0={owner="SYV" creator="SYV"}
+units = {
+	division = {
+		name = "Baicall Stroi"
+		location = 6208	#Baicall
+		division_template = "Stroi"
+		start_experience_factor = 0.02
+		start_equipment_factor = 0.6
+		force_equipment_variants = {
+			melee_equipment_0 = {
+				owner = "SYV"
+				creator = "SYV"
+			}
 		}
 	}
-	division={	#Chillwing#
-		name="Chillwing Stroi"
-		location=12756
-		division_template="Stroi"
-		start_experience_factor=0.02
-		start_equipment_factor=0.4
-		force_equipment_variants={
-			melee_equipment_0={owner="SYV" creator="SYV"}
+	division = {
+		name = "Chillwing Stroi"
+		location = 12756	#Chillwing
+		division_template = "Stroi"
+		start_experience_factor = 0.02
+		start_equipment_factor = 0.4
+		force_equipment_variants = {
+			melee_equipment_0 = {
+				owner = "SYV"
+				creator = "SYV"
+			}
 		}
 	}
-	division={	#Krupochkino#
-		name="Krupochkino Stroi"
-		location=6350
-		division_template="Stroi"
-		start_experience_factor=0.07
-		start_equipment_factor=0.9
-		force_equipment_variants={
-			melee_equipment_0={owner="SYV" creator="SYV"}
+	division = {
+		name = "Krupochkino Stroi"
+		location = 6350	#Krupochkino
+		division_template = "Stroi"
+		start_experience_factor = 0.07
+		start_equipment_factor = 0.9
+		force_equipment_variants = {
+			melee_equipment_0 = {
+				owner = "SYV"
+				creator = "SYV"
+			}
 		}
 	}
-	division={	#Novochernushsk#
-		name="Novochernushsk Stroi"
-		location=351
-		division_template="Stroi"
-		start_experience_factor=0.1
-		start_equipment_factor=1
-		force_equipment_variants={
-			melee_equipment_1={owner="SYV" creator="EQS"}
+	division = {
+		name = "Novochernushsk Stroi"
+		location = 351	#Novochernushsk
+		division_template = "Stroi"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			melee_equipment_1 = {
+				owner = "SYV"
+				creator = "EQS"
+			}
 		}
 	}
-	division={	#Kobilkyno#
-		name="Streletskoye Kobilkyno"
-		location=6925
-		division_template="Streletskoye Voysko"
-		start_experience_factor=0.1
-		start_equipment_factor=0.8
-		force_equipment_variants={
-			melee_equipment_0={owner="SYV" creator="SYV"}
+	division = {
+		name = "Streletskoye Kobilkyno"
+		location = 6925	#Kobilkyno
+		division_template = "Streletskoye Voysko"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+		force_equipment_variants = {
+			melee_equipment_0 = {
+				owner = "SYV"
+				creator = "SYV"
+			}
 		}
 	}
-	division={	#Bird Territory#
-		name="Pomestnoe Bordo"
-		location=869
-		division_template="Pomestnoe Voysko"
-		start_experience_factor=0.23
-		start_equipment_factor=0.95
-		force_equipment_variants={
-			melee_equipment_0={owner="SYV" creator="SYV"}
+	division = {
+		name = "Pomestnoe Bordo"
+		location = 869	#Bird Territory
+		division_template = "Pomestnoe Voysko"
+		start_experience_factor = 0.23
+		start_equipment_factor = 0.95
+		force_equipment_variants = {
+			melee_equipment_0 = {
+				owner = "SYV"
+				creator = "SYV"
+			}
 		}
 	}
 }

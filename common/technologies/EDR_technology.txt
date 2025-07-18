@@ -47,7 +47,7 @@ technologies = {
 			is_EDR_nation = yes
 		}
 		enable_equipments = {
-			equestrian_armor_equipment_1
+		#	equestrian_armor_equipment_1
 		}
 		enable_subunits = {
 			armored_infantry
@@ -144,7 +144,7 @@ technologies = {
 			armor_value = 5000
 		}
 		enable_equipments = {
-			equestrian_armor_equipment_3
+		#	equestrian_armor_equipment_3
 		}
 		research_cost = 1.25
 		start_year = 1010

@@ -1,29 +1,29 @@
-units={	#EMB Naval OOB MTG
-	fleet={
-		name="The Queen's Navy"
-		naval_base=336
-		task_force={
-			name="BuzzBuzz"
-			location=336	#Unnamedhive
-			ship={	#Battleship/Dreadnought
-				name="ERNS Narratek"
-				definition=battleship
-				equipment={
-					ship_hull_heavy_1={
-						amount=1
-						owner=EMB
-						version_name="Narratek 999 Class"
+units = {
+	fleet = {
+		name = "The Queen's Navy"
+		naval_base = 336	#Unnamedhive
+		task_force = {
+			name = "BuzzBuzz"
+			location = 336	#Unnamedhive
+			ship = {	#Battleship/Dreadnought
+				name = "ERNS Narratek"
+				definition = battleship
+				equipment = {
+					ship_hull_heavy_1 = {
+						amount = 1
+						owner = EMB
+						version_name = "Narratek 999 Class"
 					}
 				}
 			}
-			ship={	#Dreadnought	#We tried. It died.
-				name="ERNS Narratek"
-				definition=battleship
-				equipment={
-					ship_hull_pre_dreadnought={
-						amount=1
-						owner=EMB
-						version_name="Mounder 999 Class"
+			ship = {	#Dreadnought	#We tried. It died.
+				name = "ERNS Narratek"
+				definition = battleship
+				equipment = {
+					ship_hull_pre_dreadnought = {
+						amount = 1
+						owner = EMB
+						version_name = "Mounder 999 Class"
 					}
 				}
 			}

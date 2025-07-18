@@ -12,17 +12,17 @@ division_template = {
 	name = "Ponies-at-Arms"
 	template_counter = 59
 	regiments = {
-		infantry = { x = 0	y = 0 }	infantry = { x = 1	y = 0 }
-		infantry = { x = 0	y = 1 }	infantry = { x = 1	y = 1 }
-		infantry = { x = 0	y = 2 }	infantry = { x = 1	y = 2 }
+		infantry = { x = 0 y = 0 }	infantry = { x = 1 y = 0 }
+		infantry = { x = 0 y = 1 }	infantry = { x = 1 y = 1 }
+		infantry = { x = 0 y = 2 }	infantry = { x = 1 y = 2 }
 	}
 }
 division_template = {
 	name = "Pegasi Auxilia"
 	regiments = {
-		pegasi = { x = 0	y = 0 }	pegasi = { x = 1	y = 0 }
-		pegasi = { x = 0	y = 1 }	pegasi = { x = 1	y = 1 }
-		pegasi = { x = 0	y = 2 }
+		pegasi = { x = 0 y = 0 }	pegasi = { x = 1 y = 0 }
+		pegasi = { x = 0 y = 1 }	pegasi = { x = 1 y = 1 }
+		pegasi = { x = 0 y = 2 }
 	}
 }
 division_template = {
@@ -30,7 +30,7 @@ division_template = {
 	is_locked = yes
 	template_counter = 23
 	regiments = {
-		light_armor = { x = 0	y = 0 }	infantry = { x = 1	y = 0 }
+		light_armor = { x = 0 y = 0 }	infantry = { x = 1 y = 0 }
 	}
 }
 division_template = {
@@ -41,18 +41,18 @@ division_template = {
 	priority = 2
 	template_counter = 54
 	regiments = {
-		infantry = { x = 0	y = 0 }	infantry = { x = 1	y = 0 }
-		infantry = { x = 0	y = 1 }	infantry = { x = 1	y = 1 }
-		infantry = { x = 0	y = 2 }
+		infantry = { x = 0 y = 0 }	infantry = { x = 1 y = 0 }
+		infantry = { x = 0 y = 1 }	infantry = { x = 1 y = 1 }
+		infantry = { x = 0 y = 2 }
 	}
 	support = {
-		recon = { x = 0	y = 0 }
+		recon = { x = 0 y = 0 }
 	}
 }
 units = {
-	division = {	#Appleoosa#
+	division = {
 		name = "Appleloosan Arms Brigade"
-		location = 11037
+		location = 11037	#Appleoosa
 		division_template = "Ponies-at-Arms"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
@@ -63,9 +63,9 @@ units = {
 			}
 		}
 	}
-	division = {	#Hoofington#
+	division = {
 		name = "Hoofington Arms Brigade"
-		location = 11581
+		location = 11581	#Hoofington
 		division_template = "Ponies-at-Arms"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
@@ -76,9 +76,9 @@ units = {
 			}
 		}
 	}
-	division = {	#Rosemarein#
+	division = {
 		name = "Rosemarein Arms Brigade"
-		location = 9606
+		location = 9606	#Rosemarein
 		division_template = "Ponies-at-Arms"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
@@ -89,9 +89,9 @@ units = {
 			}
 		}
 	}
-	division = {	#Fort Sorrow#
+	division = {
 		name = "Sorrow Brigade"
-		location = 9608
+		location = 9608	#Fort Sorrow
 		division_template = "Ponies-at-Arms"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
@@ -102,9 +102,9 @@ units = {
 			}
 		}
 	}
-	division = {	#Appleoosa#
+	division = {
 		name = "Appleloosan Auxilia Brigade"
-		location = 11037
+		location = 11037	#Appleoosa
 		division_template = "Pegasi Auxilia"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
@@ -115,9 +115,9 @@ units = {
 			}
 		}
 	}
-	division = {	#Fort Mourn#
+	division = {
 		name = "Aquarium Tank Mover Company"
-		location = 3631
+		location = 3631	#Fort Mourn
 		division_template = "Steamtank Division"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
@@ -128,9 +128,9 @@ units = {
 			}
 		}
 	}
-	division = {	#Appleoosa#
+	division = {
 		name = "Braeburn's Rangers"
-		location = 6415
+		location = 6415	#Appleoosa
 		division_template = "Appleloosan Ranger Regiment"
 		start_experience_factor = 0.75
 		start_equipment_factor = 0.8

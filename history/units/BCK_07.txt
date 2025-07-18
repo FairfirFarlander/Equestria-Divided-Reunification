@@ -19,9 +19,9 @@ division_template = {
 	}
 }
 units = {
-	division = {	#Buckcastle#
+	division = {
 		name = "Castellen Royal Guard Regiment"
-		location = 9867
+		location = 9867	#Buckcastle
 		division_template = "Provincial Levy"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
@@ -32,11 +32,12 @@ units = {
 			}
 		}
 	}
-	division = {	#Buckcastle#
+	division = {
 		name = "Castellen Royal Regiment I"
-		location = 9867
+		location = 9867	#Buckcastle
 		division_template = "Provincial Levy"
-		start_experience_factor = 0.1	start_equipment_factor = 0.8
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
 		force_equipment_variants = {
 			melee_equipment_0 = {
 				owner = "BCK"
@@ -44,9 +45,9 @@ units = {
 			}
 		}
 	}
-	division = {	#Amethyst Basin#
+	division = {
 		name = "Castellen Royal Regiment II"
-		location = 3915
+		location = 3915	#Amethyst Basin
 		division_template = "Provincial Levy"
 		start_experience_factor = 0.02
 		start_equipment_factor = 0.75
@@ -57,9 +58,9 @@ units = {
 			}
 		}
 	}
-	division = {	#Amethyst Basin#
+	division = {
 		name = "Castellen Royal Regiment III"
-		location = 9751
+		location = 9751	#Amethyst Basin
 		division_template = "Provincial Levy"
 		start_experience_factor = 0
 		start_equipment_factor = 0.7
@@ -70,9 +71,9 @@ units = {
 			}
 		}
 	}
-	division = {	#Amethyst Basin#
+	division = {
 		name = "Castellen Royal Regiment IV"
-		location = 11596
+		location = 11596	#Amethyst Basin
 		division_template = "Provincial Levy"
 		start_experience_factor = 0
 		start_equipment_factor = 0.7

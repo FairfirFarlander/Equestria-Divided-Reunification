@@ -1,81 +1,90 @@
-division_template={
-	name="Peasant Levy"
-	priority=0
-	template_counter=3
-	regiments={
-		militia={x=0 y=0}
-		militia={x=0 y=1}
-		militia={x=0 y=2}
+division_template = {
+	name = "Peasant Levy"
+	priority = 0
+	template_counter = 3
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
 	}
 }
-division_template={
-	name="Peasant Levy"	#Derbendcis - Ottoman villagers that were tax exempt to patrol their regions of the empire
-	template_counter=3
-	regiments={
-		infantry={x=0 y=0}
-		infantry={x=0 y=1}
-		infantry={x=0 y=2}
+division_template = {
+	name = "Peasant Levy"	#Derbendcis - Ottoman villagers that were tax exempt to patrol their regions of the empire
+	template_counter = 3
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
 	}
 }
-#division_template={	#Later with Phantasma
-#	name="Regiment Repentia"
-#	regiments={
-#		penal_battalion={x=0 y=0}
-#		penal_battalion={x=0 y=1}
-#		penal_battalion={x=0 y=2}
+#division_template = {	#Later with Phantasma
+#	name = "Regiment Repentia"
+#	regiments = {
+#		penal_battalion = { x = 0 y = 0 }
+#		penal_battalion = { x = 0 y = 1 }
+#		penal_battalion = { x = 0 y = 2 }
 #	}
 #}
-division_template={
-	name="Legionarie Detachment"
-	is_locked=yes
-	template_counter=9
-	regiments={
-		infantry={x=0 y=0}	infantry={x=1 y=0}
-		infantry={x=0 y=1}	infantry={x=1 y=1}
+division_template = {
+	name = "Legionarie Detachment"
+	is_locked = yes
+	template_counter = 9
+	regiments = {
+		infantry = { x = 0 y = 0 }	infantry = { x = 1 y = 0 }
+		infantry = { x = 0 y = 1 }	infantry = { x = 1 y = 1 }
 	}
 }
-#division_template={
-#	name="Royal Knights"
-#	is_locked=yes
-#	force_allow_recruiting=yes
-#	division_cap=1
-#	priority=2
-#	template_counter=70
-#	regiments={
-#		pegasi={x=0 y=0}
-#		pegasi={x=0 y=1}
-#		pegasi={x=0 y=2}
+#division_template = {
+#	name = "Royal Knights"
+#	is_locked = yes
+#	force_allow_recruiting = yes
+#	division_cap = 1
+#	priority = 2
+#	template_counter = 70
+#	regiments = {
+#		pegasi = { x = 0 y = 0 }
+#		pegasi = { x = 0 y = 1 }
+#		pegasi = { x = 0 y = 2 }
 #	}
 #}
-#units={
-#	division={	#Trotterfield#
-#		name="Trotterfield Militia"
-#		location=9208
-#		division_template="Provincial Militia"
-#		start_experience_factor=0.02
-#		start_equipment_factor=0.55
-#		force_equipment_variants={
-#			melee_equipment_0={owner="TRS" creator="HMS"}
+#units = {
+#	division = {
+#		name = "Trotterfield Militia"
+#		location = 9208	#Trotterfield
+#		division_template = "Provincial Militia"
+#		start_experience_factor = 0.02
+#		start_equipment_factor = 0.55
+#		force_equipment_variants = {
+#			melee_equipment_0 = {
+#				owner = "TRS"
+#				creator = "HMS"
+#			}
 #		}
 #	}
-#	division={	#Deepfall Forests#
-#		name="Repentia Trosylvania"
-#		location=3044
-#		division_template="Regiment Repentia"
-#		start_experience_factor=0.06
-#		start_equipment_factor=0.65
-#		force_equipment_variants={
-#			melee_equipment_0={owner="TRS" creator="HMS"}
+#	division = {
+#		name = "Repentia Trosylvania"
+#		location = 3044	#Deepfall Forests
+#		division_template = "Regiment Repentia"
+#		start_experience_factor = 0.06
+#		start_equipment_factor = 0.65
+#		force_equipment_variants = {
+#			melee_equipment_0 = {
+#				owner = "TRS"
+#				creator = "HMS"
+#			}
 #		}
 #	}
-#	division={	#Neighagra Falls#
-#		name="Repentia Neighagra"
-#		location=6165
-#		division_template="Regiment Repentia"
-#		start_experience_factor=0.04
-#		start_equipment_factor=0.6
-#		force_equipment_variants={
-#			melee_equipment_0={owner="TRS" creator="HMS"}
+#	division = {
+#		name = "Repentia Neighagra"
+#		location = 6165	#Neighagra Falls
+#		division_template = "Regiment Repentia"
+#		start_experience_factor = 0.04
+#		start_equipment_factor = 0.6
+#		force_equipment_variants = {
+#			melee_equipment_0 = {
+#				owner = "TRS"
+#				creator = "HMS"
+#			}
 #		}
 #	}
 #}

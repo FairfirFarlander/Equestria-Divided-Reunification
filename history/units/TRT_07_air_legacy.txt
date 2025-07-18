@@ -1,5 +1,14 @@
-air_wings={		#Royal Equestrian Airforce (REAF)
-	#Trottingham
-	67={fighter_equipment_0={owner="EQS" amount=35}}
-	67={tac_bomber_equipment_0={owner="EQS"	amount=15}}
+air_wings = {		#Royal Equestrian Airforce (REAF)
+	67 = {	#Trottingham
+		fighter_equipment_0 = {
+			owner = "EQS"
+			amount = 35
+		}
+	}
+	67 = {	#Trottingham
+		tac_bomber_equipment_0 = {
+			owner = "EQS"
+			amount = 15
+		}
+	}
 }

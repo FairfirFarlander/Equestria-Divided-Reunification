@@ -1,52 +1,58 @@
-division_template={
-	name="Provincial Militia"
-	priority=0
-	template_counter=3
-	regiments={
-		militia={x=0 y=0}
-		militia={x=0 y=1}
-		militia={x=0 y=2}
+division_template = {
+	name = "Provincial Militia"
+	priority = 0
+	template_counter = 3
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
 	}
 }
-division_template={
-	name="Regiment Redemptus"
-	template_counter=1
-	regiments={
-		penal_battalion={x=0 y=0}
-		penal_battalion={x=0 y=1}
-		penal_battalion={x=0 y=2}
+division_template = {
+	name = "Regiment Redemptus"
+	template_counter = 1
+	regiments = {
+		penal_battalion = { x = 0 y = 0 }
+		penal_battalion = { x = 0 y = 1 }
+		penal_battalion = { x = 0 y = 2 }
 	}
 }
-division_template={
-	name="Legionarie Detachment"
-	is_locked=yes
-	force_allow_recruiting=yes
-	division_cap=3	#Reference for the three legions at Teutoburg Forest
-	template_counter=9
-	regiments={
-		infantry={x=0 y=0}	infantry={x=1 y=0}
-		infantry={x=0 y=1}	infantry={x=1 y=1}
+division_template = {
+	name = "Legionarie Detachment"
+	is_locked = yes
+	force_allow_recruiting = yes
+	division_cap = 3	#Reference for the three legions at Teutoburg Forest
+	template_counter = 9
+	regiments = {
+		infantry = { x = 0 y = 0 }	infantry = { x = 1 y = 0 }
+		infantry = { x = 0 y = 1 }	infantry = { x = 1 y = 1 }
 	}
 }
-units={
-	division={	#Flower Wreath#
-		name="Legio XVII 'Lunanova'"
-		location=11052
-		division_template="Legionarie Detachment"
-		start_experience_factor=0.06
-		start_equipment_factor=0.65
-		force_equipment_variants={
-			melee_equipment_0={owner="FRI" creator="HMS"}
+units = {
+	division = {
+		name = "Legio XVII 'Lunanova'"
+		location = 11052	#Flower Wreath
+		division_template = "Legionarie Detachment"
+		start_experience_factor = 0.06
+		start_equipment_factor = 0.65
+		force_equipment_variants = {
+			melee_equipment_0 = {
+				owner = "FRI"
+				creator = "HMS"
+			}
 		}
 	}
-	division={	#Friesian Eastlands#
-		name="Legio XVIII 'Invicta'"
-		location=6931
-		division_template="Legionarie Detachment"
-		start_experience_factor=0.06
-		start_equipment_factor=0.65
-		force_equipment_variants={
-			melee_equipment_0={owner="FRI" creator="HMS"}
+	division = {
+		name = "Legio XVIII 'Invicta'"
+		location = 6931	#Friesian Eastlands
+		division_template = "Legionarie Detachment"
+		start_experience_factor = 0.06
+		start_equipment_factor = 0.65
+		force_equipment_variants = {
+			melee_equipment_0 = {
+				owner = "FRI"
+				creator = "HMS"
+			}
 		}
 	}
 }

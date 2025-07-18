@@ -4,11 +4,11 @@ characters = {
 		portraits = {
 			civilian = {
 				large = GFX_LAS_pine_chest
-				small = GFX_LSP_Pine_Chest
+				small = GFX_idea_LSP_Pine_Chest
 			}
 			army = {
 				large = GFX_LAS_pine_chest
-				small = GFX_LSP_Pine_Chest
+				small = GFX_idea_LSP_Pine_Chest
 			}
 		}
 		country_leader = {

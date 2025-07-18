@@ -1,10 +1,10 @@
-spriteTypes={
-	spriteType={
-		name="GFX_goal_som_twilight"
-		texturefile="gfx/interface/goals/goal_som_twilight.dds"
+spriteTypes = {
+	spriteType = {
+		name = "GFX_goal_som_twilight"
+		texturefile = "gfx/interface/goals/goal_som_twilight.dds"
 	}
-	spriteType={
-		name="GFX_goal_som_marry_twilight"
-		texturefile="gfx/interface/goals/goal_som_marry_twilight.dds"
+	spriteType = {
+		name = "GFX_goal_som_marry_twilight"
+		texturefile = "gfx/interface/goals/goal_som_marry_twilight.dds"
 	}
 }

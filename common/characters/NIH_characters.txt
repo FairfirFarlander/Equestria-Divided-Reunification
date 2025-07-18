@@ -84,7 +84,7 @@ characters = {
 			logistics_skill = 1
 			traits = {
 				pony_race_trait
-				engineer
+				engineer_officer
 			}
 		}
 		advisor = {

@@ -1,4 +1,4 @@
-#EQD Focuses House Differentials
+#Reforged by FRLNDR
 	defined_text = {
 		name = EQD_S0000_SLOC
 		text = {
@@ -788,16 +788,15 @@
 	defined_text = {
 		name = EQD_S0700_SLOC
 		text = {
+			trigger = { tag = CUL }
+			localization_key = EQD_S0700_CUL
+		}
+		text = {
 			trigger = {
-				NOT = { tag = HWG }
+				NOT = { tag = CUL }
 			}
 			localization_key = EQD_S0700_GENR
 		}
-		text = {
-			trigger = { tag = HWG }
-			localization_key = EQD_S0700_HWG
-		}
-		text = { localization_key = EQD_S0700_GENERIC }
 	}
 	defined_text = {
 		name = EQD_S0700_desc_SLOC
@@ -829,14 +828,14 @@
 	defined_text = {
 		name = EQD_S0701_SLOC
 		text = {
-			trigger = { tag = CUL }
-			localization_key = EQD_S0701_CUL
-		}
-		text = {
 			trigger = {
-				NOT = { tag = CUL }
+				NOT = { tag = HWG }
 			}
 			localization_key = EQD_S0701_GENR
+		}
+		text = {
+			trigger = { tag = HWG }
+			localization_key = EQD_S0701_HWG
 		}
 	}
 	defined_text = {
@@ -866,3 +865,4 @@
 			localization_key = EQD_S0701_HWG_desc
 		}
 	}
+#Reforged by FRLNDR

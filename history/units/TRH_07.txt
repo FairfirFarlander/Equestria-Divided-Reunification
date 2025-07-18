@@ -1,71 +1,97 @@
-division_template={
-	name="Thestral Levy"
-	is_locked=yes
-	priority=0
-	template_counter=3
-	regiments={
-		militia={x=0 y=0}
-		militia={x=0 y=1}
-		militia={x=0 y=2}
+division_template = {
+	name = "Thestral Levy"
+	is_locked = yes
+	priority = 0
+	template_counter = 3
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
 	}
 }
-division_template={
-	name="Huscarls"
-	template_counter=38
-	regiments={
-		infantry={x=0 y=0}	infantry={x=1 y=0}
-		infantry={x=0 y=1}	infantry={x=1 y=1}
+division_template = {
+	name = "Huscarls"
+	template_counter = 38
+	regiments = {
+		infantry = { x = 0 y = 0 }	infantry = { x = 1 y = 0 }
+		infantry = { x = 0 y = 1 }	infantry = { x = 1 y = 1 }
 	}
 }
-division_template={
-	name="End Guard"
-	is_locked=yes
-	priority=2
-	template_counter=39
-	regiments={
-		pegasi={x=0 y=0}
-		pegasi={x=0 y=1}
-		pegasi={x=0 y=2}
-		pegasi={x=0 y=3}
+division_template = {
+	name = "End Guard"
+	is_locked = yes
+	priority = 2
+	template_counter = 39
+	regiments = {
+		pegasi = { x = 0 y = 0 }
+		pegasi = { x = 0 y = 1 }
+		pegasi = { x = 0 y = 2 }
+		pegasi = { x = 0 y = 3 }
 	}
 }
-units={
-	division={	#Twilight Range#
-		name="Twilight Range Huscarls"
-		location=3722
-		division_template="Huscarls"
-		start_experience_factor=0.75
-		start_equipment_factor=1
-		force_equipment_variants={
-			melee_equipment_0={owner="TRH" creator="TRH"}
+units = {
+	division = {
+		name = "Twilight Range Huscarls"
+		location = 3722	#Twilight Range
+		division_template = "Huscarls"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			melee_equipment_0 = {
+				owner = "TRH"
+				creator = "TRH"
+			}
 		}
 	}
-	division={	#Twilight Range#
-		name="Auburn Guard"
-		location=3722
-		division_template="End Guard"
-		start_experience_factor=0.75
-		start_equipment_factor=1
-		force_equipment_variants={
-			melee_equipment_0={owner="TRH" creator="TRH"}
+	division = {
+		name = "Auburn Guard"
+		location = 3722	#Twilight Range
+		division_template = "End Guard"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			melee_equipment_0 = {
+				owner = "TRH"
+				creator = "TRH"
+			}
 		}
 	}
 }
-instant_effect={
-	add_equipment_production={
-		equipment={type=melee_equipment_0 creator="TRT"}
-		requested_factories=2 progress=0.75 efficiency=10
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = melee_equipment_0
+			creator = "TRT"
+		}
+		requested_factories = 2
+		progress = 0.75
+		efficiency = 10
 	}
-	add_equipment_production={
-		equipment={type=melee_equipment_1 creator="TRT"}
-		requested_factories=1 progress=0.75 efficiency=30
+	add_equipment_production = {
+		equipment = {
+			type = melee_equipment_1
+			creator = "TRT"
+		}
+		requested_factories = 1
+		progress = 0.75
+		efficiency = 30
 	}
-	add_equipment_production={
-		equipment={type=support_equipment_1	creator="TRT"}
-		requested_factories=1 progress=0.75 efficiency=90
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "TRT"
+		}
+		requested_factories = 1
+		progress = 0.75
+		efficiency = 90
 	}
-	add_equipment_production={
-		equipment={type=artillery_equipment_0 creator="TRT"}
-		requested_factories=1 progress=0.75 efficiency=20
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_0
+			creator = "TRT"
+		}
+		requested_factories = 1
+		progress = 0.75
+		efficiency = 20
 	}
 }

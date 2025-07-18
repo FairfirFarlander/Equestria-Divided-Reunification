@@ -54,7 +54,7 @@ focus_tree = {
 			add = 5
 		}
 	}
-	#shared_focus = EQD_S00
+	#shared_focus = EQD_S0000
 	#shared_focus = HSW_calm_before_the_storm
 	shared_focus = HAH_S00
 	shared_focus = HAH_WS300

@@ -1,21 +1,24 @@
-division_template={
-	name=HMS_esb	#Emergency Slave Battalion
-	is_locked=yes
-	priority=0
-	regiments={
-		penal_battalion={x=0 y=0}
-		penal_battalion={x=0 y=1}
+division_template = {
+	name = HMS_esb	#Emergency Slave Battalion
+	is_locked = yes
+	priority = 0
+	regiments = {
+		penal_battalion = { x = 0 y = 0 }
+		penal_battalion = { x = 0 y = 1 }
 	}
 }
-units={
-	division={	#Canterlot#
-		name="Slave Division"
-		location=6023
-		division_template="HMS_esb"
-		start_experience_factor=0.04
-		start_equipment_factor=0.3
-		force_equipment_variants={
-			melee_equipment_0={owner="HMS" creator="EQS"}
+units = {
+	division = {
+		name = "Slave Division"
+		location = 6023	#Canterlot
+		division_template = "HMS_esb"
+		start_experience_factor = 0.04
+		start_equipment_factor = 0.3
+		force_equipment_variants = {
+			melee_equipment_0 = {
+				owner = "HMS"
+				creator = "EQS"
+			}
 		}
 	}
 }

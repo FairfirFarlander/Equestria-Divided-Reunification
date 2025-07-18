@@ -5,7 +5,7 @@ characters = {
 			civilian = { large = GFX_JTL_ahuizotl }
 			army = {
 				large = GFX_JTL_ahuizotl
-				small = GFX_TEM_Ahuizotl_Advisor
+				small = GFX_idea_TEM_Ahuizotl_Advisor
 			}
 		}
 		country_leader = {
@@ -64,11 +64,11 @@ characters = {
 		portraits = {
 			civilian = {
 				large = GFX_JTL_tailcoatl
-				small = GFX_TEM_Tailcoatl
+				small = GFX_idea_TEM_Tailcoatl
 			}
 			army = {
 				large = GFX_JTL_tailcoatl
-				small = GFX_TEM_Tailcoatl
+				small = GFX_idea_TEM_Tailcoatl
 			}
 		}
 		country_leader = {
@@ -93,7 +93,7 @@ characters = {
 		portraits = {
 			army = {
 				large = GFX_JTL_tenoch
-				small = GFX_TEM_Tenoch
+				small = GFX_idea_TEM_Tenoch
 			}
 		}
 		corps_commander = {

@@ -6,8 +6,7 @@ add_ideas = {
 	limited_exports
 	isolation
 	agrarian_society
-	THA_Ancestor_Guidance
-	THA_Warrior_Culture_Traditions
+	THA_warrior_culture
 }
 set_technology = {
 	pony_race = 1
@@ -39,7 +38,11 @@ add_offsite_building = {
 	type = arms_factory
 	level = 1
 }
-set_rule = {	can_generate_female_aces = yes	can_generate_female_unit_leaders = yes	can_generate_female_country_leaders = yes}
+set_rule = {
+	can_generate_female_aces = yes
+	can_generate_female_unit_leaders = yes
+	can_generate_female_country_leaders = yes
+}
 set_popularities = {
 	fascism = 8
 	communism = 31

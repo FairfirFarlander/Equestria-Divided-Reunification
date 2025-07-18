@@ -18,7 +18,10 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.82
 		force_equipment_variants = {
-			melee_equipment_1 = { owner = "FAI" creator = "EQS" }
+			melee_equipment_1 = {
+				owner = "FAI"
+				creator = "EQS"
+			}
 		}
 	}
 }

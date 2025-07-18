@@ -1,29 +1,29 @@
-units={	#EMB Naval OOB Legacy
-	fleet={
-		name="The Queen's Navy"
-		naval_base=336
-		task_force={
-			name="BuzzBuzz"
-			location=336	#Unnamedhive
-			ship={	#Battleship/Dreadnought
-				name="ERNS Narratek"
-				definition=battleship
-				equipment={
-					early_battleship={
-						amount=1
-						owner=EMB
-						version_name="Narratek 999 Class"
+units = {
+	fleet = {
+		name = "The Queen's Navy"
+		naval_base = 336	#Unnamedhive
+		task_force = {
+			name = "BuzzBuzz"
+			location = 336	#Unnamedhive
+			ship = {	#Battleship/Dreadnought
+				name = "ERNS Narratek"
+				definition = battleship
+				equipment = {
+					battleship_1 = {
+						amount = 1
+						owner = EMB
+						version_name = "Narratek 999 Class"
 					}
 				}
 			}
-			ship={	#Dreadnought	#We tried. It Died.
-				name="ERNS Narratek"
-				definition=battleship
-				equipment={
-					pre_dreadnought_nomtg={
-						amount=1
-						owner=EMB
-						version_name="Mounder 999 Class"
+			ship = {	#Dreadnought	#We tried. It Died.
+				name = "ERNS Narratek"
+				definition = battleship
+				equipment = {
+					pre_dreadnought_nomtg = {
+						amount = 1
+						owner = EMB
+						version_name = "Mounder 999 Class"
 					}
 				}
 			}

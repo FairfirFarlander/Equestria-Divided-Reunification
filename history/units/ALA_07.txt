@@ -1,108 +1,132 @@
-division_template={
-	name="Provincial Militia"
-	priority=0
-	template_counter=7
-	regiments={
-		militia={x=0 y=0}
-		militia={x=0 y=1}
-		militia={x=0 y=2}
+division_template = {
+	name = "Provincial Militia"
+	priority = 0
+	template_counter = 7
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
 	}
 }
-division_template={
-	name="Infantry Levies"
-	template_counter=58
-	regiments={
-		infantry={x=0 y=0}	infantry={x=1 y=0}
-		infantry={x=0 y=1}	infantry={x=1 y=1}
+division_template = {
+	name = "Infantry Levies"
+	template_counter = 58
+	regiments = {
+		infantry = { x = 0 y = 0 }	infantry = { x = 1 y = 0 }
+		infantry = { x = 0 y = 1 }	infantry = { x = 1 y = 1 }
 	}
 }
-division_template={
-	name="Arquebusiers"
-	template_counter=16
-	regiments={
-		infantry={x=0 y=0}
-		infantry={x=0 y=1}
-		infantry={x=0 y=2}
+division_template = {
+	name = "Arquebusiers"
+	template_counter = 16
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
 	}
-	support={
-		artillery={x=0 y=0}
-	}
-}
-division_template={
-	name="Winged Dragoons"
-	priority=2
-	template_counter=37
-	regiments={
-		pegasi={x=0 y=0}
-		pegasi={x=0 y=1}
-		pegasi={x=0 y=2}
-	}
-	support={
-		recon={x=0 y=0}
-		artillery={x=0 y=1}
+	support = {
+		artillery = { x = 0 y = 0 }
 	}
 }
-units={
-	division={	#Lesnoye#
-		name="Lesnoye Levy"
-		location=12070
-		division_template="Infantry Levies"
-		start_experience_factor=0.14
-		start_equipment_factor=0.8
-		force_equipment_variants={
-			melee_equipment_0={owner="ALA" creator="ALA"}
+division_template = {
+	name = "Winged Dragoons"
+	priority = 2
+	template_counter = 37
+	regiments = {
+		pegasi = { x = 0 y = 0 }
+		pegasi = { x = 0 y = 1 }
+		pegasi = { x = 0 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+units = {
+	division = {
+		name = "Lesnoye Levy"
+		location = 12070	#Lesnoye
+		division_template = "Infantry Levies"
+		start_experience_factor = 0.14
+		start_equipment_factor = 0.8
+		force_equipment_variants = {
+			melee_equipment_0 = {
+				owner = "ALA"
+				creator = "ALA"
+			}
 		}
 	}
-	division={	#Raven Highground#
-		name="Blackened Rock Levy"
-		location=6902
-		division_template="Infantry Levies"
-		start_experience_factor=0.1
-		start_equipment_factor=0.75
-		force_equipment_variants={
-			melee_equipment_0={owner="ALA" creator="ALA"}
+	division = {
+		name = "Blackened Rock Levy"
+		location = 6902	#Raven Highground
+		division_template = "Infantry Levies"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+		force_equipment_variants = {
+			melee_equipment_0 = {
+				owner = "ALA"
+				creator = "ALA"
+			}
 		}
 	}
-	division={	#Mythica#
-		name="Mythica Levy"
-		location=784
-		division_template="Infantry Levies"
-		start_experience_factor=0.18
-		start_equipment_factor=0.7
-		force_equipment_variants={
-			melee_equipment_0={owner="ALA" creator="ALA"}
+	division = {
+		name = "Mythica Levy"
+		location = 784	#Mythica
+		division_template = "Infantry Levies"
+		start_experience_factor = 0.18
+		start_equipment_factor = 0.7
+		force_equipment_variants = {
+			melee_equipment_0 = {
+				owner = "ALA"
+				creator = "ALA"
+			}
 		}
 	}
-	division={	#Loupia#
-		name="Musketeers du Prance"
-		location=3920
-		division_template="Arquebusiers"
-		start_experience_factor=0.26
-		start_equipment_factor=0.95
-		force_equipment_variants={
-			melee_equipment_0={owner="ALA" creator="ALA"}
-			artillery_equipment_0={owner="ALA" creator="EQS"}
+	division = {
+		name = "Musketeers du Prance"
+		location = 3920	#Loupia
+		division_template = "Arquebusiers"
+		start_experience_factor = 0.26
+		start_equipment_factor = 0.95
+		force_equipment_variants = {
+			melee_equipment_0 = {
+				owner = "ALA"
+				creator = "ALA"
+			}
+			artillery_equipment_0 = {
+				owner = "ALA"
+				creator = "EQS"
+			}
 		}
 	}
-	division={	#Albion#
-		name="Musketeers du Albione"
-		location=12359
-		division_template="Arquebusiers"
-		start_experience_factor=0.22
-		start_equipment_factor=0.9
-		force_equipment_variants={
-			melee_equipment_0={owner="ALA" creator="ALA"}
-			artillery_equipment_0={owner="ALA" creator="EQS"}
+	division = {
+		name = "Musketeers du Albione"
+		location = 12359	#Albion
+		division_template = "Arquebusiers"
+		start_experience_factor = 0.22
+		start_equipment_factor = 0.9
+		force_equipment_variants = {
+			melee_equipment_0 = {
+				owner = "ALA"
+				creator = "ALA"
+			}
+			artillery_equipment_0 = {
+				owner = "ALA"
+				creator = "EQS"
+			}
 		}
 	}
-	division={	#Albion#
-		name="Royal Dragoons du Albione"
-		location=10359
-		division_template="Winged Dragoons"
-		start_experience_factor=0.3
-		start_equipment_factor=1
-		force_equipment_variants={
-			melee_equipment_0={owner="ALA" creator="ALA"}
+	division = {
+		name = "Royal Dragoons du Albione"
+		location = 10359	#Albion
+		division_template = "Winged Dragoons"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			melee_equipment_0 = {
+				owner = "ALA"
+				creator = "ALA"
+			}
 		}
 	}
 }

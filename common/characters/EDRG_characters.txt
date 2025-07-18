@@ -3,7 +3,7 @@ characters = {
 		name = BALTIMARE_mayor_ash_moustache
 		portraits = {
 			civilian = {
-				small = "GFX_BAL_ash_moustache"
+				small = "GFX_idea_BAL_ash_moustache"
 			}
 		}
 		advisor = {

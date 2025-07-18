@@ -1,164 +1,200 @@
-division_template={
-	name="Pony's Militia"
-	priority=0
-	template_counter=14
-	regiments={
-		militia={x=0 y=0}
-		militia={x=0 y=1}
-		militia={x=0 y=2}
+division_template = {
+	name = "Pony's Militia"
+	priority = 0
+	template_counter = 14
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
 	}
 }
-division_template={
-	name="Kopytnaya Diviziya"
+division_template = {
+	name = "Kopytnaya Diviziya"
 	division_names_group = STG_INF_01
-	regiments={
-		infantry={x=0 y=0}	infantry={x=1 y=0}
-		infantry={x=0 y=1}	infantry={x=1 y=1}
-		infantry={x=0 y=2}
+	regiments = {
+		infantry = { x = 0 y = 0 }	infantry = { x = 1 y = 0 }
+		infantry = { x = 0 y = 1 }	infantry = { x = 1 y = 1 }
+		infantry = { x = 0 y = 2 }
 	}
-	support={
-		artillery={x=0 y=0}
+	support = {
+		artillery = { x = 0 y = 0 }
 	}
 }
-division_template={
-	name="Diviziya Pegasov"
+division_template = {
+	name = "Diviziya Pegasov"
 	division_names_group = STG_PEG_01
-	regiments={
-		pegasi={x=0 y=0}	pegasi={x=1 y=0}
-		pegasi={x=0 y=1}
-		pegasi={x=0 y=2}
+	regiments = {
+		pegasi = { x = 0 y = 0 }	pegasi = { x = 1 y = 0 }
+		pegasi = { x = 0 y = 1 }
+		pegasi = { x = 0 y = 2 }
 	}
-	support={
-		recon={x=0 y=0}
+	support = {
+		recon = { x = 0 y = 0 }
 	}
 }
-division_template={
-	name="Tankovaya Brigada"
+division_template = {
+	name = "Tankovaya Brigada"
 	division_names_group = STG_ARM_01
-	regiments={
-		light_armor={x=0 y=0}	infantry={x=1 y=0}
-		light_armor={x=0 y=1}	infantry={x=1 y=1}
+	regiments = {
+		light_armor = { x = 0 y = 0 }	infantry = { x = 1 y = 0 }
+		light_armor = { x = 0 y = 1 }	infantry = { x = 1 y = 1 }
 	}
 }
-units={
-	division={	#Stalliongrad
-		name="Diviziya im. Stalliona"
-		location=488
-		division_template="Pony's Militia"
-		start_experience_factor=0.3
-		start_equipment_factor=0.95
-		force_equipment_variants={
-			infantry_equipment_0={owner="SGR" creator="SGR"}
+units = {
+	division = {
+		name = "Diviziya im. Stalliona"
+		location = 488	#Stalliongrad
+		division_template = "Pony's Militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "SGR"
+				creator = "SGR"
+			}
 		}
 	}
-	division={	#Petershoof
-		name="Kvass Militia"
-		location=311
-		division_template="Pony's Militia"
-		start_experience_factor=0.22
-		start_equipment_factor=0.75
-		force_equipment_variants={
-			melee_equipment_1={owner="SGR" creator="SGR"}
+	division = {
+		name = "Kvass Militia"
+		location = 311	#Petershoof
+		division_template = "Pony's Militia"
+		start_experience_factor = 0.22
+		start_equipment_factor = 0.75
+		force_equipment_variants = {
+			melee_equipment_1 = {
+				owner = "SGR"
+				creator = "SGR"
+			}
 		}
 	}
-	division={	#Hoofbeat Krai
-		name="Partisanskaya Diviziya"
-		location=11546
-		division_template="Pony's Militia"
-		start_experience_factor=0.22
-		start_equipment_factor=0.85
-		force_equipment_variants={
-			melee_equipment_1={owner="SGR" creator="SGR"}
+	division = {
+		name = "Partisanskaya Diviziya"
+		location = 11546	#Hoofbeat Krai
+		division_template = "Pony's Militia"
+		start_experience_factor = 0.22
+		start_equipment_factor = 0.85
+		force_equipment_variants = {
+			melee_equipment_1 = {
+				owner = "SGR"
+				creator = "SGR"
+			}
 		}
 	}
-	division={	#Mirage
-		name="Diviziya Krasnoi Revolutsii"
-		location=1614
-		division_template="Pony's Militia"
-		start_experience_factor=0.22
-		start_equipment_factor=0.85
-		force_equipment_variants={
-			melee_equipment_1={owner="SGR" creator="SGR"}
+	division = {
+		name = "Diviziya Krasnoi Revolutsii"
+		location = 1614	#Mirage
+		division_template = "Pony's Militia"
+		start_experience_factor = 0.22
+		start_equipment_factor = 0.85
+		force_equipment_variants = {
+			melee_equipment_1 = {
+				owner = "SGR"
+				creator = "SGR"
+			}
 		}
 	}
-	division={	#Baicall
-		name="Diviziya Krasnoi"
-		location=6208
-		division_template="Kopytnaya Diviziya"
-		start_experience_factor=0.22
-		start_equipment_factor=0.85
-		force_equipment_variants={
-			melee_equipment_1={owner="SGR" creator="SGR"}
+	division = {
+		name = "Diviziya Krasnoi"
+		location = 6208	#Baicall
+		division_template = "Kopytnaya Diviziya"
+		start_experience_factor = 0.22
+		start_equipment_factor = 0.85
+		force_equipment_variants = {
+			melee_equipment_1 = {
+				owner = "SGR"
+				creator = "SGR"
+			}
 		}
 	}
-	division={	#Marshmellow
-		name="Diviziya Podkovi i Molota"
-		location=200
-		division_template="Kopytnaya Diviziya"
-		start_experience_factor=0.22
-		start_equipment_factor=0.65
-		force_equipment_variants={
-			melee_equipment_1={owner="SGR" creator="SGR"}
+	division = {
+		name = "Diviziya Podkovi i Molota"
+		location = 200	#Marshmellow
+		division_template = "Kopytnaya Diviziya"
+		start_experience_factor = 0.22
+		start_equipment_factor = 0.65
+		force_equipment_variants = {
+			melee_equipment_1 = {
+				owner = "SGR"
+				creator = "SGR"
+			}
 		}
 	}
-	division={	#Red Wheat Farmlands
-		name="Diviziya Novoczernuszkih Boytsov"
-		location=3379
-		division_template="Kopytnaya Diviziya"
-		start_experience_factor=0.3
-		start_equipment_factor=0.45
-		force_equipment_variants={
-			melee_equipment_1={owner="SGR" creator="SGR"}
+	division = {
+		name = "Diviziya Novoczernuszkih Boytsov"
+		location = 3379	#Red Wheat Farmlands
+		division_template = "Kopytnaya Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.45
+		force_equipment_variants = {
+			melee_equipment_1 = {
+				owner = "SGR"
+				creator = "SGR"
+			}
 		}
 	}
-	division={	#Majestic Gardens
-		name="Diviziya Stavroponya"
-		location=3217
-		division_template="Kopytnaya Diviziya"
-		start_experience_factor=0.22
-		start_equipment_factor=0.60
-		force_equipment_variants={
-			melee_equipment_1={owner="SGR" creator="SGR"}
+	division = {
+		name = "Diviziya Stavroponya"
+		location = 3217	#Majestic Gardens
+		division_template = "Kopytnaya Diviziya"
+		start_experience_factor = 0.22
+		start_equipment_factor = 0.60
+		force_equipment_variants = {
+			melee_equipment_1 = {
+				owner = "SGR"
+				creator = "SGR"
+			}
 		}
 	}
-	division={	#Kobilkyno
-		name="Diviziya Stalliona"
-		location=6925
-		division_template="Kopytnaya Diviziya"
-		start_experience_factor=0.1
-		start_equipment_factor=0.75
-		force_equipment_variants={
-			melee_equipment_1={owner="SGR" creator="SGR"}
+	division = {
+		name = "Diviziya Stalliona"
+		location = 6925	#Kobilkyno
+		division_template = "Kopytnaya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+		force_equipment_variants = {
+			melee_equipment_1 = {
+				owner = "SGR"
+				creator = "SGR"
+			}
 		}
 	}
-	division={	#Bird Territory
-		name="Pegasiya Diviziya Stalliona"
-		location=869
-		division_template="Diviziya Pegasov"
-		start_experience_factor=0.3
-		start_equipment_factor=0.95
-		force_equipment_variants={
-			melee_equipment_1={owner="SGR" creator="SGR"}
+	division = {
+		name = "Pegasiya Diviziya Stalliona"
+		location = 869	#Bird Territory
+		division_template = "Diviziya Pegasov"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.95
+		force_equipment_variants = {
+			melee_equipment_1 = {
+				owner = "SGR"
+				creator = "SGR"
+			}
 		}
 	}
-	division={	#Krasivsk
-		name="Pervaya Pegasiya Diviziya"
-		location=3159
-		division_template="Diviziya Pegasov"
-		start_experience_factor=0.1
-		start_equipment_factor=0.75
-		force_equipment_variants={
-			melee_equipment_1={owner="SGR" creator="SGR"}
+	division = {
+		name = "Pervaya Pegasiya Diviziya"
+		location = 3159	#Krasivsk
+		division_template = "Diviziya Pegasov"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+		force_equipment_variants = {
+			melee_equipment_1 = {
+				owner = "SGR"
+				creator = "SGR"
+			}
 		}
 	}
-	division={	#Zakatnie Lands
-		name="Brigada Krepkaya Bronya"
-		location=351
-		division_template="Tankovaya Brigada"
-		start_experience_factor=0.26
-		start_equipment_factor=0.6
-		force_equipment_variants={
-			melee_equipment_1={owner="SGR" creator="SGR"}
+	division = {
+		name = "Brigada Krepkaya Bronya"
+		location = 351	#Zakatnie Lands
+		division_template = "Tankovaya Brigada"
+		start_experience_factor = 0.26
+		start_equipment_factor = 0.6
+		force_equipment_variants = {
+			melee_equipment_1 = {
+				owner = "SGR"
+				creator = "SGR"
+			}
 		}
 	}
 }

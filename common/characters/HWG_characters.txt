@@ -253,7 +253,7 @@ characters = {
 		portraits = {
 			civilian = {
 				large = GFX_HWG_filthy_rich
-				small = GFX_idea_filthy_rich
+				small = GFX_idea_EQS_filthy_rich
 			}
 		}
 		advisor = {

@@ -1,20 +1,20 @@
-spriteTypes={
+spriteTypes = {
 ##Infantry Weapons##
-	spriteType = {
-		name = "GFX_TRS_melee_weapons_medium"
-		texturefile = "gfx/interface/technologies/melee_weapons.dds"
+	spriteType  =  {
+		name  =  "GFX_TRS_melee_weapons_medium"
+		texturefile  =  "gfx/interface/technologies/melee_weapons.dds"
 	}
-	spriteType = {
-		name = "GFX_TRS_melee_weapons1_medium"
-		texturefile = "gfx/interface/technologies/melee_weapons1.dds"
+	spriteType  =  {
+		name  =  "GFX_TRS_melee_weapons1_medium"
+		texturefile  =  "gfx/interface/technologies/melee_weapons1.dds"
 	}
 ##Aircraft##
-	SpriteType={
-		name="GFX_TRS_early_fighter_medium"
-		texturefile="gfx/interface/technologies/ENG_light_plane_5.dds"
+	SpriteType = {
+		name = "GFX_TRS_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/ENG_light_plane_5.dds"
 	}
-	SpriteType={
-		name="GFX_TRS_iw_small_airframe_medium"
-		texturefile="gfx/interface/technologies/ENG_light_plane_5.dds"
+	SpriteType = {
+		name = "GFX_TRS_iw_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/ENG_light_plane_5.dds"
 	}
 }

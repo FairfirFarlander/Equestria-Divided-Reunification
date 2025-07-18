@@ -2709,8 +2709,8 @@ ideas = {
 					#Prio if low on manpower
 					factor = 200
 					NOT = {
-						has_idea = all_adults_faithful
-						has_idea = scraping_the_faithful
+						has_idea = FAI_all_adults_faithful
+						has_idea = FAI_scraping_the_faithful
 					}
 					has_manpower < 5000
 				}
@@ -2738,8 +2738,8 @@ ideas = {
 					#Prio if low on manpower
 					add = 200
 					NOT = {
-						has_idea = all_adults_faithful
-						has_idea = scraping_the_faithful
+						has_idea = FAI_all_adults_faithful
+						has_idea = FAI_scraping_the_faithful
 					}
 					has_war = yes
 					has_manpower < 2500
@@ -2781,7 +2781,7 @@ ideas = {
 					#Prio if low on manpower
 					factor = 200
 					NOT = {
-						has_idea = scraping_the_faithful
+						has_idea = FAI_scraping_the_faithful
 					}
 					has_manpower < 5000
 				}
@@ -2809,7 +2809,7 @@ ideas = {
 					#Prio if low on manpower
 					add = 200
 					NOT = {
-						has_idea = scraping_the_faithful
+						has_idea = FAI_scraping_the_faithful
 					}
 					has_war = yes
 					has_manpower < 2500

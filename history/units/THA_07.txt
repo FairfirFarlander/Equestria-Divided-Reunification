@@ -34,9 +34,9 @@ division_template = {
 	}
 }
 units = {
-	division = {	#Ayacachtli#
+	division = {
 		name = "Praetorea Ayacachtli"
-		location = 569
+		location = 569	#Ayacachtli
 		division_template = "End Guard"
 		start_experience_factor = 0.75
 		start_equipment_factor = 0.8

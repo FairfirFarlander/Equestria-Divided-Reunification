@@ -1,7 +1,7 @@
 focus_tree = {
 	id = HSW country = {factor = 0 modifier = {add = 3 tag = HSW}}
 	continuous_focus_position = {x = 1750 y = 800}
-	shared_focus = EQD_S00
+	shared_focus = EQD_S0000
 	shared_focus = HSW_calm_before_the_storm
 	shared_focus = EDR_I0200
 	shared_focus = EDR_L05
@@ -11,7 +11,7 @@ focus_tree = {
 focus_tree = {
 	id = HSW_debug country = {factor = 0 modifier = {add = 4 tag = HSW is_debug = yes}}
 	continuous_focus_position = {x = 0 y = -350}
-	shared_focus = EQD_S00
+	shared_focus = EQD_S0000
 	shared_focus = HSW_calm_before_the_storm
 	shared_focus = EDR_I0200
 	shared_focus = EDR_L05
@@ -22,10 +22,10 @@ focus_tree = {
 	shared_focus = {	#The Typhoon Plan - The Portward Campaign
 		id = EQD_HSW_03A icon = GFX_goal_water
 		cost = 7 x = -2 y = 1
-		relative_position_id = EQD_S02
+		#relative_position_id = EQD_S0200
 		search_filters = {}
 		allow_branch = {tag = HSW}
-		prerequisite = {focus = EQD_S02}
+		#prerequisite = {focus = EQD_S0200}
 		mutually_exclusive = {focus = EQD_HSW_03B}
 		ai_will_do = {factor = 40}
 		will_lead_to_war_with = SWT
@@ -45,10 +45,10 @@ focus_tree = {
 	shared_focus = {	#Opperation Torrent - The Skystar Campaign
 		id = EQD_HSW_03B icon = GFX_goal_air
 		cost = 7 x = 2 y = 1
-		relative_position_id = EQD_S02
+		#relative_position_id = EQD_S0200
 		search_filters = {}
 		allow_branch = {tag = HSW}
-		prerequisite = {focus = EQD_S02}
+		#prerequisite = {focus = EQD_S0200}
 		mutually_exclusive = {focus = EQD_HSW_03A}
 		ai_will_do = {factor = 40}
 		completion_reward = {

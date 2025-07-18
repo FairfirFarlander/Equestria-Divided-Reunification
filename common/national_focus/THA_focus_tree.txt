@@ -132,7 +132,7 @@ focus_tree = {
 		ai_will_do = { factor = 80 }
 		allow_branch = { always = no }
 		prerequisite = { focus = THA_S0200 }
-		mutually_exclusive = { focus = THA_S0301 }
+		mutually_exclusive = { focus = THA_SN0300 }
 		bypass = {
 			has_country_flag = THA_never_yield_path
 		}
@@ -458,7 +458,7 @@ focus_tree = {
 		ai_will_do = { factor = 80 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus THA_SN0700"
-			BCK = { country_event = THA_ESN.070000 }	#An offer to buy our land
+			#BCK = { country_event = THA_ESN.070000 }	#An offer to buy our land
 		}
 	}
 	shared_focus = {	#A Quest For Friendship

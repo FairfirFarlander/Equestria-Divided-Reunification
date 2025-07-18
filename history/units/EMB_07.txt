@@ -3,9 +3,9 @@ division_template = {
 	priority = 0
 	template_counter = 9
 	regiments = {
-		militia = { x = 0	y = 0 }
-		militia = { x = 0	y = 1 }
-		militia = { x = 0	y = 2 }
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
 	}
 }
 division_template = {
@@ -13,9 +13,9 @@ division_template = {
 	is_locked = yes
 	template_counter = 8
 	regiments = {
-		jager = { x = 0	y = 0 }
-		jager = { x = 0	y = 1 }
-		jager = { x = 0	y = 2 }
+		jager = { x = 0 y = 0 }
+		jager = { x = 0 y = 1 }
+		jager = { x = 0 y = 2 }
 	}
 }
 #division_template = {
@@ -24,15 +24,15 @@ division_template = {
 #	priority = 2
 #	template_counter = 50
 #	regiments = {
-#		infantry = { x = 0	y = 0 }
-#		infantry = { x = 0	y = 1 }
-#		infantry = { x = 0	y = 2 }
+#		infantry = { x = 0 y = 0 }
+#		infantry = { x = 0 y = 1 }
+#		infantry = { x = 0 y = 2 }
 #	}
 #}
 units = {
-	division = {	#West Teopixqui Jungle
+	division = {
 		name = "Ember Militia"
-		location = 10023
+		location = 10023	#West Teopixqui Jungle
 		division_template = "Militia"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
@@ -43,9 +43,9 @@ units = {
 			}
 		}
 	}
-	division = {	#Mosquito Forest#
+	division = {
 		name = "Mosquito Militia"
-		location = 9497
+		location = 9497	#Mosquito Forest
 		division_template = "Militia"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
@@ -56,9 +56,9 @@ units = {
 			}
 		}
 	}
-	division = {	#West Yucoltan#
+	division = {
 		name = "Yucoltan Militia"
-		location = 336
+		location = 336	#West Yucoltan
 		division_template = "Militia"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
@@ -69,9 +69,9 @@ units = {
 			}
 		}
 	}
-	division = {	#West Teopixqui Jungle#
+	division = {
 		name = "River Runners"
-		location = 9541
+		location = 9541	#West Teopixqui Jungle
 		division_template = "Tunnel Runners"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1

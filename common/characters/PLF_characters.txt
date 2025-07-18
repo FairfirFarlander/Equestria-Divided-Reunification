@@ -222,7 +222,7 @@ characters = {
 			slot = political_advisor
 			idea_token = PLF_modefense_politician
 			ledger = civilian
-			traits = { BAL_mod }
+			traits = { BAL_ministry_defence_trait }
 			available = { has_country_flag = PLF_ministries_unlocked }
 		}
 	}
@@ -237,7 +237,7 @@ characters = {
 			slot = political_advisor
 			idea_token = PLF_moinformation_politician
 			ledger = civilian
-			traits = { BAL_moi }
+			traits = { BAL_ministry_information_trait }
 			available = { has_country_flag = PLF_ministries_unlocked }
 		}
 	}
@@ -252,14 +252,14 @@ characters = {
 			slot = political_advisor
 			idea_token = PLF_molabour_politician
 			ledger = civilian
-			traits = { BAL_mol }
+			traits = { BAL_ministry_labour_trait }
 			available = { has_country_flag = PLF_ministries_unlocked }
 		}
 	}
 	PLF_silver_storm = {
 		name = PLF_silver_storm
 		portraits = {
-			army = { small = GFX_idea_BAL_silverstorm }
+			#army = { small = GFX_idea_BAL_silverstorm }	#Fix later
 		}
 		advisor = {
 			slot = theorist
@@ -272,7 +272,7 @@ characters = {
 	PLF_lucky_star = {
 		name = PLF_lucky_star
 		portraits = {
-			army = { small = GFX_idea_BAL_luckystar }
+			#army = { small = GFX_idea_BAL_luckystar }	#Fix later
 		}
 		advisor = {
 			slot = theorist
@@ -299,7 +299,7 @@ characters = {
 		name = PLF_ocean_breeze
 		gender = female
 		portraits = {
-			army = { small = GFX_idea_BAL_oceanbreeze }
+			#army = { small = GFX_idea_BAL_oceanbreeze }	#Fix later
 		}
 		advisor = {
 			slot = navy_chief
@@ -311,7 +311,7 @@ characters = {
 		name = PLF_river_pearl
 		gender = female
 		portraits = {
-			army = { small = GFX_idea_BAL_riverpearl }
+			#army = { small = GFX_idea_BAL_riverpearl }	#Fix later
 		}
 		advisor = {
 			slot = navy_chief
@@ -323,7 +323,7 @@ characters = {
 		name = PLF_diamond_blossom
 		gender = female
 		portraits = {
-			army = { small = GFX_idea_BAL_diamondblossom }
+			#army = { small = GFX_idea_BAL_diamondblossom }	#Fix later
 		}
 		advisor = {
 			slot = air_chief
@@ -374,7 +374,7 @@ characters = {
 		name = PLF_sky_chaser
 		portraits = {
 			army = {
-				small = GFX_idea_BAL_skychaser
+				#small = GFX_idea_BAL_skychaser	#Fix later
 			}
 		}
 		advisor = {
@@ -390,7 +390,7 @@ characters = {
 		portraits = {
 			army = {
 				large = GFX_PLF_silvermane
-				small = GFX_idea_BAL_silvermane
+				#small = GFX_idea_BAL_silvermane	#Fix later
 			}
 		}
 		corps_commander = {

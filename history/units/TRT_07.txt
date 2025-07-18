@@ -1,54 +1,60 @@
-division_template={
-	name="Provincial Militia"
-	priority=0
-	template_counter=3
-	regiments={
-		militia={x=0 y=0}
-		militia={x=0 y=1}
-		militia={x=0 y=2}
+division_template = {
+	name = "Provincial Militia"
+	priority = 0
+	template_counter = 3
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
 	}
 }
-division_template={
-	name="Infantry Regiment"
-	regiments={
-		infantry={x=0 y=0}	infantry={x=1 y=0}
-		infantry={x=0 y=1}	infantry={x=1 y=1}
-		infantry={x=0 y=2}
+division_template = {
+	name = "Infantry Regiment"
+	regiments = {
+		infantry = { x = 0 y = 0 }	infantry = { x = 1 y = 0 }
+		infantry = { x = 0 y = 1 }	infantry = { x = 1 y = 1 }
+		infantry = { x = 0 y = 2 }
 	}
 }
-division_template={
-	name="Loyalist Guard Regiment"
-	priority=2
-	template_counter=5
-	regiments={
-		infantry={x=0 y=0}	pegasi={x=1 y=0}
-		infantry={x=0 y=1}
-		infantry={x=0 y=2}
+division_template = {
+	name = "Loyalist Guard Regiment"
+	priority = 2
+	template_counter = 5
+	regiments = {
+		infantry = { x = 0 y = 0 }	pegasi = { x = 1 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
 	}
-	support={
-		recon={x=0 y=0}
-		military_police={x=0 y=1}
+	support = {
+		recon = { x = 0 y = 0 }
+		military_police = { x = 0 y = 1 }
 	}
 }
-units={
-	division={		#Trottingham
-		name="Trottingham Training Militia"
-		location=9484
-		division_template="Provincial Militia"
-		start_experience_factor=0
-		start_equipment_factor=0.6
-		force_equipment_variants={
-			melee_equipment_1={owner="TRT" creator="EQS"}
+units = {
+	division = {
+		name = "Trottingham Training Militia"
+		location = 9484	#Trottingham
+		division_template = "Provincial Militia"
+		start_experience_factor = 0
+		start_equipment_factor = 0.6
+		force_equipment_variants = {
+			melee_equipment_1 = {
+				owner = "TRT"
+				creator = "EQS"
+			}
 		}
 	}
-	division={		#Trottingham
-		name="Royal Trottingham Regiment of Hoof"
-		location=9484
-		division_template="Loyalist Guard Regiment"
-		start_experience_factor=0.75
-		start_equipment_factor=1
-		force_equipment_variants={
-			infantry_equipment_0={owner="TRT" creator="EQS"}
+	division = {
+		name = "Royal Trottingham Regiment of Hoof"
+		location = 9484	#Trottingham
+		division_template = "Loyalist Guard Regiment"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "TRT"
+				creator = "EQS"
+			}
 		}
 	}
 }

@@ -1,4 +1,4 @@
-division_template={
+division_template = {
 	name = "Rocket Artillery Unit"
 	is_locked = yes
 	regiments = {
@@ -8,9 +8,9 @@ division_template={
 	}
 }
 units = {
-	division = {	#Baltimare
+	division = {
 		name = "Pyrotechnica Company"
-		location = 13011
+		location = 13011	#Baltimare
 		division_template = "Rocket Artillery Unit"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
@@ -21,16 +21,16 @@ units = {
 			}
 		}
 	}
-	division = {	#Baltimare
+	division = {
 		name = "Flamin' Red Heads"
-		location = 13011
+		location = 13011	#Baltimare
 		division_template = "Rocket Artillery Unit"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
 		force_equipment_variants = {
 			rocket_artillery_equipment_1 = {
-				owner="WTC"
-				creator="STG"
+				owner = "WTC"
+				creator = "STG"
 			}
 		}
 	}

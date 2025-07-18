@@ -127,8 +127,8 @@ ideas = {
 			#picture = 
 			do_effect = {
 				controls_state = 1195
-				controls_province = 20703
-				controls_province = 20964
+				#controls_province = 20703
+				#controls_province = 20964
 			}
 			modifier = {
 				production_speed_buildings_factor = 0.2

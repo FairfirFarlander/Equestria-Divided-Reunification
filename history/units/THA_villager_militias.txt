@@ -1,32 +1,41 @@
-units={
-	division={	#Western Scale Mountains
-		name="Villager Militia"
-		location=11488
-		division_template="Thestral Levy"
-		start_experience_factor=0.08
-		start_equipment_factor=0.6
-		force_equipment_variants={
-			melee_equipment_0={owner="THA" creator="EQS"}
+units = {
+	division = {
+		name = "Villager Militia"
+		location = 11488	#Western Scale Mountains
+		division_template = "Thestral Levy"
+		start_experience_factor = 0.08
+		start_equipment_factor = 0.6
+		force_equipment_variants = {
+			melee_equipment_0 = {
+				owner = "THA"
+				creator = "EQS"
+			}
 		}
 	}
-	division={	#Macintosh Mountains
-		name="Villager Militia"
-		location=11601
-		division_template="Thestral Levy"
-		start_experience_factor=0.08
-		start_equipment_factor=0.6
-		force_equipment_variants={
-			melee_equipment_0={owner="THA" creator="EQS"}
+	division = {
+		name = "Villager Militia"
+		location = 11601	#Macintosh Mountains
+		division_template = "Thestral Levy"
+		start_experience_factor = 0.08
+		start_equipment_factor = 0.6
+		force_equipment_variants = {
+			melee_equipment_0 = {
+				owner = "THA"
+				creator = "EQS"
+			}
 		}
 	}
-	division={	#Western Scale Mountains
-		name="Villager Militia"
-		location=569
-		division_template="Thestral Levy"
-		start_experience_factor=0.08
-		start_equipment_factor=0.6
-		force_equipment_variants={
-			melee_equipment_0={owner="THA" creator="EQS"}
+	division = {
+		name = "Villager Militia"
+		location = 569	#Western Scale Mountains
+		division_template = "Thestral Levy"
+		start_experience_factor = 0.08
+		start_equipment_factor = 0.6
+		force_equipment_variants = {
+			melee_equipment_0 = {
+				owner = "THA"
+				creator = "EQS"
+			}
 		}
 	}
 }

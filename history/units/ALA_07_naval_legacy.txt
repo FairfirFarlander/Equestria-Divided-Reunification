@@ -10,9 +10,9 @@ units = {
 				definition = light_cruiser
 				equipment = {
 					light_cruiser_1 = {
-						amount = 1
-						owner = ALA
 						version_name = "Norpone 08' Class"
+						owner = ALA
+						amount = 1
 					}
 				}
 			}
@@ -21,9 +21,9 @@ units = {
 				definition = destroyer
 				equipment = {
 					destroyer_1 = {
-						amount = 1
-						owner = ALA
 						version_name = "Prancing 07' Class"
+						owner = ALA
+						amount = 1
 					}
 				}
 			}
@@ -32,9 +32,9 @@ units = {
 				definition = destroyer
 				equipment = {
 					destroyer_1 = {
-						amount = 1
-						owner = ALA
 						version_name = "Prancing 07' Class"
+						owner = ALA
+						amount = 1
 					}
 				}
 			}
@@ -43,9 +43,9 @@ units = {
 				definition = destroyer
 				equipment = {
 					destroyer_1 = {
-						amount = 1
-						owner = ALA
 						version_name = "Prancing 07' Class"
+						owner = ALA
+						amount = 1
 					}
 				}
 			}
@@ -54,9 +54,9 @@ units = {
 				definition = destroyer
 				equipment = {
 					destroyer_1 = {
-						amount = 1
-						owner = ALA
 						version_name = "Prancing 07' Class"
+						owner = ALA
+						amount = 1
 					}
 				}
 			}

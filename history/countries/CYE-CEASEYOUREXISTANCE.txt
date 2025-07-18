@@ -1,5 +1,5 @@
 capital = 574
-oob = "CYE"
+oob = "CYE_07"
 set_research_slots = 1
 set_stability = 1
 set_war_support = 0
@@ -19,7 +19,11 @@ set_technology = {
 	tech_support = 1
 }
 actually_fix_weapon_techs = yes
-set_rule = {	can_generate_female_aces = yes	can_generate_female_unit_leaders = yes	can_generate_female_country_leaders = yes}
+set_rule = {
+	can_generate_female_aces = yes
+	can_generate_female_unit_leaders = yes
+	can_generate_female_country_leaders = yes
+}
 set_popularities = { neutrality = 100 }
 set_politics = { ruling_party = neutrality }
 recruit_character = CYE_nothinginterestinghappens

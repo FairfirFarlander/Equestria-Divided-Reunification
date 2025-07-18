@@ -7,7 +7,7 @@ focus_tree = {
 		#	add = 2
 		#}
 	}
-	shared_focus = EQD_S00
+	shared_focus = EQD_S0000
 	shared_focus = ALA_I00
 	shared_focus = EDR_L05
 	shared_focus = EDR_N05
@@ -24,7 +24,7 @@ focus_tree = {
 			add = 7
 		}
 	}
-	shared_focus = EQD_S00
+	shared_focus = EQD_S0000
 	shared_focus = ALA_I00
 	shared_focus = EDR_L05
 	shared_focus = EDR_N05
