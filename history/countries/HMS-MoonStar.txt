@@ -4,6 +4,7 @@ set_research_slots = 3
 set_stability = 0.44
 set_war_support = 0.10
 add_ideas = {
+	slavery_economy
 	outdated_industry
 	lack_of_scientists3
 	poverty2
@@ -39,7 +40,11 @@ if = {
 	limit = {has_dlc = "La Resistance"}
 	create_intelligence_agency = yes
 }
-set_rule = {	can_generate_female_aces = yes	can_generate_female_unit_leaders = yes	can_generate_female_country_leaders = yes}
+set_rule = {
+	can_generate_female_aces = yes
+	can_generate_female_unit_leaders = yes
+	can_generate_female_country_leaders = yes
+}
 create_faction = MoonandStar
 add_to_faction = HAH
 add_to_faction = TRS

@@ -22,5 +22,6 @@ state = {	#EDRSTATE
 			fuel_silo = 1
 			11710 = {naval_base = 5}
 		}
+		758 = { manehattan_province = 1 }
 	}
 }

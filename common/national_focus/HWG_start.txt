@@ -1,13 +1,42 @@
+focus_tree = {
+	id = EQDRDX_HWG_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			tag = HWG
+			add = 8
+		}
+	}
+	shared_focus = HWG_S00
+	shared_focus = HWG_convene_the_house_council
+	shared_focus = EQD_S0000
+	shared_focus = EQD_S0300
+	shared_focus = EQD_S0301
+	shared_focus = EQD_S0302
+	shared_focus = EQD_S0400
+	shared_focus = EQD_S0401
+	shared_focus = EQD_S0402
+	shared_focus = EQD_S0500
+	shared_focus = EQD_S0501
+	shared_focus = EQD_S0502
+	shared_focus = EQD_S0600
+	continuous_focus_position = {
+		x = 550
+		y = 900
+	}
+}
 #Story Tree Main#
-	shared_focus = {	#A Decade of Decadence
-		id = HWG_S00 icon = GFX_goal_eqc_shelter_celestia
-		x = 0 y = 0 cost = 8 ai_will_do = {factor = 4000}
+	shared_focus = {	#Diamond in the Rough
+		id = HWG_S00
+		icon = GFX_goal_generic_gem
+		x = 5 y = 0 cost = 2.1
+		ai_will_do = { factor = 4000 }
 		select_effect = {
 			country_event = EDR_evt_gen.000	#Event Verbosity#
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus HWG_S00"
-			add_political_power = 100
+			add_political_power = 75
 		}
 	}
 	shared_focus = {	#

@@ -1,6 +1,7 @@
 capital = 170
 oob = "HSW_07"
-set_stability = 0.7 set_war_support = 0.06
+set_stability = 0.7
+set_war_support = 0.06
 add_ideas = {
 	limited_conscription
 	limited_exports
@@ -14,14 +15,14 @@ add_ideas = {
 	HSW_warriorcode
 }
 if = {
-	limit = {has_dlc = "No Step Back"}
+	limit = { has_dlc = "No Step Back" }
 	add_ideas = {
 		traditionalism_academy_spirit
 		doctrinal_orthodoxy_spirit
 		disdain_for_the_digging_spirit
 	}
 	else = {
-		add_ideas = {EQS_bad_tanks}
+		add_ideas = { EQS_bad_tanks }
 	}
 }
 set_technology = {
@@ -34,9 +35,25 @@ set_technology = {
 	tech_earth_pony_a1 = 1
 	tech_pegasi = 1
 	tech_pegasi2 = 1
+	tech_special_forces = 1
 }
+#if = {
+#	limit = { has_dlc = "Man the Guns" }
+#	set_technology = {
+#		carrier_cloud_tech_mtg = 1
+#	}
+#	else = {
+#		set_technology = {
+#			carrier_cloud_tech = 1
+#		}
+#	}
+#}
 actually_fix_weapon_techs = yes
-set_rule = {	can_generate_female_aces = yes	can_generate_female_unit_leaders = yes	can_generate_female_country_leaders = yes}
+set_rule = {
+	can_generate_female_aces = yes
+	can_generate_female_unit_leaders = yes
+	can_generate_female_country_leaders = yes
+}
 create_faction = Stormwing
 add_to_faction = SWT
 set_popularities = {
@@ -45,7 +62,7 @@ set_popularities = {
 	neutrality = 9
 	democratic = 6
 }
-set_politics = {ruling_party = fascism}
+set_politics = { ruling_party = fascism }
 set_country_flag = EDR_is_equestrian_breakaway
 recruit_character = HSW_rainbow_dash
 recruit_character = HSW_storm_mayhem

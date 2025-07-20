@@ -1025,12 +1025,12 @@ spritetypes = {
 		textureFile = "gfx/interface/advisors/WTC/WTC_zebrican_mercenary_small.dds"
 	}
 ##XXX##
-	spritetype = {
-		name = "GFX_XXX_NAM"
-		textureFile = "gfx/leaders/XXX/XXX_NAM.dds"
-	}
-	spritetype = {
-		name = "GFX_XXX_NAM_small"
-		textureFile = "gfx/interface/advisors/XXX/XXX_NAM_small.dds"
-	}
+#	spritetype = {
+#		name = "GFX_XXX_NAM"
+#		textureFile = "gfx/leaders/XXX/XXX_NAM.dds"
+#	}
+#	spritetype = {
+#		name = "GFX_XXX_NAM_small"
+#		textureFile = "gfx/interface/advisors/XXX/XXX_NAM_small.dds"
+#	}
 }
